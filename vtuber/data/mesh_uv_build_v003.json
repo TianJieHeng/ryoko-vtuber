@@ -1,0 +1,27 @@
+{
+  "source_blend": "/mnt/agents/output/app/assets/ryoko_blockout_v002.blend",
+  "semantic_parts": "/mnt/agents/output/vtuber/generation/ryoko_semantic_parts.glb",
+  "semantic_task_id": "370e5e56-a084-4f07-a529-acae63195812",
+  "smart_retopology_task_id": "ae55137b-d423-4c9a-87ab-cb729cf33c2c",
+  "destination_blend": "/mnt/agents/output/app/assets/ryoko_mesh_uv_v003.blend",
+  "construction": "Approved v002 surface retained; Tripo semantic parts used only as nearest-surface labels. No voxel replacement.",
+  "parts": [
+    {"object":"RYOKO_Outfit_Trousers","source_part":"part_0","source_faces":24578,"vertices":13775,"polygons":24579,"triangles":24582,"quad_faces":0,"boundary_edges":2878,"non_manifold_edges":2878,"uv_layers":1,"materials":["RYOKO_Suit_Charcoal"]},
+    {"object":"RYOKO_Hair_ScalpAndBun","source_part":"part_1","source_faces":9270,"vertices":5913,"polygons":9274,"triangles":9290,"quad_faces":1,"boundary_edges":2380,"non_manifold_edges":2380,"uv_layers":1,"materials":["RYOKO_Hair_MintSage"]},
+    {"object":"RYOKO_Outfit_BlazerAndBlouse","source_part":"part_2","source_faces":19750,"vertices":11471,"polygons":19752,"triangles":19759,"quad_faces":0,"boundary_edges":3049,"non_manifold_edges":3049,"uv_layers":1,"materials":["RYOKO_Suit_Charcoal","RYOKO_Blouse_Ivory"]},
+    {"object":"RYOKO_Outfit_Sleeve_CharacterLeft","source_part":"part_3","source_faces":1498,"vertices":901,"polygons":1498,"triangles":1498,"quad_faces":0,"boundary_edges":296,"non_manifold_edges":296,"uv_layers":1,"materials":["RYOKO_Suit_Charcoal"]},
+    {"object":"RYOKO_Outfit_Sleeve_CharacterRight","source_part":"part_4","source_faces":1408,"vertices":871,"polygons":1409,"triangles":1416,"quad_faces":0,"boundary_edges":312,"non_manifold_edges":312,"uv_layers":1,"materials":["RYOKO_Suit_Charcoal"]},
+    {"object":"RYOKO_Footwear_CharacterLeft","source_part":"part_5","source_faces":3074,"vertices":1717,"polygons":3074,"triangles":3074,"quad_faces":0,"boundary_edges":340,"non_manifold_edges":340,"uv_layers":1,"materials":["RYOKO_Shoes_BlackLeather","RYOKO_Shoes_LeatherSole"]},
+    {"object":"RYOKO_Skin_Hand_CharacterLeft","source_part":"part_6","source_faces":5241,"vertices":16702,"polygons":15723,"triangles":31446,"quad_faces":15723,"boundary_edges":1918,"non_manifold_edges":1918,"uv_layers":1,"materials":["RYOKO_Skin_WarmNeutral","RYOKO_Suit_Charcoal","RYOKO_Blouse_Ivory"]},
+    {"object":"RYOKO_Footwear_CharacterRight","source_part":"part_7","source_faces":2716,"vertices":1561,"polygons":2716,"triangles":2716,"quad_faces":0,"boundary_edges":386,"non_manifold_edges":386,"uv_layers":1,"materials":["RYOKO_Shoes_BlackLeather","RYOKO_Shoes_LeatherSole"]},
+    {"object":"RYOKO_Skin_Hand_CharacterRight","source_part":"part_8","source_faces":4684,"vertices":15010,"polygons":14052,"triangles":28104,"quad_faces":14052,"boundary_edges":1876,"non_manifold_edges":1876,"uv_layers":1,"materials":["RYOKO_Skin_WarmNeutral","RYOKO_Suit_Charcoal","RYOKO_Blouse_Ivory"]},
+    {"object":"RYOKO_Skin_HeadAndNeck","source_part":"part_9","source_faces":3147,"vertices":10174,"polygons":9441,"triangles":18882,"quad_faces":9441,"boundary_edges":1430,"non_manifold_edges":1430,"uv_layers":1,"materials":["RYOKO_Skin_WarmNeutral"]}
+  ],
+  "total_part_vertices": 78095,
+  "total_part_triangles": 140767,
+  "total_part_quad_faces": 39217,
+  "total_part_boundary_edges": 14865,
+  "total_part_non_manifold_edges": 14865,
+  "accessory_objects": 13,
+  "status": "Visually preserved modular UV foundation; original generated open/non-manifold topology is explicitly not certified for rigging."
+}

@@ -1,0 +1,16 @@
+{
+  "source_blend": "/mnt/agents/output/app/assets/ryoko_mesh_uv_v003.blend",
+  "destination_blend": "/mnt/agents/output/app/assets/ryoko_mesh_uv_textured_v001.blend",
+  "texture_sets": [
+    {"object":"RYOKO_Footwear_CharacterLeft","resolution":1024,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Footwear_CharacterLeft_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Footwear_CharacterLeft_Roughness.png"},
+    {"object":"RYOKO_Footwear_CharacterRight","resolution":1024,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Footwear_CharacterRight_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Footwear_CharacterRight_Roughness.png"},
+    {"object":"RYOKO_Hair_ScalpAndBun","resolution":2048,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Hair_ScalpAndBun_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Hair_ScalpAndBun_Roughness.png"},
+    {"object":"RYOKO_Outfit_BlazerAndBlouse","resolution":2048,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_BlazerAndBlouse_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_BlazerAndBlouse_Roughness.png"},
+    {"object":"RYOKO_Outfit_Sleeve_CharacterLeft","resolution":1024,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_Sleeve_CharacterLeft_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_Sleeve_CharacterLeft_Roughness.png"},
+    {"object":"RYOKO_Outfit_Sleeve_CharacterRight","resolution":1024,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_Sleeve_CharacterRight_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_Sleeve_CharacterRight_Roughness.png"},
+    {"object":"RYOKO_Outfit_Trousers","resolution":1024,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_Trousers_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Outfit_Trousers_Roughness.png"},
+    {"object":"RYOKO_Skin_Hand_CharacterLeft","resolution":1024,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Skin_Hand_CharacterLeft_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Skin_Hand_CharacterLeft_Roughness.png"},
+    {"object":"RYOKO_Skin_Hand_CharacterRight","resolution":1024,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Skin_Hand_CharacterRight_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Skin_Hand_CharacterRight_Roughness.png"},
+    {"object":"RYOKO_Skin_HeadAndNeck","resolution":2048,"base_color":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Skin_HeadAndNeck_BaseColor.png","roughness":"/mnt/agents/output/app/assets/textures/mesh_uv_textured_v001/Skin_HeadAndNeck_Roughness.png"}
+  ]
+}
