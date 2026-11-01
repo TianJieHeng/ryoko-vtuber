@@ -48,7 +48,7 @@ A third separate batch contains 50 new accepted primary source images, 450 lossl
 
 ### Batch 003 remote verification
 
-Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1,805 remote file blobs matched expected local Git hashes. Cumulative delivery: 150 primary source images, 1,245 derived panels and 87 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
+Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1,805 remote file blobs matched expected local Git hashes. Cumulative delivery: 150 primary source images, 1,245 derived panels and 87 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and unaccepted variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
 
 
 ## 2026-11-01 — source-art batch 004
@@ -99,3 +99,21 @@ Phase files published:
 Phase 0 documentation commits before this journal checkpoint: `be751c2e0dcfb84c55185f2c3c856529485b8b8b` and `8ee1eccd89115d91347459baea319d453bb6fb39`. A prior parallel-write race produced one 409 response; the target specification was then written sequentially with the AI-control requirement included. No file content was lost.
 
 **Phase 0 status:** documentation complete and awaiting user checkpoint approval. No Blender-versus-image comparison applies because no geometry has been built. Phase 1 design lock has not started.
+
+## 2026-11-01 — implementation Phase 1: visual design lock
+
+Phase 1 began after the user gave no preference on the Phase 0 checkpoint and the implementation workflow proceeded with the committed specification. The user clarified that Blender-authored idle and other actions will be controlled by an AI; this is recorded in the Phase 0 target and carried into the Phase 1 layering/performance contract.
+
+The private repository initially prevented binary reference downloads. The user made the repository public. Direct sandbox connections to GitHub's raw host still timed out, so the same public repository images were retrieved through an image proxy for local visual review. The repository source files were not modified; proxy-derived local review copies are not claimed to be byte-identical preservation copies.
+
+Eleven approved images were actually opened and visually inspected: neutral bust, front/side/back/A-pose full-body masters, eye and mouth sheets, and hair/accessory/outfit/hands-pumps detail sheets. Two rendered reference boards were assembled, opened, and inspected for framing and readability: a turnaround board and a face/construction board.
+
+The proposed design lock resolves the rear hairstyle as a high bun-loop with a short loose ponytail fan, locks the long fringe to character-right, places the pocket square on character-left, and distinguishes rigid accessories from moving chains and hair groups. It defines scale/axes, the A-pose, construction order, mouth/eye requirements, initial high-detail budgets, and AI-compatible channel separation.
+
+Published in commit `ce4735cd0b11394fefc650d37aa73c1bf1bf7641`:
+
+- `vtuber/docs/design_lock.md`
+- `vtuber/docs/open_design_decisions.md`
+- `vtuber/previews/phase_01_reference_board.md`
+
+**Phase 1 status:** visual design proposal and reference checkpoints complete; awaiting user approval before Phase 2 blockout. No model generation, Blender geometry, rig, expression shape, animation, or runtime validation has occurred.
