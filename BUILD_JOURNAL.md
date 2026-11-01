@@ -26,7 +26,7 @@ The user authorized generation, batches of 50, full-character coverage and split
 
 The frozen asset manifest lists 529 image/sidecar/prompt files totaling 189,048,869 bytes. Every listed local file was checked against its frozen SHA-256 and length before publication. Source images and six original reference PNGs are unchanged. Catalogue/index/extraction metadata is restricted to this batch's published assets; later arrivals and unaccepted variants are excluded. Remote verification is recorded in the subsequent journal checkpoint after the committed tree is checked. No CI, model/UV/rig or runtime validation is claimed.
 
-Metadata-only refresh: eight control sidecars gained `panel_count: 9` and `layout: 3x3_keyposes`. Removing these fields exactly reproduced their frozen original SHA-256 and size. The frozen 50-source list and all image bytes are unchanged. The asset-related total increased by 384 bytes to 189,048,869 bytes.
+Metadata-only refresh: eight control sidecars gained `panel_count: 9` and `layout: 3x3_keyposes`. Removing these fields exactly reproduced their frozen original SHA-256 and size. The frozen 50-source list and all image bytes are unchanged; the asset-related total increased by 384 bytes to 189,048,869.
 
 ### Batch 001 remote verification
 
@@ -34,39 +34,39 @@ Commit `b9bf8316ec37a5f637e38cd650485ade0c07a5f7` was confirmed on `main`. All 5
 
 ## 2026-11-01 — source-art batch 002
 
-A second separate batch publishes 50 new accepted primary images with no overlap from batch 001, plus 444 derived panels and 27 peak copies. One jaw comparison has three panels; the other 49 sheets have nine. The frozen 621 asset-related files total 203,513,439 bytes; all SHA-256 values and sizes matched the approved snapshot.
+A second separate batch publishes 50 new accepted primary images with no overlap with batch 001, plus 444 derived panels and 27 peak copies. One jaw comparison has three panels; the other 49 sheets have nine. The frozen 621 asset-related files total 203,513,439 bytes; all SHA-256 values and sizes matched the approved snapshot.
 
-Cumulative publication: 100 primary source images, 795 extracted panels and 55 peak copies. Catalogue, index, body and extraction metadata is filtered to these 100 published sources, not later local arrivals. Rejected variants and generated caches are excluded. No CI, model/UV/rig or runtime implementation is claimed. Remote verification follows the atomic batch commit.
+Cumulative publication: 100 primary source images, 795 extracted panels and 55 peak copies. Catalogue, index, body and extraction metadata is filtered to these 100 published sources, not later local arrivals. Source images and original references remain unchanged. No CI or model/rig/runtime implementation is claimed. Remote verification follows the atomic batch commit.
 
 ### Batch 002 remote verification
 
-Commit `fd4ddddd794976ec4264dd22918a8fb14e5bf416` was confirmed on `main`. All 1,171 remote file blobs matched the expected local Git hashes. This verifies 100 cumulative primary source images, 795 derived panels and 55 peak copies. Every previously published image and six original user references remain byte-identical. Later local arrivals and rejected variants are excluded. This is reference-art byte verification, not a working model, rig or runtime.
+Commit `fd4ddddd794976ec4264dd22918a8fb14e5bf416` was confirmed on `main`. All 1,171 remote file blobs matched the expected local Git hashes. This verifies 100 cumulative primary source images, 795 derived panels and 55 peak copies. Every previously published image and the six original user references remain byte-identical. Later local arrivals and rejected variants are excluded. This is reference-art byte verification, not a working model, rig or runtime.
 
 ## 2026-11-01 — source-art batch 003
 
-A third separate batch contains 50 new accepted primary images, 450 lossless panels and 32 peak copies, with no prior source overlap. Cumulative delivery is 150 primary images, 1,245 panels and 87 peak copies. Three EXP-091–093 JSON sidecars were finalized after review: status, actual reference IDs and visual-review notes only. Reversing precisely these approved fields reproduces each original frozen JSON hash and size. All source PNG, prompt and crop bytes are unchanged. Rejected BOD-031 is excluded. Remote verification follows the atomic batch commit; no CI or model/UV/rig/runtime implementation is claimed.
+A third separate batch contains 50 new accepted primary source images, 450 lossless panels and 32 peak copies, with no prior source overlap. Cumulative delivery is 150 primary images, 1,245 panels and 87 peak copies. Three EXP-091–093 JSON sidecars were finalized after review: status, actual reference IDs and visual-review notes only. Reversing precisely these approved fields reproduces each original frozen JSON hash and size; all source PNG, prompt and crop bytes are unchanged. The manifest records this metadata-only refresh. Rejected BOD-031 is excluded. Remote verification follows the atomic batch commit; no CI or model/runtime validation is claimed.
 
 ### Batch 003 remote verification
 
-Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1,805 remote file blobs matched expected local Git hashes. Cumulative delivery: 150 primary sources, 1,245 derived panels and 87 peak copies. Prior images and six original user references remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies source-art publication, not a working model, rig or runtime.
+Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1,805 remote file blobs matched expected local Git hashes. Cumulative delivery: 150 primary source images, 1,245 derived panels and 87 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
 
 
 ## 2026-11-01 — source-art batch 004
 
-A fourth separate batch contains 50 new accepted expression sheets, 450 derived panels and 40 peak copies. All 640 frozen image/metadata/prompt files matched their approved SHA-256 and size (210,581,308 bytes), with no previous source overlap. Cumulative delivery is 200 primary sources, 1,695 panels and 127 peak copies. Metadata is restricted to these 200 published sources, not later local arrivals. Later local arrivals and rejected variants are excluded. Integer crops preserve source pixels and are not registered animation. Remote verification follows the atomic batch commit; no CI or model/UV/rig/runtime implementation is claimed.
+A fourth separate batch contains 50 new accepted primary images, 450 derived panels and 40 peak copies. All 640 frozen image/metadata/prompt files matched their approved SHA-256 and size (210,581,308 bytes), with no previous source overlap. Cumulative delivery is 200 primary sources, 1,695 panels and 127 peak copies. Metadata is restricted to these published sources; later local arrivals and rejected variants are excluded. Integer crops preserve source pixels and are not registered animation. Remote verification follows the atomic batch commit; no CI or model/runtime validation is claimed.
 
 ### Batch 004 remote verification
 
-Commit `df8069eac63a03e9abcb52d8316557ec124e58cd` was confirmed on `main`. All 2,447 remote file blobs matched expected local Git hashes. Cumulative delivery: 200 primary sources, 1,695 derived panels and 127 peak copies. Prior images and six original user references remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies source-art publication, not a working model, rig or runtime.
+Commit `df8069eac63a03e9abcb52d8316557ec124e58cd` was confirmed on `main`. All 2,447 remote file blobs matched expected local Git hashes. Cumulative delivery: 200 primary sources, 1,695 derived panels and 127 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and unaccepted variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
 
 
 ## 2026-11-01 — source-art batch 005
 
-A fifth separate batch contains 50 new accepted expression sheets, 450 derived panels and 50 peak copies. All 650 frozen asset-related files matched their approved SHA-256 and size (226,923,390 bytes), with no overlap with prior source paths. Cumulative publication is 250 primary sources, 2,145 panels and 177 peak copies. Metadata is restricted to these 250 published sources, not later local arrivals. Final remainder and handoff drafts are not included. Original images remain unchanged. Remote verification follows the atomic batch commit; no CI or actual model/runtime validation is claimed.
+A fifth separate batch contains 50 new accepted expression sheets, 450 derived panels and 50 peak copies. All 650 frozen asset-related files matched their approved SHA-256 and size (226,923,390 bytes), with no overlap with prior source paths. Cumulative publication is 250 primary sources, 2,145 panels and 177 peak copies. Metadata is filtered to these 250 sources; final remainder and handoff drafts are not included. Original images remain unchanged. Remote verification follows the atomic commit; no CI or actual model/runtime validation is claimed.
 
 ### Batch 005 remote verification
 
-Commit `985012b0f3f267491a11be3ce5ae05d5cc98007a` was confirmed on `main`. All 3,099 remote file blobs matched the expected local Git hashes. This verifies 250 cumulative primary source images, 2,145 derived panels and 177 peak copies. Every earlier published image remains byte-identical. Later local arrivals and rejected variants are excluded. This verifies source-art publication, not a working model, rig or runtime.
+Commit `985012b0f3f267491a11be3ce5ae05d5cc98007a` was confirmed on `main`. All 3,099 remote file blobs matched expected local Git hashes. This verifies 250 cumulative primary source images, 2,145 derived panels and 177 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies source-art publication, not a working model, rig or runtime.
 
 
 ## 2026-11-01 — final source-art remainder, batch 006
