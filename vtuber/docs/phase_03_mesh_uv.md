@@ -1,14 +1,20 @@
 # Phase 03 — modular surface, UV, texture, and material foundation
 
 **Checkpoint date:** 2026-11-02  
-**Status:** candidate for manual visual/UV approval; not deformation-certified  
+**Status:** user-approved visual/UV foundation; not deformation-certified  
 **Source authority:** user-approved Phase 02 v002 blockout
 
 ## Scope and approval boundary
 
 This checkpoint preserves the approved full-character surface while separating it into modular parts, increasing density in the head and hands, creating UVs, fitting textures, and correcting outfit material regions. It is a visual and UV foundation for subsequent reconstruction and feasibility testing.
 
-Approval of this checkpoint does **not** certify clean animation topology, facial identity, expressions, a body skeleton, skin weights, ARKit clips, VRM export, tracking, AI control, runtime performance, or wall projection. Phase 04 facial feasibility remains gated until the user explicitly approves this checkpoint.
+Approval of this checkpoint does **not** certify clean animation topology, facial identity, expressions, a body skeleton, skin weights, ARKit clips, VRM export, tracking, AI control, runtime performance, or wall projection.
+
+## User approval and Phase 04 authorization
+
+On 2026-11-02 the user reviewed the Phase 03 checkpoint, responded “Looks good,” and explicitly instructed the project to update Git and the journal and continue to the next phase. This approves the modular visual/UV foundation with the limitations documented below and authorizes Phase 04 facial feasibility work only.
+
+The user also confirmed that the final avatar must use the supplied anime artwork/texture direction and look distinctly anime. The 20 Phase 03 fitted maps remain interim review textures, not the final anime texture pass. Final facial identity, expression correctness, consolidated UVs, and production anime materials remain subject to later comparison checkpoints.
 
 ## Evaluated and rejected topology routes
 
@@ -97,4 +103,4 @@ Observed result:
 - `vtuber/data/texture_build_v001.json`
 - `vtuber/data/mesh_uv_validation_v001.json`
 
-The downloadable Phase 03 browser checkpoint contains the packed textured Blender foundation and the final evidence boards. Rejected meshes, broken diagnostic renders, redundant `.blend1` saves, and browser-verification captures are not part of the checkpoint delivery.
+The downloadable Phase 03 browser checkpoint contains the packed textured Blender foundation and the final evidence boards. Rejected meshes, broken diagnostic renders, redundant backup saves, and process captures are not part of the checkpoint delivery.
