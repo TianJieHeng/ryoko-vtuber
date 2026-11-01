@@ -30,7 +30,7 @@ Metadata-only refresh: eight control sidecars gained `panel_count: 9` and `layou
 
 ### Batch 001 remote verification
 
-Commit `b9bf8316ec37a5f637e38cd650485ade0c07a5f7` was confirmed on `main`. All 548 remote file blobs matched the expected local Git hashes, including the 50 primary generated images, 351 extracted panels and 28 peak copies. The eight existing reference files (six original PNGs, manifest and review) are unchanged. Only the three root planning documents were intentionally updated among the prior files. No files from later batches or unaccepted variants were included. This records source-art publication and byte integrity, not model/rig/runtime validation.
+Commit `b9bf8316ec37a5f637e38cd650485ade0c07a5f7` was confirmed on `main`. All 548 remote file blobs matched the expected local Git hashes, including the 50 primary generated images, 351 extracted panels and 28 peak copies. The eight existing reference files (six original PNGs, manifest and review) are unchanged. Only the three root planning documents were intentionally updated among the prior files. No files from later batches or unaccepted variants were included. No CI or model/runtime validation is claimed. This records source-art publication and byte integrity, not model/rig/runtime validation.
 
 ## 2026-11-01 — source-art batch 002
 
@@ -44,40 +44,40 @@ Commit `fd4ddddd794976ec4264dd22918a8fb14e5bf416` was confirmed on `main`. All 1
 
 ## 2026-11-01 — source-art batch 003
 
-A third separate batch contains 50 new accepted primary source images, 450 lossless panels and 32 peak copies, with no prior source overlap. Cumulative delivery is 150 primary images, 1,245 panels and 87 peak copies. Three EXP-091–093 JSON sidecars were finalized after review: status, actual reference IDs and visual-review notes only. Reversing precisely these approved fields reproduces each original frozen JSON hash and size; all source PNG, prompt and crop bytes are unchanged. The manifest records this metadata-only refresh. Rejected BOD-031 is excluded. Remote verification follows the atomic batch commit; no CI or model/UV/rig/runtime implementation is claimed.
+A third separate batch contains 50 new accepted primary source images, 450 lossless panels and 32 peak copies, with no prior source overlap. Cumulative delivery is 150 primary sources, 1,245 panels and 87 peak copies. Three EXP-091–093 JSON sidecars were finalized after review: status, actual reference IDs and visual-review notes only. Rejected BOD-031 is excluded. Remote verification follows the atomic batch commit; no CI or model/UV/rig/runtime implementation is claimed.
 
 ### Batch 003 remote verification
 
-Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1,805 remote file blobs matched the expected local Git hashes. Cumulative delivery: 150 primary sources, 1,245 derived panels and 87 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and unaccepted variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
+Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1,805 remote file blobs matched expected local Git hashes. Cumulative delivery: 150 primary sources, 1,245 derived panels and 87 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and unaccepted variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
 
 
 ## 2026-11-01 — source-art batch 004
 
-A fourth separate batch contains 50 new accepted primary images, 450 derived panels and 40 peak copies. All 640 frozen image/metadata/prompt files matched their approved SHA-256 and size (210,581,308 bytes), with no previous source overlap. Cumulative delivery is 200 primary sources, 1,695 panels and 127 peak copies. Metadata is restricted to these published sources; later arrivals and unaccepted variants are excluded. Integer crops preserve source pixels and are not registered animation. Remote verification follows the atomic batch commit; no CI or actual model/runtime validation is claimed.
+A fourth separate batch contains 50 new accepted primary source images, 450 derived panels and 40 peak copies. All 640 frozen image/metadata/prompt files matched their approved SHA-256 and size (210,581,308 bytes), with no previous source overlap. Cumulative publication is 200 primary sources, 1,695 panels and 127 peak copies. Metadata is restricted to these published sources; later arrivals and unaccepted variants are excluded. Integer crops preserve source pixels and are not registered animation. Remote verification follows the atomic batch commit; no CI or actual model/runtime validation is claimed.
 
 ### Batch 004 remote verification
 
-Commit `df8069eac63a03e9abcb52d8316557ec124e58cd` was confirmed on `main`. All 2,447 remote file blobs matched the expected local Git hashes. Cumulative delivery: 200 primary sources, 1,695 derived panels and 127 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
+Commit `df8069eac63a03e9abcb52d8316557ec124e58cd` was confirmed on `main`. All 2,447 remote file blobs matched expected local Git hashes. This verifies 200 cumulative primary source images, 1,695 derived panels and 127 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
 
 
 ## 2026-11-01 — source-art batch 005
 
-A fifth separate batch contains 50 new accepted expression sheets, 450 derived panels and 50 peak copies. All 650 frozen asset-related files matched their approved SHA-256 and size (226,923,390 bytes), with no overlap with prior source paths. Cumulative publication is 250 primary sources, 2,145 derived panels and 177 peak copies. Metadata is filtered to these 250 sources; final remainder and handoff drafts are not included. Original images remain unchanged. Remote verification follows the atomic commit; no CI or actual model/runtime validation is claimed.
+A fifth separate batch contains 50 new accepted expression sheets, 450 derived panels and 50 peak copies. All 650 frozen asset-related files matched their approved SHA-256 and size (226,923,390 bytes), with no overlap with prior source paths. Cumulative publication is 250 primary sources, 2,145 derived panels and 177 peak copies. Metadata is filtered to these 250 sources; final remainder and handoff drafts are not included. Original images remain unchanged. Remote verification follows the atomic commit. No CI or actual model/runtime validation is claimed.
 
 ### Batch 005 remote verification
 
-Commit `985012b0f3f267491a11be3ce5ae05d5cc98007a` was confirmed on `main`. All 3,099 remote file blobs matched the expected local Git hashes. This verifies 250 cumulative primary source images, 2,145 derived panels and 177 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies source-art publication, not a working model, rig or runtime.
+Commit `985012b0f3f267491a11be3ce5ae05d5cc98007a` was confirmed on `main`. All 3,099 remote file blobs matched expected local Git hashes. This verifies 250 cumulative primary source images, 2,145 derived panels and 177 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies source-art publication, not a working model, rig or runtime.
 
 
 ## 2026-11-01 — final source-art remainder, batch 006
 
-The final remainder contains 23 new accepted expression sheets, 207 lossless panels and 23 peak copies. All 299 frozen asset-related files matched approved SHA-256 and size (105,240,709 bytes), with no previous source overlap. Cumulative inventory is 273 primary sources: 200 expressions, 40 body gestures, 22 generic controls, 7 modeling views and 4 details, plus 2,352 panels and 200 peak copies. These are 2,825 asset PNGs, excluding 6 original references.
+The final remainder contains 23 new accepted expression sheets, 207 lossless panels and 23 peak copies. All 299 frozen asset-related files matched approved SHA-256 and size (105,240,709 bytes), with no previous source overlap. Cumulative delivery is 273 primary sources: 200 expressions, 40 body gestures, 22 generic controls, 7 modeling views and 4 details, plus 2,352 panels and 200 peak copies. These are 2,825 asset PNGs, excluding 6 original references.
 
 The planned jawLeft and lowerLipDepress references were rejected because attempts did not isolate their motions reliably; no accepted versions are included. This explains 273 delivered sources versus the earlier 275 planning target. Source-art production and local QA are complete; actual model/UV/rig/runtime work is not. Approved builder handoff and limitations accompany the final source pack. Remote verification follows the atomic batch commit.
 
 ### Final source-pack remote verification
 
-Commit `ee148303b007d85a274c3c670eccfbbb0858d196` was confirmed on `main`. All 3,408 remote file blobs matched the expected local Git hashes. The published inventory contains 273 unique primary source images, 2,352 losslessly extracted panels and 200 peak copies: 2,825 asset PNGs, plus the six unchanged original reference PNGs. Every earlier published image remains byte-identical. Final catalogue and pixel-integrity reports contain no errors.
+Commit `ee148303b007d85a274c3c670eccfbbb0858d196` was confirmed on `main`. All 3,408 remote file blobs matched expected local Git hashes. The published inventory contains 273 unique primary source images, 2,352 losslessly extracted panels and 200 peak copies: 2,825 asset PNGs, plus the six unchanged original reference PNGs. Every earlier published image remains byte-identical. Final catalogue and pixel-integrity reports contain no errors.
 
 The builder handoff, explicit omissions and publication-status report are included. jawLeft and lowerLipDepress remain unavailable rather than being falsely labeled complete. No 3D model, UV fitting, rig, runtime compatibility or animation playback is claimed. No CI ran. This final report-only checkpoint updates the journal and publication status; its complete remote tree is checked again after publication.
 
@@ -98,7 +98,7 @@ Phase files published:
 
 Phase 0 documentation commits before this journal checkpoint: `be751c2e0dcfb84c55185f2c3c856529485b8b8b` and `8ee1eccd89115d91347459baea319d453bb6fb39`. A prior parallel-write race produced one 409 response; the target specification was then written sequentially with the AI-control requirement included. No file content was lost.
 
-**Phase 0 status:** documentation complete and awaiting user checkpoint approval. No Blender-versus-image comparison applies because no geometry has been built. Phase 1 design lock has not started.
+**Phase 0 status:** documentation complete and awaiting user checkpoint approval before Phase 1. No Blender-versus-image comparison applies because no geometry has been built. Phase 1 design lock has not started.
 
 ## 2026-11-01 — implementation Phase 1: visual design lock
 
@@ -148,7 +148,7 @@ The complete matched-view, close-up, hand, eight-angle orbit, and top-view set w
 Published before this journal checkpoint:
 
 - Commit `1170a2ea0c1097087df23ed5392c02653cf46c41`: the v002 revision, final-render, and reopen-validation scripts; revision and validation JSON; and the Phase 2 documentation addendum.
-- Browser review version `e84e90b`: revised comparison boards and downloadable v002 Blender source.
+- Browser review version `e84e90b`: revised comparison boards and v002 source download.
 
 **Phase 2 revision status:** accessory correction and internal visual verification complete; awaiting explicit user confirmation before Phase 03 production topology, UVs, and material separation. No facial expression, body rig, animation, VRM export, or runtime certification has occurred.
 
@@ -173,3 +173,13 @@ Published before this journal checkpoint:
 Static browser verification passed with no missing assets; all navigation links were clicked and reached their sections; desktop and 375 px mobile layouts were inspected; final console errors and warnings were zero. Rejected meshes, diagnostic renders, redundant backup saves, and process captures were removed from the checkpoint.
 
 **Phase 3 status:** modular visual/UV foundation and internal verification complete; awaiting explicit user approval. Open clothing/hair topology, generated skin shells, incomplete deformation loops, facial identity, UV consolidation, and hand anatomy remain known limitations. Phase 4 facial feasibility and expression comparisons have not started and remain gated. No body rig, ARKit clips, animation, VRM export, VSeeFace/tracking/AI runtime, or projection validation is claimed.
+
+## 2026-11-02 — Phase 3 approval and Phase 4 facial feasibility start
+
+The user reviewed the Phase 3 evidence, responded “Looks good,” and explicitly instructed the project to update Git and the build journal and continue to the next phase. Phase 3 is therefore approved as the modular visual/UV foundation with its documented open topology, internal-shell, deformation-loop, UV-fragmentation, placeholder-face, and temporary bun-core limitations. This approval is not a certification of animation topology or runtime compatibility.
+
+The user confirmed that the final avatar must follow the supplied anime artwork/texture direction and look distinctly anime. The 20 Phase 3 fitted maps remain interim review textures; final facial identity, production anime materials, and consolidated facial UVs remain later comparison-gated work.
+
+Commit `3ad7dbbd0c7d8257446f3c04032fbe796e04f0d5` records the approval and anime texture direction in `vtuber/docs/phase_03_mesh_uv.md`.
+
+**Phase 4 status:** authorized and started. Scope is limited to the early facial-feasibility prototype: neutral, full blink, gaze, jaw opening, smile, initial lip-sync forms, and combined controls on the real head, with matched reference/Blender comparisons and a short motion preview. Bulk ARKit/facial-control production, body rigging, animation-library authoring, VRM export, and runtime validation remain gated behind explicit Phase 4 expression approval.
