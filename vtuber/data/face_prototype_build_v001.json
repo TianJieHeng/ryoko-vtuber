@@ -1,0 +1,122 @@
+{
+  "source_blend": "/mnt/agents/output/app/assets/ryoko_mesh_uv_textured_v001.blend",
+  "destination_blend": "/mnt/agents/output/app/assets/ryoko_face_prototype_v001.blend",
+  "control_object": "RYOKO_FACE_CONTROLS",
+  "controls": [
+    "blink_left",
+    "blink_right",
+    "funnel",
+    "gaze_x",
+    "gaze_y",
+    "jaw_open",
+    "smile",
+    "wide"
+  ],
+  "facial_objects": [
+    "RYOKO_EyeWhite_CharacterLeft",
+    "RYOKO_Eyelids_CharacterLeft",
+    "RYOKO_Lashes_CharacterLeft",
+    "RYOKO_EyeWhite_CharacterRight",
+    "RYOKO_Eyelids_CharacterRight",
+    "RYOKO_Lashes_CharacterRight",
+    "RYOKO_IrisAssembly_CharacterLeft",
+    "RYOKO_Brow_CharacterLeft",
+    "RYOKO_IrisAssembly_CharacterRight",
+    "RYOKO_Brow_CharacterRight",
+    "RYOKO_Mouth_CavityInsert",
+    "RYOKO_Lips_Deforming",
+    "RYOKO_Teeth_Upper",
+    "RYOKO_Teeth_Lower",
+    "RYOKO_Tongue",
+    "RYOKO_Skin_HeadAndNeck"
+  ],
+  "shape_keys": {
+    "RYOKO_EyeWhite_CharacterLeft": [
+      "Basis",
+      "Blink"
+    ],
+    "RYOKO_Eyelids_CharacterLeft": [
+      "Basis",
+      "Blink"
+    ],
+    "RYOKO_Lashes_CharacterLeft": [
+      "Basis",
+      "Blink"
+    ],
+    "RYOKO_EyeWhite_CharacterRight": [
+      "Basis",
+      "Blink"
+    ],
+    "RYOKO_Eyelids_CharacterRight": [
+      "Basis",
+      "Blink"
+    ],
+    "RYOKO_Lashes_CharacterRight": [
+      "Basis",
+      "Blink"
+    ],
+    "RYOKO_IrisAssembly_CharacterLeft": [
+      "Basis",
+      "Blink",
+      "GazeLeft",
+      "GazeRight",
+      "GazeUp",
+      "GazeDown"
+    ],
+    "RYOKO_IrisAssembly_CharacterRight": [
+      "Basis",
+      "Blink",
+      "GazeLeft",
+      "GazeRight",
+      "GazeUp",
+      "GazeDown"
+    ],
+    "RYOKO_Mouth_CavityInsert": [
+      "Basis",
+      "JawOpen",
+      "MouthSmile",
+      "MouthFunnel",
+      "MouthWide"
+    ],
+    "RYOKO_Lips_Deforming": [
+      "Basis",
+      "JawOpen",
+      "MouthSmile",
+      "MouthFunnel",
+      "MouthWide"
+    ],
+    "RYOKO_Teeth_Upper": [
+      "Basis",
+      "JawOpen",
+      "MouthSmile",
+      "MouthFunnel",
+      "MouthWide"
+    ],
+    "RYOKO_Teeth_Lower": [
+      "Basis",
+      "JawOpen",
+      "MouthSmile",
+      "MouthFunnel",
+      "MouthWide"
+    ],
+    "RYOKO_Tongue": [
+      "Basis",
+      "JawOpen",
+      "MouthSmile",
+      "MouthFunnel",
+      "MouthWide"
+    ],
+    "RYOKO_Skin_HeadAndNeck": [
+      "Basis",
+      "JawOpen",
+      "MouthSmile"
+    ]
+  },
+  "action": "RYOKO_FACE_FEASIBILITY_PREVIEW",
+  "frame_range": [
+    1,
+    97
+  ],
+  "construction": "Surface-fitted separate anime eyes, eyelid rings, lashes, brows, mouth insert, teeth and tongue; real head jaw/smile keys. No source reference image modified.",
+  "status": "Early feasibility prototype only; not complete ARKit, final oral topology, final UVs, VRM, or runtime certification."
+}
