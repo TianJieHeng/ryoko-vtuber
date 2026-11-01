@@ -1,5 +1,5 @@
 {
-  "source_art_status": "delivered",
+  "source_art_status": "complete_and_verified",
   "primary_sources": 273,
   "categories": {
     "expressions": 200,
@@ -39,11 +39,21 @@
     }
   ],
   "local_qa_errors": [],
-  "remote_verification": "To be recorded after this atomic source commit is checked.",
+  "remote_verification": {
+    "status": "passed",
+    "verified_source_commit": "ee148303b007d85a274c3c670eccfbbb0858d196",
+    "source_tree": "d5ff5dfb3a93f3aa7fd18690daa887b0da76e8b7",
+    "remote_file_blobs_verified": 3408,
+    "method": "Complete nontruncated remote Git tree compared against every expected local Git blob SHA; original image and frozen batch SHA-256 checks also passed.",
+    "original_reference_pngs_unchanged": 6,
+    "prior_published_images_unchanged": true
+  },
   "unavailable_controls": [
     "CTL-jawLeft",
     "CTL-lowerLipDepress"
   ],
   "mesh_uv_rig_runtime_validation": false,
-  "no_ci": true
+  "no_ci": true,
+  "unique_primary_source_sha256": 273,
+  "model_uv_rig_runtime_implemented": false
 }

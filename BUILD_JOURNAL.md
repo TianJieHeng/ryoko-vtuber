@@ -74,3 +74,9 @@ Commit `985012b0f3f267491a11be3ce5ae05d5cc98007a` was confirmed on `main`. All 3
 The final remainder contains 23 new accepted expression sheets, 207 lossless panels and 23 peak copies. All 299 frozen asset-related files matched approved SHA-256 and size (105,240,709 bytes). Cumulative inventory is 273 primary sources: 200 expressions, 40 body gestures, 22 generic controls, 7 modeling views and 4 details, plus 2,352 panels and 200 peak copies. These are 2,825 asset PNGs, excluding 6 original references.
 
 The planned jawLeft and lowerLipDepress references were rejected because attempts did not isolate their motions reliably; no accepted versions are included. This explains 273 delivered sources versus the earlier 275 planning target. Source-art production and local QA are complete; actual model/UV/rig/runtime work is not. Approved builder handoff and limitations accompany the final source pack. Remote verification follows the atomic commit.
+
+### Final source-pack remote verification
+
+Commit `ee148303b007d85a274c3c670eccfbbb0858d196` was confirmed on `main`. All 3,408 remote file blobs matched the expected local Git hashes. The published inventory contains 273 unique primary source images, 2,352 losslessly extracted panels and 200 peak copies: 2,825 asset PNGs, plus the six unchanged original reference PNGs. Every earlier published image remains byte-identical. Final catalogue and pixel-integrity reports contain no errors.
+
+The builder handoff, explicit omissions and publication-status report are included. jawLeft and lowerLipDepress remain unavailable rather than being falsely labeled complete. No 3D model, UV fitting, rig, runtime compatibility or animation playback is claimed. No CI ran. This final report-only checkpoint updates the journal and publication status; its complete remote tree is checked again after publication.
