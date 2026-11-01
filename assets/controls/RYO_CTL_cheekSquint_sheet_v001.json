@@ -1,0 +1,14 @@
+{
+  "asset_id": "CTL-cheekSquint",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "5a854f34cf778d7f4c167d8afaa797e0489fd4cbd2553f4a74d11d3797469f56",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels. Cheeks/lower lids rise narrowing eyes while mouth remains neutral, returns to neutral. No full blink. Full hairpins visible. Generic control reference.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right"
+}

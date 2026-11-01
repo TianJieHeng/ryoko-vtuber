@@ -21,8 +21,8 @@ The supplied references depict a green/mint-haired businesswoman with amber/gold
 | 1 | Modeling reference pack | G | Seven modeling and four detail sources published in batch 001; further work remains |
 | 2 | Five expression pilots and control prototype references | G | Five pilot sheets and initial controls published as reference art |
 | 3 | Blender facial feasibility prototype | User's Kimi workflow | Planned |
-| 4 | Complete facial-control reference pack | G | Eight control sheets published; pack not complete or certified |
-| 5 | 200 expression performances and motion sheets | G | 28 expression sheets published; 172 remain planned/not published |
+| 4 | Complete facial-control reference pack | G | 19 control source sheets published; pack not complete or certified |
+| 5 | 200 expression performances and motion sheets | G | 55 expression sheets published; 145 remain planned/not published |
 | 6 | Visual pack QA and production handoff | G | Batch 001 visually reviewed; full-pack handoff not complete |
 | 7 | Mesh, textures, rig and animation implementation | User's Kimi workflow | Planned |
 | 8 | Target application testing and release | User and build workflow | Planned |
@@ -180,3 +180,7 @@ No actual animation files, mesh, UV map, fitted texture atlas, Blender rig, weig
 ## Batch 001 publication checkpoint
 
 The current source-production target is 275 primary images, including the 200 expression performances; this is a planning target, not a delivery count. Batch 001 publishes exactly 50 primary images plus 351 derived panels and 28 peak copies. Full-body wall-projection coverage remains the intended use; facial close-ups supplement body views and gestures. All outputs are model-independent reference art. No mesh, UVs, rig, animation playback or runtime implementation is delivered or validated.
+
+## Batch 002 publication checkpoint
+
+100 primary images are now published in two separate batches of 50, plus 795 cropped panels and 55 peak copies. Source-art generation and lossless panel extraction are authorized for the full-character wall-projection reference pack. Actual mesh, UV, rig, animation playback and runtime implementation remain unbuilt/unvalidated. Planned counts are not completed assets.

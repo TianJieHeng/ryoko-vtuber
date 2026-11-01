@@ -1,0 +1,31 @@
+{
+  "expression_id": "EXP-146",
+  "slug": "bashful-affection",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "f2193b1e5b1497da8ef83bce6d4d75f26e8798712102366f06b47ac991ad32db",
+  "size_bytes": 2277326,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows rise softly; eyes look up under lowered lids; lips curve into a tiny warm smile.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; softly raised inner brows, warm upward gaze under lids, tiny bashful smile",
+      "Blush is material-effect cue, not facial geometry"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

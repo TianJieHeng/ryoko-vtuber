@@ -1,0 +1,14 @@
+{
+  "asset_id": "CTL-gazeLeft",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "4e8379eb8c0849c1b68ddb57b2d80f3e3e44d780e7575049768ffb205775e86c",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels. Both irises move together viewer-right (character-left), then center. Head stays frontal, no cross-eye. Full hairpins visible.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right"
+}

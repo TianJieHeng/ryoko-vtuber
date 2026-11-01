@@ -14,5 +14,83 @@
       1358
     ],
     "review_note": "Actual source visually reviewed; divider center positions. Second vertical divider changes black/white by row so full-axis low-variance detector rejects it."
+  },
+  "assets/controls/RYO_CTL_jawRight_sheet_v001.png": {
+    "source_sha256": "59e583ee157f398f87c5915597e267d57ad55df91bdc7844edc7011fca0d2c0d",
+    "x": [
+      0,
+      668,
+      1336,
+      2003
+    ],
+    "y": [
+      0,
+      785
+    ],
+    "review_note": "Actual three portrait comparison visually reviewed. No divider stroke; boundaries lie between adjacent shoulder fields at equal column divisions. No face or hair cut."
+  },
+  "assets/expressions/EXP-012_nostalgic-fondness/RYO_EXP-012_nostalgic-fondness_sheet_v001.png": {
+    "source_sha256": "dbdd82346d49042c8c3fd91d6ab7f707a65047893409b96744defe1f0cd2bd10",
+    "x": [
+      0,
+      386,
+      774,
+      1159
+    ],
+    "y": [
+      0,
+      452,
+      905,
+      1358
+    ],
+    "review_note": "Visually checked divider centers; horizontal boundary varies black/white across columns. Some hair touches cell upper boundary in source; extraction does not worsen existing framing."
+  },
+  "assets/expressions/EXP-016_welcoming-beam/RYO_EXP-016_welcoming-beam_sheet_v001.png": {
+    "source_sha256": "ad6745c893a6ac5ab921e0a9fe0feee1a9ddc7848771508aa68321dfafaf5987",
+    "x": [
+      0,
+      358,
+      755,
+      1159
+    ],
+    "y": [
+      0,
+      447,
+      892,
+      1358
+    ],
+    "review_note": "Actual unequal-width grid visually reviewed; divider changes black/white so full-axis low-variance unsuitable."
+  },
+  "assets/expressions/EXP-148_nervous-laugh/RYO_EXP-148_nervous-laugh_sheet_v001.png": {
+    "source_sha256": "fbae45eaf48427bcb0b3c302cc6eb82a6493f100dcb866c5dc29f0024afe2d8e",
+    "x": [
+      0,
+      418,
+      837,
+      1254
+    ],
+    "y": [
+      0,
+      418,
+      837,
+      1254
+    ],
+    "review_note": "Visually reviewed exact 3x3 divider centers; contrasting black/white separators across portrait regions."
+  },
+  "assets/expressions/EXP-022_holding-back-tears/RYO_EXP-022_holding-back-tears_sheet_v001.png": {
+    "source_sha256": "c2dbe71813e6445fc8d5885b2807a58834c1dc0631106c834e701a75f7ab6331",
+    "x": [
+      0,
+      357,
+      770,
+      1159
+    ],
+    "y": [
+      0,
+      440,
+      891,
+      1358
+    ],
+    "review_note": "Visually reviewed unequal cell boundaries; divider changes black/white. Source framing touches upper hair boundary in some panels."
   }
 }

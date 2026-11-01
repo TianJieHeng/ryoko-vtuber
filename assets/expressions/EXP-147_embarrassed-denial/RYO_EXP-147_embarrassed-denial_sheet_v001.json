@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-147",
+  "slug": "embarrassed-denial",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "111290d0e415354866a8cbdb7442af6445dfe0dcbf8916a2cfabcdd2a157a275",
+  "size_bytes": 2234067,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows knit with raised inner ends; eyes turn aside; lips purse into a defensive pout.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels present; expression arc visibly changes and returns; coherent identity costume and ornaments"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

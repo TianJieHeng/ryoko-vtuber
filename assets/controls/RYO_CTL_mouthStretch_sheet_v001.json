@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-mouthStretch",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "a9e3907be9ba45c6ad7f865cbf02872d6cb7b68a60c67efdb04d49f6c1ab434c",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels. Mouth stretches horizontally with narrow teeth strip at peak; no wide vertical jaw opening. Start/end relaxed, brows/eyes stable. Generic control reference.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

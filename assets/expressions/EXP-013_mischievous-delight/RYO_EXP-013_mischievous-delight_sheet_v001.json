@@ -1,0 +1,27 @@
+{
+  "id": "EXP-013",
+  "slug": "mischievous-delight",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-013_mischievous-delight/RYO_EXP-013_mischievous-delight_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "f24c41791d2757a1b370a16c4df111f336f1f418ccd29b64d2b8be6b06ca7722",
+  "bytes": 2249801,
+  "review_status": "visually_reviewed",
+  "visual_review": "Nine panels visually inspected; coherent expression arc and neutral return. Identity, accessories and costume preserved. Reference-level consistency, not pixel-registered animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

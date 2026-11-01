@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-lipPress",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "9a73720a738b41d75328b940272dcf073f8052d1afcdbcef0b396a06abf33c74",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels; lips progressively compress into thin flat line, return relaxed. No cheek puff, no jaw opening. Full hair/pins framed. Generic visual control reference.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

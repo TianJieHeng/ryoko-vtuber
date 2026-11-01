@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-lipFunnel",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "3de5b20ce826ebf6ed2e818cf5eec9ab85c0d815868d871c2c855ba6f3606299",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels; open rounded mouth aperture peaks center then closes, distinct from closed pucker. Eyes/brows stable. Full hair/pins framed. Approximate visual funnel guide.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

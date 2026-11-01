@@ -1,0 +1,27 @@
+{
+  "id": "EXP-014",
+  "slug": "joyful-disbelief",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-014_joyful-disbelief/RYO_EXP-014_joyful-disbelief_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "c95e70539bf6fb2f7473f94fa78d3f87b0d0a440333790d8db084ff2c7c26465",
+  "bytes": 2280989,
+  "review_status": "visually_reviewed",
+  "visual_review": "Nine panels visually inspected; coherent expression arc and neutral return. Identity, accessories and costume preserved. Reference-level consistency, not pixel-registered animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

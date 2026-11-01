@@ -31,3 +31,9 @@ Metadata-only refresh: eight control sidecars gained `panel_count: 9` and `layou
 ### Batch 001 remote verification
 
 Commit `b9bf8316ec37a5f637e38cd650485ade0c07a5f7` was confirmed on `main`. All 548 remote file blobs matched the expected local Git hashes, including the 50 primary generated images, 351 extracted panels and 28 peak copies. The eight existing reference files (six original PNGs, manifest and review) are unchanged. No files from later batches or unaccepted variants were included. Only the three root planning documents were intentionally updated among the prior files. This records source-art publication and byte integrity, not model/rig/runtime validation.
+
+## 2026-11-01 — source-art batch 002
+
+A second separate batch publishes 50 new accepted primary images with no overlap with batch 001, plus 444 derived panels and 27 peak copies. One jaw comparison has three panels; the other 49 sheets have nine. The frozen 621 asset-related files total 203,513,439 bytes; all SHA-256 values and sizes matched the approved snapshot.
+
+Cumulative publication: 100 primary source images, 795 extracted panels and 55 peak copies. Catalogue, index, body and extraction metadata is filtered to these 100 published sources, not later local arrivals. Source images and original references remain unchanged. No CI or model/rig/runtime implementation is claimed. Remote verification follows the atomic batch commit.

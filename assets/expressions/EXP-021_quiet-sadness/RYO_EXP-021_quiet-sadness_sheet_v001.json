@@ -1,0 +1,27 @@
+{
+  "id": "EXP-021",
+  "slug": "quiet-sadness",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-021_quiet-sadness/RYO_EXP-021_quiet-sadness_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "7be2c4ce51db48783193dc93e053cc8ce9bb7a2086ea4ac4580f5ec83a362ebb",
+  "bytes": 2235894,
+  "review_status": "visually_reviewed",
+  "visual_review": "Nine panels visually inspected, readable specified motion arc and neutral return, consistent identity and costume. Approximate drawn muscle targets rather than rig validation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}
