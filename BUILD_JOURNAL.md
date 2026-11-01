@@ -36,11 +36,11 @@ Commit `b9bf8316ec37a5f637e38cd650485ade0c07a5f7` was confirmed on `main`. All 5
 
 A second separate batch publishes 50 new accepted primary images with no overlap with batch 001, plus 444 derived panels and 27 peak copies. One jaw comparison has three panels; the other 49 sheets have nine. The frozen 621 asset-related files total 203,513,439 bytes; all SHA-256 values and sizes matched the approved snapshot.
 
-Cumulative publication: 100 primary source images, 795 extracted panels and 55 peak copies. Catalogue, index, body and extraction metadata is filtered to these 100 published sources, not later local arrivals. Source images and original reference PNGs remain byte-identical. Remote verification follows the atomic batch commit. No CI, model/UV/rig/runtime implementation is claimed.
+Cumulative publication: 100 primary source images, 795 extracted panels and 55 peak copies. Catalogue, index, body and extraction metadata is filtered to these 100 published sources, not later local arrivals and unaccepted variants. Source images and original reference PNGs remain byte-identical. Remote verification follows the atomic batch commit. No CI, model/UV/rig/runtime implementation is claimed.
 
 ### Batch 002 remote verification
 
-Commit `fd4ddddd794976ec4264dd22918a8fb14e5bf416` was confirmed on `main`. All 1,171 remote file blobs matched expected local Git hashes. This verifies 100 cumulative primary source images, 795 derived panels and 55 peak copies. Every previously published image and the six original user references remain byte-identical. Later local arrivals and rejected variants are excluded. This is reference-art byte verification, not a working model, rig or runtime.
+Commit `fd4ddddd794976ec4264dd22918a8fb14e5bf416` was confirmed on `main`. All 1,171 remote file blobs matched expected local Git hashes. This verifies 100 cumulative primary source images, 795 derived panels and 55 peak copies. Every previously published image and the six original user references remain byte-identical. Later local arrivals and rejected variants are excluded. This verifies reference-art byte verification, not a working model, rig or runtime.
 
 ## 2026-11-01 — source-art batch 003
 
@@ -183,3 +183,29 @@ The user confirmed that the final avatar must follow the supplied anime artwork/
 Commit `3ad7dbbd0c7d8257446f3c04032fbe796e04f0d5` records the approval and anime texture direction in `vtuber/docs/phase_03_mesh_uv.md`.
 
 **Phase 4 status:** authorized and started. Scope is limited to the early facial-feasibility prototype: neutral, full blink, gaze, jaw opening, smile, initial lip-sync forms, and combined controls on the real head, with matched reference/Blender comparisons and a short motion preview. Bulk ARKit/facial-control production, body rigging, animation-library authoring, VRM export, and runtime validation remain gated behind explicit Phase 4 expression approval.
+
+## 2026-11-02 — implementation Phase 4 candidate: early facial feasibility
+
+The Phase 4 candidate is complete for manual expression review. It retains the approved Phase 3 textured source and adds separate surface-fitted anime eye and mouth assemblies under `RYOKO_FACE_PROTOTYPE`, driven by eight independent properties on `RYOKO_FACE_CONTROLS`. The real head has `JawOpen` and `MouthSmile` shape keys; the eye whites, irises, eyelids, lashes, lips, cavity, teeth, and tongue have the documented feasibility keys. This is not final joined facial/oral topology or the complete ARKit rig. No new Tripo operation was used and no source reference image was modified.
+
+Render inspection caught and drove correction of action-reset static poses, eye/lid depth intersections, mismatched eyelid skin, lower-face skin crossing the mouth, oral/lash intersections, and a remaining full-blink corner defect. Isolation renders attributed the last defect to the eyelid membrane. The final candidate deforms the whites and irises with closure and forms a shallow closed-lid band. Bilateral and independent one-sided blinks, mid-blinks, front/side views, four-way gaze, jaw, smile, smile plus jaw, funnel, wide/gaze, and neutral recovery were rendered and inspected.
+
+Fresh-process saved-source validation passed in Blender 5.2.1 LTS: 40 valid evaluated drivers, expected shape-key inventories and controller ranges, all Phase 3 source objects preserved, all 20 source file textures packed or available, no non-finite evaluated coordinates in tested states, and all eight controls returning to zero at frame 97. The candidate measures 149,599 evaluated character triangles. This is an authoring inventory, not a 1440p60 or runtime performance result.
+
+`RYOKO_FACE_FEASIBILITY_PREVIEW` was rendered as a 97-frame, 720×720, 24 fps H.264 MP4 lasting 4.041667 seconds. The browser review contains direct unchanged-reference comparisons, neutral identity-boundary evidence, combined and independent control sheets, the playable motion preview, validation data, and the editable `.blend`. Desktop and 375 px mobile layouts, seven navigation targets, local assets, downloads, MP4 playback, 44 px touch targets, and console output were verified; errors and warnings were zero.
+
+Published sequentially before this journal checkpoint:
+
+- `9059f84010201f30ccc2730a2e08b731498869f9` — facial prototype builder.
+- `4ec0b9a176b614f6f3d029e741521486e6462a15` — independent facial-control render tests.
+- `4ed2bf9383ddefbfab81cf4370376230d01ec0bb` — motion renderer.
+- `6e0a0b198b7334d8e30b9893ef8c8c4857f2504f` — saved-source validator.
+- `ddef0fee2b8edc2012e0bd36e100783a5e3047d2` — comparison-board packager.
+- `90e6c2fb976d7fdd22df3fe00d11d1f407d6859f` — build report.
+- `192e00400a9c041e3a554123d475e34fb1ebca00` — validation report.
+- `4614186a8454d81bf49175498a2835b77694d4f9` — Phase 4 documentation.
+- `57a1618018692a3f6673448f61dd13125d9ca287` — facial feasibility test report.
+- `9c863a1d3f194a2ff46f96e24aaf1c8b78e1b3f0` — preview and evidence index.
+- Browser review version `997bb29` — comparison boards, motion preview, validation report, and editable prototype.
+
+**Phase 4 status:** candidate complete; awaiting explicit user expression approval. Final anime likeness, eye/lash/iris refinement, oral contours and tooth/tongue surfaces, joined facial/oral topology, consolidated production UVs/materials, the full 52-clip ARKit set, `jawLeft`, `lowerLipDepress`, body rigging, production animation library, VRM0X export, VSeeFace/tracking/AI runtime, and 1440p60/projection validation remain open. Phase 5 body rigging and Phase 6 bulk facial production have not started and remain gated.
