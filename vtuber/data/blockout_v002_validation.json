@@ -1,0 +1,17 @@
+{
+  "blend_reopened": true,
+  "file": "/mnt/agents/output/app/assets/ryoko_blockout_v002.blend",
+  "base_mesh_objects": 1,
+  "base_vertices": 43116,
+  "base_triangles": 75366,
+  "base_boundary_edges": 10472,
+  "base_non_manifold_edges": 10475,
+  "accessory_and_bun_core_objects": 13,
+  "clean_chopstick_shafts": 2,
+  "rounded_finials": 2,
+  "chain_links": 3,
+  "armatures": 0,
+  "shape_key_blocks": 0,
+  "root_rotation_z_degrees": -90.0,
+  "status": "PASS as revised visual blockout: exactly two clean chopsticks; temporary bun core and non-manifold base still require production reconstruction."
+}
