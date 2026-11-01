@@ -1,0 +1,27 @@
+{
+  "id": "EXP-050",
+  "slug": "frustrated-pout",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-050_frustrated-pout/RYO_EXP-050_frustrated-pout_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "f28d5df05da97ca151428e8e97e28e728b1c82fcddda396080b6f370886cff6f",
+  "bytes": 2204061,
+  "review_status": "visually_reviewed",
+  "visual_review": "Compact forward lip pout and steep inward brows. Nine panels with stable identity and full hair. Visual reference not animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

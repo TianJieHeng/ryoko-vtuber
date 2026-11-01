@@ -1,0 +1,69 @@
+{
+  "status": "accepted_source_art_not_uv_fitted",
+  "reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+  "qa": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+  "files": [
+    {
+      "path": "hair/front_fringe.png",
+      "sha256": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",
+      "source": "builtin_imagegen",
+      "crop_xywh": null,
+      "usage": "Frontal fringe; manually fit to existing hair surface or cards."
+    },
+    {
+      "path": "hair/rear_scalp_nape.png",
+      "sha256": "ef6a2e95ba701d5dd243a80c3ecf28d553a8143c1442933161df4ea08387bd95",
+      "source": "builtin_imagegen",
+      "crop_xywh": null,
+      "usage": "Rear-view scalp/nape source; not a frontal overlay."
+    },
+    {
+      "path": "hair/bun.png",
+      "sha256": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
+      "source": "hair/sources/bun_tail_atlas.png",
+      "crop_xywh": [
+        0,
+        0,
+        887,
+        887
+      ],
+      "usage": "Looped updo component; attach above rear scalp."
+    },
+    {
+      "path": "hair/short_tail.png",
+      "sha256": "3d281b9384212561473fcd39c6ee886385652438e54f53dea3293a5fb2b07ecc",
+      "source": "hair/sources/bun_tail_atlas.png",
+      "crop_xywh": [
+        887,
+        0,
+        887,
+        887
+      ],
+      "usage": "Short tail component; pivot at top root."
+    },
+    {
+      "path": "hair/temple_lock_character_right.png",
+      "sha256": "c7017f48460b74effca0ebcaa1141bd8171c355947450928c2c9af96db23f171",
+      "source": "hair/sources/side_locks_atlas.png",
+      "crop_xywh": [
+        0,
+        0,
+        768,
+        1024
+      ],
+      "usage": "Longer lock on viewer-left; character right."
+    },
+    {
+      "path": "hair/temple_lock_character_left.png",
+      "sha256": "ced2c8e50075b08ecd388a251a64a85e4b862a431c06342b2072d7c7e7be1c9c",
+      "source": "hair/sources/side_locks_atlas.png",
+      "crop_xywh": [
+        768,
+        0,
+        768,
+        1024
+      ],
+      "usage": "Shorter lock on viewer-right; character left."
+    }
+  ]
+}

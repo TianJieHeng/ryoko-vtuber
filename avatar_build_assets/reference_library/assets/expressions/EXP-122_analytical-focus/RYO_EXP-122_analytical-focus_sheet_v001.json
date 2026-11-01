@@ -1,0 +1,27 @@
+{
+  "id": "EXP-122",
+  "slug": "analytical-focus",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-122_analytical-focus/RYO_EXP-122_analytical-focus_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "86e12b69a4bd546a42c67ce623a62b37a95d4d8619c868b158ad36f5f7fdd164",
+  "bytes": 2327517,
+  "review_status": "visually_reviewed_pending_independent_QA",
+  "visual_review": "Nine facial panels, specific brow/lip progression and neutral return. Identity, jewelry and costume consistent, hairpins retained; illustrative subtle expression not registered animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "references/originals/ryokov1.png"
+  ]
+}

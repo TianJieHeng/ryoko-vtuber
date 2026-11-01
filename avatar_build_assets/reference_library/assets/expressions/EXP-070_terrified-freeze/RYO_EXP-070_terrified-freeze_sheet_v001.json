@@ -1,0 +1,27 @@
+{
+  "id": "EXP-070",
+  "slug": "terrified-freeze",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-070_terrified-freeze/RYO_EXP-070_terrified-freeze_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "48ae92f937357e8492b3f77377dbc2fd14a2423811453263b7bd02f926192ea5",
+  "bytes": 2209981,
+  "review_status": "visually_reviewed",
+  "visual_review": "High inner brow peaks, round eyes and rigid open retracted mouth. Nine panels, stable identity, intact hair and pins. Visual reference only.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

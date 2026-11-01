@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-188",
+  "slug": "playful-threat",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "f3dcbd1cf05ff3fff68bca1e77d6ba7217168ec22419b125eb767e8e8177a21d",
+  "size_bytes": 2231505,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "One brow lowers; eyes narrow brightly; a toothy crooked grin stays humorous.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; asymmetric lowered brow, bright narrowed eyes and crooked toothy playful grin, neutral return; complete hairstyle."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

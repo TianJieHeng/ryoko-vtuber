@@ -1,0 +1,27 @@
+{
+  "id": "EXP-130",
+  "slug": "confused-question",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-130_confused-question/RYO_EXP-130_confused-question_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "ee35785493c8864caea4b9f05e9dbf534e40584e68c76e3e62b947824fa34416",
+  "bytes": 2346248,
+  "review_status": "visually_reviewed_pending_independent_QA",
+  "visual_review": "Nine facial panels and recognizable authored brow/eye/mouth intent. Locked-in focus is subtle by design, neutral return present. Identity and costume consistent.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "references/originals/ryokov1.png"
+  ]
+}

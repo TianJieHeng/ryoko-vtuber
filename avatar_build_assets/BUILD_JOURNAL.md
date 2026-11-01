@@ -26,3 +26,14 @@
 - Added earrings, necklace/green pendant and belt/buckle source artwork. Source atlases and exact crop/alpha provenance accompany the accepted layers.
 - Generating workers inspected actual images composited on flat backgrounds. Original alpha and crop pixels are preserved.
 - These are separate source components, not a guaranteed pixel-registered head or UV-mapped facial rig. Vowel mouths are mutually exclusive alternatives; do not stack them simultaneously.
+
+## Hair and clothing expansion
+
+- Accepted six total hair components: frontal fringe, rear-view scalp/nape, bun, short tail and two side locks, with source/crop provenance.
+- Added accepted blazer, sleeve and trouser source components; native scale differs between independent sources and requires fitting.
+- A separate neck-paint generation was blocked by the image tool safety filter and produced no output; no neck layer is claimed. The current 3D head/neck material is preserved.
+
+## Self-contained reference library
+
+- Included the entire original completed source-pack tree under `reference_library/`: 3,408 byte-identical file blobs, with internal paths and relative links preserved.
+- This reuses existing Git objects, avoiding binary reupload and retaining all 200 expression and 40 body-reference sheets. It does not duplicate or modify the later `vtuber/` implementation.

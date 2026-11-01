@@ -1,0 +1,24 @@
+{
+  "id": "EXP-073",
+  "slug": "near-miss-relief",
+  "family": "Surprise and fear",
+  "distinctive_facial_intent": "Brows and eyelids begin fully raised; eyes close on release; open mouth exhales toward a shaky smile.",
+  "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.png",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "1b90619030abefbd76ce0d0023f269a6efa89c839552a0b124499d9511295c97",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "EXP-101"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested"
+}

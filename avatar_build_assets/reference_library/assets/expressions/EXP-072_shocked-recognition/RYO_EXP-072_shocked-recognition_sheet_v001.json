@@ -1,0 +1,24 @@
+{
+  "id": "EXP-072",
+  "slug": "shocked-recognition",
+  "family": "Surprise and fear",
+  "distinctive_facial_intent": "Brows lift asymmetrically; eyes focus suddenly; jaw opens then tightens as recognition lands.",
+  "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.png",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "7cf623464bd232d87ea1caf12d01e48d0ecb3b02ba3e1c0ed8d1433b71925c33",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "EXP-101"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested"
+}

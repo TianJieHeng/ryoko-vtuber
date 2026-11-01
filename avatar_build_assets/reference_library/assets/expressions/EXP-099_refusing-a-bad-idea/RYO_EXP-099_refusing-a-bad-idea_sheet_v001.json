@@ -1,0 +1,25 @@
+{
+  "id": "EXP-099",
+  "slug": "refusing-a-bad-idea",
+  "family": "Disgust and discomfort",
+  "distinctive_facial_intent": "Brows lower unevenly; gaze remains steady; lips tighten and push forward slightly.",
+  "path": "assets/expressions/EXP-099_refusing-a-bad-idea/RYO_EXP-099_refusing-a-bad-idea_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "968413e614472676c93148e3d1903b87824ecdbe92cb243b770e0269c4481df7",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine-panel arc, intended eye/brow/mouth acting and identity consistency reviewed. No gross anatomy defect. Illustrated key poses, not pixel-registered rendered animation."
+}

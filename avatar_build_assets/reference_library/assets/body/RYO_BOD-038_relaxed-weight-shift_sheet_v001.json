@@ -1,0 +1,27 @@
+{
+  "asset_id": "BOD-038",
+  "slug": "relaxed-weight-shift",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1722756,
+  "sha256": "d43feeb65dc191f0d2cc4c09daef48115c8bef6f1aa77a5d5faf6548d78a1814",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels, consistent outfit and identity.",
+    "Weight shift is accompanied by relaxed neck stretch/arms behind head at peak."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

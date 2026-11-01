@@ -1,0 +1,20 @@
+{
+  "asset_id": "DET-003",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1448,
+    1086
+  ],
+  "export_dimensions": [
+    1448,
+    1086
+  ],
+  "sha256": "26e7e7d3fc264646dd5e043fcbf767d8e36a6066d404c5c15f8f3e19c9f9a943",
+  "bytes": 1611857,
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Rear hairstyle corrected to gathered vertical short tail ending above collar. Outfit front/back and details preserved.",
+    "Visual reference only; not UV/model-fitted or Blender-validated."
+  ],
+  "status": "generated_reviewed"
+}

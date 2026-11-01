@@ -1,0 +1,27 @@
+{
+  "id": "EXP-057",
+  "slug": "disappointed-anger",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-057_disappointed-anger/RYO_EXP-057_disappointed-anger_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "55516c01ccc37fc29f5a461440aa0b2742dd3ec8df2803aec8ef8b2a93699281",
+  "bytes": 2153008,
+  "review_status": "visually_reviewed",
+  "visual_review": "Inner brows subtly raised within sad angry frown, firmly downturned lips. Nine panels, stable identity, full hair/pins. Not pixel-registered animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

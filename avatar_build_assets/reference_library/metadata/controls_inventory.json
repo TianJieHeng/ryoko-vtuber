@@ -1,0 +1,314 @@
+{
+  "reference_only": true,
+  "runtime_compatibility_verified": false,
+  "not_arkit_certification": true,
+  "planned_controls": 24,
+  "produced_controls": 22,
+  "unavailable_controls": [
+    {
+      "id": "CTL-jawLeft",
+      "status": "not_produced",
+      "reason": "Two nine-panel and one targeted three-panel generations did not show clear isolated lateral jaw movement. Rejected rather than mislabelled as usable."
+    },
+    {
+      "id": "CTL-lowerLipDepress",
+      "status": "not_produced",
+      "reason": "Nine-panel and targeted three-panel attempts did not reliably isolate lower-lip depression and lower-teeth exposure from upper teeth. Rejected rather than teaching incorrect mouth anatomy."
+    }
+  ],
+  "items": [
+    {
+      "id": "CTL-blink",
+      "path": "assets/controls/RYO_CTL_blink_sheet_v002.png",
+      "sha256": "94785c037b0dc654be2b73e0ac46729205260b97a7da4e09ab41cf3e94eaa521",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Full hair/pins visible. Actual sequence: open, partial, partial, closed, closed, closed, partial, partial, open. Approximate visual guide, not calibrated weights. Parent accepted reference."
+    },
+    {
+      "id": "CTL-browInnerRaise",
+      "path": "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.png",
+      "sha256": "74e754c7d0364df74c71c2a7e69b597c0587e1c0fe5246ea87aa06ef4f856c59",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Inner brow tips rise toward middle peak; mouth stays neutral closed without obvious frown. Final brow returns close to initial. Full hair/pins framed. Supersedes v001 coupled-mouth candidate."
+    },
+    {
+      "id": "CTL-browLower",
+      "path": "assets/controls/RYO_CTL_browLower_sheet_v001.png",
+      "sha256": "06f62639556f33823ce33a8c83187d7deae1c417f1cd991a607dac84347d105c",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels; brows visibly lower/knit toward center peak and relax. Mouth closed. Whole hair/pins framed. Slight eye narrowing accompanies brow lowering; approximate visual guide."
+    },
+    {
+      "id": "CTL-browRaise",
+      "path": "assets/controls/RYO_CTL_browRaise_sheet_v001.png",
+      "sha256": "dae9b43bc136d3379c40226eb667aaed1c709e2221730e149eb0b9fecef9c99e",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels verified; bilateral brow arch rises to center peak and returns, mouth closed and eyes open. Full hair/pins framed. Subtle noncalibrated visual control reference."
+    },
+    {
+      "id": "CTL-cheekPuff",
+      "path": "assets/controls/RYO_CTL_cheekPuff_sheet_v001.png",
+      "sha256": "0d3bf415803170bd18641969ee137f54639772ce56d085dbe9153f2d8ff7ae0d",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Sealed mouth, both cheeks visibly inflated at center then return; full hairpins and neutral eyes. Generic visual control."
+    },
+    {
+      "id": "CTL-cheekSquint",
+      "path": "assets/controls/RYO_CTL_cheekSquint_sheet_v001.png",
+      "sha256": "5a854f34cf778d7f4c167d8afaa797e0489fd4cbd2553f4a74d11d3797469f56",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Cheeks/lower lids rise narrowing eyes while mouth remains neutral, returns to neutral. No full blink. Full hairpins visible. Generic control reference."
+    },
+    {
+      "id": "CTL-closedLipSmile",
+      "path": "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.png",
+      "sha256": "624f8c186fe7773abcde09573e5977da0c99940975dfc2df7df4e3588f29e313",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels verified. Closed-lip smile rises and relaxes; no open mouth or teeth, eyes neutral. Full hair/pins framed. Original v001 rejected because it had ten cells; this v002 has exactly nine."
+    },
+    {
+      "id": "CTL-gazeDown",
+      "path": "assets/controls/RYO_CTL_gazeDown_sheet_v001.png",
+      "sha256": "dc78076557dbb9ce991d0cf41e4b3822b49f48d31d930696518c257b9e5e114c",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Eyes gaze downward with natural upperlid follow; head stays front. Returns center. Not an isolated iris-only reference. Full hairpins visible."
+    },
+    {
+      "id": "CTL-gazeLeft",
+      "path": "assets/controls/RYO_CTL_gazeLeft_sheet_v001.png",
+      "sha256": "4e8379eb8c0849c1b68ddb57b2d80f3e3e44d780e7575049768ffb205775e86c",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Both irises move together viewer-right (character-left), then center. Head stays frontal, no cross-eye. Full hairpins visible."
+    },
+    {
+      "id": "CTL-gazeRight",
+      "path": "assets/controls/RYO_CTL_gazeRight_sheet_v001.png",
+      "sha256": "a6bae53b5dd9732af6188fc2fa16ca854107595a6c5333f0cc987d1a900546b2",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Both irises gaze toward viewer-left (character-right), return center at final. Sustained gaze rather than finely graduated offsets. Head frontal and hairpins visible."
+    },
+    {
+      "id": "CTL-gazeUp",
+      "path": "assets/controls/RYO_CTL_gazeUp_sheet_v001.png",
+      "sha256": "1d16491769b16a71ee53b390b60a8496cb68436ffa999530c34c9903093dbb1b",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Irises move upward exposing lower sclera at center, return frontal. Head remains front. Full hairpins visible."
+    },
+    {
+      "id": "CTL-jawOpen",
+      "path": "assets/controls/RYO_CTL_jawOpen_sheet_v001.png",
+      "sha256": "364f71dc631b0ed37c7e0ef04f210447f065b0fd230ece84cd0b0f027b244a10",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels; clear graduated jaw opening and closing, center peak teeth/tongue visible. Stable eyes brows and fixed camera, full hair/pins. Approximate visual movement, not calibrated morph weights."
+    },
+    {
+      "id": "CTL-jawRight",
+      "path": "assets/controls/RYO_CTL_jawRight_sheet_v001.png",
+      "sha256": "59e583ee157f398f87c5915597e267d57ad55df91bdc7844edc7011fca0d2c0d",
+      "native_dimensions": [
+        2003,
+        785
+      ],
+      "panel_count": 3,
+      "layout": "1x3_comparison",
+      "status": "generated_visual_reference",
+      "review": "Three-panel comparison, not9frame sequence. Center lowerjaw/chin shifted toward viewer-left (character-right), upperface frontal. Modest visible displacement; requires parent QA before acceptance."
+    },
+    {
+      "id": "CTL-lipFunnel",
+      "path": "assets/controls/RYO_CTL_lipFunnel_sheet_v001.png",
+      "sha256": "3de5b20ce826ebf6ed2e818cf5eec9ab85c0d815868d871c2c855ba6f3606299",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels; open rounded mouth aperture peaks center then closes, distinct from closed pucker. Eyes/brows stable. Full hair/pins framed. Approximate visual funnel guide."
+    },
+    {
+      "id": "CTL-lipPress",
+      "path": "assets/controls/RYO_CTL_lipPress_sheet_v001.png",
+      "sha256": "9a73720a738b41d75328b940272dcf073f8052d1afcdbcef0b396a06abf33c74",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels; lips progressively compress into thin flat line, return relaxed. No cheek puff, no jaw opening. Full hair/pins framed. Generic visual control reference."
+    },
+    {
+      "id": "CTL-lipPucker",
+      "path": "assets/controls/RYO_CTL_lipPucker_sheet_v001.png",
+      "sha256": "197af4c92c879ca9296d3464ae2af04ba559c81fa478e4c1069bfe79c4c7ea81",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Clearly puckered closed lips at center and neutral return; no open aperture. Full hair/pins framed, neutral eyes. Visual generic control."
+    },
+    {
+      "id": "CTL-mouthStretch",
+      "path": "assets/controls/RYO_CTL_mouthStretch_sheet_v001.png",
+      "sha256": "a9e3907be9ba45c6ad7f865cbf02872d6cb7b68a60c67efdb04d49f6c1ab434c",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Mouth stretches horizontally with narrow teeth strip at peak; no wide vertical jaw opening. Start/end relaxed, brows/eyes stable. Generic control reference."
+    },
+    {
+      "id": "CTL-noseSneer",
+      "path": "assets/controls/RYO_CTL_noseSneer_sheet_v001.png",
+      "sha256": "d550fb858d27cee0ebaf07127a1164e0d84250a454a02750909b65d93b0f422d",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Nose bridge/side creases visibly rise at peak, small associated upperlip tension, no broad mouth opening. Returns neutral. Generic visual control."
+    },
+    {
+      "id": "CTL-upperLipRaise",
+      "path": "assets/controls/RYO_CTL_upperLipRaise_sheet_v001.png",
+      "sha256": "7189e7694af33b2c7fae28b193536658b3a82a89f44920d1716036a1678843ed",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels. Upper lip rises exposing upper front teeth at center peak while lowerjaw mostly fixed. Eyes/brows neutral, full hairpins. Generic visual control, not measured isolation."
+    },
+    {
+      "id": "CTL-vowelChart",
+      "path": "assets/controls/RYO_CTL_vowelChart_sheet_v001.png",
+      "sha256": "d55faa3b1bd445757ec72d804e5e89d6053dce52718d4b5d8dfefce073bc6194",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_comparison",
+      "status": "generated_visual_reference",
+      "review": "Nine-panel mouth-shape COMPARISON chart, not temporal animation. Row-major neutral/AH/EE/OO/EH/OH/rest/M-B-P closure/open-jaw. Distinct aperture shapes visible; mapping requires actual target lip-sync implementation. No runtime compatibility claim."
+    },
+    {
+      "id": "CTL-winkLeft",
+      "path": "assets/controls/RYO_CTL_winkLeft_sheet_v001.png",
+      "sha256": "6e55a3a0bc6022bc9eed4bb6c5e32e9a5fd3611287bb72ab865b5e5bd316d157",
+      "native_dimensions": [
+        1261,
+        1247
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels verified. Character-left eye (viewer-right) closes while opposite stays open. Full hair and pins visible. Closure holds longer than numerical requested progression; approximate key-pose guide, not calibrated control weights. Pending parent acceptance."
+    },
+    {
+      "id": "CTL-winkRight",
+      "path": "assets/controls/RYO_CTL_winkRight_sheet_v001.png",
+      "sha256": "6c66c831547a1025ee30944e18a4c9e0f1b2a59b2770a576c959c44e610cc812",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "panel_count": 9,
+      "layout": "3x3_keyposes",
+      "status": "generated_visual_reference",
+      "review": "Nine panels verified; correct character-right eye on viewer-left closes, opposite stays open. Head and hair safely framed. Broad closure hold panels3-8, not exact graduated weights. Visual reference only."
+    }
+  ],
+  "notes": [
+    "Native generated art, no resampling or crops by this worker.",
+    "Key poses are illustrative, not calibrated morph weights or executable animation.",
+    "JawRight is a three-panel comparison, not nine temporal frames.",
+    "Vowel chart is a nine-shape comparison, not a temporal sequence.",
+    "Parent batch QA owns final acceptance and publication."
+  ]
+}

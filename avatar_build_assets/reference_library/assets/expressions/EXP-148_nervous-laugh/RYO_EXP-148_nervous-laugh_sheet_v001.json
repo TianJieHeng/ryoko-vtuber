@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-148",
+  "slug": "nervous-laugh",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "fbae45eaf48427bcb0b3c302cc6eb82a6493f100dcb866c5dc29f0024afe2d8e",
+  "size_bytes": 2204147,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows lift centrally; eyes narrow unevenly; open smile shows teeth without full cheek relaxation.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; worried raised inner brows and asymmetric narrowed eyes, toothy nervous smile, neutral recovery"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-jawOpen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "364f71dc631b0ed37c7e0ef04f210447f065b0fd230ece84cd0b0f027b244a10",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels; clear graduated jaw opening and closing, center peak teeth/tongue visible. Stable eyes brows and fixed camera, full hair/pins. Approximate visual movement, not calibrated morph weights.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

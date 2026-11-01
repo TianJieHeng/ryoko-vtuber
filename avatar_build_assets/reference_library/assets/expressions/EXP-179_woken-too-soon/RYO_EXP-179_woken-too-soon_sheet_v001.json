@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-179",
+  "slug": "woken-too-soon",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "584027f1440733dfe7a7f060e3495fcd279b46750c39f188a358e3da0677c429",
+  "size_bytes": 2160799,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Inner brows rise in complaint; one eye opens reluctantly; mouth turns into a sleepy frown.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; one reluctant open eye, raised inner brows and sleepy downturned mouth; clean neutral recovery and complete hair."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

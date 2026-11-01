@@ -11,6 +11,7 @@ The `.blend` and its actual UV coordinates are delivered through the builder's b
 - Use the canonical face and body guides to compare likeness, eye silhouette, hairstyle, costume and proportions at matched views.
 - Treat transparent iris, lash, brow and mouth artwork as texture-source or image-plane elements. Map them to the corresponding facial surfaces with appropriate UVs, alpha blending/clipping and depth ordering. Do not assume existing procedural face inserts have usable UVs.
 - Keep sclera, iris/pupil, lashes, eyebrows, lips and mouth interior distinct. Do not bake a complete illustrated eye or mouth onto unrelated clothing or the entire head UV atlas.
+- The generated art includes stylized folds and cel shading. It is not calibrated unlit albedo; avoid double-lighting by consciously separating painted shading from the final anime shader.
 - Use outfit/hair artwork as source material for the actual modular surfaces. Do not paste a posed full-body illustration directly into a fragmented UV atlas. Preserve the approved sleeve/cuff/hand boundaries.
 - Keep blush, tears, sweat and anger marks separate and disabled in neutral. Define attachment, visibility and blend rules rather than permanently painting them into skin.
 - Gold sticks, hair danglers, earrings and pendant are separate accessory sources. Preserve the approved geometry and attachment locations; do not create duplicates merely because an image is supplied.
@@ -25,3 +26,7 @@ The new PNGs alone do not certify any of these tests. Record actual render resul
 ## Optional cutout use
 
 Separated images may additionally be arranged on Blender planes or used in a layered 2D system. That requires explicit pivots, parent anchors, z order, clipping masks, swap exclusivity and assembly verification. It is an optional consumption route, not a replacement for the user's established full-character 3D project. Any assembly evidence included with the artwork must state what was actually tested.
+
+## Separate neck-paint source
+
+A requested new isolated neck-paint generation returned no image. No separately generated neck PNG is included. The face-base artwork ends at the chin. Preserve the builder's existing head/neck skin material and use the canonical reference for refinement; do not infer a missing file from a planned layer name.

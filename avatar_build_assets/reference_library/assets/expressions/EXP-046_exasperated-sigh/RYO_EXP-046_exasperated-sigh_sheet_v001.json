@@ -1,0 +1,27 @@
+{
+  "id": "EXP-046",
+  "slug": "exasperated-sigh",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "7aed5d539ffe01c569b81056481ecaa6fd42e96bd53bb15ddbb4d5bfb4621239",
+  "bytes": 2215926,
+  "review_status": "visually_reviewed",
+  "visual_review": "Upward eye roll then half closure and open sigh mouth. Nine panels with stable identity, intact hair and attire. Visual keyposes only.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

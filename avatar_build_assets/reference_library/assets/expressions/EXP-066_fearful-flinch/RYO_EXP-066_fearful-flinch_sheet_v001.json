@@ -1,0 +1,27 @@
+{
+  "id": "EXP-066",
+  "slug": "fearful-flinch",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-066_fearful-flinch/RYO_EXP-066_fearful-flinch_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "09391d3187e8d3a1ff590d4d311a437058439e4b9121ee3c65cfae48bfe6d950",
+  "bytes": 2203934,
+  "review_status": "visually_reviewed",
+  "visual_review": "Sequential one-eye then both-eye closure with retracted tense mouth corners. Nine panels, stable identity, hair intact. Visual keypose reference.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

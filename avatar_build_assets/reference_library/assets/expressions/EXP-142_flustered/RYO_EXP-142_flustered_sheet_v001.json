@@ -1,0 +1,31 @@
+{
+  "expression_id": "EXP-142",
+  "slug": "flustered",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "2ba11abb3534fa616027d381e569d6056c445c7361ac0d2e5883443c60b976cd",
+  "size_bytes": 2280590,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows lift unevenly; eyes dart sideways; mouth opens then closes in a hesitant smile.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; side-glance, worried lifted brows, open-mouth hesitation and recovery",
+      "Blush appears as material-effect reference, not facial geometry"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

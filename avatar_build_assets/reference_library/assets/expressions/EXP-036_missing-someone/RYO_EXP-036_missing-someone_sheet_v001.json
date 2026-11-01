@@ -1,0 +1,27 @@
+{
+  "id": "EXP-036",
+  "slug": "missing-someone",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-036_missing-someone/RYO_EXP-036_missing-someone_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "37b28b6977784536ffee41bb3382cdb568bdbd14e85844ea6acf17e16f25e84b",
+  "bytes": 2150631,
+  "review_status": "visually_reviewed",
+  "visual_review": "Distant soft gaze and wistful parted mouth settling into line, nine panels. Stable adult identity, wardrobe and full hair; no rig validation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

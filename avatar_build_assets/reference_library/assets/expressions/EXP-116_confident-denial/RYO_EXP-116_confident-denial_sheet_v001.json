@@ -1,0 +1,25 @@
+{
+  "id": "EXP-116",
+  "slug": "confident-denial",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "Brows stay level except one raised edge; eyes narrow slightly; lips press then release one corner upward.",
+  "path": "assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "3bb691b750bf0e22b0437c258f74b703fd492517bec97cfbfad3e95553fc19e3",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, stable adult identity/costume/accessories and neutral-peak-neutral movement reviewed. No obvious anatomy defect. Image key poses only; exact registration and model fit untested."
+}

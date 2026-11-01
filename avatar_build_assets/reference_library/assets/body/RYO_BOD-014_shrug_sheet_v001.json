@@ -1,0 +1,26 @@
+{
+  "asset_id": "BOD-014",
+  "slug": "shrug",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1646523,
+  "sha256": "dea89a13ca0407df5c20493f14631c2d447ce1b8f7b9c1b5cc850d03ab5966e9",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete fullbody panels; gesture progression and neutral recovery visible; identity/outfit consistent."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

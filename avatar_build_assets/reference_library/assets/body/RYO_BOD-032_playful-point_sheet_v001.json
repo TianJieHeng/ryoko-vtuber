@@ -1,0 +1,26 @@
+{
+  "asset_id": "BOD-032",
+  "slug": "playful-point",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1657992,
+  "sha256": "d903ba5c5c0141c6f1f7cc938558b036d25caf739fec73d058018239de54f7fb",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels; gesture readable; costume and identity coherent."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

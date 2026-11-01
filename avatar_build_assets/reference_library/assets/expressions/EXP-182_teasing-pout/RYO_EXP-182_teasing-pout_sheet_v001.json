@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-182",
+  "slug": "teasing-pout",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "98f975a3144e1053a63884f12d8c20caa675b31df22a68a8e45d36fabdb7c448",
+  "size_bytes": 2217145,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "One brow lifts; eyes narrow mischievously; lips push forward in an exaggerated but friendly pout.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; asymmetric brows, narrowed playful eyes and forward exaggerated puckered pout; neutral recovery, complete hairstyle."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

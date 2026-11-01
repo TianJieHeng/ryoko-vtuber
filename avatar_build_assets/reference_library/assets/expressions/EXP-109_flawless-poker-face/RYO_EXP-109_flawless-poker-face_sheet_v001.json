@@ -1,0 +1,25 @@
+{
+  "id": "EXP-109",
+  "slug": "flawless-poker-face",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "Brows and eyelids remain almost still; gaze fixes calmly; lips form a neutral straight seal.",
+  "path": "assets/expressions/EXP-109_flawless-poker-face/RYO_EXP-109_flawless-poker-face_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "76f8aa3253f53faeba6cdde969c5971c71782c418d59b3377ce015f52a144ffe",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, stable adult identity/costume/accessories and neutral-peak-neutral movement reviewed. No obvious anatomy defect. Image key poses only; exact registration and model fit untested. Poker face intentionally nearly static."
+}

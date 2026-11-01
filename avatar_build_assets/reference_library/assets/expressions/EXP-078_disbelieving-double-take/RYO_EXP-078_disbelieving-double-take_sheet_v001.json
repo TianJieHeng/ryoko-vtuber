@@ -1,0 +1,25 @@
+{
+  "id": "EXP-078",
+  "slug": "disbelieving-double-take",
+  "family": "Surprise and fear",
+  "distinctive_facial_intent": "One brow rises after the other; eyes shift away and return; lips move from flat to open.",
+  "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.png",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "0d8b47e0ce0f0065a882ca308215a64a909b690fe35a8ffa9df9d6130479b4a9",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "EXP-101"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, identity and costume maintained, expression change readable. Tight hair top clearance follows pilot; no obvious facial anatomy defect. Illustrated key poses, not pixel-registered animation."
+}

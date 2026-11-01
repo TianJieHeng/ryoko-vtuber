@@ -1,0 +1,32 @@
+{
+  "expression_id": "EXP-101",
+  "slug": "restrained-confidence",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "613d36318aeee0020b48984f2a1b24f693cbb8fae407e3965439329a912a553b",
+  "size_bytes": 2279185,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels present; consistent frontal framing and costume",
+      "Subtle neutral-to-confident closed-mouth smile arc is visible",
+      "Hair ornaments, amber eyes, mint hair, earrings and pendant retained"
+    ],
+    "limitations": [
+      "Illustrated key-pose reference only; no actual rig, interpolation or mesh validation",
+      "Subtle pose changes remain artist references rather than pixel-registered frames"
+    ]
+  },
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+}

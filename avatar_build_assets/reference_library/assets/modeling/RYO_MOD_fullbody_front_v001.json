@@ -1,0 +1,23 @@
+{
+  "asset_id": "MOD-002",
+  "role": "full body front neutral modeling reference",
+  "generator": "built-in image_gen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "mode": "RGB",
+  "sha256": "90b6ca93e8a168b4922b9b23c4824d48100505131a03a209d11fb977c59cb1f9",
+  "source_references": [
+    "REF-001",
+    "REF-006",
+    "MOD-001"
+  ],
+  "visual_review": "Complete head to heels, neutral frontal pose. Costume, silhouette and identity match source. Hands visible, no obvious anatomy defects. Not measured orthographic CAD; model fit untested.",
+  "status": "visual_review_passed_model_fit_untested",
+  "processing": "Original bytes copied unchanged."
+}

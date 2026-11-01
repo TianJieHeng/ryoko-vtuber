@@ -1,0 +1,27 @@
+{
+  "asset_id": "BOD-040",
+  "slug": "neutral-idle-sway",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1506533,
+  "sha256": "3b6111e156affd7b0305cad65e978e09efc9c6ef73b4f4671bc50c938c21b97a",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels, consistent outfit and identity.",
+    "Subtle idle sway; loop closure must be implemented on final rig, not pixel-identical frames."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

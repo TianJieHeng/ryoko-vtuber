@@ -1,0 +1,25 @@
+{
+  "id": "EXP-097",
+  "slug": "secondhand-embarrassment",
+  "family": "Disgust and discomfort",
+  "distinctive_facial_intent": "Inner brows lift; one eye squints more strongly; lips stretch into a pained closed smile.",
+  "path": "assets/expressions/EXP-097_secondhand-embarrassment/RYO_EXP-097_secondhand-embarrassment_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "fb2c7fd04562ce1910a78a166f797097e05dc4f41e535a939f7ba2337fbfef22",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine-panel arc, intended eye/brow/mouth acting and identity consistency reviewed. No gross anatomy defect. Illustrated key poses, not pixel-registered rendered animation."
+}

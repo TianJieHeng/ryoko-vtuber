@@ -1,0 +1,25 @@
+{
+  "id": "EXP-112",
+  "slug": "commanding-attention",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "Brows lower slightly; eyes open attentively; lips part into a firm clear speaking shape.",
+  "path": "assets/expressions/EXP-112_commanding-attention/RYO_EXP-112_commanding-attention_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "f111813d77ed173b555b8d91b835fb18e88e0737ab1ad64ef8eb99eda5a97fe7",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, stable adult identity/costume/accessories and neutral-peak-neutral movement reviewed. No obvious anatomy defect. Image key poses only; exact registration and model fit untested."
+}

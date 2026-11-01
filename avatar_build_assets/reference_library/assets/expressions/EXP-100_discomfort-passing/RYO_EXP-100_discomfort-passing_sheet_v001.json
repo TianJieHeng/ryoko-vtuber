@@ -1,0 +1,25 @@
+{
+  "id": "EXP-100",
+  "slug": "discomfort-passing",
+  "family": "Disgust and discomfort",
+  "distinctive_facial_intent": "Brows release from tension; eyes reopen slowly; puckered lips relax into a neutral exhale.",
+  "path": "assets/expressions/EXP-100_discomfort-passing/RYO_EXP-100_discomfort-passing_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "d40c9f1128267d9a22a1af0eab276648863ea344b52c6a2fdab1f3081b7614b5",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, stable adult identity/costume/accessories and neutral-peak-neutral movement reviewed. No obvious anatomy defect. Image key poses only; exact registration and model fit untested."
+}

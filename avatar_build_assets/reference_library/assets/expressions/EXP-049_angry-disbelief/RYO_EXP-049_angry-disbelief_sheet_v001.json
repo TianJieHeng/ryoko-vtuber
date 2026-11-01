@@ -1,0 +1,27 @@
+{
+  "id": "EXP-049",
+  "slug": "angry-disbelief",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-049_angry-disbelief/RYO_EXP-049_angry-disbelief_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "932a37edd76bc996b964f67ee771c5997abba56edece14b74c9dd1599dc4a439",
+  "bytes": 2196573,
+  "review_status": "visually_reviewed",
+  "visual_review": "Wide hard eyes and asymmetric challenging open mouth. Nine panels with stable identity and full hair. Visual reference not animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

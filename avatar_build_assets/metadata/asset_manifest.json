@@ -3,9 +3,9 @@
   "production_status": "in_progress",
   "scope": "additive corrected artwork, not UV-fitted runtime avatar",
   "reference_count": 10,
-  "generated_file_count": 42,
-  "individual_artwork_count": 34,
-  "source_atlas_count": 8,
+  "generated_file_count": 76,
+  "individual_artwork_count": 60,
+  "source_atlas_count": 16,
   "records": [
     {
       "path": "accessories/layers/RYO_ACC_belt_gold_buckle.png",
@@ -384,6 +384,120 @@
       "generation_tool": "built-in image_gen"
     },
     {
+      "path": "body/layers/blazer_back.png",
+      "sha256": "1673ba859d0bcf16c5e00759459b7556ea1faad0c204e72b9f6962e9f0ff3e4a",
+      "git_blob_sha": "ca5330563abb39141a9c3d6e62804daaafa946b2",
+      "bytes": 385430,
+      "dimensions": [
+        694,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 271330,
+        "partly_transparent_pixels": 343496,
+        "opaque_pixels": 752,
+        "nonzero_bbox": [
+          0,
+          17,
+          693,
+          887
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Blazer rear torso",
+      "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        1080,
+        0,
+        1774,
+        887
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/blazer_front_character_L.png",
+      "sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2",
+      "git_blob_sha": "5ef024e5bd408339a43f25661abcfcce1621d137",
+      "bytes": 272055,
+      "dimensions": [
+        500,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 223631,
+        "partly_transparent_pixels": 219226,
+        "opaque_pixels": 643,
+        "nonzero_bbox": [
+          0,
+          21,
+          500,
+          867
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Blazer front character left, pocket square",
+      "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        580,
+        0,
+        1080,
+        887
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/blazer_front_character_R.png",
+      "sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345",
+      "git_blob_sha": "f528bd33a9754671b0745e04b01b950f52d318cb",
+      "bytes": 281918,
+      "dimensions": [
+        580,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 292908,
+        "partly_transparent_pixels": 220884,
+        "opaque_pixels": 668,
+        "nonzero_bbox": [
+          13,
+          9,
+          580,
+          871
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Blazer front character right, gold button",
+      "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        580,
+        887
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
       "path": "body/layers/blouse_back.png",
       "sha256": "f2226cae2e338ad00781e1a8f61b6611a5de05e68b3b00beb6e1fef1aeffc067",
       "git_blob_sha": "959862cae102daad7b6897bbb5948c4f1c275146",
@@ -405,12 +519,8 @@
           1254
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_outfit_torso",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "generation_tool": "built-in image_gen",
+      "status": "accepted_source_layer",
+      "role": "White blouse back",
       "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
       "crop_bounds_xyxy": [
         644,
@@ -418,7 +528,12 @@
         1254,
         1254
       ],
-      "visual_review": "Body worker inspected neutral-grey composite; clean alpha. Torso only, sleeves are separate pending assets."
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
     },
     {
       "path": "body/layers/blouse_front.png",
@@ -442,12 +557,8 @@
           1230
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_outfit_torso",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "generation_tool": "built-in image_gen",
+      "status": "accepted_source_layer",
+      "role": "White open-collar blouse front",
       "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
       "crop_bounds_xyxy": [
         0,
@@ -455,7 +566,727 @@
         644,
         1254
       ],
-      "visual_review": "Body worker inspected neutral-grey composite; clean alpha. Torso only, sleeves are separate pending assets."
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/hand_dorsal_character_L.png",
+      "sha256": "d4330b068973277608f77651bb21ecedf27701fbc24dbe665850ba77ab26bb00",
+      "git_blob_sha": "14781d8165c713a147b822d2791a0bcd8f593605",
+      "bytes": 153596,
+      "dimensions": [
+        627,
+        627
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 295473,
+        "partly_transparent_pixels": 97096,
+        "opaque_pixels": 560,
+        "nonzero_bbox": [
+          1,
+          21,
+          613,
+          627
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Left hand back",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/hand_dorsal_character_R.png",
+      "sha256": "9811b72b49cc2704721bc059055085d23da364295f45fed8c392c8a0a9d4a410",
+      "git_blob_sha": "a6fad6eb4dec150e55b6a1476a074a6a6058976c",
+      "bytes": 151411,
+      "dimensions": [
+        627,
+        627
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 297542,
+        "partly_transparent_pixels": 94967,
+        "opaque_pixels": 620,
+        "nonzero_bbox": [
+          27,
+          29,
+          627,
+          627
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Right hand back",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/hand_palmar_character_L.png",
+      "sha256": "0e4ef48f6ad258bb4e8c0b42826fc2449cf694d9346c09b362dd2fd9064e2852",
+      "git_blob_sha": "1ec677cb96a670a6c844d116a5428323af0bac7a",
+      "bytes": 176016,
+      "dimensions": [
+        627,
+        627
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 273836,
+        "partly_transparent_pixels": 118731,
+        "opaque_pixels": 562,
+        "nonzero_bbox": [
+          1,
+          3,
+          611,
+          627
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Left palm",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/hand_palmar_character_R.png",
+      "sha256": "c287dbb6f6b10de46022a7ab464c475d5ace5453ab9f062f0e4afa87e32e22bb",
+      "git_blob_sha": "d7f724289c178141aa7f8f0bcf51500ef646fb58",
+      "bytes": 170715,
+      "dimensions": [
+        627,
+        627
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 278836,
+        "partly_transparent_pixels": 113656,
+        "opaque_pixels": 637,
+        "nonzero_bbox": [
+          23,
+          0,
+          627,
+          627
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Right palm",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/pump_front_character_L.png",
+      "sha256": "44ab8cf6f73378c7d40ac24a05705290983cc5c3d447ebfd4495596f565b3cdf",
+      "git_blob_sha": "2570fa0e43e90576331bbc25f713723c38b7be4a",
+      "bytes": 179736,
+      "dimensions": [
+        663,
+        680
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 343532,
+        "partly_transparent_pixels": 107088,
+        "opaque_pixels": 220,
+        "nonzero_bbox": [
+          0,
+          15,
+          633,
+          679
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Left pump front/top",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        663,
+        0,
+        1326,
+        680
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/pump_front_character_R.png",
+      "sha256": "886857dab95a021e65fcbbd5f25699a30e7e38a92f6ba5359c4f1d6eba3c4325",
+      "git_blob_sha": "09849040b68128d7239d413f4e8fc9fc0e152f06",
+      "bytes": 180446,
+      "dimensions": [
+        663,
+        680
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 342883,
+        "partly_transparent_pixels": 107724,
+        "opaque_pixels": 233,
+        "nonzero_bbox": [
+          17,
+          16,
+          663,
+          680
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Right pump front/top",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        663,
+        680
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/pump_outer_character_L.png",
+      "sha256": "8057d97eed144146d72ae710adab8002c52f482709739ff0ac34df92129c8585",
+      "git_blob_sha": "1ea9dd544c45f23b444f3d115891f456d0859b2e",
+      "bytes": 172025,
+      "dimensions": [
+        663,
+        507
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 234457,
+        "partly_transparent_pixels": 101463,
+        "opaque_pixels": 221,
+        "nonzero_bbox": [
+          1,
+          0,
+          634,
+          477
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Left pump outer side",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        663,
+        680,
+        1326,
+        1187
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/pump_outer_character_R.png",
+      "sha256": "08fc771928ece8f5f99c48302fe4c192621dabe254d6e1c3c470079422f3d988",
+      "git_blob_sha": "fbd557e4c9d85e17a9e561aa7c4148be24fb10a7",
+      "bytes": 167874,
+      "dimensions": [
+        663,
+        507
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 235713,
+        "partly_transparent_pixels": 100252,
+        "opaque_pixels": 176,
+        "nonzero_bbox": [
+          23,
+          0,
+          663,
+          488
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Right pump outer side",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        680,
+        663,
+        1187
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/sleeve_forearm_character_L.png",
+      "sha256": "079ceff58875abfe0f615dd4f8f238900b2b93038449e0b4b39f937b755baec7",
+      "git_blob_sha": "f0a585ca54c8991c474c60662ec2a49b645d910d",
+      "bytes": 357061,
+      "dimensions": [
+        384,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 222260,
+        "partly_transparent_pixels": 170956,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          1,
+          79,
+          334,
+          972
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character left forearm sleeve and cuff",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        1152,
+        0,
+        1536,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/sleeve_forearm_character_R.png",
+      "sha256": "e08ddd2274f421cc7b7fde6e477c741b37bae7e5f685eb2dd9c495d82787ac59",
+      "git_blob_sha": "245e98f7037e2790bd21f245f1c0d04aa9085a45",
+      "bytes": 357529,
+      "dimensions": [
+        384,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 223287,
+        "partly_transparent_pixels": 169929,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          1,
+          81,
+          384,
+          946
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character right forearm sleeve and cuff",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        384,
+        0,
+        768,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/sleeve_upper_character_L.png",
+      "sha256": "ea22d96e2f90c392cb2aa840bd16b0d69c5a4ad08d116adc84d99e061af59c16",
+      "git_blob_sha": "2bf96e8f375d647f0f6f2c429d4264d3708cf31b",
+      "bytes": 357574,
+      "dimensions": [
+        384,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 213333,
+        "partly_transparent_pixels": 179883,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          27,
+          381,
+          1024
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character left upper sleeve",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        768,
+        0,
+        1152,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/sleeve_upper_character_R.png",
+      "sha256": "ec9f3168059bebfe4fddbd8d363abbfbbd19c8d7452c9ad7863b2d23f21d28c4",
+      "git_blob_sha": "f46f9eed518ab2805cbe95d597ae6d052ef86bd9",
+      "bytes": 356103,
+      "dimensions": [
+        384,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 215205,
+        "partly_transparent_pixels": 178011,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          39,
+          382,
+          1024
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character right upper sleeve",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        384,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/trousers_leg_back_character_L.png",
+      "sha256": "882220d58ec88a10cfcbd8d8bc0c26972305d89d3d5bba3d2da4a25d9db2bc6f",
+      "git_blob_sha": "0b0b362aae8908882b2621a37bafe0e94da2b640",
+      "bytes": 326477,
+      "dimensions": [
+        268,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 209063,
+        "partly_transparent_pixels": 202585,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          1,
+          17,
+          268,
+          1512
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character left rear trouser leg",
+      "source_atlas": "body/sources/trousers_back_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        462,
+        0,
+        730,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/trousers_leg_back_character_R.png",
+      "sha256": "6854b457d0a1caa9f35ca4a757dcc02ff7ccff4a365f32d54956b84b007bfbb3",
+      "git_blob_sha": "92522fefc481aa50493dd0e416c710fb4d4157d5",
+      "bytes": 353578,
+      "dimensions": [
+        294,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 247789,
+        "partly_transparent_pixels": 203795,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          19,
+          291,
+          1504
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character right rear trouser leg",
+      "source_atlas": "body/sources/trousers_back_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        730,
+        0,
+        1024,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/trousers_leg_front_character_L.png",
+      "sha256": "fe7b88f37c2f912ca4e1c56fc212d9db325078f5083c14c4270952cc5ed95b67",
+      "git_blob_sha": "55c31a88632e5a20deea2b194c9e35efdf7419ad",
+      "bytes": 372558,
+      "dimensions": [
+        299,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 263172,
+        "partly_transparent_pixels": 196092,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          22,
+          299,
+          1448
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character left front trouser leg",
+      "source_atlas": "body/sources/trousers_front_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        725,
+        0,
+        1024,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/trousers_leg_front_character_R.png",
+      "sha256": "f0a69b326f850b2b36f39bcd080ec71532a40048077a4ca2f3c0f957b9eb8e89",
+      "git_blob_sha": "2fb35feb278a8c59f7d37b1c00f9bafa88049899",
+      "bytes": 356440,
+      "dimensions": [
+        280,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 233532,
+        "partly_transparent_pixels": 196548,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          8,
+          0,
+          280,
+          1492
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Character right front trouser leg",
+      "source_atlas": "body/sources/trousers_front_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        445,
+        0,
+        725,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/trousers_pelvis_back.png",
+      "sha256": "4119c18a9d1c3313652b22f1c01416b5545af6c38f0cd738f6c84fe1bfb77811",
+      "git_blob_sha": "72ab03c8624afd566bc14fd7989597dcee450094",
+      "bytes": 387480,
+      "dimensions": [
+        462,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 552302,
+        "partly_transparent_pixels": 157330,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          9,
+          19,
+          462,
+          1508
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Rear waistband and pelvis",
+      "source_atlas": "body/sources/trousers_back_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        462,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/layers/trousers_pelvis_front.png",
+      "sha256": "d1b2d648a7cdafd72d24e96b8e24aa567b3123680bc07f24a93509bdda1b8082",
+      "git_blob_sha": "20bee04409aadd82bed8a09d71c10f95dea342c9",
+      "bytes": 379542,
+      "dimensions": [
+        445,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 540389,
+        "partly_transparent_pixels": 143131,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          0,
+          440,
+          1458
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "Front waistband and pelvis",
+      "source_atlas": "body/sources/trousers_front_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        445,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/sources/blazer_panels_atlas_v001.png",
+      "sha256": "083072c0d177e07ceb59ded27f6b9cbb9dfb82900ee6b0d568d46698206881ea",
+      "git_blob_sha": "efd1cc3af46ab3d3f399dde9bb63dc70734316b1",
+      "bytes": 1082172,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 787869,
+        "partly_transparent_pixels": 783606,
+        "opaque_pixels": 2063,
+        "nonzero_bbox": [
+          13,
+          9,
+          1773,
+          887
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
     },
     {
       "path": "body/sources/blouse_front_back_atlas_v002.png",
@@ -481,11 +1312,206 @@
       },
       "status": "accepted_source_art",
       "role": "source_atlas",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "sha256": "25e87ef142d076760fe4cd5ab5086d7b93ee80537c5c4dc063e7a838a0bb04b0",
+      "git_blob_sha": "d62f6473932cffac495a741f676074d5a13e47b0",
+      "bytes": 700086,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1145687,
+        "partly_transparent_pixels": 424450,
+        "opaque_pixels": 2379,
+        "nonzero_bbox": [
+          23,
+          21,
+          1240,
+          1254
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Flattened against gray; clean genuine alpha, complete isolated components. Hands five digits each; shoes entire toe and heel.",
+      "limitations": "Not mesh-fitted UV or geometrically registered artwork.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/sources/pumps_front_side_atlas_v001.png",
+      "sha256": "87a4ef1ba70adf0d82d1387aef45048a8d37f6e8d2ed0f7d9e4ce9e2388ad44c",
+      "git_blob_sha": "7f70b0ab9bd9f241674548c38d84770aad159c0a",
+      "bytes": 757210,
+      "dimensions": [
+        1326,
+        1187
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1156585,
+        "partly_transparent_pixels": 416527,
+        "opaque_pixels": 850,
+        "nonzero_bbox": [
+          17,
+          15,
+          1297,
+          1168
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Flattened against gray; clean genuine alpha, complete isolated components. Hands five digits each; shoes entire toe and heel.",
+      "limitations": "Not mesh-fitted UV or geometrically registered artwork.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/sources/sleeve_segments_atlas_v001.png",
+      "sha256": "003bebc7adf5bed655e064e15be4213b8f5216a3d7bc9d58db49725d084ee744",
+      "git_blob_sha": "f26dce59463370f4ccc0e9798154b3f93e942df2",
+      "bytes": 1474434,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 874085,
+        "partly_transparent_pixels": 698779,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          27,
+          1486,
+          1024
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/sources/trousers_back_atlas_v001.png",
+      "sha256": "c38faec04fdac3ff5a6d145cdb915a5f5a6523ce91f3dcdbf478aa78105b39cf",
+      "git_blob_sha": "c237c5e6d0cc738a66b8603f7fd4f733142f143b",
+      "bytes": 1131512,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1009154,
+        "partly_transparent_pixels": 563710,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          9,
+          17,
+          1021,
+          1512
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "body/sources/trousers_front_atlas_v001.png",
+      "sha256": "4d528e07ee1a662c2b4b6a1b0e12b37dd3f7b1b5aee8cec4eb4c5a793070a304",
+      "git_blob_sha": "27526f96a75ccf4d6fc21a9541488bcb4ad80fdb",
+      "bytes": 1167978,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1037093,
+        "partly_transparent_pixels": 535771,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          0,
+          1024,
+          1492
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "hair/bun.png",
+      "sha256": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
+      "git_blob_sha": "3c458187cdfa73aa813b3b3adf1c5d999c902391",
+      "bytes": 702272,
+      "dimensions": [
+        887,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 456841,
+        "partly_transparent_pixels": 329791,
+        "opaque_pixels": 137,
+        "nonzero_bbox": [
+          21,
+          9,
+          887,
+          887
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_hair_component",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "usage": "Looped updo component; attach above rear scalp.",
+      "generation_tool": "built-in image_gen",
       "registration_status": "requires_placement_and_fitting",
       "uv_fitted": false,
       "assembly_tested": false,
-      "generation_tool": "built-in image_gen",
-      "visual_review": "Body worker approved true alpha front/back blouse atlas."
+      "source_atlas": "hair/sources/bun_tail_atlas.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        887,
+        887
+      ]
     },
     {
       "path": "hair/front_fringe.png",
@@ -510,15 +1536,223 @@
         ]
       },
       "status": "accepted_source_art",
-      "role": "isolated_hair_fringe",
-      "visual_review": "Parent inspected actual image and neutral-grey composite; accepted sage cel-style silhouette and transparent exterior.",
+      "role": "isolated_hair_component",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
       "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "usage": "Frontal fringe; manually fit to existing hair surface or cards.",
       "generation_tool": "built-in image_gen",
-      "generation_output": "exec-5bfd6fd1-9737-4506-bbda-956b1d48bfaf.png",
-      "prompt_summary": "Isolate front fringe, no face or jewelry; complete hidden roots; preserve sage cel style and silhouette.",
       "registration_status": "requires_placement_and_fitting",
       "uv_fitted": false,
       "assembly_tested": false
+    },
+    {
+      "path": "hair/rear_scalp_nape.png",
+      "sha256": "ef6a2e95ba701d5dd243a80c3ecf28d553a8143c1442933161df4ea08387bd95",
+      "git_blob_sha": "e6da3ea770b4e85b7a28692617562fb70b77a392",
+      "bytes": 1291833,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 904409,
+        "partly_transparent_pixels": 668571,
+        "opaque_pixels": 108,
+        "nonzero_bbox": [
+          0,
+          64,
+          1292,
+          1199
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_hair_component",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "usage": "Rear-view scalp/nape source; not a frontal overlay.",
+      "generation_tool": "built-in image_gen",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false
+    },
+    {
+      "path": "hair/short_tail.png",
+      "sha256": "3d281b9384212561473fcd39c6ee886385652438e54f53dea3293a5fb2b07ecc",
+      "git_blob_sha": "8dde453339df63e10217976d6146a42979a0cf82",
+      "bytes": 516686,
+      "dimensions": [
+        887,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 547260,
+        "partly_transparent_pixels": 239332,
+        "opaque_pixels": 177,
+        "nonzero_bbox": [
+          0,
+          23,
+          883,
+          887
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_hair_component",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "usage": "Short tail component; pivot at top root.",
+      "generation_tool": "built-in image_gen",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "source_atlas": "hair/sources/bun_tail_atlas.png",
+      "crop_bounds_xyxy": [
+        887,
+        0,
+        1774,
+        887
+      ]
+    },
+    {
+      "path": "hair/sources/bun_tail_atlas.png",
+      "sha256": "8ded0b49f2d9cc63f906b55bd338d41e218762bb1ef3910f8119e05ecf317ff5",
+      "git_blob_sha": "bba114369ab6e8ce975473162094221a1469f570",
+      "bytes": 1330328,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1004101,
+        "partly_transparent_pixels": 569123,
+        "opaque_pixels": 314,
+        "nonzero_bbox": [
+          21,
+          9,
+          1770,
+          887
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+      "generation_tool": "built-in image_gen",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false
+    },
+    {
+      "path": "hair/sources/side_locks_atlas.png",
+      "sha256": "4b516ffef5674158c06e9c39f067a13ad02919198dc46394fb5bb8ab79a52be3",
+      "git_blob_sha": "255e2df320934e2855080a94f61c4d3f6651280d",
+      "bytes": 1357314,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1315924,
+        "partly_transparent_pixels": 256940,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          71,
+          29,
+          1466,
+          1006
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+      "generation_tool": "built-in image_gen",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false
+    },
+    {
+      "path": "hair/temple_lock_character_left.png",
+      "sha256": "ced2c8e50075b08ecd388a251a64a85e4b862a431c06342b2072d7c7e7be1c9c",
+      "git_blob_sha": "58ea62fcf3aa323b052b2b4528a449976de81417",
+      "bytes": 543991,
+      "dimensions": [
+        768,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 705168,
+        "partly_transparent_pixels": 81264,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          81,
+          41,
+          698,
+          986
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_hair_component",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "usage": "Shorter lock on viewer-right; character left.",
+      "generation_tool": "built-in image_gen",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "source_atlas": "hair/sources/side_locks_atlas.png",
+      "crop_bounds_xyxy": [
+        768,
+        0,
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "hair/temple_lock_character_right.png",
+      "sha256": "c7017f48460b74effca0ebcaa1141bd8171c355947450928c2c9af96db23f171",
+      "git_blob_sha": "9caf246a8c4ebbf31d8d2786d35e393650ac73d0",
+      "bytes": 741458,
+      "dimensions": [
+        768,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 610756,
+        "partly_transparent_pixels": 175676,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          71,
+          29,
+          718,
+          1006
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_hair_component",
+      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
+      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "usage": "Longer lock on viewer-left; character right.",
+      "generation_tool": "built-in image_gen",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "source_atlas": "hair/sources/side_locks_atlas.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        768,
+        1024
+      ]
     },
     {
       "path": "head/layers/RYO_HEAD_brow_L_v001.png",

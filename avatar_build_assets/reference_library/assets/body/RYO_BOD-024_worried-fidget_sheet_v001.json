@@ -1,0 +1,26 @@
+{
+  "asset_id": "BOD-024",
+  "slug": "worried-fidget",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1475040,
+  "sha256": "18c04ddd97b7b4d172070d375fc2cf139684a6c3af462dafc5706c078dc13236",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels, clear emotional posture progression and neutral recovery, identity/costume consistent. Hand articulation remains illustrative reference."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

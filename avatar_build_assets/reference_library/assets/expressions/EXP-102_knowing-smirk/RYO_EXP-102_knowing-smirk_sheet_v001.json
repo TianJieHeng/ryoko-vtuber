@@ -1,0 +1,25 @@
+{
+  "id": "EXP-102",
+  "slug": "knowing-smirk",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "One brow arches lightly; eyes narrow knowingly; a closed one-sided smile develops slowly.",
+  "path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "bd508949519c18329e81852e36206ee181d57c0a40480763e8549d7931a550ad",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, stable adult identity/costume/accessories and neutral-peak-neutral movement reviewed. No obvious anatomy defect. Image key poses only; exact registration and model fit untested."
+}

@@ -1,0 +1,9 @@
+{
+  "source_commit": "0ddc526115c7f91eed59e48a468bab5bdddfdc52",
+  "source_tree_sha": "1f6e2481b74ddfed5331d40ab9c84adbbec327ff",
+  "mount_path": "avatar_build_assets/reference_library",
+  "file_count": 3408,
+  "method": "Git tree reuse preserves exact blobs and all original relative paths; no images transcoded or regenerated.",
+  "scope": "Completed original reference-and-expression source pack. Does not include later vtuber/ builder workspace.",
+  "verified_source_tree_not_truncated": true
+}

@@ -1,0 +1,14 @@
+{
+  "asset_id": "CTL-vowelChart",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "d55faa3b1bd445757ec72d804e5e89d6053dce52718d4b5d8dfefce073bc6194",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine-panel mouth-shape COMPARISON chart, not temporal animation. Row-major neutral/AH/EE/OO/EH/OH/rest/M-B-P closure/open-jaw. Distinct aperture shapes visible; mapping requires actual target lip-sync implementation. No runtime compatibility claim.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right"
+}

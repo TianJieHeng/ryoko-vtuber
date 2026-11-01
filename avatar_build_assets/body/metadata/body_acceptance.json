@@ -1,0 +1,391 @@
+{
+  "status": "accepted_source_art_complete",
+  "generator": "builtin image_gen",
+  "accepted_assets": [
+    {
+      "path": "body/sources/blouse_front_back_atlas_v002.png",
+      "role": "Generated component atlas",
+      "status": "accepted_source_art",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred."
+    },
+    {
+      "path": "body/layers/blouse_front.png",
+      "role": "White open-collar blouse front",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        644,
+        1254
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/blouse_back.png",
+      "role": "White blouse back",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
+      "crop_bounds_xyxy": [
+        644,
+        0,
+        1254,
+        1254
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/sources/blazer_panels_atlas_v001.png",
+      "role": "Generated component atlas",
+      "status": "accepted_source_art",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred."
+    },
+    {
+      "path": "body/layers/blazer_front_character_R.png",
+      "role": "Blazer front character right, gold button",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        580,
+        887
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/blazer_front_character_L.png",
+      "role": "Blazer front character left, pocket square",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        580,
+        0,
+        1080,
+        887
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/blazer_back.png",
+      "role": "Blazer rear torso",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        1080,
+        0,
+        1774,
+        887
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/sources/sleeve_segments_atlas_v001.png",
+      "role": "Generated component atlas",
+      "status": "accepted_source_art",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred."
+    },
+    {
+      "path": "body/layers/sleeve_upper_character_R.png",
+      "role": "Character right upper sleeve",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        384,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/sleeve_forearm_character_R.png",
+      "role": "Character right forearm sleeve and cuff",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        384,
+        0,
+        768,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/sleeve_upper_character_L.png",
+      "role": "Character left upper sleeve",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        768,
+        0,
+        1152,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/sleeve_forearm_character_L.png",
+      "role": "Character left forearm sleeve and cuff",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        1152,
+        0,
+        1536,
+        1024
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/sources/trousers_front_atlas_v001.png",
+      "role": "Generated component atlas",
+      "status": "accepted_source_art",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred."
+    },
+    {
+      "path": "body/layers/trousers_pelvis_front.png",
+      "role": "Front waistband and pelvis",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/trousers_front_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        445,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/trousers_leg_front_character_R.png",
+      "role": "Character right front trouser leg",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/trousers_front_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        445,
+        0,
+        725,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/trousers_leg_front_character_L.png",
+      "role": "Character left front trouser leg",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/trousers_front_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        725,
+        0,
+        1024,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/sources/trousers_back_atlas_v001.png",
+      "role": "Generated component atlas",
+      "status": "accepted_source_art",
+      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
+      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred."
+    },
+    {
+      "path": "body/layers/trousers_pelvis_back.png",
+      "role": "Rear waistband and pelvis",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/trousers_back_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        462,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/trousers_leg_back_character_L.png",
+      "role": "Character left rear trouser leg",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/trousers_back_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        462,
+        0,
+        730,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/layers/trousers_leg_back_character_R.png",
+      "role": "Character right rear trouser leg",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/trousers_back_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        730,
+        0,
+        1024,
+        1536
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
+      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically."
+    },
+    {
+      "path": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "role": "Generated component atlas",
+      "status": "accepted_source_art",
+      "visual_review": "Flattened against gray; clean genuine alpha, complete isolated components. Hands five digits each; shoes entire toe and heel.",
+      "limitations": "Not mesh-fitted UV or geometrically registered artwork."
+    },
+    {
+      "path": "body/layers/hand_dorsal_character_R.png",
+      "role": "Right hand back",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    },
+    {
+      "path": "body/layers/hand_dorsal_character_L.png",
+      "role": "Left hand back",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    },
+    {
+      "path": "body/layers/hand_palmar_character_R.png",
+      "role": "Right palm",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    },
+    {
+      "path": "body/layers/hand_palmar_character_L.png",
+      "role": "Left palm",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    },
+    {
+      "path": "body/sources/pumps_front_side_atlas_v001.png",
+      "role": "Generated component atlas",
+      "status": "accepted_source_art",
+      "visual_review": "Flattened against gray; clean genuine alpha, complete isolated components. Hands five digits each; shoes entire toe and heel.",
+      "limitations": "Not mesh-fitted UV or geometrically registered artwork."
+    },
+    {
+      "path": "body/layers/pump_front_character_R.png",
+      "role": "Right pump front/top",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        663,
+        680
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    },
+    {
+      "path": "body/layers/pump_front_character_L.png",
+      "role": "Left pump front/top",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        663,
+        0,
+        1326,
+        680
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    },
+    {
+      "path": "body/layers/pump_outer_character_R.png",
+      "role": "Right pump outer side",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        680,
+        663,
+        1187
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    },
+    {
+      "path": "body/layers/pump_outer_character_L.png",
+      "role": "Left pump outer side",
+      "status": "accepted_source_layer",
+      "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
+      "crop_bounds_xyxy": [
+        663,
+        680,
+        1326,
+        1187
+      ],
+      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
+      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers."
+    }
+  ],
+  "prompt_files": [
+    "body/metadata/blouse_prompt.txt",
+    "body/metadata/blouse_clean_prompt.txt",
+    "body/metadata/blazer_prompt.txt",
+    "body/metadata/sleeves_prompt.txt",
+    "body/metadata/trousers_front_prompt.txt",
+    "body/metadata/trousers_back_prompt.txt",
+    "body/metadata/hands_prompt.txt",
+    "body/metadata/pumps_prompt.txt"
+  ],
+  "excluded": [
+    "body/sources/blouse_front_back_atlas_v001.png"
+  ],
+  "qa_report": "body/metadata/body_integrity.json"
+}

@@ -1,0 +1,26 @@
+{
+  "asset_id": "BOD-018",
+  "slug": "yawn-and-stretch",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1715041,
+  "sha256": "f4aed6c5c2f22074f54b72eb130d18a1603ef5184340269a4da85e719f4cd208",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete fullbody panels; gesture progression and neutral recovery visible; identity/outfit consistent."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

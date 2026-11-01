@@ -1,0 +1,27 @@
+{
+  "id": "EXP-132",
+  "slug": "searching-memory",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-132_searching-memory/RYO_EXP-132_searching-memory_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "d5e357ebae52590c39814845873d40eb55a2c30150bf04a0cfd8aa8cf07920b3",
+  "bytes": 2331982,
+  "review_status": "visually_reviewed_pending_independent_QA",
+  "visual_review": "Nine facial panels; specific searching gaze or one-eye detail squint with return. Coherent identity and costume. Top hair sits tightly against upper border in checking-detail sheet; needs independent framing review.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "references/originals/ryokov1.png"
+  ]
+}

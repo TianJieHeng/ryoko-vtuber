@@ -1,0 +1,27 @@
+{
+  "id": "EXP-019",
+  "slug": "celebratory-triumph",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-019_celebratory-triumph/RYO_EXP-019_celebratory-triumph_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1357
+  ],
+  "export_dimensions": [
+    1159,
+    1357
+  ],
+  "sha256": "c3c9385d4b2168d9af0d0b0e6ee7e67ea8e5dc18778b2e4c7e3bd936f14e6299",
+  "bytes": 2299964,
+  "review_status": "visually_reviewed",
+  "visual_review": "Nine panels visually inspected, readable specified motion arc and neutral return, consistent identity and costume. Approximate drawn muscle targets rather than rig validation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "expression_id": "EXP-156",
+  "slug": "self-conscious-pout",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "28679e11306d865e5ae3c3f31ee40aea61f8b40f3765ffc5b4dc552252350dd8",
+  "size_bytes": 2185491,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Inner brows rise; eyes lower; lips push forward slightly with no anger.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; raised inner brows, lowered eyes and small non-angry pout arc",
+      "Complete hair silhouette with improved margin"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

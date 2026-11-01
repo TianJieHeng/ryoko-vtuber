@@ -1,0 +1,25 @@
+{
+  "id": "EXP-091",
+  "slug": "overly-sweet-taste",
+  "family": "Disgust and discomfort",
+  "distinctive_facial_intent": "Brows lift then tighten; eyes squint gently; mouth puckers around a restrained smile-grimace.",
+  "path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "8c362b8ccad51b393d72d552499b872514d5365158c0e3428fb91b9cfdb261e9",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine-panel expression arc, identity and accessory consistency reviewed; no gross anatomy defects. Illustrated keyposes only."
+}

@@ -1,0 +1,1305 @@
+{
+  "primary_count": 50,
+  "assets": [
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.png",
+      "asset_id": "BOD-001",
+      "category": "body",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "size_bytes": 1646884,
+      "sha256": "fb2bf3a04ff32adb7dce5d57fecffac86bbb9438ec83818dc59cfb8d2bc06507",
+      "sidecar_path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.json",
+      "prompt_path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "fb2bf3a04ff32adb7dce5d57fecffac86bbb9438ec83818dc59cfb8d2bc06507",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine complete head-to-heels panels. Coherent arms-crossed arc and release, costume maintained. Visual acting reference, not validated skeletal animation."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.png",
+      "asset_id": "BOD-002",
+      "category": "body",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "size_bytes": 1494868,
+      "sha256": "1273d8e01e6fcc02ea6fdc97bdfdebca4a2a24c3662a81b65ec4174eb175093f",
+      "sidecar_path": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.json",
+      "prompt_path": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "1273d8e01e6fcc02ea6fdc97bdfdebca4a2a24c3662a81b65ec4174eb175093f",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine head-to-heels panels: raised index finger wag and release; costume coherent. Finger articulation illustrative only."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.png",
+      "asset_id": "BOD-003",
+      "category": "body",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "size_bytes": 1548772,
+      "sha256": "dee1a387260a22252cccd775dbe4cf09a58099c140c1605ed55e30310fb65179",
+      "sidecar_path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.json",
+      "prompt_path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "dee1a387260a22252cccd775dbe4cf09a58099c140c1605ed55e30310fb65179",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine head-to-heels panels: hands to hips and mild forward lean, coherent release."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_sheet_v002.png",
+      "asset_id": "CTL-blink",
+      "category": "controls",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2175803,
+      "sha256": "94785c037b0dc654be2b73e0ac46729205260b97a7da4e09ab41cf3e94eaa521",
+      "sidecar_path": "assets/controls/RYO_CTL_blink_sheet_v002.json",
+      "prompt_path": "assets/controls/RYO_CTL_blink_sheet_v002.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "94785c037b0dc654be2b73e0ac46729205260b97a7da4e09ab41cf3e94eaa521",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Parent approved nine-panel reference; center three poses hold closure, not calibrated weights."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.png",
+      "asset_id": "CTL-browInnerRaise",
+      "category": "controls",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2073437,
+      "sha256": "74e754c7d0364df74c71c2a7e69b597c0587e1c0fe5246ea87aa06ef4f856c59",
+      "sidecar_path": "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.json",
+      "prompt_path": "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "74e754c7d0364df74c71c2a7e69b597c0587e1c0fe5246ea87aa06ef4f856c59",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: isolated inner brow lift, mouth stays mostly neutral; reference control not calibrated blendshape."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_sheet_v001.png",
+      "asset_id": "CTL-browLower",
+      "category": "controls",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2152355,
+      "sha256": "06f62639556f33823ce33a8c83187d7deae1c417f1cd991a607dac84347d105c",
+      "sidecar_path": "assets/controls/RYO_CTL_browLower_sheet_v001.json",
+      "prompt_path": "assets/controls/RYO_CTL_browLower_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "06f62639556f33823ce33a8c83187d7deae1c417f1cd991a607dac84347d105c",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Bilateral lowered brows, neutral recovery, stable identity. Approximate muscle isolation."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_sheet_v001.png",
+      "asset_id": "CTL-browRaise",
+      "category": "controls",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2161085,
+      "sha256": "dae9b43bc136d3379c40226eb667aaed1c709e2221730e149eb0b9fecef9c99e",
+      "sidecar_path": "assets/controls/RYO_CTL_browRaise_sheet_v001.json",
+      "prompt_path": "assets/controls/RYO_CTL_browRaise_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "dae9b43bc136d3379c40226eb667aaed1c709e2221730e149eb0b9fecef9c99e",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Nine panels with bilateral brow lift, stable identity and outfit. Approximate progression, not calibrated weights."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.png",
+      "asset_id": "CTL-closedLipSmile",
+      "category": "controls",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2183806,
+      "sha256": "624f8c186fe7773abcde09573e5977da0c99940975dfc2df7df4e3588f29e313",
+      "sidecar_path": "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.json",
+      "prompt_path": "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "624f8c186fe7773abcde09573e5977da0c99940975dfc2df7df4e3588f29e313",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Nine panels, closed-lip smile without teeth at peak, neutral recovery; stable identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_sheet_v001.png",
+      "asset_id": "CTL-jawOpen",
+      "category": "controls",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2182178,
+      "sha256": "364f71dc631b0ed37c7e0ef04f210447f065b0fd230ece84cd0b0f027b244a10",
+      "sidecar_path": "assets/controls/RYO_CTL_jawOpen_sheet_v001.json",
+      "prompt_path": "assets/controls/RYO_CTL_jawOpen_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "364f71dc631b0ed37c7e0ef04f210447f065b0fd230ece84cd0b0f027b244a10",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Jaw opens through visible mouth interior then closes. Identity and hair maintained; not rig validation."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_sheet_v001.png",
+      "asset_id": "CTL-winkLeft",
+      "category": "controls",
+      "native_dimensions": [
+        1261,
+        1247
+      ],
+      "mode": "RGB",
+      "size_bytes": 2099049,
+      "sha256": "6e55a3a0bc6022bc9eed4bb6c5e32e9a5fd3611287bb72ab865b5e5bd316d157",
+      "sidecar_path": "assets/controls/RYO_CTL_winkLeft_sheet_v001.json",
+      "prompt_path": "assets/controls/RYO_CTL_winkLeft_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "6e55a3a0bc6022bc9eed4bb6c5e32e9a5fd3611287bb72ab865b5e5bd316d157",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Independent pixel review: nine panels, viewer-right eye closes correctly, fixed costume and visible hair. Closure timing is approximate."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_sheet_v001.png",
+      "asset_id": "CTL-winkRight",
+      "category": "controls",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2118979,
+      "sha256": "6c66c831547a1025ee30944e18a4c9e0f1b2a59b2770a576c959c44e610cc812",
+      "sidecar_path": "assets/controls/RYO_CTL_winkRight_sheet_v001.json",
+      "prompt_path": "assets/controls/RYO_CTL_winkRight_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "6c66c831547a1025ee30944e18a4c9e0f1b2a59b2770a576c959c44e610cc812",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Character-right eye (viewer-left) closes independently and reopens, consistent identity/costume. Approximate visual progression, not measured weights."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/details/RYO_DET-001_hair-construction_v002.png",
+      "asset_id": "DET-001",
+      "category": "details",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "size_bytes": 2246035,
+      "sha256": "d25b681cd4d4fd4728a186294ebbc1f9a4a13e0c033668f9f1be8d1571fa1bc9",
+      "sidecar_path": "assets/details/RYO_DET-001_hair-construction_v002.json",
+      "prompt_path": "assets/details/RYO_DET-001_hair-construction_v002.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "d25b681cd4d4fd4728a186294ebbc1f9a4a13e0c033668f9f1be8d1571fa1bc9",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Parent approved hair construction reference after pendant correction."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/details/RYO_DET-002_gold-accessories_v003.png",
+      "asset_id": "DET-002",
+      "category": "details",
+      "native_dimensions": [
+        1055,
+        1491
+      ],
+      "mode": "RGB",
+      "size_bytes": 1579358,
+      "sha256": "424cdb12995415d4a2b1a951bf528cf1656645eed13db6ad1d2f3a10831309e3",
+      "sidecar_path": "assets/details/RYO_DET-002_gold-accessories_v003.json",
+      "prompt_path": "assets/details/RYO_DET-002_gold-accessories_v003.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "424cdb12995415d4a2b1a951bf528cf1656645eed13db6ad1d2f3a10831309e3",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Corrected double-bar earrings match production master; two plain gold sticks and green diamond pendant. Enlarged art, not measured jewelry geometry."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/details/RYO_DET-003_outfit-construction_v003.png",
+      "asset_id": "DET-003",
+      "category": "details",
+      "native_dimensions": [
+        1448,
+        1086
+      ],
+      "mode": "RGB",
+      "size_bytes": 1611857,
+      "sha256": "26e7e7d3fc264646dd5e043fcbf767d8e36a6066d404c5c15f8f3e19c9f9a943",
+      "sidecar_path": "assets/details/RYO_DET-003_outfit-construction_v003.json",
+      "prompt_path": "assets/details/RYO_DET-003_outfit-construction_v003.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "26e7e7d3fc264646dd5e043fcbf767d8e36a6066d404c5c15f8f3e19c9f9a943",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Corrected rear gathered tail now consistent with production rear view; outfit details and green pendant maintained."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/details/RYO_DET-004_hands-pumps_v002.png",
+      "asset_id": "DET-004",
+      "category": "details",
+      "native_dimensions": [
+        1218,
+        1292
+      ],
+      "mode": "RGB",
+      "size_bytes": 1713854,
+      "sha256": "0dcec24265c69b6a8b340cb153a2d24a4307be186c233ce0fc1295d3ba45b14e",
+      "sidecar_path": "assets/details/RYO_DET-004_hands-pumps_v002.json",
+      "prompt_path": "assets/details/RYO_DET-004_hands-pumps_v002.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "0dcec24265c69b6a8b340cb153a2d24a4307be186c233ce0fc1295d3ba45b14e",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Four coherent hand views and pointed black pumps. All cuffs now three gold buttons. Articulation is illustrative; not validated hand mesh."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_sheet_v001.png",
+      "asset_id": "RYO_EXP-001_bright-welcome_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2232182,
+      "sha256": "4fd4a23858c0dd4391d5c38d526bc64710c4af6a96fe7a122c77883d73cc9576",
+      "sidecar_path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "4fd4a23858c0dd4391d5c38d526bc64710c4af6a96fe7a122c77883d73cc9576",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Upper-teeth smile develops at peak then releases to neutral; consistent face/wardrobe/accessories."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_sheet_v001.png",
+      "asset_id": "EXP-002",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2254918,
+      "sha256": "76ab1be9b8e3dc12447dd9045e9356452da12182be70700b5f06eac2faff9efd",
+      "sidecar_path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "76ab1be9b8e3dc12447dd9045e9356452da12182be70700b5f06eac2faff9efd",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Independent pixel review: nine panels, warm smile peaks with eye closure, returns neutral. Identity coherent; hair close to panel border, no important feature missing."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_sheet_v002.png",
+      "asset_id": "RYO_EXP-003_quiet-contentment_sheet_v002",
+      "category": "expressions",
+      "native_dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "size_bytes": 2141820,
+      "sha256": "4636be0c5bf2df17302b9ea131aa498a74100a7d81062beb1c73d1f6d19e5007",
+      "sidecar_path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_sheet_v002.json",
+      "prompt_path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_sheet_v002.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "4636be0c5bf2df17302b9ea131aa498a74100a7d81062beb1c73d1f6d19e5007",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Revised relaxed closed-eye smile clearly distinguishes quiet contentment from restrained confidence. Uneven grid boundaries require detected cell extraction."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_sheet_v001.png",
+      "asset_id": "RYO_EXP-004_delighted-discovery_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2261713,
+      "sha256": "8508dc57af20ff97bb1a348ed391650accf41cd758daf435ea3a344ab9a2619b",
+      "sidecar_path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "8508dc57af20ff97bb1a348ed391650accf41cd758daf435ea3a344ab9a2619b",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Nine panels, eyes widen and open smile develops in readable delight, returns neutral. Identity stable."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.png",
+      "asset_id": "RYO_EXP-005_hearty-laughter_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2227753,
+      "sha256": "c66958c430e23c5340305a37249ad04d302c129bff7461d88c1a93019f915df7",
+      "sidecar_path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "c66958c430e23c5340305a37249ad04d302c129bff7461d88c1a93019f915df7",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Closed-eye broad open laughter arc clearly distinct from ordinary smile. Stable identity/costume."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.png",
+      "asset_id": "RYO_EXP-006_suppressed-giggle_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2249206,
+      "sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
+      "sidecar_path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Restrained asymmetric smile and cheek blush express held-back amusement. Stable identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.png",
+      "asset_id": "RYO_EXP-007_relieved-smile_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "size_bytes": 2213184,
+      "sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+      "sidecar_path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Nine panels, concerned onset followed by exhale and relieved smile; slightly uneven grid but no cropped face."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.png",
+      "asset_id": "RYO_EXP-008_proud-of-you_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "size_bytes": 2155018,
+      "sha256": "f94da7402faca5113d19417323a831e20e0e75bf120be4e5f76a3dba3015089d",
+      "sidecar_path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "f94da7402faca5113d19417323a831e20e0e75bf120be4e5f76a3dba3015089d",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: restrained proud closed smile with softened lids."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_sheet_v001.png",
+      "asset_id": "RYO_EXP-009_adoring-gaze_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "size_bytes": 2272841,
+      "sha256": "a9284ec6c8ff00b1fbb73a6033c0f953ca87437ecb12427305dc05e02617d227",
+      "sidecar_path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "a9284ec6c8ff00b1fbb73a6033c0f953ca87437ecb12427305dc05e02617d227",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: soft adoring brow and blush, parted smile; coherent return."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_sheet_v001.png",
+      "asset_id": "RYO_EXP-010_cheerful-agreement_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "size_bytes": 2306799,
+      "sha256": "81bc945e109e26dfc21bfb4c8a39d6e2a1d342b2a498034f8b5f6f7e056d4e83",
+      "sidecar_path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "81bc945e109e26dfc21bfb4c8a39d6e2a1d342b2a498034f8b5f6f7e056d4e83",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: cheerful small smile with subtle chin motion. Similar low-intensity smiles require downstream timing differentiation."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_sheet_v001.png",
+      "asset_id": "RYO_EXP-011_pleasantly-surprised_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "size_bytes": 2332423,
+      "sha256": "fd856ebc96f58d6fe79bafe4dedb40e69c349440ce72d3d20da9f65685512a1c",
+      "sidecar_path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "fd856ebc96f58d6fe79bafe4dedb40e69c349440ce72d3d20da9f65685512a1c",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: wide eyes and open surprised mouth into delighted smile."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_sheet_v001.png",
+      "asset_id": "EXP-041",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2244910,
+      "sha256": "5a268dedbc3ca14463b4c3267a3da7f0c94516c6576854ad645c8f160db7f04f",
+      "sidecar_path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "5a268dedbc3ca14463b4c3267a3da7f0c94516c6576854ad645c8f160db7f04f",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Controlled brow narrowing and tightened mouth, neutral recovery; distinct from smile pilots, coherent identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_sheet_v001.png",
+      "asset_id": "EXP-061",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2248191,
+      "sha256": "91df47914f1bd8301b9adbd5b6e98c03621d4239b72883f46d6a309d8c46b043",
+      "sidecar_path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "91df47914f1bd8301b9adbd5b6e98c03621d4239b72883f46d6a309d8c46b043",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Nine panels, wide eyes and rounded open mouth produce clear surprise arc, returns neutral."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_sheet_v001.png",
+      "asset_id": "RYO_EXP-071_worried-anticipation_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2252275,
+      "sha256": "ea64568ffdf2ed8669ecf5685ad2a35c206c8a5c52140ca2456ef01be28cf1a8",
+      "sidecar_path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "ea64568ffdf2ed8669ecf5685ad2a35c206c8a5c52140ca2456ef01be28cf1a8",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Raised inner brows and tense small mouth readable as apprehension. Stable identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.png",
+      "asset_id": "RYO_EXP-072_shocked-recognition_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2229135,
+      "sha256": "7cf623464bd232d87ea1caf12d01e48d0ecb3b02ba3e1c0ed8d1433b71925c33",
+      "sidecar_path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "7cf623464bd232d87ea1caf12d01e48d0ecb3b02ba3e1c0ed8d1433b71925c33",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Wide fixed eyes and parted mouth for recognition, distinct from broad O-mouth surprise."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.png",
+      "asset_id": "RYO_EXP-073_near-miss-relief_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2231158,
+      "sha256": "1b90619030abefbd76ce0d0023f269a6efa89c839552a0b124499d9511295c97",
+      "sidecar_path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "1b90619030abefbd76ce0d0023f269a6efa89c839552a0b124499d9511295c97",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Worried opening into relieved exhale/smile. Illustrated sweat accents are reference effects, not separable delivered overlays or facial topology."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_sheet_v001.png",
+      "asset_id": "RYO_EXP-074_awkward-jump-scare_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2227926,
+      "sha256": "d275aa4c424d8ab266acf86fd12b40539a460dc0c3ad417c809411c28bfe80d3",
+      "sidecar_path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "d275aa4c424d8ab266acf86fd12b40539a460dc0c3ad417c809411c28bfe80d3",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Asymmetric squeezed eye and clenched teeth at peak clearly distinguish startle. Sweat marks are reference effects only."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_sheet_v001.png",
+      "asset_id": "RYO_EXP-075_fearful-denial_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2177692,
+      "sha256": "f1db8fa2f3a668d9460269d1a71d3f277fd83b537f30b6792556597c1dec41f0",
+      "sidecar_path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "f1db8fa2f3a668d9460269d1a71d3f277fd83b537f30b6792556597c1dec41f0",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels. Tensed lips with visible teeth and worried brows. Subtle distinction from worried anticipation; ensure runtime differentiation."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.png",
+      "asset_id": "RYO_EXP-076_overwhelmed-stare_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2259750,
+      "sha256": "35b59433852f8449de7e14d7858fd14d0b41b5f2bb21cd1a403dd928d9722207",
+      "sidecar_path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "35b59433852f8449de7e14d7858fd14d0b41b5f2bb21cd1a403dd928d9722207",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels, held wide stare and parted lips, coherent neutral return. Stable identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_sheet_v001.png",
+      "asset_id": "RYO_EXP-077_startled-embarrassment_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2241272,
+      "sha256": "6022e45f16f3ba99298743a2e29ed1c42fdc2739c96d203c556ff13a1be5d81e",
+      "sidecar_path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "6022e45f16f3ba99298743a2e29ed1c42fdc2739c96d203c556ff13a1be5d81e",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels, wide-eye blush followed by shy lowered look. Stable identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.png",
+      "asset_id": "RYO_EXP-078_disbelieving-double-take_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2277048,
+      "sha256": "0d8b47e0ce0f0065a882ca308215a64a909b690fe35a8ffa9df9d6130479b4a9",
+      "sidecar_path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "0d8b47e0ce0f0065a882ca308215a64a909b690fe35a8ffa9df9d6130479b4a9",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Nine panels, gaze shifts and raised brow convey double take while head remains frontal."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_sheet_v001.png",
+      "asset_id": "RYO_EXP-079_quiet-apprehension_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2237094,
+      "sha256": "c4c1ffd9a5b148ff8500b20ea9d01ff4da6aab43bb18ff39ac4cbd62905631a1",
+      "sidecar_path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "c4c1ffd9a5b148ff8500b20ea9d01ff4da6aab43bb18ff39ac4cbd62905631a1",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Nine panels, subtle worried brows and tightened closed lips. Intended low-intensity expression; similar family to worried anticipation."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_sheet_v001.png",
+      "asset_id": "RYO_EXP-080_brave-through-fear_sheet_v001",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2147720,
+      "sha256": "ae8dd82f0eb74c0af2b9536a2e4b2b6ea9830b6adf8092f1a0cb4972f715e92e",
+      "sidecar_path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "ae8dd82f0eb74c0af2b9536a2e4b2b6ea9830b6adf8092f1a0cb4972f715e92e",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: apprehension changes to restrained determined brow; subtle arc, coherent identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.png",
+      "asset_id": "EXP-101",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2279185,
+      "sha256": "613d36318aeee0020b48984f2a1b24f693cbb8fae407e3965439329a912a553b",
+      "sidecar_path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "613d36318aeee0020b48984f2a1b24f693cbb8fae407e3965439329a912a553b",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Parent approved nine-panel subtle confidence arc; not pixel-registered animation."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_sheet_v001.png",
+      "asset_id": "EXP-141",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2263724,
+      "sha256": "0f8d189f7e5a80e59a54a65cc35fa9b6cd8e8fd9b3a5238fca1b6a3570747537",
+      "sidecar_path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "0f8d189f7e5a80e59a54a65cc35fa9b6cd8e8fd9b3a5238fca1b6a3570747537",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Independent pixel review: nine panels, widened eyes to blushing shy smile, returns neutral; coherent identity."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_sheet_v001.png",
+      "asset_id": "EXP-142",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2280590,
+      "sha256": "2ba11abb3534fa616027d381e569d6056c445c7361ac0d2e5883443c60b976cd",
+      "sidecar_path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "2ba11abb3534fa616027d381e569d6056c445c7361ac0d2e5883443c60b976cd",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels, clear averted gaze, strong blush and tense open mouth, returns neutral. No pose drift."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_sheet_v001.png",
+      "asset_id": "EXP-143",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2209639,
+      "sha256": "458d1e75d37b411d121938be34fc72e553552060309fe9b4448a1403fd594e1d",
+      "sidecar_path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "458d1e75d37b411d121938be34fc72e553552060309fe9b4448a1403fd594e1d",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: shy softened smile and blush with inner brow lift."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_sheet_v001.png",
+      "asset_id": "EXP-144",
+      "category": "expressions",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "size_bytes": 2254268,
+      "sha256": "406bdc60b3183f741a15346fdaa33207dc62acb25b89c8b79f83b0ebd1dce603",
+      "sidecar_path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_sheet_v001.json",
+      "prompt_path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_sheet_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "406bdc60b3183f741a15346fdaa33207dc62acb25b89c8b79f83b0ebd1dce603",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA",
+        "note": "Nine panels: sideways eye movement and embarrassed blush, coherent return."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_eye-details_v001.png",
+      "asset_id": "MOD-006",
+      "category": "modeling",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "size_bytes": 2150423,
+      "sha256": "288f78f6a9e64016f42ad012cd4d224d220ad72bb64384de39c4b6435f4635b5",
+      "sidecar_path": "assets/modeling/RYO_MOD_eye-details_v001.json",
+      "prompt_path": "assets/modeling/RYO_MOD_eye-details_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "288f78f6a9e64016f42ad012cd4d224d220ad72bb64384de39c4b6435f4635b5",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Parent actual-pixel review accepted six-panel amber-eye/lash/closure detail reference. Not nine-frame sheet; no grid extraction."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.png",
+      "asset_id": "MOD-005",
+      "category": "modeling",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "size_bytes": 1622829,
+      "sha256": "15a10bc82b34149aa468549b09d24ec8d845c57ee48bd4d60e8c27c24215dd61",
+      "sidecar_path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.json",
+      "prompt_path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "15a10bc82b34149aa468549b09d24ec8d845c57ee48bd4d60e8c27c24215dd61",
+        "decision": "accepted_reference_art",
+        "reviewer": "independent visual QA or parent as noted",
+        "note": "Parent actual-pixel review accepted fullbody relaxed A-pose, identity consistent. Angles illustrative not measured; hands not articulation study."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_back_v001.png",
+      "asset_id": "MOD-004",
+      "category": "modeling",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "size_bytes": 1547624,
+      "sha256": "5896f5ab11734922b07533c6a88d5c809e0516643c8eea9ec328a61cb45231d1",
+      "sidecar_path": "assets/modeling/RYO_MOD_fullbody_back_v001.json",
+      "prompt_path": "assets/modeling/RYO_MOD_fullbody_back_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "5896f5ab11734922b07533c6a88d5c809e0516643c8eea9ec328a61cb45231d1",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Parent reviewed rear view; reference art, not measured geometry."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "asset_id": "MOD-002",
+      "category": "modeling",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "size_bytes": 1634911,
+      "sha256": "90b6ca93e8a168b4922b9b23c4824d48100505131a03a209d11fb977c59cb1f9",
+      "sidecar_path": "assets/modeling/RYO_MOD_fullbody_front_v001.json",
+      "prompt_path": "assets/modeling/RYO_MOD_fullbody_front_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "90b6ca93e8a168b4922b9b23c4824d48100505131a03a209d11fb977c59cb1f9",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Parent reviewed complete head-to-heels silhouette and costume."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_side_v001.png",
+      "asset_id": "MOD-003",
+      "category": "modeling",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "size_bytes": 1560859,
+      "sha256": "81f5fd24ed47b6ee4ed18d096ed4747e6b724cbeef871344267e938d203e33c9",
+      "sidecar_path": "assets/modeling/RYO_MOD_fullbody_side_v001.json",
+      "prompt_path": "assets/modeling/RYO_MOD_fullbody_side_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "81f5fd24ed47b6ee4ed18d096ed4747e6b724cbeef871344267e938d203e33c9",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Parent reviewed side view; illustrative projection, not measured geometry."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_mouth-details_v001.png",
+      "asset_id": "MOD-007",
+      "category": "modeling",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "size_bytes": 1845902,
+      "sha256": "9187c84f55010b970b4a384483a00d1dddd055e9e008593ff384f4fa90df3748",
+      "sidecar_path": "assets/modeling/RYO_MOD_mouth-details_v001.json",
+      "prompt_path": "assets/modeling/RYO_MOD_mouth-details_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "9187c84f55010b970b4a384483a00d1dddd055e9e008593ff384f4fa90df3748",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent actual-pixel review",
+        "note": "Parent reviewed six-panel mouth design proposal. Hidden teeth/tongue anatomy newly proposed, not verified mesh or UV."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+      "asset_id": "MOD-001",
+      "category": "modeling",
+      "native_dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "size_bytes": 1908074,
+      "sha256": "c7d174b6d35094278ba357b8ad86e3e8a34d5e9f7a997b3480e09e6dcd2fc529",
+      "sidecar_path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.json",
+      "prompt_path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.prompt.txt",
+      "structural_errors": [],
+      "visual_review": {
+        "sha256": "c7d174b6d35094278ba357b8ad86e3e8a34d5e9f7a997b3480e09e6dcd2fc529",
+        "decision": "accepted_reference_art",
+        "reviewer": "parent and/or independent visual QA",
+        "note": "Parent reviewed source identity; independent audit rechecked against REF-001."
+      },
+      "status": "accepted_reference_art",
+      "primary_image_count": 1,
+      "implemented_rig": false,
+      "model_fit_tested": false,
+      "publication_batch": "001"
+    }
+  ]
+}

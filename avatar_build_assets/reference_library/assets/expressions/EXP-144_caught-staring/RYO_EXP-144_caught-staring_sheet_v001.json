@@ -1,0 +1,31 @@
+{
+  "expression_id": "EXP-144",
+  "slug": "caught-staring",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "406bdc60b3183f741a15346fdaa33207dc62acb25b89c8b79f83b0ebd1dce603",
+  "size_bytes": 2254268,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows jump; eyes quickly avert; lips part then press into a thin embarrassed line.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; widened eyes avert sideways at embarrassed peak with tightened lips then recover",
+      "Blush is material-effect cue not face geometry"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-browRaise",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "dae9b43bc136d3379c40226eb667aaed1c709e2221730e149eb0b9fecef9c99e",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels verified; bilateral brow arch rises to center peak and returns, mouth closed and eyes open. Full hair/pins framed. Subtle noncalibrated visual control reference.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

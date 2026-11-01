@@ -1,0 +1,27 @@
+{
+  "id": "EXP-037",
+  "slug": "self-doubt",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-037_self-doubt/RYO_EXP-037_self-doubt_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "507644df40116484d2d6c89bced254e16961520700598c29a5b7ee012b889f67",
+  "bytes": 2209080,
+  "review_status": "visually_reviewed",
+  "visual_review": "Sideways lower gaze and asymmetric mouth draw into anxious pout. Nine panels, intact hair and stable identity; visual reference only.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

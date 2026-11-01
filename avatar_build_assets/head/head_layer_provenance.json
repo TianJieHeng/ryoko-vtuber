@@ -551,7 +551,9 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "audit_source_path": "head/sources/audit_only/RYO_HEAD_rejected_viseme_v001.png",
+      "source_disposition": "whole atlas rejected; isolated plain empty cavity crop accepted"
     },
     {
       "path": "head/layers/RYO_HEAD_face_base_v001.png",

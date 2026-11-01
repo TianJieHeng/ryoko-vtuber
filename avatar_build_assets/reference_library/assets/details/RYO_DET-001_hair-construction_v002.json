@@ -1,0 +1,22 @@
+{
+  "asset_id": "DET-001",
+  "purpose": "hair construction visual reference",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1536,
+    1024
+  ],
+  "export_dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "d25b681cd4d4fd4728a186294ebbc1f9a4a13e0c033668f9f1be8d1571fa1bc9",
+  "bytes": 2246035,
+  "visual_review": "accepted",
+  "review_notes": [
+    "Six views of consistent tied hairstyle, two gold pins, sage color and asymmetric fringe.",
+    "Targeted second imagegen pass corrected all visible pendants to green diamond shape.",
+    "Not a UV map or mesh-fitted asset; no Blender validation."
+  ],
+  "status": "generated_reviewed"
+}

@@ -1,0 +1,28 @@
+{
+  "primary_sources": 273,
+  "categories": {
+    "body": 40,
+    "controls": 22,
+    "details": 4,
+    "expressions": 200,
+    "modeling": 7
+  },
+  "distinct_expression_ids": 200,
+  "individual_panels": 2352,
+  "expression_peak_copies": 200,
+  "total_asset_pngs": 2825,
+  "unavailable_controls": [
+    {
+      "id": "CTL-jawLeft",
+      "status": "not_produced",
+      "reason": "Two nine-panel and one targeted three-panel generations did not show clear isolated lateral jaw movement. Rejected rather than mislabelled as usable."
+    },
+    {
+      "id": "CTL-lowerLipDepress",
+      "status": "not_produced",
+      "reason": "Nine-panel and targeted three-panel attempts did not reliably isolate lower-lip depression and lower-teeth exposure from upper teeth. Rejected rather than teaching incorrect mouth anatomy."
+    }
+  ],
+  "errors": [],
+  "rig_or_mesh_validation_performed": false
+}

@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-189",
+  "slug": "overdramatic-shock",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "f20805453e1d4dcfedf0f76c1172cc9286f99c5d73eea0a66d97ce56c7f26751",
+  "size_bytes": 2188181,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows arch to extremes; eyes open very wide; jaw drops in a large vertical O.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; dramatic arched brows, very wide eyes and large vertical open O jaw-drop at peak; neutral return, full hairstyle."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

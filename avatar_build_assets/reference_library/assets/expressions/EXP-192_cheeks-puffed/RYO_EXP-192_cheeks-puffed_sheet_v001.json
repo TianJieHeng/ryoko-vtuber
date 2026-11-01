@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-192",
+  "slug": "cheeks-puffed",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "815f2c2b6099e925b8de8668bd7c2f08751725d9cf3479673308cdc049f6267e",
+  "size_bytes": 2230540,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows lower playfully; eyes stay direct; sealed lips and expanded cheeks form an exaggerated protest.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; visibly expanded cheeks with sealed lips, direct eyes and lowered playful brows; deflation and neutral recovery; full hairstyle."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

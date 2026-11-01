@@ -1,0 +1,27 @@
+{
+  "asset_id": "BOD-035",
+  "slug": "excited-bounce",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1684270,
+  "sha256": "7b18830512ab044bfe07f27bc1dfd9da962597214c1774695c6b63b4116addf2",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels figures; clear motion progression and coherent outfit.",
+    "Knee dip and rise illustrated; final rig must set grounded foot contacts and bounce curve."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

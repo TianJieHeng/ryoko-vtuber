@@ -1,0 +1,25 @@
+{
+  "id": "EXP-084",
+  "slug": "unpleasant-smell",
+  "family": "Disgust and discomfort",
+  "distinctive_facial_intent": "Nose-side cheeks lift; eyes squint; upper lip curls while mouth corners fall.",
+  "path": "assets/expressions/EXP-084_unpleasant-smell/RYO_EXP-084_unpleasant-smell_sheet_v001.png",
+  "native_dimensions": [
+    1230,
+    1278
+  ],
+  "export_dimensions": [
+    1230,
+    1278
+  ],
+  "sha256": "ba2e9c39e0db51736485f860bc13dfec5c59aa4aacdfe316da4e8f56565ab323",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine-panel arc, identity, costume and accessory fidelity reviewed. Headroom improved from master/original conditioning. Readable distinct nose/lip/brow acting. Illustrated references not pixel-registered animation."
+}

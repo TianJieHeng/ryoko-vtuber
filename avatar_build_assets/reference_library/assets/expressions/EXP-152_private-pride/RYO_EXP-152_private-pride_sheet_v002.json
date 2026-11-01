@@ -1,0 +1,31 @@
+{
+  "expression_id": "EXP-152",
+  "slug": "private-pride",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "46d16e1eabfe7ea709252b0e3c47707613df3a8f6a41483e740981866ead6408",
+  "size_bytes": 2103122,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows lift faintly; gaze drops with soft lids; a small smile is deliberately suppressed.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; soft lowered gaze and suppressed small smile",
+      "v002 selected to retain complete hair silhouette; v001 was not accepted"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

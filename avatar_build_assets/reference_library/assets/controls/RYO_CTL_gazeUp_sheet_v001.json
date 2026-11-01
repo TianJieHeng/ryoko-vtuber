@@ -1,0 +1,14 @@
+{
+  "asset_id": "CTL-gazeUp",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "1d16491769b16a71ee53b390b60a8496cb68436ffa999530c34c9903093dbb1b",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels. Irises move upward exposing lower sclera at center, return frontal. Head remains front. Full hairpins visible.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right"
+}

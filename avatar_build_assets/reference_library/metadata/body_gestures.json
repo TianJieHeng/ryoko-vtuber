@@ -1,0 +1,1528 @@
+{
+  "version": 1,
+  "scope": "40 supplemental full-body gesture motion reference sheets; not rigged animations",
+  "layout": "3x3 left-to-right top-to-bottom; nine key poses; full figure head-to-heels every panel",
+  "assets": [
+    {
+      "id": "BOD-001",
+      "slug": "arms-crossed-stern",
+      "intent": "She gradually folds both arms across her torso, holds a stern upright scolding stance with narrowed brows, then unfolds and settles.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "fb2bf3a04ff32adb7dce5d57fecffac86bbb9438ec83818dc59cfb8d2bc06507",
+      "publication_batch": "001"
+    },
+    {
+      "id": "BOD-002",
+      "slug": "finger-wag",
+      "intent": "She lifts her right hand with index finger extended, gently wags it left then right in admonishment, then lowers it. Other fingers naturally curled.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "1273d8e01e6fcc02ea6fdc97bdfdebca4a2a24c3662a81b65ec4174eb175093f",
+      "publication_batch": "001"
+    },
+    {
+      "id": "BOD-003",
+      "slug": "hands-on-hips",
+      "intent": "She places both hands on hips, elbows out, gives a firm scolding look, then releases hands down.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "dee1a387260a22252cccd775dbe4cf09a58099c140c1605ed55e30310fb65179",
+      "publication_batch": "001"
+    },
+    {
+      "id": "BOD-004",
+      "slug": "palm-up-question",
+      "intent": "She raises one palm upward at waist level as if asking for an explanation, tilts her head slightly, then lowers it.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-004_palm-up-question_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "b0653cf4ae735abea78676ed2879d075230ba06a3efcbd0bb8005efd80731c9e",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-005",
+      "slug": "point-down-get-moving",
+      "intent": "She points her right index finger downward beside her hip as if ordering someone to get moving, gives one deliberate downward emphasis, then releases.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-005_point-down-get-moving_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "14a7ee53870eaa442d808774816a052d34bcb85eaaf051f2d0ec0599a989f143",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-006",
+      "slug": "arms-folded-foot-tap",
+      "intent": "She folds arms and taps one foot once impatiently, keeping balance in heels, then unfolds and returns to neutral.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-006_arms-folded-foot-tap_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "94b0c43d0a8c9775230c06158c237912f3d5b64f77f21e00331aaf2815f10300",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-007",
+      "slug": "disappointed-head-shake",
+      "intent": "She lowers her chin and slowly shakes her head left then right in disappointment, shoulders still, then faces front again.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-007_disappointed-head-shake_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "eb4a8b033e73e1a7255d5edf1ae6855150b6a1807dbab86ac1c6e7ed9a9f8be2",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-008",
+      "slug": "stop-palm",
+      "intent": "She raises a hand palm outward to politely but firmly signal stop, holds it, then lowers it.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-008_stop-palm_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "d8074c1f8558625ee42222599906a42abfb4ca3fbd3cd8cf6b2799d1d001c23c",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-009",
+      "slug": "beckon-come-here",
+      "intent": "She raises a palm facing inward and curls fingers toward herself once to beckon someone closer, then lowers hand.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-009_beckon-come-here_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "e441528049b2a3bc96b22f6fbfdf47cc987909f5740eecc34153138ad31845dd",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-010",
+      "slug": "eyebrow-raised-weight-shift",
+      "intent": "She shifts weight to one hip while raising an eyebrow and looking knowingly at viewer, then returns to centered neutral.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-010_eyebrow-raised-weight-shift_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "11452fb28d1c58c26a84ea9afc7dc6bc8f79e7d43e376c5244828d45f902391f",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-011",
+      "slug": "greeting-wave",
+      "intent": "She lifts right hand and waves a small friendly greeting left-right, then lowers it.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-011_greeting-wave_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "f940d9f2c99d8b7f0352baaa62d342015621a84e9372765c4c41a82b14aa21fa",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-012",
+      "slug": "courteous-bow",
+      "intent": "She brings hands neatly together before her thighs and inclines upper body in a courteous small bow, then straightens.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-012_courteous-bow_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "c016d8494b90d9fe395106f2567e24385604f55dc8e71ac21ebb8efd127d33f6",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-013",
+      "slug": "nod-approval",
+      "intent": "She gives a small deliberate approving nod, with relaxed smile, then returns chin to neutral.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-013_nod-approval_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "45e476761a0ff867e39dc40674f67e05fa3e2b19acf76de3fc2c7d6e30be34a4",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-014",
+      "slug": "shrug",
+      "intent": "She lifts both shoulders and both open palms in a modest shrug, then lowers both.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-014_shrug_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "dea89a13ca0407df5c20493f14631c2d447ce1b8f7b9c1b5cc850d03ab5966e9",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-015",
+      "slug": "shy-hands-behind-back",
+      "intent": "She moves hands behind her back, inclines head shyly without changing adult proportions, then releases to neutral.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-015_shy-hands-behind-back_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "37eff40c66a6c78c89bd6ae8ef01ec6c11d783c477d387395e813b14e020c5cc",
+      "publication_batch": "002"
+    },
+    {
+      "id": "BOD-016",
+      "slug": "delighted-hand-clasp",
+      "intent": "She brings both hands together at chest height in delighted clasp, smiles, then lowers hands.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-016_delighted-hand-clasp_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "12f449e0f38926eaa8b06fba6d2e29ce6d2226d2888d87658c287d602b7bc659",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-017",
+      "slug": "laugh-hand-to-mouth",
+      "intent": "She raises one hand lightly before her mouth while laughing softly, shoulders rise a little, then settles.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-017_laugh-hand-to-mouth_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "f0a31073658fe3461968b6fd49ac35b4de20b2d65d2241d61a91bd2ceafaee12",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-018",
+      "slug": "yawn-and-stretch",
+      "intent": "She covers a yawn briefly then lifts elbows in a restrained stretch; keep all hands and feet within frame, then returns neutral.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-018_yawn-and-stretch_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "f4aed6c5c2f22074f54b72eb130d18a1603ef5184340269a4da85e719f4cd208",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-019",
+      "slug": "sleepy-lean",
+      "intent": "She droops shoulders and tilts head drowsily with eyes half closed, weight balanced, then straightens.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-019_sleepy-lean_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "fc863b2bacf6048df6727546abf1e220200c114d0c93f46d365dde104b22f5b8",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-020",
+      "slug": "surprised-backstep",
+      "intent": "She reacts with raised brows and small backward step, hands lift slightly in surprise, then steps back to original stance.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-020_surprised-backstep_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "20a33cf675c61cfd3b8d5ec804ee3dce536643f051197c48c1a751c25f9ff5a0",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-021",
+      "slug": "facepalm",
+      "intent": "She raises one palm to forehead for a restrained facepalm, pauses, then removes hand and returns neutral.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-021_facepalm_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "138d4ea3751ba450655008e275aafac3cdabd13996174c82d7d8be0309ce2c96",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-022",
+      "slug": "thoughtful-chin",
+      "intent": "She rests right index/knuckles lightly at chin in thought, looks slightly aside, then releases hand.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-022_thoughtful-chin_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "db7e4f8086b5f5172acdc406a82b990e0171648e3fef7399c2003b83fdb20ac3",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-023",
+      "slug": "proud-stance",
+      "intent": "She straightens posture and lifts chin in a proud confident stance, one hand rests at hip, then relaxes.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-023_proud-stance_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "90050c7c2cd308aa9ab434aa3785a7093e33d7e453fcbc946104fc98b9ae512e",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-024",
+      "slug": "worried-fidget",
+      "intent": "She fidgets fingers together at waist, brows worried, then releases hands.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-024_worried-fidget_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "18c04ddd97b7b4d172070d375fc2cf139684a6c3af462dafc5706c078dc13236",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-025",
+      "slug": "sad-shoulders",
+      "intent": "She drops shoulders and lowers gaze sadly, pauses, then lifts gaze and straightens.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-025_sad-shoulders_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "174cbb5d98a226c6fe98d98192b5ad1f71cac731dea60f10c0458f28747afd00",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-026",
+      "slug": "reassuring-open-palm",
+      "intent": "She extends one open palm gently forward at waist height in reassurance, softens expression, then withdraws.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-026_reassuring-open-palm_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "aed9da1ccb323fc42d73154c5692bb7632c92f1250423c455249bc955671af29",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-027",
+      "slug": "dismissive-wave",
+      "intent": "She gives a small outward dismissive wave at shoulder level with a skeptical look, then lowers hand.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-027_dismissive-wave_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "ef8a1461aaa815992fd55edd9dee0513f7612bbf51ce9542653d807ae236b7df",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-028",
+      "slug": "small-victory-fist",
+      "intent": "She curls right hand into a small victory fist near shoulder, smiles with satisfaction, then relaxes.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-028_small-victory-fist_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "9e7c4843c58c09965d2227100d61103e17f3726aa8de002d0d9d8febc74a8c6d",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-029",
+      "slug": "impatient-time-gesture",
+      "intent": "She glances at her bare left wrist and taps it once with right index as a time gesture; do not invent a wristwatch, then lowers both hands.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-029_impatient-time-gesture_sheet_v002.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "c69009b251873f9ef590209c4d5883b70e1171e3898994ac2a18402c7ce8c940",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-030",
+      "slug": "attentive-lean",
+      "intent": "She leans upper torso slightly forward with attentive eyes and hands relaxed, then straightens.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-030_attentive-lean_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "e3630725f5c195e8a18871b7526b12a87b017042eb72af8f3933b2e1f2a90e6e",
+      "publication_batch": "003"
+    },
+    {
+      "id": "BOD-031",
+      "slug": "skeptical-arm-cross",
+      "intent": "She crosses arms slowly and tilts head with skeptical raised eyebrow, then uncrosses.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-031_skeptical-arm-cross_sheet_v002.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "0df55c4914ddf4a03699f623d504b0a5141b526a32a11d5f1736e10921cf25b2",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-032",
+      "slug": "playful-point",
+      "intent": "She points playfully toward viewer with one hand and smiles, then pulls hand back and lowers it.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-032_playful-point_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "d903ba5c5c0141c6f1f7cc938558b036d25caf739fec73d058018239de54f7fb",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-033",
+      "slug": "both-palms-explanation",
+      "intent": "She opens both palms at waist height to explain a point, alternately emphasizes left and right palm, then lowers both.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-033_both-palms-explanation_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "0a4e8a19f26ffc03db2ac60f92c40231dd5dd8bb5e99c1e112c8e92f9ab438d0",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-034",
+      "slug": "apologetic-bow",
+      "intent": "She places hands together in front and makes a slightly deeper apologetic bow than greeting bow, with contrite expression, then straightens.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-034_apologetic-bow_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "a4d311cdfc91ead2839ef58dcd7409ad248b3249092b1a855b90d5f5b4c7bfd9",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-035",
+      "slug": "excited-bounce",
+      "intent": "She bends knees a little then gives a tiny excited rise on toes without a jump, hands near chest, then settles safely in heels.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-035_excited-bounce_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "7b18830512ab044bfe07f27bc1dfd9da962597214c1774695c6b63b4116addf2",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-036",
+      "slug": "startled-hands-up",
+      "intent": "She raises both open hands beside shoulders in startled reaction, eyes wide, then lowers them.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-036_startled-hands-up_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "7fff042e0eac66a9d68a90f3136c2902ccaa21214b9c98f23a8b1f80edbd1a16",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-037",
+      "slug": "relieved-exhale",
+      "intent": "She exhales in relief, shoulders drop and one hand rests briefly on upper chest, then returns neutral.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-037_relieved-exhale_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "d5fe19c638547b5a9c55edce3388b9f96e13c28d87e853f08573e03c91aeb22f",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-038",
+      "slug": "relaxed-weight-shift",
+      "intent": "She shifts weight smoothly onto one hip with relaxed shoulders and soft face, then centers again.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-038_relaxed-weight-shift_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "d43feeb65dc191f0d2cc4c09daef48115c8bef6f1aa77a5d5faf6548d78a1814",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-039",
+      "slug": "farewell-wave",
+      "intent": "She raises one hand into a gentle slower farewell wave, soft smile, then lowers hand.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-039_farewell-wave_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "cc29fe76def57f328efa12f83f9d01c1395c3c7b0d827ad00f898fca4152c710",
+      "publication_batch": "004"
+    },
+    {
+      "id": "BOD-040",
+      "slug": "neutral-idle-sway",
+      "intent": "She performs a subtle breathing and weight-sway idle cycle, arms resting naturally, no large gestures or changes.",
+      "status": "published_reference_art",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": true,
+      "validation": "image-reference only; no Blender rig or motion curve validation",
+      "path": "assets/body/RYO_BOD-040_neutral-idle-sway_sheet_v001.png",
+      "native_dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "3b6111e156affd7b0305cad65e978e09efc9c6ef73b4f4671bc50c938c21b97a",
+      "publication_batch": "004"
+    }
+  ],
+  "published_count": 40
+}
