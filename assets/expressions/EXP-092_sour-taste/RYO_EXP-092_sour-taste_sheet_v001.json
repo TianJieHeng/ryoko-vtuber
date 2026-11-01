@@ -1,0 +1,25 @@
+{
+  "id": "EXP-092",
+  "slug": "sour-taste",
+  "family": "Disgust and discomfort",
+  "distinctive_facial_intent": "Brows draw sharply together; eyes squeeze closed; lips purse tightly and cheeks pull inward.",
+  "path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "86046730c036258a3e25bcb31a4bc9227ede62a5c668fd3d7fba6ca5e9acf155",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine-panel expression arc, identity and accessory consistency reviewed; no gross anatomy defects. Illustrated keyposes only."
+}

@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-155",
+  "slug": "embarrassed-frustration",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "797050399a9dc265005b2dcf45d31dffa45f9d007b90266702d09a5edf1c5421",
+  "size_bytes": 2225493,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows angle inward; eyes glance aside; teeth show through a tight irritated smile.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; irritated inward brows and side glance with tight tooth-bearing mouth; embarrassment blush"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

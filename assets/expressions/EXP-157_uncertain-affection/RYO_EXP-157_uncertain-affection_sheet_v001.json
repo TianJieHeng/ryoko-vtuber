@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-157",
+  "slug": "uncertain-affection",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "b209d8bbc4c098955be9410b57a0131472a512a98daf2b5d44b22c3d3c286fd5",
+  "size_bytes": 2190362,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "One inner brow rises; gaze hesitates before returning; lips part into a tentative half smile.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; uncertain raised brow, hesitant gaze and slightly parted tentative smile at peak"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

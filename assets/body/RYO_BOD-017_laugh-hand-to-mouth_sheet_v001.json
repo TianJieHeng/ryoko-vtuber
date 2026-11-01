@@ -1,0 +1,26 @@
+{
+  "asset_id": "BOD-017",
+  "slug": "laugh-hand-to-mouth",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1697703,
+  "sha256": "f0a31073658fe3461968b6fd49ac35b4de20b2d65d2241d61a91bd2ceafaee12",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete fullbody panels; gesture progression and neutral recovery visible; identity/outfit consistent."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

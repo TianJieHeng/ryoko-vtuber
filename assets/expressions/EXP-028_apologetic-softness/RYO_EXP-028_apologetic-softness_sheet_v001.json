@@ -1,0 +1,27 @@
+{
+  "id": "EXP-028",
+  "slug": "apologetic-softness",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-028_apologetic-softness/RYO_EXP-028_apologetic-softness_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "b479e0bddc1caee984bf6ce38f04f8cfcdd6e4b0cffcb2457791685bdeaa431c",
+  "bytes": 2283264,
+  "review_status": "visually_reviewed",
+  "visual_review": "Raised inner brows, tentative small downturned mouth and pleading eyes; nine panels and identity preserved.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

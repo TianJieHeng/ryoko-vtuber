@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-161",
+  "slug": "sleepy",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "8284aa280149fd4a61cffd1d5f0fd35e0efbebce6310916d4b433cda1f30933a",
+  "size_bytes": 2176501,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows rest low; heavy upper lids droop; lips part slightly with relaxed jaw.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; drooping upper lids, resting brows and slightly parted lips give sleepy arc"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

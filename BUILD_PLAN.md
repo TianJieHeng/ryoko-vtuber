@@ -21,9 +21,9 @@ The supplied references depict a green/mint-haired businesswoman with amber/gold
 | 1 | Modeling reference pack | G | Seven modeling and four detail sources published in batch 001; further work remains |
 | 2 | Five expression pilots and control prototype references | G | Five pilot sheets and initial controls published as reference art |
 | 3 | Blender facial feasibility prototype | User's Kimi workflow | Planned |
-| 4 | Complete facial-control reference pack | G | 19 control source sheets published; pack not complete or certified |
-| 5 | 200 expression performances and motion sheets | G | 55 expression sheets published; 145 remain planned/not published |
-| 6 | Visual pack QA and production handoff | G | Batch 001 visually reviewed; full-pack handoff not complete |
+| 4 | Complete facial-control reference pack | G | 22 control source sheets published; pack not complete or certified |
+| 5 | 200 expression performances and motion sheets | G | 87 expression sheets published; 113 remain planned/not published |
+| 6 | Visual pack QA and production handoff | G | Published source batches visually reviewed; full-pack handoff not complete |
 | 7 | Mesh, textures, rig and animation implementation | User's Kimi workflow | Planned |
 | 8 | Target application testing and release | User and build workflow | Planned |
 
@@ -184,3 +184,7 @@ The current source-production target is 275 primary images, including the 200 ex
 ## Batch 002 publication checkpoint
 
 100 primary images are now published in two separate batches of 50, plus 795 cropped panels and 55 peak copies. Source-art generation and lossless panel extraction are authorized for the full-character wall-projection reference pack. Actual mesh, UV, rig, animation playback and runtime implementation remain unbuilt/unvalidated. Planned counts are not completed assets.
+
+## Batch 003 publication checkpoint
+
+150 primary source images are published, with 1,245 derived panels and 87 peak copies. Batch 003 adds 50 accepted source sheets, 450 panels and 32 peak copies. Later local production and unaccepted variants are excluded. User-approved integer extraction preserves source sheets; no resizing, mesh/UV/rig or runtime implementation is implied.

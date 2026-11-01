@@ -1,0 +1,31 @@
+{
+  "expression_id": "EXP-159",
+  "slug": "flustered-recovery",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "41ef26caf5cb514d3d7681a167060f401a2435c8a30008af5a4a14f889d795f6",
+  "size_bytes": 2160408,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows settle from uneven peaks; eyes stop darting; lips breathe open then regain a controlled smile.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; flustered side gaze, breathing out then regained composure with controlled closed smile",
+      "v002 corrects rejected v001 lacking recovery smile"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

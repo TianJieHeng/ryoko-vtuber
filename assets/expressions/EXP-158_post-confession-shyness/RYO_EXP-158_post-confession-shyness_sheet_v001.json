@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-158",
+  "slug": "post-confession-shyness",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "29d42e32adfd8d1b45f71d7eac418b52099035e78a3d63bb6f7f3d25305b6a7c",
+  "size_bytes": 2193698,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows lift centrally; eyes hold contact then drop; lips close slowly around a hopeful smile.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; raised inner brows, eye contact then dropping gaze and hopeful closed smile; blush cue"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

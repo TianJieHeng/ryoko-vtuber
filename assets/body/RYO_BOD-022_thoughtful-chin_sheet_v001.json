@@ -1,0 +1,26 @@
+{
+  "asset_id": "BOD-022",
+  "slug": "thoughtful-chin",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1596207,
+  "sha256": "db7e4f8086b5f5172acdc406a82b990e0171648e3fef7399c2003b83fdb20ac3",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels; clear gesture build and neutral recovery. Costume and identity consistent; illustrated hand contacts require rig-authoring clearance."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

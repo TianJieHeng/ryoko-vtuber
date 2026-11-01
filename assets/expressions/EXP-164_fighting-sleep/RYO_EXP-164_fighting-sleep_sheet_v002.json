@@ -1,0 +1,31 @@
+{
+  "expression_id": "EXP-164",
+  "slug": "fighting-sleep",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "8a8a30c1327b866d31af5b060fd884fdcd52060850a8d2bbd31a58b9093b70eb",
+  "size_bytes": 2238216,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows lift intermittently; eyelids sink and reopen; lips press as the jaw relaxes.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; eyelids sink then reopen with effort, mouth pressed closed throughout",
+      "v002 selected; v001 too similar to sleepy open-mouth pose"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

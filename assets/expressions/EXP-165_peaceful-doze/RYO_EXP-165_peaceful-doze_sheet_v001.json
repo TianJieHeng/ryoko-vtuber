@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-165",
+  "slug": "peaceful-doze",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "4308db2497d737d1299651aa248c131d6419bce42dcef4f55c12c56991cd6526",
+  "size_bytes": 2035148,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows fully relax; eyes close softly; lips remain lightly closed with faint upward corners.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; softly closed lids, relaxed brows and faint closed-mouth smile for peaceful doze"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

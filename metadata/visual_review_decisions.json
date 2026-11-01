@@ -587,6 +587,12 @@
     "reviewer": "independent visual QA",
     "note": "Nine panels: both eyes move toward viewer-right, correctly character-left, head stays frontal."
   },
+  "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_sheet_v002.png": {
+    "sha256": "46d16e1eabfe7ea709252b0e3c47707613df3a8f6a41483e740981866ead6408",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Corrected v002 nine panels: downcast gaze and faint suppressed closed smile, softly raised brows."
+  },
   "assets/controls/RYO_CTL_gazeRight_sheet_v001.png": {
     "sha256": "a6bae53b5dd9732af6188fc2fa16ca854107595a6c5333f0cc987d1a900546b2",
     "decision": "accepted_reference_art",
@@ -598,5 +604,299 @@
     "decision": "accepted_reference_art",
     "reviewer": "independent visual QA",
     "note": "Corrected v002: hurt asymmetric brow lift with gaze aversion and slight lower lip pout."
+  },
+  "assets/expressions/EXP-153_hiding-a-smile/RYO_EXP-153_hiding-a-smile_sheet_v001.png": {
+    "sha256": "e3d1d6c86522e8eaa82874a224b0d0d88a13b075ed37e4403de8ddd08875eb5c",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: narrowed smiling eyes and tightly closed suppressed smile."
+  },
+  "assets/body/RYO_BOD-016_delighted-hand-clasp_sheet_v001.png": {
+    "sha256": "12f449e0f38926eaa8b06fba6d2e29ce6d2226d2888d87658c287d602b7bc659",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: hands clasp in delighted smile, return to neutral."
+  },
+  "assets/body/RYO_BOD-017_laugh-hand-to-mouth_sheet_v001.png": {
+    "sha256": "f0a31073658fe3461968b6fd49ac35b4de20b2d65d2241d61a91bd2ceafaee12",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: hand-to-mouth laughter; shoulders contract subtly."
+  },
+  "assets/body/RYO_BOD-018_yawn-and-stretch_sheet_v001.png": {
+    "sha256": "f4aed6c5c2f22074f54b72eb130d18a1603ef5184340269a4da85e719f4cd208",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: yawn into two-arm bent-elbow stretch."
+  },
+  "assets/body/RYO_BOD-019_sleepy-lean_sheet_v001.png": {
+    "sha256": "fc863b2bacf6048df6727546abf1e220200c114d0c93f46d365dde104b22f5b8",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: sleepy head/body lean with yawn and one-hand neck rest. Distinct from two-arm stretch."
+  },
+  "assets/body/RYO_BOD-020_surprised-backstep_sheet_v001.png": {
+    "sha256": "20a33cf675c61cfd3b8d5ec804ee3dce536643f051197c48c1a751c25f9ff5a0",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: startled backward weight shift, lifted palms and return."
+  },
+  "assets/controls/RYO_CTL_gazeUp_sheet_v001.png": {
+    "sha256": "1d16491769b16a71ee53b390b60a8496cb68436ffa999530c34c9903093dbb1b",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: eyes lift upward within frontal head, clear lower sclera at peak."
+  },
+  "assets/expressions/EXP-154_shy-surprise/RYO_EXP-154_shy-surprise_sheet_v001.png": {
+    "sha256": "00afdc3752e2481f1de2df1fafdd2dd97bbc20b61b886272ed2f1e1eba96c237",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: softly raised brows, small surprised O mouth and shy smiling release."
+  },
+  "assets/controls/RYO_CTL_gazeDown_sheet_v001.png": {
+    "sha256": "dc78076557dbb9ce991d0cf41e4b3822b49f48d31d930696518c257b9e5e114c",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: pupils lower and upper lids follow while head remains mostly frontal."
+  },
+  "assets/controls/RYO_CTL_vowelChart_sheet_v001.png": {
+    "sha256": "d55faa3b1bd445757ec72d804e5e89d6053dce52718d4b5d8dfefce073bc6194",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine-panel COMPARISON chart, not animation: neutral, AH, EE, OO, EH, OH, rest, closure, open-jaw. Shapes illustrative; target lip-sync requires rig implementation."
+  },
+  "assets/expressions/EXP-155_embarrassed-frustration/RYO_EXP-155_embarrassed-frustration_sheet_v001.png": {
+    "sha256": "797050399a9dc265005b2dcf45d31dffa45f9d007b90266702d09a5edf1c5421",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: irritated knitted brows with averted gaze and tight teeth-showing mouth."
+  },
+  "assets/expressions/EXP-156_self-conscious-pout/RYO_EXP-156_self-conscious-pout_sheet_v001.png": {
+    "sha256": "28679e11306d865e5ae3c3f31ee40aea61f8b40f3765ffc5b4dc552252350dd8",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: shy downcast gaze and slight closed pout, no angry brows."
+  },
+  "assets/expressions/EXP-157_uncertain-affection/RYO_EXP-157_uncertain-affection_sheet_v001.png": {
+    "sha256": "b209d8bbc4c098955be9410b57a0131472a512a98daf2b5d44b22c3d3c286fd5",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: hesitant softly raised asymmetric brow, parted tentative smile."
+  },
+  "assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_sheet_v001.png": {
+    "sha256": "29d42e32adfd8d1b45f71d7eac418b52099035e78a3d63bb6f7f3d25305b6a7c",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: central brow lift, gaze contact then downcast hopeful closed smile with blush."
+  },
+  "assets/body/RYO_BOD-021_facepalm_sheet_v001.png": {
+    "sha256": "138d4ea3751ba450655008e275aafac3cdabd13996174c82d7d8be0309ce2c96",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: palm to forehead, lowered chin, then release."
+  },
+  "assets/body/RYO_BOD-022_thoughtful-chin_sheet_v001.png": {
+    "sha256": "db7e4f8086b5f5172acdc406a82b990e0171648e3fef7399c2003b83fdb20ac3",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: hand to chin and supporting forearm, thoughtful stance."
+  },
+  "assets/body/RYO_BOD-023_proud-stance_sheet_v001.png": {
+    "sha256": "90050c7c2cd308aa9ab434aa3785a7093e33d7e453fcbc946104fc98b9ae512e",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine fullbody panels: proud lifted chin, weight shift and one hand on hip."
+  },
+  "assets/expressions/EXP-086_physical-discomfort/RYO_EXP-086_physical-discomfort_sheet_v001.png": {
+    "sha256": "d557c815e66d28f689bcaad03ef036132de774135c7cd09833aecc5462674527",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Nine panels: tense lids and raised knitted brows with small grimace."
+  },
+  "assets/expressions/EXP-159_flustered-recovery/RYO_EXP-159_flustered-recovery_sheet_v002.png": {
+    "sha256": "41ef26caf5cb514d3d7681a167060f401a2435c8a30008af5a4a14f889d795f6",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent visual QA",
+    "note": "Corrected v002 nine panels: averted nervous eyes and exhale regain controlled smile."
+  },
+  "assets/body/RYO_BOD-024_worried-fidget_sheet_v001.png": {
+    "sha256": "18c04ddd97b7b4d172070d375fc2cf139684a6c3af462dafc5706c078dc13236",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine complete full-body poses; worried waist-level hand fidget and lowered chin, coherent costume. Reference art only; no mesh or rig validation."
+  },
+  "assets/body/RYO_BOD-025_sad-shoulders_sheet_v001.png": {
+    "sha256": "174cbb5d98a226c6fe98d98192b5ad1f71cac731dea60f10c0458f28747afd00",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine complete full-body poses; sad shoulder/head droop with hanging arms and recovery. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-027_regretful-admission/RYO_EXP-027_regretful-admission_sheet_v001.png": {
+    "sha256": "5ed468b19b1794107ce48fc71ccc64a35eab611ddec9864de28ab70f6b571d93",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; lowered gaze, knit brows and compressed lips to reluctant small mouth opening. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-028_apologetic-softness/RYO_EXP-028_apologetic-softness_sheet_v001.png": {
+    "sha256": "b479e0bddc1caee984bf6ce38f04f8cfcdd6e4b0cffcb2457791685bdeaa431c",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; raised inner brows, softened upward gaze under lowered lids and low mouth corners. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-029_exhausted-grief/RYO_EXP-029_exhausted-grief_sheet_v001.png": {
+    "sha256": "868e7050839944b2bfe34c5da5e968ccb6eb2fc861eb11f369a407a7295184df",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; heavy drooping lids, weak inward brows and slight mouth opening communicate exhausted grief. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-030_abandoned-pout/RYO_EXP-030_abandoned-pout_sheet_v001.png": {
+    "sha256": "e925d7c095acb7090cd2144329b05e62fc0446d164430ef90041e58bce6f0f78",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; steep inner brow lift, sideways gaze and distinct lower-lip protrusion. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-031_bittersweet-smile/RYO_EXP-031_bittersweet-smile_sheet_v001.png": {
+    "sha256": "6232b91e6b1a6331476a41660f8fb45a1c43d79210ce5ca0a7e6ab6fe677bf08",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; asymmetric bittersweet smile, sad brows and moist lids. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-087_cringing-sympathy/RYO_EXP-087_cringing-sympathy_sheet_v001.png": {
+    "sha256": "02ddf651a4370a6bdd0634142e23871bf34fe98c021eaade8700caf7e3972c67",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; asymmetric squint and sideways stretched teeth mouth convey cringing sympathy. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-160_shy-laughter/RYO_EXP-160_shy-laughter_sheet_v001.png": {
+    "sha256": "e07d769749529ff31dbedfd4eb427bcef4f8b802c39cc9fd10b91ddc78d5acba",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; gentle crescent eyes and small open laughter mouth, not wide jaw. Reference art only; no mesh or rig validation."
+  },
+  "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_sheet_v001.png": {
+    "sha256": "8284aa280149fd4a61cffd1d5f0fd35e0efbebce6310916d4b433cda1f30933a",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; relaxed low brows, heavy lids and slightly open sleepy mouth. Reference art only; no mesh or rig validation."
+  },
+  "assets/body/RYO_BOD-026_reassuring-open-palm_sheet_v001.png": {
+    "sha256": "aed9da1ccb323fc42d73154c5692bb7632c92f1250423c455249bc955671af29",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine complete full-body poses; reassuring extended open palm, return to neutral. Identity and costume coherent; reference art, not tested rig."
+  },
+  "assets/body/RYO_BOD-027_dismissive-wave_sheet_v001.png": {
+    "sha256": "ef8a1461aaa815992fd55edd9dee0513f7612bbf51ce9542653d807ae236b7df",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine complete full-body poses; outward dismissive wrist wave with head turn. Graphic motion accents are not geometry. Identity and costume coherent; reference art, not tested rig."
+  },
+  "assets/expressions/EXP-088_awkward-discomfort/RYO_EXP-088_awkward-discomfort_sheet_v001.png": {
+    "sha256": "36b95fb7007bea7e42c139ced27b4de855a6a119a61e20ad4656feeb1c073ce3",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; uneven brows, sideways gaze and asymmetric failed polite smile. Identity and costume coherent; reference art, not tested rig."
+  },
+  "assets/expressions/EXP-089_icky-surprise/RYO_EXP-089_icky-surprise_sheet_v001.png": {
+    "sha256": "5659d2d1957f912cbbbd03813ed47b93aa143c03763f1cce71d1742112f2e979",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; surprise opening transitions to knitted brows, squint and curled upper lip. Identity and costume coherent; reference art, not tested rig."
+  },
+  "assets/expressions/EXP-162_barely-awake/RYO_EXP-162_barely-awake_sheet_v001.png": {
+    "sha256": "f5116113426a2481463a7d2fc335665f4b4d0597cfcd3e321f43785826b4161b",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; weak inner-brow lift with unequal drooping eyelids and loose small mouth opening. Identity and costume coherent; reference art, not tested rig."
+  },
+  "assets/expressions/EXP-163_yawn/RYO_EXP-163_yawn_sheet_v001.png": {
+    "sha256": "9edff0a53e0906687e85289cfc1118ce6ebf0ed99492dab7a7c78513fc42fe23",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; sleepy brows and squeezed lids with tall open-jaw yawn peak and recovery. Identity and costume coherent; reference art, not tested rig."
+  },
+  "assets/expressions/EXP-032_shaken-vulnerability/RYO_EXP-032_shaken-vulnerability_sheet_v001.png": {
+    "sha256": "e79880169d8f7f9414b67fb9ad5aed1b6f08ed44c0221577da49e40a51d859e9",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; uneven raised brows, wide moist eyes and trembling parted lower lip. Tear accents are illustration, not implemented effects. Identity coherent; reference art only, no rig validation."
+  },
+  "assets/expressions/EXP-033_pleading-hope/RYO_EXP-033_pleading-hope_sheet_v001.png": {
+    "sha256": "c240074ab9fbfc26f0b38ac1c2691ee5eb8ff7aad48294c9766d30aa406f9721",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; imploring raised inner brows and parted lips with hopeful upturned corners. Identity coherent; reference art only, no rig validation."
+  },
+  "assets/expressions/EXP-034_defeated-resignation/RYO_EXP-034_defeated-resignation_sheet_v001.png": {
+    "sha256": "47cee223c95e21b4e8d0206d85b7c5c580f180ad0b81fff3724d0ffbe1423a96",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; low flattened brows, lowered gaze and downturned compressed mouth. Identity coherent; reference art only, no rig validation."
+  },
+  "assets/expressions/EXP-090_queasy/RYO_EXP-090_queasy_sheet_v001.png": {
+    "sha256": "785b45abad9297a18294d4a3fbf93ab52d8577e05556fc2279cbd223a7d2c4ce",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; raised inner brows, heavy narrowed eyelids and forward compressed tense lips. Identity coherent; reference art only, no rig validation."
+  },
+  "assets/body/RYO_BOD-028_small-victory-fist_sheet_v001.png": {
+    "sha256": "9e7c4843c58c09965d2227100d61103e17f3726aa8de002d0d9d8febc74a8c6d",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine full-body poses; modest victory fist progresses to two-fist celebration and settles. Identity and costume coherent. Reference art, not tested rig."
+  },
+  "assets/body/RYO_BOD-029_impatient-time-gesture_sheet_v002.png": {
+    "sha256": "c69009b251873f9ef590209c4d5883b70e1171e3898994ac2a18402c7ce8c940",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine full-body poses; pointing at bare wrist communicates impatience without invented watch accessory. Identity and costume coherent. Reference art, not tested rig."
+  },
+  "assets/expressions/EXP-035_embarrassed-tears/RYO_EXP-035_embarrassed-tears_sheet_v001.png": {
+    "sha256": "6d08b6c4d30634f4c0e15a93d85b6e232c3086178cff276c7484f90114f05c53",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; sideways embarrassed gaze, blushing tears and strained smile breaking to trembling frown. Tears are illustrative effects. Identity and costume coherent. Reference art, not tested rig."
+  },
+  "assets/expressions/EXP-036_missing-someone/RYO_EXP-036_missing-someone_sheet_v001.png": {
+    "sha256": "37b28b6977784536ffee41bb3382cdb568bdbd14e85844ea6acf17e16f25e84b",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; raised inner brows and distant gaze, parted lips settling to wistful closed line. Identity and costume coherent. Reference art, not tested rig."
+  },
+  "assets/expressions/EXP-164_fighting-sleep/RYO_EXP-164_fighting-sleep_sheet_v002.png": {
+    "sha256": "8a8a30c1327b866d31af5b060fd884fdcd52060850a8d2bbd31a58b9093b70eb",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; lids repeatedly sink and reopen with intermittent brow lift and pressed lips, distinct from simple sleepy hold. Identity and costume coherent. Reference art, not tested rig."
+  },
+  "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_sheet_v001.png": {
+    "sha256": "8c362b8ccad51b393d72d552499b872514d5365158c0e3428fb91b9cfdb261e9",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; narrowed/squeezed eyes and puckered compressed lips with tense cheeks communicate overly-sweet taste. Identity coherent; reference art only."
+  },
+  "assets/expressions/EXP-165_peaceful-doze/RYO_EXP-165_peaceful-doze_sheet_v001.png": {
+    "sha256": "4308db2497d737d1299651aa248c131d6419bce42dcef4f55c12c56991cd6526",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; gently closed relaxed lids, level softened brows and slight resting smile for peaceful doze. Identity coherent; reference art only."
+  },
+  "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_sheet_v001.png": {
+    "sha256": "86046730c036258a3e25bcb31a4bc9227ede62a5c668fd3d7fba6ca5e9acf155",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; strongly drawn brows, squeezed closed lids and tightly pursed lips with inward cheek tension. Distinct from sweet taste; reference art only."
+  },
+  "assets/body/RYO_BOD-030_attentive-lean_sheet_v001.png": {
+    "sha256": "e3630725f5c195e8a18871b7526b12a87b017042eb72af8f3933b2e1f2a90e6e",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine complete full-body poses; pronounced attentive forward lean with hands near knees and coherent return. Reference anatomy illustrative, not measured rig."
+  },
+  "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_sheet_v001.png": {
+    "sha256": "481f673c315379a3a9c80718f41932065a96498b66300c985f383d558735a863",
+    "decision": "accepted_reference_art",
+    "reviewer": "independent actual-pixel QA",
+    "note": "Nine panels; lowering brows and narrowing eyes with raised upper lip and lowered bottom lip, distinct bitter grimace. Identity coherent; not tested rig."
   }
 }

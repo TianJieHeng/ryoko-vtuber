@@ -1,0 +1,27 @@
+{
+  "id": "EXP-027",
+  "slug": "regretful-admission",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-027_regretful-admission/RYO_EXP-027_regretful-admission_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "5ed468b19b1794107ce48fc71ccc64a35eab611ddec9864de28ab70f6b571d93",
+  "bytes": 2261304,
+  "review_status": "visually_reviewed",
+  "visual_review": "Downcast gaze and compressed lips opening to reluctant confession; nine panels, stable identity, very tight but intact hair margins.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

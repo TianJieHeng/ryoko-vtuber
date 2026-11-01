@@ -1,0 +1,27 @@
+{
+  "asset_id": "BOD-029",
+  "slug": "impatient-time-gesture",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1648121,
+  "sha256": "c69009b251873f9ef590209c4d5883b70e1171e3898994ac2a18402c7ce8c940",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels; readable gesture and neutral recovery.",
+    "Targeted regeneration removed unwanted watch; tapping bare wrist now."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

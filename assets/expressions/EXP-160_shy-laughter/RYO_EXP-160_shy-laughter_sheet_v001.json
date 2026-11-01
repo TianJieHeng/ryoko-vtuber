@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-160",
+  "slug": "shy-laughter",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "e07d769749529ff31dbedfd4eb427bcef4f8b802c39cc9fd10b91ddc78d5acba",
+  "size_bytes": 2211826,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows curve softly upward; eyes close into gentle crescents; small open smile pulses without a wide jaw.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; softly raised brows and closed crescent eyes with small open laugh, then recovery"
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}
