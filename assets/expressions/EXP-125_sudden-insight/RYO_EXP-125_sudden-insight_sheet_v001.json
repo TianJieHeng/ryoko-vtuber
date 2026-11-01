@@ -1,0 +1,27 @@
+{
+  "id": "EXP-125",
+  "slug": "sudden-insight",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-125_sudden-insight/RYO_EXP-125_sudden-insight_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "ead8eab6687291e65c98067cebcc0886b932218a940955523882c862dd62fd66",
+  "bytes": 2277890,
+  "review_status": "visually_reviewed_pending_independent_QA",
+  "visual_review": "Nine facial panels; clear specific thought/insight arc with neutral return, coherent identity, hairpins and jewelry. No hand/body gestures.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "references/originals/ryokov1.png"
+  ]
+}

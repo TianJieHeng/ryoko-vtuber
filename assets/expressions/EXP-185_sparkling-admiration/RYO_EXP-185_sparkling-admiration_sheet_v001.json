@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-185",
+  "slug": "sparkling-admiration",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "1f18357029d44ad77d28f468073069cabed7b08eb6edc3daee2ff53b631f475b",
+  "size_bytes": 2195310,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Brows lift high and softly; eyes open wide; mouth becomes a delighted little smile.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; softly raised brows, wide bright eyes and delighted smile at peak without added sparkle graphics; neutral recovery, full hairstyle."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "EXP-108",
+  "slug": "playful-superiority",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "One brow arches high; one eyelid lowers; sideways grin stays teasing rather than hostile.",
+  "path": "assets/expressions/EXP-108_playful-superiority/RYO_EXP-108_playful-superiority_sheet_v001.png",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "ad6ac3042cad6572adbc135c02d17fa8eb2fd3ae8b3b9661a11d81b3bfe15a88",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "REF-006"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, stable adult identity/costume/accessories and neutral-peak-neutral movement reviewed. No obvious anatomy defect. Image key poses only; exact registration and model fit untested."
+}

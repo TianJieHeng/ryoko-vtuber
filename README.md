@@ -10,6 +10,12 @@ Visual reference and production planning for a 3D VTuber avatar based on the sup
 - [Reference manifest](references/manifest.json)
 - [Build journal](BUILD_JOURNAL.md)
 
+## Latest published progress — batch 005
+
+**250 primary source images published in five separate batches of 50**, plus **2,145 extracted panels and 177 peak copies**. Breakdown: 7 modeling, 4 detail, 22 control, 177 expression and 40 body-gesture sources. [Batch 005 manifest](metadata/batch_005_manifest.json) · [Cumulative asset index](metadata/asset_index.json).
+
+Batch 005 adds 50 expression source sheets, 450 lossless integer-cropped panels and 50 peak copies. Only 177 of the 200 planned expression sheets are published at this checkpoint; later local work is not included. Derived panels are visual key poses, not registered animation. Original references and earlier published image bytes remain unchanged.
+
 ## Latest published progress — batch 004
 
 **200 primary source images published in four separate batches of 50**, plus **1,695 extracted panels and 127 peak copies**. Current breakdown: 7 modeling, 4 detail, 22 control, 127 expression and 40 body-gesture sources. [Batch 004 manifest](metadata/batch_004_manifest.json) · [Cumulative asset index](metadata/asset_index.json).

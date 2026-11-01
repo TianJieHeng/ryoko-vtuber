@@ -1,0 +1,27 @@
+{
+  "id": "EXP-121",
+  "slug": "curious-attention",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-121_curious-attention/RYO_EXP-121_curious-attention_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "a7ff5d0db23b58918ce9d2212e15066103a0130d860c27eb61738d3329e6411a",
+  "bytes": 2286189,
+  "review_status": "visually_reviewed_pending_independent_QA",
+  "visual_review": "Nine facial panels, coherent identity/costume and expression arc; full hairpins retained near panel borders, no hand or prop artifacts.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "references/originals/ryokov1.png"
+  ]
+}

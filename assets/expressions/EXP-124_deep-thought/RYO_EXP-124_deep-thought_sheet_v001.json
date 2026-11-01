@@ -1,0 +1,27 @@
+{
+  "id": "EXP-124",
+  "slug": "deep-thought",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-124_deep-thought/RYO_EXP-124_deep-thought_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "145b4268d954324fb8e4052a8e8d3cfcb977eaf70a5978bcb0615b7f63fbbbab",
+  "bytes": 2344178,
+  "review_status": "visually_reviewed_pending_independent_QA",
+  "visual_review": "Nine facial panels; clear specific thought/insight arc with neutral return, coherent identity, hairpins and jewelry. No hand/body gestures.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "references/originals/ryokov1.png"
+  ]
+}

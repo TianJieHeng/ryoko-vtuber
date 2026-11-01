@@ -92,5 +92,69 @@
       1358
     ],
     "review_note": "Visually reviewed unequal cell boundaries; divider changes black/white. Source framing touches upper hair boundary in some panels."
+  },
+  "assets/expressions/EXP-121_curious-attention/RYO_EXP-121_curious-attention_sheet_v001.png": {
+    "source_sha256": "a7ff5d0db23b58918ce9d2212e15066103a0130d860c27eb61738d3329e6411a",
+    "x": [
+      0,
+      365,
+      737,
+      1159
+    ],
+    "y": [
+      0,
+      439,
+      890,
+      1358
+    ],
+    "review_note": "Actual unequal-width cells and visible divider centers reviewed. Second divider contrasts by row; low-variance full-axis detector cannot reliably select it. Hair near source upper edges, crop does not worsen framing."
+  },
+  "assets/expressions/EXP-126_careful-listening/RYO_EXP-126_careful-listening_sheet_v001.png": {
+    "source_sha256": "ab84928f7e8fe6e3df91c25b12a3d429fd16c89a80db462fdd209bc9196a6cd0",
+    "x": [
+      0,
+      388,
+      773,
+      1159
+    ],
+    "y": [
+      0,
+      454,
+      906,
+      1358
+    ],
+    "review_note": "Actual visible divider centers inspected; black/white contrast varies by row/column, so automatic full-axis variance threshold unsuitable. Integer crops preserve source framing."
+  },
+  "assets/expressions/EXP-127_suspicious-analysis/RYO_EXP-127_suspicious-analysis_sheet_v001.png": {
+    "source_sha256": "4eafdcdbb74487c9c18bd99b5a5778e8864bd02cdd54a456c658fbbc8117b5a2",
+    "x": [
+      0,
+      376,
+      785,
+      1159
+    ],
+    "y": [
+      0,
+      452,
+      904,
+      1358
+    ],
+    "review_note": "Actual visible divider centers inspected; black/white contrast varies by row/column, so automatic full-axis variance threshold unsuitable. Integer crops preserve source framing."
+  },
+  "assets/expressions/EXP-128_reading-intently/RYO_EXP-128_reading-intently_sheet_v001.png": {
+    "source_sha256": "7ebdadcb88391427e796372613cb4803ad6dfd0bcbad6116508bd942fc741e9f",
+    "x": [
+      0,
+      380,
+      778,
+      1159
+    ],
+    "y": [
+      0,
+      454,
+      906,
+      1358
+    ],
+    "review_note": "Actual grid visually reviewed; divider contrasts vary and hair touches upper cell edge in source. Exact integer boundary crops without changing source framing."
   }
 }

@@ -1,0 +1,27 @@
+{
+  "id": "EXP-064",
+  "slug": "shocked-gasp",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "f0bd86d9899f785dba56c1ad4c619c16d91bf1e9fccc89e0db98d881084ef807",
+  "bytes": 2123870,
+  "review_status": "visually_reviewed",
+  "visual_review": "Tall intake gasp mouth and sharply widened eyes. Nine panels, stable identity, hair intact. Visual keypose reference.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

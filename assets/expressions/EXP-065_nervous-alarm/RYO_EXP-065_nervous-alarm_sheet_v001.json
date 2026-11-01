@@ -1,0 +1,27 @@
+{
+  "id": "EXP-065",
+  "slug": "nervous-alarm",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-065_nervous-alarm/RYO_EXP-065_nervous-alarm_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "47aa7767eb2acd345cd385ae5de7ecacdb83ff1a91ff0854335a1367a0c23ef0",
+  "bytes": 2076395,
+  "review_status": "visually_reviewed",
+  "visual_review": "Thin stretched anxious mouth, inward-up brows and widened eyes. Nine panels, stable identity, hair intact. Visual keypose reference.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}
