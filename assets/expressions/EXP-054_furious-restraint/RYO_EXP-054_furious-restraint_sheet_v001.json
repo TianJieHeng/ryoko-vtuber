@@ -1,0 +1,27 @@
+{
+  "id": "EXP-054",
+  "slug": "furious-restraint",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-054_furious-restraint/RYO_EXP-054_furious-restraint_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "14d12278f880738829769dcdbdbfa0f8e6bf1ae875955e0f965b1e5e2ea64710",
+  "bytes": 2227699,
+  "review_status": "visually_reviewed",
+  "visual_review": "Knitted brows and tightly compressed closed lips with narrowed lids. Nine panels, stable identity, full hair/pins. Not pixel-registered animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

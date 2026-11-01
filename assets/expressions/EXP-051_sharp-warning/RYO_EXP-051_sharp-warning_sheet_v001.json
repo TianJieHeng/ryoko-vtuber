@@ -1,0 +1,27 @@
+{
+  "id": "EXP-051",
+  "slug": "sharp-warning",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-051_sharp-warning/RYO_EXP-051_sharp-warning_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "371ea9e579876a121cf7203e960c008d2e43e24c16defdc3b0f2362f8e6e4082",
+  "bytes": 2210166,
+  "review_status": "visually_reviewed",
+  "visual_review": "Direct hard stare, brief open warning mouth followed by severe pressed lips. Nine panels with stable identity and full hair. Visual reference not animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

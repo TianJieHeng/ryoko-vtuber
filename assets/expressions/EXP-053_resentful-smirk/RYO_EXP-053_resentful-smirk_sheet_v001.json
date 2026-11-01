@@ -1,0 +1,27 @@
+{
+  "id": "EXP-053",
+  "slug": "resentful-smirk",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-053_resentful-smirk/RYO_EXP-053_resentful-smirk_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "2768fa19144a1c3fcba84f70316624414461ce1e2a86e56e6b4d4b635b89ca1e",
+  "bytes": 2068397,
+  "review_status": "visually_reviewed",
+  "visual_review": "Tense sideways eyes and tooth-revealing bitter one-sided smirk. Nine panels, stable identity, full hair/pins. Not pixel-registered animation.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "EXP-039",
+  "slug": "comfort-seeking",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-039_comfort-seeking/RYO_EXP-039_comfort-seeking_sheet_v002.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "2252f24ce257f972e4cf6fa72172bd7e4c70cb990a679058c05e1870acfd117e",
+  "bytes": 2275126,
+  "review_status": "visually_reviewed",
+  "visual_review": "Closed-lip guarded pout softens under raised inner brows; v2 fixes excessive open mouth and blush of rejected v1. Nine panels, intact hair and stable identity; visual reference only.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "asset_id": "BOD-031",
+  "slug": "skeptical-arm-cross",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1674425,
+  "sha256": "0df55c4914ddf4a03699f623d504b0a5141b526a32a11d5f1736e10921cf25b2",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels; gesture readable; costume and identity coherent.",
+    "Targeted edit corrected third hand in panel7; two arms now. Fold overlap across middle frames remains rig-authoring continuity choice."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

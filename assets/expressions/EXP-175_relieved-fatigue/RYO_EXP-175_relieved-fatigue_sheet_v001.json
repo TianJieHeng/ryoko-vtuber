@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-175",
+  "slug": "relieved-fatigue",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "1f1cecd9c61fff787d75cc0b168dc56f494d7221e56c0e7f3489c05c1fc660c0",
+  "size_bytes": 2193576,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Inner brows rise then flatten; eyes close slowly; mouth opens on a tired sigh.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; inner brows rise, eyes slowly close and mouth opens on tired sigh before brow relaxation and neutral recovery; full hairstyle."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

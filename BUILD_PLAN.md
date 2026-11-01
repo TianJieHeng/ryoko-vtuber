@@ -22,7 +22,7 @@ The supplied references depict a green/mint-haired businesswoman with amber/gold
 | 2 | Five expression pilots and control prototype references | G | Five pilot sheets and initial controls published as reference art |
 | 3 | Blender facial feasibility prototype | User's Kimi workflow | Planned |
 | 4 | Complete facial-control reference pack | G | 22 control source sheets published; pack not complete or certified |
-| 5 | 200 expression performances and motion sheets | G | 87 expression sheets published; 113 remain planned/not published |
+| 5 | 200 expression performances and motion sheets | G | 127 expression sheets published; 73 remain planned/not published |
 | 6 | Visual pack QA and production handoff | G | Published source batches visually reviewed; full-pack handoff not complete |
 | 7 | Mesh, textures, rig and animation implementation | User's Kimi workflow | Planned |
 | 8 | Target application testing and release | User and build workflow | Planned |
@@ -188,3 +188,7 @@ The current source-production target is 275 primary images, including the 200 ex
 ## Batch 003 publication checkpoint
 
 150 primary source images are published, with 1,245 derived panels and 87 peak copies. Batch 003 adds 50 accepted source sheets, 450 panels and 32 peak copies. Later local production and unaccepted variants are excluded. User-approved integer extraction preserves source sheets; no resizing, mesh/UV/rig or runtime implementation is implied.
+
+## Batch 004 publication checkpoint
+
+200 primary sources are published, with 1,695 extracted panels and 127 peak copies. The 40 full-body gesture sheets are reusable visual references; actual model, UV, skeleton, facial controls, animation playback and projection/runtime implementation remain unvalidated. The current 275-primary planning target is not a delivered count.

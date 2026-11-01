@@ -1,0 +1,27 @@
+{
+  "asset_id": "BOD-039",
+  "slug": "farewell-wave",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1751012,
+  "sha256": "cc29fe76def57f328efa12f83f9d01c1395c3c7b0d827ad00f898fca4152c710",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine complete head-to-heels panels, consistent outfit and identity.",
+    "Clear friendly farewell wave and return."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}

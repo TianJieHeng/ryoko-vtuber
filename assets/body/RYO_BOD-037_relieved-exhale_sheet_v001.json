@@ -1,0 +1,26 @@
+{
+  "asset_id": "BOD-037",
+  "slug": "relieved-exhale",
+  "kind": "fullbody_motion_sheet",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "bytes": 1654400,
+  "sha256": "d5fe19c638547b5a9c55edce3388b9f96e13c28d87e853f08573e03c91aeb22f",
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Nine fullbody poses with complete shoes/hair; two hands and readable motion arc; identity/costume coherent."
+  ],
+  "panel_count": 9,
+  "status": "generated_reviewed",
+  "limitations": [
+    "Nine illustrated key poses, not rendered/interpolated rig animation.",
+    "No model fitting, UV or runtime validation."
+  ]
+}
