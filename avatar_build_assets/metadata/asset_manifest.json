@@ -3,8 +3,320 @@
   "production_status": "in_progress",
   "scope": "additive corrected artwork, not UV-fitted runtime avatar",
   "reference_count": 10,
-  "generated_count": 1,
+  "generated_count": 10,
   "records": [
+    {
+      "path": "accessories/layers/RYO_ACC_hair_dangler_01.png",
+      "sha256": "0aaf3fcb85f597f01aec56daa6bbc28814f1676c871b93522d61059378737620",
+      "git_blob_sha": "611f0f191b973e66a0ddd579f773ba2b93843e0c",
+      "bytes": 126479,
+      "dimensions": [
+        579,
+        1358
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 723294,
+        "partly_transparent_pixels": 62226,
+        "opaque_pixels": 762,
+        "nonzero_bbox": [
+          33,
+          37,
+          579,
+          1358
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_accessory",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "source_atlas": "accessories/sources/RYO_ACC_hair_danglers_source_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        579,
+        1358
+      ],
+      "visual_review": "Accessory worker inspected white composite; exterior alpha zero and clean edges."
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_hair_dangler_02.png",
+      "sha256": "9eba67152135449bfdf30f5fa35e4b6e9b36c652fabea560c327db917879e198",
+      "git_blob_sha": "ba8df73eedda93a0b5d28971471c267d81d134d4",
+      "bytes": 127819,
+      "dimensions": [
+        580,
+        1358
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 723359,
+        "partly_transparent_pixels": 64101,
+        "opaque_pixels": 180,
+        "nonzero_bbox": [
+          0,
+          64,
+          548,
+          1334
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_accessory",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "source_atlas": "accessories/sources/RYO_ACC_hair_danglers_source_v001.png",
+      "crop_bounds_xyxy": [
+        579,
+        0,
+        1159,
+        1358
+      ],
+      "visual_review": "Accessory worker inspected white composite; exterior alpha zero and clean edges."
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_hairstick_01.png",
+      "sha256": "cdbe01e444d4282965c9a793e40c035d4e8ce59694fbd5cd4944b9e336bd8aea",
+      "git_blob_sha": "8d27fe9b10dc0eea8553d86a6996ca5791f27d8c",
+      "bytes": 455953,
+      "dimensions": [
+        768,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 745188,
+        "partly_transparent_pixels": 41244,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          49,
+          31,
+          622,
+          1006
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_accessory",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "source_atlas": "accessories/sources/RYO_ACC_hairsticks_source_v002.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        768,
+        1024
+      ],
+      "visual_review": "Accessory worker inspected white composite; exterior alpha zero and clean edges."
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_hairstick_02.png",
+      "sha256": "98f99004f37ba3fc6e802d1cafac502bf59a738c19c6fef8a26945b7b8d13cc5",
+      "git_blob_sha": "147772d9b16a00401ea1b3cd244b14f22ed48d30",
+      "bytes": 452947,
+      "dimensions": [
+        768,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 745251,
+        "partly_transparent_pixels": 41181,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          151,
+          31,
+          728,
+          1004
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_accessory",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "source_atlas": "accessories/sources/RYO_ACC_hairsticks_source_v002.png",
+      "crop_bounds_xyxy": [
+        768,
+        0,
+        1536,
+        1024
+      ],
+      "visual_review": "Accessory worker inspected white composite; exterior alpha zero and clean edges."
+    },
+    {
+      "path": "accessories/sources/RYO_ACC_hair_danglers_source_v001.png",
+      "sha256": "2b1368bb494726856b24b519d38e9061bb6d9cd61dd17c9627d1e04f7f566a2a",
+      "git_blob_sha": "693cec1216ab4f564494e43a9d6d05cb73ae95fd",
+      "bytes": 282235,
+      "dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1446653,
+        "partly_transparent_pixels": 126327,
+        "opaque_pixels": 942,
+        "nonzero_bbox": [
+          33,
+          37,
+          1127,
+          1358
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "visual_review": "Accessory worker visually accepted source and extracted components."
+    },
+    {
+      "path": "accessories/sources/RYO_ACC_hairsticks_source_v002.png",
+      "sha256": "ecbb4bf32ea7e8345b6d6ecc5604afa00c596aea997eecedd889969fd32beed6",
+      "git_blob_sha": "5256b5259de37a4d1c19cf38c4072dd202ec8656",
+      "bytes": 947503,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1490439,
+        "partly_transparent_pixels": 82425,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          49,
+          31,
+          1496,
+          1006
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "visual_review": "Accessory worker visually accepted source and extracted components."
+    },
+    {
+      "path": "body/layers/blouse_back.png",
+      "sha256": "f2226cae2e338ad00781e1a8f61b6611a5de05e68b3b00beb6e1fef1aeffc067",
+      "git_blob_sha": "959862cae102daad7b6897bbb5948c4f1c275146",
+      "bytes": 484372,
+      "dimensions": [
+        610,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 358521,
+        "partly_transparent_pixels": 405281,
+        "opaque_pixels": 1138,
+        "nonzero_bbox": [
+          0,
+          101,
+          576,
+          1254
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_outfit_torso",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
+      "crop_bounds_xyxy": [
+        644,
+        0,
+        1254,
+        1254
+      ],
+      "visual_review": "Body worker inspected neutral-grey composite; clean alpha. Torso only, sleeves are separate pending assets."
+    },
+    {
+      "path": "body/layers/blouse_front.png",
+      "sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba",
+      "git_blob_sha": "d7eb316b4d203cc6bb4307e0de21c2a04415b54f",
+      "bytes": 584946,
+      "dimensions": [
+        644,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 414396,
+        "partly_transparent_pixels": 391969,
+        "opaque_pixels": 1211,
+        "nonzero_bbox": [
+          41,
+          81,
+          643,
+          1230
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_outfit_torso",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        644,
+        1254
+      ],
+      "visual_review": "Body worker inspected neutral-grey composite; clean alpha. Torso only, sleeves are separate pending assets."
+    },
+    {
+      "path": "body/sources/blouse_front_back_atlas_v002.png",
+      "sha256": "8e37c926b97130cae167f382eb1823e3bc70f201df609b9b54cf8f7f1003de59",
+      "git_blob_sha": "b7b20bed97fca60e82acf900b882edd8c63683da",
+      "bytes": 1208396,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 772917,
+        "partly_transparent_pixels": 797250,
+        "opaque_pixels": 2349,
+        "nonzero_bbox": [
+          41,
+          81,
+          1220,
+          1254
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "source_atlas",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "generation_tool": "built-in image_gen",
+      "visual_review": "Body worker approved true alpha front/back blouse atlas."
+    },
     {
       "path": "hair/front_fringe.png",
       "sha256": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",

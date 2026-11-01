@@ -13,3 +13,9 @@
 - Accepted `hair/front_fringe.png`: isolated sage hair fringe with real RGBA transparency, reviewed against the canonical face and a neutral-grey composite.
 - This is a source layer for projection, cards or manual fitting, not a registered head assembly or mesh-fitted UV map.
 - Remaining hair, facial, outfit, accessory and effect production is still underway.
+
+## Second artwork checkpoint
+
+- Added front/back blouse torso components and their accepted transparent source atlas.
+- Added two hair sticks and two dangling hair ornaments, with their accepted source atlases and generation prompts.
+- Components were visually checked on flat backgrounds by their generating workers. They remain placement/mapping source art; no registered full-body stack or fitted 3D texture claim is made.
