@@ -1,0 +1,49 @@
+{
+  "source_art_status": "delivered",
+  "primary_sources": 273,
+  "categories": {
+    "expressions": 200,
+    "body": 40,
+    "controls": 22,
+    "modeling": 7,
+    "details": 4
+  },
+  "derived_panels": 2352,
+  "peak_copies": 200,
+  "asset_pngs": 2825,
+  "original_reference_pngs": 6,
+  "batches": [
+    {
+      "id": "001",
+      "primary_sources": 50
+    },
+    {
+      "id": "002",
+      "primary_sources": 50
+    },
+    {
+      "id": "003",
+      "primary_sources": 50
+    },
+    {
+      "id": "004",
+      "primary_sources": 50
+    },
+    {
+      "id": "005",
+      "primary_sources": 50
+    },
+    {
+      "id": "006",
+      "primary_sources": 23
+    }
+  ],
+  "local_qa_errors": [],
+  "remote_verification": "To be recorded after this atomic source commit is checked.",
+  "unavailable_controls": [
+    "CTL-jawLeft",
+    "CTL-lowerLipDepress"
+  ],
+  "mesh_uv_rig_runtime_validation": false,
+  "no_ci": true
+}

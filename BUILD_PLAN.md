@@ -1,15 +1,15 @@
 # Ryoko VTuber Phased Build Plan
 
-**Version:** 1.1 approved source production scope  
+**Version:** 1.2 source production and builder handoff  
 **Prepared:** 2026-11-01  
 **Repository:** TianJieHeng/ryoko-vtuber  
-**Current authorization:** source image generation is approved, with Git pushes in batches of 50. The user confirmed a full-character avatar for wall projection, including scolding performances. Model-independent reference production may proceed while Blender validation remains pending. Actual model, rig and runtime implementation remain separate future work.
+**Current status:** source-art production and local QA are complete: 273 accepted primary sources, 2,352 extracted panels and 200 peak copies, published in five batches of 50 plus a final 23-source remainder. Full-character wall projection is confirmed. Actual model, UV, rig, animation and runtime implementation remain separate future work; see publication metadata for remote verification.
 
 ## Goal and delivery boundary
 
 Create a consistent visual production pack for the supplied human Ryoko character, then hand it to the user's Kimi workflow for construction and rigging in Blender. The target is 200 distinct expression performances, each with a nine-panel motion reference sheet, alongside modeling references and separate facial-control references.
 
-This is a plan for both stages, not a claim that either is complete. Source-image production is authorized; completion must be recorded per asset. Images communicate design intent. They do not contain mesh topology, UV coordinates, skin weights, shape keys, animation curves, or a working avatar. Those must be authored and tested on the actual model. The 200 performances can combine reusable controls; they do not require 200 independent morph targets.
+The source-reference stage is complete to the delivered inventory, with two rejected control references explicitly omitted. The model/runtime stage is not complete. Images communicate design intent. They do not contain mesh topology, UV coordinates, skin weights, shape keys, animation curves, or a working avatar. Those must be authored and tested on the actual model. The 200 performances can combine reusable controls; they do not require 200 independent morph targets.
 
 The supplied references depict a green/mint-haired businesswoman with amber/gold eyes, a dark trouser suit, open white blouse, gold hair ornaments and jewelry, and black heels. Do not import the appearance of any earlier masked or black-haired Ryoko design. Preserve the six originals unchanged. Their visual differences must be resolved before declaring one production design canonical.
 
@@ -17,15 +17,15 @@ The supplied references depict a green/mint-haired businesswoman with amber/gold
 
 | Phase | Deliverable | Owner | Current status |
 |---|---|---|---|
-| 0 | Reference intake and design decisions | G and user | Six references reviewed and preserved; design decisions open |
-| 1 | Modeling reference pack | G | Seven modeling and four detail sources published in batch 001; further work remains |
-| 2 | Five expression pilots and control prototype references | G | Five pilot sheets and initial controls published as reference art |
-| 3 | Blender facial feasibility prototype | User's Kimi workflow | Planned |
-| 4 | Complete facial-control reference pack | G | 22 control source sheets published; pack not complete or certified |
-| 5 | 200 expression performances and motion sheets | G | 177 expression sheets published; 23 remain planned/not published |
-| 6 | Visual pack QA and production handoff | G | Published source batches visually reviewed; full-pack handoff not complete |
-| 7 | Mesh, textures, rig and animation implementation | User's Kimi workflow | Planned |
-| 8 | Target application testing and release | User and build workflow | Planned |
+| 0 | Reference intake and design decisions | G and user | Six originals preserved; working source-art masters reviewed; modeling decisions remain |
+| 1 | Modeling reference pack | G | Seven modeling and four detail sources accepted and delivered |
+| 2 | Five expression pilots and control prototype references | G | Pilot source sheets produced; reference art only |
+| 3 | Blender facial feasibility prototype | User's Kimi workflow | Not started or validated by this workflow |
+| 4 | Facial-control reference pack | G | 22 generic references; jawLeft and lowerLipDepress unavailable; not ARKit certification |
+| 5 | 200 expression performances and motion sheets | G | All 200 expression sheets accepted and delivered; reference art only |
+| 6 | Visual pack QA and production handoff | G | Final source inventory reconciled; builder handoff delivered; remote verification recorded in metadata |
+| 7 | Mesh, textures, rig and animation implementation | User's Kimi workflow | Not started by this workflow |
+| 8 | Target application testing and release | User and build workflow | Not performed; runtime unspecified |
 
 Owner labels describe the intended division of work, not an active connection to Kimi or authorization to send it files. Generation approval now covers the source-image phase. Use the common neutral master and documented design choices, with quality checkpoints rather than requesting permission for every routine asset. Do not imply that the pending Blender stages have been started or validated.
 
@@ -33,9 +33,9 @@ Owner labels describe the intended division of work, not an active connection to
 
 **Inputs:** six supplied PNG sheets and the 21-page Blender workflow guide. Preserve original bytes, record original filename, repository path, pixel dimensions and SHA-256, and inspect the actual images. Record findings in `references/REFERENCE_REVIEW.md` and inventory in `references/manifest.json`.
 
-The [visual review](references/REFERENCE_REVIEW.md) proposes REF-001 for silhouette, REF-006 for technical details, REF-005 for facial range, and REF-002–004 for acting intent. This hierarchy is unapproved. REF-005 has 16 portraits; the three special sheets add 18 numbered performances with overlaps, not 34 guaranteed unique production expressions. Resolve hair bun/ponytail construction, jewelry placement, collar/buttons and pocket details explicitly.
+The [visual review](references/REFERENCE_REVIEW.md) proposes REF-001 for silhouette, REF-006 for technical details, REF-005 for facial range, and REF-002–004 for acting intent. This hierarchy informed the working visual interpretation, not a measured or user-certified model specification. The reviewed neutral master and front/back body masters govern source-art consistency. REF-005 has 16 portraits; the three special sheets add 18 numbered performances with overlaps, not 34 guaranteed unique production expressions. Resolve hair bun/ponytail construction, jewelry placement, collar/buttons and pocket details explicitly.
 
-Resolve these choices before production:
+Implementation choices to preserve or resolve on the actual model:
 
 - Which turnaround controls anatomy, hair silhouette, costume, footwear and accessories when sheets differ?
 - Are all supplied costumes one outfit, or are any alternates? Do not average contradictory details.
@@ -45,7 +45,7 @@ Resolve these choices before production:
 
 Create a short design lock identifying approved references, proportions, palette, accessory placement and character left/right. Treat source captions as reference annotations, not permission to invent missing back/side details or change the design. New unseen details require an explicit design proposal.
 
-**Exit gate:** originals verified; conflicts documented; neutral master and scope approved. Unresolved implementation choices may remain listed, but do not label dependent assets compatible or production-ready.
+**Source-stage record:** originals verified, conflicts documented, and working masters visually reviewed under the approved source-production scope. Unresolved implementation choices may remain listed, but do not label dependent assets compatible or production-ready.
 
 ## Phase 1 Modeling reference pack
 
@@ -57,13 +57,13 @@ Add a neutral A-pose or T-pose as chosen for the build; head front/profile/three
 
 Use neutral lighting, a fixed background and restrained shading so facial planes and color are readable. Keep character scale, eye line, crop and camera consistent across matched sets. Produce independent view images as well as assembled review sheets.
 
-**Exit gate:** matching silhouette and landmarks across views, resolved costume and hair continuity, no missing required part, and user approval of the neutral master. Record any artistic interpretation remaining for the modeler.
+**Delivered source-stage record:** seven modeling and four detail references are included. Additional optional view studies mentioned above are not implied by those counts; resolve missing viewpoints, perspective and artistic interpretation during actual modeling.
 
 ## Phase 2 Small expression pilot
 
 **Depends on:** common production master.
 
-Produce five varied performances first: EXP-101 restrained-confidence, EXP-002 affectionate-warmth, EXP-141 embarrassment, EXP-041 controlled-anger and EXP-061 broad-surprise. Each receives a nine-panel key-pose source sheet and motion notes. The five pilot sheets and their lossless panel/peak derivatives are included in batch 001. The user approved integer-crop extraction while preserving source sheets; derivative files are counted separately from primary generated images. Include neutral, blink and a few mouth-shape reference tests for the model prototype.
+Produce five varied performances first: EXP-101 restrained-confidence, EXP-002 affectionate-warmth, EXP-141 embarrassment, EXP-041 controlled-anger and EXP-061 broad-surprise. Each receives a nine-panel key-pose source sheet and motion notes. The user has approved lossless peak and panel extraction. Actual extracted files, crop bounds and hashes are recorded in `metadata/frame_extraction.json`; do not count unrecorded derivatives as produced. Include neutral, blink and a few mouth-shape reference tests for the model prototype.
 
 Review identity, hair and accessory stability, eyelid anatomy, mouth construction, expression clarity, and unwanted changes in head scale or pose. A face-only deformation sheet keeps the head still. Gestures and head turns belong in separately identified performance references, so Kimi can distinguish facial deformation from skeletal motion.
 
@@ -81,7 +81,7 @@ This is deliberately early. Image approval alone cannot prove that eyelids close
 
 ## Phase 4 Facial control reference pack
 
-**Depends on:** common master for generic visual control references. Exact tracking mappings depend on the selected route and later prototype findings. The initial eight generic control sheets are not certified ARKit coverage.
+**Depends on:** common master for generic visual control references. Exact tracking mappings depend on the selected route and later prototype findings. The current inventory contains 22 generic control references, not certified ARKit coverage. jawLeft and lowerLipDepress attempts failed isolation and are not delivered; jawRight is a three-panel comparison.
 
 Build isolated references for brows, eyelids, gaze, cheeks, jaw and mouth, including asymmetric left/right movements. Neutral remains the common baseline. If the chosen route uses ARKit, cover its approximately 52 standard facial controls with exact names verified against the selected implementation. These controls are separate from the 200 performances and are not counted as emotions.
 
@@ -122,7 +122,7 @@ Specify key-pose timestamps, hold duration, easing intent, total duration, loop 
 
 Check every sheet for correct panel order/count, consistent face and eye line, stable costume/accessories, coherent anatomy, clear silhouettes and readable movement. Check facial controls independently and in combinations such as smile plus lip sync, gaze plus blink, or tears plus an expression. On images, this is a visual review; deformation and collision checks still belong to the actual rig.
 
-Preserve generation originals and record their real dimensions. Never describe resized images as native higher-resolution output. The user approved lossless integer panel extraction and peak copies from finished sheets; these operations are documented and retain originals. Scaling, alpha work or alignment are distinct operations and are not implied by that crop approval. A transparent-background requirement must produce genuine alpha, not a painted checkerboard.
+Preserve generation originals and record their real dimensions. Never describe resized images as native higher-resolution output. Lossless integer panel extraction and peak copying were authorized and completed with original sheets preserved. Further scaling, alpha work or registration is separate work and is not implied by that crop approval. A transparent-background requirement must produce genuine alpha, not a painted checkerboard.
 
 Package a contact-sheet index, asset manifest, control mapping, expression catalogue, timing notes, design decisions, open issues and builder checklist. Distinguish facial deformation from texture/material effects, floating graphics and bone motion. Blush, sweat marks and sparkle overlays are not automatically facial topology.
 
@@ -168,31 +168,15 @@ Each expression record must include ID, slug, family, description, source master
 
 ## Current implementation boundary
 
-The authored catalogue contains 200 planned performances and 1,800 key-pose specifications. A catalogue entry does not prove its image exists. Source sheets, generated controls and modeling references must acquire actual file paths, dimensions, hashes and review status as they finish. Batch 001 includes 351 extracted panels and 28 peak copies from 39 approved sheets. Other planned panels are not claimed delivered until they appear in a published batch manifest.
+The delivered catalogue contains 200 accepted expression source sheets and 1,800 expression key-pose panels, alongside 40 body and 22 generic-control references. The full pack totals 273 primary sources, 2,352 cropped panels and 200 peak copies; actual paths, dimensions, hashes and review records are present. The earlier 275-source planning target was reduced by the two rejected controls, jawLeft and lowerLipDepress. Extraction is complete and recorded in `metadata/frame_extraction.json`; crops are not registered or interpolated animation frames.
 
 No actual animation files, mesh, UV map, fitted texture atlas, Blender rig, weights, shape keys, physics, runtime export or app/tracking validation is claimed. No direct communication with Kimi is implied. Facial close-ups supplement the full-character pack; they do not replace it.
+
+## Builder handoff
+
+Use [BUILDER_HANDOFF.md](handoff/BUILDER_HANDOFF.md) for the actual pack navigation and practical model/rig workflow, and [NOT_INCLUDED.md](handoff/NOT_INCLUDED.md) for explicit missing or unvalidated deliverables. Final accepted and published counts come from QA and publication metadata, not the target counts in this plan. EXP-094 is now about-to-sneeze; use the current catalogue and replacement provenance.
 
 ## Sources
 
 - [3D VTuber Model Creation guide](https://vtubergame.com/blog/how-to-make-a-3d-vtuber-model), supplied as a 21-page PDF: pages 5–6 for visual references, topology and an early facial prototype; pages 7–8 for modular parts and rigging; pages 9–12 for export, tracking and testing. The 200-performance target and nine-key-pose format are project proposals, not requirements from that guide.
 - [VRM 1.0 expression specification](https://github.com/vrm-c/vrm-specification/blob/master/specification/VRMC_vrm-1.0/expressions.md), for presets, custom expressions and procedural overrides. Confirm the actual runtime/version before adopting this mapping. Use the target application's primary documentation for compatibility rather than assuming the guide's broad app examples are interchangeable.
-
-## Batch 001 publication checkpoint
-
-The current source-production target is 275 primary images, including the 200 expression performances; this is a planning target, not a delivery count. Batch 001 publishes exactly 50 primary images plus 351 derived panels and 28 peak copies. Full-body wall-projection coverage remains the intended use; facial close-ups supplement body views and gestures. All outputs are model-independent reference art. No mesh, UVs, rig, animation playback or runtime implementation is delivered or validated.
-
-## Batch 002 publication checkpoint
-
-100 primary images are now published in two separate batches of 50, plus 795 cropped panels and 55 peak copies. Source-art generation and lossless panel extraction are authorized for the full-character wall-projection reference pack. Actual mesh, UV, rig, animation playback and runtime implementation remain unbuilt/unvalidated. Planned counts are not completed assets.
-
-## Batch 003 publication checkpoint
-
-150 primary source images are published, with 1,245 derived panels and 87 peak copies. Batch 003 adds 50 accepted source sheets, 450 panels and 32 peak copies. Later local production and unaccepted variants are excluded. User-approved integer extraction preserves source sheets; no resizing, mesh/UV/rig or runtime implementation is implied.
-
-## Batch 004 publication checkpoint
-
-200 primary sources are published, with 1,695 extracted panels and 127 peak copies. The 40 full-body gesture sheets are reusable visual references; actual model, UV, skeleton, facial controls, animation playback and projection/runtime implementation remain unvalidated. The original 275-primary planning target is not a delivered count.
-
-## Batch 005 publication checkpoint
-
-250 primary source images are published, with 2,145 extracted panels and 177 peak copies. This checkpoint includes 177 expression sheets; the remaining 23 are not yet published here. All 40 body gesture sources and 22 generic control references are source artwork, not a complete tracking specification or implemented rig. Model, UV, skeleton, animation and runtime work remain separate.

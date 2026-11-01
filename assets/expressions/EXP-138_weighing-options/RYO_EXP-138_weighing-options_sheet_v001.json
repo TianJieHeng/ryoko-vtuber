@@ -1,0 +1,27 @@
+{
+  "id": "EXP-138",
+  "slug": "weighing-options",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-138_weighing-options/RYO_EXP-138_weighing-options_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "15ce9e440fc26a0c0342b0d2dcdbd19df6b917b8d452c568291ed49d7a12963b",
+  "bytes": 2215548,
+  "review_status": "visually_reviewed_pending_independent_QA",
+  "visual_review": "Nine facial panels; weighing-options gaze shifts or focused determination brow/lip tension readable. Subtle authored performance, coherent identity/jewelry/costume and neutral return.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "references/originals/ryokov1.png"
+  ]
+}

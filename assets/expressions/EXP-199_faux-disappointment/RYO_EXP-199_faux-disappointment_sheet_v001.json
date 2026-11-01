@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-199",
+  "slug": "faux-disappointment",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "419e1337a8ae7529ee256b85af3445de09d26f817c532ade75e1d7d8741ffc69",
+  "size_bytes": 2205766,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "distinctive_facial_intent": "Inner brows rise dramatically; eyes look down; lower lip pushes into a deliberately excessive pout.",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels; dramatically raised inner brows, downward gaze and exaggerated pushed lower-lip pout; neutral recovery, complete hairstyle."
+    ],
+    "limitations": [
+      "Illustrated key-pose references, not pixel-registered animation frames or validated 3D rig"
+    ]
+  }
+}

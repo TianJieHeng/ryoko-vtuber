@@ -1,55 +1,43 @@
-# Ryoko VTuber
+# Ryoko Full-Character Source Pack
 
-Visual reference and production planning for a 3D VTuber avatar based on the supplied human Ryoko character sheets.
+**Source-art production complete: 273 primary images**, with **2,352 losslessly extracted panels and 200 peak copies**. The six original user reference PNGs remain unchanged. This is a modeling and acting reference pack for a full-character, wall-projected VTuber—not a working 3D avatar.
 
 ## Start here
 
-- [Phased build plan](BUILD_PLAN.md)
-- [Reference review](references/REFERENCE_REVIEW.md)
-- [Original reference images](references/originals/)
-- [Reference manifest](references/manifest.json)
-- [Build journal](BUILD_JOURNAL.md)
+- [Builder handoff](handoff/BUILDER_HANDOFF.md) · [What is not included](handoff/NOT_INCLUDED.md)
+- [Asset inventory](metadata/asset_index.json) · [Publication status and verification](metadata/publication_status.json)
+- [200-expression catalogue](metadata/expressions.json) · [40 body gestures](metadata/body_gestures.json) · [Control inventory](metadata/controls_inventory.json)
+- [Extraction records](metadata/frame_extraction.json) · [QA boundaries](metadata/QA_LIMITATIONS.md)
+- [Original references](references/originals/) · [Reference review](references/REFERENCE_REVIEW.md)
+- [Phased build plan](BUILD_PLAN.md) · [Build journal](BUILD_JOURNAL.md)
 
-## Latest published progress — batch 005
+## Delivered inventory
 
-**250 primary source images published in five separate batches of 50**, plus **2,145 extracted panels and 177 peak copies**. Breakdown: 7 modeling, 4 detail, 22 control, 177 expression and 40 body-gesture sources. [Batch 005 manifest](metadata/batch_005_manifest.json) · [Cumulative asset index](metadata/asset_index.json).
+| Primary sources | Count |
+|---|---:|
+| Expression sheets | 200 |
+| Full-body gesture sheets | 40 |
+| Generic facial-control references | 22 |
+| Modeling references | 7 |
+| Detail references | 4 |
+| **Total primary images** | **273** |
 
-Batch 005 adds 50 expression source sheets, 450 lossless integer-cropped panels and 50 peak copies. Only 177 of the 200 planned expression sheets are published at this checkpoint; later local work is not included. Derived panels are visual key poses, not registered animation. Original references and earlier published image bytes remain unchanged.
+The 2,352 cropped panels and 200 peak copies are derivatives, not extra generated source images. There are 2,825 PNGs under `assets/`, excluding the six originals under `references/`. Native dimensions and hashes are recorded per file. Source sheets are preserved; crops use exact integer bounds without resizing. They are visual key poses, not registered or interpolated animation frames.
 
-## Latest published progress — batch 004
+**Two planned control references are not included:** `jawLeft` and `lowerLipDepress` failed isolated-motion fidelity and were rejected rather than mislabeled. This explains 273 delivered sources versus the earlier 275-source target. The 22 generic control guides are not a complete or certified ARKit 52-shape set. `jawRight` is a three-panel comparison, not nine temporal poses.
 
-**200 primary source images published in four separate batches of 50**, plus **1,695 extracted panels and 127 peak copies**. Current breakdown: 7 modeling, 4 detail, 22 control, 127 expression and 40 body-gesture sources. [Batch 004 manifest](metadata/batch_004_manifest.json) · [Cumulative asset index](metadata/asset_index.json).
+Facial close-ups pair with reusable body-gesture references; the pack does not contain 200 bespoke synchronized full-body animations. No mesh, UV unwrap, fitted texture atlas, Blender rig, shape keys, skin weights, animation curves, tested export or runtime/tracking compatibility is supplied. Hidden structures and anatomical continuity still need decisions and testing on the real model. No task has been sent to Kimi.
 
-Batch 004 adds 50 primary sources, 450 integer-cropped panels and 40 peak copies. Derivatives do not increase primary counts. The 200-expression catalogue has 127 published expression sheets; remaining expressions are planned/not published. Full-body gesture references are reusable illustrated accompaniments, not combined rigged animations. Original references and earlier published images remain unchanged.
+## Publication batches
 
-## Latest published progress — batch 003
+| Batch | Primary images | Extracted panels | Peak copies |
+|---|---:|---:|---:|
+| [001](metadata/batch_001_manifest.json) | 50 | 351 | 28 |
+| [002](metadata/batch_002_manifest.json) | 50 | 444 | 27 |
+| [003](metadata/batch_003_manifest.json) | 50 | 450 | 32 |
+| [004](metadata/batch_004_manifest.json) | 50 | 450 | 40 |
+| [005](metadata/batch_005_manifest.json) | 50 | 450 | 50 |
+| [006](metadata/batch_006_manifest.json) | 23 | 207 | 23 |
+| **Total** | **273** | **2,352** | **200** |
 
-**150 primary source images published in three separate batches of 50**, plus **1,245 extracted panels and 87 peak copies**. Current breakdown: 7 modeling, 4 detail, 22 control, 87 expression and 30 body-gesture images. [Batch 003 manifest](metadata/batch_003_manifest.json) · [Cumulative asset index](metadata/asset_index.json).
-
-Batch 003 adds 50 primary images, 450 lossless integer-cropped panels and 32 peak copies. Derivatives do not inflate primary counts. Only 87 of 200 expression sheets are published; later entries remain planned. Full-character wall-projection reference art is being delivered, not a mesh, rig or runtime implementation.
-
-## Latest published progress — batch 002
-
-**100 primary generated reference images published in two batches of 50**, with 795 extracted panels and 55 peak copies counted separately. Current primary breakdown: 7 modeling, 4 detail, 19 facial-control, 55 expression and 15 body-gesture images. [Batch 002 manifest](metadata/batch_002_manifest.json) · [Cumulative asset index](metadata/asset_index.json).
-
-Batch 002 contributes 50 primary images, 444 panels (49 nine-panel sheets plus one three-panel jaw comparison) and 27 peak copies. Integer crops preserve source pixels and sheets; these are illustrative poses, not registered motion or a working rig. The full 200-expression catalogue includes only 55 published expression sheets; other entries remain planned/not published. The six original references are unchanged.
-
-## Current production scope
-
-The repository contains the phased plan, six unchanged user references, their inventory and review, and the [complete 200-expression catalogue](metadata/expressions.json).
-
-Source image generation is now authorized. The user confirmed a **full-character avatar for wall projection**, including readable scolding performances, with Git pushes in batches of 50. Facial close-ups supplement full-body views and gesture references.
-
-The plan targets 200 expression performances with nine-key-pose source sheets. The planned 1,800 panels are visual references, not automatically rigged animations or 1,800 separately delivered files. Actual generated file status is recorded separately; planned paths do not prove completion.
-
-No mesh, UV textures, Blender rig, shape keys, weights, physics, runtime export or tracking compatibility is claimed. The neutral/blink/viseme model test remains an important later implementation checkpoint, but does not block authorized model-independent source-art production. Runtime and tracking choices remain open.
-
-No CI or GitHub Actions. Preserve reference originals and record actual native image dimensions for future assets.
-
-## Published source-art batch 001
-
-**50 primary generated reference images:** 7 modeling views/details, 4 construction-detail images, 8 facial-control sheets, 28 expression sheets and 3 full-body gesture sheets. [Frozen batch manifest](metadata/batch_001_manifest.json) · [Asset index](metadata/asset_index.json).
-
-The 39 nine-panel sheets also include **351 extracted key-pose PNGs** and **28 peak-panel copies**. These are authorized integer crops/copies from unchanged source sheets, with no resizing; they do not increase the primary image count. They are visual references, not registered animation frames or a working rig. [Extraction records](metadata/frame_extraction.json) retain bounds, source hashes and crop checks.
-
-The full 200-expression catalogue remains a plan: only 28 expression sheets are published in this batch; remaining entries are marked planned/not published. Later local production is not included here. The six original user reference images remain unchanged.
+[Final catalogue QA](metadata/final_catalogue_validation.json) and [pixel-integrity validation](metadata/integrity_validation.json) report no errors. Current acceptance and publication status lives in the cumulative inventories; per-generation sidecars preserve their generation provenance. Rejected variants and generated caches are excluded. No CI or GitHub Actions were run.

@@ -156,5 +156,37 @@
       1358
     ],
     "review_note": "Actual grid visually reviewed; divider contrasts vary and hair touches upper cell edge in source. Exact integer boundary crops without changing source framing."
+  },
+  "assets/expressions/EXP-133_checking-a-detail/RYO_EXP-133_checking-a-detail_sheet_v001.png": {
+    "source_sha256": "668f1f1af407b22177490d6b77b509fb42cd7420f3f63349ba7aeb838de25b7f",
+    "x": [
+      0,
+      384,
+      774,
+      1159
+    ],
+    "y": [
+      0,
+      451,
+      903,
+      1358
+    ],
+    "review_note": "Actual divider centers reviewed; black/white contrast varies across cells. Hair touches source top boundary already; exact integer crops do not further trim source."
+  },
+  "assets/expressions/EXP-135_scientific-fascination/RYO_EXP-135_scientific-fascination_sheet_v001.png": {
+    "source_sha256": "2958f5e11ff3d2a41dfb602d1268caf740098d04927fa214876e710b020395db",
+    "x": [
+      0,
+      380,
+      754,
+      1159
+    ],
+    "y": [
+      0,
+      450,
+      905,
+      1358
+    ],
+    "review_note": "Actual unequal-width cells and contrasting divider centers reviewed. Integer boundary crops preserve original framing without resizing."
   }
 }
