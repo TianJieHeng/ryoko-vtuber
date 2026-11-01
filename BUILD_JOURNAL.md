@@ -54,3 +54,8 @@ Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1
 ## 2026-11-01 — source-art batch 004
 
 A fourth separate batch contains 50 new accepted primary images, 450 derived panels and 40 peak copies. All 640 frozen image/metadata/prompt files matched their approved SHA-256 and size (210,581,308 bytes), with no previous source overlap. Cumulative delivery is 200 primary sources, 1,695 panels and 127 peak copies. Metadata is restricted to these published sources; later local arrivals and rejected variants are excluded. Integer crops preserve source pixels and are not registered animation. Remote verification follows the atomic commit; no CI or model/runtime validation is claimed.
+
+### Batch 004 remote verification
+
+Commit `df8069eac63a03e9abcb52d8316557ec124e58cd` was confirmed on `main`. All 2,447 remote file blobs matched expected local Git hashes. Cumulative delivery: 200 primary source images, 1,695 derived panels and 127 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and unaccepted variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
+
