@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "production_status": "in_progress",
+  "scope": "additive corrected artwork, not UV-fitted runtime avatar",
+  "reference_count": 10,
+  "generated_count": 1,
+  "records": [
+    {
+      "path": "hair/front_fringe.png",
+      "sha256": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",
+      "git_blob_sha": "86985f7868f4479e11bc587592df37e37f3a405f",
+      "bytes": 1539328,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 830780,
+        "partly_transparent_pixels": 740663,
+        "opaque_pixels": 1073,
+        "nonzero_bbox": [
+          0,
+          5,
+          1238,
+          1254
+        ]
+      },
+      "status": "accepted_source_art",
+      "role": "isolated_hair_fringe",
+      "visual_review": "Parent inspected actual image and neutral-grey composite; accepted sage cel-style silhouette and transparent exterior.",
+      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "generation_tool": "built-in image_gen",
+      "generation_output": "exec-5bfd6fd1-9737-4506-bbda-956b1d48bfaf.png",
+      "prompt_summary": "Isolate front fringe, no face or jewelry; complete hidden roots; preserve sage cel style and silhouette.",
+      "registration_status": "requires_placement_and_fitting",
+      "uv_fitted": false,
+      "assembly_tested": false
+    },
+    {
+      "path": "references/RYO_DET-001_hair-construction_v002.png",
+      "sha256": "d25b681cd4d4fd4728a186294ebbc1f9a4a13e0c033668f9f1be8d1571fa1bc9",
+      "git_blob_sha": "6ca79da49c43945febf48ac884679d868d377184",
+      "bytes": 2246035,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1572864,
+        "nonzero_bbox": [
+          0,
+          0,
+          1536,
+          1024
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/details/RYO_DET-001_hair-construction_v002.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/RYO_DET-002_gold-accessories_v003.png",
+      "sha256": "424cdb12995415d4a2b1a951bf528cf1656645eed13db6ad1d2f3a10831309e3",
+      "git_blob_sha": "803dd3972577446e8418bf66b7aef9dba22f5df1",
+      "bytes": 1579358,
+      "dimensions": [
+        1055,
+        1491
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1573005,
+        "nonzero_bbox": [
+          0,
+          0,
+          1055,
+          1491
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/details/RYO_DET-002_gold-accessories_v003.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/RYO_DET-003_outfit-construction_v003.png",
+      "sha256": "26e7e7d3fc264646dd5e043fcbf767d8e36a6066d404c5c15f8f3e19c9f9a943",
+      "git_blob_sha": "c7fe3c3791cc55131f43eaf7842674f9db3594d5",
+      "bytes": 1611857,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1572528,
+        "nonzero_bbox": [
+          0,
+          0,
+          1448,
+          1086
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/details/RYO_DET-003_outfit-construction_v003.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/RYO_DET-004_hands-pumps_v002.png",
+      "sha256": "0dcec24265c69b6a8b340cb153a2d24a4307be186c233ce0fc1295d3ba45b14e",
+      "git_blob_sha": "c20992c56df8b18c2d002c7bcce03337a882929d",
+      "bytes": 1713854,
+      "dimensions": [
+        1218,
+        1292
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1573656,
+        "nonzero_bbox": [
+          0,
+          0,
+          1218,
+          1292
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/details/RYO_DET-004_hands-pumps_v002.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/RYO_MOD_fullbody_Apose_front_v001.png",
+      "sha256": "15a10bc82b34149aa468549b09d24ec8d845c57ee48bd4d60e8c27c24215dd61",
+      "git_blob_sha": "205002227af0449a659007509c2b3410c0ff44a9",
+      "bytes": 1622829,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1572864,
+        "nonzero_bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/RYO_MOD_fullbody_back_v001.png",
+      "sha256": "5896f5ab11734922b07533c6a88d5c809e0516643c8eea9ec328a61cb45231d1",
+      "git_blob_sha": "490bbf41b0290eafe78ddf351920ada67c44a456",
+      "bytes": 1547624,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1572864,
+        "nonzero_bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/modeling/RYO_MOD_fullbody_back_v001.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/RYO_MOD_fullbody_front_v001.png",
+      "sha256": "90b6ca93e8a168b4922b9b23c4824d48100505131a03a209d11fb977c59cb1f9",
+      "git_blob_sha": "18cc63dd000e00f26e5bde04cb72f33878345c38",
+      "bytes": 1634911,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1572864,
+        "nonzero_bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/modeling/RYO_MOD_fullbody_front_v001.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/RYO_MOD_neutral-bust_front_v001.png",
+      "sha256": "c7d174b6d35094278ba357b8ad86e3e8a34d5e9f7a997b3480e09e6dcd2fc529",
+      "git_blob_sha": "300aebf0c2f2438973817db49ae4720da6a589d5",
+      "bytes": 1908074,
+      "dimensions": [
+        1159,
+        1358
+      ],
+      "mode": "RGB",
+      "alpha": {
+        "has_alpha_channel": false,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1573922,
+        "nonzero_bbox": [
+          0,
+          0,
+          1159,
+          1358
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/ryoko02(20261101-114212).png",
+      "sha256": "82f51363e69990679415d225d390cd360d3626de7353bb3c8957fa45536d91a4",
+      "git_blob_sha": "955af4c07bb6fcb15ffefe39a540d6b1c5d1cfc9",
+      "bytes": 2382665,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1572528,
+        "nonzero_bbox": [
+          0,
+          0,
+          1448,
+          1086
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "references/originals/ryoko02(20261101-114212).png",
+        "copied_byte_identical": true
+      }
+    },
+    {
+      "path": "references/ryokov1.png",
+      "sha256": "f34af593f1459ca571f927f082b38d5cd520980d4994449ab7c6e4f6e2f23154",
+      "git_blob_sha": "9906f5959ce9dc3768f6bd013342ea53a748f840",
+      "bytes": 2666454,
+      "dimensions": [
+        1055,
+        1491
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 0,
+        "partly_transparent_pixels": 0,
+        "opaque_pixels": 1573005,
+        "nonzero_bbox": [
+          0,
+          0,
+          1055,
+          1491
+        ]
+      },
+      "status": "reference_copy",
+      "role": "identity_reference",
+      "provenance": {
+        "source_repo": "TianJieHeng/ryoko-vtuber",
+        "source_path": "references/originals/ryokov1.png",
+        "copied_byte_identical": true
+      }
+    }
+  ]
+}

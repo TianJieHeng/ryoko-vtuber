@@ -1,0 +1,97 @@
+{
+  "source_repo_path": "vtuber/data/texture_build_v001.json",
+  "inspected_commit": "ddd41e98b502c8a7dc93073b673697d7f873f85e",
+  "scope": "Existing Phase03 targets, not newly generated fitted maps",
+  "targets": [
+    {
+      "existing_object": "RYOKO_Footwear_CharacterLeft",
+      "existing_texture_resolution": 1024,
+      "existing_base_color_filename": "Footwear_CharacterLeft_BaseColor.png",
+      "existing_roughness_filename": "Footwear_CharacterLeft_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Footwear_CharacterRight",
+      "existing_texture_resolution": 1024,
+      "existing_base_color_filename": "Footwear_CharacterRight_BaseColor.png",
+      "existing_roughness_filename": "Footwear_CharacterRight_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Hair_ScalpAndBun",
+      "existing_texture_resolution": 2048,
+      "existing_base_color_filename": "Hair_ScalpAndBun_BaseColor.png",
+      "existing_roughness_filename": "Hair_ScalpAndBun_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Outfit_BlazerAndBlouse",
+      "existing_texture_resolution": 2048,
+      "existing_base_color_filename": "Outfit_BlazerAndBlouse_BaseColor.png",
+      "existing_roughness_filename": "Outfit_BlazerAndBlouse_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Outfit_Sleeve_CharacterLeft",
+      "existing_texture_resolution": 1024,
+      "existing_base_color_filename": "Outfit_Sleeve_CharacterLeft_BaseColor.png",
+      "existing_roughness_filename": "Outfit_Sleeve_CharacterLeft_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Outfit_Sleeve_CharacterRight",
+      "existing_texture_resolution": 1024,
+      "existing_base_color_filename": "Outfit_Sleeve_CharacterRight_BaseColor.png",
+      "existing_roughness_filename": "Outfit_Sleeve_CharacterRight_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Outfit_Trousers",
+      "existing_texture_resolution": 1024,
+      "existing_base_color_filename": "Outfit_Trousers_BaseColor.png",
+      "existing_roughness_filename": "Outfit_Trousers_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Skin_Hand_CharacterLeft",
+      "existing_texture_resolution": 1024,
+      "existing_base_color_filename": "Skin_Hand_CharacterLeft_BaseColor.png",
+      "existing_roughness_filename": "Skin_Hand_CharacterLeft_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Skin_Hand_CharacterRight",
+      "existing_texture_resolution": 1024,
+      "existing_base_color_filename": "Skin_Hand_CharacterRight_BaseColor.png",
+      "existing_roughness_filename": "Skin_Hand_CharacterRight_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    },
+    {
+      "existing_object": "RYOKO_Skin_HeadAndNeck",
+      "existing_texture_resolution": 2048,
+      "existing_base_color_filename": "Skin_HeadAndNeck_BaseColor.png",
+      "existing_roughness_filename": "Skin_HeadAndNeck_Roughness.png",
+      "new_artwork_assignment": null,
+      "uv_fitting_status": "requires_actual_blender_mesh_and_uv",
+      "preserve_existing_until_replacement_verified": true
+    }
+  ]
+}
