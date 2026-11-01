@@ -8,4 +8,4 @@
 
 **Current production state:** not started. Approval of the plan, resolution of reference conflicts, avatar coverage and target application/tracking are still required before dependent work.
 
-**Publication verification:** to be recorded after the remote commit and file hashes are checked. This entry does not itself claim that files have been uploaded or that any model has been validated.
+**Publication verification:** commit `57ebde4489b634f5bde55a28ab7e400ebad979e4` was confirmed on `main`. All 11 remote file blobs matched the local Git hashes: three root documents, the reference review and manifest, and six unchanged original PNGs totaling 16,063,442 bytes. Original PNG SHA-256 values and byte lengths also matched the reference manifest. No CI or model/runtime validation was run. This follow-up journal entry records that verified publication; it does not claim production is complete.
