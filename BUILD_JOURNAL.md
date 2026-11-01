@@ -53,7 +53,7 @@ Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1
 
 ## 2026-11-01 — source-art batch 004
 
-A fourth separate batch contains 50 new accepted expression sheets, 450 derived panels and 40 peak copies. All 640 frozen image/metadata/prompt files matched their approved SHA-256 and size (210,581,308 bytes), with no previous source overlap. Cumulative delivery is 200 primary sources, 1,695 panels and 127 peak copies. Metadata is restricted to these 100 published sources, not later local arrivals. Later local arrivals and rejected variants are excluded. Integer crops preserve source pixels and are not registered animation. Remote verification follows the atomic batch commit; no CI or model/UV/rig/runtime implementation is claimed.
+A fourth separate batch contains 50 new accepted expression sheets, 450 derived panels and 40 peak copies. All 640 frozen image/metadata/prompt files matched their approved SHA-256 and size (210,581,308 bytes), with no previous source overlap. Cumulative delivery is 200 primary sources, 1,695 panels and 127 peak copies. Metadata is restricted to these 200 published sources, not later local arrivals. Later local arrivals and rejected variants are excluded. Integer crops preserve source pixels and are not registered animation. Remote verification follows the atomic batch commit; no CI or model/UV/rig/runtime implementation is claimed.
 
 ### Batch 004 remote verification
 
@@ -62,7 +62,7 @@ Commit `df8069eac63a03e9abcb52d8316557ec124e58cd` was confirmed on `main`. All 2
 
 ## 2026-11-01 — source-art batch 005
 
-A fifth separate batch contains 50 new accepted expression sheets, 450 derived panels and 50 peak copies. All 650 frozen asset-related files matched their approved SHA-256 and size (226,923,390 bytes), with no overlap with prior source paths. Cumulative publication is 250 primary sources, 2,145 panels and 177 peak copies. Metadata is restricted to these 100 published sources, not later local arrivals. Final remainder and handoff drafts are not included. Original images remain unchanged. Remote verification follows the atomic batch commit; no CI or actual model/runtime validation is claimed.
+A fifth separate batch contains 50 new accepted expression sheets, 450 derived panels and 50 peak copies. All 650 frozen asset-related files matched their approved SHA-256 and size (226,923,390 bytes), with no overlap with prior source paths. Cumulative publication is 250 primary sources, 2,145 panels and 177 peak copies. Metadata is restricted to these 250 published sources, not later local arrivals. Final remainder and handoff drafts are not included. Original images remain unchanged. Remote verification follows the atomic batch commit; no CI or actual model/runtime validation is claimed.
 
 ### Batch 005 remote verification
 
