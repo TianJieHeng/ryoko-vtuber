@@ -45,3 +45,8 @@ Commit `fd4ddddd794976ec4264dd22918a8fb14e5bf416` was confirmed on `main`. All 1
 ## 2026-11-01 — source-art batch 003
 
 A third separate batch contains 50 new accepted primary source images, 450 lossless panels and 32 peak copies, with no prior source overlap. Cumulative delivery is 150 primary images, 1,245 panels and 87 peak copies. Three EXP-091–093 JSON sidecars were finalized after review: status, actual reference IDs and visual-review notes only. Reversing precisely these approved fields reproduces each original frozen JSON hash and size; all source PNG, prompt and crop bytes are unchanged. The manifest records this metadata-only refresh. Rejected BOD-031 is excluded. Remote verification follows the atomic commit; no CI or model/runtime validation is claimed.
+
+### Batch 003 remote verification
+
+Commit `617d2c9eba1c632e3f1c85eafcca560ce0052cd7` was confirmed on `main`. All 1,805 remote file blobs matched expected local Git hashes. Cumulative delivery: 150 primary source images, 1,245 derived panels and 87 peak copies. Prior images and six original reference PNGs remain byte-identical. Later local arrivals and unaccepted variants are excluded. This verifies reference-art publication, not a working model, rig or runtime.
+
