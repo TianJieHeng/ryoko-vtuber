@@ -1,0 +1,11 @@
+{
+  "defect": "Generated forward axis +X did not match locked authoring forward -Y.",
+  "variable_changed": "RYOKO_BLOCKOUT_ROOT rotation Z",
+  "fix": "Rotated root -90 degrees before final renders.",
+  "verified_by": [
+    "matched_front.png",
+    "matched_left_side.png",
+    "matched_back.png",
+    "orbit contact sheet"
+  ]
+}

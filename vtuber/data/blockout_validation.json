@@ -1,0 +1,16 @@
+{
+  "blend_reopened": true,
+  "file": "/mnt/agents/output/app/assets/ryoko_blockout_v001.blend",
+  "character_mesh_objects": 1,
+  "vertices": 43766,
+  "triangles": 76402,
+  "armatures": 0,
+  "shape_key_blocks": 0,
+  "root_rotation_z_degrees": -90.0,
+  "review_fill_watts": 180.0,
+  "boundary_edges": 10724,
+  "non_manifold_edges": 10724,
+  "loose_vertices": 0,
+  "render_engine": "CYCLES",
+  "status": "PASS as an inspected blockout; not production topology, facial geometry, rig, or VRM export."
+}
