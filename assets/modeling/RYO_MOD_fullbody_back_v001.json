@@ -1,0 +1,23 @@
+{
+  "asset_id": "MOD-004",
+  "role": "full body rear modeling reference",
+  "generator": "built-in image_gen",
+  "native_dimensions": [
+    1024,
+    1536
+  ],
+  "export_dimensions": [
+    1024,
+    1536
+  ],
+  "mode": "RGB",
+  "sha256": "5896f5ab11734922b07533c6a88d5c809e0516643c8eea9ec328a61cb45231d1",
+  "source_references": [
+    "REF-001",
+    "REF-006",
+    "MOD-002"
+  ],
+  "visual_review": "Complete head to heels and rear stance match source. Ponytail silhouette, blazer central seam, trouser length and heel construction consistent. Hair ornament ends follow original rear depiction; precise hidden construction remains modeler interpretation. Not measured orthographic CAD or model-fit validated.",
+  "status": "visual_review_passed_model_fit_untested",
+  "processing": "Original bytes copied unchanged."
+}

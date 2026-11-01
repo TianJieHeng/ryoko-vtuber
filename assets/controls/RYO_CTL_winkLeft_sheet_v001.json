@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-winkLeft",
+  "native_dimensions": [
+    1261,
+    1247
+  ],
+  "sha256": "6e55a3a0bc6022bc9eed4bb6c5e32e9a5fd3611287bb72ab865b5e5bd316d157",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels verified. Character-left eye (viewer-right) closes while opposite stays open. Full hair and pins visible. Closure holds longer than numerical requested progression; approximate key-pose guide, not calibrated control weights. Pending parent acceptance.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

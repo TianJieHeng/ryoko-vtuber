@@ -1,0 +1,27 @@
+{
+  "id": "EXP-008",
+  "slug": "proud-of-you",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1159,
+    1358
+  ],
+  "export_dimensions": [
+    1159,
+    1358
+  ],
+  "sha256": "f94da7402faca5113d19417323a831e20e0e75bf120be4e5f76a3dba3015089d",
+  "bytes": 2155018,
+  "review_status": "visually_reviewed",
+  "visual_review": "Nine panels visually inspected; expression arc and neutral return readable, identity and outfit consistent. Subtle emotional variants require final comparative review.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ]
+}

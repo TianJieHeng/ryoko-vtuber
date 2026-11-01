@@ -1,0 +1,2724 @@
+{
+  "batch": "001",
+  "status": "published",
+  "primary_count": 50,
+  "source_paths": [
+    "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.png",
+    "assets/body/RYO_BOD-002_finger-wag_sheet_v001.png",
+    "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.png",
+    "assets/controls/RYO_CTL_blink_sheet_v002.png",
+    "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.png",
+    "assets/controls/RYO_CTL_browLower_sheet_v001.png",
+    "assets/controls/RYO_CTL_browRaise_sheet_v001.png",
+    "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.png",
+    "assets/controls/RYO_CTL_jawOpen_sheet_v001.png",
+    "assets/controls/RYO_CTL_winkLeft_sheet_v001.png",
+    "assets/controls/RYO_CTL_winkRight_sheet_v001.png",
+    "assets/details/RYO_DET-001_hair-construction_v002.png",
+    "assets/details/RYO_DET-002_gold-accessories_v003.png",
+    "assets/details/RYO_DET-003_outfit-construction_v003.png",
+    "assets/details/RYO_DET-004_hands-pumps_v002.png",
+    "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_sheet_v001.png",
+    "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_sheet_v001.png",
+    "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_sheet_v002.png",
+    "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_sheet_v001.png",
+    "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.png",
+    "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.png",
+    "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.png",
+    "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.png",
+    "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_sheet_v001.png",
+    "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_sheet_v001.png",
+    "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_sheet_v001.png",
+    "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_sheet_v001.png",
+    "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_sheet_v001.png",
+    "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_sheet_v001.png",
+    "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.png",
+    "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.png",
+    "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_sheet_v001.png",
+    "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_sheet_v001.png",
+    "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.png",
+    "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_sheet_v001.png",
+    "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.png",
+    "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_sheet_v001.png",
+    "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_sheet_v001.png",
+    "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.png",
+    "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_sheet_v001.png",
+    "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_sheet_v001.png",
+    "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_sheet_v001.png",
+    "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_sheet_v001.png",
+    "assets/modeling/RYO_MOD_eye-details_v001.png",
+    "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.png",
+    "assets/modeling/RYO_MOD_fullbody_back_v001.png",
+    "assets/modeling/RYO_MOD_fullbody_front_v001.png",
+    "assets/modeling/RYO_MOD_fullbody_side_v001.png",
+    "assets/modeling/RYO_MOD_mouth-details_v001.png",
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+  ],
+  "derived_panels": 351,
+  "peak_copies": 28,
+  "asset_related_files": 529,
+  "total_bytes": 189048869,
+  "files": [
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp01_v001.png",
+      "sha256": "9f13be261c8f51f38f1b6f39bb9dd6b2df6b3123dc9c0e301c2f12ae93057615",
+      "size_bytes": 164165
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp02_v001.png",
+      "sha256": "d3140ece997841a918d45b5583452b3ed1e44e184f5c3a0d0a3f256a7e50eb98",
+      "size_bytes": 162185
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp03_v001.png",
+      "sha256": "72d647e666c55eca03ba380692971790e93f0a57c1a5664ce9a2b8355341ea9c",
+      "size_bytes": 160138
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp04_v001.png",
+      "sha256": "b342201199429767339d2a3c9004d0278b0c44635899fc0f7cd0c3ba25a269b9",
+      "size_bytes": 158608
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp05_v001.png",
+      "sha256": "8b500aa71094fb6d4e5f4f622d53d31a7dee824c6111a789bd2a3ce789dc1ba6",
+      "size_bytes": 159478
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp06_v001.png",
+      "sha256": "fe6438770e0b2e78b9cb686b0647b68ed216ca59f6b1e8dcee6a44cfd50c80ba",
+      "size_bytes": 158741
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp07_v001.png",
+      "sha256": "e4d82ee945c7e3f7645f7001bd244cbe1f841dd6972b2a6c322c9df1a0dab6ad",
+      "size_bytes": 157612
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp08_v001.png",
+      "sha256": "301daac5ef97d80eed271e0bc9556b9dd973954453f544a4c0c5e0e18ea7a415",
+      "size_bytes": 162514
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_kp09_v001.png",
+      "sha256": "24f0d3bce4792c3ddfda832761a9988bb19cf3fec16de221dacb10316ca05fc6",
+      "size_bytes": 162736
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.json",
+      "sha256": "974bbacd509e41c9e91dd0da93a61a1704e507fc0be0093aa93e5934148fe480",
+      "size_bytes": 719
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.png",
+      "sha256": "fb2bf3a04ff32adb7dce5d57fecffac86bbb9438ec83818dc59cfb8d2bc06507",
+      "size_bytes": 1646884
+    },
+    {
+      "path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.prompt.txt",
+      "sha256": "d3d3e13cd505d282dc2831afdb9d03e9b79fab5d1343ec288bae4fd87b8639ff",
+      "size_bytes": 1452
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp01_v001.png",
+      "sha256": "576ce978548f53d99c3285ffd591aceedda04dc25cd772b6d8fa7ffe11750d1a",
+      "size_bytes": 143498
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp02_v001.png",
+      "sha256": "3708b8d83d4ab97a80bfa61d5e947fcb364623092e691dad7c9efbb736f7d88c",
+      "size_bytes": 149275
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp03_v001.png",
+      "sha256": "a5450ab417d20bd20604538b821792f0811cde095f0cbf58ca49f0236246f9a3",
+      "size_bytes": 145861
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp04_v001.png",
+      "sha256": "702e9c1eef14c0f557351f919ddc1f6f878adb7af81366c385fb8327e1f1a472",
+      "size_bytes": 144361
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp05_v001.png",
+      "sha256": "a47c408de5ca9971dc488772f466d495eedefc087ce685fc68672caf082b0b1a",
+      "size_bytes": 148752
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp06_v001.png",
+      "sha256": "3adea05c141e7e8831337fcff07a68d7516761963cfb854f1a97ef29c455214f",
+      "size_bytes": 149234
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp07_v001.png",
+      "sha256": "0d00dc93a496ed6e8468bc7cdd5b129bc353a57e98f888eb20e8ead4799aabab",
+      "size_bytes": 148238
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp08_v001.png",
+      "sha256": "0c15683af8a9ad693d2bc004ea79aa121119cb4ddba77a9e92fd4c5f3606fe5f",
+      "size_bytes": 149872
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_kp09_v001.png",
+      "sha256": "cae87f711a894156e61d3d873c59e0d822a436f0ae3f0d70b712eaadb40f5219",
+      "size_bytes": 151891
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.json",
+      "sha256": "d9bf4419d6926bbfe1048b274cec0fdf0e70d34516fb0e8b8d218fe735214256",
+      "size_bytes": 722
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.png",
+      "sha256": "1273d8e01e6fcc02ea6fdc97bdfdebca4a2a24c3662a81b65ec4174eb175093f",
+      "size_bytes": 1494868
+    },
+    {
+      "path": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.prompt.txt",
+      "sha256": "9cde916a24ec899506c9a92351546418d5b5d581c429d642b7f819af4b0fce3a",
+      "size_bytes": 1522
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp01_v001.png",
+      "sha256": "3a40dcc89bfa97e770f19bf8a6d631854cd7f40e301e6f587c7f016488a0e29d",
+      "size_bytes": 149908
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp02_v001.png",
+      "sha256": "c07f7cafe1067347fade4581843034eb7f72fb9a2144430b074b4b1dc1c49059",
+      "size_bytes": 157739
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp03_v001.png",
+      "sha256": "cae6d3f55556ff7cee21dab1a89dff426e4a92026de85b4abf72cbc97779cfa4",
+      "size_bytes": 162031
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp04_v001.png",
+      "sha256": "dd4ecaac04e5ebdfe362951dbf01539f7bb251d9e204986ab7f519d20961d836",
+      "size_bytes": 152891
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp05_v001.png",
+      "sha256": "db347e72072f41fcd94cd0a2d4451cbdd2e621af2a18169e41c5ecfba7bf297e",
+      "size_bytes": 157302
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp06_v001.png",
+      "sha256": "3ddf496fc108a209fbb30b821a0267c0fdb01793774e74eeaa51638efcee792e",
+      "size_bytes": 157233
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp07_v001.png",
+      "sha256": "87469670ee1a8e2aed73c05628dcb1fd9d29769d97dabf0ab4f41952acf45dca",
+      "size_bytes": 148406
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp08_v001.png",
+      "sha256": "c66b4cf5c60dea948cb7220a7c52376e8929e491ff30a7eccdc71cdc3bf4c339",
+      "size_bytes": 151594
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_kp09_v001.png",
+      "sha256": "59cd301f28c91061dfa974a7d8c8bf7c2883cba73fa9854092b56c1336471edf",
+      "size_bytes": 150390
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.json",
+      "sha256": "a52a6dde4e67a46007d5ef91671b8b495c912b2e50d0f93cf52d56046ea3e32e",
+      "size_bytes": 692
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.png",
+      "sha256": "dee1a387260a22252cccd775dbe4cf09a58099c140c1605ed55e30310fb65179",
+      "size_bytes": 1548772
+    },
+    {
+      "path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.prompt.txt",
+      "sha256": "969896e9b11358b0529b2c49f0c6998b9f5e021d55671f8196c1fbcfcacac8ac",
+      "size_bytes": 1455
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp01_v002.png",
+      "sha256": "fe9305287f8b003de07ade6aa4901736ffcd740e752ff85ed208e77495246175",
+      "size_bytes": 224462
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp02_v002.png",
+      "sha256": "4d5c9c5f2fe7498aba491d0a603e7b0d890a0d0792dcb930ab9a61dadfc18064",
+      "size_bytes": 224680
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp03_v002.png",
+      "sha256": "1ef20acb759b931d2a32e42ff6bc08eb8e0ef492765a191016f9a82a89e82e2d",
+      "size_bytes": 224527
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp04_v002.png",
+      "sha256": "63fd1d0da474ceed5bb313f8f335a6ac5cc672b29e0d724d2816abacb24c1f89",
+      "size_bytes": 224621
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp05_v002.png",
+      "sha256": "d72c4dc85f96ded6ddf09924eda9111449f31c1ecad1a8afc60ffae5437b20c5",
+      "size_bytes": 224079
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp06_v002.png",
+      "sha256": "ae5d69245a1b08decd9e4864d5d55bd2de345943d07b125052332be4acceaf82",
+      "size_bytes": 223948
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp07_v002.png",
+      "sha256": "a98c0e66098ae809a019e91c48ca3532d057f28708992b3eb595816ee1677e0e",
+      "size_bytes": 225134
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp08_v002.png",
+      "sha256": "093da275a46701f06c5e645a785be38e1547fe1c11ac13f1f4d23371c9fd64d6",
+      "size_bytes": 223821
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_kp09_v002.png",
+      "sha256": "dce7bfee1e8394820dc013b642f369ad1f354ac09814109368221980217a7126",
+      "size_bytes": 224648
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_sheet_v002.json",
+      "sha256": "171a835a8f06b44fe7ce9f536d8233b2e3affabd63a5ce53028c1b73b0095afc",
+      "size_bytes": 589
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_sheet_v002.png",
+      "sha256": "94785c037b0dc654be2b73e0ac46729205260b97a7da4e09ab41cf3e94eaa521",
+      "size_bytes": 2175803
+    },
+    {
+      "path": "assets/controls/RYO_CTL_blink_sheet_v002.prompt.txt",
+      "sha256": "0e6fa249a0794ce91ad8e69a6f7c87374a8c441349d11ad66fd9a55bf07e9ba5",
+      "size_bytes": 1481
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp01_v002.png",
+      "sha256": "91ce5b78f3aaaa0bfe272b18dfcc28fbc437478a443770d84516123997e63461",
+      "size_bytes": 216138
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp02_v002.png",
+      "sha256": "1ca47c1e564a45a2a2dbcdaf1e25eba5390402108f518a174662ee6db612e54a",
+      "size_bytes": 213887
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp03_v002.png",
+      "sha256": "5b91e0c9da78b913b10be5b3911e2c0472cfc116c6e79ac0d30f5aaf7a1d7ca9",
+      "size_bytes": 215125
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp04_v002.png",
+      "sha256": "e15a1d04232eb2931f3afe6099e99a9bc0bfa0e85d675fe34ce2f6bf025e2141",
+      "size_bytes": 213623
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp05_v002.png",
+      "sha256": "b1800f82aa395b0881a82ee0aa20809171663e98b6f90ea468f0c93247f1193f",
+      "size_bytes": 212460
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp06_v002.png",
+      "sha256": "0126645d58fbb76fc036aa045d0b9a417b09b7ebdff2a7e99a69277f2063edca",
+      "size_bytes": 213066
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp07_v002.png",
+      "sha256": "1c40761fb7862ff02dcaec169985ca7912720bfce1ad826076e8c11b8e5a44a4",
+      "size_bytes": 212887
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp08_v002.png",
+      "sha256": "07ef4f33debf097e3fc9ba99eb062acfc13457caa97927d4604ba111fac303bb",
+      "size_bytes": 213696
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_kp09_v002.png",
+      "sha256": "02342bb13275533d67c59c60ac003da0cd45afc53d08c9de8229e4ba06d23511",
+      "size_bytes": 212099
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.json",
+      "sha256": "57f379776c86ebe0c919be839af75941c3efec45c34edb231e96e24abf6ed9c5",
+      "size_bytes": 636
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.png",
+      "sha256": "74e754c7d0364df74c71c2a7e69b597c0587e1c0fe5246ea87aa06ef4f856c59",
+      "size_bytes": 2073437
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.prompt.txt",
+      "sha256": "ecd57b8c6e08d28c6006487c191b00d7f7175db7fa29e450cb92dc633cc731f1",
+      "size_bytes": 1608
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp01_v001.png",
+      "sha256": "2343f86d0ec43262fe7b525979fe89d050a9dc5b27dcd5ca07bbbc959a2caad3",
+      "size_bytes": 223710
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp02_v001.png",
+      "sha256": "4c3a007ff1b5ff49fbe9681b9e40b2832ffb162902f6cc915eeef271fd3e4580",
+      "size_bytes": 221882
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp03_v001.png",
+      "sha256": "0c32e1aa8f19d3ee3f1ff249be7a334b9b9af028b2f5985af22f90bc17936a6a",
+      "size_bytes": 222079
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp04_v001.png",
+      "sha256": "4efe03f72e20e65eb0f9e898bb3ce11b04b30f62b2d63db325881aa07ad97fa4",
+      "size_bytes": 222403
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp05_v001.png",
+      "sha256": "81224ab1a1869bf047bfe832ab033ffef655b14110525455e4dafffdd73d960b",
+      "size_bytes": 219998
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp06_v001.png",
+      "sha256": "9fb7e0767f2245d4c735ff38a8b6c6736e14bb4cf8d622a2ae121626f4402867",
+      "size_bytes": 220950
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp07_v001.png",
+      "sha256": "3e4ed6d33ee9097061b798a5c87f4f773f0df43f001561ba0e93a6c7b15de561",
+      "size_bytes": 220546
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp08_v001.png",
+      "sha256": "ee684f4d59125115ae3c48c683acc9c091bb836541367c117ccb94507b905e59",
+      "size_bytes": 222415
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_kp09_v001.png",
+      "sha256": "5dab7e6b90e63f2bb8d669ef386de0d9a49a699dce028578988dc64f46ac949f",
+      "size_bytes": 220105
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_sheet_v001.json",
+      "sha256": "0386b9c6990ed06bd4e80e2d755432cc06f38a21419fef12e55fd36e7880f895",
+      "size_bytes": 606
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_sheet_v001.png",
+      "sha256": "06f62639556f33823ce33a8c83187d7deae1c417f1cd991a607dac84347d105c",
+      "size_bytes": 2152355
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browLower_sheet_v001.prompt.txt",
+      "sha256": "f4f90323248a73845b7a856db9e45d0511054f3ec3ec62962fcd9d2d6f689101",
+      "size_bytes": 1524
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp01_v001.png",
+      "sha256": "d602b15f9ac0465878980a3142691be7871621fb0765b8412dc5d906f307b600",
+      "size_bytes": 221918
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp02_v001.png",
+      "sha256": "e7b262fe4c51d0dccdd83db02af5194da5e188c56d0ea4d4b47af74ba100a842",
+      "size_bytes": 220586
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp03_v001.png",
+      "sha256": "e7e3bfeeb6229ab79175f61b39892c0301a4654c67d525cdd7b89b7a3a3ebda9",
+      "size_bytes": 220651
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp04_v001.png",
+      "sha256": "0baa94b34cae15e31118678603a6f119d351bbb74cf726e38065039b5ee01907",
+      "size_bytes": 222283
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp05_v001.png",
+      "sha256": "684a7162d8935c4f7a9d7989df0a40258196cd5eecd099b2a2f528204c1291db",
+      "size_bytes": 221694
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp06_v001.png",
+      "sha256": "2696e840b1fa4bc17d61f419a7b070cf26a57dee97cfc8fdcb84ed612537d9b3",
+      "size_bytes": 221072
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp07_v001.png",
+      "sha256": "398b0e725222bf45985ae34e00bd5e2e44e6b8ea0d5ea069d1c57e41b6a1555e",
+      "size_bytes": 223195
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp08_v001.png",
+      "sha256": "c2fda64d07c9f8400d6137746c90e5b2322ba80d54a3f7ad629eed87c49af323",
+      "size_bytes": 222803
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_kp09_v001.png",
+      "sha256": "cf8368e4d56f9f9e3ed66f77e774e7940c023d915b7039c6eb0595a9361ce059",
+      "size_bytes": 222433
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_sheet_v001.json",
+      "sha256": "8837740b87bd4a9949f9787036bf82adcf65c96c288019a565b61df56eaff872",
+      "size_bytes": 600
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_sheet_v001.png",
+      "sha256": "dae9b43bc136d3379c40226eb667aaed1c709e2221730e149eb0b9fecef9c99e",
+      "size_bytes": 2161085
+    },
+    {
+      "path": "assets/controls/RYO_CTL_browRaise_sheet_v001.prompt.txt",
+      "sha256": "54d088e009b8f905ac7a7cf9f14f74121f7cbc8b309fd96e9466f60e4321dd86",
+      "size_bytes": 1540
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp01_v002.png",
+      "sha256": "62eb4eab71d0e1a0dc542254426d0136ecb45c2103b02b28f5999caafe5b104b",
+      "size_bytes": 223922
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp02_v002.png",
+      "sha256": "7aff45b6a35f76c36c9bfe9e58e6c1607b848d3d31ca8ad9024168263a3b12a5",
+      "size_bytes": 226527
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp03_v002.png",
+      "sha256": "03b6fc1636fdd58c7c598ccf720828f1cc231933d95d5cb8e1402528abbb8aff",
+      "size_bytes": 225018
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp04_v002.png",
+      "sha256": "bd36383e8b45a56b0cf018e82d79a4b20273efbfd6e887e6fe0bd3b35e62d054",
+      "size_bytes": 223422
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp05_v002.png",
+      "sha256": "2257eb52fc97786e2fa54db16bfed1fc14fade8afe3234e575488c7bffb6af75",
+      "size_bytes": 224077
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp06_v002.png",
+      "sha256": "bd12f326514aecd99bd7672ba179a6e73c36ad8d800467d941c1065305e5a917",
+      "size_bytes": 223862
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp07_v002.png",
+      "sha256": "5bdfad5cabbc6fba69b0b6b836fc1635244081614a321f75148d018951de184e",
+      "size_bytes": 224225
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp08_v002.png",
+      "sha256": "ad665057d552044eb98ffa390efdf69bc773c1c7dfbdc2caf7c68d9afaf48a71",
+      "size_bytes": 224286
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_kp09_v002.png",
+      "sha256": "397069802f593bc95a28c3c25fc5f7f150ad854be4ea9bb656e47ece1991cfba",
+      "size_bytes": 223714
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.json",
+      "sha256": "d73af1cf10af942b8533782105524084bca27aef80d7333c0387bde1b623d182",
+      "size_bytes": 627
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.png",
+      "sha256": "624f8c186fe7773abcde09573e5977da0c99940975dfc2df7df4e3588f29e313",
+      "size_bytes": 2183806
+    },
+    {
+      "path": "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.prompt.txt",
+      "sha256": "1027f5839f2620564690fcf95e5c3e792764faeb379cac0582d3be0939d1196c",
+      "size_bytes": 1528
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp01_v001.png",
+      "sha256": "5abedb17a386df2e7a2a7ac369a71777cf2a7ece09c0470ced2f9c480e31f048",
+      "size_bytes": 222805
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp02_v001.png",
+      "sha256": "70936cae252e50715f4ba2d6ee4ce728870785c80a76ad0c0c4ea6c586d5f12f",
+      "size_bytes": 226014
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp03_v001.png",
+      "sha256": "9a5243b80b950ffc895e368f54fed712177e61748a860be8607dfcfc9f81a793",
+      "size_bytes": 222505
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp04_v001.png",
+      "sha256": "53d0e0c45a4e2a1d56a886ff10644729e93f6e337d3d1e7277680e78d05e68f5",
+      "size_bytes": 223104
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp05_v001.png",
+      "sha256": "ba22f252bdb9453398dc579d601dcaa5248ac589b95079ea157233f77d582475",
+      "size_bytes": 227210
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp06_v001.png",
+      "sha256": "a9c2ef8a83bc89d829722ab29037234974147510c0e51c15854c691dfd239971",
+      "size_bytes": 223758
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp07_v001.png",
+      "sha256": "54234b42fbc8522a8cb78b62d48c0eb6f45eacccfdb1bcf7699c20424b8954a1",
+      "size_bytes": 223241
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp08_v001.png",
+      "sha256": "25657843e6b09a6a93fd52dc40e304c42d1a6213afa4385d5dfb3a341e26feb5",
+      "size_bytes": 226643
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_kp09_v001.png",
+      "sha256": "904b5b56968a305b7362e4a14cb90796c195113d879828008f6ab35224d0e3ba",
+      "size_bytes": 224094
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_sheet_v001.json",
+      "sha256": "147ec016c06a0298e4b154ffa164c322119dfb28a632f8b149a3bc28bc53eba1",
+      "size_bytes": 623
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_sheet_v001.png",
+      "sha256": "364f71dc631b0ed37c7e0ef04f210447f065b0fd230ece84cd0b0f027b244a10",
+      "size_bytes": 2182178
+    },
+    {
+      "path": "assets/controls/RYO_CTL_jawOpen_sheet_v001.prompt.txt",
+      "sha256": "bc461e42341d33a23fafc6a474aff9f626688811d771886dcec0e1d33e782977",
+      "size_bytes": 1552
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp01_v001.png",
+      "sha256": "1f9abda0aa22ede37581319d8274091e1c6224976fdf72a96374072d4c774e4a",
+      "size_bytes": 218052
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp02_v001.png",
+      "sha256": "57354cdb0d71f73fb027a631d166e0e33ef39fcbca9b41b2a91ea8df4e731eae",
+      "size_bytes": 217219
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp03_v001.png",
+      "sha256": "9912c5a03b58a8904629c4f3159ac8dfc94dfcb425b8080fe1b8c60c4c0446d1",
+      "size_bytes": 218109
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp04_v001.png",
+      "sha256": "69162fdf5665be7b6bb6abd70799ee7f37a064e2a8e74e02acb496971716b054",
+      "size_bytes": 218265
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp05_v001.png",
+      "sha256": "19cd85b054c7839b737fdd9d2cbf0759fbbad7497116fbbb28b9fd3acae425f4",
+      "size_bytes": 214387
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp06_v001.png",
+      "sha256": "5f06d8e0d56849426566d703b3c116da0eed7258cb7a1f14a569e9b4bdc08cbf",
+      "size_bytes": 213694
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp07_v001.png",
+      "sha256": "4cbee86ea0e174c859cf9b850434add436903c4587c4f31d586d133eb3f6959f",
+      "size_bytes": 215514
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp08_v001.png",
+      "sha256": "9f8f4b912529efc9e694d7de8b1a8686a2c6c6992f793d6604229b39626e2c52",
+      "size_bytes": 214680
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_kp09_v001.png",
+      "sha256": "2d8d14e54458600f6e78eb21c04c9c2dafdd1616c61cf4dfca338764175d0ef4",
+      "size_bytes": 216374
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_sheet_v001.json",
+      "sha256": "9f7e176c6c535c00092d0dddc2a8db18b8e5de1286849340c1eca47d4328eb61",
+      "size_bytes": 689
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_sheet_v001.png",
+      "sha256": "6e55a3a0bc6022bc9eed4bb6c5e32e9a5fd3611287bb72ab865b5e5bd316d157",
+      "size_bytes": 2099049
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkLeft_sheet_v001.prompt.txt",
+      "sha256": "603f7f2f8d22cd5ce4ce7d5f584500591f9a8ffab0167a0b6ec03e7c58f18915",
+      "size_bytes": 1593
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp01_v001.png",
+      "sha256": "2ebcb9ecdbc87f52ad90611f61916e549f6e6d2e433fe26c48c20ba3d4f9d7cd",
+      "size_bytes": 222806
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp02_v001.png",
+      "sha256": "c45a8b0f040c5602dd711677479ee6e331e1596242fb127be997b33191b808fd",
+      "size_bytes": 217782
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp03_v001.png",
+      "sha256": "8417bfd2266830818a3251560f6daed9d2b87f3b2d851a4330ba53a54edaf928",
+      "size_bytes": 218092
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp04_v001.png",
+      "sha256": "e4d98ff3e7d8ce77c8f08f1972ee0e1f7ebde24f8f6bca6334401bc8210b1aa1",
+      "size_bytes": 216172
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp05_v001.png",
+      "sha256": "ca59e9bbd812f1e7c3bde10bda8ed6e16389fc56949f9b6c8a4a5f2928c435c8",
+      "size_bytes": 214081
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp06_v001.png",
+      "sha256": "11c147ff14ea8379959cb9279b81829c13b225c68e61af04276b71825f0827cf",
+      "size_bytes": 215507
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp07_v001.png",
+      "sha256": "7e9e185a1137d0f18cf914a00ebea4dacda6330e04d09739f00067c8469e0f4d",
+      "size_bytes": 222569
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp08_v001.png",
+      "sha256": "4cdde0b8b5a157358109c4dbbc1b36a1529389d061a80506f5271a1379551cae",
+      "size_bytes": 220355
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_kp09_v001.png",
+      "sha256": "4ca906249227411491e5e74f05a0cc6e0f67273a418e63fdd03a5402b3aa9be9",
+      "size_bytes": 220813
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_sheet_v001.json",
+      "sha256": "321f494c9e13fa9b31c1575bf48bba555a22703bbea2bc3899979cf3ef956943",
+      "size_bytes": 631
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_sheet_v001.png",
+      "sha256": "6c66c831547a1025ee30944e18a4c9e0f1b2a59b2770a576c959c44e610cc812",
+      "size_bytes": 2118979
+    },
+    {
+      "path": "assets/controls/RYO_CTL_winkRight_sheet_v001.prompt.txt",
+      "sha256": "97afe504b5643ee6df289b92a35c0c577c6434c2b1084bed3d1f84044fee4460",
+      "size_bytes": 1603
+    },
+    {
+      "path": "assets/details/RYO_DET-001_hair-construction_v002.json",
+      "sha256": "b123655bce059a8a19c6054393fcd9b41dce4a4db5f48b32ca2823d6a2a0f15e",
+      "size_bytes": 655
+    },
+    {
+      "path": "assets/details/RYO_DET-001_hair-construction_v002.png",
+      "sha256": "d25b681cd4d4fd4728a186294ebbc1f9a4a13e0c033668f9f1be8d1571fa1bc9",
+      "size_bytes": 2246035
+    },
+    {
+      "path": "assets/details/RYO_DET-001_hair-construction_v002.prompt.txt",
+      "sha256": "c6aef74df52eb73b6cef0ce2fa84622384218085b89dd47ad564d796d38d55d6",
+      "size_bytes": 1874
+    },
+    {
+      "path": "assets/details/RYO_DET-002_gold-accessories_v003.json",
+      "sha256": "90d760b0b4e87ffed389010b3f70acd63f305e49ee9a0276b5cf688b86f7a6b1",
+      "size_bytes": 548
+    },
+    {
+      "path": "assets/details/RYO_DET-002_gold-accessories_v003.png",
+      "sha256": "424cdb12995415d4a2b1a951bf528cf1656645eed13db6ad1d2f3a10831309e3",
+      "size_bytes": 1579358
+    },
+    {
+      "path": "assets/details/RYO_DET-002_gold-accessories_v003.prompt.txt",
+      "sha256": "e23d38c78aaefbc3c57196bfff6e3f200d77030697dbd6b396e1a8c6db98a264",
+      "size_bytes": 1668
+    },
+    {
+      "path": "assets/details/RYO_DET-003_outfit-construction_v003.json",
+      "sha256": "53440a1dab581373b17cb9108e1587d5427bcc012955a916f0b654eb4ff95a1a",
+      "size_bytes": 575
+    },
+    {
+      "path": "assets/details/RYO_DET-003_outfit-construction_v003.png",
+      "sha256": "26e7e7d3fc264646dd5e043fcbf767d8e36a6066d404c5c15f8f3e19c9f9a943",
+      "size_bytes": 1611857
+    },
+    {
+      "path": "assets/details/RYO_DET-003_outfit-construction_v003.prompt.txt",
+      "sha256": "24dd7cad6c9e8392615db2a4dadae3841b26e2994336a5d89321a87482288387",
+      "size_bytes": 2461
+    },
+    {
+      "path": "assets/details/RYO_DET-004_hands-pumps_v002.json",
+      "sha256": "7b1352ea8a8749b205638cf5fae956ff5d0ddf703cb78398b94b688ef447bafb",
+      "size_bytes": 656
+    },
+    {
+      "path": "assets/details/RYO_DET-004_hands-pumps_v002.png",
+      "sha256": "0dcec24265c69b6a8b340cb153a2d24a4307be186c233ce0fc1295d3ba45b14e",
+      "size_bytes": 1713854
+    },
+    {
+      "path": "assets/details/RYO_DET-004_hands-pumps_v002.prompt.txt",
+      "sha256": "938d477f1dbaea7fb741645eb81876a57df17d4443d5ecad9aa23ebc7630d34c",
+      "size_bytes": 1619
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp01_v001.png",
+      "sha256": "2de91fc15837d7a94a0913375ec9b0816bb3eb170e980580edce3c3be1e6e905",
+      "size_bytes": 230111
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp02_v001.png",
+      "sha256": "85dbb12ec955dca912ff197e2d180abe81daa2d7885aa9909dbe49f333c8e41c",
+      "size_bytes": 230775
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp03_v001.png",
+      "sha256": "d160a6b3cf5c5493ff505973d62550f69e4eda7090bbce8f68923448dba2c534",
+      "size_bytes": 229267
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp04_v001.png",
+      "sha256": "bb1f939ce70cee5a9febdfef897247c88f77ff835a001b824372fdd819828b44",
+      "size_bytes": 230529
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp05_v001.png",
+      "sha256": "f4abde9bbb40f60a672f6294ef791d70f0fb010f770be01adb7129d9044c1c01",
+      "size_bytes": 234073
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp06_v001.png",
+      "sha256": "b6896395b916d46eb629dc77e454c32682ee3658a2ad2e8b042fcf3dbdbe6c37",
+      "size_bytes": 231872
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp07_v001.png",
+      "sha256": "5692d8bb9b1805ad5612425f68b2e66f033d164431c01866553c6cb7cfbfbd6b",
+      "size_bytes": 230485
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp08_v001.png",
+      "sha256": "9c6714cdd8e8b57b5cea2643582eb21e08cdb205a78ea5db5400616c4c2228f9",
+      "size_bytes": 231449
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_kp09_v001.png",
+      "sha256": "0caaef1c84e6569846ea8dfaa15ca6f94758dbb588473f5f1291299ad4dba302",
+      "size_bytes": 229981
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_peak_v001.png",
+      "sha256": "f4abde9bbb40f60a672f6294ef791d70f0fb010f770be01adb7129d9044c1c01",
+      "size_bytes": 234073
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_sheet_v001.json",
+      "sha256": "0cb33387fbe59d7524a2fd3f70df95d477db3773cddda2277561598b71d24c3d",
+      "size_bytes": 1055
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_sheet_v001.png",
+      "sha256": "4fd4a23858c0dd4391d5c38d526bc64710c4af6a96fe7a122c77883d73cc9576",
+      "size_bytes": 2232182
+    },
+    {
+      "path": "assets/expressions/EXP-001_bright-welcome/RYO_EXP-001_bright-welcome_sheet_v001.prompt.txt",
+      "sha256": "9b8228b5aa85af54fce77ca6c1982ad36b02c9e698da5eb12072d1c1d8202204",
+      "size_bytes": 1190
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp01_v001.png",
+      "sha256": "e740861f6f59b23f9a6efd4589e41dc1fbc6528c4cc38b5d74552060d973aa66",
+      "size_bytes": 232538
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp02_v001.png",
+      "sha256": "8d8fdaa3f02772b4a34dcf4ecb99c1713c084c7fb7815ce2e03c0b3382a65de5",
+      "size_bytes": 231339
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp03_v001.png",
+      "sha256": "a3a21f2a2a20203f884ca0d0b64604ec0867c8eb35cd2de16383fcbb6a67fbd3",
+      "size_bytes": 232223
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp04_v001.png",
+      "sha256": "a1c4f1e30a6db24b9796e54f008703c75a18e8cac568a21a1e6836b453218096",
+      "size_bytes": 231569
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp05_v001.png",
+      "sha256": "34fa520bbefed5143b2e7613c6da2650192d908da8f07d2d4e722a07fe952901",
+      "size_bytes": 231602
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp06_v001.png",
+      "sha256": "07e6012817e10c6dad348aa8a2a058ec0e036f7622e3954557560b62b250cf7e",
+      "size_bytes": 231448
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp07_v001.png",
+      "sha256": "04062da99576c7e1eca0f4b5590b4adac9d04280161f3b6ccd7e2d36517f1754",
+      "size_bytes": 231844
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp08_v001.png",
+      "sha256": "5cda8ba2ec283cfb7206839d10b22f1d206f14f0c696d581d3e36fa11208cea5",
+      "size_bytes": 231287
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_kp09_v001.png",
+      "sha256": "e1b53e95949d3d583c9e6b92dac2fe1e9842abc286d6f792f64032d68d8787b3",
+      "size_bytes": 231104
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_peak_v001.png",
+      "sha256": "34fa520bbefed5143b2e7613c6da2650192d908da8f07d2d4e722a07fe952901",
+      "size_bytes": 231602
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_sheet_v001.json",
+      "sha256": "8cb969502d3ac1734e489e224e7a1ccffe9528542a3311a2446394c021d8639e",
+      "size_bytes": 963
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_sheet_v001.png",
+      "sha256": "76ab1be9b8e3dc12447dd9045e9356452da12182be70700b5f06eac2faff9efd",
+      "size_bytes": 2254918
+    },
+    {
+      "path": "assets/expressions/EXP-002_affectionate-warmth/RYO_EXP-002_affectionate-warmth_sheet_v001.prompt.txt",
+      "sha256": "c93fce6709d4335a3e2670a92fc2a99c7f236d05d6ca266956449f85fb58e093",
+      "size_bytes": 2093
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp01_v002.png",
+      "sha256": "3966f578613ce49343350ac1ed8bbbe474803e1ab25f36ca1171d26276ea43ec",
+      "size_bytes": 215944
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp02_v002.png",
+      "sha256": "f524e301325689c1a66746e42b8c38fb4a435562c2ab89fb3c3aacbb472b70fa",
+      "size_bytes": 217525
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp03_v002.png",
+      "sha256": "ab45c22aa1c3bf5831511733f8f939e1f249ed0a1e74ac186bdb8d4892f318bf",
+      "size_bytes": 223376
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp04_v002.png",
+      "sha256": "d384de7bfa70419336a09680b5b98f127f6133971d5bc7e9a0e0fce4531ad800",
+      "size_bytes": 216033
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp05_v002.png",
+      "sha256": "d2bd81be302629d74403698cda80c69b1184c38f726bcd17bae816c6b4012603",
+      "size_bytes": 218414
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp06_v002.png",
+      "sha256": "be259035e1a8db4839017c139a632a0fef5f06356fa5b7d462f439434c6032bb",
+      "size_bytes": 223509
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp07_v002.png",
+      "sha256": "7c31eb05ebb7938ec45bd0ef230d985ba3e4d8ee860fe8bb1a5d943c5bd6df33",
+      "size_bytes": 225310
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp08_v002.png",
+      "sha256": "213a7fb4e264c5e4453df9ff23a49028e16fb6cfac47e0629c008e13b5f2cef9",
+      "size_bytes": 227477
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_kp09_v002.png",
+      "sha256": "66d3969d98702b1dbca03b9f39a7c86a99f424da5c3d0879760f15c0d99ef102",
+      "size_bytes": 235404
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_peak_v002.png",
+      "sha256": "d2bd81be302629d74403698cda80c69b1184c38f726bcd17bae816c6b4012603",
+      "size_bytes": 218414
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_sheet_v002.json",
+      "sha256": "6f4603de5a23420667b3784a55bece48f0887c34f15b28f5567ec54de63e91e2",
+      "size_bytes": 926
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_sheet_v002.png",
+      "sha256": "4636be0c5bf2df17302b9ea131aa498a74100a7d81062beb1c73d1f6d19e5007",
+      "size_bytes": 2141820
+    },
+    {
+      "path": "assets/expressions/EXP-003_quiet-contentment/RYO_EXP-003_quiet-contentment_sheet_v002.prompt.txt",
+      "sha256": "1c226307a33a464461a4302c521c21be8cc77f9f958a2dcd02f8fa180bd93558",
+      "size_bytes": 1005
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp01_v001.png",
+      "sha256": "a5d400edb6f21508298ff80c90984423c0a3deb8561b5dde06ae5f92ab92c6dc",
+      "size_bytes": 233449
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp02_v001.png",
+      "sha256": "54e401cfbb789ba6677f4201716f83c0ea918e86b60225a22f1dc828e84ac095",
+      "size_bytes": 233574
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp03_v001.png",
+      "sha256": "c31f3a93bf3344dac800b0a8ab228f06e91e1f36b0c4c5d77810f688f63741d5",
+      "size_bytes": 233666
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp04_v001.png",
+      "sha256": "6b2f7abc8d21e95ba637ea3483c0340931175b6ab1d8177f66fa1e2a15af6018",
+      "size_bytes": 234693
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp05_v001.png",
+      "sha256": "e8e7777f482891497779d7314e3e5bde30bbd05354777dd706c38203735174c3",
+      "size_bytes": 235901
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp06_v001.png",
+      "sha256": "a2e1a12312cd6558af9e2536a06b0e99b3447773a508ee8f6643d85d5c6b5fd6",
+      "size_bytes": 234298
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp07_v001.png",
+      "sha256": "8ea773ba4f8e708dc54899a0628d677258d2ca46eff21c46a7b49a63ff6c109a",
+      "size_bytes": 233450
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp08_v001.png",
+      "sha256": "e672b85ee708006252cd15f898414f27008e46d175a6ffd823f20e5d6f8d8716",
+      "size_bytes": 232556
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_kp09_v001.png",
+      "sha256": "fc38c477c97871fb251c94a70e1b7a15288b6d37b583e003909c03779dedbf4f",
+      "size_bytes": 232530
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_peak_v001.png",
+      "sha256": "e8e7777f482891497779d7314e3e5bde30bbd05354777dd706c38203735174c3",
+      "size_bytes": 235901
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_sheet_v001.json",
+      "sha256": "b9de55cd8b25889aa58ea8a0f9ae18aa32dcc4db22e564d726592b71f268fbb2",
+      "size_bytes": 1041
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_sheet_v001.png",
+      "sha256": "8508dc57af20ff97bb1a348ed391650accf41cd758daf435ea3a344ab9a2619b",
+      "size_bytes": 2261713
+    },
+    {
+      "path": "assets/expressions/EXP-004_delighted-discovery/RYO_EXP-004_delighted-discovery_sheet_v001.prompt.txt",
+      "sha256": "1169c6ffd94abbda4a173611f416c3b0b81dd6bcb92ea0d4b228227fe57ce443",
+      "size_bytes": 919
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp01_v001.png",
+      "sha256": "4ccfef5fdc6ffc8ac2403a594b381283701db2b8a6c377460ff8cc5e5c462775",
+      "size_bytes": 231101
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp02_v001.png",
+      "sha256": "21b9a4e108597a43263d5edb712732800663d708c84f96a73ace2eb6c5953bb3",
+      "size_bytes": 230812
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp03_v001.png",
+      "sha256": "a3e812214f67470178ca5e4276a823a1fa7c80305d40894bf158396c10ff2876",
+      "size_bytes": 229788
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp04_v001.png",
+      "sha256": "21726d8047a26858a25eeb57f9f299e6286a11a8afa6ab424b5a278225d270d1",
+      "size_bytes": 230362
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp05_v001.png",
+      "sha256": "aaa4bf43f0e71ac18855b8238007e5e67d07912ae85ad4cd768a8e83b6b0428c",
+      "size_bytes": 233356
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp06_v001.png",
+      "sha256": "25af3515c10804fcf99ef445fa967231db67964720bee1d9797fab94759a1587",
+      "size_bytes": 230192
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp07_v001.png",
+      "sha256": "ab2fde8af277b2a1b43cd3b149ebaa98d3a49124aec531c5c7f56db0b34d0682",
+      "size_bytes": 231465
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp08_v001.png",
+      "sha256": "a3a08cd6c871d750482b7413d28dde82c50ca8a3c098ee5cad3a0860c484b0f6",
+      "size_bytes": 230155
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_kp09_v001.png",
+      "sha256": "09573b0f16db7209bcdd71bc548ba6c3cd4f8bd6eeb99d1164a1d7828625eea9",
+      "size_bytes": 228394
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_peak_v001.png",
+      "sha256": "aaa4bf43f0e71ac18855b8238007e5e67d07912ae85ad4cd768a8e83b6b0428c",
+      "size_bytes": 233356
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.json",
+      "sha256": "8bcf848052e43bc4f3b4697b36995d5a246a2afc82acbe4fa32f7c8b4b0a0a77",
+      "size_bytes": 1014
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.png",
+      "sha256": "c66958c430e23c5340305a37249ad04d302c129bff7461d88c1a93019f915df7",
+      "size_bytes": 2227753
+    },
+    {
+      "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.prompt.txt",
+      "sha256": "dd5270cb9a846ec502c64027255a81e7502ac01d57fcd4635692aa644a9ae7eb",
+      "size_bytes": 926
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp01_v001.png",
+      "sha256": "8a34586b4aad750b70ed8afb8b34ff687df287af6de47545f1c6d6e25e1d2a30",
+      "size_bytes": 232687
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp02_v001.png",
+      "sha256": "8a02f88dfa44c986246c7a86a90afb35ce58c99c1615557d4a76d9b713b5897a",
+      "size_bytes": 232412
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp03_v001.png",
+      "sha256": "744cee542840fc032ef2e3a99fd47a118e5d01766c183b177d876597b9650154",
+      "size_bytes": 230291
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp04_v001.png",
+      "sha256": "53178407681505064900577a0e65768a1e6fd76c23679247faa4d4f99c738943",
+      "size_bytes": 232624
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp05_v001.png",
+      "sha256": "0b777b9d025cd2df547ee269daea8fa3d4e10c1c265ecf06ccf5c8ab5a7fa465",
+      "size_bytes": 235429
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp06_v001.png",
+      "sha256": "4b954b34a1dc634591ba6cb59a47ab7b32f278db72817e9ba9ace72cc13a95fc",
+      "size_bytes": 232246
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp07_v001.png",
+      "sha256": "63a601da8c19961f595eceb7a576efb5ccc08a39c3e674e15ae6036b13bc2dd8",
+      "size_bytes": 231851
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp08_v001.png",
+      "sha256": "20ebc3e5e38af90cdbc9001b4e5748426a4b9e5f3aad8d2bc9ab0655bfb5d96f",
+      "size_bytes": 233218
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_kp09_v001.png",
+      "sha256": "86eda702c3f05ac0b2e56d7e50d34f363264e1a30f92f0299f0fed7934f39568",
+      "size_bytes": 231642
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_peak_v001.png",
+      "sha256": "0b777b9d025cd2df547ee269daea8fa3d4e10c1c265ecf06ccf5c8ab5a7fa465",
+      "size_bytes": 235429
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.json",
+      "sha256": "62a4430cc5173a483d2ee58a035795b7851a6e80a608ae447ccd8cdf67e49191",
+      "size_bytes": 1072
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.png",
+      "sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
+      "size_bytes": 2249206
+    },
+    {
+      "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.prompt.txt",
+      "sha256": "45e624ad67e818f7d5aa286f438862a4803fa7561c3b7756133eea9bc66ce666",
+      "size_bytes": 932
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp01_v001.png",
+      "sha256": "b90a75ffe484c0b4b421bef3dc987b8c50774ad3076dcdb1185f1bf927ef1f07",
+      "size_bytes": 223674
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp02_v001.png",
+      "sha256": "5fc947250fa7e8e6f730909f22548a87de0a0c31cc33bf46a367136859b79653",
+      "size_bytes": 228091
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp03_v001.png",
+      "sha256": "7413e817fdc68d874e6b74567401edc0dc7f22cfafa4b0da69813c2bba7d0205",
+      "size_bytes": 227096
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp04_v001.png",
+      "sha256": "8f570e1045ed6d44089a6910a89df764939cb3e2f7be858cecb9bd31ec1403d1",
+      "size_bytes": 234596
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp05_v001.png",
+      "sha256": "0eb0345bbfba3806ad90458dd21dcf83b67a3c2ca8366825304572fc9ef5dadb",
+      "size_bytes": 239663
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp06_v001.png",
+      "sha256": "9dcf7368159766d1dead6099ddcb6a85e06690576ae8720d81306ccde3c64321",
+      "size_bytes": 233982
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp07_v001.png",
+      "sha256": "71ad1a0819d69ec3d99369b5fcdfe10741a5b763cf078c676df7acf10d92112b",
+      "size_bytes": 228853
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp08_v001.png",
+      "sha256": "9a5872550a46bd44f1ba8e326f57666ce8d04ad0680e107f2af822b3b3fd5e63",
+      "size_bytes": 230088
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp09_v001.png",
+      "sha256": "255db13190c53764a1c1219c33ac1820ddde4d5b0eaf433f8fb84d024d30ec71",
+      "size_bytes": 227942
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_peak_v001.png",
+      "sha256": "0eb0345bbfba3806ad90458dd21dcf83b67a3c2ca8366825304572fc9ef5dadb",
+      "size_bytes": 239663
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.json",
+      "sha256": "ec02981f68ad5ba29d3226e6c5e6cdabd7e6fae841c19bca5cb79eae10cd7139",
+      "size_bytes": 884
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.png",
+      "sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+      "size_bytes": 2213184
+    },
+    {
+      "path": "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.prompt.txt",
+      "sha256": "5f052f72589a30fb66a66565f05323a769231022e237ddd436d856f20baddd99",
+      "size_bytes": 1027
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp01_v001.png",
+      "sha256": "482e591ac3ca876ee7c2b19db828f87594889a8678a0968a27c9ffd2e5c12222",
+      "size_bytes": 218756
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp02_v001.png",
+      "sha256": "c8df7c17713d4855627021f2391d5b9bcc9a84d30c08ed28d38f72e7cfd87a59",
+      "size_bytes": 230133
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp03_v001.png",
+      "sha256": "79f056c84c1d1c84643b15d77f72e85b27477408c6ac56c72da9b43f97ea5447",
+      "size_bytes": 219947
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp04_v001.png",
+      "sha256": "e27dd979c5088cc8242ba6be8ea7ff2b32683b04ba6aae101ece86e1a3ea0897",
+      "size_bytes": 218695
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp05_v001.png",
+      "sha256": "5d4ee1e3a29fee1bd353673732e7a49eeb0a9cc6b5c5d9b59d894bc6ca37a6a9",
+      "size_bytes": 231063
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp06_v001.png",
+      "sha256": "c423a7e9359895b19fe094626f29bd641cb84ae1cf73ac7149169b3ac78b450b",
+      "size_bytes": 219849
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp07_v001.png",
+      "sha256": "30ed01346ae401045544a25fc85da88645d95c592f2d601dc1bd59492e76e999",
+      "size_bytes": 223343
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp08_v001.png",
+      "sha256": "75a43631c1d18ee99c04923b352ffa196e0684b1f771418530f5661599ef07c3",
+      "size_bytes": 232587
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_kp09_v001.png",
+      "sha256": "a8af78d9f20cab1bcf75c58d742e378c99f202399316f9ee7eaa82b4150c998e",
+      "size_bytes": 223527
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_peak_v001.png",
+      "sha256": "5d4ee1e3a29fee1bd353673732e7a49eeb0a9cc6b5c5d9b59d894bc6ca37a6a9",
+      "size_bytes": 231063
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.json",
+      "sha256": "12fc761b372c22622891527e93ef6a687630ffb75723c6d831df5b33816675ce",
+      "size_bytes": 924
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.png",
+      "sha256": "f94da7402faca5113d19417323a831e20e0e75bf120be4e5f76a3dba3015089d",
+      "size_bytes": 2155018
+    },
+    {
+      "path": "assets/expressions/EXP-008_proud-of-you/RYO_EXP-008_proud-of-you_sheet_v001.prompt.txt",
+      "sha256": "3b3c0e1bd0c7f758d49871a24dce9cbf2e87512f976abf405ba9b9b6a15210da",
+      "size_bytes": 972
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp01_v001.png",
+      "sha256": "9abdc91645b2a646ffb893e26d79f9914a378c0b10504626a594754a4c106e1c",
+      "size_bytes": 230486
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp02_v001.png",
+      "sha256": "3af0de7b0e7a778d02511bf649978c2ef844249a58829c4406cd877bb3b1c395",
+      "size_bytes": 228490
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp03_v001.png",
+      "sha256": "237a9f9dc011aef9c8a57674f743756b666b0944635311ee90bd4b958f6335e1",
+      "size_bytes": 245558
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp04_v001.png",
+      "sha256": "48f4963eca1ba757ff80c7c959669c6149b4ab074021d6cff2064580258837f8",
+      "size_bytes": 234157
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp05_v001.png",
+      "sha256": "cb02c42810af021df10b2a51c584b9bb9081e5d4d2ea1f8643d1aa78f9c1b380",
+      "size_bytes": 234689
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp06_v001.png",
+      "sha256": "6cbbb2540426fd1bffa00dd35bf8a3f2f74225df5351be5dec6c4d39dd35d47a",
+      "size_bytes": 248073
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp07_v001.png",
+      "sha256": "4998d3e88b0f69e6fe5f5ac03560d15a4dffa74030f65f06bf56da5882cd75fc",
+      "size_bytes": 233206
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp08_v001.png",
+      "sha256": "ea58f56c41d6d8e6e7208ae2061d26793375e997e4999b27f332b1ef2b6282f9",
+      "size_bytes": 230248
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_kp09_v001.png",
+      "sha256": "bbcfa89e5566a2393f28e7c134ea40024bdadab97cdb30d95531fd1daea5c530",
+      "size_bytes": 244286
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_peak_v001.png",
+      "sha256": "cb02c42810af021df10b2a51c584b9bb9081e5d4d2ea1f8643d1aa78f9c1b380",
+      "size_bytes": 234689
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_sheet_v001.json",
+      "sha256": "471007ccaa4655cf642f809c5c14f1742de2da4438f824bef59d1e220ed7d735",
+      "size_bytes": 924
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_sheet_v001.png",
+      "sha256": "a9284ec6c8ff00b1fbb73a6033c0f953ca87437ecb12427305dc05e02617d227",
+      "size_bytes": 2272841
+    },
+    {
+      "path": "assets/expressions/EXP-009_adoring-gaze/RYO_EXP-009_adoring-gaze_sheet_v001.prompt.txt",
+      "sha256": "157d400ea567dae1a9ef4c4e24087d0f3d9614fd3a0401d1e81cff6540bd7e0f",
+      "size_bytes": 992
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp01_v001.png",
+      "sha256": "b560e24fb5ffa36360bfe9e082ad8630a42f26222f65f2c1e01e6277b331c95e",
+      "size_bytes": 235094
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp02_v001.png",
+      "sha256": "0130b14450c7748361f6ee1f37998a1fd17e241783fa133c23c891ea3816a82e",
+      "size_bytes": 232864
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp03_v001.png",
+      "sha256": "68b57adc28adc188bd1d77cfd1d41de16b7a5e403c91a048f77f555f7edbe965",
+      "size_bytes": 254266
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp04_v001.png",
+      "sha256": "fca05088d2e7380ec07241e124f00ecbc01b938a178d1294ae2b0f1847476a8a",
+      "size_bytes": 234012
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp05_v001.png",
+      "sha256": "4fe86141039eb2df76bb7d21437e607e357131980ef3b92d63062c444cf074a3",
+      "size_bytes": 231716
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp06_v001.png",
+      "sha256": "3d10442d297a89b3afb25bcc06738bade0bba7e0f07de19ca42e2ce183071176",
+      "size_bytes": 253752
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp07_v001.png",
+      "sha256": "79c1c02051179c812c34579b39daf4fbd1af25326da7715a7476d0059a8d73da",
+      "size_bytes": 232521
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp08_v001.png",
+      "sha256": "aeb2bf5a29b0bc270146ad4b88bd0658049d1f24efd91e9a96ca8380d0762903",
+      "size_bytes": 231018
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_kp09_v001.png",
+      "sha256": "c8cf31a694a8f43666774ecd3f2f9a8ab9e2c7b180be373b8716aecd12dc96b6",
+      "size_bytes": 251301
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_peak_v001.png",
+      "sha256": "4fe86141039eb2df76bb7d21437e607e357131980ef3b92d63062c444cf074a3",
+      "size_bytes": 231716
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_sheet_v001.json",
+      "sha256": "15eec3edb5b1bab46e7363d2c1129a52c709e8725550bc9ffb5c41b0f011118c",
+      "size_bytes": 942
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_sheet_v001.png",
+      "sha256": "81bc945e109e26dfc21bfb4c8a39d6e2a1d342b2a498034f8b5f6f7e056d4e83",
+      "size_bytes": 2306799
+    },
+    {
+      "path": "assets/expressions/EXP-010_cheerful-agreement/RYO_EXP-010_cheerful-agreement_sheet_v001.prompt.txt",
+      "sha256": "d4b90e9474518e75ff08ca6eb5060c3b9f115650f0b656a370d7b14ceda2fe1d",
+      "size_bytes": 1008
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp01_v001.png",
+      "sha256": "dd940ca4219f28569c64df08f2215e55a326a78e160ef3af86d344bf20bd19e4",
+      "size_bytes": 239782
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp02_v001.png",
+      "sha256": "3413330767855d31edb63cadb57d0421ef42e7f7456b4c197a752680413a774d",
+      "size_bytes": 241020
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp03_v001.png",
+      "sha256": "6930af0baed1b4bbb59a4e4610adf244c3ecee5a7d2d1f909b874acf97b1e6f8",
+      "size_bytes": 249518
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp04_v001.png",
+      "sha256": "f0ca0167bf070a43d7e359e321f91507e8b78bf8ec791712eb54c75763ab4793",
+      "size_bytes": 236054
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp05_v001.png",
+      "sha256": "c3e6305c9536d17a57df064243aa90579d34a7d94c422e770521985a87c178e3",
+      "size_bytes": 242436
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp06_v001.png",
+      "sha256": "7ec1f404061f2e166c95b35b313d17be3bf86ba042bbddf36892d86816938bd2",
+      "size_bytes": 253436
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp07_v001.png",
+      "sha256": "e59e18e85f547aa3b644e1b9ef8adc04abad5178dbaaa09a4e3613e9920c2cac",
+      "size_bytes": 238573
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp08_v001.png",
+      "sha256": "3ad91aabdd2e94af6cf398d8adad51418417456fc4d3b5e870eb0578c13b8e1c",
+      "size_bytes": 236041
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_kp09_v001.png",
+      "sha256": "fac8778a42aa5e73a34e1c016c20e4198e4fe925a79170d8162e7a12974f8066",
+      "size_bytes": 247907
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_peak_v001.png",
+      "sha256": "c3e6305c9536d17a57df064243aa90579d34a7d94c422e770521985a87c178e3",
+      "size_bytes": 242436
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_sheet_v001.json",
+      "sha256": "92b02733c688b396d56741e67fba4db67b6fc761ca4f049b200b670332a83e4c",
+      "size_bytes": 948
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_sheet_v001.png",
+      "sha256": "fd856ebc96f58d6fe79bafe4dedb40e69c349440ce72d3d20da9f65685512a1c",
+      "size_bytes": 2332423
+    },
+    {
+      "path": "assets/expressions/EXP-011_pleasantly-surprised/RYO_EXP-011_pleasantly-surprised_sheet_v001.prompt.txt",
+      "sha256": "d20ecc82509911b275e045fa2bf8bff55b364a2b91f0571b02dc87209d93f1ee",
+      "size_bytes": 956
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp01_v001.png",
+      "sha256": "f58f4c4a785d06d1088eb89195aa8d2ca6f8f88e6793c9a8a43f3fe255c0dcc4",
+      "size_bytes": 231228
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp02_v001.png",
+      "sha256": "c5e8549f638cc7bdf275c533a4fdd30daea3b5b6c4f8cf98a7182cb978034d5c",
+      "size_bytes": 231944
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp03_v001.png",
+      "sha256": "13a432353412d0227f4371f930f64d57dc7745c1ab0840896c222ff08f1d8c33",
+      "size_bytes": 230707
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp04_v001.png",
+      "sha256": "de0cb20d0b81b9b60a002bd2752e9b677c33db661626fda617128497c339002a",
+      "size_bytes": 232185
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp05_v001.png",
+      "sha256": "fff13bc664daa17384e35f44e5ae7eff5144669816c45cc15db6295326f5339b",
+      "size_bytes": 231770
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp06_v001.png",
+      "sha256": "41e77e14fc418c5d8614fe0fade9337f434d5abd4b5b4f0e762d72a0b2dabb42",
+      "size_bytes": 231434
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp07_v001.png",
+      "sha256": "bb91a1f052d3b1483d5cc06c2a68c8f7f64eb02bc08818dae30a172c55338b9c",
+      "size_bytes": 231228
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp08_v001.png",
+      "sha256": "e1ae584a57b244bd9b9265ea9d55e20aea57012a0f38c1a9c378c36c7b3a5c5f",
+      "size_bytes": 230972
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_kp09_v001.png",
+      "sha256": "854d20fd50dda0ffefc63600b9ea9fdbea7494f5a88d7ac343b57309de7fd7e1",
+      "size_bytes": 230687
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_peak_v001.png",
+      "sha256": "fff13bc664daa17384e35f44e5ae7eff5144669816c45cc15db6295326f5339b",
+      "size_bytes": 231770
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_sheet_v001.json",
+      "sha256": "6cbe8c27ba473c493f31f8358366100c3ebbf83587b446f135e8d338887c08cd",
+      "size_bytes": 890
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_sheet_v001.png",
+      "sha256": "5a268dedbc3ca14463b4c3267a3da7f0c94516c6576854ad645c8f160db7f04f",
+      "size_bytes": 2244910
+    },
+    {
+      "path": "assets/expressions/EXP-041_controlled-anger/RYO_EXP-041_controlled-anger_sheet_v001.prompt.txt",
+      "sha256": "5a398320bd5afac5839625ce9b913deee2251e765a8b7925f61a24aadcd5a375",
+      "size_bytes": 2230
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp01_v001.png",
+      "sha256": "a33e7a5f36fd0f18176e15a77ed107150983d4215fcb68e60c9ef71b02d45d38",
+      "size_bytes": 232385
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp02_v001.png",
+      "sha256": "6ffa924ed4da4a7e8c6f4ed7c7e95cab7db76c0e56617719e03b2e4ca23dca66",
+      "size_bytes": 231484
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp03_v001.png",
+      "sha256": "5100394b13d5cc6479a17ecb4cec311c62f1a8f5757095065079f14aa6c422fd",
+      "size_bytes": 233336
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp04_v001.png",
+      "sha256": "747c39b2fac995bb92686e7ebdc7e69639af1d936e44f48f0091fb34d956ee2d",
+      "size_bytes": 231988
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp05_v001.png",
+      "sha256": "4426c7664e85375182aa4ccf33f5b6b4ff0efbf2369716660ddd5ae11db2473f",
+      "size_bytes": 232967
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp06_v001.png",
+      "sha256": "4ec663d4c183961f443390a8bf345aad8f843b37bd96b297c0ac59a33d683b45",
+      "size_bytes": 232727
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp07_v001.png",
+      "sha256": "f978d41289346096f840a7b76fda4c9324de746676be327f0bb4c92a662c056c",
+      "size_bytes": 230153
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp08_v001.png",
+      "sha256": "7cc4ab0b52230ee5e42a03d61feaa398612bc553427f0d1f6271b6148c7c5e57",
+      "size_bytes": 229352
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_kp09_v001.png",
+      "sha256": "df09375325b29a32dc72c2f2d1d61e1cad8286405450ea423220a3aa73bd55c3",
+      "size_bytes": 228638
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_peak_v001.png",
+      "sha256": "4426c7664e85375182aa4ccf33f5b6b4ff0efbf2369716660ddd5ae11db2473f",
+      "size_bytes": 232967
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_sheet_v001.json",
+      "sha256": "8fcf6c1414c482a80cee70752662be0a59a5e9d7f58347812be8cf8baa533daa",
+      "size_bytes": 908
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_sheet_v001.png",
+      "sha256": "91df47914f1bd8301b9adbd5b6e98c03621d4239b72883f46d6a309d8c46b043",
+      "size_bytes": 2248191
+    },
+    {
+      "path": "assets/expressions/EXP-061_broad-surprise/RYO_EXP-061_broad-surprise_sheet_v001.prompt.txt",
+      "sha256": "989dac57e87543209af7854cc7c7befad38379bde1cda210c3e0d0a97a376059",
+      "size_bytes": 2209
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp01_v001.png",
+      "sha256": "f0dc68650e1433bd4452aa46f3f79af998fa3d05954a8fc847336070040f02c0",
+      "size_bytes": 232828
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp02_v001.png",
+      "sha256": "c7c649157f53ded252f193d449b364e53fcce332bef8065eaae3c2a486e21e45",
+      "size_bytes": 232914
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp03_v001.png",
+      "sha256": "839644b967f49f1d4fb9c3068c451d8420abf5b899fb20415b1c32765cdc3993",
+      "size_bytes": 232815
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp04_v001.png",
+      "sha256": "03c0d547e8c8dcf457c8f78bee6de70fd6f684e1c65c4c4252d243a1368a8eb1",
+      "size_bytes": 233540
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp05_v001.png",
+      "sha256": "f1a0d27d5fd8c2ea66026b6dab785081d6d86fd666b61194b6287c0452527e79",
+      "size_bytes": 234558
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp06_v001.png",
+      "sha256": "d613917d7a5032fb5e3181b3ec2915d500c783eb6d1e7ebe08149869773b790e",
+      "size_bytes": 234309
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp07_v001.png",
+      "sha256": "8027089d100ecca4548de891efe538a143d44449ef541b7e6164c806bc4e226b",
+      "size_bytes": 231203
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp08_v001.png",
+      "sha256": "1cf7aee4f55bfb19c72bb4146bf6e113bb6db99fd533d1e95c980511ff921ee8",
+      "size_bytes": 231151
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_kp09_v001.png",
+      "sha256": "4e682b08b791d093f94d8ec88034c8ac1cb620ffca4ec6ad83dff27d2414a9a3",
+      "size_bytes": 230529
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_peak_v001.png",
+      "sha256": "f1a0d27d5fd8c2ea66026b6dab785081d6d86fd666b61194b6287c0452527e79",
+      "size_bytes": 234558
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_sheet_v001.json",
+      "sha256": "e814a4cb59bf4c0c0da55951b2ae970b4c1bec559094d5b61433994cd0ce1551",
+      "size_bytes": 805
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_sheet_v001.png",
+      "sha256": "ea64568ffdf2ed8669ecf5685ad2a35c206c8a5c52140ca2456ef01be28cf1a8",
+      "size_bytes": 2252275
+    },
+    {
+      "path": "assets/expressions/EXP-071_worried-anticipation/RYO_EXP-071_worried-anticipation_sheet_v001.prompt.txt",
+      "sha256": "7c693298ac637724311934b4e9b400e303e416077f9c878303d40fc27a340de7",
+      "size_bytes": 1306
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp01_v001.png",
+      "sha256": "798d395405858e05e12f001bae7acdf0b9ca5c982e138639263ee6e4b0808807",
+      "size_bytes": 230506
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp02_v001.png",
+      "sha256": "cbff112ff246b52f3ded46f93353d6e678c21f138f43770485dfca6bcfbcb530",
+      "size_bytes": 230503
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp03_v001.png",
+      "sha256": "ce48b33e39c4da4f4448b08c2e092e9b56269c4aa1df436d1b9a9c549f2d5632",
+      "size_bytes": 229516
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp04_v001.png",
+      "sha256": "f11e7faa817a33bf31a6d7d739ea3ae11ab6c7b059214d8b731daa0bd4f79e4e",
+      "size_bytes": 231800
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp05_v001.png",
+      "sha256": "13f9361ebdfcfae6bbe0ccbcdd8b4a601c0b12ffcc060954d8d69c5d0956f03d",
+      "size_bytes": 234311
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp06_v001.png",
+      "sha256": "d78e7351df0474aa424e31e38f1eb204f9acf34db1e3b9d3a371a5c6ec25ab06",
+      "size_bytes": 231506
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp07_v001.png",
+      "sha256": "d90e11db07e3eb01f12f78a03998a196ff22cb390fe333372b1d844030dafb26",
+      "size_bytes": 228914
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp08_v001.png",
+      "sha256": "c2c4c03ad1ff13713937c5ac947af34c2b7479d3e8fa86ba50cc43d61ebd207a",
+      "size_bytes": 229230
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_kp09_v001.png",
+      "sha256": "68cbeef018b076795800068c33bdccd7fd3c6eeb404fc1284aa0eb69c6462a2e",
+      "size_bytes": 229081
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_peak_v001.png",
+      "sha256": "13f9361ebdfcfae6bbe0ccbcdd8b4a601c0b12ffcc060954d8d69c5d0956f03d",
+      "size_bytes": 234311
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.json",
+      "sha256": "1fb2b844134ada39cba293227917b19c8355f5ad9d1aaf14d52ddc6c911ab241",
+      "size_bytes": 807
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.png",
+      "sha256": "7cf623464bd232d87ea1caf12d01e48d0ecb3b02ba3e1c0ed8d1433b71925c33",
+      "size_bytes": 2229135
+    },
+    {
+      "path": "assets/expressions/EXP-072_shocked-recognition/RYO_EXP-072_shocked-recognition_sheet_v001.prompt.txt",
+      "sha256": "40ccf9d64151035c2ab3036a6fa4a79123c91bd2932d5b445019698349a5d3c1",
+      "size_bytes": 1310
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp01_v001.png",
+      "sha256": "41d311108fe1f5c44474f2ff23e697682d755f3e7481d3eb7e8319e9f31c2d0e",
+      "size_bytes": 231255
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp02_v001.png",
+      "sha256": "d8c8d1ab2bfad7b234f12a1c0dee049e8783a57b3aabb1ab6f2d4e07869080ab",
+      "size_bytes": 231897
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp03_v001.png",
+      "sha256": "43cc4beb300fcb78279edf74e9b2afc936b0205e1ad7e8b7e51a5fb40ffc534a",
+      "size_bytes": 227919
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp04_v001.png",
+      "sha256": "6fe430934cd21437cf37ff4488c1f9e44adb1e3820fed418e24048b3a3224303",
+      "size_bytes": 231989
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp05_v001.png",
+      "sha256": "e744d7962bccf0cac44d14b9119a284bc4f36c57e6ada94328a65c4cba64b468",
+      "size_bytes": 233074
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp06_v001.png",
+      "sha256": "2a95435f327e6e78372b5b12c99ae4c074a298aafa8256a65be6f04e9b33d35d",
+      "size_bytes": 232806
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp07_v001.png",
+      "sha256": "48ab965c3423db5c3b95d9adcbe65dad8a7d94ede1416a5c6a85c67b2923cadf",
+      "size_bytes": 229351
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp08_v001.png",
+      "sha256": "b699c53e95b3ea84efc2b8b24b7b2b8a17e4ef33791818b381f327b18866c1c6",
+      "size_bytes": 229813
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_kp09_v001.png",
+      "sha256": "9e0970dc31153b898e018f35223e8cdb759a5ba386e854e89bc4e521ebb2cba4",
+      "size_bytes": 227490
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_peak_v001.png",
+      "sha256": "e744d7962bccf0cac44d14b9119a284bc4f36c57e6ada94328a65c4cba64b468",
+      "size_bytes": 233074
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.json",
+      "sha256": "4d9fd4b84565c90fbc3e4180045c5c7e1ae01ce281ac87720367b2eca14bccb4",
+      "size_bytes": 806
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.png",
+      "sha256": "1b90619030abefbd76ce0d0023f269a6efa89c839552a0b124499d9511295c97",
+      "size_bytes": 2231158
+    },
+    {
+      "path": "assets/expressions/EXP-073_near-miss-relief/RYO_EXP-073_near-miss-relief_sheet_v001.prompt.txt",
+      "sha256": "638fb74672eb5c939fda37e67fa395bdf9d91da6cfd9dfd9960957f9896cf2e8",
+      "size_bytes": 1315
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp01_v001.png",
+      "sha256": "fc07ff0102fa0dd3f55ab02dc5fc3b400d8963b2dcb191ca8d4ec57b74c6476b",
+      "size_bytes": 230402
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp02_v001.png",
+      "sha256": "e4332d3d42efd0e0d906dbd10f4143cda7e1b735047d12df76769154d00baf8d",
+      "size_bytes": 230716
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp03_v001.png",
+      "sha256": "da8b4f200210ab3ff0935a8c1885c5fe9d872a50a641edf840f5edd62201595e",
+      "size_bytes": 228674
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp04_v001.png",
+      "sha256": "8e39e8d1d73292d3a8747a7d88abd25498f0397a0075260c635ccacce76f6779",
+      "size_bytes": 229827
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp05_v001.png",
+      "sha256": "50ecb2c667cbdd7d1ffb4611547f8d50278957f2cf703c870ebccc21822d4eac",
+      "size_bytes": 233492
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp06_v001.png",
+      "sha256": "5208e33b5204ccc491610d36732b0a01bd8f77e85ae9cc0edadf34530dbb1801",
+      "size_bytes": 231333
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp07_v001.png",
+      "sha256": "3b2dbf2182fa93ac81d9fcef1630ac228a2e66f87cdac589f8c69fb27e034af8",
+      "size_bytes": 232692
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp08_v001.png",
+      "sha256": "44305a6b86790b9ebc107b9fdeb4a9ac0df29796999ab31af17f7f0562595fb3",
+      "size_bytes": 230394
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_kp09_v001.png",
+      "sha256": "fe9d2589d61c72dd07f85195d867594b84bf3c41d2e7fa9e43114cb9d66d9745",
+      "size_bytes": 227628
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_peak_v001.png",
+      "sha256": "50ecb2c667cbdd7d1ffb4611547f8d50278957f2cf703c870ebccc21822d4eac",
+      "size_bytes": 233492
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_sheet_v001.json",
+      "sha256": "5ffe3cef07ed96ba206014dce19cfc54e0d10ed9270c3cb2fbbbd59467671d82",
+      "size_bytes": 807
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_sheet_v001.png",
+      "sha256": "d275aa4c424d8ab266acf86fd12b40539a460dc0c3ad417c809411c28bfe80d3",
+      "size_bytes": 2227926
+    },
+    {
+      "path": "assets/expressions/EXP-074_awkward-jump-scare/RYO_EXP-074_awkward-jump-scare_sheet_v001.prompt.txt",
+      "sha256": "ae59b1a542c574e4c1d4f77881ce4fcef9721b3bb3fd8f55e605d81f05dfe4c5",
+      "size_bytes": 1312
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp01_v001.png",
+      "sha256": "5e5b311766bd9737049709fc2821feda844fa0d1677f8b3872e4d3b24c89ce32",
+      "size_bytes": 224986
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp02_v001.png",
+      "sha256": "5068bc8ec3585b7c799ae2b9b08643bad15da10b38f0fe42031a8253e0b60e6d",
+      "size_bytes": 225662
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp03_v001.png",
+      "sha256": "3636fda4f0b1d05607938b46e7ab77c916bedfdbd890f41aebdaa5cf063ce256",
+      "size_bytes": 226591
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp04_v001.png",
+      "sha256": "08cabd47d07f7374214a554ccdbe6677cdcaa446434fd83eba7af0ebe3593459",
+      "size_bytes": 223336
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp05_v001.png",
+      "sha256": "005abd8a9c2b8e038deebce2122b43c482bfbeed41cc28f8276eeea0430da08b",
+      "size_bytes": 225457
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp06_v001.png",
+      "sha256": "e1ba605be7262f7bfe4527ccd774a94b030672f10f0f96e8703a382fecf649c9",
+      "size_bytes": 226900
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp07_v001.png",
+      "sha256": "0bf3ea426f4cd5d9e025c11dc3c8371a6b2b9ac66bab009f68f220dae1f0f74e",
+      "size_bytes": 223806
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp08_v001.png",
+      "sha256": "849f1cbbef70d0afaa867fa199396bbd7841087da7a8d692f6615cb304213a8e",
+      "size_bytes": 224142
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_kp09_v001.png",
+      "sha256": "e291c85bc5ab0c8c14413b4ba04f1cb20dfaf8e7131bb0b43a63b32df1b3d67a",
+      "size_bytes": 225996
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_peak_v001.png",
+      "sha256": "005abd8a9c2b8e038deebce2122b43c482bfbeed41cc28f8276eeea0430da08b",
+      "size_bytes": 225457
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_sheet_v001.json",
+      "sha256": "60241ed6a1ff66024dd46d3893d9ec37b26d05b7a6a7937b34099ac83f65c6ab",
+      "size_bytes": 796
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_sheet_v001.png",
+      "sha256": "f1db8fa2f3a668d9460269d1a71d3f277fd83b537f30b6792556597c1dec41f0",
+      "size_bytes": 2177692
+    },
+    {
+      "path": "assets/expressions/EXP-075_fearful-denial/RYO_EXP-075_fearful-denial_sheet_v001.prompt.txt",
+      "sha256": "3d170d4ff5f826328e288c33a6744bfe236ee7f2df5ab84dfd6a229eb5738dd8",
+      "size_bytes": 1309
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp01_v001.png",
+      "sha256": "bc08a1dfde29a679e152f8d4564e1f4a5e1d0f73d2025f001ec9f76d2eb756a9",
+      "size_bytes": 233959
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp02_v001.png",
+      "sha256": "f7b3b3a0bffb5ee36ccb10fa90aa164bd37ec9de4f76882fcabe3862afaabeeb",
+      "size_bytes": 233690
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp03_v001.png",
+      "sha256": "5e7c27189696fb4548e909c4e41786a4dcf582d2970873b4bee2c3e45fcaf339",
+      "size_bytes": 232687
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp04_v001.png",
+      "sha256": "eecff43ddf341be5ac8b7fb8ebbc43230f6ab896414f8cb93f433c0301d85815",
+      "size_bytes": 233856
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp05_v001.png",
+      "sha256": "3578003d3d6a483d73ccf4c5ee7c9a65381924365d2cfcce9724dc0b093a9d25",
+      "size_bytes": 236358
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp06_v001.png",
+      "sha256": "602104d16a8c971c7f26e0b6c95490f05563229d8c49f3956e59b9ab8b1658ff",
+      "size_bytes": 234138
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp07_v001.png",
+      "sha256": "62c436514f835b345017ea263a23c385064aebadb5b498e3f34c67acdb6bf89b",
+      "size_bytes": 232108
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp08_v001.png",
+      "sha256": "fc7002888845d2cafdf262a3b5f03726b980410ed6f85978065025f68aed0df7",
+      "size_bytes": 231481
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_kp09_v001.png",
+      "sha256": "02b986561c052d3b0752d816ee03c9932badfa223dfcfc397f94f155096cf0b7",
+      "size_bytes": 232353
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_peak_v001.png",
+      "sha256": "3578003d3d6a483d73ccf4c5ee7c9a65381924365d2cfcce9724dc0b093a9d25",
+      "size_bytes": 236358
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.json",
+      "sha256": "e4faab4c21c01afa91ad7a5c37098bd7ed7672501c8219d8729234272cd71f10",
+      "size_bytes": 1020
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.png",
+      "sha256": "35b59433852f8449de7e14d7858fd14d0b41b5f2bb21cd1a403dd928d9722207",
+      "size_bytes": 2259750
+    },
+    {
+      "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.prompt.txt",
+      "sha256": "623125381a9713da8fd5f823bd785b2426680b6ff8c2201e02c3bc3aa9637e2e",
+      "size_bytes": 1302
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp01_v001.png",
+      "sha256": "4376a6dc1e6aecb890e6d6a21d90662ea50c2810cf398cbf45d6de7a1becc51b",
+      "size_bytes": 231322
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp02_v001.png",
+      "sha256": "6db3da27b37ce12928b85391dbe4404017148d6b73f8d83e927c1fb809884589",
+      "size_bytes": 231256
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp03_v001.png",
+      "sha256": "7b9b186ad2f12023dc23090162ecc4d34c2706c06035eed2e10681bce9c37214",
+      "size_bytes": 233768
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp04_v001.png",
+      "sha256": "239b4fd8a4d3fc7ee7293e405ca828fb561e9110db30e415e6737eddd7df3e37",
+      "size_bytes": 232469
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp05_v001.png",
+      "sha256": "a3b700b7e2be331c013bb34623b3f12bda44ecac45e9d70c69696f60b6239b32",
+      "size_bytes": 232168
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp06_v001.png",
+      "sha256": "995c72adf1bcdeea01e5af3352cbc6aba78eafcf5642f471449fdfd789406f29",
+      "size_bytes": 231530
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp07_v001.png",
+      "sha256": "1c8f507d1a6150bd1cc4e3e70b0169e71391fde7f5df663babaa87e256bd72b0",
+      "size_bytes": 229277
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp08_v001.png",
+      "sha256": "62fe13062dedbc3c93ba836705c1dfb4514d21f701f56110d1ab1275b3704b5c",
+      "size_bytes": 230012
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_kp09_v001.png",
+      "sha256": "d2897ffd7648fecbb2c8a6ad7dd25a452e5940454c62e9ec9d1df099c11f5a78",
+      "size_bytes": 230335
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_peak_v001.png",
+      "sha256": "a3b700b7e2be331c013bb34623b3f12bda44ecac45e9d70c69696f60b6239b32",
+      "size_bytes": 232168
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_sheet_v001.json",
+      "sha256": "ede997f5b660cada3dd3de195bcc33fa98271bc4bf0145601b48dc6785ff21a4",
+      "size_bytes": 1039
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_sheet_v001.png",
+      "sha256": "6022e45f16f3ba99298743a2e29ed1c42fdc2739c96d203c556ff13a1be5d81e",
+      "size_bytes": 2241272
+    },
+    {
+      "path": "assets/expressions/EXP-077_startled-embarrassment/RYO_EXP-077_startled-embarrassment_sheet_v001.prompt.txt",
+      "sha256": "c22a1a38d60a045f6ff5188d40fff15309b4d041198fe1a0ae03dc568a4355f5",
+      "size_bytes": 1311
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp01_v001.png",
+      "sha256": "9dd835b1861546485fa57f64e08eece07690ed8166b1d6afed4c16e2cf634d75",
+      "size_bytes": 237969
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp02_v001.png",
+      "sha256": "78d95b8d5b18ece9f5384665217b21fc551f00d429e682e4ed79e9174e8a10c9",
+      "size_bytes": 237005
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp03_v001.png",
+      "sha256": "bfeba9e55a35c6bcad2ec713faac0a0d13ca7905c0ce4d855133063931ddbc86",
+      "size_bytes": 236463
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp04_v001.png",
+      "sha256": "59d793d658eb37cfd1a19eb867c932c46119915b422b9844fe4f0b22387e6865",
+      "size_bytes": 235931
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp05_v001.png",
+      "sha256": "ecf62634c08f28316acf38b567e5c74e32e07d8cbe2c37502ab3dd4fb6e137a9",
+      "size_bytes": 236754
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp06_v001.png",
+      "sha256": "7f8e520186f8b13cb1bff8e0e60e4963b84b9c870efad77442931c338d04b5d4",
+      "size_bytes": 230475
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp07_v001.png",
+      "sha256": "db8cb694935d9186aa152844efde7a3670370c8de5b35f5834e0535f7f79049f",
+      "size_bytes": 230476
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp08_v001.png",
+      "sha256": "6b06d45b80d4a50646c18d8a2aa4798bcc73e2130fddee5358bdba03712975b6",
+      "size_bytes": 234069
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_kp09_v001.png",
+      "sha256": "096e2ded454a4dfe4e8b57adcfe11f1936fbe04a953618d37c433f0ba96953b1",
+      "size_bytes": 231931
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_peak_v001.png",
+      "sha256": "ecf62634c08f28316acf38b567e5c74e32e07d8cbe2c37502ab3dd4fb6e137a9",
+      "size_bytes": 236754
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.json",
+      "sha256": "dc04c18392cf705c86ae4b8402a8d4ef0fbeb8dcbad6782e24ea679a04493562",
+      "size_bytes": 1042
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.png",
+      "sha256": "0d8b47e0ce0f0065a882ca308215a64a909b690fe35a8ffa9df9d6130479b4a9",
+      "size_bytes": 2277048
+    },
+    {
+      "path": "assets/expressions/EXP-078_disbelieving-double-take/RYO_EXP-078_disbelieving-double-take_sheet_v001.prompt.txt",
+      "sha256": "353259dc1f2081130d4484dad8e2f8f09777d4656a1a1b294a5e98acee4490c0",
+      "size_bytes": 1310
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp01_v001.png",
+      "sha256": "9cdc300749a2924777b14015413d5f4630bdff31cd59c9a7487bbbe921296eeb",
+      "size_bytes": 232771
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp02_v001.png",
+      "sha256": "970870f62998fa3123513ae0760514031bd8c7ce3112f6a17cf53b1b4160f2d4",
+      "size_bytes": 231660
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp03_v001.png",
+      "sha256": "4c1727ca2180403da7c460b1cc322fbcdb61e49c508583961fc17147d59a103e",
+      "size_bytes": 230834
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp04_v001.png",
+      "sha256": "97880817903ddc3131687d3233435da5ee262b402ba39478d206f049d67a2688",
+      "size_bytes": 230928
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp05_v001.png",
+      "sha256": "d0965fdf7a972af2669185f0c76851d4cb126b844503cb6af58fa9f8ce528771",
+      "size_bytes": 231425
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp06_v001.png",
+      "sha256": "c41d6713ee513e56de15c693282ac6f13b038df37a607382137decfcb44ddf29",
+      "size_bytes": 230431
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp07_v001.png",
+      "sha256": "dd74ab6d9691cc39fae9f22b9fa52af13853c69d8812f3b0825cb58bb4dcd859",
+      "size_bytes": 229927
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp08_v001.png",
+      "sha256": "c3d938691b60b0ce95749d876c5acef412bcead01e463b243d7db990b8191162",
+      "size_bytes": 230133
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_kp09_v001.png",
+      "sha256": "47dc0bde498aeb5c287bd5f0b57ba88eda62f3d093ba8054f343209099e3790a",
+      "size_bytes": 229756
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_peak_v001.png",
+      "sha256": "d0965fdf7a972af2669185f0c76851d4cb126b844503cb6af58fa9f8ce528771",
+      "size_bytes": 231425
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_sheet_v001.json",
+      "sha256": "18d871d572eae7f25ebf6b6857bd452d6ba7d389d452b8e132dc7e723d11d798",
+      "size_bytes": 1014
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_sheet_v001.png",
+      "sha256": "c4c1ffd9a5b148ff8500b20ea9d01ff4da6aab43bb18ff39ac4cbd62905631a1",
+      "size_bytes": 2237094
+    },
+    {
+      "path": "assets/expressions/EXP-079_quiet-apprehension/RYO_EXP-079_quiet-apprehension_sheet_v001.prompt.txt",
+      "sha256": "45b0d76567010d485537b7861f0cfb35f0025e66f51afd1595f0e659099840bb",
+      "size_bytes": 1294
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp01_v001.png",
+      "sha256": "830e9ff0b56715d03435501c0a7750ebb890464e108cff0b0e8e661b6bc71033",
+      "size_bytes": 223937
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp02_v001.png",
+      "sha256": "e3ddc5463185c7e3d393acfd42bb0589325372bdcd4486104858fd229a4ba7c2",
+      "size_bytes": 221214
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp03_v001.png",
+      "sha256": "5c64bf042aabef85edc92616c84e8f1305db320af0237405bdfefac035de6e79",
+      "size_bytes": 223980
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp04_v001.png",
+      "sha256": "a0e3b0c3f8cf21c5aecc223159da24ad500f0aba90792f7a41381e72502974c7",
+      "size_bytes": 223268
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp05_v001.png",
+      "sha256": "995cbe9be05a4527ea0ee307f8dde1bdb5a9fd53fb170f4a9c0b53db3e575758",
+      "size_bytes": 222784
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp06_v001.png",
+      "sha256": "5b57282b91597dbe9748b5c4713ad369b1b2a1f0543a5b8faf677e9228b6ef7c",
+      "size_bytes": 221119
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp07_v001.png",
+      "sha256": "66d89913ecc86e5faa657117f5b798258f680979e172eb405ab66824f3b2cf6d",
+      "size_bytes": 221217
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp08_v001.png",
+      "sha256": "58563cca4adeefbf9f584b9f60864fda54fdd22ba74ccff287be4eb927e635a1",
+      "size_bytes": 219745
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_kp09_v001.png",
+      "sha256": "4fa49a254337a547a53a665789e7855071118c81df1527acf20e22b9a0585fa1",
+      "size_bytes": 219829
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_peak_v001.png",
+      "sha256": "995cbe9be05a4527ea0ee307f8dde1bdb5a9fd53fb170f4a9c0b53db3e575758",
+      "size_bytes": 222784
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_sheet_v001.json",
+      "sha256": "0e1e0a0c0622916b14f775700bf5aa11b35e8e73d489ff3c685468b0a5c831ed",
+      "size_bytes": 1028
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_sheet_v001.png",
+      "sha256": "ae8dd82f0eb74c0af2b9536a2e4b2b6ea9830b6adf8092f1a0cb4972f715e92e",
+      "size_bytes": 2147720
+    },
+    {
+      "path": "assets/expressions/EXP-080_brave-through-fear/RYO_EXP-080_brave-through-fear_sheet_v001.prompt.txt",
+      "sha256": "eb41a8d03313a59065d8b22c21247f1b5d6ae651d861aa134a22baf6ce2ff874",
+      "size_bytes": 1308
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp01_v001.png",
+      "sha256": "b7fcbf2885378026f5677a6ed324897d993682af679fa0a8b20643687104edf0",
+      "size_bytes": 232937
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp02_v001.png",
+      "sha256": "43d08734826b474cda57956a155173d0373480e39f28485aef9e19d615688779",
+      "size_bytes": 235565
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp03_v001.png",
+      "sha256": "42cec1ddc1f8208acc70c6dbec9c049bac784d96b2d1a46ae4c1a2a3b477e0c2",
+      "size_bytes": 233514
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp04_v001.png",
+      "sha256": "3d202398d656937c001d33634cc53edf481845de2092426db33baf9adb9ba345",
+      "size_bytes": 234903
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp05_v001.png",
+      "sha256": "a1419b52df51c8ba279058b524a8f3dfc1ac4d0db664b00842d5ab876f128894",
+      "size_bytes": 237835
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp06_v001.png",
+      "sha256": "509e9a7823eaa883096b618a629702ea23c8e8b06fa44f798c14037e812f0766",
+      "size_bytes": 235069
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp07_v001.png",
+      "sha256": "f9525bc3d4084ae6b52d758eeb96b77b2259e88d805e74f7d8151728ee4d67ae",
+      "size_bytes": 233708
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp08_v001.png",
+      "sha256": "eaaecb35d3a9003f5dc1b289041a87bcbe533bf32498a44ee873692d4b0b9367",
+      "size_bytes": 234991
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_kp09_v001.png",
+      "sha256": "1a17a4fd212d6716756605ea99b0f858a57c76fe84aac2bd2af59bb6d39235a0",
+      "size_bytes": 233187
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_peak_v001.png",
+      "sha256": "a1419b52df51c8ba279058b524a8f3dfc1ac4d0db664b00842d5ab876f128894",
+      "size_bytes": 237835
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.json",
+      "sha256": "0cd47e913afab94e4f8d45cf00906f5abcf832c0945d402d6ebcb46d63b0462d",
+      "size_bytes": 1058
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.png",
+      "sha256": "613d36318aeee0020b48984f2a1b24f693cbb8fae407e3965439329a912a553b",
+      "size_bytes": 2279185
+    },
+    {
+      "path": "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.prompt.txt",
+      "sha256": "5a83ab9d13224742076007fce1dce77aad8789d073a408f58576940e705136ef",
+      "size_bytes": 2131
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp01_v001.png",
+      "sha256": "25b1488d2596a8f41cd29a4238fa499ba5576b54afbcae52172d9351ad949780",
+      "size_bytes": 233730
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp02_v001.png",
+      "sha256": "3fcfdc33d9ac2e2d644f7d1451244aae9e700f2f5e49e04d0f109ba5abf3c594",
+      "size_bytes": 234707
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp03_v001.png",
+      "sha256": "9c2489c7db7d562484b16c122cf7f95f47e37291843676401865c282eb6f101f",
+      "size_bytes": 233697
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp04_v001.png",
+      "sha256": "c3b0e483ecbeeab27ba609f8f3deae2f8f1ffe06fadad9c3e60d1287cd9c6d4c",
+      "size_bytes": 236187
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp05_v001.png",
+      "sha256": "e806e41e02b7d0ba7703a3627cf4fab92a49486073697fd3efa440016123ca66",
+      "size_bytes": 236301
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp06_v001.png",
+      "sha256": "d23e59b9abc56b4d0bdb628e4503eeb970cbc02ceaa2c079be5041dcd137274c",
+      "size_bytes": 236281
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp07_v001.png",
+      "sha256": "3ce11a37716b2ae87b77ba3d82711e0585f9b8634bad2f4ea500c682729acf72",
+      "size_bytes": 230576
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp08_v001.png",
+      "sha256": "aca5af6cd683be131c6902e685a02972475a8707ef19275af5b676c7af755a05",
+      "size_bytes": 230964
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_kp09_v001.png",
+      "sha256": "6f153bb5029d2300bde03ad6087ac88ec0e4aeaaa5163c063a811f07070042c3",
+      "size_bytes": 230753
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_peak_v001.png",
+      "sha256": "e806e41e02b7d0ba7703a3627cf4fab92a49486073697fd3efa440016123ca66",
+      "size_bytes": 236301
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_sheet_v001.json",
+      "sha256": "6e9946695434e96e31663e236cd625e598a1fa004b2948f9b166f1f730ef9a4a",
+      "size_bytes": 1138
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_sheet_v001.png",
+      "sha256": "0f8d189f7e5a80e59a54a65cc35fa9b6cd8e8fd9b3a5238fca1b6a3570747537",
+      "size_bytes": 2263724
+    },
+    {
+      "path": "assets/expressions/EXP-141_embarrassment/RYO_EXP-141_embarrassment_sheet_v001.prompt.txt",
+      "sha256": "711ed8a121878fbb63b8618a0ab23ddbf8fc269b5f745934d72cdae831fcb01a",
+      "size_bytes": 2324
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp01_v001.png",
+      "sha256": "f5a39b3f8f69e3fc1c783e59d7b65d74b6ab89808f1f631c8ef12cbc04c8ad0d",
+      "size_bytes": 236471
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp02_v001.png",
+      "sha256": "7eebe8dc892ec5c2596ac2d1f848bb9b433717535a8cbf8e59b1e39b51556f7f",
+      "size_bytes": 236191
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp03_v001.png",
+      "sha256": "43e62c1c92a7317f99229e7722151fb90abf5f8b5607cc691f950f34f4c68663",
+      "size_bytes": 238448
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp04_v001.png",
+      "sha256": "f9854047e5b915915f1f60858e9b053fa07d618bed7c2d3fbf88f2bbdfa4cf4a",
+      "size_bytes": 235553
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp05_v001.png",
+      "sha256": "220b3e8f38516563610495b4866f68a903a44ce0a09b40535884f2ac2410f750",
+      "size_bytes": 237160
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp06_v001.png",
+      "sha256": "0b47af872abc09dc37c9f15fd644479aa110616d9a517d7ff9285437f8c7d858",
+      "size_bytes": 236706
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp07_v001.png",
+      "sha256": "b69f090669b3f390e22f8531c842bb8a23c22d5317a7bf138f29d41977b6f216",
+      "size_bytes": 234084
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp08_v001.png",
+      "sha256": "a93f1a8f3a96567effa62d0161e568c09ba3dd6f96af54f0f909c1f6ed6e7eae",
+      "size_bytes": 234165
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_kp09_v001.png",
+      "sha256": "ad3d4ed8c69f7d161774baf233716f19eee24259ef82924f036aba3f877c6582",
+      "size_bytes": 233741
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_peak_v001.png",
+      "sha256": "220b3e8f38516563610495b4866f68a903a44ce0a09b40535884f2ac2410f750",
+      "size_bytes": 237160
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_sheet_v001.json",
+      "sha256": "02155cce39068d00176c4f2ee34897c17e13948b2a090d549509c0a360684f47",
+      "size_bytes": 1029
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_sheet_v001.png",
+      "sha256": "2ba11abb3534fa616027d381e569d6056c445c7361ac0d2e5883443c60b976cd",
+      "size_bytes": 2280590
+    },
+    {
+      "path": "assets/expressions/EXP-142_flustered/RYO_EXP-142_flustered_sheet_v001.prompt.txt",
+      "sha256": "51f9d3bf698be295cd9f6ffd7b22ffb7bb95abd91ad599889904cc61b4cceb35",
+      "size_bytes": 2012
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp01_v001.png",
+      "sha256": "05a1cce0bbd2e520b11e72f1383ff8f38b11081c2e630675aca8fe72487099ca",
+      "size_bytes": 229494
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp02_v001.png",
+      "sha256": "e280e533d272a4863b7a0d86d3ad7040334692b22934b2edaf29e117dcab81d6",
+      "size_bytes": 229467
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp03_v001.png",
+      "sha256": "60d056027e5c27dcd70f77f1d7314f8fc3f70213af7bf7eb4377259caaf0ee6b",
+      "size_bytes": 230975
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp04_v001.png",
+      "sha256": "b23b8662e6a86f9189e094a3e87ff47bdd93ddccaa663a93de5a6f592766a5ae",
+      "size_bytes": 230272
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp05_v001.png",
+      "sha256": "a76e45b304b067d4cf911376ecc972eb2ab1dbb8fd79c944ac5824d483da3f0b",
+      "size_bytes": 231108
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp06_v001.png",
+      "sha256": "c2c6c593f4ddc24472e241a432b13c3e518156d34d9636eb1670e331b492c1fc",
+      "size_bytes": 230740
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp07_v001.png",
+      "sha256": "88b4c092b172c040d819e6653071942c56047cbb793e5313a3bd7b51542d814c",
+      "size_bytes": 225958
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp08_v001.png",
+      "sha256": "0e67dd7cc004701e162a29099223b8267fe9b7f2e8337d5de662aecb23947e2f",
+      "size_bytes": 227242
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_kp09_v001.png",
+      "sha256": "042b1805d57e1dbfc1dbc99191f6194072a8e859e9283eae625f7b430dca0030",
+      "size_bytes": 225701
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_peak_v001.png",
+      "sha256": "a76e45b304b067d4cf911376ecc972eb2ab1dbb8fd79c944ac5824d483da3f0b",
+      "size_bytes": 231108
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_sheet_v001.json",
+      "sha256": "b9716e78ff7ed649993a71946ee79c7dfc168185b84fb65576b938a4c6aeecdb",
+      "size_bytes": 977
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_sheet_v001.png",
+      "sha256": "458d1e75d37b411d121938be34fc72e553552060309fe9b4448a1403fd594e1d",
+      "size_bytes": 2209639
+    },
+    {
+      "path": "assets/expressions/EXP-143_shy-smile/RYO_EXP-143_shy-smile_sheet_v001.prompt.txt",
+      "sha256": "42f82c64381c9e1bb59a08f1b6a55cc889f52a3dc229b525c71f3e25369cd95f",
+      "size_bytes": 2011
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp01_v001.png",
+      "sha256": "1ba86f0f30516775bc66d3f14ffd4b61832f0f0273a9287f6f91690da523ae4d",
+      "size_bytes": 233685
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp02_v001.png",
+      "sha256": "358107d962eecdaf3aec6008357a6f196cd9154ddb8f9b7459b59ab70df06f5b",
+      "size_bytes": 233096
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp03_v001.png",
+      "sha256": "6591b154da121d22b5a7412e43c8754b1f6485cf042c6c392578b3ac56ba4bd9",
+      "size_bytes": 234605
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp04_v001.png",
+      "sha256": "6938b559ba323f11d808b31e4e51af33283798b8eae1dc623bbf1096299c165a",
+      "size_bytes": 234368
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp05_v001.png",
+      "sha256": "6217509b455175b5a8d5647f89c40560318f834dc1435617181cdd294d06b3c7",
+      "size_bytes": 235789
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp06_v001.png",
+      "sha256": "f1c5c666c568f44ba59f5d4657cd2e563bc82c297d6710497171922ef282e766",
+      "size_bytes": 234493
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp07_v001.png",
+      "sha256": "90a07ce55a3b340d2bc4993af265e8b5f35b8c613bdd592946b717b2393f94c1",
+      "size_bytes": 233501
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp08_v001.png",
+      "sha256": "305e5ffce439b95985dde18988a25e2e6e40f8db785db7c15e8d6b372abab1fa",
+      "size_bytes": 230575
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_kp09_v001.png",
+      "sha256": "16553b41435399fd6ff63d51706a9a52f9df1d4a2a9f54b6edbbdf05b473957e",
+      "size_bytes": 231491
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_peak_v001.png",
+      "sha256": "6217509b455175b5a8d5647f89c40560318f834dc1435617181cdd294d06b3c7",
+      "size_bytes": 235789
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_sheet_v001.json",
+      "sha256": "4dd8d8c1f3a7d4ac97e1709fedcb714501a39321a86405b583b47c09d731c134",
+      "size_bytes": 1025
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_sheet_v001.png",
+      "sha256": "406bdc60b3183f741a15346fdaa33207dc62acb25b89c8b79f83b0ebd1dce603",
+      "size_bytes": 2254268
+    },
+    {
+      "path": "assets/expressions/EXP-144_caught-staring/RYO_EXP-144_caught-staring_sheet_v001.prompt.txt",
+      "sha256": "ac3f5553d7e6d497ec039278277fc7d0e81cdcd10f37025696b36e2bbee4a006",
+      "size_bytes": 2014
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_eye-details_v001.json",
+      "sha256": "1723858cc1f6399f4add33889809806dacac2fadd00e2c377347be38abbfbc04",
+      "size_bytes": 824
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_eye-details_v001.png",
+      "sha256": "288f78f6a9e64016f42ad012cd4d224d220ad72bb64384de39c4b6435f4635b5",
+      "size_bytes": 2150423
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_eye-details_v001.prompt.txt",
+      "sha256": "05c216e5fff2e44b028a4937d042260ece5d299b570c52d2d456d000e48e60b0",
+      "size_bytes": 1078
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.json",
+      "sha256": "0baa80e38d04ed7d588ba404165a929dfe8b4d1ec6f78f197682499a1d1d659d",
+      "size_bytes": 746
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.png",
+      "sha256": "15a10bc82b34149aa468549b09d24ec8d845c57ee48bd4d60e8c27c24215dd61",
+      "size_bytes": 1622829
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.prompt.txt",
+      "sha256": "87d26d069177b74192747f2a2315db18281f24835b35bc016c10f1c7f9ada503",
+      "size_bytes": 1244
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_back_v001.json",
+      "sha256": "9d2dcea82e0bac023074009ba27511b2c21e07bd974cb9b213d877ff035a9215",
+      "size_bytes": 819
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_back_v001.png",
+      "sha256": "5896f5ab11734922b07533c6a88d5c809e0516643c8eea9ec328a61cb45231d1",
+      "size_bytes": 1547624
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_back_v001.prompt.txt",
+      "sha256": "f06377c8d527cfee6c67d186b9abdf9dfc4a36e4b8525b19b634b76c02610d5d",
+      "size_bytes": 1424
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_front_v001.json",
+      "sha256": "0ac6c0f5e8b83547dc5c6916235e276b639684efdbca6f5ddf61ab3430688872",
+      "size_bytes": 706
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "sha256": "90b6ca93e8a168b4922b9b23c4824d48100505131a03a209d11fb977c59cb1f9",
+      "size_bytes": 1634911
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_front_v001.prompt.txt",
+      "sha256": "861dcd732d009609da66d6d7148cbbc8bd471060cab00e174ef97a11891dd805",
+      "size_bytes": 1657
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_side_v001.json",
+      "sha256": "ccd6aa67dc94be32ba522f7621bc70b28487c8040e2077febd8e2696ab761d05",
+      "size_bytes": 845
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_side_v001.png",
+      "sha256": "81f5fd24ed47b6ee4ed18d096ed4747e6b724cbeef871344267e938d203e33c9",
+      "size_bytes": 1560859
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_fullbody_side_v001.prompt.txt",
+      "sha256": "60864f903da9a6a02f74a2dc46f95b8f5bf4b679bd863f42ccae4e714d1a89ac",
+      "size_bytes": 1340
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_mouth-details_v001.json",
+      "sha256": "c9bd59693b4a7b85a08790c1adb82cf210151620523fc5da4745a0ba807fe3a1",
+      "size_bytes": 779
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_mouth-details_v001.png",
+      "sha256": "9187c84f55010b970b4a384483a00d1dddd055e9e008593ff384f4fa90df3748",
+      "size_bytes": 1845902
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_mouth-details_v001.prompt.txt",
+      "sha256": "ebc74acbb041db2b3813da2292227636c265fb90eb71fd8c9922a6b4df53ef5b",
+      "size_bytes": 1144
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.json",
+      "sha256": "b110b0f0f2b0bba5cc242d2e7438e3ecd6669b39cbbd0a4cf6ad9cb1a812f48d",
+      "size_bytes": 831
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+      "sha256": "c7d174b6d35094278ba357b8ad86e3e8a34d5e9f7a997b3480e09e6dcd2fc529",
+      "size_bytes": 1908074
+    },
+    {
+      "path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.prompt.txt",
+      "sha256": "7d8a6dc67b2e6570da5cda963618c1f1450729f2522e893a741f1b29480b4499",
+      "size_bytes": 1442
+    }
+  ],
+  "metadata_note": "Publisher must snapshot current metadata and docs, restricting remote publication references to selected source paths. Unselected pending sources are not included here. Source and derivative hashes verified locally; reference art not a tested rig.",
+  "metadata_refresh": {
+    "scope": "Eight control JSON sidecars only; added panel_count=9 and layout=3x3_keyposes. Removing those fields exactly reproduces each frozen original hash and size. Primary/source/crop image bytes and frozen50 selection unchanged.",
+    "updated_files": [
+      "assets/controls/RYO_CTL_blink_sheet_v002.json",
+      "assets/controls/RYO_CTL_browInnerRaise_sheet_v002.json",
+      "assets/controls/RYO_CTL_browLower_sheet_v001.json",
+      "assets/controls/RYO_CTL_browRaise_sheet_v001.json",
+      "assets/controls/RYO_CTL_closedLipSmile_sheet_v002.json",
+      "assets/controls/RYO_CTL_jawOpen_sheet_v001.json",
+      "assets/controls/RYO_CTL_winkLeft_sheet_v001.json",
+      "assets/controls/RYO_CTL_winkRight_sheet_v001.json"
+    ],
+    "additional_bytes": 384
+  },
+  "counting_note": "50 primary generated source images. The 351 integer-cropped panels and 28 duplicate peak copies are derivatives, not additional generated primary assets."
+}

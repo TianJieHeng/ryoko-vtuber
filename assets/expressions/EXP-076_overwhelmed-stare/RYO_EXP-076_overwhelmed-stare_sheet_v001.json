@@ -1,0 +1,25 @@
+{
+  "id": "EXP-076",
+  "slug": "overwhelmed-stare",
+  "family": "Surprise and fear",
+  "distinctive_facial_intent": "Brows lift without a deep frown; eyes lose focus; mouth rests as a small slack opening.",
+  "path": "assets/expressions/EXP-076_overwhelmed-stare/RYO_EXP-076_overwhelmed-stare_sheet_v001.png",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "35b59433852f8449de7e14d7858fd14d0b41b5f2bb21cd1a403dd928d9722207",
+  "generator": "built-in image_gen",
+  "processing": "unchanged original bytes; no crop or resizing",
+  "source_references": [
+    "MOD-001",
+    "EXP-101"
+  ],
+  "status": "visual_review_passed_model_fit_untested",
+  "animation_status": "nine-key-pose illustration only; mesh/rig/interpolation untested",
+  "visual_review": "Nine panels, identity and costume maintained, expression change readable. Tight hair top clearance follows pilot; no obvious facial anatomy defect. Illustrated key poses, not pixel-registered animation."
+}

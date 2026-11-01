@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-browLower",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "06f62639556f33823ce33a8c83187d7deae1c417f1cd991a607dac84347d105c",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels; brows visibly lower/knit toward center peak and relax. Mouth closed. Whole hair/pins framed. Slight eye narrowing accompanies brow lowering; approximate visual guide.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

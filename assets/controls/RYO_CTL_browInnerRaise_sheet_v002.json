@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-browInnerRaise",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "74e754c7d0364df74c71c2a7e69b597c0587e1c0fe5246ea87aa06ef4f856c59",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels. Inner brow tips rise toward middle peak; mouth stays neutral closed without obvious frown. Final brow returns close to initial. Full hair/pins framed. Supersedes v001 coupled-mouth candidate.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

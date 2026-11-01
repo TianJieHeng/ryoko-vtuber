@@ -1,0 +1,30 @@
+{
+  "expression_id": "EXP-041",
+  "slug": "controlled-anger",
+  "asset_type": "nine_key_pose_facial_reference_sheet",
+  "generator": "builtin_image_gen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "pixel_processing": "none",
+  "sha256": "5a268dedbc3ca14463b4c3267a3da7f0c94516c6576854ad645c8f160db7f04f",
+  "size_bytes": 2244910,
+  "panel_count": 9,
+  "panel_order": "row_major_left_to_right",
+  "visual_review": {
+    "status": "passed_reference_art_review",
+    "observations": [
+      "Nine panels, brows draw inward and eyes narrow at stern peak, then relax",
+      "Identity and costume stable; no added effects or gestures"
+    ],
+    "limitations": [
+      "Illustrated references, not pixel-registered animation frames or mesh validation"
+    ]
+  },
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "EXP-006",
+  "slug": "suppressed-giggle",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
+  "bytes": 2249206,
+  "review_status": "visually_reviewed",
+  "visual_review": "Nine panels. Suppressed smile, raised cheek blush and brief parted-lip follow-through visible; identity preserved. Brow asymmetry subtle; review for differentiation from other small-smile sheets.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.png"
+  ]
+}

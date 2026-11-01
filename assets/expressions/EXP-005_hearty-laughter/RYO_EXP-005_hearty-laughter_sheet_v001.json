@@ -1,0 +1,28 @@
+{
+  "id": "EXP-005",
+  "slug": "hearty-laughter",
+  "asset_type": "expression_motion_reference_sheet",
+  "path": "assets/expressions/EXP-005_hearty-laughter/RYO_EXP-005_hearty-laughter_sheet_v001.png",
+  "generator": "builtin_imagegen",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "export_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "c66958c430e23c5340305a37249ad04d302c129bff7461d88c1a93019f915df7",
+  "bytes": 2227753,
+  "review_status": "visually_reviewed",
+  "visual_review": "Nine panels, strong open-mouth laughter with closed crescent eyes at peak, neutral return and consistent character identity. Motion guide only.",
+  "limitations": [
+    "Visual key-pose reference, not pixel-registered or rigged animation",
+    "No Blender deformation or runtime validation",
+    "No separate panels extracted"
+  ],
+  "references": [
+    "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "assets/expressions/EXP-101_restrained-confidence/RYO_EXP-101_restrained-confidence_sheet_v001.png"
+  ]
+}

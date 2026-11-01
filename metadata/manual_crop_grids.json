@@ -1,0 +1,18 @@
+{
+  "assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.png": {
+    "source_sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+    "x": [
+      0,
+      382,
+      775,
+      1159
+    ],
+    "y": [
+      0,
+      449,
+      907,
+      1358
+    ],
+    "review_note": "Actual source visually reviewed; divider center positions. Second vertical divider changes black/white by row so full-axis low-variance detector rejects it."
+  }
+}

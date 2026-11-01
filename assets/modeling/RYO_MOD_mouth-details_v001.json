@@ -1,0 +1,22 @@
+{
+  "asset_id": "MOD-007",
+  "role": "six-panel mouth and interior design proposal, not a motion sequence",
+  "generator": "built-in image_gen",
+  "native_dimensions": [
+    1536,
+    1024
+  ],
+  "export_dimensions": [
+    1536,
+    1024
+  ],
+  "mode": "RGB",
+  "sha256": "9187c84f55010b970b4a384483a00d1dddd055e9e008593ff384f4fa90df3748",
+  "source_references": [
+    "MOD-001",
+    "REF-005"
+  ],
+  "visual_review": "Parent inspected six mouth views with consistent jaw and skin. Ordinary teeth and tongue depicted. This proposes previously occluded mouth-interior design for builder review, not verified model geometry, a calibrated viseme set or a UV atlas.",
+  "status": "visual_review_passed_model_fit_untested",
+  "processing": "Original output bytes copied unchanged."
+}

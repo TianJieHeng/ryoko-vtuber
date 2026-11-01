@@ -1,0 +1,16 @@
+{
+  "asset_id": "CTL-winkRight",
+  "native_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "6c66c831547a1025ee30944e18a4c9e0f1b2a59b2770a576c959c44e610cc812",
+  "generation_method": "built_in_imagegen",
+  "reference_type": "generic_control_visual_reference",
+  "implemented_rig": false,
+  "visual_review": "Nine panels verified; correct character-right eye on viewer-left closes, opposite stays open. Head and hair safely framed. Broad closure hold panels3-8, not exact graduated weights. Visual reference only.",
+  "panel_order": "row_major",
+  "character_left": "viewer_right",
+  "panel_count": 9,
+  "layout": "3x3_keyposes"
+}

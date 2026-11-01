@@ -1,0 +1,20 @@
+{
+  "asset_id": "DET-002",
+  "generator": "built-in imagegen",
+  "native_dimensions": [
+    1055,
+    1491
+  ],
+  "export_dimensions": [
+    1055,
+    1491
+  ],
+  "sha256": "424cdb12995415d4a2b1a951bf528cf1656645eed13db6ad1d2f3a10831309e3",
+  "bytes": 1579358,
+  "visual_review": "reviewed_pending_parent_acceptance",
+  "review_notes": [
+    "Double-bar earrings corrected against neutral master. Two gold pins, green diamond pendant.",
+    "Visual reference only; not UV/model-fitted or Blender-validated."
+  ],
+  "status": "generated_reviewed"
+}
