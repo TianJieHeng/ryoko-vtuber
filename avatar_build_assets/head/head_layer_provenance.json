@@ -1,0 +1,573 @@
+{
+  "status": "authored source layers requiring model-specific fitting",
+  "count": 23,
+  "side_convention": "character left/right; front viewer left is character right",
+  "parts": [
+    {
+      "path": "head/layers/RYO_HEAD_ear_R_v001.png",
+      "role": "ear character R",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        0,
+        0,
+        579,
+        420
+      ],
+      "size": [
+        579,
+        420
+      ],
+      "sha256": "b16cd2904796ff1f6f70f84ad3621f165553e2e0ed6cf74445c982e5e336d436",
+      "transparent_pixels": 193069,
+      "opaque_pixels": 96,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_ear_L_v001.png",
+      "role": "ear character L",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        579,
+        0,
+        580,
+        420
+      ],
+      "size": [
+        580,
+        420
+      ],
+      "sha256": "3eb54faeb782e53d8a112a82eddbf54d23230fea1af618be39c734b38976d3d2",
+      "transparent_pixels": 191366,
+      "opaque_pixels": 70,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_sclera_R_v001.png",
+      "role": "sclera character R",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        0,
+        420,
+        579,
+        280
+      ],
+      "size": [
+        579,
+        280
+      ],
+      "sha256": "c813a381d93b04612cde7646f5e7c7cc0fd852e4b9a095a63e2ba0bdf64cc064",
+      "transparent_pixels": 116632,
+      "opaque_pixels": 139,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_sclera_L_v001.png",
+      "role": "sclera character L",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        579,
+        420,
+        580,
+        280
+      ],
+      "size": [
+        580,
+        280
+      ],
+      "sha256": "179955f3fb3d3f60fc7a4e89beeade5c52f1ff49903d874a1055cb087275428f",
+      "transparent_pixels": 116769,
+      "opaque_pixels": 128,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_iris_pupil_R_v001.png",
+      "role": "iris_pupil character R",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        0,
+        700,
+        579,
+        360
+      ],
+      "size": [
+        579,
+        360
+      ],
+      "sha256": "54a97fd1d7c9ea581a36cc565bce960baab72405a7c0c44aa9dc5080b133e3bc",
+      "transparent_pixels": 149538,
+      "opaque_pixels": 186,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_iris_pupil_L_v001.png",
+      "role": "iris_pupil character L",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        579,
+        700,
+        580,
+        360
+      ],
+      "size": [
+        580,
+        360
+      ],
+      "sha256": "ad08ed6f92b552525a7319b468129dd5e53c46c9a26f6fc1b048cc401fde2a43",
+      "transparent_pixels": 151462,
+      "opaque_pixels": 205,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_lash_lid_R_v001.png",
+      "role": "lash_lid character R",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        0,
+        1060,
+        579,
+        298
+      ],
+      "size": [
+        579,
+        298
+      ],
+      "sha256": "f1abe31c9206181eba1c0f10f67633760de50be83a71ff3cae2d3a4d29d6bfa5",
+      "transparent_pixels": 144272,
+      "opaque_pixels": 77,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_lash_lid_L_v001.png",
+      "role": "lash_lid character L",
+      "source": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
+      "crop_xywh": [
+        579,
+        1060,
+        580,
+        298
+      ],
+      "size": [
+        580,
+        298
+      ],
+      "sha256": "3552c0d3289069bfb41ade3d824806cf31e2a0a0001bae9c6103e28f9ce9b370",
+      "transparent_pixels": 145179,
+      "opaque_pixels": 52,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_brow_R_v001.png",
+      "role": "brow_R",
+      "source": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
+      "crop_xywh": [
+        0,
+        0,
+        579,
+        340
+      ],
+      "size": [
+        579,
+        340
+      ],
+      "sha256": "3e45564735bab37b61bb9d77c40204d28b82f219e7c5787839120ad9ab88c029",
+      "transparent_pixels": 174145,
+      "opaque_pixels": 73,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_brow_L_v001.png",
+      "role": "brow_L",
+      "source": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
+      "crop_xywh": [
+        579,
+        0,
+        580,
+        340
+      ],
+      "size": [
+        580,
+        340
+      ],
+      "sha256": "74aff161efb267065caa0e5937da5691dab52b153548e19437724d421ad5ff7c",
+      "transparent_pixels": 178495,
+      "opaque_pixels": 88,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_closed_lid_R_v001.png",
+      "role": "closed_lid_R",
+      "source": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
+      "crop_xywh": [
+        0,
+        340,
+        579,
+        340
+      ],
+      "size": [
+        579,
+        340
+      ],
+      "sha256": "eee53b9cf25398e85273efb077cd3fbbc372cb0a735014477334730d037e1559",
+      "transparent_pixels": 165903,
+      "opaque_pixels": 5,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_closed_lid_L_v001.png",
+      "role": "closed_lid_L",
+      "source": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
+      "crop_xywh": [
+        579,
+        340,
+        580,
+        340
+      ],
+      "size": [
+        580,
+        340
+      ],
+      "sha256": "23c716a57d5f884eed26f35d105df1e2807817dbef944b80efa2a1e28121ec7a",
+      "transparent_pixels": 167391,
+      "opaque_pixels": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_upper_teeth_v001.png",
+      "role": "upper_teeth",
+      "source": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
+      "crop_xywh": [
+        579,
+        680,
+        580,
+        340
+      ],
+      "size": [
+        580,
+        340
+      ],
+      "sha256": "d8828150286cd64a52cf553715e80d9b33f9d4309d1de80ae86e494b69c05746",
+      "transparent_pixels": 152464,
+      "opaque_pixels": 125,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_lower_teeth_v001.png",
+      "role": "lower_teeth",
+      "source": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
+      "crop_xywh": [
+        0,
+        1020,
+        579,
+        338
+      ],
+      "size": [
+        579,
+        338
+      ],
+      "sha256": "fb3b00dcf74958063f3aa5466f770db4a34aa8dbd4209aae3030f86a04a0d9d6",
+      "transparent_pixels": 158770,
+      "opaque_pixels": 100,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_tongue_v001.png",
+      "role": "tongue",
+      "source": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
+      "crop_xywh": [
+        579,
+        1020,
+        580,
+        338
+      ],
+      "size": [
+        580,
+        338
+      ],
+      "sha256": "8f731572395082142053234df3466f1e374de336a3510cfff9e9815bb85ff5a3",
+      "transparent_pixels": 130200,
+      "opaque_pixels": 144,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_neutral_lips_v001.png",
+      "role": "neutral_lips alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
+      "source": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
+      "crop_xywh": [
+        0,
+        0,
+        656,
+        400
+      ],
+      "size": [
+        656,
+        400
+      ],
+      "sha256": "6cf4ba2aba81ca1d9e0d724f3aa890bce2d1387ac85bc8b98f628d79ca558c86",
+      "transparent_pixels": 253613,
+      "opaque_pixels": 8,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_A_v001.png",
+      "role": "viseme_A alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
+      "source": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
+      "crop_xywh": [
+        656,
+        0,
+        656,
+        400
+      ],
+      "size": [
+        656,
+        400
+      ],
+      "sha256": "7fb4ffce7c918c1a6bfc6471ec520616c9f7c69276604449844a9f1d341871fe",
+      "transparent_pixels": 222544,
+      "opaque_pixels": 10,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_I_v001.png",
+      "role": "viseme_I alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
+      "source": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
+      "crop_xywh": [
+        0,
+        400,
+        656,
+        400
+      ],
+      "size": [
+        656,
+        400
+      ],
+      "sha256": "a1e2f8c8aeab01ce5cdb38bbbf58b687f3cd150a87a2617c2dae7c076ca59a1f",
+      "transparent_pixels": 243877,
+      "opaque_pixels": 4,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_U_v001.png",
+      "role": "viseme_U alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
+      "source": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
+      "crop_xywh": [
+        656,
+        400,
+        656,
+        400
+      ],
+      "size": [
+        656,
+        400
+      ],
+      "sha256": "539b1e74d2dc84cfaff43157d363a63a55b6bfad51924029efeafc689e816987",
+      "transparent_pixels": 253671,
+      "opaque_pixels": 8,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_E_v001.png",
+      "role": "viseme_E alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
+      "source": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
+      "crop_xywh": [
+        0,
+        800,
+        656,
+        399
+      ],
+      "size": [
+        656,
+        399
+      ],
+      "sha256": "5ae868155be257c6d9cb5b474d7ea4b55027fce48464560dd0678ddc3b787170",
+      "transparent_pixels": 235492,
+      "opaque_pixels": 26,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_O_v001.png",
+      "role": "viseme_O alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
+      "source": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
+      "crop_xywh": [
+        656,
+        800,
+        656,
+        399
+      ],
+      "size": [
+        656,
+        399
+      ],
+      "sha256": "f77ffa108892068d24e83bc1f433f8451cf2a31ff2ad03b20c47802170c02eab",
+      "transparent_pixels": 237753,
+      "opaque_pixels": 1,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_mouth_cavity_v001.png",
+      "role": "empty deep-burgundy mouth cavity without teeth or tongue",
+      "source": "exec-5140efcb-20b0-4436-9876-8b445b3932cd.png",
+      "source_sha256": "1872355f99657b7d03a654fc0f7fe55aabfa0814a2ecffec8cfa79d35cdd32d6",
+      "crop_xywh": [
+        0,
+        1020,
+        579,
+        338
+      ],
+      "size": [
+        579,
+        338
+      ],
+      "sha256": "39ef37231d3347fe5f729e3fc427f9f59cc1604a12988b6c3ba563cb7ce3971e",
+      "transparent_pixels": 169614,
+      "opaque_pixels": 305,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pixel_preserving_crop": true,
+      "registered_to_fullbody": false
+    },
+    {
+      "path": "head/layers/RYO_HEAD_face_base_v001.png",
+      "role": "skin face base; eye/brow/mouth/hair areas blank; nose retained",
+      "sha256": "5da8a92ca10380442a9eaf569dc97f04fdbc398f8e5feadb6b993463f0e3c869",
+      "size": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 922818,
+      "opaque_pixels": 469,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "registered_to_fullbody": false
+    }
+  ]
+}

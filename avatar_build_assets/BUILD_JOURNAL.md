@@ -19,3 +19,10 @@
 - Added front/back blouse torso components and their accepted transparent source atlas.
 - Added two hair sticks and two dangling hair ornaments, with their accepted source atlases and generation prompts.
 - Components were visually checked on flat backgrounds by their generating workers. They remain placement/mapping source art; no registered full-body stack or fitted 3D texture claim is made.
+
+## Facial components and accessories checkpoint
+
+- Added 23 accepted individual head PNGs: face base, ears, sclera, irises/pupils, lash/lid shapes, brows, closed lids, oral interior pieces, neutral lips and five vowel-mouth alternatives.
+- Added earrings, necklace/green pendant and belt/buckle source artwork. Source atlases and exact crop/alpha provenance accompany the accepted layers.
+- Generating workers inspected actual images composited on flat backgrounds. Original alpha and crop pixels are preserved.
+- These are separate source components, not a guaranteed pixel-registered head or UV-mapped facial rig. Vowel mouths are mutually exclusive alternatives; do not stack them simultaneously.
