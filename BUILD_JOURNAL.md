@@ -37,3 +37,7 @@ Commit `b9bf8316ec37a5f637e38cd650485ade0c07a5f7` was confirmed on `main`. All 5
 A second separate batch publishes 50 new accepted primary images with no overlap with batch 001, plus 444 derived panels and 27 peak copies. One jaw comparison has three panels; the other 49 sheets have nine. The frozen 621 asset-related files total 203,513,439 bytes; all SHA-256 values and sizes matched the approved snapshot.
 
 Cumulative publication: 100 primary source images, 795 extracted panels and 55 peak copies. Catalogue, index, body and extraction metadata is filtered to these 100 published sources, not later local arrivals. Source images and original references remain unchanged. No CI or model/rig/runtime implementation is claimed. Remote verification follows the atomic batch commit.
+
+### Batch 002 remote verification
+
+Commit `fd4ddddd794976ec4264dd22918a8fb14e5bf416` was confirmed on `main`. All 1,171 remote file blobs matched the expected local Git hashes. This verifies 100 cumulative primary source images, 795 derived panels and 55 peak copies. Every previously published image and the six original user references remain byte-identical. Later local arrivals and rejected variants are excluded. This is reference-art byte verification, not model/rig/runtime validation.
