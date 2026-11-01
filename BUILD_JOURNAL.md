@@ -136,3 +136,18 @@ Published before this journal checkpoint:
 The editable `.blend`, generated GLB, final renders, and reference-versus-Blender boards are delivered through the Phase 2 browser review version `22e43dc`; the source is also downloadable from that review.
 
 **Phase 2 status:** full-character blockout and internal visual verification complete; awaiting explicit user approval before Phase 03 production topology, UVs, and material separation. No facial expression, body rig, animation, VRM export, or runtime certification has occurred.
+
+## 2026-11-02 — implementation Phase 2 revision: two-chopstick hair accessory
+
+The user approved the overall blockout but identified the generated hair spikes as two chopsticks and requested a correction. The generated side protrusions and coarse accessory forms were removed. Exactly two separate tapered gold shafts now cross the bun and project together toward character-left (+X), with two rounded finials and one short three-link chain and pendant on the lower stick. The edit removed 650 generated vertices. Two neutral bun-core objects temporarily close the edited generated hair surface; they are explicitly blockout patches and will be replaced during production hair reconstruction.
+
+The revised v002 `.blend` was reopened in a separate Blender process and validated: one generated-base mesh with 43,116 vertices, 75,366 triangles, 10,472 boundary edges, and 10,475 non-manifold edges; 13 separate accessory/core objects; exactly two shafts, two finials, and three chain links; zero armatures and zero shape-key blocks; and the locked -90-degree authoring-root rotation. This passes only as a revised visual blockout, not as production topology.
+
+The complete matched-view, close-up, hand, eight-angle orbit, and top-view set was rendered again. The focused accessory reference-versus-Blender board and refreshed full-body, face/hair, hands, and orbit boards were opened and inspected. The browser review now includes the focused revision board and v002 source download. Static browser verification passed with zero failures, no page errors, and no missing assets; all links and local images resolve. Its animation-loop check was intentionally skipped because the review is static.
+
+Published before this journal checkpoint:
+
+- Commit `1170a2ea0c1097087df23ed5392c02653cf46c41`: the v002 revision, final-render, and reopen-validation scripts; revision and validation JSON; and the Phase 2 documentation addendum.
+- Browser review version `e84e90b`: revised comparison boards and downloadable v002 Blender source.
+
+**Phase 2 revision status:** accessory correction and internal visual verification complete; awaiting explicit user confirmation before Phase 03 production topology, UVs, and material separation. No facial expression, body rig, animation, VRM export, or runtime certification has occurred.
