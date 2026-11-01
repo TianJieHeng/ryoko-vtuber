@@ -4,7 +4,7 @@
       "path": "head/layers/RYO_HEAD_ear_R_v001.png",
       "role": "ear character R",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         0,
@@ -16,13 +16,15 @@
       "size": [
         579,
         420
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_ear_L_v001.png",
       "role": "ear character L",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         0,
@@ -34,13 +36,15 @@
       "size": [
         580,
         420
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_sclera_R_v001.png",
       "role": "sclera character R",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         420,
@@ -52,13 +56,15 @@
       "size": [
         579,
         280
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_sclera_L_v001.png",
       "role": "sclera character L",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         420,
@@ -70,13 +76,15 @@
       "size": [
         580,
         280
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_iris_pupil_R_v001.png",
       "role": "iris_pupil character R",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         700,
@@ -88,13 +96,15 @@
       "size": [
         579,
         360
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_iris_pupil_L_v001.png",
       "role": "iris_pupil character L",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         700,
@@ -106,13 +116,15 @@
       "size": [
         580,
         360
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_lash_lid_R_v001.png",
       "role": "lash_lid character R",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         1060,
@@ -124,13 +136,15 @@
       "size": [
         579,
         298
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_lash_lid_L_v001.png",
       "role": "lash_lid character L",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         1060,
@@ -142,13 +156,15 @@
       "size": [
         580,
         298
-      ]
+      ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581"
     },
     {
       "path": "head/layers/RYO_HEAD_brow_R_v001.png",
       "role": "brow_R",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         0,
@@ -160,13 +176,15 @@
       "size": [
         579,
         340
-      ]
+      ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95"
     },
     {
       "path": "head/layers/RYO_HEAD_brow_L_v001.png",
       "role": "brow_L",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         0,
@@ -178,13 +196,15 @@
       "size": [
         580,
         340
-      ]
+      ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95"
     },
     {
       "path": "head/layers/RYO_HEAD_closed_lid_R_v001.png",
       "role": "closed_lid_R",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         340,
@@ -196,13 +216,15 @@
       "size": [
         579,
         340
-      ]
+      ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95"
     },
     {
       "path": "head/layers/RYO_HEAD_closed_lid_L_v001.png",
       "role": "closed_lid_L",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         340,
@@ -214,13 +236,15 @@
       "size": [
         580,
         340
-      ]
+      ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95"
     },
     {
       "path": "head/layers/RYO_HEAD_upper_teeth_v001.png",
       "role": "upper_teeth",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         680,
@@ -232,13 +256,15 @@
       "size": [
         580,
         340
-      ]
+      ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95"
     },
     {
       "path": "head/layers/RYO_HEAD_lower_teeth_v001.png",
       "role": "lower_teeth",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         1020,
@@ -250,13 +276,15 @@
       "size": [
         579,
         338
-      ]
+      ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95"
     },
     {
       "path": "head/layers/RYO_HEAD_tongue_v001.png",
       "role": "tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         1020,
@@ -268,13 +296,15 @@
       "size": [
         580,
         338
-      ]
+      ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95"
     },
     {
       "path": "head/layers/RYO_HEAD_neutral_lips_v001.png",
       "role": "neutral_lips alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         0,
@@ -286,13 +316,15 @@
       "size": [
         656,
         400
-      ]
+      ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_A_v001.png",
       "role": "viseme_A alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
         0,
@@ -304,13 +336,15 @@
       "size": [
         656,
         400
-      ]
+      ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_I_v001.png",
       "role": "viseme_I alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         400,
@@ -322,13 +356,15 @@
       "size": [
         656,
         400
-      ]
+      ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_U_v001.png",
       "role": "viseme_U alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
         400,
@@ -340,13 +376,15 @@
       "size": [
         656,
         400
-      ]
+      ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_E_v001.png",
       "role": "viseme_E alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         800,
@@ -358,13 +396,15 @@
       "size": [
         656,
         399
-      ]
+      ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_O_v001.png",
       "role": "viseme_O alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
         800,
@@ -376,13 +416,15 @@
       "size": [
         656,
         399
-      ]
+      ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b"
     },
     {
       "path": "head/layers/RYO_HEAD_mouth_cavity_v001.png",
       "role": "empty deep-burgundy mouth cavity without teeth or tongue",
       "status": "accepted_source_layer_requires_mesh_fitting",
-      "source_atlas": "exec-5140efcb-20b0-4436-9876-8b445b3932cd.png",
+      "source_atlas": "head/sources/audit_only/RYO_HEAD_rejected_viseme_v001.png",
       "crop_bounds_xyxy": [
         0,
         1020,
@@ -394,7 +436,9 @@
       "size": [
         579,
         338
-      ]
+      ],
+      "generation_original_basename": "exec-5140efcb-20b0-4436-9876-8b445b3932cd.png",
+      "source_sha256": "1872355f99657b7d03a654fc0f7fe55aabfa0814a2ecffec8cfa79d35cdd32d6"
     },
     {
       "path": "head/layers/RYO_HEAD_face_base_v001.png",

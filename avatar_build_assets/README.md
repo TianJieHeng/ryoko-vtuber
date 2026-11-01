@@ -1,6 +1,6 @@
 # Ryoko avatar build assets
 
-**Status: corrective image-asset production in progress.** This new folder is additive. The existing reference collection and the builder's `vtuber/` project are unchanged.
+**Status: corrective source-art pass delivered: 69 individual component/effect PNGs.** This new folder is additive. The existing reference collection and the builder's `vtuber/` project are unchanged.
 
 ## Kimi: continue the existing 3D model
 
@@ -19,6 +19,18 @@ Read `docs/LAYER_USAGE.md` for part order, clipping, swaps and target assignment
 
 `reference_library/` contains the complete original 3,408-file source pack from commit `0ddc526115c7f91eed59e48a468bab5bdddfdc52`, including all 200 expression sheets, 40 body-gesture sheets, extracted panels, metadata, references and handoff documents. It is copied by exact Git tree reuse, preserving internal links and image bytes. New separated artwork lives beside this library. The library's older status statements describe that original pack; this README and the new manifest describe the corrective additions. The later `vtuber/` implementation remains at its existing repository location.
 
+## What is included in the corrective pass
+
+- 23 head components, including eyes, brows, lids, oral pieces and vowel alternatives.
+- 23 body/clothing components, including front/back regions, sleeve segments, hands and pumps.
+- 6 hair components.
+- 10 accessory components, including alternative combined versus separated necklace artwork.
+- 7 optional expression effects.
+- 19 accepted generation sources/atlases, 10 key reference copies, five contact-sheet previews, crop/alpha/hash provenance and integration instructions.
+- The complete original reference library described above.
+
+Read `docs/INDEPENDENT_ART_QA.md` for the actual image checks and their limits. Contact sheets show the real components, not a proven assembled puppet.
+
 ## Design authority
 
 Adult human Ryoko: mint/sage hair, amber eyes, dark trouser suit, white blouse, gold hair ornaments/earrings, green pendant and black pumps. Match the supplied human design; do not substitute the unrelated masked character. Character-left/right refer to anatomy, not the viewer.
@@ -29,4 +41,4 @@ The corrective pass creates separated artwork and transparent components. Each r
 
 These images do not replace the builder's existing 3D mesh, UVs, facial geometry, rig or project. They are not automatically fitted to its UV islands. Existing 200 expression sheets remain performance references, not 200 complete segmented animated models. Native dimensions and transparency must be verified per file; no upscaled image is described as native 2K/4K.
 
-This folder is still being populated. Do not infer a finished avatar, complete layer stack, tested rig, exported VRM or runtime approval from the presence of this README.
+The separate neck-paint generation returned no image; preserve the current 3D neck material (see integration notes). The supplied parts are source artwork requiring placement/UV fitting, not a finished registered layer stack, rig, exported VRM or runtime approval.

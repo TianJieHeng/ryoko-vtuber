@@ -1,0 +1,283 @@
+[
+  {
+    "path": "hair/front_fringe.png",
+    "sha_match": true,
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  {
+    "path": "hair/rear_scalp_nape.png",
+    "sha_match": true,
+    "size": [
+      1312,
+      1199
+    ]
+  },
+  {
+    "path": "hair/bun.png",
+    "sha_match": true,
+    "size": [
+      887,
+      887
+    ],
+    "crop_exact": true
+  },
+  {
+    "path": "hair/short_tail.png",
+    "sha_match": true,
+    "size": [
+      887,
+      887
+    ],
+    "crop_exact": true
+  },
+  {
+    "path": "hair/temple_lock_character_right.png",
+    "sha_match": true,
+    "size": [
+      768,
+      1024
+    ],
+    "crop_exact": true
+  },
+  {
+    "path": "hair/temple_lock_character_left.png",
+    "sha_match": true,
+    "size": [
+      768,
+      1024
+    ],
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_ear_R_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      420
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_ear_L_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      420
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_sclera_R_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      280
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_sclera_L_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      280
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_iris_pupil_R_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      360
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_iris_pupil_L_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      360
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_lash_lid_R_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      298
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_lash_lid_L_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      298
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_brow_R_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      340
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_brow_L_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      340
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_closed_lid_R_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      340
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_closed_lid_L_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      340
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_upper_teeth_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      340
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_lower_teeth_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      338
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_tongue_v001.png",
+    "sha_match": true,
+    "size": [
+      580,
+      338
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_neutral_lips_v001.png",
+    "sha_match": true,
+    "size": [
+      656,
+      400
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_viseme_A_v001.png",
+    "sha_match": true,
+    "size": [
+      656,
+      400
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_viseme_I_v001.png",
+    "sha_match": true,
+    "size": [
+      656,
+      400
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_viseme_U_v001.png",
+    "sha_match": true,
+    "size": [
+      656,
+      400
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_viseme_E_v001.png",
+    "sha_match": true,
+    "size": [
+      656,
+      399
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_viseme_O_v001.png",
+    "sha_match": true,
+    "size": [
+      656,
+      399
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true
+  },
+  {
+    "path": "head/layers/RYO_HEAD_mouth_cavity_v001.png",
+    "sha_match": true,
+    "size": [
+      579,
+      338
+    ],
+    "source_found_by_sha": true,
+    "crop_exact": true,
+    "audit_source": "head/sources/audit_only/RYO_HEAD_rejected_viseme_v001.png"
+  },
+  {
+    "path": "head/layers/RYO_HEAD_face_base_v001.png",
+    "sha_match": true,
+    "size": [
+      1254,
+      1254
+    ]
+  }
+]

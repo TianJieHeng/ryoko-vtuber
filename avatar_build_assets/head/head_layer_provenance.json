@@ -26,7 +26,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_ear_L_v001.png",
@@ -51,7 +52,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_sclera_R_v001.png",
@@ -76,7 +78,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_sclera_L_v001.png",
@@ -101,7 +104,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_iris_pupil_R_v001.png",
@@ -126,7 +130,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_iris_pupil_L_v001.png",
@@ -151,7 +156,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_lash_lid_R_v001.png",
@@ -176,7 +182,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_lash_lid_L_v001.png",
@@ -201,7 +208,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_brow_R_v001.png",
@@ -226,7 +234,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_brow_L_v001.png",
@@ -251,7 +260,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_closed_lid_R_v001.png",
@@ -276,7 +286,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_closed_lid_L_v001.png",
@@ -301,7 +312,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_upper_teeth_v001.png",
@@ -326,7 +338,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_lower_teeth_v001.png",
@@ -351,7 +364,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_tongue_v001.png",
@@ -376,7 +390,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_neutral_lips_v001.png",
@@ -401,7 +416,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_viseme_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_A_v001.png",
@@ -426,7 +442,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_viseme_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_I_v001.png",
@@ -451,7 +468,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_viseme_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_U_v001.png",
@@ -476,7 +494,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_viseme_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_E_v001.png",
@@ -501,7 +520,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_viseme_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_O_v001.png",
@@ -526,7 +546,8 @@
         255
       ],
       "pixel_preserving_crop": true,
-      "registered_to_fullbody": false
+      "registered_to_fullbody": false,
+      "source_asset_path": "head/sources/RYO_HEAD_viseme_parts_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_mouth_cavity_v001.png",
@@ -553,7 +574,8 @@
       "pixel_preserving_crop": true,
       "registered_to_fullbody": false,
       "audit_source_path": "head/sources/audit_only/RYO_HEAD_rejected_viseme_v001.png",
-      "source_disposition": "whole atlas rejected; isolated plain empty cavity crop accepted"
+      "source_disposition": "whole atlas rejected; isolated plain empty cavity crop accepted",
+      "source_asset_path": "head/sources/audit_only/RYO_HEAD_rejected_viseme_v001.png"
     },
     {
       "path": "head/layers/RYO_HEAD_face_base_v001.png",

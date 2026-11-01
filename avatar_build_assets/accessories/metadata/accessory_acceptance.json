@@ -119,6 +119,135 @@
       "role": "accepted generation source atlas",
       "status": "accepted_source_atlas",
       "visual_review": "Inspected actual pixels and white composite; isolated separate parts."
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_necklace_chain.png",
+      "role": "separate gold necklace chain",
+      "status": "accepted_source_layer",
+      "source_atlas": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        1180,
+        887
+      ],
+      "visual_review": "Viewed actual tan alpha composite; isolated chain and green pendant with clean transparent surround.",
+      "sha256": "734584f460bd4d915ec626da9941e2d3dd94e9d3ae70d6ed5f274ad14fce9cd6"
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_green_pendant.png",
+      "role": "separate green pendant",
+      "status": "accepted_source_layer",
+      "source_atlas": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
+      "crop_bounds_xyxy": [
+        1180,
+        0,
+        1774,
+        887
+      ],
+      "visual_review": "Viewed actual tan alpha composite; isolated chain and green pendant with clean transparent surround.",
+      "sha256": "8d30cfd8d12158bcea991a3db2753f2e9272b8840612c60d2db5a780db40377d"
+    },
+    {
+      "path": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
+      "role": "accepted split necklace generation source atlas",
+      "status": "accepted_source_atlas",
+      "visual_review": "Two independent components, no overlap; source design retained."
+    },
+    {
+      "path": "effects/layers/RYO_FX_blush_character_R.png",
+      "role": "character right cheek blush",
+      "status": "accepted_source_layer",
+      "source_atlas": "effects/sources/RYO_FX_blush_source_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        1086,
+        724
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "sha256": "a818395e9cf1be5023edc62f2d79b24bb3ee19efe634e35639b2770d53536081"
+    },
+    {
+      "path": "effects/layers/RYO_FX_blush_character_L.png",
+      "role": "character left cheek blush",
+      "status": "accepted_source_layer",
+      "source_atlas": "effects/sources/RYO_FX_blush_source_v001.png",
+      "crop_bounds_xyxy": [
+        1086,
+        0,
+        2172,
+        724
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "sha256": "12efc27caceed6475110b7e17bee91044dda15da21f9a453923abda25a64a824"
+    },
+    {
+      "path": "effects/layers/RYO_FX_tear_character_R.png",
+      "role": "character right tear trail",
+      "status": "accepted_source_layer",
+      "source_atlas": "effects/sources/RYO_FX_tears_source_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        768,
+        1024
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "sha256": "d59f3d789f75d066f1960522c867dd0b4334b9f2eb5a1251e6e7ee8f43986362"
+    },
+    {
+      "path": "effects/layers/RYO_FX_tear_character_L.png",
+      "role": "character left tear trail",
+      "status": "accepted_source_layer",
+      "source_atlas": "effects/sources/RYO_FX_tears_source_v001.png",
+      "crop_bounds_xyxy": [
+        768,
+        0,
+        1536,
+        1024
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "sha256": "de8570c4509ad22fc67696413a4ef81d3ed445dc8428609e5cf548119c52d18b"
+    },
+    {
+      "path": "effects/layers/RYO_FX_sweatdrop.png",
+      "role": "optional embarrassment sweatdrop",
+      "status": "accepted_source_layer",
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "sha256": "1cc604aed7931c12248d5e81b270e7453867d6f6c20f210df404585f3a677cf9"
+    },
+    {
+      "path": "effects/layers/RYO_FX_anger_mark.png",
+      "role": "optional scolding anger mark",
+      "status": "accepted_source_layer",
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "sha256": "20fbb07a56a52d2c70a41b2c4765a18e2c5157b646b02d98abe2655c109754de"
+    },
+    {
+      "path": "effects/layers/RYO_FX_sparkle_cluster.png",
+      "role": "optional sparkle cluster",
+      "status": "accepted_source_layer",
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "sha256": "2e4704b5a10813b6154d45ea0779ba3490fbe2b471fbdfdd3dbe41434ae34628"
+    },
+    {
+      "path": "effects/sources/RYO_FX_tears_source_v001.png",
+      "role": "accepted effects source atlas",
+      "status": "accepted_source_atlas",
+      "visual_review": "Inspected actual alpha composite."
+    },
+    {
+      "path": "effects/sources/RYO_FX_blush_source_v001.png",
+      "role": "accepted effects source atlas",
+      "status": "accepted_source_atlas",
+      "visual_review": "Inspected actual alpha composite."
     }
   ],
   "accepted_prompt_paths": [
@@ -126,12 +255,22 @@
     "accessories/sources/RYO_ACC_earrings_source_v001.prompt.txt",
     "accessories/sources/RYO_ACC_hair_danglers_source_v001.prompt.txt",
     "accessories/sources/RYO_ACC_hairsticks_source_v002.prompt.txt",
-    "accessories/sources/RYO_ACC_necklace_green_pendant.prompt.txt"
+    "accessories/sources/RYO_ACC_necklace_green_pendant.prompt.txt",
+    "accessories/sources/RYO_ACC_necklace_split_source_v001.prompt.txt",
+    "effects/sources/RYO_FX_anger_mark.prompt.txt",
+    "effects/sources/RYO_FX_blush_source_v001.prompt.txt",
+    "effects/sources/RYO_FX_sparkle_cluster.prompt.txt",
+    "effects/sources/RYO_FX_sweatdrop.prompt.txt",
+    "effects/sources/RYO_FX_tears_source_v001.prompt.txt"
   ],
   "notes": [
     "All generation used builtin image_gen with transparent_background true.",
     "Images retain generated alpha; cropping is lossless ImageMagick rectangle crop, no resampling.",
     "These are unregistered source-art layers requiring placement and UV mapping on existing model, not drop-in UV textures.",
-    "Left/right means character anatomical side, viewer-left is character-right."
+    "Left/right means character anatomical side, viewer-left is character-right.",
+    "Exactly two hairstick shafts are supplied; do not count hanging ornaments as additional pins. Use only the ornaments needed to reproduce canonical master.",
+    "Necklace combined layer is an alternative to chain plus pendant layers, never enable both routes together. Separate pendant must be scaled relative to chain using canonical face as authority.",
+    "Effects are optional per-expression overlays, not permanent neutral-face markings.",
+    "All17individual layers are source art; they are not registered to a common character canvas and have not been UV-fitted to the existing mesh."
   ]
 }

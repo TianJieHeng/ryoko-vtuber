@@ -37,3 +37,18 @@
 
 - Included the entire original completed source-pack tree under `reference_library/`: 3,408 byte-identical file blobs, with internal paths and relative links preserved.
 - This reuses existing Git objects, avoiding binary reupload and retaining all 200 expression and 40 body-reference sheets. It does not duplicate or modify the later `vtuber/` implementation.
+
+## Final corrective source-art checkpoint
+
+- Accepted 69 individual component/effect PNGs: head 23, body 23, hair 6, accessories 10, effects 7.
+- Included 19 accepted generation sources/atlases, 10 key reference copies and five independently reviewed contact sheets.
+- Independent QA verified all 69 component files decode with real alpha, hashes remain unchanged and meaningful content is clear of canvas edges. Head/hair crop evidence accompanies the report.
+- Combined necklace and separate chain/pendant are alternatives, not three items to render simultaneously.
+- Actual per-model UV fitting, full registered assembly, rig/export and runtime testing remain with the existing Blender build. The missing separate neck-paint output is explicitly recorded.
+- No paid API call, CI run or modification of existing source/model files was performed in this pass.
+
+## Final publisher integrity check
+
+- Verified 98 accepted/reference image records against their SHA256 values, with 61 declared component crops checked pixel-for-pixel against preserved source PNGs. No errors.
+- Normalized head crop-source links to repository-local paths by source hash, retaining original generation basenames for provenance.
+- Rechecked revised diagnostic contact-sheet labels; previews do not claim assembled or rigged results.

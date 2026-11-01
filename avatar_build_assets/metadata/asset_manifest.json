@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "production_status": "in_progress",
+  "production_status": "source_art_pass_delivered_with_documented_neck_gap",
   "scope": "additive corrected artwork, not UV-fitted runtime avatar",
   "reference_count": 10,
-  "generated_file_count": 76,
-  "individual_artwork_count": 60,
-  "source_atlas_count": 16,
+  "generated_file_count": 88,
+  "individual_artwork_count": 69,
+  "source_atlas_count": 19,
   "records": [
     {
       "path": "accessories/layers/RYO_ACC_belt_gold_buckle.png",
@@ -108,6 +108,43 @@
         1024
       ],
       "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_green_pendant.png",
+      "sha256": "8d30cfd8d12158bcea991a3db2753f2e9272b8840612c60d2db5a780db40377d",
+      "git_blob_sha": "b1e67bf6cd89323146e8f187e17056455efeaf98",
+      "bytes": 147665,
+      "dimensions": [
+        594,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 468679,
+        "partly_transparent_pixels": 57984,
+        "opaque_pixels": 215,
+        "nonzero_bbox": [
+          12,
+          69,
+          574,
+          869
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "separate green pendant",
+      "source_atlas": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
+      "crop_bounds_xyxy": [
+        1180,
+        0,
+        1774,
+        887
+      ],
+      "visual_review": "Viewed actual tan alpha composite; isolated chain and green pendant with clean transparent surround.",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -262,6 +299,43 @@
       "generation_tool": "built-in image_gen"
     },
     {
+      "path": "accessories/layers/RYO_ACC_necklace_chain.png",
+      "sha256": "734584f460bd4d915ec626da9941e2d3dd94e9d3ae70d6ed5f274ad14fce9cd6",
+      "git_blob_sha": "c4e8263910ce5cac13d888f0ca56e4e7c7996708",
+      "bytes": 260372,
+      "dimensions": [
+        1180,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 964527,
+        "partly_transparent_pixels": 81344,
+        "opaque_pixels": 789,
+        "nonzero_bbox": [
+          17,
+          21,
+          1173,
+          845
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "separate gold necklace chain",
+      "source_atlas": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        1180,
+        887
+      ],
+      "visual_review": "Viewed actual tan alpha composite; isolated chain and green pendant with clean transparent surround.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
       "path": "accessories/layers/RYO_ACC_necklace_green_pendant.png",
       "sha256": "5a4f783a65c44fadb1bc08f09c7fef79da0ab08a986a1229cf7183215f4bf1a0",
       "git_blob_sha": "44be5aa86e58452671524b632230c92742d48143",
@@ -378,6 +452,36 @@
       "status": "accepted_source_atlas",
       "role": "source_atlas",
       "visual_review": "Inspected actual pixels and white composite; isolated separate parts.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
+      "sha256": "e49a29a5fe02482114b7618a72cd38969edcdd2e5bda60c5473923bbada3734f",
+      "git_blob_sha": "53c3ec63544656a55a73f6198d3f56ce5ce0c4f0",
+      "bytes": 464050,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1433206,
+        "partly_transparent_pixels": 139328,
+        "opaque_pixels": 1004,
+        "nonzero_bbox": [
+          17,
+          21,
+          1754,
+          869
+        ]
+      },
+      "status": "accepted_source_atlas",
+      "role": "source_atlas",
+      "visual_review": "Two independent components, no overlap; source design retained.",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -1475,6 +1579,310 @@
       "generation_tool": "built-in image_gen"
     },
     {
+      "path": "effects/layers/RYO_FX_anger_mark.png",
+      "sha256": "20fbb07a56a52d2c70a41b2c4765a18e2c5157b646b02d98abe2655c109754de",
+      "git_blob_sha": "20a4ca8bc333918ad1946bdcb113c78f1a3b825c",
+      "bytes": 132756,
+      "dimensions": [
+        1244,
+        1264
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1518888,
+        "partly_transparent_pixels": 52588,
+        "opaque_pixels": 940,
+        "nonzero_bbox": [
+          243,
+          296,
+          1042,
+          1050
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "optional scolding anger mark",
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/layers/RYO_FX_blush_character_L.png",
+      "sha256": "12efc27caceed6475110b7e17bee91044dda15da21f9a453923abda25a64a824",
+      "git_blob_sha": "c8a355febf73403fc64ba3656022c7e76be70115",
+      "bytes": 361569,
+      "dimensions": [
+        1086,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 508065,
+        "partly_transparent_pixels": 278199,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          0,
+          1086,
+          724
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "character left cheek blush",
+      "source_atlas": "effects/sources/RYO_FX_blush_source_v001.png",
+      "crop_bounds_xyxy": [
+        1086,
+        0,
+        2172,
+        724
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/layers/RYO_FX_blush_character_R.png",
+      "sha256": "a818395e9cf1be5023edc62f2d79b24bb3ee19efe634e35639b2770d53536081",
+      "git_blob_sha": "1cdef2537798e4681b776df470dd3f7845aff5ec",
+      "bytes": 361748,
+      "dimensions": [
+        1086,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 508427,
+        "partly_transparent_pixels": 277837,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          0,
+          1086,
+          724
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "character right cheek blush",
+      "source_atlas": "effects/sources/RYO_FX_blush_source_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        1086,
+        724
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/layers/RYO_FX_sparkle_cluster.png",
+      "sha256": "2e4704b5a10813b6154d45ea0779ba3490fbe2b471fbdfdd3dbe41434ae34628",
+      "git_blob_sha": "a019481cd5fea9e011ad2cd73b42c3c569aca67a",
+      "bytes": 796205,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1524868,
+        "partly_transparent_pixels": 47996,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          369,
+          39,
+          1146,
+          776
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "optional sparkle cluster",
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/layers/RYO_FX_sweatdrop.png",
+      "sha256": "1cc604aed7931c12248d5e81b270e7453867d6f6c20f210df404585f3a677cf9",
+      "git_blob_sha": "a62ed744527ca6eda8e070066ab047b19e75fe28",
+      "bytes": 847815,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1406373,
+        "partly_transparent_pixels": 166491,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          393,
+          23,
+          1368,
+          918
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "optional embarrassment sweatdrop",
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/layers/RYO_FX_tear_character_L.png",
+      "sha256": "de8570c4509ad22fc67696413a4ef81d3ed445dc8428609e5cf548119c52d18b",
+      "git_blob_sha": "e7d55cebb45337963454a9c97cb47d21661922ee",
+      "bytes": 510672,
+      "dimensions": [
+        768,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 748044,
+        "partly_transparent_pixels": 38388,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          17,
+          9,
+          762,
+          1024
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "character left tear trail",
+      "source_atlas": "effects/sources/RYO_FX_tears_source_v001.png",
+      "crop_bounds_xyxy": [
+        768,
+        0,
+        1536,
+        1024
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/layers/RYO_FX_tear_character_R.png",
+      "sha256": "d59f3d789f75d066f1960522c867dd0b4334b9f2eb5a1251e6e7ee8f43986362",
+      "git_blob_sha": "c4038a3334e61602818cc8385640e857d341e36b",
+      "bytes": 507837,
+      "dimensions": [
+        768,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 751017,
+        "partly_transparent_pixels": 35415,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          33,
+          9,
+          748,
+          1000
+        ]
+      },
+      "status": "accepted_source_layer",
+      "role": "character right tear trail",
+      "source_atlas": "effects/sources/RYO_FX_tears_source_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        768,
+        1024
+      ],
+      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/sources/RYO_FX_blush_source_v001.png",
+      "sha256": "9cdfb66936a8f83f18c839ba1e1560f3f1a35462a8013325b3a835c2a62ecb21",
+      "git_blob_sha": "addc3308ca333af28c83ee6642a6971c1fc4c800",
+      "bytes": 926782,
+      "dimensions": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1016492,
+        "partly_transparent_pixels": 556036,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          0,
+          0,
+          2172,
+          724
+        ]
+      },
+      "status": "accepted_source_atlas",
+      "role": "source_atlas",
+      "visual_review": "Inspected actual alpha composite.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "path": "effects/sources/RYO_FX_tears_source_v001.png",
+      "sha256": "daa2cdf85a38c082574f0f6f743122481852bbe7cc4cbea402d6ebd1666761c0",
+      "git_blob_sha": "ab8a7d22cbfea587481fbf6eef3f6dab148ac197",
+      "bytes": 1059778,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1499061,
+        "partly_transparent_pixels": 73803,
+        "opaque_pixels": 0,
+        "nonzero_bbox": [
+          33,
+          9,
+          1530,
+          1024
+        ]
+      },
+      "status": "accepted_source_atlas",
+      "role": "source_atlas",
+      "visual_review": "Inspected actual alpha composite.",
+      "uv_fitted": false,
+      "assembly_tested": false,
+      "registration_status": "requires_placement_and_fitting",
+      "generation_tool": "built-in image_gen"
+    },
+    {
       "path": "hair/bun.png",
       "sha256": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
       "git_blob_sha": "3c458187cdfa73aa813b3b3adf1c5d999c902391",
@@ -1778,7 +2186,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "brow_L",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         0,
@@ -1790,6 +2198,8 @@
         580,
         340
       ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -1819,7 +2229,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "brow_R",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         0,
@@ -1831,6 +2241,8 @@
         579,
         340
       ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -1860,7 +2272,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "closed_lid_L",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         340,
@@ -1872,6 +2284,8 @@
         580,
         340
       ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -1901,7 +2315,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "closed_lid_R",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         340,
@@ -1913,6 +2327,8 @@
         579,
         340
       ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -1942,7 +2358,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "ear character L",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         0,
@@ -1954,6 +2370,8 @@
         580,
         420
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -1983,7 +2401,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "ear character R",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         0,
@@ -1995,6 +2413,8 @@
         579,
         420
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2060,7 +2480,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "iris_pupil character L",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         700,
@@ -2072,6 +2492,8 @@
         580,
         360
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2101,7 +2523,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "iris_pupil character R",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         700,
@@ -2113,6 +2535,8 @@
         579,
         360
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2142,7 +2566,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "lash_lid character L",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         1060,
@@ -2154,6 +2578,8 @@
         580,
         298
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2183,7 +2609,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "lash_lid character R",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         1060,
@@ -2195,6 +2621,8 @@
         579,
         298
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2224,7 +2652,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "lower_teeth",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         1020,
@@ -2236,6 +2664,8 @@
         579,
         338
       ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2265,7 +2695,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "empty deep-burgundy mouth cavity without teeth or tongue",
-      "source_atlas": "exec-5140efcb-20b0-4436-9876-8b445b3932cd.png",
+      "source_atlas": "head/sources/audit_only/RYO_HEAD_rejected_viseme_v001.png",
       "crop_bounds_xyxy": [
         0,
         1020,
@@ -2277,6 +2707,8 @@
         579,
         338
       ],
+      "generation_original_basename": "exec-5140efcb-20b0-4436-9876-8b445b3932cd.png",
+      "source_sha256": "1872355f99657b7d03a654fc0f7fe55aabfa0814a2ecffec8cfa79d35cdd32d6",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2306,7 +2738,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "neutral_lips alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         0,
@@ -2318,6 +2750,8 @@
         656,
         400
       ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2347,7 +2781,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "sclera character L",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         420,
@@ -2359,6 +2793,8 @@
         580,
         280
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2388,7 +2824,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "sclera character R",
-      "source_atlas": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         420,
@@ -2400,6 +2836,8 @@
         579,
         280
       ],
+      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
+      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2429,7 +2867,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "tongue",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         1020,
@@ -2441,6 +2879,8 @@
         580,
         338
       ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2470,7 +2910,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "upper_teeth",
-      "source_atlas": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
         680,
@@ -2482,6 +2922,8 @@
         580,
         340
       ],
+      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
+      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2511,7 +2953,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "viseme_A alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
         0,
@@ -2523,6 +2965,8 @@
         656,
         400
       ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2552,7 +2996,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "viseme_E alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         800,
@@ -2564,6 +3008,8 @@
         656,
         399
       ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2593,7 +3039,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "viseme_I alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
         400,
@@ -2605,6 +3051,8 @@
         656,
         400
       ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2634,7 +3082,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "viseme_O alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
         800,
@@ -2646,6 +3094,8 @@
         656,
         399
       ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",
@@ -2675,7 +3125,7 @@
       },
       "status": "accepted_source_layer_requires_mesh_fitting",
       "role": "viseme_U alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
-      "source_atlas": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
         400,
@@ -2687,6 +3137,8 @@
         656,
         400
       ],
+      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
+      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
       "uv_fitted": false,
       "assembly_tested": false,
       "registration_status": "requires_placement_and_fitting",

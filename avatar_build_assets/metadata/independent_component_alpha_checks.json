@@ -1,0 +1,1040 @@
+{
+  "inspected_count": 69,
+  "records": [
+    {
+      "path": "head/layers/RYO_HEAD_brow_L_v001.png",
+      "sha256": "74aff161efb267065caa0e5937da5691dab52b153548e19437724d421ad5ff7c",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        340
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_brow_R_v001.png",
+      "sha256": "3e45564735bab37b61bb9d77c40204d28b82f219e7c5787839120ad9ab88c029",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        340
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_closed_lid_L_v001.png",
+      "sha256": "23c716a57d5f884eed26f35d105df1e2807817dbef944b80efa2a1e28121ec7a",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        340
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_closed_lid_R_v001.png",
+      "sha256": "eee53b9cf25398e85273efb077cd3fbbc372cb0a735014477334730d037e1559",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        340
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_ear_L_v001.png",
+      "sha256": "3eb54faeb782e53d8a112a82eddbf54d23230fea1af618be39c734b38976d3d2",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        420
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_ear_R_v001.png",
+      "sha256": "b16cd2904796ff1f6f70f84ad3621f165553e2e0ed6cf74445c982e5e336d436",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        420
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_face_base_v001.png",
+      "sha256": "5da8a92ca10380442a9eaf569dc97f04fdbc398f8e5feadb6b993463f0e3c869",
+      "mode": "RGBA",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_iris_pupil_L_v001.png",
+      "sha256": "ad08ed6f92b552525a7319b468129dd5e53c46c9a26f6fc1b048cc401fde2a43",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        360
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_iris_pupil_R_v001.png",
+      "sha256": "54a97fd1d7c9ea581a36cc565bce960baab72405a7c0c44aa9dc5080b133e3bc",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        360
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_lash_lid_L_v001.png",
+      "sha256": "3552c0d3289069bfb41ade3d824806cf31e2a0a0001bae9c6103e28f9ce9b370",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        298
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_lash_lid_R_v001.png",
+      "sha256": "f1abe31c9206181eba1c0f10f67633760de50be83a71ff3cae2d3a4d29d6bfa5",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        298
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_lower_teeth_v001.png",
+      "sha256": "fb3b00dcf74958063f3aa5466f770db4a34aa8dbd4209aae3030f86a04a0d9d6",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        338
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_mouth_cavity_v001.png",
+      "sha256": "39ef37231d3347fe5f729e3fc427f9f59cc1604a12988b6c3ba563cb7ce3971e",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        338
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_neutral_lips_v001.png",
+      "sha256": "6cf4ba2aba81ca1d9e0d724f3aa890bce2d1387ac85bc8b98f628d79ca558c86",
+      "mode": "RGBA",
+      "dimensions": [
+        656,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_sclera_L_v001.png",
+      "sha256": "179955f3fb3d3f60fc7a4e89beeade5c52f1ff49903d874a1055cb087275428f",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        280
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_sclera_R_v001.png",
+      "sha256": "c813a381d93b04612cde7646f5e7c7cc0fd852e4b9a095a63e2ba0bdf64cc064",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        280
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_tongue_v001.png",
+      "sha256": "8f731572395082142053234df3466f1e374de336a3510cfff9e9815bb85ff5a3",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        338
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_upper_teeth_v001.png",
+      "sha256": "d8828150286cd64a52cf553715e80d9b33f9d4309d1de80ae86e494b69c05746",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        340
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_A_v001.png",
+      "sha256": "7fb4ffce7c918c1a6bfc6471ec520616c9f7c69276604449844a9f1d341871fe",
+      "mode": "RGBA",
+      "dimensions": [
+        656,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_E_v001.png",
+      "sha256": "5ae868155be257c6d9cb5b474d7ea4b55027fce48464560dd0678ddc3b787170",
+      "mode": "RGBA",
+      "dimensions": [
+        656,
+        399
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_I_v001.png",
+      "sha256": "a1e2f8c8aeab01ce5cdb38bbbf58b687f3cd150a87a2617c2dae7c076ca59a1f",
+      "mode": "RGBA",
+      "dimensions": [
+        656,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_O_v001.png",
+      "sha256": "f77ffa108892068d24e83bc1f433f8451cf2a31ff2ad03b20c47802170c02eab",
+      "mode": "RGBA",
+      "dimensions": [
+        656,
+        399
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "head/layers/RYO_HEAD_viseme_U_v001.png",
+      "sha256": "539b1e74d2dc84cfaff43157d363a63a55b6bfad51924029efeafc689e816987",
+      "mode": "RGBA",
+      "dimensions": [
+        656,
+        400
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/blazer_back.png",
+      "sha256": "1673ba859d0bcf16c5e00759459b7556ea1faad0c204e72b9f6962e9f0ff3e4a",
+      "mode": "RGBA",
+      "dimensions": [
+        694,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/blazer_front_character_L.png",
+      "sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2",
+      "mode": "RGBA",
+      "dimensions": [
+        500,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/blazer_front_character_R.png",
+      "sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/blouse_back.png",
+      "sha256": "f2226cae2e338ad00781e1a8f61b6611a5de05e68b3b00beb6e1fef1aeffc067",
+      "mode": "RGBA",
+      "dimensions": [
+        610,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/blouse_front.png",
+      "sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba",
+      "mode": "RGBA",
+      "dimensions": [
+        644,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/hand_dorsal_character_L.png",
+      "sha256": "d4330b068973277608f77651bb21ecedf27701fbc24dbe665850ba77ab26bb00",
+      "mode": "RGBA",
+      "dimensions": [
+        627,
+        627
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/hand_dorsal_character_R.png",
+      "sha256": "9811b72b49cc2704721bc059055085d23da364295f45fed8c392c8a0a9d4a410",
+      "mode": "RGBA",
+      "dimensions": [
+        627,
+        627
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/hand_palmar_character_L.png",
+      "sha256": "0e4ef48f6ad258bb4e8c0b42826fc2449cf694d9346c09b362dd2fd9064e2852",
+      "mode": "RGBA",
+      "dimensions": [
+        627,
+        627
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/hand_palmar_character_R.png",
+      "sha256": "c287dbb6f6b10de46022a7ab464c475d5ace5453ab9f062f0e4afa87e32e22bb",
+      "mode": "RGBA",
+      "dimensions": [
+        627,
+        627
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/pump_front_character_L.png",
+      "sha256": "44ab8cf6f73378c7d40ac24a05705290983cc5c3d447ebfd4495596f565b3cdf",
+      "mode": "RGBA",
+      "dimensions": [
+        663,
+        680
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/pump_front_character_R.png",
+      "sha256": "886857dab95a021e65fcbbd5f25699a30e7e38a92f6ba5359c4f1d6eba3c4325",
+      "mode": "RGBA",
+      "dimensions": [
+        663,
+        680
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/pump_outer_character_L.png",
+      "sha256": "8057d97eed144146d72ae710adab8002c52f482709739ff0ac34df92129c8585",
+      "mode": "RGBA",
+      "dimensions": [
+        663,
+        507
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/pump_outer_character_R.png",
+      "sha256": "08fc771928ece8f5f99c48302fe4c192621dabe254d6e1c3c470079422f3d988",
+      "mode": "RGBA",
+      "dimensions": [
+        663,
+        507
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/sleeve_forearm_character_L.png",
+      "sha256": "079ceff58875abfe0f615dd4f8f238900b2b93038449e0b4b39f937b755baec7",
+      "mode": "RGBA",
+      "dimensions": [
+        384,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/sleeve_forearm_character_R.png",
+      "sha256": "e08ddd2274f421cc7b7fde6e477c741b37bae7e5f685eb2dd9c495d82787ac59",
+      "mode": "RGBA",
+      "dimensions": [
+        384,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/sleeve_upper_character_L.png",
+      "sha256": "ea22d96e2f90c392cb2aa840bd16b0d69c5a4ad08d116adc84d99e061af59c16",
+      "mode": "RGBA",
+      "dimensions": [
+        384,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/sleeve_upper_character_R.png",
+      "sha256": "ec9f3168059bebfe4fddbd8d363abbfbbd19c8d7452c9ad7863b2d23f21d28c4",
+      "mode": "RGBA",
+      "dimensions": [
+        384,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/trousers_leg_back_character_L.png",
+      "sha256": "882220d58ec88a10cfcbd8d8bc0c26972305d89d3d5bba3d2da4a25d9db2bc6f",
+      "mode": "RGBA",
+      "dimensions": [
+        268,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/trousers_leg_back_character_R.png",
+      "sha256": "6854b457d0a1caa9f35ca4a757dcc02ff7ccff4a365f32d54956b84b007bfbb3",
+      "mode": "RGBA",
+      "dimensions": [
+        294,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/trousers_leg_front_character_L.png",
+      "sha256": "fe7b88f37c2f912ca4e1c56fc212d9db325078f5083c14c4270952cc5ed95b67",
+      "mode": "RGBA",
+      "dimensions": [
+        299,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/trousers_leg_front_character_R.png",
+      "sha256": "f0a69b326f850b2b36f39bcd080ec71532a40048077a4ca2f3c0f957b9eb8e89",
+      "mode": "RGBA",
+      "dimensions": [
+        280,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/trousers_pelvis_back.png",
+      "sha256": "4119c18a9d1c3313652b22f1c01416b5545af6c38f0cd738f6c84fe1bfb77811",
+      "mode": "RGBA",
+      "dimensions": [
+        462,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "body/layers/trousers_pelvis_front.png",
+      "sha256": "d1b2d648a7cdafd72d24e96b8e24aa567b3123680bc07f24a93509bdda1b8082",
+      "mode": "RGBA",
+      "dimensions": [
+        445,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "hair/bun.png",
+      "sha256": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
+      "mode": "RGBA",
+      "dimensions": [
+        887,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "hair/front_fringe.png",
+      "sha256": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",
+      "mode": "RGBA",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "hair/rear_scalp_nape.png",
+      "sha256": "ef6a2e95ba701d5dd243a80c3ecf28d553a8143c1442933161df4ea08387bd95",
+      "mode": "RGBA",
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "hair/short_tail.png",
+      "sha256": "3d281b9384212561473fcd39c6ee886385652438e54f53dea3293a5fb2b07ecc",
+      "mode": "RGBA",
+      "dimensions": [
+        887,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "hair/temple_lock_character_left.png",
+      "sha256": "ced2c8e50075b08ecd388a251a64a85e4b862a431c06342b2072d7c7e7be1c9c",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "hair/temple_lock_character_right.png",
+      "sha256": "c7017f48460b74effca0ebcaa1141bd8171c355947450928c2c9af96db23f171",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_belt_gold_buckle.png",
+      "sha256": "ca8ba149ae4b069bf091e10e042ef380f7e6e693cb9dc9c6dcc11cdd1f64f6e4",
+      "mode": "RGBA",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_earring_character_L.png",
+      "sha256": "a767aead829097c78a95c23314532f848e4e8f033fa216511e94eba2dce45340",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_earring_character_R.png",
+      "sha256": "f1a710a385eaca8ff1929fe3f864e2188f0fd5b121dc338c1db8e43c9a3dd380",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_green_pendant.png",
+      "sha256": "8d30cfd8d12158bcea991a3db2753f2e9272b8840612c60d2db5a780db40377d",
+      "mode": "RGBA",
+      "dimensions": [
+        594,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_hair_dangler_01.png",
+      "sha256": "0aaf3fcb85f597f01aec56daa6bbc28814f1676c871b93522d61059378737620",
+      "mode": "RGBA",
+      "dimensions": [
+        579,
+        1358
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_hair_dangler_02.png",
+      "sha256": "9eba67152135449bfdf30f5fa35e4b6e9b36c652fabea560c327db917879e198",
+      "mode": "RGBA",
+      "dimensions": [
+        580,
+        1358
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_hairstick_01.png",
+      "sha256": "cdbe01e444d4282965c9a793e40c035d4e8ce59694fbd5cd4944b9e336bd8aea",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_hairstick_02.png",
+      "sha256": "98f99004f37ba3fc6e802d1cafac502bf59a738c19c6fef8a26945b7b8d13cc5",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_necklace_chain.png",
+      "sha256": "734584f460bd4d915ec626da9941e2d3dd94e9d3ae70d6ed5f274ad14fce9cd6",
+      "mode": "RGBA",
+      "dimensions": [
+        1180,
+        887
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "accessories/layers/RYO_ACC_necklace_green_pendant.png",
+      "sha256": "5a4f783a65c44fadb1bc08f09c7fef79da0ab08a986a1229cf7183215f4bf1a0",
+      "mode": "RGBA",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "effects/layers/RYO_FX_anger_mark.png",
+      "sha256": "20fbb07a56a52d2c70a41b2c4765a18e2c5157b646b02d98abe2655c109754de",
+      "mode": "RGBA",
+      "dimensions": [
+        1244,
+        1264
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "effects/layers/RYO_FX_blush_character_L.png",
+      "sha256": "12efc27caceed6475110b7e17bee91044dda15da21f9a453923abda25a64a824",
+      "mode": "RGBA",
+      "dimensions": [
+        1086,
+        724
+      ],
+      "alpha_extrema": [
+        0,
+        226
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "effects/layers/RYO_FX_blush_character_R.png",
+      "sha256": "a818395e9cf1be5023edc62f2d79b24bb3ee19efe634e35639b2770d53536081",
+      "mode": "RGBA",
+      "dimensions": [
+        1086,
+        724
+      ],
+      "alpha_extrema": [
+        0,
+        222
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "effects/layers/RYO_FX_sparkle_cluster.png",
+      "sha256": "2e4704b5a10813b6154d45ea0779ba3490fbe2b471fbdfdd3dbe41434ae34628",
+      "mode": "RGBA",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "effects/layers/RYO_FX_sweatdrop.png",
+      "sha256": "1cc604aed7931c12248d5e81b270e7453867d6f6c20f210df404585f3a677cf9",
+      "mode": "RGBA",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "effects/layers/RYO_FX_tear_character_L.png",
+      "sha256": "de8570c4509ad22fc67696413a4ef81d3ed445dc8428609e5cf548119c52d18b",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    },
+    {
+      "path": "effects/layers/RYO_FX_tear_character_R.png",
+      "sha256": "d59f3d789f75d066f1960522c867dd0b4334b9f2eb5a1251e6e7ee8f43986362",
+      "mode": "RGBA",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "edge_pixels_alpha_gt64": 0,
+      "source_hash_unchanged": true
+    }
+  ]
+}
