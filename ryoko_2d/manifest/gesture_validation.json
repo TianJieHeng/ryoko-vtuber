@@ -1,0 +1,60 @@
+{
+  "phase": 3,
+  "status": "passed",
+  "gestures": [
+    "gesture_finger_wag",
+    "gesture_crossed_arms",
+    "gesture_wave"
+  ],
+  "checks": {
+    "three_registered_gestures": true,
+    "continuous_lower_body_present": true,
+    "shared_neck_bridge_present": true,
+    "neutral_duplicates_hidden": true,
+    "action_mappings": {
+      "gesture_finger_wag": "BOD-002",
+      "gesture_crossed_arms": "BOD-001",
+      "gesture_wave": "BOD-011"
+    },
+    "connected_artwork": {
+      "gesture_finger_wag": {
+        "significant_components": 1,
+        "foreground_pixels": 588100,
+        "connected": true
+      },
+      "gesture_crossed_arms": {
+        "significant_components": 1,
+        "foreground_pixels": 506865,
+        "connected": true
+      },
+      "gesture_wave": {
+        "significant_components": 1,
+        "foreground_pixels": 638616,
+        "connected": true
+      },
+      "gesture_neck_bridge": {
+        "significant_components": 1,
+        "foreground_pixels": 32314,
+        "connected": true
+      },
+      "gesture_lower_body": {
+        "significant_components": 1,
+        "foreground_pixels": 584844,
+        "connected": true
+      }
+    },
+    "canonical_face_pixel_identical": true,
+    "continuous_legs_pixel_identical": true
+  },
+  "visual_review": {
+    "reviewed_against_sources": true,
+    "complete_hands_and_fingers": true,
+    "fixed_head_and_joined_neck": true,
+    "centered_blouse_and_shoulders": true,
+    "no_rectangular_hip_artifacts": true,
+    "no_flat_leg_top_seams": true,
+    "no_isolated_matte_blocks": true,
+    "backgrounds": "dark preview inspected; source sheets removed to transparency"
+  },
+  "approval": "pending user PNG review"
+}
