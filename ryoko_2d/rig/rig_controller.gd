@@ -128,7 +128,7 @@ func _build_rig():
     status_label = Label.new()
     status_label.position = Vector2(22,18)
     status_label.add_theme_font_size_override("font_size",25)
-    status_label.add_theme_font_color_override("font_color",Color(0.86,0.92,0.89))
+    status_label.add_theme_color_override("font_color",Color(0.86,0.92,0.89))
     status_label.z_index = 1200
     add_child(status_label)
 
