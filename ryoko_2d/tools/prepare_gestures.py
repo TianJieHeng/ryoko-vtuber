@@ -18,7 +18,7 @@ routes={
   'file':'RYO_BOD-002_finger-wag_kp03_v001.png','crop':(280,100,760,910),'bottom':690,'action':'BOD-002',
   'hands':[(335,165,420,345),(650,710,742,895)],
   'lower_arm':[(640,500),(690,510),(710,600),(720,700),(730,910),(640,910),(638,700)],
-  'neck_x':512,'torso_shift_ref':[0,-40],
+  'neck_x':512,'torso_shift_ref':[0,-40],'hand_background_seeds':[(227,261)],
   'hand_lines':[[(133,94),(132,68),3],[(126,89),(138,89),2],[(125,95),(136,95),2],[(126,101),(134,101),2],[(235,250),(235,264),2],[(247,254),(245,267),(238,278),3]],
   'hand_polys':[[(125,87),(139,84),(143,96),(137,110),(134,118),(124,117),(122,103)],[(236,239),(246,239),(248,253),(244,256),(241,250),(237,251),(233,258),(232,249)]],
   'pocket':(615,372,645,405),'raised_cuff':(345,330,390,370),'lowered_cuff':(675,690,715,735)},
@@ -31,7 +31,7 @@ routes={
   'file':'RYO_BOD-011_greeting-wave_kp04_v001.png','crop':(210,100,760,910),'bottom':690,'action':'BOD-011',
   'hands':[(210,145,370,345),(650,710,742,895)],
   'lower_arm':[(674,520),(710,540),(724,620),(738,700),(748,910),(700,910),(695,720),(670,620)],
-  'neck_x':541,'torso_shift_ref':[-29,-40],
+  'neck_x':541,'torso_shift_ref':[-29,-40],'head_offset_ref':[12,0],'hand_background_seeds':[(242,276)],
   'hand_lines':[[(99,113),(86,101),3],[(103,109),(90,92),3],[(109,106),(96,85),3],[(114,104),(105,83),3],[(118,114),(120,96),3],[(235,250),(235,264),2],[(247,254),(245,267),(238,278),3]],
   'hand_polys':[[(98,103),(113,101),(124,113),(124,130),(116,139),(105,130),(94,115)],[(236,239),(246,239),(248,253),(244,256),(241,250),(237,251),(233,258),(232,249)]],
   'pocket':(628,370,655,405),'raised_cuff':(320,375,355,415),'lowered_cuff':(695,690,735,735)}
@@ -73,6 +73,15 @@ for name,cfg in routes.items():
  # Skin chroma distinguishes fingers from the neutral white gaps between them.
  clean_array=np.array(clean);source_array=np.array(src.convert('RGBA'));srgb=source_array[:,:,:3].astype(np.int16)
  skin_source=(srgb[:,:,0]>120)&(srgb[:,:,0]>srgb[:,:,1]+4)&(srgb[:,:,1]>srgb[:,:,2]+3)
+ # Remove only the identified enclosed sheet-background component inside each
+ # lowered hand. This avoids erasing pale finger edges elsewhere in the hand ROI.
+ if cfg.get('hand_background_seeds'):
+  source_white=(srgb.min(2)>215)&((srgb.max(2)-srgb.min(2))<16)
+  source_labels,_=ndimage.label(source_white)
+  for seed_x,seed_y in cfg['hand_background_seeds']:
+   seed_label=int(source_labels[seed_y,seed_x])
+   if seed_label>0:
+    clean_array[source_labels==seed_label,3]=0
  for hx0,hy0,hx1,hy1 in cfg['hands']:
   sx0=max(0,int((hx0-tx)/scale));sx1=min(src.width,int((hx1-tx)/scale)+1)
   sy0=max(0,int((hy0-ty)/scale));sy1=min(src.height,int((hy1-ty)/scale)+1)
@@ -203,13 +212,24 @@ for name,cfg in routes.items():
   hand_restore=np.zeros(la.shape[:2],bool)
   hand_restore[hy0*S:hy1*S,hx0*S:hx1*S]=True
   la[hand_restore,3]=body_alpha[hand_restore]
+ # Clear residual neutral anti-aliasing only inside the small registered thumb-gap
+ # boxes. The rest of each hand, including its pale outline, remains untouched.
+ hand_transparency=[]
+ for seed_x,seed_y in cfg.get('hand_background_seeds',[]):
+  gx0=round(tx+(seed_x-6)*scale);gx1=round(tx+(seed_x+7)*scale)
+  gy0=round(ty+(seed_y-9)*scale);gy1=round(ty+(seed_y+10)*scale)
+  hand_transparency.append([gx0,gy0,gx1,gy1])
+  hand_white=np.zeros(la.shape[:2],bool)
+  hand_white[gy0*S:gy1*S,gx0*S:gx1*S]=True
+  hand_white&=(lrgb.min(2)>190)&((lrgb.max(2)-lrgb.min(2))<35)
+  la[hand_white,3]=0
  fl,fn=ndimage.label(la[:,:,3]>10);fs=np.bincount(fl.ravel());fs[0]=0
  la[fl!=int(fs.argmax()),3]=0
  registered=Image.fromarray(la,'RGBA')
  registered_box=(x0,y0,x1,1520*S);registered=registered.crop(registered_box);registered.save(OUT/f'{name}_registered.png')
  # Replace the experimental split upper/lower entries with one coherent body.
  entries=[e for e in entries if e['name'] not in (name,f'{name}_lower_body')]
- entries.append({'name':name,'source':f'reference_library/assets/body/{cfg["file"]}','registered_png':f'artwork/gestures/{name}_registered.png','enabled_neutral':False,'z':20.0,'parent':'torso','master_xy':[registered_box[0],registered_box[1]],'master_size':list(registered.size),'pivot_ref':[512,280],'pivot_master':[1024,560],'action_id':cfg['action'],'registration':{'source_scale_to_reference':scale,'source_translation_ref':[tx,ty],'source_foreground_top_bottom':[top,bottom],'head_and_alternate_neck_excluded':True,'shoulders_and_original_blouse_preserved':True,'torso_shift_ref':cfg['torso_shift_ref'],'head_offset_ref':[0,0],'background_removed':True,'complete_hand_protection_ref':cfg['hands'],'single_registered_body':True},'role':'single coherent registered full-body alternate; fixed canonical head composites above'})
+ entries.append({'name':name,'source':f'reference_library/assets/body/{cfg["file"]}','registered_png':f'artwork/gestures/{name}_registered.png','enabled_neutral':False,'z':20.0,'parent':'torso','master_xy':[registered_box[0],registered_box[1]],'master_size':list(registered.size),'pivot_ref':[512,280],'pivot_master':[1024,560],'action_id':cfg['action'],'registration':{'source_scale_to_reference':scale,'source_translation_ref':[tx,ty],'source_foreground_top_bottom':[top,bottom],'head_and_alternate_neck_excluded':True,'shoulders_and_original_blouse_preserved':True,'torso_shift_ref':cfg['torso_shift_ref'],'head_offset_ref':cfg.get('head_offset_ref',[0,0]),'background_removed':True,'complete_hand_protection_ref':cfg['hands'],'hand_transparency_ref':hand_transparency,'single_registered_body':True},'role':'single coherent registered full-body alternate; fixed canonical head composites above'})
 # A narrow canonical neck bridge joins the approved head to each original torso.
 # The alternate drawing keeps its own collar, blouse, jewelry, shoulders and jacket.
 placement=json.loads((MAN/'placement_manifest.json').read_text());base_entries=placement['layers']
@@ -252,15 +272,19 @@ hide=set(json.loads((MAN/'gesture_layers.json').read_text())['gesture_hide'])
 clean_rear_entry=next(x for x in entries if x['name']=='gesture_rear_hair')
 def composite(gesture=None,bg=(24,29,34,255)):
  can=Image.new('RGBA',(2048,3072))
+ gesture_entry=None;offset=[0,0]
+ if gesture:
+  gesture_entry=next(x for x in entries if x['name']==gesture)
+  offset=[round(v*S) for v in gesture_entry['registration'].get('head_offset_ref',[0,0])]
  for e in base_entries:
   if not e['enabled_neutral'] or e['name'] in hide:continue
   if gesture and e['parent']=='head' and e['z']>=32:continue  # redraw the face and front head once, above the swap
+  layer_offset=offset if gesture and e['parent']=='head' else [0,0]
   if gesture and e['name']=='rear_hair':
-   can.alpha_composite(Image.open(ROOT/clean_rear_entry['registered_png']).convert('RGBA'),tuple(clean_rear_entry['master_xy']));continue
-  can.alpha_composite(Image.open(ROOT/e['registered_png']).convert('RGBA'),tuple(e['master_xy']))
+   can.alpha_composite(Image.open(ROOT/clean_rear_entry['registered_png']).convert('RGBA'),(clean_rear_entry['master_xy'][0]+layer_offset[0],clean_rear_entry['master_xy'][1]+layer_offset[1]));continue
+  can.alpha_composite(Image.open(ROOT/e['registered_png']).convert('RGBA'),(e['master_xy'][0]+layer_offset[0],e['master_xy'][1]+layer_offset[1]))
  if gesture:
-  gesture_entry=next(x for x in entries if x['name']==gesture);can.alpha_composite(Image.open(ROOT/gesture_entry['registered_png']).convert('RGBA'),tuple(gesture_entry['master_xy']))
-  offset=[0,0]
+  can.alpha_composite(Image.open(ROOT/gesture_entry['registered_png']).convert('RGBA'),tuple(gesture_entry['master_xy']))
   bridge_entry=next(x for x in entries if x['name']=='gesture_neck_bridge');can.alpha_composite(Image.open(ROOT/bridge_entry['registered_png']).convert('RGBA'),(bridge_entry['master_xy'][0]+offset[0],bridge_entry['master_xy'][1]+offset[1]))
   for e in base_entries:
    if e['enabled_neutral'] and e['parent']=='head' and e['z']>=32 and e['name'] not in hide:
