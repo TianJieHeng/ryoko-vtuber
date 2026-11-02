@@ -1,7 +1,0 @@
-{
-  "id": "EXP-094",
-  "status": "blocked_no_image_generated",
-  "reason": "Built-in tool rejected generated output under sexual safety category. Intended prompt was benign spicy-food reaction for adult character.",
-  "action": "Blocked original concept not retried. Distinct about-to-sneeze replacement produced with built-in tool and reviewed.",
-  "replacement_path": "assets/expressions/EXP-094_about-to-sneeze/RYO_EXP-094_about-to-sneeze_sheet_v001.png"
-}

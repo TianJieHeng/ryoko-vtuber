@@ -1,6 +1,0 @@
-{
-  "records_checked": 98,
-  "exact_crops_checked": 61,
-  "errors": [],
-  "scope": "source image hashes, transparency presence and pixel equality; not UV fit or registered assembly"
-}

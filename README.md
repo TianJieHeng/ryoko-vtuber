@@ -1,43 +1,21 @@
-# Ryoko Full-Character Source Pack
+# Ryoko — full-body 2D cutout VTuber
 
-**Source-art production complete: 273 primary images**, with **2,352 losslessly extracted panels and 200 peak copies**. The six original user reference PNGs remain unchanged. This is a modeling and acting reference pack for a full-character, wall-projected VTuber—not a working 3D avatar.
+**Build a layered 2D character from the supplied artwork, then rig that artwork.** This repository is not a volumetric 3D character project. Previous 3D build instructions and implementation files have been removed from the current branch.
 
-## Start here
+All retained assembly inputs are in [avatar_build_assets/](avatar_build_assets/). Read [the 2D assembly guide](avatar_build_assets/docs/ASSEMBLY_2D.md).
 
-- [Builder handoff](handoff/BUILDER_HANDOFF.md) · [What is not included](handoff/NOT_INCLUDED.md)
-- [Asset inventory](metadata/asset_index.json) · [Publication status and verification](metadata/publication_status.json)
-- [200-expression catalogue](metadata/expressions.json) · [40 body gestures](metadata/body_gestures.json) · [Control inventory](metadata/controls_inventory.json)
-- [Extraction records](metadata/frame_extraction.json) · [QA boundaries](metadata/QA_LIMITATIONS.md)
-- [Original references](references/originals/) · [Reference review](references/REFERENCE_REVIEW.md)
-- [Phased build plan](BUILD_PLAN.md) · [Build journal](BUILD_JOURNAL.md)
+## What is retained
+- 69 separated transparent character/effect PNGs and 18 useful source atlases.
+- Six original character reference PNGs.
+- 273 reference sheets: 200 facial expressions, 40 full-body gestures, 22 facial-control studies, seven character construction references and four detail sheets.
+- 2,352 extracted reference panels and 200 peak copies, plus useful expression/gesture/crop catalogues.
+- Five contact sheets showing the separated parts.
 
-## Delivered inventory
+## Actual readiness
+The parts are **not yet aligned into a rig-ready layer stack**. Cutting, registration to a common canvas, hidden overlap completion, pivots, clipping, layered assembly and 2D rigging remain to be done. A separate neck artwork part is missing. The expression crops are acting references, not registered animation frames.
 
-| Primary sources | Count |
-|---|---:|
-| Expression sheets | 200 |
-| Full-body gesture sheets | 40 |
-| Generic facial-control references | 22 |
-| Modeling references | 7 |
-| Detail references | 4 |
-| **Total primary images** | **273** |
+If Blender is used, use image planes or planar deformable artwork with an orthographic camera and layer-depth ordering. Do not reconstruct a 3D body, retopologize it, bake fitted character UV atlases or target a VRM character export. Choose and verify a 2D live runtime with the user before committing to its integration.
 
-The 2,352 cropped panels and 200 peak copies are derivatives, not extra generated source images. There are 2,825 PNGs under `assets/`, excluding the six originals under `references/`. Native dimensions and hashes are recorded per file. Source sheets are preserved; crops use exact integer bounds without resizing. They are visual key poses, not registered or interpolated animation frames.
+Do not replace this with a generic character. Preserve the human Ryoko design: sage/mint hair, amber eyes, dark trouser suit, white blouse, gold ornaments, green pendant and black pumps.
 
-**Two planned control references are not included:** `jawLeft` and `lowerLipDepress` failed isolated-motion fidelity and were rejected rather than mislabeled. This explains 273 delivered sources versus the earlier 275-source target. The 22 generic control guides are not a complete or certified ARKit 52-shape set. `jawRight` is a three-panel comparison, not nine temporal poses.
-
-Facial close-ups pair with reusable body-gesture references; the pack does not contain 200 bespoke synchronized full-body animations. No mesh, UV unwrap, fitted texture atlas, Blender rig, shape keys, skin weights, animation curves, tested export or runtime/tracking compatibility is supplied. Hidden structures and anatomical continuity still need decisions and testing on the real model. No task has been sent to Kimi.
-
-## Publication batches
-
-| Batch | Primary images | Extracted panels | Peak copies |
-|---|---:|---:|---:|
-| [001](metadata/batch_001_manifest.json) | 50 | 351 | 28 |
-| [002](metadata/batch_002_manifest.json) | 50 | 444 | 27 |
-| [003](metadata/batch_003_manifest.json) | 50 | 450 | 32 |
-| [004](metadata/batch_004_manifest.json) | 50 | 450 | 40 |
-| [005](metadata/batch_005_manifest.json) | 50 | 450 | 50 |
-| [006](metadata/batch_006_manifest.json) | 23 | 207 | 23 |
-| **Total** | **273** | **2,352** | **200** |
-
-[Final catalogue QA](metadata/final_catalogue_validation.json) and [pixel-integrity validation](metadata/integrity_validation.json) report no errors. Current acceptance and publication status lives in the cumulative inventories; per-generation sidecars preserve their generation provenance. Rejected variants and generated caches are excluded. No CI or GitHub Actions were run.
+No CI. No paid services or API calls without approval. This cleanup is an ordinary recoverable Git commit; earlier work remains in history.

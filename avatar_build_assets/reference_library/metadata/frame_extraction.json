@@ -1,6 +1,5 @@
 {
   "updated_utc": "2026-11-01T13:22:49.920600+00:00",
-  "authorization": "User approved splitting finished 3x3 sheets into nine individual PNG frames while preserving source sheets on 2026-11-01.",
   "scope": "Cropped visual reference key poses, not rigged or temporally registered animation frames.",
   "counts": {
     "source_sheets": 262,
@@ -52947,13 +52946,5 @@
       "source_unchanged": true
     }
   ],
-  "pending_grid_review": [],
-  "publication_batches": [
-    "001",
-    "002",
-    "003",
-    "004",
-    "005",
-    "006"
-  ]
+  "pending_grid_review": []
 }

@@ -1,44 +1,16 @@
-# Ryoko avatar build assets
+# 2D assembly inputs
 
-**Status: corrective source-art pass delivered: 69 individual component/effect PNGs.** This new folder is additive. The existing reference collection and the builder's `vtuber/` project are unchanged.
+Use the individual artwork in `head/layers/`, `body/layers/`, `hair/`, `accessories/layers/` and `effects/layers/`. The `sources/` directories contain useful sheets for recutting. `metadata/asset_manifest.json` lists the 69 parts and 18 source atlases; paths there are relative to this folder.
 
-## Kimi: continue the existing 3D model
+[Assembly instructions](docs/ASSEMBLY_2D.md) describe the required cut, align, assemble and rig sequence. No completed layered puppet or working rig is supplied yet.
 
-Use these new images as source material on your existing 3D mesh. Fit, project or bake them to its actual UVs. Keep the Phase 04 geometry and controls; do not restart the model or substitute cutout-PNG sequence playback. First apply the face/iris, hair and clothing art, then render matched views for the user before producing 200 expression presets. Do not make paid API calls without the user's approval.
+## Reference library
+- `reference_library/references/originals/`: six original character sheets.
+- `reference_library/assets/modeling/`: canonical neutral face and body views, used as drawing references only.
+- `reference_library/assets/details/`: hairstyle, outfit, hands/shoes and accessory design references.
+- `reference_library/assets/expressions/`: 200 expression sheets, panels and peak images.
+- `reference_library/assets/body/`: 40 body-gesture sheets and panels.
+- `reference_library/assets/controls/`: facial movement reference studies and panels.
+- `reference_library/metadata/`: expression, gesture, control, source-image and crop catalogues. Their `assets/...` paths resolve from `reference_library/`, not repository root.
 
-Read `docs/LAYER_USAGE.md` for part order, clipping, swaps and target assignments.
-
-## Start here
-
-1. Inspect `references/`: two original character sheets, four canonical generated masters and four detail sheets are copied byte-for-byte for identity, costume, pose and palette context.
-2. Read `metadata/asset_manifest.json` for the exact files present, hashes, dimensions, transparency and acceptance status. An image is not delivered merely because it appears in a proposed plan.
-3. Read `docs/KIMI_INTEGRATION.md` before importing new imagery into the existing 3D build.
-4. Read `BUILD_JOURNAL.md` for actual completed checkpoints and remaining work.
-
-## Included original reference library
-
-`reference_library/` contains the complete original 3,408-file source pack from commit `0ddc526115c7f91eed59e48a468bab5bdddfdc52`, including all 200 expression sheets, 40 body-gesture sheets, extracted panels, metadata, references and handoff documents. It is copied by exact Git tree reuse, preserving internal links and image bytes. New separated artwork lives beside this library. The library's older status statements describe that original pack; this README and the new manifest describe the corrective additions. The later `vtuber/` implementation remains at its existing repository location.
-
-## What is included in the corrective pass
-
-- 23 head components, including eyes, brows, lids, oral pieces and vowel alternatives.
-- 23 body/clothing components, including front/back regions, sleeve segments, hands and pumps.
-- 6 hair components.
-- 10 accessory components, including alternative combined versus separated necklace artwork.
-- 7 optional expression effects.
-- 19 accepted generation sources/atlases, 10 key reference copies, five contact-sheet previews, crop/alpha/hash provenance and integration instructions.
-- The complete original reference library described above.
-
-Read `docs/INDEPENDENT_ART_QA.md` for the actual image checks and their limits. Contact sheets show the real components, not a proven assembled puppet.
-
-## Design authority
-
-Adult human Ryoko: mint/sage hair, amber eyes, dark trouser suit, white blouse, gold hair ornaments/earrings, green pendant and black pumps. Match the supplied human design; do not substitute the unrelated masked character. Character-left/right refer to anatomy, not the viewer.
-
-## Image types and limitations
-
-The corrective pass creates separated artwork and transparent components. Each record identifies whether it is an individual layer, a source sheet requiring extraction, an optional effect, or an assembly preview. A composite preview must be created from the actual layers before claiming that those layers form a registered cutout assembly.
-
-These images do not replace the builder's existing 3D mesh, UVs, facial geometry, rig or project. They are not automatically fitted to its UV islands. Existing 200 expression sheets remain performance references, not 200 complete segmented animated models. Native dimensions and transparency must be verified per file; no upscaled image is described as native 2K/4K.
-
-The separate neck-paint generation returned no image; preserve the current 3D neck material (see integration notes). The supplied parts are source artwork requiring placement/UV fitting, not a finished registered layer stack, rig, exported VRM or runtime approval.
+`previews/` contains diagnostic contact sheets, not assembled-model previews. Different views and mouth/necklace alternatives must not all be enabled at once. The original file names containing “modeling” are retained for stable catalogue paths; they are images, not an instruction to build a 3D model.

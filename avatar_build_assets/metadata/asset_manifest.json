@@ -1,14 +1,18 @@
 {
-  "schema_version": 1,
-  "production_status": "source_art_pass_delivered_with_documented_neck_gap",
-  "scope": "additive corrected artwork, not UV-fitted runtime avatar",
-  "reference_count": 10,
-  "generated_file_count": 88,
-  "individual_artwork_count": 69,
-  "source_atlas_count": 19,
+  "schema_version": 2,
+  "scope": "2D cutout assembly inputs; not yet registered, assembled or rigged",
+  "path_base": "avatar_build_assets/",
+  "individual_part_count": 69,
+  "source_atlas_count": 18,
+  "missing": [
+    "Separate neck artwork",
+    "Common-canvas registration and hidden overlap completion",
+    "Assembled neutral layer stack and 2D rig"
+  ],
   "records": [
     {
       "path": "accessories/layers/RYO_ACC_belt_gold_buckle.png",
+      "role": "slim black belt with gold buckle",
       "sha256": "ca8ba149ae4b069bf091e10e042ef380f7e6e693cb9dc9c6dcc11cdd1f64f6e4",
       "git_blob_sha": "122475af532d079f499e3f7219c9fe007b9a4fd5",
       "bytes": 438390,
@@ -29,18 +33,14 @@
           563
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "slim black belt with gold buckle",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_earring_character_L.png",
+      "role": "character left earring",
       "sha256": "a767aead829097c78a95c23314532f848e4e8f033fa216511e94eba2dce45340",
       "git_blob_sha": "e82a040322cac7c016db13fa4f114e78deb788bb",
       "bytes": 524011,
@@ -61,8 +61,6 @@
           1003
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "character left earring",
       "source_atlas": "accessories/sources/RYO_ACC_earrings_source_v001.png",
       "crop_bounds_xyxy": [
         768,
@@ -70,14 +68,12 @@
         1536,
         1024
       ],
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_earring_character_R.png",
+      "role": "character right earring",
       "sha256": "f1a710a385eaca8ff1929fe3f864e2188f0fd5b121dc338c1db8e43c9a3dd380",
       "git_blob_sha": "60050d66fc1b7e41ee17602be10707265fad1979",
       "bytes": 522042,
@@ -98,8 +94,6 @@
           1008
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "character right earring",
       "source_atlas": "accessories/sources/RYO_ACC_earrings_source_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -107,14 +101,12 @@
         768,
         1024
       ],
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_green_pendant.png",
+      "role": "separate green pendant",
       "sha256": "8d30cfd8d12158bcea991a3db2753f2e9272b8840612c60d2db5a780db40377d",
       "git_blob_sha": "b1e67bf6cd89323146e8f187e17056455efeaf98",
       "bytes": 147665,
@@ -135,8 +127,6 @@
           869
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "separate green pendant",
       "source_atlas": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
       "crop_bounds_xyxy": [
         1180,
@@ -144,14 +134,12 @@
         1774,
         887
       ],
-      "visual_review": "Viewed actual tan alpha composite; isolated chain and green pendant with clean transparent surround.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_hair_dangler_01.png",
+      "role": "gold hanging ornament 01",
       "sha256": "0aaf3fcb85f597f01aec56daa6bbc28814f1676c871b93522d61059378737620",
       "git_blob_sha": "611f0f191b973e66a0ddd579f773ba2b93843e0c",
       "bytes": 126479,
@@ -172,8 +160,6 @@
           1358
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "gold hanging ornament 01",
       "source_atlas": "accessories/sources/RYO_ACC_hair_danglers_source_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -181,14 +167,12 @@
         579,
         1358
       ],
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_hair_dangler_02.png",
+      "role": "gold hanging ornament 02",
       "sha256": "9eba67152135449bfdf30f5fa35e4b6e9b36c652fabea560c327db917879e198",
       "git_blob_sha": "ba8df73eedda93a0b5d28971471c267d81d134d4",
       "bytes": 127819,
@@ -209,8 +193,6 @@
           1334
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "gold hanging ornament 02",
       "source_atlas": "accessories/sources/RYO_ACC_hair_danglers_source_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -218,14 +200,12 @@
         1159,
         1358
       ],
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_hairstick_01.png",
+      "role": "gold hairstick shaft 01",
       "sha256": "cdbe01e444d4282965c9a793e40c035d4e8ce59694fbd5cd4944b9e336bd8aea",
       "git_blob_sha": "8d27fe9b10dc0eea8553d86a6996ca5791f27d8c",
       "bytes": 455953,
@@ -246,8 +226,6 @@
           1006
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "gold hairstick shaft 01",
       "source_atlas": "accessories/sources/RYO_ACC_hairsticks_source_v002.png",
       "crop_bounds_xyxy": [
         0,
@@ -255,14 +233,12 @@
         768,
         1024
       ],
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_hairstick_02.png",
+      "role": "gold hairstick shaft 02",
       "sha256": "98f99004f37ba3fc6e802d1cafac502bf59a738c19c6fef8a26945b7b8d13cc5",
       "git_blob_sha": "147772d9b16a00401ea1b3cd244b14f22ed48d30",
       "bytes": 452947,
@@ -283,8 +259,6 @@
           1004
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "gold hairstick shaft 02",
       "source_atlas": "accessories/sources/RYO_ACC_hairsticks_source_v002.png",
       "crop_bounds_xyxy": [
         768,
@@ -292,14 +266,12 @@
         1536,
         1024
       ],
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_necklace_chain.png",
+      "role": "separate gold necklace chain",
       "sha256": "734584f460bd4d915ec626da9941e2d3dd94e9d3ae70d6ed5f274ad14fce9cd6",
       "git_blob_sha": "c4e8263910ce5cac13d888f0ca56e4e7c7996708",
       "bytes": 260372,
@@ -320,8 +292,6 @@
           845
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "separate gold necklace chain",
       "source_atlas": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -329,14 +299,12 @@
         1180,
         887
       ],
-      "visual_review": "Viewed actual tan alpha composite; isolated chain and green pendant with clean transparent surround.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/layers/RYO_ACC_necklace_green_pendant.png",
+      "role": "necklace and green pendant combined",
       "sha256": "5a4f783a65c44fadb1bc08f09c7fef79da0ab08a986a1229cf7183215f4bf1a0",
       "git_blob_sha": "44be5aa86e58452671524b632230c92742d48143",
       "bytes": 1166901,
@@ -357,18 +325,14 @@
           984
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "necklace and green pendant combined",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Viewed actual white-background alpha composite; matches intended accessory, isolated silhouette and no labels. Not registered or UV-fitted.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "accessories/sources/RYO_ACC_earrings_source_v001.png",
+      "role": "source_atlas",
       "sha256": "762afaa71815ba71642a590bc2cf2df636d837fe0593129c0f038a29c3ec19cf",
       "git_blob_sha": "d91c8670810c256ebf2ada0a9219aaa56c47befd",
       "bytes": 1091379,
@@ -389,16 +353,14 @@
           1008
         ]
       },
-      "status": "accepted_source_atlas",
-      "role": "source_atlas",
-      "visual_review": "Inspected actual pixels and white composite; isolated separate parts.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "accessories/sources/RYO_ACC_hair_danglers_source_v001.png",
+      "role": "source_atlas",
       "sha256": "2b1368bb494726856b24b519d38e9061bb6d9cd61dd17c9627d1e04f7f566a2a",
       "git_blob_sha": "693cec1216ab4f564494e43a9d6d05cb73ae95fd",
       "bytes": 282235,
@@ -419,16 +381,14 @@
           1358
         ]
       },
-      "status": "accepted_source_atlas",
-      "role": "source_atlas",
-      "visual_review": "Inspected actual pixels and white composite; isolated separate parts.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "accessories/sources/RYO_ACC_hairsticks_source_v002.png",
+      "role": "source_atlas",
       "sha256": "ecbb4bf32ea7e8345b6d6ecc5604afa00c596aea997eecedd889969fd32beed6",
       "git_blob_sha": "5256b5259de37a4d1c19cf38c4072dd202ec8656",
       "bytes": 947503,
@@ -449,16 +409,14 @@
           1006
         ]
       },
-      "status": "accepted_source_atlas",
-      "role": "source_atlas",
-      "visual_review": "Inspected actual pixels and white composite; isolated separate parts.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "accessories/sources/RYO_ACC_necklace_split_source_v001.png",
+      "role": "source_atlas",
       "sha256": "e49a29a5fe02482114b7618a72cd38969edcdd2e5bda60c5473923bbada3734f",
       "git_blob_sha": "53c3ec63544656a55a73f6198d3f56ce5ce0c4f0",
       "bytes": 464050,
@@ -479,16 +437,14 @@
           869
         ]
       },
-      "status": "accepted_source_atlas",
-      "role": "source_atlas",
-      "visual_review": "Two independent components, no overlap; source design retained.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/blazer_back.png",
+      "role": "Blazer rear torso",
       "sha256": "1673ba859d0bcf16c5e00759459b7556ea1faad0c204e72b9f6962e9f0ff3e4a",
       "git_blob_sha": "ca5330563abb39141a9c3d6e62804daaafa946b2",
       "bytes": 385430,
@@ -509,8 +465,6 @@
           887
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Blazer rear torso",
       "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
       "crop_bounds_xyxy": [
         1080,
@@ -518,15 +472,12 @@
         1774,
         887
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/blazer_front_character_L.png",
+      "role": "Blazer front character left, pocket square",
       "sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2",
       "git_blob_sha": "5ef024e5bd408339a43f25661abcfcce1621d137",
       "bytes": 272055,
@@ -547,8 +498,6 @@
           867
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Blazer front character left, pocket square",
       "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
       "crop_bounds_xyxy": [
         580,
@@ -556,15 +505,12 @@
         1080,
         887
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/blazer_front_character_R.png",
+      "role": "Blazer front character right, gold button",
       "sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345",
       "git_blob_sha": "f528bd33a9754671b0745e04b01b950f52d318cb",
       "bytes": 281918,
@@ -585,8 +531,6 @@
           871
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Blazer front character right, gold button",
       "source_atlas": "body/sources/blazer_panels_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -594,15 +538,12 @@
         580,
         887
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/blouse_back.png",
+      "role": "White blouse back",
       "sha256": "f2226cae2e338ad00781e1a8f61b6611a5de05e68b3b00beb6e1fef1aeffc067",
       "git_blob_sha": "959862cae102daad7b6897bbb5948c4f1c275146",
       "bytes": 484372,
@@ -623,8 +564,6 @@
           1254
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "White blouse back",
       "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
       "crop_bounds_xyxy": [
         644,
@@ -632,15 +571,12 @@
         1254,
         1254
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/blouse_front.png",
+      "role": "White open-collar blouse front",
       "sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba",
       "git_blob_sha": "d7eb316b4d203cc6bb4307e0de21c2a04415b54f",
       "bytes": 584946,
@@ -661,8 +597,6 @@
           1230
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "White open-collar blouse front",
       "source_atlas": "body/sources/blouse_front_back_atlas_v002.png",
       "crop_bounds_xyxy": [
         0,
@@ -670,15 +604,12 @@
         644,
         1254
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/hand_dorsal_character_L.png",
+      "role": "Left hand back",
       "sha256": "d4330b068973277608f77651bb21ecedf27701fbc24dbe665850ba77ab26bb00",
       "git_blob_sha": "14781d8165c713a147b822d2791a0bcd8f593605",
       "bytes": 153596,
@@ -699,8 +630,6 @@
           627
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Left hand back",
       "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
       "crop_bounds_xyxy": [
         627,
@@ -708,15 +637,12 @@
         1254,
         627
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/hand_dorsal_character_R.png",
+      "role": "Right hand back",
       "sha256": "9811b72b49cc2704721bc059055085d23da364295f45fed8c392c8a0a9d4a410",
       "git_blob_sha": "a6fad6eb4dec150e55b6a1476a074a6a6058976c",
       "bytes": 151411,
@@ -737,8 +663,6 @@
           627
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Right hand back",
       "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -746,15 +670,12 @@
         627,
         627
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/hand_palmar_character_L.png",
+      "role": "Left palm",
       "sha256": "0e4ef48f6ad258bb4e8c0b42826fc2449cf694d9346c09b362dd2fd9064e2852",
       "git_blob_sha": "1ec677cb96a670a6c844d116a5428323af0bac7a",
       "bytes": 176016,
@@ -775,8 +696,6 @@
           627
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Left palm",
       "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
       "crop_bounds_xyxy": [
         627,
@@ -784,15 +703,12 @@
         1254,
         1254
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/hand_palmar_character_R.png",
+      "role": "Right palm",
       "sha256": "c287dbb6f6b10de46022a7ab464c475d5ace5453ab9f062f0e4afa87e32e22bb",
       "git_blob_sha": "d7f724289c178141aa7f8f0bcf51500ef646fb58",
       "bytes": 170715,
@@ -813,8 +729,6 @@
           627
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Right palm",
       "source_atlas": "body/sources/hands_dorsal_palmar_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -822,15 +736,12 @@
         627,
         1254
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/pump_front_character_L.png",
+      "role": "Left pump front/top",
       "sha256": "44ab8cf6f73378c7d40ac24a05705290983cc5c3d447ebfd4495596f565b3cdf",
       "git_blob_sha": "2570fa0e43e90576331bbc25f713723c38b7be4a",
       "bytes": 179736,
@@ -851,8 +762,6 @@
           679
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Left pump front/top",
       "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
       "crop_bounds_xyxy": [
         663,
@@ -860,15 +769,12 @@
         1326,
         680
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/pump_front_character_R.png",
+      "role": "Right pump front/top",
       "sha256": "886857dab95a021e65fcbbd5f25699a30e7e38a92f6ba5359c4f1d6eba3c4325",
       "git_blob_sha": "09849040b68128d7239d413f4e8fc9fc0e152f06",
       "bytes": 180446,
@@ -889,8 +795,6 @@
           680
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Right pump front/top",
       "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -898,15 +802,12 @@
         663,
         680
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/pump_outer_character_L.png",
+      "role": "Left pump outer side",
       "sha256": "8057d97eed144146d72ae710adab8002c52f482709739ff0ac34df92129c8585",
       "git_blob_sha": "1ea9dd544c45f23b444f3d115891f456d0859b2e",
       "bytes": 172025,
@@ -927,8 +828,6 @@
           477
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Left pump outer side",
       "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
       "crop_bounds_xyxy": [
         663,
@@ -936,15 +835,12 @@
         1326,
         1187
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/pump_outer_character_R.png",
+      "role": "Right pump outer side",
       "sha256": "08fc771928ece8f5f99c48302fe4c192621dabe254d6e1c3c470079422f3d988",
       "git_blob_sha": "fbd557e4c9d85e17a9e561aa7c4148be24fb10a7",
       "bytes": 167874,
@@ -965,8 +861,6 @@
           488
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Right pump outer side",
       "source_atlas": "body/sources/pumps_front_side_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -974,15 +868,12 @@
         663,
         1187
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation; clean margins and full component.",
-      "limitations": "Independent source layer requiring UV mapping/projection. Hand orientation relative to wearer. Alternate views, not simultaneous layers.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/sleeve_forearm_character_L.png",
+      "role": "Character left forearm sleeve and cuff",
       "sha256": "079ceff58875abfe0f615dd4f8f238900b2b93038449e0b4b39f937b755baec7",
       "git_blob_sha": "f0a585ca54c8991c474c60662ec2a49b645d910d",
       "bytes": 357061,
@@ -1003,8 +894,6 @@
           972
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character left forearm sleeve and cuff",
       "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
       "crop_bounds_xyxy": [
         1152,
@@ -1012,15 +901,12 @@
         1536,
         1024
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/sleeve_forearm_character_R.png",
+      "role": "Character right forearm sleeve and cuff",
       "sha256": "e08ddd2274f421cc7b7fde6e477c741b37bae7e5f685eb2dd9c495d82787ac59",
       "git_blob_sha": "245e98f7037e2790bd21f245f1c0d04aa9085a45",
       "bytes": 357529,
@@ -1041,8 +927,6 @@
           946
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character right forearm sleeve and cuff",
       "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
       "crop_bounds_xyxy": [
         384,
@@ -1050,15 +934,12 @@
         768,
         1024
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/sleeve_upper_character_L.png",
+      "role": "Character left upper sleeve",
       "sha256": "ea22d96e2f90c392cb2aa840bd16b0d69c5a4ad08d116adc84d99e061af59c16",
       "git_blob_sha": "2bf96e8f375d647f0f6f2c429d4264d3708cf31b",
       "bytes": 357574,
@@ -1079,8 +960,6 @@
           1024
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character left upper sleeve",
       "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
       "crop_bounds_xyxy": [
         768,
@@ -1088,15 +967,12 @@
         1152,
         1024
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/sleeve_upper_character_R.png",
+      "role": "Character right upper sleeve",
       "sha256": "ec9f3168059bebfe4fddbd8d363abbfbbd19c8d7452c9ad7863b2d23f21d28c4",
       "git_blob_sha": "f46f9eed518ab2805cbe95d597ae6d052ef86bd9",
       "bytes": 356103,
@@ -1117,8 +993,6 @@
           1024
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character right upper sleeve",
       "source_atlas": "body/sources/sleeve_segments_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -1126,15 +1000,12 @@
         384,
         1024
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/trousers_leg_back_character_L.png",
+      "role": "Character left rear trouser leg",
       "sha256": "882220d58ec88a10cfcbd8d8bc0c26972305d89d3d5bba3d2da4a25d9db2bc6f",
       "git_blob_sha": "0b0b362aae8908882b2621a37bafe0e94da2b640",
       "bytes": 326477,
@@ -1155,8 +1026,6 @@
           1512
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character left rear trouser leg",
       "source_atlas": "body/sources/trousers_back_atlas_v001.png",
       "crop_bounds_xyxy": [
         462,
@@ -1164,15 +1033,12 @@
         730,
         1536
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/trousers_leg_back_character_R.png",
+      "role": "Character right rear trouser leg",
       "sha256": "6854b457d0a1caa9f35ca4a757dcc02ff7ccff4a365f32d54956b84b007bfbb3",
       "git_blob_sha": "92522fefc481aa50493dd0e416c710fb4d4157d5",
       "bytes": 353578,
@@ -1193,8 +1059,6 @@
           1504
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character right rear trouser leg",
       "source_atlas": "body/sources/trousers_back_atlas_v001.png",
       "crop_bounds_xyxy": [
         730,
@@ -1202,15 +1066,12 @@
         1024,
         1536
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/trousers_leg_front_character_L.png",
+      "role": "Character left front trouser leg",
       "sha256": "fe7b88f37c2f912ca4e1c56fc212d9db325078f5083c14c4270952cc5ed95b67",
       "git_blob_sha": "55c31a88632e5a20deea2b194c9e35efdf7419ad",
       "bytes": 372558,
@@ -1231,8 +1092,6 @@
           1448
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character left front trouser leg",
       "source_atlas": "body/sources/trousers_front_atlas_v001.png",
       "crop_bounds_xyxy": [
         725,
@@ -1240,15 +1099,12 @@
         1024,
         1536
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/trousers_leg_front_character_R.png",
+      "role": "Character right front trouser leg",
       "sha256": "f0a69b326f850b2b36f39bcd080ec71532a40048077a4ca2f3c0f957b9eb8e89",
       "git_blob_sha": "2fb35feb278a8c59f7d37b1c00f9bafa88049899",
       "bytes": 356440,
@@ -1269,8 +1125,6 @@
           1492
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Character right front trouser leg",
       "source_atlas": "body/sources/trousers_front_atlas_v001.png",
       "crop_bounds_xyxy": [
         445,
@@ -1278,15 +1132,12 @@
         725,
         1536
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/trousers_pelvis_back.png",
+      "role": "Rear waistband and pelvis",
       "sha256": "4119c18a9d1c3313652b22f1c01416b5545af6c38f0cd738f6c84fe1bfb77811",
       "git_blob_sha": "72ab03c8624afd566bc14fd7989597dcee450094",
       "bytes": 387480,
@@ -1307,8 +1158,6 @@
           1508
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Rear waistband and pelvis",
       "source_atlas": "body/sources/trousers_back_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -1316,15 +1165,12 @@
         462,
         1536
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/layers/trousers_pelvis_front.png",
+      "role": "Front waistband and pelvis",
       "sha256": "d1b2d648a7cdafd72d24e96b8e24aa567b3123680bc07f24a93509bdda1b8082",
       "git_blob_sha": "20bee04409aadd82bed8a09d71c10f95dea342c9",
       "bytes": 379542,
@@ -1345,8 +1191,6 @@
           1458
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "Front waistband and pelvis",
       "source_atlas": "body/sources/trousers_front_atlas_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -1354,15 +1198,12 @@
         445,
         1536
       ],
-      "visual_review": "Source atlas inspected on gray; lossless rectangular separation with transparent margin.",
-      "limitations": "Not registered to fullbody canvas and not UV-fitted. Scale/project to actual mesh. Character sides named anatomically.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "body/sources/blazer_panels_atlas_v001.png",
+      "role": "source_atlas",
       "sha256": "083072c0d177e07ceb59ded27f6b9cbb9dfb82900ee6b0d568d46698206881ea",
       "git_blob_sha": "efd1cc3af46ab3d3f399dde9bb63dc70734316b1",
       "bytes": 1082172,
@@ -1383,17 +1224,14 @@
           887
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
-      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "body/sources/blouse_front_back_atlas_v002.png",
+      "role": "source_atlas",
       "sha256": "8e37c926b97130cae167f382eb1823e3bc70f201df609b9b54cf8f7f1003de59",
       "git_blob_sha": "b7b20bed97fca60e82acf900b882edd8c63683da",
       "bytes": 1208396,
@@ -1414,17 +1252,14 @@
           1254
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
-      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "body/sources/hands_dorsal_palmar_atlas_v001.png",
+      "role": "source_atlas",
       "sha256": "25e87ef142d076760fe4cd5ab5086d7b93ee80537c5c4dc063e7a838a0bb04b0",
       "git_blob_sha": "d62f6473932cffac495a741f676074d5a13e47b0",
       "bytes": 700086,
@@ -1445,17 +1280,14 @@
           1254
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Flattened against gray; clean genuine alpha, complete isolated components. Hands five digits each; shoes entire toe and heel.",
-      "limitations": "Not mesh-fitted UV or geometrically registered artwork.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "body/sources/pumps_front_side_atlas_v001.png",
+      "role": "source_atlas",
       "sha256": "87a4ef1ba70adf0d82d1387aef45048a8d37f6e8d2ed0f7d9e4ce9e2388ad44c",
       "git_blob_sha": "7f70b0ab9bd9f241674548c38d84770aad159c0a",
       "bytes": 757210,
@@ -1476,17 +1308,14 @@
           1168
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Flattened against gray; clean genuine alpha, complete isolated components. Hands five digits each; shoes entire toe and heel.",
-      "limitations": "Not mesh-fitted UV or geometrically registered artwork.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "body/sources/sleeve_segments_atlas_v001.png",
+      "role": "source_atlas",
       "sha256": "003bebc7adf5bed655e064e15be4213b8f5216a3d7bc9d58db49725d084ee744",
       "git_blob_sha": "f26dce59463370f4ccc0e9798154b3f93e942df2",
       "bytes": 1474434,
@@ -1507,17 +1336,14 @@
           1024
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
-      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "body/sources/trousers_back_atlas_v001.png",
+      "role": "source_atlas",
       "sha256": "c38faec04fdac3ff5a6d145cdb915a5f5a6523ce91f3dcdbf478aa78105b39cf",
       "git_blob_sha": "c237c5e6d0cc738a66b8603f7fd4f733142f143b",
       "bytes": 1131512,
@@ -1538,17 +1364,14 @@
           1512
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
-      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "body/sources/trousers_front_atlas_v001.png",
+      "role": "source_atlas",
       "sha256": "4d528e07ee1a662c2b4b6a1b0e12b37dd3f7b1b5aee8cec4eb4c5a793070a304",
       "git_blob_sha": "27526f96a75ccf4d6fc21a9541488bcb4ad80fdb",
       "bytes": 1167978,
@@ -1569,17 +1392,14 @@
           1492
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Flattened against neutral gray; components separate, complete, true alpha; no labels.",
-      "limitations": "Not mesh-fitted UVs. Independent painted source components require mapping/scaling. Hidden overlap reconstruction is inferred.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "effects/layers/RYO_FX_anger_mark.png",
+      "role": "optional scolding anger mark",
       "sha256": "20fbb07a56a52d2c70a41b2c4765a18e2c5157b646b02d98abe2655c109754de",
       "git_blob_sha": "20a4ca8bc333918ad1946bdcb113c78f1a3b825c",
       "bytes": 132756,
@@ -1600,18 +1420,14 @@
           1050
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "optional scolding anger mark",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "effects/layers/RYO_FX_blush_character_L.png",
+      "role": "character left cheek blush",
       "sha256": "12efc27caceed6475110b7e17bee91044dda15da21f9a453923abda25a64a824",
       "git_blob_sha": "c8a355febf73403fc64ba3656022c7e76be70115",
       "bytes": 361569,
@@ -1632,8 +1448,6 @@
           724
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "character left cheek blush",
       "source_atlas": "effects/sources/RYO_FX_blush_source_v001.png",
       "crop_bounds_xyxy": [
         1086,
@@ -1641,14 +1455,12 @@
         2172,
         724
       ],
-      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "effects/layers/RYO_FX_blush_character_R.png",
+      "role": "character right cheek blush",
       "sha256": "a818395e9cf1be5023edc62f2d79b24bb3ee19efe634e35639b2770d53536081",
       "git_blob_sha": "1cdef2537798e4681b776df470dd3f7845aff5ec",
       "bytes": 361748,
@@ -1669,8 +1481,6 @@
           724
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "character right cheek blush",
       "source_atlas": "effects/sources/RYO_FX_blush_source_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -1678,14 +1488,12 @@
         1086,
         724
       ],
-      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "effects/layers/RYO_FX_sparkle_cluster.png",
+      "role": "optional sparkle cluster",
       "sha256": "2e4704b5a10813b6154d45ea0779ba3490fbe2b471fbdfdd3dbe41434ae34628",
       "git_blob_sha": "a019481cd5fea9e011ad2cd73b42c3c569aca67a",
       "bytes": 796205,
@@ -1706,18 +1514,14 @@
           776
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "optional sparkle cluster",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "effects/layers/RYO_FX_sweatdrop.png",
+      "role": "optional embarrassment sweatdrop",
       "sha256": "1cc604aed7931c12248d5e81b270e7453867d6f6c20f210df404585f3a677cf9",
       "git_blob_sha": "a62ed744527ca6eda8e070066ab047b19e75fe28",
       "bytes": 847815,
@@ -1738,18 +1542,14 @@
           918
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "optional embarrassment sweatdrop",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "effects/layers/RYO_FX_tear_character_L.png",
+      "role": "character left tear trail",
       "sha256": "de8570c4509ad22fc67696413a4ef81d3ed445dc8428609e5cf548119c52d18b",
       "git_blob_sha": "e7d55cebb45337963454a9c97cb47d21661922ee",
       "bytes": 510672,
@@ -1770,8 +1570,6 @@
           1024
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "character left tear trail",
       "source_atlas": "effects/sources/RYO_FX_tears_source_v001.png",
       "crop_bounds_xyxy": [
         768,
@@ -1779,14 +1577,12 @@
         1536,
         1024
       ],
-      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "effects/layers/RYO_FX_tear_character_R.png",
+      "role": "character right tear trail",
       "sha256": "d59f3d789f75d066f1960522c867dd0b4334b9f2eb5a1251e6e7ee8f43986362",
       "git_blob_sha": "c4038a3334e61602818cc8385640e857d341e36b",
       "bytes": 507837,
@@ -1807,8 +1603,6 @@
           1000
         ]
       },
-      "status": "accepted_source_layer",
-      "role": "character right tear trail",
       "source_atlas": "effects/sources/RYO_FX_tears_source_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -1816,14 +1610,12 @@
         768,
         1024
       ],
-      "visual_review": "Viewed actual tan/grey alpha composite; complete isolated effect without face pixels or labels. Alpha retained, optional overlay.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "effects/sources/RYO_FX_blush_source_v001.png",
+      "role": "source_atlas",
       "sha256": "9cdfb66936a8f83f18c839ba1e1560f3f1a35462a8013325b3a835c2a62ecb21",
       "git_blob_sha": "addc3308ca333af28c83ee6642a6971c1fc4c800",
       "bytes": 926782,
@@ -1844,16 +1636,14 @@
           724
         ]
       },
-      "status": "accepted_source_atlas",
-      "role": "source_atlas",
-      "visual_review": "Inspected actual alpha composite.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "effects/sources/RYO_FX_tears_source_v001.png",
+      "role": "source_atlas",
       "sha256": "daa2cdf85a38c082574f0f6f743122481852bbe7cc4cbea402d6ebd1666761c0",
       "git_blob_sha": "ab8a7d22cbfea587481fbf6eef3f6dab148ac197",
       "bytes": 1059778,
@@ -1874,16 +1664,14 @@
           1024
         ]
       },
-      "status": "accepted_source_atlas",
-      "role": "source_atlas",
-      "visual_review": "Inspected actual alpha composite.",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "hair/bun.png",
+      "role": "isolated_hair_component",
       "sha256": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
       "git_blob_sha": "3c458187cdfa73aa813b3b3adf1c5d999c902391",
       "bytes": 702272,
@@ -1904,25 +1692,19 @@
           887
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_hair_component",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
-      "usage": "Looped updo component; attach above rear scalp.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
-      "assembly_tested": false,
       "source_atlas": "hair/sources/bun_tail_atlas.png",
       "crop_bounds_xyxy": [
         0,
         0,
         887,
         887
-      ]
+      ],
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "hair/front_fringe.png",
+      "role": "isolated_hair_component",
       "sha256": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",
       "git_blob_sha": "86985f7868f4479e11bc587592df37e37f3a405f",
       "bytes": 1539328,
@@ -1943,18 +1725,14 @@
           1254
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_hair_component",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
-      "usage": "Frontal fringe; manually fit to existing hair surface or cards.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "separated_part_requires_2d_registration",
       "assembly_tested": false
     },
     {
       "path": "hair/rear_scalp_nape.png",
+      "role": "isolated_hair_component",
       "sha256": "ef6a2e95ba701d5dd243a80c3ecf28d553a8143c1442933161df4ea08387bd95",
       "git_blob_sha": "e6da3ea770b4e85b7a28692617562fb70b77a392",
       "bytes": 1291833,
@@ -1975,18 +1753,14 @@
           1199
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_hair_component",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
-      "usage": "Rear-view scalp/nape source; not a frontal overlay.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "separated_part_requires_2d_registration",
       "assembly_tested": false
     },
     {
       "path": "hair/short_tail.png",
+      "role": "isolated_hair_component",
       "sha256": "3d281b9384212561473fcd39c6ee886385652438e54f53dea3293a5fb2b07ecc",
       "git_blob_sha": "8dde453339df63e10217976d6146a42979a0cf82",
       "bytes": 516686,
@@ -2007,25 +1781,19 @@
           887
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_hair_component",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
-      "usage": "Short tail component; pivot at top root.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
-      "assembly_tested": false,
       "source_atlas": "hair/sources/bun_tail_atlas.png",
       "crop_bounds_xyxy": [
         887,
         0,
         1774,
         887
-      ]
+      ],
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "hair/sources/bun_tail_atlas.png",
+      "role": "source_atlas",
       "sha256": "8ded0b49f2d9cc63f906b55bd338d41e218762bb1ef3910f8119e05ecf317ff5",
       "git_blob_sha": "bba114369ab6e8ce975473162094221a1469f570",
       "bytes": 1330328,
@@ -2046,16 +1814,14 @@
           887
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
       "assembly_tested": false
     },
     {
       "path": "hair/sources/side_locks_atlas.png",
+      "role": "source_atlas",
       "sha256": "4b516ffef5674158c06e9c39f067a13ad02919198dc46394fb5bb8ab79a52be3",
       "git_blob_sha": "255e2df320934e2855080a94f61c4d3f6651280d",
       "bytes": 1357314,
@@ -2076,16 +1842,14 @@
           1006
         ]
       },
-      "status": "accepted_source_art",
-      "role": "source_atlas",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
+      "source_atlas": null,
+      "crop_bounds_xyxy": null,
+      "status": "source_atlas_for_cutting",
       "assembly_tested": false
     },
     {
       "path": "hair/temple_lock_character_left.png",
+      "role": "isolated_hair_component",
       "sha256": "ced2c8e50075b08ecd388a251a64a85e4b862a431c06342b2072d7c7e7be1c9c",
       "git_blob_sha": "58ea62fcf3aa323b052b2b4528a449976de81417",
       "bytes": 543991,
@@ -2106,25 +1870,19 @@
           986
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_hair_component",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
-      "usage": "Shorter lock on viewer-right; character left.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
-      "assembly_tested": false,
       "source_atlas": "hair/sources/side_locks_atlas.png",
       "crop_bounds_xyxy": [
         768,
         0,
         1536,
         1024
-      ]
+      ],
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "hair/temple_lock_character_right.png",
+      "role": "isolated_hair_component",
       "sha256": "c7017f48460b74effca0ebcaa1141bd8171c355947450928c2c9af96db23f171",
       "git_blob_sha": "9caf246a8c4ebbf31d8d2786d35e393650ac73d0",
       "bytes": 741458,
@@ -2145,25 +1903,19 @@
           1006
         ]
       },
-      "status": "accepted_source_art",
-      "role": "isolated_hair_component",
-      "visual_review": "Inspected composited on neutral gray; actual RGBA transparency retained; no image repaint or resampling during crop. Different sources require manual placement/fitting.",
-      "source_reference": "references/RYO_MOD_neutral-bust_front_v001.png",
-      "usage": "Longer lock on viewer-left; character right.",
-      "generation_tool": "built-in image_gen",
-      "registration_status": "requires_placement_and_fitting",
-      "uv_fitted": false,
-      "assembly_tested": false,
       "source_atlas": "hair/sources/side_locks_atlas.png",
       "crop_bounds_xyxy": [
         0,
         0,
         768,
         1024
-      ]
+      ],
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_brow_L_v001.png",
+      "role": "brow_L",
       "sha256": "74aff161efb267065caa0e5937da5691dab52b153548e19437724d421ad5ff7c",
       "git_blob_sha": "3d9d0862036ab0399cbc33d214e7f625caa776bd",
       "bytes": 39715,
@@ -2184,8 +1936,6 @@
           340
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "brow_L",
       "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2193,20 +1943,12 @@
         1159,
         340
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        340
-      ],
-      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
-      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_brow_R_v001.png",
+      "role": "brow_R",
       "sha256": "3e45564735bab37b61bb9d77c40204d28b82f219e7c5787839120ad9ab88c029",
       "git_blob_sha": "b0b6becb67b15e088f8e080bd519b674edae0acf",
       "bytes": 42708,
@@ -2227,8 +1969,6 @@
           340
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "brow_R",
       "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2236,20 +1976,12 @@
         579,
         340
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        340
-      ],
-      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
-      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_closed_lid_L_v001.png",
+      "role": "closed_lid_L",
       "sha256": "23c716a57d5f884eed26f35d105df1e2807817dbef944b80efa2a1e28121ec7a",
       "git_blob_sha": "11e928dd52a88ff2477d24e42fc0e95cf83a20fd",
       "bytes": 68545,
@@ -2270,8 +2002,6 @@
           340
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "closed_lid_L",
       "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2279,20 +2009,12 @@
         1159,
         680
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        340
-      ],
-      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
-      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_closed_lid_R_v001.png",
+      "role": "closed_lid_R",
       "sha256": "eee53b9cf25398e85273efb077cd3fbbc372cb0a735014477334730d037e1559",
       "git_blob_sha": "ffd0c464a154a9d1ad9e349932baef2c001e760b",
       "bytes": 68494,
@@ -2313,8 +2035,6 @@
           339
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "closed_lid_R",
       "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2322,20 +2042,12 @@
         579,
         680
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        340
-      ],
-      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
-      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_ear_L_v001.png",
+      "role": "ear character L",
       "sha256": "3eb54faeb782e53d8a112a82eddbf54d23230fea1af618be39c734b38976d3d2",
       "git_blob_sha": "ac47ed547e598f915c1c6a1ab0086e6a0f515b9f",
       "bytes": 85039,
@@ -2356,8 +2068,6 @@
           420
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "ear character L",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2365,20 +2075,12 @@
         1159,
         420
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        420
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_ear_R_v001.png",
+      "role": "ear character R",
       "sha256": "b16cd2904796ff1f6f70f84ad3621f165553e2e0ed6cf74445c982e5e336d436",
       "git_blob_sha": "6a2dacc59f349dc7d25cd349537550c117190a36",
       "bytes": 87396,
@@ -2399,8 +2101,6 @@
           420
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "ear character R",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2408,20 +2108,12 @@
         579,
         420
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        420
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_face_base_v001.png",
+      "role": "skin face base; eye/brow/mouth/hair areas blank; nose retained",
       "sha256": "5da8a92ca10380442a9eaf569dc97f04fdbc398f8e5feadb6b993463f0e3c869",
       "git_blob_sha": "ca743b03edba89c2f09f2c84ff55932143b3cd40",
       "bytes": 854990,
@@ -2442,22 +2134,14 @@
           1254
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "skin face base; eye/brow/mouth/hair areas blank; nose retained",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        1254,
-        1254
-      ],
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_iris_pupil_L_v001.png",
+      "role": "iris_pupil character L",
       "sha256": "ad08ed6f92b552525a7319b468129dd5e53c46c9a26f6fc1b048cc401fde2a43",
       "git_blob_sha": "6bc666f30c515699751f5030faf84d976db0db95",
       "bytes": 101672,
@@ -2478,8 +2162,6 @@
           360
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "iris_pupil character L",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2487,20 +2169,12 @@
         1159,
         1060
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        360
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_iris_pupil_R_v001.png",
+      "role": "iris_pupil character R",
       "sha256": "54a97fd1d7c9ea581a36cc565bce960baab72405a7c0c44aa9dc5080b133e3bc",
       "git_blob_sha": "ebdf4935422de1dc98480e84830f2b7c3756f68f",
       "bytes": 103968,
@@ -2521,8 +2195,6 @@
           360
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "iris_pupil character R",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2530,20 +2202,12 @@
         579,
         1060
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        360
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_lash_lid_L_v001.png",
+      "role": "lash_lid character L",
       "sha256": "3552c0d3289069bfb41ade3d824806cf31e2a0a0001bae9c6103e28f9ce9b370",
       "git_blob_sha": "f86a8b47cfd53e6d99a50815fa4dc6fdc84b539b",
       "bytes": 46404,
@@ -2564,8 +2228,6 @@
           298
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "lash_lid character L",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2573,20 +2235,12 @@
         1159,
         1358
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        298
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_lash_lid_R_v001.png",
+      "role": "lash_lid character R",
       "sha256": "f1abe31c9206181eba1c0f10f67633760de50be83a71ff3cae2d3a4d29d6bfa5",
       "git_blob_sha": "aa95df4d0dcde83653eb7da66ea6c57b0e093595",
       "bytes": 46637,
@@ -2607,8 +2261,6 @@
           298
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "lash_lid character R",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2616,20 +2268,12 @@
         579,
         1358
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        298
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_lower_teeth_v001.png",
+      "role": "lower_teeth",
       "sha256": "fb3b00dcf74958063f3aa5466f770db4a34aa8dbd4209aae3030f86a04a0d9d6",
       "git_blob_sha": "3f73775ad77214d1869265a61be33dae18301c8f",
       "bytes": 62619,
@@ -2650,8 +2294,6 @@
           338
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "lower_teeth",
       "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2659,20 +2301,12 @@
         579,
         1358
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        338
-      ],
-      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
-      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_mouth_cavity_v001.png",
+      "role": "empty deep-burgundy mouth cavity without teeth or tongue",
       "sha256": "39ef37231d3347fe5f729e3fc427f9f59cc1604a12988b6c3ba563cb7ce3971e",
       "git_blob_sha": "12a587c18ab0a71e574f1477729f1fc7e13cf3f5",
       "bytes": 29386,
@@ -2693,29 +2327,19 @@
           338
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "empty deep-burgundy mouth cavity without teeth or tongue",
-      "source_atlas": "head/sources/audit_only/RYO_HEAD_rejected_viseme_v001.png",
+      "source_atlas": null,
       "crop_bounds_xyxy": [
         0,
         1020,
         579,
         1358
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        338
-      ],
-      "generation_original_basename": "exec-5140efcb-20b0-4436-9876-8b445b3932cd.png",
-      "source_sha256": "1872355f99657b7d03a654fc0f7fe55aabfa0814a2ecffec8cfa79d35cdd32d6",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_neutral_lips_v001.png",
+      "role": "neutral_lips alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "sha256": "6cf4ba2aba81ca1d9e0d724f3aa890bce2d1387ac85bc8b98f628d79ca558c86",
       "git_blob_sha": "e937b5a50829a8b8883717c728175a71f367d496",
       "bytes": 20719,
@@ -2736,8 +2360,6 @@
           398
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "neutral_lips alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2745,20 +2367,12 @@
         656,
         400
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        656,
-        400
-      ],
-      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
-      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_sclera_L_v001.png",
+      "role": "sclera character L",
       "sha256": "179955f3fb3d3f60fc7a4e89beeade5c52f1ff49903d874a1055cb087275428f",
       "git_blob_sha": "2a7d4192da5b0872784fa9220571c03309ecf2d2",
       "bytes": 62006,
@@ -2779,8 +2393,6 @@
           280
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "sclera character L",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2788,20 +2400,12 @@
         1159,
         700
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        280
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_sclera_R_v001.png",
+      "role": "sclera character R",
       "sha256": "c813a381d93b04612cde7646f5e7c7cc0fd852e4b9a095a63e2ba0bdf64cc064",
       "git_blob_sha": "c89ad43dbf6f4b86463a3a891c1f43330d8dcd56",
       "bytes": 62017,
@@ -2822,8 +2426,6 @@
           280
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "sclera character R",
       "source_atlas": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -2831,20 +2433,12 @@
         579,
         700
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        579,
-        280
-      ],
-      "generation_original_basename": "exec-f1ade276-324c-42fa-af07-c0d7b2ff7300.png",
-      "source_sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_tongue_v001.png",
+      "role": "tongue",
       "sha256": "8f731572395082142053234df3466f1e374de336a3510cfff9e9815bb85ff5a3",
       "git_blob_sha": "d85e896589a6cf8f4e09a296cc6ad27e7c944775",
       "bytes": 93239,
@@ -2865,8 +2459,6 @@
           338
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "tongue",
       "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2874,20 +2466,12 @@
         1159,
         1358
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        338
-      ],
-      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
-      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_upper_teeth_v001.png",
+      "role": "upper_teeth",
       "sha256": "d8828150286cd64a52cf553715e80d9b33f9d4309d1de80ae86e494b69c05746",
       "git_blob_sha": "070c6b2d133cf02ae223753bbeb428ec11054ebf",
       "bytes": 68958,
@@ -2908,8 +2492,6 @@
           340
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "upper_teeth",
       "source_atlas": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
       "crop_bounds_xyxy": [
         579,
@@ -2917,20 +2499,12 @@
         1159,
         1020
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        580,
-        340
-      ],
-      "generation_original_basename": "exec-710f7efa-08cf-4fa2-940c-6d8c30539f30.png",
-      "source_sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_A_v001.png",
+      "role": "viseme_A alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "sha256": "7fb4ffce7c918c1a6bfc6471ec520616c9f7c69276604449844a9f1d341871fe",
       "git_blob_sha": "5d1cb20572d80e9a46c2489c7c5ad291c7575c69",
       "bytes": 61741,
@@ -2951,8 +2525,6 @@
           399
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "viseme_A alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
@@ -2960,20 +2532,12 @@
         1312,
         400
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        656,
-        400
-      ],
-      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
-      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_E_v001.png",
+      "role": "viseme_E alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "sha256": "5ae868155be257c6d9cb5b474d7ea4b55027fce48464560dd0678ddc3b787170",
       "git_blob_sha": "9027f7edb9a15103b793fe91412b9cbb052989bd",
       "bytes": 46261,
@@ -2994,8 +2558,6 @@
           365
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "viseme_E alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -3003,20 +2565,12 @@
         656,
         1199
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        656,
-        399
-      ],
-      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
-      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_I_v001.png",
+      "role": "viseme_I alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "sha256": "a1e2f8c8aeab01ce5cdb38bbbf58b687f3cd150a87a2617c2dae7c076ca59a1f",
       "git_blob_sha": "7da0e41f4926257f352736b4cd0eb98576e56316",
       "bytes": 35465,
@@ -3037,8 +2591,6 @@
           400
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "viseme_I alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         0,
@@ -3046,20 +2598,12 @@
         656,
         800
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        656,
-        400
-      ],
-      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
-      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_O_v001.png",
+      "role": "viseme_O alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "sha256": "f77ffa108892068d24e83bc1f433f8451cf2a31ff2ad03b20c47802170c02eab",
       "git_blob_sha": "1ddc791c4936ab81a9d64cae4e9abe8d47b40335",
       "bytes": 42858,
@@ -3080,8 +2624,6 @@
           383
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "viseme_O alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
@@ -3089,20 +2631,12 @@
         1312,
         1199
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        656,
-        399
-      ],
-      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
-      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/layers/RYO_HEAD_viseme_U_v001.png",
+      "role": "viseme_U alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "sha256": "539b1e74d2dc84cfaff43157d363a63a55b6bfad51924029efeafc689e816987",
       "git_blob_sha": "211a2e1d9c26a08c2856137a6bde4b6bf394e710",
       "bytes": 22943,
@@ -3123,8 +2657,6 @@
           400
         ]
       },
-      "status": "accepted_source_layer_requires_mesh_fitting",
-      "role": "viseme_U alternate complete mouth sprite; do not stack with cavity/teeth/tongue",
       "source_atlas": "head/sources/RYO_HEAD_viseme_parts_v001.png",
       "crop_bounds_xyxy": [
         656,
@@ -3132,20 +2664,12 @@
         1312,
         800
       ],
-      "visual_review": "Inspected source component content and alpha on gray background; no captions or grids; not a registered mesh atlas.",
-      "size": [
-        656,
-        400
-      ],
-      "generation_original_basename": "exec-55c496d1-e458-4d96-89d7-ea3d58b9880f.png",
-      "source_sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "separated_part_requires_2d_registration",
+      "assembly_tested": false
     },
     {
       "path": "head/sources/RYO_HEAD_brow_lid_mouth_parts_v001.png",
+      "role": "source_atlas",
       "sha256": "45a3c200154b3d1b10c42c695be589b6c8bf5b8d8c6eaf996b92a483092d8b95",
       "git_blob_sha": "da43e06bdd698ac00aac578ad8e07b59aab9d48e",
       "bytes": 609583,
@@ -3166,22 +2690,14 @@
           1358
         ]
       },
-      "status": "accepted_source",
-      "role": "source_atlas",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Inspected generated source; source component positions are not UV coordinates. For brow_lid_mouth_parts atlas use individual cavity layer instead of painted composite cavity cell.",
-      "size": [
-        1159,
-        1358
-      ],
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "head/sources/RYO_HEAD_eye_ear_parts_v001.png",
+      "role": "source_atlas",
       "sha256": "458527f5cb0c583ca23bf1705a42edb64c8b80401b7fdea112bed8645ad92581",
       "git_blob_sha": "2fcaeed48b2ef68ae85291a315d5f0b25f5e5a46",
       "bytes": 649506,
@@ -3202,58 +2718,14 @@
           1358
         ]
       },
-      "status": "accepted_source",
-      "role": "source_atlas",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Inspected generated source; source component positions are not UV coordinates. For brow_lid_mouth_parts atlas use individual cavity layer instead of painted composite cavity cell.",
-      "size": [
-        1159,
-        1358
-      ],
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
-    },
-    {
-      "path": "head/sources/RYO_HEAD_face_base_v001.png",
-      "sha256": "5da8a92ca10380442a9eaf569dc97f04fdbc398f8e5feadb6b993463f0e3c869",
-      "git_blob_sha": "ca743b03edba89c2f09f2c84ff55932143b3cd40",
-      "bytes": 854990,
-      "dimensions": [
-        1254,
-        1254
-      ],
-      "mode": "RGBA",
-      "alpha": {
-        "has_alpha_channel": true,
-        "fully_transparent_pixels": 922818,
-        "partly_transparent_pixels": 649229,
-        "opaque_pixels": 469,
-        "nonzero_bbox": [
-          0,
-          0,
-          1234,
-          1254
-        ]
-      },
-      "status": "accepted_source",
-      "role": "source_atlas",
-      "source_atlas": null,
-      "crop_bounds_xyxy": null,
-      "visual_review": "Inspected generated source; source component positions are not UV coordinates. For brow_lid_mouth_parts atlas use individual cavity layer instead of painted composite cavity cell.",
-      "size": [
-        1254,
-        1254
-      ],
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     },
     {
       "path": "head/sources/RYO_HEAD_viseme_parts_v001.png",
+      "role": "source_atlas",
       "sha256": "f088aa6dc7c42fa2a83fbc5bc8a0dce4a92fdfa81b0eb47cf0ad0cb1263c4a3b",
       "git_blob_sha": "bd3d43509511df392b3bca872c0b49e6d6ef4a91",
       "bytes": 270350,
@@ -3274,319 +2746,10 @@
           1183
         ]
       },
-      "status": "accepted_source",
-      "role": "source_atlas",
       "source_atlas": null,
       "crop_bounds_xyxy": null,
-      "visual_review": "Inspected generated source; source component positions are not UV coordinates. For brow_lid_mouth_parts atlas use individual cavity layer instead of painted composite cavity cell.",
-      "size": [
-        1312,
-        1199
-      ],
-      "uv_fitted": false,
-      "assembly_tested": false,
-      "registration_status": "requires_placement_and_fitting",
-      "generation_tool": "built-in image_gen"
-    },
-    {
-      "path": "references/RYO_DET-001_hair-construction_v002.png",
-      "sha256": "d25b681cd4d4fd4728a186294ebbc1f9a4a13e0c033668f9f1be8d1571fa1bc9",
-      "git_blob_sha": "6ca79da49c43945febf48ac884679d868d377184",
-      "bytes": 2246035,
-      "dimensions": [
-        1536,
-        1024
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1572864,
-        "nonzero_bbox": [
-          0,
-          0,
-          1536,
-          1024
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/details/RYO_DET-001_hair-construction_v002.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/RYO_DET-002_gold-accessories_v003.png",
-      "sha256": "424cdb12995415d4a2b1a951bf528cf1656645eed13db6ad1d2f3a10831309e3",
-      "git_blob_sha": "803dd3972577446e8418bf66b7aef9dba22f5df1",
-      "bytes": 1579358,
-      "dimensions": [
-        1055,
-        1491
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1573005,
-        "nonzero_bbox": [
-          0,
-          0,
-          1055,
-          1491
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/details/RYO_DET-002_gold-accessories_v003.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/RYO_DET-003_outfit-construction_v003.png",
-      "sha256": "26e7e7d3fc264646dd5e043fcbf767d8e36a6066d404c5c15f8f3e19c9f9a943",
-      "git_blob_sha": "c7fe3c3791cc55131f43eaf7842674f9db3594d5",
-      "bytes": 1611857,
-      "dimensions": [
-        1448,
-        1086
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1572528,
-        "nonzero_bbox": [
-          0,
-          0,
-          1448,
-          1086
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/details/RYO_DET-003_outfit-construction_v003.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/RYO_DET-004_hands-pumps_v002.png",
-      "sha256": "0dcec24265c69b6a8b340cb153a2d24a4307be186c233ce0fc1295d3ba45b14e",
-      "git_blob_sha": "c20992c56df8b18c2d002c7bcce03337a882929d",
-      "bytes": 1713854,
-      "dimensions": [
-        1218,
-        1292
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1573656,
-        "nonzero_bbox": [
-          0,
-          0,
-          1218,
-          1292
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/details/RYO_DET-004_hands-pumps_v002.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/RYO_MOD_fullbody_Apose_front_v001.png",
-      "sha256": "15a10bc82b34149aa468549b09d24ec8d845c57ee48bd4d60e8c27c24215dd61",
-      "git_blob_sha": "205002227af0449a659007509c2b3410c0ff44a9",
-      "bytes": 1622829,
-      "dimensions": [
-        1024,
-        1536
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1572864,
-        "nonzero_bbox": [
-          0,
-          0,
-          1024,
-          1536
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/modeling/RYO_MOD_fullbody_Apose_front_v001.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/RYO_MOD_fullbody_back_v001.png",
-      "sha256": "5896f5ab11734922b07533c6a88d5c809e0516643c8eea9ec328a61cb45231d1",
-      "git_blob_sha": "490bbf41b0290eafe78ddf351920ada67c44a456",
-      "bytes": 1547624,
-      "dimensions": [
-        1024,
-        1536
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1572864,
-        "nonzero_bbox": [
-          0,
-          0,
-          1024,
-          1536
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/modeling/RYO_MOD_fullbody_back_v001.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/RYO_MOD_fullbody_front_v001.png",
-      "sha256": "90b6ca93e8a168b4922b9b23c4824d48100505131a03a209d11fb977c59cb1f9",
-      "git_blob_sha": "18cc63dd000e00f26e5bde04cb72f33878345c38",
-      "bytes": 1634911,
-      "dimensions": [
-        1024,
-        1536
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1572864,
-        "nonzero_bbox": [
-          0,
-          0,
-          1024,
-          1536
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/modeling/RYO_MOD_fullbody_front_v001.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/RYO_MOD_neutral-bust_front_v001.png",
-      "sha256": "c7d174b6d35094278ba357b8ad86e3e8a34d5e9f7a997b3480e09e6dcd2fc529",
-      "git_blob_sha": "300aebf0c2f2438973817db49ae4720da6a589d5",
-      "bytes": 1908074,
-      "dimensions": [
-        1159,
-        1358
-      ],
-      "mode": "RGB",
-      "alpha": {
-        "has_alpha_channel": false,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1573922,
-        "nonzero_bbox": [
-          0,
-          0,
-          1159,
-          1358
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/ryoko02(20261101-114212).png",
-      "sha256": "82f51363e69990679415d225d390cd360d3626de7353bb3c8957fa45536d91a4",
-      "git_blob_sha": "955af4c07bb6fcb15ffefe39a540d6b1c5d1cfc9",
-      "bytes": 2382665,
-      "dimensions": [
-        1448,
-        1086
-      ],
-      "mode": "RGBA",
-      "alpha": {
-        "has_alpha_channel": true,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1572528,
-        "nonzero_bbox": [
-          0,
-          0,
-          1448,
-          1086
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "references/originals/ryoko02(20261101-114212).png",
-        "copied_byte_identical": true
-      }
-    },
-    {
-      "path": "references/ryokov1.png",
-      "sha256": "f34af593f1459ca571f927f082b38d5cd520980d4994449ab7c6e4f6e2f23154",
-      "git_blob_sha": "9906f5959ce9dc3768f6bd013342ea53a748f840",
-      "bytes": 2666454,
-      "dimensions": [
-        1055,
-        1491
-      ],
-      "mode": "RGBA",
-      "alpha": {
-        "has_alpha_channel": true,
-        "fully_transparent_pixels": 0,
-        "partly_transparent_pixels": 0,
-        "opaque_pixels": 1573005,
-        "nonzero_bbox": [
-          0,
-          0,
-          1055,
-          1491
-        ]
-      },
-      "status": "reference_copy",
-      "role": "identity_reference",
-      "provenance": {
-        "source_repo": "TianJieHeng/ryoko-vtuber",
-        "source_path": "references/originals/ryokov1.png",
-        "copied_byte_identical": true
-      }
+      "status": "source_atlas_for_cutting",
+      "assembly_tested": false
     }
   ]
 }

@@ -1,7 +1,6 @@
 {
   "reference_only": true,
   "runtime_compatibility_verified": false,
-  "not_arkit_certification": true,
   "planned_controls": 24,
   "produced_controls": 22,
   "unavailable_controls": [
@@ -310,5 +309,6 @@
     "JawRight is a three-panel comparison, not nine temporal frames.",
     "Vowel chart is a nine-shape comparison, not a temporal sequence.",
     "Parent batch QA owns final acceptance and publication."
-  ]
+  ],
+  "scope": "Facial visual references for 2D deformation or drawing swaps; not a live control mapping."
 }
