@@ -1,90 +1,245 @@
 {
-  "canvas_reference": [1024, 1536],
-  "canvas_master": [2048, 3072],
+  "canvas_reference": [
+    1024,
+    1536
+  ],
+  "canvas_master": [
+    2048,
+    3072
+  ],
   "gesture_hide": [
-    "torso_garment", "upper_arm_R", "upper_arm_L", "forearm_R", "forearm_L",
-    "hand_R", "hand_L", "registration_underlap", "canonical_pelvis",
-    "trousers_leg_front_R", "trousers_leg_front_L", "shoe_R", "shoe_L",
-    "neck", "belt_gold_buckle", "necklace_chain", "green_pendant"
+    "torso_garment",
+    "upper_arm_R",
+    "upper_arm_L",
+    "forearm_R",
+    "forearm_L",
+    "hand_R",
+    "hand_L",
+    "registration_underlap",
+    "canonical_pelvis",
+    "trousers_leg_front_R",
+    "trousers_leg_front_L",
+    "shoe_R",
+    "shoe_L",
+    "neck",
+    "belt_gold_buckle",
+    "necklace_chain",
+    "green_pendant"
   ],
   "layers": [
     {
       "name": "gesture_finger_wag",
       "source": "reference_library/assets/body/RYO_BOD-002_finger-wag_kp03_v001.png",
-      "registered_png": "artwork/gestures/gesture_finger_wag.png",
+      "registered_png": "artwork/gestures/gesture_finger_wag_registered.png",
       "enabled_neutral": false,
-      "z": 36.5,
+      "z": 20.0,
       "parent": "torso",
-      "master_xy": [560, 200],
-      "master_size": [960, 1620],
-      "pivot_ref": [512, 280],
-      "pivot_master": [1024, 560],
+      "master_xy": [
+        560,
+        200
+      ],
+      "master_size": [
+        960,
+        2840
+      ],
+      "pivot_ref": [
+        512,
+        280
+      ],
+      "pivot_master": [
+        1024,
+        560
+      ],
       "action_id": "BOD-002",
       "registration": {
         "source_scale_to_reference": 2.9597585513078473,
-        "source_translation_ref": [5.881287726358096, 26.0],
-        "source_foreground_top_bottom": [0, 497],
+        "source_translation_ref": [
+          5.881287726358096,
+          26.0
+        ],
+        "source_foreground_top_bottom": [
+          0,
+          497
+        ],
         "head_and_alternate_neck_excluded": true,
         "shoulders_and_original_blouse_preserved": true,
-        "torso_shift_ref": [0, -40],
-        "head_offset_ref": [0, 0],
+        "torso_shift_ref": [
+          0,
+          -40
+        ],
+        "head_offset_ref": [
+          0,
+          0
+        ],
         "background_removed": true,
-        "complete_hand_protection_ref": [[335, 165, 420, 345], [650, 710, 742, 895]],
-        "lowered_hand_preserved_below_torso_overlap": true
+        "complete_hand_protection_ref": [
+          [
+            335,
+            165,
+            420,
+            345
+          ],
+          [
+            650,
+            710,
+            742,
+            895
+          ]
+        ],
+        "single_registered_body": true
       },
-      "role": "registered cleaned upper-body alternate drawing for the shared cutout rig"
+      "role": "single coherent registered full-body alternate; fixed canonical head composites above"
     },
     {
       "name": "gesture_crossed_arms",
       "source": "reference_library/assets/body/RYO_BOD-001_arms-crossed-stern_kp05_v001.png",
-      "registered_png": "artwork/gestures/gesture_crossed_arms.png",
+      "registered_png": "artwork/gestures/gesture_crossed_arms_registered.png",
       "enabled_neutral": false,
-      "z": 36.5,
+      "z": 20.0,
       "parent": "torso",
-      "master_xy": [640, 480],
-      "master_size": [770, 960],
-      "pivot_ref": [512, 280],
-      "pivot_master": [1024, 560],
+      "master_xy": [
+        640,
+        480
+      ],
+      "master_size": [
+        770,
+        2560
+      ],
+      "pivot_ref": [
+        512,
+        280
+      ],
+      "pivot_master": [
+        1024,
+        560
+      ],
       "action_id": "BOD-001",
       "registration": {
         "source_scale_to_reference": 2.87866927592955,
-        "source_translation_ref": [19.747553816047002, 26.0],
-        "source_foreground_top_bottom": [0, 511],
+        "source_translation_ref": [
+          19.747553816047002,
+          26.0
+        ],
+        "source_foreground_top_bottom": [
+          0,
+          511
+        ],
         "head_and_alternate_neck_excluded": true,
         "shoulders_and_original_blouse_preserved": true,
-        "torso_shift_ref": [0, -40],
-        "head_offset_ref": [0, 0],
+        "torso_shift_ref": [
+          0,
+          -40
+        ],
+        "head_offset_ref": [
+          0,
+          0
+        ],
         "background_removed": true,
-        "complete_hand_protection_ref": [[345, 385, 485, 495], [535, 360, 660, 485]],
-        "lowered_hand_preserved_below_torso_overlap": false
+        "complete_hand_protection_ref": [
+          [
+            345,
+            385,
+            485,
+            495
+          ],
+          [
+            535,
+            360,
+            660,
+            485
+          ]
+        ],
+        "single_registered_body": true
       },
-      "role": "registered cleaned upper-body alternate drawing for the shared cutout rig"
+      "role": "single coherent registered full-body alternate; fixed canonical head composites above"
     },
     {
       "name": "gesture_wave",
       "source": "reference_library/assets/body/RYO_BOD-011_greeting-wave_kp04_v001.png",
-      "registered_png": "artwork/gestures/gesture_wave.png",
+      "registered_png": "artwork/gestures/gesture_wave_registered.png",
       "enabled_neutral": false,
-      "z": 36.5,
+      "z": 20.0,
       "parent": "torso",
-      "master_xy": [420, 200],
-      "master_size": [1100, 1620],
-      "pivot_ref": [512, 280],
-      "pivot_master": [1024, 560],
+      "master_xy": [
+        420,
+        200
+      ],
+      "master_size": [
+        1100,
+        2840
+      ],
+      "pivot_ref": [
+        512,
+        280
+      ],
+      "pivot_master": [
+        1024,
+        560
+      ],
       "action_id": "BOD-011",
       "registration": {
         "source_scale_to_reference": 2.936127744510978,
-        "source_translation_ref": [12.858283433133693, 26.0],
-        "source_foreground_top_bottom": [0, 501],
+        "source_translation_ref": [
+          12.858283433133693,
+          26.0
+        ],
+        "source_foreground_top_bottom": [
+          0,
+          501
+        ],
         "head_and_alternate_neck_excluded": true,
         "shoulders_and_original_blouse_preserved": true,
-        "torso_shift_ref": [-29, -40],
-        "head_offset_ref": [0, 0],
+        "torso_shift_ref": [
+          -29,
+          -40
+        ],
+        "head_offset_ref": [
+          0,
+          0
+        ],
         "background_removed": true,
-        "complete_hand_protection_ref": [[210, 145, 370, 345], [650, 710, 742, 895]],
-        "lowered_hand_preserved_below_torso_overlap": true
+        "complete_hand_protection_ref": [
+          [
+            210,
+            145,
+            370,
+            345
+          ],
+          [
+            650,
+            710,
+            742,
+            895
+          ]
+        ],
+        "single_registered_body": true
       },
-      "role": "registered cleaned upper-body alternate drawing for the shared cutout rig"
+      "role": "single coherent registered full-body alternate; fixed canonical head composites above"
+    },
+    {
+      "name": "gesture_rear_hair",
+      "source": "approved canonical rear-hair layer; non-hair overlap removed for gesture swaps",
+      "registered_png": "artwork/gestures/gesture_rear_hair.png",
+      "enabled_neutral": false,
+      "z": 10.0,
+      "parent": "head",
+      "master_xy": [
+        780,
+        61
+      ],
+      "master_size": [
+        461,
+        510
+      ],
+      "pivot_ref": [
+        512,
+        250
+      ],
+      "pivot_master": [
+        1024,
+        500
+      ],
+      "role": "hair-only rear layer; prevents neck, collar and jacket duplication above gesture torsos"
     },
     {
       "name": "gesture_neck_bridge",
@@ -93,24 +248,23 @@
       "enabled_neutral": false,
       "z": 37.0,
       "parent": "torso",
-      "master_xy": [910, 410],
-      "master_size": [220, 270],
-      "pivot_ref": [512, 280],
-      "pivot_master": [1024, 560],
+      "master_xy": [
+        910,
+        410
+      ],
+      "master_size": [
+        220,
+        270
+      ],
+      "pivot_ref": [
+        512,
+        280
+      ],
+      "pivot_master": [
+        1024,
+        560
+      ],
       "role": "narrow registered canonical neck join; no torso, shoulder, face or blouse replacement"
-    },
-    {
-      "name": "gesture_lower_body",
-      "source": "approved canonical full-body derivative; continuous trousers, pelvis, ankles and heels",
-      "registered_png": "artwork/gestures/gesture_lower_body.png",
-      "enabled_neutral": false,
-      "z": 20.0,
-      "parent": "pelvis",
-      "master_xy": [690, 1280],
-      "master_size": [670, 1760],
-      "pivot_ref": [512, 650],
-      "pivot_master": [1024, 1300],
-      "role": "continuous canonical lower body for all upper-body gesture swaps; excludes hands"
     }
   ]
 }

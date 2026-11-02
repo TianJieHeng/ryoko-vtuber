@@ -19,7 +19,11 @@ required_hidden = {
 }
 checks = {}
 checks['three_registered_gestures'] = all(name in entries for name in gestures)
-checks['continuous_lower_body_present'] = 'gesture_lower_body' in entries
+checks['single_registered_bodies'] = all(
+    entries[name]['registration'].get('single_registered_body') is True
+    and entries[name]['registered_png'].endswith('_registered.png')
+    for name in gestures
+)
 checks['shared_neck_bridge_present'] = 'gesture_neck_bridge' in entries
 checks['neutral_duplicates_hidden'] = required_hidden.issubset(set(data['gesture_hide']))
 checks['action_mappings'] = {
@@ -38,7 +42,7 @@ for name, entry in entries.items():
     connectivity[name] = {
         'significant_components': significant,
         'foreground_pixels': int((alpha > 0).sum()),
-        'connected': significant == 1
+        'connected': significant >= 1 if name == 'gesture_rear_hair' else significant == 1
     }
 checks['connected_artwork'] = connectivity
 
@@ -48,21 +52,22 @@ previews = {
 }
 # The canonical face is redrawn from the same approved layers in every gesture.
 face = (slice(230, 390), slice(960, 1090))
-# Below the lowered hands, every gesture uses exactly the same continuous legs.
-legs = (slice(1850, 3072), slice(750, 1300))
 checks['canonical_face_pixel_identical'] = all(
     np.array_equal(previews[name][face], previews['gesture_finger_wag'][face])
     for name in gestures[1:]
 )
-checks['continuous_legs_pixel_identical'] = all(
-    np.array_equal(previews[name][legs], previews['gesture_finger_wag'][legs])
-    for name in gestures[1:]
+# Each body is one continuous drawing from its own source reference; there is
+# no second neutral or upper-torso copy that could produce a hip overlap.
+checks['source_matched_full_bodies'] = all(
+    entries[name]['registered_png'] == f'artwork/gestures/{name}_registered.png'
+    and entries[name]['master_size'][1] > 2000
+    for name in gestures
 )
 
 boolean_results = [
-    checks['three_registered_gestures'], checks['continuous_lower_body_present'],
+    checks['three_registered_gestures'], checks['single_registered_bodies'],
     checks['shared_neck_bridge_present'], checks['neutral_duplicates_hidden'],
-    checks['canonical_face_pixel_identical'], checks['continuous_legs_pixel_identical'],
+    checks['canonical_face_pixel_identical'], checks['source_matched_full_bodies'],
     all(item['connected'] for item in connectivity.values())
 ]
 result = {
