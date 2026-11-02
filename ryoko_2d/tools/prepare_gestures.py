@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Register cleaned upper-body alternate drawings to the approved 1024x1536 master."""
+"""Register cleaned full-body gesture drawings to the approved 1024x1536 reference."""
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFilter,ImageFont
 import numpy as np
@@ -78,6 +78,12 @@ for name,cfg in routes.items():
   sy0=max(0,int((hy0-ty)/scale));sy1=min(src.height,int((hy1-ty)/scale)+1)
   restore=np.zeros(clean_array.shape[:2],bool);restore[sy0:sy1,sx0:sx1]=True;restore&=skin_source
   clean_array[restore]=source_array[restore]
+ # Restore chromatic skin on the chest, legs and ankles as well. The neutral
+ # sheet remains excluded by the red/green and green/blue chroma guards.
+ lower_skin=np.zeros(clean_array.shape[:2],bool)
+ lower_skin[max(0,int((285-ty)/scale)):min(src.height,int((1520-ty)/scale)+1),:]=True
+ lower_skin&=skin_source
+ clean_array[lower_skin]=source_array[lower_skin]
  # Reveal only the original interiors of the drawn fingers and palms. These
  # interior strokes never cross the true background gaps between fingers.
  interior=Image.new('L',src.size,0);draw=ImageDraw.Draw(interior)
@@ -93,6 +99,8 @@ for name,cfg in routes.items():
  a=np.array(full);rgb=a[:,:,:3].astype(np.int16);white=(rgb.min(2)>205)&((rgb.max(2)-rgb.min(2))<30)
  protect=Image.new('L',full.size,0);pd=ImageDraw.Draw(protect)
  pd.polygon([(415*S,235*S),(605*S,235*S),(610*S,430*S),(575*S,650*S),(450*S,650*S),(415*S,430*S)],fill=255)
+ pd.rectangle((370*S,1330*S,480*S,1520*S),fill=255)
+ pd.rectangle((545*S,1330*S,655*S,1520*S),fill=255)
  for key in ('pocket','raised_cuff','lowered_cuff'):
   box=cfg.get(key,(0,0,0,0))
   if box[2]>box[0] and box[3]>box[1]:
@@ -145,6 +153,7 @@ for name,cfg in routes.items():
  mask_array[residual_zone&hair]=0
  head_hand_restore=hand_foreground.copy();head_hand_restore[345*S:,:]=False;mask_array[head_hand_restore]=255;mask=Image.fromarray(mask_array,'L')
  mask=mask.filter(ImageFilter.GaussianBlur(.6))
+ lower_source=full.copy()
  full.putalpha(Image.fromarray(np.minimum(np.array(full.getchannel('A')),np.array(mask)).astype(np.uint8),'L'))
  # The alternate head is now detached from the torso. Keep the main body and all
  # hand-connected components; discard detached head fragments and isolated matte.
@@ -154,6 +163,7 @@ for name,cfg in routes.items():
  # every detached component inside a hand box also preserved isolated matte.
  a[~keep,3]=0;full=Image.fromarray(a,'RGBA')
  full=register_torso_to_neutral_head(full,cfg)
+ lower_full=register_torso_to_neutral_head(lower_source,cfg)
  # The upward torso registration can pull residual alternate head pixels into
  # the fixed-head region. Clean them after warping too, without cutting the
  # raised finger-wag hand or the continuous jacket and collar below y=225.
@@ -175,10 +185,48 @@ for name,cfg in routes.items():
  crop=full.crop((x0,y0,x1,y1))
  ca=np.array(crop);cl,cn=ndimage.label(ca[:,:,3]>0);cs=np.bincount(cl.ravel());cs[0]=0
  ca[cl!=int(cs.argmax()),3]=0;crop=Image.fromarray(ca,'RGBA');crop.save(OUT/f'{name}.png')
- entries.append({'name':name,'source':f'reference_library/assets/body/{cfg["file"]}','registered_png':f'artwork/gestures/{name}.png','enabled_neutral':False,'z':36.5,'parent':'torso','master_xy':[x0,y0],'master_size':list(crop.size),'pivot_ref':[512,280],'pivot_master':[1024,560],'action_id':cfg['action'],'registration':{'source_scale_to_reference':scale,'source_translation_ref':[tx,ty],'source_foreground_top_bottom':[top,bottom],'head_and_alternate_neck_excluded':True,'shoulders_and_original_blouse_preserved':True,'torso_shift_ref':cfg['torso_shift_ref'],'head_offset_ref':[0,0],'background_removed':True,'complete_hand_protection_ref':cfg['hands'],'lowered_hand_preserved_below_torso_overlap':name in ('gesture_finger_wag','gesture_wave')},'role':'registered cleaned upper-body alternate drawing for the shared cutout rig'})
+ # Build the authoritative single-body derivative from the same complete registered
+ # drawing. No second upper/lower copy is composited, so hems, arms, pelvis, legs
+ # and heels retain their source alignment.
+ la=np.array(lower_full);ll,ln=ndimage.label(la[:,:,3]>10);ls=np.bincount(ll.ravel());ls[0]=0
+ la[ll!=int(ls.argmax()),3]=0
+ body_alpha=la[:,:,3].copy()
+ lrgb=la[:,:,:3].astype(np.int16)
+ lhair=(lrgb[:,:,1]>lrgb[:,:,0]+7)&(lrgb[:,:,1]>lrgb[:,:,2]+4)&(lrgb.max(2)<235)
+ lyy=np.arange(3072,dtype=np.float32)[:,None]/S
+ underlay_transition=(lyy>=235)&(lyy<285)
+ la[underlay_transition&lhair,3]=0
+ underlay_ramp=np.clip((lyy-235)/40.0,0,1)
+ la[:,:,3]=(la[:,:,3].astype(np.float32)*underlay_ramp).astype(np.uint8)
+ if name in ('gesture_finger_wag','gesture_wave'):
+  hx0,hy0,hx1,hy1=cfg['hands'][0]
+  hand_restore=np.zeros(la.shape[:2],bool)
+  hand_restore[hy0*S:hy1*S,hx0*S:hx1*S]=True
+  la[hand_restore,3]=body_alpha[hand_restore]
+ fl,fn=ndimage.label(la[:,:,3]>10);fs=np.bincount(fl.ravel());fs[0]=0
+ la[fl!=int(fs.argmax()),3]=0
+ registered=Image.fromarray(la,'RGBA')
+ registered_box=(x0,y0,x1,1520*S);registered=registered.crop(registered_box);registered.save(OUT/f'{name}_registered.png')
+ # Replace the experimental split upper/lower entries with one coherent body.
+ entries=[e for e in entries if e['name'] not in (name,f'{name}_lower_body')]
+ entries.append({'name':name,'source':f'reference_library/assets/body/{cfg["file"]}','registered_png':f'artwork/gestures/{name}_registered.png','enabled_neutral':False,'z':20.0,'parent':'torso','master_xy':[registered_box[0],registered_box[1]],'master_size':list(registered.size),'pivot_ref':[512,280],'pivot_master':[1024,560],'action_id':cfg['action'],'registration':{'source_scale_to_reference':scale,'source_translation_ref':[tx,ty],'source_foreground_top_bottom':[top,bottom],'head_and_alternate_neck_excluded':True,'shoulders_and_original_blouse_preserved':True,'torso_shift_ref':cfg['torso_shift_ref'],'head_offset_ref':[0,0],'background_removed':True,'complete_hand_protection_ref':cfg['hands'],'single_registered_body':True},'role':'single coherent registered full-body alternate; fixed canonical head composites above'})
 # A narrow canonical neck bridge joins the approved head to each original torso.
 # The alternate drawing keeps its own collar, blouse, jewelry, shoulders and jacket.
 placement=json.loads((MAN/'placement_manifest.json').read_text());base_entries=placement['layers']
+# The neutral rear-hair cut includes covered neck/collar/jacket pixels. Gesture
+# swaps expose them, so use a hair-only derivative while leaving neutral intact.
+rear_base=next(e for e in base_entries if e['name']=='rear_hair')
+rear=Image.open(ROOT/rear_base['registered_png']).convert('RGBA');ra=np.array(rear);rrgb=ra[:,:,:3].astype(np.int16)
+hair_core=(rrgb[:,:,1]>rrgb[:,:,0]+2)&(rrgb[:,:,1]>rrgb[:,:,2]+1)
+hair_support=ndimage.binary_dilation(hair_core,iterations=2)
+hair_tint=(rrgb[:,:,1]>=rrgb[:,:,0]-3)&(rrgb[:,:,1]>=rrgb[:,:,2]-3)
+rear_mask=Image.fromarray(np.where(hair_support&hair_tint,255,0).astype(np.uint8),'L').filter(ImageFilter.GaussianBlur(.5))
+rear.putalpha(Image.fromarray(np.minimum(ra[:,:,3],np.array(rear_mask)).astype(np.uint8),'L'))
+ra=np.array(rear);ra[max(0,250*S-rear_base['master_xy'][1]):,:,3]=0
+rl,rn=ndimage.label(ra[:,:,3]>10);rs=np.bincount(rl.ravel());rs[0]=0
+ra[~np.isin(rl,np.where(rs>=24)[0]),3]=0;rear=Image.fromarray(ra,'RGBA')
+rear.save(OUT/'gesture_rear_hair.png')
+entries.append({'name':'gesture_rear_hair','source':'approved canonical rear-hair layer; non-hair overlap removed for gesture swaps','registered_png':'artwork/gestures/gesture_rear_hair.png','enabled_neutral':False,'z':10.0,'parent':'head','master_xy':rear_base['master_xy'],'master_size':list(rear.size),'pivot_ref':[512,250],'pivot_master':[1024,500],'role':'hair-only rear layer; prevents neck, collar and jacket duplication above gesture torsos'})
 bridge=Image.new('RGBA',(2048,3072))
 for e in sorted(base_entries,key=lambda item:item['z']):
  if e['name'] in ('neck',):
@@ -198,27 +246,19 @@ bridge_alpha*=np.array(skin_mask).astype(np.float32)/255.0
 bridge.putalpha(Image.fromarray(bridge_alpha.astype(np.uint8),'L'))
 bridge_box=(455*S,205*S,565*S,340*S);bridge=bridge.crop(bridge_box);bridge.save(OUT/'gesture_neck_bridge.png')
 entries.append({'name':'gesture_neck_bridge','source':'approved canonical neck layer only; original gesture collar, blouse and jewelry preserved','registered_png':'artwork/gestures/gesture_neck_bridge.png','enabled_neutral':False,'z':37.0,'parent':'torso','master_xy':[bridge_box[0],bridge_box[1]],'master_size':list(bridge.size),'pivot_ref':[512,280],'pivot_master':[1024,560],'role':'narrow registered canonical neck join; no torso, shoulder, face or blouse replacement'})
-# One continuous lower-body drawing prevents flat leg-top seams and excludes neutral hands.
-canonical=Image.open(ROOT/'artwork/derivatives/canonical_fullbody_background_removed.png').convert('RGBA')
-lower_mask=Image.new('L',canonical.size,0);ld=ImageDraw.Draw(lower_mask)
-ld.polygon([(430*S,640*S),(590*S,640*S),(635*S,680*S),(655*S,720*S),(650*S,760*S),(648*S,925*S),(648*S,1130*S),(631*S,1342*S),(640*S,1510*S),(554*S,1510*S),(562*S,1342*S),(548*S,1130*S),(524*S,925*S),(512*S,780*S),(500*S,925*S),(476*S,1130*S),(462*S,1342*S),(470*S,1510*S),(385*S,1510*S),(393*S,1342*S),(376*S,1130*S),(365*S,925*S),(365*S,760*S),(365*S,720*S),(395*S,680*S)],fill=255)
-lower_alpha=np.minimum(np.array(canonical.getchannel('A')),np.array(lower_mask)).astype(np.uint8)
-canonical.putalpha(Image.fromarray(lower_alpha,'L'))
-la=np.array(canonical);ll,ln=ndimage.label(la[:,:,3]>10);ls=np.bincount(ll.ravel());ls[0]=0
-la[ll!=int(ls.argmax()),3]=0;canonical=Image.fromarray(la,'RGBA')
-lower_box=(345*S,640*S,680*S,1520*S);lower=canonical.crop(lower_box);lower.save(OUT/'gesture_lower_body.png')
-entries.append({'name':'gesture_lower_body','source':'approved canonical full-body derivative; continuous trousers, pelvis, ankles and heels','registered_png':'artwork/gestures/gesture_lower_body.png','enabled_neutral':False,'z':20.0,'parent':'pelvis','master_xy':[lower_box[0],lower_box[1]],'master_size':list(lower.size),'pivot_ref':[512,650],'pivot_master':[1024,1300],'role':'continuous canonical lower body for all upper-body gesture swaps; excludes hands'})
 (MAN/'gesture_layers.json').write_text(json.dumps({'canvas_reference':[1024,1536],'canvas_master':[2048,3072],'gesture_hide':['torso_garment','upper_arm_R','upper_arm_L','forearm_R','forearm_L','hand_R','hand_L','registration_underlap','canonical_pelvis','trousers_leg_front_R','trousers_leg_front_L','shoe_R','shoe_L','neck','belt_gold_buckle','necklace_chain','green_pendant'],'layers':entries},indent=2))
 # Assemble real gesture previews on the approved neutral head, hair, jewelry and lower body.
 hide=set(json.loads((MAN/'gesture_layers.json').read_text())['gesture_hide'])
+clean_rear_entry=next(x for x in entries if x['name']=='gesture_rear_hair')
 def composite(gesture=None,bg=(24,29,34,255)):
  can=Image.new('RGBA',(2048,3072))
  for e in base_entries:
   if not e['enabled_neutral'] or e['name'] in hide:continue
   if gesture and e['parent']=='head' and e['z']>=32:continue  # redraw the face and front head once, above the swap
+  if gesture and e['name']=='rear_hair':
+   can.alpha_composite(Image.open(ROOT/clean_rear_entry['registered_png']).convert('RGBA'),tuple(clean_rear_entry['master_xy']));continue
   can.alpha_composite(Image.open(ROOT/e['registered_png']).convert('RGBA'),tuple(e['master_xy']))
  if gesture:
-  lower_entry=next(x for x in entries if x['name']=='gesture_lower_body');can.alpha_composite(Image.open(ROOT/lower_entry['registered_png']).convert('RGBA'),tuple(lower_entry['master_xy']))
   gesture_entry=next(x for x in entries if x['name']==gesture);can.alpha_composite(Image.open(ROOT/gesture_entry['registered_png']).convert('RGBA'),tuple(gesture_entry['master_xy']))
   offset=[0,0]
   bridge_entry=next(x for x in entries if x['name']=='gesture_neck_bridge');can.alpha_composite(Image.open(ROOT/bridge_entry['registered_png']).convert('RGBA'),(bridge_entry['master_xy'][0]+offset[0],bridge_entry['master_xy'][1]+offset[1]))
