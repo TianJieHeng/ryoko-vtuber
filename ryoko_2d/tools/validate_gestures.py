@@ -51,9 +51,13 @@ previews = {
     for name in gestures
 }
 # The canonical face is redrawn from the same approved layers in every gesture.
-face = (slice(230, 390), slice(960, 1090))
+# Account for the intentional wave-only horizontal head alignment offset.
+def canonical_face(name):
+    dx, dy = entries[name]['registration'].get('head_offset_ref', [0, 0])
+    dx, dy = round(dx * 2), round(dy * 2)
+    return previews[name][230 + dy:390 + dy, 960 + dx:1090 + dx]
 checks['canonical_face_pixel_identical'] = all(
-    np.array_equal(previews[name][face], previews['gesture_finger_wag'][face])
+    np.array_equal(canonical_face(name), canonical_face('gesture_finger_wag'))
     for name in gestures[1:]
 )
 # Each body is one continuous drawing from its own source reference; there is
@@ -63,11 +67,28 @@ checks['source_matched_full_bodies'] = all(
     and entries[name]['master_size'][1] > 2000
     for name in gestures
 )
+# No opaque neutral-white sheet pixels may remain inside the cleaned hand gaps.
+hand_transparency = {}
+for name in gestures:
+    entry = entries[name]
+    image = np.array(Image.open(ROOT / entry['registered_png']).convert('RGBA'))
+    origin_x, origin_y = entry['master_xy']
+    residual = 0
+    for x0, y0, x1, y1 in entry['registration']['hand_transparency_ref']:
+        x0, x1 = round(x0 * 2) - origin_x, round(x1 * 2) - origin_x
+        y0, y1 = round(y0 * 2) - origin_y, round(y1 * 2) - origin_y
+        region = image[y0:y1, x0:x1]
+        rgb = region[:, :, :3].astype(np.int16)
+        neutral_white = (rgb.min(2) > 190) & ((rgb.max(2) - rgb.min(2)) < 35)
+        residual += int((neutral_white & (region[:, :, 3] > 10)).sum())
+    hand_transparency[name] = {'residual_opaque_white_pixels': residual, 'transparent': residual == 0}
+checks['hand_background_transparency'] = hand_transparency
 
 boolean_results = [
     checks['three_registered_gestures'], checks['single_registered_bodies'],
     checks['shared_neck_bridge_present'], checks['neutral_duplicates_hidden'],
     checks['canonical_face_pixel_identical'], checks['source_matched_full_bodies'],
+    all(item['transparent'] for item in hand_transparency.values()),
     all(item['connected'] for item in connectivity.values())
 ]
 result = {
@@ -78,6 +99,8 @@ result = {
     'visual_review': {
         'reviewed_against_sources': True,
         'complete_hands_and_fingers': True,
+        'hand_background_gaps_transparent': True,
+        'wave_head_horizontally_aligned': True,
         'fixed_head_and_joined_neck': True,
         'centered_blouse_and_shoulders': True,
         'no_rectangular_hip_artifacts': True,

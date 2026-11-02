@@ -19,7 +19,7 @@
     "connected_artwork": {
       "gesture_finger_wag": {
         "significant_components": 1,
-        "foreground_pixels": 1057367,
+        "foreground_pixels": 1054830,
         "connected": true
       },
       "gesture_crossed_arms": {
@@ -29,7 +29,7 @@
       },
       "gesture_wave": {
         "significant_components": 1,
-        "foreground_pixels": 1170449,
+        "foreground_pixels": 1167734,
         "connected": true
       },
       "gesture_rear_hair": {
@@ -44,11 +44,27 @@
       }
     },
     "canonical_face_pixel_identical": true,
-    "source_matched_full_bodies": true
+    "source_matched_full_bodies": true,
+    "hand_background_transparency": {
+      "gesture_finger_wag": {
+        "residual_opaque_white_pixels": 0,
+        "transparent": true
+      },
+      "gesture_crossed_arms": {
+        "residual_opaque_white_pixels": 0,
+        "transparent": true
+      },
+      "gesture_wave": {
+        "residual_opaque_white_pixels": 0,
+        "transparent": true
+      }
+    }
   },
   "visual_review": {
     "reviewed_against_sources": true,
     "complete_hands_and_fingers": true,
+    "hand_background_gaps_transparent": true,
+    "wave_head_horizontally_aligned": true,
     "fixed_head_and_joined_neck": true,
     "centered_blouse_and_shoulders": true,
     "no_rectangular_hip_artifacts": true,

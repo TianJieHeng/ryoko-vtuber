@@ -10,6 +10,8 @@
 - Preserved the approved canonical head, face, hair, and accessories. Cleaned rear hair contains hair only and remains behind the body; face and front-head layers composite once above each gesture.
 - Added a narrow canonical neck bridge and a feathered body transition without stretching the face or blouse. Removed the duplicate body copies and non-hair rear-layer pixels that caused the reported neck, collar, and shoulder overlap lines.
 - Restored pale hand interiors with source-space chroma guards and retained complete fingers and true background gaps.
+- Removed the identified enclosed thumb-gap sheet components in `BOD-002` and `BOD-011`, with cleanup restricted to small source-registered gap boxes so pale finger edges elsewhere remain intact.
+- Corrected the wave head alignment with a 12-reference-pixel horizontal offset applied to the complete canonical head, rear hair, and neck bridge; other gestures remain unchanged.
 - Removed alternate-head remnants after registration, residual matte, duplicate neutral parts, rectangular hip fragments, and detached components.
 - Preserved original collar, blouse, shoulders, cuffs, pocket details, and garment artwork.
 
@@ -21,10 +23,11 @@
 - Single registered full-body artwork and source-matched paths for all three gestures.
 - Required neutral-layer hide list and shared neck bridge.
 - One significant connected component per gesture body and neck bridge; valid separated hair components for the hair-only rear layer.
-- Pixel-identical canonical central face across all three gestures.
+- Pixel-identical canonical central face across all three gestures after accounting for the intentional wave-only head offset.
+- Zero opaque neutral-white sheet pixels in the source-registered finger-wag and wave thumb-gap regions.
 - PNG dimensions matching gesture metadata.
 
-Final full-size visual review covered the face, neck, shoulders, collar, raised and lowered hands, crossed arms, jacket-to-hip joins, trousers, ankles, and heels against a dark background. The review found no duplicate torso copies, dark neck notches, wave jacket/hip copy seam, or isolated matte/hair specks.
+Final full-size and close-up visual review covered the wave head alignment, transparent thumb gaps, preserved raised-hand finger edges, face, neck, shoulders, collar, crossed arms, jacket-to-hip joins, trousers, ankles, and heels against a dark background. The review found no retained white hand-background patches, duplicate torso copies, dark neck notches, wave jacket/hip copy seam, or isolated matte/hair specks.
 
 ## Approval and scope
 

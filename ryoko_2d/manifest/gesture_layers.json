@@ -86,6 +86,14 @@
             895
           ]
         ],
+        "hand_transparency_ref": [
+          [
+            660,
+            772,
+            698,
+            828
+          ]
+        ],
         "single_registered_body": true
       },
       "role": "single coherent registered full-body alternate; fixed canonical head composites above"
@@ -149,6 +157,7 @@
             485
           ]
         ],
+        "hand_transparency_ref": [],
         "single_registered_body": true
       },
       "role": "single coherent registered full-body alternate; fixed canonical head composites above"
@@ -194,7 +203,7 @@
           -40
         ],
         "head_offset_ref": [
-          0,
+          12,
           0
         ],
         "background_removed": true,
@@ -210,6 +219,14 @@
             710,
             742,
             895
+          ]
+        ],
+        "hand_transparency_ref": [
+          [
+            706,
+            810,
+            744,
+            866
           ]
         ],
         "single_registered_body": true
