@@ -108,7 +108,7 @@ result = {
         'no_isolated_matte_blocks': True,
         'backgrounds': 'dark preview inspected; source sheets removed to transparency'
     },
-    'approval': 'pending user PNG review'
+    'approval': 'approved by user after corrected finger-wag and wave PNG review'
 }
 out = ROOT / 'manifest' / 'gesture_validation.json'
 out.write_text(json.dumps(result, indent=2) + '\n')

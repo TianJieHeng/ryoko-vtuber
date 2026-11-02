@@ -31,6 +31,6 @@ Final full-size and close-up visual review covered the wave head alignment, tran
 
 ## Approval and scope
 
-- User approval: pending review of the three corrected PNGs.
-- Phase 4 runtime integration, motion proof, and UDP live-control verification have not started.
+- User approval: approved after review of the corrected finger-wag and wave PNGs (“Good work”).
+- Phase 4 runtime integration, motion proof, and UDP live-control verification have not started; the user requested this handoff before runtime work resumes.
 - These are registered 2D alternate drawings, not volumetric models or runtime-verified animation yet.
