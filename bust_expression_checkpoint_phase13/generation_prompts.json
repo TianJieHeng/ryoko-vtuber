@@ -1,0 +1,14 @@
+{
+  "164": {
+    "rest": "Edit image1 approved 2D bust. Image2 exact facial expression reference. Preserve image1 head position, scale, outline, face shape, nose, hair, suit, neck, jewelry, skin tone and framing. Change ONLY facial eyes, brows, mouth and specified blush/creases to match image2. Fighting sleep: heavy half-open lids with amber irises visible, inward tense unequal eyebrows, closed pressed slightly downturned lips. Resisting sleep, not relaxed/slack open mouth. No pose change, no head tilt, no text. Seamless skin. Same bust framing and transparent background.",
+    "blink": "Edit this exact avatar to BOTH eyes completely closed for blink. Remove open-eye iris/sclera and open eyelash lines, leave only one closed eyelid lash line per eye. Preserve exact eyebrows, mouth, blush, face, hair, position, scale, suit, neck, jewelry and transparent background. No other changes."
+  },
+  "082": {
+    "rest": "Edit image1 approved 2D bust. Image2 exact facial expression reference. Preserve image1 head position, scale, outline, face shape, nose, hair, suit, neck, jewelry, skin tone and framing. Change ONLY facial eyes, brows, mouth and specified blush/creases to match image2. Repulsed recoil facial peak: BOTH eyes squeezed completely closed with no visible amber, strongly scrunched nose and inner brows, small arched DOWNturned tooth-exposing grimace. Not smile, not shouting. Keep head and body stationary. No pose change, no head tilt, no text. Seamless skin. Same bust framing and transparent background.",
+    "blink": "Closed rest reused"
+  },
+  "088": {
+    "rest": "Edit image1 approved 2D bust. Image2 exact facial expression reference. Preserve image1 head position, scale, outline, face shape, nose, hair, suit, neck, jewelry, skin tone and framing. Change ONLY facial eyes, brows, mouth and specified blush/creases to match image2. Awkward discomfort: BOTH irises looking viewer-RIGHT, worried lifted inner eyebrows, pronounced pink cheek blush with fine diagonal hatching, closed uneven uneasy half-smile. No open mouth, no anger. Preserve asymmetrical awkward lips. No pose change, no head tilt, no text. Seamless skin. Same bust framing and transparent background.",
+    "blink": "Edit this exact avatar to BOTH eyes completely closed for blink. Remove open-eye iris/sclera and open eyelash lines, leave only one closed eyelid lash line per eye. Preserve exact eyebrows, mouth, blush, face, hair, position, scale, suit, neck, jewelry and transparent background. No other changes."
+  }
+}
