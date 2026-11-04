@@ -1,0 +1,12 @@
+config_version=5
+[application]
+config/name="Ryoko bust facial checkpoint"
+run/main_scene="res://preview.tscn"
+[display]
+window/size/viewport_width=1136
+window/size/viewport_height=1384
+window/size/window_width_override=568
+window/size/window_height_override=692
+[rendering]
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.12,0.13,0.14,1)
