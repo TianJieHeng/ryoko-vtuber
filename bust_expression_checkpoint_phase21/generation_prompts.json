@@ -1,0 +1,20 @@
+{
+  "160": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-94fea3a1-6eca-4158-9bab-0fb22112ae36.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-94fea3a1-6eca-4158-9bab-0fb22112ae36.png",
+    "prompt": "Edit image1 approved bust identity/placement target; image2 exact facial acting reference only. Preserve upright fixed head position, scale, contour, nose, outer hairstyle/main forehead bangs, body, jewelry, clothes, transparency. Change only eyes/brows/mouth/specified effects: Shy laughter: BOTH eyes fully closed happy crescents, shy raised inner brows, ONE continuous soft pink cheek blush with fine diagonal hatching, SMALL open happy smile with tongue and upper-teeth detail. Not huge laughing mouth. Clean cheek skin without detached curved green hair tips below eyes. No repeated blush patches or bands. No text.",
+    "blinkPrompt": "Closed rest reused"
+  },
+  "056": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-bbcd8ec0-c098-4949-aa6f-fa5d89f4493b.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-170dbec5-5f8d-46ec-888c-c21b600fc98f.png",
+    "prompt": "Edit image1 approved bust identity/placement target; image2 exact facial acting reference only. Preserve upright fixed head position, scale, contour, nose, outer hairstyle/main forehead bangs, body, jewelry, clothes, transparency. Change only eyes/brows/mouth/specified effects: Competitive grit: strong LOW inward V eyebrows, central nose-bridge tension creases, sharply direct narrowed amber eyes, tense UPturned clenched-tooth grin with horizontal white teeth band. No blush. Clean cheek skin without detached curved green hair tips below eyes. No repeated blush patches or bands. No text.",
+    "blinkPrompt": "Edit exact avatar to BOTH eyes fully closed for blink; remove open irises/sclera/open lash lines, one closed eyelid each. Preserve exact eyebrows, expression mouth, nose creases, cheek skin, head position/size, hair, clothes, jewelry, transparency. No other changes."
+  },
+  "095": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-d2651fe1-e737-4b36-a4ff-51d8d959dc2c.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-71c28f9f-894a-43e1-85e4-4e4151cbd2a0.png",
+    "prompt": "Edit image1 approved bust identity/placement target; image2 exact facial acting reference only. Preserve upright fixed head position, scale, contour, nose, outer hairstyle/main forehead bangs, body, jewelry, clothes, transparency. Change only eyes/brows/mouth/specified effects: Cold shiver: raised worried INNER brows, narrowed OPEN amber eyes, small symmetric horizontal downturned clenched-teeth mouth. Minimal blush, no hatch bands, no tears. Clean cheek skin without detached curved green hair tips below eyes. No repeated blush patches or bands. No text.",
+    "blinkPrompt": "Edit exact avatar to BOTH eyes fully closed for blink; remove open irises/sclera/open lash lines, one closed eyelid each. Preserve exact eyebrows, expression mouth, nose creases, cheek skin, head position/size, hair, clothes, jewelry, transparency. No other changes."
+  }
+}
