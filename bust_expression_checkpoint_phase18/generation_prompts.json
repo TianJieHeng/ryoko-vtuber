@@ -1,0 +1,20 @@
+{
+  "107": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-458bb2e9-8d67-4965-85c1-f6d06c49cb16.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-d99d96ce-fc27-49ad-a859-a95a8e042f5f.png",
+    "prompt": "Edit image1 approved bust identity/placement target; image2 exact expression reference ONLY. Preserve image1 head position, size, outline, hair, nose, neck, jewelry, suit, framing and transparent background. Change ONLY eyes, brows, mouth, specified cheek blush: Confident reassurance: soft near-level relaxed brows, relaxed direct half-open amber eyes, modest open warm smile with small upper-teeth strip and tongue. No blush, no worried brows. Match exact acting. Fixed upright head. Seamless skin, no text.",
+    "blinkPrompt": "Edit this exact bust to BOTH eyes completely closed for blink. Remove open irises/sclera/open lashes. Only one fully closed eyelid per eye. Preserve exact eyebrows, expression mouth, blush, skin, face alignment, hair, body, jewelry and transparent background. No other change."
+  },
+  "194": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-20a9f12f-866a-4503-8991-ec6516ec3792.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-20a9f12f-866a-4503-8991-ec6516ec3792.png",
+    "prompt": "Edit image1 approved bust identity/placement target; image2 exact expression reference ONLY. Preserve image1 head position, size, outline, hair, nose, neck, jewelry, suit, framing and transparent background. Change ONLY eyes, brows, mouth, specified cheek blush: Mock crying: BOTH eyes completely closed, dramatic peaked raised inner brows, downturned open crying mouth with tongue and dark interior but NO white teeth band. Subtle cheek flush. NO tear streams. Match exact acting. Fixed upright head. Seamless skin, no text.",
+    "blinkPrompt": "Closed rest reused"
+  },
+  "097": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-9025422c-d836-4174-a5cb-57b7beb81387.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-c04da970-4594-487e-9b28-7a5a1f67784f.png",
+    "prompt": "Edit image1 approved bust identity/placement target; image2 exact expression reference ONLY. Preserve image1 head position, size, outline, hair, nose, neck, jewelry, suit, framing and transparent background. Change ONLY eyes, brows, mouth, specified cheek blush: Secondhand embarrassment: viewer-right eye COMPLETELY closed, viewer-left eye narrowly open showing amber, high worried inner brows, strong pink cheek blush with diagonal hatching, tightly CLOSED wavy strained smile NO teeth. Normal cheeks. Match exact acting. Fixed upright head. Seamless skin, no text.",
+    "blinkPrompt": "Edit this exact bust to BOTH eyes completely closed for blink. Remove open irises/sclera/open lashes. Only one fully closed eyelid per eye. Preserve exact eyebrows, expression mouth, blush, skin, face alignment, hair, body, jewelry and transparent background. No other change."
+  }
+}
