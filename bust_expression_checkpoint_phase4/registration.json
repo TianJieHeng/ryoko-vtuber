@@ -1,0 +1,629 @@
+{
+  "size": [
+    1136,
+    1384
+  ],
+  "mouths": {
+    "neutral": {
+      "file": "mouth_neutral.png",
+      "xy": [
+        480,
+        590
+      ]
+    },
+    "A": {
+      "file": "mouth_A.png",
+      "xy": [
+        512,
+        622
+      ]
+    },
+    "E": {
+      "file": "mouth_E.png",
+      "xy": [
+        512,
+        622
+      ]
+    },
+    "I": {
+      "file": "mouth_I.png",
+      "xy": [
+        512,
+        622
+      ]
+    },
+    "O": {
+      "file": "mouth_O.png",
+      "xy": [
+        532,
+        622
+      ]
+    },
+    "U": {
+      "file": "mouth_U.png",
+      "xy": [
+        529,
+        622
+      ]
+    }
+  },
+  "blinks": {
+    "R": {
+      "file": "blink_R.png",
+      "xy": [
+        395,
+        450
+      ]
+    },
+    "L": {
+      "file": "blink_L.png",
+      "xy": [
+        585,
+        450
+      ]
+    }
+  },
+  "note": "Local facial-control preview. Flat bust base; independent mouth and eyelid sprites. No head/body deformation yet.",
+  "expressions": {
+    "EXP-002": {
+      "eyes": {
+        "R": {
+          "file": "EXP-002_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-002_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-002_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-002_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": true,
+      "mouth": {
+        "file": "EXP-002_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      }
+    },
+    "EXP-041": {
+      "eyes": {
+        "R": {
+          "file": "EXP-041_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-041_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-041_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-041_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "mouth": {
+        "file": "EXP-041_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      }
+    },
+    "EXP-061": {
+      "eyes": {
+        "R": {
+          "file": "EXP-061_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-061_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-061_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-061_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "mouth": {
+        "file": "EXP-061_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      }
+    },
+    "EXP-021": {
+      "eyes": {
+        "R": {
+          "file": "EXP-021_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-021_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-021_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-021_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "wink_closed_side": "",
+      "mouth": {
+        "file": "EXP-021_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      }
+    },
+    "EXP-102": {
+      "eyes": {
+        "R": {
+          "file": "EXP-102_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-102_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-102_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-102_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "wink_closed_side": "",
+      "mouth": {
+        "file": "EXP-102_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      }
+    },
+    "EXP-181": {
+      "eyes": {
+        "R": {
+          "file": "EXP-181_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-181_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-181_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-181_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "wink_closed_side": "L",
+      "mouth": {
+        "file": "EXP-181_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      }
+    },
+    "EXP-123": {
+      "eyes": {
+        "R": {
+          "file": "EXP-123_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-123_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-123_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-123_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "mouth": {
+        "file": "EXP-123_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      },
+      "effects": []
+    },
+    "EXP-142": {
+      "eyes": {
+        "R": {
+          "file": "EXP-142_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-142_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-142_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-142_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "mouth": {
+        "file": "EXP-142_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      },
+      "effects": [
+        {
+          "file": "EXP-142_blush_R.png",
+          "xy": [
+            406,
+            521
+          ]
+        },
+        {
+          "file": "EXP-142_blush_L.png",
+          "xy": [
+            581,
+            521
+          ]
+        }
+      ]
+    },
+    "EXP-163": {
+      "eyes": {
+        "R": {
+          "file": "EXP-163_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-163_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-163_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-163_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": true,
+      "mouth": {
+        "file": "EXP-163_rest_mouth.png",
+        "xy": [
+          490,
+          575
+        ]
+      },
+      "effects": []
+    },
+    "EXP-023": {
+      "eyes": {
+        "R": {
+          "file": "EXP-023_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-023_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-023_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-023_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": true,
+      "mouth": {
+        "file": "EXP-023_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      },
+      "effects": [
+        {
+          "file": "EXP-023_blush_R.png",
+          "xy": [
+            406,
+            521
+          ]
+        },
+        {
+          "file": "EXP-023_blush_L.png",
+          "xy": [
+            581,
+            521
+          ]
+        }
+      ]
+    },
+    "EXP-081": {
+      "eyes": {
+        "R": {
+          "file": "EXP-081_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-081_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-081_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-081_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "mouth": {
+        "file": "EXP-081_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      },
+      "effects": [
+        {
+          "file": "EXP-081_nose_scrunch.png",
+          "xy": [
+            526,
+            480
+          ]
+        }
+      ]
+    },
+    "EXP-192": {
+      "eyes": {
+        "R": {
+          "file": "EXP-192_eye_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-192_eye_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "blinks": {
+        "R": {
+          "file": "EXP-192_blink_R.png",
+          "xy": [
+            394,
+            350
+          ]
+        },
+        "L": {
+          "file": "EXP-192_blink_L.png",
+          "xy": [
+            590,
+            350
+          ]
+        }
+      },
+      "eyes_closed_at_rest": false,
+      "mouth": {
+        "file": "EXP-192_rest_mouth.png",
+        "xy": [
+          484,
+          594
+        ]
+      },
+      "effects": [
+        {
+          "file": "EXP-192_puffed_contour.png",
+          "xy": [
+            390,
+            520
+          ],
+          "rest_only": true
+        }
+      ]
+    }
+  }
+}
