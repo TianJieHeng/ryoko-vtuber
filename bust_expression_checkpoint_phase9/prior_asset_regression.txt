@@ -1,0 +1,1 @@
+PASS: all 147 prior artwork PNGs byte-identical.
