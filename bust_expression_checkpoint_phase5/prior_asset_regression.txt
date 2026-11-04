@@ -1,0 +1,1 @@
+PASS: all 76 prior artwork PNGs byte-identical. No previously approved expression art changed.

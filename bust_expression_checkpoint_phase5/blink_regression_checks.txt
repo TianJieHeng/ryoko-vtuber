@@ -1,0 +1,6 @@
+Mouth neutral unchanged: PASS
+Mouth A unchanged: PASS
+Mouth E unchanged: PASS
+Mouth I unchanged: PASS
+Mouth O unchanged: PASS
+Mouth U unchanged: PASS
