@@ -1,0 +1,14 @@
+{
+  "114": {
+    "rest": "Edit image1 approved 2D bust avatar. Image2 EXACT facial acting reference. Preserve image1 head position, scale, face shape, hair, suit, neck, jewelry, framing. Change ONLY eyes, brows, mouth and specified facial effects to match image2. Daring provocation: uneven brows and unequal eye heights, crooked NARROW tooth-showing grin. Do NOT tilt head like reference; transfer facial acting onto fixed upright head. Not broad symmetric grin. Fixed body and head. Seamless skin, no text. Same full bust, transparent background.",
+    "blink": "Edit this exact avatar to BOTH eyes completely closed for blink. Remove open-eye iris/sclera and open eyelash lines, leave only one closed eyelid lash line per eye. Preserve exact eyebrows, mouth, face, hair, position, scale, suit, neck, jewelry and transparent background. No other changes."
+  },
+  "029": {
+    "rest": "Edit image1 approved 2D bust avatar. Image2 EXACT facial acting reference. Preserve image1 head position, scale, face shape, hair, suit, neck, jewelry, framing. Change ONLY eyes, brows, mouth and specified facial effects to match image2. Exhausted grief: almost closed heavy drooping eyelids with tiny amber slivers, raised inner brows, slack downturned slightly open mouth. Sorrow not relaxed sleep. Fixed body and head. Seamless skin, no text. Same full bust, transparent background.",
+    "blink": "Edit this exact avatar to BOTH eyes completely closed for blink. Remove open-eye iris/sclera and open eyelash lines, leave only one closed eyelid lash line per eye. Preserve exact eyebrows, mouth, face, hair, position, scale, suit, neck, jewelry and transparent background. No other changes."
+  },
+  "035": {
+    "rest": "Edit image1 approved 2D bust avatar. Image2 EXACT facial acting reference. Preserve image1 head position, scale, face shape, hair, suit, neck, jewelry, framing. Change ONLY eyes, brows, mouth and specified facial effects to match image2. Embarrassed tears: actual clear thin tear streams down BOTH cheeks from outer lower eyelids, strong red blush across cheeks AND nose with diagonal hatching, squeezed completely shut eyes with raised inner brows, tense horizontally stretched toothy crying grimace. Match visible tears from reference; keep them thin translucent shiny streams, not huge waterfalls. Fixed body and head. Seamless skin, no text. Same full bust, transparent background.",
+    "blink": "Closed rest reused"
+  }
+}
