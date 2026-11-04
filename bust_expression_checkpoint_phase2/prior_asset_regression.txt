@@ -1,0 +1,1 @@
+PASS: all 25 previously approved artwork files byte-identical.
