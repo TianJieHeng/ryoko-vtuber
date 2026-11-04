@@ -1,0 +1,20 @@
+{
+  "170": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-cba1a6b3-b2e7-45d6-9653-38197874380b.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-140117b9-60cb-4af0-a815-f1d109e8b8a6.png",
+    "prompt": "Edit image1 approved bust identity/placement target. Image2 exact facial acting reference only. Preserve fixed upright head position, dimensions, outline, hairstyle, neck, nose, jewelry, suit, transparency. Change only face expression: Relaxing exhale: eyes almost closed but small amber slivers remain visible, relaxed LEVEL eyebrows, tiny round OPEN O exhale mouth. No blush. Cheek skin must be clean, NO detached thin curved green hair tips beneath eyes. Preserve outer hairstyle and main forehead bangs. No duplicate blush bands. No text.",
+    "blinkPrompt": "Edit exact avatar to BOTH eyes fully closed for blink, replacing ALL open iris/sclera/open lashes with one closed eyelid per eye. Preserve exact brows, mouth expression, cheek skin, all hair, face/head position, scale, clothes, jewelry and transparency. No extra eyelashes or stray under-eye hair."
+  },
+  "091": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-63af1d7b-c714-4a9c-9a62-c7ae48ca93fa.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-63af1d7b-c714-4a9c-9a62-c7ae48ca93fa.png",
+    "prompt": "Edit image1 approved bust identity/placement target. Image2 exact facial acting reference only. Preserve fixed upright head position, dimensions, outline, hairstyle, neck, nose, jewelry, suit, transparency. Change only face expression: Overly sweet taste: BOTH eyes fully closed, mildly raised worried inner brows, ONE continuous soft pink blush with single set diagonal hatch marks on each cheek/nose, tiny pinched CLOSED wavy lips. No tears. Cheek skin must be clean, NO detached thin curved green hair tips beneath eyes. Preserve outer hairstyle and main forehead bangs. No duplicate blush bands. No text.",
+    "blinkPrompt": "Closed rest reused"
+  },
+  "046": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-88604627-c68e-4bcd-9de7-a89384f99484.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-aa3bf747-5dc1-45c9-8d50-787466e154fb.png",
+    "prompt": "Edit image1 approved bust identity/placement target. Image2 exact facial acting reference only. Preserve fixed upright head position, dimensions, outline, hairstyle, neck, nose, jewelry, suit, transparency. Change only face expression: Exasperated sigh: eyes ROLLED UP under heavy upper lids, amber irises high with substantial WHITE SCLERA BELOW irises, high inward brows, medium vertically open sigh mouth. Eyes NOT fully closed. No blush. Cheek skin must be clean, NO detached thin curved green hair tips beneath eyes. Preserve outer hairstyle and main forehead bangs. No duplicate blush bands. No text.",
+    "blinkPrompt": "Edit exact avatar to BOTH eyes fully closed for blink, replacing ALL open iris/sclera/open lashes with one closed eyelid per eye. Preserve exact brows, mouth expression, cheek skin, all hair, face/head position, scale, clothes, jewelry and transparency. No extra eyelashes or stray under-eye hair."
+  }
+}
