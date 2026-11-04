@@ -1,0 +1,20 @@
+{
+  "130": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-10a7f4e7-bd20-4916-9039-c11b9ed491ff.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-1be315b5-db08-4a3d-8bb3-f6734d73574b.png",
+    "prompt": "Edit image1 approved bust (identity-preserve). Image2 exact expression reference only. Preserve image1 head alignment, dimensions, face contour, hairstyle, jewelry, clothes, neck, position and transparency. Change only eyes/brows/mouth to expression: Confused question: unevenly raised inner brows, wide unequal directly looking amber eyes, small asymmetrically parted questioning mouth. Keep head upright, do not copy reference head tilt. Seamless skin, no text. Same full bust.",
+    "blinkPrompt": "Edit this exact bust to BOTH eyes fully closed for blink. Remove ALL open-eye irises/sclera and open lash lines including watery highlights; one closed eyelid lash line each. Preserve exact brows, mouth, skin, head position, hair, clothes, necklace and transparent background. Change only eyelids."
+  },
+  "031": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-f12aca17-984f-42cf-972f-aa26a035aa4e.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-67701d83-9cc8-4a67-8f28-6493d5a3fcc9.png",
+    "prompt": "Edit image1 approved bust (identity-preserve). Image2 exact expression reference only. Preserve image1 head alignment, dimensions, face contour, hairstyle, jewelry, clothes, neck, position and transparency. Change only eyes/brows/mouth to expression: Bittersweet smile: raised SAD inner brows, narrowed watery amber eyes with tiny lower-lid wet highlights, tiny asymmetric CLOSED smile. No flowing tears. Seamless skin, no text. Same full bust.",
+    "blinkPrompt": "Edit this exact bust to BOTH eyes fully closed for blink. Remove ALL open-eye irises/sclera and open lash lines including watery highlights; one closed eyelid lash line each. Preserve exact brows, mouth, skin, head position, hair, clothes, necklace and transparent background. Change only eyelids."
+  },
+  "050": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-734f49eb-4889-4eda-aa2c-734ee23d0331.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-2d5f0e9e-aacb-4524-a9f9-9eb30e87b23d.png",
+    "prompt": "Edit image1 approved bust (identity-preserve). Image2 exact expression reference only. Preserve image1 head alignment, dimensions, face contour, hairstyle, jewelry, clothes, neck, position and transparency. Change only eyes/brows/mouth to expression: Frustrated pout: steep inward V brows, narrow direct amber eyes, extremely small tightly pinched central closed pout, normal cheek outline no inflated cheeks. Seamless skin, no text. Same full bust.",
+    "blinkPrompt": "Edit this exact bust to BOTH eyes fully closed for blink. Remove ALL open-eye irises/sclera and open lash lines including watery highlights; one closed eyelid lash line each. Preserve exact brows, mouth, skin, head position, hair, clothes, necklace and transparent background. Change only eyelids."
+  }
+}
