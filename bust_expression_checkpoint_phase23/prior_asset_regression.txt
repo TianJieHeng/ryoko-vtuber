@@ -1,0 +1,1 @@
+PASS: all 405 prior artwork PNGs remain byte-identical.

@@ -1,0 +1,1 @@
+PASS: 12 assembled states retain exact approved jaw/chin/neck/base pixels below y704 and outside shared speech mouth x512..615 from y676..703. Emotion mouth tiles end by y675.
