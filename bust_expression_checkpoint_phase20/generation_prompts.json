@@ -1,0 +1,20 @@
+{
+  "144": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-26d29c61-69ba-488e-8aff-bb6ae919e673.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-4f52e646-d180-4780-a69e-432d0653599a.png",
+    "prompt": "Edit image1 approved bust identity/placement target. Image2 exact acting reference only. Preserve fixed upright head position, size, outline, nose, hairstyle, neck, jewelry, suit and transparency. Change only eyes/brows/mouth/specified blush: Caught staring: BOTH amber irises shifted sharply viewer-RIGHT, mildly tense uneven brows, strong pink blush with single diagonal hatching field each cheek/nose, tiny thin CLOSED embarrassed mouth. No smile. Clean cheek skin, NO detached thin curved green hair tips beneath eyes. Preserve main forehead bangs and outer hairstyle. No double blush bands. No text.",
+    "blinkPrompt": "Edit exact avatar to BOTH eyes fully closed for blink. Replace all open iris/sclera/open eyelashes with one closed eyelid per eye. Preserve exact eyebrows, expression mouth, cheek blush/skin, head position/size, face contour, hair, clothes and transparency. No other edits."
+  },
+  "158": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-7dfa3b66-0df5-479f-b0bf-f50e54fc2d80.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-80ad5a00-3de6-4ed9-ba84-b0a5190e4d8e.png",
+    "prompt": "Edit image1 approved bust identity/placement target. Image2 exact acting reference only. Preserve fixed upright head position, size, outline, nose, hairstyle, neck, jewelry, suit and transparency. Change only eyes/brows/mouth/specified blush: Post-confession shyness: soft heavy DOWNCAST amber eyes, raised inner brows, strong pink cheek blush with ONE continuous hatch field, tiny CLOSED hopeful smile. Dry eyes, no tears. Clean cheek skin, NO detached thin curved green hair tips beneath eyes. Preserve main forehead bangs and outer hairstyle. No double blush bands. No text.",
+    "blinkPrompt": "Edit exact avatar to BOTH eyes fully closed for blink. Replace all open iris/sclera/open eyelashes with one closed eyelid per eye. Preserve exact eyebrows, expression mouth, cheek blush/skin, head position/size, face contour, hair, clothes and transparency. No other edits."
+  },
+  "189": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-1c75114f-1bc5-484c-87ea-22241398531f.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-2491131f-7531-41a3-8084-e8a94af79632.png",
+    "prompt": "Edit image1 approved bust identity/placement target. Image2 exact acting reference only. Preserve fixed upright head position, size, outline, nose, hairstyle, neck, jewelry, suit and transparency. Change only eyes/brows/mouth/specified blush: Overdramatic shock: extreme ROUND wide eyes with relatively SMALL amber irises and lots of white sclera, dramatic arched brows, tall vertical open O mouth with tongue and dark cavity. Preserve face/jaw outline, don't widen whole head. No blush. Clean cheek skin, NO detached thin curved green hair tips beneath eyes. Preserve main forehead bangs and outer hairstyle. No double blush bands. No text.",
+    "blinkPrompt": "Edit exact avatar to BOTH eyes fully closed for blink. Replace all open iris/sclera/open eyelashes with one closed eyelid per eye. Preserve exact eyebrows, expression mouth, cheek blush/skin, head position/size, face contour, hair, clothes and transparency. No other edits."
+  }
+}
