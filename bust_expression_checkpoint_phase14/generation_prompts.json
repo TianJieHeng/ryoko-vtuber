@@ -1,0 +1,14 @@
+{
+  "006": {
+    "rest": "Edit image1 approved 2D bust avatar. Image2 is EXACT facial acting reference. Preserve image1 head position, scale, silhouette, nose, face shape, hair, neck, suit, jewelry, framing and skin shading. Change ONLY eyes, brows, mouth and requested blush/creases to faithfully match image2. Suppressed giggle: uneven nearly-closed amused eyes with amber slivers visible, one brow slightly higher, prominent pink diagonal cheek blush hatching, small SYMMETRIC pressed closed smile. Not one-sided smirk, no open mouth. Fixed upright head and body. Seamless skin, no text. Same full bust, transparent background.",
+    "blink": "Edit this exact avatar to BOTH eyes completely closed for blink. Remove open-eye iris/sclera and open eyelash lines, leave only one closed eyelid lash line per eye. Preserve exact eyebrows, mouth, blush, nose creases, face, hair, position, scale, suit, neck, jewelry and transparent background. No other changes."
+  },
+  "099": {
+    "rest": "Edit image1 approved 2D bust avatar. Image2 is EXACT facial acting reference. Preserve image1 head position, scale, silhouette, nose, face shape, hair, neck, suit, jewelry, framing and skin shading. Change ONLY eyes, brows, mouth and requested blush/creases to faithfully match image2. Refusing a bad idea: narrow direct eyes, low uneven stern brows, lips pushed forward into a small downturned closed pout, normal cheeks, not puffed. Keep subtle reference acting. Fixed upright head and body. Seamless skin, no text. Same full bust, transparent background.",
+    "blink": "Edit this exact avatar to BOTH eyes completely closed for blink. Remove open-eye iris/sclera and open eyelash lines, leave only one closed eyelid lash line per eye. Preserve exact eyebrows, mouth, blush, nose creases, face, hair, position, scale, suit, neck, jewelry and transparent background. No other changes."
+  },
+  "089": {
+    "rest": "Edit image1 approved 2D bust avatar. Image2 is EXACT facial acting reference. Preserve image1 head position, scale, silhouette, nose, face shape, hair, neck, suit, jewelry, framing and skin shading. Change ONLY eyes, brows, mouth and requested blush/creases to faithfully match image2. Icky surprise: uneasy uneven eyebrows and eye apertures, viewer-right iris slightly smaller looking, nose scrunch, compact central arch-shaped downturned teeth grimace. Both eyes open, not squint shut; not skewed sneer or smile. Fixed upright head and body. Seamless skin, no text. Same full bust, transparent background.",
+    "blink": "Edit this exact avatar to BOTH eyes completely closed for blink. Remove open-eye iris/sclera and open eyelash lines, leave only one closed eyelid lash line per eye. Preserve exact eyebrows, mouth, blush, nose creases, face, hair, position, scale, suit, neck, jewelry and transparent background. No other changes."
+  }
+}
