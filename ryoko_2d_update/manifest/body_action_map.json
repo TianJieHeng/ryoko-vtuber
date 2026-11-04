@@ -1,0 +1,1607 @@
+{
+  "version": 1,
+  "count": 40,
+  "registered_swap_count": 3,
+  "actions": [
+    {
+      "id": "BOD-001",
+      "slug": "arms-crossed-stern",
+      "intent": "She gradually folds both arms across her torso, holds a stern upright scolding stance with narrowed brows, then unfolds and settles.",
+      "source_sheet": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "gesture_crossed_arms",
+      "implementation": "registered_alternate_drawing",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.75,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.0
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-002",
+      "slug": "finger-wag",
+      "intent": "She lifts her right hand with index finger extended, gently wags it left then right in admonishment, then lowers it. Other fingers naturally curled.",
+      "source_sheet": "assets/body/RYO_BOD-002_finger-wag_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "gesture_finger_wag",
+      "implementation": "registered_alternate_drawing",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.75,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.0
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-003",
+      "slug": "hands-on-hips",
+      "intent": "She places both hands on hips, elbows out, gives a firm scolding look, then releases hands down.",
+      "source_sheet": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.75,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-004",
+      "slug": "palm-up-question",
+      "intent": "She raises one palm upward at waist level as if asking for an explanation, tilts her head slightly, then lowers it.",
+      "source_sheet": "assets/body/RYO_BOD-004_palm-up-question_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.3,
+        "brow_lower": 0.0,
+        "brow_raise": 0.65,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-005",
+      "slug": "point-down-get-moving",
+      "intent": "She points her right index finger downward beside her hip as if ordering someone to get moving, gives one deliberate downward emphasis, then releases.",
+      "source_sheet": "assets/body/RYO_BOD-005_point-down-get-moving_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-006",
+      "slug": "arms-folded-foot-tap",
+      "intent": "She folds arms and taps one foot once impatiently, keeping balance in heels, then unfolds and returns to neutral.",
+      "source_sheet": "assets/body/RYO_BOD-006_arms-folded-foot-tap_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-007",
+      "slug": "disappointed-head-shake",
+      "intent": "She lowers her chin and slowly shakes her head left then right in disappointment, shoulders still, then faces front again.",
+      "source_sheet": "assets/body/RYO_BOD-007_disappointed-head-shake_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-008",
+      "slug": "stop-palm",
+      "intent": "She raises a hand palm outward to politely but firmly signal stop, holds it, then lowers it.",
+      "source_sheet": "assets/body/RYO_BOD-008_stop-palm_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-009",
+      "slug": "beckon-come-here",
+      "intent": "She raises a palm facing inward and curls fingers toward herself once to beckon someone closer, then lowers hand.",
+      "source_sheet": "assets/body/RYO_BOD-009_beckon-come-here_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-010",
+      "slug": "eyebrow-raised-weight-shift",
+      "intent": "She shifts weight to one hip while raising an eyebrow and looking knowingly at viewer, then returns to centered neutral.",
+      "source_sheet": "assets/body/RYO_BOD-010_eyebrow-raised-weight-shift_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-011",
+      "slug": "greeting-wave",
+      "intent": "She lifts right hand and waves a small friendly greeting left-right, then lowers it.",
+      "source_sheet": "assets/body/RYO_BOD-011_greeting-wave_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "gesture_wave",
+      "implementation": "registered_alternate_drawing",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.0
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-012",
+      "slug": "courteous-bow",
+      "intent": "She brings hands neatly together before her thighs and inclines upper body in a courteous small bow, then straightens.",
+      "source_sheet": "assets/body/RYO_BOD-012_courteous-bow_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-013",
+      "slug": "nod-approval",
+      "intent": "She gives a small deliberate approving nod, with relaxed smile, then returns chin to neutral.",
+      "source_sheet": "assets/body/RYO_BOD-013_nod-approval_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-014",
+      "slug": "shrug",
+      "intent": "She lifts both shoulders and both open palms in a modest shrug, then lowers both.",
+      "source_sheet": "assets/body/RYO_BOD-014_shrug_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.65,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-015",
+      "slug": "shy-hands-behind-back",
+      "intent": "She moves hands behind her back, inclines head shyly without changing adult proportions, then releases to neutral.",
+      "source_sheet": "assets/body/RYO_BOD-015_shy-hands-behind-back_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-016",
+      "slug": "delighted-hand-clasp",
+      "intent": "She brings both hands together at chest height in delighted clasp, smiles, then lowers hands.",
+      "source_sheet": "assets/body/RYO_BOD-016_delighted-hand-clasp_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-017",
+      "slug": "laugh-hand-to-mouth",
+      "intent": "She raises one hand lightly before her mouth while laughing softly, shoulders rise a little, then settles.",
+      "source_sheet": "assets/body/RYO_BOD-017_laugh-hand-to-mouth_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-018",
+      "slug": "yawn-and-stretch",
+      "intent": "She covers a yawn briefly then lifts elbows in a restrained stretch; keep all hands and feet within frame, then returns neutral.",
+      "source_sheet": "assets/body/RYO_BOD-018_yawn-and-stretch_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-019",
+      "slug": "sleepy-lean",
+      "intent": "She droops shoulders and tilts head drowsily with eyes half closed, weight balanced, then straightens.",
+      "source_sheet": "assets/body/RYO_BOD-019_sleepy-lean_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.3,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-020",
+      "slug": "surprised-backstep",
+      "intent": "She reacts with raised brows and small backward step, hands lift slightly in surprise, then steps back to original stance.",
+      "source_sheet": "assets/body/RYO_BOD-020_surprised-backstep_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.65,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-021",
+      "slug": "facepalm",
+      "intent": "She raises one palm to forehead for a restrained facepalm, pauses, then removes hand and returns neutral.",
+      "source_sheet": "assets/body/RYO_BOD-021_facepalm_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-022",
+      "slug": "thoughtful-chin",
+      "intent": "She rests right index/knuckles lightly at chin in thought, looks slightly aside, then releases hand.",
+      "source_sheet": "assets/body/RYO_BOD-022_thoughtful-chin_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-023",
+      "slug": "proud-stance",
+      "intent": "She straightens posture and lifts chin in a proud confident stance, one hand rests at hip, then relaxes.",
+      "source_sheet": "assets/body/RYO_BOD-023_proud-stance_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-024",
+      "slug": "worried-fidget",
+      "intent": "She fidgets fingers together at waist, brows worried, then releases hands.",
+      "source_sheet": "assets/body/RYO_BOD-024_worried-fidget_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-025",
+      "slug": "sad-shoulders",
+      "intent": "She drops shoulders and lowers gaze sadly, pauses, then lifts gaze and straightens.",
+      "source_sheet": "assets/body/RYO_BOD-025_sad-shoulders_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-026",
+      "slug": "reassuring-open-palm",
+      "intent": "She extends one open palm gently forward at waist height in reassurance, softens expression, then withdraws.",
+      "source_sheet": "assets/body/RYO_BOD-026_reassuring-open-palm_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-027",
+      "slug": "dismissive-wave",
+      "intent": "She gives a small outward dismissive wave at shoulder level with a skeptical look, then lowers hand.",
+      "source_sheet": "assets/body/RYO_BOD-027_dismissive-wave_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-028",
+      "slug": "small-victory-fist",
+      "intent": "She curls right hand into a small victory fist near shoulder, smiles with satisfaction, then relaxes.",
+      "source_sheet": "assets/body/RYO_BOD-028_small-victory-fist_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-029",
+      "slug": "impatient-time-gesture",
+      "intent": "She glances at her bare left wrist and taps it once with right index as a time gesture; do not invent a wristwatch, then lowers both hands.",
+      "source_sheet": "assets/body/RYO_BOD-029_impatient-time-gesture_sheet_v002.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-030",
+      "slug": "attentive-lean",
+      "intent": "She leans upper torso slightly forward with attentive eyes and hands relaxed, then straightens.",
+      "source_sheet": "assets/body/RYO_BOD-030_attentive-lean_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-031",
+      "slug": "skeptical-arm-cross",
+      "intent": "She crosses arms slowly and tilts head with skeptical raised eyebrow, then uncrosses.",
+      "source_sheet": "assets/body/RYO_BOD-031_skeptical-arm-cross_sheet_v002.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.3,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-032",
+      "slug": "playful-point",
+      "intent": "She points playfully toward viewer with one hand and smiles, then pulls hand back and lowers it.",
+      "source_sheet": "assets/body/RYO_BOD-032_playful-point_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-033",
+      "slug": "both-palms-explanation",
+      "intent": "She opens both palms at waist height to explain a point, alternately emphasizes left and right palm, then lowers both.",
+      "source_sheet": "assets/body/RYO_BOD-033_both-palms-explanation_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-034",
+      "slug": "apologetic-bow",
+      "intent": "She places hands together in front and makes a slightly deeper apologetic bow than greeting bow, with contrite expression, then straightens.",
+      "source_sheet": "assets/body/RYO_BOD-034_apologetic-bow_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-035",
+      "slug": "excited-bounce",
+      "intent": "She bends knees a little then gives a tiny excited rise on toes without a jump, hands near chest, then settles safely in heels.",
+      "source_sheet": "assets/body/RYO_BOD-035_excited-bounce_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-036",
+      "slug": "startled-hands-up",
+      "intent": "She raises both open hands beside shoulders in startled reaction, eyes wide, then lowers them.",
+      "source_sheet": "assets/body/RYO_BOD-036_startled-hands-up_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.65,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-037",
+      "slug": "relieved-exhale",
+      "intent": "She exhales in relief, shoulders drop and one hand rests briefly on upper chest, then returns neutral.",
+      "source_sheet": "assets/body/RYO_BOD-037_relieved-exhale_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-038",
+      "slug": "relaxed-weight-shift",
+      "intent": "She shifts weight smoothly onto one hip with relaxed shoulders and soft face, then centers again.",
+      "source_sheet": "assets/body/RYO_BOD-038_relaxed-weight-shift_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-039",
+      "slug": "farewell-wave",
+      "intent": "She raises one hand into a gentle slower farewell wave, soft smile, then lowers hand.",
+      "source_sheet": "assets/body/RYO_BOD-039_farewell-wave_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": false,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    },
+    {
+      "id": "BOD-040",
+      "slug": "neutral-idle-sway",
+      "intent": "She performs a subtle breathing and weight-sway idle cycle, arms resting naturally, no large gestures or changes.",
+      "source_sheet": "assets/body/RYO_BOD-040_neutral-idle-sway_sheet_v001.png",
+      "key_poses": [
+        "neutral",
+        "anticipation",
+        "onset",
+        "build",
+        "peak",
+        "follow-through",
+        "release",
+        "settle",
+        "neutral"
+      ],
+      "timestamps_seconds": [
+        0,
+        0.25,
+        0.5,
+        0.8,
+        1.1,
+        1.5,
+        1.9,
+        2.3,
+        2.7
+      ],
+      "duration_seconds": 2.7,
+      "loop": true,
+      "gesture": "",
+      "implementation": "parameterized_deformation_proxy",
+      "controls": {
+        "head_tilt": 0.0,
+        "brow_lower": 0.0,
+        "brow_raise": 0.0,
+        "sway": 0.25,
+        "arm_proxy": 0.6
+      },
+      "source_usage": "acting guide on the same rig; raw panels are not playback frames"
+    }
+  ]
+}

@@ -1,0 +1,3439 @@
+{
+  "canvas_reference": [
+    1024,
+    1536
+  ],
+  "canvas_master": [
+    2048,
+    3072
+  ],
+  "scale": 2,
+  "side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)",
+  "layers": [
+    {
+      "name": "short_tail",
+      "source": "hair/short_tail.png",
+      "derivative": "artwork/derivatives/hair__short_tail.png",
+      "registered_png": "artwork/registered/short_tail.png",
+      "enabled_neutral": true,
+      "z": 4,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        505.0,
+        154.0,
+        580.0,
+        267.0
+      ],
+      "master_xy": [
+        1010,
+        308
+      ],
+      "master_size": [
+        150,
+        226
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        529,
+        157
+      ],
+      "pivot_master": [
+        1058,
+        314
+      ],
+      "role": "rear short hair tail with independent sway",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "rear_scalp",
+      "source": "hair/rear_scalp_nape.png",
+      "derivative": "artwork/derivatives/hair__rear_scalp_nape.png",
+      "registered_png": "artwork/registered/rear_scalp.png",
+      "enabled_neutral": true,
+      "z": 5,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        420.0,
+        54.0,
+        592.0,
+        205.0
+      ],
+      "master_xy": [
+        840,
+        108
+      ],
+      "master_size": [
+        344,
+        302
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        76
+      ],
+      "pivot_master": [
+        1024,
+        152
+      ],
+      "role": "rear scalp behind frontal face",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "bun",
+      "source": "hair/bun.png",
+      "derivative": "artwork/derivatives/hair__bun.png",
+      "registered_png": "artwork/registered/bun.png",
+      "enabled_neutral": true,
+      "z": 6,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        462.0,
+        24.0,
+        578.0,
+        108.0
+      ],
+      "master_xy": [
+        924,
+        48
+      ],
+      "master_size": [
+        232,
+        168
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        520,
+        75
+      ],
+      "pivot_master": [
+        1040,
+        150
+      ],
+      "role": "hair bun",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_hairstick_01",
+      "source": "accessories/layers/RYO_ACC_hairstick_01.png",
+      "derivative": "artwork/derivatives/accessories__layers__RYO_ACC_hairstick_01.png",
+      "registered_png": "artwork/registered/construction_hairstick_01.png",
+      "enabled_neutral": false,
+      "z": 7,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        518.0,
+        19.5,
+        598.0,
+        78.5
+      ],
+      "master_xy": [
+        1036,
+        39
+      ],
+      "master_size": [
+        160,
+        118
+      ],
+      "rotation_degrees": 55,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        535,
+        72
+      ],
+      "pivot_master": [
+        1070,
+        144
+      ],
+      "role": "hidden construction hairstick",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "hairstick_01",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_hairstick_01.png",
+      "registered_png": "artwork/registered/hairstick_01.png",
+      "enabled_neutral": true,
+      "z": 7,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        536,
+        25,
+        586,
+        72
+      ],
+      "master_xy": [
+        1072,
+        50
+      ],
+      "master_size": [
+        100,
+        94
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        542,
+        64
+      ],
+      "pivot_master": [
+        1084,
+        128
+      ],
+      "role": "canonical upper gold hairstick inserted into bun",
+      "source_polygon_ref": [
+        [
+          1076,
+          120
+        ],
+        [
+          1090,
+          136
+        ],
+        [
+          1142,
+          86
+        ],
+        [
+          1166,
+          80
+        ],
+        [
+          1168,
+          62
+        ],
+        [
+          1156,
+          52
+        ],
+        [
+          1142,
+          60
+        ],
+        [
+          1138,
+          72
+        ]
+      ],
+      "canonical_mask_kind": "gold",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_hairstick_02",
+      "source": "accessories/layers/RYO_ACC_hairstick_02.png",
+      "derivative": "artwork/derivatives/accessories__layers__RYO_ACC_hairstick_02.png",
+      "registered_png": "artwork/registered/construction_hairstick_02.png",
+      "enabled_neutral": false,
+      "z": 8,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        516.0,
+        37.5,
+        596.0,
+        96.5
+      ],
+      "master_xy": [
+        1032,
+        75
+      ],
+      "master_size": [
+        160,
+        118
+      ],
+      "rotation_degrees": 55,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        535,
+        83
+      ],
+      "pivot_master": [
+        1070,
+        166
+      ],
+      "role": "hidden construction hairstick",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "hairstick_02",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_hairstick_02.png",
+      "registered_png": "artwork/registered/hairstick_02.png",
+      "enabled_neutral": true,
+      "z": 8,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        546,
+        45,
+        599,
+        77
+      ],
+      "master_xy": [
+        1092,
+        90
+      ],
+      "master_size": [
+        106,
+        64
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        552,
+        69
+      ],
+      "pivot_master": [
+        1104,
+        138
+      ],
+      "role": "canonical lower gold hairstick inserted straight into hair",
+      "source_polygon_ref": [
+        [
+          1096,
+          130
+        ],
+        [
+          1106,
+          146
+        ],
+        [
+          1166,
+          122
+        ],
+        [
+          1190,
+          118
+        ],
+        [
+          1194,
+          102
+        ],
+        [
+          1182,
+          94
+        ],
+        [
+          1168,
+          98
+        ],
+        [
+          1162,
+          110
+        ]
+      ],
+      "canonical_mask_kind": "gold",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_hair_dangler",
+      "source": "accessories/layers/RYO_ACC_hair_dangler_01.png",
+      "derivative": "artwork/derivatives/accessories__layers__RYO_ACC_hair_dangler_01.png",
+      "registered_png": "artwork/registered/construction_hair_dangler.png",
+      "enabled_neutral": false,
+      "z": 9,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        576.0,
+        57.0,
+        586.0,
+        105.0
+      ],
+      "master_xy": [
+        1152,
+        114
+      ],
+      "master_size": [
+        20,
+        96
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        581,
+        59
+      ],
+      "pivot_master": [
+        1162,
+        118
+      ],
+      "role": "hidden construction dangler",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "hair_dangler",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_hair_dangler.png",
+      "registered_png": "artwork/registered/hair_dangler.png",
+      "enabled_neutral": true,
+      "z": 9,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        581,
+        55,
+        596,
+        105
+      ],
+      "master_xy": [
+        1162,
+        110
+      ],
+      "master_size": [
+        30,
+        100
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        589,
+        59
+      ],
+      "pivot_master": [
+        1178,
+        118
+      ],
+      "role": "canonical single dangling hair ornament",
+      "source_polygon_ref": [
+        [
+          1166,
+          114
+        ],
+        [
+          1188,
+          114
+        ],
+        [
+          1188,
+          206
+        ],
+        [
+          1166,
+          206
+        ]
+      ],
+      "canonical_mask_kind": "gold",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "shoe_R",
+      "source": "body/layers/pump_front_character_R.png",
+      "derivative": "artwork/derivatives/body__layers__pump_front_character_R.png",
+      "registered_png": "artwork/registered/shoe_R.png",
+      "enabled_neutral": true,
+      "z": 18,
+      "parent": "leg_R",
+      "bbox_ref_xyxy": [
+        391.0,
+        1327.0,
+        463.0,
+        1497.0
+      ],
+      "master_xy": [
+        782,
+        2654
+      ],
+      "master_size": [
+        144,
+        340
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        427,
+        1334
+      ],
+      "pivot_master": [
+        854,
+        2668
+      ],
+      "role": "front pump",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "shoe_L",
+      "source": "body/layers/pump_front_character_L.png",
+      "derivative": "artwork/derivatives/body__layers__pump_front_character_L.png",
+      "registered_png": "artwork/registered/shoe_L.png",
+      "enabled_neutral": true,
+      "z": 19,
+      "parent": "leg_L",
+      "bbox_ref_xyxy": [
+        563.0,
+        1327.0,
+        635.0,
+        1497.0
+      ],
+      "master_xy": [
+        1126,
+        2654
+      ],
+      "master_size": [
+        144,
+        340
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        599,
+        1334
+      ],
+      "pivot_master": [
+        1198,
+        2668
+      ],
+      "role": "front pump",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "belt",
+      "source": "accessories/layers/RYO_ACC_belt_gold_buckle.png",
+      "derivative": "artwork/derivatives/accessories__layers__RYO_ACC_belt_gold_buckle.png",
+      "registered_png": "artwork/registered/belt.png",
+      "enabled_neutral": false,
+      "z": 20.5,
+      "parent": "pelvis",
+      "bbox_ref_xyxy": [
+        302.0,
+        584.0,
+        722.0,
+        614.0
+      ],
+      "master_xy": [
+        604,
+        1168
+      ],
+      "master_size": [
+        840,
+        60
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        599
+      ],
+      "pivot_master": [
+        1024,
+        1198
+      ],
+      "role": "hidden construction belt",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_pelvis",
+      "source": "body/layers/trousers_pelvis_front.png",
+      "derivative": "artwork/derivatives/body__layers__trousers_pelvis_front.png",
+      "registered_png": "artwork/registered/construction_pelvis.png",
+      "enabled_neutral": false,
+      "z": 21.5,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        382.0,
+        566.0,
+        642.0,
+        735.0
+      ],
+      "master_xy": [
+        764,
+        1132
+      ],
+      "master_size": [
+        520,
+        338
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        590
+      ],
+      "pivot_master": [
+        1024,
+        1180
+      ],
+      "role": "hidden construction pelvis",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "leg_R",
+      "source": "body/layers/trousers_leg_front_character_R.png",
+      "derivative": "artwork/derivatives/body__layers__trousers_leg_front_character_R.png",
+      "registered_png": "artwork/registered/leg_R.png",
+      "enabled_neutral": true,
+      "z": 22,
+      "parent": "pelvis",
+      "bbox_ref_xyxy": [
+        370.0,
+        681.0,
+        493.0,
+        1341.0
+      ],
+      "master_xy": [
+        740,
+        1362
+      ],
+      "master_size": [
+        246,
+        1320
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        440,
+        690
+      ],
+      "pivot_master": [
+        880,
+        1380
+      ],
+      "role": "character-right front trouser leg",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "leg_L",
+      "source": "body/layers/trousers_leg_front_character_L.png",
+      "derivative": "artwork/derivatives/body__layers__trousers_leg_front_character_L.png",
+      "registered_png": "artwork/registered/leg_L.png",
+      "enabled_neutral": true,
+      "z": 23,
+      "parent": "pelvis",
+      "bbox_ref_xyxy": [
+        530.0,
+        681.0,
+        653.0,
+        1341.0
+      ],
+      "master_xy": [
+        1060,
+        1362
+      ],
+      "master_size": [
+        246,
+        1320
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        584,
+        690
+      ],
+      "pivot_master": [
+        1168,
+        1380
+      ],
+      "role": "character-left front trouser leg",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "canonical_pelvis",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_canonical_pelvis.png",
+      "registered_png": "artwork/registered/canonical_pelvis.png",
+      "enabled_neutral": true,
+      "z": 23.5,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        360,
+        635,
+        665,
+        760
+      ],
+      "master_xy": [
+        720,
+        1270
+      ],
+      "master_size": [
+        610,
+        250
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        650
+      ],
+      "pivot_master": [
+        1024,
+        1300
+      ],
+      "role": "canonical trouser-only hip overlap",
+      "source_polygon_ref": [
+        [
+          780,
+          1280
+        ],
+        [
+          1268,
+          1280
+        ],
+        [
+          1284,
+          1310
+        ],
+        [
+          1290,
+          1330
+        ],
+        [
+          1284,
+          1400
+        ],
+        [
+          1254,
+          1504
+        ],
+        [
+          1112,
+          1470
+        ],
+        [
+          1024,
+          1432
+        ],
+        [
+          936,
+          1470
+        ],
+        [
+          794,
+          1504
+        ],
+        [
+          764,
+          1400
+        ],
+        [
+          758,
+          1330
+        ],
+        [
+          764,
+          1310
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_forearm_R",
+      "source": "body/layers/sleeve_forearm_character_R.png",
+      "derivative": "artwork/derivatives/body__layers__sleeve_forearm_character_R.png",
+      "registered_png": "artwork/registered/construction_forearm_R.png",
+      "enabled_neutral": false,
+      "z": 24,
+      "parent": "upper_arm_R",
+      "bbox_ref_xyxy": [
+        306.0,
+        433.0,
+        374.0,
+        731.0
+      ],
+      "master_xy": [
+        612,
+        866
+      ],
+      "master_size": [
+        136,
+        596
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        352,
+        449
+      ],
+      "pivot_master": [
+        704,
+        898
+      ],
+      "role": "hidden construction forearm",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_forearm_L",
+      "source": "body/layers/sleeve_forearm_character_L.png",
+      "derivative": "artwork/derivatives/body__layers__sleeve_forearm_character_L.png",
+      "registered_png": "artwork/registered/construction_forearm_L.png",
+      "enabled_neutral": false,
+      "z": 24.5,
+      "parent": "upper_arm_L",
+      "bbox_ref_xyxy": [
+        650.0,
+        433.0,
+        718.0,
+        731.0
+      ],
+      "master_xy": [
+        1300,
+        866
+      ],
+      "master_size": [
+        136,
+        596
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        672,
+        449
+      ],
+      "pivot_master": [
+        1344,
+        898
+      ],
+      "role": "hidden construction forearm",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_upper_arm_R",
+      "source": "body/layers/sleeve_upper_character_R.png",
+      "derivative": "artwork/derivatives/body__layers__sleeve_upper_character_R.png",
+      "registered_png": "artwork/registered/construction_upper_arm_R.png",
+      "enabled_neutral": false,
+      "z": 25,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        312.5,
+        297.5,
+        405.5,
+        542.5
+      ],
+      "master_xy": [
+        625,
+        595
+      ],
+      "master_size": [
+        186,
+        490
+      ],
+      "rotation_degrees": -4,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        372,
+        302
+      ],
+      "pivot_master": [
+        744,
+        604
+      ],
+      "role": "hidden construction upper sleeve",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_upper_arm_L",
+      "source": "body/layers/sleeve_upper_character_L.png",
+      "derivative": "artwork/derivatives/body__layers__sleeve_upper_character_L.png",
+      "registered_png": "artwork/registered/construction_upper_arm_L.png",
+      "enabled_neutral": false,
+      "z": 26,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        618.5,
+        297.5,
+        711.5,
+        542.5
+      ],
+      "master_xy": [
+        1237,
+        595
+      ],
+      "master_size": [
+        186,
+        490
+      ],
+      "rotation_degrees": 4,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        652,
+        302
+      ],
+      "pivot_master": [
+        1304,
+        604
+      ],
+      "role": "hidden construction upper sleeve",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_hand_R",
+      "source": "body/layers/hand_dorsal_character_R.png",
+      "derivative": "artwork/derivatives/body__layers__hand_dorsal_character_R.png",
+      "registered_png": "artwork/registered/construction_hand_R.png",
+      "enabled_neutral": false,
+      "z": 27,
+      "parent": "forearm_R",
+      "bbox_ref_xyxy": [
+        298.0,
+        716.0,
+        354.0,
+        859.0
+      ],
+      "master_xy": [
+        596,
+        1432
+      ],
+      "master_size": [
+        112,
+        286
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        326,
+        724
+      ],
+      "pivot_master": [
+        652,
+        1448
+      ],
+      "role": "hidden construction hand",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_hand_L",
+      "source": "body/layers/hand_dorsal_character_L.png",
+      "derivative": "artwork/derivatives/body__layers__hand_dorsal_character_L.png",
+      "registered_png": "artwork/registered/construction_hand_L.png",
+      "enabled_neutral": false,
+      "z": 28,
+      "parent": "forearm_L",
+      "bbox_ref_xyxy": [
+        670.0,
+        716.0,
+        726.0,
+        859.0
+      ],
+      "master_xy": [
+        1340,
+        1432
+      ],
+      "master_size": [
+        112,
+        286
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        698,
+        724
+      ],
+      "pivot_master": [
+        1396,
+        1448
+      ],
+      "role": "hidden construction hand",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_blouse_front",
+      "source": "body/layers/blouse_front.png",
+      "derivative": "artwork/derivatives/body__layers__blouse_front.png",
+      "registered_png": "artwork/registered/construction_blouse_front.png",
+      "enabled_neutral": false,
+      "z": 30,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        401.0,
+        235.0,
+        623.0,
+        608.0
+      ],
+      "master_xy": [
+        802,
+        470
+      ],
+      "master_size": [
+        444,
+        746
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        260
+      ],
+      "pivot_master": [
+        1024,
+        520
+      ],
+      "role": "hidden construction blouse",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "neck",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_neck.png",
+      "registered_png": "artwork/registered/neck.png",
+      "enabled_neutral": true,
+      "z": 31,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        458,
+        210,
+        566,
+        395
+      ],
+      "master_xy": [
+        916,
+        420
+      ],
+      "master_size": [
+        216,
+        370
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        225
+      ],
+      "pivot_master": [
+        1024,
+        450
+      ],
+      "role": "standalone canonical neck/chest derivative; jewelry removed; no face or blouse stretching",
+      "source_polygon_ref": [
+        [
+          956,
+          432
+        ],
+        [
+          1092,
+          432
+        ],
+        [
+          1092,
+          478
+        ],
+        [
+          1112,
+          488
+        ],
+        [
+          1110,
+          520
+        ],
+        [
+          1096,
+          534
+        ],
+        [
+          1100,
+          580
+        ],
+        [
+          1110,
+          630
+        ],
+        [
+          1096,
+          660
+        ],
+        [
+          1072,
+          690
+        ],
+        [
+          1052,
+          720
+        ],
+        [
+          1036,
+          760
+        ],
+        [
+          1022,
+          778
+        ],
+        [
+          1008,
+          760
+        ],
+        [
+          994,
+          720
+        ],
+        [
+          976,
+          690
+        ],
+        [
+          952,
+          660
+        ],
+        [
+          938,
+          630
+        ],
+        [
+          948,
+          580
+        ],
+        [
+          952,
+          534
+        ],
+        [
+          936,
+          520
+        ],
+        [
+          936,
+          488
+        ],
+        [
+          956,
+          478
+        ]
+      ],
+      "canonical_mask_kind": "neck",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_blazer_R",
+      "source": "body/layers/blazer_front_character_R.png",
+      "derivative": "artwork/derivatives/body__layers__blazer_front_character_R.png",
+      "registered_png": "artwork/registered/construction_blazer_R.png",
+      "enabled_neutral": false,
+      "z": 32,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        345.0,
+        254.0,
+        500.0,
+        690.0
+      ],
+      "master_xy": [
+        690,
+        508
+      ],
+      "master_size": [
+        310,
+        872
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 26,
+      "pivot_ref": [
+        490,
+        282
+      ],
+      "pivot_master": [
+        980,
+        564
+      ],
+      "role": "hidden construction blazer",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "torso_garment",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_torso_garment.png",
+      "registered_png": "artwork/registered/torso_garment.png",
+      "enabled_neutral": true,
+      "z": 32.5,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        340,
+        228,
+        684,
+        700
+      ],
+      "master_xy": [
+        680,
+        456
+      ],
+      "master_size": [
+        688,
+        944
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        280
+      ],
+      "pivot_master": [
+        1024,
+        560
+      ],
+      "role": "canonical blazer and blouse with matte-free armpit-to-hip edges",
+      "source_polygon_ref": [
+        [
+          940,
+          474
+        ],
+        [
+          918,
+          492
+        ],
+        [
+          894,
+          544
+        ],
+        [
+          840,
+          556
+        ],
+        [
+          768,
+          572
+        ],
+        [
+          724,
+          582
+        ],
+        [
+          702,
+          636
+        ],
+        [
+          696,
+          720
+        ],
+        [
+          714,
+          816
+        ],
+        [
+          732,
+          898
+        ],
+        [
+          756,
+          954
+        ],
+        [
+          746,
+          1012
+        ],
+        [
+          724,
+          1114
+        ],
+        [
+          730,
+          1314
+        ],
+        [
+          804,
+          1348
+        ],
+        [
+          888,
+          1368
+        ],
+        [
+          962,
+          1366
+        ],
+        [
+          1024,
+          1336
+        ],
+        [
+          1086,
+          1368
+        ],
+        [
+          1170,
+          1362
+        ],
+        [
+          1254,
+          1340
+        ],
+        [
+          1318,
+          1316
+        ],
+        [
+          1310,
+          1132
+        ],
+        [
+          1292,
+          1036
+        ],
+        [
+          1300,
+          956
+        ],
+        [
+          1322,
+          884
+        ],
+        [
+          1340,
+          764
+        ],
+        [
+          1346,
+          660
+        ],
+        [
+          1322,
+          582
+        ],
+        [
+          1274,
+          572
+        ],
+        [
+          1202,
+          556
+        ],
+        [
+          1150,
+          536
+        ],
+        [
+          1126,
+          486
+        ],
+        [
+          1104,
+          474
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "construction_blazer_L",
+      "source": "body/layers/blazer_front_character_L.png",
+      "derivative": "artwork/derivatives/body__layers__blazer_front_character_L.png",
+      "registered_png": "artwork/registered/construction_blazer_L.png",
+      "enabled_neutral": false,
+      "z": 33,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        524.0,
+        254.0,
+        679.0,
+        690.0
+      ],
+      "master_xy": [
+        1048,
+        508
+      ],
+      "master_size": [
+        310,
+        872
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 26,
+      "pivot_ref": [
+        534,
+        282
+      ],
+      "pivot_master": [
+        1068,
+        564
+      ],
+      "role": "hidden construction blazer",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "forearm_R",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_forearm_R.png",
+      "registered_png": "artwork/registered/forearm_R.png",
+      "enabled_neutral": true,
+      "z": 33.0,
+      "parent": "upper_arm_R",
+      "bbox_ref_xyxy": [
+        288,
+        460,
+        402,
+        738
+      ],
+      "master_xy": [
+        576,
+        920
+      ],
+      "master_size": [
+        228,
+        556
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        350,
+        480
+      ],
+      "pivot_master": [
+        700,
+        960
+      ],
+      "role": "canonical character-right forearm",
+      "source_polygon_ref": [
+        [
+          678,
+          940
+        ],
+        [
+          794,
+          940
+        ],
+        [
+          782,
+          1000
+        ],
+        [
+          774,
+          1040
+        ],
+        [
+          768,
+          1080
+        ],
+        [
+          762,
+          1120
+        ],
+        [
+          760,
+          1160
+        ],
+        [
+          754,
+          1200
+        ],
+        [
+          744,
+          1240
+        ],
+        [
+          734,
+          1280
+        ],
+        [
+          724,
+          1320
+        ],
+        [
+          714,
+          1360
+        ],
+        [
+          706,
+          1400
+        ],
+        [
+          698,
+          1460
+        ],
+        [
+          656,
+          1460
+        ],
+        [
+          596,
+          1460
+        ],
+        [
+          590,
+          1390
+        ],
+        [
+          604,
+          1286
+        ],
+        [
+          620,
+          1180
+        ],
+        [
+          636,
+          1070
+        ],
+        [
+          658,
+          960
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "forearm_L",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_forearm_L.png",
+      "registered_png": "artwork/registered/forearm_L.png",
+      "enabled_neutral": true,
+      "z": 33.05,
+      "parent": "upper_arm_L",
+      "bbox_ref_xyxy": [
+        622,
+        460,
+        736,
+        738
+      ],
+      "master_xy": [
+        1244,
+        920
+      ],
+      "master_size": [
+        228,
+        556
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        674,
+        480
+      ],
+      "pivot_master": [
+        1348,
+        960
+      ],
+      "role": "canonical character-left forearm",
+      "source_polygon_ref": [
+        [
+          1370,
+          940
+        ],
+        [
+          1254,
+          940
+        ],
+        [
+          1266,
+          1000
+        ],
+        [
+          1274,
+          1040
+        ],
+        [
+          1280,
+          1080
+        ],
+        [
+          1286,
+          1120
+        ],
+        [
+          1288,
+          1160
+        ],
+        [
+          1294,
+          1200
+        ],
+        [
+          1304,
+          1240
+        ],
+        [
+          1314,
+          1280
+        ],
+        [
+          1324,
+          1320
+        ],
+        [
+          1334,
+          1360
+        ],
+        [
+          1342,
+          1400
+        ],
+        [
+          1350,
+          1460
+        ],
+        [
+          1392,
+          1460
+        ],
+        [
+          1452,
+          1460
+        ],
+        [
+          1458,
+          1390
+        ],
+        [
+          1444,
+          1286
+        ],
+        [
+          1428,
+          1180
+        ],
+        [
+          1412,
+          1070
+        ],
+        [
+          1390,
+          960
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "upper_arm_R",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_upper_arm_R.png",
+      "registered_png": "artwork/registered/upper_arm_R.png",
+      "enabled_neutral": true,
+      "z": 33.1,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        320,
+        280,
+        404,
+        535
+      ],
+      "master_xy": [
+        640,
+        560
+      ],
+      "master_size": [
+        168,
+        510
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        372,
+        302
+      ],
+      "pivot_master": [
+        744,
+        604
+      ],
+      "role": "canonical character-right upper sleeve with feathered elbow overlap",
+      "source_polygon_ref": [
+        [
+          722,
+          578
+        ],
+        [
+          768,
+          584
+        ],
+        [
+          784,
+          652
+        ],
+        [
+          776,
+          734
+        ],
+        [
+          766,
+          818
+        ],
+        [
+          798,
+          920
+        ],
+        [
+          782,
+          1000
+        ],
+        [
+          774,
+          1050
+        ],
+        [
+          658,
+          1050
+        ],
+        [
+          658,
+          948
+        ],
+        [
+          674,
+          860
+        ],
+        [
+          688,
+          770
+        ],
+        [
+          696,
+          680
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "upper_arm_L",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_upper_arm_L.png",
+      "registered_png": "artwork/registered/upper_arm_L.png",
+      "enabled_neutral": true,
+      "z": 33.15,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        620,
+        280,
+        704,
+        535
+      ],
+      "master_xy": [
+        1240,
+        560
+      ],
+      "master_size": [
+        168,
+        510
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        652,
+        302
+      ],
+      "pivot_master": [
+        1304,
+        604
+      ],
+      "role": "canonical character-left upper sleeve with feathered elbow overlap",
+      "source_polygon_ref": [
+        [
+          1326,
+          578
+        ],
+        [
+          1280,
+          584
+        ],
+        [
+          1264,
+          652
+        ],
+        [
+          1272,
+          734
+        ],
+        [
+          1282,
+          818
+        ],
+        [
+          1250,
+          920
+        ],
+        [
+          1266,
+          1000
+        ],
+        [
+          1274,
+          1050
+        ],
+        [
+          1390,
+          1050
+        ],
+        [
+          1390,
+          948
+        ],
+        [
+          1374,
+          860
+        ],
+        [
+          1360,
+          770
+        ],
+        [
+          1352,
+          680
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "hand_R",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_hand_R.png",
+      "registered_png": "artwork/registered/hand_R.png",
+      "enabled_neutral": true,
+      "z": 33.2,
+      "parent": "forearm_R",
+      "bbox_ref_xyxy": [
+        292,
+        710,
+        358,
+        866
+      ],
+      "master_xy": [
+        584,
+        1420
+      ],
+      "master_size": [
+        132,
+        312
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        315,
+        724
+      ],
+      "pivot_master": [
+        630,
+        1448
+      ],
+      "role": "canonical character-right dorsal hand",
+      "source_polygon_ref": [
+        [
+          600,
+          1432
+        ],
+        [
+          660,
+          1432
+        ],
+        [
+          674,
+          1486
+        ],
+        [
+          688,
+          1548
+        ],
+        [
+          700,
+          1626
+        ],
+        [
+          688,
+          1674
+        ],
+        [
+          664,
+          1716
+        ],
+        [
+          638,
+          1700
+        ],
+        [
+          614,
+          1656
+        ],
+        [
+          602,
+          1606
+        ],
+        [
+          596,
+          1540
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "hand_L",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_hand_L.png",
+      "registered_png": "artwork/registered/hand_L.png",
+      "enabled_neutral": true,
+      "z": 33.25,
+      "parent": "forearm_L",
+      "bbox_ref_xyxy": [
+        666,
+        710,
+        732,
+        866
+      ],
+      "master_xy": [
+        1332,
+        1420
+      ],
+      "master_size": [
+        132,
+        312
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        709,
+        724
+      ],
+      "pivot_master": [
+        1418,
+        1448
+      ],
+      "role": "canonical character-left dorsal hand",
+      "source_polygon_ref": [
+        [
+          1448,
+          1432
+        ],
+        [
+          1388,
+          1432
+        ],
+        [
+          1374,
+          1486
+        ],
+        [
+          1360,
+          1548
+        ],
+        [
+          1348,
+          1626
+        ],
+        [
+          1360,
+          1674
+        ],
+        [
+          1384,
+          1716
+        ],
+        [
+          1410,
+          1700
+        ],
+        [
+          1434,
+          1656
+        ],
+        [
+          1446,
+          1606
+        ],
+        [
+          1452,
+          1540
+        ]
+      ],
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "necklace_chain",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_necklace_chain.png",
+      "registered_png": "artwork/registered/necklace_chain.png",
+      "enabled_neutral": true,
+      "z": 34,
+      "parent": "torso",
+      "bbox_ref_xyxy": [
+        464,
+        258,
+        559,
+        307
+      ],
+      "master_xy": [
+        928,
+        516
+      ],
+      "master_size": [
+        190,
+        98
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        264
+      ],
+      "pivot_master": [
+        1024,
+        528
+      ],
+      "role": "canonical necklace chain",
+      "source_polygon_ref": [
+        [
+          932,
+          526
+        ],
+        [
+          942,
+          522
+        ],
+        [
+          962,
+          550
+        ],
+        [
+          990,
+          572
+        ],
+        [
+          1020,
+          592
+        ],
+        [
+          1052,
+          572
+        ],
+        [
+          1082,
+          548
+        ],
+        [
+          1104,
+          522
+        ],
+        [
+          1114,
+          528
+        ],
+        [
+          1092,
+          560
+        ],
+        [
+          1058,
+          588
+        ],
+        [
+          1022,
+          610
+        ],
+        [
+          984,
+          588
+        ],
+        [
+          954,
+          564
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "green_pendant",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_green_pendant.png",
+      "registered_png": "artwork/registered/green_pendant.png",
+      "enabled_neutral": true,
+      "z": 35,
+      "parent": "necklace_chain",
+      "bbox_ref_xyxy": [
+        500,
+        296,
+        522,
+        317
+      ],
+      "master_xy": [
+        1000,
+        592
+      ],
+      "master_size": [
+        44,
+        42
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        511,
+        301
+      ],
+      "pivot_master": [
+        1022,
+        602
+      ],
+      "role": "canonical green pendant and gold setting",
+      "source_polygon_ref": [
+        [
+          1004,
+          594
+        ],
+        [
+          1040,
+          594
+        ],
+        [
+          1042,
+          632
+        ],
+        [
+          1002,
+          632
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "face",
+      "source": "head/layers/RYO_HEAD_face_base_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_face_base_v001.png",
+      "registered_png": "artwork/registered/face.png",
+      "enabled_neutral": true,
+      "z": 40,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        451.0,
+        94.0,
+        565.0,
+        234.0
+      ],
+      "master_xy": [
+        902,
+        188
+      ],
+      "master_size": [
+        228,
+        280
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        214
+      ],
+      "pivot_master": [
+        1024,
+        428
+      ],
+      "role": "canonical adult face base",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "nose_detail",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_nose_detail.png",
+      "registered_png": "artwork/registered/nose_detail.png",
+      "enabled_neutral": true,
+      "z": 40.5,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        498,
+        176,
+        517,
+        199
+      ],
+      "master_xy": [
+        996,
+        352
+      ],
+      "master_size": [
+        38,
+        46
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        507,
+        190
+      ],
+      "pivot_master": [
+        1014,
+        380
+      ],
+      "role": "canonical nose-tip patch",
+      "source_polygon_ref": [
+        [
+          998,
+          354
+        ],
+        [
+          1032,
+          354
+        ],
+        [
+          1032,
+          396
+        ],
+        [
+          998,
+          396
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "ear_R",
+      "source": "head/layers/RYO_HEAD_ear_R_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_ear_R_v001.png",
+      "registered_png": "artwork/registered/ear_R.png",
+      "enabled_neutral": true,
+      "z": 41,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        438.0,
+        145.0,
+        462.0,
+        198.0
+      ],
+      "master_xy": [
+        876,
+        290
+      ],
+      "master_size": [
+        48,
+        106
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        456,
+        156
+      ],
+      "pivot_master": [
+        912,
+        312
+      ],
+      "role": "character-right ear",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "ear_L",
+      "source": "head/layers/RYO_HEAD_ear_L_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_ear_L_v001.png",
+      "registered_png": "artwork/registered/ear_L.png",
+      "enabled_neutral": true,
+      "z": 42,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        555.0,
+        145.0,
+        580.0,
+        198.0
+      ],
+      "master_xy": [
+        1110,
+        290
+      ],
+      "master_size": [
+        50,
+        106
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        562,
+        156
+      ],
+      "pivot_master": [
+        1124,
+        312
+      ],
+      "role": "character-left ear",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "sclera_R",
+      "source": "head/layers/RYO_HEAD_sclera_R_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_sclera_R_v001.png",
+      "registered_png": "artwork/registered/sclera_R.png",
+      "enabled_neutral": true,
+      "z": 45,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        456.0,
+        153.0,
+        500.0,
+        169.0
+      ],
+      "master_xy": [
+        912,
+        306
+      ],
+      "master_size": [
+        88,
+        32
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        478,
+        161
+      ],
+      "pivot_master": [
+        956,
+        322
+      ],
+      "role": "character-right sclera",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "sclera_L",
+      "source": "head/layers/RYO_HEAD_sclera_L_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_sclera_L_v001.png",
+      "registered_png": "artwork/registered/sclera_L.png",
+      "enabled_neutral": true,
+      "z": 45.5,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        519.0,
+        153.0,
+        561.0,
+        169.0
+      ],
+      "master_xy": [
+        1038,
+        306
+      ],
+      "master_size": [
+        84,
+        32
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        537,
+        161
+      ],
+      "pivot_master": [
+        1074,
+        322
+      ],
+      "role": "character-left sclera",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "iris_R",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_iris_R.png",
+      "registered_png": "artwork/registered/iris_R.png",
+      "enabled_neutral": true,
+      "z": 46,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        450,
+        148,
+        498,
+        177
+      ],
+      "master_xy": [
+        900,
+        296
+      ],
+      "master_size": [
+        96,
+        58
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        479,
+        163
+      ],
+      "pivot_master": [
+        958,
+        326
+      ],
+      "role": "canonical character-right amber iris",
+      "source_polygon_ref": [
+        [
+          944,
+          306
+        ],
+        [
+          970,
+          306
+        ],
+        [
+          978,
+          316
+        ],
+        [
+          976,
+          332
+        ],
+        [
+          968,
+          342
+        ],
+        [
+          952,
+          342
+        ],
+        [
+          940,
+          334
+        ],
+        [
+          936,
+          320
+        ]
+      ],
+      "canonical_mask_kind": "eye_iris",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "iris_L",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_iris_L.png",
+      "registered_png": "artwork/registered/iris_L.png",
+      "enabled_neutral": true,
+      "z": 46.5,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        521,
+        148,
+        566,
+        177
+      ],
+      "master_xy": [
+        1042,
+        296
+      ],
+      "master_size": [
+        90,
+        58
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        537,
+        163
+      ],
+      "pivot_master": [
+        1074,
+        326
+      ],
+      "role": "canonical character-left amber iris",
+      "source_polygon_ref": [
+        [
+          1060,
+          306
+        ],
+        [
+          1084,
+          306
+        ],
+        [
+          1094,
+          318
+        ],
+        [
+          1092,
+          332
+        ],
+        [
+          1084,
+          342
+        ],
+        [
+          1068,
+          342
+        ],
+        [
+          1058,
+          334
+        ],
+        [
+          1054,
+          320
+        ]
+      ],
+      "canonical_mask_kind": "eye_iris",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "lash_R",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_lash_R.png",
+      "registered_png": "artwork/registered/lash_R.png",
+      "enabled_neutral": true,
+      "z": 47,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        450,
+        148,
+        498,
+        177
+      ],
+      "master_xy": [
+        900,
+        296
+      ],
+      "master_size": [
+        96,
+        58
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        478,
+        157
+      ],
+      "pivot_master": [
+        956,
+        314
+      ],
+      "role": "canonical character-right eye surround",
+      "source_polygon_ref": [
+        [
+          944,
+          306
+        ],
+        [
+          970,
+          306
+        ],
+        [
+          978,
+          316
+        ],
+        [
+          976,
+          332
+        ],
+        [
+          968,
+          342
+        ],
+        [
+          952,
+          342
+        ],
+        [
+          940,
+          334
+        ],
+        [
+          936,
+          320
+        ]
+      ],
+      "canonical_mask_kind": "eye_surround",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "lash_L",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_lash_L.png",
+      "registered_png": "artwork/registered/lash_L.png",
+      "enabled_neutral": true,
+      "z": 47.5,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        521,
+        148,
+        566,
+        177
+      ],
+      "master_xy": [
+        1042,
+        296
+      ],
+      "master_size": [
+        90,
+        58
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        537,
+        157
+      ],
+      "pivot_master": [
+        1074,
+        314
+      ],
+      "role": "canonical character-left eye surround",
+      "source_polygon_ref": [
+        [
+          1060,
+          306
+        ],
+        [
+          1084,
+          306
+        ],
+        [
+          1094,
+          318
+        ],
+        [
+          1092,
+          332
+        ],
+        [
+          1084,
+          342
+        ],
+        [
+          1068,
+          342
+        ],
+        [
+          1058,
+          334
+        ],
+        [
+          1054,
+          320
+        ]
+      ],
+      "canonical_mask_kind": "eye_surround",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "closed_R",
+      "source": "head/layers/RYO_HEAD_closed_lid_R_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_closed_lid_R_v001.png",
+      "registered_png": "artwork/registered/closed_R.png",
+      "enabled_neutral": false,
+      "z": 48,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        454.0,
+        148.0,
+        502.0,
+        169.0
+      ],
+      "master_xy": [
+        908,
+        296
+      ],
+      "master_size": [
+        96,
+        42
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        478,
+        157
+      ],
+      "pivot_master": [
+        956,
+        314
+      ],
+      "role": "character-right blink swap",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "closed_L",
+      "source": "head/layers/RYO_HEAD_closed_lid_L_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_closed_lid_L_v001.png",
+      "registered_png": "artwork/registered/closed_L.png",
+      "enabled_neutral": false,
+      "z": 48.5,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        518.0,
+        148.0,
+        565.0,
+        169.0
+      ],
+      "master_xy": [
+        1036,
+        296
+      ],
+      "master_size": [
+        94,
+        42
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        538,
+        157
+      ],
+      "pivot_master": [
+        1076,
+        314
+      ],
+      "role": "character-left blink swap",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "brow_R",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_brow_R.png",
+      "registered_png": "artwork/registered/brow_R.png",
+      "enabled_neutral": true,
+      "z": 49,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        453,
+        136,
+        499,
+        156
+      ],
+      "master_xy": [
+        906,
+        272
+      ],
+      "master_size": [
+        92,
+        40
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        479,
+        147
+      ],
+      "pivot_master": [
+        958,
+        294
+      ],
+      "role": "canonical character-right brow",
+      "source_polygon_ref": [
+        [
+          908,
+          274
+        ],
+        [
+          996,
+          274
+        ],
+        [
+          996,
+          310
+        ],
+        [
+          908,
+          310
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "brow_L",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_brow_L.png",
+      "registered_png": "artwork/registered/brow_L.png",
+      "enabled_neutral": true,
+      "z": 49.5,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        520,
+        136,
+        565,
+        156
+      ],
+      "master_xy": [
+        1040,
+        272
+      ],
+      "master_size": [
+        90,
+        40
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        538,
+        147
+      ],
+      "pivot_master": [
+        1076,
+        294
+      ],
+      "role": "canonical character-left brow",
+      "source_polygon_ref": [
+        [
+          1042,
+          274
+        ],
+        [
+          1128,
+          274
+        ],
+        [
+          1128,
+          310
+        ],
+        [
+          1042,
+          310
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "mouth_neutral",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_mouth_neutral.png",
+      "registered_png": "artwork/registered/mouth_neutral.png",
+      "enabled_neutral": true,
+      "z": 50,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        487,
+        196,
+        530,
+        219
+      ],
+      "master_xy": [
+        974,
+        392
+      ],
+      "master_size": [
+        86,
+        46
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        508,
+        206
+      ],
+      "pivot_master": [
+        1016,
+        412
+      ],
+      "role": "exclusive canonical neutral mouth",
+      "source_polygon_ref": [
+        [
+          976,
+          394
+        ],
+        [
+          1058,
+          394
+        ],
+        [
+          1058,
+          436
+        ],
+        [
+          976,
+          436
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "mouth_A",
+      "source": "head/layers/RYO_HEAD_viseme_A_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_viseme_A_v001.png",
+      "registered_png": "artwork/registered/mouth_A.png",
+      "enabled_neutral": false,
+      "z": 51,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        489.0,
+        196.0,
+        525.0,
+        224.0
+      ],
+      "master_xy": [
+        978,
+        392
+      ],
+      "master_size": [
+        72,
+        56
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        506.5,
+        205
+      ],
+      "pivot_master": [
+        1013.0,
+        410
+      ],
+      "role": "exclusive viseme A mouth swap",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "mouth_E",
+      "source": "head/layers/RYO_HEAD_viseme_E_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_viseme_E_v001.png",
+      "registered_png": "artwork/registered/mouth_E.png",
+      "enabled_neutral": false,
+      "z": 51,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        489.0,
+        199.0,
+        525.0,
+        214.0
+      ],
+      "master_xy": [
+        978,
+        398
+      ],
+      "master_size": [
+        72,
+        30
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        506.5,
+        205
+      ],
+      "pivot_master": [
+        1013.0,
+        410
+      ],
+      "role": "exclusive viseme E mouth swap",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "mouth_I",
+      "source": "head/layers/RYO_HEAD_viseme_I_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_viseme_I_v001.png",
+      "registered_png": "artwork/registered/mouth_I.png",
+      "enabled_neutral": false,
+      "z": 51,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        489.0,
+        200.0,
+        525.0,
+        213.0
+      ],
+      "master_xy": [
+        978,
+        400
+      ],
+      "master_size": [
+        72,
+        26
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        506.5,
+        205
+      ],
+      "pivot_master": [
+        1013.0,
+        410
+      ],
+      "role": "exclusive viseme I mouth swap",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "mouth_O",
+      "source": "head/layers/RYO_HEAD_viseme_O_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_viseme_O_v001.png",
+      "registered_png": "artwork/registered/mouth_O.png",
+      "enabled_neutral": false,
+      "z": 51,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        496.0,
+        197.0,
+        518.0,
+        223.0
+      ],
+      "master_xy": [
+        992,
+        394
+      ],
+      "master_size": [
+        44,
+        52
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        506.5,
+        205
+      ],
+      "pivot_master": [
+        1013.0,
+        410
+      ],
+      "role": "exclusive viseme O mouth swap",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "mouth_U",
+      "source": "head/layers/RYO_HEAD_viseme_U_v001.png",
+      "derivative": "artwork/derivatives/head__layers__RYO_HEAD_viseme_U_v001.png",
+      "registered_png": "artwork/registered/mouth_U.png",
+      "enabled_neutral": false,
+      "z": 51,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        495.0,
+        201.0,
+        519.0,
+        216.0
+      ],
+      "master_xy": [
+        990,
+        402
+      ],
+      "master_size": [
+        48,
+        30
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        506.5,
+        205
+      ],
+      "pivot_master": [
+        1013.0,
+        410
+      ],
+      "role": "exclusive viseme U mouth swap",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "front_fringe",
+      "source": "hair/front_fringe.png",
+      "derivative": "artwork/derivatives/hair__front_fringe.png",
+      "registered_png": "artwork/registered/front_fringe.png",
+      "enabled_neutral": true,
+      "z": 60,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        409.0,
+        48.0,
+        593.0,
+        239.0
+      ],
+      "master_xy": [
+        818,
+        96
+      ],
+      "master_size": [
+        368,
+        382
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        512,
+        64
+      ],
+      "pivot_master": [
+        1024,
+        128
+      ],
+      "role": "front fringe",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "temple_R",
+      "source": "hair/temple_lock_character_right.png",
+      "derivative": "artwork/derivatives/hair__temple_lock_character_right.png",
+      "registered_png": "artwork/registered/temple_R.png",
+      "enabled_neutral": true,
+      "z": 61,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        418.0,
+        104.0,
+        453.0,
+        253.0
+      ],
+      "master_xy": [
+        836,
+        208
+      ],
+      "master_size": [
+        70,
+        298
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        443,
+        109
+      ],
+      "pivot_master": [
+        886,
+        218
+      ],
+      "role": "character-right temple lock",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "temple_L",
+      "source": "hair/temple_lock_character_left.png",
+      "derivative": "artwork/derivatives/hair__temple_lock_character_left.png",
+      "registered_png": "artwork/registered/temple_L.png",
+      "enabled_neutral": true,
+      "z": 62,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        551.0,
+        112.0,
+        581.0,
+        238.0
+      ],
+      "master_xy": [
+        1102,
+        224
+      ],
+      "master_size": [
+        60,
+        252
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        558,
+        115
+      ],
+      "pivot_master": [
+        1116,
+        230
+      ],
+      "role": "character-left temple lock",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "earring_R",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_earring_R.png",
+      "registered_png": "artwork/registered/earring_R.png",
+      "enabled_neutral": true,
+      "z": 63,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        445,
+        178,
+        461,
+        242
+      ],
+      "master_xy": [
+        890,
+        356
+      ],
+      "master_size": [
+        32,
+        128
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        451,
+        183
+      ],
+      "pivot_master": [
+        902,
+        366
+      ],
+      "role": "canonical character-right slim gold earring",
+      "source_polygon_ref": [
+        [
+          892,
+          358
+        ],
+        [
+          920,
+          358
+        ],
+        [
+          920,
+          482
+        ],
+        [
+          892,
+          482
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "earring_L",
+      "source": "reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+      "derivative": "artwork/derivatives/CANONICAL_earring_L.png",
+      "registered_png": "artwork/registered/earring_L.png",
+      "enabled_neutral": true,
+      "z": 64,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        550,
+        178,
+        567,
+        242
+      ],
+      "master_xy": [
+        1100,
+        356
+      ],
+      "master_size": [
+        34,
+        128
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        560,
+        183
+      ],
+      "pivot_master": [
+        1120,
+        366
+      ],
+      "role": "canonical character-left slim gold earring",
+      "source_polygon_ref": [
+        [
+          1102,
+          358
+        ],
+        [
+          1132,
+          358
+        ],
+        [
+          1132,
+          482
+        ],
+        [
+          1102,
+          482
+        ]
+      ],
+      "canonical_mask_kind": "patch",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "blush_R",
+      "source": "effects/layers/RYO_FX_blush_character_R.png",
+      "derivative": "artwork/derivatives/effects__layers__RYO_FX_blush_character_R.png",
+      "registered_png": "artwork/registered/blush_R.png",
+      "enabled_neutral": false,
+      "z": 70,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        459.0,
+        171.0,
+        495.0,
+        188.0
+      ],
+      "master_xy": [
+        918,
+        342
+      ],
+      "master_size": [
+        72,
+        34
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        477,
+        179
+      ],
+      "pivot_master": [
+        954,
+        358
+      ],
+      "role": "optional blush",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "blush_L",
+      "source": "effects/layers/RYO_FX_blush_character_L.png",
+      "derivative": "artwork/derivatives/effects__layers__RYO_FX_blush_character_L.png",
+      "registered_png": "artwork/registered/blush_L.png",
+      "enabled_neutral": false,
+      "z": 71,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        529.0,
+        171.0,
+        565.0,
+        188.0
+      ],
+      "master_xy": [
+        1058,
+        342
+      ],
+      "master_size": [
+        72,
+        34
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        547,
+        179
+      ],
+      "pivot_master": [
+        1094,
+        358
+      ],
+      "role": "optional blush",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "sweat",
+      "source": "effects/layers/RYO_FX_sweatdrop.png",
+      "derivative": "artwork/derivatives/effects__layers__RYO_FX_sweatdrop.png",
+      "registered_png": "artwork/registered/sweat.png",
+      "enabled_neutral": false,
+      "z": 72,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        554.0,
+        121.0,
+        570.0,
+        153.0
+      ],
+      "master_xy": [
+        1108,
+        242
+      ],
+      "master_size": [
+        32,
+        64
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        562,
+        123
+      ],
+      "pivot_master": [
+        1124,
+        246
+      ],
+      "role": "optional sweat",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "anger",
+      "source": "effects/layers/RYO_FX_anger_mark.png",
+      "derivative": "artwork/derivatives/effects__layers__RYO_FX_anger_mark.png",
+      "registered_png": "artwork/registered/anger.png",
+      "enabled_neutral": false,
+      "z": 73,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        551.0,
+        103.0,
+        580.0,
+        130.0
+      ],
+      "master_xy": [
+        1102,
+        206
+      ],
+      "master_size": [
+        58,
+        54
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        565,
+        116
+      ],
+      "pivot_master": [
+        1130,
+        232
+      ],
+      "role": "optional anger",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "tear_R",
+      "source": "effects/layers/RYO_FX_tear_character_R.png",
+      "derivative": "artwork/derivatives/effects__layers__RYO_FX_tear_character_R.png",
+      "registered_png": "artwork/registered/tear_R.png",
+      "enabled_neutral": false,
+      "z": 74,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        473.0,
+        163.0,
+        483.0,
+        213.0
+      ],
+      "master_xy": [
+        946,
+        326
+      ],
+      "master_size": [
+        20,
+        100
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        478,
+        165
+      ],
+      "pivot_master": [
+        956,
+        330
+      ],
+      "role": "optional tear",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "tear_L",
+      "source": "effects/layers/RYO_FX_tear_character_L.png",
+      "derivative": "artwork/derivatives/effects__layers__RYO_FX_tear_character_L.png",
+      "registered_png": "artwork/registered/tear_L.png",
+      "enabled_neutral": false,
+      "z": 75,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        541.0,
+        163.0,
+        551.0,
+        213.0
+      ],
+      "master_xy": [
+        1082,
+        326
+      ],
+      "master_size": [
+        20,
+        100
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        546,
+        165
+      ],
+      "pivot_master": [
+        1092,
+        330
+      ],
+      "role": "optional tear",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    },
+    {
+      "name": "sparkle",
+      "source": "effects/layers/RYO_FX_sparkle_cluster.png",
+      "derivative": "artwork/derivatives/effects__layers__RYO_FX_sparkle_cluster.png",
+      "registered_png": "artwork/registered/sparkle.png",
+      "enabled_neutral": false,
+      "z": 76,
+      "parent": "head",
+      "bbox_ref_xyxy": [
+        544.0,
+        88.0,
+        584.0,
+        130.0
+      ],
+      "master_xy": [
+        1088,
+        176
+      ],
+      "master_size": [
+        80,
+        84
+      ],
+      "rotation_degrees": 0,
+      "shoulder_compression_ref": 0,
+      "pivot_ref": [
+        564,
+        108
+      ],
+      "pivot_master": [
+        1128,
+        216
+      ],
+      "role": "optional sparkle",
+      "character_side_convention": "L is character-left (viewer-right); R is character-right (viewer-left)"
+    }
+  ]
+}

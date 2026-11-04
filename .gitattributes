@@ -1,0 +1,2 @@
+ryoko_2d_update/tools/godot/Godot_v4.5.1-stable_linux.x86_64 filter=lfs diff=lfs merge=lfs -text
+ryoko_2d_update/tools/godot/godot.zip filter=lfs diff=lfs merge=lfs -text

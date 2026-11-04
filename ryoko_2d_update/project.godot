@@ -1,0 +1,23 @@
+; Ryoko registered 2D cutout rig — Godot 4.5.1
+config_version=5
+
+[application]
+config/name="Ryoko — Registered 2D Cutout Rig"
+run/main_scene="res://rig/main.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1024
+window/size/viewport_height=1536
+window/size/window_width_override=768
+window/size/window_height_override=1152
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.094,0.114,0.133,1)
+
+[audio]
+driver/enable_input=false
