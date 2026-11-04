@@ -1,0 +1,67 @@
+{
+  "size": [
+    1136,
+    1384
+  ],
+  "mouths": {
+    "neutral": {
+      "file": "mouth_neutral.png",
+      "xy": [
+        480,
+        590
+      ]
+    },
+    "A": {
+      "file": "mouth_A.png",
+      "xy": [
+        512,
+        622
+      ]
+    },
+    "E": {
+      "file": "mouth_E.png",
+      "xy": [
+        512,
+        622
+      ]
+    },
+    "I": {
+      "file": "mouth_I.png",
+      "xy": [
+        512,
+        622
+      ]
+    },
+    "O": {
+      "file": "mouth_O.png",
+      "xy": [
+        532,
+        622
+      ]
+    },
+    "U": {
+      "file": "mouth_U.png",
+      "xy": [
+        529,
+        622
+      ]
+    }
+  },
+  "blinks": {
+    "R": {
+      "file": "blink_R.png",
+      "xy": [
+        395,
+        450
+      ]
+    },
+    "L": {
+      "file": "blink_L.png",
+      "xy": [
+        585,
+        450
+      ]
+    }
+  },
+  "note": "Local facial-control preview. Flat bust base; independent mouth and eyelid sprites. No head/body deformation yet."
+}
