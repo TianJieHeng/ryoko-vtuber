@@ -1,5 +1,7 @@
 # Crown/bun secondary motion
 
+The later approved lower side-lock revision is documented in [README_LOOSE_HAIR.md](README_LOOSE_HAIR.md). It is separate from this approved crown/bun control and was approved after visual review.
+
 User-approved revision based on approved clip-player rig 80a5395. Adds actual weighted mesh movement to the crown and bun while preserving the approved face, torso and chest behavior.
 
 The upper hair lags slightly behind changes in head/torso motion and settles when movement stops. It is not driven by an idle sine wave. A damped spring follows an upper-head anchor, with an eight-source-pixel limit (under four pixels at the normal review scale). The focused head-motion test peaks at 6.67 source pixels.

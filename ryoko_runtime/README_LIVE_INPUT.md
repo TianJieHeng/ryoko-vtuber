@@ -14,6 +14,8 @@ Send updates more often than every two seconds. A two-second gap resets facial, 
 
 ## Accepted controls
 
+- `loose_hair_secondary`: boolean; enables/disables the approved outer lower hair-tip motion. See README_LOOSE_HAIR.md for implementation details and limits.
+
 - `look_x`, `look_y`: finite numbers from -1 to 1; `look_release`: boolean.
 - `ornament_secondary`: boolean; enables or disables the hanging hairpin cutout.
 - `earring_secondary`: boolean; enables or disables the two hanging earrings. See the approved implementation and limits in README_EARRINGS.md.

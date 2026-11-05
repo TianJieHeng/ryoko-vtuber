@@ -4,6 +4,8 @@ Built on approved main `a04cbc82c443a1e1cbfb068155f82a5c2af043d9`. Adds clip sch
 
 ## New version-1 cue controls
 
+- `loose_hair_secondary`: boolean, added by the approved lower side-lock revision (README_LOOSE_HAIR.md). Like other secondary-motion toggles, the setting persists through cancellation and reset.
+
 - `gaze_x`, `gaze_y`: numbers in [-1, 1]. Set both to 0 to center the independent iris offset.
 - `brow_raise`, `brow_screen_left`, `brow_screen_right`: numbers in [-1, 1]. Per-side values override `brow_raise` when supplied together. Use `brow_raise: 0` to return both sides to neutral.
 - `breath_level`, `breath_strength`: numbers in [0, 1]. `breath_trigger: true` starts one inhale/exhale with the optional strength. `breath_level` holds a level. `breath_cancel: true` releases it smoothly. In the same cue, trigger overrides level and cancel overrides trigger, matching the live API.

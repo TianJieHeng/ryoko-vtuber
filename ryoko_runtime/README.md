@@ -1,3 +1,7 @@
+# Approved lower side-lock motion
+
+See [README_LOOSE_HAIR.md](README_LOOSE_HAIR.md) for independent outer hair-tip follow-through, X toggle, source-preservation checks and actual runtime review. The user reviewed and approved the runtime footage on 2026-11-05.
+
 # Approved independent earrings
 
 See [README_EARRINGS.md](README_EARRINGS.md) for restrained independent earring sway, Shift+F, derivative-art limits and actual runtime review. The user reviewed and approved the runtime footage on 2026-11-05.

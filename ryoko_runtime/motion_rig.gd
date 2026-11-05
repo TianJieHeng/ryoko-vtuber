@@ -77,6 +77,8 @@ var ornament_pivot:Node2D
 var ornament_sprite:Sprite2D
 var ornament_proof=false
 var ornament_stage=-1
+var loose_hair_enabled=true
+var loose_hair={"screen_left":preload("res://loose_hair_driver.gd").new(),"screen_right":preload("res://loose_hair_driver.gd").new()}
 var earrings_enabled=true
 var earrings={}
 var earring_metadata={}
@@ -182,6 +184,7 @@ func apply_controls(data, source="external"):
     if data.has("pose_load"):pose_ok=recall_pose(int(data.pose_load))
     if data.get("reset",false):
         for earring in earrings.values():earring.reset()
+        for lock in loose_hair.values():lock.reset()
         ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("brow_raise"):brows.set_both(data.brow_raise)
     if data.has("brow_screen_left"):brows.set_side("screen_left",data.brow_screen_left)
@@ -208,6 +211,7 @@ func apply_controls(data, source="external"):
     if data.get("bounce",false):bounce_velocity=-280.0
     if data.has("ornament_secondary"):ornament.enabled=bool(data.ornament_secondary)
     if data.has("earring_secondary"):earrings_enabled=bool(data.earring_secondary)
+    if data.has("loose_hair_secondary"):loose_hair_enabled=bool(data.loose_hair_secondary)
     if data.has("hair_secondary"):hair.enabled=bool(data.hair_secondary)
     if data.has("chest_secondary"):chest_enabled=bool(data.chest_secondary)
     if data.has("body_follow"):body_follow=bool(data.body_follow)
@@ -260,6 +264,9 @@ func _unhandled_key_input(event):
     if event.keycode==KEY_F and not event.shift_pressed:
         hair.enabled=not hair.enabled
         pose_notice="Crown hair motion on" if hair.enabled else "Crown hair motion off"
+    if event.keycode==KEY_X:
+        stop_clip();loose_hair_enabled=not loose_hair_enabled
+        pose_notice="Loose hair motion on" if loose_hair_enabled else "Loose hair motion off"
     if event.keycode==KEY_T:play_clip("res://demo_bust_clip.json" if event.shift_pressed else "res://demo_clip.json")
     if event.keycode==KEY_P:pause_clip(not clip.paused)
     if event.keycode==KEY_ESCAPE:stop_clip()
@@ -353,6 +360,7 @@ func _process(delta):
     ornament_pivot.visible=ornament.enabled
     skin_material.set_shader_parameter("ornament_separate",ornament.enabled)
     _step_earrings(delta,ornament_frame)
+    _step_loose_hair(delta,ornament_frame)
     skin_material.set_shader_parameter("hair_offset",hair.offset)
     skin_material.set_shader_parameter("chest_offset",chest_offset)
     skin_material.set_shader_parameter("head_tilt",current.x*deg_to_rad(6.0))
@@ -407,6 +415,16 @@ func _setup_earrings():
         node.add_child(sprite);earring_sprites[side]=sprite
     skin_material.set_shader_parameter("earring_underpaint",load("res://rig_assets/earring_underpaint.png"))
     skin_material.set_shader_parameter("earring_clear_masks",load("res://rig_assets/earring_clear_masks.png"))
+
+func _step_loose_hair(delta,frame_angle):
+    for side in loose_hair:
+        var root_position=Vector2(340,570) if side=="screen_left" else Vector2(780,570)
+        # Exclude periodic breathing so a held pose has no invented idle sway.
+        var anchor=deform_independent(root_position,current,body_current,0)+Vector2(0,bounce_position)
+        var lock=loose_hair[side]
+        lock.enabled=loose_hair_enabled;lock.step(anchor,delta)
+        var local_offset=lock.offset.rotated(-frame_angle)
+        skin_material.set_shader_parameter("loose_hair_left" if side=="screen_left" else "loose_hair_right",local_offset)
 
 func _step_earrings(delta,frame_angle):
     var separated=Vector2.ZERO
