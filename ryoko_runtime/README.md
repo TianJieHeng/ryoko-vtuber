@@ -1,3 +1,7 @@
+# Approved timed existing expressions
+
+See [README_EXPRESSION_CUES.md](README_EXPRESSION_CUES.md) for validated existing-expression selection inside timed clips, pause/resume, manual takeover and the actual Godot review. No new artwork or expressions are produced. The user approved the actual runtime review on 2026-11-05. See [VALIDATION_EXPRESSION_CUES.md](VALIDATION_EXPRESSION_CUES.md) for checks and limits.
+
 # Approved gaze on existing expressions
 
 See [README_EXPRESSION_GAZE.md](README_EXPRESSION_GAZE.md) for rigid gaze on the existing EXP-064 and EXP-189 artwork, retained blink/speech behavior, source preservation and the actual Godot review. No new expressions are added. The user approved the review on 2026-11-05. See [VALIDATION_EXPRESSION_GAZE.md](VALIDATION_EXPRESSION_GAZE.md) for checks and limits.

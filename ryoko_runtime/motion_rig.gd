@@ -178,6 +178,10 @@ func _build_grid(columns,rows):
     var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays);return mesh
 
 func apply_controls(data, source="external"):
+    # Loaded clips are already validated. Also reject a stale/mutated expression
+    # cue before any of its other controls or ownership flags can be applied.
+    if source=="clip" and data.has("expression"):
+        if not data.expression is String or (data.expression!="neutral" and not face.emotion_eyes.has(data.expression)):return false
     if source in ["external","clip"]:external_controls=true
     if source=="clip":_track_clip_channels(data)
     if data.get("clip_stop",false):stop_clip()
@@ -188,7 +192,7 @@ func apply_controls(data, source="external"):
     if data.get("reset",false):
         for earring in earrings.values():earring.reset()
         for lock in loose_hair.values():lock.reset()
-        ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();expression_index=-1;manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("brow_raise"):brows.set_both(data.brow_raise)
     if data.has("brow_screen_left"):brows.set_side("screen_left",data.brow_screen_left)
     if data.has("brow_screen_right"):brows.set_side("screen_right",data.brow_screen_right)
@@ -220,7 +224,7 @@ func apply_controls(data, source="external"):
     if data.has("body_follow"):body_follow=bool(data.body_follow)
     var accepted=pose_ok
     if data.has("expression"):
-        var expression_ok=face.set_expression(String(data.expression))
+        var expression_ok=_set_expression(String(data.expression))
         accepted=accepted and expression_ok
     if data.has("gesture"):
         var gesture_ok=gestures.trigger(String(data.gesture),data.get("gesture_strength",1.0))
@@ -243,6 +247,11 @@ func apply_controls(data, source="external"):
         var saved=save_pose(int(data.pose_save))
         accepted=accepted and saved
     return accepted
+
+func _set_expression(id:String)->bool:
+    if not face.set_expression(id):return false
+    expression_index=expression_ids.find(face.expression)
+    return true
 
 func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
@@ -290,8 +299,10 @@ func _unhandled_key_input(event):
     if event.keycode==KEY_M:mouse_follow=not mouse_follow
     if event.keycode==KEY_R:apply_controls({"reset":true})
     if event.keycode==KEY_COMMA or event.keycode==KEY_PERIOD:
-        expression_index=posmod(expression_index+(-1 if event.keycode==KEY_COMMA else 1),expression_ids.size())
-        face.set_expression(expression_ids[expression_index])
+        stop_clip()
+        # Derive from the selected face, including clip/live/direct API changes.
+        expression_index=posmod(expression_ids.find(face.expression)+(-1 if event.keycode==KEY_COMMA else 1),expression_ids.size())
+        _set_expression(expression_ids[expression_index])
 
 func _process(delta):
     if not rig_ready:return
@@ -440,6 +451,7 @@ func _setup_gaze_profiles():
         gaze_profiles[id]=profile
 
 func _sync_gaze_render_state():
+    expression_index=expression_ids.find(face.expression)
     skin_material.set_shader_parameter("brow_enabled",face.expression=="neutral")
     var supported=_select_gaze_profile(face.expression)
     skin_material.set_shader_parameter("gaze_open",Vector2(1 if supported and not face.blink_right else 0,1 if supported and not face.blink_left else 0))
@@ -655,7 +667,7 @@ func _run_pose_proof():
 
 func play_clip(path:String)->bool:
     var was_active=clip.active or clip.paused
-    if not clip.load_file(path):pose_notice=clip.error_message;return false
+    if not clip.load_file(path,expression_ids):pose_notice=clip.error_message;return false
     if was_active:_release_clip_channels()
     clip_channels.clear()
     audio_mouth.player.stream_paused=false

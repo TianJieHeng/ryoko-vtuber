@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "duration": 17.0,
+  "cues": [
+    {"time": 0.0, "controls": {"expression": "neutral", "auto_blink": false, "body_follow": false, "mouth": "REST", "gaze_x": 0.0, "gaze_y": 0.0}},
+    {"time": 1.0, "controls": {"expression": "EXP-064", "head_tilt": -0.2}},
+    {"time": 2.0, "controls": {"gaze_x": -0.8}},
+    {"time": 3.0, "controls": {"gaze_x": 0.8, "mouth": "E"}},
+    {"time": 4.0, "controls": {"eye_screen_left": 1.0, "mouth": "A"}},
+    {"time": 5.0, "controls": {"release_eye_controls": true, "mouth": "REST", "gaze_x": 0.0}},
+    {"time": 6.0, "controls": {"expression": "EXP-041", "head_tilt": 0.2, "gaze_x": -0.8}},
+    {"time": 7.5, "controls": {"expression": "EXP-189", "gaze_x": -0.7, "head_tilt": 0.0}},
+    {"time": 9.0, "controls": {"gaze_x": 0.7, "mouth": "E"}},
+    {"time": 10.0, "controls": {"eye_screen_right": 1.0, "mouth": "A"}},
+    {"time": 11.0, "controls": {"release_eye_controls": true, "mouth": "REST", "gaze_x": 0.0, "look_x": -0.4, "look_y": 0.15}},
+    {"time": 13.0, "controls": {"expression": "neutral", "look_release": true, "head_tilt": 0.0, "gaze_x": 0.0, "gaze_y": 0.0, "mouth": "REST", "breath_trigger": true, "breath_strength": 0.4}},
+    {"time": 16.0, "controls": {"breath_cancel": true, "auto_blink": true}}
+  ]
+}

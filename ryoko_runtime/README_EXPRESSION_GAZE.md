@@ -20,7 +20,7 @@ With the existing `--live-input` opt-in:
 
     python send_live.py --seq 1 '{"expression":"EXP-064","gaze_x":-0.7,"gaze_y":0.2}'
 
-Existing timed gaze cues work on a supported expression selected before the clip starts. This revision does not add expression-selection cues to the clip format. Pausing freezes motion; changing the selected expression while paused refreshes the matching eye textures and neutral-only brow gate without advancing the clock or moving the drivers.
+Existing timed gaze cues work on a supported expression selected before the clip starts. The approved [expression-cue extension](README_EXPRESSION_CUES.md) also allows validated selection of existing expressions within the clip. Pausing freezes motion; changing the selected expression through the direct API while paused refreshes the matching eye textures and neutral-only brow gate without advancing the clock or moving the drivers. Keyboard expression cycling takes over playback.
 
 ## Composition
 
