@@ -1,0 +1,1 @@
+PASS: 12 displayed states retain original jaw/chin/neck/body outside shared speech mouth bounds. Emotion mouth tiles end at y675.

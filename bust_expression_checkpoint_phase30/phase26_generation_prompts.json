@@ -1,0 +1,17 @@
+{
+  "125": {
+    "rest": "sources/EXP-125.png",
+    "blink": "sources/EXP-125-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting only. Change ONLY eyes/brows/mouth and necessary subtle cheek color: Sudden insight exact reference peak: bright fully open amber eyes, raised brows, a cheerful open smile with a narrow upper teeth bar and visible tongue. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects."
+  },
+  "186": {
+    "rest": "sources/EXP-186.png",
+    "blink": "sources/EXP-186-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting only. Change ONLY eyes/brows/mouth and necessary subtle cheek color: Smug cat smile exact reference peak: amused narrow amber eye slivers, relaxed slightly uneven brows, broad closed-lip impish smile. Eyes are not fully closed. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects."
+  },
+  "040": {
+    "rest": "sources/EXP-040.png",
+    "blink": "sources/EXP-040-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting only. Change ONLY eyes/brows/mouth and necessary subtle cheek color: Recovering composure exact reference peak: raised worried inner brows, slightly moist half-lowered open amber eyes, restrained trembling downturned closed lips, soft diffuse cheek blush. No tear streams. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects."
+  }
+}

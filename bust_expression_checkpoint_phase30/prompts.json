@@ -1,0 +1,20 @@
+{
+  "137": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-63b7cc47-aa73-4122-882a-c8dcb64b38b5.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-43314959-401a-42c9-aa39-4fe1ef0a61bb.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is exact approved neutral bust EDIT TARGET; image 2 facial acting only. Change ONLY eyes/brows/mouth: Realizing a mistake: wide worried direct amber eyes, raised inner brows, small horizontally stretched tense grimace showing a thin white teeth bar. No tears or blush. Preserve image 1 EXACT fixed frontal head geometry and centered nose/mouth axis at x565 in 1136x1384 canvas, eye positions around x480 and650,y495, mouth around x565,y633. Do not shift or turn head or redraw jaw. Preserve hair, nose, neck, suit, jewelry, framing, transparent background. Clean continuous cheek skin with no detached curved green hairs beneath eyes. No duplicate blush, no added props/text/effects.",
+    "blink_prompt": "Edit this exact registered avatar image: close BOTH eyes completely for a full blink. Replace open eye artwork entirely with clean closed eyelid lash curves; no open-eye lashes, irises or white sclera above them. Preserve current eyebrows, mouth, cheek skin, head position and scale, hair, clothing, framing and transparent background. Only eyelids change."
+  },
+  "178": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-71021e80-67d4-4ed8-b86b-ec010f6ff95c.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-71021e80-67d4-4ed8-b86b-ec010f6ff95c.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is exact approved neutral bust EDIT TARGET; image 2 facial acting only. Change ONLY eyes/brows/mouth: Restless drowsiness: BOTH eyes fully closed in downward flat lids, low knitted tense brows, small slack horizontal parted mouth. Not round O, no amber slivers. Preserve image 1 EXACT fixed frontal head geometry and centered nose/mouth axis at x565 in 1136x1384 canvas, eye positions around x480 and650,y495, mouth around x565,y633. Do not shift or turn head or redraw jaw. Preserve hair, nose, neck, suit, jewelry, framing, transparent background. Clean continuous cheek skin with no detached curved green hairs beneath eyes. No duplicate blush, no added props/text/effects.",
+    "blink_prompt": "Closed rest reused exactly"
+  },
+  "069": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-bd34a1c9-5ba6-4b0d-9dbc-5fb99cd6b17b.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-e35c30fa-9767-44fc-91dd-508c693aa765.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is exact approved neutral bust EDIT TARGET; image 2 facial acting only. Change ONLY eyes/brows/mouth: Suspicious startle: direct WIDE round amber eyes, uneven inward-tense brows, TINY circular open O mouth. No sideways gaze. Preserve image 1 EXACT fixed frontal head geometry and centered nose/mouth axis at x565 in 1136x1384 canvas, eye positions around x480 and650,y495, mouth around x565,y633. Do not shift or turn head or redraw jaw. Preserve hair, nose, neck, suit, jewelry, framing, transparent background. Clean continuous cheek skin with no detached curved green hairs beneath eyes. No duplicate blush, no added props/text/effects.",
+    "blink_prompt": "Edit this exact registered avatar image: close BOTH eyes completely for a full blink. Replace open eye artwork entirely with clean closed eyelid lash curves; no open-eye lashes, irises or white sclera above them. Preserve current eyebrows, mouth, cheek skin, head position and scale, hair, clothing, framing and transparent background. Only eyelids change."
+  }
+}
