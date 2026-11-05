@@ -57,6 +57,8 @@ var clip_proof_time=0.0
 var clip_events={}
 var hair=preload("res://hair_secondary.gd").new()
 var hair_proof=false
+var live_input=preload("res://live_input.gd").new()
+var live_proof=false
 
 func _ready():
     var viewport = SubViewport.new()
@@ -103,6 +105,10 @@ func _ready():
     pose_status=Label.new();pose_status.position=Vector2(18,62);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
     clip_proof="--clip-proof" in OS.get_cmdline_user_args()
     hair_proof="--hair-proof" in OS.get_cmdline_user_args()
+    live_proof="--live-proof" in args
+    if "--live-input" in args:
+        var error=live_input.start()
+        if error!=OK:push_error(live_input.status)
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -199,6 +205,10 @@ func _unhandled_key_input(event):
 
 func _process(delta):
     if not rig_ready:return
+    live_input.poll(delta,self)
+    if live_proof:
+        print("LIVE_FRAME ",JSON.stringify({"time":clock_time,"accepted":live_input.accepted,"rejected":live_input.rejected,"status":live_input.status,"head":target.x,"body":body_target.x,"expression":face.expression,"mouth":face.mouth_state}))
+        if clock_time>=18.0:get_tree().quit()
     if clip_proof:
         clip_proof_time+=delta
         _run_clip_proof()
@@ -248,6 +258,9 @@ func _process(delta):
     skin_material.set_shader_parameter("spine_tilt",body_current.x*deg_to_rad(3.0))
     skin_material.set_shader_parameter("torso_offset",Vector2(body_current.y*8.0,body_current.z*5.0+bounce_position))
     skin_material.set_shader_parameter("breath",sin(clock_time*TAU/6.0))
+    if live_proof:
+        hud.text="RYOKO / LOCAL LIVE INPUT"
+        hint.text=live_input.status+" · packets "+str(live_input.accepted)+" · separate Python sender"
     eyelids.step(delta)
     if eyelids.busy():
         blink_until=-1.0
@@ -482,3 +495,6 @@ func _run_hair_proof():
     hud.text="RYOKO / "+["REST / hair settles","LEAN LEFT / crown follows","LEAN RIGHT / crown follows","HOLD / no idle hair loop","OFF / rigid comparison","OFF / return neutral"][stage]
     hint.text="Small crown/bun lag · roots fixed above eyes · existing artwork"
     if t>=17.0:get_tree().quit()
+
+func _exit_tree():
+    live_input.stop()

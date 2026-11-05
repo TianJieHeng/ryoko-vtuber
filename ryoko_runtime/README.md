@@ -1,3 +1,7 @@
+# Local live input
+
+See [README_LIVE_INPUT.md](README_LIVE_INPUT.md) for opt-in localhost UDP controls and timeout release. This revision was reviewed and approved by the user.
+
 # Crown/bun motion
 
 See [README_HAIR.md](README_HAIR.md) for bounded hair secondary motion. This revision was reviewed and approved by the user.
