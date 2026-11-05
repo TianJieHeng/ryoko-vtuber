@@ -1,0 +1,1 @@
+PASS: all 84 previous expression registrations and 531 artwork PNGs unchanged byte-for-byte.

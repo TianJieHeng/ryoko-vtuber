@@ -1,0 +1,17 @@
+{
+  "128": {
+    "rest": "sources/EXP-128.png",
+    "blink": "sources/EXP-128-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is exact approved neutral bust EDIT TARGET; image 2 facial acting reference only. Change ONLY eyes/brows/mouth: Reading intently: narrowed amber eyes gazing subtly downward, low brows drawn inward, small softly compressed straight closed lips, as image 2. Preserve image 1 EXACT fixed frontal head geometry and centered nose/mouth axis x565 in 1136x1384 canvas, eyes around x480 and650,y495, mouth around x565,y633. No shift or turn, no jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing, transparent background. Clean continuous cheek skin with no detached curved green hairs beneath eyes. No props, text, effects or extra blush."
+  },
+  "007": {
+    "rest": "sources/EXP-007.png",
+    "blink": "sources/EXP-007-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is exact approved neutral bust EDIT TARGET; image 2 facial acting reference only. Change ONLY eyes/brows/mouth: Relieved smile: soft relaxed open amber eyes, gently released eyebrows and a small warm parted smile, as image 2. Preserve image 1 EXACT fixed frontal head geometry and centered nose/mouth axis x565 in 1136x1384 canvas, eyes around x480 and650,y495, mouth around x565,y633. No shift or turn, no jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing, transparent background. Clean continuous cheek skin with no detached curved green hairs beneath eyes. No props, text, effects or extra blush."
+  },
+  "092": {
+    "rest": "sources/EXP-092.png",
+    "blink": "sources/EXP-092-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is exact approved neutral bust EDIT TARGET; image 2 facial acting reference only. Change ONLY eyes/brows/mouth: Sour taste: BOTH eyes squeezed fully closed, sharply inward knitted brows, tiny tightly puckered pursed lips, as image 2. No teeth, no open eyes. Preserve image 1 EXACT fixed frontal head geometry and centered nose/mouth axis x565 in 1136x1384 canvas, eyes around x480 and650,y495, mouth around x565,y633. No shift or turn, no jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing, transparent background. Clean continuous cheek skin with no detached curved green hairs beneath eyes. No props, text, effects or extra blush."
+  }
+}
