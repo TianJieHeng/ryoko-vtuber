@@ -1,0 +1,1 @@
+PASS: 12 old lower-lash regions have full alpha=255 cover in rest and blink tiles. All twelve displayed states visually inspected for eye registration, lower-layer bleed, jaw, and speech-mouth replacement. Blinks show no pupil, iris or old lower lashes.

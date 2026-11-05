@@ -1,0 +1,21 @@
+{
+  "001": {
+    "rest": "sources/EXP-001.png",
+    "blink": "sources/EXP-001-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting reference ONLY. Change ONLY eyes/brows/mouth and subtle cheek color: Bright welcome: gently raised welcoming brows, warmly smiling OPEN amber eyes, bright open smile with a small visible row of upper teeth, like the exact reference. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects.",
+    "blink_prompt": "Identity-preserve exact sprite edit. Change ONLY eyelids to fully CLOSED blink, with a single clean closed lash line on each eye. No iris or pupil visible. Keep the existing brow expression, mouth, exact facial placement, nose, cheek skin, hair, head shape, body and transparent background identical. Keep canvas and alignment identical; no zoom, shift or redraw outside eyelids."
+  },
+  "067": {
+    "rest": "sources/EXP-067.png",
+    "blink": "sources/EXP-067-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting reference ONLY. Change ONLY eyes/brows/mouth and subtle cheek color: Creeping dread: worried inner brows raised and drawn together, very wide amber eyes with small pupils, tense small parted mouth with downward corners, like the exact reference. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects.",
+    "blink_prompt": "Identity-preserve exact sprite edit. Change ONLY eyelids to fully CLOSED blink, with a single clean closed lash line on each eye. No iris or pupil visible. Keep the existing brow expression, mouth, exact facial placement, nose, cheek skin, hair, head shape, body and transparent background identical. Keep canvas and alignment identical; no zoom, shift or redraw outside eyelids.",
+    "correction_prompt": "Precise identity-preserving registered sprite edit. IMAGE 1 is the exact canvas and pose to edit. IMAGE 2 supplies fearful acting ONLY. Transfer the worried raised-inner eyebrows, wide-open small-pupil amber eyes and small frightened parted mouth onto image 1 WITHOUT copying image 2 framing. Image 1 output must retain identical 1136x1384 proportions, head scale and centered facial positions: eyes y495 x480 and650; mouth centered x565 y633; chin y718. Do not move head, nose, hair, earrings, body, neck, suit or crop. Change only eyebrows, eyes and mouth. Transparent background."
+  },
+  "093": {
+    "rest": "sources/EXP-093.png",
+    "blink": "sources/EXP-093-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting reference ONLY. Change ONLY eyes/brows/mouth and subtle cheek color: Bitter taste: brows sharply pinched inward, narrowed OPEN amber eyes and nose lightly scrunched, small asymmetric disgusted grimace exposing a narrow line of clenched teeth, like the exact reference. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects.",
+    "blink_prompt": "Identity-preserve exact sprite edit. Change ONLY eyelids to fully CLOSED blink, with a single clean closed lash line on each eye. No iris or pupil visible. Keep the existing brow expression, mouth, exact facial placement, nose, cheek skin, hair, head shape, body and transparent background identical. Keep canvas and alignment identical; no zoom, shift or redraw outside eyelids."
+  }
+}
