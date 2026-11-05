@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "duration": 18.0,
+  "cues": [
+    {"time":0.0,"controls":{"body_follow":false,"auto_blink":false,"head_tilt":0,"head_x":0,"head_y":0,"body_tilt":0,"body_x":0,"body_y":0,"gaze_x":0,"gaze_y":0,"brow_raise":0,"breath_cancel":true,"look_release":true,"ornament_secondary":true,"audio_stop":true,"release_eye_controls":true}},
+    {"time":1.0,"controls":{"gaze_x":-0.85,"brow_screen_left":1,"brow_screen_right":-0.2}},
+    {"time":2.5,"controls":{"gaze_x":0.85,"brow_screen_left":-0.2,"brow_screen_right":1}},
+    {"time":4.0,"controls":{"gaze_x":0,"brow_raise":0.5,"breath_trigger":true,"breath_strength":0.85,"look_x":-0.8,"look_y":-0.2}},
+    {"time":6.5,"controls":{"look_x":0.8,"look_y":0.15,"brow_screen_left":0,"brow_screen_right":1,"mouth":"E"}},
+    {"time":8.5,"controls":{"look_release":true,"brow_raise":0,"breath_cancel":true,"mouth":"RELEASE"}},
+    {"time":10.0,"controls":{"ornament_secondary":false,"head_tilt":-0.6,"head_x":-0.25,"body_tilt":0.2}},
+    {"time":12.0,"controls":{"ornament_secondary":true,"head_tilt":0.6,"head_x":0.25,"body_tilt":-0.2}},
+    {"time":14.5,"controls":{"head_tilt":0,"head_x":0,"body_tilt":0,"gaze_x":0,"gaze_y":0,"brow_raise":0,"breath_cancel":true,"look_release":true,"audio_stop":true,"release_eye_controls":true}},
+    {"time":17.0,"controls":{"auto_blink":true}}
+  ]
+}

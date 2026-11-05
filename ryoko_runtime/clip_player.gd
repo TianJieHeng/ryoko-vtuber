@@ -6,7 +6,9 @@ var index=0
 var active=false
 var paused=false
 var error_message=""
-const ALLOWED=["head_tilt","head_x","head_y","body_tilt","body_x","body_y","body_follow","gesture","gesture_strength","gesture_cancel","wink","wink_duration","eye_screen_left","eye_screen_right","release_eye_controls","blink","auto_blink","audio_level","audio_stop","mouth","speech_active","bounce","chest_secondary","reset"]
+# Invalidates already-collected cues after reset, cancel or clip replacement.
+var dispatch_id=0
+const ALLOWED=["gaze_x","gaze_y","breath_level","breath_strength","breath_trigger","breath_cancel","brow_raise","brow_screen_left","brow_screen_right","look_x","look_y","look_release","ornament_secondary","head_tilt","head_x","head_y","body_tilt","body_x","body_y","body_follow","gesture","gesture_strength","gesture_cancel","wink","wink_duration","eye_screen_left","eye_screen_right","release_eye_controls","blink","auto_blink","audio_level","audio_stop","mouth","speech_active","bounce","chest_secondary","reset"]
 func load_data(data)->bool:
     error_message=""
     if not data is Dictionary or data.get("version")!=1 or not data.get("cues") is Array:
@@ -25,7 +27,7 @@ func load_data(data)->bool:
             if key not in ALLOWED or not (value is String or value is bool or value is float or value is int):
                 error_message="Unsupported control: "+str(key);return false
             var string_keys=["gesture","wink","mouth"]
-            var bool_keys=["body_follow","gesture_cancel","release_eye_controls","auto_blink","audio_stop","speech_active","bounce","chest_secondary","reset"]
+            var bool_keys=["breath_trigger","breath_cancel","look_release","ornament_secondary","body_follow","gesture_cancel","release_eye_controls","auto_blink","audio_stop","speech_active","bounce","chest_secondary","reset"]
             if key in string_keys and not value is String:
                 error_message="Expected text control.";return false
             if key in bool_keys and not value is bool:
@@ -34,6 +36,12 @@ func load_data(data)->bool:
                 error_message="Expected numeric control.";return false
             if (value is float or value is int) and not is_finite(float(value)):
                 error_message="Non-finite value.";return false
+            # Keep legacy clamping behavior unchanged; new cue fields use the
+            # same documented ranges as the live adapter.
+            if key in ["gaze_x","gaze_y","brow_raise","brow_screen_left","brow_screen_right","look_x","look_y"] and (value< -1.0 or value>1.0):
+                error_message="Control must be between -1 and 1: "+key;return false
+            if key in ["breath_level","breath_strength"] and (value<0.0 or value>1.0):
+                error_message="Control must be between 0 and 1: "+key;return false
         last=cue.time
     stop();cues=data.cues.duplicate(true);duration=float(data.duration)
     return true
@@ -45,6 +53,7 @@ func play()->bool:
     if duration<=0:return false
     elapsed=0.0;index=0;active=true;paused=false;return true
 func stop():
+    dispatch_id+=1
     active=false;paused=false;elapsed=0.0;index=0
 func step(delta:float)->Array:
     var due=[]

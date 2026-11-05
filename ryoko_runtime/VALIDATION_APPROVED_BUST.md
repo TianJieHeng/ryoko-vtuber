@@ -1,5 +1,7 @@
 # Approved bust integration validation
 
+Historical validation for the published baseline. The approved timed-cue extension is documented in VALIDATION_CLIP_CHANNELS.md.
+
 Date: 2026-11-05. Base main: `c940508462584087000125b321c9cdecf758c622`.
 
 ## Scope

@@ -1,3 +1,7 @@
+# Approved timed bust controls
+
+See [README_CLIP_CHANNELS.md](README_CLIP_CHANNELS.md) for new version-1 gaze, breath, brow, look-at and ornament cues. The user reviewed and approved the runtime video on 2026-11-05.
+
 # Approved bust-rig integration
 
 The user approved controlled breathing, independent neutral brows, coordinated look-at, and the hanging hairpin ornament on 2026-11-05. They are integrated here with the previously approved rigid-iris gaze and existing bust controls. Full-body work is not included.

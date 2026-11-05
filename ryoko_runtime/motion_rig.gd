@@ -55,6 +55,7 @@ var clip=preload("res://clip_player.gd").new()
 var clip_proof=false
 var clip_proof_time=0.0
 var clip_events={}
+var clip_channels={}
 var hair=preload("res://hair_secondary.gd").new()
 var hair_proof=false
 var live_input=preload("res://live_input.gd").new()
@@ -164,7 +165,8 @@ func _build_grid(columns,rows):
     var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays);return mesh
 
 func apply_controls(data, source="external"):
-    if source=="external":external_controls=true
+    if source in ["external","clip"]:external_controls=true
+    if source=="clip":_track_clip_channels(data)
     if data.get("clip_stop",false):stop_clip()
     if data.has("clip_paused"):pause_clip(bool(data.clip_paused))
     var pose_ok=true
@@ -227,6 +229,7 @@ func apply_controls(data, source="external"):
 
 func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
+    if event.keycode in [KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_M,KEY_O,KEY_I,KEY_Y,KEY_V]:stop_clip()
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
     if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
     if event.keycode==KEY_O and not event.shift_pressed:brows.set_both(1 if brows.target==Vector2.ZERO else 0)
@@ -243,10 +246,9 @@ func _unhandled_key_input(event):
     if event.keycode==KEY_F:
         hair.enabled=not hair.enabled
         pose_notice="Crown hair motion on" if hair.enabled else "Crown hair motion off"
-    if event.keycode==KEY_T:play_clip("res://demo_clip.json")
+    if event.keycode==KEY_T:play_clip("res://demo_bust_clip.json" if event.shift_pressed else "res://demo_clip.json")
     if event.keycode==KEY_P:pause_clip(not clip.paused)
     if event.keycode==KEY_ESCAPE:stop_clip()
-    if event.keycode in [KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_M]:stop_clip()
     if event.keycode in [KEY_1,KEY_2,KEY_3]:
         var slot=int(event.keycode-KEY_1)+1
         if event.ctrl_pressed:save_pose(slot)
@@ -277,11 +279,13 @@ func _process(delta):
         clip_proof_time+=delta
         _run_clip_proof()
     if clip.paused:return
+    var dispatch=clip.dispatch_id
     for controls in clip.step(delta):
-        if not apply_controls(controls):
+        if not apply_controls(controls,"clip"):
             pose_notice="Clip stopped: rejected control"
             stop_clip()
             break
+        if clip.dispatch_id!=dispatch:break
     pose_status.text="" if pose_proof or clip_proof else pose_notice
     clock_time+=delta
     if brow_proof:_run_brow_proof()
@@ -545,7 +549,10 @@ func _run_pose_proof():
     if t>=20.0:get_tree().quit()
 
 func play_clip(path:String)->bool:
+    var was_active=clip.active or clip.paused
     if not clip.load_file(path):pose_notice=clip.error_message;return false
+    if was_active:_release_clip_channels()
+    clip_channels.clear()
     audio_mouth.player.stream_paused=false
     external_controls=true
     pose_notice="Clip playing"
@@ -560,11 +567,28 @@ func pause_clip(paused:bool):
 func stop_clip():
     var was_active=clip.active or clip.paused
     clip.stop()
+    if was_active:_release_clip_channels()
+    clip_channels.clear()
     if audio_mouth!=null:
         audio_mouth.player.stream_paused=false
         if was_active:
             audio_mouth.stop();face.release_speech();gestures.cancel();eyelids.reset()
             pose_notice="Clip stopped"
+
+func _track_clip_channels(data):
+    for key in data:
+        if key in ["gaze_x","gaze_y"]:clip_channels["gaze"]=true
+        elif key in ["brow_raise","brow_screen_left","brow_screen_right"]:clip_channels["brows"]=true
+        elif key=="breath_level" or (key in ["breath_trigger","breath_cancel"] and data[key]):clip_channels["breath"]=true
+        elif key in ["look_x","look_y"] or (key=="look_release" and data[key]):clip_channels["look"]=true
+
+func _release_clip_channels():
+    # Only release channels this clip actually touched. Old clips do not take
+    # ownership of new live controls. Persistent secondary toggles stay set.
+    if clip_channels.has("gaze"):gaze.set_target(0,0);gaze.mouse_follow=false
+    if clip_channels.has("brows"):brows.set_both(0)
+    if clip_channels.has("breath"):breathing.cancel()
+    if clip_channels.has("look"):attention.release()
 
 func _run_clip_proof():
     var t=clip_proof_time

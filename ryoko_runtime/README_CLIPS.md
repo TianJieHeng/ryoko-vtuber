@@ -2,6 +2,8 @@
 
 Based on approved pose rig a14d2c2. Combines existing controls without changing artwork or motion physics.
 
+The approved bust-channel extension and its cancellation rules are documented in [README_CLIP_CHANNELS.md](README_CLIP_CHANNELS.md). Shift+T plays the new bust-channel example; the original demo and T shortcut remain unchanged.
+
 ## Playback
 - T: play the included `demo_clip.json` once.
 - P: pause/resume the clip and rig simulation together. WAV playback, if active, is paused too.
