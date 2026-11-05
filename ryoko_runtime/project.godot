@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Ryoko bust facial checkpoint"
-run/main_scene="res://playback.tscn"
+run/main_scene="res://motion_rig.tscn"
 config/features=PackedStringArray("4.6")
 
 [display]

@@ -1,3 +1,7 @@
+# Live motion rig added
+
+The default scene is now the interactive head/neck and coupled upper-torso rig. See [README_MOTION.md](README_MOTION.md) for controls, limits and validation. Original expression playback remains available as playback.tscn. This revised motion is awaiting user review and has not been pushed.
+
 # Ryoko 93-expression runtime playback
 
 Based on TianJieHeng/ryoko-vtuber phase31 at c752edde815eaab559d06cf43b7ae0784bf79e1c. Original artwork and registrations are unchanged.
