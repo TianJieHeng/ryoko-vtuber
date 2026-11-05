@@ -1,3 +1,7 @@
+# Approved gaze on existing expressions
+
+See [README_EXPRESSION_GAZE.md](README_EXPRESSION_GAZE.md) for rigid gaze on the existing EXP-064 and EXP-189 artwork, retained blink/speech behavior, source preservation and the actual Godot review. No new expressions are added. The user approved the review on 2026-11-05. See [VALIDATION_EXPRESSION_GAZE.md](VALIDATION_EXPRESSION_GAZE.md) for checks and limits.
+
 # Approved lower side-lock motion
 
 See [README_LOOSE_HAIR.md](README_LOOSE_HAIR.md) for independent outer hair-tip follow-through, X toggle, source-preservation checks and actual runtime review. The user reviewed and approved the runtime footage on 2026-11-05.

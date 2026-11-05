@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "scope": "Existing-eye rigging feasibility proof; only EXP-064 and EXP-189",
+  "canvas_size": [
+    1136,
+    1384
+  ],
+  "maximum_translation_px": [
+    7,
+    2
+  ],
+  "coordinate_convention": "screen_left is authored R; screen_right is authored L; positive y is down; bounds are [left, top, right_exclusive, bottom_exclusive]",
+  "source_baseline": "rig_assets/expression_gaze/source_png_sha256.json",
+  "registration_sha256": "f2b1c6018bf0a4e73243544a74aa405caacd32272bdb9014646125abac705fca",
+  "rest_reconstruction": "Exact source RGBA at native pixel centers. Runtime filtering, scaling, and deformation need separate Godot review.",
+  "iris_method": "Four individually inspected source cutouts, with original antialias/sclera fringe; no hidden iris synthesis, neutral substitution or distortion",
+  "underpaint_limitation": "Only sclera beneath each original iris cutout is estimated from neighboring source sclera; it is not an exact recovery of hidden artwork.",
+  "profiles": {
+    "EXP-064": {
+      "screen_left": {
+        "iris": "rig_assets/expression_gaze/EXP-064_screen_left_iris.png",
+        "sclera": "rig_assets/expression_gaze/EXP-064_screen_left_sclera.png",
+        "aperture": "rig_assets/expression_gaze/EXP-064_screen_left_aperture.png",
+        "source_center_px": [
+          491.0,
+          502.0
+        ],
+        "iris_bounds_px": [
+          477,
+          487,
+          505,
+          517
+        ],
+        "aperture_bounds_px": [
+          469,
+          484,
+          513,
+          520
+        ],
+        "source_eye_patch": "artwork/EXP-064_eye_R.png",
+        "source_patch_registration_xy": [
+          394,
+          350
+        ],
+        "source_patch_sha256": "bc6598d7b01b680eea54d836d1adb508de59e3a484df4a534e75104d70a45891",
+        "transparent_rgb_bleed_texels": 2,
+        "underpaint": {
+          "method": "harmonic extension of neighboring source sclera only",
+          "iterations": 1531,
+          "last_rgb_update_max": 9.948041679308517e-08,
+          "estimated_pixels": 610,
+          "limitation": "Occluded sclera is estimated; it is not recovered original art. A small source antialias/sclera fringe moves with the rigid iris."
+        }
+      },
+      "screen_right": {
+        "iris": "rig_assets/expression_gaze/EXP-064_screen_right_iris.png",
+        "sclera": "rig_assets/expression_gaze/EXP-064_screen_right_sclera.png",
+        "aperture": "rig_assets/expression_gaze/EXP-064_screen_right_aperture.png",
+        "source_center_px": [
+          646.0,
+          502.0
+        ],
+        "iris_bounds_px": [
+          632,
+          487,
+          660,
+          517
+        ],
+        "aperture_bounds_px": [
+          624,
+          484,
+          668,
+          520
+        ],
+        "source_eye_patch": "artwork/EXP-064_eye_L.png",
+        "source_patch_registration_xy": [
+          590,
+          350
+        ],
+        "source_patch_sha256": "93470cdf41fa2ebe3a964826282536a9db9907129b33999a72a90a224c672b49",
+        "transparent_rgb_bleed_texels": 2,
+        "underpaint": {
+          "method": "harmonic extension of neighboring source sclera only",
+          "iterations": 1572,
+          "last_rgb_update_max": 9.974746717489325e-08,
+          "estimated_pixels": 605,
+          "limitation": "Occluded sclera is estimated; it is not recovered original art. A small source antialias/sclera fringe moves with the rigid iris."
+        }
+      }
+    },
+    "EXP-189": {
+      "screen_left": {
+        "iris": "rig_assets/expression_gaze/EXP-189_screen_left_iris.png",
+        "sclera": "rig_assets/expression_gaze/EXP-189_screen_left_sclera.png",
+        "aperture": "rig_assets/expression_gaze/EXP-189_screen_left_aperture.png",
+        "source_center_px": [
+          490.0,
+          503.0
+        ],
+        "iris_bounds_px": [
+          476,
+          487,
+          505,
+          518
+        ],
+        "aperture_bounds_px": [
+          468,
+          484,
+          513,
+          521
+        ],
+        "source_eye_patch": "artwork/EXP-189_eye_R.png",
+        "source_patch_registration_xy": [
+          394,
+          350
+        ],
+        "source_patch_sha256": "addc1638bdcc9ebb0ba793703dfbe757cd50a03543b5687636da2c61d13b1e0a",
+        "transparent_rgb_bleed_texels": 2,
+        "underpaint": {
+          "method": "harmonic extension of neighboring source sclera only",
+          "iterations": 1708,
+          "last_rgb_update_max": 9.954294455383206e-08,
+          "estimated_pixels": 663,
+          "limitation": "Occluded sclera is estimated; it is not recovered original art. A small source antialias/sclera fringe moves with the rigid iris."
+        }
+      },
+      "screen_right": {
+        "iris": "rig_assets/expression_gaze/EXP-189_screen_right_iris.png",
+        "sclera": "rig_assets/expression_gaze/EXP-189_screen_right_sclera.png",
+        "aperture": "rig_assets/expression_gaze/EXP-189_screen_right_aperture.png",
+        "source_center_px": [
+          647.0,
+          503.0
+        ],
+        "iris_bounds_px": [
+          633,
+          487,
+          662,
+          518
+        ],
+        "aperture_bounds_px": [
+          625,
+          484,
+          670,
+          521
+        ],
+        "source_eye_patch": "artwork/EXP-189_eye_L.png",
+        "source_patch_registration_xy": [
+          590,
+          350
+        ],
+        "source_patch_sha256": "389d82c44c8cf70bfecca4e08d56750cf14107c155aa32682ba81a338cd38ea6",
+        "transparent_rgb_bleed_texels": 2,
+        "underpaint": {
+          "method": "harmonic extension of neighboring source sclera only",
+          "iterations": 1756,
+          "last_rgb_update_max": 9.981152970794938e-08,
+          "estimated_pixels": 669,
+          "limitation": "Occluded sclera is estimated; it is not recovered original art. A small source antialias/sclera fringe moves with the rigid iris."
+        }
+      }
+    }
+  }
+}

@@ -62,6 +62,8 @@ var live_input=preload("res://live_input.gd").new()
 var live_proof=false
 var gaze=preload("res://gaze_driver.gd").new()
 var gaze_proof=false
+var gaze_profiles={}
+var gaze_profile_name="neutral"
 var breathing=preload("res://breath_driver.gd").new()
 var breath_proof=false
 var breath_events={}
@@ -107,6 +109,7 @@ func _ready():
     for side in ["screen_left","screen_right"]:
         for layer in ["iris","sclera","aperture","brow","brow_skin","brow_allow"]:
             skin_material.set_shader_parameter(layer+"_"+side,load("res://rig_assets/"+layer+"_"+side+".png"))
+    _setup_gaze_profiles()
     surface.material=skin_material
     add_child(surface)
     # The ornament samples the existing viewport directly. No new/edited art.
@@ -299,7 +302,11 @@ func _process(delta):
     if clip_proof:
         clip_proof_time+=delta
         _run_clip_proof()
-    if clip.paused:return
+    if clip.paused:
+        # Expression selection can change while the clock is paused. Never
+        # leave another expression's iris layers painted over the new face.
+        _sync_gaze_render_state()
+        return
     var dispatch=clip.dispatch_id
     for controls in clip.step(delta):
         if not apply_controls(controls,"clip"):
@@ -386,11 +393,9 @@ func _process(delta):
         gaze.set_target(pointer.x,pointer.y)
     gaze.step(delta)
     skin_material.set_shader_parameter("gaze_direction",(gaze.current+attention.eye).clamp(Vector2(-1,-1),Vector2.ONE))
-    var neutral=face.expression=="neutral"
     brows.step(delta)
     skin_material.set_shader_parameter("brow_amount",brows.current)
-    skin_material.set_shader_parameter("brow_enabled",neutral)
-    skin_material.set_shader_parameter("gaze_open",Vector2(1 if neutral and not face.blink_right else 0,1 if neutral and not face.blink_left else 0))
+    _sync_gaze_render_state()
     if audio_mouth.active:
         var shape=audio_mouth.step(delta)
         if shape=="REST":face.release_speech()
@@ -415,6 +420,37 @@ func _setup_earrings():
         node.add_child(sprite);earring_sprites[side]=sprite
     skin_material.set_shader_parameter("earring_underpaint",load("res://rig_assets/earring_underpaint.png"))
     skin_material.set_shader_parameter("earring_clear_masks",load("res://rig_assets/earring_clear_masks.png"))
+
+func _setup_gaze_profiles():
+    # Neutral retains the already-approved textures and rendering path.
+    var neutral={}
+    for side in ["screen_left","screen_right"]:
+        for layer in ["iris","sclera","aperture"]:
+            var key=layer+"_"+side
+            neutral[key]=load("res://rig_assets/"+key+".png")
+    gaze_profiles["neutral"]=neutral
+    var manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/expression_gaze/profiles.json"))
+    for id in manifest.profiles:
+        if not face.emotion_eyes.has(id):
+            push_error("Unknown expression gaze profile: "+id);continue
+        var profile={}
+        for side in ["screen_left","screen_right"]:
+            for layer in ["iris","sclera","aperture"]:
+                profile[layer+"_"+side]=load("res://"+manifest.profiles[id][side][layer])
+        gaze_profiles[id]=profile
+
+func _sync_gaze_render_state():
+    skin_material.set_shader_parameter("brow_enabled",face.expression=="neutral")
+    var supported=_select_gaze_profile(face.expression)
+    skin_material.set_shader_parameter("gaze_open",Vector2(1 if supported and not face.blink_right else 0,1 if supported and not face.blink_left else 0))
+
+func _select_gaze_profile(id:String)->bool:
+    var supported=gaze_profiles.has(id)
+    var selected=id if supported else "neutral"
+    if gaze_profile_name!=selected:
+        for key in gaze_profiles[selected]:skin_material.set_shader_parameter(key,gaze_profiles[selected][key])
+        gaze_profile_name=selected
+    return supported
 
 func _step_loose_hair(delta,frame_angle):
     for side in loose_hair:

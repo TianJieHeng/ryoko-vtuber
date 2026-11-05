@@ -9,7 +9,7 @@ User-approved revision based on approved main c940508, replacing the rejected ey
 - R/reset returns gaze to center. Controls ease over 0.12 seconds.
 - Maximum translation is seven source pixels horizontally and two vertically. Every iris texel receives the same offset, with no scale, shear or per-pixel deformation.
 - Fixed eye-aperture masks clip the moving iris under the upper/lower eyelids. The screen-left foreground hair strand is excluded from the mask and stays in front.
-- Each closed eyelid disables its own gaze layers. Non-neutral expression presets use their unchanged authored artwork and eye direction.
+- Each closed eyelid disables its own gaze layers. The approved [existing-expression gaze rig](README_EXPRESSION_GAZE.md) adds expression-specific profiles for EXP-064 and EXP-189. Other expression presets retain their authored artwork and eye direction.
 
 The neutral bust source contains baked-in irises, not separate complete circles or hidden sclera. The six new rig_assets textures therefore include a reconstructed sclera background and small reconstructed upper/strand-covered iris regions. Visible lower iris and pupil detail is sampled from the original image without stretching. Hidden texture is filled from neighboring visible iris colors; it is not an exact recovery of unseen original artwork. The separated neutral eye is used consistently at center and during glances so it cannot morph between the original and separated rendering as gaze starts.
 
