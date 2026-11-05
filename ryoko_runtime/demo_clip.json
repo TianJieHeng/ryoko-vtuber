@@ -1,0 +1,16 @@
+{
+ "version":1,"duration":14.0,
+ "cues":[
+  {"time":0.0,"controls":{"head_tilt":0,"head_x":0,"body_tilt":0,"release_eye_controls":true,"audio_stop":true}},
+  {"time":1.0,"controls":{"gesture":"greet"}},
+  {"time":2.0,"controls":{"wink":"screen_right","wink_duration":0.4}},
+  {"time":4.0,"controls":{"head_tilt":0.3,"body_tilt":0.2,"audio_level":0.32}},
+  {"time":4.5,"controls":{"audio_level":0.8}},
+  {"time":5.0,"controls":{"audio_level":0.0}},
+  {"time":5.4,"controls":{"audio_level":0.55}},
+  {"time":6.0,"controls":{"audio_stop":true}},
+  {"time":7.0,"controls":{"gesture":"acknowledge"}},
+  {"time":9.0,"controls":{"head_tilt":-0.3,"body_tilt":-0.2,"wink":"screen_left"}},
+  {"time":11.0,"controls":{"head_tilt":0,"body_tilt":0,"gesture_cancel":true,"release_eye_controls":true,"audio_stop":true}}
+ ]
+}

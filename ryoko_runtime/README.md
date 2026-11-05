@@ -1,3 +1,7 @@
+# Timed animation clips
+
+See [README_CLIPS.md](README_CLIPS.md) for combined animation playback, pause and cancellation. This revision was reviewed and approved by the user.
+
 # Pose presets
 
 See [README_POSES.md](README_POSES.md) for saved head/body poses. This revision was reviewed and approved by the user.

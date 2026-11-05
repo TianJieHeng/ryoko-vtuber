@@ -51,6 +51,10 @@ var pose_proof=false
 var pose_events={}
 var pose_notice=""
 var pose_status:Label
+var clip=preload("res://clip_player.gd").new()
+var clip_proof=false
+var clip_proof_time=0.0
+var clip_events={}
 
 func _ready():
     var viewport = SubViewport.new()
@@ -95,6 +99,7 @@ func _ready():
     if pose_proof:pose_store.path="user://proof_poses.json"
     if not pose_store.load_disk():push_warning(pose_store.error_message)
     pose_status=Label.new();pose_status.position=Vector2(18,62);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
+    clip_proof="--clip-proof" in OS.get_cmdline_user_args()
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -113,10 +118,13 @@ func _build_grid(columns,rows):
 
 func apply_controls(data, source="external"):
     if source=="external":external_controls=true
+    if data.get("clip_stop",false):stop_clip()
+    if data.has("clip_paused"):pause_clip(bool(data.clip_paused))
     var pose_ok=true
+    if data.get("clip_play",false):pose_ok=play_clip("res://demo_clip.json")
     if data.has("pose_load"):pose_ok=recall_pose(int(data.pose_load))
     if data.get("reset",false):
-        eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
     if data.has("head_x"):target.y=clamp(float(data.head_x),-1.0,1.0)
     if data.has("head_y"):target.z=clamp(float(data.head_y),-1.0,1.0)
@@ -158,6 +166,10 @@ func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
     if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
+    if event.keycode==KEY_T:play_clip("res://demo_clip.json")
+    if event.keycode==KEY_P:pause_clip(not clip.paused)
+    if event.keycode==KEY_ESCAPE:stop_clip()
+    if event.keycode in [KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_M]:stop_clip()
     if event.keycode in [KEY_1,KEY_2,KEY_3]:
         var slot=int(event.keycode-KEY_1)+1
         if event.ctrl_pressed:save_pose(slot)
@@ -180,9 +192,19 @@ func _unhandled_key_input(event):
 
 func _process(delta):
     if not rig_ready:return
-    pose_status.text="" if pose_proof else pose_notice
+    if clip_proof:
+        clip_proof_time+=delta
+        _run_clip_proof()
+    if clip.paused:return
+    for controls in clip.step(delta):
+        if not apply_controls(controls):
+            pose_notice="Clip stopped: rejected control"
+            stop_clip()
+            break
+    pose_status.text="" if pose_proof or clip_proof else pose_notice
     clock_time+=delta
-    if pose_proof:_run_pose_proof()
+    if clip_proof:pass
+    elif pose_proof:_run_pose_proof()
     elif eyelid_proof:_run_eyelid_proof()
     elif gesture_proof:_run_gesture_proof()
     elif secondary_proof:_run_secondary_proof()
@@ -200,7 +222,7 @@ func _process(delta):
         speech=Input.is_physical_key_pressed(KEY_SPACE)
         manual_blink=1.0 if Input.is_physical_key_pressed(KEY_B) else -1.0
         hud.text="RYOKO / LIVE MOTION RIG"
-        hint.text="Ctrl+1/2/3 save · 1/2/3 recall · N dip · G greet · R reset"
+        hint.text="T play clip · P pause/resume · Esc stop · 1/2/3 recall · R reset"
     gestures.sample(delta)
     var effective_head=(target+gestures.head).clamp(Vector3(-1,-1,-1),Vector3.ONE)
     current=current.lerp(effective_head,1.0-exp(-delta/0.22))
@@ -404,3 +426,38 @@ func _run_pose_proof():
     hud.text="RYOKO / "+label
     hint.text="Saved head/body poses · eased recall · facial controls remain live"
     if t>=20.0:get_tree().quit()
+
+func play_clip(path:String)->bool:
+    if not clip.load_file(path):pose_notice=clip.error_message;return false
+    audio_mouth.player.stream_paused=false
+    external_controls=true
+    pose_notice="Clip playing"
+    return clip.play()
+
+func pause_clip(paused:bool):
+    if not clip.active:return
+    clip.paused=paused;audio_mouth.player.stream_paused=paused
+    pose_notice="Clip paused" if paused else "Clip playing"
+    if pose_status!=null:pose_status.text=pose_notice
+
+func stop_clip():
+    var was_active=clip.active or clip.paused
+    clip.stop()
+    if audio_mouth!=null:
+        audio_mouth.player.stream_paused=false
+        if was_active:
+            audio_mouth.stop();face.release_speech();gestures.cancel();eyelids.reset()
+            pose_notice="Clip stopped"
+
+func _run_clip_proof():
+    var t=clip_proof_time
+    if t>=1.0 and not clip_events.has("start"):
+        play_clip("res://demo_clip.json");clip_events["start"]=true
+    if t>=5.8 and not clip_events.has("pause"):
+        pause_clip(true);clip_events["pause"]=true
+    if t>=7.3 and not clip_events.has("resume"):
+        pause_clip(false);clip_events["resume"]=true
+    hud.text="RYOKO / "+("CLIP PAUSED" if clip.paused else ("CUE CLIP / combined performance" if clip.active else "CLIP COMPLETE / resting"))
+    if not clip_events.has("start"):hud.text="RYOKO / READY / timed clip"
+    hint.text="Timed pose + gesture + wink + silent mouth cues · one-shot playback"
+    if t>=19.0:get_tree().quit()
