@@ -2,6 +2,10 @@ extends Node2D
 # Live 2D weighted deformation. Existing facial artwork is rendered into a
 # transparent viewport and deformed together, preserving registration.
 var face
+var effects_viewport: SubViewport
+var effects_surface: MeshInstance2D
+var effects_material: ShaderMaterial
+var effects_uniforms: Array[StringName] = []
 var surface: MeshInstance2D
 var skin_material: ShaderMaterial
 var target = Vector3.ZERO # tilt, horizontal offset, vertical offset
@@ -127,6 +131,7 @@ func _ready():
     ornament_sprite.position=ornament.SOURCE_RECT.position-ornament.PIVOT
     ornament_pivot.add_child(ornament_sprite)
     _setup_earrings()
+    _setup_optional_effects()
     hud=Label.new();hud.position=Vector2(18,10);hud.add_theme_font_size_override("font_size",20);add_child(hud)
     hint=Label.new();hint.position=Vector2(18,42);hint.add_theme_font_size_override("font_size",14);add_child(hint)
     proof="--motion-proof" in OS.get_cmdline_user_args()
@@ -178,6 +183,9 @@ func _build_grid(columns,rows):
     var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays);return mesh
 
 func apply_controls(data, source="external"):
+    # Validate the complete optional-effects patch before any mutations, even reset.
+    if not data is Dictionary:return false
+    if data.has("effects") and not preload("res://optional_effects.gd").valid(data.effects):return false
     # Loaded clips are already validated. Also reject a stale/mutated expression
     # cue before any of its other controls or ownership flags can be applied.
     if source=="clip" and data.has("expression"):
@@ -193,6 +201,7 @@ func apply_controls(data, source="external"):
         for earring in earrings.values():earring.reset()
         for lock in loose_hair.values():lock.reset()
         ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();expression_index=-1;manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+    if data.has("effects"):face.optional_effects.apply(data.effects)
     if data.has("brow_raise"):brows.set_both(data.brow_raise)
     if data.has("brow_screen_left"):brows.set_side("screen_left",data.brow_screen_left)
     if data.has("brow_screen_right"):brows.set_side("screen_right",data.brow_screen_right)
@@ -414,6 +423,39 @@ func _process(delta):
     elif speech:face.set_mouth(["A","E","I","O","U"][int(clock_time*7.0)%5])
     elif not proof and not external_controls:face.release_speech()
 
+func _setup_optional_effects():
+    # Separate post-gaze layer, sharing the exact face geometry and vertex source.
+    # This avoids both overwritten tears and another sampler in the face shader.
+    effects_viewport = SubViewport.new()
+    effects_viewport.name = "RegisteredOptionalEffectsViewport"
+    effects_viewport.size = Vector2i(1136, 1384)
+    effects_viewport.transparent_bg = true
+    effects_viewport.render_target_update_mode = SubViewport.UPDATE_DISABLED
+    add_child(effects_viewport)
+    face.optional_effects.reparent(effects_viewport, false)
+    effects_surface = MeshInstance2D.new()
+    effects_surface.name = "OptionalEffectsDeformedMesh"
+    effects_surface.mesh = surface.mesh
+    effects_surface.texture = effects_viewport.get_texture()
+    effects_material = ShaderMaterial.new()
+    effects_material.shader = load("res://optional_effects.gdshader")
+    effects_surface.material = effects_material
+    add_child(effects_surface)
+    # All uniforms in the effects shader come from the shared vertex include.
+    # Discover them rather than maintain a second, drifting parameter list.
+    for uniform in effects_material.shader.get_shader_uniform_list():
+        effects_uniforms.append(StringName(uniform.name))
+    _sync_optional_effects()
+
+func _sync_optional_effects():
+    if effects_surface == null:return
+    var enabled = true in face.optional_effects.state.values()
+    effects_surface.visible = enabled
+    effects_viewport.render_target_update_mode = SubViewport.UPDATE_ALWAYS if enabled else SubViewport.UPDATE_DISABLED
+    effects_surface.transform = surface.transform
+    for key in effects_uniforms:
+        effects_material.set_shader_parameter(key, skin_material.get_shader_parameter(key))
+
 func _setup_earrings():
     earring_metadata=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/earring_layers.json")).layers
     for side in ["screen_left","screen_right"]:
@@ -451,6 +493,7 @@ func _setup_gaze_profiles():
         gaze_profiles[id]=profile
 
 func _sync_gaze_render_state():
+    _sync_optional_effects()
     expression_index=expression_ids.find(face.expression)
     skin_material.set_shader_parameter("brow_enabled",face.expression=="neutral")
     var supported=_select_gaze_profile(face.expression)
@@ -694,7 +737,9 @@ func stop_clip():
 
 func _track_clip_channels(data):
     for key in data:
-        if key in ["gaze_x","gaze_y"]:clip_channels["gaze"]=true
+        if key=="effects":
+            for effect in data.effects:clip_channels["effect:"+effect]=true
+        elif key in ["gaze_x","gaze_y"]:clip_channels["gaze"]=true
         elif key in ["brow_raise","brow_screen_left","brow_screen_right"]:clip_channels["brows"]=true
         elif key=="breath_level" or (key in ["breath_trigger","breath_cancel"] and data[key]):clip_channels["breath"]=true
         elif key in ["look_x","look_y"] or (key=="look_release" and data[key]):clip_channels["look"]=true
@@ -702,6 +747,8 @@ func _track_clip_channels(data):
 func _release_clip_channels():
     # Only release channels this clip actually touched. Old clips do not take
     # ownership of new live controls. Persistent secondary toggles stay set.
+    for effect in preload("res://optional_effects.gd").NAMES:
+        if clip_channels.has("effect:"+effect):face.optional_effects.apply({effect:false})
     if clip_channels.has("gaze"):gaze.set_target(0,0);gaze.mouse_follow=false
     if clip_channels.has("brows"):brows.set_both(0)
     if clip_channels.has("breath"):breathing.cancel()

@@ -23,3 +23,5 @@ The demo combines a greeting, a screen-right wink, silent mouth-control cues, an
 `test_clips.gd` adds 45 checks for cue order, single dispatch, frame skipping, one-shot completion, paused clocks/rig, validation, no file-writing cues, cancellation cleanup, inactive-stop isolation and reset. All prior test suites also pass.
 
 Approved by the user on 2026-11-05 and published with existing artwork and motion preserved.
+
+Independent additive effect overlays are documented in [README_OPTIONAL_EFFECTS.md](README_OPTIONAL_EFFECTS.md). They default off and do not remove effects painted into authored expressions.

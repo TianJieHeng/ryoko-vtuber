@@ -1,5 +1,6 @@
 extends Node2D
 # Isolated 2D facial expression checkpoint. No audio analysis, body motion or network listener.
+var optional_effects
 var mouths = {}
 var blinks = {}
 var emotion_eyes = {}
@@ -36,6 +37,9 @@ func _ready():
             emotion_eyes[id][side] = _make_sprite(e["eyes"][side])
             emotion_blinks[id][side] = _make_sprite(e["blinks"][side])
         emotion_mouths[id] = _make_sprite(e["mouth"])
+    optional_effects = preload("res://optional_effects.gd").new()
+    optional_effects.name = "OptionalEffects"
+    add_child(optional_effects)
     reset_neutral()
     demo = "--demo" in OS.get_cmdline_user_args()
 
@@ -87,6 +91,7 @@ func _refresh():
             emotion_blinks[id][side].visible = expression == id and closed
 
 func reset_neutral():
+    if optional_effects != null:optional_effects.reset()
     expression = "neutral"
     speech_override = ""
     blink_left = false

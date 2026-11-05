@@ -1,3 +1,7 @@
+# Approved independent optional effects
+
+See [README_OPTIONAL_EFFECTS.md](README_OPTIONAL_EFFECTS.md) for independent control of the seven original transparent blush, tear, sweat, anger and sparkle overlays. They default off and preserve authored expression effects. The user approved the actual runtime review on 2026-11-05. See [VALIDATION_OPTIONAL_EFFECTS.md](VALIDATION_OPTIONAL_EFFECTS.md) for source preservation, regression checks, actual Godot capture and playback limits.
+
 # Approved timed existing expressions
 
 See [README_EXPRESSION_CUES.md](README_EXPRESSION_CUES.md) for validated existing-expression selection inside timed clips, pause/resume, manual takeover and the actual Godot review. No new artwork or expressions are produced. The user approved the actual runtime review on 2026-11-05. See [VALIDATION_EXPRESSION_CUES.md](VALIDATION_EXPRESSION_CUES.md) for checks and limits.
@@ -98,3 +102,4 @@ This is the approved layered bust/facial runtime. It uses discrete eye/mouth tex
     godot --headless --path . -s test_expressions.gd
 
 Playback transition logs are written to Godot’s user data directory (`user://playback_<batch>.jsonl`). This standalone project does not require an adjacent output directory. Generated movie files and editor import caches are not committed.
+

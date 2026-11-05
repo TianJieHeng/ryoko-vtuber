@@ -46,3 +46,5 @@ Full-body/registered arm-gesture integration remains outside this approved bust 
 
 Visually reviewed and approved by the user before publication. Video review uses decoded chronological frames; native-speed playback is not available here.
 
+
+Independent additive effect overlays are documented in [README_OPTIONAL_EFFECTS.md](README_OPTIONAL_EFFECTS.md). They default off and do not remove effects painted into authored expressions.

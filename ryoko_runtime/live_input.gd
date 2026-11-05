@@ -30,7 +30,9 @@ func decode(bytes,expressions):
     if not c is Dictionary or c.is_empty() or c.size()>24:return {}
     for key in c:
         var v=c[key]
-        if key in NUMBERS:
+        if key=="effects":
+            if not preload("res://optional_effects.gd").valid(v):return {}
+        elif key in NUMBERS:
             if not (v is float or v is int) or not is_finite(float(v)):return {}
             var low=-1.0 if key in ["look_x","look_y","brow_raise","brow_screen_left","brow_screen_right","gaze_x","gaze_y","head_tilt","head_x","head_y","body_tilt","body_x","body_y"] else 0.0
             var high=2.0 if key=="wink_duration" else 1.0

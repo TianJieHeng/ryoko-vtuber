@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "duration": 18.5,
+  "cues": [
+    {"time": 0.0, "controls": {"expression": "neutral", "auto_blink": false, "body_follow": false, "mouth": "REST", "effects": {"blush_L": false, "blush_R": false, "tear_L": false, "tear_R": false, "sweat": false, "anger": false, "sparkle": false}}},
+    {"time": 1.0, "controls": {"effects": {"blush_R": true}}},
+    {"time": 2.5, "controls": {"effects": {"blush_L": true}}},
+    {"time": 4.0, "controls": {"effects": {"blush_R": false}}},
+    {"time": 5.0, "controls": {"effects": {"blush_L": false, "tear_R": true}, "mouth": "E"}},
+    {"time": 6.0, "controls": {"wink": "screen_left", "wink_duration": 0.6}},
+    {"time": 7.0, "controls": {"effects": {"tear_R": false, "tear_L": true}, "mouth": "REST", "head_tilt": 0.2}},
+    {"time": 8.5, "controls": {"effects": {"tear_L": false, "sweat": true}}},
+    {"time": 10.0, "controls": {"effects": {"sweat": false, "anger": true}, "head_tilt": -0.2}},
+    {"time": 11.5, "controls": {"effects": {"anger": false, "sparkle": true}, "head_tilt": 0.2}},
+    {"time": 13.0, "controls": {"expression": "EXP-064", "effects": {"blush_L": true, "blush_R": true}, "eye_screen_right": 1.0, "mouth": "A"}},
+    {"time": 14.5, "controls": {"release_eye_controls": true, "mouth": "REST", "head_tilt": 0.0}},
+    {"time": 16.0, "controls": {"effects": {"blush_L": false, "blush_R": false, "sparkle": false}, "expression": "EXP-035"}},
+    {"time": 17.5, "controls": {"expression": "neutral"}}
+  ]
+}

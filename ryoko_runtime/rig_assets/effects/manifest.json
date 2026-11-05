@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "coordinate_space": [
+    1136,
+    1384
+  ],
+  "side_convention": "L is character-left/viewer-right; R is character-right/viewer-left.",
+  "scope": "Optional overlays from original transparent source art, separate from authored expression effects.",
+  "registration": "Source alpha bounding boxes are placed and scaled to the existing bust. PNG bytes remain unchanged.",
+  "effects": {
+    "blush_R": {
+      "file": "RYO_FX_blush_character_R.png",
+      "source_rect": [
+        0,
+        0,
+        1086,
+        724
+      ],
+      "position": [
+        432,
+        530
+      ],
+      "size": [
+        110,
+        60
+      ],
+      "source_sha256": "a818395e9cf1be5023edc62f2d79b24bb3ee19efe634e35639b2770d53536081",
+      "source": "avatar_build_assets/effects/layers/RYO_FX_blush_character_R.png"
+    },
+    "blush_L": {
+      "file": "RYO_FX_blush_character_L.png",
+      "source_rect": [
+        0,
+        0,
+        1086,
+        724
+      ],
+      "position": [
+        590,
+        530
+      ],
+      "size": [
+        110,
+        60
+      ],
+      "source_sha256": "12efc27caceed6475110b7e17bee91044dda15da21f9a453923abda25a64a824",
+      "source": "avatar_build_assets/effects/layers/RYO_FX_blush_character_L.png"
+    },
+    "tear_R": {
+      "file": "RYO_FX_tear_character_R.png",
+      "source_rect": [
+        33,
+        9,
+        715,
+        991
+      ],
+      "position": [
+        468,
+        514
+      ],
+      "size": [
+        26,
+        134
+      ],
+      "source_sha256": "d59f3d789f75d066f1960522c867dd0b4334b9f2eb5a1251e6e7ee8f43986362",
+      "source": "avatar_build_assets/effects/layers/RYO_FX_tear_character_R.png"
+    },
+    "tear_L": {
+      "file": "RYO_FX_tear_character_L.png",
+      "source_rect": [
+        17,
+        9,
+        745,
+        1015
+      ],
+      "position": [
+        638,
+        514
+      ],
+      "size": [
+        26,
+        134
+      ],
+      "source_sha256": "de8570c4509ad22fc67696413a4ef81d3ed445dc8428609e5cf548119c52d18b",
+      "source": "avatar_build_assets/effects/layers/RYO_FX_tear_character_L.png"
+    },
+    "sweat": {
+      "file": "RYO_FX_sweatdrop.png",
+      "source_rect": [
+        393,
+        23,
+        975,
+        895
+      ],
+      "position": [
+        695,
+        397
+      ],
+      "size": [
+        32,
+        66
+      ],
+      "source_sha256": "1cc604aed7931c12248d5e81b270e7453867d6f6c20f210df404585f3a677cf9",
+      "source": "avatar_build_assets/effects/layers/RYO_FX_sweatdrop.png"
+    },
+    "anger": {
+      "file": "RYO_FX_anger_mark.png",
+      "source_rect": [
+        243,
+        296,
+        799,
+        754
+      ],
+      "position": [
+        663,
+        340
+      ],
+      "size": [
+        48,
+        48
+      ],
+      "source_sha256": "20fbb07a56a52d2c70a41b2c4765a18e2c5157b646b02d98abe2655c109754de",
+      "source": "avatar_build_assets/effects/layers/RYO_FX_anger_mark.png"
+    },
+    "sparkle": {
+      "file": "RYO_FX_sparkle_cluster.png",
+      "source_rect": [
+        369,
+        39,
+        777,
+        737
+      ],
+      "position": [
+        735,
+        335
+      ],
+      "size": [
+        70,
+        80
+      ],
+      "source_sha256": "2e4704b5a10813b6154d45ea0779ba3490fbe2b471fbdfdd3dbe41434ae34628",
+      "source": "avatar_build_assets/effects/layers/RYO_FX_sparkle_cluster.png"
+    }
+  }
+}
