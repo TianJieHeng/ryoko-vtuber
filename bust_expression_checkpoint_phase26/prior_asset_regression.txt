@@ -1,0 +1,1 @@
+PASS: 75 prior registrations and 468 prior PNG assets byte-identical.
