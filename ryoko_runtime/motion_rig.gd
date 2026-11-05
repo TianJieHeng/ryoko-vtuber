@@ -46,6 +46,11 @@ var gesture_events={}
 var eyelids=preload("res://eyelid_driver.gd").new()
 var eyelid_proof=false
 var eyelid_events={}
+var pose_store=preload("res://pose_store.gd").new()
+var pose_proof=false
+var pose_events={}
+var pose_notice=""
+var pose_status:Label
 
 func _ready():
     var viewport = SubViewport.new()
@@ -86,6 +91,10 @@ func _ready():
     body_proof="--body-proof" in OS.get_cmdline_user_args()
     gesture_proof="--gesture-proof" in OS.get_cmdline_user_args()
     eyelid_proof="--eyelid-proof" in OS.get_cmdline_user_args()
+    pose_proof="--pose-proof" in OS.get_cmdline_user_args()
+    if pose_proof:pose_store.path="user://proof_poses.json"
+    if not pose_store.load_disk():push_warning(pose_store.error_message)
+    pose_status=Label.new();pose_status.position=Vector2(18,62);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -104,6 +113,8 @@ func _build_grid(columns,rows):
 
 func apply_controls(data, source="external"):
     if source=="external":external_controls=true
+    var pose_ok=true
+    if data.has("pose_load"):pose_ok=recall_pose(int(data.pose_load))
     if data.get("reset",false):
         eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
@@ -117,8 +128,10 @@ func apply_controls(data, source="external"):
     if data.get("bounce",false):bounce_velocity=-280.0
     if data.has("chest_secondary"):chest_enabled=bool(data.chest_secondary)
     if data.has("body_follow"):body_follow=bool(data.body_follow)
-    var accepted=true
-    if data.has("expression"):accepted=face.set_expression(String(data.expression))
+    var accepted=pose_ok
+    if data.has("expression"):
+        var expression_ok=face.set_expression(String(data.expression))
+        accepted=accepted and expression_ok
     if data.has("gesture"):
         var gesture_ok=gestures.trigger(String(data.gesture),data.get("gesture_strength",1.0))
         accepted=accepted and gesture_ok
@@ -136,12 +149,19 @@ func apply_controls(data, source="external"):
     if data.has("blink"):
         manual_blink=float(data.blink);face.set_blink(manual_blink,manual_blink)
     if data.has("auto_blink"):auto_blink=bool(data.auto_blink);manual_blink=-1.0
+    if data.has("pose_save"):
+        var saved=save_pose(int(data.pose_save))
+        accepted=accepted and saved
     return accepted
 
 func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
     if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
+    if event.keycode in [KEY_1,KEY_2,KEY_3]:
+        var slot=int(event.keycode-KEY_1)+1
+        if event.ctrl_pressed:save_pose(slot)
+        else:recall_pose(slot)
     if event.keycode==KEY_J:eyelids.trigger("screen_left")
     if event.keycode==KEY_K:eyelids.trigger("screen_right")
     if event.keycode==KEY_U:eyelids.reset()
@@ -160,8 +180,10 @@ func _unhandled_key_input(event):
 
 func _process(delta):
     if not rig_ready:return
+    pose_status.text="" if pose_proof else pose_notice
     clock_time+=delta
-    if eyelid_proof:_run_eyelid_proof()
+    if pose_proof:_run_pose_proof()
+    elif eyelid_proof:_run_eyelid_proof()
     elif gesture_proof:_run_gesture_proof()
     elif secondary_proof:_run_secondary_proof()
     elif body_proof:_run_body_proof()
@@ -178,7 +200,7 @@ func _process(delta):
         speech=Input.is_physical_key_pressed(KEY_SPACE)
         manual_blink=1.0 if Input.is_physical_key_pressed(KEY_B) else -1.0
         hud.text="RYOKO / LIVE MOTION RIG"
-        hint.text="J/K screen-side wink · U release eyes · N dip · G greet · R reset"
+        hint.text="Ctrl+1/2/3 save · 1/2/3 recall · N dip · G greet · R reset"
     gestures.sample(delta)
     var effective_head=(target+gestures.head).clamp(Vector3(-1,-1,-1),Vector3.ONE)
     current=current.lerp(effective_head,1.0-exp(-delta/0.22))
@@ -349,3 +371,36 @@ func _run_eyelid_proof():
     hud.text="RYOKO / "+label
     hint.text="Screen-left = your left · existing eyelid artwork · independent controls"
     if t>=16.0:get_tree().quit()
+
+func save_pose(slot:int)->bool:
+    var saved_body=target if body_follow else body_target
+    var data={"head_tilt":target.x,"head_x":target.y,"head_y":target.z,"body_tilt":saved_body.x,"body_x":saved_body.y,"body_y":saved_body.z,"body_follow":body_follow}
+    var ok=pose_store.save_slot(slot,data)
+    pose_notice="Saved pose "+str(slot) if ok else pose_store.error_message
+    return ok
+
+func recall_pose(slot:int)->bool:
+    var data=pose_store.recall(slot)
+    if data.is_empty():pose_notice="Pose "+str(slot)+" is empty";return false
+    target=Vector3(data.head_tilt,data.head_x,data.head_y)
+    body_target=Vector3(data.body_tilt,data.body_x,data.body_y)
+    body_follow=data.body_follow;external_controls=true;mouse_follow=false
+    pose_notice="Recalled pose "+str(slot)
+    return true
+
+func _run_pose_proof():
+    var t=clock_time
+    var actions={2.0:{"head_tilt":-.45,"head_x":-.2,"body_tilt":-.3,"pose_save":1},5.0:{"head_tilt":.35,"head_x":.2,"body_tilt":.45,"pose_save":2},8.0:{"head_tilt":0,"head_x":0,"body_tilt":0},10.0:{"pose_load":1},13.0:{"pose_load":2},14.0:{"gesture":"acknowledge"},17.0:{"head_tilt":0,"head_x":0,"body_tilt":0}}
+    for time in actions:
+        if t>=time and not pose_events.has(time):
+            apply_controls(actions[time]);pose_events[time]=true
+    var label="REST / live neutral"
+    if t>=2.0 and t<5.0:label="SAVE 1 / relaxed left pose"
+    elif t>=5.0 and t<8.0:label="SAVE 2 / right pose"
+    elif t>=8.0 and t<10.0:label="NEUTRAL / release position"
+    elif t>=10.0 and t<13.0:label="RECALL 1 / smooth return"
+    elif t>=13.0 and t<17.0:label="RECALL 2 / gesture still works"
+    elif t>=17.0:label="RECOVER / live neutral"
+    hud.text="RYOKO / "+label
+    hint.text="Saved head/body poses · eased recall · facial controls remain live"
+    if t>=20.0:get_tree().quit()

@@ -1,3 +1,7 @@
+# Pose presets
+
+See [README_POSES.md](README_POSES.md) for saved head/body poses. This revision was reviewed and approved by the user.
+
 # Independent eyelid controls
 
 See [README_EYELIDS.md](README_EYELIDS.md) for screen-side winks and holds. This revision was reviewed and approved by the user.
