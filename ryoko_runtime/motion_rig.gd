@@ -55,6 +55,8 @@ var clip=preload("res://clip_player.gd").new()
 var clip_proof=false
 var clip_proof_time=0.0
 var clip_events={}
+var hair=preload("res://hair_secondary.gd").new()
+var hair_proof=false
 
 func _ready():
     var viewport = SubViewport.new()
@@ -100,6 +102,7 @@ func _ready():
     if not pose_store.load_disk():push_warning(pose_store.error_message)
     pose_status=Label.new();pose_status.position=Vector2(18,62);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
     clip_proof="--clip-proof" in OS.get_cmdline_user_args()
+    hair_proof="--hair-proof" in OS.get_cmdline_user_args()
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -124,7 +127,7 @@ func apply_controls(data, source="external"):
     if data.get("clip_play",false):pose_ok=play_clip("res://demo_clip.json")
     if data.has("pose_load"):pose_ok=recall_pose(int(data.pose_load))
     if data.get("reset",false):
-        stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
     if data.has("head_x"):target.y=clamp(float(data.head_x),-1.0,1.0)
     if data.has("head_y"):target.z=clamp(float(data.head_y),-1.0,1.0)
@@ -134,6 +137,7 @@ func apply_controls(data, source="external"):
         if data.has("body_x"):body_target.y=_finite_axis(data.body_x)
         if data.has("body_y"):body_target.z=_finite_axis(data.body_y)
     if data.get("bounce",false):bounce_velocity=-280.0
+    if data.has("hair_secondary"):hair.enabled=bool(data.hair_secondary)
     if data.has("chest_secondary"):chest_enabled=bool(data.chest_secondary)
     if data.has("body_follow"):body_follow=bool(data.body_follow)
     var accepted=pose_ok
@@ -166,6 +170,9 @@ func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
     if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
+    if event.keycode==KEY_F:
+        hair.enabled=not hair.enabled
+        pose_notice="Crown hair motion on" if hair.enabled else "Crown hair motion off"
     if event.keycode==KEY_T:play_clip("res://demo_clip.json")
     if event.keycode==KEY_P:pause_clip(not clip.paused)
     if event.keycode==KEY_ESCAPE:stop_clip()
@@ -203,7 +210,8 @@ func _process(delta):
             break
     pose_status.text="" if pose_proof or clip_proof else pose_notice
     clock_time+=delta
-    if clip_proof:pass
+    if hair_proof:_run_hair_proof()
+    elif clip_proof:pass
     elif pose_proof:_run_pose_proof()
     elif eyelid_proof:_run_eyelid_proof()
     elif gesture_proof:_run_gesture_proof()
@@ -231,6 +239,9 @@ func _process(delta):
     body_current=body_current.lerp(effective_body,1.0-exp(-delta/0.22))
     _step_bounce(delta)
     _step_chest(delta)
+    var head_anchor=Vector2(0,-550).rotated(current.x*deg_to_rad(6.0)+body_current.x*deg_to_rad(3.0))+Vector2(current.y*16+body_current.y*8,current.z*12+body_current.z*5+bounce_position)
+    hair.step(head_anchor,delta)
+    skin_material.set_shader_parameter("hair_offset",hair.offset)
     skin_material.set_shader_parameter("chest_offset",chest_offset)
     skin_material.set_shader_parameter("head_tilt",current.x*deg_to_rad(6.0))
     skin_material.set_shader_parameter("head_offset",Vector2(current.y*16.0,current.z*12.0))
@@ -461,3 +472,13 @@ func _run_clip_proof():
     if not clip_events.has("start"):hud.text="RYOKO / READY / timed clip"
     hint.text="Timed pose + gesture + wink + silent mouth cues · one-shot playback"
     if t>=19.0:get_tree().quit()
+
+func _run_hair_proof():
+    var t=clock_time
+    var stage=0 if t<2 else (1 if t<5 else (2 if t<8 else (3 if t<11 else (4 if t<14 else 5))))
+    var heads=[Vector3.ZERO,Vector3(-.65,-.25,0),Vector3(.65,.25,0),Vector3.ZERO,Vector3(-.65,-.25,0),Vector3.ZERO]
+    target=heads[stage];body_target=Vector3.ZERO;body_follow=false
+    hair.enabled=stage<4
+    hud.text="RYOKO / "+["REST / hair settles","LEAN LEFT / crown follows","LEAN RIGHT / crown follows","HOLD / no idle hair loop","OFF / rigid comparison","OFF / return neutral"][stage]
+    hint.text="Small crown/bun lag · roots fixed above eyes · existing artwork"
+    if t>=17.0:get_tree().quit()

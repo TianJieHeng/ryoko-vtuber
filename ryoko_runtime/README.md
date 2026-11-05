@@ -1,3 +1,7 @@
+# Crown/bun motion
+
+See [README_HAIR.md](README_HAIR.md) for bounded hair secondary motion. This revision was reviewed and approved by the user.
+
 # Timed animation clips
 
 See [README_CLIPS.md](README_CLIPS.md) for combined animation playback, pause and cancellation. This revision was reviewed and approved by the user.
