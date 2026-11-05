@@ -1,0 +1,20 @@
+{
+  "132": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-787e80c0-9863-48cf-a54e-176cd00dee3b.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-9e0a1aa6-678c-40ae-ad25-11e2bd2fceee.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is the exact approved neutral bust EDIT TARGET; image 2 is facial acting reference only. Change ONLY facial expression: Searching memory: both amber irises aimed toward upper viewer-RIGHT, uneven raised questioning brows, small parted hesitant mouth. Do not copy reference head tilt or turn. Match image 2's exact acting but preserve image 1's fixed frontal head position, scale, outline, nose shape, mint hair, earrings, neck, black suit, white shirt, framing and transparent background. Clean continuous cheek skin, no stray detached curved green hair underneath eyes, no duplicated blush bands. No head movement, props, text or new effects.",
+    "blink_prompt": "Edit this exact registered avatar image: close BOTH eyes completely for a full blink. Replace the open eye artwork entirely with clean closed eyelid lash curves; no open-eye lashes, irises, or white sclera may remain above them. Preserve precisely the current eyebrows, mouth, cheek skin, head position and scale, hair, clothing, framing and transparent background. Only eyelids change."
+  },
+  "134": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-e0cd2d63-bff5-43e9-bc26-1dee08b4458c.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-b267a1e9-2469-4ce2-9817-40195a7267a0.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is the exact approved neutral bust EDIT TARGET; image 2 is facial acting reference only. Change ONLY facial expression: Interested skepticism: viewer-right brow and eye slightly higher, viewer-left brow lower and eye narrower; attentive narrow eyes, closed asymmetrical half smile. Subtle skeptical attention. Match image 2's exact acting but preserve image 1's fixed frontal head position, scale, outline, nose shape, mint hair, earrings, neck, black suit, white shirt, framing and transparent background. Clean continuous cheek skin, no stray detached curved green hair underneath eyes, no duplicated blush bands. No head movement, props, text or new effects.",
+    "blink_prompt": "Edit this exact registered avatar image: close BOTH eyes completely for a full blink. Replace the open eye artwork entirely with clean closed eyelid lash curves; no open-eye lashes, irises, or white sclera may remain above them. Preserve precisely the current eyebrows, mouth, cheek skin, head position and scale, hair, clothing, framing and transparent background. Only eyelids change."
+  },
+  "196": {
+    "rest": "/workspace/scratch/42f2baf55663/generated_images/exec-6df8cbe8-dedf-4dda-86e3-514728511e32.png",
+    "blink": "/workspace/scratch/42f2baf55663/generated_images/exec-779c139e-89e5-4e47-8016-e8aee2ab98c2.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 is the exact approved neutral bust EDIT TARGET; image 2 is facial acting reference only. Change ONLY facial expression: Comic blank stare: level relaxed brows, direct fairly open amber eyes, tiny straight horizontal closed line mouth. Dry deadpan, no blush or tears. Match image 2's exact acting but preserve image 1's fixed frontal head position, scale, outline, nose shape, mint hair, earrings, neck, black suit, white shirt, framing and transparent background. Clean continuous cheek skin, no stray detached curved green hair underneath eyes, no duplicated blush bands. No head movement, props, text or new effects.",
+    "blink_prompt": "Edit this exact registered avatar image: close BOTH eyes completely for a full blink. Replace the open eye artwork entirely with clean closed eyelid lash curves; no open-eye lashes, irises, or white sclera may remain above them. Preserve precisely the current eyebrows, mouth, cheek skin, head position and scale, hair, clothing, framing and transparent background. Only eyelids change."
+  }
+}

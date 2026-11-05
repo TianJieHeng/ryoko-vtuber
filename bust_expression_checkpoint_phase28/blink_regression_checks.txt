@@ -1,0 +1,1 @@
+Visual inspection of all three comparison boards: each dedicated blink contains fully closed eyelids with no visible iris/pupil; speech+blink preserves the same closure. Godot tests verify independent L/R controls.

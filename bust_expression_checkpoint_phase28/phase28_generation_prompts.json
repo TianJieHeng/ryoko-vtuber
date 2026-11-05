@@ -1,0 +1,20 @@
+{
+  "116": {
+    "rest": "sources/EXP-116.png",
+    "blink": "sources/EXP-116-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting reference ONLY. Change ONLY eyes/brows/mouth and subtle cheek color: Confident denial: brows pulled inward with assertive mild frown, alert narrowed amber eyes, small asymmetric closed-lip defiant smirk. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects.",
+    "blink_prompt": "Identity-preserve exact sprite edit. Change ONLY eyelids to fully CLOSED blink, with a single clean closed lash line on each eye. No iris or pupil visible. Keep the annoyed/firm brow expression, mouth, exact facial placement, nose, cheek skin, hair, head shape, body and transparent background identical. Keep canvas and alignment identical; no zoom, shift or redraw outside eyelids."
+  },
+  "139": {
+    "rest": "sources/EXP-139.png",
+    "blink": "sources/EXP-139-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting reference ONLY. Change ONLY eyes/brows/mouth and subtle cheek color: Focused determination: sharply inward angled brows, intent open amber eyes focused ahead, a small firm nearly straight mouth with tense corners. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects.",
+    "blink_prompt": "Identity-preserve exact sprite edit. Change ONLY eyelids to fully CLOSED blink, with a single clean closed lash line on each eye. No iris or pupil visible. Keep the annoyed/firm brow expression, mouth, exact facial placement, nose, cheek skin, hair, head shape, body and transparent background identical. Keep canvas and alignment identical; no zoom, shift or redraw outside eyelids."
+  },
+  "174": {
+    "rest": "sources/EXP-174.png",
+    "blink": "sources/EXP-174-blink.png",
+    "prompt": "Identity-preserve edit for registered 2D avatar sprite. Image 1 exact approved neutral bust EDIT TARGET; image 2 facial acting reference ONLY. Change ONLY eyes/brows/mouth and subtle cheek color: Sleepy annoyance: inward lowered brows, heavy half-lidded amber eyes, small downturned pursed pout, exhausted irritated expression. Preserve image 1 EXACT fixed frontal head geometry, centered nose/mouth axis x565 in 1136x1384 canvas, eyes x480 and650,y495, mouth x565,y633. No shift, turn or jaw redraw. Preserve hair, nose, neck, suit, jewelry, framing and transparent background. Clean cheek skin, no detached curved green hairs below eyes. No props/text/effects.",
+    "blink_prompt": "Identity-preserve exact sprite edit. Change ONLY eyelids to fully CLOSED blink, with a single clean closed lash line on each eye. No iris or pupil visible. Keep the annoyed/firm brow expression, mouth, exact facial placement, nose, cheek skin, hair, head shape, body and transparent background identical. Keep canvas and alignment identical; no zoom, shift or redraw outside eyelids."
+  }
+}
