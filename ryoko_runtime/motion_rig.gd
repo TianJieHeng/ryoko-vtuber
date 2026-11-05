@@ -10,6 +10,17 @@ var body_target = Vector3.ZERO
 var body_current = Vector3.ZERO
 var body_follow = true
 var body_proof = false
+var secondary_proof = false
+var chest_offset = Vector2.ZERO
+var chest_velocity = Vector2.ZERO
+var chest_anchor = Vector2.ZERO
+var chest_initialized = false
+var chest_enabled = true
+var bounce_position = 0.0
+var bounce_velocity = 0.0
+const CHEST_LIMIT = 8.0 # source pixels, below four review pixels
+const CHEST_FREQUENCY = 12.0
+const CHEST_DAMPING = 0.42
 var clock_time = 0.0
 var auto_blink = true
 var next_blink = 2.8
@@ -65,6 +76,7 @@ func _ready():
     if ai>=0 and ai+1<args.size():
         if audio_mouth.load_wav(args[ai+1]):audio_mouth.play()
         else:push_error(audio_mouth.error_message)
+    secondary_proof="--secondary-proof" in OS.get_cmdline_user_args()
     body_proof="--body-proof" in OS.get_cmdline_user_args()
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
@@ -94,6 +106,8 @@ func apply_controls(data, source="external"):
         if data.has("body_tilt"):body_target.x=_finite_axis(data.body_tilt)
         if data.has("body_x"):body_target.y=_finite_axis(data.body_x)
         if data.has("body_y"):body_target.z=_finite_axis(data.body_y)
+    if data.get("bounce",false):bounce_velocity=-280.0
+    if data.has("chest_secondary"):chest_enabled=bool(data.chest_secondary)
     if data.has("body_follow"):body_follow=bool(data.body_follow)
     var accepted=true
     if data.has("expression"):accepted=face.set_expression(String(data.expression))
@@ -123,7 +137,8 @@ func _unhandled_key_input(event):
 func _process(delta):
     if not rig_ready:return
     clock_time+=delta
-    if body_proof:_run_body_proof()
+    if secondary_proof:_run_secondary_proof()
+    elif body_proof:_run_body_proof()
     elif audio_proof:_run_audio_proof()
     elif proof:_run_proof()
     elif not external_controls:
@@ -141,10 +156,13 @@ func _process(delta):
     current=current.lerp(target,1.0-exp(-delta/0.22))
     if body_follow:body_target=target
     body_current=body_current.lerp(body_target,1.0-exp(-delta/0.22))
+    _step_bounce(delta)
+    _step_chest(delta)
+    skin_material.set_shader_parameter("chest_offset",chest_offset)
     skin_material.set_shader_parameter("head_tilt",current.x*deg_to_rad(6.0))
     skin_material.set_shader_parameter("head_offset",Vector2(current.y*16.0,current.z*12.0))
     skin_material.set_shader_parameter("spine_tilt",body_current.x*deg_to_rad(3.0))
-    skin_material.set_shader_parameter("torso_offset",Vector2(body_current.y*8.0,body_current.z*5.0))
+    skin_material.set_shader_parameter("torso_offset",Vector2(body_current.y*8.0,body_current.z*5.0+bounce_position))
     skin_material.set_shader_parameter("breath",sin(clock_time*TAU/6.0))
     if auto_blink and clock_time>=next_blink:
         blink_until=clock_time+0.14;next_blink=clock_time+3.2
@@ -210,3 +228,52 @@ func _run_body_proof():
     hud.text="RYOKO / "+labels[stage]
     hint.text="Separate head / torso channels · shoulders and chest remain coupled"
     if t>=20.0:get_tree().quit()
+
+# A damped mass follows the actual torso frame, not time or head input.
+# Movement creates a small inertial lag; a held pose decays to exactly rest.
+# Breath is deliberately excluded, so breathing cannot drive repeated bounce.
+func _step_chest(delta):
+    var anchor=Vector2(0,-210).rotated(body_current.x*deg_to_rad(3))+Vector2(body_current.y*8,body_current.z*5+bounce_position)
+    if not chest_initialized or not chest_enabled:
+        chest_anchor=anchor;chest_initialized=true;chest_offset=Vector2.ZERO;chest_velocity=Vector2.ZERO
+        return
+    var dt=clamp(delta,0.0,0.1)
+    chest_offset-=(anchor-chest_anchor)*0.9
+    chest_anchor=anchor
+    var count=maxi(1,int(ceil(dt*240.0)))
+    var step=dt/count
+    for i in range(count):
+        chest_velocity+=(-CHEST_FREQUENCY*CHEST_FREQUENCY*chest_offset-2.0*CHEST_DAMPING*CHEST_FREQUENCY*chest_velocity)*step
+        chest_offset+=chest_velocity*step
+        if chest_offset.length()>CHEST_LIMIT:
+            chest_offset=chest_offset.limit_length(CHEST_LIMIT)
+            var outward=chest_velocity.dot(chest_offset.normalized())
+            if outward>0:chest_velocity-=chest_offset.normalized()*outward
+    if chest_offset.length()<0.00001 and chest_velocity.length()<0.0001:
+        chest_offset=Vector2.ZERO;chest_velocity=Vector2.ZERO
+
+func chest_weight(rest:Vector2)->float:
+    return smoothstep(920.0,1050.0,rest.y)*(1.0-smoothstep(1280.0,1384.0,rest.y))*(1.0-smoothstep(310.0,480.0,abs(rest.x-568.0)))
+
+# A user-triggered small torso lift, followed by damped recovery. No idle cycle.
+func _step_bounce(delta):
+    var dt=clamp(delta,0.0,0.1)
+    var count=maxi(1,int(ceil(dt*240.0)))
+    var step=dt/count
+    for i in range(count):
+        bounce_velocity+=(-81.0*bounce_position-10.8*bounce_velocity)*step
+        bounce_position+=bounce_velocity*step
+    if abs(bounce_position)<.0001 and abs(bounce_velocity)<.001:
+        bounce_position=0.0;bounce_velocity=0.0
+
+func _run_secondary_proof():
+    var t=clock_time
+    var stage=0 if t<2 else (1 if t<5 else (2 if t<8 else (3 if t<11 else 4)))
+    if stage!=proof_stage:
+        proof_stage=stage
+        if stage in [1,2,3]:apply_controls({"bounce":true})
+    target=Vector3.ZERO;body_target=Vector3.ZERO;body_follow=false
+    var labels=["REST / no idle bounce","SMALL BOUNCE / soft follow-through","SMALL BOUNCE / repeat","SMALL BOUNCE / repeat","REST / fully settled"]
+    hud.text="RYOKO / "+labels[stage]
+    hint.text="Torso rises and settles · whole chest follows with a soft delay"
+    if t>=14.0:get_tree().quit()

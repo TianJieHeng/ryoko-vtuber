@@ -1,3 +1,7 @@
+# Whole-chest secondary motion
+
+The user-approved bounce and broad chest follow-through are documented in [README_SECONDARY.md](README_SECONDARY.md). Existing head, body, audio, mouth and expression controls remain available.
+
 # Independent torso controls
 
 See [README_BODY.md](README_BODY.md) for the new separate head/body controls. This addition was reviewed and approved by the user.
