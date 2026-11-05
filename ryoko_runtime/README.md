@@ -1,6 +1,6 @@
 # Live motion rig added
 
-The default scene is now the interactive head/neck and coupled upper-torso rig. See [README_MOTION.md](README_MOTION.md) for controls, limits and validation. Original expression playback remains available as playback.tscn. This revised motion is awaiting user review and has not been pushed.
+The default scene is now the interactive head/neck and coupled upper-torso rig. See [README_MOTION.md](README_MOTION.md) for controls, limits and validation. Original expression playback remains available as playback.tscn. The coupled-torso revision was approved and published in 48c976a. The approved audio-driven mouth controls are described in [README_AUDIO.md](README_AUDIO.md).
 
 # Ryoko 93-expression runtime playback
 

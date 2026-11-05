@@ -22,6 +22,9 @@ var proof_log
 var rig_ready = false
 var expression_ids=[]
 var expression_index=-1
+var audio_mouth
+var audio_proof=false
+var audio_proof_started=false
 
 func _ready():
     var viewport = SubViewport.new()
@@ -48,6 +51,16 @@ func _ready():
     hint=Label.new();hint.position=Vector2(18,42);hint.add_theme_font_size_override("font_size",14);add_child(hint)
     proof="--motion-proof" in OS.get_cmdline_user_args()
     if proof: proof_log=FileAccess.open("user://motion_proof.jsonl",FileAccess.WRITE)
+    audio_mouth=load("res://audio_mouth_driver.gd").new()
+    add_child(audio_mouth)
+    audio_proof="--audio-proof" in OS.get_cmdline_user_args()
+    audio_mouth.deterministic=audio_proof
+    if audio_proof:audio_mouth.load_wav("res://audio_fixture.wav")
+    var args=OS.get_cmdline_user_args()
+    var ai=args.find("--audio-file")
+    if ai>=0 and ai+1<args.size():
+        if audio_mouth.load_wav(args[ai+1]):audio_mouth.play()
+        else:push_error(audio_mouth.error_message)
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -67,13 +80,15 @@ func _build_grid(columns,rows):
 func apply_controls(data, source="external"):
     if source=="external":external_controls=true
     if data.get("reset",false):
-        target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        audio_mouth.stop();target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
     if data.has("head_x"):target.y=clamp(float(data.head_x),-1.0,1.0)
     if data.has("head_y"):target.z=clamp(float(data.head_y),-1.0,1.0)
     var accepted=true
     if data.has("expression"):accepted=face.set_expression(String(data.expression))
-    if data.has("mouth"):face.set_mouth(data.mouth)
+    if data.has("audio_level"):audio_mouth.set_level(float(data.audio_level))
+    if data.get("audio_stop",false):audio_mouth.stop();face.release_speech()
+    if data.has("mouth"):audio_mouth.stop();face.set_mouth(data.mouth)
     if data.has("speech_active") and not data.speech_active:face.release_speech()
     if data.has("blink"):
         manual_blink=float(data.blink);face.set_blink(manual_blink,manual_blink)
@@ -83,6 +98,9 @@ func apply_controls(data, source="external"):
 func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE]:external_controls=false
+    if event.keycode==KEY_L:
+        if audio_mouth.active:audio_mouth.stop();face.release_speech()
+        elif audio_mouth.load_wav("res://audio_fixture.wav"):audio_mouth.play()
     if event.keycode==KEY_M:mouse_follow=not mouse_follow
     if event.keycode==KEY_R:apply_controls({"reset":true})
     if event.keycode==KEY_COMMA or event.keycode==KEY_PERIOD:
@@ -92,7 +110,8 @@ func _unhandled_key_input(event):
 func _process(delta):
     if not rig_ready:return
     clock_time+=delta
-    if proof:_run_proof()
+    if audio_proof:_run_audio_proof()
+    elif proof:_run_proof()
     elif not external_controls:
         if mouse_follow:
             var p=(get_global_mouse_position()-Vector2(284,380))/Vector2(284,380)
@@ -102,7 +121,7 @@ func _process(delta):
         speech=Input.is_physical_key_pressed(KEY_SPACE)
         manual_blink=1.0 if Input.is_physical_key_pressed(KEY_B) else -1.0
         hud.text="RYOKO / LIVE MOTION RIG"
-        hint.text="A/D tilt · arrows move · M mouse · Space mouth · B blink · R reset"
+        hint.text="A/D tilt · arrows move · M mouse · L audio · Space mouth · B blink · R reset"
     current=current.lerp(target,1.0-exp(-delta/0.22))
     skin_material.set_shader_parameter("head_tilt",current.x*deg_to_rad(6.0))
     skin_material.set_shader_parameter("head_offset",Vector2(current.y*16.0,current.z*12.0))
@@ -113,7 +132,11 @@ func _process(delta):
         blink_until=clock_time+0.14;next_blink=clock_time+3.2
     var closed=manual_blink if manual_blink>=0.0 else (1.0 if auto_blink and clock_time<blink_until else 0.0)
     face.set_blink(closed,closed)
-    if speech:face.set_mouth(["A","E","I","O","U"][int(clock_time*7.0)%5])
+    if audio_mouth.active:
+        var shape=audio_mouth.step(delta)
+        if shape=="REST":face.release_speech()
+        else:face.set_mouth(shape)
+    elif speech:face.set_mouth(["A","E","I","O","U"][int(clock_time*7.0)%5])
     elif not proof and not external_controls:face.release_speech()
 
 func _run_proof():
@@ -141,3 +164,13 @@ func deform_point(rest:Vector2,controls:Vector3,breath:float)->Vector2:
     var torso_weight=1.0-smoothstep(1260.0,1384.0,rest.y)
     var torso=(neck-Vector2(568,1340)).rotated(controls.x*deg_to_rad(3.0))+Vector2(568,1340)+Vector2(controls.y*8,controls.z*5)-Vector2(0,breath*1.2)
     return neck.lerp(torso,torso_weight)
+
+func _run_audio_proof():
+    if clock_time>=2.0 and not audio_proof_started:
+        audio_proof_started=true
+        audio_mouth.play()
+    target=Vector3(-0.22,0,0) if clock_time>6.0 and clock_time<11.0 else Vector3.ZERO
+    hud.text="RYOKO / AUDIO-DRIVEN MOUTH"
+    var state="SILENCE / resting mouth" if audio_mouth.level<0.045 else "AUDIO / opening follows loudness"
+    hint.text=state+" · synthetic tone test, not phoneme recognition"
+    if clock_time>=16.0:get_tree().quit()
