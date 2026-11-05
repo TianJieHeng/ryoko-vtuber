@@ -1,0 +1,1 @@
+PASS: three new profiles have distinct fully closed blink images. Visual comparison boards inspected; headless expression suite covers independent eyelids, speech overrides and restoration. Full suite 50,944 checks passed.

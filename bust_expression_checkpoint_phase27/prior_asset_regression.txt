@@ -1,0 +1,1 @@
+PASS: all 78 prior expression registrations and 489 artwork PNG files byte-identical to phase26. 81 total profiles.
