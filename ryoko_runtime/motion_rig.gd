@@ -6,6 +6,10 @@ var surface: MeshInstance2D
 var skin_material: ShaderMaterial
 var target = Vector3.ZERO # tilt, horizontal offset, vertical offset
 var current = Vector3.ZERO
+var body_target = Vector3.ZERO
+var body_current = Vector3.ZERO
+var body_follow = true
+var body_proof = false
 var clock_time = 0.0
 var auto_blink = true
 var next_blink = 2.8
@@ -61,6 +65,7 @@ func _ready():
     if ai>=0 and ai+1<args.size():
         if audio_mouth.load_wav(args[ai+1]):audio_mouth.play()
         else:push_error(audio_mouth.error_message)
+    body_proof="--body-proof" in OS.get_cmdline_user_args()
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -80,10 +85,16 @@ func _build_grid(columns,rows):
 func apply_controls(data, source="external"):
     if source=="external":external_controls=true
     if data.get("reset",false):
-        audio_mouth.stop();target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
     if data.has("head_x"):target.y=clamp(float(data.head_x),-1.0,1.0)
     if data.has("head_y"):target.z=clamp(float(data.head_y),-1.0,1.0)
+    if data.has("body_tilt") or data.has("body_x") or data.has("body_y"):
+        body_follow=false
+        if data.has("body_tilt"):body_target.x=_finite_axis(data.body_tilt)
+        if data.has("body_x"):body_target.y=_finite_axis(data.body_x)
+        if data.has("body_y"):body_target.z=_finite_axis(data.body_y)
+    if data.has("body_follow"):body_follow=bool(data.body_follow)
     var accepted=true
     if data.has("expression"):accepted=face.set_expression(String(data.expression))
     if data.has("audio_level"):audio_mouth.set_level(float(data.audio_level))
@@ -97,7 +108,9 @@ func apply_controls(data, source="external"):
 
 func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
-    if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE]:external_controls=false
+    if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
+    if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
+    if event.keycode==KEY_H:body_follow=true
     if event.keycode==KEY_L:
         if audio_mouth.active:audio_mouth.stop();face.release_speech()
         elif audio_mouth.load_wav("res://audio_fixture.wav"):audio_mouth.play()
@@ -110,7 +123,8 @@ func _unhandled_key_input(event):
 func _process(delta):
     if not rig_ready:return
     clock_time+=delta
-    if audio_proof:_run_audio_proof()
+    if body_proof:_run_body_proof()
+    elif audio_proof:_run_audio_proof()
     elif proof:_run_proof()
     elif not external_controls:
         if mouse_follow:
@@ -118,15 +132,19 @@ func _process(delta):
             apply_controls({"head_x":p.x,"head_y":p.y,"head_tilt":p.x*0.55},"local")
         else:
             apply_controls({"head_tilt":float(Input.is_physical_key_pressed(KEY_D))-float(Input.is_physical_key_pressed(KEY_A)),"head_x":float(Input.is_physical_key_pressed(KEY_RIGHT))-float(Input.is_physical_key_pressed(KEY_LEFT)),"head_y":float(Input.is_physical_key_pressed(KEY_DOWN))-float(Input.is_physical_key_pressed(KEY_UP))},"local")
+        if not body_follow:
+            body_target=Vector3(float(Input.is_physical_key_pressed(KEY_E))-float(Input.is_physical_key_pressed(KEY_Q)),float(Input.is_physical_key_pressed(KEY_C))-float(Input.is_physical_key_pressed(KEY_Z)),float(Input.is_physical_key_pressed(KEY_S))-float(Input.is_physical_key_pressed(KEY_W)))
         speech=Input.is_physical_key_pressed(KEY_SPACE)
         manual_blink=1.0 if Input.is_physical_key_pressed(KEY_B) else -1.0
         hud.text="RYOKO / LIVE MOTION RIG"
-        hint.text="A/D tilt · arrows move · M mouse · L audio · Space mouth · B blink · R reset"
+        hint.text="A/D head · Q/E body · W/S up/down · Z/C shift · H follow · R reset"
     current=current.lerp(target,1.0-exp(-delta/0.22))
+    if body_follow:body_target=target
+    body_current=body_current.lerp(body_target,1.0-exp(-delta/0.22))
     skin_material.set_shader_parameter("head_tilt",current.x*deg_to_rad(6.0))
     skin_material.set_shader_parameter("head_offset",Vector2(current.y*16.0,current.z*12.0))
-    skin_material.set_shader_parameter("spine_tilt",current.x*deg_to_rad(3.0))
-    skin_material.set_shader_parameter("torso_offset",Vector2(current.y*8.0,current.z*5.0))
+    skin_material.set_shader_parameter("spine_tilt",body_current.x*deg_to_rad(3.0))
+    skin_material.set_shader_parameter("torso_offset",Vector2(body_current.y*8.0,body_current.z*5.0))
     skin_material.set_shader_parameter("breath",sin(clock_time*TAU/6.0))
     if auto_blink and clock_time>=next_blink:
         blink_until=clock_time+0.14;next_blink=clock_time+3.2
@@ -158,11 +176,14 @@ func _run_proof():
 
 # CPU reference of the hierarchical shader, for coupling invariants.
 func deform_point(rest:Vector2,controls:Vector3,breath:float)->Vector2:
+    return deform_independent(rest,controls,controls,breath)
+
+func deform_independent(rest:Vector2,controls:Vector3,body:Vector3,breath:float)->Vector2:
     var head_weight=1.0-smoothstep(710.0,855.0,rest.y)
     var head=(rest-Vector2(568,790)).rotated(controls.x*deg_to_rad(6.0))+Vector2(568,790)+Vector2(controls.y*16,controls.z*12)
     var neck=rest.lerp(head,head_weight)
     var torso_weight=1.0-smoothstep(1260.0,1384.0,rest.y)
-    var torso=(neck-Vector2(568,1340)).rotated(controls.x*deg_to_rad(3.0))+Vector2(568,1340)+Vector2(controls.y*8,controls.z*5)-Vector2(0,breath*1.2)
+    var torso=(neck-Vector2(568,1340)).rotated(body.x*deg_to_rad(3.0))+Vector2(568,1340)+Vector2(body.y*8,body.z*5)-Vector2(0,breath*1.2)
     return neck.lerp(torso,torso_weight)
 
 func _run_audio_proof():
@@ -174,3 +195,18 @@ func _run_audio_proof():
     var state="SILENCE / resting mouth" if audio_mouth.level<0.045 else "AUDIO / opening follows loudness"
     hint.text=state+" · synthetic tone test, not phoneme recognition"
     if clock_time>=16.0:get_tree().quit()
+
+func _finite_axis(value)->float:
+    var v=float(value)
+    return clamp(v,-1.0,1.0) if is_finite(v) else 0.0
+
+func _run_body_proof():
+    var t=clock_time
+    var stage=0 if t<3 else (1 if t<6 else (2 if t<8 else (3 if t<11 else (4 if t<13 else (5 if t<16 else 6)))))
+    var labels=["REST / independent controls", "HEAD ONLY / shoulders stay still", "SETTLE / relaxed neutral", "TORSO LED / head rides with body", "SETTLE / relaxed neutral", "COUNTERPOSE / head stays upright", "RECOVER / return to neutral"]
+    var heads=[Vector3.ZERO,Vector3(.55,0,0),Vector3.ZERO,Vector3.ZERO,Vector3.ZERO,Vector3(-.35,0,0),Vector3.ZERO]
+    var bodies=[Vector3.ZERO,Vector3.ZERO,Vector3.ZERO,Vector3(.7,0,0),Vector3.ZERO,Vector3(.7,0,0),Vector3.ZERO]
+    target=heads[stage];body_target=bodies[stage];body_follow=false
+    hud.text="RYOKO / "+labels[stage]
+    hint.text="Separate head / torso channels · shoulders and chest remain coupled"
+    if t>=20.0:get_tree().quit()
