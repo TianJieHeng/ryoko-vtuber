@@ -14,6 +14,14 @@ Send updates more often than every two seconds. A two-second gap resets facial, 
 
 ## Accepted controls
 
+- `look_x`, `look_y`: finite numbers from -1 to 1; `look_release`: boolean.
+- `ornament_secondary`: boolean; enables or disables the hanging hairpin cutout.
+
+- `brow_raise`, `brow_screen_left`, `brow_screen_right`: finite numbers from -1 to 1, neutral brows only.
+
+- `breath_level`, `breath_strength`: finite numbers from 0 to 1. `breath_trigger` and `breath_cancel`: booleans. See README_BREATH.md.
+
+- `gaze_x`, `gaze_y`: finite numbers from -1 to 1; neutral-face eye direction.
 - `head_tilt`, `head_x`, `head_y`, `body_tilt`, `body_x`, `body_y`: finite numbers from -1 to 1.
 - `eye_screen_left`, `eye_screen_right`, `audio_level`, `blink`, `gesture_strength`: finite numbers from 0 to 1.
 - `wink_duration`: 0 to 2 seconds, further limited by the existing eyelid driver.
@@ -27,10 +35,11 @@ Unknown keys, malformed envelopes, invalid types/ranges, duplicate/out-of-order 
 
 ## Evidence and limits
 
-`test_live_input.gd` performs 40 checks including real UDP delivery, atomic validation, replay rejection, port collision, timeout neutral release and recovery. All 12 previous local suites also pass. All 594 artwork PNGs and the approved deformation shader remain byte-identical.
+`test_live_input.gd` performs 40 checks including real UDP delivery, atomic validation, replay rejection, port collision, timeout neutral release and recovery. All 12 previous local suites also pass. The original live-input revision left the 594 artwork PNGs and deformation shader byte-identical. This integration retains all original artwork and extends the shader for the approved iris, breath, brow and ornament features.
 
 The runtime review is an 18-second Godot recording. A **separate Python process** sends UDP head/body poses, mouth shapes, a held wink and a greeting. It then disconnects so the timeout release is visible. The recording harness observes render time only to pace commands; Godot applies the commands through the real socket. This proves local input, not webcam tracking or speech/phoneme recognition.
 
-Original handoff items still outside this approved bust rig include full-body/registered arm-gesture integration, independent clipped gaze, brow controls and loose accessory motion. Existing expression presets are not new expression artwork.
+Full-body/registered arm-gesture integration remains outside this approved bust rig. Rigid clipped gaze, neutral brow controls and the hanging hairpin ornament are now integrated. Earrings and necklace remain unrigged. Existing expression presets are not new expression artwork.
 
 Visually reviewed and approved by the user before publication. Video review uses decoded chronological frames; native-speed playback is not available here.
+

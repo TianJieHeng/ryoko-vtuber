@@ -1,3 +1,20 @@
+# Approved bust-rig integration
+
+The user approved controlled breathing, independent neutral brows, coordinated look-at, and the hanging hairpin ornament on 2026-11-05. They are integrated here with the previously approved rigid-iris gaze and existing bust controls. Full-body work is not included.
+
+- [Rigid iris gaze](README_GAZE.md): V toggles independent pointer gaze.
+- [Controlled breathing](README_BREATH.md): I triggers one inhale/exhale.
+- [Neutral brows](README_BROWS.md): O toggles brow raise.
+- [Coordinated look-at](README_LOOK_AT.md): Y toggles eyes-first pointer attention.
+- [Hairpin ornament](README_ORNAMENT.md): Shift+O toggles its secondary motion.
+- [Live input](README_LIVE_INPUT.md): all new channels share the existing opt-in loopback adapter and timeout reset.
+
+O and Shift+O are separate controls so brow and ornament toggles cannot fire together. Driver motion, artwork and limits retain the approved candidates. See VALIDATION_APPROVED_BUST.md for integration checks and scope.
+
+# Rigid independent iris motion
+
+See [README_GAZE.md](README_GAZE.md) for rigid iris translation, fixed clipping, reconstructed hidden eye regions and supported controls. This revision was reviewed and approved by the user.
+
 # Local live input
 
 See [README_LIVE_INPUT.md](README_LIVE_INPUT.md) for opt-in localhost UDP controls and timeout release. This revision was reviewed and approved by the user.

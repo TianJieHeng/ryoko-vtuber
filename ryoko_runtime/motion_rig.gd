@@ -59,6 +59,23 @@ var hair=preload("res://hair_secondary.gd").new()
 var hair_proof=false
 var live_input=preload("res://live_input.gd").new()
 var live_proof=false
+var gaze=preload("res://gaze_driver.gd").new()
+var gaze_proof=false
+var breathing=preload("res://breath_driver.gd").new()
+var breath_proof=false
+var breath_events={}
+var brows=preload("res://brow_driver.gd").new()
+var brow_proof=false
+
+var attention=preload("res://look_at_driver.gd").new()
+var look_proof=false
+var look_stage=-1
+
+var ornament=preload("res://ornament_driver.gd").new()
+var ornament_pivot:Node2D
+var ornament_sprite:Sprite2D
+var ornament_proof=false
+var ornament_stage=-1
 
 func _ready():
     var viewport = SubViewport.new()
@@ -79,8 +96,23 @@ func _ready():
     surface.mesh=_build_grid(32,40)
     skin_material=ShaderMaterial.new()
     skin_material.shader=load("res://motion_deform.gdshader")
+    for side in ["screen_left","screen_right"]:
+        for layer in ["iris","sclera","aperture","brow","brow_skin","brow_allow"]:
+            skin_material.set_shader_parameter(layer+"_"+side,load("res://rig_assets/"+layer+"_"+side+".png"))
     surface.material=skin_material
     add_child(surface)
+    # The ornament samples the existing viewport directly. No new/edited art.
+    ornament_pivot=Node2D.new()
+    ornament_pivot.name="RigidHairpinOrnamentPivot"
+    surface.add_child(ornament_pivot)
+    ornament_sprite=Sprite2D.new()
+    ornament_sprite.texture=viewport.get_texture()
+    ornament_sprite.centered=false
+    ornament_sprite.region_enabled=true
+    ornament_sprite.region_rect=ornament.SOURCE_RECT
+    ornament_sprite.region_filter_clip_enabled=true
+    ornament_sprite.position=ornament.SOURCE_RECT.position-ornament.PIVOT
+    ornament_pivot.add_child(ornament_sprite)
     hud=Label.new();hud.position=Vector2(18,10);hud.add_theme_font_size_override("font_size",20);add_child(hud)
     hint=Label.new();hint.position=Vector2(18,42);hint.add_theme_font_size_override("font_size",14);add_child(hint)
     proof="--motion-proof" in OS.get_cmdline_user_args()
@@ -105,6 +137,12 @@ func _ready():
     pose_status=Label.new();pose_status.position=Vector2(18,62);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
     clip_proof="--clip-proof" in OS.get_cmdline_user_args()
     hair_proof="--hair-proof" in OS.get_cmdline_user_args()
+    brow_proof="--brow-proof" in args
+    breath_proof="--breath-proof" in args
+    gaze_proof="--gaze-proof" in args
+    look_proof="--look-proof" in args
+
+    ornament_proof="--ornament-proof" in args
     live_proof="--live-proof" in args
     if "--live-input" in args:
         var error=live_input.start()
@@ -133,7 +171,21 @@ func apply_controls(data, source="external"):
     if data.get("clip_play",false):pose_ok=play_clip("res://demo_clip.json")
     if data.has("pose_load"):pose_ok=recall_pose(int(data.pose_load))
     if data.get("reset",false):
-        hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+    if data.has("brow_raise"):brows.set_both(data.brow_raise)
+    if data.has("brow_screen_left"):brows.set_side("screen_left",data.brow_screen_left)
+    if data.has("brow_screen_right"):brows.set_side("screen_right",data.brow_screen_right)
+    if data.has("breath_level"):breathing.hold(data.breath_level)
+    if data.get("breath_trigger",false):breathing.trigger(data.get("breath_strength",1.0))
+    if data.get("breath_cancel",false):breathing.cancel()
+    if data.get("look_release",false):attention.release()
+    if data.has("look_x") or data.has("look_y"):
+        mouse_follow=false;gaze.mouse_follow=false
+        attention.mouse_follow=false
+        attention.aim(data.get("look_x",attention.target.x),data.get("look_y",attention.target.y))
+    if data.has("gaze_x") or data.has("gaze_y"):
+        gaze.mouse_follow=false
+        gaze.set_target(data.get("gaze_x",gaze.target.x),data.get("gaze_y",gaze.target.y))
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
     if data.has("head_x"):target.y=clamp(float(data.head_x),-1.0,1.0)
     if data.has("head_y"):target.z=clamp(float(data.head_y),-1.0,1.0)
@@ -143,6 +195,7 @@ func apply_controls(data, source="external"):
         if data.has("body_x"):body_target.y=_finite_axis(data.body_x)
         if data.has("body_y"):body_target.z=_finite_axis(data.body_y)
     if data.get("bounce",false):bounce_velocity=-280.0
+    if data.has("ornament_secondary"):ornament.enabled=bool(data.ornament_secondary)
     if data.has("hair_secondary"):hair.enabled=bool(data.hair_secondary)
     if data.has("chest_secondary"):chest_enabled=bool(data.chest_secondary)
     if data.has("body_follow"):body_follow=bool(data.body_follow)
@@ -176,6 +229,17 @@ func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
     if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
+    if event.keycode==KEY_O and not event.shift_pressed:brows.set_both(1 if brows.target==Vector2.ZERO else 0)
+    if event.keycode==KEY_I:breathing.trigger()
+    if event.keycode==KEY_Y:
+        if attention.mouse_follow:attention.release()
+        else:
+            attention.mouse_follow=true;mouse_follow=false;gaze.mouse_follow=false
+    if event.keycode==KEY_V:
+        attention.release();gaze.mouse_follow=not gaze.mouse_follow
+    if event.keycode==KEY_O and event.shift_pressed:
+        ornament.enabled=not ornament.enabled
+        pose_notice="Hairpin ornament motion on" if ornament.enabled else "Hairpin ornament motion off"
     if event.keycode==KEY_F:
         hair.enabled=not hair.enabled
         pose_notice="Crown hair motion on" if hair.enabled else "Crown hair motion off"
@@ -220,7 +284,12 @@ func _process(delta):
             break
     pose_status.text="" if pose_proof or clip_proof else pose_notice
     clock_time+=delta
-    if hair_proof:_run_hair_proof()
+    if brow_proof:_run_brow_proof()
+    elif breath_proof:_run_breath_proof()
+    elif look_proof:_run_look_proof()
+    elif ornament_proof:_run_ornament_proof()
+    elif gaze_proof:_run_gaze_proof()
+    elif hair_proof:_run_hair_proof()
     elif clip_proof:pass
     elif pose_proof:_run_pose_proof()
     elif eyelid_proof:_run_eyelid_proof()
@@ -241,16 +310,30 @@ func _process(delta):
         manual_blink=1.0 if Input.is_physical_key_pressed(KEY_B) else -1.0
         hud.text="RYOKO / LIVE MOTION RIG"
         hint.text="T play clip · P pause/resume · Esc stop · 1/2/3 recall · R reset"
+    if attention.mouse_follow:
+        var pointer=(get_global_mouse_position()-Vector2(284,315))/Vector2(284,250)
+        attention.aim(pointer.x,pointer.y)
+    attention.step(delta)
     gestures.sample(delta)
-    var effective_head=(target+gestures.head).clamp(Vector3(-1,-1,-1),Vector3.ONE)
+    var effective_head=(target+gestures.head+attention.head).clamp(Vector3(-1,-1,-1),Vector3.ONE)
     current=current.lerp(effective_head,1.0-exp(-delta/0.22))
     if body_follow:body_target=target
     var effective_body=(body_target+gestures.body).clamp(Vector3(-1,-1,-1),Vector3.ONE)
     body_current=body_current.lerp(effective_body,1.0-exp(-delta/0.22))
+    breathing.step(delta)
+    skin_material.set_shader_parameter("controlled_breath",breathing.amount)
     _step_bounce(delta)
     _step_chest(delta)
     var head_anchor=Vector2(0,-550).rotated(current.x*deg_to_rad(6.0)+body_current.x*deg_to_rad(3.0))+Vector2(current.y*16+body_current.y*8,current.z*12+body_current.z*5+bounce_position)
     hair.step(head_anchor,delta)
+    var ornament_anchor=deform_independent(ornament.PIVOT+hair.offset*hair.weight(ornament.PIVOT),current,body_current,sin(clock_time*TAU/6.0))
+    ornament_anchor+=Vector2(0,bounce_position)
+    var ornament_frame=current.x*deg_to_rad(6.0)+body_current.x*deg_to_rad(3.0)
+    ornament.step(ornament_anchor,ornament_frame,delta)
+    ornament_pivot.position=ornament_anchor
+    ornament_pivot.rotation=ornament_frame+ornament.angle
+    ornament_pivot.visible=ornament.enabled
+    skin_material.set_shader_parameter("ornament_separate",ornament.enabled)
     skin_material.set_shader_parameter("hair_offset",hair.offset)
     skin_material.set_shader_parameter("chest_offset",chest_offset)
     skin_material.set_shader_parameter("head_tilt",current.x*deg_to_rad(6.0))
@@ -271,6 +354,16 @@ func _process(delta):
     var eyes=eyelids.resolve(closed)
     # Existing L artwork sits on screen-right; R artwork on screen-left.
     face.set_blink(eyes.y,eyes.x)
+    if gaze.mouse_follow:
+        var pointer=(get_global_mouse_position()-Vector2(284,315))/Vector2(284,250)
+        gaze.set_target(pointer.x,pointer.y)
+    gaze.step(delta)
+    skin_material.set_shader_parameter("gaze_direction",(gaze.current+attention.eye).clamp(Vector2(-1,-1),Vector2.ONE))
+    var neutral=face.expression=="neutral"
+    brows.step(delta)
+    skin_material.set_shader_parameter("brow_amount",brows.current)
+    skin_material.set_shader_parameter("brow_enabled",neutral)
+    skin_material.set_shader_parameter("gaze_open",Vector2(1 if neutral and not face.blink_right else 0,1 if neutral and not face.blink_left else 0))
     if audio_mouth.active:
         var shape=audio_mouth.step(delta)
         if shape=="REST":face.release_speech()
@@ -498,3 +591,95 @@ func _run_hair_proof():
 
 func _exit_tree():
     live_input.stop()
+
+func _run_gaze_proof():
+    external_controls=true
+    var t=clock_time
+    var d=Vector2.ZERO
+    var label="CENTER / rigid iris rest"
+    if t>=2 and t<5:d=Vector2(-1,0);label="GLANCE / screen-left"
+    elif t>=5 and t<8:d=Vector2(1,0);label="GLANCE / screen-right"
+    elif t>=8 and t<10:d=Vector2(0,-1);label="GLANCE / up"
+    elif t>=10 and t<12:d=Vector2(0,1);label="GLANCE / down"
+    elif t>=12 and t<15:d=Vector2(-.7,0);label="GLANCE + head tilt / mouth + blink"
+    gaze.set_target(d.x,d.y)
+    target=Vector3(.45,0,0) if t>=12 and t<15 else Vector3.ZERO
+    body_target=Vector3.ZERO;body_follow=false
+    if t>=12 and t<15:face.set_mouth("E")
+    else:face.release_speech()
+    auto_blink=true
+    hud.text="RYOKO / "+label
+    hint.text="Rigid iris translation · fixed eyelids and hair · V mouse gaze"
+    if t>=18:get_tree().quit()
+
+func _run_breath_proof():
+    external_controls=true
+    var t=clock_time
+    for start in [2.0,10.0]:
+        if t>=start and not breath_events.has(start):breathing.trigger();breath_events[start]=true
+    target=Vector3(.25,0,0) if t>=9 else Vector3.ZERO
+    body_target=Vector3(-.2,0,0) if t>=9 else Vector3.ZERO
+    body_follow=false
+    var label="REST / no repeating breath"
+    if breathing.active:
+        label="INHALE / connected ribs and shoulders" if breathing.elapsed<2.4 else "EXHALE / gentle return to rest"
+    hud.text="RYOKO / "+label
+    hint.text="Optional one-shot breath · no head bob · I trigger · original rig preserved"
+    if t>=18:get_tree().quit()
+
+func _run_brow_proof():
+    external_controls=true
+    var t=clock_time
+    var value=Vector2.ZERO
+    var label="REST / original neutral brows"
+    if t>=2 and t<5:value=Vector2.ONE;label="RAISE / both brows"
+    elif t>=5 and t<8:value=-Vector2.ONE;label="LOWER / both brows"
+    elif t>=8 and t<11:value=Vector2(1,0);label="RAISE / screen-left brow"
+    elif t>=11 and t<14:value=Vector2(0,1);label="RAISE / screen-right brow + mouth"
+    brows.target=value
+    if t>=11 and t<14:face.set_mouth("E")
+    else:face.release_speech()
+    target=Vector3(.25,0,0) if t>=11 and t<14 else Vector3.ZERO
+    body_target=Vector3.ZERO;body_follow=false
+    hud.text="RYOKO / "+label
+    hint.text="Rigid brow translation · hair stays in front · neutral face only · O raise"
+    if t>=17:get_tree().quit()
+
+func _run_look_proof():
+    var stage=min(int(clock_time/3.0),5)
+    if stage!=look_stage:
+        look_stage=stage
+        if stage==0:apply_controls({"reset":true,"body_follow":false})
+        elif stage==1:apply_controls({"look_x":-.9,"look_y":-.25})
+        elif stage==2:apply_controls({"look_x":.9,"look_y":.15})
+        elif stage==3:apply_controls({"look_x":-.55,"look_y":-.8})
+        elif stage==4:apply_controls({"look_x":.5,"look_y":.55,"mouth":"E"})
+        else:apply_controls({"look_release":true,"mouth":"RELEASE"})
+    external_controls=true
+    hud.text="RYOKO / "+["REST / look-at off","LOOK SCREEN LEFT / eyes lead","LOOK SCREEN RIGHT / head follows","LOOK UP LEFT / held target","LOOK DOWN RIGHT / mouth layered","RELEASE / return to original pose"][stage]
+    hint.text="Coordinated rigid iris + head · torso anchored · Y pointer look-at"
+    if clock_time>=18.0:get_tree().quit()
+
+
+func _run_ornament_proof():
+    var t=clock_time
+    var stage=0 if t<2 else (1 if t<5 else (2 if t<8 else (3 if t<11 else (4 if t<14 else (5 if t<17 else 6)))))
+    var labels=["REST / original ornament", "HEAD LEFT / hangs from fixed pin", "HEAD RIGHT / inertial follow-through", "TORSO + LIFT / anchor-driven sway", "HOLD / settles without an idle loop", "OFF / original attached ornament", "RESET / quiet neutral"]
+    if stage!=ornament_stage:
+        ornament_stage=stage
+        var controls=[
+            {"reset":true,"auto_blink":false,"body_follow":false},
+            {"head_tilt":-.75,"head_x":-.6,"body_tilt":0},
+            {"head_tilt":.75,"head_x":.6,"body_tilt":0},
+            {"head_tilt":0,"head_x":0,"body_tilt":-.8,"body_x":-.5,"bounce":true},
+            {"head_tilt":0,"body_tilt":.6,"body_x":0},
+            {"head_tilt":.5,"body_tilt":0,"ornament_secondary":false},
+            {"reset":true,"auto_blink":false,"ornament_secondary":true,"body_follow":false}
+        ]
+        apply_controls(controls[stage])
+        print("ORNAMENT_STAGE ",JSON.stringify({"time":t,"stage":stage,"label":labels[stage]}))
+    hud.text="RYOKO / HAIRPIN ORNAMENT"
+    hint.text=labels[stage]
+    if Engine.get_process_frames()%15==0:
+        print("ORNAMENT_SAMPLE ",JSON.stringify({"time":t,"stage":stage,"angle":ornament.angle,"swing":ornament.swing,"enabled":ornament.enabled,"pivot":[ornament_pivot.position.x,ornament_pivot.position.y]}))
+    if t>=20.0:get_tree().quit()

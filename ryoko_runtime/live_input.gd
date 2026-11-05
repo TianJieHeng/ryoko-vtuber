@@ -9,8 +9,8 @@ var age=0.0
 var leased=false
 var status="disabled"
 const TIMEOUT=2.0
-const NUMBERS=["head_tilt","head_x","head_y","body_tilt","body_x","body_y","eye_screen_left","eye_screen_right","audio_level","blink","gesture_strength","wink_duration"]
-const FLAGS=["reset","auto_blink","body_follow","release_eye_controls","gesture_cancel","audio_stop","speech_active"]
+const NUMBERS=["look_x","look_y","brow_raise","brow_screen_left","brow_screen_right","breath_level","breath_strength","gaze_x","gaze_y","head_tilt","head_x","head_y","body_tilt","body_x","body_y","eye_screen_left","eye_screen_right","audio_level","blink","gesture_strength","wink_duration"]
+const FLAGS=["ornament_secondary","look_release","breath_trigger","breath_cancel","reset","auto_blink","body_follow","release_eye_controls","gesture_cancel","audio_stop","speech_active"]
 func start(port=9122):
     if active:return ERR_ALREADY_IN_USE
     var err=socket.bind(port,"127.0.0.1")
@@ -32,7 +32,7 @@ func decode(bytes,expressions):
         var v=c[key]
         if key in NUMBERS:
             if not (v is float or v is int) or not is_finite(float(v)):return {}
-            var low=-1.0 if key in ["head_tilt","head_x","head_y","body_tilt","body_x","body_y"] else 0.0
+            var low=-1.0 if key in ["look_x","look_y","brow_raise","brow_screen_left","brow_screen_right","gaze_x","gaze_y","head_tilt","head_x","head_y","body_tilt","body_x","body_y"] else 0.0
             var high=2.0 if key=="wink_duration" else 1.0
             if v<low or v>high:return {}
         elif key in FLAGS:
