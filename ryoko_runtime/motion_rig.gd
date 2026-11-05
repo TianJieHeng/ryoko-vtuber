@@ -40,6 +40,9 @@ var expression_index=-1
 var audio_mouth
 var audio_proof=false
 var audio_proof_started=false
+var gestures=preload("res://gesture_driver.gd").new()
+var gesture_proof=false
+var gesture_events={}
 
 func _ready():
     var viewport = SubViewport.new()
@@ -78,6 +81,7 @@ func _ready():
         else:push_error(audio_mouth.error_message)
     secondary_proof="--secondary-proof" in OS.get_cmdline_user_args()
     body_proof="--body-proof" in OS.get_cmdline_user_args()
+    gesture_proof="--gesture-proof" in OS.get_cmdline_user_args()
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -97,7 +101,7 @@ func _build_grid(columns,rows):
 func apply_controls(data, source="external"):
     if source=="external":external_controls=true
     if data.get("reset",false):
-        audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
     if data.has("head_x"):target.y=clamp(float(data.head_x),-1.0,1.0)
     if data.has("head_y"):target.z=clamp(float(data.head_y),-1.0,1.0)
@@ -111,6 +115,10 @@ func apply_controls(data, source="external"):
     if data.has("body_follow"):body_follow=bool(data.body_follow)
     var accepted=true
     if data.has("expression"):accepted=face.set_expression(String(data.expression))
+    if data.has("gesture"):
+        var gesture_ok=gestures.trigger(String(data.gesture),data.get("gesture_strength",1.0))
+        accepted=accepted and gesture_ok
+    if data.get("gesture_cancel",false):gestures.cancel()
     if data.has("audio_level"):audio_mouth.set_level(float(data.audio_level))
     if data.get("audio_stop",false):audio_mouth.stop();face.release_speech()
     if data.has("mouth"):audio_mouth.stop();face.set_mouth(data.mouth)
@@ -124,6 +132,9 @@ func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
     if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
+    if event.keycode==KEY_N:gestures.trigger("acknowledge")
+    if event.keycode==KEY_G:gestures.trigger("greet")
+    if event.keycode==KEY_ESCAPE:gestures.cancel()
     if event.keycode==KEY_H:body_follow=true
     if event.keycode==KEY_L:
         if audio_mouth.active:audio_mouth.stop();face.release_speech()
@@ -137,7 +148,8 @@ func _unhandled_key_input(event):
 func _process(delta):
     if not rig_ready:return
     clock_time+=delta
-    if secondary_proof:_run_secondary_proof()
+    if gesture_proof:_run_gesture_proof()
+    elif secondary_proof:_run_secondary_proof()
     elif body_proof:_run_body_proof()
     elif audio_proof:_run_audio_proof()
     elif proof:_run_proof()
@@ -152,10 +164,13 @@ func _process(delta):
         speech=Input.is_physical_key_pressed(KEY_SPACE)
         manual_blink=1.0 if Input.is_physical_key_pressed(KEY_B) else -1.0
         hud.text="RYOKO / LIVE MOTION RIG"
-        hint.text="A/D head · Q/E body · W/S up/down · Z/C shift · H follow · R reset"
-    current=current.lerp(target,1.0-exp(-delta/0.22))
+        hint.text="N dip · G greet · Esc cancel · A/D head · Q/E body · R reset"
+    gestures.sample(delta)
+    var effective_head=(target+gestures.head).clamp(Vector3(-1,-1,-1),Vector3.ONE)
+    current=current.lerp(effective_head,1.0-exp(-delta/0.22))
     if body_follow:body_target=target
-    body_current=body_current.lerp(body_target,1.0-exp(-delta/0.22))
+    var effective_body=(body_target+gestures.body).clamp(Vector3(-1,-1,-1),Vector3.ONE)
+    body_current=body_current.lerp(effective_body,1.0-exp(-delta/0.22))
     _step_bounce(delta)
     _step_chest(delta)
     skin_material.set_shader_parameter("chest_offset",chest_offset)
@@ -277,3 +292,23 @@ func _run_secondary_proof():
     hud.text="RYOKO / "+labels[stage]
     hint.text="Torso rises and settles · whole chest follows with a soft delay"
     if t>=14.0:get_tree().quit()
+
+func _run_gesture_proof():
+    var t=clock_time
+    var events={2.0:"acknowledge",6.0:"greet",11.0:"greet"}
+    for time in events:
+        if t>=time and not gesture_events.has(time):
+            gestures.trigger(events[time]);gesture_events[time]=true
+    if t>=11.7 and not gesture_events.has("cancel"):
+        gestures.cancel();gesture_events["cancel"]=true
+    # A nonzero live posture makes return-to-live-pose visible.
+    target=Vector3(.2,0,0) if t>=9.0 else Vector3.ZERO
+    var label="REST / live neutral"
+    if t>=2.0 and t<5.0:label="ACKNOWLEDGE / one gentle dip"
+    elif t>=6.0 and t<9.0:label="GREET / one lean and return"
+    elif t>=9.0 and t<11.0:label="LIVE POSE / slight held tilt"
+    elif t>=11.0 and t<11.7:label="GREET / layered over live pose"
+    elif t>=11.7:label="CANCEL / return to live pose"
+    hud.text="RYOKO / "+label
+    hint.text="One-shot gestures · original controls remain live · no looping"
+    if t>=16.0:get_tree().quit()

@@ -1,3 +1,7 @@
+# One-shot gestures
+
+See [README_GESTURES.md](README_GESTURES.md) for gesture triggers and cancellation. This revision was reviewed and approved by the user.
+
 # Whole-chest secondary motion
 
 The user-approved bounce and broad chest follow-through are documented in [README_SECONDARY.md](README_SECONDARY.md). Existing head, body, audio, mouth and expression controls remain available.
