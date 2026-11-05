@@ -1,3 +1,7 @@
+# Independent eyelid controls
+
+See [README_EYELIDS.md](README_EYELIDS.md) for screen-side winks and holds. This revision was reviewed and approved by the user.
+
 # One-shot gestures
 
 See [README_GESTURES.md](README_GESTURES.md) for gesture triggers and cancellation. This revision was reviewed and approved by the user.

@@ -43,6 +43,9 @@ var audio_proof_started=false
 var gestures=preload("res://gesture_driver.gd").new()
 var gesture_proof=false
 var gesture_events={}
+var eyelids=preload("res://eyelid_driver.gd").new()
+var eyelid_proof=false
+var eyelid_events={}
 
 func _ready():
     var viewport = SubViewport.new()
@@ -82,6 +85,7 @@ func _ready():
     secondary_proof="--secondary-proof" in OS.get_cmdline_user_args()
     body_proof="--body-proof" in OS.get_cmdline_user_args()
     gesture_proof="--gesture-proof" in OS.get_cmdline_user_args()
+    eyelid_proof="--eyelid-proof" in OS.get_cmdline_user_args()
     rig_ready=true
     print("MOTION_RIG_READY profiles=",expression_ids.size()," mesh_vertices=1353 triangles=2560")
 
@@ -101,7 +105,7 @@ func _build_grid(columns,rows):
 func apply_controls(data, source="external"):
     if source=="external":external_controls=true
     if data.get("reset",false):
-        gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+        eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("head_tilt"):target.x=clamp(float(data.head_tilt),-1.0,1.0)
     if data.has("head_x"):target.y=clamp(float(data.head_x),-1.0,1.0)
     if data.has("head_y"):target.z=clamp(float(data.head_y),-1.0,1.0)
@@ -119,6 +123,12 @@ func apply_controls(data, source="external"):
         var gesture_ok=gestures.trigger(String(data.gesture),data.get("gesture_strength",1.0))
         accepted=accepted and gesture_ok
     if data.get("gesture_cancel",false):gestures.cancel()
+    if data.get("release_eye_controls",false):eyelids.reset()
+    if data.has("eye_screen_left"):eyelids.set_hold("screen_left",float(data.eye_screen_left))
+    if data.has("eye_screen_right"):eyelids.set_hold("screen_right",float(data.eye_screen_right))
+    if data.has("wink"):
+        var eye_ok=eyelids.trigger(String(data.wink),data.get("wink_duration",0.28))
+        accepted=accepted and eye_ok
     if data.has("audio_level"):audio_mouth.set_level(float(data.audio_level))
     if data.get("audio_stop",false):audio_mouth.stop();face.release_speech()
     if data.has("mouth"):audio_mouth.stop();face.set_mouth(data.mouth)
@@ -132,6 +142,9 @@ func _unhandled_key_input(event):
     if not event.is_pressed() or event.echo:return
     if event.keycode in [KEY_M,KEY_A,KEY_D,KEY_LEFT,KEY_RIGHT,KEY_UP,KEY_DOWN,KEY_B,KEY_SPACE,KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C,KEY_H]:external_controls=false
     if event.keycode in [KEY_Q,KEY_E,KEY_W,KEY_S,KEY_Z,KEY_C]:body_follow=false
+    if event.keycode==KEY_J:eyelids.trigger("screen_left")
+    if event.keycode==KEY_K:eyelids.trigger("screen_right")
+    if event.keycode==KEY_U:eyelids.reset()
     if event.keycode==KEY_N:gestures.trigger("acknowledge")
     if event.keycode==KEY_G:gestures.trigger("greet")
     if event.keycode==KEY_ESCAPE:gestures.cancel()
@@ -148,7 +161,8 @@ func _unhandled_key_input(event):
 func _process(delta):
     if not rig_ready:return
     clock_time+=delta
-    if gesture_proof:_run_gesture_proof()
+    if eyelid_proof:_run_eyelid_proof()
+    elif gesture_proof:_run_gesture_proof()
     elif secondary_proof:_run_secondary_proof()
     elif body_proof:_run_body_proof()
     elif audio_proof:_run_audio_proof()
@@ -164,7 +178,7 @@ func _process(delta):
         speech=Input.is_physical_key_pressed(KEY_SPACE)
         manual_blink=1.0 if Input.is_physical_key_pressed(KEY_B) else -1.0
         hud.text="RYOKO / LIVE MOTION RIG"
-        hint.text="N dip · G greet · Esc cancel · A/D head · Q/E body · R reset"
+        hint.text="J/K screen-side wink · U release eyes · N dip · G greet · R reset"
     gestures.sample(delta)
     var effective_head=(target+gestures.head).clamp(Vector3(-1,-1,-1),Vector3.ONE)
     current=current.lerp(effective_head,1.0-exp(-delta/0.22))
@@ -179,10 +193,16 @@ func _process(delta):
     skin_material.set_shader_parameter("spine_tilt",body_current.x*deg_to_rad(3.0))
     skin_material.set_shader_parameter("torso_offset",Vector2(body_current.y*8.0,body_current.z*5.0+bounce_position))
     skin_material.set_shader_parameter("breath",sin(clock_time*TAU/6.0))
-    if auto_blink and clock_time>=next_blink:
+    eyelids.step(delta)
+    if eyelids.busy():
+        blink_until=-1.0
+        next_blink=max(next_blink,clock_time+0.6)
+    if auto_blink and not eyelids.busy() and clock_time>=next_blink:
         blink_until=clock_time+0.14;next_blink=clock_time+3.2
     var closed=manual_blink if manual_blink>=0.0 else (1.0 if auto_blink and clock_time<blink_until else 0.0)
-    face.set_blink(closed,closed)
+    var eyes=eyelids.resolve(closed)
+    # Existing L artwork sits on screen-right; R artwork on screen-left.
+    face.set_blink(eyes.y,eyes.x)
     if audio_mouth.active:
         var shape=audio_mouth.step(delta)
         if shape=="REST":face.release_speech()
@@ -311,4 +331,21 @@ func _run_gesture_proof():
     elif t>=11.7:label="CANCEL / return to live pose"
     hud.text="RYOKO / "+label
     hint.text="One-shot gestures · original controls remain live · no looping"
+    if t>=16.0:get_tree().quit()
+
+func _run_eyelid_proof():
+    var t=clock_time
+    auto_blink=t>=14.0
+    var actions={2.0:{"wink":"screen_left","wink_duration":0.5},5.0:{"wink":"screen_right","wink_duration":0.5},8.0:{"eye_screen_left":1.0,"eye_screen_right":0.0,"gesture":"greet"},10.0:{"release_eye_controls":true},12.0:{"wink":"both","wink_duration":0.35}}
+    for time in actions:
+        if t>=time and not eyelid_events.has(time):
+            apply_controls(actions[time]);eyelid_events[time]=true
+    var label="REST / ready" if t<14.0 else "REST / automatic blink"
+    if t>=2.0 and t<4.0:label="WINK / screen-left eye"
+    elif t>=5.0 and t<7.0:label="WINK / screen-right eye"
+    elif t>=8.0 and t<10.0:label="HOLD / left eye + greeting"
+    elif t>=10.0 and t<12.0:label="RELEASE / return to auto blink"
+    elif t>=12.0 and t<14.0:label="BOTH / explicit blink"
+    hud.text="RYOKO / "+label
+    hint.text="Screen-left = your left · existing eyelid artwork · independent controls"
     if t>=16.0:get_tree().quit()
