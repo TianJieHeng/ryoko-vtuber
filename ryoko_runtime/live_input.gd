@@ -10,7 +10,7 @@ var leased=false
 var status="disabled"
 const TIMEOUT=2.0
 const NUMBERS=["look_x","look_y","brow_raise","brow_screen_left","brow_screen_right","breath_level","breath_strength","gaze_x","gaze_y","head_tilt","head_x","head_y","body_tilt","body_x","body_y","eye_screen_left","eye_screen_right","audio_level","blink","gesture_strength","wink_duration"]
-const FLAGS=["ornament_secondary","look_release","breath_trigger","breath_cancel","reset","auto_blink","body_follow","release_eye_controls","gesture_cancel","audio_stop","speech_active"]
+const FLAGS=["earring_secondary","ornament_secondary","look_release","breath_trigger","breath_cancel","reset","auto_blink","body_follow","release_eye_controls","gesture_cancel","audio_stop","speech_active"]
 func start(port=9122):
     if active:return ERR_ALREADY_IN_USE
     var err=socket.bind(port,"127.0.0.1")

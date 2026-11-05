@@ -16,6 +16,7 @@ Send updates more often than every two seconds. A two-second gap resets facial, 
 
 - `look_x`, `look_y`: finite numbers from -1 to 1; `look_release`: boolean.
 - `ornament_secondary`: boolean; enables or disables the hanging hairpin cutout.
+- `earring_secondary`: boolean; enables or disables the two hanging earrings. See the approved implementation and limits in README_EARRINGS.md.
 
 - `brow_raise`, `brow_screen_left`, `brow_screen_right`: finite numbers from -1 to 1, neutral brows only.
 
@@ -39,7 +40,7 @@ Unknown keys, malformed envelopes, invalid types/ranges, duplicate/out-of-order 
 
 The runtime review is an 18-second Godot recording. A **separate Python process** sends UDP head/body poses, mouth shapes, a held wink and a greeting. It then disconnects so the timeout release is visible. The recording harness observes render time only to pace commands; Godot applies the commands through the real socket. This proves local input, not webcam tracking or speech/phoneme recognition.
 
-Full-body/registered arm-gesture integration remains outside this approved bust rig. Rigid clipped gaze, neutral brow controls and the hanging hairpin ornament are now integrated. Earrings and necklace remain unrigged. Existing expression presets are not new expression artwork.
+Full-body/registered arm-gesture integration remains outside this approved bust rig. Rigid clipped gaze, neutral brow controls and the hanging hairpin ornament are integrated. Independent earrings are now approved and integrated; the necklace remains unrigged. Existing expression presets are not new expression artwork.
 
 Visually reviewed and approved by the user before publication. Video review uses decoded chronological frames; native-speed playback is not available here.
 

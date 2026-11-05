@@ -1,3 +1,7 @@
+# Approved independent earrings
+
+See [README_EARRINGS.md](README_EARRINGS.md) for restrained independent earring sway, Shift+F, derivative-art limits and actual runtime review. The user reviewed and approved the runtime footage on 2026-11-05.
+
 # Approved timed bust controls
 
 See [README_CLIP_CHANNELS.md](README_CLIP_CHANNELS.md) for new version-1 gaze, breath, brow, look-at and ornament cues. The user reviewed and approved the runtime video on 2026-11-05.

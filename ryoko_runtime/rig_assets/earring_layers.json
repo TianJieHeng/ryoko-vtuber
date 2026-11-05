@@ -1,0 +1,40 @@
+{
+  "canvas": [
+    1136,
+    1384
+  ],
+  "coordinate_system": "source pixels; screen sides; x right, y down",
+  "pivot_contract": "Rotate each full-canvas earring about pivot; fixed stud above source_rect remains in base. Clear base with the packed red/green mask then insert RGBA underpaint before transformed cutout. Neutral may bypass derivatives for exact source.",
+  "layers": {
+    "screen_left": {
+      "source_rect": [
+        397,
+        600,
+        25,
+        136
+      ],
+      "pivot": [
+        409,
+        602
+      ],
+      "cutout": "earring_screen_left.png",
+      "mask_channel": "r"
+    },
+    "screen_right": {
+      "source_rect": [
+        704,
+        598,
+        27,
+        137
+      ],
+      "pivot": [
+        716,
+        600
+      ],
+      "cutout": "earring_screen_right.png",
+      "mask_channel": "g"
+    }
+  },
+  "underpaint": "earring_underpaint.png",
+  "clear_masks": "earring_clear_masks.png"
+}

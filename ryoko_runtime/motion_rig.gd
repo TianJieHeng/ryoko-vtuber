@@ -77,6 +77,11 @@ var ornament_pivot:Node2D
 var ornament_sprite:Sprite2D
 var ornament_proof=false
 var ornament_stage=-1
+var earrings_enabled=true
+var earrings={}
+var earring_metadata={}
+var earring_pivots={}
+var earring_sprites={}
 
 func _ready():
     var viewport = SubViewport.new()
@@ -105,6 +110,8 @@ func _ready():
     # The ornament samples the existing viewport directly. No new/edited art.
     ornament_pivot=Node2D.new()
     ornament_pivot.name="RigidHairpinOrnamentPivot"
+    # Do not draw an unpositioned cutout at the viewport origin on startup.
+    ornament_pivot.visible=false
     surface.add_child(ornament_pivot)
     ornament_sprite=Sprite2D.new()
     ornament_sprite.texture=viewport.get_texture()
@@ -114,6 +121,7 @@ func _ready():
     ornament_sprite.region_filter_clip_enabled=true
     ornament_sprite.position=ornament.SOURCE_RECT.position-ornament.PIVOT
     ornament_pivot.add_child(ornament_sprite)
+    _setup_earrings()
     hud=Label.new();hud.position=Vector2(18,10);hud.add_theme_font_size_override("font_size",20);add_child(hud)
     hint=Label.new();hint.position=Vector2(18,42);hint.add_theme_font_size_override("font_size",14);add_child(hint)
     proof="--motion-proof" in OS.get_cmdline_user_args()
@@ -173,6 +181,7 @@ func apply_controls(data, source="external"):
     if data.get("clip_play",false):pose_ok=play_clip("res://demo_clip.json")
     if data.has("pose_load"):pose_ok=recall_pose(int(data.pose_load))
     if data.get("reset",false):
+        for earring in earrings.values():earring.reset()
         ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
     if data.has("brow_raise"):brows.set_both(data.brow_raise)
     if data.has("brow_screen_left"):brows.set_side("screen_left",data.brow_screen_left)
@@ -198,6 +207,7 @@ func apply_controls(data, source="external"):
         if data.has("body_y"):body_target.z=_finite_axis(data.body_y)
     if data.get("bounce",false):bounce_velocity=-280.0
     if data.has("ornament_secondary"):ornament.enabled=bool(data.ornament_secondary)
+    if data.has("earring_secondary"):earrings_enabled=bool(data.earring_secondary)
     if data.has("hair_secondary"):hair.enabled=bool(data.hair_secondary)
     if data.has("chest_secondary"):chest_enabled=bool(data.chest_secondary)
     if data.has("body_follow"):body_follow=bool(data.body_follow)
@@ -243,7 +253,11 @@ func _unhandled_key_input(event):
     if event.keycode==KEY_O and event.shift_pressed:
         ornament.enabled=not ornament.enabled
         pose_notice="Hairpin ornament motion on" if ornament.enabled else "Hairpin ornament motion off"
-    if event.keycode==KEY_F:
+    if event.keycode==KEY_F and event.shift_pressed:
+        stop_clip()
+        earrings_enabled=not earrings_enabled
+        pose_notice="Earring motion on" if earrings_enabled else "Earring motion off"
+    if event.keycode==KEY_F and not event.shift_pressed:
         hair.enabled=not hair.enabled
         pose_notice="Crown hair motion on" if hair.enabled else "Crown hair motion off"
     if event.keycode==KEY_T:play_clip("res://demo_bust_clip.json" if event.shift_pressed else "res://demo_clip.json")
@@ -338,6 +352,7 @@ func _process(delta):
     ornament_pivot.rotation=ornament_frame+ornament.angle
     ornament_pivot.visible=ornament.enabled
     skin_material.set_shader_parameter("ornament_separate",ornament.enabled)
+    _step_earrings(delta,ornament_frame)
     skin_material.set_shader_parameter("hair_offset",hair.offset)
     skin_material.set_shader_parameter("chest_offset",chest_offset)
     skin_material.set_shader_parameter("head_tilt",current.x*deg_to_rad(6.0))
@@ -374,6 +389,42 @@ func _process(delta):
         else:face.set_mouth(shape)
     elif speech:face.set_mouth(["A","E","I","O","U"][int(clock_time*7.0)%5])
     elif not proof and not external_controls:face.release_speech()
+
+func _setup_earrings():
+    earring_metadata=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/earring_layers.json")).layers
+    for side in ["screen_left","screen_right"]:
+        var entry=earring_metadata[side]
+        var pivot=Vector2(entry.pivot[0],entry.pivot[1])
+        var box=entry.source_rect
+        var rect=Rect2(box[0],box[1],box[2],box[3])
+        earrings[side]=load("res://earring_driver.gd").new()
+        var node=Node2D.new();node.name="EarringPivot_"+side;node.visible=false;surface.add_child(node)
+        earring_pivots[side]=node
+        var sprite=Sprite2D.new()
+        sprite.texture=load("res://rig_assets/earring_"+side+".png")
+        sprite.centered=false;sprite.region_enabled=true;sprite.region_rect=rect
+        sprite.region_filter_clip_enabled=true;sprite.position=rect.position-pivot
+        node.add_child(sprite);earring_sprites[side]=sprite
+    skin_material.set_shader_parameter("earring_underpaint",load("res://rig_assets/earring_underpaint.png"))
+    skin_material.set_shader_parameter("earring_clear_masks",load("res://rig_assets/earring_clear_masks.png"))
+
+func _step_earrings(delta,frame_angle):
+    var separated=Vector2.ZERO
+    for side in ["screen_left","screen_right"]:
+        var entry=earring_metadata[side]
+        var pivot=Vector2(entry.pivot[0],entry.pivot[1])
+        var anchor=deform_independent(pivot,current,body_current,sin(clock_time*TAU/6.0))+Vector2(0,bounce_position)
+        var driver=earrings[side]
+        driver.enabled=earrings_enabled
+        driver.step(anchor,frame_angle,delta)
+        var node=earring_pivots[side]
+        node.position=anchor;node.rotation=frame_angle+driver.angle
+        # Exact neutral pixels use original art; separation activates only when
+        # the pendant departs from its inherited head orientation.
+        node.visible=earrings_enabled and abs(driver.angle)>.00001
+        if side=="screen_left":separated.x=1.0 if node.visible else 0.0
+        else:separated.y=1.0 if node.visible else 0.0
+    skin_material.set_shader_parameter("earring_separate",separated)
 
 func _run_proof():
     var t=clock_time

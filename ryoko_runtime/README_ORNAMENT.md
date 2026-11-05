@@ -28,7 +28,7 @@ As before, the runtime only listens with `--live-input`. It binds to `127.0.0.1:
 - Gravity cancels a held head tilt so the pendant hangs vertically. Small anchor acceleration produces a restrained swing. Swing is limited to 9 degrees, and total relative rotation to 14 degrees.
 - The damped solver uses 240 Hz substeps and bounds impulses from stalls or discontinuous commands. A stationary anchor settles to zero swing.
 
-Only the hanging hairpin ornament is added here. Earrings and the necklace remain part of the original artwork. This is a 2D rig feature, not camera tracking or a completed full-body rig.
+Only the hanging hairpin ornament was added in this approved revision. The later approved earring addition is described in README_EARRINGS.md; the necklace remains part of the original artwork. This is a 2D rig feature, not camera tracking or a completed full-body rig.
 
 ## Run and verify
 

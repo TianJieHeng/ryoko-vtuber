@@ -9,6 +9,7 @@ Built on approved main `a04cbc82c443a1e1cbfb068155f82a5c2af043d9`. Adds clip sch
 - `breath_level`, `breath_strength`: numbers in [0, 1]. `breath_trigger: true` starts one inhale/exhale with the optional strength. `breath_level` holds a level. `breath_cancel: true` releases it smoothly. In the same cue, trigger overrides level and cancel overrides trigger, matching the live API.
 - `look_x`, `look_y`: numbers in [-1, 1]. `look_release: true` releases the attention overlay while retaining the underlying head/body pose. Aim fields in the same cue take precedence over release, matching the live API.
 - `ornament_secondary`: boolean, using the existing persistent enabled/disabled setting. A clip that turns it off should explicitly turn it back on if that is the intended ending.
+- `earring_secondary`: boolean, added by the approved earring revision (README_EARRINGS.md). It is likewise a persistent setting and is not changed by clip cancellation or reset.
 
 New numeric fields reject booleans, text, non-finite values and out-of-range values at load time. Boolean fields reject numeric lookalikes. Existing clip version, fields, value handling, ordering, and demo behavior are retained. Invalid loading leaves the prior running clip untouched. Cues still cannot write files, choose paths, start nested clips or send network commands.
 
