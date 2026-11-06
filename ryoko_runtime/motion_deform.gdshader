@@ -1,5 +1,6 @@
 shader_type canvas_item;
 #include "res://motion_vertex.gdshaderinc"
+#include "res://expression_deform.gdshaderinc"
 
 // Rigid iris textures translate under fixed eyelid/hair aperture masks.
 uniform bool ornament_separate = false;
@@ -11,10 +12,10 @@ uniform sampler2D sclera_screen_left;
 uniform sampler2D sclera_screen_right;
 uniform sampler2D aperture_screen_left;
 uniform sampler2D aperture_screen_right;
-vec4 eye_layer(vec4 base,vec2 uv,vec2 shift,sampler2D iris,sampler2D sclera,sampler2D aperture) {
+vec4 eye_layer(vec4 base,vec2 uv,vec2 iris_uv,vec2 shift,sampler2D iris,sampler2D sclera,sampler2D aperture) {
     float mask=texture(aperture,uv).r;
     vec4 bg=texture(sclera,uv);
-    vec4 pupil=texture(iris,uv-shift);
+    vec4 pupil=texture(iris,iris_uv-shift);
     vec3 eye=mix(bg.rgb,pupil.rgb,pupil.a);
     return vec4(mix(base.rgb,eye,mask),base.a);
 }
@@ -38,11 +39,12 @@ uniform vec2 earring_separate=vec2(0.0);
 uniform sampler2D earring_underpaint;
 uniform sampler2D earring_clear_masks;
 void fragment() {
-    vec4 base=texture(TEXTURE,UV);
+    vec2 face_uv=expression_deform_active ? expression_uv(UV) : UV;
+    vec4 base=texture(TEXTURE,face_uv);
     {
         vec2 shift=gaze_direction*vec2(7.0,2.0)/vec2(1136.0,1384.0);
-        if(gaze_open.x>.5)base=eye_layer(base,UV,shift,iris_screen_left,sclera_screen_left,aperture_screen_left);
-        if(gaze_open.y>.5)base=eye_layer(base,UV,shift,iris_screen_right,sclera_screen_right,aperture_screen_right);
+        if(gaze_open.x>0.0)base=mix(base,eye_layer(base,face_uv,UV,shift,iris_screen_left,sclera_screen_left,aperture_screen_left),gaze_open.x);
+        if(gaze_open.y>0.0)base=mix(base,eye_layer(base,face_uv,UV,shift,iris_screen_right,sclera_screen_right,aperture_screen_right),gaze_open.y);
     }
     if(brow_enabled) {
         base=brow_layer(base,UV,brow_amount.x,brow_screen_left,brow_skin_screen_left,brow_allow_screen_left);

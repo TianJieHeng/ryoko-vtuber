@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "profiles": [
+    {
+      "id": "EXP-005",
+      "outside_mask_byte_exact": true,
+      "rest_rgba_byte_exact": true,
+      "rest_composite_base_byte_exact": true,
+      "feature_rgb_byte_exact_in_mask": true,
+      "original_file_unchanged": true,
+      "mask_pixel_count": 9406,
+      "partial_alpha_mask_pixels": 482,
+      "closed_outside_mask_byte_exact": false,
+      "outside_mask_motion_note": "Moving the feature can cover different oral skin pixels outside the original concave mask. Nose/jaw and complete swept-region exclusion are checked separately."
+    }
+  ]
+}

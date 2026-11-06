@@ -1,0 +1,5626 @@
+{
+  "passed_authored_envelope": true,
+  "authored_failures": [],
+  "extreme_api_failures": [],
+  "rest_composite_exact": true,
+  "original_source_reference_exact": true,
+  "oral_roi": [
+    492,
+    578,
+    644,
+    700
+  ],
+  "protected_regions": {
+    "nose": [
+      530,
+      540,
+      606,
+      586
+    ],
+    "jaw_chin": [
+      430,
+      700,
+      710,
+      755
+    ]
+  },
+  "frame_count": 182,
+  "unique_rendered_mouth_timeline_frames": 161,
+  "source": "actual Godot source-resolution isolated mouth render",
+  "scope": "Production facial compositor and shader; all oral channels, all other motion frozen; full authored mouth timeline at 30 fps",
+  "limits": "Pixel stability and real oral movement do not by themselves establish good closure anatomy, preserved teeth/tongue shape, or expression readability; inspect captures/video too.",
+  "frames": [
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "legacy_rest.png",
+      "legacy": true,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "articulated_rest.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_-1.00.png",
+      "legacy": false,
+      "opening": -1.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": false,
+      "changed_mouth_pixels": 9425,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        499,
+        587,
+        642,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_-0.85.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9401,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_-0.65.png",
+      "legacy": false,
+      "opening": -0.65,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9371,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        635,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_-0.34.png",
+      "legacy": false,
+      "opening": -0.34,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9189,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_-0.18.png",
+      "legacy": false,
+      "opening": -0.18,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8653,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_+0.00.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_+0.17.png",
+      "legacy": false,
+      "opening": 0.17,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_+0.24.png",
+      "legacy": false,
+      "opening": 0.24,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_+0.50.png",
+      "legacy": false,
+      "opening": 0.5,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": false,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "opening_+1.00.png",
+      "legacy": false,
+      "opening": 1.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": false,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "width_-1.00.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": -1.0,
+      "authored_envelope": false,
+      "changed_mouth_pixels": 8817,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        586,
+        632,
+        691
+      ],
+      "max_channel_delta": 246
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "width_-0.10.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": -0.1,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5388,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        589,
+        632,
+        690
+      ],
+      "max_channel_delta": 163
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "width_+0.12.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.12,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5877,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        690
+      ],
+      "max_channel_delta": 172
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "width_+0.18.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.18,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6911,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        635,
+        690
+      ],
+      "max_channel_delta": 228
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "width_+1.00.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 1.0,
+      "authored_envelope": false,
+      "changed_mouth_pixels": 9964,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        493,
+        586,
+        643,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.1,
+      "expression": "EXP-005",
+      "file": "curve_+0.10.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4289,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        588,
+        632,
+        677
+      ],
+      "max_channel_delta": 108
+    },
+    {
+      "curve": 0.18,
+      "expression": "EXP-005",
+      "file": "curve_+0.18.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": -1.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4924,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        678
+      ],
+      "max_channel_delta": 162
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_000.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_001.png",
+      "legacy": false,
+      "opening": -0.0102880658436214,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.0333333333333333,
+      "width": -0.00342935528120713,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4558,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        690
+      ],
+      "max_channel_delta": 50
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_002.png",
+      "legacy": false,
+      "opening": -0.0378600823045267,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.0666666666666667,
+      "width": -0.0126200274348422,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7005,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 159
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_003.png",
+      "legacy": false,
+      "opening": -0.0777777777777778,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.1,
+      "width": -0.0259259259259259,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7959,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 235
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_004.png",
+      "legacy": false,
+      "opening": -0.125102880658436,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.133333333333333,
+      "width": -0.0417009602194787,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8482,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 242
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_005.png",
+      "legacy": false,
+      "opening": -0.174897119341564,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.166666666666667,
+      "width": -0.0582990397805213,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8726,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_006.png",
+      "legacy": false,
+      "opening": -0.222222222222222,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.2,
+      "width": -0.0740740740740741,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8863,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_007.png",
+      "legacy": false,
+      "opening": -0.262139917695473,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.233333333333333,
+      "width": -0.0873799725651578,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8928,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_008.png",
+      "legacy": false,
+      "opening": -0.289711934156379,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.266666666666667,
+      "width": -0.0965706447187929,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9048,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_009.png",
+      "legacy": false,
+      "opening": -0.3,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.3,
+      "width": -0.1,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9064,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_010.png",
+      "legacy": false,
+      "opening": -0.378690206241227,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.333333333333333,
+      "width": -0.095191644711535,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9155,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_011.png",
+      "legacy": false,
+      "opening": -0.555371990065868,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.366666666666667,
+      "width": -0.0843955262336607,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9299,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_012.png",
+      "legacy": false,
+      "opening": -0.740962099125364,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.4,
+      "width": -0.0730550656476582,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9382,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        635,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_013.png",
+      "legacy": false,
+      "opening": -0.846377281071159,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.433333333333333,
+      "width": -0.0666136840348089,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9390,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_014.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.466666666666667,
+      "width": -0.0637024104788165,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9391,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_015.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.5,
+      "width": -0.054271106122958,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9396,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_016.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.533333333333333,
+      "width": -0.0406830074868484,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9397,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_017.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.566666666666667,
+      "width": -0.0257093107573218,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9396,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_018.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.6,
+      "width": -0.0121212121212121,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9398,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_019.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.633333333333333,
+      "width": -0.00268990776535359,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_020.png",
+      "legacy": false,
+      "opening": -0.849319209470101,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.666666666666667,
+      "width": 0.000121932632220696,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9401,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_021.png",
+      "legacy": false,
+      "opening": -0.827023319615912,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.7,
+      "width": 0.00411522633744855,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9399,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_022.png",
+      "legacy": false,
+      "opening": -0.777921302646954,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.733333333333333,
+      "width": 0.0129096174363664,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9401,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_023.png",
+      "legacy": false,
+      "opening": -0.708395569781029,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.766666666666667,
+      "width": 0.0253619875019052,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_024.png",
+      "legacy": false,
+      "opening": -0.624828532235939,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.8,
+      "width": 0.0403292181069959,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9368,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        635,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_025.png",
+      "legacy": false,
+      "opening": -0.533602601229487,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.833333333333333,
+      "width": 0.0566681908245694,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9350,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_026.png",
+      "legacy": false,
+      "opening": -0.441100187979475,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.866666666666667,
+      "width": 0.0732357872275568,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9313,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_027.png",
+      "legacy": false,
+      "opening": -0.353703703703704,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.9,
+      "width": 0.0888888888888889,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9249,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_028.png",
+      "legacy": false,
+      "opening": -0.277795559619977,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.933333333333333,
+      "width": 0.102484377381497,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9127,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_029.png",
+      "legacy": false,
+      "opening": -0.219758166946096,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 0.966666666666667,
+      "width": 0.112879134278311,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9041,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_030.png",
+      "legacy": false,
+      "opening": -0.185973936899863,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.0,
+      "width": 0.118930041152263,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9030,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 245
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_031.png",
+      "legacy": false,
+      "opening": -0.178814382896016,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.03333333333333,
+      "width": 0.119209588597344,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8964,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 247
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_032.png",
+      "legacy": false,
+      "opening": -0.166666666666667,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.06666666666667,
+      "width": 0.111111111111111,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8922,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 248
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_033.png",
+      "legacy": false,
+      "opening": -0.144314868804665,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.1,
+      "width": 0.0962099125364431,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8804,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 247
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_034.png",
+      "legacy": false,
+      "opening": -0.115403304178814,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.13333333333333,
+      "width": 0.0769355361192096,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8567,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 247
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_035.png",
+      "legacy": false,
+      "opening": -0.0835762876579203,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.16666666666667,
+      "width": 0.0557175251052802,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8226,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 243
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_036.png",
+      "legacy": false,
+      "opening": -0.0524781341107873,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.2,
+      "width": 0.0349854227405248,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7652,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 199
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_037.png",
+      "legacy": false,
+      "opening": -0.0257531584062196,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.23333333333333,
+      "width": 0.0171687722708131,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6293,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 117
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_038.png",
+      "legacy": false,
+      "opening": -0.00704567541302237,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.26666666666667,
+      "width": 0.00469711694201493,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4190,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        505,
+        587,
+        632,
+        690
+      ],
+      "max_channel_delta": 32
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_039.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.3,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_040.png",
+      "legacy": false,
+      "opening": -0.0102991174768518,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.33333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4465,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        690
+      ],
+      "max_channel_delta": 47
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_041.png",
+      "legacy": false,
+      "opening": -0.0381221064814815,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.36666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6928,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 157
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_042.png",
+      "legacy": false,
+      "opening": -0.0788574218749998,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.4,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7893,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 235
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_043.png",
+      "legacy": false,
+      "opening": -0.127893518518518,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.43333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8412,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 242
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_044.png",
+      "legacy": false,
+      "opening": -0.180618851273148,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.46666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8653,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_045.png",
+      "legacy": false,
+      "opening": -0.232421875,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.5,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8844,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_046.png",
+      "legacy": false,
+      "opening": -0.278691044560185,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.53333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9038,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_047.png",
+      "legacy": false,
+      "opening": -0.314814814814815,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.56666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9075,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_048.png",
+      "legacy": false,
+      "opening": -0.336181640625,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.6,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9191,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.000737673176887563,
+      "expression": "EXP-005",
+      "file": "timeline_049.png",
+      "legacy": false,
+      "opening": -0.336434579645043,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.63333333333333,
+      "width": 0.00110650976533134,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9191,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.00832214887403702,
+      "expression": "EXP-005",
+      "file": "timeline_050.png",
+      "legacy": false,
+      "opening": -0.299776280442154,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.66666666666667,
+      "width": 0.0124832233110555,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9072,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0223576202386321,
+      "expression": "EXP-005",
+      "file": "timeline_051.png",
+      "legacy": false,
+      "opening": -0.231938168846611,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.7,
+      "width": 0.0335364303579482,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8891,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0406573090783186,
+      "expression": "EXP-005",
+      "file": "timeline_052.png",
+      "legacy": false,
+      "opening": -0.143489672788127,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.73333333333333,
+      "width": 0.0609859636174778,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8699,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 245
+    },
+    {
+      "curve": 0.0610344372007416,
+      "expression": "EXP-005",
+      "file": "timeline_053.png",
+      "legacy": false,
+      "opening": -0.0450002201964155,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.76666666666667,
+      "width": 0.0915516558011124,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7865,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 180
+    },
+    {
+      "curve": 0.0813022264135471,
+      "expression": "EXP-005",
+      "file": "timeline_054.png",
+      "legacy": false,
+      "opening": 0.0529607609988111,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.8,
+      "width": 0.121953339620321,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6015,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        690
+      ],
+      "max_channel_delta": 177
+    },
+    {
+      "curve": 0.0992738985243803,
+      "expression": "EXP-005",
+      "file": "timeline_055.png",
+      "legacy": false,
+      "opening": 0.139823842867838,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.83333333333333,
+      "width": 0.14891084778657,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6482,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        690
+      ],
+      "max_channel_delta": 200
+    },
+    {
+      "curve": 0.112762675340887,
+      "expression": "EXP-005",
+      "file": "timeline_056.png",
+      "legacy": false,
+      "opening": 0.205019597480953,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.86666666666667,
+      "width": 0.16914401301133,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6843,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        690
+      ],
+      "max_channel_delta": 219
+    },
+    {
+      "curve": 0.119581778670712,
+      "expression": "EXP-005",
+      "file": "timeline_057.png",
+      "legacy": false,
+      "opening": 0.237978596908442,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.9,
+      "width": 0.179372668006068,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6971,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        635,
+        690
+      ],
+      "max_channel_delta": 231
+    },
+    {
+      "curve": 0.117638888888889,
+      "expression": "EXP-005",
+      "file": "timeline_058.png",
+      "legacy": false,
+      "opening": 0.229768518518518,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.93333333333333,
+      "width": 0.176458333333333,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6858,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        690
+      ],
+      "max_channel_delta": 228
+    },
+    {
+      "curve": 0.107244493035309,
+      "expression": "EXP-005",
+      "file": "timeline_059.png",
+      "legacy": false,
+      "opening": 0.184726136486341,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 1.96666666666667,
+      "width": 0.160866739552964,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6735,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        690
+      ],
+      "max_channel_delta": 210
+    },
+    {
+      "curve": 0.0907762390670553,
+      "expression": "EXP-005",
+      "file": "timeline_060.png",
+      "legacy": false,
+      "opening": 0.113363702623907,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.0,
+      "width": 0.136164358600583,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6327,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        587,
+        634,
+        690
+      ],
+      "max_channel_delta": 190
+    },
+    {
+      "curve": 0.0706636702299968,
+      "expression": "EXP-005",
+      "file": "timeline_061.png",
+      "legacy": false,
+      "opening": 0.0262092376633194,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.03333333333333,
+      "width": 0.105995505344995,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5672,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        588,
+        634,
+        690
+      ],
+      "max_channel_delta": 162
+    },
+    {
+      "curve": 0.049336329770003,
+      "expression": "EXP-005",
+      "file": "timeline_062.png",
+      "legacy": false,
+      "opening": -0.0662092376633201,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.06666666666667,
+      "width": 0.0740044946550046,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8069,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 233
+    },
+    {
+      "curve": 0.0292237609329445,
+      "expression": "EXP-005",
+      "file": "timeline_063.png",
+      "legacy": false,
+      "opening": -0.153363702623907,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.1,
+      "width": 0.0438356413994168,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8678,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 246
+    },
+    {
+      "curve": 0.0127555069646906,
+      "expression": "EXP-005",
+      "file": "timeline_064.png",
+      "legacy": false,
+      "opening": -0.224726136486341,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.13333333333333,
+      "width": 0.0191332604470359,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8856,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.00236111111111112,
+      "expression": "EXP-005",
+      "file": "timeline_065.png",
+      "legacy": false,
+      "opening": -0.269768518518518,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.16666666666667,
+      "width": 0.00354166666666669,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8910,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_066.png",
+      "legacy": false,
+      "opening": -0.278855078363525,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.2,
+      "width": 0.000279869733360485,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9039,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_067.png",
+      "legacy": false,
+      "opening": -0.259934188208155,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.23333333333333,
+      "width": 0.0049049762157843,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8902,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_068.png",
+      "legacy": false,
+      "opening": -0.22167684374788,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.26666666666667,
+      "width": 0.0142567715282961,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8843,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_069.png",
+      "legacy": false,
+      "opening": -0.169171585589253,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.3,
+      "width": 0.0270913901892937,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8708,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 246
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_070.png",
+      "legacy": false,
+      "opening": -0.107506954338828,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.33333333333333,
+      "width": 0.0421649667171753,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8352,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 250
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_071.png",
+      "legacy": false,
+      "opening": -0.0417714906031613,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.36666666666667,
+      "width": 0.0582336356303383,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7505,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 176
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_072.png",
+      "legacy": false,
+      "opening": 0.0229462650111949,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.4,
+      "width": 0.074053531447181,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4644,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        589,
+        633,
+        688
+      ],
+      "max_channel_delta": 127
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_073.png",
+      "legacy": false,
+      "opening": 0.0815577718976864,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.43333333333333,
+      "width": 0.0883807886861011,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5038,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        589,
+        633,
+        690
+      ],
+      "max_channel_delta": 151
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_074.png",
+      "legacy": false,
+      "opening": 0.12897448944976,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.46666666666667,
+      "width": 0.0999715418654968,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5338,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        589,
+        634,
+        690
+      ],
+      "max_channel_delta": 165
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_075.png",
+      "legacy": false,
+      "opening": 0.160107877060859,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.5,
+      "width": 0.107581925503766,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5537,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        588,
+        634,
+        690
+      ],
+      "max_channel_delta": 168
+    },
+    {
+      "curve": 2.61486389034067e-05,
+      "expression": "EXP-005",
+      "file": "timeline_076.png",
+      "legacy": false,
+      "opening": 0.169925912189774,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.53333333333333,
+      "width": 0.109976030414339,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5638,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        588,
+        634,
+        690
+      ],
+      "max_channel_delta": 168
+    },
+    {
+      "curve": 0.00298266809772404,
+      "expression": "EXP-005",
+      "file": "timeline_077.png",
+      "legacy": false,
+      "opening": 0.161549107056449,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.56666666666667,
+      "width": 0.107265887577086,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5546,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        502,
+        588,
+        634,
+        690
+      ],
+      "max_channel_delta": 166
+    },
+    {
+      "curve": 0.010209882162545,
+      "expression": "EXP-005",
+      "file": "timeline_078.png",
+      "legacy": false,
+      "opening": 0.141072000539456,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.6,
+      "width": 0.100640941351,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5418,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        588,
+        634,
+        690
+      ],
+      "max_channel_delta": 160
+    },
+    {
+      "curve": 0.0208086972321029,
+      "expression": "EXP-005",
+      "file": "timeline_079.png",
+      "legacy": false,
+      "opening": 0.111042024509042,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.63333333333333,
+      "width": 0.0909253608705723,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5162,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        589,
+        633,
+        690
+      ],
+      "max_channel_delta": 149
+    },
+    {
+      "curve": 0.0338800197051348,
+      "expression": "EXP-005",
+      "file": "timeline_080.png",
+      "legacy": false,
+      "opening": 0.0740066108354515,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.66666666666667,
+      "width": 0.0789433152702931,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4881,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        589,
+        633,
+        688
+      ],
+      "max_channel_delta": 125
+    },
+    {
+      "curve": 0.0485247559803774,
+      "expression": "EXP-005",
+      "file": "timeline_081.png",
+      "legacy": false,
+      "opening": 0.0325131913889306,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.7,
+      "width": 0.065518973684654,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4601,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        589,
+        633,
+        688
+      ],
+      "max_channel_delta": 107
+    },
+    {
+      "curve": 0.0638438124565673,
+      "expression": "EXP-005",
+      "file": "timeline_082.png",
+      "legacy": false,
+      "opening": -0.0108908019602741,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.73333333333333,
+      "width": 0.0514765052481466,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 5747,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 81
+    },
+    {
+      "curve": 0.0789380955324414,
+      "expression": "EXP-005",
+      "file": "timeline_083.png",
+      "legacy": false,
+      "opening": -0.0536579373419173,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.76666666666667,
+      "width": 0.0376400790952621,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7622,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 188
+    },
+    {
+      "curve": 0.0929085116067364,
+      "expression": "EXP-005",
+      "file": "timeline_084.png",
+      "legacy": false,
+      "opening": -0.0932407828857532,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.8,
+      "width": 0.0248338643604916,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8186,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 236
+    },
+    {
+      "curve": 0.104855967078189,
+      "expression": "EXP-005",
+      "file": "timeline_085.png",
+      "legacy": false,
+      "opening": -0.127091906721537,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.83333333333333,
+      "width": 0.0138820301783264,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8447,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 247
+    },
+    {
+      "curve": 0.113881368345537,
+      "expression": "EXP-005",
+      "file": "timeline_086.png",
+      "legacy": false,
+      "opening": -0.152663876979021,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.86666666666667,
+      "width": 0.00560874568325805,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8586,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 245
+    },
+    {
+      "curve": 0.119085621807515,
+      "expression": "EXP-005",
+      "file": "timeline_087.png",
+      "legacy": false,
+      "opening": -0.16740926178796,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.9,
+      "width": 0.000838180009777631,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8644,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 247
+    },
+    {
+      "curve": 0.120100421120829,
+      "expression": "EXP-005",
+      "file": "timeline_088.png",
+      "legacy": false,
+      "opening": -0.17021757909513,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.93333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8651,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 247
+    },
+    {
+      "curve": 0.121180555555556,
+      "expression": "EXP-005",
+      "file": "timeline_089.png",
+      "legacy": false,
+      "opening": -0.17255787037037,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 2.96666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8661,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 247
+    },
+    {
+      "curve": 0.12332361516035,
+      "expression": "EXP-005",
+      "file": "timeline_090.png",
+      "legacy": false,
+      "opening": -0.177201166180758,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8667,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 246
+    },
+    {
+      "curve": 0.126377753482345,
+      "expression": "EXP-005",
+      "file": "timeline_091.png",
+      "legacy": false,
+      "opening": -0.183818465878415,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.03333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8680,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.130191124068675,
+      "expression": "EXP-005",
+      "file": "timeline_092.png",
+      "legacy": false,
+      "opening": -0.192080768815463,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.06666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8735,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.134611880466472,
+      "expression": "EXP-005",
+      "file": "timeline_093.png",
+      "legacy": false,
+      "opening": -0.201659074344023,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.1,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8754,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.13948817622287,
+      "expression": "EXP-005",
+      "file": "timeline_094.png",
+      "legacy": false,
+      "opening": -0.212224381816219,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.13333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8803,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.144668164885002,
+      "expression": "EXP-005",
+      "file": "timeline_095.png",
+      "legacy": false,
+      "opening": -0.22344769058417,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.16666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8818,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.15,
+      "expression": "EXP-005",
+      "file": "timeline_096.png",
+      "legacy": false,
+      "opening": -0.235,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.2,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8840,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.155331835114998,
+      "expression": "EXP-005",
+      "file": "timeline_097.png",
+      "legacy": false,
+      "opening": -0.24655230941583,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.23333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8878,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.16051182377713,
+      "expression": "EXP-005",
+      "file": "timeline_098.png",
+      "legacy": false,
+      "opening": -0.257775618183781,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.26666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8896,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.165388119533528,
+      "expression": "EXP-005",
+      "file": "timeline_099.png",
+      "legacy": false,
+      "opening": -0.268340925655977,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.3,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8909,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.169808875931325,
+      "expression": "EXP-005",
+      "file": "timeline_100.png",
+      "legacy": false,
+      "opening": -0.277919231184537,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.33333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8946,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.173622246517655,
+      "expression": "EXP-005",
+      "file": "timeline_101.png",
+      "legacy": false,
+      "opening": -0.286181534121585,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.36666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8990,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.17667638483965,
+      "expression": "EXP-005",
+      "file": "timeline_102.png",
+      "legacy": false,
+      "opening": -0.292798833819242,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.4,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8999,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.178819444444444,
+      "expression": "EXP-005",
+      "file": "timeline_103.png",
+      "legacy": false,
+      "opening": -0.29744212962963,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.43333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9004,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.179899578879171,
+      "expression": "EXP-005",
+      "file": "timeline_104.png",
+      "legacy": false,
+      "opening": -0.29978242090487,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.46666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9007,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.1797971875,
+      "expression": "EXP-005",
+      "file": "timeline_105.png",
+      "legacy": false,
+      "opening": -0.3010140625,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.5,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9011,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.178598518518519,
+      "expression": "EXP-005",
+      "file": "timeline_106.png",
+      "legacy": false,
+      "opening": -0.307007407407407,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.53333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9026,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.176406793981481,
+      "expression": "EXP-005",
+      "file": "timeline_107.png",
+      "legacy": false,
+      "opening": -0.317966030092593,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.56666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9043,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.1733175,
+      "expression": "EXP-005",
+      "file": "timeline_108.png",
+      "legacy": false,
+      "opening": -0.3334125,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.6,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9160,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.169426122685185,
+      "expression": "EXP-005",
+      "file": "timeline_109.png",
+      "legacy": false,
+      "opening": -0.352869386574074,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.63333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9176,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.164828148148148,
+      "expression": "EXP-005",
+      "file": "timeline_110.png",
+      "legacy": false,
+      "opening": -0.375859259259259,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.66666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9192,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.1596190625,
+      "expression": "EXP-005",
+      "file": "timeline_111.png",
+      "legacy": false,
+      "opening": -0.4019046875,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.7,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9219,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.153894351851852,
+      "expression": "EXP-005",
+      "file": "timeline_112.png",
+      "legacy": false,
+      "opening": -0.430528240740741,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.73333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9265,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.147749502314815,
+      "expression": "EXP-005",
+      "file": "timeline_113.png",
+      "legacy": false,
+      "opening": -0.461252488425926,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.76666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9286,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.14128,
+      "expression": "EXP-005",
+      "file": "timeline_114.png",
+      "legacy": false,
+      "opening": -0.4936,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.8,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9310,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.134581331018519,
+      "expression": "EXP-005",
+      "file": "timeline_115.png",
+      "legacy": false,
+      "opening": -0.527093344907407,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.83333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9320,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.127748981481482,
+      "expression": "EXP-005",
+      "file": "timeline_116.png",
+      "legacy": false,
+      "opening": -0.561255092592593,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.86666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9332,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.1208784375,
+      "expression": "EXP-005",
+      "file": "timeline_117.png",
+      "legacy": false,
+      "opening": -0.5956078125,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.9,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9342,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.114065185185185,
+      "expression": "EXP-005",
+      "file": "timeline_118.png",
+      "legacy": false,
+      "opening": -0.629674074074074,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.93333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9363,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        635,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.107404710648148,
+      "expression": "EXP-005",
+      "file": "timeline_119.png",
+      "legacy": false,
+      "opening": -0.662976446759259,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 3.96666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9380,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.1009925,
+      "expression": "EXP-005",
+      "file": "timeline_120.png",
+      "legacy": false,
+      "opening": -0.6950375,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9392,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0949240393518519,
+      "expression": "EXP-005",
+      "file": "timeline_121.png",
+      "legacy": false,
+      "opening": -0.725379803240741,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.03333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9398,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0892948148148149,
+      "expression": "EXP-005",
+      "file": "timeline_122.png",
+      "legacy": false,
+      "opening": -0.753525925925926,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.06666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0842003125000001,
+      "expression": "EXP-005",
+      "file": "timeline_123.png",
+      "legacy": false,
+      "opening": -0.7789984375,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.1,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9395,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0797360185185185,
+      "expression": "EXP-005",
+      "file": "timeline_124.png",
+      "legacy": false,
+      "opening": -0.801319907407408,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.13333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9395,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0759974189814815,
+      "expression": "EXP-005",
+      "file": "timeline_125.png",
+      "legacy": false,
+      "opening": -0.820012905092593,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.16666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9398,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.07308,
+      "expression": "EXP-005",
+      "file": "timeline_126.png",
+      "legacy": false,
+      "opening": -0.8346,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.2,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9405,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0710792476851852,
+      "expression": "EXP-005",
+      "file": "timeline_127.png",
+      "legacy": false,
+      "opening": -0.844603761574074,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.23333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0700906481481482,
+      "expression": "EXP-005",
+      "file": "timeline_128.png",
+      "legacy": false,
+      "opening": -0.849546759259259,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.26666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9398,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0698359954777366,
+      "expression": "EXP-005",
+      "file": "timeline_129.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.3,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0689591493162922,
+      "expression": "EXP-005",
+      "file": "timeline_130.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.33333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0675826478002818,
+      "expression": "EXP-005",
+      "file": "timeline_131.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.36666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0660004058441558,
+      "expression": "EXP-005",
+      "file": "timeline_132.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.4,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0645063383623652,
+      "expression": "EXP-005",
+      "file": "timeline_133.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.43333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0633943602693603,
+      "expression": "EXP-005",
+      "file": "timeline_134.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.46666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9401,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0629583864795919,
+      "expression": "EXP-005",
+      "file": "timeline_135.png",
+      "legacy": false,
+      "opening": -0.85,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.5,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9400,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0627056957042076,
+      "expression": "EXP-005",
+      "file": "timeline_136.png",
+      "legacy": false,
+      "opening": -0.846588426560992,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.53333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9397,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0619732123173344,
+      "expression": "EXP-005",
+      "file": "timeline_137.png",
+      "legacy": false,
+      "opening": -0.836699182035259,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.56666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9404,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0607993197278912,
+      "expression": "EXP-005",
+      "file": "timeline_138.png",
+      "legacy": false,
+      "opening": -0.82085048010974,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.6,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9397,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0592224013447972,
+      "expression": "EXP-005",
+      "file": "timeline_139.png",
+      "legacy": false,
+      "opening": -0.799560534471371,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.63333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9397,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0572808405769715,
+      "expression": "EXP-005",
+      "file": "timeline_140.png",
+      "legacy": false,
+      "opening": -0.773347558807092,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.66666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9393,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0550130208333333,
+      "expression": "EXP-005",
+      "file": "timeline_141.png",
+      "legacy": false,
+      "opening": -0.742729766803841,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.7,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9398,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0524573255228017,
+      "expression": "EXP-005",
+      "file": "timeline_142.png",
+      "legacy": false,
+      "opening": -0.708225372148555,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.73333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9396,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        636,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0496521380542958,
+      "expression": "EXP-005",
+      "file": "timeline_143.png",
+      "legacy": false,
+      "opening": -0.670352588528172,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.76666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9381,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        635,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0466358418367347,
+      "expression": "EXP-005",
+      "file": "timeline_144.png",
+      "legacy": false,
+      "opening": -0.62962962962963,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.8,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9364,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        635,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0434468202790376,
+      "expression": "EXP-005",
+      "file": "timeline_145.png",
+      "legacy": false,
+      "opening": -0.586574709139867,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.83333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9343,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0401234567901235,
+      "expression": "EXP-005",
+      "file": "timeline_146.png",
+      "legacy": false,
+      "opening": -0.541706040745822,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.86666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9335,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        503,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0367041347789116,
+      "expression": "EXP-005",
+      "file": "timeline_147.png",
+      "legacy": false,
+      "opening": -0.49554183813443,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.9,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9324,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.033227237654321,
+      "expression": "EXP-005",
+      "file": "timeline_148.png",
+      "legacy": false,
+      "opening": -0.448600314992633,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.93333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9287,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        634,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0297311488252709,
+      "expression": "EXP-005",
+      "file": "timeline_149.png",
+      "legacy": false,
+      "opening": -0.401399685007367,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 4.96666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9235,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0262542517006803,
+      "expression": "EXP-005",
+      "file": "timeline_150.png",
+      "legacy": false,
+      "opening": -0.354458161865569,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.0,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9190,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0228349296894684,
+      "expression": "EXP-005",
+      "file": "timeline_151.png",
+      "legacy": false,
+      "opening": -0.308293959254179,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.03333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 9056,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0195115662005543,
+      "expression": "EXP-005",
+      "file": "timeline_152.png",
+      "legacy": false,
+      "opening": -0.263425290860134,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.06666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8916,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0163225446428572,
+      "expression": "EXP-005",
+      "file": "timeline_153.png",
+      "legacy": false,
+      "opening": -0.220370370370371,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.1,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8824,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.013306248425296,
+      "expression": "EXP-005",
+      "file": "timeline_154.png",
+      "legacy": false,
+      "opening": -0.179647411471828,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.13333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8683,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        633,
+        691
+      ],
+      "max_channel_delta": 244
+    },
+    {
+      "curve": 0.0105010609567901,
+      "expression": "EXP-005",
+      "file": "timeline_155.png",
+      "legacy": false,
+      "opening": -0.141774627851445,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.16666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8540,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 245
+    },
+    {
+      "curve": 0.00794536564625851,
+      "expression": "EXP-005",
+      "file": "timeline_156.png",
+      "legacy": false,
+      "opening": -0.107270233196159,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.2,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 8253,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 250
+    },
+    {
+      "curve": 0.00567754590262032,
+      "expression": "EXP-005",
+      "file": "timeline_157.png",
+      "legacy": false,
+      "opening": -0.0766524411929077,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.23333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7881,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 231
+    },
+    {
+      "curve": 0.00373598513479469,
+      "expression": "EXP-005",
+      "file": "timeline_158.png",
+      "legacy": false,
+      "opening": -0.0504394655286291,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.26666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 7411,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 188
+    },
+    {
+      "curve": 0.0021590667517007,
+      "expression": "EXP-005",
+      "file": "timeline_159.png",
+      "legacy": false,
+      "opening": -0.0291495198902609,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.3,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 6375,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 134
+    },
+    {
+      "curve": 0.000985174162257511,
+      "expression": "EXP-005",
+      "file": "timeline_160.png",
+      "legacy": false,
+      "opening": -0.0133008179647414,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.33333333333333,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 4926,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        504,
+        587,
+        632,
+        691
+      ],
+      "max_channel_delta": 60
+    },
+    {
+      "curve": 0.000252690775384243,
+      "expression": "EXP-005",
+      "file": "timeline_161.png",
+      "legacy": false,
+      "opening": -0.00341157343900844,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.36666666666667,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 3101,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": [
+        506,
+        588,
+        631,
+        689
+      ],
+      "max_channel_delta": 15
+    },
+    {
+      "curve": 0.0,
+      "expression": "EXP-005",
+      "file": "timeline_162.png",
+      "legacy": false,
+      "opening": 0.0,
+      "pixels": [
+        1136,
+        1384
+      ],
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "time": 5.4,
+      "width": 0.0,
+      "authored_envelope": true,
+      "changed_mouth_pixels": 0,
+      "changed_outside_mouth_pixels": 0,
+      "protected_pixel_changes": {
+        "nose": 0,
+        "jaw_chin": 0
+      },
+      "all_changed_bbox": null,
+      "max_channel_delta": 0
+    }
+  ]
+}

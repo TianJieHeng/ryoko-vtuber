@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "nose_guard_global": [
+    530,
+    540,
+    606,
+    586
+  ],
+  "jaw_guard_global_y_min": 700,
+  "oral_roi_global": [
+    492,
+    578,
+    644,
+    700
+  ],
+  "reference": "Original source RGBA over actual bust_base, bilinear image-space feature sampling; GPU shader needs separate runtime QA.",
+  "trials": [
+    {
+      "scale_y": 0.235,
+      "scale_x": 0.82,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 0.235,
+      "scale_x": 1.0,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 0.235,
+      "scale_x": 1.18,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 0.6,
+      "scale_x": 0.82,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 0.6,
+      "scale_x": 1.0,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 0.6,
+      "scale_x": 1.18,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 1.0,
+      "scale_x": 0.82,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 1.0,
+      "scale_x": 1.0,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    },
+    {
+      "scale_y": 1.0,
+      "scale_x": 1.18,
+      "nose_changed_pixels": 0,
+      "jaw_changed_pixels": 0,
+      "outside_oral_roi_changed_pixels": 0
+    }
+  ]
+}

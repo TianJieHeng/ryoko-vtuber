@@ -9,8 +9,8 @@ var age=0.0
 var leased=false
 var status="disabled"
 const TIMEOUT=2.0
-const NUMBERS=["look_x","look_y","brow_raise","brow_screen_left","brow_screen_right","breath_level","breath_strength","gaze_x","gaze_y","head_tilt","head_x","head_y","body_tilt","body_x","body_y","eye_screen_left","eye_screen_right","audio_level","blink","gesture_strength","wink_duration"]
-const FLAGS=["pendant_secondary","loose_hair_secondary","earring_secondary","ornament_secondary","look_release","breath_trigger","breath_cancel","reset","auto_blink","body_follow","release_eye_controls","gesture_cancel","audio_stop","speech_active"]
+const NUMBERS=["expression_strength","expression_speed","look_x","look_y","brow_raise","brow_screen_left","brow_screen_right","breath_level","breath_strength","gaze_x","gaze_y","head_tilt","head_x","head_y","body_tilt","body_x","body_y","eye_screen_left","eye_screen_right","audio_level","blink","gesture_strength","wink_duration"]
+const FLAGS=["expression_loop","expression_paused","expression_cancel","pendant_secondary","loose_hair_secondary","earring_secondary","ornament_secondary","look_release","breath_trigger","breath_cancel","reset","auto_blink","body_follow","release_eye_controls","gesture_cancel","audio_stop","speech_active"]
 func start(port=9122):
     if active:return ERR_ALREADY_IN_USE
     var err=socket.bind(port,"127.0.0.1")
@@ -18,7 +18,9 @@ func start(port=9122):
     return err
 func stop():
     socket.close();active=false;leased=false;status="disabled"
-func decode(bytes,expressions):
+# Null preserves the legacy standalone registry; an explicit empty list denies all.
+func decode(bytes,expressions,performance_ids=null):
+    var supported=expressions if performance_ids==null else performance_ids
     if bytes.size()>4096:return {}
     var parser=JSON.new()
     if parser.parse(bytes.get_string_from_utf8())!=OK:return {}
@@ -35,10 +37,13 @@ func decode(bytes,expressions):
         elif key in NUMBERS:
             if not (v is float or v is int) or not is_finite(float(v)):return {}
             var low=-1.0 if key in ["look_x","look_y","brow_raise","brow_screen_left","brow_screen_right","gaze_x","gaze_y","head_tilt","head_x","head_y","body_tilt","body_x","body_y"] else 0.0
-            var high=2.0 if key=="wink_duration" else 1.0
+            if key=="expression_speed":low=0.25
+            var high=2.0 if key in ["wink_duration","expression_speed"] else 1.0
             if v<low or v>high:return {}
         elif key in FLAGS:
             if not v is bool:return {}
+        elif key=="perform_expression":
+            if not v is String or not supported.has(v):return {}
         elif key=="expression":
             if not v is String or (v!="neutral" and not expressions.has(v)):return {}
         elif key=="mouth":
@@ -48,6 +53,9 @@ func decode(bytes,expressions):
         elif key=="wink":
             if not v is String or not v in ["screen_left","screen_right","both"]:return {}
         else:return {}
+    if c.has("perform_expression") and c.has("expression"):return {}
+    for key in ["expression_strength","expression_speed","expression_loop"]:
+        if c.has(key) and not c.has("perform_expression"):return {}
     return data
 func poll(delta,rig):
     if not active:return
@@ -56,7 +64,7 @@ func poll(delta,rig):
         if socket.get_available_packet_count()==0:break
         var bytes=socket.get_packet()
         if socket.get_packet_ip()!="127.0.0.1":rejected+=1;continue
-        var data=decode(bytes,rig.expression_ids)
+        var data=decode(bytes,rig.expression_ids,rig.expression_player.profiles.keys())
         if data.is_empty():rejected+=1;continue
         rig.stop_clip() # A fresh live source takes priority over a recorded clip.
         if not rig.apply_controls(data.controls):rejected+=1;continue

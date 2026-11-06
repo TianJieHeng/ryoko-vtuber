@@ -8,10 +8,12 @@ var paused=false
 var error_message=""
 # Invalidates already-collected cues after reset, cancel or clip replacement.
 var dispatch_id=0
-const ALLOWED=["pendant_secondary","effects","expression","loose_hair_secondary","earring_secondary","gaze_x","gaze_y","breath_level","breath_strength","breath_trigger","breath_cancel","brow_raise","brow_screen_left","brow_screen_right","look_x","look_y","look_release","ornament_secondary","head_tilt","head_x","head_y","body_tilt","body_x","body_y","body_follow","gesture","gesture_strength","gesture_cancel","wink","wink_duration","eye_screen_left","eye_screen_right","release_eye_controls","blink","auto_blink","audio_level","audio_stop","mouth","speech_active","bounce","chest_secondary","reset"]
+const ALLOWED=["perform_expression","expression_strength","expression_speed","expression_loop","expression_paused","expression_cancel","pendant_secondary","effects","expression","loose_hair_secondary","earring_secondary","gaze_x","gaze_y","breath_level","breath_strength","breath_trigger","breath_cancel","brow_raise","brow_screen_left","brow_screen_right","look_x","look_y","look_release","ornament_secondary","head_tilt","head_x","head_y","body_tilt","body_x","body_y","body_follow","gesture","gesture_strength","gesture_cancel","wink","wink_duration","eye_screen_left","eye_screen_right","release_eye_controls","blink","auto_blink","audio_level","audio_stop","mouth","speech_active","bounce","chest_secondary","reset"]
 # The caller supplies trusted registered IDs, never paths from cue data. Legacy
 # standalone callers need no registry; neutral is always available.
-func load_data(data, expressions:Array=[])->bool:
+# Null retains legacy standalone behavior; [] explicitly allows no performances.
+func load_data(data, expressions:Array=[], performance_ids=null)->bool:
+    var supported=expressions if performance_ids==null else performance_ids
     error_message=""
     if not data is Dictionary or data.get("version")!=1 or not data.get("cues") is Array:
         error_message="Invalid clip format.";return false
@@ -32,10 +34,12 @@ func load_data(data, expressions:Array=[])->bool:
                 continue
             if key not in ALLOWED or not (value is String or value is bool or value is float or value is int):
                 error_message="Unsupported control: "+str(key);return false
-            var string_keys=["expression","gesture","wink","mouth"]
-            var bool_keys=["pendant_secondary","loose_hair_secondary","earring_secondary","breath_trigger","breath_cancel","look_release","ornament_secondary","body_follow","gesture_cancel","release_eye_controls","auto_blink","audio_stop","speech_active","bounce","chest_secondary","reset"]
+            var string_keys=["perform_expression","expression","gesture","wink","mouth"]
+            var bool_keys=["expression_loop","expression_paused","expression_cancel","pendant_secondary","loose_hair_secondary","earring_secondary","breath_trigger","breath_cancel","look_release","ornament_secondary","body_follow","gesture_cancel","release_eye_controls","auto_blink","audio_stop","speech_active","bounce","chest_secondary","reset"]
             if key in string_keys and not value is String:
                 error_message="Expected text control.";return false
+            if key=="perform_expression" and not supported.has(value):
+                error_message="Unknown expression performance: "+value;return false
             if key=="expression" and value!="neutral" and not expressions.has(value):
                 error_message="Unknown expression: "+value;return false
             if key in bool_keys and not value is bool:
@@ -44,19 +48,24 @@ func load_data(data, expressions:Array=[])->bool:
                 error_message="Expected numeric control.";return false
             if (value is float or value is int) and not is_finite(float(value)):
                 error_message="Non-finite value.";return false
+            if key=="expression_strength" and (value<0 or value>1):return false
+            if key=="expression_speed" and (value<0.25 or value>2):return false
             # Keep legacy clamping behavior unchanged; new cue fields use the
             # same documented ranges as the live adapter.
             if key in ["gaze_x","gaze_y","brow_raise","brow_screen_left","brow_screen_right","look_x","look_y"] and (value< -1.0 or value>1.0):
                 error_message="Control must be between -1 and 1: "+key;return false
             if key in ["breath_level","breath_strength"] and (value<0.0 or value>1.0):
                 error_message="Control must be between 0 and 1: "+key;return false
+        if cue.controls.has("perform_expression") and cue.controls.has("expression"):return false
+        for option in ["expression_strength","expression_speed","expression_loop"]:
+            if cue.controls.has(option) and not cue.controls.has("perform_expression"):return false
         last=cue.time
     stop();cues=data.cues.duplicate(true);duration=float(data.duration)
     return true
-func load_file(path:String, expressions:Array=[])->bool:
+func load_file(path:String, expressions:Array=[], performance_ids=null)->bool:
     var json=JSON.new()
     if json.parse(FileAccess.get_file_as_string(path))!=OK:error_message="Invalid clip JSON.";return false
-    return load_data(json.data,expressions)
+    return load_data(json.data,expressions,performance_ids)
 func play()->bool:
     if duration<=0:return false
     elapsed=0.0;index=0;active=true;paused=false;return true

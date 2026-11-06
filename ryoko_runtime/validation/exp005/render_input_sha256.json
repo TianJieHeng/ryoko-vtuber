@@ -1,0 +1,20 @@
+{
+  "facial_controller.gd": "373c687ac0eb75c34b0eb829af711f93ac9bac6980edfdf386fa02d75fa6c9db",
+  "motion_rig.gd": "6948cc80301756ff3a7ec5011bfc66aeacbe01a7c7be4c72e4c6d3ff9138542e",
+  "motion_deform.gdshader": "ba866e1d668bdb5843b0a10de65664bd1e041397124d24930ed9c4c9c791321b",
+  "expression_deform.gdshaderinc": "4e807776921857358b74fd7437d31eb87032bc66016f319c63737b5100a56adf",
+  "isolated_mouth.gdshader": "7365302414388d63a29744b63bcbd15d91e590692e89f75870f69cddf0d8cabb",
+  "expression_performance.gd": "265296f3aa3529f3f36691c3b6eb2e3513f7cddaf784ee512c140cac04ffae6a",
+  "expression_performances.json": "43af7bab81769e4a53d8f327450b53f10662a787c3ce0ddd7f9419dd9b98d5f5",
+  "registration.json": "f2b1c6018bf0a4e73243544a74aa405caacd32272bdb9014646125abac705fca",
+  "artwork/bust_base.png": "30e37ee3c3dd6cfa959b31263e7f0f469bcd1b8c06fa5ccfaaf96d236fa63287",
+  "artwork/EXP-005_rest_mouth.png": "766f1decac3fdf65aefc1e10abf65033e62446c6bfaa0ddfb6a1f9ded9ec524a",
+  "rig_assets/expression_mouths/manifest.json": "b919c411bb8cd0d1df07a4f6f307b78260debe9d9a716618a5c469bfbb77e980",
+  "rig_assets/expression_mouths/EXP-005_cleared.png": "605497431e4751a67324282f0c4aea3c71a571fe7bc22618a1569db1842310dc",
+  "rig_assets/expression_mouths/EXP-005_cleared.png.import": "76b28f960b62d91bcbdd74e55cee491cfd437b783b0390b700998fb5b5ba59d8",
+  "rig_assets/expression_mouths/EXP-005_feature.png": "fba1c11c472964ee446a2758cbe9e080a71140092eedcb19c4a24dc4736538f7",
+  "rig_assets/expression_mouths/EXP-005_feature.png.import": "632ca2221dea8a322f6ae36bd6004616c7c9a218fb5bc3ee064c2141e5ae23fb",
+  "rig_assets/expression_mouths/EXP-005_coverage.png": "975845e2ff8ef394cda61cd9f92e3063ff5d0dd89a81ac04a665f7965763bba5",
+  "rig_assets/expression_mouths/EXP-005_coverage.png.import": "2bdb98896b2d329eacbb6178a974dcd5528bdbdc9097eaf0639b70013ccc38bd",
+  "capture_script": "90275894bfec1115041901d210ea600ea44e95d08fdcef0a387e1aebaff019f6"
+}

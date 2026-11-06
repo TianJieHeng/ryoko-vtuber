@@ -1,3 +1,7 @@
+# Approved hearty laughter performance
+
+EXP-005 now has an approved continuous, replayable performance with independently articulated mouth features. All 93 static expressions remain unchanged; no other performance or gaze candidate is included. See [README_EXPRESSION_PERFORMANCES.md](README_EXPRESSION_PERFORMANCES.md) and [VALIDATION_EXP005_RELEASE.md](VALIDATION_EXP005_RELEASE.md). The user approved the actual runtime video on 2026-11-06.
+
 # Approved reusable performance presets
 
 See [README_PERFORMANCE_PRESETS.md](README_PERFORMANCE_PRESETS.md) for separate save/recall slots combining existing bust controls. Original artwork and legacy pose slots are unchanged. The user approved the actual Godot runtime review on 2026-11-06.

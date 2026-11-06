@@ -2,6 +2,9 @@ extends Node2D
 # Live 2D weighted deformation. Existing facial artwork is rendered into a
 # transparent viewport and deformed together, preserving registration.
 var face
+var expression_player=preload("res://expression_performance.gd").new()
+var expression_was_active=false
+var expression_registration={}
 var effects_viewport: SubViewport
 var effects_surface: MeshInstance2D
 var effects_material: ShaderMaterial
@@ -109,6 +112,8 @@ func _ready():
     viewport.add_child(face)
     expression_ids=face.emotion_eyes.keys()
     expression_ids.sort()
+    expression_registration=JSON.parse_string(FileAccess.get_file_as_string("res://registration.json")).expressions
+    if not expression_player.load_file("res://expression_performances.json",expression_ids):push_error("Invalid authored expression performances")
     _setup_pendant()
     surface = MeshInstance2D.new()
     surface.name = "WeightedHeadNeckTorsoMesh"
@@ -195,6 +200,9 @@ func _build_grid(columns,rows):
 func apply_controls(data, source="external"):
     # Validate the complete optional-effects patch before any mutations, even reset.
     if not data is Dictionary:return false
+    if not expression_player.valid_command(data):return false
+    if data.has("expression") and (not data.expression is String or (data.expression!="neutral" and not face.emotion_eyes.has(data.expression))):return false
+    if data.has("perform_expression") and (data.has("expression") or data.has("performance_load")):return false
     # New preset commands are validated before reset, ownership, or disk writes.
     for key in ["performance_save", "performance_load"]:
         if data.has(key) and not performance_store.valid_slot(data[key]):return false
@@ -205,6 +213,14 @@ func apply_controls(data, source="external"):
     # cue before any of its other controls or ownership flags can be applied.
     if source=="clip" and data.has("expression"):
         if not data.expression is String or (data.expression!="neutral" and not face.emotion_eyes.has(data.expression)):return false
+    if data.get("reset",false) or data.has("expression") or data.has("performance_load"):
+        _clear_expression_performance(false)
+    if data.has("perform_expression"):
+        if source!="clip":stop_clip()
+        expression_player.play(data,"neutral" if data.get("reset",false) else face.expression)
+        expression_was_active=true
+    if data.get("expression_cancel",false):expression_player.cancel()
+    if data.has("expression_paused"):expression_player.paused=data.expression_paused
     if source in ["external","clip"]:external_controls=true
     if source=="clip":_track_clip_channels(data)
     if data.get("clip_stop",false):stop_clip()
@@ -282,6 +298,8 @@ func apply_controls(data, source="external"):
     return accepted
 
 func _set_expression(id:String)->bool:
+    if id!="neutral" and not face.emotion_eyes.has(id):return false
+    _clear_expression_performance(false)
     if not face.set_expression(id):return false
     expression_index=expression_ids.find(face.expression)
     return true
@@ -314,7 +332,7 @@ func _unhandled_key_input(event):
         pose_notice="Loose hair motion on" if loose_hair_enabled else "Loose hair motion off"
     if event.keycode==KEY_T:play_clip("res://demo_bust_clip.json" if event.shift_pressed else "res://demo_clip.json")
     if event.keycode==KEY_P:pause_clip(not clip.paused)
-    if event.keycode==KEY_ESCAPE:stop_clip()
+    if event.keycode==KEY_ESCAPE:stop_clip();expression_player.cancel()
     if event.keycode in [KEY_1,KEY_2,KEY_3]:
         var slot=int(event.keycode-KEY_1)+1
         if event.shift_pressed:
@@ -334,11 +352,28 @@ func _unhandled_key_input(event):
         elif audio_mouth.load_wav("res://audio_fixture.wav"):audio_mouth.play()
     if event.keycode==KEY_M:mouse_follow=not mouse_follow
     if event.keycode==KEY_R:apply_controls({"reset":true})
+    if event.keycode==KEY_ENTER:
+        var supported=expression_player.profiles.keys()
+        supported.sort()
+        if supported.is_empty():return
+        var replay_id=expression_player.pending.get("id",expression_player.id) if expression_player.active else face.expression
+        if not supported.has(replay_id):replay_id=supported[0]
+        apply_controls({"perform_expression":replay_id})
     if event.keycode==KEY_COMMA or event.keycode==KEY_PERIOD:
-        stop_clip()
-        # Derive from the selected face, including clip/live/direct API changes.
-        expression_index=posmod(expression_ids.find(face.expression)+(-1 if event.keycode==KEY_COMMA else 1),expression_ids.size())
-        _set_expression(expression_ids[expression_index])
+        var direction=-1 if event.keycode==KEY_COMMA else 1
+        if event.shift_pressed:
+            var supported=expression_player.profiles.keys()
+            supported.sort()
+            if supported.is_empty():return
+            var current=expression_player.pending.get("id",expression_player.id) if expression_player.active else face.expression
+            var selected=supported.find(current)
+            var next_index=posmod(selected+direction,supported.size()) if selected>=0 else (0 if direction>0 else supported.size()-1)
+            apply_controls({"perform_expression":supported[next_index]})
+        else:
+            stop_clip()
+            # Static cycling retains all registered faces and its legacy order.
+            expression_index=posmod(expression_ids.find(face.expression)+direction,expression_ids.size())
+            _set_expression(expression_ids[expression_index])
 
 func _process(delta):
     if not rig_ready:return
@@ -361,6 +396,8 @@ func _process(delta):
             stop_clip()
             break
         if clip.dispatch_id!=dispatch:break
+    expression_player.step(delta)
+    _apply_expression_performance()
     pose_status.text="" if pose_proof or clip_proof else pose_notice
     clock_time+=delta
     if brow_proof:_run_brow_proof()
@@ -394,10 +431,10 @@ func _process(delta):
         attention.aim(pointer.x,pointer.y)
     attention.step(delta)
     gestures.sample(delta)
-    var effective_head=(target+gestures.head+attention.head).clamp(Vector3(-1,-1,-1),Vector3.ONE)
+    var effective_head=(target+gestures.head+attention.head+expression_player.head()).clamp(Vector3(-1,-1,-1),Vector3.ONE)
     current=current.lerp(effective_head,1.0-exp(-delta/0.22))
     if body_follow:body_target=target
-    var effective_body=(body_target+gestures.body).clamp(Vector3(-1,-1,-1),Vector3.ONE)
+    var effective_body=(body_target+gestures.body+expression_player.body()).clamp(Vector3(-1,-1,-1),Vector3.ONE)
     body_current=body_current.lerp(effective_body,1.0-exp(-delta/0.22))
     breathing.step(delta)
     skin_material.set_shader_parameter("controlled_breath",breathing.amount)
@@ -440,7 +477,7 @@ func _process(delta):
         var pointer=(get_global_mouse_position()-Vector2(284,315))/Vector2(284,250)
         gaze.set_target(pointer.x,pointer.y)
     gaze.step(delta)
-    skin_material.set_shader_parameter("gaze_direction",(gaze.current+attention.eye).clamp(Vector2(-1,-1),Vector2.ONE))
+    skin_material.set_shader_parameter("gaze_direction",(gaze.current+attention.eye+Vector2(expression_player.values.gaze_x,expression_player.values.gaze_y)).clamp(Vector2(-1,-1),Vector2.ONE))
     brows.step(delta)
     skin_material.set_shader_parameter("brow_amount",brows.current)
     _sync_gaze_render_state()
@@ -582,9 +619,56 @@ func _setup_gaze_profiles():
 func _sync_gaze_render_state():
     _sync_optional_effects()
     expression_index=expression_ids.find(face.expression)
-    skin_material.set_shader_parameter("brow_enabled",face.expression=="neutral")
+    skin_material.set_shader_parameter("brow_enabled",face.expression=="neutral" and not expression_player.active)
     var supported=_select_gaze_profile(face.expression)
-    skin_material.set_shader_parameter("gaze_open",Vector2(1 if supported and not face.blink_right else 0,1 if supported and not face.blink_left else 0))
+    var gaze_mix=expression_player.values.amount if expression_player.active else 1.0
+    skin_material.set_shader_parameter("gaze_open",Vector2(gaze_mix if supported and not face.blink_right else 0,gaze_mix if supported and not face.blink_left else 0))
+
+func _clear_expression_performance(to_neutral=true):
+    var was_active=expression_player.active or expression_was_active
+    expression_player.reset();expression_was_active=false
+    if face!=null:
+        face.clear_mouth_articulation()
+        face.set_performance_mix(-1.0)
+        if to_neutral and was_active:face.set_expression("neutral")
+    if skin_material!=null:_write_expression_uniforms()
+
+func _write_expression_uniforms():
+    skin_material.set_shader_parameter("expression_deform_active",expression_player.active)
+    var v=expression_player.values
+    var eye_amount=Vector2(v.eye_left,v.eye_right)
+    var id=expression_player.id
+    var info=expression_registration.get(id,{})
+    # Never squeeze a baked open iris. Supported profiles keep the iris rigid
+    # under a moving aperture; closed-eye line art has no iris to distort.
+    if not gaze_profiles.has(id) and not info.get("eyes_closed_at_rest",false):
+        if info.get("wink_closed_side","")!="R":eye_amount.x=0.0
+        if info.get("wink_closed_side","")!="L":eye_amount.y=0.0
+    # During texture handover the neutral open eyes remain underneath. Do
+    # not compress those baked irises; activate the aperture rig at full face.
+    eye_amount*=smoothstep(0.95,1.0,float(v.amount)) if expression_player.active else 0.0
+    skin_material.set_shader_parameter("expression_eye",eye_amount)
+    skin_material.set_shader_parameter("expression_brow",Vector2(v.brow_left,v.brow_right))
+    skin_material.set_shader_parameter("expression_brow_tilt",Vector2(v.brow_tilt_left,v.brow_tilt_right))
+    # Jaw/nose/chin stay fixed. Large oral opening/closure belongs only to
+    # separate mouth cutouts, never a broad viewport warp.
+    var separate_mouth=false
+    if expression_player.active:
+        separate_mouth=face.set_mouth_articulation(expression_player.id,v.mouth_open,v.mouth_wide,v.mouth_curve,Vector2(v.mouth_shift_x,v.mouth_shift_y))
+    else:face.clear_mouth_articulation()
+    skin_material.set_shader_parameter("expression_mouth",Vector3.ZERO if separate_mouth else Vector3(0.0,v.mouth_wide,v.mouth_curve))
+    skin_material.set_shader_parameter("expression_mouth_shift",Vector2.ZERO if separate_mouth else Vector2(v.mouth_shift_x,v.mouth_shift_y))
+    skin_material.set_shader_parameter("expression_cheek",Vector2(v.cheek_left,v.cheek_right))
+
+func _apply_expression_performance():
+    if expression_player.active:
+        if face.expression!=expression_player.id:face.set_expression(expression_player.id)
+        face.set_performance_mix(expression_player.values.amount,expression_player.values.effect_strength)
+        expression_was_active=true
+    elif expression_was_active:
+        face.set_performance_mix(-1.0);face.set_expression("neutral")
+        expression_was_active=false
+    _write_expression_uniforms()
 
 func _select_gaze_profile(id:String)->bool:
     var supported=gaze_profiles.has(id)
@@ -831,7 +915,7 @@ func _run_pose_proof():
 
 func play_clip(path:String)->bool:
     var was_active=clip.active or clip.paused
-    if not clip.load_file(path,expression_ids):pose_notice=clip.error_message;return false
+    if not clip.load_file(path,expression_ids,expression_player.profiles.keys()):pose_notice=clip.error_message;return false
     if was_active:_release_clip_channels()
     clip_channels.clear()
     audio_mouth.player.stream_paused=false
@@ -860,6 +944,7 @@ func stop_clip():
 
 func _track_clip_channels(data):
     for key in data:
+        if key=="perform_expression":clip_channels["expression_performance"]=true
         if key=="effects":
             for effect in data.effects:clip_channels["effect:"+effect]=true
         elif key in ["gaze_x","gaze_y"]:clip_channels["gaze"]=true
@@ -868,6 +953,7 @@ func _track_clip_channels(data):
         elif key in ["look_x","look_y"] or (key=="look_release" and data[key]):clip_channels["look"]=true
 
 func _release_clip_channels():
+    if clip_channels.has("expression_performance"):expression_player.cancel()
     # Only release channels this clip actually touched. Old clips do not take
     # ownership of new live controls. Persistent secondary toggles stay set.
     for effect in preload("res://optional_effects.gd").NAMES:

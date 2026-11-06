@@ -9,6 +9,11 @@ var emotion_blinks = {}
 var emotion_mouths = {}
 var emotion_effects = {}
 var expression = "neutral"
+# -1 preserves the legacy discrete rendering exactly.
+var performance_amount = -1.0
+var articulated_mouths={}
+var active_articulated_mouth=""
+var performance_effect_strength = 1.0
 var speech_override = ""
 var mouth_state = "neutral"
 var blink_left = false
@@ -39,11 +44,46 @@ func _ready():
             emotion_eyes[id][side] = _make_sprite(e["eyes"][side])
             emotion_blinks[id][side] = _make_sprite(e["blinks"][side])
         emotion_mouths[id] = _make_sprite(e["mouth"])
+    _setup_articulated_mouths()
     optional_effects = preload("res://optional_effects.gd").new()
     optional_effects.name = "OptionalEffects"
     add_child(optional_effects)
     reset_neutral()
     demo = "--demo" in OS.get_cmdline_user_args()
+
+func _setup_articulated_mouths():
+    var path="res://rig_assets/expression_mouths/manifest.json"
+    if not FileAccess.file_exists(path):return
+    var manifest=JSON.parse_string(FileAccess.get_file_as_string(path))
+    for id in manifest.profiles:
+        if not emotion_mouths.has(id):continue
+        var p=manifest.profiles[id]
+        var base=emotion_mouths[id]
+        var material=ShaderMaterial.new()
+        material.shader=load("res://isolated_mouth.gdshader")
+        material.set_shader_parameter("cleared_mouth",load("res://rig_assets/expression_mouths/"+p.cleared))
+        material.set_shader_parameter("oral_feature",load("res://rig_assets/expression_mouths/"+p.feature))
+        material.set_shader_parameter("oral_size",Vector2(p.size[0],p.size[1]))
+        material.set_shader_parameter("oral_pivot",Vector2(p.pivot[0],p.pivot[1]))
+        articulated_mouths[id]={"base":base,"original":base.texture,"material":material}
+
+func set_mouth_articulation(id:String,opening:float,width:float,curve:float=0.0,shift:Vector2=Vector2.ZERO):
+    if id!=active_articulated_mouth:clear_mouth_articulation()
+    if not articulated_mouths.has(id):return false
+    var entry=articulated_mouths[id]
+    entry.base.material=entry.material
+    var yscale=1.0+clamp(opening,-1.0,1.0)*(0.12 if opening>=0 else 0.9)
+    entry.material.set_shader_parameter("oral_scale",Vector2(clamp(1.0+clamp(width,-1.0,1.0)*0.18,0.82,1.16),min(yscale,1.0)))
+    entry.material.set_shader_parameter("oral_curve",clamp(curve,-1.0,1.0))
+    entry.material.set_shader_parameter("oral_shift",Vector2(clamp(shift.x,-1.0,1.0)*5.0,clamp(shift.y,-1.0,1.0)*4.0))
+    active_articulated_mouth=id
+    return true
+
+func clear_mouth_articulation():
+    if articulated_mouths.has(active_articulated_mouth):
+        var entry=articulated_mouths[active_articulated_mouth]
+        entry.base.material=null;entry.base.texture=entry.original
+    active_articulated_mouth=""
 
 func _make_sprite(entry):
     var sprite = Sprite2D.new()
@@ -79,7 +119,14 @@ func set_blink(left, right):
     blink_right = float(right) >= 0.5
     _refresh()
 
+func set_performance_mix(amount:float,effect_strength:float=1.0):
+    performance_amount=clamp(amount,0.0,1.0) if amount>=0 else -1.0
+    performance_effect_strength=clamp(effect_strength,0.0,1.0)
+    _refresh()
+
 func _refresh():
+    for node in get_children():
+        if node is Sprite2D:node.modulate.a=1.0
     mouth_state = speech_override if speech_override != "" else ("neutral" if expression == "neutral" else expression + "_rest")
     for key in mouths: mouths[key].visible = key == mouth_state
     for side in blinks:
@@ -92,7 +139,29 @@ func _refresh():
             emotion_eyes[id][side].visible = expression == id and not closed
             emotion_blinks[id][side].visible = expression == id and closed
 
+    if performance_amount>=0.0 and expression!="neutral":
+        var weight=performance_amount
+        for side in ["L","R"]:
+            emotion_eyes[expression][side].modulate.a=weight
+            emotion_blinks[expression][side].modulate.a=weight
+        emotion_mouths[expression].modulate.a=weight
+        for fx in emotion_effects[expression]:fx.modulate.a=weight*(performance_effect_strength if not "clean" in fx.texture.resource_path else 1.0)
+        if speech_override=="":
+            mouths.neutral.visible=true
+            mouths.neutral.modulate.a=1.0
+        # Neutral base already includes eyes; closing during blending needs
+        # the neutral lids behind the incoming expression-specific lids.
+        for side in blinks:
+            blinks[side].visible=(blink_left if side=="L" else blink_right) and weight<1.0
+            blinks[side].modulate.a=1.0
+    else:
+        for node in get_children():
+            if node is Sprite2D:node.modulate.a=1.0
+
 func reset_neutral():
+    clear_mouth_articulation()
+    performance_amount=-1.0
+    performance_effect_strength=1.0
     if optional_effects != null:optional_effects.reset()
     expression = "neutral"
     speech_override = ""

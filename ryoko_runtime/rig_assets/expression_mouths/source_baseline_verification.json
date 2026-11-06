@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "approved_baseline": "TianJieHeng/ryoko-vtuber@c37baf986de6dda1070a768f5d2f4c4df4306130:ryoko_runtime",
+  "files": [
+    {
+      "file": "artwork/EXP-005_rest_mouth.png",
+      "candidate_sha256": "766f1decac3fdf65aefc1e10abf65033e62446c6bfaa0ddfb6a1f9ded9ec524a",
+      "approved_baseline_sha256": "766f1decac3fdf65aefc1e10abf65033e62446c6bfaa0ddfb6a1f9ded9ec524a",
+      "identical": true
+    },
+    {
+      "file": "artwork/bust_base.png",
+      "candidate_sha256": "30e37ee3c3dd6cfa959b31263e7f0f469bcd1b8c06fa5ccfaaf96d236fa63287",
+      "approved_baseline_sha256": "30e37ee3c3dd6cfa959b31263e7f0f469bcd1b8c06fa5ccfaaf96d236fa63287",
+      "identical": true
+    }
+  ]
+}

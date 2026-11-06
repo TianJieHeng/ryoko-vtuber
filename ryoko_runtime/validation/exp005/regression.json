@@ -1,0 +1,267 @@
+{
+  "suites": [
+    {
+      "script": "test_audio_mouth.gd",
+      "exit_code": 0,
+      "seconds": 2.63,
+      "summary": [
+        "AUDIO_MOUTH_CHECKS_PASS count=376"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_body_controls.gd",
+      "exit_code": 0,
+      "seconds": 2.52,
+      "summary": [
+        "INDEPENDENT_BODY_CHECKS_PASS count=534"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_bounce.gd",
+      "exit_code": 0,
+      "seconds": 4.46,
+      "summary": [
+        "BOUNCE_CHECKS_PASS body_peak=14.8804968419234 chest_peak=7.58371686935425 settled=true"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_breath.gd",
+      "exit_code": 0,
+      "seconds": 2.59,
+      "summary": [
+        "BREATH_CHECKS_PASS count=15974 peak=0.99703496502315"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_brows.gd",
+      "exit_code": 0,
+      "seconds": 2.2,
+      "summary": [
+        "BROW_CHECKS_PASS count=7752"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_chest_secondary.gd",
+      "exit_code": 0,
+      "seconds": 2.38,
+      "summary": [
+        "CHEST_SECONDARY_CHECKS_PASS count=298 peak_source_pixels=3.06753778457642"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_clip_channels.gd",
+      "exit_code": 0,
+      "seconds": 2.6,
+      "summary": [
+        "CLIP_CHANNELS_CHECKS_PASS count=348 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_clips.gd",
+      "exit_code": 0,
+      "seconds": 3.19,
+      "summary": [
+        "CLIP_CHECKS_PASS count=45"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_controls.gd",
+      "exit_code": 0,
+      "seconds": 2.95,
+      "summary": [
+        "FACIAL_CONTROL_CHECKS_PASS count=89"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_earrings.gd",
+      "exit_code": 0,
+      "seconds": 5.39,
+      "summary": [
+        "EARRING_CHECKS_PASS count=2065 failures=0 independent_peak=0.00077357773353"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_expression_cues.gd",
+      "exit_code": 0,
+      "seconds": 7.79,
+      "summary": [
+        "EXPRESSION_CUES_CHECKS_PASS count=3951 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_expression_gaze.gd",
+      "exit_code": 0,
+      "seconds": 6.95,
+      "summary": [
+        "EXPRESSION_GAZE_CHECKS_PASS count=7135 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_expressions.gd",
+      "exit_code": 0,
+      "seconds": 7.16,
+      "summary": [
+        "EXPRESSION_CONTROL_CHECKS_PASS count=58504"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_eyelids.gd",
+      "exit_code": 0,
+      "seconds": 3.23,
+      "summary": [
+        "EYELID_CHECKS_PASS count=120"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_gaze.gd",
+      "exit_code": 0,
+      "seconds": 3.54,
+      "summary": [
+        "GAZE_CHECKS_PASS count=42103"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_gestures.gd",
+      "exit_code": 0,
+      "seconds": 2.35,
+      "summary": [
+        "GESTURE_CHECKS_PASS count=256"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_hair_secondary.gd",
+      "exit_code": 0,
+      "seconds": 2.36,
+      "summary": [
+        "HAIR_SECONDARY_CHECKS_PASS count=289 head_peak=6.67058324813843"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_hearty_laughter.gd",
+      "exit_code": 0,
+      "seconds": 2.66,
+      "summary": [
+        "HEARTY_LAUGHTER_CHECKS_PASS count=500 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_integrated_bust.gd",
+      "exit_code": 0,
+      "seconds": 2.29,
+      "summary": [
+        "INTEGRATED_BUST_CHECKS_PASS count=11"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_live_input.gd",
+      "exit_code": 0,
+      "seconds": 3.26,
+      "summary": [
+        "LIVE_INPUT_CHECKS_PASS count=40"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_look_at.gd",
+      "exit_code": 0,
+      "seconds": 4.27,
+      "summary": [
+        "LOOK_AT_CHECKS_PASS count=1107"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_loose_hair.gd",
+      "exit_code": 0,
+      "seconds": 5.04,
+      "summary": [
+        "LOOSE_HAIR_CHECKS_PASS count=22731 failures=0 driver_peak=9.99901580810547 runtime_peak=4.34271812438965 independent_peak=4.52170133590698"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_motion_rig.gd",
+      "exit_code": 0,
+      "seconds": 2.48,
+      "summary": [
+        "COUPLED_MOTION_RIG_CHECKS_PASS count=3204"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_optional_effects.gd",
+      "exit_code": 0,
+      "seconds": 9.91,
+      "summary": [
+        "OPTIONAL_EFFECTS_CHECKS_PASS count=15118 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_ornament.gd",
+      "exit_code": 0,
+      "seconds": 3.13,
+      "summary": [
+        "ORNAMENT_CHECKS_PASS count=826 driver_peak=0.08071931663141 rig_peak=0.06538102594081"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_pendant.gd",
+      "exit_code": 0,
+      "seconds": 8.69,
+      "summary": [
+        "PENDANT_CHECKS_PASS count=22076 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_performance_presets.gd",
+      "exit_code": 0,
+      "seconds": 3.61,
+      "summary": [
+        "PERFORMANCE_PRESET_CHECKS_PASS count=380 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_pose_store.gd",
+      "exit_code": 0,
+      "seconds": 2.87,
+      "summary": [
+        "POSE_STORE_CHECKS_PASS count=165"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_release_performance_controls.gd",
+      "exit_code": 0,
+      "seconds": 2.7,
+      "summary": [
+        "RELEASE_PERFORMANCE_CONTROLS_PASS count=723 failures=0"
+      ],
+      "errors": []
+    }
+  ],
+  "seconds": 115.23,
+  "passed": true
+}

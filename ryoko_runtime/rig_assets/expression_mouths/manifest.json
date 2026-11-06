@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "composition": "Compose cleared RGB and transformed hard-alpha feature in an opaque patch-sized intermediate, then restore original source alpha from coverage. This recovers original RGBA byte-exactly at rest. A CanvasItem shader may do this directly using texture samples, without a SubViewport. Ordinary alpha-over on the feathered cleared patch is not sufficient.",
+  "review_scope": "Approved EXP-005 performance only. Static artwork remains unchanged.",
+  "profiles": {
+    "EXP-005": {
+      "cleared": "EXP-005_cleared.png",
+      "feature": "EXP-005_feature.png",
+      "estimated_mask": "EXP-005_estimated_mask.png",
+      "coverage": "EXP-005_coverage.png",
+      "pivot": [
+        90.5,
+        62.0
+      ],
+      "xy": [
+        477,
+        576
+      ],
+      "size": [
+        178,
+        130
+      ],
+      "source": "artwork/EXP-005_rest_mouth.png",
+      "source_sha256": "766f1decac3fdf65aefc1e10abf65033e62446c6bfaa0ddfb6a1f9ded9ec524a",
+      "estimated_pixels": 9406,
+      "cleared_pixels": 9406,
+      "mask_polygon": [
+        [
+          27,
+          23
+        ],
+        [
+          45,
+          17
+        ],
+        [
+          69,
+          11
+        ],
+        [
+          101,
+          10
+        ],
+        [
+          130,
+          15
+        ],
+        [
+          154,
+          21
+        ],
+        [
+          153,
+          38
+        ],
+        [
+          146,
+          58
+        ],
+        [
+          133,
+          80
+        ],
+        [
+          116,
+          97
+        ],
+        [
+          103,
+          110
+        ],
+        [
+          91,
+          114
+        ],
+        [
+          77,
+          110
+        ],
+        [
+          66,
+          101
+        ],
+        [
+          49,
+          83
+        ],
+        [
+          37,
+          64
+        ],
+        [
+          29,
+          44
+        ]
+      ],
+      "closed_scale": 0.235,
+      "open_scale": 1.0,
+      "review_status": "user_approved_EXP005",
+      "runtime_enabled": true,
+      "requires_fixed_patch_coverage": true,
+      "feature_method": "original RGB with hard binary alpha and nearest oral RGB filter bleed",
+      "underpaint_method": "discrete harmonic neighboring-skin extension; estimated pixels are explicitly masked",
+      "base_reference": "EXP-005_base_reference.png",
+      "clearing_method": "Only RGB inside mask is estimated; original patch alpha unchanged. Final combined patch MUST reuse original alpha coverage."
+    }
+  }
+}

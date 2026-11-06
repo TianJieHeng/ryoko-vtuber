@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "frame_count": 182,
+  "all_approved_capture_pngs_byte_identical": true,
+  "all_436_video_frames_byte_identical": true,
+  "mp4_sha256": "dded6e1698ce749b664cbf2744ad3834a6aed12a59db56d2ef59a56ee984ff4d",
+  "mp4_bytes_identical_to_approved": true,
+  "profile_sha256": "2fd32cf71d260fc7aa17b1fcaca503ec253c3cd0d302d91311117abbc8667cdd"
+}
