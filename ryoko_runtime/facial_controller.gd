@@ -1,6 +1,7 @@
 extends Node2D
 # Isolated 2D facial expression checkpoint. No audio analysis, body motion or network listener.
 var optional_effects
+var base_sprite: Sprite2D
 var mouths = {}
 var blinks = {}
 var emotion_eyes = {}
@@ -18,10 +19,11 @@ var demo_states = ["neutral", "A", "E", "I", "O", "U"]
 
 func _ready():
     var manifest = JSON.parse_string(FileAccess.get_file_as_string("res://registration.json"))
-    var base = Sprite2D.new()
-    base.texture = load("res://artwork/bust_base.png")
-    base.centered = false
-    add_child(base)
+    base_sprite = Sprite2D.new()
+    base_sprite.name = "OriginalBustBase"
+    base_sprite.texture = load("res://artwork/bust_base.png")
+    base_sprite.centered = false
+    add_child(base_sprite)
     for state in manifest["mouths"]: mouths[state] = _make_sprite(manifest["mouths"][state])
     for side in manifest["blinks"]: blinks[side] = _make_sprite(manifest["blinks"][side])
     for id in manifest["expressions"]:

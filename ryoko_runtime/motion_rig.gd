@@ -90,6 +90,12 @@ var earrings={}
 var earring_metadata={}
 var earring_pivots={}
 var earring_sprites={}
+var pendant=preload("res://pendant_driver.gd").new()
+var pendant_metadata={}
+var pendant_pivot:Node2D
+var pendant_sprite:Sprite2D
+var pendant_original_base:Texture2D
+var pendant_cleared_base:Texture2D
 
 func _ready():
     var viewport = SubViewport.new()
@@ -102,6 +108,7 @@ func _ready():
     viewport.add_child(face)
     expression_ids=face.emotion_eyes.keys()
     expression_ids.sort()
+    _setup_pendant()
     surface = MeshInstance2D.new()
     surface.name = "WeightedHeadNeckTorsoMesh"
     surface.texture = viewport.get_texture()
@@ -185,6 +192,7 @@ func _build_grid(columns,rows):
 func apply_controls(data, source="external"):
     # Validate the complete optional-effects patch before any mutations, even reset.
     if not data is Dictionary:return false
+    if data.has("pendant_secondary") and not data.pendant_secondary is bool:return false
     if data.has("effects") and not preload("res://optional_effects.gd").valid(data.effects):return false
     # Loaded clips are already validated. Also reject a stale/mutated expression
     # cue before any of its other controls or ownership flags can be applied.
@@ -198,6 +206,7 @@ func apply_controls(data, source="external"):
     if data.get("clip_play",false):pose_ok=play_clip("res://demo_clip.json")
     if data.has("pose_load"):pose_ok=recall_pose(int(data.pose_load))
     if data.get("reset",false):
+        pendant.reset();_sync_pendant_render_state()
         for earring in earrings.values():earring.reset()
         for lock in loose_hair.values():lock.reset()
         ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();expression_index=-1;manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
@@ -228,6 +237,10 @@ func apply_controls(data, source="external"):
     if data.has("ornament_secondary"):ornament.enabled=bool(data.ornament_secondary)
     if data.has("earring_secondary"):earrings_enabled=bool(data.earring_secondary)
     if data.has("loose_hair_secondary"):loose_hair_enabled=bool(data.loose_hair_secondary)
+    if data.has("pendant_secondary"):
+        if pendant.enabled!=data.pendant_secondary:
+            pendant.enabled=data.pendant_secondary;pendant.reset()
+        _sync_pendant_render_state()
     if data.has("hair_secondary"):hair.enabled=bool(data.hair_secondary)
     if data.has("chest_secondary"):chest_enabled=bool(data.chest_secondary)
     if data.has("body_follow"):body_follow=bool(data.body_follow)
@@ -376,6 +389,7 @@ func _process(delta):
     skin_material.set_shader_parameter("controlled_breath",breathing.amount)
     _step_bounce(delta)
     _step_chest(delta)
+    _step_pendant(delta)
     var head_anchor=Vector2(0,-550).rotated(current.x*deg_to_rad(6.0)+body_current.x*deg_to_rad(3.0))+Vector2(current.y*16+body_current.y*8,current.z*12+body_current.z*5+bounce_position)
     hair.step(head_anchor,delta)
     var ornament_anchor=deform_independent(ornament.PIVOT+hair.offset*hair.weight(ornament.PIVOT),current,body_current,sin(clock_time*TAU/6.0))
@@ -455,6 +469,65 @@ func _sync_optional_effects():
     effects_surface.transform = surface.transform
     for key in effects_uniforms:
         effects_material.set_shader_parameter(key, skin_material.get_shader_parameter(key))
+
+func _setup_pendant():
+    pendant_original_base=face.base_sprite.texture
+    pendant_metadata=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/pendant_layers.json"))
+    var pivot=Vector2(pendant_metadata.pivot[0],pendant_metadata.pivot[1])
+    var box=pendant_metadata.source_rect
+    var rect=Rect2(box[0],box[1],box[2],box[3])
+    pendant_cleared_base=load("res://rig_assets/"+pendant_metadata.cleared_base)
+    pendant_pivot=Node2D.new();pendant_pivot.name="NecklacePendantPivot"
+    pendant_pivot.position=pivot;pendant_pivot.visible=false
+    face.add_child(pendant_pivot)
+    # Compose inside the existing facial viewport, behind all facial overlays.
+    # The shared mesh subsequently deforms the chain and pendant together.
+    face.move_child(pendant_pivot,face.base_sprite.get_index()+1)
+    pendant_sprite=Sprite2D.new();pendant_sprite.name="OriginalGreenPendant"
+    pendant_sprite.texture=load("res://rig_assets/"+pendant_metadata.cutout)
+    pendant_sprite.centered=false;pendant_sprite.region_enabled=true
+    pendant_sprite.region_rect=rect;pendant_sprite.region_filter_clip_enabled=true
+    pendant_sprite.position=rect.position-pivot
+    pendant_pivot.add_child(pendant_sprite)
+
+func _sync_pendant_render_state():
+    if pendant_pivot==null:return
+    var separated=pendant.enabled and is_finite(pendant.angle) and abs(pendant.angle)>.00001
+    face.base_sprite.texture=pendant_cleared_base if separated else pendant_original_base
+    pendant_pivot.visible=separated
+    pendant_pivot.rotation=pendant.angle if separated else 0.0
+
+func _pendant_vertex(rest:Vector2)->Vector2:
+    # CPU counterpart of the unchanged mesh vertex transform in this chest
+    # region. Head, crown and loose-hair weights are zero here. Baseline periodic
+    # breathing is excluded from the driver, not from the existing rendered rig.
+    var torso_weight=1.0-smoothstep(1260.0,1384.0,rest.y)
+    var lift=smoothstep(650.0,830.0,rest.y)*(1.0-smoothstep(1250.0,1384.0,rest.y))
+    var ribs=smoothstep(850.0,1000.0,rest.y)*(1.0-smoothstep(1250.0,1384.0,rest.y))
+    var inhale=Vector2((rest.x-568.0)*.012*ribs,-4.0*lift)*breathing.amount
+    return deform_independent(rest,Vector3.ZERO,body_current,0)+Vector2(0,bounce_position)*torso_weight+chest_offset*chest_weight(rest)+inhale.rotated(body_current.x*deg_to_rad(3.0))
+
+func _pendant_attachment_point(rest:Vector2)->Vector2:
+    # Match the existing 32x40 mesh's triangle interpolation, not an imagined
+    # rigid chest frame. Coordinates remain in unscaled source/world rig space.
+    var cell=Vector2(1136.0/32.0,1384.0/40.0)
+    var grid=rest/cell
+    var corner=Vector2(floor(grid.x),floor(grid.y))
+    var fraction=grid-corner
+    var a=_pendant_vertex(corner*cell)
+    var b=_pendant_vertex((corner+Vector2(1,0))*cell)
+    var c=_pendant_vertex((corner+Vector2(0,1))*cell)
+    if fraction.x+fraction.y<=1.0:return a+(b-a)*fraction.x+(c-a)*fraction.y
+    var d=_pendant_vertex((corner+Vector2.ONE)*cell)
+    return d+(c-d)*(1.0-fraction.x)+(b-d)*(1.0-fraction.y)
+
+func _step_pendant(delta):
+    var source_pivot=pendant_pivot.position
+    var anchor=_pendant_attachment_point(source_pivot)
+    var down=_pendant_attachment_point(source_pivot+Vector2(0,8))-anchor
+    var frame_angle=atan2(-down.x,down.y)
+    pendant.step(anchor,frame_angle,delta)
+    _sync_pendant_render_state()
 
 func _setup_earrings():
     earring_metadata=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/earring_layers.json")).layers
@@ -727,7 +800,9 @@ func pause_clip(paused:bool):
 func stop_clip():
     var was_active=clip.active or clip.paused
     clip.stop()
-    if was_active:_release_clip_channels()
+    if was_active:
+        _release_clip_channels()
+        pendant.reset();_sync_pendant_render_state()
     clip_channels.clear()
     if audio_mouth!=null:
         audio_mouth.player.stream_paused=false

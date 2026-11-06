@@ -1,3 +1,7 @@
+# Approved independent green pendant
+
+See [README_PENDANT.md](README_PENDANT.md) for restrained motion of the existing green necklace pendant and [VALIDATION_PENDANT.md](VALIDATION_PENDANT.md) for checks and limits. The chain stays fixed. The user approved the actual Godot runtime review on 2026-11-06.
+
 # Approved independent optional effects
 
 See [README_OPTIONAL_EFFECTS.md](README_OPTIONAL_EFFECTS.md) for independent control of the seven original transparent blush, tear, sweat, anger and sparkle overlays. They default off and preserve authored expression effects. The user approved the actual runtime review on 2026-11-05. See [VALIDATION_OPTIONAL_EFFECTS.md](VALIDATION_OPTIONAL_EFFECTS.md) for source preservation, regression checks, actual Godot capture and playback limits.

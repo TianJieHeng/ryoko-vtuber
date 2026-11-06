@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "duration": 22.0,
+  "cues": [
+    {"time": 0.0, "controls": {"auto_blink": false, "body_follow": false, "pendant_secondary": false, "expression": "neutral", "head_tilt": 0.0, "head_x": 0.0, "head_y": 0.0, "body_tilt": 0.0, "body_x": 0.0, "body_y": 0.0}},
+    {"time": 1.0, "controls": {"pendant_secondary": true}},
+    {"time": 2.0, "controls": {"body_tilt": -0.9, "body_x": -0.8}},
+    {"time": 5.0, "controls": {"body_tilt": 0.9, "body_x": 0.8}},
+    {"time": 8.0, "controls": {"body_tilt": 0.6, "body_x": 0.0}},
+    {"time": 11.0, "controls": {"body_tilt": 0.0, "head_tilt": 0.8, "head_x": 0.8}},
+    {"time": 13.0, "controls": {"head_tilt": -0.8, "head_x": -0.8}},
+    {"time": 15.0, "controls": {"body_tilt": -0.6, "body_x": -0.4, "head_tilt": 0.4, "head_x": 0.0, "breath_trigger": true, "expression": "EXP-064", "mouth": "E", "effects": {"sparkle": true, "blush_L": true, "blush_R": true}}},
+    {"time": 17.0, "controls": {"pendant_secondary": false}},
+    {"time": 18.0, "controls": {"pendant_secondary": true}},
+    {"time": 20.0, "controls": {"head_tilt": 0.0, "body_tilt": 0.0, "body_x": 0.0, "expression": "neutral", "mouth": "REST", "effects": {"sparkle": false, "blush_L": false, "blush_R": false}}}
+  ]
+}

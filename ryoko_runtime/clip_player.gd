@@ -8,7 +8,7 @@ var paused=false
 var error_message=""
 # Invalidates already-collected cues after reset, cancel or clip replacement.
 var dispatch_id=0
-const ALLOWED=["effects","expression","loose_hair_secondary","earring_secondary","gaze_x","gaze_y","breath_level","breath_strength","breath_trigger","breath_cancel","brow_raise","brow_screen_left","brow_screen_right","look_x","look_y","look_release","ornament_secondary","head_tilt","head_x","head_y","body_tilt","body_x","body_y","body_follow","gesture","gesture_strength","gesture_cancel","wink","wink_duration","eye_screen_left","eye_screen_right","release_eye_controls","blink","auto_blink","audio_level","audio_stop","mouth","speech_active","bounce","chest_secondary","reset"]
+const ALLOWED=["pendant_secondary","effects","expression","loose_hair_secondary","earring_secondary","gaze_x","gaze_y","breath_level","breath_strength","breath_trigger","breath_cancel","brow_raise","brow_screen_left","brow_screen_right","look_x","look_y","look_release","ornament_secondary","head_tilt","head_x","head_y","body_tilt","body_x","body_y","body_follow","gesture","gesture_strength","gesture_cancel","wink","wink_duration","eye_screen_left","eye_screen_right","release_eye_controls","blink","auto_blink","audio_level","audio_stop","mouth","speech_active","bounce","chest_secondary","reset"]
 # The caller supplies trusted registered IDs, never paths from cue data. Legacy
 # standalone callers need no registry; neutral is always available.
 func load_data(data, expressions:Array=[])->bool:
@@ -33,7 +33,7 @@ func load_data(data, expressions:Array=[])->bool:
             if key not in ALLOWED or not (value is String or value is bool or value is float or value is int):
                 error_message="Unsupported control: "+str(key);return false
             var string_keys=["expression","gesture","wink","mouth"]
-            var bool_keys=["loose_hair_secondary","earring_secondary","breath_trigger","breath_cancel","look_release","ornament_secondary","body_follow","gesture_cancel","release_eye_controls","auto_blink","audio_stop","speech_active","bounce","chest_secondary","reset"]
+            var bool_keys=["pendant_secondary","loose_hair_secondary","earring_secondary","breath_trigger","breath_cancel","look_release","ornament_secondary","body_follow","gesture_cancel","release_eye_controls","auto_blink","audio_stop","speech_active","bounce","chest_secondary","reset"]
             if key in string_keys and not value is String:
                 error_message="Expected text control.";return false
             if key=="expression" and value!="neutral" and not expressions.has(value):

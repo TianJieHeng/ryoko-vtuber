@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "canvas": [
+    1136,
+    1384
+  ],
+  "pivot": [
+    563.5,
+    933.0
+  ],
+  "source_rect": [
+    547,
+    933,
+    34,
+    33
+  ],
+  "cutout": "pendant_cutout.png",
+  "cleared_base": "pendant_cleared_base.png",
+  "source": "artwork/bust_base.png",
+  "source_sha256": "30e37ee3c3dd6cfa959b31263e7f0f469bcd1b8c06fa5ccfaaf96d236fa63287",
+  "fixed_chain_max_y": 932,
+  "source_polygon": [
+    [
+      558,
+      933
+    ],
+    [
+      569,
+      933
+    ],
+    [
+      577,
+      942
+    ],
+    [
+      580,
+      947
+    ],
+    [
+      578,
+      952
+    ],
+    [
+      567,
+      963
+    ],
+    [
+      564,
+      965
+    ],
+    [
+      560,
+      963
+    ],
+    [
+      550,
+      954
+    ],
+    [
+      547,
+      948
+    ],
+    [
+      549,
+      942
+    ]
+  ],
+  "coordinate_system": "Source pixels, x right, y down; pivot is the original lower bail attachment.",
+  "limits": [
+    "Only the diamond and its small source shadow move; the chain and upper bail stay fixed.",
+    "Hidden skin is local harmonic interpolation, not recovered original artwork.",
+    "The cutout retains existing torso, chest and breath mesh deformation; it is not perfectly rigid in screen space.",
+    "Runtime uses the exact original base at zero relative angle or when disabled."
+  ]
+}

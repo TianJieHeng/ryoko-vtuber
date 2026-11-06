@@ -4,6 +4,8 @@ Built on approved main `a04cbc82c443a1e1cbfb068155f82a5c2af043d9`. Adds clip sch
 
 ## New version-1 cue controls
 
+- `pendant_secondary`: boolean, approved pendant-only addition (README_PENDANT.md). The enabled preference persists through reset, cancellation and timeout, while dynamics clear.
+
 - `loose_hair_secondary`: boolean, added by the approved lower side-lock revision (README_LOOSE_HAIR.md). Like other secondary-motion toggles, the setting persists through cancellation and reset.
 
 - `gaze_x`, `gaze_y`: numbers in [-1, 1]. Set both to 0 to center the independent iris offset.
