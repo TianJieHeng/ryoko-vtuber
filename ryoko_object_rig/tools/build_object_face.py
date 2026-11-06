@@ -1,100 +1,100 @@
 #!/usr/bin/env python3
-"""Register clean original assembly parts into one common bust canvas.
-Source PNGs are immutable. Derivatives clean faint alpha residue and receive a
-fixed build-time registration. Runtime never warps or scales any face object.
-"""
+"""Assemble native canonical recuts. No generic head, face resize or neck wedge."""
 from pathlib import Path
-import json,hashlib
+import json,hashlib,subprocess,sys,shutil
 import numpy as np
-from scipy import ndimage
 from PIL import Image,ImageDraw
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'rig_assets/object_face';OUT.mkdir(exist_ok=True)
-W,H=1136,1384
-base=np.array(Image.open(ROOT/'artwork/bust_base.png').convert('RGBA'))
-manifest={'version':2,'canvas':[W,H],'coordinate_convention':'screen_left = source character R; screen_right = source character L','runtime_policy':'Rigid translation/rotation plus visibility clipping only. No scale animation, UV warp, baked face patch, or alpha emotion handover.','objects':{},'sources':{},'estimates':{'hidden_face':'None. The foundation is the original clean source face with no eyes, brows, lips or hair.','appearance':'Source pack shading, nose, eye drawing and hair silhouette differ from the former canonical composite. Fixed registration is newly authored, not claimed pixel-identical.','neck':'Fixed visible canonical neck/torso crop; no neck animation or hidden neck completion is claimed.'}}
-def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-def part(name,source,box,z,pivot=None,parent='head',clip=None):
- p=ROOT/'assembly_sources'/source;im=Image.open(p).convert('RGBA');a=np.array(im)
- a[:,:,3]=np.rint(np.clip((a[:,:,3].astype(float)-16)/239,0,1)*255).astype('uint8')
- bounds=Image.fromarray(a[:,:,3]).point(lambda x:255 if x>=32 else 0).getbbox();im=Image.fromarray(a).crop(bounds)
- x0,y0,x1,y1=box;im=im.resize((x1-x0,y1-y0),Image.Resampling.LANCZOS)
- if clip:
-  arr=np.array(im);clip(arr,x0,y0);im=Image.fromarray(arr)
- im.save(OUT/(name+'.png'));manifest['sources'][str(p.relative_to(ROOT))]=sha(p)
- manifest['objects'][name]={'file':name+'.png','xy':[x0,y0],'size':list(im.size),'z':z,'pivot':pivot or [(x1+x0)/2,(y1+y0)/2],'parent':parent,'source':str(p.relative_to(ROOT)),'source_visible_crop':bounds,'alpha_cleanup':'Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.','runtime_transforms':'translation, rotation, aperture clip only'}
- return im
-# Full clean source face, not patched canonical skin.
-part('stationary_backing','head/RYO_HEAD_face_base_v001.png',(398,316,739,726),20,[568,720])
-part('ear_screen_left','head/RYO_HEAD_ear_R_v001.png',(382,532,430,615),18,[414,562])
-part('ear_screen_right','head/RYO_HEAD_ear_L_v001.png',(706,532,754,615),18,[722,562])
-part('hair_short_tail','hair/short_tail.png',(703,139,839,355),3,[731,174])
-part('hair_rear_scalp','hair/rear_scalp_nape.png',(320,225,817,749),4,[568,390])
-part('hair_bun','hair/bun.png',(516,82,763,264),5,[627,217])
-# Temple roots render below the fringe to hide their attachment seam.
-part('hair_temple_screen_left','hair/temple_lock_character_right.png',(318,467,411,792),60,[392,477])
-part('hair_temple_screen_right','hair/temple_lock_character_left.png',(725,475,808,744),60,[736,489])
-part('hair_front_fringe','hair/front_fringe.png',(282,190,855,687),70,[568,256])
-# Fixed canonical neck and outfit: remove every old hair fragment above the
-# collars, using skin-only source coverage. No replacement skin is painted.
-body=base.copy();yy,xx=np.mgrid[:H,:W];rgb=base[:,:,:3].astype(float)
-body[yy<700,3]=0
-warm_skin=(rgb[:,:,0]-rgb[:,:,1]>20)&(rgb[:,:,1]-rgb[:,:,2]>5)
-neck_width=np.interp(yy,[700,720,735,780,810],[48,70,84,90,115])
-neck=(np.abs(xx-568)<=neck_width)&warm_skin
-body[(yy>=700)&(yy<760)&~neck,3]=0
-body[(yy>=760)&(yy<810)&warm_skin&~neck,3]=0
-old_green=(rgb[:,:,1]-rgb[:,:,0]>-8)&(rgb[:,:,1]-rgb[:,:,2]>4)&(rgb[:,:,0]<245)
-body[(yy>=760)&(yy<870)&old_green,3]=0
-old_accessory=(rgb[:,:,0]-rgb[:,:,1]>15)&(rgb[:,:,1]-rgb[:,:,2]>25)&((xx<430)|(xx>710))
-body[(yy>=760)&(yy<810)&old_accessory,3]=0
-# Preserve the real curved gray collar tips, not a horizontal y760 cut.
-collar=Image.new('L',(W,H));d=ImageDraw.Draw(collar)
-d.polygon([(485,724),(475,730),(459,738),(448,748),(437,762),(431,779),(454,807),(480,788),(490,754)],fill=255)
-d.polygon([(648,724),(662,731),(679,741),(692,756),(702,777),(681,807),(651,785),(642,753)],fill=255)
-collar_mask=np.array(collar)>0
-gray=(np.abs(rgb[:,:,0]-rgb[:,:,1])<18)&(rgb[:,:,2]>=rgb[:,:,1]-4)
-restore=collar_mask&gray&(yy<810)
-body[restore]=base[restore]
-body[:,:,3][body[:,:,3]<16]=0
-# Keep the connected neck/outfit component, removing isolated old matte dust.
-labels,count=ndimage.label(body[:,:,3]>0,structure=np.ones((3,3)))
-sizes=np.bincount(labels.ravel());sizes[0]=0;keep=labels==int(sizes.argmax())
-removed_body_dust=int(((body[:,:,3]>0)&~keep).sum());body[:,:,3][~keep]=0
-Image.fromarray(body).save(OUT/'fixed_neck_torso.png')
-manifest['body']={'file':'fixed_neck_torso.png','xy':[0,0],'size':[W,H],'z':10,'source':'artwork/bust_base.png','method':'Visible source neck/outfit only, with source-traced curved collar tips. Old hair above collar excluded; largest connected component removes matte dust; no hidden-area synthesis.','removed_disconnected_dust_pixels':removed_body_dust}
-manifest['sources']['artwork/bust_base.png']=sha(ROOT/'artwork/bust_base.png')
-# Source-pixel accessories stay independent; no surrounding face or hair travels.
-for side in ['screen_left','screen_right']:
- p=ROOT/'rig_assets'/('earring_'+side+'.png');im=Image.open(p);im.save(OUT/('earring_'+side+'.png'))
- manifest['sources'][str(p.relative_to(ROOT))]=sha(p)
- manifest['objects']['earring_'+side]={'file':'earring_'+side+'.png','xy':[0,0],'size':[W,H],'z':80,'pivot':[414,580] if side=='screen_left' else [726,580],'parent':'head','source':str(p.relative_to(ROOT)),'runtime_transforms':'rigid; source recut retained'}
-# Two original canonical hairsticks plus hanging ornament, re-cut by their gold
-# pixels on the existing isolated transparent background. No new accessory art.
-for name,box,pivot in [('hairsticks',(575,86,810,228),(680,200)),('hanging_ornament',(780,184,804,315),(790.5,184))]:
- x0,y0,x1,y1=box;a=base[y0:y1,x0:x1].copy();r=a[:,:,:3].astype(float)
- gold=(r[:,:,0]-r[:,:,1]>7)&(r[:,:,1]-r[:,:,2]>12)
- a[:,:,3]=np.where(gold,a[:,:,3],0);Image.fromarray(a).save(OUT/(name+'.png'))
- manifest['objects'][name]={'file':name+'.png','xy':[x0,y0],'size':[x1-x0,y1-y0],'z':75,'pivot':list(pivot),'parent':'head','source':'artwork/bust_base.png','runtime_transforms':'rigid; canonical accessory recut'}
-for side,char in [('screen_left','R'),('screen_right','L')]:
- left=side=='screen_left'
- part('sclera_'+side,'head/RYO_HEAD_sclera_'+char+'_v001.png',(420,483,532,518) if left else (605,483,717,518),30)
- # Place the complete original iris behind the upper lid, not fully exposed.
- part('iris_'+side,'head/RYO_HEAD_iris_pupil_'+char+'_v001.png',(455,470,496,510) if left else (629,470,670,510),32)
- part('lash_'+side,'head/RYO_HEAD_lash_lid_'+char+'_v001.png',(407,469,538,508) if left else (599,469,730,508),40)
- part('brow_'+side,'head/RYO_HEAD_brow_'+char+'_v001.png',(437,449,538,474) if left else (600,449,701,474),50)
- part('closed_reference_'+side,'head/RYO_HEAD_closed_lid_'+char+'_v001.png',(412,487,536,518) if left else (601,487,725,518),40)
-# The authored neutral lips are the default drawable. A/E/I/O/U remain
-# exclusive discrete source variants; no continuous oral timeline is shipped.
-part('neutral_lips','head/RYO_HEAD_neutral_lips_v001.png',(526,635,611,648),55)
-part('viseme_A','head/RYO_HEAD_viseme_A_v001.png',(529,614,609,704),55)
-part('viseme_E','head/RYO_HEAD_viseme_E_v001.png',(516,626,622,671),55)
-part('viseme_I','head/RYO_HEAD_viseme_I_v001.png',(515,630,623,658),55)
-part('viseme_O','head/RYO_HEAD_viseme_O_v001.png',(539,614,598,704),55)
-part('viseme_U','head/RYO_HEAD_viseme_U_v001.png',(544,631,593,668),55)
-(OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-canvas=Image.new('RGBA',(W,H));stack=list(manifest['objects'].items())+[('body',manifest['body'])]
-for name,e in sorted(stack,key=lambda p:p[1]['z']):
- if name.startswith(('closed_reference','viseme_')):continue
- canvas.alpha_composite(Image.open(OUT/e['file']).convert('RGBA'),tuple(e['xy']))
-canvas.save(OUT/'neutral_registration_reference.png')
-print('CLEAN_OBJECT_ASSETS_READY',len(manifest['objects']),'source_parts',len(manifest['sources']),'estimated_face_pixels=0')
+from scipy import ndimage as ndi
+R=Path(__file__).resolve().parents[1];O=R/'rig_assets/object_face';O.mkdir(parents=True,exist_ok=True)
+H=R/'rig_assets/canonical_hair';E=R/'rig_assets/canonical_eyes'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+subprocess.run([sys.executable,str(R/'tools/build_canonical_hair.py')],check=True)
+subprocess.run([sys.executable,str(R/'tools/build_hair_edge_mattes.py')],check=True)
+subprocess.run([sys.executable,str(R/'tools/build_canonical_eyes.py'),'--source',str(R/'artwork/bust_base.png'),'--hair-mask',str(H/'full_hair_exclusion_mask.png'),'--hair-composite',str(H/'canonical_hair_matted_composite.png'),'--hair-matte-mask',str(H/'estimated_hair_matte_mask.png')],check=True)
+subprocess.run([sys.executable,str(R/'tools/build_brow_d.py')],check=True)
+subprocess.run([sys.executable,str(R/'tools/build_crossing_continuation.py')],check=True)
+subprocess.run([sys.executable,str(R/'tools/build_yawn_mouth.py')],check=True)
+hm=json.loads((H/'manifest.json').read_text());em=json.loads((E/'manifest.json').read_text())
+B=R/'rig_assets/canonical_brows';C=B/'continuation_v2'
+bm=json.loads((B/'manifest.json').read_text());cm=json.loads((C/'manifest.json').read_text())
+cross_mask=np.array(Image.open(C/'crossing_correction_mask_full.png'))>0
+hair_names=['temple_left','temple_right','crown_bun_rear','front_fringe']
+owner_dist=[]
+for name in hair_names:
+ raw=np.array(Image.open(H/hm['layers'][name]['asset']))
+ owner_dist.append(ndi.distance_transform_edt(~(raw[:,:,3]>0)))
+cross_owner=np.argmin(owner_dist,axis=0)
+cross_hair=Image.new('RGBA',(1136,1384))
+for e in cm['patches'].values():cross_hair.alpha_composite(Image.open(C/e['hair_file']),tuple(e['xy']))
+cross_hair=np.array(cross_hair)
+
+m={'version':3,'canvas':[1136,1384],'coordinate_convention':'Native canonical source pixels. Screen side names. All source-visible head/hair/eye registration is unscaled.','runtime_policy':'Independent source cutouts; rigid movement and identity-UV alpha coverage only. No face warp, animated scale, emotion opacity crossfade or full face patch.','objects':{},'sources':{},'estimates':{'hair':hm['limitations'],'eyes':em['reconstruction'],'mouth':'Original approved lip color silhouette recut; alpha boundary estimated, preserved canonical lip shape. The separate static underlip shadow is occluded by the oral cavity, never dragged with lower lip.'},'gaze_supported':False}
+m['estimates']['brow_hair_crossings']={'manifest':'rig_assets/canonical_brows/continuation_v2/manifest.json','method':'Explicit bounded same-strand continuation from source anchor rows where flattened brow and hair colors were mixed. Stationary skin and foreground hair have separate ownership. Neutral is not pixel-identical inside these masks.','validation':cm['validation']}
+def add(name,path,xy,z,pivot=None,source='artwork/bust_base.png',**extra):
+ im=Image.open(path).convert('RGBA')
+ if name.startswith(('hair_','brow_')):
+  ar=np.array(im);x,y=map(int,xy);hh,ww=ar.shape[:2];local=cross_mask[y:y+hh,x:x+ww]
+  ar[local,3]=0
+  if name in ['hair_'+n for n in hair_names]:
+   owner=hair_names.index(name[5:]);take=local&(cross_owner[y:y+hh,x:x+ww]==owner)
+   ar[take]=cross_hair[y:y+hh,x:x+ww][take]
+  im=Image.fromarray(ar)
+ target=O/(name+'.png');im.save(target)
+ m['objects'][name]={'file':target.name,'xy':list(xy),'size':list(im.size),'z':z,'pivot':list(pivot or [xy[0]+im.width/2,xy[1]+im.height/2]),'source':source,'runtime_transforms':'rigid or alpha clip only',**extra}
+# Erase baked eyes/brows through their complete owned masks, leaving stationary
+# bounded hidden skin; these fills are never animated or faded.
+back=Image.open(H/hm['backing']).convert('RGBA')
+for key,e in em['objects'].items():
+ if key.startswith('skin_'):back.alpha_composite(Image.open(E/e['file']),tuple(e['xy']))
+for e in bm['objects'].values():back.alpha_composite(Image.open(B/e['skin']),tuple(e['xy']))
+for e in cm['patches'].values():back.alpha_composite(Image.open(C/e['skin_file']),tuple(e['xy']))
+a=np.array(back);body=a.copy();body[:720,:,3]=0;head=a.copy();head[720:,:,3]=0
+Image.fromarray(head).save(O/'stationary_backing.png');Image.fromarray(body).save(O/'fixed_neck_torso.png')
+m['objects']['stationary_backing']={'file':'stationary_backing.png','xy':[0,0],'size':[1136,1384],'z':20,'pivot':[568,720],'source':'artwork/bust_base.png','runtime_transforms':'stationary native source geometry; documented hidden backing only'}
+m['body']={'file':'fixed_neck_torso.png','xy':[0,0],'size':[1136,1384],'z':10,'source':'artwork/bust_base.png','method':'Exact native canonical neck/torso. No width cap or reconstructed wedge. Static earrings remain source backing.'}
+# True eye and brow owners. Skin is in the stationary backing above.
+for key,e in em['objects'].items():
+ if key.startswith(('skin_','brow_skin_')) or not e.get('enabled',True):continue
+ extra={'estimated_pixels':e.get('estimated_pixels',False)}
+ if key.startswith('hidden_hair_underlay_'):
+  key='hair_'+key;extra.update(hair_angle=1.6,ownership='Estimated hidden continuation of '+e['owner'])
+ for side,eye in em['eyes'].items():
+  if key.endswith(side):
+   prefix=key[:-(len(side)+1)]
+   if prefix in eye['shader_roles']:
+    extra.update(eye_role=eye['shader_roles'][prefix],eye_side=side,eye_profile=eye['profile'],eye_lower_profile=eye['lower_profile'],eye_taper_end=520 if side=='screen_left' else 713)
+    for f in [eye['profile'],eye['lower_profile']]:shutil.copy2(E/f,O/f)
+ add(key,(B if key.startswith('brow_') else E)/e['file'],e['xy'],e['z'],e['pivot'],**extra)
+# Every seam guard follows its own hair rigid transform and sits behind all hair.
+angles={'front_fringe':.6,'temple_left':1.6,'temple_right':1.6,'crown_bun_rear':.4}
+for name,e in hm['layers'].items():
+ if 'hidden_underlap' in e:
+  u=e['hidden_underlap'];add('hair_'+name+'_underlap',H/u.get('rendered_asset',u['asset']),u['crop_origin'],60,u['pivot'],hair_angle=angles[name],estimated_pixels=True,ownership='hidden internal guard; hide together with matching visible hair')
+for name,e in hm['layers'].items():
+ key='hair_'+name if name in angles else name
+ add(key,H/e.get('rendered_asset',e['cropped_asset']),e['crop_origin'],70 if name in angles else 80,e['pivot'],**({'hair_angle':angles[name]} if name in angles else {}))
+# Original canonical neutral lips. The six oral subparts plus stationary shadow
+# use their own sprites in continuous mode, never the discrete viseme renderer.
+add('neutral_lips',O/'neutral_lips.png',[525,620],58,[564.5,634],source='canonical_sources/approved_neutral.png')
+legacy=json.loads((R/'canonical_sources/legacy_object_face_manifest.json').read_text())
+for key,e in legacy['objects'].items():
+ if key.startswith('viseme_'):
+  a=np.array(Image.open(R/e['source']).convert('RGBA'));a[:,:,3]=np.rint(np.clip((a[:,:,3].astype(float)-16)/239,0,1)*255).astype('uint8')
+  Image.fromarray(a).crop(e['source_visible_crop']).resize(tuple(e['size']),Image.Resampling.LANCZOS).save(O/e['file'])
+  m['objects'][key]=e
+for folder in ['artwork','canonical_sources','assembly_sources']:
+ for p in sorted((R/folder).rglob('*.png')):m['sources'][str(p.relative_to(R))]=sha(p)
+m['derivation_inputs']={'hair_mask_sha256':sha(H/'full_hair_exclusion_mask.png'),'hair_manifest_sha256':sha(H/'manifest.json'),'eye_manifest_sha256':sha(E/'manifest.json')}
+(O/'manifest.json').write_text(json.dumps(m,indent=2)+'\n')
+def compose(hide=()):
+ c=Image.new('RGBA',(1136,1384));stack=list(m['objects'].items())+[('body',m['body'])]
+ for name,e in sorted(stack,key=lambda t:t[1]['z']):
+  if name.startswith(('viseme_','closed_lash','lash_sweep')) or any(name.startswith(prefix) for prefix in hide):continue
+  c.alpha_composite(Image.open(O/e['file']).convert('RGBA'),tuple(e['xy']))
+ return c
+neutral=compose();neutral.save(O/'neutral_registration_reference.png');compose(('hair_',)).save(O/'hair_hidden_reference.png');compose(('iris_','sclera_','upper_lash_','lower_contour_','brow_','neutral_lips')).save(O/'features_hidden_reference.png')
+ref=np.array(Image.open(R/'canonical_sources/approved_neutral.png').convert('RGBA'));out=np.array(neutral);d=np.abs(out.astype(int)-ref.astype(int));excluded=np.zeros(d.shape[:2],bool);excluded[590:700,480:650]=True
+report={'neutral_max_channel_error':int(d.max()),'neutral_changed_pixels':int(np.any(d,axis=2).sum()),'outside_mouth_max_error':int(d[~excluded].max()),'neck_roi_max_error':int(d[680:850,470:655].max()),'no_source_resize':True,'gaze_supported':False}
+report['opaque_source_coverage_violations']=int(((ref[:,:,3]==255)&(out[:,:,3]<255)).sum())
+assert report['opaque_source_coverage_violations']==0,'Source-opaque ownership holes'
+(O/'neutral_metrics.json').write_text(json.dumps(report,indent=2)+'\n');print('CANONICAL_OBJECT_ASSETS_READY',len(m['objects']),json.dumps(report))

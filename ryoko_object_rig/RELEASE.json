@@ -1,0 +1,64 @@
+{
+  "candidate": "Shared expression backbone using the approved EXP-163 yawn artwork",
+  "evidence_context": "Video and historical review metrics describe approved yawn v6, not validation of the new shared controller or clean package. See BACKBONE_VALIDATION.md for controller evidence.",
+  "historical_yawn_independent_review": {
+    "control_checks": 333283,
+    "decoded_movie_frames": 468,
+    "failures": 0,
+    "initial_final_neutral_max_delta": 0,
+    "native_normal_speed_playback_performed": false,
+    "outside_mouth_changed_pixels": 0,
+    "raw_final_stage_frames": 156,
+    "release_retrigger_frames": 341,
+    "repeat_cycle_max_delta": 0,
+    "repeat_cycle_pairs": 59
+  },
+  "mouth_limit": {
+    "effective_aperture": [
+      0,
+      0.55
+    ],
+    "legacy_non_neutral_visemes": "rejected by yawn controller, including M shortcut",
+    "max_cavity_height_source_px": 30.8,
+    "max_lower_lip_travel_source_px": 29.7,
+    "normalized_controls": [
+      0,
+      1
+    ]
+  },
+  "packaging": {
+    "generated_intermediates": "Recreated by tools/build_object_face.py before source/identity tests; intentionally untracked.",
+    "review_movies": "Retained in the existing Space, not this repository package.",
+    "source_files_inventory": "SOURCE_FILES.sha256 covers packaged paths only."
+  },
+  "publication": "Local clean package only; no remote publication result is asserted.",
+  "status": "local_shared_backbone_package",
+  "teeth": {
+    "alpha_size_placement": "unchanged",
+    "upper_and_lower_rgb": "neutral-white luminance-preserving static derivatives",
+    "upper_xy": [
+      533,
+      626
+    ]
+  },
+  "user_approval": {
+    "approved_artwork": "EXP-163 white-teeth reference-bounded yawn v6",
+    "implementation_scope": "Shared expression backbone and viewer implementation authorized; no new expression approval claimed."
+  },
+  "video": {
+    "audio": false,
+    "bytes": 1366938,
+    "capture": "Actual Godot4.6.3 OpenGL movie writer; local H.264 encoding.",
+    "cycles": 2,
+    "duration_seconds": 15.6,
+    "external_artifact_filename": "ryoko_EXP-163_object_yawn.mp4",
+    "fps": 30,
+    "frames": 468,
+    "full_decode_errors": 0,
+    "height": 800,
+    "realtime_playback_performed": false,
+    "sha256": "c9a7f6d1510bc214529c5fb8aa8cc8a4bb1850784b71f6d1beb631e96be1528b",
+    "storage": "Existing Space artifact; not included in this repository.",
+    "width": 1136
+  }
+}

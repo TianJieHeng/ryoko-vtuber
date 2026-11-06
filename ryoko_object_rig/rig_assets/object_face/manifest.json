@@ -1,607 +1,611 @@
 {
-  "version": 2,
+  "version": 3,
   "canvas": [
     1136,
     1384
   ],
-  "coordinate_convention": "screen_left = source character R; screen_right = source character L",
-  "runtime_policy": "Rigid translation/rotation plus visibility clipping only. No scale animation, UV warp, baked face patch, or alpha emotion handover.",
+  "coordinate_convention": "Native canonical source pixels. Screen side names. All source-visible head/hair/eye registration is unscaled.",
+  "runtime_policy": "Independent source cutouts; rigid movement and identity-UV alpha coverage only. No face warp, animated scale, emotion opacity crossfade or full face patch.",
   "objects": {
     "stationary_backing": {
       "file": "stationary_backing.png",
       "xy": [
-        398,
-        316
+        0,
+        0
       ],
       "size": [
-        341,
-        410
+        1136,
+        1384
       ],
       "z": 20,
       "pivot": [
         568,
         720
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_face_base_v001.png",
-      "source_visible_crop": [
-        237,
-        54,
-        1018,
-        1153
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "stationary native source geometry; documented hidden backing only"
     },
-    "ear_screen_left": {
-      "file": "ear_screen_left.png",
+    "upper_lash_screen_left": {
+      "file": "upper_lash_screen_left.png",
       "xy": [
-        382,
-        532
+        410,
+        469
       ],
       "size": [
-        48,
-        83
+        123,
+        60
       ],
-      "z": 18,
+      "z": 35,
       "pivot": [
-        414,
-        562
-      ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_ear_R_v001.png",
-      "source_visible_crop": [
-        190,
-        62,
-        384,
-        365
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "ear_screen_right": {
-      "file": "ear_screen_right.png",
-      "xy": [
-        706,
-        532
-      ],
-      "size": [
-        48,
-        83
-      ],
-      "z": 18,
-      "pivot": [
-        722,
-        562
-      ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_ear_L_v001.png",
-      "source_visible_crop": [
-        201,
-        62,
-        394,
-        365
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "hair_short_tail": {
-      "file": "hair_short_tail.png",
-      "xy": [
-        703,
-        139
-      ],
-      "size": [
-        136,
-        216
-      ],
-      "z": 3,
-      "pivot": [
-        731,
-        174
-      ],
-      "parent": "head",
-      "source": "assembly_sources/hair/short_tail.png",
-      "source_visible_crop": [
-        246,
-        103,
-        826,
-        860
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "hair_rear_scalp": {
-      "file": "hair_rear_scalp.png",
-      "xy": [
-        320,
-        225
-      ],
-      "size": [
-        497,
-        524
-      ],
-      "z": 4,
-      "pivot": [
-        568,
-        390
-      ],
-      "parent": "head",
-      "source": "assembly_sources/hair/rear_scalp_nape.png",
-      "source_visible_crop": [
-        225,
-        72,
-        1119,
-        1090
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "hair_bun": {
-      "file": "hair_bun.png",
-      "xy": [
-        516,
-        82
-      ],
-      "size": [
-        247,
-        182
-      ],
-      "z": 5,
-      "pivot": [
-        627,
-        217
-      ],
-      "parent": "head",
-      "source": "assembly_sources/hair/bun.png",
-      "source_visible_crop": [
-        145,
-        116,
-        871,
-        769
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "hair_temple_screen_left": {
-      "file": "hair_temple_screen_left.png",
-      "xy": [
-        318,
-        467
-      ],
-      "size": [
-        93,
-        325
-      ],
-      "z": 60,
-      "pivot": [
-        392,
-        477
-      ],
-      "parent": "head",
-      "source": "assembly_sources/hair/temple_lock_character_right.png",
-      "source_visible_crop": [
-        261,
-        36,
-        599,
-        997
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "hair_temple_screen_right": {
-      "file": "hair_temple_screen_right.png",
-      "xy": [
-        725,
-        475
-      ],
-      "size": [
-        83,
-        269
-      ],
-      "z": 60,
-      "pivot": [
-        736,
-        489
-      ],
-      "parent": "head",
-      "source": "assembly_sources/hair/temple_lock_character_left.png",
-      "source_visible_crop": [
-        255,
-        77,
-        574,
-        660
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "hair_front_fringe": {
-      "file": "hair_front_fringe.png",
-      "xy": [
-        282,
-        190
-      ],
-      "size": [
-        573,
+        477,
         497
       ],
-      "z": 70,
-      "pivot": [
-        568,
-        256
-      ],
-      "parent": "head",
-      "source": "assembly_sources/hair/front_fringe.png",
-      "source_visible_crop": [
-        56,
-        14,
-        1225,
-        1250
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "earring_screen_left": {
-      "file": "earring_screen_left.png",
-      "xy": [
-        0,
-        0
-      ],
-      "size": [
-        1136,
-        1384
-      ],
-      "z": 80,
-      "pivot": [
-        414,
-        580
-      ],
-      "parent": "head",
-      "source": "rig_assets/earring_screen_left.png",
-      "runtime_transforms": "rigid; source recut retained"
-    },
-    "earring_screen_right": {
-      "file": "earring_screen_right.png",
-      "xy": [
-        0,
-        0
-      ],
-      "size": [
-        1136,
-        1384
-      ],
-      "z": 80,
-      "pivot": [
-        726,
-        580
-      ],
-      "parent": "head",
-      "source": "rig_assets/earring_screen_right.png",
-      "runtime_transforms": "rigid; source recut retained"
-    },
-    "hairsticks": {
-      "file": "hairsticks.png",
-      "xy": [
-        575,
-        86
-      ],
-      "size": [
-        235,
-        142
-      ],
-      "z": 75,
-      "pivot": [
-        680,
-        200
-      ],
-      "parent": "head",
       "source": "artwork/bust_base.png",
-      "runtime_transforms": "rigid; canonical accessory recut"
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true,
+      "eye_role": 1,
+      "eye_side": "screen_left",
+      "eye_profile": "profile_screen_left.png",
+      "eye_lower_profile": "lower_profile_screen_left.png",
+      "eye_taper_end": 520
     },
-    "hanging_ornament": {
-      "file": "hanging_ornament.png",
+    "upper_surround_screen_left": {
+      "file": "upper_surround_screen_left.png",
       "xy": [
-        780,
-        184
+        410,
+        469
       ],
       "size": [
-        24,
-        131
+        123,
+        60
       ],
-      "z": 75,
+      "z": 34,
       "pivot": [
-        790.5,
-        184
+        477,
+        497
       ],
-      "parent": "head",
       "source": "artwork/bust_base.png",
-      "runtime_transforms": "rigid; canonical accessory recut"
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 5,
+      "eye_side": "screen_left",
+      "eye_profile": "profile_screen_left.png",
+      "eye_lower_profile": "lower_profile_screen_left.png",
+      "eye_taper_end": 520
     },
-    "sclera_screen_left": {
-      "file": "sclera_screen_left.png",
+    "lower_contour_screen_left": {
+      "file": "lower_contour_screen_left.png",
       "xy": [
-        420,
-        483
+        410,
+        469
       ],
       "size": [
-        112,
-        35
+        123,
+        60
       ],
-      "z": 30,
+      "z": 33,
       "pivot": [
-        476.0,
-        500.5
+        477,
+        497
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_sclera_R_v001.png",
-      "source_visible_crop": [
-        133,
-        59,
-        512,
-        216
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 2,
+      "eye_side": "screen_left",
+      "eye_profile": "profile_screen_left.png",
+      "eye_lower_profile": "lower_profile_screen_left.png",
+      "eye_taper_end": 520
     },
     "iris_screen_left": {
       "file": "iris_screen_left.png",
       "xy": [
-        455,
-        470
-      ],
-      "size": [
-        41,
-        40
-      ],
-      "z": 32,
-      "pivot": [
-        475.5,
-        490.0
-      ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_iris_pupil_R_v001.png",
-      "source_visible_crop": [
-        190,
-        44,
-        454,
-        302
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "lash_screen_left": {
-      "file": "lash_screen_left.png",
-      "xy": [
-        407,
+        410,
         469
       ],
       "size": [
-        131,
-        39
+        123,
+        60
       ],
-      "z": 40,
+      "z": 32,
       "pivot": [
-        472.5,
-        488.5
+        477,
+        497
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_lash_lid_R_v001.png",
-      "source_visible_crop": [
-        52,
-        37,
-        518,
-        199
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 0,
+      "eye_side": "screen_left",
+      "eye_profile": "profile_screen_left.png",
+      "eye_lower_profile": "lower_profile_screen_left.png",
+      "eye_taper_end": 520
     },
-    "brow_screen_left": {
-      "file": "brow_screen_left.png",
+    "sclera_screen_left": {
+      "file": "sclera_screen_left.png",
       "xy": [
-        437,
-        449
+        410,
+        469
       ],
       "size": [
-        101,
-        25
+        123,
+        60
       ],
-      "z": 50,
+      "z": 31,
       "pivot": [
-        487.5,
-        461.5
+        477,
+        497
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_brow_R_v001.png",
-      "source_visible_crop": [
-        56,
-        150,
-        503,
-        272
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 0,
+      "eye_side": "screen_left",
+      "eye_profile": "profile_screen_left.png",
+      "eye_lower_profile": "lower_profile_screen_left.png",
+      "eye_taper_end": 520
     },
-    "closed_reference_screen_left": {
-      "file": "closed_reference_screen_left.png",
+    "closed_lash_screen_left": {
+      "file": "closed_lash_screen_left.png",
       "xy": [
-        412,
-        487
+        410,
+        469
       ],
       "size": [
-        124,
-        31
+        123,
+        60
       ],
-      "z": 40,
+      "z": 36,
       "pivot": [
-        474.0,
-        502.5
+        477,
+        497
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_closed_lid_R_v001.png",
-      "source_visible_crop": [
-        94,
-        96,
-        468,
-        225
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true,
+      "eye_role": 4,
+      "eye_side": "screen_left",
+      "eye_profile": "profile_screen_left.png",
+      "eye_lower_profile": "lower_profile_screen_left.png",
+      "eye_taper_end": 520
     },
-    "sclera_screen_right": {
-      "file": "sclera_screen_right.png",
+    "hair_hidden_hair_underlay_screen_left": {
+      "file": "hair_hidden_hair_underlay_screen_left.png",
       "xy": [
-        605,
-        483
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "z": 31,
+      "pivot": [
+        425,
+        407
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true,
+      "hair_angle": 1.6,
+      "ownership": "Estimated hidden continuation of temple_left"
+    },
+    "upper_lash_screen_right": {
+      "file": "upper_lash_screen_right.png",
+      "xy": [
+        607,
+        468
       ],
       "size": [
         112,
-        35
+        58
       ],
-      "z": 30,
+      "z": 35,
       "pivot": [
-        661.0,
-        500.5
+        648,
+        496
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_sclera_L_v001.png",
-      "source_visible_crop": [
-        75,
-        60,
-        448,
-        217
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true,
+      "eye_role": 1,
+      "eye_side": "screen_right",
+      "eye_profile": "profile_screen_right.png",
+      "eye_lower_profile": "lower_profile_screen_right.png",
+      "eye_taper_end": 713
+    },
+    "upper_surround_screen_right": {
+      "file": "upper_surround_screen_right.png",
+      "xy": [
+        607,
+        468
       ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "size": [
+        112,
+        58
+      ],
+      "z": 34,
+      "pivot": [
+        648,
+        496
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 5,
+      "eye_side": "screen_right",
+      "eye_profile": "profile_screen_right.png",
+      "eye_lower_profile": "lower_profile_screen_right.png",
+      "eye_taper_end": 713
+    },
+    "lower_contour_screen_right": {
+      "file": "lower_contour_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "z": 33,
+      "pivot": [
+        648,
+        496
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 2,
+      "eye_side": "screen_right",
+      "eye_profile": "profile_screen_right.png",
+      "eye_lower_profile": "lower_profile_screen_right.png",
+      "eye_taper_end": 713
     },
     "iris_screen_right": {
       "file": "iris_screen_right.png",
       "xy": [
-        629,
-        470
+        607,
+        468
       ],
       "size": [
-        41,
-        40
+        112,
+        58
       ],
       "z": 32,
       "pivot": [
-        649.5,
-        490.0
+        648,
+        496
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_iris_pupil_L_v001.png",
-      "source_visible_crop": [
-        128,
-        44,
-        392,
-        302
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 0,
+      "eye_side": "screen_right",
+      "eye_profile": "profile_screen_right.png",
+      "eye_lower_profile": "lower_profile_screen_right.png",
+      "eye_taper_end": 713
     },
-    "lash_screen_right": {
-      "file": "lash_screen_right.png",
+    "sclera_screen_right": {
+      "file": "sclera_screen_right.png",
       "xy": [
-        599,
-        469
+        607,
+        468
       ],
       "size": [
-        131,
-        39
+        112,
+        58
+      ],
+      "z": 31,
+      "pivot": [
+        648,
+        496
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": false,
+      "eye_role": 0,
+      "eye_side": "screen_right",
+      "eye_profile": "profile_screen_right.png",
+      "eye_lower_profile": "lower_profile_screen_right.png",
+      "eye_taper_end": 713
+    },
+    "closed_lash_screen_right": {
+      "file": "closed_lash_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "z": 36,
+      "pivot": [
+        648,
+        496
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true,
+      "eye_role": 4,
+      "eye_side": "screen_right",
+      "eye_profile": "profile_screen_right.png",
+      "eye_lower_profile": "lower_profile_screen_right.png",
+      "eye_taper_end": 713
+    },
+    "hair_hidden_hair_underlay_screen_right": {
+      "file": "hair_hidden_hair_underlay_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "z": 31,
+      "pivot": [
+        721,
+        420
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true,
+      "hair_angle": 1.6,
+      "ownership": "Estimated hidden continuation of temple_right"
+    },
+    "brow_screen_left": {
+      "file": "brow_screen_left.png",
+      "xy": [
+        460,
+        442
+      ],
+      "size": [
+        80,
+        37
       ],
       "z": 40,
       "pivot": [
-        664.5,
-        488.5
+        500.0,
+        460.5
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_lash_lid_L_v001.png",
-      "source_visible_crop": [
-        67,
-        36,
-        528,
-        200
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true
     },
     "brow_screen_right": {
       "file": "brow_screen_right.png",
       "xy": [
-        600,
-        449
-      ],
-      "size": [
-        101,
-        25
-      ],
-      "z": 50,
-      "pivot": [
-        650.5,
-        461.5
-      ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_brow_L_v001.png",
-      "source_visible_crop": [
-        86,
-        149,
-        525,
-        272
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
-    },
-    "closed_reference_screen_right": {
-      "file": "closed_reference_screen_right.png",
-      "xy": [
         601,
-        487
+        440
       ],
       "size": [
-        124,
-        31
+        57,
+        34
       ],
       "z": 40,
       "pivot": [
-        663.0,
-        502.5
+        629.5,
+        457.0
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_closed_lid_L_v001.png",
-      "source_visible_crop": [
-        118,
-        96,
-        486,
-        224
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "estimated_pixels": true
+    },
+    "hair_temple_left_underlap": {
+      "file": "hair_temple_left_underlap.png",
+      "xy": [
+        291,
+        273
       ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "size": [
+        190,
+        438
+      ],
+      "z": 60,
+      "pivot": [
+        425,
+        407
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 1.6,
+      "estimated_pixels": true,
+      "ownership": "hidden internal guard; hide together with matching visible hair"
+    },
+    "hair_temple_right_underlap": {
+      "file": "hair_temple_right_underlap.png",
+      "xy": [
+        646,
+        364
+      ],
+      "size": [
+        159,
+        352
+      ],
+      "z": 60,
+      "pivot": [
+        721,
+        420
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 1.6,
+      "estimated_pixels": true,
+      "ownership": "hidden internal guard; hide together with matching visible hair"
+    },
+    "hair_crown_bun_rear_underlap": {
+      "file": "hair_crown_bun_rear_underlap.png",
+      "xy": [
+        344,
+        158
+      ],
+      "size": [
+        424,
+        143
+      ],
+      "z": 60,
+      "pivot": [
+        567,
+        208
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 0.4,
+      "estimated_pixels": true,
+      "ownership": "hidden internal guard; hide together with matching visible hair"
+    },
+    "hair_front_fringe_underlap": {
+      "file": "hair_front_fringe_underlap.png",
+      "xy": [
+        287,
+        150
+      ],
+      "size": [
+        521,
+        582
+      ],
+      "z": 60,
+      "pivot": [
+        529,
+        218
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 0.6,
+      "estimated_pixels": true,
+      "ownership": "hidden internal guard; hide together with matching visible hair"
+    },
+    "hair_temple_left": {
+      "file": "hair_temple_left.png",
+      "xy": [
+        250,
+        281
+      ],
+      "size": [
+        226,
+        509
+      ],
+      "z": 70,
+      "pivot": [
+        425,
+        407
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 1.6
+    },
+    "hair_temple_right": {
+      "file": "hair_temple_right.png",
+      "xy": [
+        647,
+        371
+      ],
+      "size": [
+        199,
+        434
+      ],
+      "z": 70,
+      "pivot": [
+        721,
+        420
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 1.6
+    },
+    "hair_crown_bun_rear": {
+      "file": "hair_crown_bun_rear.png",
+      "xy": [
+        245,
+        2
+      ],
+      "size": [
+        595,
+        292
+      ],
+      "z": 70,
+      "pivot": [
+        567,
+        208
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 0.4
+    },
+    "hair_front_fringe": {
+      "file": "hair_front_fringe.png",
+      "xy": [
+        41,
+        55
+      ],
+      "size": [
+        1071,
+        750
+      ],
+      "z": 70,
+      "pivot": [
+        529,
+        218
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only",
+      "hair_angle": 0.6
+    },
+    "gold_hairsticks": {
+      "file": "gold_hairsticks.png",
+      "xy": [
+        647,
+        90
+      ],
+      "size": [
+        161,
+        218
+      ],
+      "z": 80,
+      "pivot": [
+        686,
+        195
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only"
+    },
+    "gold_hanging_ornament": {
+      "file": "gold_hanging_ornament.png",
+      "xy": [
+        778,
+        184
+      ],
+      "size": [
+        25,
+        135
+      ],
+      "z": 80,
+      "pivot": [
+        790,
+        184
+      ],
+      "source": "artwork/bust_base.png",
+      "runtime_transforms": "rigid or alpha clip only"
     },
     "neutral_lips": {
       "file": "neutral_lips.png",
       "xy": [
-        526,
-        635
+        525,
+        620
       ],
       "size": [
-        85,
-        13
+        80,
+        45
       ],
-      "z": 55,
+      "z": 58,
       "pivot": [
-        568.5,
-        641.5
+        564.5,
+        634
       ],
-      "parent": "head",
-      "source": "assembly_sources/head/RYO_HEAD_neutral_lips_v001.png",
-      "source_visible_crop": [
-        209,
-        238,
-        505,
-        284
-      ],
-      "alpha_cleanup": "Source alpha <=16/255 removed; retained alpha rescaled then visible-core crop at32/255. Original source bytes unchanged.",
-      "runtime_transforms": "translation, rotation, aperture clip only"
+      "source": "canonical_sources/approved_neutral.png",
+      "runtime_transforms": "rigid or alpha clip only"
     },
     "viseme_A": {
       "file": "viseme_A.png",
@@ -735,29 +739,38 @@
     }
   },
   "sources": {
-    "assembly_sources/head/RYO_HEAD_face_base_v001.png": "5da8a92ca10380442a9eaf569dc97f04fdbc398f8e5feadb6b993463f0e3c869",
-    "assembly_sources/head/RYO_HEAD_ear_R_v001.png": "b16cd2904796ff1f6f70f84ad3621f165553e2e0ed6cf74445c982e5e336d436",
-    "assembly_sources/head/RYO_HEAD_ear_L_v001.png": "3eb54faeb782e53d8a112a82eddbf54d23230fea1af618be39c734b38976d3d2",
-    "assembly_sources/hair/short_tail.png": "3d281b9384212561473fcd39c6ee886385652438e54f53dea3293a5fb2b07ecc",
-    "assembly_sources/hair/rear_scalp_nape.png": "ef6a2e95ba701d5dd243a80c3ecf28d553a8143c1442933161df4ea08387bd95",
-    "assembly_sources/hair/bun.png": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
-    "assembly_sources/hair/temple_lock_character_right.png": "c7017f48460b74effca0ebcaa1141bd8171c355947450928c2c9af96db23f171",
-    "assembly_sources/hair/temple_lock_character_left.png": "ced2c8e50075b08ecd388a251a64a85e4b862a431c06342b2072d7c7e7be1c9c",
-    "assembly_sources/hair/front_fringe.png": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",
+    "artwork/blink_L.png": "b32c465bc4054fe36a667be03ea0338499eb00f76a2956602dc380a6fa5f29ab",
+    "artwork/blink_R.png": "22b2cbeaf18af410984f8db5c0a0044081b570c133145ebd610ecdad75edb02d",
     "artwork/bust_base.png": "30e37ee3c3dd6cfa959b31263e7f0f469bcd1b8c06fa5ccfaaf96d236fa63287",
-    "rig_assets/earring_screen_left.png": "472abee9a87d685697efebd5dc8ea26543ba5583b4eef356c2869b066c2fa48f",
-    "rig_assets/earring_screen_right.png": "83f906a03a808b7d017ecc9b032006346bfb664c53b12e142ae619ebc1710650",
-    "assembly_sources/head/RYO_HEAD_sclera_R_v001.png": "c813a381d93b04612cde7646f5e7c7cc0fd852e4b9a095a63e2ba0bdf64cc064",
-    "assembly_sources/head/RYO_HEAD_iris_pupil_R_v001.png": "54a97fd1d7c9ea581a36cc565bce960baab72405a7c0c44aa9dc5080b133e3bc",
-    "assembly_sources/head/RYO_HEAD_lash_lid_R_v001.png": "f1abe31c9206181eba1c0f10f67633760de50be83a71ff3cae2d3a4d29d6bfa5",
-    "assembly_sources/head/RYO_HEAD_brow_R_v001.png": "3e45564735bab37b61bb9d77c40204d28b82f219e7c5787839120ad9ab88c029",
-    "assembly_sources/head/RYO_HEAD_closed_lid_R_v001.png": "eee53b9cf25398e85273efb077cd3fbbc372cb0a735014477334730d037e1559",
-    "assembly_sources/head/RYO_HEAD_sclera_L_v001.png": "179955f3fb3d3f60fc7a4e89beeade5c52f1ff49903d874a1055cb087275428f",
-    "assembly_sources/head/RYO_HEAD_iris_pupil_L_v001.png": "ad08ed6f92b552525a7319b468129dd5e53c46c9a26f6fc1b048cc401fde2a43",
-    "assembly_sources/head/RYO_HEAD_lash_lid_L_v001.png": "3552c0d3289069bfb41ade3d824806cf31e2a0a0001bae9c6103e28f9ce9b370",
+    "canonical_sources/approved_neutral.png": "880839d65cd90c582b48ca08f1b9a387acaa31762817644420f0316ed9e3a0db",
+    "canonical_sources/hair_lash_exclusion.png": "fb60019c77ad3347b72f0757bb3bf43a995bd0a305083b26c6a4353cd8087ba1",
+    "canonical_sources/mouth_neutral.png": "7e249a30022d68a36f2636149896bf305054f08da1ed3a081f9f82f581782600",
+    "canonical_sources/ownership_corrections/restore_visible_hair.png": "0c21bc7c6de7cef28531e1c370b52146f51085c8aa75d40e9a6cd38a8296d6fb",
+    "canonical_sources/ownership_corrections/restore_visible_skin.png": "4b56fb4d232413d036d2bc7cf2a93fe0d1074096ab0ca8b544dce8b3efa7fee1",
+    "assembly_sources/hair/bun.png": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
+    "assembly_sources/hair/front_fringe.png": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",
+    "assembly_sources/hair/rear_scalp_nape.png": "ef6a2e95ba701d5dd243a80c3ecf28d553a8143c1442933161df4ea08387bd95",
+    "assembly_sources/hair/short_tail.png": "3d281b9384212561473fcd39c6ee886385652438e54f53dea3293a5fb2b07ecc",
+    "assembly_sources/hair/temple_lock_character_left.png": "ced2c8e50075b08ecd388a251a64a85e4b862a431c06342b2072d7c7e7be1c9c",
+    "assembly_sources/hair/temple_lock_character_right.png": "c7017f48460b74effca0ebcaa1141bd8171c355947450928c2c9af96db23f171",
     "assembly_sources/head/RYO_HEAD_brow_L_v001.png": "74aff161efb267065caa0e5937da5691dab52b153548e19437724d421ad5ff7c",
+    "assembly_sources/head/RYO_HEAD_brow_R_v001.png": "3e45564735bab37b61bb9d77c40204d28b82f219e7c5787839120ad9ab88c029",
     "assembly_sources/head/RYO_HEAD_closed_lid_L_v001.png": "23c716a57d5f884eed26f35d105df1e2807817dbef944b80efa2a1e28121ec7a",
+    "assembly_sources/head/RYO_HEAD_closed_lid_R_v001.png": "eee53b9cf25398e85273efb077cd3fbbc372cb0a735014477334730d037e1559",
+    "assembly_sources/head/RYO_HEAD_ear_L_v001.png": "3eb54faeb782e53d8a112a82eddbf54d23230fea1af618be39c734b38976d3d2",
+    "assembly_sources/head/RYO_HEAD_ear_R_v001.png": "b16cd2904796ff1f6f70f84ad3621f165553e2e0ed6cf74445c982e5e336d436",
+    "assembly_sources/head/RYO_HEAD_face_base_v001.png": "5da8a92ca10380442a9eaf569dc97f04fdbc398f8e5feadb6b993463f0e3c869",
+    "assembly_sources/head/RYO_HEAD_iris_pupil_L_v001.png": "ad08ed6f92b552525a7319b468129dd5e53c46c9a26f6fc1b048cc401fde2a43",
+    "assembly_sources/head/RYO_HEAD_iris_pupil_R_v001.png": "54a97fd1d7c9ea581a36cc565bce960baab72405a7c0c44aa9dc5080b133e3bc",
+    "assembly_sources/head/RYO_HEAD_lash_lid_L_v001.png": "3552c0d3289069bfb41ade3d824806cf31e2a0a0001bae9c6103e28f9ce9b370",
+    "assembly_sources/head/RYO_HEAD_lash_lid_R_v001.png": "f1abe31c9206181eba1c0f10f67633760de50be83a71ff3cae2d3a4d29d6bfa5",
+    "assembly_sources/head/RYO_HEAD_lower_teeth_v001.png": "fb3b00dcf74958063f3aa5466f770db4a34aa8dbd4209aae3030f86a04a0d9d6",
+    "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png": "39ef37231d3347fe5f729e3fc427f9f59cc1604a12988b6c3ba563cb7ce3971e",
     "assembly_sources/head/RYO_HEAD_neutral_lips_v001.png": "6cf4ba2aba81ca1d9e0d724f3aa890bce2d1387ac85bc8b98f628d79ca558c86",
+    "assembly_sources/head/RYO_HEAD_sclera_L_v001.png": "179955f3fb3d3f60fc7a4e89beeade5c52f1ff49903d874a1055cb087275428f",
+    "assembly_sources/head/RYO_HEAD_sclera_R_v001.png": "c813a381d93b04612cde7646f5e7c7cc0fd852e4b9a095a63e2ba0bdf64cc064",
+    "assembly_sources/head/RYO_HEAD_tongue_v001.png": "8f731572395082142053234df3466f1e374de336a3510cfff9e9815bb85ff5a3",
+    "assembly_sources/head/RYO_HEAD_upper_teeth_v001.png": "d8828150286cd64a52cf553715e80d9b33f9d4309d1de80ae86e494b69c05746",
     "assembly_sources/head/RYO_HEAD_viseme_A_v001.png": "7fb4ffce7c918c1a6bfc6471ec520616c9f7c69276604449844a9f1d341871fe",
     "assembly_sources/head/RYO_HEAD_viseme_E_v001.png": "5ae868155be257c6d9cb5b474d7ea4b55027fce48464560dd0678ddc3b787170",
     "assembly_sources/head/RYO_HEAD_viseme_I_v001.png": "a1e2f8c8aeab01ce5cdb38bbbf58b687f3cd150a87a2617c2dae7c076ca59a1f",
@@ -765,10 +778,32 @@
     "assembly_sources/head/RYO_HEAD_viseme_U_v001.png": "539b1e74d2dc84cfaff43157d363a63a55b6bfad51924029efeafc689e816987"
   },
   "estimates": {
-    "hidden_face": "None. The foundation is the original clean source face with no eyes, brows, lips or hair.",
-    "appearance": "Source pack shading, nose, eye drawing and hair silhouette differ from the former canonical composite. Fixed registration is newly authored, not claimed pixel-identical.",
-    "neck": "Fixed visible canonical neck/torso crop; no neck animation or hidden neck completion is claimed."
+    "hair": [
+      "Single flattened source cannot reveal occluded scalp, rear-hair boundaries, or full hidden locks. No claim of recovered original hidden anatomy.",
+      "Partition paths are visible-source ownership seams, not complete hidden-strand topology. Restrict rigid rotations to small angles until seam guards are authored.",
+      "Hidden skin uses nearby source skin under foreground locks, with a 16-pixel rigid-motion reveal margin. Hair-hide exposes missing upper scalp rather than a redesigned head.",
+      "Earrings remain static canonical pixels in backing; not falsely presented as independently reconstructed accessories.",
+      "Existing source fringe/alpha artifacts are deliberately preserved in original extracted objects."
+    ],
+    "eyes": {
+      "skin": "One coherent harmonic skin extension within the removed eye ownership and hair-matte mask. Hidden skin is estimated, never claimed original. Registered blink artwork supplies the closed lash, not disjoint skin patches.",
+      "lash_sweep": "Disabled rejected prototype. Active closure translates ONLY upper lash rigidly36px at full control, then spatially clips it against fixed lower aperture and reveals separately matted canonical closed lash. Core source RGB preserved; alpha edge matting and hidden strand-covered lash completion explicitly estimated.",
+      "iris": "Visible immutable source disk; hidden cap is not reconstructed and gaze is limited to zero until a verified hidden extension is supplied.",
+      "hair": "External mask"
+    },
+    "mouth": "Original approved lip color silhouette recut; alpha boundary estimated, preserved canonical lip shape. The separate static underlip shadow is occluded by the oral cavity, never dragged with lower lip.",
+    "brow_hair_crossings": {
+      "manifest": "rig_assets/canonical_brows/continuation_v2/manifest.json",
+      "method": "Explicit bounded same-strand continuation from source anchor rows where flattened brow and hair colors were mixed. Stationary skin and foreground hair have separate ownership. Neutral is not pixel-identical inside these masks.",
+      "validation": {
+        "estimated_neutral_changed_pixels": 1229,
+        "estimated_neutral_max_channel_error": 129,
+        "estimated_neutral_changes_outside_correction_mask": 0,
+        "source_art_claim": "No clean original source pixels exist for the flattened mixed crossing intervals. Continuation is explicitly estimated, not original recovered artwork."
+      }
+    }
   },
+  "gaze_supported": false,
   "body": {
     "file": "fixed_neck_torso.png",
     "xy": [
@@ -781,7 +816,11 @@
     ],
     "z": 10,
     "source": "artwork/bust_base.png",
-    "method": "Visible source neck/outfit only, with source-traced curved collar tips. Old hair above collar excluded; largest connected component removes matte dust; no hidden-area synthesis.",
-    "removed_disconnected_dust_pixels": 62
+    "method": "Exact native canonical neck/torso. No width cap or reconstructed wedge. Static earrings remain source backing."
+  },
+  "derivation_inputs": {
+    "hair_mask_sha256": "1ed11f5eb6cda47b3c381db020c3f7587956032a7e346b088e33cf77f9a84aa9",
+    "hair_manifest_sha256": "17ab7c9bb1102c88fbb8a5055325ecaef6a6777b08a27ba366b8184ee3e4fd4e",
+    "eye_manifest_sha256": "e743bf8a737c922a0e709809cf959b51208a4e4d9dc386b1922669985de19bac"
   }
 }

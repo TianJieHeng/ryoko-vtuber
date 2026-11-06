@@ -10,16 +10,16 @@ config_version=5
 
 [application]
 
-config/name="Ryoko separate-part base assembly"
-run/main_scene="res://object_rig.tscn"
+config/name="Ryoko shared expression rig"
+run/main_scene="res://expression_viewer.tscn"
 config/features=PackedStringArray("4.6")
 
 [display]
 
-window/size/viewport_width=568
-window/size/viewport_height=760
-window/size/window_width_override=568
-window/size/window_height_override=760
+window/size/viewport_width=1136
+window/size/viewport_height=800
+window/size/window_width_override=1136
+window/size/window_height_override=800
 
 [rendering]
 

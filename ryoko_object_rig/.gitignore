@@ -4,3 +4,19 @@ __pycache__/
 *.pyc
 *.avi
 *.mp4
+
+# Generated locally; not required for playback.
+/rig_assets/canonical_brows/
+/rig_assets/canonical_eyes/
+/rig_assets/canonical_hair/
+/rig_assets/object_face/features_hidden_reference.png
+/rig_assets/object_face/hair_hidden_reference.png
+/rig_assets/object_face/neutral_metrics.json
+/rig_assets/object_face/neutral_registration_reference.png
+/validation/reference_vs_candidate.png
+/review/
+/validation/history_v3/
+*.log
+*.mov
+*.webm
+*.mkv

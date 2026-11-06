@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "EXP-163",
+      "path": "res://yawn_performance.json",
+      "aliases": ["yawn"],
+      "trigger_phase": "anticipation"
+    }
+  ]
+}

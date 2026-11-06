@@ -16,6 +16,7 @@ var hud:Label
 var hint:Label
 var pose_status:Label
 var last_error=""
+const MAX_HAIR_SWAY=0.07
 const NUMBERS=["blink","blink_L","blink_R","gaze_x","gaze_y","brow_raise","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","hair_sway"]
 static func number(value)->bool:return (value is float or value is int) and is_finite(float(value))
 func _ready():
@@ -28,6 +29,13 @@ func _ready():
     pose_status=Label.new();pose_status.position=Vector2(18,59);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
     rig_ready=true;_write_pose();print("OBJECT_BASE_READY independent_sprites=",face.objects.size()," expression_timelines=0")
 func apply_controls(data:Dictionary)->bool:
+    # Visible canonical iris pixels have no verified hidden travel extensions.
+    for gaze_key in ["gaze_x","gaze_y"]:
+        if data.has(gaze_key) and (not number(data[gaze_key]) or float(data[gaze_key])!=0.0):
+            last_error="Canonical gaze is not available until hidden iris/sclera extensions are verified";return false
+    # The flattened canonical hair has only a verified small reveal margin.
+    if data.has("hair_sway") and (not number(data.hair_sway) or abs(float(data.hair_sway))>MAX_HAIR_SWAY):
+        last_error="Canonical hair_sway supports only [-0.07,0.07]";return false
     # Atomic validation: unsupported legacy/emotion commands never mutate the base.
     for key in data:
         if key not in NUMBERS and key not in ["reset","auto_blink","mouth","viseme"]:last_error="Not a base-assembly control: "+str(key);return false
@@ -66,8 +74,8 @@ func _write_pose():
         if phase>3.86:lids=lids.max(Vector2.ONE*sin((phase-3.86)/.34*PI))
     face.set_pose(lids,manual_gaze,manual_brow,manual_brow_tilt,mouth_shape,manual_hair)
     hud.text="Ryoko / separate-part base assembly"
-    hint.text="B blink · O brows · M mouth · H hair · 0 reset"
-    pose_status.text="Independent objects / no expression playback"
+    hint.text="B lids · O brows · M source viseme · H hair · 0 reset"
+    pose_status.text="Canonical native artwork / nonzero gaze unavailable"
 func _process(delta):
     if not rig_ready:return
     elapsed+=delta;_write_pose()
@@ -77,7 +85,7 @@ func _unhandled_key_input(event):
         KEY_B:apply_controls({"blink":0.0 if manual_lids.x>0 else 1.0})
         KEY_O:apply_controls({"brow_raise":0.0 if manual_brow.x>0 else 1.0})
         KEY_M:apply_controls({"mouth":"REST" if mouth_shape!="neutral" else "A"})
-        KEY_H:apply_controls({"hair_sway":0.0 if manual_hair>0 else 1.0})
+        KEY_H:apply_controls({"hair_sway":0.0 if manual_hair>0 else MAX_HAIR_SWAY})
         KEY_LEFT:apply_controls({"gaze_x":-1.0})
         KEY_RIGHT:apply_controls({"gaze_x":1.0})
         KEY_0:apply_controls({"reset":true})

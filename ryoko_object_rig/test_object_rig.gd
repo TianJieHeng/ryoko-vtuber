@@ -9,13 +9,14 @@ func _initialize():call_deferred("run")
 func run():
     rig=load("res://object_rig.tscn").instantiate();root.add_child(rig)
     await process_frame;rig.set_process(false)
+    var expected_objects=rig.face.manifest.objects.size()-5+1+rig.face.oral_objects.size()
     check(rig.apply_controls({"reset":true}),"reset")
-    check(rig.face.objects.size()==23,"23 independently owned sprites including exclusive mouth variants")
+    check(rig.face.objects.size()==expected_objects,"manifest-declared independently owned sprites including dormant oral nodes")
     var iris=rig.face.objects.iris_screen_left.texture
     var backing=rig.face.objects.stationary_backing.texture
     for i in range(101):
         var v=i/100.0
-        check(rig.apply_controls({"blink":v,"brow_screen_left":v,"brow_tilt_screen_right":-v,"hair_sway":v,"gaze_x":2*v-1}),"base continuous parameter sample")
+        check(rig.apply_controls({"blink":v,"brow_screen_left":v,"brow_tilt_screen_right":-v,"hair_sway":(2.0*v-1.0)*rig.MAX_HAIR_SWAY,"gaze_x":0.0}),"base continuous parameter sample")
         for key in rig.face.objects:
             var node=rig.face.objects[key];var pivot=rig.face.homes[key].node
             check(node.modulate.a==1.0,"no opacity fade "+key)
@@ -25,18 +26,21 @@ func run():
         check(rig.face.homes.stationary_backing.node.position==Vector2(568,720) and rig.face.homes.stationary_backing.node.rotation==0,"face stays fixed")
         check(rig.face.mouth_variant=="neutral_lips","authored neutral lips retained")
         check(rig.face.objects.neutral_lips.visible and not rig.face.mouth_sprite.visible,"one neutral mouth owner")
-    check(rig.apply_controls({"reset":true,"blink_R":0.35,"gaze_y":-1,"brow_screen_left":1,"mouth":"E"}),"independent channels")
+    check(rig.apply_controls({"reset":true,"blink_R":0.35,"brow_screen_left":1,"mouth":"E"}),"independent channels")
     check(rig.face.closure==Vector2(.35,0),"independent eyelid")
-    check(rig.face.homes.iris_screen_left.node.position==rig.face.homes.iris_screen_left.pivot+Vector2(0,-2),"rigid gaze translation")
+    check(rig.face.homes.iris_screen_left.node.position==rig.face.homes.iris_screen_left.pivot,"canonical iris stays fixed until hidden extension exists")
     check(rig.face.homes.brow_screen_right.node.rotation==0,"independent brow")
     for shape in ["A","E","I","O","U"]:
         check(rig.apply_controls({"mouth":shape}),"source viseme "+shape)
         check(rig.face.mouth_variant=="viseme_"+shape,"exclusive source variant "+shape)
-        check(rig.face.objects.size()==23,"no duplicate object on swaps")
+        check(rig.face.objects.size()==expected_objects,"no duplicate object on swaps")
     check(rig.apply_controls({"mouth":"REST"}),"release mouth")
     check(rig.face.mouth_opening==0 and rig.face.mouth_variant=="neutral_lips","authored neutral oral object")
+    for amount in [-rig.MAX_HAIR_SWAY,rig.MAX_HAIR_SWAY]:
+        check(rig.apply_controls({"hair_sway":amount}),"supported hair endpoint accepted")
+        check(is_equal_approx(rig.face.hair_sway,amount),"hair endpoint preserves requested coordinate")
     var saved=rig.face.snapshot()
-    for data in [{"perform_expression":"EXP-163"},{"expression":"EXP-005"},{"head_tilt":0.1},{"mouth_open":0.5},{"gaze_x":2},{"auto_blink":"yes"},{"mouth":"bad"}]:
+    for data in [{"perform_expression":"EXP-163"},{"expression":"EXP-005"},{"head_tilt":0.1},{"mouth_open":0.5},{"gaze_x":2},{"gaze_x":.1},{"gaze_y":-1},{"hair_sway":rig.MAX_HAIR_SWAY+0.000001},{"hair_sway":-rig.MAX_HAIR_SWAY-0.000001},{"hair_sway":1},{"reset":true,"hair_sway":-1},{"blink":0.8,"hair_sway":0.071},{"hair_sway":NAN},{"hair_sway":"yes"},{"auto_blink":"yes"},{"mouth":"bad"}]:
         check(not rig.apply_controls(data),"unsupported/invalid channel rejected")
         check(rig.face.snapshot()==saved,"rejection is atomic")
     for id in JSON.parse_string(FileAccess.get_file_as_string("res://legacy_expression_ids.json")).legacy_expression_ids:

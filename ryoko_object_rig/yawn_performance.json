@@ -1,0 +1,221 @@
+{
+  "id": "EXP-163",
+  "title": "Yawn",
+  "duration": 5.8,
+  "status": "candidate awaiting user video approval",
+  "intent": "Brows rise then relax; eyes squeeze closed; jaw opens tall then slowly closes.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "timing_origin": "13 beat times retained from recoverable prior yawn; all values and renderer newly authored for rigid-object base. Original 1.9-second reference is intent, not implemented source animation.",
+  "scope": "Face-object performance only. Jaw/face/nose/neck/body stay stationary; mouth opening conveys the jaw-open intent. No full-body stretch or hand-to-mouth gesture.",
+  "interpolation": "Cubic smoothstep per adjacent key, control-coordinate interpolation only. Mouth uses source-pixel clipping and rigid translation, not image blending.",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0,
+        "hair_sway": 0
+      }
+    },
+    {
+      "time": 0.42,
+      "phase": "anticipation",
+      "values": {
+        "blink_R": 0.08,
+        "blink_L": 0.08,
+        "brow_screen_left": 0.12,
+        "brow_screen_right": 0.1116,
+        "brow_tilt_screen_left": -0.041999999999999996,
+        "brow_tilt_screen_right": 0.041999999999999996,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0,
+        "hair_sway": 0.015
+      }
+    },
+    {
+      "time": 0.81,
+      "phase": "lids_heavy",
+      "values": {
+        "blink_R": 0.32,
+        "blink_L": 0.32,
+        "brow_screen_left": 0.25,
+        "brow_screen_right": 0.2325,
+        "brow_tilt_screen_left": -0.0875,
+        "brow_tilt_screen_right": 0.0875,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0.035,
+        "hair_sway": 0.025
+      }
+    },
+    {
+      "time": 1.05,
+      "phase": "onset",
+      "values": {
+        "blink_R": 0.62,
+        "blink_L": 0.62,
+        "brow_screen_left": 0.3,
+        "brow_screen_right": 0.279,
+        "brow_tilt_screen_left": -0.105,
+        "brow_tilt_screen_right": 0.105,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0.15,
+        "hair_sway": 0.04
+      }
+    },
+    {
+      "time": 1.66,
+      "phase": "build",
+      "values": {
+        "blink_R": 0.96,
+        "blink_L": 0.96,
+        "brow_screen_left": 0.12,
+        "brow_screen_right": 0.1116,
+        "brow_tilt_screen_left": -0.041999999999999996,
+        "brow_tilt_screen_right": 0.041999999999999996,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0.72,
+        "hair_sway": 0.07
+      }
+    },
+    {
+      "time": 2.15,
+      "phase": "peak",
+      "values": {
+        "blink_R": 1,
+        "blink_L": 1,
+        "brow_screen_left": -0.02,
+        "brow_screen_right": -0.018600000000000002,
+        "brow_tilt_screen_left": 0.006999999999999999,
+        "brow_tilt_screen_right": -0.006999999999999999,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 1,
+        "hair_sway": 0.04
+      }
+    },
+    {
+      "time": 2.7,
+      "phase": "yawn_stretch",
+      "values": {
+        "blink_R": 1,
+        "blink_L": 1,
+        "brow_screen_left": 0.04,
+        "brow_screen_right": 0.037200000000000004,
+        "brow_tilt_screen_left": -0.013999999999999999,
+        "brow_tilt_screen_right": 0.013999999999999999,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 1,
+        "hair_sway": -0.025
+      }
+    },
+    {
+      "time": 3.24,
+      "phase": "long_exhale",
+      "values": {
+        "blink_R": 0.99,
+        "blink_L": 0.99,
+        "brow_screen_left": -0.03,
+        "brow_screen_right": -0.0279,
+        "brow_tilt_screen_left": 0.010499999999999999,
+        "brow_tilt_screen_right": -0.010499999999999999,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0.94,
+        "hair_sway": -0.045
+      }
+    },
+    {
+      "time": 3.8,
+      "phase": "mouth_closes",
+      "values": {
+        "blink_R": 0.91,
+        "blink_L": 0.91,
+        "brow_screen_left": -0.05,
+        "brow_screen_right": -0.04650000000000001,
+        "brow_tilt_screen_left": 0.017499999999999998,
+        "brow_tilt_screen_right": -0.017499999999999998,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0.62,
+        "hair_sway": -0.02
+      }
+    },
+    {
+      "time": 4.45,
+      "phase": "lids_recover",
+      "values": {
+        "blink_R": 0.48,
+        "blink_L": 0.48,
+        "brow_screen_left": 0.02,
+        "brow_screen_right": 0.018600000000000002,
+        "brow_tilt_screen_left": -0.006999999999999999,
+        "brow_tilt_screen_right": 0.006999999999999999,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0.22,
+        "hair_sway": 0.012
+      }
+    },
+    {
+      "time": 5.18,
+      "phase": "settle",
+      "values": {
+        "blink_R": 0.06,
+        "blink_L": 0.06,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0.008,
+        "hair_sway": 0.004
+      }
+    },
+    {
+      "time": 5.42,
+      "phase": "released",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0,
+        "hair_sway": 0
+      }
+    },
+    {
+      "time": 5.8,
+      "phase": "neutral_return",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "mouth_open": 0,
+        "hair_sway": 0
+      }
+    }
+  ]
+}
