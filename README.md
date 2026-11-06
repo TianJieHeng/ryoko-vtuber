@@ -12,9 +12,11 @@ All retained assembly inputs are in [avatar_build_assets/](avatar_build_assets/)
 - Five contact sheets showing the separated parts.
 
 ## Actual readiness
-The parts are **not yet aligned into a rig-ready layer stack**. Cutting, registration to a common canvas, hidden overlap completion, pivots, clipping, layered assembly and 2D rigging remain to be done. A separate neck artwork part is missing. The expression crops are acting references, not registered animation frames.
+The shared [Godot 4.6.3 application](ryoko_object_rig/README.md) now contains one assembled separate-part character and one bounded, data-driven controller. **Only EXP-163 (Yawn)** is authored: 13 beats over 5.8 seconds. See the [shared control API](ryoko_object_rig/CONTROL_API.md). The old expression crops and catalogue remain acting references, not implemented performances.
 
-If Blender is used, use image planes or planar deformable artwork with an orthographic camera and layer-depth ordering. Do not reconstruct a 3D body, retopologize it, bake fitted character UV atlases or target a VRM character export. Choose and verify a 2D live runtime with the user before committing to its integration.
+Additional performances, full-body motion, verified nonzero gaze and authored speech visemes/lip-sync remain unfinished. The head, neck and body stay fixed. The optional [local external-process bridge](ryoko_object_rig/LOCAL_CONTROL_BRIDGE.md) lets a separate process control the same rig over loopback; no AI model, Ryoko agent service or TTS provider is connected by this phase.
+
+The runtime is a layered 2D Godot rig. Do not reconstruct a 3D body, retopologize it, bake fitted character UV atlases or target a VRM character export.
 
 Do not replace this with a generic character. Preserve the human Ryoko design: sage/mint hair, amber eyes, dark trouser suit, white blouse, gold ornaments, green pendant and black pumps.
 

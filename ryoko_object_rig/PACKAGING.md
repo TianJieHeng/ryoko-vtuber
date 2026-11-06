@@ -1,8 +1,8 @@
 # Clean shared-expression package
 
 This directory contains the shared expression registry, controller and viewer,
-the EXP-163 approved-art compatibility path, runtime assets, rebuild inputs and
-regression support. It does not add another authored expression.
+the opt-in loopback control bridge and Python client, the EXP-163 approved-art
+compatibility path, runtime assets, rebuild inputs and regression support. It does not add another authored expression.
 
 All previously tracked object-rig paths are preserved. Existing unrelated
 repository paths must remain untouched when applying this additive overlay.
@@ -41,10 +41,12 @@ directory, with no sibling project, run:
     godot --headless --path . --script res://test_yawn.gd
     godot --headless --path . --script res://test_teeth.gd
     godot --headless --path . --script res://test_expression_backbone.gd
+    python tools/test_control_bridge.py --output /tmp/ryoko-bridge-evidence
     sha256sum -c SOURCE_FILES.sha256
 
 The generic backbone's BACKBONE_VALIDATION.md describes its parity and viewer
-checks. Any rendered results belong outside the repository. The legacy yawn
+checks. LOCAL_CONTROL_BRIDGE.md and AI_CONTROL_VALIDATION.md describe the local
+transport, its tests and remaining integration limits. Any rendered results belong outside the repository. The legacy yawn
 capture command remains available as tools/capture_yawn.sh.
 
 ## Storage and publication boundary

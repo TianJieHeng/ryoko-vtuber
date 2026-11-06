@@ -62,4 +62,4 @@ Generated captures, movies, `.godot`, Python caches and intermediate diagnostic 
 
 ## Remaining limits
 
-Nonzero gaze, expanded hair range, non-neutral discrete visemes, independent earrings, additional performances, full-body motion and external AI/voice transport are not implemented. The direct shared Godot API is ready for an adapter, but no live integration is claimed. Historical validation/provenance documents remain historical evidence; this file describes the new backbone checks.
+At the backbone checkpoint, nonzero gaze, expanded hair range, non-neutral discrete visemes, independent earrings, additional performances, full-body motion and external AI/voice transport were not implemented. This document records that historical checkpoint. The later local external-process transport is documented in LOCAL_CONTROL_BRIDGE.md and AI_CONTROL_VALIDATION.md; no AI model or TTS service is connected. The other listed limits remain. Historical validation/provenance documents retain their original evidence context.

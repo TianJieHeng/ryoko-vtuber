@@ -1,6 +1,6 @@
 # Shared expression control API
 
-Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewer.apply_controls(dictionary)` for the default app. Both use the same validated player. This is a callable Godot API; no HTTP, socket, voice or autonomous-agent transport is claimed.
+Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewer.apply_controls(dictionary)` for the default app. Both use the same validated player. This remains the authoritative callable Godot API. The opt-in loopback socket adapter in `LOCAL_CONTROL_BRIDGE.md` delegates to this same controller; no AI-model or voice-service connection is claimed.
 
 ## Calls
 
@@ -11,7 +11,7 @@ Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewe
 - `get_state()` returns detached `registry_ready`, `active_expression`, `time`, `phase`, `release_time`, normalized `controls`, actual `displayed_controls`, feature `owners`, `auto_blink` and `last_error`.
 - `sample_expression(id,time)` returns a pose without changing playback. Unknown IDs or nonfinite time return `{}` and set `last_error`. Time outside the duration returns neutral. A sample is not a command.
 
-The same `apply_controls` contract is the intended AI-adapter entry point. Do not expose direct calls to historical `object_rig`, `object_face` internals, registry mutation or `_apply_performance_pose` as external controls.
+The same `apply_controls` contract is the external adapter entry point. Do not expose direct calls to historical `object_rig`, `object_face` internals, registry mutation or `_apply_performance_pose` as external controls.
 
 ## Transactions and ownership
 

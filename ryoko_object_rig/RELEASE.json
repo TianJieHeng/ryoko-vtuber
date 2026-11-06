@@ -1,6 +1,6 @@
 {
-  "candidate": "Shared expression backbone using the approved EXP-163 yawn artwork",
-  "evidence_context": "Video and historical review metrics describe approved yawn v6, not validation of the new shared controller or clean package. See BACKBONE_VALIDATION.md for controller evidence.",
+  "candidate": "Shared expression rig with opt-in local external-process control bridge",
+  "evidence_context": "Video and historical review metrics describe approved yawn v6, not validation of the new shared controller or clean package. See BACKBONE_VALIDATION.md for controller evidence. See AI_CONTROL_VALIDATION.md for the local external-process bridge; no AI-model or TTS integration is claimed.",
   "historical_yawn_independent_review": {
     "control_checks": 333283,
     "decoded_movie_frames": 468,
@@ -12,6 +12,15 @@
     "release_retrigger_frames": 341,
     "repeat_cycle_max_delta": 0,
     "repeat_cycle_pairs": 59
+  },
+  "local_control_bridge": {
+    "ai_model_connected": false,
+    "base_commit": "03260259eecc27be25882e42fd66ae99e622ad10",
+    "controller": "Existing single expression_rig instance",
+    "protocol": 1,
+    "transport": "Opt-in 127.0.0.1 TCP JSON lines",
+    "tts_connected": false,
+    "validation": "AI_CONTROL_VALIDATION.md"
   },
   "mouth_limit": {
     "effective_aperture": [
@@ -32,7 +41,7 @@
     "source_files_inventory": "SOURCE_FILES.sha256 covers packaged paths only."
   },
   "publication": "Local clean package only; no remote publication result is asserted.",
-  "status": "local_shared_backbone_package",
+  "status": "local_control_bridge_package",
   "teeth": {
     "alpha_size_placement": "unchanged",
     "upper_and_lower_rgb": "neutral-white luminance-preserving static derivatives",
