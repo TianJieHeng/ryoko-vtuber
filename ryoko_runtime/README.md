@@ -1,3 +1,7 @@
+# Approved reusable performance presets
+
+See [README_PERFORMANCE_PRESETS.md](README_PERFORMANCE_PRESETS.md) for separate save/recall slots combining existing bust controls. Original artwork and legacy pose slots are unchanged. The user approved the actual Godot runtime review on 2026-11-06.
+
 # Approved independent green pendant
 
 See [README_PENDANT.md](README_PENDANT.md) for restrained motion of the existing green necklace pendant and [VALIDATION_PENDANT.md](VALIDATION_PENDANT.md) for checks and limits. The chain stays fixed. The user approved the actual Godot runtime review on 2026-11-06.

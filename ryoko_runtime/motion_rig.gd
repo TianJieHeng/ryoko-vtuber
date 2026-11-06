@@ -51,6 +51,7 @@ var eyelids=preload("res://eyelid_driver.gd").new()
 var eyelid_proof=false
 var eyelid_events={}
 var pose_store=preload("res://pose_store.gd").new()
+var performance_store=preload("res://performance_store.gd").new()
 var pose_proof=false
 var pose_events={}
 var pose_notice=""
@@ -160,6 +161,8 @@ func _ready():
     pose_proof="--pose-proof" in OS.get_cmdline_user_args()
     if pose_proof:pose_store.path="user://proof_poses.json"
     if not pose_store.load_disk():push_warning(pose_store.error_message)
+    performance_store.expressions=expression_ids.duplicate()
+    if not performance_store.load_disk():push_warning(performance_store.error_message)
     pose_status=Label.new();pose_status.position=Vector2(18,62);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
     clip_proof="--clip-proof" in OS.get_cmdline_user_args()
     hair_proof="--hair-proof" in OS.get_cmdline_user_args()
@@ -192,6 +195,10 @@ func _build_grid(columns,rows):
 func apply_controls(data, source="external"):
     # Validate the complete optional-effects patch before any mutations, even reset.
     if not data is Dictionary:return false
+    # New preset commands are validated before reset, ownership, or disk writes.
+    for key in ["performance_save", "performance_load"]:
+        if data.has(key) and not performance_store.valid_slot(data[key]):return false
+    if data.has("performance_load") and performance_store.recall(data.performance_load).is_empty():return false
     if data.has("pendant_secondary") and not data.pendant_secondary is bool:return false
     if data.has("effects") and not preload("res://optional_effects.gd").valid(data.effects):return false
     # Loaded clips are already validated. Also reject a stale/mutated expression
@@ -210,6 +217,7 @@ func apply_controls(data, source="external"):
         for earring in earrings.values():earring.reset()
         for lock in loose_hair.values():lock.reset()
         ornament.reset();attention.reset();brows.reset();breathing.reset();gaze.reset();hair.reset();stop_clip();eyelids.reset();gestures.cancel();audio_mouth.stop();body_follow=true;body_target=Vector3.ZERO;target=Vector3.ZERO;face.reset_neutral();expression_index=-1;manual_blink=-1.0;speech=false;mouse_follow=false;auto_blink=true;external_controls=false
+    if data.has("performance_load"):recall_performance(data.performance_load)
     if data.has("effects"):face.optional_effects.apply(data.effects)
     if data.has("brow_raise"):brows.set_both(data.brow_raise)
     if data.has("brow_screen_left"):brows.set_side("screen_left",data.brow_screen_left)
@@ -268,6 +276,9 @@ func apply_controls(data, source="external"):
     if data.has("pose_save"):
         var saved=save_pose(int(data.pose_save))
         accepted=accepted and saved
+    if data.has("performance_save"):
+        var saved=save_performance(data.performance_save)
+        accepted=accepted and saved
     return accepted
 
 func _set_expression(id:String)->bool:
@@ -306,7 +317,10 @@ func _unhandled_key_input(event):
     if event.keycode==KEY_ESCAPE:stop_clip()
     if event.keycode in [KEY_1,KEY_2,KEY_3]:
         var slot=int(event.keycode-KEY_1)+1
-        if event.ctrl_pressed:save_pose(slot)
+        if event.shift_pressed:
+            if event.ctrl_pressed:save_performance(slot)
+            else:recall_performance(slot)
+        elif event.ctrl_pressed:save_pose(slot)
         else:recall_pose(slot)
     if event.keycode==KEY_J:eyelids.trigger("screen_left")
     if event.keycode==KEY_K:eyelids.trigger("screen_right")
@@ -762,6 +776,40 @@ func recall_pose(slot:int)->bool:
     body_target=Vector3(data.body_tilt,data.body_x,data.body_y)
     body_follow=data.body_follow;external_controls=true;mouse_follow=false
     pose_notice="Recalled pose "+str(slot)
+    return true
+
+func performance_snapshot() -> Dictionary:
+    var saved_body=target if body_follow else body_target
+    return {"head_tilt":target.x,"head_x":target.y,"head_y":target.z,
+        "body_tilt":saved_body.x,"body_x":saved_body.y,"body_y":saved_body.z,
+        "body_follow":body_follow,"gaze_x":gaze.target.x,"gaze_y":gaze.target.y,
+        "brow_screen_left":brows.target.x,"brow_screen_right":brows.target.y,
+        "expression":face.expression,"effects":face.optional_effects.state.duplicate(true)}
+
+func save_performance(slot) -> bool:
+    var ok=performance_store.save_slot(slot,performance_snapshot())
+    pose_notice="Saved performance "+str(slot) if ok else performance_store.error_message
+    return ok
+
+func recall_performance(slot) -> bool:
+    var data=performance_store.recall(slot)
+    if data.is_empty():
+        pose_notice="Performance "+str(slot)+" is empty or invalid"
+        return false
+    # Recall deliberately takes over scheduling, then sets only saved channels.
+    # Live mouth/eyelids/gestures continue unless owned by the cancelled clip.
+    stop_clip()
+    attention.release();gaze.mouse_follow=false;mouse_follow=false
+    target=Vector3(data.head_tilt,data.head_x,data.head_y)
+    body_target=Vector3(data.body_tilt,data.body_x,data.body_y)
+    body_follow=data.body_follow
+    gaze.set_target(data.gaze_x,data.gaze_y)
+    brows.set_side("screen_left",data.brow_screen_left)
+    brows.set_side("screen_right",data.brow_screen_right)
+    _set_expression(data.expression)
+    face.optional_effects.apply(data.effects)
+    external_controls=true
+    pose_notice="Recalled performance "+str(slot)
     return true
 
 func _run_pose_proof():
