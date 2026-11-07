@@ -19,6 +19,7 @@ uniform bool upper_lip=false;
 uniform float opening=0.0;
 uniform float smile=0.0;
 uniform float spread=0.0;
+uniform float purse=0.0;
 uniform float corner_lift=0.0;
 uniform vec2 joint_origin=vec2(565.0,634.0);
 uniform float angle=0.0;
@@ -34,15 +35,23 @@ void fragment(){
  float coverage=clamp(min(x-left+.75,right-x+.75),0.0,1.0)*min(width*2.0,1.0);
  if(!upper_lip){
   float o=opening*(1.0-smile);
+  if(purse>0.0){o*=1.0-purse;}
   float width=38.0-12.0*o;
   float hx=clamp(abs(source_x-39.5)/width,0.0,1.0);
   float curve=sqrt(max(0.0,1.0-pow(hx,4.0)));
   float local_seam=620.0+texture(seam_texture,vec2(source_x/80.0,.5)).r*63.75-634.0+1.0;
   vec2 edge_point=mat2(vec2(cos(angle),sin(angle)),vec2(-sin(angle),cos(angle)))*vec2(x,local_seam)+joint_origin;
   float current_width=mix(38.0-12.0*opening,35.5,smile)+20.0*spread;
+  if(purse>0.0){current_width-=14.0*purse;}
   float h=clamp(abs(edge_point.x-564.5)/current_width,0.0,1.0);
   float current_curve=mix(sqrt(max(0.0,1.0-pow(h,4.0))),pow(max(0.0,1.0-h*h),.72),smile);
   float current_seam=620.0+texture(seam_texture,vec2(clamp((spread==0.0 ? (edge_point.x-525.0) : (39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5)))/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5)-12.0*corner_lift*pow(clamp(abs((edge_point.x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
+  if(purse>0.0){
+   float r=clamp(abs((edge_point.x-564.5)/(35.5+20.0*spread-14.0*purse)),0.0,1.0);
+   float native_x=39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5-14.0*purse/35.5);
+   current_seam=620.0+texture(seam_texture,vec2(clamp(native_x/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5)-12.0*corner_lift*r*r*r+purse*(4.0+8.0*r*r);
+   current_curve=mix(current_curve,sqrt(max(0.0,1.0-h*h)),purse);
+  }
   float contact_gap=edge_point.y-(current_seam+56.0*opening*current_curve);
   float ellipse=pow((source_x-39.5)/(50.0-30.0*pow(o,1.6)),2.0)+pow((y-20.0)/(100.0-89.0*pow(o,1.6)),2.0);
   coverage*=(1.0-smoothstep(.82,1.0,ellipse))*(1.0-smoothstep(.25+.75*pow(1.0-smile,4.0),1.5+4.5*pow(1.0-smile,4.0),contact_gap));

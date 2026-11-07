@@ -1,10 +1,13 @@
 # Local external-process control, protocol 1
 
-This is a **real local TCP connection to the default viewer's single shared Godot
-rig**. The included Python client runs in another process and receives actual
-controller results. No AI model, Ryoko agent service, voice/TTS provider or
+This is an opt-in local TCP adapter for the default viewer's single shared Godot
+rig. The included Python client can run in another process and receive actual
+controller results where loopback binding is permitted. Fresh real socket
+transport remains unrun for this EXP-007 release; source/callable tests do not
+establish a live connection. No AI model, Ryoko agent service, voice/TTS provider or
 lip-sync service is connected. No credentials or persistent authorization are
-created. Only EXP-163 / Yawn is authored.
+created. Six performances are authored: EXP-163, EXP-005, EXP-001, EXP-006,
+EXP-107 and EXP-007. All six are user-approved; current release status is recorded in `RELEASE.json`.
 
 ## Run a reproducible demonstration
 
@@ -207,9 +210,9 @@ keyboard takeover, stale queued actions, live-clock playback and clean shutdown.
 Run the original rebuild and all Godot/Python suites in `README.md` as well.
 Generated logs, reports, captures and cache directories belong outside source.
 
-## Scoped welcome capability
+## Historical welcome capability
 
-The same opt-in loopback adapter now advertises `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. The exact registered IDs are EXP-163, EXP-005 and EXP-001. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.
+That scoped extension added `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. At that checkpoint the registered IDs were EXP-163, EXP-005 and EXP-001; the current six-ID registry is listed above. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.
 
 
 ## Scoped EXP-006 extension
@@ -219,3 +222,9 @@ The capability list includes finite normalized `mouth_corner_lift`, `mouth_lip_p
 ## Scoped EXP-107 extension
 
 The existing bridge advertises finite normalized `mouth_oral_lift` [0,1], default zero, and discovers EXP-107 as `confident-reassurance` or `reassure`. It calls the same shared rig. The 40-source-pixel oral-rise envelope and no-AI/no-TTS flags are explicit capabilities. No additional transport is introduced. This sandbox does not permit loopback binding, so fresh real-process socket tests are not claimed; run the included transport test where permitted.
+
+## Scoped EXP-007 rigid purse extension
+
+Capabilities include `mouth_purse` finite [0,1], default 0, and discover EXP-007 (`relieved-smile`, `relief`) through the same registry. The bridge is preparation only. No AI/TTS service is connected, and fresh socket transport remains unrun in this restricted sandbox; source and callable checks do not establish a live client connection.
+
+After performance/release, auto-blink remains off. A client may explicitly enable it only after verifying empty active expression, negative release_time, and neutral control coordinates if it intends to preserve neutral recovery. An early auto_blink write is manual takeover and cancels recovery. No automatic restoration is claimed.

@@ -25,6 +25,7 @@ var mouth_spread=0.0
 var mouth_corner_lift=0.0
 var mouth_lip_press=0.0
 var mouth_oral_lift=0.0
+var mouth_purse=0.0
 var pressed_lip_owners:Array=[]
 var blush_intensity=0.0
 var effect_owner="manual"
@@ -129,7 +130,7 @@ func snapshot()->Dictionary:
     for key in objects:
         var p=homes[key].node
         transforms[key]={"position":[p.position.x,p.position.y],"rotation":p.rotation,"scale":[p.scale.x,p.scale.y],"opacity":objects[key].modulate.a,"visible":objects[key].visible}
-    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_corner_lift":mouth_corner_lift,"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
+    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_corner_lift":mouth_corner_lift,"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"mouth_purse":mouth_purse,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
 
 func _build_oral_objects():
     oral_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/yawn_mouth/manifest.json"))
@@ -252,6 +253,23 @@ func _smile_lip_offset(x:float,upper:bool,corner:bool)->float:
 func _smile_lip_offset_for_spread(x:float,upper:bool,corner:bool,spread_value:float)->float:
     var radius=clampf(abs((x-39.5)/35.5),0.0,1.0)
     var lift=-4.0*spread_value-(4.0+5.0*spread_value)*smile_mouth*pow(radius,1.5)+_corner_curve(x)
+    # Purse is rigid contour articulation. Zero retains predecessor arithmetic.
+    if mouth_purse>0.0:lift+=mouth_purse*(4.0+8.0*radius*radius)
+    if upper:return lift
+    var curve=pow(maxf(0.0,1.0-radius*radius),.72)
+    var aperture_curve=lerpf(1.0,curve,smile_mouth)
+    if mouth_purse>0.0:
+        var signed_width=1.0+20.0*spread_value/35.5-14.0*mouth_purse/35.5
+        var cavity_width=lerpf(38.0-12.0*mouth_opening*MAX_MOUTH_APERTURE,35.5,smile_mouth)+20.0*spread_value-14.0*mouth_purse
+        var h=clampf(abs((x-39.5)*signed_width)/cavity_width,0.0,1.0)
+        aperture_curve=lerpf(aperture_curve,sqrt(maxf(0.0,1.0-h*h)),mouth_purse)
+    var gap=mouth_opening*MAX_MOUTH_APERTURE*54.0*aperture_curve
+    if mouth_purse>0.0:gap=maxf(0.0,gap-1.5*mouth_purse*minf(mouth_opening*4.0,1.0))
+    return lift+gap
+
+func _purse_zero_lip_offset(x:float,upper:bool)->float:
+    var radius=clampf(abs((x-39.5)/35.5),0.0,1.0)
+    var lift=-4.0*mouth_spread-(4.0+5.0*mouth_spread)*smile_mouth*pow(radius,1.5)+_corner_curve(x)
     if upper:return lift
     var curve=pow(maxf(0.0,1.0-radius*radius),.72)
     return lift+mouth_opening*MAX_MOUTH_APERTURE*54.0*lerpf(1.0,curve,smile_mouth)
@@ -266,7 +284,8 @@ func _corner_secant_offset(joint:Dictionary)->float:
 func _corner_secant_slope(joint:Dictionary)->float:
     return (_corner_curve(joint.right)-_corner_curve(joint.left))/(joint.right-joint.left)-(_corner_curve(joint.center+.5)-_corner_curve(joint.center-.5))
 
-func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:float=0.0,lip_press:float=0.0,oral_lift:float=0.0):
+func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:float=0.0,lip_press:float=0.0,oral_lift:float=0.0,purse:float=0.0):
+    mouth_purse=clampf(purse,0.0,1.0)
     mouth_oral_lift=clampf(oral_lift,0.0,1.0)
     mouth_lip_press=clampf(lip_press,0.0,1.0)
     mouth_corner_lift=clampf(corner_lift,0.0,1.0)
@@ -293,8 +312,9 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:fl
             node.material.set_shader_parameter("shape",shape)
     for node in neutral_residue_objects:node.material.set_shader_parameter("smile",smile_eyes.y)
     var baseline_lip_transforms={}
+    var purse_zero_transforms={}
     for joint in smile_lip_joints:
-        var key=joint.key;var home=homes[key];objects[key].visible=smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0
+        var key=joint.key;var home=homes[key];objects[key].visible=smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0 or mouth_purse>0.0
         objects[key].material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
         objects[key].material.set_shader_parameter("smile",smile_mouth)
         var baseline_offset=_smile_lip_offset_for_spread(joint.center,joint.upper,joint.corner,0.0)+_corner_secant_offset(joint)
@@ -303,13 +323,40 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:fl
         var offset=_smile_lip_offset(joint.center,joint.upper,joint.corner)+_corner_secant_offset(joint)
         home.node.position=home.pivot+Vector2(_spread_x(joint.center),offset)
         var slope=(_smile_lip_offset(joint.center+.5,joint.upper,joint.corner)-_smile_lip_offset(joint.center-.5,joint.upper,joint.corner))+_corner_secant_slope(joint)
-        home.node.rotation=atan(slope/(1.0+20.0*mouth_spread/35.5))
+        home.node.rotation=atan(slope/(1.0+20.0*mouth_spread/35.5-14.0*mouth_purse/35.5))
         objects[key].material.set_shader_parameter("spread",mouth_spread)
         objects[key].material.set_shader_parameter("corner_lift",mouth_corner_lift)
         objects[key].material.set_shader_parameter("offset_x",_spread_x(joint.center))
         objects[key].material.set_shader_parameter("joint_center",joint.center)
         objects[key].material.set_shader_parameter("offset_y",offset)
         objects[key].material.set_shader_parameter("angle",home.node.rotation)
+        var zero_offset=_purse_zero_lip_offset(joint.center,joint.upper)+_corner_secant_offset(joint)
+        var zero_slope=_purse_zero_lip_offset(joint.center+.5,joint.upper)-_purse_zero_lip_offset(joint.center-.5,joint.upper)+_corner_secant_slope(joint)
+        var zero_angle=atan(zero_slope/(1.0+20.0*mouth_spread/35.5))
+        var zero_origin=home.pivot+Vector2(20.0*mouth_spread*(joint.center-39.5)/35.5,zero_offset)
+        purse_zero_transforms[key]=Transform2D(zero_angle,zero_origin)*objects[key].transform
+    # Trim only newly created rigid-strip overlap. Baseline overlap remains exact.
+    for joint in smile_lip_joints:
+        var node=objects[joint.key];var actual=homes[joint.key].node.transform*node.transform
+        var baseline=purse_zero_transforms[joint.key]
+        for side in ["left","right"]:
+            var edge=joint.left if side=="left" else joint.right
+            var index=joint.index+(-1 if side=="left" else 1)
+            var top=Vector2(edge,0);var bottom=Vector2(edge,45)
+            var old_top=top;var old_bottom=bottom
+            for other in smile_lip_joints:
+                if other.upper!=joint.upper or other.index!=index:continue
+                var target=homes[other.key].node.transform*objects[other.key].transform
+                var old_target=purse_zero_transforms[other.key]
+                top=actual.affine_inverse()*(target*Vector2(edge,0))
+                bottom=actual.affine_inverse()*(target*Vector2(edge,45))
+                old_top=baseline.affine_inverse()*(old_target*Vector2(edge,0))
+                old_bottom=baseline.affine_inverse()*(old_target*Vector2(edge,45))
+                break
+            node.material.set_shader_parameter("neighbor_"+side+"_top",top)
+            node.material.set_shader_parameter("neighbor_"+side+"_bottom",bottom)
+            node.material.set_shader_parameter("baseline_"+side+"_top",old_top)
+            node.material.set_shader_parameter("baseline_"+side+"_bottom",old_bottom)
     for joint in smile_lip_joints:
         if not joint.upper:continue
         var lower_key=("mouth_corner_lower_" if joint.corner else "lower_lip_joint_")+str(joint.index)
@@ -340,7 +387,7 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:fl
         var left_bottom=inv*(homes[left_key].node.transform*(point+Vector2(0,31)-homes[left_key].pivot))
         var right_top=inv*(homes[right_key].node.transform*(point+Vector2(0,-14)-homes[right_key].pivot))
         var right_bottom=inv*(homes[right_key].node.transform*(point+Vector2(0,31)-homes[right_key].pivot))
-        node.visible=smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0
+        node.visible=smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0 or mouth_purse>0.0
         node.material.set_shader_parameter("spread",mouth_spread)
         node.material.set_shader_parameter("corner_lift",mouth_corner_lift)
         if spread_joint_extensions.has(key):
@@ -366,7 +413,7 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:fl
         extension.visible=mouth_spread>0.0
         for parameter in ["joint_origin","angle","left_top","left_bottom","right_top","right_bottom","opening","smile","spread","corner_lift"]:
             extension.material.set_shader_parameter(parameter,original.material.get_shader_parameter(parameter))
-    if smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0:
+    if smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0 or mouth_purse>0.0:
         oral_objects.upper_lip.visible=false;oral_objects.lower_lip.visible=false
     for key in oral_objects:
         oral_objects[key].material.set_shader_parameter("smile",smile_mouth)
@@ -418,10 +465,15 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:fl
         node.material.set_shader_parameter("spread",mouth_spread)
         node.material.set_shader_parameter("corner_lift",mouth_corner_lift)
         node.material.set_shader_parameter("lip_press",mouth_lip_press)
+    for node in objects.values():
+        if node.material and node.material.shader and node.material.shader.resource_path in ["res://object_mouth_clip.gdshader","res://smile_lip_segment.gdshader","res://smile_lip_join.gdshader","res://pressed_lip_clip.gdshader","res://spread_teeth_clip.gdshader"]:
+            node.material.set_shader_parameter("purse",mouth_purse)
 
 
 func _spread_x(source_x:float)->float:
-    return 20.0*mouth_spread*(source_x-39.5)/35.5
+    var offset=20.0*mouth_spread*(source_x-39.5)/35.5
+    if mouth_purse>0.0:offset-=14.0*mouth_purse*(source_x-39.5)/35.5
+    return offset
 
 func _build_spread_objects():
     for side in ["left","right","top"]:

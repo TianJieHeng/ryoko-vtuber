@@ -1,0 +1,256 @@
+{
+  "result": "PASS: corrected capture source and media are ready for final-package identity verification and user review. User approval/publication remain pending.",
+  "base_commit": "35a7ddc615e7501a9a814ca02d722ddb40f200c9",
+  "base_project_tree": "a2d6c440b73f0a241d73b7bb50c3028fa7ef385c",
+  "base_files": 418,
+  "capture_inventory_sha256": "ef79bb60c8be1cd4b3d2963a19c17b178087344ee6716c59acd5be68e59b8e5f",
+  "capture_source_manifest_sha256": "a43b27798df45d37459e3470b79232754484b731a3c94cf690b827c77a3ee797",
+  "capture_files": 440,
+  "unchanged_parent_pngs": 182,
+  "new_pngs": 0,
+  "unchanged_approved_profiles": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107"
+  ],
+  "new_profile_sha256": "ee13a8b4b819c5ecfd1e5f105565856ad10174a0a0ed69db4f0ddcb833821fdd",
+  "corrected_segment_shader_sha256": "78f9cf2a844be387f5abf9b2c71ab6d875a2beee491ea93f91b0eca33f4e13a4",
+  "provenance": {
+    "catalogue_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+    "sheet_sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+    "all_nine_original_panel_hashes_and_integer_crops_verified": true,
+    "assembly_O_U_images_role": "Verified original contour references only; never replacement anatomy sprites.",
+    "board_exact_reference_and_actual_crops_verified": true,
+    "board_sha256": "cca66af7d6604f69c0a546aa6237abee833703bd9fe029c2970189b6a15db9f5"
+  },
+  "source_and_runtime": {
+    "runtime_suites": 18,
+    "runtime_failures": 0,
+    "independent_geometry_cases": 2016,
+    "independent_geometry_checks": 3907011,
+    "independent_geometry_failures": 0,
+    "isolated_rebuild_checks": 11,
+    "packaged_files_changed_after_rebuild": 0,
+    "prior_runtime_records_byte_exact": 2377,
+    "prior_runtime_export_sha256": "66ce1b649bbbb583e67d00e909c13cfbca19c5105fee69dbf51229769f264462",
+    "actual_prior_pixel_cases": 769,
+    "all_prior_PNG_bytes_and_decoded_pixels_exact": true,
+    "purse_transport_callable_checks": 9530,
+    "real_socket_transport_executed": false
+  },
+  "rigid_owner_contract": {
+    "texture_pigment_UV_and_atlas_regions_fixed": true,
+    "anatomical_modulation_opaque": true,
+    "local_scales_unit": true,
+    "separate_upper_lower_corner_cavity_enamel_oral_owners": true,
+    "new_overlap_clip": "Continuous baseline-relative oriented normal distance; no horizontal-division singularity.",
+    "fixed_central_white_enamel_xy": [
+      533,
+      626
+    ],
+    "public_mouth_open": [
+      0,
+      1
+    ],
+    "physical_multiplier": 0.55,
+    "aperture_cap_source_pixels_per_column": 30.8,
+    "maximum_analytical_lip_separation": 29.7,
+    "production_cavity_shader_poses": 648,
+    "maximum_integrated_raster_aperture": 29.8000000417233,
+    "maximum_antialiased_nonzero_rows": 31,
+    "aperture_shader_sha256": "3f4cb7428de627cc84376b397bc1f13134b7fbe5bbc38c3b4cf2e6add9f75f4a",
+    "aperture_receipt_reused_because_shader_and_probe_are_exactly_unchanged": true
+  },
+  "visual_review": {
+    "expression": "Relieved smile",
+    "reference_order_preserved": true,
+    "authored_duration_seconds": 3.2,
+    "catalogue_proposed_duration_seconds": 1.9,
+    "interpretation": "New timing and rigid canonical contour approximation of a static nine-panel sheet, not recovered animation or identical painted anatomy.",
+    "frames_per_view": 264,
+    "fps": 30,
+    "movie_duration_seconds": 8.8,
+    "cycles": 2,
+    "fresh_render_runs_exact": true,
+    "cycle_pairs_exact": 126,
+    "neutral_frames_exact_per_run": 74,
+    "all_chronological_frames_inspected": true,
+    "corrected_frame_review_method": "220 unchanged native frames verified byte-for-byte against previously inspected frames; all 44 changed native frames inspected anew in chronological order.",
+    "purse_grid_actual_poses": 112,
+    "purse_epsilon_max_channel_delta": 1,
+    "boundary_distance_diagnostic_poses": 164,
+    "normal_speed_playback_performed": false,
+    "finding": "Rounded exhale is distinct before the wider smile. Eyes remain open and soften. No new lash doubling, face/hair overlays, lip gaps or abrupt authored transitions were observed.",
+    "pixel_change_bounds_native": [
+      414,
+      442,
+      712,
+      670
+    ]
+  },
+  "lifecycle": {
+    "result": "PASS",
+    "checks": 21,
+    "frames": 220,
+    "pixel_exact_C0_and_hold_pairs": [
+      [
+        "release/before",
+        "release/t0"
+      ],
+      [
+        "retrigger/before",
+        "retrigger/t0"
+      ],
+      [
+        "handover/before",
+        "handover/006_t0"
+      ],
+      [
+        "handover/006_t0.16",
+        "handover/007_t0"
+      ],
+      [
+        "handover/007_t0.300000",
+        "handover/release_t0"
+      ],
+      [
+        "eyes/laugh_before",
+        "eyes/relief_t0"
+      ],
+      [
+        "blink/active_before",
+        "blink/relief_t0"
+      ],
+      [
+        "manual/takeover",
+        "manual/hold"
+      ]
+    ],
+    "pixel_exact_neutral_returns": [
+      "release/t0.500000",
+      "retrigger/t3.233333",
+      "manual/reset",
+      "handover/release_t0.500000",
+      "boundary/3.2000000",
+      "eyes/completed",
+      "blink/completed",
+      "blink/released_idle"
+    ],
+    "epsilon_boundaries": [
+      {
+        "from": "boundary/0.0000000",
+        "to": "boundary/0.0000001",
+        "max_channel": 1,
+        "changed_pixels": 34
+      },
+      {
+        "from": "boundary/0.0000000",
+        "to": "boundary/0.0000010",
+        "max_channel": 1,
+        "changed_pixels": 34
+      },
+      {
+        "from": "boundary/0.2500000",
+        "to": "boundary/0.2500001",
+        "max_channel": 0,
+        "changed_pixels": 0
+      },
+      {
+        "from": "boundary/0.2500000",
+        "to": "boundary/0.2500010",
+        "max_channel": 1,
+        "changed_pixels": 1
+      },
+      {
+        "from": "boundary/0.9000000",
+        "to": "boundary/0.9000001",
+        "max_channel": 0,
+        "changed_pixels": 0
+      },
+      {
+        "from": "boundary/0.9000000",
+        "to": "boundary/0.9000010",
+        "max_channel": 0,
+        "changed_pixels": 0
+      },
+      {
+        "from": "boundary/1.2999990",
+        "to": "boundary/1.3000000",
+        "max_channel": 0,
+        "changed_pixels": 0
+      },
+      {
+        "from": "boundary/1.3000000",
+        "to": "boundary/1.3000010",
+        "max_channel": 0,
+        "changed_pixels": 0
+      }
+    ],
+    "auto_blink_restored_automatically": false,
+    "explicit_reenable_without_reset_after_completion_and_release": true,
+    "idle_guard_requires_empty_active_id_negative_release_time_neutral_controls": true,
+    "normal_speed_playback_performed": false,
+    "evidence_sha256": "63343b6b88bf43601a979778aecbaa700f490f16b26ae0b805fe702cba073a45",
+    "harness_sha256": "6ee8585ab61ea08a96f648f6393cad3a73b9d2d8c854b96e8a8cef44f397e1b8",
+    "visual_review": {
+      "all_220_chronological_frames_inspected": true,
+      "method": "173 frames are byte-identical to previously inspected lifecycle frames. All 47 changed or added frames were inspected anew in chronological contact sheets, including the extended incoming closed-eye family handoff through 0.4 seconds.",
+      "finding": "No new lash doubling, skin overlays, contour gaps or abrupt transitions were observed. Manual takeover and early blink enable intentionally change ownership; these are not automatic completion paths."
+    }
+  },
+  "media": [
+    {
+      "file": "ryoko_EXP-007_shared_relieved_smile.mp4",
+      "sha256": "043b2dbeb50e0ac97e087f6faa490ef2814665d4aa1f326911242133b65cfe34",
+      "decoded_frames": 264,
+      "expected_source_frames": 264,
+      "dimensions": [
+        568,
+        800
+      ],
+      "maximum_frame_mean_absolute_RGB_error": 1.3417209507042254,
+      "mean_absolute_RGB_error": 1.3366283627427444,
+      "maximum_pixel_channel_error": 67,
+      "interpretation": "All decoded frames match the correct chronological render/crop within expected H.264 color-subsampling error; not pixel-identical or normal-speed playback."
+    },
+    {
+      "file": "ryoko_EXP-007_face_detail.mp4",
+      "sha256": "d13430e24b95a96fe164eea6f4f32a86435f1bec3e965bee5f87c0a612fa6707",
+      "decoded_frames": 264,
+      "expected_source_frames": 264,
+      "dimensions": [
+        772,
+        740
+      ],
+      "maximum_frame_mean_absolute_RGB_error": 1.7374649908976334,
+      "mean_absolute_RGB_error": 1.7047420890037472,
+      "maximum_pixel_channel_error": 48,
+      "interpretation": "All decoded frames match the correct chronological render/crop within expected H.264 color-subsampling error; not pixel-identical or normal-speed playback."
+    }
+  ],
+  "auto_blink_limit": {
+    "automatic_restoration": false,
+    "reset_leaves_auto_blink_off": true,
+    "explicit_enable_after_completion_and_release_verified_without_reset": true,
+    "required_idle_conditions": [
+      "active_expression is empty",
+      "release_time is negative",
+      "controls equal the neutral pose"
+    ],
+    "enable_action": "apply_controls({\"auto_blink\":true}) or the manual checkbox",
+    "early_enable_effect": "Manual takeover cancels unfinished recovery.",
+    "future_preference_restoration_implemented": false
+  },
+  "scope_limits": [
+    "No new artwork, composite expression swap, anatomical opacity crossfade, mesh deformation or animated scale.",
+    "No wide-eye/EXP-003 import, body/head/hand acting, BOD-037 pairing, tracking or actual AI/TTS connection.",
+    "Real socket transport remains unrun; source/callable testing is not live integration.",
+    "Normal-speed audiovisual playback was not performed.",
+    "Finite raster edge differences remain at small nonzero manual controls; no universal artifact-free claim.",
+    "Existing faint fringe traces at nonzero manual hair sway are inherited; authored EXP-007 uses zero sway."
+  ],
+  "final_package_receipt": "Exact final source inventory and scoped delta reconstruction are verified separately after embedding this report.",
+  "publication_permitted": false
+}

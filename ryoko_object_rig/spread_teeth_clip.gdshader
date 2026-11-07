@@ -4,6 +4,7 @@ uniform vec2 rigid_offset=vec2(0.0);
 uniform float opening=0.0;
 uniform float smile=0.0;
 uniform float spread=0.0;
+uniform float purse=0.0;
 uniform float corner_lift=0.0;
 uniform bool lip=false;
 uniform bool left_side=false;
@@ -18,8 +19,10 @@ void fragment(){
  vec2 p=anchor+mat2(vec2(cos(angle),sin(angle)),vec2(-sin(angle),cos(angle)))*(raw-anchor)+rigid_offset;
  float d=56.0*opening;
  float seam=620.0+texture(seam_texture,vec2(clamp((39.5+(p.x-564.5)/(1.0+20.0*spread/35.5))/80.0,0.0,1.0),0.5)).r*63.75;
+ if(purse>0.0){seam=620.0+texture(seam_texture,vec2(clamp((39.5+(p.x-564.5)/(1.0+20.0*spread/35.5-14.0*purse/35.5))/80.0,0.0,1.0),0.5)).r*63.75;}
  float fraction=clamp((p.y-633.0)/56.0,0.0,1.0);
  float width=mix(38.0-12.0*opening,35.5,smile)+20.0*spread;
+ if(purse>0.0){width-=14.0*purse;}
  float half_width=width;
  float side=clamp((half_width-abs(p.x-564.5))/.7,0.0,1.0);
  if(lip){
@@ -55,6 +58,11 @@ void fragment(){
    float smile_curve=pow(max(0.0,1.0-horizontal*horizontal),.72);
    float lifted_seam=seam-4.0*spread-(4.0+5.0*spread)*smile*pow(horizontal,1.5)-12.0*corner_lift*pow(clamp(abs((p.x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
    curve=mix(curve,smile_curve,smile);
+   if(purse>0.0){
+    float r=clamp(abs((p.x-564.5)/(35.5+20.0*spread-14.0*purse)),0.0,1.0);
+    lifted_seam+=purse*(4.0+8.0*r*r);
+    curve=mix(curve,sqrt(max(0.0,1.0-horizontal*horizontal)),purse);
+   }
    float aperture=clamp(min(p.y-lifted_seam,lifted_seam+d*curve-p.y)/1.0,0.0,1.0);
    pixel.a*=aperture*side;
  }

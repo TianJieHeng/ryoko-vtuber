@@ -43,6 +43,15 @@
         "reassure"
       ],
       "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-007",
+      "path": "res://expressions/EXP-007.json",
+      "aliases": [
+        "relieved-smile",
+        "relief"
+      ],
+      "trigger_phase": "inward_tension"
     }
   ]
 }

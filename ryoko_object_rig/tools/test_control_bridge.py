@@ -139,15 +139,39 @@ class Suite:
         self.check(response["error"]["code"] == "stale_session", "discovery required before writes")
         w = self.connect()
         caps = w.request("capabilities")["result"]
-        self.check(caps["expressions"] == [{"id": "EXP-163", "title": "Yawn", "duration": 5.8, "aliases": ["yawn"]}, {"id": "EXP-005", "title": "Hearty laughter", "duration": 5.4, "aliases": ["hearty-laughter", "laugh"]}, {"id": "EXP-001", "title": "Bright welcome", "duration": 3.0, "aliases": ["bright_welcome"]}, {"id": "EXP-006", "title": "Suppressed giggle", "duration": 2.8, "aliases": ["suppressed-giggle", "giggle"]}, {"id": "EXP-107", "title": "Confident reassurance", "duration": 3.0, "aliases": ["confident-reassurance", "reassure"]}], "only authored shared performances exposed")
+        self.check(caps["expressions"] == [{"id": "EXP-163", "title": "Yawn", "duration": 5.8, "aliases": ["yawn"]}, {"id": "EXP-005", "title": "Hearty laughter", "duration": 5.4, "aliases": ["hearty-laughter", "laugh"]}, {"id": "EXP-001", "title": "Bright welcome", "duration": 3.0, "aliases": ["bright_welcome"]}, {"id": "EXP-006", "title": "Suppressed giggle", "duration": 2.8, "aliases": ["suppressed-giggle", "giggle"]}, {"id": "EXP-107", "title": "Confident reassurance", "duration": 3.0, "aliases": ["confident-reassurance", "reassure"]}, {"id": "EXP-007", "title": "Relieved smile", "duration": 3.2, "aliases": ["relieved-smile", "relief"]}], "only authored shared performances exposed")
         self.check(caps["physical_mouth_max"] == .55 and not caps["ai_model_connected"] and not caps["tts_connected"], "honest bounds and integration scope")
-        self.check(len(w.request("list_expressions")["result"]) == 5, "external enumeration")
-        for channel in ["mouth_smile", "mouth_spread", "mouth_corner_lift", "mouth_lip_press", "mouth_oral_lift", "blush_intensity", "eye_smile_R", "eye_smile_L"]:
+        self.check(len(w.request("list_expressions")["result"]) == 6, "external enumeration")
+        self.check(caps["lip_purse"] == {"control": "mouth_purse", "default": 0.0, "scope": "bounded shared control"}, "generic purse capability without expression or geometry claims")
+        for channel in ["mouth_smile", "mouth_spread", "mouth_corner_lift", "mouth_lip_press", "mouth_oral_lift", "mouth_purse", "blush_intensity", "eye_smile_R", "eye_smile_L"]:
             self.check(caps["controls"][channel] == [0.0, 1.0], "advertised bounded smile " + channel)
             self.check(w.request("apply_controls", {channel: .375})["ok"], "socket accepts smile " + channel)
             self.check(self.command()["snapshot"]["controls"][channel] == .375, "socket applies shared smile owner " + channel)
-            for invalid in [-.000001, 1.000001, True, "0"]:
+            for invalid in [-.000001, 1.000001, True, False, "0", None, {}, []]:
                 self.reject("apply_controls", {channel: invalid, "reset": True})
+        # The new shared coordinate survives handovers, releases and manual
+        # ownership through the same wire protocol, without a separate controller.
+        self.check(w.request("reset")["ok"], "reset before purse lifecycle")
+        self.check(w.request("get_state")["result"]["rig"]["controls"]["mouth_purse"] == 0.0, "wire purse defaults to zero")
+        self.check(w.request("apply_controls", {"mouth_purse": .8})["ok"], "wire manual purse")
+        before_purse = self.command()["snapshot"]
+        self.check(w.request("play_expression", {"expression_id": "relief"})["ok"], "wire relief alias")
+        self.check(self.command()["snapshot"]["displayed_controls"] == before_purse["displayed_controls"], "wire purse start is continuous")
+        self.command("advance", value=.1)
+        before_purse = self.command()["snapshot"]
+        self.check(w.request("release")["ok"], "wire releases purse")
+        self.check(self.command()["snapshot"]["displayed_controls"] == before_purse["displayed_controls"], "wire purse release is continuous")
+        self.command("advance", value=.45)
+        self.check(w.request("get_state")["result"]["rig"]["controls"]["mouth_purse"] == 0.0, "wire purse release reaches exact zero")
+        self.check(w.request("play_expression", {"expression_id": "relieved-smile"})["ok"], "wire alternate relief alias")
+        self.command("advance", value=.7)
+        self.check(w.request("apply_controls", {"mouth_purse": 1.0})["ok"], "wire manual purse interrupts performance")
+        purse_state = self.command()["snapshot"]
+        self.check(purse_state["active_expression"] == "" and purse_state["release_time"] < 0 and purse_state["owners"]["mouth"] == "manual", "wire purse gains manual ownership")
+        self.command("advance", value=.5)
+        self.check(self.command()["snapshot"]["controls"]["mouth_purse"] == 1.0, "wire purse does not resume stale performance")
+        self.check(w.request("reset")["ok"], "wire purse reset")
+        self.check(self.command()["snapshot"]["controls"]["mouth_purse"] == 0.0, "wire reset clears purse")
         self.check(w.request("play_expression", {"expression_id": "laugh"})["ok"], "socket triggers shared laughter alias")
         self.command("advance", value=1.30)
         self.check(self.command()["snapshot"]["controls"]["mouth_smile"] > .9, "socket laughter reaches articulated smile")
@@ -179,7 +203,7 @@ class Suite:
                 w.request("apply_controls", {"mouth_open": .42})
             elif mode == "neutral":
                 w.request("reset")
-            for controls in [{"mouth_open": True}, {"mouth_open": "0.3"}, {"mouth_open": -0.01}, {"mouth_open": 1.01}, {"hair_sway": .070001}, {"gaze_x": caps["controls"]["gaze_x"][1] + .001}, {"viseme": "A"}, {"mouth": "O"}, {"reset": True, "unknown": 1}, {"auto_blink": 1}, {"blink": False}, {"perform_expression": "EXP-007"}, {"mouth_open": .3, "mouth": "REST"}, {"release_performance": True, "blink": .3}, {"perform_expression": "EXP-163", "reset": True}]:
+            for controls in [{"mouth_open": True}, {"mouth_open": "0.3"}, {"mouth_open": -0.01}, {"mouth_open": 1.01}, {"mouth_purse": True}, {"mouth_purse": "0.3"}, {"mouth_purse": -.000001}, {"mouth_purse": 1.000001}, {"mouth_purse": .7, "blink": True}, {"hair_sway": .070001}, {"gaze_x": caps["controls"]["gaze_x"][1] + .001}, {"viseme": "A"}, {"mouth": "O"}, {"reset": True, "unknown": 1}, {"auto_blink": 1}, {"blink": False}, {"perform_expression": "EXP-003"}, {"mouth_open": .3, "mouth": "REST"}, {"release_performance": True, "blink": .3}, {"perform_expression": "EXP-163", "reset": True}]:
                 self.reject("apply_controls", controls)
             self.reject("play_expression", {"expression_id": "res://object_rig.gd"})
             self.reject("play_expression", {"expression_id": True}, "invalid_args")
