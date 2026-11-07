@@ -139,10 +139,10 @@ class Suite:
         self.check(response["error"]["code"] == "stale_session", "discovery required before writes")
         w = self.connect()
         caps = w.request("capabilities")["result"]
-        self.check(caps["expressions"] == [{"id": "EXP-163", "title": "Yawn", "duration": 5.8, "aliases": ["yawn"]}, {"id": "EXP-005", "title": "Hearty laughter", "duration": 5.4, "aliases": ["hearty-laughter", "laugh"]}], "only authored shared performances exposed")
+        self.check(caps["expressions"] == [{"id": "EXP-163", "title": "Yawn", "duration": 5.8, "aliases": ["yawn"]}, {"id": "EXP-005", "title": "Hearty laughter", "duration": 5.4, "aliases": ["hearty-laughter", "laugh"]}, {"id": "EXP-001", "title": "Bright welcome", "duration": 3.0, "aliases": ["bright_welcome"]}], "only authored shared performances exposed")
         self.check(caps["physical_mouth_max"] == .55 and not caps["ai_model_connected"] and not caps["tts_connected"], "honest bounds and integration scope")
-        self.check(len(w.request("list_expressions")["result"]) == 2, "external enumeration")
-        for channel in ["mouth_smile", "eye_smile_R", "eye_smile_L"]:
+        self.check(len(w.request("list_expressions")["result"]) == 3, "external enumeration")
+        for channel in ["mouth_smile", "mouth_spread", "eye_smile_R", "eye_smile_L"]:
             self.check(caps["controls"][channel] == [0.0, 1.0], "advertised bounded smile " + channel)
             self.check(w.request("apply_controls", {channel: .375})["ok"], "socket accepts smile " + channel)
             self.check(self.command()["snapshot"]["controls"][channel] == .375, "socket applies shared smile owner " + channel)
@@ -179,7 +179,7 @@ class Suite:
                 w.request("apply_controls", {"mouth_open": .42})
             elif mode == "neutral":
                 w.request("reset")
-            for controls in [{"mouth_open": True}, {"mouth_open": "0.3"}, {"mouth_open": -0.01}, {"mouth_open": 1.01}, {"hair_sway": .070001}, {"gaze_x": caps["controls"]["gaze_x"][1] + .001}, {"viseme": "A"}, {"mouth": "O"}, {"reset": True, "unknown": 1}, {"auto_blink": 1}, {"blink": False}, {"perform_expression": "EXP-001"}, {"mouth_open": .3, "mouth": "REST"}, {"release_performance": True, "blink": .3}, {"perform_expression": "EXP-163", "reset": True}]:
+            for controls in [{"mouth_open": True}, {"mouth_open": "0.3"}, {"mouth_open": -0.01}, {"mouth_open": 1.01}, {"hair_sway": .070001}, {"gaze_x": caps["controls"]["gaze_x"][1] + .001}, {"viseme": "A"}, {"mouth": "O"}, {"reset": True, "unknown": 1}, {"auto_blink": 1}, {"blink": False}, {"perform_expression": "EXP-006"}, {"mouth_open": .3, "mouth": "REST"}, {"release_performance": True, "blink": .3}, {"perform_expression": "EXP-163", "reset": True}]:
                 self.reject("apply_controls", controls)
             self.reject("play_expression", {"expression_id": "res://object_rig.gd"})
             self.reject("play_expression", {"expression_id": True}, "invalid_args")

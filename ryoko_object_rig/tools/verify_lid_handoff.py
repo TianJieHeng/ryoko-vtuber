@@ -4,6 +4,7 @@ Actual Godot dense trajectories and full-frame movie review remain required.
 """
 from pathlib import Path
 import hashlib,json
+from welcome_source_guard import scoped_matches
 import numpy as np
 from scipy.ndimage import map_coordinates
 from PIL import Image
@@ -37,8 +38,8 @@ for group in ['unchanged_pngs','unchanged_runtime']:
  for name,h in base[group].items():
   actual=hashlib.sha256((R/name).read_bytes()).hexdigest()
   if group=='unchanged_runtime' and name in migration:
-   check(h==migration[name]['ordinary_lid_baseline_sha256'] and actual==migration[name]['combined_smile_sha256'],name+' explicit shared smile migration')
-  else:check(actual==h,name)
+   check(h==migration[name]['ordinary_lid_baseline_sha256'] and (actual==migration[name]['combined_smile_sha256'] or scoped_matches(name,migration[name]['combined_smile_sha256'])),name+' explicit shared smile migration')
+  else:check(actual==h or (group=='unchanged_runtime' and scoped_matches(name,h)),name)
 shader=(R/'canonical_eye_alpha.gdshader').read_text()
 check(shader.count('lash_handoff_seam(p,c)')==2,'Both lash owners must call the same spatial seam')
 check('float threshold=lash_handoff_seam(p,c)-36.0*c;' in shader,'Moving-lash local coordinate conversion')

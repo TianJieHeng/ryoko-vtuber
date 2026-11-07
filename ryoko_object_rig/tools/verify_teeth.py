@@ -2,6 +2,7 @@
 """Focused reference-cap, tooth-white and unchanged-art regression checks."""
 from pathlib import Path
 import hashlib,json,re
+from welcome_source_guard import scoped_matches
 from PIL import Image
 import numpy as np
 R=Path(__file__).resolve().parents[1]
@@ -21,12 +22,12 @@ for name,expected in identity['unchanged_files'].items():
  if name in shared_migration['files']:
   migration=shared_migration['files'][name]
   assert expected==migration['historical_sha256'],name
-  assert hashlib.sha256((R/name).read_bytes()).hexdigest()==migration['shared_candidate_sha256'],name
+  assert hashlib.sha256((R/name).read_bytes()).hexdigest()==migration['shared_candidate_sha256'] or scoped_matches(name,migration['shared_candidate_sha256']),name
   shared_migrations.append(name);checks+=2;continue
  if name in gaze_migration['files']:
   migration=gaze_migration['files'][name]
   assert expected==migration['historical_sha256'],name
-  assert hashlib.sha256((R/name).read_bytes()).hexdigest()==migration['gaze_candidate_sha256'],name
+  assert hashlib.sha256((R/name).read_bytes()).hexdigest()==migration['gaze_candidate_sha256'] or scoped_matches(name,migration['gaze_candidate_sha256']),name
   gaze_migrations.append(name);checks+=2;continue
  assert hashlib.sha256((R/name).read_bytes()).hexdigest()==expected,name;checks+=1
 # Protect the actual continuous oral implementation, not just a cap label.

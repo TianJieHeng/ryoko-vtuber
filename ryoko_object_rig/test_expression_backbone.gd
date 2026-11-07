@@ -12,7 +12,7 @@ func catalogue()->Dictionary:
     return JSON.parse_string(FileAccess.get_file_as_string("res://expressions/registry.json"))
 func definition()->Dictionary:
     return JSON.parse_string(FileAccess.get_file_as_string("res://yawn_performance.json"))
-func definitions(d:Dictionary)->Dictionary:return {"res://yawn_performance.json":d,"res://expressions/EXP-005.json":JSON.parse_string(FileAccess.get_file_as_string("res://expressions/EXP-005.json"))}
+func definitions(d:Dictionary)->Dictionary:return {"res://yawn_performance.json":d,"res://expressions/EXP-005.json":JSON.parse_string(FileAccess.get_file_as_string("res://expressions/EXP-005.json")),"res://expressions/EXP-001.json":JSON.parse_string(FileAccess.get_file_as_string("res://expressions/EXP-001.json"))}
 func state()->Dictionary:
     var s=rig.get_state();s.erase("last_error")
     s.snapshot=rig.face.snapshot();s.restart=rig.restart_pose.duplicate(true);s.release=rig.release_pose.duplicate(true);s.elapsed=rig.elapsed;s.current=rig.current_pose.duplicate(true);s.performance=rig.performance.duplicate(true)
@@ -23,7 +23,7 @@ func reject_catalogue(r,cat,defs,label:String):
     check(r.list_expressions()==old and r.definition("EXP-163")==old_definition,"registry rejection atomic "+label)
 func run():
     var r=Registry.new();check(r.load_file(),"registry loads")
-    check(r.list_expressions().size()==2,"only authored expression registered")
+    check(r.list_expressions().size()==3,"only authored expression registered")
     check(r.resolve("yawn")=="EXP-163" and r.resolve("EXP-163")=="EXP-163","ID and alias resolve")
     check(r.resolve("EXP-006")=="" and r.definition("unknown").is_empty(),"unimplemented IDs unavailable")
     var d=r.definition("yawn");d.keyframes[1].values.mouth_open=999
@@ -159,7 +159,7 @@ func run():
             check(pose[channel]>=Registry.CHANNEL_BOUNDS[channel][0] and pose[channel]<=Registry.CHANNEL_BOUNDS[channel][1],"dense sample bounds")
     var viewer=load("res://expression_viewer.tscn").instantiate();root.add_child(viewer);viewer.rig.set_process(false);viewer.set_process(false)
     check(viewer.sliders.has("gaze_x")==Limits.GAZE_ENABLED and viewer.sliders.has("gaze_y")==Limits.GAZE_ENABLED,"gaze slider availability matches contract")
-    check(viewer.list_expressions().size()==2,"viewer uses registry")
+    check(viewer.list_expressions().size()==3,"viewer uses registry")
     var count=0
     for node in viewer.get_children():
         if node.get_script()==load("res://expression_rig.gd"):count+=1

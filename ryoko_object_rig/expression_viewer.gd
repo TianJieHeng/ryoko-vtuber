@@ -40,7 +40,7 @@ func _ready():
     add_button(buttons,"Reset [0]",func():apply_controls({"reset":true}))
     state_label=Label.new();panel.add_child(state_label)
     var note=Label.new();note.text="Manual controls take ownership immediately.\nOnly the registered performances are implemented.";panel.add_child(note)
-    for item in [["mouth_open","Mouth opening",0.0,1.0],["mouth_smile","Smile corners",0.0,1.0],["eye_smile_R","Screen-left smile eye",0.0,1.0],["eye_smile_L","Screen-right smile eye",0.0,1.0],["blink_R","Screen-left eyelid",0.0,1.0],["blink_L","Screen-right eyelid",0.0,1.0],["brow_screen_left","Screen-left brow",-1.0,1.0],["brow_screen_right","Screen-right brow",-1.0,1.0],["brow_tilt_screen_left","Screen-left brow tilt",-1.0,1.0],["brow_tilt_screen_right","Screen-right brow tilt",-1.0,1.0],["hair_sway","Hair sway",-0.07,0.07]]:
+    for item in [["mouth_open","Mouth opening",0.0,1.0],["mouth_smile","Smile corners",0.0,1.0],["mouth_spread","Lateral smile spread",0.0,1.0],["eye_smile_R","Screen-left smile eye",0.0,1.0],["eye_smile_L","Screen-right smile eye",0.0,1.0],["blink_R","Screen-left eyelid",0.0,1.0],["blink_L","Screen-right eyelid",0.0,1.0],["brow_screen_left","Screen-left brow",-1.0,1.0],["brow_screen_right","Screen-right brow",-1.0,1.0],["brow_tilt_screen_left","Screen-left brow tilt",-1.0,1.0],["brow_tilt_screen_right","Screen-right brow tilt",-1.0,1.0],["hair_sway","Hair sway",-0.07,0.07]]:
         add_slider(panel,item)
     if Limits.GAZE_ENABLED:
         add_slider(panel,["gaze_x","Gaze horizontal",Limits.GAZE_MIN,Limits.GAZE_MAX])

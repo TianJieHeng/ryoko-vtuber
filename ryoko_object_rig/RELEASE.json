@@ -1,79 +1,49 @@
 {
-  "candidate": "EXP-005 hearty laughter on the single shared expression rig",
-  "status": "local completed-performance review candidate",
+  "candidate": "Scoped EXP-001 bright welcome on the existing shared rig",
+  "status": "User-approved performance; scoped source and actual-render gates passed with disclosed limits",
   "authored_registry": [
     "EXP-163",
-    "EXP-005"
+    "EXP-005",
+    "EXP-001"
   ],
-  "historical_reference_ids": 93,
-  "runtime_art_checkpoint": "d4a84324a30c0f0730c93dc49fc080b109f189aa",
-  "ordinary_lid_shader_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
-  "publication": "No remote publication, CI or new user visual approval is asserted.",
-  "user_approval": {
-    "prior_artwork": "EXP-163 white-teeth reference-bounded yawn",
-    "new_artwork": "Smiling-eye/lip support and EXP-005 await user visual review. Gaze and ordinary-lid correction retain their separate pending approval boundary."
+  "baseline_archive_sha256": "4882931a321d9b82bf96a7b786872b8225b78a3ca045494b55ef9f8039e7db18",
+  "reviewed_welcome_archive_sha256": "eb1ee48de0ec78ec2c298b21b4641b8ede6bd38b3dd681208b40847ef141a3a9",
+  "protected_original_pngs": 157,
+  "new_lateral_pngs": 17,
+  "excluded": [
+    "wide-eye support",
+    "EXP-003",
+    "EXP-006",
+    "EXP-007",
+    "closed-smile pressing",
+    "oral lift"
+  ],
+  "approved_movie": {
+    "filename": "ryoko_EXP-001_bright_welcome.mp4",
+    "sha256": "c8f049b6e18773dcfeb9c669f9cd668e40f89b8e33fb22d76a52818dc82bae89",
+    "frames": 300,
+    "fps": 30,
+    "duration_seconds": 10,
+    "normal_speed_playback_performed": false
   },
-  "mouth_limit": {
-    "normalized_max": 1.0,
-    "physical_max": 0.55,
-    "per_column_source_px_limit": 30.8,
-    "independent_actual_render_per_column_max_source_px": 30.75,
-    "peak_overall_cavity_bbox_height_source_px": 33.625,
-    "bbox_note": "Raised corners make whole bbox taller than per-column opening. Do not conflate these metrics.",
-    "upper_teeth_xy": [
+  "mouth_limits": {
+    "normalized": [
+      0,
+      1
+    ],
+    "physical_multiplier": 0.55,
+    "per_column_source_px_max": 30.8,
+    "welcome_open": 0.8,
+    "welcome_aperture_px": 24.64,
+    "fixed_central_upper_teeth_xy": [
       533,
       626
     ]
   },
-  "teeth": {
-    "upper_xy": [
-      533,
-      626
-    ],
-    "upper_and_lower_white_pngs": "unchanged",
-    "alpha_size_placement": "unchanged"
-  },
-  "local_control_bridge": {
-    "transport": "Opt-in 127.0.0.1 TCP JSON lines",
-    "controller": "Existing single expression_rig instance",
-    "ai_model_connected": false,
-    "tts_connected": false,
-    "checks": 367
-  },
-  "video": {
-    "filename": "ryoko_EXP-005_shared_hearty_laughter.mp4",
-    "sha256": "09a556c529f3dd9facdf9550fbf41af2b953b5092f206f4d12fac3d5af403fa7",
-    "bytes": 1211824,
-    "width": 1136,
-    "height": 1454,
-    "fps": 30,
-    "frames": 720,
-    "duration_seconds": 24,
-    "audio": false,
-    "complete_laugh_cycles": 2,
-    "additional_chapters": "Release, retrigger, yawn\u2194laugh handover, manual takeover and neutral reset.",
-    "capture": "Actual Godot 4.6.3 OpenGL deterministic 30 Hz frames, local H.264 encoding.",
-    "full_decode_errors": 0,
-    "normal_speed_playback_performed": false,
-    "storage": "Separate local review artifact, not in source package."
-  },
-  "face_detail_video": {
-    "filename": "ryoko_EXP-005_face_detail.mp4",
-    "sha256": "b19aec45e88399663f546ae1f40f3b4b2323606819c2a2e957a259417e3b6e91",
-    "bytes": 1167252,
-    "derived_from": "same main capture; crop source viewport x375,y470,width386,height370 then2x scale"
-  },
-  "validation": "SMILE_VALIDATION.md and validation/laughter_final_review.json",
-  "packaging": {
-    "source_inventory": "SOURCE_FILES.sha256",
-    "baseline": "Corrected 255-file gaze source including ordinary-lid correction F",
-    "generated_intermediates": "Recreated by tools/build_object_face.py; intentionally untracked.",
-    "source_png_growth": {
-      "new_paths": 31,
-      "unique_sequences": 25,
-      "unique_bytes": 1059851
-    },
-    "movies_diagnostics_caches": "Excluded"
-  },
-  "independent_review": "PASS for local user-review candidate; no structural defect found in inspected complete sequence."
+  "verification": "WELCOME_SCOPE_VALIDATION.md",
+  "publication": "Not yet published. No CI, paid resources, remote execution, or AI/TTS connection.",
+  "verified_predecessor_commit": "6a61452e29ffbfcd4f7c5afe9b728b367f145f3e",
+  "independent_review": "validation/welcome_independent_review.json",
+  "runtime_art_tree_sha256": "0fd51b64768c48584ae1aaf97fa0f243ecf3484958d9fa867d7a62a939950d7a",
+  "historical_profile_status_note": "The exact approved EXP-001 JSON is preserved byte-for-byte, including its historical internal-candidate status text. This release receipt records the subsequent approval and scoped verification."
 }

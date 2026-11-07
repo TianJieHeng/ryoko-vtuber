@@ -13,6 +13,7 @@ func run():
     var expected_objects=rig.face.manifest.objects.size()-5+1+rig.face.oral_objects.size()
     check(rig.apply_controls({"reset":true}),"reset")
     expected_objects+=rig.face.smile_lip_joints.size()+rig.face.smile_eye_joints.size()+rig.face.smile_lip_continuations.size()+rig.face.smile_manifest.residue_objects.size()
+    expected_objects+=rig.face.spread_cavity.size()+rig.face.spread_teeth.size()+rig.face.spread_joint_extensions.size()+2
     check(rig.face.objects.size()==expected_objects,"manifest-declared independently owned sprites including dormant oral nodes")
     var iris=rig.face.objects.iris_screen_left.texture
     var backing=rig.face.objects.stationary_backing.texture

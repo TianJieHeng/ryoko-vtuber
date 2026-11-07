@@ -202,5 +202,21 @@
       "EXP-005"
     ],
     "reference_catalogue_ids": 93
+  },
+  "scoped_bright_welcome": {
+    "baseline_archive_sha256": "4882931a321d9b82bf96a7b786872b8225b78a3ca045494b55ef9f8039e7db18",
+    "selected_source_archive_sha256": "eb1ee48de0ec78ec2c298b21b4641b8ede6bd38b3dd681208b40847ef141a3a9",
+    "runtime_registry": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001"
+    ],
+    "original_pngs_unchanged": 157,
+    "selected_lateral_pngs_unchanged": 17,
+    "central_white_teeth_unchanged": true,
+    "lateral_source_and_inference_manifest": "rig_assets/spread_support/manifest.json",
+    "scope": "Only approved EXP-001 lateral support; baseline eye runtime and assets preserved exactly. No wide-eye or held profiles.",
+    "publication": "Scoped source and actual-render gates passed; publication requires a separately verified remote commit",
+    "independent_review": "validation/welcome_independent_review.json"
   }
 }

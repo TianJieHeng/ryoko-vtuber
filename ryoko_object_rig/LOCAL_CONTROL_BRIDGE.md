@@ -206,3 +206,7 @@ idle timeouts, competing clients, reconnect/session fencing, real slider/button/
 keyboard takeover, stale queued actions, live-clock playback and clean shutdown.
 Run the original rebuild and all Godot/Python suites in `README.md` as well.
 Generated logs, reports, captures and cache directories belong outside source.
+
+## Scoped welcome capability
+
+The same opt-in loopback adapter now advertises `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. The exact registered IDs are EXP-163, EXP-005 and EXP-001. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.

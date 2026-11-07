@@ -270,7 +270,7 @@ func capabilities() -> Dictionary:
     return {"name": "ryoko-shared-rig-control", "protocol": PROTOCOL,
         "transport": "tcp-json-lines-loopback", "verbs": READ_VERBS + WRITE_VERBS,
         "expressions": rig.list_expressions(), "bridge": status(),
-        "controls": {"mouth_open": [0.0, 1.0], "mouth_smile": [0.0, 1.0], "eye_smile_R": [0.0, 1.0], "eye_smile_L": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
+        "controls": {"mouth_open": [0.0, 1.0], "mouth_smile": [0.0, 1.0], "mouth_spread": [0.0, 1.0], "eye_smile_R": [0.0, 1.0], "eye_smile_L": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
             "brow_raise": [-1.0, 1.0], "brow_screen_left": [-1.0, 1.0], "brow_screen_right": [-1.0, 1.0],
             "brow_tilt_screen_left": [-1.0, 1.0], "brow_tilt_screen_right": [-1.0, 1.0],
             "hair_sway": [-0.07, 0.07], "gaze_x": [Limits.GAZE_MIN, Limits.GAZE_MAX], "gaze_y": [Limits.GAZE_MIN, Limits.GAZE_MAX],
@@ -281,7 +281,7 @@ func capabilities() -> Dictionary:
             "requests_per_second": RATE_PER_SECOND, "burst_requests": RATE_BURST,
             "json_depth": StrictJSON.MAX_DEPTH, "json_values": StrictJSON.MAX_TOKENS,
             "clients": 1, "idle_timeout_ms": IDLE_TIMEOUT_MS, "partial_timeout_ms": PARTIAL_TIMEOUT_MS},
-        "gaze": Limits.gaze_capabilities(), "physical_mouth_max": 0.55, "ai_model_connected": false, "tts_connected": false}
+        "gaze": Limits.gaze_capabilities(), "physical_mouth_max": 0.55, "lateral_mouth": {"effective": "mouth_spread * mouth_smile", "maximum_half_width_increment_source_px": 20.0, "maximum_additional_corner_lift_source_px": 5.0, "maximum_center_lift_source_px": 4.0}, "ai_model_connected": false, "tts_connected": false}
 
 func acknowledge(id: int, result: Variant):
     enqueue({"protocol": PROTOCOL, "id": id, "session": session, "ok": true, "result": result})

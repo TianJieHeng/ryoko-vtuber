@@ -17,6 +17,14 @@
         "laugh"
       ],
       "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-001",
+      "path": "res://expressions/EXP-001.json",
+      "aliases": [
+        "bright_welcome"
+      ],
+      "trigger_phase": "recognition"
     }
   ]
 }

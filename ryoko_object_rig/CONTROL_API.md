@@ -4,7 +4,7 @@ Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewe
 
 ## Calls
 
-- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn and EXP-005 / Hearty laughter are authored. Other historical catalogue IDs are references, not playable placeholders.
+- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter and EXP-001 / Bright welcome are authored. Other historical catalogue IDs are references, not playable placeholders.
 - `apply_controls(dictionary) -> bool` validates the entire transaction before changing controls, clock or ownership. Failure returns false and sets `last_error`; no partial pose/state mutation occurs.
 - `play_expression(id)`, `release()` and `reset()` wrap their corresponding control transactions.
 - `advance(delta) -> bool` advances deterministically. Delta must be finite and nonnegative. The engine calls it from `_process`; an external deterministic driver must disable automatic processing to avoid advancing twice.
@@ -37,13 +37,14 @@ These fixes do not change the approved ordinary yawn timeline or rendered two-cy
 ## Supported manual fields
 
 - `mouth_open`: normalized [0,1], mapped to physical aperture [0,0.55]. Maximum opening in any vertical source-pixel column is 30.8; maximum central lower-lip translation 29.7. Raised smile corners can make the whole aperture bounding box taller than 30.8; that box is not the physical opening metric. Cannot be combined with `mouth` or `viseme` in one transaction.
+- `mouth_spread`: [0,1], lateral rigid-mouth support; effective amount is `mouth_spread * mouth_smile`. See the lateral-mouth section below.
 - `mouth_smile`: [0,1], rigid upper/lower lip and corner articulation. Distinct inferred joint owners supply missing contour material; this is not a painted-mouth swap.
 - `eye_smile_R`, `eye_smile_L`: [0,1], anatomical R is screen-left. The first half closes the ordinary lids; the second half articulates a fully closed contour into the real historical smiling crescent owners. Independent `blink` supplies a closure floor, so combinations do not reveal an iris through the closed-contour handover.
 - `blink`, `blink_L`, `blink_R`: [0,1]. L is anatomical left / screen right. `blink` sets both, then supplied individual fields override their respective eye.
 - `brow_raise`, `brow_screen_left`, `brow_screen_right`: [-1,1], rigid translation up to 10 source pixels. `brow_raise` sets both before individual fields.
 - `brow_tilt_screen_left`, `brow_tilt_screen_right`: [-1,1], rigid rotation up to 8 degrees.
 - `hair_sway`: [-0.07,+0.07]. Out-of-range values reject the complete transaction.
-- `gaze_x`, `gaze_y`: shared `control_limits.gd` contract. Normalized [-1,1] maps to bounded source-pixel travel: left/right 4 px, up 2 px, down 1 px. Positive x is screen-right; positive y is down. Both eyes use the same rigid displacement. Unsupported and nonfinite values are rejected before any control/ownership mutation. These are normalized inputs, not pixel coordinates. Local candidate enablement follows coverage and visual QA; user approval is still required before publication.
+- `gaze_x`, `gaze_y`: shared `control_limits.gd` contract. Normalized [-1,1] maps to bounded source-pixel travel: left/right 4 px, up 2 px, down 1 px. Positive x is screen-right; positive y is down. Both eyes use the same rigid displacement. Unsupported and nonfinite values are rejected before any control/ownership mutation. These are normalized inputs, not pixel coordinates. This scoped release preserves the approved predecessor gaze runtime and artwork exactly.
 - `auto_blink`: boolean, manual-mode closure floor.
 - `mouth` / `viseme`: only REST, RELEASE or NEUTRAL, case-insensitive, restore continuous neutral. A/E/I/O/U are unsupported and rejected atomically.
 
@@ -55,10 +56,14 @@ All numeric values must be actual finite numbers, not booleans or numeric string
 
 Each definition contains matching `id`, nonempty `title`, positive finite `duration`, and at least two `keyframes`. A keyframe contains only finite `time`, nonempty `phase` and `values`. Times strictly increase from exactly 0 through exactly duration; first/last poses must be neutral. Missing channels mean zero. Adjacent poses use cubic smoothstep interpolation, preserving the approved sampler.
 
-Allowed timeline channels are `blink_R`, `blink_L`, `brow_screen_left`, `brow_screen_right`, `brow_tilt_screen_left`, `brow_tilt_screen_right`, `gaze_x`, `gaze_y`, `hair_sway`, `mouth_open`, `mouth_smile`, `eye_smile_R` and `eye_smile_L`, with the same bounds above. The only optional definition metadata keys are `status`, `intent`, `source_catalogue_sha256`, `timing_origin`, `scope` and `interpolation`, all strings. The historical `interpolation` field is descriptive metadata, not executable logic or a mode selector.
+Allowed timeline channels are `blink_R`, `blink_L`, `brow_screen_left`, `brow_screen_right`, `brow_tilt_screen_left`, `brow_tilt_screen_right`, `gaze_x`, `gaze_y`, `hair_sway`, `mouth_open`, `mouth_smile`, `mouth_spread`, `eye_smile_R` and `eye_smile_L`, with the same bounds above. The only optional definition metadata keys are `status`, `intent`, `source_catalogue_sha256`, `timing_origin`, `scope` and `interpolation`, all strings. The historical `interpolation` field is descriptive metadata, not executable logic or a mode selector.
 
-Catalogue loads validate all entries before replacement. Failure preserves the previous catalogue. Returned definitions and listings are deep copies. Only actual authored performances belong in the runtime registry. This local EXP-005 candidate awaits user review before publication; test-only fixtures and the other historical IDs do not constitute authored expressions.
+Catalogue loads validate all entries before replacement. Failure preserves the previous catalogue. Returned definitions and listings are deep copies. Only actual authored performances belong in the runtime registry. The three registered performances are user-approved; test-only fixtures and the other historical IDs do not constitute authored expressions.
 
 ## Compatibility and review
 
 `yawn_rig.gd` delegates all logic to the generic controller and retains only `sample_yawn(time)`, the historical `DURATION` constant, labels and the Y shortcut for existing tools. `yawn_stage` remains a separate synchronized review scene. The default `expression_viewer` contains one rig and uses the same API. All legacy static expression commands remain unsupported; there are not 93 implemented registry entries.
+
+## Lateral mouth support
+
+`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. Only EXP-163, EXP-005 and EXP-001 are registered. Wide-eye, lip-press and oral-lift controls are not included.

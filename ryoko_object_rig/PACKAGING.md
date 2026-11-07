@@ -1,8 +1,8 @@
 # Clean shared-expression review package
 
-This is the same assembled character, shared registry, controller, viewer and opt-in loopback bridge. It contains two authored performances: EXP-163 yawn and the new EXP-005 hearty-laughter review candidate. The other 91 historical catalogue IDs remain references. No new expression-specific application or controller is introduced.
+This is the same assembled character, shared registry, controller, viewer and opt-in loopback bridge. It contains three authored performances: EXP-163 yawn, EXP-005 hearty laughter and EXP-001 bright welcome. The other 90 historical catalogue IDs remain references. No new expression-specific application or controller is introduced.
 
-Runtime and artwork were frozen at local checkpoint d4a84324a30c0f0730c93dc49fc080b109f189aa. Later commits contain tests, provenance and review packaging. The complete 255-file corrected gaze baseline is preserved. Ordinary-lid correction F is integrated explicitly; see SOURCE_PROVENANCE.json and validation/smile_runtime_migration.json. Neither laughter nor the gaze/ordinary-lid candidates are described as user-approved or published.
+The historical laughter runtime and artwork were frozen at local checkpoint d4a84324a30c0f0730c93dc49fc080b109f189aa. Later commits contain tests, provenance and review packaging. The complete 255-file corrected gaze baseline is preserved. Ordinary-lid correction F is integrated explicitly; see SOURCE_PROVENANCE.json and validation/smile_runtime_migration.json. Those historical review receipts retain their original wording. The exact approved laughter predecessor is now published at `6a61452e29ffbfcd4f7c5afe9b728b367f145f3e`; current scoped welcome validation is documented separately.
 
 ## Source versus generated evidence
 
@@ -42,6 +42,10 @@ Godot needs writable HOME and XDG cache/data/config locations in a sandbox. The 
 
 ## Review artifacts and publication boundary
 
-The 24-second actual-Godot review movie and its face crop are delivered separately, not in the repository. RELEASE.json records their verified identities. SMILE_VALIDATION.md and validation/laughter_final_review.json distinguish completed checks, material inferred artwork, intentional ordinary-lid changes and finite raster limitations. No normal-speed audiovisual playback is claimed.
+The 24-second actual-Godot review movie and its face crop are delivered separately, not in the repository. `source_references/laughter_predecessor_RELEASE.json` records their verified identities; current `RELEASE.json` records the welcome source. SMILE_VALIDATION.md and validation/laughter_final_review.json distinguish completed checks, material inferred artwork, intentional ordinary-lid changes and finite raster limitations. No normal-speed audiovisual playback is claimed.
 
 This package is local. A local commit, successful test or source archive is not evidence of remote publication or user approval. Existing unrelated repository paths must remain untouched when applying the overlay. No CI, paid service, external model/TTS connection, remote execution or Git LFS migration was performed. Any future genuinely large asset should follow the repository's authorized LFS workflow.
+
+## Scoped EXP-001 overlay
+
+The current package retains every approved laughter predecessor path and adds only EXP-001 with its required lateral-mouth support. The 17 new PNGs preserve their exact reviewed source bytes. No wide-eye assets, held expression definitions, diagnostic frames or movies are included. `WELCOME_SCOPE_VALIDATION.md` records current scope and newly executed checks, including exact rendering against the approved welcome source.

@@ -28,6 +28,8 @@ func _ready():
     hud=Label.new();hud.position=Vector2(18,10);hud.add_theme_font_size_override("font_size",20);add_child(hud)
     hint=Label.new();hint.position=Vector2(18,39);hint.add_theme_font_size_override("font_size",13);add_child(hint)
     pose_status=Label.new();pose_status.position=Vector2(18,59);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
+    if not face.ready_for_controls:
+        last_error=face.asset_error;push_error(last_error);return
     rig_ready=true;_write_pose();print("OBJECT_BASE_READY independent_sprites=",face.objects.size()," expression_timelines=0")
 func apply_controls(data:Dictionary)->bool:
     # Validate shared gaze bounds before any pose or ownership mutation.

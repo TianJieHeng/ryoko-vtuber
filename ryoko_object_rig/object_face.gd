@@ -21,14 +21,23 @@ var oral_manifest:Dictionary
 
 var smile_eyes=Vector2.ZERO
 var smile_mouth=0.0
+var mouth_spread=0.0
+var spread_cavity:Array=[]
+var spread_teeth:Array=[]
+var spread_joint_extensions:Dictionary={}
+var spread_tongue:Sprite2D
+var spread_enamel_roots:Sprite2D
 var smile_manifest:Dictionary
 var smile_lip_joints:Array=[]
 var smile_eye_joints:Array=[]
 var smile_lip_continuations:Array=[]
 var neutral_residue_objects:Array=[]
 
+
 var ready_for_controls=false
+var asset_error=""
 func _ready():
+    if not _verify_required_textures():return
     manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/object_face/manifest.json"))
     gaze_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/gaze_eyes/manifest.json"))
     for key in gaze_manifest.get("foreground_objects",{}):
@@ -69,6 +78,7 @@ func _ready():
     objects.active_viseme=mouth_sprite;homes.active_viseme={"xy":Vector2.ZERO,"pivot":Vector2.ZERO,"node":mouth_sprite}
     _build_oral_objects()
     _build_smile_objects()
+    _build_spread_objects()
     ready_for_controls=true
     set_pose(Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,"neutral",0.0)
 func _update_iris_visibility(side:String):
@@ -110,7 +120,7 @@ func snapshot()->Dictionary:
     for key in objects:
         var p=homes[key].node
         transforms[key]={"position":[p.position.x,p.position.y],"rotation":p.rotation,"scale":[p.scale.x,p.scale.y],"opacity":objects[key].modulate.a,"visible":objects[key].visible}
-    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"hair_sway":hair_sway,"objects":transforms}
+    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"hair_sway":hair_sway,"objects":transforms}
 
 func _build_oral_objects():
     oral_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/yawn_mouth/manifest.json"))
@@ -207,7 +217,7 @@ func _build_smile_objects():
     for e in smile_manifest.lip_continuations:
         var node=Sprite2D.new();node.name=e.name;node.centered=false;node.z_index=57
         var atlas=AtlasTexture.new();atlas.atlas=load("res://rig_assets/smile_support/"+e.file)
-        atlas.region=Rect2(e.atlas_rect[0],e.atlas_rect[1],e.atlas_rect[2],e.atlas_rect[3]);node.texture=atlas;node.position=Vector2(-6,-14)
+        atlas.region=Rect2(e.atlas_rect[0]-4,e.atlas_rect[1],e.atlas_rect[2]+8,e.atlas_rect[3]);node.texture=atlas;node.position=Vector2(-10,-14)
         var pivot=Node2D.new();pivot.name=e.name+"_pivot";pivot.position=Vector2(525+e.edge,634);pivot.z_index=57;pivot.add_child(node);add_child(pivot);node.z_index=0
         var mat=ShaderMaterial.new();mat.shader=load("res://smile_lip_join.gdshader")
         mat.set_shader_parameter("atlas_origin_px",Vector2(e.atlas_rect[0],e.atlas_rect[1]));mat.set_shader_parameter("source_x",float(e.edge));mat.set_shader_parameter("upper_lip",e.upper);mat.set_shader_parameter("seam_texture",load("res://rig_assets/yawn_mouth/neutral_seam.png"));node.material=mat;node.visible=false
@@ -215,13 +225,17 @@ func _build_smile_objects():
         smile_lip_continuations.append(e)
 
 func _smile_lip_offset(x:float,upper:bool,corner:bool)->float:
+    return _smile_lip_offset_for_spread(x,upper,corner,mouth_spread)
+
+func _smile_lip_offset_for_spread(x:float,upper:bool,corner:bool,spread_value:float)->float:
     var radius=clampf(abs((x-39.5)/35.5),0.0,1.0)
-    var lift=-4.0*smile_mouth*pow(radius,1.5)
+    var lift=-4.0*spread_value-(4.0+5.0*spread_value)*smile_mouth*pow(radius,1.5)
     if upper:return lift
     var curve=pow(maxf(0.0,1.0-radius*radius),.72)
     return lift+mouth_opening*MAX_MOUTH_APERTURE*54.0*lerpf(1.0,curve,smile_mouth)
 
-func set_smile_controls(eyes:Vector2,mouth:float):
+func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0):
+    mouth_spread=clampf(spread,0.0,1.0)*clampf(mouth,0.0,1.0)
     smile_eyes=eyes.clamp(Vector2.ZERO,Vector2.ONE);smile_mouth=clampf(mouth,0.0,1.0)
     for side in ["screen_left","screen_right"]:
         var index=0 if side=="screen_left" else 1
@@ -243,17 +257,35 @@ func set_smile_controls(eyes:Vector2,mouth:float):
             homes[joint.key].node.rotation=atan(joint.slope_delta*(shape if joint.old else shape-1.0))
             node.material.set_shader_parameter("shape",shape)
     for node in neutral_residue_objects:node.material.set_shader_parameter("smile",smile_eyes.y)
+    var baseline_lip_transforms={}
     for joint in smile_lip_joints:
-        var key=joint.key;var home=homes[key];objects[key].visible=smile_mouth>0.0
+        var key=joint.key;var home=homes[key];objects[key].visible=smile_mouth>0.0 or mouth_spread>0.0
         objects[key].material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
         objects[key].material.set_shader_parameter("smile",smile_mouth)
+        var baseline_offset=_smile_lip_offset_for_spread(joint.center,joint.upper,joint.corner,0.0)
+        var baseline_slope=_smile_lip_offset_for_spread(joint.center+.5,joint.upper,joint.corner,0.0)-_smile_lip_offset_for_spread(joint.center-.5,joint.upper,joint.corner,0.0)
+        baseline_lip_transforms[key]=Transform2D(atan(baseline_slope),home.pivot+Vector2(0,baseline_offset))
         var offset=_smile_lip_offset(joint.center,joint.upper,joint.corner)
-        home.node.position=home.pivot+Vector2(0,offset)
+        home.node.position=home.pivot+Vector2(_spread_x(joint.center),offset)
         var slope=(_smile_lip_offset(joint.center+.5,joint.upper,joint.corner)-_smile_lip_offset(joint.center-.5,joint.upper,joint.corner))
-        home.node.rotation=atan(slope)
+        home.node.rotation=atan(slope/(1.0+20.0*mouth_spread/35.5))
+        objects[key].material.set_shader_parameter("spread",mouth_spread)
+        objects[key].material.set_shader_parameter("offset_x",_spread_x(joint.center))
         objects[key].material.set_shader_parameter("joint_center",joint.center)
         objects[key].material.set_shader_parameter("offset_y",offset)
         objects[key].material.set_shader_parameter("angle",home.node.rotation)
+    for joint in smile_lip_joints:
+        if not joint.upper:continue
+        var lower_key=("mouth_corner_lower_" if joint.corner else "lower_lip_joint_")+str(joint.index)
+        var upper_transform=homes[joint.key].node.transform*objects[joint.key].transform
+        var lower_transform=homes[lower_key].node.transform*objects[lower_key].transform
+        var peer_transform=lower_transform.affine_inverse()*upper_transform
+        var material=objects[joint.key].material
+        material.set_shader_parameter("lower_peer_x",peer_transform.x)
+        material.set_shader_parameter("lower_peer_y",peer_transform.y)
+        material.set_shader_parameter("lower_peer_origin",peer_transform.origin)
+        material.set_shader_parameter("lower_peer_angle",homes[lower_key].node.rotation)
+        material.set_shader_parameter("lower_peer_offset",homes[lower_key].node.position-homes[lower_key].pivot)
     for continuation in smile_lip_continuations:
         var edge_index=smile_manifest.lips.segment_edges.find(continuation.edge)
         var left_key="";var right_key=""
@@ -272,7 +304,17 @@ func set_smile_controls(eyes:Vector2,mouth:float):
         var left_bottom=inv*(homes[left_key].node.transform*(point+Vector2(0,31)-homes[left_key].pivot))
         var right_top=inv*(homes[right_key].node.transform*(point+Vector2(0,-14)-homes[right_key].pivot))
         var right_bottom=inv*(homes[right_key].node.transform*(point+Vector2(0,31)-homes[right_key].pivot))
-        node.visible=smile_mouth>0.0
+        node.visible=smile_mouth>0.0 or mouth_spread>0.0
+        node.material.set_shader_parameter("spread",mouth_spread)
+        if spread_joint_extensions.has(key):
+            var lt:Transform2D=baseline_lip_transforms[left_key];var rt:Transform2D=baseline_lip_transforms[right_key]
+            var ba=lt*(point-homes[left_key].pivot);var bb=rt*(point-homes[right_key].pivot)
+            var baseline_pivot=Transform2D((lt.get_rotation()+rt.get_rotation())*.5,(ba+bb)*.5)
+            var binv=baseline_pivot.affine_inverse();var extra=spread_joint_extensions[key]
+            extra.material.set_shader_parameter("baseline_left_top",binv*(lt*(point+Vector2(0,-14)-homes[left_key].pivot)))
+            extra.material.set_shader_parameter("baseline_left_bottom",binv*(lt*(point+Vector2(0,31)-homes[left_key].pivot)))
+            extra.material.set_shader_parameter("baseline_right_top",binv*(rt*(point+Vector2(0,-14)-homes[right_key].pivot)))
+            extra.material.set_shader_parameter("baseline_right_bottom",binv*(rt*(point+Vector2(0,31)-homes[right_key].pivot)))
         node.material.set_shader_parameter("joint_origin",pivot.position)
         node.material.set_shader_parameter("angle",pivot.rotation)
         node.material.set_shader_parameter("left_top",left_top)
@@ -281,6 +323,116 @@ func set_smile_controls(eyes:Vector2,mouth:float):
         node.material.set_shader_parameter("right_bottom",right_bottom)
         node.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
         node.material.set_shader_parameter("smile",smile_mouth)
-    if smile_mouth>0.0:
+    for original_name in spread_joint_extensions:
+        var extension=spread_joint_extensions[original_name]
+        var original=objects[original_name]
+        extension.visible=mouth_spread>0.0
+        for parameter in ["joint_origin","angle","left_top","left_bottom","right_top","right_bottom","opening","smile","spread"]:
+            extension.material.set_shader_parameter(parameter,original.material.get_shader_parameter(parameter))
+    if smile_mouth>0.0 or mouth_spread>0.0:
         oral_objects.upper_lip.visible=false;oral_objects.lower_lip.visible=false
-    for key in oral_objects:oral_objects[key].material.set_shader_parameter("smile",smile_mouth)
+    for key in oral_objects:
+        oral_objects[key].material.set_shader_parameter("smile",smile_mouth)
+        oral_objects[key].material.set_shader_parameter("spread",mouth_spread)
+    for node in spread_cavity:
+        node.visible=mouth_spread>0.0
+        node.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
+        node.material.set_shader_parameter("smile",smile_mouth)
+        node.material.set_shader_parameter("spread",mouth_spread)
+
+    for node in spread_teeth:
+        var left=node.name.ends_with("left")
+        var anchor=Vector2(553 if left else 577,619)
+        var origin=Vector2(532 if left else 553,605)
+        var angle=(1.0 if left else -1.0)*.12*mouth_spread
+        var offset=Vector2((-20.0 if left else 20.0)*mouth_spread,9.0*mouth_spread)
+        node.position=anchor+(origin-anchor).rotated(angle)+offset;node.rotation=angle
+        node.material.set_shader_parameter("rigid_offset",offset)
+        node.material.set_shader_parameter("angle",angle)
+        node.material.set_shader_parameter("anchor",anchor)
+        node.visible=mouth_spread>0.0
+        node.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
+        node.material.set_shader_parameter("smile",smile_mouth)
+        node.material.set_shader_parameter("spread",mouth_spread)
+    spread_enamel_roots.visible=mouth_spread>0.0
+    for parameter in ["opening","smile","spread"]:
+        spread_enamel_roots.material.set_shader_parameter(parameter,oral_objects.cavity.material.get_shader_parameter(parameter))
+    var tongue_offset=Vector2(0,-40.0*mouth_spread+mouth_opening*MAX_MOUTH_APERTURE*5.0)
+    spread_tongue.position=Vector2(510,667)+tongue_offset
+    spread_tongue.material.set_shader_parameter("rigid_offset",tongue_offset)
+    spread_tongue.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
+    spread_tongue.material.set_shader_parameter("smile",smile_mouth)
+    spread_tongue.material.set_shader_parameter("spread",mouth_spread)
+
+
+func _spread_x(source_x:float)->float:
+    return 20.0*mouth_spread*(source_x-39.5)/35.5
+
+func _build_spread_objects():
+    for side in ["left","right","top"]:
+        var node=Sprite2D.new();node.name="spread_cavity_"+side;node.centered=false;node.z_index=54
+        node.texture=load("res://rig_assets/spread_support/cavity_"+side+".png")
+        node.position=Vector2(501,620) if side=="left" else (Vector2(605,620) if side=="right" else Vector2(525,619));add_child(node)
+        var mat=ShaderMaterial.new();mat.shader=load("res://object_mouth_clip.gdshader")
+        mat.set_shader_parameter("origin",node.position)
+        mat.set_shader_parameter("seam_texture",load("res://rig_assets/yawn_mouth/neutral_seam.png"))
+        node.material=mat;node.visible=false;spread_cavity.append(node);_register_spread_owner(node)
+
+
+    for side in ["left","right"]:
+        var node=Sprite2D.new();node.name="spread_posterior_teeth_"+side;node.centered=false;node.z_index=54
+        node.texture=load("res://rig_assets/spread_support/teeth_"+side+".png")
+        node.position=Vector2(532 if side=="left" else 553,605);add_child(node)
+        var mat=ShaderMaterial.new();mat.shader=load("res://spread_teeth_clip.gdshader")
+        mat.set_shader_parameter("origin",node.position)
+        mat.set_shader_parameter("seam_texture",load("res://rig_assets/yawn_mouth/neutral_seam.png"))
+        mat.set_shader_parameter("left_side",side=="left")
+        node.material=mat;node.visible=false;spread_teeth.append(node);_register_spread_owner(node)
+    spread_tongue=Sprite2D.new();spread_tongue.name="spread_lower_oral_surface";spread_tongue.centered=false;spread_tongue.z_index=54
+    spread_tongue.texture=load("res://rig_assets/spread_support/tongue_surface.png");spread_tongue.position=Vector2(510,667);add_child(spread_tongue)
+    # Cavity < tongue < posterior/root enamel < unchanged original front arch.
+    move_child(spread_tongue,spread_teeth[0].get_index())
+    var mat=ShaderMaterial.new();mat.shader=load("res://object_mouth_clip.gdshader")
+    mat.set_shader_parameter("origin",spread_tongue.position)
+    mat.set_shader_parameter("seam_texture",load("res://rig_assets/yawn_mouth/neutral_seam.png"));spread_tongue.material=mat;_register_spread_owner(spread_tongue)
+    spread_enamel_roots=Sprite2D.new();spread_enamel_roots.name="spread_upper_enamel_roots";spread_enamel_roots.centered=false;spread_enamel_roots.z_index=54
+    spread_enamel_roots.texture=load("res://rig_assets/spread_support/upper_enamel_roots.png");spread_enamel_roots.position=Vector2(533,629);add_child(spread_enamel_roots)
+    var root_material=ShaderMaterial.new();root_material.shader=load("res://object_mouth_clip.gdshader")
+    root_material.set_shader_parameter("origin",spread_enamel_roots.position)
+    root_material.set_shader_parameter("seam_texture",load("res://rig_assets/yawn_mouth/neutral_seam.png"));spread_enamel_roots.material=root_material;spread_enamel_roots.visible=false;_register_spread_owner(spread_enamel_roots)
+    var support=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/spread_support/manifest.json"))
+    for e in support.joint_extensions:
+        var node=Sprite2D.new();node.name=e.name;node.centered=false;node.position=Vector2(-10,-14);node.z_index=-1
+        var atlas=AtlasTexture.new();atlas.atlas=load("res://rig_assets/spread_support/"+e.file)
+        atlas.region=Rect2(e.atlas_rect[0],e.atlas_rect[1],20,45);node.texture=atlas
+        homes[e.parent].node.add_child(node)
+        var material=ShaderMaterial.new();material.shader=load("res://smile_lip_join.gdshader")
+        material.set_shader_parameter("atlas_origin_px",Vector2(e.atlas_rect[0],e.atlas_rect[1]))
+        material.set_shader_parameter("source_x",float(e.edge));material.set_shader_parameter("upper_lip",e.upper)
+        material.set_shader_parameter("seam_texture",load("res://rig_assets/yawn_mouth/neutral_seam.png"))
+        material.set_shader_parameter("half_width",10.0);material.set_shader_parameter("outer_extension",true)
+        material.set_shader_parameter("previous_sleeve_texture",load("res://rig_assets/smile_support/lip_continuations_atlas.png"))
+        for previous in smile_manifest.lip_continuations:
+            if previous.name==e.parent:material.set_shader_parameter("previous_atlas_origin_px",Vector2(previous.atlas_rect[0],previous.atlas_rect[1]))
+        node.material=material;node.visible=false;spread_joint_extensions[e.parent]=node
+        objects[e.name]=node;homes[e.name]=homes[e.parent]
+
+func _register_spread_owner(node:Sprite2D):
+    objects[node.name]=node
+    homes[node.name]={"xy":node.position,"pivot":node.position,"node":node}
+
+func _verify_required_textures()->bool:
+    var file="res://rig_assets/spread_support/required_textures.json"
+    if not FileAccess.file_exists(file):
+        asset_error="Missing required-texture manifest";push_error(asset_error);return false
+    var paths=JSON.parse_string(FileAccess.get_file_as_string(file))
+    if not paths is Array or paths.is_empty():
+        asset_error="Invalid required-texture manifest";push_error(asset_error);return false
+    for path in paths:
+        if not path is String or not ResourceLoader.exists(path):
+            asset_error="REQUIRED_TEXTURE_IMPORT_MISSING: "+str(path);push_error(asset_error);return false
+        var texture=load(path)
+        if not texture is Texture2D or texture.get_width()<=0 or texture.get_height()<=0:
+            asset_error="REQUIRED_TEXTURE_INVALID: "+str(path);push_error(asset_error);return false
+    return true
+
