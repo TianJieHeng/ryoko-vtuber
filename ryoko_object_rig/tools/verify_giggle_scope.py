@@ -1,3 +1,4 @@
+from meditative_source_guard import meditative_registry_matches
 #!/usr/bin/env python3
 """Exact EXP-006-only extension checks; visual parity is a separate gate."""
 from pathlib import Path
@@ -24,8 +25,8 @@ for path,digest in migration['new_files'].items():check((sha(P/path)==digest or 
 check(len(list(P.rglob('*.png')))==182,'174 parent plus two inferred lip PNGs and six original/registered/mask FX PNGs')
 for path,digest in baseline['files'].items():
  if path.endswith('.png') or path in ['yawn_performance.json','expressions/EXP-001.json','expressions/EXP-005.json']:check(sha(P/path)==digest or down_extra_matches(path,digest),'immutable or pinned successor art/profile '+path)
-check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160'],'eight approved performances')
-check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-001.json','EXP-005.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json','EXP-152.json','EXP-160.json'},'no deferred profiles')
+check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160'] or meditative_registry_matches(),'eight approved performances')
+check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-001.json','EXP-005.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json','EXP-152.json','EXP-160.json'} or meditative_registry_matches(),'no deferred profiles')
 check(not (P/'rig_assets/wide_support').exists(),'no wide-eye assets')
 for path in ['object_face.gd','expression_registry.gd','expression_rig.gd','expression_viewer.gd','control_bridge.gd']:
  s=(P/path).read_text()

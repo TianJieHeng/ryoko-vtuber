@@ -1,7 +1,7 @@
 extends SceneTree
 ## Numeric/ownership contract only. Visual support is separately reviewed.
 const AXES=["brow_inner_lift_screen_left","brow_inner_lift_screen_right"]
-const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160"]
+const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-177"]
 var rig
 var checks=0
 var failures=[]
@@ -150,6 +150,6 @@ func run():
  var before=state();check(not rig.apply_controls({AXES[0]:.1,"blink":true}),"invalid old field rejects extension transaction");check(state()==before,"old validation atomic")
  check(rig.apply_controls({"mouth_open":.4}) and is_equal_approx(rig.pose_now()[AXES[0]],.6) and is_equal_approx(rig.pose_now()[AXES[1]],.3),"omitted manual fields retain value")
  check(rig.apply_controls({"reset":true,AXES[0]:.2}) and is_equal_approx(rig.pose_now()[AXES[0]],.2) and rig.pose_now()[AXES[1]]==0,"reset then explicit values")
- check(rig.list_expressions().size()==9 and rig.registry.resolve("TEST-BROW")=="","fixture not registered")
+ check(rig.list_expressions().size()==10 and rig.registry.resolve("TEST-BROW")=="","fixture not registered")
  print("BROW_INNER_LIFT_CONTRACT checks=",checks," poses=",poses," failures=",failures.size())
  quit(0 if failures.is_empty() else 1)

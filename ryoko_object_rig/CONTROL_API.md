@@ -1,12 +1,14 @@
 # Shared expression control API
 
-Nine user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160. The published002/152 profiles, hidden-iris support and gaze_down_extra semantics are preserved. EXP-160 adds the approved default-zero rigid outer-anchor brow capability without new artwork. EXP-003/177/161/153 remain excluded. See SHY_MERGED_PUBLICATION_VALIDATION.md for merged scope and evidence; preceding frozen review stages are historical.
+Ten user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177. Revised EXP-177 Meditative calm adds a single continuous 1.2-second closing arc, with unchanged hold/opening keys from 1.2 seconds onward. All nine prior profiles, gaze_down_extra, rigid outer-anchor brow controls, automatic-blink restoration, runtime and all 182 PNGs remain exact. EXP-003/164 and all other unregistered drafts remain excluded. See MEDITATIVE_PUBLICATION_VALIDATION.md for approval, source identities and verification. Earlier explicitly marked checkpoint descriptions below are historical provenance. The EXP-177 publication profile changes only its status text; every other reviewed field and motion value is exact.
+
+Historical EXP-160 checkpoint: nine user-approved performances shared one rig: EXP-163/005/001/006/107/007/002/152/160. The published002/152 profiles, hidden-iris support and gaze_down_extra semantics are preserved. EXP-160 adds the approved default-zero rigid outer-anchor brow capability without new artwork. EXP-003/177/161/153 remain excluded. See SHY_MERGED_PUBLICATION_VALIDATION.md for merged scope and evidence; preceding frozen review stages are historical.
 
 Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewer.apply_controls(dictionary)` for the default app. Both use the same validated player. This remains the authoritative callable Godot API. The opt-in loopback socket adapter in `LOCAL_CONTROL_BRIDGE.md` delegates to this same controller; no AI-model or voice-service connection is claimed.
 
 ## Calls
 
-- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter, EXP-001 / Bright welcome, EXP-006 / Suppressed giggle, EXP-107 / Confident reassurance, EXP-007 / Relieved smile, EXP-002 / Affectionate warmth and EXP-152 / Private pride are authored. All eight and the hidden-iris/down-gaze prerequisite are user-approved. Approval and publication status is recorded separately in `RELEASE.json`. Other historical catalogue IDs are references, not playable placeholders.
+- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter, EXP-001 / Bright welcome, EXP-006 / Suppressed giggle, EXP-107 / Confident reassurance, EXP-007 / Relieved smile, EXP-002 / Affectionate warmth, EXP-152 / Private pride, EXP-160 / Shy laughter and EXP-177 / Meditative calm are authored. All ten and their published prerequisites are user-approved. Approval and publication status is recorded separately in `RELEASE.json`. Other historical catalogue IDs are references, not playable placeholders.
 - `apply_controls(dictionary) -> bool` validates the entire transaction before changing controls, clock or ownership. Failure returns false and sets `last_error`; no partial pose/state mutation occurs.
 - `play_expression(id)`, `release()` and `reset()` wrap their corresponding control transactions.
 - `advance(delta) -> bool` advances deterministically. Delta must be finite and nonnegative. The engine calls it from `_process`; an external deterministic driver must disable automatic processing to avoid advancing twice.
@@ -68,7 +70,7 @@ Catalogue loads validate all entries before replacement. Failure preserves the p
 
 ## Lateral mouth support
 
-`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. All eight authored IDs listed above are registered. Oral-lift and purse controls are documented below. Wide-eye support is not included.
+`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. All ten authored IDs listed above are registered. Oral-lift and purse controls are documented below. Wide-eye support is not included.
 
 ## Closed smile and independent blush FX
 
@@ -110,14 +112,18 @@ State controls/displayed_controls and face snapshots gain the new field; capabil
 
 ## Current EXP-152 local data
 
-All eight authored IDs use the same player. EXP-152 aliases are private-pride and pride, duration 1.9 seconds. Its gaze leads and outlasts its sealed smile. The optional gaze_down_extra field and old gaze_y combine on the same rigid iris owners. No new control/controller is introduced by EXP-152. Both this profile and its capability dependency are user-approved.
+All ten authored IDs use the same player. EXP-152 aliases are private-pride and pride, duration 1.9 seconds. Its gaze leads and outlasts its sealed smile. The optional gaze_down_extra field and old gaze_y combine on the same rigid iris owners. No new control/controller is introduced by EXP-152. Both this profile and its capability dependency are user-approved.
 
 
 ## Preserved EXP-002 affectionate warmth
 
-The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all eight profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
+The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all ten profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
 
 
 ## Approved rigid inner-brow controls
 
-Independent brow_inner_lift_screen_left and brow_inner_lift_screen_right accept finite [0,1], default 0, and add at most 26 degrees after the legacy tilt about fixed outer-tail anchors. Omitted manual fields retain state; omitted timeline fields and reset default to 0. All nine profiles use the generic player. The gaze_down_extra control remains independent and zero by default. See BROW_INNER_LIFT_VALIDATION.md for exact geometry and historical evidence.
+Independent brow_inner_lift_screen_left and brow_inner_lift_screen_right accept finite [0,1], default 0, and add at most 26 degrees after the legacy tilt about fixed outer-tail anchors. Omitted manual fields retain state; omitted timeline fields and reset default to 0. All ten profiles use the generic player. The gaze_down_extra control remains independent and zero by default. See BROW_INNER_LIFT_VALIDATION.md for exact geometry and historical evidence.
+
+## Approved EXP-177 meditative calm publication
+
+The user-approved revised EXP-177 (meditative-calm / meditate) is the tenth published performance, based on main 70655752bc82ba01b3fe8f64923360da60c578c9. Its single 1.2-second closing arc and all hold/opening motion match the approved review exactly. All nine prior profiles, runtime, artwork, iris/gaze, brow and automatic-blink behavior remain unchanged. RELEASE.json and MEDITATIVE_STATUS.json record current approval/publication. See MEDITATIVE_PUBLICATION_VALIDATION.md. The primary cumulative archive stays at version 19. No normal-speed playback observation, real-socket test or live AI/TTS connection is claimed.

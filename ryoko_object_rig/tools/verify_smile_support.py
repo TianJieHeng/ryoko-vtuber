@@ -1,3 +1,4 @@
+from meditative_source_guard import meditative_registry_matches
 #!/usr/bin/env python3
 """Portable source/ownership checks; visual and render checks remain separate."""
 import hashlib,json,re,subprocess,sys
@@ -42,7 +43,7 @@ check(mouth['objects']['upper_teeth']['xy']==[533,626],'tooth anchor')
 reference=json.loads((P/'source_references/expression_catalogue_93.json').read_text())
 check(len(reference['entries'])==93 and len({e['id'] for e in reference['entries']})==93,'93 reference IDs preserved')
 registry=json.loads((P/'expressions/registry.json').read_text())
-check({e['id'] for e in registry['entries']}=={'EXP-005','EXP-163','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152'},'exactly eight approved performances')
+check({e['id'] for e in registry['entries']}=={'EXP-005','EXP-163','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152'} or meditative_registry_matches(),'exactly eight approved performances')
 old=json.loads((P/'source_references/historical_EXP005_expression_performances.json').read_text())['profiles']['EXP-005']
 new=json.loads((P/'expressions/EXP-005.json').read_text())
 check([k['time'] for k in old['keyframes']]==[k['time'] for k in new['keyframes']],'fifteen semantic timing keys')

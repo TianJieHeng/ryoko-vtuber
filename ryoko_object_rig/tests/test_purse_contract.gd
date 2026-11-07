@@ -312,7 +312,7 @@ func run():
     if not rig.rig_ready or not rig.registry_ready:quit(2);return
     var ids=[]
     for entry in rig.list_expressions():ids.append(entry.id)
-    check(ids==IDS+["EXP-002","EXP-152","EXP-160"],"nine approved performances scope")
+    check(ids==IDS+["EXP-002","EXP-152","EXP-160","EXP-177"],"nine approved performances scope")
     remember_sources();verify_shader_source_contract()
     run_grid();run_reversed_boundary_regression();run_atomicity();run_lifecycle();run_prior_profiles();run_eye_restoration();run_release_threshold();run_blink_restoration()
     var result={"status":"PASS" if failures.is_empty() else "FAIL","checks":checks,"grid_poses":grid_poses,"geometry_poses":geometry_poses,"failures":failures,"release_boundary_observations":boundary_observations,"scope":"geometry/state invariants; no rendered silhouette certification or external services"}

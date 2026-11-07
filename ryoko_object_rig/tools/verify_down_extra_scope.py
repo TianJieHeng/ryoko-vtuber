@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Verify the precise new capability delta while retaining all baseline sources."""
+from meditative_source_guard import meditative_extra_paths
 from pathlib import Path
 import json,hashlib,subprocess,sys
 from private_pride_source_guard import private_pride_matches
@@ -24,7 +25,7 @@ existing={str(p.relative_to(R)) for p in R.rglob('*') if p.is_file() and '.godot
 successor=json.loads((R/'validation/private_pride_runtime_migration.json').read_text())
 merged=json.loads((R/'validation/approved_merge_migration.json').read_text())
 shy=json.loads((R/'validation/approved_shy_merge_migration.json').read_text())
-check(existing==set(b['files'])|set(m['new_files'])|set(successor['new_files'])|{'validation/down_extra_runtime_migration.json','validation/private_pride_runtime_migration.json'}|set(merged['new_paths_from_pride'])|set(shy['new_paths_from_152']),'no silently included source')
+check(existing==set(b['files'])|set(m['new_files'])|set(successor['new_files'])|{'validation/down_extra_runtime_migration.json','validation/private_pride_runtime_migration.json'}|set(merged['new_paths_from_pride'])|set(shy['new_paths_from_152'])|meditative_extra_paths(),'no silently included source')
 check(sum(p.endswith('.png') for p in existing)==182,'no extra diagnostic/artwork PNG files')
 changed_png={p for p in m['files'] if p.endswith('.png')}
 check(changed_png=={f'rig_assets/gaze_eyes/{kind}_{side}.png' for kind in ['iris','completed_iris'] for side in ['screen_left','screen_right']},'only two iris RGB owners and two provenance masks')

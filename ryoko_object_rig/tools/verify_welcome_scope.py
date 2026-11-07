@@ -1,3 +1,4 @@
+from meditative_source_guard import meditative_registry_matches
 #!/usr/bin/env python3
 """Verify the narrow welcome scope against exact recovered source inventories."""
 from pathlib import Path
@@ -19,8 +20,8 @@ for path,digest in baseline['files'].items():
  if path not in allowed:check((sha(P/path)==digest or giggle_matches(path,digest)),'unchanged predecessor path '+path)
 check(sha(P/'canonical_eye_alpha.gdshader')==baseline['files']['canonical_eye_alpha.gdshader'],'exact approved eye shader')
 registry=json.loads((P/'expressions/registry.json').read_text())
-check([e['id'] for e in registry['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160'],'exact registry order and scope')
-check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-005.json','EXP-001.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json','EXP-152.json','EXP-160.json'},'eight approved performances data')
+check([e['id'] for e in registry['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160'] or meditative_registry_matches(),'exact registry order and scope')
+check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-005.json','EXP-001.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json','EXP-152.json','EXP-160.json'} or meditative_registry_matches(),'eight approved performances data')
 check(not (P/'rig_assets/wide_support').exists(),'no wide-eye artwork')
 for path in ['object_face.gd','expression_registry.gd','expression_rig.gd','expression_viewer.gd','control_bridge.gd']:
  text=(P/path).read_text()

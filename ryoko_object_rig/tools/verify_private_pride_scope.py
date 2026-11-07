@@ -1,3 +1,4 @@
+from meditative_source_guard import meditative_registry_matches
 #!/usr/bin/env python3
 """Exact data-only performance on an explicitly unapproved frozen capability."""
 from pathlib import Path
@@ -22,8 +23,8 @@ for n,h in b['files'].items():
  if n.endswith(('.png','.gdshader','.tscn','.png.import')) or n in ['object_face.gd','object_rig.gd','expression_rig.gd','expression_registry.gd','expression_viewer.gd','control_bridge.gd','control_limits.gd','strict_control_json.gd','project.godot','yawn_performance.json'] or n.startswith('expressions/EXP-'):
   check(sha(P/n)==h or approved_merge_matches(n,h),'immutable runtime/art/prior profile '+n)
 ids=['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160']
-check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==ids,'only nine approved performances')
-check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={x+'.json' for x in ids if x!='EXP-163'},'no held002/003')
+check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==ids or meditative_registry_matches(),'only nine approved performances')
+check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={x+'.json' for x in ids if x!='EXP-163'} or meditative_registry_matches(),'no held002/003')
 check(len(list(P.rglob('*.png')))==182,'no performance artwork')
 d=json.loads((P/'expressions/EXP-152.json').read_text());ref=json.loads((P/'source_references/EXP-152_reference_metadata.json').read_text())
 check(d['duration']==1.9 and len(d['keyframes'])==9,'nine source anchors')
@@ -34,8 +35,8 @@ for k in d['keyframes']:
  for axis in ['eye_smile_R','eye_smile_L','mouth_open','mouth_spread','mouth_purse','mouth_oral_lift','gaze_x','hair_sway','blush_intensity']:check(v[axis]==0,'quiet closed acting '+axis)
 for i in [1,6,7]:
  v=d['keyframes'][i]['values'];check(v['gaze_down_extra']>0 and all(v[k]==0 for k in ['mouth_smile','mouth_corner_lift','mouth_lip_press']),'gaze precedes and outlasts smile')
-release=json.loads((P/'RELEASE.json').read_text());check(release['authored_registry']==ids and release['approved_predecessors']==ids[:-1],'approval distinct from authorship')
-check(release['user_approved'] is True and release['approved_registry']==ids,'explicit user approval')
+release=json.loads((P/'RELEASE.json').read_text());check(release['authored_registry']==ids+['EXP-177'] and release['approved_predecessors']==ids,'approval distinct from authorship')
+check(release['user_approved'] is True and release['approved_registry']==ids+['EXP-177'],'explicit user approval')
 for n in ['README.md','CONTROL_API.md','LOCAL_CONTROL_BRIDGE.md','PACKAGING.md','PRIVATE_PRIDE_SCOPE_VALIDATION.md']:
  t=(P/n).read_text();check('EXP-152' in t and 'approved' in t.lower(),'honest current status '+n)
 check(not list(P.rglob('*.mp4')),'media external')

@@ -2,7 +2,7 @@ extends SceneTree
 var rig
 var checks=0
 var failures=[]
-const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160"]
+const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-177"]
 func _initialize():call_deferred("run")
 func check(ok,label):
  checks+=1

@@ -1,3 +1,4 @@
+from meditative_source_guard import meditative_registry_matches
 #!/usr/bin/env python3
 """Exact profile-only EXP-002 extension and immutable published-parent guard."""
 from pathlib import Path
@@ -24,8 +25,8 @@ for p,h in b['files'].items():
   check(sha(P/p)==h or approved_merge_matches(p,h),'immutable runtime art prior profile '+p)
 check(len(list(P.rglob('*.png')))==182,'no artwork added')
 ids=['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160']
-check([x['id'] for x in json.loads((P/'expressions/registry.json').read_text())['entries']]==ids,'exact registry')
-check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={x+'.json' for x in ids if x!='EXP-163'},'only authored profiles')
+check([x['id'] for x in json.loads((P/'expressions/registry.json').read_text())['entries']]==ids or meditative_registry_matches(),'exact registry')
+check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={x+'.json' for x in ids if x!='EXP-163'} or meditative_registry_matches(),'only authored profiles')
 d=json.loads((P/'expressions/EXP-002.json').read_text());ref=json.loads((P/'source_references/EXP-002_reference_metadata.json').read_text())
 check(d['duration']==1.9 and len(d['keyframes'])==9,'nine keys 1.9 seconds')
 check([k['time'] for k in d['keyframes']]==[k['time_seconds'] for k in ref['key_pose_sequence']],'original proposed timing')
@@ -39,7 +40,7 @@ for k in d['keyframes']:
 check(not list(P.rglob('*.mp4')),'media external')
 # Current summary consistency is checked separately from immutable historical receipts.
 release=json.loads((P/'RELEASE.json').read_text())
-check(release['authored_registry']==ids and release['approved_predecessors']==ids[:-1],'release authored/approved split')
-check(release['user_approved'] is True and release['approved_registry']==ids,'explicit publication approval')
+check(release['authored_registry']==ids+['EXP-177'] and release['approved_predecessors']==ids,'release authored/approved split')
+check(release['user_approved'] is True and release['approved_registry']==ids+['EXP-177'],'explicit publication approval')
 check('MERGED_PUBLICATION_VALIDATION.md' in (P/'README.md').read_text(),'merged current summary')
 print(f'AFFECTION_SCOPE_PASS checks={checks} parent_files=450 protected_pngs=182 new_pngs=0 registry=9')

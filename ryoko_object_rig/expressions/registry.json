@@ -79,6 +79,15 @@
         "shy_laughter"
       ],
       "trigger_phase": "tender_closed_onset"
+    },
+    {
+      "id": "EXP-177",
+      "path": "res://expressions/EXP-177.json",
+      "aliases": [
+        "meditative-calm",
+        "meditate"
+      ],
+      "trigger_phase": "settling"
     }
   ]
 }

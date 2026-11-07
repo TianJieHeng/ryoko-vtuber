@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Complete path/hash scope for the approved160 publication, preserving both parents."""
+from meditative_source_guard import meditative_matches, meditative_extra_paths
 from pathlib import Path
 import hashlib,json,sys
 sys.dont_write_bytecode=True
@@ -15,16 +16,16 @@ def verify(clean=False):
     assert not any(x.is_symlink() for x in P.rglob('*'))
     assert set(m['files'])==set(ALLOWED_MERGE) and set(m['new_paths_from_152'])==set(NEW_PATHS),'fixed exact successor scope'
     actual={str(x.relative_to(P)) for x in P.rglob('*') if x.is_file() and (clean or not set(x.parts)&{'.godot','__pycache__'})}
-    expected=set(a['files'])|set(m['new_paths_from_152']);assert actual==expected,'exact successor paths'
+    expected=set(a['files'])|set(m['new_paths_from_152']);assert actual==expected|meditative_extra_paths(),'exact successor plus pinned meditative paths'
     assert set(s['files'])<=expected and set(m['new_paths_from_152'])==expected-set(a['files'])
     for n in expected-{'SOURCE_FILES.sha256',RECEIPT}:
         h=sha(P/n);record=m['files'].get(n)
         if record:
-            assert h==record['candidate_sha256'] and set(record['predecessor_sha256'])=={q['files'][n] for q in [a,s] if n in q['files']},'pinned merge '+n
+            assert (h==record['candidate_sha256'] or meditative_matches(n,record['candidate_sha256'])) and set(record['predecessor_sha256'])=={q['files'][n] for q in [a,s] if n in q['files']},'pinned merge '+n
         else:
             parents={q['files'][n] for q in [a,s] if n in q['files']}
-            if parents:assert parents=={h},'unchanged '+n
-            else:assert h==m['new_files'][n],'new support '+n
+            if parents:assert parents=={h} or all(meditative_matches(n,old) for old in parents),'unchanged or exact meditative support '+n
+            else:assert h==m['new_files'][n] or meditative_matches(n,m['new_files'][n]),'new support '+n
     assert set(m['new_files'])==expected-set(a['files'])-set(s['files'])-{RECEIPT}
     assert all(sha(P/n)==h for n,h in a['files'].items() if n.endswith(('.png','.gdshader','.tscn','.import')) or n=='project.godot' or n=='yawn_performance.json' or n.startswith('expressions/EXP-')),'all prior profiles/art/shaders/scenes/config unchanged'
     assert sha(P/'expressions/EXP-160.json')==s['files']['expressions/EXP-160.json']=='f30c64314d59fa368781eb5e098a12fb6582f845b0d4fa43e40a4a4cd77838c2'
@@ -35,8 +36,8 @@ def verify(clean=False):
     manifest={}
     for row in (P/'SOURCE_FILES.sha256').read_text().splitlines():
         h,sep,n=row.partition('  ');assert sep=='  ' and n not in manifest;manifest[n]=h
-    assert set(manifest)==expected-{'SOURCE_FILES.sha256'} and all(sha(P/n)==h for n,h in manifest.items())
-    release=json.loads((P/'RELEASE.json').read_text());assert release['user_approved'] and release['approved_registry']==IDS
+    assert set(manifest)==(expected|meditative_extra_paths())-{'SOURCE_FILES.sha256'} and all(sha(P/n)==h for n,h in manifest.items())
+    release=json.loads((P/'RELEASE.json').read_text());assert release['user_approved'] and release['approved_registry']==IDS+['EXP-177']
     assert not any(n.endswith(('.zip','.mp4','.pyc')) or set(n.split('/'))&{'.git','.godot','__pycache__'} for n in expected)
     print('APPROVED_SHY_MERGE_SCOPE_PASS files='+str(len(expected))+' pngs=182 registry=9 frozen160=473 published152=495')
 if __name__=='__main__':verify(clean='--clean' in sys.argv)

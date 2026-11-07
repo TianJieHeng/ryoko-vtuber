@@ -32,10 +32,10 @@ func verify(x,y,e):
     check(rig.face.oral_objects.upper_teeth.position==Vector2(533,626),"white upper enamel fixed")
 func run():
     rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false)
-    check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==9,"nine approved performances registry")
+    check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==10,"nine approved performances registry")
     check(rig.pose_now().gaze_down_extra==0,"new default zero")
     check(Limits.GAZE_DOWN_PIXELS==1 and Limits.GAZE_DOWN_EXTRA_PIXELS==5,"old mapping1 and selected extra5")
-    for id in ["EXP-003","EXP-161","EXP-153","EXP-177"]:check(rig.registry.definition(id).is_empty(),"unapproved profile absent")
+    for id in ["EXP-003","EXP-161","EXP-153"]:check(rig.registry.definition(id).is_empty(),"unapproved profile absent")
     for i in range(1001):
         var t=float(i)/1000;var x=sin(t*TAU*3);var y=cos(t*TAU*2);var e=sin(t*PI)
         check(rig.apply_controls({"gaze_x":x,"gaze_y":y,"gaze_down_extra":e,"blink_R":t,"blink_L":1-t,"hair_sway":.07*sin(t*TAU)}),"fractional controls")

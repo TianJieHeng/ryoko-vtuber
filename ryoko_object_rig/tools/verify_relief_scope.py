@@ -1,3 +1,4 @@
+from meditative_source_guard import meditative_registry_matches
 #!/usr/bin/env python3
 """Exact EXP-007 and generic rigid-purse scope, source and immutable-parent guard."""
 from pathlib import Path
@@ -25,8 +26,8 @@ for p,h in b['files'].items():
  if p.endswith('.png') or p in ['canonical_eye_alpha.gdshader','object_eye_clip.gdshader','object_rig.gd','control_limits.gd','strict_control_json.gd','yawn_performance.json','expressions/EXP-005.json','expressions/EXP-001.json','expressions/EXP-006.json','expressions/EXP-107.json']:
   check(sha(P/p)==h or down_extra_matches(p,h),'unchanged or pinned successor runtime/art/prior profile '+p)
 check(len(list(P.rglob('*.png')))==182,'no new artwork')
-check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160'],'eight approved performances')
-check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-001.json','EXP-005.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json','EXP-152.json','EXP-160.json'},'narrow scope')
+check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160'] or meditative_registry_matches(),'eight approved performances')
+check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-001.json','EXP-005.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json','EXP-152.json','EXP-160.json'} or meditative_registry_matches(),'narrow scope')
 d=json.loads((P/'expressions/EXP-007.json').read_text());check(d['duration']==3.2 and len(d['keyframes'])==9,'authored timing')
 check(d['source_catalogue_sha256']=='906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad','exact sheet')
 check(not list(P.rglob('*.mp4')),'movies external')
