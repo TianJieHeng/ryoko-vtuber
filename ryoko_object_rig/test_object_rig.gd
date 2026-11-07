@@ -1,4 +1,5 @@
 extends SceneTree
+const Limits=preload("res://control_limits.gd")
 var checks=0
 var failed=0
 var rig
@@ -28,7 +29,7 @@ func run():
         check(rig.face.objects.neutral_lips.visible and not rig.face.mouth_sprite.visible,"one neutral mouth owner")
     check(rig.apply_controls({"reset":true,"blink_R":0.35,"brow_screen_left":1,"mouth":"E"}),"independent channels")
     check(rig.face.closure==Vector2(.35,0),"independent eyelid")
-    check(rig.face.homes.iris_screen_left.node.position==rig.face.homes.iris_screen_left.pivot,"canonical iris stays fixed until hidden extension exists")
+    check(rig.face.homes.iris_screen_left.node.position==rig.face.homes.iris_screen_left.pivot,"zero gaze preserves canonical iris registration")
     check(rig.face.homes.brow_screen_right.node.rotation==0,"independent brow")
     for shape in ["A","E","I","O","U"]:
         check(rig.apply_controls({"mouth":shape}),"source viseme "+shape)
@@ -39,8 +40,12 @@ func run():
     for amount in [-rig.MAX_HAIR_SWAY,rig.MAX_HAIR_SWAY]:
         check(rig.apply_controls({"hair_sway":amount}),"supported hair endpoint accepted")
         check(is_equal_approx(rig.face.hair_sway,amount),"hair endpoint preserves requested coordinate")
+    for x in [Limits.GAZE_MIN,0.0,Limits.GAZE_MAX]:
+        for y in [Limits.GAZE_MIN,0.0,Limits.GAZE_MAX]:
+            check(rig.apply_controls({"gaze_x":x,"gaze_y":y}),"base gaze contract corner")
+            check(rig.manual_gaze==Vector2(x,y),"base preserves normalized gaze")
     var saved=rig.face.snapshot()
-    for data in [{"perform_expression":"EXP-163"},{"expression":"EXP-005"},{"head_tilt":0.1},{"mouth_open":0.5},{"gaze_x":2},{"gaze_x":.1},{"gaze_y":-1},{"hair_sway":rig.MAX_HAIR_SWAY+0.000001},{"hair_sway":-rig.MAX_HAIR_SWAY-0.000001},{"hair_sway":1},{"reset":true,"hair_sway":-1},{"blink":0.8,"hair_sway":0.071},{"hair_sway":NAN},{"hair_sway":"yes"},{"auto_blink":"yes"},{"mouth":"bad"}]:
+    for data in [{"perform_expression":"EXP-163"},{"expression":"EXP-005"},{"head_tilt":0.1},{"mouth_open":0.5},{"gaze_x":2},{"gaze_x":Limits.GAZE_MAX+.001},{"gaze_y":Limits.GAZE_MIN-.001},{"hair_sway":rig.MAX_HAIR_SWAY+0.000001},{"hair_sway":-rig.MAX_HAIR_SWAY-0.000001},{"hair_sway":1},{"reset":true,"hair_sway":-1},{"blink":0.8,"hair_sway":0.071},{"hair_sway":NAN},{"hair_sway":"yes"},{"auto_blink":"yes"},{"mouth":"bad"}]:
         check(not rig.apply_controls(data),"unsupported/invalid channel rejected")
         check(rig.face.snapshot()==saved,"rejection is atomic")
     for id in JSON.parse_string(FileAccess.get_file_as_string("res://legacy_expression_ids.json")).legacy_expression_ids:

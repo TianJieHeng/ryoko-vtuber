@@ -20,7 +20,7 @@ No AI model or TTS service is connected by this phase.
 
 ## Architecture
 
-- `object_face.gd`, `object_rig.gd`, shaders and native artwork: existing separate-part assembly, unchanged by the backbone migration.
+- `object_face.gd`, `object_rig.gd`, shaders and native artwork: separate-part assembly; the backbone migration preserved it and the later bounded-gaze phase adds explicit derived eye owners.
 - `expression_registry.gd` and `expressions/registry.json`: transactional validation and supported-ID discovery.
 - `expression_rig.gd/.tscn`: one timeline sampler/player, control validator and ownership lifecycle.
 - `expression_viewer.gd/.tscn`: one-rig app using that public API.
@@ -42,7 +42,7 @@ There is no face/UV warp, animated feature scale, full-face patch or emotion opa
 
 ## Honest limits
 
-- Nonzero gaze is rejected until hidden iris/sclera travel pixels are verified.
+- Local candidate gaze is normalized to [-1,1] per axis, calibrated to left/right 4 source pixels, up 2 and down 1. Wider travel is rejected. See GAZE_VALIDATION.md for inferred eye artwork, ownership corrections and measured neutral/yawn differences. User approval is pending.
 - Hair is limited to ±0.07; wider travel needs additional hidden artwork.
 - Non-neutral A/E/I/O/U and their viseme aliases are rejected by the public app/controller. The historical lower-level `object_rig` still exposes them for compatibility diagnostics and is **not** a safe app/AI entry point.
 - Earrings remain static. Full-body motion, additional expressions, lip-sync/phoneme authoring and AI-model/voice-service integration are not implemented. An opt-in local external-process control bridge is available; it does not itself connect a model or TTS provider.
@@ -56,11 +56,18 @@ Python dependencies are in `requirements.txt`. A source-only package may omit ge
     python tools/verify_object_base.py
     python tools/verify_yawn.py
     python tools/verify_teeth.py
+    python tools/verify_gaze_assets.py
+    python tools/verify_gaze_coverage.py
+    python tools/verify_lid_handoff.py
     godot --headless --path . --editor --quit
     godot --headless --path . --script res://test_object_rig.gd
     godot --headless --path . --script res://test_yawn.gd
     godot --headless --path . --script res://test_teeth.gd
     godot --headless --path . --script res://test_expression_backbone.gd
+    godot --headless --path . --script res://tests/test_gaze_runtime.gd
+    godot --headless --path . --script res://tests/test_viewer_layout.gd
     python tools/test_control_bridge.py --output /tmp/ryoko-bridge-evidence
 
 `BACKBONE_VALIDATION.md` distinguishes current backbone results from inherited historical mouth/art reports. `tools/capture_backbone_parity.sh`, `tools/review_backbone_parity.gd` and `tools/compare_backbone_parity.py` provide actual-render comparison against an isolated approved baseline. Generated captures and caches belong outside source.
+
+The focused near-closed lash correction is documented in LID_HANDOFF_CORRECTION.md. It changes only the ordinary eye shader at runtime and preserves all delivered artwork.

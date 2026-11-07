@@ -1,5 +1,6 @@
 extends Node2D
 ## One shared rig. Review/capture scenes are separate entry points.
+const Limits=preload("res://control_limits.gd")
 var rig
 var selector:OptionButton
 var state_label:Label
@@ -10,6 +11,9 @@ var expression_ids:Array=[]
 var control_bridge
 var bridge_label:Label
 var bridge_button:Button
+var controls_scroll:ScrollContainer
+var controls_panel:VBoxContainer
+var bridge_panel:VBoxContainer
 func _ready():
     process_priority=10
     rig=load("res://expression_rig.tscn").instantiate();add_child(rig)
@@ -17,7 +21,14 @@ func _ready():
     rig.hud.hide();rig.hint.hide();rig.pose_status.hide()
     label_at("Ryoko / shared expression rig",Vector2(24,18),25)
     label_at("One character · data-driven performances",Vector2(24,49),15)
-    var panel=VBoxContainer.new();panel.position=Vector2(610,80);panel.custom_minimum_size=Vector2(490,0);panel.add_theme_constant_override("separation",10);add_child(panel)
+    # Keep external-control recovery visible even when all gaze rows are enabled.
+    controls_scroll=ScrollContainer.new();controls_scroll.position=Vector2(610,80);controls_scroll.size=Vector2(502,590)
+    controls_scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED
+    controls_scroll.follow_focus=true;add_child(controls_scroll)
+    var panel=VBoxContainer.new();controls_panel=panel;panel.custom_minimum_size=Vector2(480,0)
+    panel.size_flags_horizontal=Control.SIZE_EXPAND_FILL;panel.add_theme_constant_override("separation",10);controls_scroll.add_child(panel)
+    bridge_panel=VBoxContainer.new();bridge_panel.position=Vector2(610,684);bridge_panel.size=Vector2(502,96)
+    bridge_panel.add_theme_constant_override("separation",8);add_child(bridge_panel)
     var heading=Label.new();heading.text="Performance";heading.add_theme_font_size_override("font_size",21);panel.add_child(heading)
     selector=OptionButton.new();panel.add_child(selector)
     for entry in rig.list_expressions():
@@ -31,9 +42,12 @@ func _ready():
     var note=Label.new();note.text="Manual controls take ownership immediately.\nOnly the registered performance is implemented.";panel.add_child(note)
     for item in [["mouth_open","Mouth opening",0.0,1.0],["blink_R","Screen-left eyelid",0.0,1.0],["blink_L","Screen-right eyelid",0.0,1.0],["brow_screen_left","Screen-left brow",-1.0,1.0],["brow_screen_right","Screen-right brow",-1.0,1.0],["brow_tilt_screen_left","Screen-left brow tilt",-1.0,1.0],["brow_tilt_screen_right","Screen-right brow tilt",-1.0,1.0],["hair_sway","Hair sway",-0.07,0.07]]:
         add_slider(panel,item)
+    if Limits.GAZE_ENABLED:
+        add_slider(panel,["gaze_x","Gaze horizontal",Limits.GAZE_MIN,Limits.GAZE_MAX])
+        add_slider(panel,["gaze_y","Gaze vertical",Limits.GAZE_MIN,Limits.GAZE_MAX])
     auto_blink_button=CheckBox.new();auto_blink_button.text="Auto blink in manual mode";panel.add_child(auto_blink_button)
     auto_blink_button.toggled.connect(func(value):apply_controls({"auto_blink":value}))
-    var limits=Label.new();limits.text="Gaze is centered. Discrete visemes are unavailable.\nMouth and hair remain within approved limits.";panel.add_child(limits)
+    var limits=Label.new();limits.text=("Gaze is normalized, with calibrated pixel travel." if Limits.GAZE_ENABLED else "Gaze is centered pending coverage QA.")+"\nDiscrete visemes unavailable; mouth/hair limits unchanged.";limits.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;panel.add_child(limits)
     error_label=Label.new();error_label.modulate=Color(1,.62,.52);error_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;error_label.custom_minimum_size=Vector2(480,44);panel.add_child(error_label)
     # Opt-in only. No listener is created unless a port is explicitly supplied.
     control_bridge=preload("res://control_bridge.gd").new();add_child(control_bridge)
@@ -45,8 +59,8 @@ func _ready():
         if not ports[0].is_valid_int():control_bridge.last_error="Control port must be an integer in 1024..65535"
         else:control_bridge.start(rig,int(ports[0]))
     if control_bridge.last_error!="":push_error(control_bridge.last_error)
-    bridge_label=Label.new();bridge_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;panel.add_child(bridge_label)
-    bridge_button=Button.new();bridge_button.text="Enable external control";panel.add_child(bridge_button)
+    bridge_label=Label.new();bridge_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;bridge_panel.add_child(bridge_label)
+    bridge_button=Button.new();bridge_button.text="Enable external control";bridge_panel.add_child(bridge_button)
     bridge_button.pressed.connect(func():control_bridge.allow_external())
     _process(0)
 func label_at(text:String,position_value:Vector2,size:int):

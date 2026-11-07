@@ -142,6 +142,17 @@ class Suite:
         self.check(caps["expressions"] == [{"id": "EXP-163", "title": "Yawn", "duration": 5.8, "aliases": ["yawn"]}], "only approved expression exposed")
         self.check(caps["physical_mouth_max"] == .55 and not caps["ai_model_connected"] and not caps["tts_connected"], "honest bounds and integration scope")
         self.check(len(w.request("list_expressions")["result"]) == 1, "external enumeration")
+        expected_gaze = [-1.0, 1.0] if caps["gaze"]["enabled"] else [0.0, 0.0]
+        self.check(caps["controls"]["gaze_x"] == expected_gaze and caps["controls"]["gaze_y"] == expected_gaze, "advertised gaze switch and units")
+        calibration = caps["gaze"]["calibration"]
+        self.check(calibration == {"status": "verified_enabled" if caps["gaze"]["enabled"] else "coverage_bounded_pending_visual_qa", "left": 4.0, "right": 4.0, "up": 2.0, "down": 1.0}, "calibration records narrowed down travel and QA status")
+        self.check(all(caps["gaze"][direction] == (calibration[direction] if caps["gaze"]["enabled"] else 0.0) for direction in ["left", "right", "up", "down"]), "active physical support is zero while disabled")
+        for x in expected_gaze:
+            for y in expected_gaze:
+                self.check(w.request("apply_controls", {"gaze_x": x, "gaze_y": y})["ok"], "advertised gaze corner accepted")
+        for value in [expected_gaze[0] - .000001, expected_gaze[1] + .000001, True, "0"]:
+            self.reject("apply_controls", {"gaze_y": value, "mouth_open": .2, "reset": True})
+        w.request("reset")
         self.check(w.request("apply_controls", {"mouth_open": .3, "blink_R": .2})["ok"], "external manual controls")
         self.check(self.command()["snapshot"]["controls"]["mouth_open"] == .3, "socket changes actual shared rig")
         self.check(w.request("play_expression", {"expression_id": "yawn"})["ok"], "external trigger via alias")
@@ -158,7 +169,7 @@ class Suite:
                 w.request("apply_controls", {"mouth_open": .42})
             elif mode == "neutral":
                 w.request("reset")
-            for controls in [{"mouth_open": True}, {"mouth_open": "0.3"}, {"mouth_open": -0.01}, {"mouth_open": 1.01}, {"hair_sway": .070001}, {"gaze_x": .001}, {"viseme": "A"}, {"mouth": "O"}, {"reset": True, "unknown": 1}, {"auto_blink": 1}, {"blink": False}, {"perform_expression": "EXP-001"}, {"mouth_open": .3, "mouth": "REST"}, {"release_performance": True, "blink": .3}, {"perform_expression": "EXP-163", "reset": True}]:
+            for controls in [{"mouth_open": True}, {"mouth_open": "0.3"}, {"mouth_open": -0.01}, {"mouth_open": 1.01}, {"hair_sway": .070001}, {"gaze_x": caps["controls"]["gaze_x"][1] + .001}, {"viseme": "A"}, {"mouth": "O"}, {"reset": True, "unknown": 1}, {"auto_blink": 1}, {"blink": False}, {"perform_expression": "EXP-001"}, {"mouth_open": .3, "mouth": "REST"}, {"release_performance": True, "blink": .3}, {"perform_expression": "EXP-163", "reset": True}]:
                 self.reject("apply_controls", controls)
             self.reject("play_expression", {"expression_id": "res://object_rig.gd"})
             self.reject("play_expression", {"expression_id": True}, "invalid_args")

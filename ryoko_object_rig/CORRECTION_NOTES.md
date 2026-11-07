@@ -1,5 +1,7 @@
 # Canonical likeness correction
 
+Historical checkpoint. The later local eye-part/gaze candidate is documented in GAZE_VALIDATION.md; its derived owners supersede the zero-gaze limitation below without replacing any original PNG.
+
 This correction restores the approved original bust rather than fitting a different clean-source head to it. Source/native visual and temporal checks have passed. User approval of the delivered correction is still pending.
 
 ## What caused the rejected appearance

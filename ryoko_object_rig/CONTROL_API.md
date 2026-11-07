@@ -41,7 +41,7 @@ These fixes do not change the approved ordinary yawn timeline or rendered two-cy
 - `brow_raise`, `brow_screen_left`, `brow_screen_right`: [-1,1], rigid translation up to 10 source pixels. `brow_raise` sets both before individual fields.
 - `brow_tilt_screen_left`, `brow_tilt_screen_right`: [-1,1], rigid rotation up to 8 degrees.
 - `hair_sway`: [-0.07,+0.07]. Out-of-range values reject the complete transaction.
-- `gaze_x`, `gaze_y`: only 0. Hidden travel pixels are not yet verified.
+- `gaze_x`, `gaze_y`: shared `control_limits.gd` contract. Normalized [-1,1] maps to bounded source-pixel travel: left/right 4 px, up 2 px, down 1 px. Positive x is screen-right; positive y is down. Both eyes use the same rigid displacement. Unsupported and nonfinite values are rejected before any control/ownership mutation. These are normalized inputs, not pixel coordinates. Local candidate enablement follows coverage and visual QA; user approval is still required before publication.
 - `auto_blink`: boolean, manual-mode closure floor.
 - `mouth` / `viseme`: only REST, RELEASE or NEUTRAL, case-insensitive, restore continuous neutral. A/E/I/O/U are unsupported and rejected atomically.
 

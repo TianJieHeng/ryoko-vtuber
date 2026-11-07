@@ -17,9 +17,9 @@ before the unchanged-art regression gates run. Assembled diagnostic previews,
 comparison images, raw logs, superseded reports and ancillary capture scripts
 are omitted. Runtime textures and every required source input remain included.
 
-Approved yawn and other review movies remain in the existing Space. They are
-not stored in this Git package. RELEASE.json records the approved movie identity
-without claiming that the movie is a repository file.
+Review movies are separate artifacts, not stored in this source package.
+RELEASE.json distinguishes the historical approved yawn movie from the current
+local gaze review movie. Neither record claims a movie is a repository file.
 
 SOURCE_FILES.sha256 covers the packaged files only, excluding itself. It is
 not the old source archive inventory. There is no claim that all 310 historical
@@ -36,11 +36,16 @@ directory, with no sibling project, run:
     python tools/verify_object_base.py
     python tools/verify_yawn.py
     python tools/verify_teeth.py
+    python tools/verify_gaze_assets.py
+    python tools/verify_gaze_coverage.py
+    python tools/verify_lid_handoff.py
     godot --headless --editor --path . --quit
     godot --headless --path . --script res://test_object_rig.gd
     godot --headless --path . --script res://test_yawn.gd
     godot --headless --path . --script res://test_teeth.gd
     godot --headless --path . --script res://test_expression_backbone.gd
+    godot --headless --path . --script res://tests/test_gaze_runtime.gd
+    godot --headless --path . --script res://tests/test_viewer_layout.gd
     python tools/test_control_bridge.py --output /tmp/ryoko-bridge-evidence
     sha256sum -c SOURCE_FILES.sha256
 
@@ -59,3 +64,11 @@ repository's authorized LFS workflow rather than individual blob approvals.
 
 This packaging operation is local. A manifest or successful local test is not
 evidence of a remote commit, push, CI run, or user approval of new artwork.
+
+## Bounded-gaze candidate import configuration
+
+The two new runtime iris sidecars, `rig_assets/gaze_eyes/iris_screen_left.png.import` and `iris_screen_right.png.import`, are required source configuration. Keep them even if other generated `.import` files are omitted. They disable Godot alpha-border RGB repair only for the deliberately unmatted iris textures; mipmaps remain disabled. Do not substitute a global importer default or discard these files. A fresh import must reproduce the reviewed result. Other gaze mask sidecars are generated and are not shipped.
+
+All original 103 PNGs are preserved and hashed in GAZE_SOURCE_ORIGINALS.json. New art, masks and provenance live in rig_assets/gaze_eyes. Generated movie frames, captures, caches and developer scratch files stay outside source. GAZE_VALIDATION.md records the current local candidate checks and the measured eye-edge changes. RELEASE.json identifies this enabled review candidate and keeps the prior approved yawn evidence explicitly historical. User approval and remote publication remain pending.
+
+The focused near-closed lash correction is documented in LID_HANDOFF_CORRECTION.md. It changes only the ordinary eye shader at runtime and preserves all delivered artwork.

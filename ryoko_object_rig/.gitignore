@@ -20,3 +20,7 @@ __pycache__/
 *.mov
 *.webm
 *.mkv
+
+# Canonical unmatted RGB must not be rewritten by Godot alpha-edge import.
+!/rig_assets/gaze_eyes/iris_screen_left.png.import
+!/rig_assets/gaze_eyes/iris_screen_right.png.import

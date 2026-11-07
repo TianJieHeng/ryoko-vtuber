@@ -1,4 +1,5 @@
 extends SceneTree
+const Limits=preload("res://control_limits.gd")
 const Registry=preload("res://expression_registry.gd")
 var checks=0
 var failures=0
@@ -85,7 +86,7 @@ func run():
         check(state()==saved,"false reset is no-op "+mode)
         check(rig.apply_controls({"release_performance":false}),"false release accepted")
         check(state()==saved,"false release is no-op "+mode)
-        for command in [{"perform_expression":"no"},{"perform_expression":"EXP-163","blink":.4},{"release_performance":1},{"release_performance":true,"reset":true},{"mouth_open":NAN},{"mouth_open":INF},{"mouth_open":-.01},{"mouth_open":1.01},{"mouth_open":true},{"blink":-.01},{"blink":1.01},{"brow_raise":INF},{"gaze_x":.001},{"gaze_y":-.001},{"hair_sway":.070001},{"hair_sway":-.070001},{"reset":true,"bad":1},{"reset":"true"},{"auto_blink":1},{"mouth_open":.5,"mouth":"REST"},{"mouth":"A"},{"viseme":"O"},{"head_scale":1}]:
+        for command in [{"perform_expression":"no"},{"perform_expression":"EXP-163","blink":.4},{"release_performance":1},{"release_performance":true,"reset":true},{"mouth_open":NAN},{"mouth_open":INF},{"mouth_open":-.01},{"mouth_open":1.01},{"mouth_open":true},{"blink":-.01},{"blink":1.01},{"brow_raise":INF},{"gaze_x":Limits.GAZE_MAX+.001},{"gaze_y":Limits.GAZE_MIN-.001},{"hair_sway":.070001},{"hair_sway":-.070001},{"reset":true,"bad":1},{"reset":"true"},{"auto_blink":1},{"mouth_open":.5,"mouth":"REST"},{"mouth":"A"},{"viseme":"O"},{"head_scale":1}]:
             check(not rig.apply_controls(command),"invalid API command "+mode)
             check(state()==saved,"invalid command preserves all state "+mode)
         for malformed in [null,[],"controls",1,true]:
@@ -126,6 +127,23 @@ func run():
         for value in Registry.CHANNEL_BOUNDS[channel]:
             rig.reset();check(rig.apply_controls({channel:value}),"supported manual endpoint")
             check(abs(rig.face.oral_objects.cavity.material.get_shader_parameter("opening"))<=.550001,"cap at manual endpoint")
+    for x in [Limits.GAZE_MIN,0.0,Limits.GAZE_MAX]:
+        for y in [Limits.GAZE_MIN,0.0,Limits.GAZE_MAX]:
+            rig.reset();check(rig.apply_controls({"gaze_x":x,"gaze_y":y,"mouth_open":.3}),"gaze rectangle endpoint accepted")
+            check(rig.pose_now().gaze_x==x and rig.pose_now().gaze_y==y,"normalized gaze preserved")
+            rig.play_expression("EXP-163");rig.advance(.01);rig.release();rig.advance(.45)
+            check(rig.pose_now()==rig.neutral_pose(),"gaze handover releases neutral")
+    for mode in ["manual","performance","release"]:
+        rig.reset();rig.apply_controls({"gaze_x":Limits.GAZE_MAX})
+        if mode!="manual":rig.play_expression("EXP-163");rig.advance(.1)
+        if mode=="release":rig.release()
+        var gaze_saved=state()
+        for value in [Limits.GAZE_MIN-.000001,Limits.GAZE_MAX+.000001,true,"0",NAN,INF]:
+            check(not rig.apply_controls({"gaze_y":value,"mouth_open":.2,"reset":true}),"invalid mixed gaze rejected")
+            check(state()==gaze_saved,"invalid mixed gaze preserves ownership and pose")
+    check(Limits.gaze_pixels(Vector2.ZERO)==Vector2.ZERO,"zero gaze maps to zero pixels")
+    check(Limits.gaze_pixels(Vector2(-1,-1))==(Vector2(-Limits.GAZE_LEFT_PIXELS,-Limits.GAZE_UP_PIXELS) if Limits.GAZE_ENABLED else Vector2.ZERO),"negative calibrated mapping")
+    check(Limits.gaze_pixels(Vector2(1,1))==(Vector2(Limits.GAZE_RIGHT_PIXELS,Limits.GAZE_DOWN_PIXELS) if Limits.GAZE_ENABLED else Vector2.ZERO),"positive calibrated mapping")
     rig.reset();var saved=state();check(rig.sample_expression("no",1).is_empty(),"unknown sample ID")
     check(state()==saved,"sampling does not mutate state")
     for value in [NAN,INF,true,false,"1",null,[],{}]:
@@ -140,6 +158,7 @@ func run():
         for channel in Registry.CHANNEL_BOUNDS:
             check(pose[channel]>=Registry.CHANNEL_BOUNDS[channel][0] and pose[channel]<=Registry.CHANNEL_BOUNDS[channel][1],"dense sample bounds")
     var viewer=load("res://expression_viewer.tscn").instantiate();root.add_child(viewer);viewer.rig.set_process(false);viewer.set_process(false)
+    check(viewer.sliders.has("gaze_x")==Limits.GAZE_ENABLED and viewer.sliders.has("gaze_y")==Limits.GAZE_ENABLED,"gaze slider availability matches contract")
     check(viewer.list_expressions().size()==1,"viewer uses registry")
     var count=0
     for node in viewer.get_children():

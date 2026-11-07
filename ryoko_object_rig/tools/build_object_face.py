@@ -98,3 +98,6 @@ report={'neutral_max_channel_error':int(d.max()),'neutral_changed_pixels':int(np
 report['opaque_source_coverage_violations']=int(((ref[:,:,3]==255)&(out[:,:,3]<255)).sum())
 assert report['opaque_source_coverage_violations']==0,'Source-opaque ownership holes'
 (O/'neutral_metrics.json').write_text(json.dumps(report,indent=2)+'\n');print('CANONICAL_OBJECT_ASSETS_READY',len(m['objects']),json.dumps(report))
+
+# Optional bounded-gaze derivatives do not replace or mutate the canonical inputs.
+subprocess.run([sys.executable,str(R/"tools/build_gaze_eyes.py")],check=True)

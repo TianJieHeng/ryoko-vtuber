@@ -126,9 +126,16 @@ between separate reads. Tests freeze the existing controller clock to compare
 complete internal snapshots exactly across invalid transactions.
 
 See `CONTROL_API.md` for transaction combinations, no-ops and channel semantics.
-Mouth remains normalized 0..1 mapped to physical 0..0.55, hair is ±0.07, gaze must
-be zero, and A/E/I/O/U visemes remain rejected. Head/neck/body and artwork are
-unchanged.
+Mouth remains normalized 0..1 mapped to physical 0..0.55, hair is ±0.07, local candidate gaze is normalized±1 with calibrated left/right4px, up2px/down1px, and
+A/E/I/O/U visemes remain rejected. `capabilities.controls.gaze_x/gaze_y` always
+report active bounds. `capabilities.gaze` reports enabled status, normalized input
+units, and active source-pixel travel (all four directional fields are zero
+while disabled). Its `calibration` object separately records coverage-bounded
+left/right 4 px, up 2 px, down 1 px with status
+`coverage_bounded_pending_visual_qa` while disabled, or `verified_enabled` after
+activation. Calibration does not imply active support. Enabling permits
+normalized [-1,1] only after both eyes and all corners
+and eyelid combinations are verified. Positive x is right; positive y is down.
 
 ## Manual takeover, disconnect and retry
 

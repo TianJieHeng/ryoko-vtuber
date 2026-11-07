@@ -1,4 +1,5 @@
 extends Node
+const Limits=preload("res://control_limits.gd")
 ## Local transport adapter only. The viewer's one rig is the sole pose controller.
 const StrictJSON = preload("res://strict_control_json.gd")
 const PROTOCOL = 1
@@ -272,7 +273,7 @@ func capabilities() -> Dictionary:
         "controls": {"mouth_open": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
             "brow_raise": [-1.0, 1.0], "brow_screen_left": [-1.0, 1.0], "brow_screen_right": [-1.0, 1.0],
             "brow_tilt_screen_left": [-1.0, 1.0], "brow_tilt_screen_right": [-1.0, 1.0],
-            "hair_sway": [-0.07, 0.07], "gaze_x": [0.0, 0.0], "gaze_y": [0.0, 0.0],
+            "hair_sway": [-0.07, 0.07], "gaze_x": [Limits.GAZE_MIN, Limits.GAZE_MAX], "gaze_y": [Limits.GAZE_MIN, Limits.GAZE_MAX],
             "auto_blink": "boolean", "reset": "boolean", "release_performance": "boolean",
             "perform_expression": "registered ID or alias", "mouth": ["REST", "RELEASE", "NEUTRAL"], "viseme": ["REST", "RELEASE", "NEUTRAL"]},
         "limits": {"message_bytes": MAX_LINE_BYTES, "response_bytes": MAX_RESPONSE_BYTES,
@@ -280,7 +281,7 @@ func capabilities() -> Dictionary:
             "requests_per_second": RATE_PER_SECOND, "burst_requests": RATE_BURST,
             "json_depth": StrictJSON.MAX_DEPTH, "json_values": StrictJSON.MAX_TOKENS,
             "clients": 1, "idle_timeout_ms": IDLE_TIMEOUT_MS, "partial_timeout_ms": PARTIAL_TIMEOUT_MS},
-        "physical_mouth_max": 0.55, "ai_model_connected": false, "tts_connected": false}
+        "gaze": Limits.gaze_capabilities(), "physical_mouth_max": 0.55, "ai_model_connected": false, "tts_connected": false}
 
 func acknowledge(id: int, result: Variant):
     enqueue({"protocol": PROTOCOL, "id": id, "session": session, "ok": true, "result": result})

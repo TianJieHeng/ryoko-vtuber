@@ -74,10 +74,10 @@ func apply_controls(data)->bool:
     for shape_key in ["mouth","viseme"]:
         if data.has(shape_key) and (not data[shape_key] is String or data[shape_key].to_upper() not in ["REST","RELEASE","NEUTRAL"]):
             last_error="Discrete visemes are not supported by this bounded performance app; use mouth_open or REST";return false
-    # Visible canonical iris pixels have no verified hidden travel extensions.
+    # Validate shared gaze bounds before any pose or ownership mutation.
     for gaze_key in ["gaze_x","gaze_y"]:
-        if data.has(gaze_key) and (not number(data[gaze_key]) or float(data[gaze_key])!=0.0):
-            last_error="Canonical gaze is not available until hidden iris/sclera extensions are verified";return false
+        if data.has(gaze_key) and not Limits.valid_gaze(data[gaze_key]):
+            last_error="Gaze must be finite and within the advertised normalized bounds";return false
     # The flattened canonical hair has only a verified small reveal margin.
     if data.has("hair_sway") and (not number(data.hair_sway) or abs(float(data.hair_sway))>MAX_HAIR_SWAY):
         last_error="Canonical hair_sway supports only [-0.07,0.07]";return false

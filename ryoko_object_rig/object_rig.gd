@@ -16,6 +16,7 @@ var hud:Label
 var hint:Label
 var pose_status:Label
 var last_error=""
+const Limits=preload("res://control_limits.gd")
 const MAX_HAIR_SWAY=0.07
 const NUMBERS=["blink","blink_L","blink_R","gaze_x","gaze_y","brow_raise","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","hair_sway"]
 static func number(value)->bool:return (value is float or value is int) and is_finite(float(value))
@@ -29,10 +30,10 @@ func _ready():
     pose_status=Label.new();pose_status.position=Vector2(18,59);pose_status.add_theme_font_size_override("font_size",12);add_child(pose_status)
     rig_ready=true;_write_pose();print("OBJECT_BASE_READY independent_sprites=",face.objects.size()," expression_timelines=0")
 func apply_controls(data:Dictionary)->bool:
-    # Visible canonical iris pixels have no verified hidden travel extensions.
+    # Validate shared gaze bounds before any pose or ownership mutation.
     for gaze_key in ["gaze_x","gaze_y"]:
-        if data.has(gaze_key) and (not number(data[gaze_key]) or float(data[gaze_key])!=0.0):
-            last_error="Canonical gaze is not available until hidden iris/sclera extensions are verified";return false
+        if data.has(gaze_key) and not Limits.valid_gaze(data[gaze_key]):
+            last_error="Gaze must be finite and within the advertised normalized bounds";return false
     # The flattened canonical hair has only a verified small reveal margin.
     if data.has("hair_sway") and (not number(data.hair_sway) or abs(float(data.hair_sway))>MAX_HAIR_SWAY):
         last_error="Canonical hair_sway supports only [-0.07,0.07]";return false
@@ -75,7 +76,7 @@ func _write_pose():
     face.set_pose(lids,manual_gaze,manual_brow,manual_brow_tilt,mouth_shape,manual_hair)
     hud.text="Ryoko / separate-part base assembly"
     hint.text="B lids · O brows · M source viseme · H hair · 0 reset"
-    pose_status.text="Canonical native artwork / nonzero gaze unavailable"
+    pose_status.text="Canonical native artwork / "+("bounded gaze" if Limits.GAZE_ENABLED else "gaze centered pending coverage QA")
 func _process(delta):
     if not rig_ready:return
     elapsed+=delta;_write_pose()
@@ -86,6 +87,6 @@ func _unhandled_key_input(event):
         KEY_O:apply_controls({"brow_raise":0.0 if manual_brow.x>0 else 1.0})
         KEY_M:apply_controls({"mouth":"REST" if mouth_shape!="neutral" else "A"})
         KEY_H:apply_controls({"hair_sway":0.0 if manual_hair>0 else MAX_HAIR_SWAY})
-        KEY_LEFT:apply_controls({"gaze_x":-1.0})
-        KEY_RIGHT:apply_controls({"gaze_x":1.0})
+        KEY_LEFT:apply_controls({"gaze_x":Limits.GAZE_MIN})
+        KEY_RIGHT:apply_controls({"gaze_x":Limits.GAZE_MAX})
         KEY_0:apply_controls({"reset":true})
