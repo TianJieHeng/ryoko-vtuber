@@ -1,5 +1,7 @@
 # Separate canonical eyes and bounded gaze
 
+This preserves the prior gaze and ordinary-lid review record. Its one-performance counts describe that phase. The combined candidate additionally authors EXP-005; see SMILE_VALIDATION.md and validation/laughter_final_review.json for current evidence.
+
 Historical context: this report records the delivered pre-correction gaze candidate. See LID_HANDOFF_CORRECTION.md for the subsequent ordinary-lid transition correction and its current validation.
 
 Local review candidate. Internal source, rendering and control checks pass; user approval and publication are still pending. EXP-163 remains the only authored performance. This phase adds no AI model, TTS, tracking, remote execution, CI or additional expression.

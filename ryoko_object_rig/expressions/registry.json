@@ -4,7 +4,18 @@
     {
       "id": "EXP-163",
       "path": "res://yawn_performance.json",
-      "aliases": ["yawn"],
+      "aliases": [
+        "yawn"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-005",
+      "path": "res://expressions/EXP-005.json",
+      "aliases": [
+        "hearty-laughter",
+        "laugh"
+      ],
       "trigger_phase": "anticipation"
     }
   ]

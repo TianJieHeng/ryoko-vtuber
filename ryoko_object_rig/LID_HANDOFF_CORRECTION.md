@@ -1,5 +1,7 @@
 # Ordinary near-closed lash correction
 
+This records the separately reviewed ordinary-lid correction. Its unchanged-runtime and one-expression statements refer to that correction alone. This combined package adds the separately documented EXP-005 smile support, with explicit hash migrations in validation/smile_lid_baseline_migration.json. The focused shader and all 126 baseline PNGs remain unchanged.
+
 Local review candidate. User visual approval and publication remain pending.
 
 ## Report and cause

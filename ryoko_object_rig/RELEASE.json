@@ -1,145 +1,79 @@
 {
-  "candidate": "Separate canonical eyes with corrected near-closed lash handoff",
-  "evidence_context": "LID_HANDOFF_CORRECTION.md records the current ordinary-lid correction. GAZE_VALIDATION.md and historical video records retain their prior context. Only the ordinary eye shader changes runtime in this correction; no new artwork, expression, AI or TTS integration is claimed.",
-  "gaze": {
-    "candidate_neutral_return_exact": true,
-    "derivation": "Clean canonical iris ownership, continuous stationary sclera, inferred boundary/cap completion and corrected foreground hair crossing. See gaze manifest and GAZE_VALIDATION.md.",
-    "display_neutral_changed_pixels": 203,
-    "display_neutral_max_channel_difference": 98,
-    "enabled": true,
-    "native_neutral_changed_pixels": 193,
-    "native_neutral_max_channel_difference": 201,
-    "normalized_axis_range": [
-      -1,
-      1
-    ],
-    "original_pngs_unchanged": 103,
-    "physical_source_pixels": {
-      "down": 1,
-      "left": 4,
-      "right": 4,
-      "up": 2
-    },
-    "pixel_identical_to_published_neutral": false
-  },
-  "gaze_runtime_art_freeze_commit": "88bee21fcc7e11531e361f524919d30024656f71",
-  "historical_gaze_video": {
-    "audio": false,
-    "bytes": 2080051,
-    "capture": "Actual Godot 4.6.3 render sequence using one active controller and mirrored fixed close-up render instances; local H.264 encoding.",
-    "duration_seconds": 34,
-    "external_artifact_filename": "ryoko_separate_eye_gaze_review_2026-11-07.mp4",
-    "fps": 30,
-    "frames": 1020,
-    "full_decode_errors": 0,
-    "height": 800,
-    "normal_speed_playback_performed": false,
-    "sha256": "59397d9d6aaad40e372902b06a6709da2c1efb9f62d49688676c45bedb6fdded",
-    "storage": "Separate local review artifact; not included in this source package.",
-    "width": 1136
-  },
-  "historical_yawn_independent_review": {
-    "control_checks": 333283,
-    "decoded_movie_frames": 468,
-    "failures": 0,
-    "initial_final_neutral_max_delta": 0,
-    "native_normal_speed_playback_performed": false,
-    "outside_mouth_changed_pixels": 0,
-    "raw_final_stage_frames": 156,
-    "release_retrigger_frames": 341,
-    "repeat_cycle_max_delta": 0,
-    "repeat_cycle_pairs": 59
-  },
-  "historical_yawn_video": {
-    "audio": false,
-    "bytes": 1366938,
-    "capture": "Actual Godot4.6.3 OpenGL movie writer; local H.264 encoding.",
-    "cycles": 2,
-    "duration_seconds": 15.6,
-    "external_artifact_filename": "ryoko_EXP-163_object_yawn.mp4",
-    "fps": 30,
-    "frames": 468,
-    "full_decode_errors": 0,
-    "height": 800,
-    "realtime_playback_performed": false,
-    "sha256": "c9a7f6d1510bc214529c5fb8aa8cc8a4bb1850784b71f6d1beb631e96be1528b",
-    "storage": "Existing Space artifact; not included in this repository.",
-    "width": 1136
-  },
-  "local_control_bridge": {
-    "ai_model_connected": false,
-    "base_commit": "03260259eecc27be25882e42fd66ae99e622ad10",
-    "controller": "Existing single expression_rig instance",
-    "protocol": 1,
-    "transport": "Opt-in 127.0.0.1 TCP JSON lines",
-    "tts_connected": false,
-    "validation": "AI_CONTROL_VALIDATION.md"
+  "candidate": "EXP-005 hearty laughter on the single shared expression rig",
+  "status": "local completed-performance review candidate",
+  "authored_registry": [
+    "EXP-163",
+    "EXP-005"
+  ],
+  "historical_reference_ids": 93,
+  "runtime_art_checkpoint": "d4a84324a30c0f0730c93dc49fc080b109f189aa",
+  "ordinary_lid_shader_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+  "publication": "No remote publication, CI or new user visual approval is asserted.",
+  "user_approval": {
+    "prior_artwork": "EXP-163 white-teeth reference-bounded yawn",
+    "new_artwork": "Smiling-eye/lip support and EXP-005 await user visual review. Gaze and ordinary-lid correction retain their separate pending approval boundary."
   },
   "mouth_limit": {
-    "effective_aperture": [
-      0,
-      0.55
-    ],
-    "legacy_non_neutral_visemes": "rejected by yawn controller, including M shortcut",
-    "max_cavity_height_source_px": 30.8,
-    "max_lower_lip_travel_source_px": 29.7,
-    "normalized_controls": [
-      0,
-      1
-    ]
-  },
-  "ordinary_lid_correction": {
-    "controller_trace_unchanged": true,
-    "delivered_pngs_unchanged": 126,
-    "endpoint_changed_pixels": 0,
-    "endpoint_render_comparisons": 288,
-    "full_movie_frames": 1020,
-    "full_movie_mouth_panel_changed_pixels": 0,
-    "full_movie_outside_eye_changed_pixels": 0,
-    "known_unchanged_issue": "Pre-existing fine angular hair-underlap outlines at cheek tips remain outside this focused correction.",
-    "report": "LID_HANDOFF_CORRECTION.md",
-    "runtime_file": "canonical_eye_alpha.gdshader",
-    "sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026"
-  },
-  "packaging": {
-    "generated_intermediates": "Recreated by tools/build_object_face.py before source/identity tests; intentionally untracked.",
-    "required_import_sidecars": [
-      "rig_assets/gaze_eyes/iris_screen_left.png.import",
-      "rig_assets/gaze_eyes/iris_screen_right.png.import"
-    ],
-    "review_movies": "Separate review artifacts; excluded from the source package.",
-    "source_files_inventory": "SOURCE_FILES.sha256 covers packaged paths only."
-  },
-  "prior_delivered_candidate_commit": "27083b1c91c83b3463bd8ff68317b5521b31087c",
-  "publication": "Local clean package only; no remote publication result is asserted.",
-  "published_baseline_commit": "d8d9d20542f8b636890145709d0c1228f83fd7cb",
-  "review_video": {
-    "audio": false,
-    "bytes": 1699290,
-    "capture": "Actual Godot 4.6.3 render sequence using one active controller and mirrored fixed close-up render instances; local H.264 encoding.",
-    "duration_seconds": 34,
-    "external_artifact_filename": "ryoko_separate_eye_gaze_review_2026-11-07_lid_correction.mp4",
-    "fps": 30,
-    "frames": 1020,
-    "full_decode_errors": 0,
-    "height": 800,
-    "normal_speed_playback_performed": false,
-    "sha256": "a0e35ac7e9781ba6f7dd8417bc21abbe3e84f73ebb4375a4411166c4f64b27ea",
-    "storage": "Separate local review artifact; not included in this source package.",
-    "width": 1136
-  },
-  "runtime_correction_freeze_commit": "9afdd98ed51365dc9d4f88fe1d0cee658326f839",
-  "status": "local_review_candidate_user_approval_pending",
-  "teeth": {
-    "alpha_size_placement": "unchanged",
-    "upper_and_lower_rgb": "neutral-white luminance-preserving static derivatives",
-    "upper_xy": [
+    "normalized_max": 1.0,
+    "physical_max": 0.55,
+    "per_column_source_px_limit": 30.8,
+    "independent_actual_render_per_column_max_source_px": 30.75,
+    "peak_overall_cavity_bbox_height_source_px": 33.625,
+    "bbox_note": "Raised corners make whole bbox taller than per-column opening. Do not conflate these metrics.",
+    "upper_teeth_xy": [
       533,
       626
     ]
   },
-  "user_approval": {
-    "approved_artwork": "EXP-163 white-teeth reference-bounded yawn v6",
-    "implementation_scope": "Phased separate-part rig implementation is authorized. New gaze artwork and motion await user visual approval; no publication approval is asserted."
-  }
+  "teeth": {
+    "upper_xy": [
+      533,
+      626
+    ],
+    "upper_and_lower_white_pngs": "unchanged",
+    "alpha_size_placement": "unchanged"
+  },
+  "local_control_bridge": {
+    "transport": "Opt-in 127.0.0.1 TCP JSON lines",
+    "controller": "Existing single expression_rig instance",
+    "ai_model_connected": false,
+    "tts_connected": false,
+    "checks": 367
+  },
+  "video": {
+    "filename": "ryoko_EXP-005_shared_hearty_laughter.mp4",
+    "sha256": "09a556c529f3dd9facdf9550fbf41af2b953b5092f206f4d12fac3d5af403fa7",
+    "bytes": 1211824,
+    "width": 1136,
+    "height": 1454,
+    "fps": 30,
+    "frames": 720,
+    "duration_seconds": 24,
+    "audio": false,
+    "complete_laugh_cycles": 2,
+    "additional_chapters": "Release, retrigger, yawn\u2194laugh handover, manual takeover and neutral reset.",
+    "capture": "Actual Godot 4.6.3 OpenGL deterministic 30 Hz frames, local H.264 encoding.",
+    "full_decode_errors": 0,
+    "normal_speed_playback_performed": false,
+    "storage": "Separate local review artifact, not in source package."
+  },
+  "face_detail_video": {
+    "filename": "ryoko_EXP-005_face_detail.mp4",
+    "sha256": "b19aec45e88399663f546ae1f40f3b4b2323606819c2a2e957a259417e3b6e91",
+    "bytes": 1167252,
+    "derived_from": "same main capture; crop source viewport x375,y470,width386,height370 then2x scale"
+  },
+  "validation": "SMILE_VALIDATION.md and validation/laughter_final_review.json",
+  "packaging": {
+    "source_inventory": "SOURCE_FILES.sha256",
+    "baseline": "Corrected 255-file gaze source including ordinary-lid correction F",
+    "generated_intermediates": "Recreated by tools/build_object_face.py; intentionally untracked.",
+    "source_png_growth": {
+      "new_paths": 31,
+      "unique_sequences": 25,
+      "unique_bytes": 1059851
+    },
+    "movies_diagnostics_caches": "Excluded"
+  },
+  "independent_review": "PASS for local user-review candidate; no structural defect found in inspected complete sequence."
 }

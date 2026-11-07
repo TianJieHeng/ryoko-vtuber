@@ -54,7 +54,7 @@ func run():
     # Invalid input has no partial mutation.
     rig.apply_controls({"perform_expression":"EXP-163"});rig._process(1.7)
     var saved=rig.face.snapshot();var time=rig.performance_time
-    for data in [{"perform_expression":"EXP-005"},{"expression":"EXP-163"},{"mouth_open":-0.1},{"mouth_open":1.01},{"mouth_open":NAN},{"mouth_open":INF},{"mouth_open":"yes"},{"blink":.5,"head_tilt":1},{"mouth_open":.5,"mouth":"A"},{"perform_expression":"EXP-163","reset":true},{"release_performance":1},{"hair_sway":rig.MAX_HAIR_SWAY+0.000001},{"hair_sway":-rig.MAX_HAIR_SWAY-0.000001},{"blink":.8,"hair_sway":1},{"reset":true,"hair_sway":-1},{"mouth_open":.3,"hair_sway":.071},{"gaze_x":Limits.GAZE_MAX+.001,"mouth_open":.3}]:
+    for data in [{"perform_expression":"EXP-006"},{"expression":"EXP-163"},{"mouth_open":-0.1},{"mouth_open":1.01},{"mouth_open":NAN},{"mouth_open":INF},{"mouth_open":"yes"},{"blink":.5,"head_tilt":1},{"mouth_open":.5,"mouth":"A"},{"perform_expression":"EXP-163","reset":true},{"release_performance":1},{"hair_sway":rig.MAX_HAIR_SWAY+0.000001},{"hair_sway":-rig.MAX_HAIR_SWAY-0.000001},{"blink":.8,"hair_sway":1},{"reset":true,"hair_sway":-1},{"mouth_open":.3,"hair_sway":.071},{"gaze_x":Limits.GAZE_MAX+.001,"mouth_open":.3}]:
         ck(not rig.apply_controls(data),"reject invalid "+str(data));ck(rig.face.snapshot()==saved and rig.performance_time==time,"atomic rejection")
     for id in JSON.parse_string(FileAccess.get_file_as_string("res://legacy_expression_ids.json")).legacy_expression_ids:
         ck(not rig.apply_controls({"expression":id}),"all static expression IDs still gated "+id)

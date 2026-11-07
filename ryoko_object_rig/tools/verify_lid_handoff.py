@@ -32,8 +32,13 @@ def coverage(role,p,lower,y,c,new):
  return smooth(-.5,.5,y-threshold)
 base=json.loads((R/'validation/lid_handoff_baseline.json').read_text())
 check(len(base['unchanged_pngs'])==126,'Expected all 126 delivered PNGs')
+migration=json.loads((R/'validation/smile_lid_baseline_migration.json').read_text())['files']
 for group in ['unchanged_pngs','unchanged_runtime']:
- for name,h in base[group].items():check(hashlib.sha256((R/name).read_bytes()).hexdigest()==h,name)
+ for name,h in base[group].items():
+  actual=hashlib.sha256((R/name).read_bytes()).hexdigest()
+  if group=='unchanged_runtime' and name in migration:
+   check(h==migration[name]['ordinary_lid_baseline_sha256'] and actual==migration[name]['combined_smile_sha256'],name+' explicit shared smile migration')
+  else:check(actual==h,name)
 shader=(R/'canonical_eye_alpha.gdshader').read_text()
 check(shader.count('lash_handoff_seam(p,c)')==2,'Both lash owners must call the same spatial seam')
 check('float threshold=lash_handoff_seam(p,c)-36.0*c;' in shader,'Moving-lash local coordinate conversion')

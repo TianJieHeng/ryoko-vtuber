@@ -1,36 +1,22 @@
-# Clean shared-expression package
+# Clean shared-expression review package
 
-This directory contains the shared expression registry, controller and viewer,
-the opt-in loopback control bridge and Python client, the EXP-163 approved-art
-compatibility path, runtime assets, rebuild inputs and regression support. It does not add another authored expression.
+This is the same assembled character, shared registry, controller, viewer and opt-in loopback bridge. It contains two authored performances: EXP-163 yawn and the new EXP-005 hearty-laughter review candidate. The other 91 historical catalogue IDs remain references. No new expression-specific application or controller is introduced.
 
-All previously tracked object-rig paths are preserved. Existing unrelated
-repository paths must remain untouched when applying this additive overlay.
-The historical review_object_rig.gd is retained from the recorded main commit.
+Runtime and artwork were frozen at local checkpoint d4a84324a30c0f0730c93dc49fc080b109f189aa. Later commits contain tests, provenance and review packaging. The complete 255-file corrected gaze baseline is preserved. Ordinary-lid correction F is integrated explicitly; see SOURCE_PROVENANCE.json and validation/smile_runtime_migration.json. Neither laughter nor the gaze/ordinary-lid candidates are described as user-approved or published.
 
-## Generated files and evidence
+## Source versus generated evidence
 
-The three rig_assets/canonical_brows, canonical_eyes and canonical_hair trees
-are reproducible builder output, not playback inputs. They are deliberately
-untracked. The builder regenerates their intermediate masks and diagnostics
-before the unchanged-art regression gates run. Assembled diagnostic previews,
-comparison images, raw logs, superseded reports and ancillary capture scripts
-are omitted. Runtime textures and every required source input remain included.
+Keep every packaged path, including the two gaze iris `.import` source configurations. They disable alpha-border RGB repair only for deliberately unmatted irises. Other import sidecars, `.godot`, caches, raw renders, movies, contact sheets, logs and scratch experiments are excluded.
 
-Review movies are separate artifacts, not stored in this source package.
-RELEASE.json distinguishes the historical approved yawn movie from the current
-local gaze review movie. Neither record claims a movie is a repository file.
+The original canonical brows/eyes/hair intermediate trees and neutral diagnostic previews are reproducible outputs of tools/build_object_face.py. They are not playback inputs and are intentionally untracked. Regenerate them before historical identity checks. Source inputs and active runtime textures are included.
 
-SOURCE_FILES.sha256 covers the packaged files only, excluding itself. It is
-not the old source archive inventory. There is no claim that all 310 historical
-frozen entries or all generated baseline PNGs are tracked here. Historical
-validation reports retain their original context; they do not establish a new
-package validation or publication result.
+Laughter adds 31 PNG paths, representing 25 unique PNG byte sequences and 1,059,851 unique bytes. Six small source/runtime copies retain separate rebuild and runtime roles. Twenty-six inferred lip joints share two ordinary atlas files; every node retains its own transform, clipping and provenance record. Exact atlas-region checks protect packed pigment and masks. No diagnostic atlas, video or frame sequence is shipped.
 
-## Clean local rebuild and checks
+SOURCE_FILES.sha256 inventories packaged paths only, excluding itself. It is regenerated after final metadata changes. Original baseline manifests remain historical evidence; they do not assert that all generated historical files are shipped or that rendered derived art is unchanged.
 
-Use Godot 4.6.3 and the Python dependencies in requirements.txt. From this
-directory, with no sibling project, run:
+## Rebuild and verification
+
+Use Godot 4.6.3 and requirements.txt. Run from this directory, with no sibling source tree required:
 
     python tools/build_object_face.py
     python tools/verify_object_base.py
@@ -39,6 +25,7 @@ directory, with no sibling project, run:
     python tools/verify_gaze_assets.py
     python tools/verify_gaze_coverage.py
     python tools/verify_lid_handoff.py
+    python tools/verify_smile_support.py
     godot --headless --editor --path . --quit
     godot --headless --path . --script res://test_object_rig.gd
     godot --headless --path . --script res://test_yawn.gd
@@ -46,29 +33,15 @@ directory, with no sibling project, run:
     godot --headless --path . --script res://test_expression_backbone.gd
     godot --headless --path . --script res://tests/test_gaze_runtime.gd
     godot --headless --path . --script res://tests/test_viewer_layout.gd
+    godot --headless --path . --script res://tests/test_laughter_runtime.gd
+    godot --headless --path . --script res://tests/test_smile_controls.gd
     python tools/test_control_bridge.py --output /tmp/ryoko-bridge-evidence
     sha256sum -c SOURCE_FILES.sha256
 
-The generic backbone's BACKBONE_VALIDATION.md describes its parity and viewer
-checks. LOCAL_CONTROL_BRIDGE.md and AI_CONTROL_VALIDATION.md describe the local
-transport, its tests and remaining integration limits. Any rendered results belong outside the repository. The legacy yawn
-capture command remains available as tools/capture_yawn.sh.
+Godot needs writable HOME and XDG cache/data/config locations in a sandbox. The smile verifier performs two deterministic rebuilds and checks original images, protected mouth functions and packed-owner provenance. Existing Python yawn/base reports describe their historical component scope; the combined registry and lifecycle are checked by the shared-controller and laughter suites.
 
-## Storage and publication boundary
+## Review artifacts and publication boundary
 
-This overlay contains no movies or multi-megabyte diagnostic sheets. Ordinary
-small source PNGs and runtime assets remain normal Git objects. No Git LFS
-migration or new LFS configuration is performed here. Existing repository
-attributes are preserved; any future genuinely large asset should use the
-repository's authorized LFS workflow rather than individual blob approvals.
+The 24-second actual-Godot review movie and its face crop are delivered separately, not in the repository. RELEASE.json records their verified identities. SMILE_VALIDATION.md and validation/laughter_final_review.json distinguish completed checks, material inferred artwork, intentional ordinary-lid changes and finite raster limitations. No normal-speed audiovisual playback is claimed.
 
-This packaging operation is local. A manifest or successful local test is not
-evidence of a remote commit, push, CI run, or user approval of new artwork.
-
-## Bounded-gaze candidate import configuration
-
-The two new runtime iris sidecars, `rig_assets/gaze_eyes/iris_screen_left.png.import` and `iris_screen_right.png.import`, are required source configuration. Keep them even if other generated `.import` files are omitted. They disable Godot alpha-border RGB repair only for the deliberately unmatted iris textures; mipmaps remain disabled. Do not substitute a global importer default or discard these files. A fresh import must reproduce the reviewed result. Other gaze mask sidecars are generated and are not shipped.
-
-All original 103 PNGs are preserved and hashed in GAZE_SOURCE_ORIGINALS.json. New art, masks and provenance live in rig_assets/gaze_eyes. Generated movie frames, captures, caches and developer scratch files stay outside source. GAZE_VALIDATION.md records the current local candidate checks and the measured eye-edge changes. RELEASE.json identifies this enabled review candidate and keeps the prior approved yawn evidence explicitly historical. User approval and remote publication remain pending.
-
-The focused near-closed lash correction is documented in LID_HANDOFF_CORRECTION.md. It changes only the ordinary eye shader at runtime and preserves all delivered artwork.
+This package is local. A local commit, successful test or source archive is not evidence of remote publication or user approval. Existing unrelated repository paths must remain untouched when applying the overlay. No CI, paid service, external model/TTS connection, remote execution or Git LFS migration was performed. Any future genuinely large asset should follow the repository's authorized LFS workflow.

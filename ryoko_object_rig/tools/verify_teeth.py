@@ -10,12 +10,19 @@ identity=json.loads((R/'validation/mouth_limit_baseline_identity.json').read_tex
 # separately; all original mouth/art hashes continue to be checked.
 gaze_migration=json.loads((R/'validation/gaze_runtime_migration.json').read_text())
 gaze_migrations=[]
+shared_migrations=[]
+shared_migration=json.loads((R/"validation/smile_runtime_migration.json").read_text())
 app_migrations=[]
 for name,expected in identity['unchanged_files'].items():
  if name=='project.godot':
   config=(R/name).read_text()
   assert 'run/main_scene="res://expression_viewer.tscn"' in config
   app_migrations.append(name);checks+=1;continue
+ if name in shared_migration['files']:
+  migration=shared_migration['files'][name]
+  assert expected==migration['historical_sha256'],name
+  assert hashlib.sha256((R/name).read_bytes()).hexdigest()==migration['shared_candidate_sha256'],name
+  shared_migrations.append(name);checks+=2;continue
  if name in gaze_migration['files']:
   migration=gaze_migration['files'][name]
   assert expected==migration['historical_sha256'],name
@@ -29,7 +36,7 @@ for function,expected in gaze_migration['mouth_functions'].items():
  assert block is not None,function
  assert hashlib.sha256(block.group(0).encode()).hexdigest()==expected,function;checks+=1
 assert 'const MAX_MOUTH_APERTURE=0.55' in face;checks+=1
-assert set(gaze_migrations)==set(gaze_migration['files']);checks+=1
+assert set(gaze_migrations)|(set(shared_migrations)&set(gaze_migration['files']))==set(gaze_migration['files']);checks+=1
 m=json.loads((R/'rig_assets/yawn_mouth/manifest.json').read_text())
 assert m['objects']['upper_teeth']['xy']==[533,626];checks+=1
 assert m['objects']['upper_teeth']['size']==[64,14];checks+=1
@@ -47,4 +54,4 @@ for name in ['upper_teeth','lower_teeth']:
  visible=a[:,:,0][a[:,:,3]>128];assert np.median(visible)>=245;checks+=1
  assert np.percentile(visible,5)<235 and visible.max()-visible.min()>30;checks+=1
  reports[name]={'opaque_rgb_median':[float(np.median(visible))]*3,'p05':float(np.percentile(visible,5)),'max':int(visible.max()),'alpha_identical':True}
-print(json.dumps({'status':'pass','checks':checks,'unchanged_pngs':identity['unchanged_png_count'],'unchanged_runtime_and_art_files':len(identity['unchanged_files'])-len(app_migrations)-len(gaze_migrations),'explicit_app_migrations':app_migrations,'explicit_gaze_migrations':gaze_migrations,'unchanged_mouth_functions':list(gaze_migration['mouth_functions']),'static_upper_teeth_xy':[533,626],'effective_aperture_cap':.55,'tooth_whitening':reports},indent=2))
+print(json.dumps({'status':'pass','checks':checks,'unchanged_pngs':identity['unchanged_png_count'],'unchanged_runtime_and_art_files':len(identity['unchanged_files'])-len(app_migrations)-len(gaze_migrations)-len(shared_migrations),'explicit_app_migrations':app_migrations,'explicit_gaze_migrations':gaze_migrations,'explicit_shared_smile_migrations':shared_migrations,'unchanged_mouth_functions':list(gaze_migration['mouth_functions']),'static_upper_teeth_xy':[533,626],'effective_aperture_cap':.55,'tooth_whitening':reports},indent=2))

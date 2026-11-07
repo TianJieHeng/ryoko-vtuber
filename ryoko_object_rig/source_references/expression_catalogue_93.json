@@ -1,0 +1,380 @@
+{
+  "status": "REFERENCE_CATALOGUE_NOT_RUNTIME_REGISTRY",
+  "original_count": 93,
+  "source": "historical_EXP005_registration.json",
+  "source_sha256": "f2b1c6018bf0a4e73243544a74aa405caacd32272bdb9014646125abac705fca",
+  "entries": [
+    {
+      "id": "EXP-002",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-041",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-061",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-021",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-102",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-181",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-123",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-142",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-163",
+      "authored_on_shared_rig": true
+    },
+    {
+      "id": "EXP-023",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-081",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-192",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-005",
+      "authored_on_shared_rig": true
+    },
+    {
+      "id": "EXP-161",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-197",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-070",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-094",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-185",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-045",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-104",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-022",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-052",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-096",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-083",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-124",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-184",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-191",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-033",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-087",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-187",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-078",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-148",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-193",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-047",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-076",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-177",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-082",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-088",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-164",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-089",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-006",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-099",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-114",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-035",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-029",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-152",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-198",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-075",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-031",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-050",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-130",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-097",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-107",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-194",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-170",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-046",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-091",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-144",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-158",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-189",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-056",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-095",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-160",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-084",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-171",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-014",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-132",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-134",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-196",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-069",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-137",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-178",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-007",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-128",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-092",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-040",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-125",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-186",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-063",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-090",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-153",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-116",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-139",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-174",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-001",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-067",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-093",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-003",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-043",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-064",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-004",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-042",
+      "authored_on_shared_rig": false
+    },
+    {
+      "id": "EXP-129",
+      "authored_on_shared_rig": false
+    }
+  ]
+}

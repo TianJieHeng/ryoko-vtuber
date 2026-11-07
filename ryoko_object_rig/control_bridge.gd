@@ -270,7 +270,7 @@ func capabilities() -> Dictionary:
     return {"name": "ryoko-shared-rig-control", "protocol": PROTOCOL,
         "transport": "tcp-json-lines-loopback", "verbs": READ_VERBS + WRITE_VERBS,
         "expressions": rig.list_expressions(), "bridge": status(),
-        "controls": {"mouth_open": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
+        "controls": {"mouth_open": [0.0, 1.0], "mouth_smile": [0.0, 1.0], "eye_smile_R": [0.0, 1.0], "eye_smile_L": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
             "brow_raise": [-1.0, 1.0], "brow_screen_left": [-1.0, 1.0], "brow_screen_right": [-1.0, 1.0],
             "brow_tilt_screen_left": [-1.0, 1.0], "brow_tilt_screen_right": [-1.0, 1.0],
             "hair_sway": [-0.07, 0.07], "gaze_x": [Limits.GAZE_MIN, Limits.GAZE_MAX], "gaze_y": [Limits.GAZE_MIN, Limits.GAZE_MAX],

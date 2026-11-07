@@ -1,6 +1,6 @@
 # Ryoko shared expression rig
 
-One assembled separate-part character, one bounded performance controller, and data-only expression definitions. The default Godot application shows **one rig**. Only EXP-163 (Yawn) is authored and registered; the old expression catalogue and emotion sheets are references, not implemented performances.
+One assembled separate-part character, one bounded performance controller, and data-only expression definitions. The default Godot application shows **one rig**. EXP-163 (Yawn) and EXP-005 (Hearty laughter) are authored and registered; the old expression catalogue and emotion sheets are references, not implemented performances.
 
 ## Run
 
@@ -25,7 +25,9 @@ No AI model or TTS service is connected by this phase.
 - `expression_rig.gd/.tscn`: one timeline sampler/player, control validator and ownership lifecycle.
 - `expression_viewer.gd/.tscn`: one-rig app using that public API.
 - `control_bridge.gd` and `strict_control_json.gd`: optional bounded loopback adapter to the very same rig, not another controller.
-- `yawn_performance.json`: unchanged 13-key, 5.8-second approved yawn data, registered as EXP-163 with alias `yawn`.
+- `yawn_performance.json`: unchanged 13-key, 5.8-second yawn data, registered as EXP-163 with alias `yawn`.
+- `expressions/EXP-005.json`: the 15-key, 5.4-second hearty-laughter performance, using generic smile-eye/lip channels and the existing player. Local user-review candidate. See `SMILE_VALIDATION.md`.
+- `source_references/expression_catalogue_93.json`: preserves all 93 historical IDs as references; only the two actual authored performances are playable.
 - `yawn_rig.gd`: only legacy names, labels and the Y shortcut. It delegates sampling, playback, validation and ownership to the generic player.
 
 Future performances add validated JSON plus a registry entry. They do not add a controller subclass or a new application. See `CONTROL_API.md` for the shared callable contract and schema.
@@ -45,7 +47,7 @@ There is no face/UV warp, animated feature scale, full-face patch or emotion opa
 - Local candidate gaze is normalized to [-1,1] per axis, calibrated to left/right 4 source pixels, up 2 and down 1. Wider travel is rejected. See GAZE_VALIDATION.md for inferred eye artwork, ownership corrections and measured neutral/yawn differences. User approval is pending.
 - Hair is limited to ±0.07; wider travel needs additional hidden artwork.
 - Non-neutral A/E/I/O/U and their viseme aliases are rejected by the public app/controller. The historical lower-level `object_rig` still exposes them for compatibility diagnostics and is **not** a safe app/AI entry point.
-- Earrings remain static. Full-body motion, additional expressions, lip-sync/phoneme authoring and AI-model/voice-service integration are not implemented. An opt-in local external-process control bridge is available; it does not itself connect a model or TTS provider.
+- Earrings remain static. Full-body motion, the other 91 catalogue expressions, lip-sync/phoneme authoring and AI-model/voice-service integration are not implemented. An opt-in local external-process control bridge is available; it does not itself connect a model or TTS provider.
 - Flattened-source crossings contain the existing documented hidden-skin, hair-seam and continuation estimates. They are not claimed to be original clean artwork.
 
 ## Verification
@@ -59,6 +61,8 @@ Python dependencies are in `requirements.txt`. A source-only package may omit ge
     python tools/verify_gaze_assets.py
     python tools/verify_gaze_coverage.py
     python tools/verify_lid_handoff.py
+    python tools/build_smile_support.py
+    python tools/verify_smile_support.py
     godot --headless --path . --editor --quit
     godot --headless --path . --script res://test_object_rig.gd
     godot --headless --path . --script res://test_yawn.gd
@@ -66,8 +70,14 @@ Python dependencies are in `requirements.txt`. A source-only package may omit ge
     godot --headless --path . --script res://test_expression_backbone.gd
     godot --headless --path . --script res://tests/test_gaze_runtime.gd
     godot --headless --path . --script res://tests/test_viewer_layout.gd
+    godot --headless --path . --script res://tests/test_smile_controls.gd
+    godot --headless --path . --script res://tests/test_laughter_runtime.gd
     python tools/test_control_bridge.py --output /tmp/ryoko-bridge-evidence
 
 `BACKBONE_VALIDATION.md` distinguishes current backbone results from inherited historical mouth/art reports. `tools/capture_backbone_parity.sh`, `tools/review_backbone_parity.gd` and `tools/compare_backbone_parity.py` provide actual-render comparison against an isolated approved baseline. Generated captures and caches belong outside source.
 
-The focused near-closed lash correction is documented in LID_HANDOFF_CORRECTION.md. It changes only the ordinary eye shader at runtime and preserves all delivered artwork.
+## EXP-005 review boundary
+
+The laugh is a complete local authored candidate on the same rig, not a new controller or expression-specific project. Its smiling lips include explicitly inferred hidden joint material. Source images being unchanged does not imply the rendered ownership corrections are unchanged. The ordinary-lid shader also incorporates the separately reviewed F handoff correction. Read `SMILE_VALIDATION.md` for exact scope, inference, measured differences and playback limits. No remote publication or user acceptance is claimed.
+
+The focused ordinary near-closed lash correction is preserved in LID_HANDOFF_CORRECTION.md. Its shader, source assets and filtering tests remain protected alongside the new shared smile additions.

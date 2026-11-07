@@ -173,5 +173,34 @@
   },
   "registration": "New fixed bust registration; no pixel-identity claim with previous composite.",
   "originals_preserved": true,
-  "hidden_face_reconstruction": false
+  "hidden_face_reconstruction": {
+    "original_assembly_stage": false,
+    "current_shared_laughter_candidate": {
+      "whole_face_replacement": false,
+      "narrow_hidden_skin_continuation": true,
+      "inferred_skin_pixels": 96,
+      "reassigned_neutral_eye_core_pixels": 42,
+      "method": "Explicit harmonic continuation in two small stationary eye-backing regions, behind separately owned neutral pigment; no face repaint or transplanted skin/chin patch.",
+      "ownership_manifest": "rig_assets/smile_support/manifest.json"
+    }
+  },
+  "shared_laughter_candidate": {
+    "status": "local user-review candidate; not published",
+    "published_shared_main": "d8d9d20542f8b636890145709d0c1228f83fd7cb",
+    "combined_runtime_art_commit": "d4a84324a30c0f0730c93dc49fc080b109f189aa",
+    "base": "Corrected 255-file gaze source including ordinary-lid correction F; all baseline paths retained, with explicit shared-smile migrations.",
+    "ordinary_lid_correction": {
+      "source_commit": "6142a12f5a98ae4cfd326ebb8d1b93eb95d3021c",
+      "shader_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+      "scope": "Only canonical_eye_alpha.gdshader. Partial-lid ownership changes intentionally; 288 independent open/closed renders match V7."
+    },
+    "prepared_extraction_manifest_sha256": "cbbd54d83bc0eb0020c5cc945b77d90c70a54c53dc17408f72964225752eb993",
+    "source_guard": "validation/smile_source_guard.json",
+    "inference_and_owner_manifest": "rig_assets/smile_support/manifest.json",
+    "runtime_registry": [
+      "EXP-163",
+      "EXP-005"
+    ],
+    "reference_catalogue_ids": 93
+  }
 }

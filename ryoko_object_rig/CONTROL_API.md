@@ -4,7 +4,7 @@ Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewe
 
 ## Calls
 
-- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently only EXP-163 / Yawn exists.
+- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn and EXP-005 / Hearty laughter are authored. Other historical catalogue IDs are references, not playable placeholders.
 - `apply_controls(dictionary) -> bool` validates the entire transaction before changing controls, clock or ownership. Failure returns false and sets `last_error`; no partial pose/state mutation occurs.
 - `play_expression(id)`, `release()` and `reset()` wrap their corresponding control transactions.
 - `advance(delta) -> bool` advances deterministically. Delta must be finite and nonnegative. The engine calls it from `_process`; an external deterministic driver must disable automatic processing to avoid advancing twice.
@@ -36,7 +36,9 @@ These fixes do not change the approved ordinary yawn timeline or rendered two-cy
 
 ## Supported manual fields
 
-- `mouth_open`: normalized [0,1], mapped to physical aperture [0,0.55]. Maximum cavity height 30.8 source pixels; lower-lip translation 29.7 pixels. Cannot be combined with `mouth` or `viseme` in one transaction.
+- `mouth_open`: normalized [0,1], mapped to physical aperture [0,0.55]. Maximum opening in any vertical source-pixel column is 30.8; maximum central lower-lip translation 29.7. Raised smile corners can make the whole aperture bounding box taller than 30.8; that box is not the physical opening metric. Cannot be combined with `mouth` or `viseme` in one transaction.
+- `mouth_smile`: [0,1], rigid upper/lower lip and corner articulation. Distinct inferred joint owners supply missing contour material; this is not a painted-mouth swap.
+- `eye_smile_R`, `eye_smile_L`: [0,1], anatomical R is screen-left. The first half closes the ordinary lids; the second half articulates a fully closed contour into the real historical smiling crescent owners. Independent `blink` supplies a closure floor, so combinations do not reveal an iris through the closed-contour handover.
 - `blink`, `blink_L`, `blink_R`: [0,1]. L is anatomical left / screen right. `blink` sets both, then supplied individual fields override their respective eye.
 - `brow_raise`, `brow_screen_left`, `brow_screen_right`: [-1,1], rigid translation up to 10 source pixels. `brow_raise` sets both before individual fields.
 - `brow_tilt_screen_left`, `brow_tilt_screen_right`: [-1,1], rigid rotation up to 8 degrees.
@@ -53,9 +55,9 @@ All numeric values must be actual finite numbers, not booleans or numeric string
 
 Each definition contains matching `id`, nonempty `title`, positive finite `duration`, and at least two `keyframes`. A keyframe contains only finite `time`, nonempty `phase` and `values`. Times strictly increase from exactly 0 through exactly duration; first/last poses must be neutral. Missing channels mean zero. Adjacent poses use cubic smoothstep interpolation, preserving the approved sampler.
 
-Allowed timeline channels are `blink_R`, `blink_L`, `brow_screen_left`, `brow_screen_right`, `brow_tilt_screen_left`, `brow_tilt_screen_right`, `gaze_x`, `gaze_y`, `hair_sway` and `mouth_open`, with the same bounds above. The only optional definition metadata keys are `status`, `intent`, `source_catalogue_sha256`, `timing_origin`, `scope` and `interpolation`, all strings. The historical `interpolation` field is descriptive metadata, not executable logic or a mode selector.
+Allowed timeline channels are `blink_R`, `blink_L`, `brow_screen_left`, `brow_screen_right`, `brow_tilt_screen_left`, `brow_tilt_screen_right`, `gaze_x`, `gaze_y`, `hair_sway`, `mouth_open`, `mouth_smile`, `eye_smile_R` and `eye_smile_L`, with the same bounds above. The only optional definition metadata keys are `status`, `intent`, `source_catalogue_sha256`, `timing_origin`, `scope` and `interpolation`, all strings. The historical `interpolation` field is descriptive metadata, not executable logic or a mode selector.
 
-Catalogue loads validate all entries before replacement. Failure preserves the previous catalogue. Returned definitions and listings are deep copies. Only approved data should be added to the shipped registry; test-only fixtures do not constitute authored expressions.
+Catalogue loads validate all entries before replacement. Failure preserves the previous catalogue. Returned definitions and listings are deep copies. Only actual authored performances belong in the runtime registry. This local EXP-005 candidate awaits user review before publication; test-only fixtures and the other historical IDs do not constitute authored expressions.
 
 ## Compatibility and review
 

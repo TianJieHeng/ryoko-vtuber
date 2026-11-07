@@ -12,7 +12,7 @@ All retained assembly inputs are in [avatar_build_assets/](avatar_build_assets/)
 - Five contact sheets showing the separated parts.
 
 ## Actual readiness
-The shared [Godot 4.6.3 application](ryoko_object_rig/README.md) now contains one assembled separate-part character and one bounded, data-driven controller. **Only EXP-163 (Yawn)** is authored: 13 beats over 5.8 seconds. See the [shared control API](ryoko_object_rig/CONTROL_API.md). The old expression crops and catalogue remain acting references, not implemented performances.
+The shared [Godot 4.6.3 application](ryoko_object_rig/README.md) now contains one assembled separate-part character and one bounded, data-driven controller. **Two performances are authored: EXP-163 (Yawn)**, 13 beats over 5.8 seconds, and **EXP-005 (Hearty laughter)**, 15 beats over 5.4 seconds. Both use the same rig and [shared control API](ryoko_object_rig/CONTROL_API.md). See [laughter validation](ryoko_object_rig/SMILE_VALIDATION.md) for artwork provenance and review limits. Other catalogue entries remain acting references, not implemented performances.
 
 Bounded separate-eye gaze and the near-closed lash transition are implemented and locally verified; see [gaze validation](ryoko_object_rig/GAZE_VALIDATION.md) and the [lash correction](ryoko_object_rig/LID_HANDOFF_CORRECTION.md). Additional performances, full-body motion and authored speech visemes/lip-sync remain unfinished. The head, neck and body stay fixed. The optional [local external-process bridge](ryoko_object_rig/LOCAL_CONTROL_BRIDGE.md) lets a separate process control the same rig over loopback; no AI model, Ryoko agent service or TTS provider is connected by this phase.
 
