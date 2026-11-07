@@ -1,10 +1,9 @@
 {
-  "status": "Ten user-approved performances, including revised EXP-177 meditative calm",
+  "status": "Eleven user-approved shared-rig performances, including EXP-164 Fighting sleep",
   "user_approved": true,
   "published": true,
-  "base_main": "70655752bc82ba01b3fe8f64923360da60c578c9",
-  "capability_parent_inventory_sha256": "7d5004d5a7ef4e3518b994752fb5d9afb7e0a458f5a1d084fa156677a4f06fb1",
-  "capability_freeze_receipt_sha256": "08069f54450594fee1ee57c790ee7aadc60bb9c49a6af54d489cb5d69d4ca995",
+  "base_main": "958eb944a37ce836fec5acf369f12b89f47b6656",
+  "parent_inventory_sha256": "806ffe2b9ed198e4a9d0eb3e4b8a441e14c113110601dec7a70b0fb7a5714438",
   "authored_registry": [
     "EXP-163",
     "EXP-005",
@@ -15,9 +14,10 @@
     "EXP-002",
     "EXP-152",
     "EXP-160",
-    "EXP-177"
+    "EXP-177",
+    "EXP-164"
   ],
-  "approved_predecessors": [
+  "approved_registry": [
     "EXP-163",
     "EXP-005",
     "EXP-001",
@@ -26,33 +26,28 @@
     "EXP-007",
     "EXP-002",
     "EXP-152",
-    "EXP-160"
-  ],
-  "excluded": [
-    "EXP-003",
-    "head/body acting",
-    "FX",
-    "AI/TTS integration",
-    "real socket setup",
-    "EXP-161",
-    "EXP-153",
+    "EXP-160",
+    "EXP-177",
     "EXP-164"
   ],
-  "protected_capability_pngs": 182,
-  "performance_new_pngs": 0,
-  "performance_runtime_changes": false,
-  "mouth_limits": {
-    "physical_multiplier": 0.55,
-    "source_pixel_aperture_max": 30.8,
-    "fixed_upper_teeth_xy": [
-      533,
-      626
-    ]
-  },
+  "pending_review": [],
+  "excluded": [
+    "EXP-003",
+    "EXP-170",
+    "EXP-139",
+    "EXP-153",
+    "EXP-161",
+    "inner-cover experiments and every other unregistered draft",
+    "new runtime or artwork",
+    "AI/TTS and real socket connection"
+  ],
+  "protected_parent_pngs": 182,
+  "new_pngs": 0,
+  "runtime_changes": false,
   "normal_speed_playback_observed": false,
-  "verification": "MEDITATIVE_PUBLICATION_VALIDATION.md",
-  "publication": "User approved the revised smoother-closing preview. The containing commit and external main readback establish publication; no CI, paid resources or remote execution.",
-  "approved_registry": [
+  "socket_test_performed": false,
+  "verification": "FIGHTING_SLEEP_PUBLICATION_VALIDATION.md",
+  "approved_predecessors": [
     "EXP-163",
     "EXP-005",
     "EXP-001",
@@ -64,11 +59,8 @@
     "EXP-160",
     "EXP-177"
   ],
-  "approved_dependency": [
-    "hidden canonical iris cap completion / gaze_down_extra",
-    "rigid outer-anchor inner-brow lift, 26-degree additional bound"
-  ],
-  "shy_review_inventory_sha256": "9978d0cd18212e104355ca6e06ba9c6b969011c6041a755e74b414adb3700418",
-  "published_base_project_tree": "ca82147090e5a8cd9db749a12a3940fab1fa6e58",
-  "meditative_review_inventory_sha256": "b5a10081697aa3cfaa28484db1b035a94b9c954c54f44623b0d2da2acfca1ec8"
+  "approved_review_inventory_sha256": "c7bbb9de9edff9f7f5c3647d93b7cda275706dd33f213885ea97b61ff0fa87be",
+  "reviewed_profile_sha256": "bb5d72a568358aa655f5acb81889c80aa2ee9a4d6214cdf62421c5504f7da64d",
+  "published_profile_sha256": "30b7adfd10aeb10b6edb7eefb968ae44d589c9a516cd161ff39c5833c466e110",
+  "publication": "The user approved the delivered Fighting sleep preview. The containing commit and external main readback establish publication. Only profile status text differs from the reviewed performance; all animation values and times are exact."
 }

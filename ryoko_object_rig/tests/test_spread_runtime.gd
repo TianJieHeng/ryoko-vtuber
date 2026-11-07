@@ -11,7 +11,7 @@ func state_without_error():
 func run():
  rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false)
  check(rig.registry_ready and rig.face.ready_for_controls,"ready with every imported texture")
- check(rig.list_expressions().size()==10,"eight registered scoped definitions")
+ check(rig.list_expressions().size()==11,"ten approved profiles plus scoped164")
  check(rig.Registry.CHANNEL_BOUNDS.mouth_spread==[0.0,1.0],"spread registry bounds")
  var d=rig.registry.definition("EXP-001")
  check(d.duration==3.0 and d.keyframes.size()==9,"nine-key greeting")

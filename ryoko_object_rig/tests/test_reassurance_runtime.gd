@@ -16,7 +16,7 @@ func run():
  check(rig.rig_ready and rig.registry_ready,"ready")
  if not rig.rig_ready or not rig.registry_ready:quit(2);return
  check(rig.registry.resolve("reassure")=="EXP-107" and rig.registry.resolve("confident-reassurance")=="EXP-107","aliases")
- check(rig.list_expressions().size()==10 and rig.registry.resolve("EXP-003")=="" and rig.registry.resolve("EXP-007")=="EXP-007","nine-profile approved scope")
+ check(rig.list_expressions().size()==11 and rig.registry.resolve("EXP-003")=="" and rig.registry.resolve("EXP-007")=="EXP-007","ten approved profiles plus scoped164")
  var d=rig.registry.definition("EXP-107");check(d.duration==3.0 and d.keyframes.size()==11,"eleven keys / three seconds")
  var peaks=[]
  for i in range(1,d.keyframes.size()-1):

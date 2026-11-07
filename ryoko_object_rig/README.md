@@ -1,4 +1,9 @@
-# Approved shared rig: ten performances
+# Approved shared rig: eleven performances
+
+Eleven user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177/164. Fighting sleep adds the approved 3.47-second data-only performance. All ten predecessor profiles, shared runtime, shaders, scenes and 182 PNGs remain byte-identical to main 958eb944a37ce836fec5acf369f12b89f47b6656. Only the EXP-164 profile status text changes from its approved review; all other fields, times, phases and values remain exact. EXP-003/170/139, inner-cover experiments and all other unregistered drafts remain excluded. RELEASE.json and FIGHTING_SLEEP_PUBLICATION_VALIDATION.md record current status. Earlier explicitly marked checkpoints and frozen review receipts are historical provenance. No normal-speed playback observation, AI/TTS or real-socket validation is claimed.
+
+Historical EXP-177 publication checkpoint:
+
 
 Ten user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177. Revised EXP-177 Meditative calm adds a single continuous 1.2-second closing arc, with unchanged hold/opening keys from 1.2 seconds onward. All nine prior profiles, gaze_down_extra, rigid outer-anchor brow controls, automatic-blink restoration, runtime and all 182 PNGs remain exact. EXP-003/164 and all other unregistered drafts remain excluded. See MEDITATIVE_PUBLICATION_VALIDATION.md for approval, source identities and verification. Earlier explicitly marked checkpoint descriptions below are historical provenance. The EXP-177 publication profile changes only its status text; every other reviewed field and motion value is exact.
 
@@ -10,9 +15,9 @@ EXP-152 uses nine source-proposed anchors across 1.9 seconds: downward preparati
 
 # Ryoko shared expression rig
 
-**Current publication status: user-approved.** All ten performances and their published prerequisites are approved; the containing commit establishes publication.
+**Current release: all eleven registered performances are user-approved and published with the containing commit.**
 
-One assembled separate-part character, one bounded performance controller, and data-only expression definitions. The default Godot application shows **one rig**. EXP-163 (Yawn), EXP-005 (Hearty laughter), EXP-001 (Bright welcome), EXP-006 (Suppressed giggle), EXP-107 (Confident reassurance), EXP-007 (Relieved smile), EXP-002 (Affectionate warmth), and EXP-152 (Private pride), EXP-160 (Shy laughter), and EXP-177 (Meditative calm) are authored and registered. All ten and their published prerequisites are user-approved; the old expression catalogue and emotion sheets are references, not implemented performances.
+One assembled separate-part character, one bounded performance controller, and data-only expression definitions. The default Godot application shows **one rig**. EXP-163 (Yawn), EXP-005 (Hearty laughter), EXP-001 (Bright welcome), EXP-006 (Suppressed giggle), EXP-107 (Confident reassurance), EXP-007 (Relieved smile), EXP-002 (Affectionate warmth), and EXP-152 (Private pride), EXP-160 (Shy laughter), and EXP-177 (Meditative calm) are approved and registered. EXP-164 (Fighting sleep) is also approved and registered; the old expression catalogue and emotion sheets are references, not implemented performances.
 
 ## Run
 
@@ -41,7 +46,7 @@ No AI model or TTS service is connected by this phase.
 - `expressions/EXP-005.json`: the 15-key, 5.4-second hearty-laughter performance, using generic smile-eye/lip channels and the existing player. See `SMILE_VALIDATION.md` for the historical laughter review.
 - `expressions/EXP-001.json`: the approved nine-key, 3.0-second bright welcome. Separate rigid lateral lip/oral owners broaden the smile. See `WELCOME_SCOPE_VALIDATION.md`.
 - `expressions/EXP-006.json`: a 13-key, 2.8-second pressed smile, small escaped laugh and re-press. Two closed-smile controls and separately registered original cheek-blush FX use the same shared controller. Published and user-approved at `4f3deaa2de3eedb691a9f0c795c7b8563663e472`. See `GIGGLE_SCOPE_VALIDATION.md`.
-- `source_references/expression_catalogue_93.json`: preserves all 93 historical IDs as references; only the ten actual authored performances are playable.
+- `source_references/expression_catalogue_93.json`: preserves all 93 historical IDs as references; only the eleven actual authored performances are playable.
 - `yawn_rig.gd`: only legacy names, labels and the Y shortcut. It delegates sampling, playback, validation and ownership to the generic player.
 
 Future performances add validated JSON plus a registry entry. Any missing movement capability must be implemented generically with separate rigid owners; performances do not add a controller subclass or a new application. See `CONTROL_API.md` for the shared callable contract and schema.
@@ -61,7 +66,7 @@ There is no face/UV warp, animated feature scale, full-face patch or emotion opa
 - Existing normalized gaze remains [-1,1] per axis, with left/right 4, up 2 and down 1 source pixels. The local, separately reviewable `gaze_down_extra` channel adds 0–5 downward source pixels, for total down 6, without recalibrating old commands. It uses only newly completed hidden iris strips. See DOWN_GAZE_VALIDATION.md; this generic capability is user-approved as the prerequisite for EXP-152. GAZE_VALIDATION.md preserves the original gaze-stage history.
 - Hair is limited to ±0.07; wider travel needs additional hidden artwork.
 - Non-neutral A/E/I/O/U and their viseme aliases are rejected by the public app/controller. The historical lower-level `object_rig` still exposes them for compatibility diagnostics and is **not** a safe app/AI entry point.
-- Earrings remain static. Full-body motion, the other 86 catalogue expressions, lip-sync/phoneme authoring and AI-model/voice-service integration are not implemented. An opt-in local external-process control bridge is available; it does not itself connect a model or TTS provider.
+- Earrings remain static. Full-body motion, the other 82 catalogue expressions, lip-sync/phoneme authoring and AI-model/voice-service integration are not implemented. An opt-in local external-process control bridge is available; it does not itself connect a model or TTS provider.
 - Flattened-source crossings contain the existing documented hidden-skin, hair-seam and continuation estimates. They are not claimed to be original clean artwork.
 
 ## Verification
@@ -134,8 +139,12 @@ Run `python tools/verify_down_extra_scope.py`, `python tools/verify_hidden_iris_
 
 ## Preserved EXP-002 affectionate warmth
 
-The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all ten profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
+The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all eleven profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
 
 ## Approved EXP-177 meditative calm publication
 
 The user-approved revised EXP-177 (meditative-calm / meditate) is the tenth published performance, based on main 70655752bc82ba01b3fe8f64923360da60c578c9. Its single 1.2-second closing arc and all hold/opening motion match the approved review exactly. All nine prior profiles, runtime, artwork, iris/gaze, brow and automatic-blink behavior remain unchanged. RELEASE.json and MEDITATIVE_STATUS.json record current approval/publication. See MEDITATIVE_PUBLICATION_VALIDATION.md. The primary cumulative archive stays at version 19. No normal-speed playback observation, real-socket test or live AI/TTS connection is claimed.
+
+## Approved EXP-164 Fighting sleep publication
+
+The reviewed 3.47-second fifteen-key performance is the eleventh approved entry, using only existing ordinary lids, rigid brows and a restrained sealed purse. The six holds, source-pose relationships and disclosed timing tradeoffs are unchanged. See FIGHTING_SLEEP_PUBLICATION_VALIDATION.md. The current strict successor guard is tools/verify_fighting_sleep_scope.py; inherited exact-scope guards describe historical parent packages and are run only against their exact reconstructed parent. Primary cumulative archive version 19 and original review media/recovery remain untouched.

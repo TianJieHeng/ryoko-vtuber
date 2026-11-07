@@ -88,6 +88,15 @@
         "meditate"
       ],
       "trigger_phase": "settling"
+    },
+    {
+      "id": "EXP-164",
+      "path": "res://expressions/EXP-164.json",
+      "aliases": [
+        "fighting-sleep",
+        "fighting_sleep"
+      ],
+      "trigger_phase": "first_sink"
     }
   ]
 }

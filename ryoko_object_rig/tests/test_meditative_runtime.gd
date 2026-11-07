@@ -3,7 +3,7 @@ var rig
 var checks=0
 var failures=[]
 const ID="EXP-177"
-const PRIOR=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160"]
+const PRIOR=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-164"]
 const TIMES=[0.0,.4866515881418201,.6400595242051585,1.2,1.75,2.35,2.85,3.35,3.9]
 const VALUES=[0.0,.36,.55,1.0,1.0,1.0,.64,.42,0.0]
 func _initialize():call_deferred("run")
@@ -25,7 +25,7 @@ func run():
  check(rig.rig_ready and rig.registry_ready,"ready")
  if not rig.rig_ready or not rig.registry_ready:quit(2);return
  check(rig.registry.resolve("meditate")==ID and rig.registry.resolve("meditative-calm")==ID,"aliases")
- check(rig.list_expressions().size()==10,"nine published plus local177")
+ check(rig.list_expressions().size()==11,"ten approved profiles plus scoped164")
  for id in ["EXP-003","EXP-161","EXP-153"]:check(rig.registry.resolve(id)=="","unapproved profile absent")
  var d=rig.registry.definition(ID)
  check(d.duration==3.9 and d.keyframes.size()==7,"seven timeline keys, nine source-comparison poses, same3.9seconds")
@@ -42,7 +42,7 @@ func run():
  for k in rig.face.objects:
   var n=rig.face.objects[k];fixed[k]={"texture":n.texture,"region_enabled":n.region_enabled,"region_rect":n.region_rect,"modulate":n.modulate}
  for t in [0.0,.000001,.299999,.3,.4,.85,1.19,1.2,1.75,2.35,2.351,2.85,3.35,3.899999]:
-  for action in ["release","repeat_release","retrigger","release_retrigger","EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","manual","reset","disable"]:
+  for action in ["release","repeat_release","retrigger","release_retrigger","EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-164","manual","reset","disable"]:
    rig.reset();rig.apply_controls({"auto_blink":true});rig.play_expression(ID);rig.advance(t);var before=rig.displayed_pose()
    if action in ["release","repeat_release","release_retrigger"]:
     check(rig.release() and rig.displayed_pose()==before,"release C0")

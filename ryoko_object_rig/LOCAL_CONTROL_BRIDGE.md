@@ -1,5 +1,9 @@
 # Local external-process control, protocol 1
 
+Eleven user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177/164. Fighting sleep adds the approved 3.47-second data-only performance. All ten predecessor profiles, shared runtime, shaders, scenes and 182 PNGs remain byte-identical to main 958eb944a37ce836fec5acf369f12b89f47b6656. Only the EXP-164 profile status text changes from its approved review; all other fields, times, phases and values remain exact. EXP-003/170/139, inner-cover experiments and all other unregistered drafts remain excluded. RELEASE.json and FIGHTING_SLEEP_PUBLICATION_VALIDATION.md record current status. Earlier explicitly marked checkpoints and frozen review receipts are historical provenance. No normal-speed playback observation, AI/TTS or real-socket validation is claimed.
+
+Historical EXP-177 publication checkpoint:
+
 Ten user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177. Revised EXP-177 Meditative calm adds a single continuous 1.2-second closing arc, with unchanged hold/opening keys from 1.2 seconds onward. All nine prior profiles, gaze_down_extra, rigid outer-anchor brow controls, automatic-blink restoration, runtime and all 182 PNGs remain exact. EXP-003/164 and all other unregistered drafts remain excluded. See MEDITATIVE_PUBLICATION_VALIDATION.md for approval, source identities and verification. Earlier explicitly marked checkpoint descriptions below are historical provenance. The EXP-177 publication profile changes only its status text; every other reviewed field and motion value is exact.
 
 Historical EXP-160 checkpoint: nine user-approved performances shared one rig: EXP-163/005/001/006/107/007/002/152/160. The published002/152 profiles, hidden-iris support and gaze_down_extra semantics are preserved. EXP-160 adds the approved default-zero rigid outer-anchor brow capability without new artwork. EXP-003/177/161/153 remain excluded. See SHY_MERGED_PUBLICATION_VALIDATION.md for merged scope and evidence; preceding frozen review stages are historical.
@@ -10,8 +14,8 @@ controller results where loopback binding is permitted. Fresh real socket
 transport remains unrun for this publication; source/callable tests do not
 establish a live connection. No AI model, Ryoko agent service, voice/TTS provider or
 lip-sync service is connected. No credentials or persistent authorization are
-created. Ten performances are authored: EXP-163, EXP-005, EXP-001, EXP-006,
-EXP-107, EXP-007, EXP-002, EXP-152, EXP-160 and EXP-177. All ten and their published prerequisites are user-approved; current release status is recorded in `RELEASE.json`.
+created. Eleven performances are authored: EXP-163, EXP-005, EXP-001, EXP-006,
+EXP-107, EXP-007, EXP-002, EXP-152, EXP-160, EXP-177 and EXP-164. All eleven and their published prerequisites are user-approved; current release status is recorded in `RELEASE.json`.
 
 ## Run a reproducible demonstration
 
@@ -216,7 +220,7 @@ Generated logs, reports, captures and cache directories belong outside source.
 
 ## Historical welcome capability
 
-That scoped extension added `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. At that checkpoint the registered IDs were EXP-163, EXP-005 and EXP-001; the current ten-ID registry is listed above. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.
+That scoped extension added `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. At that checkpoint the registered IDs were EXP-163, EXP-005 and EXP-001; the current eleven-ID registry is listed above. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.
 
 
 ## Scoped EXP-006 extension
@@ -240,13 +244,17 @@ The callable adapter advertises `gaze_down_extra: [0,1]` and the same additive p
 
 ## Preserved EXP-002 affectionate warmth
 
-The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all ten profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
+The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all eleven profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
 
 
 ## Approved rigid inner-brow controls
 
-Independent brow_inner_lift_screen_left and brow_inner_lift_screen_right accept finite [0,1], default 0, and add at most 26 degrees after the legacy tilt about fixed outer-tail anchors. Omitted manual fields retain state; omitted timeline fields and reset default to 0. All ten profiles use the generic player. The gaze_down_extra control remains independent and zero by default. See BROW_INNER_LIFT_VALIDATION.md for exact geometry and historical evidence.
+Independent brow_inner_lift_screen_left and brow_inner_lift_screen_right accept finite [0,1], default 0, and add at most 26 degrees after the legacy tilt about fixed outer-tail anchors. Omitted manual fields retain state; omitted timeline fields and reset default to 0. All eleven profiles use the generic player. The gaze_down_extra control remains independent and zero by default. See BROW_INNER_LIFT_VALIDATION.md for exact geometry and historical evidence.
 
 ## Approved EXP-177 meditative calm publication
 
 The user-approved revised EXP-177 (meditative-calm / meditate) is the tenth published performance, based on main 70655752bc82ba01b3fe8f64923360da60c578c9. Its single 1.2-second closing arc and all hold/opening motion match the approved review exactly. All nine prior profiles, runtime, artwork, iris/gaze, brow and automatic-blink behavior remain unchanged. RELEASE.json and MEDITATIVE_STATUS.json record current approval/publication. See MEDITATIVE_PUBLICATION_VALIDATION.md. The primary cumulative archive stays at version 19. No normal-speed playback observation, real-socket test or live AI/TTS connection is claimed.
+
+## Approved EXP-164 Fighting sleep publication
+
+The reviewed 3.47-second fifteen-key performance is the eleventh approved entry, using only existing ordinary lids, rigid brows and a restrained sealed purse. The six holds, source-pose relationships and disclosed timing tradeoffs are unchanged. See FIGHTING_SLEEP_PUBLICATION_VALIDATION.md. The current strict successor guard is tools/verify_fighting_sleep_scope.py; inherited exact-scope guards describe historical parent packages and are run only against their exact reconstructed parent. Primary cumulative archive version 19 and original review media/recovery remain untouched.
