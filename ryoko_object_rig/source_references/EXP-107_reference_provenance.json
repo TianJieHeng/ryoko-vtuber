@@ -1,0 +1,71 @@
+{
+  "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": [
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp01_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp01_v001.png",
+      "sha256": "2ae412bd2ae0cdb319c48ab4d01e117b502ec81d0e7f63dbb03dab3cff4c5ed9",
+      "git_blob": "cf71557468ffa1d78fa2a1b87c2dd0e48d1ee34d"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp02_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp02_v001.png",
+      "sha256": "9dfdb3fe395a3d2dcc37e856f5f6387f51bc46c25ba314e6eaed866278186269",
+      "git_blob": "56e5357fb544b74d53a7a045bbd811565d5107aa"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp03_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp03_v001.png",
+      "sha256": "74c6790ea478f39e69ee547c3cb2e4c7c08a8ca67cbfbab8a7dfb8d28009227f",
+      "git_blob": "6c6a08a78cca49f03537688854ee3429a778a725"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp04_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp04_v001.png",
+      "sha256": "6b1762ed2e654dd91591a4fb8e8af586e976d7437c367db5987c95c901ba37ac",
+      "git_blob": "c1fed8d793e05ee53da98a044b418ce85a766dda"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp05_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp05_v001.png",
+      "sha256": "2c403bd89433f6e3ef2b128a90e1e9758893c6b2bfd1119e7845418b1ecc30f2",
+      "git_blob": "a0fdce3c5e3ed3442b2005062da1ed4cc529a193"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp06_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp06_v001.png",
+      "sha256": "9e687f7f6bcb5dbb7c0d004a7046929abbb854347165f78c8d3af26a13ff5ce3",
+      "git_blob": "96cfa4c99ebc9f6f726b261440a682653dc1388e"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp07_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp07_v001.png",
+      "sha256": "d9fbdada19aa971b754ee3dd1530e72f4c24956b97c6630697b662fd2165d48c",
+      "git_blob": "f58c2fd24bf805a8840207a0b7e1dcd5af007e94"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp08_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp08_v001.png",
+      "sha256": "686b0a863aecb1d6f8ca085df70f603fbc8d26af68785848b10cb858e4766a56",
+      "git_blob": "81ac12cdea20e3e913e97c0d6a058450e74b2d0d"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp09_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_kp09_v001.png",
+      "sha256": "e374912bc4482c66d304af4b4dda104187dd6692c1036552b370457c2fe942c9",
+      "git_blob": "2c2f2040045cba46719e97d3f8dff81f3290c35a"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_peak_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_peak_v001.png",
+      "sha256": "2c403bd89433f6e3ef2b128a90e1e9758893c6b2bfd1119e7845418b1ecc30f2",
+      "git_blob": "a0fdce3c5e3ed3442b2005062da1ed4cc529a193"
+    },
+    {
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_sheet_v001.png",
+      "local_path": "reassurance_scope_work/reference/RYO_EXP-107_confident-reassurance_sheet_v001.png",
+      "sha256": "08e4f43e20144930411dd49087eaa76d70bde1fb0214b70b6d56bd5ed42797d0",
+      "git_blob": "beb8ee82e3edde215da08097552b7de88432e731"
+    }
+  ]
+}

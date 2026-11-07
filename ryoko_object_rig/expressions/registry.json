@@ -34,6 +34,15 @@
         "giggle"
       ],
       "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-107",
+      "path": "res://expressions/EXP-107.json",
+      "aliases": [
+        "confident-reassurance",
+        "reassure"
+      ],
+      "trigger_phase": "anticipation"
     }
   ]
 }

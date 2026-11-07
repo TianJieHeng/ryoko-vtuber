@@ -19,16 +19,16 @@ for path,digest in baseline['files'].items():
  if path not in allowed:check((sha(P/path)==digest or giggle_matches(path,digest)),'unchanged predecessor path '+path)
 check(sha(P/'canonical_eye_alpha.gdshader')==baseline['files']['canonical_eye_alpha.gdshader'],'exact approved eye shader')
 registry=json.loads((P/'expressions/registry.json').read_text())
-check([e['id'] for e in registry['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006'],'exact registry order and scope')
-check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-005.json','EXP-001.json','EXP-006.json'},'only approved non-yawn profiles')
+check([e['id'] for e in registry['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107'],'exact registry order and scope')
+check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-005.json','EXP-001.json','EXP-006.json','EXP-107.json'},'only approved non-yawn profiles')
 check(not (P/'rig_assets/wide_support').exists(),'no wide-eye artwork')
 for path in ['object_face.gd','expression_registry.gd','expression_rig.gd','expression_viewer.gd','control_bridge.gd']:
  text=(P/path).read_text()
- for forbidden in ['eye_wide','wide_support','mouth_oral_lift']:
+ for forbidden in ['eye_wide','wide_support']:
   check(forbidden not in text,'no unapproved control '+path+' '+forbidden)
 for path in ['object_face.gd','expression_rig.gd']:
  check('EXP-001' not in (P/path).read_text(),'no expression-specific controller '+path)
 check(len(list((P/'rig_assets/spread_support').glob('*.png')))==17,'only 17 lateral support PNGs')
 check(len(list(P.rglob('*.png')))==182,'174 parent PNGs plus two pressed-lip and six original/registered/mask FX PNGs')
 check(not list(P.rglob('*.mp4')),'movies remain external')
-print(f'WELCOME_SCOPE_PASS checks={checks} predecessor_pngs=157 lateral_pngs=17 registry=4')
+print(f'WELCOME_SCOPE_PASS checks={checks} predecessor_pngs=157 lateral_pngs=17 registry=5')

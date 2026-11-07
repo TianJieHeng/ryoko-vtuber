@@ -19,7 +19,7 @@ func run():
     rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false)
     check(rig.registry_ready,"registry ready")
     check(rig.registry.resolve("giggle")=="EXP-006" and rig.registry.resolve("suppressed-giggle")=="EXP-006","aliases")
-    check(rig.list_expressions().size()==4,"only four actual authored profiles")
+    check(rig.list_expressions().size()==5,"only five actual authored profiles")
     check(rig.registry.resolve("EXP-008")=="","next static catalogue item unavailable")
     var d=rig.registry.definition("EXP-006")
     check(d.duration==2.8 and d.keyframes.size()==13,"new authored duration and beats")

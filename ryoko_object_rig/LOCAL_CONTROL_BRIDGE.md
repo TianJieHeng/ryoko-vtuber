@@ -215,3 +215,7 @@ The same opt-in loopback adapter now advertises `mouth_spread: [0,1]` and the la
 ## Scoped EXP-006 extension
 
 The capability list includes finite normalized `mouth_corner_lift`, `mouth_lip_press` and `blush_intensity`, all defaulting to zero. EXP-006 is discoverable under `giggle` and `suppressed-giggle`. These controls use the existing transaction validator and ownership lifecycle; no new socket, protocol or AI connection is introduced. The blush alpha belongs only to separate FX objects, never the underlying anatomy. Real socket tests must be run where loopback binding is permitted; in-process API checks do not establish network transport success.
+
+## Scoped EXP-107 extension
+
+The existing bridge advertises finite normalized `mouth_oral_lift` [0,1], default zero, and discovers EXP-107 as `confident-reassurance` or `reassure`. It calls the same shared rig. The 40-source-pixel oral-rise envelope and no-AI/no-TTS flags are explicit capabilities. No additional transport is introduced. This sandbox does not permit loopback binding, so fresh real-process socket tests are not claimed; run the included transport test where permitted.

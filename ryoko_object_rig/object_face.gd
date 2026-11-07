@@ -24,6 +24,7 @@ var smile_mouth=0.0
 var mouth_spread=0.0
 var mouth_corner_lift=0.0
 var mouth_lip_press=0.0
+var mouth_oral_lift=0.0
 var pressed_lip_owners:Array=[]
 var blush_intensity=0.0
 var effect_owner="manual"
@@ -128,7 +129,7 @@ func snapshot()->Dictionary:
     for key in objects:
         var p=homes[key].node
         transforms[key]={"position":[p.position.x,p.position.y],"rotation":p.rotation,"scale":[p.scale.x,p.scale.y],"opacity":objects[key].modulate.a,"visible":objects[key].visible}
-    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_corner_lift":mouth_corner_lift,"mouth_lip_press":mouth_lip_press,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
+    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_corner_lift":mouth_corner_lift,"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
 
 func _build_oral_objects():
     oral_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/yawn_mouth/manifest.json"))
@@ -265,7 +266,8 @@ func _corner_secant_offset(joint:Dictionary)->float:
 func _corner_secant_slope(joint:Dictionary)->float:
     return (_corner_curve(joint.right)-_corner_curve(joint.left))/(joint.right-joint.left)-(_corner_curve(joint.center+.5)-_corner_curve(joint.center-.5))
 
-func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:float=0.0,lip_press:float=0.0):
+func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:float=0.0,lip_press:float=0.0,oral_lift:float=0.0):
+    mouth_oral_lift=clampf(oral_lift,0.0,1.0)
     mouth_lip_press=clampf(lip_press,0.0,1.0)
     mouth_corner_lift=clampf(corner_lift,0.0,1.0)
     mouth_spread=clampf(spread,0.0,1.0)*clampf(mouth,0.0,1.0)
@@ -396,6 +398,9 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:fl
     for parameter in ["opening","smile","spread","corner_lift"]:
         spread_enamel_roots.material.set_shader_parameter(parameter,oral_objects.cavity.material.get_shader_parameter(parameter))
     var tongue_offset=Vector2(0,-40.0*mouth_spread+mouth_opening*MAX_MOUTH_APERTURE*5.0)
+    # Preserve the old arithmetic exactly at zero. Total rise stays inside the existing 40px envelope.
+    var additional_oral_rise=40.0*(1.0-mouth_spread)*mouth_oral_lift
+    if mouth_oral_lift>0.0:tongue_offset.y-=additional_oral_rise
     spread_tongue.position=Vector2(510,667)+tongue_offset
     spread_tongue.material.set_shader_parameter("rigid_offset",tongue_offset)
     spread_tongue.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)

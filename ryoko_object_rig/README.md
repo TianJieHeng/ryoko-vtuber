@@ -1,6 +1,6 @@
 # Ryoko shared expression rig
 
-One assembled separate-part character, one bounded performance controller, and data-only expression definitions. The default Godot application shows **one rig**. EXP-163 (Yawn), EXP-005 (Hearty laughter), EXP-001 (Bright welcome), and EXP-006 (Suppressed giggle) are authored and registered; the old expression catalogue and emotion sheets are references, not implemented performances.
+One assembled separate-part character, one bounded performance controller, and data-only expression definitions. The default Godot application shows **one rig**. EXP-163 (Yawn), EXP-005 (Hearty laughter), EXP-001 (Bright welcome), EXP-006 (Suppressed giggle), and EXP-107 (Confident reassurance) are authored and registered; the old expression catalogue and emotion sheets are references, not implemented performances.
 
 ## Run
 
@@ -28,8 +28,8 @@ No AI model or TTS service is connected by this phase.
 - `yawn_performance.json`: unchanged 13-key, 5.8-second yawn data, registered as EXP-163 with alias `yawn`.
 - `expressions/EXP-005.json`: the 15-key, 5.4-second hearty-laughter performance, using generic smile-eye/lip channels and the existing player. See `SMILE_VALIDATION.md` for the historical laughter review.
 - `expressions/EXP-001.json`: the approved nine-key, 3.0-second bright welcome. Separate rigid lateral lip/oral owners broaden the smile. See `WELCOME_SCOPE_VALIDATION.md`.
-- `expressions/EXP-006.json`: a 13-key, 2.8-second pressed smile, small escaped laugh and re-press. Two closed-smile controls and separately registered original cheek-blush FX use the same shared controller. Approval is pending. See `GIGGLE_SCOPE_VALIDATION.md`.
-- `source_references/expression_catalogue_93.json`: preserves all 93 historical IDs as references; only the four actual authored performances are playable.
+- `expressions/EXP-006.json`: a 13-key, 2.8-second pressed smile, small escaped laugh and re-press. Two closed-smile controls and separately registered original cheek-blush FX use the same shared controller. Published and user-approved at `4f3deaa2de3eedb691a9f0c795c7b8563663e472`. See `GIGGLE_SCOPE_VALIDATION.md`.
+- `source_references/expression_catalogue_93.json`: preserves all 93 historical IDs as references; only the five actual authored performances are playable.
 - `yawn_rig.gd`: only legacy names, labels and the Y shortcut. It delegates sampling, playback, validation and ownership to the generic player.
 
 Future performances add validated JSON plus a registry entry. They do not add a controller subclass or a new application. See `CONTROL_API.md` for the shared callable contract and schema.
@@ -49,7 +49,7 @@ There is no face/UV warp, animated feature scale, full-face patch or emotion opa
 - Local candidate gaze is normalized to [-1,1] per axis, calibrated to left/right 4 source pixels, up 2 and down 1. Wider travel is rejected. See GAZE_VALIDATION.md for inferred eye artwork, ownership corrections and measured neutral/yawn differences. Historical candidate measurements are preserved there; this package keeps the approved laughter predecessor eye path unchanged.
 - Hair is limited to ±0.07; wider travel needs additional hidden artwork.
 - Non-neutral A/E/I/O/U and their viseme aliases are rejected by the public app/controller. The historical lower-level `object_rig` still exposes them for compatibility diagnostics and is **not** a safe app/AI entry point.
-- Earrings remain static. Full-body motion, the other 89 catalogue expressions, lip-sync/phoneme authoring and AI-model/voice-service integration are not implemented. An opt-in local external-process control bridge is available; it does not itself connect a model or TTS provider.
+- Earrings remain static. Full-body motion, the other 88 catalogue expressions, lip-sync/phoneme authoring and AI-model/voice-service integration are not implemented. An opt-in local external-process control bridge is available; it does not itself connect a model or TTS provider.
 - Flattened-source crossings contain the existing documented hidden-skin, hair-seam and continuation estimates. They are not claimed to be original clean artwork.
 
 ## Verification
@@ -87,12 +87,20 @@ The approved laugh is a complete authored performance on the same rig, not a new
 
 The focused ordinary near-closed lash correction is preserved in LID_HANDOFF_CORRECTION.md. Its shader, source assets and filtering tests remain protected alongside the new shared smile additions.
 
-## Scoped welcome publication candidate
+## Historical scoped welcome publication
 
 This source adds only EXP-001 and its required lateral-mouth support to the exact approved laughter predecessor. Wide-eye support, held EXP-003/006/007 profiles, closed-smile pressing and oral lift are excluded. Historical receipts remain historical evidence, not proof of this package’s render parity. See `WELCOME_SCOPE_VALIDATION.md` for newly executed checks, exact approved welcome rendering and disclosed predecessor mouth-edge changes.
 
-## Scoped EXP-006 review candidate
+## Historical scoped EXP-006 publication
 
 This extension is based on the published EXP-001 source at `69e74ce5049a13ad5aa33014cacb1287f494787a`. All 174 parent PNGs and the three existing performance definitions remain byte-identical. Rigid closed-smile corner curvature and inferred inner-upper-lip pressure add only the required mouth support. The original separate left/right blush FX are registered as fixed cheek-only effect objects under foreground hair. Their bounded intensity is independent of facial geometry and facial-object opacity.
 
 The exact EXP-006 static reference is interpreted with authored timing. Painted brow curvature, fine reference hatch density and body/hand acting are not reproduced; the source FX have their original three strokes. This is a reference-matched separate-object performance, not a pixel-identical repaint. Wide-eye and oral-lift capabilities, held EXP-003/007, and AI/TTS integration remain excluded. The original no-blush EXP-006 profile is retained as a timing/control fixture, not another playable entry.
+
+## Scoped EXP-107 review candidate
+
+This extension starts from the exact approved EXP-006 commit `4f3deaa2de3eedb691a9f0c795c7b8563663e472`. It preserves all 182 PNGs and four prior profiles byte-for-byte, adds no artwork, and introduces only the shared normalized `mouth_oral_lift` channel. EXP-107 uses eleven keys across 3.0 seconds: a closed reassuring smile, one modest open accent, a closed lingering smile and neutral return. Direct gaze, fixed head/body/hair and separate rigid owners remain unchanged.
+
+The exact nine-panel source sheet, panel hashes and proposed reference timing are documented in `source_references/EXP-107_reference_metadata.json`. The reference is not a pixel-identical target for the different approved canonical artwork. See `REASSURANCE_SCOPE_VALIDATION.md` for the complete scope, current verification and honest limits. Earlier scope sections and receipts describe historical stages, not current exclusions.
+
+Run `python tools/verify_reassurance_scope.py`, the two historical scoped guards and the applicable runtime suites in `REASSURANCE_SCOPE_VALIDATION.md`. Source diagnostics must be rebuilt only in an isolated copy.

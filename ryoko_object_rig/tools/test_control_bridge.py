@@ -139,10 +139,10 @@ class Suite:
         self.check(response["error"]["code"] == "stale_session", "discovery required before writes")
         w = self.connect()
         caps = w.request("capabilities")["result"]
-        self.check(caps["expressions"] == [{"id": "EXP-163", "title": "Yawn", "duration": 5.8, "aliases": ["yawn"]}, {"id": "EXP-005", "title": "Hearty laughter", "duration": 5.4, "aliases": ["hearty-laughter", "laugh"]}, {"id": "EXP-001", "title": "Bright welcome", "duration": 3.0, "aliases": ["bright_welcome"]}, {"id": "EXP-006", "title": "Suppressed giggle", "duration": 2.8, "aliases": ["suppressed-giggle", "giggle"]}], "only authored shared performances exposed")
+        self.check(caps["expressions"] == [{"id": "EXP-163", "title": "Yawn", "duration": 5.8, "aliases": ["yawn"]}, {"id": "EXP-005", "title": "Hearty laughter", "duration": 5.4, "aliases": ["hearty-laughter", "laugh"]}, {"id": "EXP-001", "title": "Bright welcome", "duration": 3.0, "aliases": ["bright_welcome"]}, {"id": "EXP-006", "title": "Suppressed giggle", "duration": 2.8, "aliases": ["suppressed-giggle", "giggle"]}, {"id": "EXP-107", "title": "Confident reassurance", "duration": 3.0, "aliases": ["confident-reassurance", "reassure"]}], "only authored shared performances exposed")
         self.check(caps["physical_mouth_max"] == .55 and not caps["ai_model_connected"] and not caps["tts_connected"], "honest bounds and integration scope")
-        self.check(len(w.request("list_expressions")["result"]) == 4, "external enumeration")
-        for channel in ["mouth_smile", "mouth_spread", "mouth_corner_lift", "mouth_lip_press", "blush_intensity", "eye_smile_R", "eye_smile_L"]:
+        self.check(len(w.request("list_expressions")["result"]) == 5, "external enumeration")
+        for channel in ["mouth_smile", "mouth_spread", "mouth_corner_lift", "mouth_lip_press", "mouth_oral_lift", "blush_intensity", "eye_smile_R", "eye_smile_L"]:
             self.check(caps["controls"][channel] == [0.0, 1.0], "advertised bounded smile " + channel)
             self.check(w.request("apply_controls", {channel: .375})["ok"], "socket accepts smile " + channel)
             self.check(self.command()["snapshot"]["controls"][channel] == .375, "socket applies shared smile owner " + channel)

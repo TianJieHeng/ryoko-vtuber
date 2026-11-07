@@ -1,6 +1,6 @@
 # Clean shared-expression review package
 
-This is the same assembled character, shared registry, controller, viewer and opt-in loopback bridge. It contains four authored performances: EXP-163 yawn, EXP-005 hearty laughter, EXP-001 bright welcome and EXP-006 suppressed giggle. The other 89 historical catalogue IDs remain references. No new expression-specific application or controller is introduced.
+This is the same assembled character, shared registry, controller, viewer and opt-in loopback bridge. It contains five authored performances: EXP-163 yawn, EXP-005 hearty laughter, EXP-001 bright welcome, EXP-006 suppressed giggle and EXP-107 confident reassurance. The other 88 historical catalogue IDs remain references. No new expression-specific application or controller is introduced.
 
 The historical laughter runtime and artwork were frozen at local checkpoint d4a84324a30c0f0730c93dc49fc080b109f189aa. Later commits contain tests, provenance and review packaging. The complete 255-file corrected gaze baseline is preserved. Ordinary-lid correction F is integrated explicitly; see SOURCE_PROVENANCE.json and validation/smile_runtime_migration.json. Those historical review receipts retain their original wording. The exact approved laughter predecessor is now published at `6a61452e29ffbfcd4f7c5afe9b728b367f145f3e`; current scoped welcome validation is documented separately.
 
@@ -42,7 +42,7 @@ Godot needs writable HOME and XDG cache/data/config locations in a sandbox. The 
 
 ## Review artifacts and publication boundary
 
-The 24-second actual-Godot review movie and its face crop are delivered separately, not in the repository. `source_references/laughter_predecessor_RELEASE.json` records their verified identities; `source_references/welcome_predecessor_RELEASE.json` preserves welcome evidence; current `RELEASE.json` records the scoped giggle source. SMILE_VALIDATION.md and validation/laughter_final_review.json distinguish completed checks, material inferred artwork, intentional ordinary-lid changes and finite raster limitations. No normal-speed audiovisual playback is claimed.
+The 24-second actual-Godot review movie and its face crop are delivered separately, not in the repository. `source_references/laughter_predecessor_RELEASE.json` records their verified identities; `source_references/welcome_predecessor_RELEASE.json` preserves welcome evidence; `source_references/giggle_predecessor_RELEASE.json` preserves giggle evidence; current `RELEASE.json` records the scoped reassurance source. SMILE_VALIDATION.md and validation/laughter_final_review.json distinguish completed checks, material inferred artwork, intentional ordinary-lid changes and finite raster limitations. No normal-speed audiovisual playback is claimed.
 
 This package is local. A local commit, successful test or source archive is not evidence of remote publication or user approval. Existing unrelated repository paths must remain untouched when applying the overlay. No CI, paid service, external model/TTS connection, remote execution or Git LFS migration was performed. Any future genuinely large asset should follow the repository's authorized LFS workflow.
 
@@ -57,3 +57,9 @@ Base: verified main `69e74ce5049a13ad5aa33014cacb1287f494787a`, repository subtr
 Run `python tools/verify_giggle_scope.py` and `python tools/verify_welcome_scope.py` on the clean package before generating diagnostics. Run the closed-smile and blush source verifiers and the runtime suites in `GIGGLE_SCOPE_VALIDATION.md`. The blush builder defaults to this shipping rig root and does not need sibling source trees. It regenerates optional diagnostic PNGs not included in the lean package. Run builders in an isolated copy, then retain the clean package for inventory checks.
 
 The pre-review checkpoint is an expression-specific delta, not a replacement cumulative source archive. Its apply script first verifies every published base hash, applies exact changed/new files, and validates the reconstructed full candidate inventory.
+
+## Scoped EXP-107 overlay
+
+Base is verified main `4f3deaa2de3eedb691a9f0c795c7b8563663e472`. All 399 published project paths remain; all 182 PNGs and four predecessor profiles are byte-exact. No new artwork is added. The only runtime capability is generic rigid lower oral-surface lift, and the only new playable data is EXP-107. Historical source guards follow exact pinned migration hashes through this extension, not unrestricted allowlists.
+
+Run `python tools/verify_reassurance_scope.py`, `python tools/verify_giggle_scope.py`, `python tools/verify_welcome_scope.py`, then the fifteen runtime suites listed in `REASSURANCE_SCOPE_VALIDATION.md`. Do not run diagnostic builders in the clean inventory tree. The deliverable is a new scoped delta against this verified parent, never a replacement for the cumulative archive. Approval must precede any publication.
