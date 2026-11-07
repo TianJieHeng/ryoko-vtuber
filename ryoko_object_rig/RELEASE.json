@@ -1,31 +1,50 @@
 {
-  "candidate": "Scoped EXP-001 bright welcome on the existing shared rig",
-  "status": "User-approved performance; scoped source and actual-render gates passed with disclosed limits",
+  "candidate": "Scoped EXP-006 suppressed giggle on the shared rig",
+  "status": "Local review candidate; separate user approval and publication pending",
+  "base_commit": "69e74ce5049a13ad5aa33014cacb1287f494787a",
+  "base_subtree": "ryoko_object_rig/",
   "authored_registry": [
     "EXP-163",
     "EXP-005",
-    "EXP-001"
+    "EXP-001",
+    "EXP-006"
   ],
-  "baseline_archive_sha256": "4882931a321d9b82bf96a7b786872b8225b78a3ca045494b55ef9f8039e7db18",
-  "reviewed_welcome_archive_sha256": "eb1ee48de0ec78ec2c298b21b4641b8ede6bd38b3dd681208b40847ef141a3a9",
-  "protected_original_pngs": 157,
-  "new_lateral_pngs": 17,
+  "protected_parent_pngs": 174,
+  "new_pressed_lip_pngs": 2,
+  "new_blush_pngs": {
+    "originals": 2,
+    "registered_runtime": 2,
+    "cheek_masks": 2
+  },
+  "new_controls": {
+    "mouth_corner_lift": [
+      0,
+      1
+    ],
+    "mouth_lip_press": [
+      0,
+      1
+    ],
+    "blush_intensity": [
+      0,
+      1
+    ]
+  },
   "excluded": [
     "wide-eye support",
     "EXP-003",
-    "EXP-006",
     "EXP-007",
-    "closed-smile pressing",
-    "oral lift"
+    "mouth_oral_lift"
   ],
-  "approved_movie": {
-    "filename": "ryoko_EXP-001_bright_welcome.mp4",
-    "sha256": "c8f049b6e18773dcfeb9c669f9cd668e40f89b8e33fb22d76a52818dc82bae89",
-    "frames": 300,
+  "review_movie": {
+    "frames": 240,
     "fps": 30,
-    "duration_seconds": 10,
+    "duration_seconds": 8,
+    "cycles": 2,
     "normal_speed_playback_performed": false
   },
+  "reference_sheet_git_blob": "6d74152c9c12e6f6a1030336f2f90e2eddd62d55",
+  "reference_sheet_sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
   "mouth_limits": {
     "normalized": [
       0,
@@ -33,17 +52,11 @@
     ],
     "physical_multiplier": 0.55,
     "per_column_source_px_max": 30.8,
-    "welcome_open": 0.8,
-    "welcome_aperture_px": 24.64,
     "fixed_central_upper_teeth_xy": [
       533,
       626
     ]
   },
-  "verification": "WELCOME_SCOPE_VALIDATION.md",
-  "publication": "Not yet published. No CI, paid resources, remote execution, or AI/TTS connection.",
-  "verified_predecessor_commit": "6a61452e29ffbfcd4f7c5afe9b728b367f145f3e",
-  "independent_review": "validation/welcome_independent_review.json",
-  "runtime_art_tree_sha256": "0fd51b64768c48584ae1aaf97fa0f243ecf3484958d9fa867d7a62a939950d7a",
-  "historical_profile_status_note": "The exact approved EXP-001 JSON is preserved byte-for-byte, including its historical internal-candidate status text. This release receipt records the subsequent approval and scoped verification."
+  "verification": "GIGGLE_SCOPE_VALIDATION.md",
+  "publication": "Not published. No CI, paid resources, remote execution or external model/TTS integration."
 }

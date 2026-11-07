@@ -4,6 +4,7 @@ uniform vec2 rigid_offset=vec2(0.0);
 uniform float opening=0.0;
 uniform float smile=0.0;
 uniform float spread=0.0;
+uniform float corner_lift=0.0;
 uniform bool lip=false;
 uniform bool upper_lip=false;
 uniform bool underlip_shadow=false;
@@ -63,7 +64,7 @@ void fragment(){
    float horizontal=clamp(abs(p.x-564.5)/width,0.0,1.0);
    float curve=sqrt(max(0.0,1.0-pow(horizontal,4.0)));
    float smile_curve=pow(max(0.0,1.0-horizontal*horizontal),.72);
-   float lifted_seam=seam-4.0*spread-(4.0+5.0*spread)*smile*pow(horizontal,1.5);
+   float lifted_seam=seam-4.0*spread-(4.0+5.0*spread)*smile*pow(horizontal,1.5)-12.0*corner_lift*pow(clamp(abs((p.x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
    curve=mix(curve,smile_curve,smile);
    float aperture=clamp(min(p.y-lifted_seam,lifted_seam+d*curve-p.y)/1.0,0.0,1.0);
    pixel.a*=aperture*side;

@@ -110,5 +110,8 @@
   "res://rig_assets/yawn_mouth/tongue.png",
   "res://rig_assets/yawn_mouth/underlip_shadow.png",
   "res://rig_assets/yawn_mouth/upper_lip.png",
-  "res://rig_assets/yawn_mouth/upper_teeth.png"
+  "res://rig_assets/yawn_mouth/upper_teeth.png",
+  "res://rig_assets/pressed_lip_support/inner_upper_lip.png",
+  "res://rig_assets/blush_support/blush_screen_left.png",
+  "res://rig_assets/blush_support/blush_screen_right.png"
 ]

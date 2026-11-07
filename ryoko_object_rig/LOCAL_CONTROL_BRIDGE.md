@@ -210,3 +210,8 @@ Generated logs, reports, captures and cache directories belong outside source.
 ## Scoped welcome capability
 
 The same opt-in loopback adapter now advertises `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. The exact registered IDs are EXP-163, EXP-005 and EXP-001. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.
+
+
+## Scoped EXP-006 extension
+
+The capability list includes finite normalized `mouth_corner_lift`, `mouth_lip_press` and `blush_intensity`, all defaulting to zero. EXP-006 is discoverable under `giggle` and `suppressed-giggle`. These controls use the existing transaction validator and ownership lifecycle; no new socket, protocol or AI connection is introduced. The blush alpha belongs only to separate FX objects, never the underlying anatomy. Real socket tests must be run where loopback binding is permitted; in-process API checks do not establish network transport success.

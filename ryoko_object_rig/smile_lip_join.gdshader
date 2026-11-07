@@ -19,6 +19,7 @@ uniform bool upper_lip=false;
 uniform float opening=0.0;
 uniform float smile=0.0;
 uniform float spread=0.0;
+uniform float corner_lift=0.0;
 uniform vec2 joint_origin=vec2(565.0,634.0);
 uniform float angle=0.0;
 uniform sampler2D seam_texture : filter_linear, repeat_disable;
@@ -41,7 +42,7 @@ void fragment(){
   float current_width=mix(38.0-12.0*opening,35.5,smile)+20.0*spread;
   float h=clamp(abs(edge_point.x-564.5)/current_width,0.0,1.0);
   float current_curve=mix(sqrt(max(0.0,1.0-pow(h,4.0))),pow(max(0.0,1.0-h*h),.72),smile);
-  float current_seam=620.0+texture(seam_texture,vec2(clamp((spread==0.0 ? (edge_point.x-525.0) : (39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5)))/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5);
+  float current_seam=620.0+texture(seam_texture,vec2(clamp((spread==0.0 ? (edge_point.x-525.0) : (39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5)))/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5)-12.0*corner_lift*pow(clamp(abs((edge_point.x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
   float contact_gap=edge_point.y-(current_seam+56.0*opening*current_curve);
   float ellipse=pow((source_x-39.5)/(50.0-30.0*pow(o,1.6)),2.0)+pow((y-20.0)/(100.0-89.0*pow(o,1.6)),2.0);
   coverage*=(1.0-smoothstep(.82,1.0,ellipse))*(1.0-smoothstep(.25+.75*pow(1.0-smile,4.0),1.5+4.5*pow(1.0-smile,4.0),contact_gap));

@@ -56,9 +56,9 @@ All numeric values must be actual finite numbers, not booleans or numeric string
 
 Each definition contains matching `id`, nonempty `title`, positive finite `duration`, and at least two `keyframes`. A keyframe contains only finite `time`, nonempty `phase` and `values`. Times strictly increase from exactly 0 through exactly duration; first/last poses must be neutral. Missing channels mean zero. Adjacent poses use cubic smoothstep interpolation, preserving the approved sampler.
 
-Allowed timeline channels are `blink_R`, `blink_L`, `brow_screen_left`, `brow_screen_right`, `brow_tilt_screen_left`, `brow_tilt_screen_right`, `gaze_x`, `gaze_y`, `hair_sway`, `mouth_open`, `mouth_smile`, `mouth_spread`, `eye_smile_R` and `eye_smile_L`, with the same bounds above. The only optional definition metadata keys are `status`, `intent`, `source_catalogue_sha256`, `timing_origin`, `scope` and `interpolation`, all strings. The historical `interpolation` field is descriptive metadata, not executable logic or a mode selector.
+Allowed timeline channels are `blink_R`, `blink_L`, `brow_screen_left`, `brow_screen_right`, `brow_tilt_screen_left`, `brow_tilt_screen_right`, `gaze_x`, `gaze_y`, `hair_sway`, `mouth_open`, `mouth_smile`, `mouth_spread`, `eye_smile_R`, `eye_smile_L`, `mouth_corner_lift`, `mouth_lip_press` and `blush_intensity`, with the same bounds above. The only optional definition metadata keys are `status`, `intent`, `source_catalogue_sha256`, `timing_origin`, `scope` and `interpolation`, all strings. The historical `interpolation` field is descriptive metadata, not executable logic or a mode selector.
 
-Catalogue loads validate all entries before replacement. Failure preserves the previous catalogue. Returned definitions and listings are deep copies. Only actual authored performances belong in the runtime registry. The three registered performances are user-approved; test-only fixtures and the other historical IDs do not constitute authored expressions.
+Catalogue loads validate all entries before replacement. Failure preserves the previous catalogue. Returned definitions and listings are deep copies. Only actual authored performances belong in the runtime registry. The three predecessor performances are user-approved; EXP-006 is a review candidate; test-only fixtures and the other historical IDs do not constitute authored expressions.
 
 ## Compatibility and review
 
@@ -66,4 +66,12 @@ Catalogue loads validate all entries before replacement. Failure preserves the p
 
 ## Lateral mouth support
 
-`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. Only EXP-163, EXP-005 and EXP-001 are registered. Wide-eye, lip-press and oral-lift controls are not included.
+`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. EXP-163, EXP-005, EXP-001 and EXP-006 are registered. Wide-eye and oral-lift controls are not included.
+
+## Closed smile and independent blush FX
+
+- `mouth_corner_lift`: finite [0,1], default 0. Adds up to 12 source pixels of cubic radial corner lift through rigid upper/lower lip segments. Endpoint secants avoid hooked corners. The original zero-control geometry is preserved.
+- `mouth_lip_press`: finite [0,1], default 0. Reveals up to 4 source pixels of inferred hidden inner-upper-lip tissue using fourteen fixed-UV children of the existing upper-lip pivots. It does not lower the outer mouth or move/tint teeth.
+- `blush_intensity`: finite [0,1], default 0. Controls only the alpha intensity of two independent, fixed registered original cheek FX sprites. These are `face.effect_objects`, distinct from opaque anatomy owners in `face.objects`. They retain fixed texture/UV, position, rotation and unit scale, at z=29 below eyes and foreground hair. Their cheek masks exclude eyes, nose, mouth and neck. This is not a face texture swap or facial opacity crossfade.
+
+All three controls participate in generic atomic validation, manual takeover, continuous retrigger/release and exact reset. FX ownership follows the same active expression, release or manual writer. Missing required FX textures fail readiness. All prior profiles omit these controls and therefore default to zero.

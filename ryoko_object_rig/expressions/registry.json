@@ -25,6 +25,15 @@
         "bright_welcome"
       ],
       "trigger_phase": "recognition"
+    },
+    {
+      "id": "EXP-006",
+      "path": "res://expressions/EXP-006.json",
+      "aliases": [
+        "suppressed-giggle",
+        "giggle"
+      ],
+      "trigger_phase": "anticipation"
     }
   ]
 }

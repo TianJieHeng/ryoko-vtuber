@@ -8,6 +8,7 @@ uniform bool corner=false;
 uniform float opening=0.0;
 uniform float smile=0.0;
 uniform float spread=0.0;
+uniform float corner_lift=0.0;
 uniform float offset_x=0.0;
 uniform float joint_center=40.0;
 uniform float offset_y=0.0;
@@ -34,7 +35,7 @@ float lower_geometry_mask(float sx,float y,float own_angle,vec2 own_offset){
   float current_width=mix(38.0-12.0*opening,35.5,smile)+20.0*spread;
   float h=clamp(abs(edge_point.x-564.5)/current_width,0.0,1.0);
   float current_curve=mix(sqrt(max(0.0,1.0-pow(h,4.0))),pow(max(0.0,1.0-h*h),.72),smile);
-  float current_seam=620.0+texture(seam_texture,vec2(clamp((spread==0.0 ? (edge_point.x-525.0) : (39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5)))/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5);
+  float current_seam=620.0+texture(seam_texture,vec2(clamp((spread==0.0 ? (edge_point.x-525.0) : (39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5)))/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5)-12.0*corner_lift*pow(clamp(abs((edge_point.x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
   float contact_gap=edge_point.y-(current_seam+56.0*opening*current_curve);
   float ellipse_h=100.0-89.0*pow(o,1.6);
   float ellipse_w=50.0-30.0*pow(o,1.6);

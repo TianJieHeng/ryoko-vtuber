@@ -218,5 +218,24 @@
     "scope": "Only approved EXP-001 lateral support; baseline eye runtime and assets preserved exactly. No wide-eye or held profiles.",
     "publication": "Scoped source and actual-render gates passed; publication requires a separately verified remote commit",
     "independent_review": "validation/welcome_independent_review.json"
+  },
+  "scoped_suppressed_giggle": {
+    "base_commit": "69e74ce5049a13ad5aa33014cacb1287f494787a",
+    "new_inferred_hidden_lip": "rig_assets/pressed_lip_support/manifest.json",
+    "original_blush_fx_registration": "rig_assets/blush_support/manifest.json",
+    "new_controls": [
+      "mouth_corner_lift",
+      "mouth_lip_press",
+      "blush_intensity"
+    ],
+    "unchanged_parent_pngs": 174,
+    "unchanged_profiles": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001"
+    ],
+    "reference_blob": "6d74152c9c12e6f6a1030336f2f90e2eddd62d55",
+    "reference_path": "avatar_build_assets/reference_library/assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.png",
+    "reference_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403"
   }
 }

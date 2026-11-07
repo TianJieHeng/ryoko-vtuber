@@ -22,6 +22,13 @@ var oral_manifest:Dictionary
 var smile_eyes=Vector2.ZERO
 var smile_mouth=0.0
 var mouth_spread=0.0
+var mouth_corner_lift=0.0
+var mouth_lip_press=0.0
+var pressed_lip_owners:Array=[]
+var blush_intensity=0.0
+var effect_owner="manual"
+var effect_objects:Dictionary={}
+var blush_manifest:Dictionary={}
 var spread_cavity:Array=[]
 var spread_teeth:Array=[]
 var spread_joint_extensions:Dictionary={}
@@ -79,6 +86,7 @@ func _ready():
     _build_oral_objects()
     _build_smile_objects()
     _build_spread_objects()
+    if not _build_blush_objects():return
     ready_for_controls=true
     set_pose(Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,"neutral",0.0)
 func _update_iris_visibility(side:String):
@@ -120,7 +128,7 @@ func snapshot()->Dictionary:
     for key in objects:
         var p=homes[key].node
         transforms[key]={"position":[p.position.x,p.position.y],"rotation":p.rotation,"scale":[p.scale.x,p.scale.y],"opacity":objects[key].modulate.a,"visible":objects[key].visible}
-    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"hair_sway":hair_sway,"objects":transforms}
+    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_corner_lift":mouth_corner_lift,"mouth_lip_press":mouth_lip_press,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
 
 func _build_oral_objects():
     oral_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/yawn_mouth/manifest.json"))
@@ -212,7 +220,7 @@ func _build_smile_objects():
             mat.set_shader_parameter("left_edge",float(edges[i]));mat.set_shader_parameter("right_edge",float(edges[i+1]))
             mat.set_shader_parameter("corner",corner);mat.set_shader_parameter("upper_lip",upper);node.material=mat;node.visible=false
             var key=pivot.name;objects[key]=node;homes[key]={"xy":Vector2(525,620),"pivot":pivot.position,"node":pivot}
-            smile_lip_joints.append({"key":key,"center":center,"upper":upper,"corner":corner,"index":i})
+            smile_lip_joints.append({"key":key,"center":center,"upper":upper,"corner":corner,"index":i,"left":float(edges[i]),"right":float(edges[i+1])})
 
     for e in smile_manifest.lip_continuations:
         var node=Sprite2D.new();node.name=e.name;node.centered=false;node.z_index=57
@@ -224,17 +232,42 @@ func _build_smile_objects():
         objects[e.name]=node;homes[e.name]={"xy":Vector2(525+e.edge,634),"pivot":pivot.position,"node":pivot}
         smile_lip_continuations.append(e)
 
+    for joint in smile_lip_joints:
+        if not joint.upper:continue
+        var node=Sprite2D.new();node.centered=false;node.name="inner_"+joint.key
+        node.texture=load("res://rig_assets/pressed_lip_support/inner_upper_lip.png")
+        node.position=Vector2(525,620)-homes[joint.key].pivot
+        node.z_index=-1;homes[joint.key].node.add_child(node)
+        var mat=ShaderMaterial.new();mat.shader=load("res://pressed_lip_clip.gdshader")
+        mat.set_shader_parameter("left_edge",joint.left);mat.set_shader_parameter("right_edge",joint.right)
+        mat.set_shader_parameter("joint_center",joint.center)
+        mat.set_shader_parameter("seam_texture",load("res://rig_assets/yawn_mouth/neutral_seam.png"));node.material=mat
+        node.visible=false;objects[node.name]=node;homes[node.name]=homes[joint.key]
+        pressed_lip_owners.append({"node":node,"parent":joint.key})
+
 func _smile_lip_offset(x:float,upper:bool,corner:bool)->float:
     return _smile_lip_offset_for_spread(x,upper,corner,mouth_spread)
 
 func _smile_lip_offset_for_spread(x:float,upper:bool,corner:bool,spread_value:float)->float:
     var radius=clampf(abs((x-39.5)/35.5),0.0,1.0)
-    var lift=-4.0*spread_value-(4.0+5.0*spread_value)*smile_mouth*pow(radius,1.5)
+    var lift=-4.0*spread_value-(4.0+5.0*spread_value)*smile_mouth*pow(radius,1.5)+_corner_curve(x)
     if upper:return lift
     var curve=pow(maxf(0.0,1.0-radius*radius),.72)
     return lift+mouth_opening*MAX_MOUTH_APERTURE*54.0*lerpf(1.0,curve,smile_mouth)
 
-func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0):
+func _corner_curve(x:float)->float:
+    var radius=clampf(abs((x-39.5)/35.5),0.0,1.0)
+    return -12.0*mouth_corner_lift*radius*radius*radius
+
+func _corner_secant_offset(joint:Dictionary)->float:
+    return (_corner_curve(joint.left)+_corner_curve(joint.right))*.5-_corner_curve(joint.center)
+
+func _corner_secant_slope(joint:Dictionary)->float:
+    return (_corner_curve(joint.right)-_corner_curve(joint.left))/(joint.right-joint.left)-(_corner_curve(joint.center+.5)-_corner_curve(joint.center-.5))
+
+func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0,corner_lift:float=0.0,lip_press:float=0.0):
+    mouth_lip_press=clampf(lip_press,0.0,1.0)
+    mouth_corner_lift=clampf(corner_lift,0.0,1.0)
     mouth_spread=clampf(spread,0.0,1.0)*clampf(mouth,0.0,1.0)
     smile_eyes=eyes.clamp(Vector2.ZERO,Vector2.ONE);smile_mouth=clampf(mouth,0.0,1.0)
     for side in ["screen_left","screen_right"]:
@@ -259,17 +292,18 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0):
     for node in neutral_residue_objects:node.material.set_shader_parameter("smile",smile_eyes.y)
     var baseline_lip_transforms={}
     for joint in smile_lip_joints:
-        var key=joint.key;var home=homes[key];objects[key].visible=smile_mouth>0.0 or mouth_spread>0.0
+        var key=joint.key;var home=homes[key];objects[key].visible=smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0
         objects[key].material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
         objects[key].material.set_shader_parameter("smile",smile_mouth)
-        var baseline_offset=_smile_lip_offset_for_spread(joint.center,joint.upper,joint.corner,0.0)
-        var baseline_slope=_smile_lip_offset_for_spread(joint.center+.5,joint.upper,joint.corner,0.0)-_smile_lip_offset_for_spread(joint.center-.5,joint.upper,joint.corner,0.0)
+        var baseline_offset=_smile_lip_offset_for_spread(joint.center,joint.upper,joint.corner,0.0)+_corner_secant_offset(joint)
+        var baseline_slope=_smile_lip_offset_for_spread(joint.center+.5,joint.upper,joint.corner,0.0)-_smile_lip_offset_for_spread(joint.center-.5,joint.upper,joint.corner,0.0)+_corner_secant_slope(joint)
         baseline_lip_transforms[key]=Transform2D(atan(baseline_slope),home.pivot+Vector2(0,baseline_offset))
-        var offset=_smile_lip_offset(joint.center,joint.upper,joint.corner)
+        var offset=_smile_lip_offset(joint.center,joint.upper,joint.corner)+_corner_secant_offset(joint)
         home.node.position=home.pivot+Vector2(_spread_x(joint.center),offset)
-        var slope=(_smile_lip_offset(joint.center+.5,joint.upper,joint.corner)-_smile_lip_offset(joint.center-.5,joint.upper,joint.corner))
+        var slope=(_smile_lip_offset(joint.center+.5,joint.upper,joint.corner)-_smile_lip_offset(joint.center-.5,joint.upper,joint.corner))+_corner_secant_slope(joint)
         home.node.rotation=atan(slope/(1.0+20.0*mouth_spread/35.5))
         objects[key].material.set_shader_parameter("spread",mouth_spread)
+        objects[key].material.set_shader_parameter("corner_lift",mouth_corner_lift)
         objects[key].material.set_shader_parameter("offset_x",_spread_x(joint.center))
         objects[key].material.set_shader_parameter("joint_center",joint.center)
         objects[key].material.set_shader_parameter("offset_y",offset)
@@ -304,8 +338,9 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0):
         var left_bottom=inv*(homes[left_key].node.transform*(point+Vector2(0,31)-homes[left_key].pivot))
         var right_top=inv*(homes[right_key].node.transform*(point+Vector2(0,-14)-homes[right_key].pivot))
         var right_bottom=inv*(homes[right_key].node.transform*(point+Vector2(0,31)-homes[right_key].pivot))
-        node.visible=smile_mouth>0.0 or mouth_spread>0.0
+        node.visible=smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0
         node.material.set_shader_parameter("spread",mouth_spread)
+        node.material.set_shader_parameter("corner_lift",mouth_corner_lift)
         if spread_joint_extensions.has(key):
             var lt:Transform2D=baseline_lip_transforms[left_key];var rt:Transform2D=baseline_lip_transforms[right_key]
             var ba=lt*(point-homes[left_key].pivot);var bb=rt*(point-homes[right_key].pivot)
@@ -327,18 +362,20 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0):
         var extension=spread_joint_extensions[original_name]
         var original=objects[original_name]
         extension.visible=mouth_spread>0.0
-        for parameter in ["joint_origin","angle","left_top","left_bottom","right_top","right_bottom","opening","smile","spread"]:
+        for parameter in ["joint_origin","angle","left_top","left_bottom","right_top","right_bottom","opening","smile","spread","corner_lift"]:
             extension.material.set_shader_parameter(parameter,original.material.get_shader_parameter(parameter))
-    if smile_mouth>0.0 or mouth_spread>0.0:
+    if smile_mouth>0.0 or mouth_spread>0.0 or mouth_corner_lift>0.0 or mouth_lip_press>0.0:
         oral_objects.upper_lip.visible=false;oral_objects.lower_lip.visible=false
     for key in oral_objects:
         oral_objects[key].material.set_shader_parameter("smile",smile_mouth)
         oral_objects[key].material.set_shader_parameter("spread",mouth_spread)
+        oral_objects[key].material.set_shader_parameter("corner_lift",mouth_corner_lift)
     for node in spread_cavity:
         node.visible=mouth_spread>0.0
         node.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
         node.material.set_shader_parameter("smile",smile_mouth)
         node.material.set_shader_parameter("spread",mouth_spread)
+        node.material.set_shader_parameter("corner_lift",mouth_corner_lift)
 
     for node in spread_teeth:
         var left=node.name.ends_with("left")
@@ -354,8 +391,9 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0):
         node.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
         node.material.set_shader_parameter("smile",smile_mouth)
         node.material.set_shader_parameter("spread",mouth_spread)
+        node.material.set_shader_parameter("corner_lift",mouth_corner_lift)
     spread_enamel_roots.visible=mouth_spread>0.0
-    for parameter in ["opening","smile","spread"]:
+    for parameter in ["opening","smile","spread","corner_lift"]:
         spread_enamel_roots.material.set_shader_parameter(parameter,oral_objects.cavity.material.get_shader_parameter(parameter))
     var tongue_offset=Vector2(0,-40.0*mouth_spread+mouth_opening*MAX_MOUTH_APERTURE*5.0)
     spread_tongue.position=Vector2(510,667)+tongue_offset
@@ -363,6 +401,18 @@ func set_smile_controls(eyes:Vector2,mouth:float,spread:float=0.0):
     spread_tongue.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
     spread_tongue.material.set_shader_parameter("smile",smile_mouth)
     spread_tongue.material.set_shader_parameter("spread",mouth_spread)
+    spread_tongue.material.set_shader_parameter("corner_lift",mouth_corner_lift)
+
+    for entry in pressed_lip_owners:
+        var node=entry.node;var parent=homes[entry.parent].node
+        node.visible=mouth_lip_press>0.0
+        node.material.set_shader_parameter("joint_origin",parent.position)
+        node.material.set_shader_parameter("angle",parent.rotation)
+        node.material.set_shader_parameter("opening",mouth_opening*MAX_MOUTH_APERTURE)
+        node.material.set_shader_parameter("smile",smile_mouth)
+        node.material.set_shader_parameter("spread",mouth_spread)
+        node.material.set_shader_parameter("corner_lift",mouth_corner_lift)
+        node.material.set_shader_parameter("lip_press",mouth_lip_press)
 
 
 func _spread_x(source_x:float)->float:
@@ -436,3 +486,36 @@ func _verify_required_textures()->bool:
             asset_error="REQUIRED_TEXTURE_INVALID: "+str(path);push_error(asset_error);return false
     return true
 
+
+# Separate source FX, not facial-anatomy owners. Fixed registered pigment and
+# unit transforms; only effect intensity changes. Hair remains in front.
+func _build_blush_objects()->bool:
+    var path="res://rig_assets/blush_support/manifest.json"
+    if not FileAccess.file_exists(path):
+        asset_error="BLUSH_MANIFEST_MISSING";push_error(asset_error);return false
+    var parsed=JSON.parse_string(FileAccess.get_file_as_string(path))
+    if not parsed is Dictionary or not parsed.get("objects") is Dictionary or parsed.objects.size()!=2:
+        asset_error="BLUSH_MANIFEST_INVALID";push_error(asset_error);return false
+    blush_manifest=parsed
+    for key in blush_manifest.objects:
+        var entry=blush_manifest.objects[key]
+        if not entry is Dictionary or not entry.get("file") is String or not entry.get("xy") is Array or entry.xy.size()!=2:
+            asset_error="BLUSH_ENTRY_INVALID";push_error(asset_error);return false
+    for key in blush_manifest.objects:
+        var entry=blush_manifest.objects[key]
+        var node=Sprite2D.new();node.name=key;node.centered=false
+        node.texture=load("res://rig_assets/blush_support/"+entry.file)
+        node.position=Vector2(entry.xy[0],entry.xy[1]);node.z_index=29
+        node.modulate=Color(1,1,1,0);node.visible=false
+        add_child(node);effect_objects[key]=node
+    return true
+func set_blush_intensity(value:float):
+    blush_intensity=clampf(value,0.0,1.0)
+    for node in effect_objects.values():
+        node.modulate=Color(1,1,1,blush_intensity);node.visible=blush_intensity>0.0
+func _effect_snapshot()->Dictionary:
+    var result={}
+    for key in effect_objects:
+        var node=effect_objects[key]
+        result[key]={"position":[node.position.x,node.position.y],"rotation":node.rotation,"scale":[node.scale.x,node.scale.y],"intensity":node.modulate.a,"visible":node.visible,"z_index":node.z_index,"owner":effect_owner}
+    return result
