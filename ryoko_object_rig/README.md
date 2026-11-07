@@ -4,7 +4,7 @@ One assembled separate-part character, one bounded performance controller, and d
 
 ## Run
 
-Open `project.godot` in Godot 4.6.3 and run. Select the registered performance and press Play (P), Release (Space), or Reset (0). Sliders provide bounded manual controls. Manual input takes ownership and cancels active playback/release. The optional auto-blink is a manual-mode closure floor.
+Open `project.godot` in Godot 4.6.3 and run. Select the registered performance and press Play (P), Release (Space), or Reset (0). Sliders provide bounded manual controls. Manual input takes ownership and cancels active playback/release. The optional auto-blink defaults off. When enabled, it pauses during performances and resumes after exact neutral recovery. The viewer reports actual activity separately from the saved preference; changing it is manual takeover. See AUTO_BLINK_VALIDATION.md for this independently reviewed focused correction and its verification limits.
 
 `expression_viewer.tscn` is the default app. `yawn_stage.tscn` is a separate legacy three-view review scene, not another runtime architecture. It delegates to the same player through a thin compatibility wrapper.
 

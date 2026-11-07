@@ -8,10 +8,10 @@ func check(ok,label):
  if not ok:
   failures.append(label)
   if failures.size()<20:push_error(label)
-func neutral(label):
+func neutral(label,blink_enabled=false):
  check(rig.pose_now()==rig.neutral_pose(),label+" exact neutral")
  check(rig.active_performance=="" and rig.release_time<0,label+" no stale owner")
- check(not rig.auto_blink,label+" inherited blink disabled")
+ check(rig.auto_blink==blink_enabled,label+" expected auto-blink preference")
 func run():
  rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false)
  check(rig.rig_ready and rig.registry_ready,"ready")
@@ -57,10 +57,10 @@ func run():
  check(rig.face.closure.x>.99,"active auto-blink visible")
  var before=rig.displayed_pose();rig.play_expression("EXP-007")
  check(rig.displayed_pose()==before and not rig.auto_blink,"incoming auto-blink C0 and disabled")
- rig.advance(3.2);neutral("auto-blink complete")
+ rig.advance(3.2);neutral("auto-blink complete",true)
  check(rig.apply_controls({"auto_blink":true}) and rig.auto_blink,"manual auto-blink reenable directly after completion")
  check(rig.active_performance=="" and rig.release_time<0,"reenable keeps manual idle ownership")
- rig.play_expression("EXP-007");rig.advance(.9);rig.release();rig.advance(.45);neutral("auto-blink release")
+ rig.play_expression("EXP-007");rig.advance(.9);rig.release();rig.advance(.45);neutral("auto-blink release",true)
  check(rig.apply_controls({"auto_blink":true}) and rig.auto_blink,"manual auto-blink reenable directly after release")
  rig.reset();rig.apply_controls({"auto_blink":true});rig.advance(4.03)
  check(rig.face.closure.x>.99,"manual auto-blink reenabled after reset")

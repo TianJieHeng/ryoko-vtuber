@@ -10,6 +10,8 @@ var active_performance=""
 var performance_time=0.0
 var performance_phase="neutral"
 var release_time=-1.0
+# Intent survives temporary suspension, never a later manual takeover.
+var auto_blink_pending_restore=false
 var current_pose:Dictionary={}
 var restart_pose:Dictionary={}
 var release_pose:Dictionary={}
@@ -120,14 +122,15 @@ func apply_controls(data)->bool:
     if data.size()==1 and data.has("reset") and not data.reset:last_error="";return true
     if data.has("perform_expression"):
         restart_pose=displayed_pose();active_performance=registry.resolve(data.perform_expression)
-        performance=registry.definition(active_performance);performance_time=0;release_time=-1;performance_phase=registry.trigger_phase(active_performance);auto_blink=false
+        performance=registry.definition(active_performance);performance_time=0;release_time=-1;performance_phase=registry.trigger_phase(active_performance);_suspend_auto_blink()
         release_pose.clear();last_error=""
         _apply_performance_pose(restart_pose);return true
     if data.get("release_performance",false):
-        release_pose=displayed_pose();active_performance="";release_time=0;performance_phase="interrupted_release";auto_blink=false
+        release_pose=displayed_pose();active_performance="";release_time=0;performance_phase="interrupted_release";_suspend_auto_blink()
         last_error="";_apply_performance_pose(release_pose);return true
     if data.has("release_performance"):last_error="";return true
     if data.size()>0:
+        auto_blink_pending_restore=false
         active_performance="";release_time=-1;performance_phase="manual"
     if data.get("reset",false):
         manual_mouth_open=0;manual_eye_smile=Vector2.ZERO;manual_mouth_smile=0.0;manual_mouth_spread=0.0;manual_mouth_corner_lift=0.0;manual_mouth_lip_press=0.0;manual_mouth_oral_lift=0.0;manual_mouth_purse=0.0;manual_blush_intensity=0.0;oral_mode="continuous";performance_time=0;performance_phase="neutral"
@@ -150,6 +153,23 @@ func apply_controls(data)->bool:
     current_pose=pose_now()
     if ok:last_error=""
     return ok
+func _suspend_auto_blink():
+    auto_blink_pending_restore=auto_blink_pending_restore or auto_blink
+    auto_blink=false
+func _restore_auto_blink():
+    if not auto_blink_pending_restore:return
+    # Only completed neutral recovery may release the authored controller's pause.
+    if active_performance!="" or release_time>=0 or pose_now()!=neutral_pose():return
+    auto_blink_pending_restore=false
+    # Reuse the base's existing cycle from its open phase. Resuming the old clock
+    # could jump from recovered open eyes straight back to a captured mid-blink.
+    elapsed=0.0;auto_blink=true;_write_pose()
+func auto_blink_policy()->Dictionary:
+    return {"default_enabled":false,"suspend_during_performance_and_release":true,
+        "restore_after_neutral_recovery":true,"preserve_intent_across_retrigger":true,
+        "manual_takeover_cancels_pending_restore":true,"reset_disables":true,
+        "restore_clock":"restart_existing_cycle_open_phase",
+        "actual_state_field":"auto_blink","pending_state_field":"auto_blink_pending_restore"}
 func _process(delta):advance(delta)
 func advance(delta)->bool:
     if not number(delta) or delta<0:last_error="delta must be finite and nonnegative";return false
@@ -162,12 +182,12 @@ func advance(delta)->bool:
             var u=smoothstep(0.0,RESTART_SECONDS,performance_time)
             for key in CHANNELS:p[key]=lerpf(restart_pose.get(key,0),p[key],u)
         performance_phase=phase_at(performance_time);_apply_performance_pose(p)
-        if performance_time>=performance.duration:active_performance="";performance_phase="neutral_return";_apply_performance_pose(neutral_pose())
+        if performance_time>=performance.duration:active_performance="";performance_phase="neutral_return";_apply_performance_pose(neutral_pose());_restore_auto_blink()
     elif release_time>=0:
         release_time+=delta;var u=smoothstep(0.0,RELEASE_SECONDS,release_time);var p=neutral_pose()
         for key in CHANNELS:p[key]=lerpf(release_pose[key],0,u)
         _apply_performance_pose(p)
-        if release_time>=RELEASE_SECONDS:release_time=-1;performance_phase="neutral";_apply_performance_pose(neutral_pose())
+        if release_time>=RELEASE_SECONDS:release_time=-1;performance_phase="neutral";_apply_performance_pose(neutral_pose());_restore_auto_blink()
     else:
         elapsed+=delta;_write_pose()
     return true
@@ -185,4 +205,4 @@ func play_expression(id)->bool:return apply_controls({"perform_expression":id})
 func release()->bool:return apply_controls({"release_performance":true})
 func reset()->bool:return apply_controls({"reset":true})
 func get_state()->Dictionary:
-    return {"registry_ready":registry_ready,"active_expression":active_performance,"time":performance_time,"phase":performance_phase,"release_time":release_time,"controls":pose_now(),"displayed_controls":displayed_pose(),"owners":face.owners.duplicate(),"auto_blink":auto_blink,"last_error":last_error}
+    return {"registry_ready":registry_ready,"active_expression":active_performance,"time":performance_time,"phase":performance_phase,"release_time":release_time,"controls":pose_now(),"displayed_controls":displayed_pose(),"owners":face.owners.duplicate(),"auto_blink":auto_blink,"auto_blink_pending_restore":auto_blink_pending_restore,"last_error":last_error}

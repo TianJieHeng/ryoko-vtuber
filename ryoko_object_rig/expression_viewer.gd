@@ -6,6 +6,7 @@ var selector:OptionButton
 var state_label:Label
 var error_label:Label
 var auto_blink_button:CheckBox
+var auto_blink_status:Label
 var sliders:Dictionary={}
 var expression_ids:Array=[]
 var control_bridge
@@ -45,8 +46,10 @@ func _ready():
     if Limits.GAZE_ENABLED:
         add_slider(panel,["gaze_x","Gaze horizontal",Limits.GAZE_MIN,Limits.GAZE_MAX])
         add_slider(panel,["gaze_y","Gaze vertical",Limits.GAZE_MIN,Limits.GAZE_MAX])
-    auto_blink_button=CheckBox.new();auto_blink_button.text="Auto blink in manual mode";panel.add_child(auto_blink_button)
+    auto_blink_button=CheckBox.new();auto_blink_button.text="Auto blink preference (manual takeover)";panel.add_child(auto_blink_button)
     auto_blink_button.toggled.connect(func(value):apply_controls({"auto_blink":value}))
+    auto_blink_button.tooltip_text="Changing this preference takes manual ownership immediately and cancels playback/recovery. Reset disables it."
+    auto_blink_status=Label.new();auto_blink_status.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;panel.add_child(auto_blink_status)
     var limits=Label.new();limits.text=("Gaze is normalized, with calibrated pixel travel." if Limits.GAZE_ENABLED else "Gaze is centered pending coverage QA.")+"\nDiscrete visemes unavailable; mouth/hair limits unchanged.";limits.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;panel.add_child(limits)
     error_label=Label.new();error_label.modulate=Color(1,.62,.52);error_label.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;error_label.custom_minimum_size=Vector2(480,44);panel.add_child(error_label)
     # Opt-in only. No listener is created unless a port is explicitly supplied.
@@ -88,7 +91,8 @@ func _process(_delta):
     var state=rig.get_state()
     state_label.text=(state.active_expression if state.active_expression!="" else "No active performance")+" / "+state.phase+" / %.2f s"%state.time
     for channel in sliders:sliders[channel].set_value_no_signal(state.displayed_controls[channel])
-    auto_blink_button.set_pressed_no_signal(state.auto_blink)
+    auto_blink_button.set_pressed_no_signal(state.auto_blink or state.auto_blink_pending_restore)
+    auto_blink_status.text="Auto blink: paused; resumes after neutral recovery." if state.auto_blink_pending_restore else ("Auto blink: active." if state.auto_blink else "Auto blink: off.")
     error_label.text=state.last_error
     if bridge_label!=null:
         var bridge=control_bridge.status()

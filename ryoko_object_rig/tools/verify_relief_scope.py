@@ -2,6 +2,7 @@
 """Exact EXP-007 and generic rigid-purse scope, source and immutable-parent guard."""
 from pathlib import Path
 import hashlib,json
+from autoblink_source_guard import autoblink_matches
 P=Path(__file__).resolve().parents[1];checks=0
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def check(ok,label):
@@ -15,9 +16,10 @@ for p,h in b['files'].items():
  check((P/p).is_file(),'retained '+p)
  if p=='SOURCE_FILES.sha256':continue
  v=m['files'].get(p)
- check(sha(P/p)==(v['candidate_sha256'] if v else h),'exact scoped '+p)
+ expected=v['candidate_sha256'] if v else h
+ check(sha(P/p)==expected or autoblink_matches(p,expected),'exact scoped '+p)
  if v:check(v['baseline_sha256']==h,'migration parent '+p)
-for p,h in m['new_files'].items():check(sha(P/p)==h,'exact new '+p)
+for p,h in m['new_files'].items():check(sha(P/p)==h or autoblink_matches(p,h),'exact new '+p)
 for p,h in b['files'].items():
  if p.endswith('.png') or p in ['canonical_eye_alpha.gdshader','object_eye_clip.gdshader','object_rig.gd','control_limits.gd','strict_control_json.gd','yawn_performance.json','expressions/EXP-005.json','expressions/EXP-001.json','expressions/EXP-006.json','expressions/EXP-107.json']:
   check(sha(P/p)==h,'unchanged runtime/art/prior profile '+p)

@@ -135,10 +135,10 @@ func complete_snapshot()->Dictionary:
     return state
 func idle_neutral()->bool:
     return rig.active_performance=="" and rig.release_time<0.0 and rig.pose_now()==rig.neutral_pose()
-func neutral(label:String):
+func neutral(label:String,blink_enabled:bool=false):
     check(rig.pose_now()==rig.neutral_pose() and rig.displayed_pose()==rig.neutral_pose(),label+" exact neutral coordinates")
     check(rig.active_performance=="" and rig.release_time<0.0,label+" no stale performance/release")
-    check(not rig.auto_blink,label+" inherited auto-blink remains disabled")
+    check(rig.auto_blink==blink_enabled,label+" expected auto-blink preference")
     assert_geometry()
 func run_grid():
     for purse in PURSE_VALUES:
@@ -263,12 +263,13 @@ func run_blink_restoration():
         check(rig.displayed_pose()==before and not rig.auto_blink,"trigger captures blink and intentionally disables auto-blink")
         if ending=="complete":rig.advance(rig.registry.definition(id).duration)
         else:rig.advance(.6);rig.release();rig.advance(.45)
-        neutral("before explicit auto-blink restore")
+        neutral("after automatic neutral recovery",true)
         check(idle_neutral(),"all three idle predicates required before restoration")
         if not idle_neutral():continue
         check(rig.apply_controls({"auto_blink":true}) and rig.auto_blink,"explicit auto-blink restoration needs no reset")
         check(rig.active_performance=="" and rig.release_time<0,"restored auto-blink remains manual idle")
-        rig.advance(0.0);check(rig.face.closure.x>.99,"restored auto-blink uses retained manual clock")
+        rig.advance(0.0);check(rig.face.closure==Vector2.ZERO,"restored auto-blink starts open without a stale-clock jump")
+        rig.advance(4.03);check(rig.face.closure.x>.99,"restored auto-blink closes using the existing cycle")
     context="early blink is takeover"
     rig.reset();rig.play_expression("EXP-007");rig.advance(.6);rig.release();rig.advance(.1)
     var before=rig.pose_now()
