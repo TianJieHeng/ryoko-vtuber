@@ -1,6 +1,8 @@
 # Approved shared rig: affectionate warmth and private pride
 
-Eight user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152. EXP-002 is preserved from published commit 9b10e2f2c70f19fa003169502a73ee935af55480; EXP-152 includes the approved hidden-iris/down-gaze prerequisite. EXP-003/160/177 and new brow channels are excluded. See MERGED_PUBLICATION_VALIDATION.md for exact scope, source identities and focused merge checks. Earlier stage descriptions and frozen review receipts are historical.
+Nine user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160. The published002/152 profiles, hidden-iris support and gaze_down_extra semantics are preserved. EXP-160 adds the approved default-zero rigid outer-anchor brow capability without new artwork. EXP-003/177/161/153 remain excluded. See SHY_MERGED_PUBLICATION_VALIDATION.md for merged scope and evidence; preceding frozen review stages are historical.
+
+Historical EXP-152 checkpoint: eight user-approved performances shared one rig: EXP-163/005/001/006/107/007/002/152. EXP-002 is preserved from published commit 9b10e2f2c70f19fa003169502a73ee935af55480; EXP-152 includes the approved hidden-iris/down-gaze prerequisite. EXP-003/160/177 and new brow channels are excluded. See MERGED_PUBLICATION_VALIDATION.md for exact scope, source identities and focused merge checks. Earlier stage descriptions and frozen review receipts are historical.
 
 EXP-152 uses nine source-proposed anchors across 1.9 seconds: downward preparation, restrained closed smile, then mouth-neutral while gaze recovers. No runtime, art, head/body or FX changes are added by the performance. It requires the separately tested optional gaze_down_extra channel, default zero, adding 5 source pixels to the original gaze_y mapping. Old-profile commands and appearance remain protected. Normal-speed playback observation is not claimed.
 

@@ -1,4 +1,21 @@
 extends RefCounted
+## Shared bounded movement contracts.
+# Unapproved outer-anchor revision; 26-degree bound fixed for full local QA. Nonzero unpublished v0 inputs are NOT compatible.
+const BROW_INNER_LIFT_DEGREES=26.0
+const BROW_OUTER_ANCHORS={"screen_left":Vector2(466.550,452.350),"screen_right":Vector2(646.227,453.773)}
+static func brow_capabilities()->Dictionary:
+    return {"controls":["brow_inner_lift_screen_left","brow_inner_lift_screen_right"],
+        "range":[0.0,1.0],"default":0.0,"additional_rotation_degrees":BROW_INNER_LIFT_DEGREES,
+        "screen_left_sign":-1.0,"screen_right_sign":1.0,"composition":"angle = legacy_tilt + side_sign * bound * inner_lift; pivot = C + vertical + R(legacy_tilt) * (a - R(additive_angle) * a), a = outer_anchor - C",
+        "outer_anchor_canonical":{"screen_left":[466.550,452.350],"screen_right":[646.227,453.773]},
+        "anchor_reference":"tail after legacy center tilt and vertical translation",
+        "zero_lift_legacy_transform_exact":true,
+        "nonzero_v0_compatible":false,
+        "supersedes_unapproved_mapping":"v0 used a 14 degree additive center-pivot rotation; v1 changes nonzero lift mapping",
+        "legacy_tilt_degrees":[-8.0,8.0],"combined_screen_left_degrees":[-34.0,8.0],"combined_screen_right_degrees":[-8.0,34.0],
+        "owner":"existing rigid brow pivot with rigid outer-anchor translation", "mapping_revision":"outer_anchor_v1_local_candidate","unit_scale":true,"foreground_hair_occludes":true,
+        "state_semantics":"additive controls; omitted manual fields retain their value, omitted timeline fields default to zero"}
+
 ## One contract for normalized gaze and calibrated source-pixel travel.
 ## Enable ONLY after both eyes, all corners, and closure combinations pass visual QA.
 const GAZE_ENABLED=true

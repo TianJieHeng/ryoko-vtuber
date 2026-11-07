@@ -1,5 +1,7 @@
 # Local external-process control, protocol 1
 
+Nine user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160. The published002/152 profiles, hidden-iris support and gaze_down_extra semantics are preserved. EXP-160 adds the approved default-zero rigid outer-anchor brow capability without new artwork. EXP-003/177/161/153 remain excluded. See SHY_MERGED_PUBLICATION_VALIDATION.md for merged scope and evidence; preceding frozen review stages are historical.
+
 This is an opt-in local TCP adapter for the default viewer's single shared Godot
 rig. The included Python client can run in another process and receive actual
 controller results where loopback binding is permitted. Fresh real socket
@@ -237,3 +239,8 @@ The callable adapter advertises `gaze_down_extra: [0,1]` and the same additive p
 ## Preserved EXP-002 affectionate warmth
 
 The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all eight profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
+
+
+## Approved rigid inner-brow controls
+
+Independent brow_inner_lift_screen_left and brow_inner_lift_screen_right accept finite [0,1], default 0, and add at most 26 degrees after the legacy tilt about fixed outer-tail anchors. Omitted manual fields retain state; omitted timeline fields and reset default to 0. All nine profiles use the generic player. The gaze_down_extra control remains independent and zero by default. See BROW_INNER_LIFT_VALIDATION.md for exact geometry and historical evidence.

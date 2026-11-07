@@ -23,7 +23,8 @@ for p,h in m['new_files'].items():check(sha(R/p)==h or private_pride_matches(p,h
 existing={str(p.relative_to(R)) for p in R.rglob('*') if p.is_file() and '.godot' not in p.parts and '__pycache__' not in p.parts}
 successor=json.loads((R/'validation/private_pride_runtime_migration.json').read_text())
 merged=json.loads((R/'validation/approved_merge_migration.json').read_text())
-check(existing==set(b['files'])|set(m['new_files'])|set(successor['new_files'])|{'validation/down_extra_runtime_migration.json','validation/private_pride_runtime_migration.json'}|set(merged['new_paths_from_pride']),'no silently included source')
+shy=json.loads((R/'validation/approved_shy_merge_migration.json').read_text())
+check(existing==set(b['files'])|set(m['new_files'])|set(successor['new_files'])|{'validation/down_extra_runtime_migration.json','validation/private_pride_runtime_migration.json'}|set(merged['new_paths_from_pride'])|set(shy['new_paths_from_152']),'no silently included source')
 check(sum(p.endswith('.png') for p in existing)==182,'no extra diagnostic/artwork PNG files')
 changed_png={p for p in m['files'] if p.endswith('.png')}
 check(changed_png=={f'rig_assets/gaze_eyes/{kind}_{side}.png' for kind in ['iris','completed_iris'] for side in ['screen_left','screen_right']},'only two iris RGB owners and two provenance masks')
@@ -32,4 +33,4 @@ for p in b['files']:
  if p.endswith('.gdshader') or p.endswith('.png.import'):check(sha(R/p)==b['files'][p],'shader/import exact '+p)
 limits=(R/'control_limits.gd').read_text();check('const GAZE_DOWN_PIXELS=1.0' in limits and 'const GAZE_DOWN_EXTRA_PIXELS=5.0' in limits,'legacy1 plus explicit5 only')
 subprocess.run([sys.executable,str(R/'tools/verify_hidden_iris_support.py')],check=True,stdout=subprocess.DEVNULL)
-print(json.dumps({'status':'pass','checks':checks,'parent_files':450,'pngs':182,'changed_runtime_iris_pngs':2,'changed_provenance_masks':2,'all_other_pngs_unchanged':178,'registered_profiles':8,'scope':'historical hidden-cap capability with exact pinned approved002/152 merge'},indent=2))
+print(json.dumps({'status':'pass','checks':checks,'parent_files':450,'pngs':182,'changed_runtime_iris_pngs':2,'changed_provenance_masks':2,'all_other_pngs_unchanged':178,'registered_profiles':9,'scope':'historical hidden-cap capability with exact pinned approved002/152 merge'},indent=2))

@@ -10,6 +10,7 @@ var gaze=Vector2.ZERO
 var gaze_down_extra=0.0
 var brow=Vector2.ZERO
 var brow_tilt=Vector2.ZERO
+var brow_inner_lift=Vector2.ZERO
 var hair_sway=0.0
 var mouth_variant="neutral_lips"
 const MAX_MOUTH_APERTURE=0.55
@@ -94,12 +95,13 @@ func _ready():
     set_pose(Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,"neutral",0.0)
 func _update_iris_visibility(side:String):
     objects["sclera_"+side].material.set_shader_parameter("iris_present",objects["iris_"+side].visible)
-func set_pose(lids:Vector2,eye_gaze:Vector2,brows:Vector2,brow_angles:Vector2,shape:String,hair_value:float,down_extra:float=0.0):
+func set_pose(lids:Vector2,eye_gaze:Vector2,brows:Vector2,brow_angles:Vector2,shape:String,hair_value:float,down_extra:float=0.0,inner_lift:Vector2=Vector2.ZERO):
     if not ready_for_controls:return
     closure=lids.clamp(Vector2.ZERO,Vector2.ONE);gaze=eye_gaze.clamp(Vector2(GazeLimits.GAZE_MIN,GazeLimits.GAZE_MIN),Vector2(GazeLimits.GAZE_MAX,GazeLimits.GAZE_MAX))
     gaze_down_extra=clampf(down_extra,0.0,1.0)
     var gaze_offset=GazeLimits.gaze_pixels(gaze,gaze_down_extra)
     brow=brows.clamp(-Vector2.ONE,Vector2.ONE);brow_tilt=brow_angles.clamp(-Vector2.ONE,Vector2.ONE)*deg_to_rad(8)
+    brow_inner_lift=inner_lift.clamp(Vector2.ZERO,Vector2.ONE)
     for side in ["screen_left","screen_right"]:
         var index=0 if side=="screen_left" else 1
         for key in manifest.objects:
@@ -110,7 +112,17 @@ func set_pose(lids:Vector2,eye_gaze:Vector2,brows:Vector2,brow_angles:Vector2,sh
                 if int(e.eye_role) in [6,7]:
                     objects[key].material.set_shader_parameter("rigid_gaze",gaze_offset)
                     if int(e.eye_role)==7:homes[key].node.position=homes[key].pivot+gaze_offset
-        var key="brow_"+side;homes[key].node.position=homes[key].pivot+Vector2(0,-brow[index]*10);homes[key].node.rotation=brow_tilt[index]
+        var key="brow_"+side
+        var legacy_angle=brow_tilt[index]
+        var lift_angle=(-1.0 if index==0 else 1.0)*deg_to_rad(GazeLimits.BROW_INNER_LIFT_DEGREES)*brow_inner_lift[index]
+        # Preserve every published default-zero transform exactly. The new rigid
+        # rotation is about the tail after legacy tilt and vertical translation.
+        homes[key].node.position=homes[key].pivot+Vector2(0,-brow[index]*10)
+        homes[key].node.rotation=legacy_angle
+        if brow_inner_lift[index]>0.0:
+            var anchor_offset=GazeLimits.BROW_OUTER_ANCHORS[side]-homes[key].pivot
+            homes[key].node.position+=(anchor_offset-anchor_offset.rotated(lift_angle)).rotated(legacy_angle)
+            homes[key].node.rotation=legacy_angle+lift_angle
     _write_mouth(shape);set_hair_sway(hair_value)
 func _write_mouth(shape:String):
     for key in oral_objects:oral_objects[key].visible=false

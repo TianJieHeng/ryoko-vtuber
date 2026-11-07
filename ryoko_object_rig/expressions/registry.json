@@ -70,6 +70,15 @@
         "pride"
       ],
       "trigger_phase": "downward_preparation"
+    },
+    {
+      "id": "EXP-160",
+      "path": "res://expressions/EXP-160.json",
+      "aliases": [
+        "shy-laughter",
+        "shy_laughter"
+      ],
+      "trigger_phase": "tender_closed_onset"
     }
   ]
 }

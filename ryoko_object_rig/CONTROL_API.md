@@ -1,5 +1,7 @@
 # Shared expression control API
 
+Nine user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160. The published002/152 profiles, hidden-iris support and gaze_down_extra semantics are preserved. EXP-160 adds the approved default-zero rigid outer-anchor brow capability without new artwork. EXP-003/177/161/153 remain excluded. See SHY_MERGED_PUBLICATION_VALIDATION.md for merged scope and evidence; preceding frozen review stages are historical.
+
 Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewer.apply_controls(dictionary)` for the default app. Both use the same validated player. This remains the authoritative callable Godot API. The opt-in loopback socket adapter in `LOCAL_CONTROL_BRIDGE.md` delegates to this same controller; no AI-model or voice-service connection is claimed.
 
 ## Calls
@@ -114,3 +116,8 @@ All eight authored IDs use the same player. EXP-152 aliases are private-pride an
 ## Preserved EXP-002 affectionate warmth
 
 The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all eight profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.
+
+
+## Approved rigid inner-brow controls
+
+Independent brow_inner_lift_screen_left and brow_inner_lift_screen_right accept finite [0,1], default 0, and add at most 26 degrees after the legacy tilt about fixed outer-tail anchors. Omitted manual fields retain state; omitted timeline fields and reset default to 0. All nine profiles use the generic player. The gaze_down_extra control remains independent and zero by default. See BROW_INNER_LIFT_VALIDATION.md for exact geometry and historical evidence.

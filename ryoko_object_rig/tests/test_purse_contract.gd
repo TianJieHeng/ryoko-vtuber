@@ -205,13 +205,13 @@ func run_lifecycle():
 func run_prior_profiles():
     for id in IDS:
      var definition=rig.registry.definition(id)
-     if id!="EXP-007":
+     if id not in ["EXP-007","EXP-160"]:
         for frame in definition.keyframes:check(not frame.values.has(AXIS),"prior profile does not author purse "+id)
      for hz in [30,60]:
         context="profile "+id+" hz="+str(hz)
         rig.reset();rig.play_expression(id)
         for i in range(int(ceil(definition.duration*hz))+1):
-            if id!="EXP-007":
+            if id not in ["EXP-007","EXP-160"]:
                 check(rig.sample_expression(id,minf(float(i)/hz,definition.duration))[AXIS]==0.0,"prior samples exact zero purse")
                 check(rig.pose_now()[AXIS]==0.0 and rig.face.mouth_purse==0.0,"prior playback exact zero purse")
             # Keep full source/geometry checks at every tenth frame plus each end.
@@ -312,7 +312,7 @@ func run():
     if not rig.rig_ready or not rig.registry_ready:quit(2);return
     var ids=[]
     for entry in rig.list_expressions():ids.append(entry.id)
-    check(ids==IDS+["EXP-002","EXP-152"],"eight approved performances scope")
+    check(ids==IDS+["EXP-002","EXP-152","EXP-160"],"nine approved performances scope")
     remember_sources();verify_shader_source_contract()
     run_grid();run_reversed_boundary_regression();run_atomicity();run_lifecycle();run_prior_profiles();run_eye_restoration();run_release_threshold();run_blink_restoration()
     var result={"status":"PASS" if failures.is_empty() else "FAIL","checks":checks,"grid_poses":grid_poses,"geometry_poses":geometry_poses,"failures":failures,"release_boundary_observations":boundary_observations,"scope":"geometry/state invariants; no rendered silhouette certification or external services"}

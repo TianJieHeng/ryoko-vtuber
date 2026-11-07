@@ -21,8 +21,8 @@ for n,h in m['new_files'].items():check(sha(P/n)==h or approved_merge_matches(n,
 for n,h in b['files'].items():
  if n.endswith(('.png','.gdshader','.tscn','.png.import')) or n in ['object_face.gd','object_rig.gd','expression_rig.gd','expression_registry.gd','expression_viewer.gd','control_bridge.gd','control_limits.gd','strict_control_json.gd','project.godot','yawn_performance.json'] or n.startswith('expressions/EXP-'):
   check(sha(P/n)==h or approved_merge_matches(n,h),'immutable runtime/art/prior profile '+n)
-ids=['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152']
-check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==ids,'only eight approved performances')
+ids=['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152','EXP-160']
+check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==ids,'only nine approved performances')
 check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={x+'.json' for x in ids if x!='EXP-163'},'no held002/003')
 check(len(list(P.rglob('*.png')))==182,'no performance artwork')
 d=json.loads((P/'expressions/EXP-152.json').read_text());ref=json.loads((P/'source_references/EXP-152_reference_metadata.json').read_text())
@@ -39,4 +39,4 @@ check(release['user_approved'] is True and release['approved_registry']==ids,'ex
 for n in ['README.md','CONTROL_API.md','LOCAL_CONTROL_BRIDGE.md','PACKAGING.md','PRIVATE_PRIDE_SCOPE_VALIDATION.md']:
  t=(P/n).read_text();check('EXP-152' in t and 'approved' in t.lower(),'honest current status '+n)
 check(not list(P.rglob('*.mp4')),'media external')
-print(f'PRIVATE_PRIDE_SCOPE_PASS checks={checks} parent_files=463 protected_pngs=182 new_pngs=0 registry=8')
+print(f'PRIVATE_PRIDE_SCOPE_PASS checks={checks} parent_files=463 protected_pngs=182 new_pngs=0 registry=9')

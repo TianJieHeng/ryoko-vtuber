@@ -40,7 +40,7 @@ func run():
     check(caps.lip_purse=={"control":AXIS,"default":0.0,"scope":"bounded shared control"},"bridge generic coordinate only")
     check(not caps.ai_model_connected and not caps.tts_connected,"preparation-only integration")
     check(rig.registry.resolve("relief")=="EXP-007" and rig.registry.resolve("relieved-smile")=="EXP-007","authored relief aliases")
-    check(rig.list_expressions().size()==8 and rig.registry.resolve("EXP-003")=="","eight approved performances")
+    check(rig.list_expressions().size()==9 and rig.registry.resolve("EXP-003")=="","nine approved performances")
 
     for value in [0.0,.000001,.25,.5,.75,.999999,1.0,0.0]:
         check(rig.apply_controls({AXIS:value}),"valid bounded coordinate")
@@ -126,7 +126,7 @@ func run():
         var bad=fixture.duplicate(true);bad.keyframes[1].values[AXIS]=invalid
         check(not isolated.load_catalogue(catalogue,{"res://test-only-purse.json":bad}),"invalid timeline rejected")
         check(isolated.definition(fixture.id)==held,"registry failure atomic")
-    check(rig.registry.resolve(fixture.id)=="" and rig.list_expressions().size()==8,"fixture remains unregistered")
+    check(rig.registry.resolve(fixture.id)=="" and rig.list_expressions().size()==9,"fixture remains unregistered")
 
     # Exercise the actual UI signal and display synchronization, without a socket.
     var viewer=load("res://expression_viewer.tscn").instantiate();root.add_child(viewer)

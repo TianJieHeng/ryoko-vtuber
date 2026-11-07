@@ -17,7 +17,7 @@ func run():
  check(rig.rig_ready and rig.registry_ready,"ready")
  if not rig.rig_ready or not rig.registry_ready:quit(2);return
  check(rig.registry.resolve("relief")=="EXP-007" and rig.registry.resolve("relieved-smile")=="EXP-007","aliases")
- check(rig.list_expressions().size()==8 and rig.registry.resolve("EXP-003")=="","eight-profile approved scope")
+ check(rig.list_expressions().size()==9 and rig.registry.resolve("EXP-003")=="","nine-profile approved scope")
  var d=rig.registry.definition("EXP-007");check(d.duration==3.2 and d.keyframes.size()==9,"nine keys /3.2seconds")
  check(d.keyframes[1].values.brow_tilt_screen_left<0 and d.keyframes[1].values.brow_tilt_screen_right>0,"inner brow ends rise")
  for i in [2,3]:
