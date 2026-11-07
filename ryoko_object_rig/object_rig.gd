@@ -5,6 +5,7 @@ var head:Node2D
 var body:Sprite2D
 var manual_lids=Vector2.ZERO
 var manual_gaze=Vector2.ZERO
+var manual_gaze_down_extra=0.0
 var manual_brow=Vector2.ZERO
 var manual_brow_tilt=Vector2.ZERO
 var mouth_shape="neutral"
@@ -18,7 +19,7 @@ var pose_status:Label
 var last_error=""
 const Limits=preload("res://control_limits.gd")
 const MAX_HAIR_SWAY=0.07
-const NUMBERS=["blink","blink_L","blink_R","gaze_x","gaze_y","brow_raise","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","hair_sway"]
+const NUMBERS=["blink","blink_L","blink_R","gaze_x","gaze_y","gaze_down_extra","brow_raise","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","hair_sway"]
 static func number(value)->bool:return (value is float or value is int) and is_finite(float(value))
 func _ready():
     body=Sprite2D.new();body.name="FixedNeckTorso";body.texture=load("res://rig_assets/object_face/fixed_neck_torso.png");body.centered=false
@@ -36,6 +37,8 @@ func apply_controls(data:Dictionary)->bool:
     for gaze_key in ["gaze_x","gaze_y"]:
         if data.has(gaze_key) and not Limits.valid_gaze(data[gaze_key]):
             last_error="Gaze must be finite and within the advertised normalized bounds";return false
+    if data.has("gaze_down_extra") and not Limits.valid_gaze_down_extra(data.gaze_down_extra):
+        last_error="gaze_down_extra must be finite and in [0,1]";return false
     # The flattened canonical hair has only a verified small reveal margin.
     if data.has("hair_sway") and (not number(data.hair_sway) or abs(float(data.hair_sway))>MAX_HAIR_SWAY):
         last_error="Canonical hair_sway supports only [-0.07,0.07]";return false
@@ -50,7 +53,7 @@ func apply_controls(data:Dictionary)->bool:
     for key in ["mouth","viseme"]:
         if data.has(key) and (not data[key] is String or data[key].to_upper() not in ["A","E","I","O","U","REST","RELEASE","NEUTRAL"]):last_error="Invalid mouth shape";return false
     if data.get("reset",false):
-        manual_lids=Vector2.ZERO;manual_gaze=Vector2.ZERO;manual_brow=Vector2.ZERO;manual_brow_tilt=Vector2.ZERO;mouth_shape="neutral";manual_hair=0;auto_blink=false;elapsed=0
+        manual_lids=Vector2.ZERO;manual_gaze=Vector2.ZERO;manual_gaze_down_extra=0.0;manual_brow=Vector2.ZERO;manual_brow_tilt=Vector2.ZERO;mouth_shape="neutral";manual_hair=0;auto_blink=false;elapsed=0
     if data.has("auto_blink"):auto_blink=data.auto_blink
     if data.has("blink"):manual_lids=Vector2.ONE*float(data.blink)
     # Compatibility: anatomical L is screen-right.
@@ -58,6 +61,7 @@ func apply_controls(data:Dictionary)->bool:
     if data.has("blink_R"):manual_lids.x=data.blink_R
     if data.has("gaze_x"):manual_gaze.x=data.gaze_x
     if data.has("gaze_y"):manual_gaze.y=data.gaze_y
+    if data.has("gaze_down_extra"):manual_gaze_down_extra=float(data.gaze_down_extra)
     if data.has("brow_raise"):manual_brow=Vector2.ONE*float(data.brow_raise)
     if data.has("brow_screen_left"):manual_brow.x=data.brow_screen_left
     if data.has("brow_screen_right"):manual_brow.y=data.brow_screen_right
@@ -75,7 +79,7 @@ func _write_pose():
     if auto_blink:
         var phase=fmod(elapsed,4.2)
         if phase>3.86:lids=lids.max(Vector2.ONE*sin((phase-3.86)/.34*PI))
-    face.set_pose(lids,manual_gaze,manual_brow,manual_brow_tilt,mouth_shape,manual_hair)
+    face.set_pose(lids,manual_gaze,manual_brow,manual_brow_tilt,mouth_shape,manual_hair,manual_gaze_down_extra)
     hud.text="Ryoko / separate-part base assembly"
     hint.text="B lids · O brows · M source viseme · H hair · 0 reset"
     pose_status.text="Canonical native artwork / "+("bounded gaze" if Limits.GAZE_ENABLED else "gaze centered pending coverage QA")

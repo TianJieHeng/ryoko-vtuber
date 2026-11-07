@@ -2,7 +2,7 @@
 """Verify exact local correction against e436972, without weakening frozen receipts."""
 from pathlib import Path
 import hashlib,json
-from affection_source_guard import affection_matches
+from down_extra_source_guard import down_extra_matches
 P=Path(__file__).resolve().parents[1]
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 base=json.loads((P/'source_references/autoblink_parent_inventory.json').read_text())
@@ -23,11 +23,11 @@ for name,h in base['files'].items():
  if name in m['files']:
   record=m['files'][name]
   check(record['baseline_sha256']==h,'migration parent '+name)
-  check(sha(P/name)==record['candidate_sha256'] or affection_matches(name,record['candidate_sha256']),'pinned correction '+name)
- else:check(sha(P/name)==h or affection_matches(name,h),'unchanged or pinned descendant '+name)
-# All facial renderer, baseline blink timing, artwork, registry/profile, shader and
-# geometry paths are covered by unchanged hashes above, not a broad exclusion.
-check(sum(name.endswith('.png') for name in base['files'])==182,'all 182 approved PNGs unchanged')
+  check((sha(P/name)==record['candidate_sha256'] or down_extra_matches(name,record['candidate_sha256'])),'pinned correction '+name)
+ else:check((sha(P/name)==h or down_extra_matches(name,h)),'unchanged '+name)
+# Parent paths retain their exact hashes or an explicit hash-pinned successor.
+# The separate hidden-cap gate proves the four named PNG changes and old behavior.
+check(sum(name.endswith('.png') for name in base['files'])==182,'same182 PNG paths, including4 exactly pinned hidden-cap successor files')
 check({p.relative_to(P).as_posix() for p in P.rglob('*.png')}=={n for n in base['files'] if n.endswith('.png')},'no additional art')
-for name,h in m['new_files'].items():check(sha(P/name)==h or affection_matches(name,h),'pinned new test/harness '+name)
-print(f'AUTO_BLINK_SCOPE_PASS checks={checks} parent_files=442 protected_pngs=182 changed_parent_files={len(allowed)}')
+for name,h in m['new_files'].items():check((sha(P/name)==h or down_extra_matches(name,h)),'pinned new test/harness '+name)
+print('Historical stage checked with explicit hidden-cap successor hashes.');print(f'AUTO_BLINK_SCOPE_PASS checks={checks} parent_files=442 protected_pngs=182 changed_parent_files={len(allowed)}')

@@ -2,6 +2,7 @@
 """Portable source/ownership checks; visual and render checks remain separate."""
 import hashlib,json,re,subprocess,sys
 from pathlib import Path
+from down_extra_source_guard import down_extra_matches
 import numpy as np
 from PIL import Image
 P=Path(__file__).resolve().parents[1];checks=0
@@ -11,7 +12,7 @@ def check(ok,label):
  checks+=1
  if not ok:raise AssertionError(label)
 g=json.loads((P/'validation/smile_source_guard.json').read_text())
-for name,digest in g['original_pngs'].items():check(sha(P/name)==digest,'original PNG '+name)
+for name,digest in g['original_pngs'].items():check(sha(P/name)==digest or down_extra_matches(name,digest),'original or exact hidden-cap successor PNG '+name)
 check(sha(P/'yawn_performance.json')==g['yawn_performance_sha256'],'yawn values/timing unchanged')
 for name,digest in g['original_smile_donor_sha256'].items():check(sha(P/name)==digest,'extracted source '+name)
 face=(P/'object_face.gd').read_text()
@@ -41,7 +42,7 @@ check(mouth['objects']['upper_teeth']['xy']==[533,626],'tooth anchor')
 reference=json.loads((P/'source_references/expression_catalogue_93.json').read_text())
 check(len(reference['entries'])==93 and len({e['id'] for e in reference['entries']})==93,'93 reference IDs preserved')
 registry=json.loads((P/'expressions/registry.json').read_text())
-check({e['id'] for e in registry['entries']}=={'EXP-005','EXP-163','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002'},'exactly seven scoped shared performances')
+check({e['id'] for e in registry['entries']}=={'EXP-005','EXP-163','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152'},'exactly eight approved performances')
 old=json.loads((P/'source_references/historical_EXP005_expression_performances.json').read_text())['profiles']['EXP-005']
 new=json.loads((P/'expressions/EXP-005.json').read_text())
 check([k['time'] for k in old['keyframes']]==[k['time'] for k in new['keyframes']],'fifteen semantic timing keys')
@@ -52,4 +53,4 @@ before=output_hashes()
 for i in range(2):
  subprocess.run([sys.executable,str(P/'tools/build_smile_support.py')],check=True,stdout=subprocess.DEVNULL)
  check(output_hashes()==before,'byte-identical smile rebuild '+str(i+1))
-print(json.dumps({'status':'pass','checks':checks,'original_pngs':len(g['original_pngs']),'authored_performances':['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002'],'historical_reference_ids':93,'separate_continuation_owners':26,'atlas_files':2,'visual_acceptance':'Separate actual-Godot frame/video review required.'},indent=2))
+print(json.dumps({'status':'pass','checks':checks,'original_pngs':len(g['original_pngs']),'authored_performances':['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007'],'historical_reference_ids':93,'separate_continuation_owners':26,'atlas_files':2,'visual_acceptance':'Separate actual-Godot frame/video review required.'},indent=2))

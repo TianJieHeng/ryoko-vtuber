@@ -90,7 +90,26 @@
         "sclera_hidden_estimate_screen_left.png",
         "iris_extra_completion_screen_left.png",
         "visible_matte_change_screen_left.png"
-      ]
+      ],
+      "directional_down_completion": {
+        "new_rgb_texels": 155,
+        "retained_inferred_ring_texels": 30,
+        "new_completed_texels": 185,
+        "physical_domain": {
+          "x": [
+            -4,
+            4
+          ],
+          "y": [
+            -2,
+            6
+          ]
+        },
+        "source_patch": "source_references/hidden_iris_cap_patch.json",
+        "whole_alpha_unchanged": true,
+        "old_reachable_rgba_unchanged": true,
+        "not_original_recovered_art": true
+      }
     },
     "screen_right": {
       "origin": [
@@ -148,11 +167,30 @@
         "sclera_hidden_estimate_screen_right.png",
         "iris_extra_completion_screen_right.png",
         "visible_matte_change_screen_right.png"
-      ]
+      ],
+      "directional_down_completion": {
+        "new_rgb_texels": 132,
+        "retained_inferred_ring_texels": 25,
+        "new_completed_texels": 157,
+        "physical_domain": {
+          "x": [
+            -4,
+            4
+          ],
+          "y": [
+            -2,
+            6
+          ]
+        },
+        "source_patch": "source_references/hidden_iris_cap_patch.json",
+        "whole_alpha_unchanged": true,
+        "old_reachable_rgba_unchanged": true,
+        "not_original_recovered_art": true
+      }
     }
   },
   "limits_provisional": false,
-  "review_status": "local candidate; user approval pending",
+  "review_status": "Published original bounded gaze plus local hidden-cap/down-extension candidate; new support not yet user approved",
   "calibrated_travel_source_pixels": {
     "left": 4,
     "right": 4,
@@ -160,5 +198,19 @@
     "down": 1
   },
   "derivation": "Visible canonical pixels with inferred subpixel iris matte. Hidden sclera is row interpolation of canonical exposed whites; hidden iris cap/boundary colors are local continuation of this same iris. No assembly-source eye donor, new highlight, UV warp or gaze-zero special case.",
-  "limitations": "Flattened hair/iris and lower-lid antialias crossings are not clean original layers. New exposed inferred pixels require visual approval. Full hidden eye art is not claimed recovered."
+  "limitations": "Flattened hair/iris and lower-lid antialias crossings are not clean original layers. New exposed inferred pixels require visual approval. Full hidden eye art is not claimed recovered.",
+  "down_extension": {
+    "control": "gaze_down_extra",
+    "normalized_range": [
+      0,
+      1
+    ],
+    "default": 0,
+    "additional_source_pixels": 5,
+    "combined_y_range": [
+      -2,
+      6
+    ],
+    "status": "local candidate; user approval pending"
+  }
 }

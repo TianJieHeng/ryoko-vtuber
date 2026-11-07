@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Portable source/ownership/rebuild guard for the lateral-mouth additions."""
 from pathlib import Path
+from down_extra_source_guard import down_extra_matches
 import hashlib,json,shutil,subprocess,sys,tempfile
 from PIL import Image
 import numpy as np
@@ -13,7 +14,7 @@ def check(ok,label):
 manifest=json.loads((S/'manifest.json').read_text())
 protected=json.loads((P/'source_references/welcome_scope_sources.json').read_text())['protected_art_and_profiles']
 check(sum(p.endswith('.png') for p in protected)==157,'157 protected originals')
-for r,h in protected.items():check(sha(P/r)==h,'protected '+r)
+for r,h in protected.items():check(sha(P/r)==h or down_extra_matches(r,h),'protected or exact hidden-cap successor '+r)
 for r,h in manifest['sources'].items():check(sha(P/r)==h,'source '+r)
 check(len(manifest['objects'])==7 and len(manifest['joint_extensions'])==26,'independent source owners and inferred joints')
 for key,e in manifest['objects'].items():

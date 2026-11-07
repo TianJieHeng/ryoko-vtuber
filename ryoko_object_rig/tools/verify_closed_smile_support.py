@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Portable source/provenance guard. Does not imply visual acceptance."""
 from pathlib import Path
+from down_extra_source_guard import down_extra_matches
 import hashlib,json,re,shutil,subprocess,sys,tempfile
 import numpy as np
 from PIL import Image
@@ -15,7 +16,7 @@ baseline=json.loads((P/'source_references/giggle_parent_inventory.json').read_te
 original={p:h for p,h in baseline.items() if p.endswith('.png')}
 check(len(original)==174,'174 parent PNG hashes')
 check(len(list((P/'rig_assets/pressed_lip_support').glob('*.png')))==2,'two inferred pressed-lip PNGs')
-for p,h in original.items():check(sha(P/p)==h,'original PNG: '+p)
+for p,h in original.items():check(sha(P/p)==h or down_extra_matches(p,h),'original or exact hidden-cap successor PNG: '+p)
 for p in ['yawn_performance.json','expressions/EXP-005.json','expressions/EXP-001.json']:
  check(sha(P/p)==baseline[p],'unchanged parent profile '+p)
 support=P/'rig_assets/pressed_lip_support';m=json.loads((support/'manifest.json').read_text())

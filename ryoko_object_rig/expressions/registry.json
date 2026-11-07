@@ -61,6 +61,15 @@
         "affection"
       ],
       "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-152",
+      "path": "res://expressions/EXP-152.json",
+      "aliases": [
+        "private-pride",
+        "pride"
+      ],
+      "trigger_phase": "downward_preparation"
     }
   ]
 }

@@ -7,6 +7,7 @@ var objects:Dictionary={}
 var homes:Dictionary={}
 var closure=Vector2.ZERO
 var gaze=Vector2.ZERO
+var gaze_down_extra=0.0
 var brow=Vector2.ZERO
 var brow_tilt=Vector2.ZERO
 var hair_sway=0.0
@@ -93,10 +94,11 @@ func _ready():
     set_pose(Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,"neutral",0.0)
 func _update_iris_visibility(side:String):
     objects["sclera_"+side].material.set_shader_parameter("iris_present",objects["iris_"+side].visible)
-func set_pose(lids:Vector2,eye_gaze:Vector2,brows:Vector2,brow_angles:Vector2,shape:String,hair_value:float):
+func set_pose(lids:Vector2,eye_gaze:Vector2,brows:Vector2,brow_angles:Vector2,shape:String,hair_value:float,down_extra:float=0.0):
     if not ready_for_controls:return
     closure=lids.clamp(Vector2.ZERO,Vector2.ONE);gaze=eye_gaze.clamp(Vector2(GazeLimits.GAZE_MIN,GazeLimits.GAZE_MIN),Vector2(GazeLimits.GAZE_MAX,GazeLimits.GAZE_MAX))
-    var gaze_offset=GazeLimits.gaze_pixels(gaze)
+    gaze_down_extra=clampf(down_extra,0.0,1.0)
+    var gaze_offset=GazeLimits.gaze_pixels(gaze,gaze_down_extra)
     brow=brows.clamp(-Vector2.ONE,Vector2.ONE);brow_tilt=brow_angles.clamp(-Vector2.ONE,Vector2.ONE)*deg_to_rad(8)
     for side in ["screen_left","screen_right"]:
         var index=0 if side=="screen_left" else 1
@@ -130,7 +132,7 @@ func snapshot()->Dictionary:
     for key in objects:
         var p=homes[key].node
         transforms[key]={"position":[p.position.x,p.position.y],"rotation":p.rotation,"scale":[p.scale.x,p.scale.y],"opacity":objects[key].modulate.a,"visible":objects[key].visible}
-    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_corner_lift":mouth_corner_lift,"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"mouth_purse":mouth_purse,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
+    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"gaze_down_extra":gaze_down_extra,"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_corner_lift":mouth_corner_lift,"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"mouth_purse":mouth_purse,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
 
 func _build_oral_objects():
     oral_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/yawn_mouth/manifest.json"))

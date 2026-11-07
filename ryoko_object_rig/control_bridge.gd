@@ -273,7 +273,7 @@ func capabilities() -> Dictionary:
         "controls": {"mouth_open": [0.0, 1.0], "mouth_smile": [0.0, 1.0], "mouth_spread": [0.0, 1.0], "mouth_corner_lift": [0.0, 1.0], "mouth_lip_press": [0.0, 1.0], "mouth_oral_lift": [0.0, 1.0], "mouth_purse": [0.0, 1.0], "blush_intensity": [0.0, 1.0], "eye_smile_R": [0.0, 1.0], "eye_smile_L": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
             "brow_raise": [-1.0, 1.0], "brow_screen_left": [-1.0, 1.0], "brow_screen_right": [-1.0, 1.0],
             "brow_tilt_screen_left": [-1.0, 1.0], "brow_tilt_screen_right": [-1.0, 1.0],
-            "hair_sway": [-0.07, 0.07], "gaze_x": [Limits.GAZE_MIN, Limits.GAZE_MAX], "gaze_y": [Limits.GAZE_MIN, Limits.GAZE_MAX],
+            "hair_sway": [-0.07, 0.07], "gaze_x": [Limits.GAZE_MIN, Limits.GAZE_MAX], "gaze_y": [Limits.GAZE_MIN, Limits.GAZE_MAX], "gaze_down_extra": [0.0, 1.0],
             "auto_blink": "boolean", "reset": "boolean", "release_performance": "boolean",
             "perform_expression": "registered ID or alias", "mouth": ["REST", "RELEASE", "NEUTRAL"], "viseme": ["REST", "RELEASE", "NEUTRAL"]},
         "limits": {"message_bytes": MAX_LINE_BYTES, "response_bytes": MAX_RESPONSE_BYTES,

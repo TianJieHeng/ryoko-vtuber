@@ -5,7 +5,7 @@ from PIL import Image
 from scipy.ndimage import distance_transform_edt
 import numpy as np,json,sys,os,hashlib
 R=Path(__file__).resolve().parents[1];P=R;M=json.loads((P/'rig_assets/gaze_eyes/manifest.json').read_text())
-XMAX,UP,DOWN=map(float,sys.argv[1:4]) if len(sys.argv)>1 else (4.,2.,1.)
+XMAX,UP,DOWN=map(float,sys.argv[1:4]) if len(sys.argv)>1 else (4.,2.,float(M.get('down_extension',{}).get('combined_y_range',[-2,1])[1]))
 def image(path):return np.array(Image.open(path).convert('RGBA'))
 results={}
 for side,e in M['eyes'].items():

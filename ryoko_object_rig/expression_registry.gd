@@ -1,7 +1,7 @@
 extends RefCounted
 ## Data-only catalogue. Validation is transactional; callers receive deep copies.
 const Limits=preload("res://control_limits.gd")
-const CHANNEL_BOUNDS={"blink_R":[0.0,1.0],"blink_L":[0.0,1.0],"brow_screen_left":[-1.0,1.0],"brow_screen_right":[-1.0,1.0],"brow_tilt_screen_left":[-1.0,1.0],"brow_tilt_screen_right":[-1.0,1.0],"gaze_x":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_y":[Limits.GAZE_MIN,Limits.GAZE_MAX],"hair_sway":[-0.07,0.07],"mouth_open":[0.0,1.0],"eye_smile_R":[0.0,1.0],"eye_smile_L":[0.0,1.0],"mouth_smile":[0.0,1.0],"mouth_spread":[0.0,1.0],"mouth_corner_lift":[0.0,1.0],"mouth_lip_press":[0.0,1.0],"mouth_oral_lift":[0.0,1.0],"mouth_purse":[0.0,1.0],"blush_intensity":[0.0,1.0]}
+const CHANNEL_BOUNDS={"blink_R":[0.0,1.0],"blink_L":[0.0,1.0],"brow_screen_left":[-1.0,1.0],"brow_screen_right":[-1.0,1.0],"brow_tilt_screen_left":[-1.0,1.0],"brow_tilt_screen_right":[-1.0,1.0],"gaze_x":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_y":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_down_extra":[0.0,1.0],"hair_sway":[-0.07,0.07],"mouth_open":[0.0,1.0],"eye_smile_R":[0.0,1.0],"eye_smile_L":[0.0,1.0],"mouth_smile":[0.0,1.0],"mouth_spread":[0.0,1.0],"mouth_corner_lift":[0.0,1.0],"mouth_lip_press":[0.0,1.0],"mouth_oral_lift":[0.0,1.0],"mouth_purse":[0.0,1.0],"blush_intensity":[0.0,1.0]}
 const DEFINITION_KEYS=["id","title","duration","keyframes","status","intent","source_catalogue_sha256","timing_origin","scope","interpolation"]
 var last_error=""
 var _entries:Dictionary={}

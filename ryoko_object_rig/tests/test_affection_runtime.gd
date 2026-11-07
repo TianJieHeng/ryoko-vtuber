@@ -2,7 +2,7 @@ extends SceneTree
 var rig
 var checks=0
 var failures=[]
-const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002"]
+const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152"]
 func _initialize():call_deferred("run")
 func check(ok,label):
  checks+=1
@@ -21,7 +21,7 @@ func run():
  if not rig.rig_ready or not rig.registry_ready:quit(2);return
  var ids=[]
  for e in rig.list_expressions():ids.append(e.id)
- check(ids==IDS,"seven authored profiles")
+ check(ids==IDS,"eight authored profiles")
  for alias in ["affection","affectionate-warmth"]:check(rig.registry.resolve(alias)=="EXP-002","alias "+alias)
  var d=rig.registry.definition("EXP-002")
  check(d.duration==1.9 and d.keyframes.size()==9,"exact source proposal times")

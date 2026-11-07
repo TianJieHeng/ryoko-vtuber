@@ -4,7 +4,7 @@ Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewe
 
 ## Calls
 
-- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter, EXP-001 / Bright welcome, EXP-006 / Suppressed giggle, EXP-107 / Confident reassurance, EXP-007 / Relieved smile and EXP-002 / Affectionate warmth are authored. All seven are user-approved for publication. Approval and publication status is recorded separately in `RELEASE.json`. Other historical catalogue IDs are references, not playable placeholders.
+- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter, EXP-001 / Bright welcome, EXP-006 / Suppressed giggle, EXP-107 / Confident reassurance, EXP-007 / Relieved smile, EXP-002 / Affectionate warmth and EXP-152 / Private pride are authored. All eight and the hidden-iris/down-gaze prerequisite are user-approved. Approval and publication status is recorded separately in `RELEASE.json`. Other historical catalogue IDs are references, not playable placeholders.
 - `apply_controls(dictionary) -> bool` validates the entire transaction before changing controls, clock or ownership. Failure returns false and sets `last_error`; no partial pose/state mutation occurs.
 - `play_expression(id)`, `release()` and `reset()` wrap their corresponding control transactions.
 - `advance(delta) -> bool` advances deterministically. Delta must be finite and nonnegative. The engine calls it from `_process`; an external deterministic driver must disable automatic processing to avoid advancing twice.
@@ -66,7 +66,7 @@ Catalogue loads validate all entries before replacement. Failure preserves the p
 
 ## Lateral mouth support
 
-`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. All seven authored IDs listed above are registered. Oral-lift and purse controls are documented below. Wide-eye support is not included.
+`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. All eight authored IDs listed above are registered. Oral-lift and purse controls are documented below. Wide-eye support is not included.
 
 ## Closed smile and independent blush FX
 
@@ -96,9 +96,21 @@ Successful manual takeover, explicit disabling and reset cancel pending intent. 
 
 `get_state().auto_blink` reports actual activity; `auto_blink_pending_restore` reports intended resumption after neutral recovery. `auto_blink_policy()` returns a detached description of this policy, also included in bridge capabilities. The viewer checkbox is labeled as a preference, stays checked while the saved intent is suspended, and separately says active, paused until neutral recovery, or off. Changing it is visibly labeled manual takeover. The local bridge remains preparation only, with no actual AI/TTS or socket integration validation claimed.
 
+## Approved downward-gaze extension
 
-## EXP-002 affectionate warmth: approved publication
+`gaze_down_extra` is a finite normalized number in [0,1], default zero. The old `gaze_x` and `gaze_y` contracts are unchanged: x maps to ±4 source pixels; negative y maps to up 2 and positive y to down 1. The one eye owner's final vertical rigid translation is:
 
-This candidate adds only EXP-002 to the same shared application and registry. The six published profiles and all runtime code, shaders and artwork remain byte-identical to approved commit `8c349e29fb1e742231918260d7db56026492a6c9`. EXP-003 is not included. See `AFFECTION_SCOPE_VALIDATION.md` for exact v001 source, original proposed timing, source-pixel interpretation, rigid-object constraints and test coverage.
+    old_gaze_y_source_pixels + 5 * gaze_down_extra
 
-The smile develops with eyes near canonical neutral; one brief upward smiling closure is followed by renewed eye contact and a lingering sealed smile. Auto-blink inherits published restoration semantics, including initially-off behavior and cancellation by manual takeover, disable or reset. `RELEASE.json` describes this approved publication; `source_references/affection_predecessor_RELEASE.json` preserves the published predecessor record. The user approved publication after viewing the preview. The primary cumulative archive remains version 19.
+Thus the combined domain is x [-4,4], y [-2,6]. Mixed upward input plus extra is deliberately additive: gaze_y=-1 with extra=1 gives down 3; gaze_y=0 with extra=1 gives down 5; gaze_y=1 with extra=1 gives down 6. There is no change to old normalized values and no saturation or second eye owner. The optional field is part of the same atomic control transaction, shared timeline schema, neutral/reset state, retrigger/release interpolation, viewer and preparation-only adapter. Omitted timeline values default to zero.
+
+State controls/displayed_controls and face snapshots gain the new field; capabilities gain an explicit down_extension description. This is an additive schema change, not byte-identical serialized responses. All previously existing field values and rendered behavior at extra=0 remain protected. The prerequisite itself did not author a performance. EXP-152 adds data only; both it and the capability are approved. See DOWN_GAZE_VALIDATION.md for the dependency stage and PRIVATE_PRIDE_SCOPE_VALIDATION.md for the current profile.
+
+## Current EXP-152 local data
+
+All eight authored IDs use the same player. EXP-152 aliases are private-pride and pride, duration 1.9 seconds. Its gaze leads and outlasts its sealed smile. The optional gaze_down_extra field and old gaze_y combine on the same rigid iris owners. No new control/controller is introduced by EXP-152. Both this profile and its capability dependency are user-approved.
+
+
+## Preserved EXP-002 affectionate warmth
+
+The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all eight profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.

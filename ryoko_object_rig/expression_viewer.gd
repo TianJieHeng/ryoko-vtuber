@@ -46,6 +46,7 @@ func _ready():
     if Limits.GAZE_ENABLED:
         add_slider(panel,["gaze_x","Gaze horizontal",Limits.GAZE_MIN,Limits.GAZE_MAX])
         add_slider(panel,["gaze_y","Gaze vertical",Limits.GAZE_MIN,Limits.GAZE_MAX])
+        add_slider(panel,["gaze_down_extra","Extra downward gaze",0.0,1.0])
     auto_blink_button=CheckBox.new();auto_blink_button.text="Auto blink preference (manual takeover)";panel.add_child(auto_blink_button)
     auto_blink_button.toggled.connect(func(value):apply_controls({"auto_blink":value}))
     auto_blink_button.tooltip_text="Changing this preference takes manual ownership immediately and cancels playback/recovery. Reset disables it."

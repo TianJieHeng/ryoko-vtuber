@@ -193,4 +193,8 @@ def main():
    'estimated_files':[f'iris_hidden_estimate_{side}.png',f'iris_matte_estimate_{side}.png',f'sclera_hidden_estimate_{side}.png',f'iris_extra_completion_{side}.png',f'visible_matte_change_{side}.png']}
  (O/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
  print(json.dumps({s:{k:v for k,v in e.items() if k.startswith('interior_') or k.endswith('_pixels')} for s,e in manifest['eyes'].items()},indent=2))
-if __name__=='__main__':main()
+if __name__=='__main__':
+ main()
+ # Apply only the explicit hash-pinned new hidden-strip source after baseline assembly.
+ from complete_hidden_iris import main as complete_hidden_iris
+ complete_hidden_iris()

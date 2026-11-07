@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Exact EXP-006-only extension checks; visual parity is a separate gate."""
 from pathlib import Path
-import hashlib,json,re
+import hashlib,json
+from down_extra_source_guard import down_extra_matches
+import re
 from reassurance_source_guard import reassurance_matches
 P=Path(__file__).resolve().parents[1];checks=0
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
@@ -21,9 +23,9 @@ for path,digest in baseline['files'].items():
 for path,digest in migration['new_files'].items():check((sha(P/path)==digest or reassurance_matches(path,digest)),'exact new source '+path)
 check(len(list(P.rglob('*.png')))==182,'174 parent plus two inferred lip PNGs and six original/registered/mask FX PNGs')
 for path,digest in baseline['files'].items():
- if path.endswith('.png') or path in ['yawn_performance.json','expressions/EXP-001.json','expressions/EXP-005.json']:check(sha(P/path)==digest,'immutable art/profile '+path)
-check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002'],'exact seven profiles')
-check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-001.json','EXP-005.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json'},'no deferred profiles')
+ if path.endswith('.png') or path in ['yawn_performance.json','expressions/EXP-001.json','expressions/EXP-005.json']:check(sha(P/path)==digest or down_extra_matches(path,digest),'immutable or pinned successor art/profile '+path)
+check([e['id'] for e in json.loads((P/'expressions/registry.json').read_text())['entries']]==['EXP-163','EXP-005','EXP-001','EXP-006','EXP-107','EXP-007','EXP-002','EXP-152'],'eight approved performances')
+check({p.name for p in (P/'expressions').glob('EXP-*.json')}=={'EXP-001.json','EXP-005.json','EXP-006.json','EXP-107.json','EXP-007.json','EXP-002.json','EXP-152.json'},'no deferred profiles')
 check(not (P/'rig_assets/wide_support').exists(),'no wide-eye assets')
 for path in ['object_face.gd','expression_registry.gd','expression_rig.gd','expression_viewer.gd','control_bridge.gd']:
  s=(P/path).read_text()
@@ -37,4 +39,4 @@ for previous,current in zip(old['keyframes'],d['keyframes']):
  current=json.loads(json.dumps(current));current['values'].pop('blush_intensity')
  check(current==previous,'unchanged corrected mouth/eye/brow timing and values')
 check(not list(P.rglob('*.mp4')),'review movies remain external')
-print(f'GIGGLE_SCOPE_PASS checks={checks} parent_pngs=174 new_lip_pngs=2 new_fx_pngs=6 registry=7')
+print('Historical stage checked with explicit hidden-cap successor hashes.');print(f'GIGGLE_SCOPE_PASS checks={checks} parent_pngs=174 new_lip_pngs=2 new_fx_pngs=6 registry=8')

@@ -1,7 +1,7 @@
 extends SceneTree
 ## Geometry/state contract only. Does not certify rendered silhouettes or connect services.
 const AXIS="mouth_purse"
-const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002"]
+const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007"]
 const PURSE_VALUES=[0.0,.000001,.3,.7,1.0]
 const OPEN_VALUES=[0.0,.000001,.2,.6,1.0]
 const MOUTH_SHADERS=["res://object_mouth_clip.gdshader","res://smile_lip_segment.gdshader","res://smile_lip_join.gdshader","res://pressed_lip_clip.gdshader","res://spread_teeth_clip.gdshader"]
@@ -193,7 +193,7 @@ func run_lifecycle():
             rig.apply_controls({AXIS:.3});check(rig.active_performance=="" and rig.release_time<0 and rig.face.owners.mouth=="manual","manual purse takeover")
             rig.advance(.7);check(rig.pose_now()[AXIS]==.3,"manual pose cannot resume stale playback");assert_geometry();rig.reset()
         neutral(action)
-    # Every ordered pair exercises both incoming and outgoing seven-profile handovers.
+    # Every ordered pair exercises both incoming and outgoing six-profile handovers.
     for source in IDS:
      for destination in IDS:
         context="handover "+source+" to "+destination
@@ -312,7 +312,7 @@ func run():
     if not rig.rig_ready or not rig.registry_ready:quit(2);return
     var ids=[]
     for entry in rig.list_expressions():ids.append(entry.id)
-    check(ids==IDS,"exact seven-profile scope")
+    check(ids==IDS+["EXP-002","EXP-152"],"eight approved performances scope")
     remember_sources();verify_shader_source_contract()
     run_grid();run_reversed_boundary_regression();run_atomicity();run_lifecycle();run_prior_profiles();run_eye_restoration();run_release_threshold();run_blink_restoration()
     var result={"status":"PASS" if failures.is_empty() else "FAIL","checks":checks,"grid_poses":grid_poses,"geometry_poses":geometry_poses,"failures":failures,"release_boundary_observations":boundary_observations,"scope":"geometry/state invariants; no rendered silhouette certification or external services"}

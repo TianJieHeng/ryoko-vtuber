@@ -5,7 +5,7 @@ var registry=Registry.new()
 var registry_ready=false
 const RESTART_SECONDS=0.30
 const RELEASE_SECONDS=0.45
-const CHANNELS=["blink_R","blink_L","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","gaze_x","gaze_y","hair_sway","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]
+const CHANNELS=["blink_R","blink_L","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","gaze_x","gaze_y","gaze_down_extra","hair_sway","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]
 var active_performance=""
 var performance_time=0.0
 var performance_phase="neutral"
@@ -39,7 +39,7 @@ func neutral_pose()->Dictionary:
     for key in CHANNELS:p[key]=0.0
     return p
 func pose_now()->Dictionary:
-    return {"blink_R":manual_lids.x,"blink_L":manual_lids.y,"brow_screen_left":manual_brow.x,"brow_screen_right":manual_brow.y,"brow_tilt_screen_left":manual_brow_tilt.x,"brow_tilt_screen_right":manual_brow_tilt.y,"gaze_x":manual_gaze.x,"gaze_y":manual_gaze.y,"hair_sway":float(manual_hair),"mouth_open":float(manual_mouth_open),"eye_smile_R":manual_eye_smile.x,"eye_smile_L":manual_eye_smile.y,"mouth_smile":float(manual_mouth_smile),"mouth_spread":float(manual_mouth_spread),"mouth_corner_lift":float(manual_mouth_corner_lift),"mouth_lip_press":float(manual_mouth_lip_press),"mouth_oral_lift":float(manual_mouth_oral_lift),"mouth_purse":float(manual_mouth_purse),"blush_intensity":float(manual_blush_intensity)}
+    return {"blink_R":manual_lids.x,"blink_L":manual_lids.y,"brow_screen_left":manual_brow.x,"brow_screen_right":manual_brow.y,"brow_tilt_screen_left":manual_brow_tilt.x,"brow_tilt_screen_right":manual_brow_tilt.y,"gaze_x":manual_gaze.x,"gaze_y":manual_gaze.y,"gaze_down_extra":float(manual_gaze_down_extra),"hair_sway":float(manual_hair),"mouth_open":float(manual_mouth_open),"eye_smile_R":manual_eye_smile.x,"eye_smile_L":manual_eye_smile.y,"mouth_smile":float(manual_mouth_smile),"mouth_spread":float(manual_mouth_spread),"mouth_corner_lift":float(manual_mouth_corner_lift),"mouth_lip_press":float(manual_mouth_lip_press),"mouth_oral_lift":float(manual_mouth_oral_lift),"mouth_purse":float(manual_mouth_purse),"blush_intensity":float(manual_blush_intensity)}
 func sample_expression(id,time)->Dictionary:
     if not id is String or not number(time):
         last_error="Expression ID must be a string and sample time a finite number";return {}
@@ -67,7 +67,7 @@ func phase_at(time:float)->String:
     return phase
 func _apply_performance_pose(p:Dictionary):
     manual_lids=Vector2(p.blink_R,p.blink_L);manual_brow=Vector2(p.brow_screen_left,p.brow_screen_right)
-    manual_brow_tilt=Vector2(p.brow_tilt_screen_left,p.brow_tilt_screen_right);manual_gaze=Vector2(p.gaze_x,p.gaze_y)
+    manual_brow_tilt=Vector2(p.brow_tilt_screen_left,p.brow_tilt_screen_right);manual_gaze=Vector2(p.gaze_x,p.gaze_y);manual_gaze_down_extra=float(p.get("gaze_down_extra",0.0))
     manual_eye_smile=Vector2(p.get("eye_smile_R",0),p.get("eye_smile_L",0));manual_mouth_smile=p.get("mouth_smile",0);manual_mouth_spread=p.get("mouth_spread",0);manual_mouth_corner_lift=p.get("mouth_corner_lift",0);manual_mouth_lip_press=p.get("mouth_lip_press",0);manual_mouth_oral_lift=p.get("mouth_oral_lift",0);manual_mouth_purse=p.get("mouth_purse",0);manual_blush_intensity=p.get("blush_intensity",0)
     manual_hair=p.hair_sway;manual_mouth_open=p.mouth_open;mouth_shape="neutral";oral_mode="continuous"
     current_pose=p.duplicate();current_pose.mouth_purse=float(manual_mouth_purse);_write_pose()
@@ -94,6 +94,8 @@ func apply_controls(data)->bool:
     for gaze_key in ["gaze_x","gaze_y"]:
         if data.has(gaze_key) and not Limits.valid_gaze(data[gaze_key]):
             last_error="Gaze must be finite and within the advertised normalized bounds";return false
+    if data.has("gaze_down_extra") and not Limits.valid_gaze_down_extra(data.gaze_down_extra):
+        last_error="gaze_down_extra must be finite and in [0,1]";return false
     # The flattened canonical hair has only a verified small reveal margin.
     if data.has("hair_sway") and (not number(data.hair_sway) or abs(float(data.hair_sway))>MAX_HAIR_SWAY):
         last_error="Canonical hair_sway supports only [-0.07,0.07]";return false

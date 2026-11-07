@@ -3,11 +3,11 @@
 This is an opt-in local TCP adapter for the default viewer's single shared Godot
 rig. The included Python client can run in another process and receive actual
 controller results where loopback binding is permitted. Fresh real socket
-transport remains unrun for this EXP-002 review candidate; source/callable tests do not
+transport remains unrun for this local EXP-152 candidate; source/callable tests do not
 establish a live connection. No AI model, Ryoko agent service, voice/TTS provider or
 lip-sync service is connected. No credentials or persistent authorization are
-created. Seven performances are authored: EXP-163, EXP-005, EXP-001, EXP-006,
-EXP-107, EXP-007 and EXP-002. All seven are user-approved for publication. Current status is recorded in `RELEASE.json`.
+created. Eight performances are authored: EXP-163, EXP-005, EXP-001, EXP-006,
+EXP-107, EXP-007, EXP-002 and EXP-152. All eight and the hidden-iris/down-gaze prerequisite are user-approved for publication; current release status is recorded in `RELEASE.json`.
 
 ## Run a reproducible demonstration
 
@@ -212,7 +212,7 @@ Generated logs, reports, captures and cache directories belong outside source.
 
 ## Historical welcome capability
 
-That scoped extension added `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. At that checkpoint the registered IDs were EXP-163, EXP-005 and EXP-001; the current seven-ID registry is listed above. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.
+That scoped extension added `mouth_spread: [0,1]` and the lateral-mouth bounds documented in CONTROL_API.md. At that checkpoint the registered IDs were EXP-163, EXP-005 and EXP-001; the current eight-ID registry is listed above. There is no wide-eye capability, AI model or TTS connection. Current host socket restrictions prevented rerunning the real loopback suite; its historical receipt must not be presented as a fresh pass.
 
 
 ## Scoped EXP-006 extension
@@ -229,9 +229,11 @@ Capabilities include `mouth_purse` finite [0,1], default 0, and discover EXP-007
 
 Auto-blink now preserves an enabled pre-performance preference and restores it after exact neutral recovery. `rig.auto_blink` is the actual state; `rig.auto_blink_pending_restore` is saved intent while performance/release suspends it. `capabilities.auto_blink_policy` documents the policy. Retrigger and repeated release retain intent. Any successful manual write, including `auto_blink:false` while actual blinking is already suspended, cancels deferred restoration and takes ownership immediately. Reset leaves blinking off unless the same transaction explicitly enables it. Completion restarts the existing blink cycle from its open phase. This is local controller preparation, not evidence of a live model, TTS or socket connection. See CONTROL_API.md for exact boundary, pause and no-op semantics.
 
+## Local hidden-cap prerequisite
 
-## EXP-002 affectionate warmth: approved publication
+The callable adapter advertises `gaze_down_extra: [0,1]` and the same additive physical rule as CONTROL_API.md. It forwards the field to the shared controller and does not introduce a separate eye owner. Tests exercise in-process parser/dispatch without starting a listener. Real socket transport, model connections and TTS are not part of this change. The user approved this support with the EXP-152 preview.
 
-This candidate adds only EXP-002 to the same shared application and registry. The six published profiles and all runtime code, shaders and artwork remain byte-identical to approved commit `8c349e29fb1e742231918260d7db56026492a6c9`. EXP-003 is not included. See `AFFECTION_SCOPE_VALIDATION.md` for exact v001 source, original proposed timing, source-pixel interpretation, rigid-object constraints and test coverage.
 
-The smile develops with eyes near canonical neutral; one brief upward smiling closure is followed by renewed eye contact and a lingering sealed smile. Auto-blink inherits published restoration semantics, including initially-off behavior and cancellation by manual takeover, disable or reset. `RELEASE.json` describes this approved publication; `source_references/affection_predecessor_RELEASE.json` preserves the published predecessor record. The user approved publication after viewing the preview. The primary cumulative archive remains version 19.
+## Preserved EXP-002 affectionate warmth
+
+The approved EXP-002 profile, aliases, reference provenance and capture harnesses are retained. Its default gaze_down_extra is zero. The merged runtime uses the reviewed generic gaze capability and all eight profiles use the same player. See AFFECTION_SCOPE_VALIDATION.md and MERGED_PUBLICATION_VALIDATION.md.

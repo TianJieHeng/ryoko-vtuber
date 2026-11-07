@@ -1,9 +1,10 @@
 {
-  "candidate": "Scoped EXP-002 affectionate warmth on the shared rig",
-  "status": "User-approved publication",
-  "base_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
-  "base_subtree": "ryoko_object_rig/",
-  "base_project_tree": "f22619f290309fb37ad47c459efec4c1a1b5cba2",
+  "status": "User-approved EXP-152 and hidden-iris/down-gaze publication on published EXP-002",
+  "user_approved": true,
+  "published": true,
+  "base_main": "9b10e2f2c70f19fa003169502a73ee935af55480",
+  "capability_parent_inventory_sha256": "7d5004d5a7ef4e3518b994752fb5d9afb7e0a458f5a1d084fa156677a4f06fb1",
+  "capability_freeze_receipt_sha256": "08069f54450594fee1ee57c790ee7aadc60bb9c49a6af54d489cb5d69d4ca995",
   "authored_registry": [
     "EXP-163",
     "EXP-005",
@@ -11,7 +12,8 @@
     "EXP-006",
     "EXP-107",
     "EXP-007",
-    "EXP-002"
+    "EXP-002",
+    "EXP-152"
   ],
   "approved_predecessors": [
     "EXP-163",
@@ -19,49 +21,34 @@
     "EXP-001",
     "EXP-006",
     "EXP-107",
-    "EXP-007"
+    "EXP-007",
+    "EXP-002"
   ],
-  "protected_parent_pngs": 182,
-  "new_pngs": 0,
-  "new_controls": {},
   "excluded": [
-    "EXP-003 pending separate approval",
-    "new artwork",
-    "new runtime capability",
-    "tracking",
-    "body acting",
-    "external AI/TTS connection"
+    "EXP-003",
+    "head/body acting",
+    "FX",
+    "AI/TTS integration",
+    "real socket setup",
+    "EXP-160",
+    "EXP-177",
+    "new brow channels"
   ],
-  "reference_sheet_sha256": "76ab1be9b8e3dc12447dd9045e9356452da12182be70700b5f06eac2faff9efd",
-  "timing": {
-    "duration_seconds": 1.9,
-    "key_count": 9,
-    "origin": "Authored implementation of exact v001 source-proposed timing, not a recovered animation. Generic .3-second peak-hold metadata does not override the actual reopened KP6 image.",
-    "eye_pose_order": "KP4 open; KP5 upward smiling closure; KP6 open with retained smile; KP7/KP8 residual smile; KP9 neutral."
-  },
+  "protected_capability_pngs": 182,
+  "performance_new_pngs": 0,
+  "performance_runtime_changes": false,
+  "reference_sheet_sha256": "46d16e1eabfe7ea709252b0e3c47707613df3a8f6a41483e740981866ead6408",
   "mouth_limits": {
-    "normalized": [
-      0,
-      1
-    ],
     "physical_multiplier": 0.55,
-    "per_column_source_px_max": 30.8,
-    "fixed_central_upper_teeth_xy": [
+    "source_pixel_aperture_max": 30.8,
+    "fixed_upper_teeth_xy": [
       533,
       626
     ]
   },
-  "verification": "AFFECTION_SCOPE_VALIDATION.md",
-  "review_movie": {
-    "frames": 168,
-    "fps": 30,
-    "duration_seconds": 5.6,
-    "cycles": 2,
-    "normal_speed_playback_performed": false
-  },
-  "publication": "User approved after preview. Publication is established by the containing repository commit and external remote verification receipt. No CI, paid resources or remote execution.",
-  "inherited_auto_blink": "Published parent preserves enabled intent through playback/release and restores only at exact neutral; this delta makes no runtime lifecycle change.",
-  "user_approved": true,
+  "normal_speed_playback_observed": false,
+  "verification": "PRIVATE_PRIDE_SCOPE_VALIDATION.md",
+  "publication": "User approved both previewed performances. Containing repository commit and external remote receipt establish publication. No CI, paid resources or remote execution.",
   "approved_registry": [
     "EXP-163",
     "EXP-005",
@@ -69,6 +56,8 @@
     "EXP-006",
     "EXP-107",
     "EXP-007",
-    "EXP-002"
-  ]
+    "EXP-002",
+    "EXP-152"
+  ],
+  "approved_dependency": "hidden canonical iris cap completion / gaze_down_extra"
 }
