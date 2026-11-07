@@ -4,7 +4,7 @@ Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewe
 
 ## Calls
 
-- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter, EXP-001 / Bright welcome, EXP-006 / Suppressed giggle, EXP-107 / Confident reassurance and EXP-007 / Relieved smile are authored. Approval and publication status is recorded separately in `RELEASE.json`. Other historical catalogue IDs are references, not playable placeholders.
+- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter, EXP-001 / Bright welcome, EXP-006 / Suppressed giggle, EXP-107 / Confident reassurance, EXP-007 / Relieved smile and EXP-002 / Affectionate warmth are authored. All seven are user-approved for publication. Approval and publication status is recorded separately in `RELEASE.json`. Other historical catalogue IDs are references, not playable placeholders.
 - `apply_controls(dictionary) -> bool` validates the entire transaction before changing controls, clock or ownership. Failure returns false and sets `last_error`; no partial pose/state mutation occurs.
 - `play_expression(id)`, `release()` and `reset()` wrap their corresponding control transactions.
 - `advance(delta) -> bool` advances deterministically. Delta must be finite and nonnegative. The engine calls it from `_process`; an external deterministic driver must disable automatic processing to avoid advancing twice.
@@ -66,7 +66,7 @@ Catalogue loads validate all entries before replacement. Failure preserves the p
 
 ## Lateral mouth support
 
-`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. All six authored IDs listed above are registered. Oral-lift and purse controls are documented below. Wide-eye support is not included.
+`mouth_spread` is a finite number in [0,1], default 0. Effective spread is `mouth_spread * mouth_smile`. It drives fixed-texture, fixed-UV, unit-scale rigid lip owners and spatially reveals source-derived oral surfaces. Maximum half-width increment is 20 source pixels; additional corner lift is 5 and central lift is 4. It does not change the physical mouth-open limit (0.55; 30.8 source pixels per column). Lifecycle, atomic validation and manual ownership use the same shared player. EXP-001 (`bright_welcome`) is 3.0 seconds. All seven authored IDs listed above are registered. Oral-lift and purse controls are documented below. Wide-eye support is not included.
 
 ## Closed smile and independent blush FX
 
@@ -95,3 +95,10 @@ Restoration clears pending intent once and restarts the unchanged base 4.2-secon
 Successful manual takeover, explicit disabling and reset cancel pending intent. Initially disabled blinking stays disabled. Reset plus explicit `auto_blink:true` still enables it after the reset, as before. Empty transactions, `reset:false` alone, `release_performance:false`, invalid transactions and read-only calls cannot erase intent. Paused processing cannot complete recovery or restore blinking by a timer. The public API retains immediate manual ownership: an explicit auto-blink write during recovery cancels recovery rather than silently queuing a setting.
 
 `get_state().auto_blink` reports actual activity; `auto_blink_pending_restore` reports intended resumption after neutral recovery. `auto_blink_policy()` returns a detached description of this policy, also included in bridge capabilities. The viewer checkbox is labeled as a preference, stays checked while the saved intent is suspended, and separately says active, paused until neutral recovery, or off. Changing it is visibly labeled manual takeover. The local bridge remains preparation only, with no actual AI/TTS or socket integration validation claimed.
+
+
+## EXP-002 affectionate warmth: approved publication
+
+This candidate adds only EXP-002 to the same shared application and registry. The six published profiles and all runtime code, shaders and artwork remain byte-identical to approved commit `8c349e29fb1e742231918260d7db56026492a6c9`. EXP-003 is not included. See `AFFECTION_SCOPE_VALIDATION.md` for exact v001 source, original proposed timing, source-pixel interpretation, rigid-object constraints and test coverage.
+
+The smile develops with eyes near canonical neutral; one brief upward smiling closure is followed by renewed eye contact and a lingering sealed smile. Auto-blink inherits published restoration semantics, including initially-off behavior and cancellation by manual takeover, disable or reset. `RELEASE.json` describes this approved publication; `source_references/affection_predecessor_RELEASE.json` preserves the published predecessor record. The user approved publication after viewing the preview. The primary cumulative archive remains version 19.

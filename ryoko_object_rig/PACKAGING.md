@@ -1,8 +1,8 @@
 # Clean shared-expression review package
 
-This is the same assembled character, shared registry, controller, viewer and opt-in loopback bridge. It contains six authored performances: EXP-163 yawn, EXP-005 hearty laughter, EXP-001 bright welcome, EXP-006 suppressed giggle, EXP-107 confident reassurance and EXP-007 relieved smile. All six are user-approved. The five predecessors and the approved EXP-007 runtime/art/profile remain unchanged by the publication metadata overlay. The other 87 historical catalogue IDs remain references. No new expression-specific application or controller is introduced.
+This is the same assembled character, shared registry, controller, viewer and opt-in loopback bridge. It contains seven authored performances: EXP-163 yawn, EXP-005 hearty laughter, EXP-001 bright welcome, EXP-006 suppressed giggle, EXP-107 confident reassurance, EXP-007 relieved smile and EXP-002 affectionate warmth. All seven are user-approved for publication. All six published profiles, all runtime code/shaders and all 182 PNGs remain byte-identical to published parent 8c349e29fb1e742231918260d7db56026492a6c9. Other historical catalogue IDs remain references. No new expression-specific application or controller is introduced.
 
-The historical laughter runtime and artwork were frozen at local checkpoint d4a84324a30c0f0730c93dc49fc080b109f189aa. Later commits contain tests, provenance and review packaging. The complete 255-file corrected gaze baseline is preserved. Ordinary-lid correction F is integrated explicitly; see SOURCE_PROVENANCE.json and validation/smile_runtime_migration.json. Those historical review receipts retain their original wording. The exact approved laughter predecessor is now published at `6a61452e29ffbfcd4f7c5afe9b728b367f145f3e`; current scoped welcome validation is documented separately.
+The historical laughter runtime and artwork were frozen at local checkpoint d4a84324a30c0f0730c93dc49fc080b109f189aa. Later commits contain tests, provenance and review packaging. The complete 255-file corrected gaze baseline is preserved. Ordinary-lid correction F is integrated explicitly; see SOURCE_PROVENANCE.json and validation/smile_runtime_migration.json. Those historical review receipts retain their original wording. The exact approved laughter predecessor is now published at `6a61452e29ffbfcd4f7c5afe9b728b367f145f3e`; historical scoped welcome validation is documented separately.
 
 ## Source versus generated evidence
 
@@ -16,7 +16,7 @@ SOURCE_FILES.sha256 inventories packaged paths only, excluding itself. It is reg
 
 ## Rebuild and verification
 
-Run builders in an isolated copy. The current complete 18-suite runtime and source-check list is in RELIEF_SCOPE_VALIDATION.md; the commands below retain the historical base/smile/bridge workflow. Real socket transport remains unrun under the current restrictions.
+Run builders in an isolated copy. The current complete 20-suite runtime and source-check list is in AFFECTION_SCOPE_VALIDATION.md; the commands below retain the historical base/smile/bridge workflow. Real socket transport remains unrun under the current restrictions.
 
 Use Godot 4.6.3 and requirements.txt. Run from this directory, with no sibling source tree required:
 
@@ -44,13 +44,13 @@ Godot needs writable HOME and XDG cache/data/config locations in a sandbox. The 
 
 ## Review artifacts and publication boundary
 
-The 24-second actual-Godot review movie and its face crop are delivered separately, not in the repository. `source_references/laughter_predecessor_RELEASE.json` records their verified identities; `source_references/welcome_predecessor_RELEASE.json` preserves welcome evidence; `source_references/giggle_predecessor_RELEASE.json` preserves giggle evidence; `source_references/reassurance_predecessor_RELEASE.json` preserves reassurance evidence; current `RELEASE.json` records the scoped relief source. SMILE_VALIDATION.md and validation/laughter_final_review.json distinguish completed checks, material inferred artwork, intentional ordinary-lid changes and finite raster limitations. No normal-speed audiovisual playback is claimed.
+The 24-second actual-Godot review movie and its face crop are delivered separately, not in the repository. `source_references/laughter_predecessor_RELEASE.json` records their verified identities; `source_references/welcome_predecessor_RELEASE.json` preserves welcome evidence; `source_references/giggle_predecessor_RELEASE.json` preserves giggle evidence; `source_references/reassurance_predecessor_RELEASE.json` preserves reassurance evidence; `source_references/affection_predecessor_RELEASE.json` preserves the published relief record; current `RELEASE.json` records the approved EXP-002 publication. SMILE_VALIDATION.md and validation/laughter_final_review.json distinguish completed checks, material inferred artwork, intentional ordinary-lid changes and finite raster limitations. No normal-speed audiovisual playback is claimed.
 
-This runtime source is approved for publication. The containing repository commit and external remote-verification receipt establish publication; a local commit or successful test alone does not. Frozen pre-publication receipts retain their historical wording. Existing unrelated repository paths must remain untouched when applying the overlay. No CI, paid service, external model/TTS connection, remote execution or Git LFS migration was performed. Any future genuinely large asset should follow the repository's authorized LFS workflow.
+All seven performances, including EXP-002, are user-approved for publication. The containing repository commit and external remote-verification receipt establish publication; a local commit or successful test alone does not. Frozen pre-publication receipts retain their historical wording. Existing unrelated repository paths must remain untouched when applying the overlay. No CI, paid service, external model/TTS connection, remote execution or Git LFS migration was performed. Any future genuinely large asset should follow the repository's authorized LFS workflow.
 
 ## Historical EXP-001 overlay
 
-The current package retains every approved laughter predecessor path and adds only EXP-001 with its required lateral-mouth support. The 17 new PNGs preserve their exact reviewed source bytes. No wide-eye assets, held expression definitions, diagnostic frames or movies are included. `WELCOME_SCOPE_VALIDATION.md` records current scope and newly executed checks, including exact rendering against the approved welcome source.
+That historical package retained every approved laughter predecessor path and added only EXP-001 with its required lateral-mouth support. The 17 new PNGs preserve their exact reviewed source bytes. No wide-eye assets, held expression definitions, diagnostic frames or movies are included. `WELCOME_SCOPE_VALIDATION.md` records that historical scope and its checks, including exact rendering against the approved welcome source.
 
 ## Historical EXP-006 overlay
 
@@ -66,6 +66,13 @@ Base is verified main `4f3deaa2de3eedb691a9f0c795c7b8563663e472`. All 399 publis
 
 Run `python tools/verify_reassurance_scope.py`, `python tools/verify_giggle_scope.py`, `python tools/verify_welcome_scope.py`, then the fifteen runtime suites listed in `REASSURANCE_SCOPE_VALIDATION.md`. Do not run diagnostic builders in the clean inventory tree. The deliverable is a new scoped delta against this verified parent, never a replacement for the cumulative archive. Approval must precede any publication.
 
-## Scoped EXP-007 overlay
+## Historical EXP-007 overlay
 
 Base is approved main `35a7ddc615e7501a9a814ca02d722ddb40f200c9`. All 418 parent paths remain. All 182 PNGs and five prior performances are byte-exact. EXP-007 plus one generic bounded mouth_purse capability add behavior; runtime and shader modifications are pinned to exact source hashes. Historical scope guards follow exact pinned migration hashes. The deliverable is a new reconstructable scoped delta, not a cumulative source replacement. Primary cumulative archive remains version 19. EXP-007 is user-approved for publication. A narrow live-documentation and release-metadata overlay updates approval wording and regenerates the source manifest/migration hashes without changing the approved runtime, artwork, profiles, tests or historical review receipts.
+
+
+## EXP-002 affectionate warmth: approved publication
+
+This candidate adds only EXP-002 to the same shared application and registry. The six published profiles and all runtime code, shaders and artwork remain byte-identical to approved commit `8c349e29fb1e742231918260d7db56026492a6c9`. EXP-003 is not included. See `AFFECTION_SCOPE_VALIDATION.md` for exact v001 source, original proposed timing, source-pixel interpretation, rigid-object constraints and test coverage.
+
+The smile develops with eyes near canonical neutral; one brief upward smiling closure is followed by renewed eye contact and a lingering sealed smile. Auto-blink inherits published restoration semantics, including initially-off behavior and cancellation by manual takeover, disable or reset. `RELEASE.json` describes this approved publication; `source_references/affection_predecessor_RELEASE.json` preserves the published predecessor record. The user approved publication after viewing the preview. The primary cumulative archive remains version 19.

@@ -3,7 +3,7 @@ var rig
 var checks=0
 var failures=[]
 const AXIS="mouth_oral_lift"
-const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007"]
+const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002"]
 func _initialize():call_deferred("run")
 func check(ok:bool,label:String):
  checks+=1
@@ -31,7 +31,7 @@ func run():
  if not rig.rig_ready or not rig.registry_ready:quit(2);return
  var ids=[]
  for e in rig.list_expressions():ids.append(e.id)
- check(ids==IDS,"enumerates only the six authored profiles")
+ check(ids==IDS,"enumerates only the seven authored profiles")
  check(rig.pose_now()[AXIS]==0.0 and rig.neutral_pose()[AXIS]==0.0 and rig.face.mouth_oral_lift==0.0,"zero defaults")
  var bridge=load("res://control_bridge.gd").new();bridge.rig=rig
  var cap=bridge.capabilities()
@@ -122,6 +122,6 @@ func run():
  check(not rig.apply_controls({AXIS:.7,"blink":true}),"valid oral lift plus invalid old field rejected")
  check(state()==before,"old-field failure preserves oral lift atomically")
  check(not rig.apply_controls({"tongue_lift":.5}),"unguessed alias rejected")
- check(rig.list_expressions().size()==6 and rig.registry.resolve("TEST-ORAL-LIFT")=="","fixture never published")
+ check(rig.list_expressions().size()==7 and rig.registry.resolve("TEST-ORAL-LIFT")=="","fixture never published")
  print("ORAL_LIFT_CONTRACT checks=",checks," poses=",frame_count," failures=",failures.size())
  quit(1 if failures.size() else 0)

@@ -52,6 +52,15 @@
         "relief"
       ],
       "trigger_phase": "inward_tension"
+    },
+    {
+      "id": "EXP-002",
+      "path": "res://expressions/EXP-002.json",
+      "aliases": [
+        "affectionate-warmth",
+        "affection"
+      ],
+      "trigger_phase": "anticipation"
     }
   ]
 }

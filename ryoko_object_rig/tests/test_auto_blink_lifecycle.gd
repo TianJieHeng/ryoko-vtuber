@@ -1,9 +1,10 @@
 extends SceneTree
+## Seven-profile lifecycle coverage including the selected EXP-002 brief closure.
 ## Deterministic shared-controller and UI/adapter tests; no listening socket.
 var rig
 var checks=0
 var failures=[]
-const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007"]
+const IDS=["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002"]
 func _initialize():call_deferred("run")
 func check(ok,label):
     checks+=1
@@ -38,11 +39,88 @@ func blink_cycle(wanted,label):
     rig.advance(.085);check(is_equal_approx(rig.face.closure.x,sin(PI*.75) if wanted else 0.0),label+" reopening")
     rig.advance(.085);check(rig.face.closure.length()<.000001,label+" fully reopened")
     for joint in rig.face.smile_eye_joints:check(not rig.face.objects[joint.key].visible,label+" no retained laughter family")
+func affection_peak(label):
+    var pose=rig.pose_now()
+    check(is_equal_approx(pose.eye_smile_R,.90) and is_equal_approx(pose.eye_smile_L,.90),label+" authored upward hold")
+    check(rig.face.smile_eyes.is_equal_approx(Vector2(.90,.90)),label+" actual smiling-eye controls")
+    check(pose.mouth_open==0.0 and pose.gaze_x==0.0 and pose.gaze_y==0.0 and pose.hair_sway==0.0,label+" sealed/still approved acting")
+    var visible_joints=0
+    for joint in rig.face.smile_eye_joints:
+        if rig.face.objects[joint.key].visible:visible_joints+=1
+    check(visible_joints>0,label+" smiling contour actually selected before recovery")
+func ordinary_family(label):
+    check(rig.face.smile_eyes==Vector2.ZERO,label+" actual zero smile family")
+    for joint in rig.face.smile_eye_joints:check(not rig.face.objects[joint.key].visible,label+" no retained affection/laughter contour")
+    for key in rig.face.manifest.objects:
+        var part=rig.face.manifest.objects[key]
+        if part.has("eye_role") and int(part.eye_role)==4:
+            check(rig.face.objects[key].visible,label+" ordinary closed-lid owner restored")
+func run_affection_edges():
+    check(rig.registry.resolve("EXP-002")=="EXP-002" and rig.list_expressions().size()==7,"seven authored profiles including affection")
+    check(rig.registry.definition("EXP-002").duration==1.9,"affection duration unchanged")
+    var sample=rig.sample_expression("EXP-002",.50)
+    check(is_equal_approx(sample.eye_smile_R,.015) and is_equal_approx(sample.eye_smile_L,.015),"affection selected OPEN KP4 preserved")
+    for wanted in [false,true]:
+        for ending in ["complete","release","retrigger","to_laughter","from_laughter"]:
+            begin("EXP-002",wanted);rig.advance(.75);affection_peak("EXP002 before "+ending)
+            pending(wanted,"EXP002 selected hold")
+            if ending=="complete":
+                rig.advance(.30);check(is_equal_approx(rig.pose_now().eye_smile_R,.010),"EXP002 renews open contact at1.05");check(is_equal_approx(rig.pose_now().mouth_smile,.24),"EXP002 retains smile after closure")
+                rig.advance(1.9)
+            elif ending=="release":
+                var before=rig.displayed_pose();rig.release();check(before==rig.displayed_pose(),"EXP002 hold release C0")
+                rig.advance(.449999);pending(wanted,"EXP002 recovery not complete")
+                rig.advance(.0000011)
+            elif ending=="retrigger":
+                var before=rig.displayed_pose();rig.play_expression("EXP-002");check(before==rig.displayed_pose(),"EXP002 hold retrigger C0")
+                pending(wanted,"EXP002 retrigger retains intent");rig.advance(.75);affection_peak("EXP002 retriggered hold");rig.advance(1.9)
+            elif ending=="to_laughter":
+                var before=rig.displayed_pose();rig.play_expression("EXP-005");check(before==rig.displayed_pose(),"EXP002 to laughter C0")
+                pending(wanted,"EXP002 to laughter intent");rig.advance(.9);rig.release();rig.advance(.45)
+            else:
+                begin("EXP-005",wanted);rig.advance(.9)
+                var before=rig.displayed_pose();rig.play_expression("EXP-002");check(before==rig.displayed_pose(),"laughter to EXP002 C0")
+                pending(wanted,"laughter to EXP002 intent");rig.advance(.75);affection_peak("EXP002 incoming from laughter");rig.advance(1.9)
+            neutral(wanted,"EXP002 "+ending);ordinary_family("EXP002 "+ending)
+            blink_cycle(wanted,"EXP002 "+ending+" restored ordinary idle")
+            ordinary_family("EXP002 after full close/reopen")
+    for mode in ["performance","release"]:
+        for command in [{"auto_blink":false},{"reset":true},{"mouth_open":.13}]:
+            begin("EXP-002",true);rig.advance(.75);affection_peak("EXP002 cancellation before "+mode)
+            if mode=="release":rig.release();rig.advance(.1)
+            check(not rig.auto_blink and rig.auto_blink_pending_restore,"EXP002 actual already false with pending intent")
+            check(rig.apply_controls(command),"EXP002 explicit cancellation accepted")
+            check(not rig.auto_blink and not rig.auto_blink_pending_restore and rig.active_performance=="" and rig.release_time<0,"EXP002 cancellation immediately owns pose")
+            var pose=rig.pose_now();var displayed=rig.displayed_pose();rig.advance(20)
+            check(rig.pose_now()==pose and rig.displayed_pose()==displayed and not rig.auto_blink,"EXP002 no delayed restoration after cancel")
+            rig.play_expression("EXP-002");rig.advance(1.9);neutral(false,"EXP002 later trigger cannot resurrect canceled preference")
+    var ui=load("res://expression_viewer.tscn").instantiate();root.add_child(ui);ui.set_process(false);ui.rig.set_process(false)
+    var index=ui.expression_ids.find("EXP-002")
+    check(index>=0,"EXP002 selectable in shared viewer")
+    if index>=0:
+        ui.selector.select(index)
+        for mode in ["performance","release"]:
+            ui.apply_controls({"reset":true,"auto_blink":true});check(ui.play_selected(),"UI selects EXP002")
+            check(ui.rig.active_performance=="EXP-002","UI actual selected ID")
+            ui.rig.advance(.9)
+            if mode=="release":ui.apply_controls({"release_performance":true});ui.rig.advance(.1)
+            ui._process(0)
+            check(ui.auto_blink_button.button_pressed and not ui.rig.auto_blink and ui.rig.auto_blink_pending_restore,"EXP002 UI saved preference differs honestly from actual")
+            check("paused" in ui.auto_blink_status.text and "neutral recovery" in ui.auto_blink_status.text,"EXP002 UI explains pending recovery")
+            ui.auto_blink_button.button_pressed=false;ui._process(0)
+            check(not ui.rig.auto_blink_pending_restore and not ui.rig.auto_blink and ui.rig.active_performance=="" and ui.rig.release_time<0,"EXP002 UI false-to-false manual cancellation")
+            check("off" in ui.auto_blink_status.text,"EXP002 UI cancellation status")
+            var pose=ui.rig.pose_now();ui.rig.advance(10)
+            check(ui.rig.pose_now()==pose and not ui.rig.auto_blink,"EXP002 UI canceled recovery stays canceled")
+        ui.apply_controls({"reset":true,"auto_blink":true});ui.play_selected();ui.rig.advance(1.9);ui._process(0)
+        check(ui.rig.auto_blink and not ui.rig.auto_blink_pending_restore and "active" in ui.auto_blink_status.text,"EXP002 UI completed recovery reports actual active")
+    ui.free()
 func run():
     rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false)
     check(rig.rig_ready and rig.registry_ready,"ready")
     if not rig.rig_ready or not rig.registry_ready:quit(2);return
     neutral(false,"default remains disabled")
+    run_affection_edges()
     for wanted in [false,true]:
         for id in IDS:
             for ending in ["completion","release","repeated_release","zero_delta"]:
