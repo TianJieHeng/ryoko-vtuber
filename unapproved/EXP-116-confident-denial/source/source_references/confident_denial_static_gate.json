@@ -1,0 +1,15 @@
+{
+  "decision": "PASS_UNCHANGED_EXP116_STATIC_SOURCE_FIT",
+  "source_freeze_sha256": "9d06b0c4a1be6cddbdb8c849e2f85480ed46d165f69054dd619d22fa91c637c0",
+  "static_plan_sha256": "3d31f5755077d7b6f63c63338d3e71b2b0d56846d302c039af9f88f95ff68e87",
+  "capture_receipt_sha256": "1264d688c57538b25c169234e70ee498f3c7be2cffe8c76763b80af5509bb6be",
+  "prior_independent_static_decision_path": "independent_mouth_width_review/evidence/STATIC_GATE_DECISION_V1.json",
+  "prior_independent_static_decision_sha256": "03246e2d05a3b170fa06575f1e051c2e8adb93e3e636810b3d8ed7cea498db71",
+  "full_rgba_frames_exact_to_accepted_static_v1": 6,
+  "source_registration_and_center_landmarks": "The same one fixed face scale, source-only head registration, own-neutral deltas and independent uncertain KP1/5/6 center/intermediate marks remain applicable. Source uncertainty remains 1\u20132 source pixels, several native pixels; no false-precision refit.",
+  "source_shape": "Near-stationary quiet left corner, asymmetric roughly 6/17-pixel widening and brief right-corner release. The retained shallow cupid notch is within the independently annotated center/chord uncertainty.",
+  "no_extra_control_or_new_hypothesis": true,
+  "performance_timing_status": "NOT_REVIEWED",
+  "timeline_authorized_by_this_review": false,
+  "user_approval_inferred": false
+}

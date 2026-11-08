@@ -1,0 +1,76 @@
+{
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": [
+    {
+      "name": "RYO_EXP-116_confident-denial_kp01_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp01_v001.png",
+      "git_blob_sha": "24cdbf83bcff25666a3e270f6dc8335330d19ee7",
+      "sha256": "cc5890fe947251b7605216f1a8410f111a13e92e039f27dc8c2419f2db2e721a",
+      "size": 231684
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp02_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp02_v001.png",
+      "git_blob_sha": "6954ea6f0ae3284b0f45cdbde23780ce03375a15",
+      "sha256": "842764034bd67a556733dbf4809677af8d8cb169ac01ec5607ffb91e8a7ff094",
+      "size": 244343
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp03_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp03_v001.png",
+      "git_blob_sha": "124b3094968ad50df347c35145a39d5b20022323",
+      "sha256": "5778b01032b1ab78a741cf9b81de0fb6c2f89d369f36728b8f67d3136cbdc4f1",
+      "size": 232579
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp04_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp04_v001.png",
+      "git_blob_sha": "adc70d87dc232165cd8f0e001265a759dbe38875",
+      "sha256": "79de7304335affa060efaf8bce149f44663c45177075691e48e668cecfbc5e58",
+      "size": 230617
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp05_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp05_v001.png",
+      "git_blob_sha": "f1b21b62ead4d9a0363ee9290b852eac2ae151b0",
+      "sha256": "1d50c646e0bad0eeff1b1743b8f9205a30f60d1a0a7fcab45ebb80abf9f06d54",
+      "size": 243992
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp06_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp06_v001.png",
+      "git_blob_sha": "b6cb3828fdae57cdac6e0fed022ab29d193f21ac",
+      "sha256": "465c72f31535c174e12b14dc7173b598b9a4f847e1f0431d9f84044e469a092c",
+      "size": 231733
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp07_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp07_v001.png",
+      "git_blob_sha": "03f09bc575b79aeed3bef1965163307dc3b5ab6f",
+      "sha256": "94f59e12eacb1b608e00f0f017a2e812e4e0d92f3203b53e57725e2f27003563",
+      "size": 230306
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp08_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp08_v001.png",
+      "git_blob_sha": "08be2914fa72ec2a0cf57781da746fbdc57224f6",
+      "sha256": "19da7451ab88b8fa2b91dba855b8caefdc94d942133b411557c28479d65671d6",
+      "size": 241783
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_kp09_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_kp09_v001.png",
+      "git_blob_sha": "f8ce4743fcf6e93060160dc3c2bca57ebd6eb7e3",
+      "sha256": "4d0e6e22dd07c59af335a62ca59a056b6d6b4c39333b7ad946830f627122aec9",
+      "size": 229706
+    },
+    {
+      "name": "RYO_EXP-116_confident-denial_sheet_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-116_confident-denial/RYO_EXP-116_confident-denial_sheet_v001.png",
+      "git_blob_sha": "8f584018335e43ca138fb60b466cac71b97bdd76",
+      "sha256": "3bb691b750bf0e22b0437c258f74b703fd492517bec97cfbfad3e95553fc19e3",
+      "size": 2277950
+    }
+  ]
+}

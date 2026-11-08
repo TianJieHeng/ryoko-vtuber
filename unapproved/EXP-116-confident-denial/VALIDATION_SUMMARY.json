@@ -1,0 +1,86 @@
+{
+  "expression": "EXP-116 Confident denial",
+  "status": "Completed actual-performance technical review; unapproved recovery backup",
+  "user_approved": false,
+  "approved_integration": false,
+  "approved_profile_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021"
+  ],
+  "unapproved_profile_ids": [
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116"
+  ],
+  "registered_profile_count": 16,
+  "source_files": 605,
+  "freeze_indexed_files": 604,
+  "source_inventory_sha256": "95fa422e615d63ec0226f6cf84097acc1d78837486478b0fb08dbb62f69c9783",
+  "freeze_inventory_sha256": "4ece29de7c34e4d07293a8ed47d0d519d616aa6a1a6f6054dec10ae34269835f",
+  "source_freeze_sha256": "dd52d78b1a6987140ea0728a41f35841746fc0e102c66c1941fd64677ddf919a",
+  "capture_plan_sha256": "f8e2cd9ab8ba8e30a39951cc4849b159881e076aafd99391efb0f032505b5d8e",
+  "capture_binding_sha256": "3f781518e0896f8568c1fb04ad73f6aa1317cf5b1f9e54d8a9600050b348175a",
+  "profile_sha256": "bb7c020ff27be98e1b522b088d62d49406603e07457f192c9e213483f027303a",
+  "actual_capture_receipt_sha256": "c0e7a0bc0d8c90010c2ed146fdbac49cf9c8ac1b7217eea6cd50076b4f12b43e",
+  "source_is_exact_capture": true,
+  "delivery_overlay": false,
+  "runtime_png_files": 182,
+  "new_runtime_pngs": 0,
+  "independent_actual_performance_review": {
+    "status": "PASS",
+    "decision": "PASS_ACTUAL_FINITE_STEPPED_EXP116_PERFORMANCE",
+    "evidence": [
+      {
+        "path": "independent_mouth_width_review/performance/REPORT_ACTUAL_PERFORMANCE.md",
+        "sha256": "97aeb40f84aec74e71225a22fee88f3518180d12ecba5e226934e051038d7486"
+      },
+      {
+        "path": "independent_mouth_width_review/performance/native_evidence/ACTUAL_PERFORMANCE_GATE.json",
+        "sha256": "0adc046283f20b52cbb5f94ffac43a7ebfe96c58e77fddada1188873692c318a"
+      },
+      {
+        "path": "independent_mouth_width_review/performance/REVIEW_ACTUAL_PERFORMANCE_FILES.json",
+        "sha256": "ff0038e5adfa6a8dcb1c1c61d23acbccc2bd03ace95968fd3fb0226c5c90d876"
+      }
+    ],
+    "verified_images": 660,
+    "actual_states_exact_to_independent_preflight": 330,
+    "shared_times_exact_both_resolutions": 100,
+    "static_anchor_and_endpoint_matches": 7,
+    "exact_neutral_return_chapters": 11,
+    "unique_mouth_crops_visually_inspected": 62,
+    "normal_speed_playback_observed": false,
+    "user_approval_inferred": false,
+    "general_open_width": "HOLD_UNREPAIRED"
+  },
+  "builder_checks": {
+    "runtime_assertions": 826602,
+    "preflight_assertions": 221414,
+    "graphical_assertions": 222734,
+    "prior_profile_parity_records": 812,
+    "actual_checkpoints": 330,
+    "actual_images": 660,
+    "repeated_natural_times": 100,
+    "static_native_matches": 7
+  },
+  "limits": [
+    "All four listed unapproved profiles and shared runtime extensions remain unapproved. Approval of one does not approve the others.",
+    "Preservation only: the approved runtime is unchanged.",
+    "Independent width is supported only at mouth_open == 0. General open-plus-width remains unsupported; the two failed V1 gates remain HOLD.",
+    "No normal-speed playback observation, live AI/TTS or real socket test is claimed.",
+    "Inherited metadata and historical test counts are retained exactly, not rewritten as current status. The frozen CONFIDENT_DENIAL_STATUS.json retains its pre-capture wording; this outer summary records later technical acceptance.",
+    "Media delivery and archive review are separate. No media is stored here.",
+    "No CI, paid resources, hardware flashing or remote-machine execution was used."
+  ]
+}

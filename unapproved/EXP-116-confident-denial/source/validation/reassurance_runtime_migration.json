@@ -1,0 +1,102 @@
+{
+  "base_commit": "4f3deaa2de3eedb691a9f0c795c7b8563663e472",
+  "files": {
+    "CONTROL_API.md": {
+      "baseline_sha256": "96eedd9e48faa19f6cc46889bcb21c74aab8a7828c1a117e3635d0b6b2399364",
+      "candidate_sha256": "3c0c8b3d96404b1f5daba2b66bae511670ada7eb119d66dc52bb46318baec671"
+    },
+    "LOCAL_CONTROL_BRIDGE.md": {
+      "baseline_sha256": "34a9a8fcf1248f4cb45fc7895ab53a5c9292bf5f941c08eff7a62360b0a5ecb6",
+      "candidate_sha256": "730902ba5eda6a904379998b4134bfd54144d8e1298ac8853d65c6ae351dea55"
+    },
+    "PACKAGING.md": {
+      "baseline_sha256": "1e8d66a2ea9bde9ec149ee158e62d7dc06b8f450774d3befcba64c0c8bdf4a37",
+      "candidate_sha256": "985059166baffb1775e1151ed45fb6bd4d523af5b0597001ccceef5e452ba52e"
+    },
+    "README.md": {
+      "baseline_sha256": "bc60d8cf2803d245445653a4a38730eb367cec0b96b5e01678b9719cf67350a7",
+      "candidate_sha256": "8fc693e0bcfb091793cf4912631b74e21beb240c91383ab5bb27423be958ff38"
+    },
+    "RELEASE.json": {
+      "baseline_sha256": "9c6c73cbc9ddde13d1534dc793d5c43b74c49cbd307b9e00a8ed639b013e8c74",
+      "candidate_sha256": "78c15d6783a2929f75362a3f06729cb527704ca4f4b5354d3b6a1775722c7aef"
+    },
+    "control_bridge.gd": {
+      "baseline_sha256": "7c1ca828df7d0893a2d6427ea55cf8b484d095862377597823f41ca390b799e1",
+      "candidate_sha256": "33705a9301c74c5b825c4dccee2156188c69310a190d73fc6cd6c9e0f9ad4d2d"
+    },
+    "expression_registry.gd": {
+      "baseline_sha256": "b6a5939e05326074ee073ee13aac72965cd2b8872c56bc59d4733114da1dfe44",
+      "candidate_sha256": "43a398490d9f7790d50d243df4dfdc819b4d97b7f0d6d61f3b5f2d541534e880"
+    },
+    "expression_rig.gd": {
+      "baseline_sha256": "3b942b989331eaee46baa3150fd9504eca7799bc600a38fffd8bd448bd14f508",
+      "candidate_sha256": "991fb3faed74b7cd47dacbdc0b64141ca034047ae196b655a30f1da77740123d"
+    },
+    "expression_viewer.gd": {
+      "baseline_sha256": "09b74e0147d228cce4d49e7f726c2f2cdb9342fd838e75336da54646972c0e83",
+      "candidate_sha256": "8fa1ebb22d5e6afdf2711eb52824031502d61b227ba78fe58e63116fc350d587"
+    },
+    "expressions/registry.json": {
+      "baseline_sha256": "6221b04522ee59aad84273ae10d8bf4c0d3e0c1954565916e4fbba2698a4fc50",
+      "candidate_sha256": "8470325d687fe6e087ba976ef1d8816adfefb82ef926450488a989db76e5889b"
+    },
+    "object_face.gd": {
+      "baseline_sha256": "1162fcaa6bd7584e7c2a72da34c3c5acedebaef8fe5d4997d4ccefe29234b3e9",
+      "candidate_sha256": "c6713067865f039c8588461293a56a87690107639dfea1503c61cc82632b74b8"
+    },
+    "test_expression_backbone.gd": {
+      "baseline_sha256": "f7357aac5c1c1a15b0ced9ab60a6fcc01604ae23a04991b10b24707dc233834c",
+      "candidate_sha256": "96431f27284976d68f53d549b949a3ed733baf11c85d3159756039aeae6d2931"
+    },
+    "tests/test_giggle_runtime.gd": {
+      "baseline_sha256": "24dbe9d6ed45ba4a29274b473ebdc5903c078ee3b835e2eb6c8ec15f39f1af1d",
+      "candidate_sha256": "dd6855a825483eaa121b58f2b1d6cc481df6897e168450c22ce2f2683e60a3b2"
+    },
+    "tests/test_spread_runtime.gd": {
+      "baseline_sha256": "f669f6f8fa231fb10615ad60f2e58278d6befc4080951e6249a26dcbb88a73a6",
+      "candidate_sha256": "8eed9bb036a96250b1ed19fdc097c72f9eaaade84710dabc4bd9ecb54054d525"
+    },
+    "tools/test_control_bridge.py": {
+      "baseline_sha256": "f8bb374a36368f24750604db3ae3071b0f1370cacb8d92f1ce059d829cd25cc7",
+      "candidate_sha256": "742d2a7fce932efb10b7f288d0702f7a8fa1d05c21803890f62b707ddc2d5f3c"
+    },
+    "tools/verify_giggle_scope.py": {
+      "baseline_sha256": "dc54efc8a94c99577ea5d33bcffc1af1b4cfe05c0cdc0ea63bbcfe0b5e3b1e68",
+      "candidate_sha256": "8ba1fa02e85bafbcab7d9eeec9ed3ee5b21cd5425f2084e6db32f512cffe6964"
+    },
+    "tools/verify_smile_support.py": {
+      "baseline_sha256": "e2f2e5bd1cf0fba0d38895e40745de809fdf729555b68de8657d681f2771777a",
+      "candidate_sha256": "646ce566f0194c8bfc8dab15c737a3b2b40a2efd8feca7cac70aa11e9270e914"
+    },
+    "tools/verify_welcome_scope.py": {
+      "baseline_sha256": "5dbe4fd5b9c6397cc85f80766d4cd9e72dcb2ed05ba344e4dd21990caa01a37b",
+      "candidate_sha256": "04facbe59b3e68c2648160c3b16201c1506ad95899ed5dd9639ef4486bf085c3"
+    },
+    "tools/welcome_source_guard.py": {
+      "baseline_sha256": "b764b943a8ae2d56a82d0b84fc9f5d33da1f4f9cd265670cfe84a95ea56a645d",
+      "candidate_sha256": "7831e5e65059d1bb48dafbecfc2c7b543bdaf0d2143d5ab520321e4843bf9a4b"
+    }
+  },
+  "new_files": {
+    "REASSURANCE_SCOPE_VALIDATION.md": "0251b6eec48ef4dc9e888d243835119548881c606c1d04a6dd17e65858e46361",
+    "tests/test_reassurance_runtime.gd": "5b2f3d6a868389fb9642ad70ce1f35c7e46f8def29f897210705b3f764edad0c",
+    "tests/test_oral_lift_contract.gd": "c8a3acec889746775b6fc4de2eb2e10b84394a11fb818340492544e3152291b5",
+    "tests/test_reassurance_runtime.gd.uid": "a7c00c1a86aceda4a814f7235eea05f74194bc2c87443f9ce68c28ec90008173",
+    "tests/test_oral_lift_contract.gd.uid": "52c0b593f750948499933576c35f18b39811553a7393b6c0669f5803d020e2b4",
+    "expressions/EXP-107.json": "9361028359fb8e99eb053045f78b2544c4ff8a35f6c9068cbac47691ad134544",
+    "source_references/EXP-107_reference_provenance.json": "664d94a71e9caf2f4feb0f6f46d8afd111c7b851182d7aa76c6513679e799e2b",
+    "source_references/EXP-107_reference_metadata.json": "c865dc5caf52027ca6a6604fa5b7d89b179a0befd90ea2612e4a6329c9789983",
+    "source_references/reassurance_parent_inventory.json": "e73c0c9c8030138ee722986431932e168949ab268d748e8827d22fcbe31e1cd8",
+    "source_references/giggle_predecessor_RELEASE.json": "9c6c73cbc9ddde13d1534dc793d5c43b74c49cbd307b9e00a8ed639b013e8c74",
+    "validation/reassurance_final_review.json": "e855f091613389502450e0843cd1e11e36d3ecc8aef2673ab937ff7df04e50ba",
+    "validation/reassurance_independent_review.json": "0e58260cd40b1b77103b3b877bdaacdf9577e787d9fc7975992ab2ea82927251",
+    "tools/review_reassurance_scope.gd": "27d939d5435f14194a493775c2e48d033bd91166ea3e561181a4acfa3505008f",
+    "tools/review_reassurance_keyposes.gd": "7e46962dece2beadf6e809c5b318a7e76eb016880cb8c6768a9d22a41512c62e",
+    "tools/verify_reassurance_scope.py": "e27adb7039758de8c568a165bd8650292f11bd05c9d6519629280511d5238df4",
+    "tools/review_reassurance_keyposes.gd.uid": "25c70203789685ea96a6ec9b11baf2eb6ef3f90bcc6cb2923520d5a40ac0b9c3",
+    "tools/review_reassurance_scope.gd.uid": "24a6d499d177e5aa1b168ac03da111042b526c535e190cf4d8f639b406190c00",
+    "tools/reassurance_source_guard.py": "a14b88f7b68be3aea4a767e8bc3b4d3e09c8ea6eeafec0481cafd754c12588b0"
+  },
+  "scope": "Only EXP-107 and generic bounded rigid lower oral-surface lift; exact parent art and four profiles unchanged."
+}

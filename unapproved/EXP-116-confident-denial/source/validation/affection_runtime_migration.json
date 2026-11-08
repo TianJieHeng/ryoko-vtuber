@@ -1,0 +1,117 @@
+{
+  "base_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
+  "scope": "Data-only EXP-002 with registry, exact-hash guard/test enumeration and documentation changes. Runtime/art/old profiles unchanged.",
+  "files": {
+    "CONTROL_API.md": {
+      "baseline_sha256": "073e4ba9abde2f576a8885c5465da418bba2575ecbbfe68bb1fdd3b124313db0",
+      "candidate_sha256": "29d88b887ead5fe4db77ee722b8229222114454b9ac11d3671a79876b9ff359a"
+    },
+    "test_yawn.gd": {
+      "baseline_sha256": "3fc43b930f5ed7f5d326fc772eef9b53de35ded8de9bbb7a44ba6d0ac0a90289",
+      "candidate_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44"
+    },
+    "RELEASE.json": {
+      "baseline_sha256": "8cf880737f32cc3796d4d7a064d8c6b4294c781394960ad2836a42e354d49c8d",
+      "candidate_sha256": "0c5ba88827bfa0ce9a17605719f51a064d9846d64cb28b125c6e9f551560a4b3"
+    },
+    "test_expression_backbone.gd": {
+      "baseline_sha256": "b51f77d67a1d4827e8e4ceb519ffc0e72cd308806cb388a9e8f383aa04af87d7",
+      "candidate_sha256": "26ed191caebf69469440f8a8df5eeb9ffc66ccbd9094e9e662295d54f1d4be84"
+    },
+    "LOCAL_CONTROL_BRIDGE.md": {
+      "baseline_sha256": "5d29bcd2730d8299137fafe68c3e285c687fc40f1f9f7f26c568339e6c73c232",
+      "candidate_sha256": "24d38df41568a18d3c418c3c0ae3714396d75c8d8686ae3545f023271698ad77"
+    },
+    "README.md": {
+      "baseline_sha256": "0e1f1374f12c978f48bbec8e9c155a4bdc9ccd04a05b955dc619e2835d1b701e",
+      "candidate_sha256": "ed5556482931c036e3353ed477177da530d3fa0698ba11d31e64bec171404f1b"
+    },
+    "PACKAGING.md": {
+      "baseline_sha256": "d0f8a143d67515f971f67ae7e429fa81829fb6d1980c880dfc72bdee7eaef0b1",
+      "candidate_sha256": "ca1af31b89e5539e855de1654bbf408e92cde2df32708124d5d50561e9776649"
+    },
+    "tests/test_giggle_runtime.gd": {
+      "baseline_sha256": "6e85876bd3dadd33f2b8db3c87329a86d023c9d38726cdfffd1d5d06cee0a436",
+      "candidate_sha256": "53d064ae6eb5f92b9e515e3a304ae4e78d7b39ae818acdce13605164c343c590"
+    },
+    "tests/test_reassurance_runtime.gd": {
+      "baseline_sha256": "898578ca5fc773e9d4262d113a712710ab1c18dbc522d6f2075bd12c6735e3e6",
+      "candidate_sha256": "2f6b8bdfb876768ecd668cbab8c8e1eef64a2d3b3b2cfa0dc466d0785d34c224"
+    },
+    "tests/test_purse_contract.gd": {
+      "baseline_sha256": "fdc168d93ea861098badc140c46df7f7c8e9cefdfddc9190a1af0fef9e69aa30",
+      "candidate_sha256": "d8cbad0e727416caefad5486b33868457678ea740cda0de370bd4356b05d6370"
+    },
+    "tests/test_purse_transport.gd": {
+      "baseline_sha256": "b68b8ca957c5d50948d34b1480c06f6abdae28beb7e89fb3f67888f54cb51363",
+      "candidate_sha256": "acf9d3cac2c247c257dda749f0ffa16044fbedf34f54f39cacf5badaad2e45c7"
+    },
+    "tests/test_oral_lift_contract.gd": {
+      "baseline_sha256": "ed50ac723cd590c1d4e662dc49d28e9ad666a903b7c9ca0bd79066711157344b",
+      "candidate_sha256": "2c62d10931b43c75796dd8d2473a77d88bcd4ff8af1ee3e67f0be44a2848ce24"
+    },
+    "tests/test_spread_runtime.gd": {
+      "baseline_sha256": "b84fe1c914da40edb771ce49f541d94b61a91828a6d8002a2e6edafe787ba70e",
+      "candidate_sha256": "145e98f23c565af38cc502ad48407bcdb4abeee77347f1fba3add3af77d28013"
+    },
+    "tests/test_auto_blink_lifecycle.gd": {
+      "baseline_sha256": "f30aa76a1574cc6274b5f0869fc6fc9bfb0580de35f2b848f8186fbe33435fd0",
+      "candidate_sha256": "9f4aac9c4738d96666605985be274b37f36cdabbfd3ee3ba0bebec41d5d5417a"
+    },
+    "tests/test_relief_runtime.gd": {
+      "baseline_sha256": "5db63013d62d148455ce167a0c8c69ca1c3a181fd298c40efb9ede1f4bedcfd7",
+      "candidate_sha256": "06418f6200d25b3680a5d91091d9a20cd56b97ae75dba96a7d71c61c7464cf85"
+    },
+    "expressions/registry.json": {
+      "baseline_sha256": "0da33cfc7a2131d1767c191edddbe20b27276ff36d7f84ac562d21ffb725eaae",
+      "candidate_sha256": "d3072b8a616d2597a741c69b93f29a40c249e0a6ab3750b87137f93e3b12a8f3"
+    },
+    "tools/verify_welcome_scope.py": {
+      "baseline_sha256": "055bc90dc3724066f5576bd74f5a8a34fd29d431bc63f07e6a46124223d04d08",
+      "candidate_sha256": "35cc7cc17c578007bac04f2fc55ed30a343bdd5760905a3c2fe36e7638fcdb07"
+    },
+    "tools/verify_reassurance_scope.py": {
+      "baseline_sha256": "70e29d18e17f448c8f73db5e49468c393095fff53be872df3a19f8454834fad8",
+      "candidate_sha256": "aed8e0f0f30e13373cda751000a3bffdeabb6613f9ad551d10fd2746ac0c7202"
+    },
+    "tools/autoblink_source_guard.py": {
+      "baseline_sha256": "38284e3c2c3e21190e506b0b091dbde1bbb6d68fc6d0d10237bdec21d28c32ff",
+      "candidate_sha256": "fef76e05c6a6662d8ec18154df043ba467dfbd76e2117966ce0a7e571ece9761"
+    },
+    "tools/verify_relief_scope.py": {
+      "baseline_sha256": "4fb260ec50cdc31f92ca300dde515f7ac9ac47a6092f108eb3647bb6a686467b",
+      "candidate_sha256": "5a7176020549c56704beb7bd25182a97bc0ad93b71a53ba0347866c527e83455"
+    },
+    "tools/verify_autoblink_scope.py": {
+      "baseline_sha256": "bf37b3fe0678c3cee2d377f876bc31fc251ed4b240d75f7d0c8cd1a05ada16a8",
+      "candidate_sha256": "b25fa3bd478136c94dd5350bbcf0b4ab3edeb42f6d68767b277641e5712d8072"
+    },
+    "tools/test_control_bridge.py": {
+      "baseline_sha256": "08c1cfd40b9a528be833bc519ab03d26cf2084e6e95231fe9bda3e1323aaafca",
+      "candidate_sha256": "ef2865ae4493bfb98033c9b7dc977d4b7da709ef7c237fb5c59f6df6e3eee3b4"
+    },
+    "tools/verify_smile_support.py": {
+      "baseline_sha256": "8a1d75cfdbfb37aa1f1d8cf7121e5bd3676c0dae2528be7c8d9cf9e8a9dc22a9",
+      "candidate_sha256": "500afdbb0f024af922ab3dbc4f28a777bf440b2fa4a61e907f98b79005a37fdb"
+    },
+    "tools/verify_giggle_scope.py": {
+      "baseline_sha256": "ce638710dd59fd5aaadb752eddfc6b470e0e21ad873ce9ddc324219270036052",
+      "candidate_sha256": "94ed2ea4723217f1ee7d65e90fcb793efeea2bb188c6bd056587aec94788cf42"
+    }
+  },
+  "new_files": {
+    "AFFECTION_SCOPE_VALIDATION.md": "c1b9c5d221d2740160fd18eedfe4f247f5c5c4af0c22655246e7d0664a67c2db",
+    "tests/test_affection_runtime.gd": "9a18724ff025c765c102b73f53bbdaea2f60e2f094941877434cf4ce443ee974",
+    "expressions/EXP-002.json": "fdb562bc3987bcc084f7bb7ea35bcaf8b31a2e45eb06081129121cc72e20b23a",
+    "source_references/affection_predecessor_RELEASE.json": "8cf880737f32cc3796d4d7a064d8c6b4294c781394960ad2836a42e354d49c8d",
+    "source_references/affection_parent_inventory.json": "4be6c283f41df94c24a1d2cbd283cc5c5d0cf31c52e4437a2f8c13435f8a58fb",
+    "source_references/EXP-002_reference_metadata.json": "9a1c543f2787e39e34d9906d6c3dfe4f85400c74cf529776d28e5af3e15fbd30",
+    "tools/affection_source_guard.py": "9968cbc4732fdb911b8e967313ce712384f8c0bc76f6222601d84da872b752d3",
+    "tools/verify_affection_scope.py": "aac4f7360559994c69746d7fde1815246be6d34eff23adc199a634a43d2b5d32",
+    "tools/review_affection_mouth_probe.gd": "ab65e6c91f0c4e559e8d7da6ab509d3563294719647d8ede34b23381201e4968",
+    "tools/review_affection_scope.gd": "81cb661506294f54534de62208c98ee06f7a007e43d0d67046062dc6ae7c6c37",
+    "tools/review_affection_keyposes.gd": "283d15dc4bb3aba798842b8548dc5a606c8fcde0ca3e70aae174fac6caea031c",
+    "tools/review_affection_lifecycle.gd": "a94d3d22e41d756c54348672d1fa7c423d7ed266a17c9f0728f0247d9760f56a",
+    "tools/review_affection_autoblink.gd": "b5196eb7c48af6497fe9363e48953507fa838534433b52c25dbad23ee1a5e23c"
+  }
+}

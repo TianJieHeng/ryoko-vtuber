@@ -1,0 +1,37 @@
+{
+  "status": "User-approved, published with containing merged repository commit",
+  "published_baseline_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
+  "capability_baseline_inventory_sha256": "d3d32cea21da2973c711779f201676c8344b409fba966b48ab22832381fae49f",
+  "profile": "EXP-160",
+  "duration_seconds": 3.4,
+  "timing": "New acting proposal based on nine static source panels; not recovered source animation",
+  "prior_published_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007"
+  ],
+  "new_runtime_edits_beyond_capability": false,
+  "new_artwork": false,
+  "normal_speed_playback_observed": false,
+  "real_socket_test_performed": false,
+  "approval_required_before_publication": false,
+  "primary_cumulative_archive": "Version 19 remains untouched",
+  "validation": "SHY_LAUGHTER_VALIDATION.md; accompanying frozen capture and independent audit receipts",
+  "user_approved": true,
+  "published": true,
+  "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160"
+  ],
+  "historical_review": "Original frozen source and receipts remain immutable; current publication is described in SHY_MERGED_PUBLICATION_VALIDATION.md"
+}

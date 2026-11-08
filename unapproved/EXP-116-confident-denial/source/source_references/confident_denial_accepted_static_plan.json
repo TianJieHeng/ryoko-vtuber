@@ -1,0 +1,96 @@
+{
+  "status": "One frozen unregistered width-only static hypothesis; not an animation or accepted source fit",
+  "expression": "EXP-116 Confident denial",
+  "baseline_commit": "d5a4539cd7395783fcbf5756b03bb993be6692b8",
+  "capability_freeze_sha256": "0984f27835cfcf93de286fcd47e39c20a3b4833b850746424b07970e84ed24cf",
+  "source_sheet_sha256": "3bb691b750bf0e22b0437c258f74b703fd492517bec97cfbfad3e95553fc19e3",
+  "candidate_cases": [
+    {
+      "label": "neutral_start",
+      "source_key": 1,
+      "values": {}
+    },
+    {
+      "label": "kp4_firm_preparation",
+      "source_key": 4,
+      "values": {
+        "blink_R": 0.1,
+        "blink_L": 0.06,
+        "brow_screen_left": -0.6,
+        "brow_screen_right": -0.32,
+        "brow_tilt_screen_left": 0.12,
+        "brow_tilt_screen_right": -0.08
+      }
+    },
+    {
+      "label": "kp5_brief_release",
+      "source_key": 5,
+      "values": {
+        "blink_R": 0.16,
+        "blink_L": 0.09,
+        "brow_screen_left": -0.64,
+        "brow_screen_right": -0.68,
+        "brow_tilt_screen_left": 0.58,
+        "brow_tilt_screen_right": -0.03,
+        "mouth_smile": 0.15,
+        "mouth_spread": 1.0,
+        "mouth_corner_lift_screen_right": 1.0,
+        "mouth_width_screen_left": 0.18,
+        "mouth_width_screen_right": 0.82
+      }
+    },
+    {
+      "label": "kp6_eased_release",
+      "source_key": 6,
+      "values": {
+        "blink_R": 0.13,
+        "blink_L": 0.08,
+        "brow_screen_left": -0.8,
+        "brow_screen_right": -0.62,
+        "brow_tilt_screen_left": 0.14,
+        "brow_tilt_screen_right": 0.09,
+        "mouth_smile": 0.08,
+        "mouth_spread": 1.0,
+        "mouth_corner_lift_screen_right": 0.6,
+        "mouth_width_screen_left": 0.2,
+        "mouth_width_screen_right": 0.8
+      }
+    },
+    {
+      "label": "kp7_mouth_off_recovery",
+      "source_key": 7,
+      "values": {
+        "blink_R": 0.05,
+        "blink_L": 0.025,
+        "brow_screen_left": -0.4,
+        "brow_screen_right": -0.22,
+        "brow_tilt_screen_left": -0.12,
+        "brow_tilt_screen_right": 0.18
+      }
+    },
+    {
+      "label": "neutral_return",
+      "source_key": 9,
+      "values": {}
+    }
+  ],
+  "required_zero_channels": [
+    "mouth_open",
+    "mouth_purse",
+    "mouth_lip_press",
+    "mouth_oral_lift",
+    "mouth_corner_lift",
+    "mouth_corner_lift_screen_left",
+    "eye_smile_L",
+    "eye_smile_R",
+    "gaze_x",
+    "gaze_y",
+    "gaze_down_extra",
+    "blush_intensity",
+    "hair_sway",
+    "brow_inner_lift_screen_left",
+    "brow_inner_lift_screen_right"
+  ],
+  "rationale": "Keep all passed anchors and all non-mouth values exactly. Lower legacy smile to reduce the forced quiet-side rise; use independent nominal half expansion about 6.1/16.9 pixels at KP5 and 5.3/16.3 at KP6, with the old positive right corner. Raw source center/intermediates and independent marks were inspected first and have 1\u20132 source-pixel uncertainty. No center lift or strict straight-line fit is inferred. No sweep or timeline is authorized. Stop if actual central shape, join or oral support fails.",
+  "predecessor_static_plan_sha256": "1be97c7f815850f66c5536bef853aafe4052ba8a82bca72163894a25c3422a7e"
+}

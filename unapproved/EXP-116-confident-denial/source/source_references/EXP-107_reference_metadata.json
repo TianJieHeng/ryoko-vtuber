@@ -1,0 +1,238 @@
+{
+  "id": "EXP-107",
+  "slug": "confident-reassurance",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "Brows soften centrally; eyes remain direct; relaxed open smile signals certainty without dominance.",
+  "is_pilot": false,
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "review_status": "accepted_reference_art",
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1159,
+    "native_height": 1358,
+    "sha256": "08e4f43e20144930411dd49087eaa76d70bde1fb0214b70b6d56bd5ed42797d0",
+    "actual_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_sheet_v001.png",
+    "peak_actual_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_peak_v001.png"
+  },
+  "key_pose_sequence": [
+    {
+      "key_pose": 1,
+      "phase": "neutral",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+      "panel_location": {
+        "row": 1,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        380,
+        456
+      ],
+      "sha256": "2ae412bd2ae0cdb319c48ab4d01e117b502ec81d0e7f63dbb03dab3cff4c5ed9"
+    },
+    {
+      "key_pose": 2,
+      "phase": "anticipation",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+      "panel_location": {
+        "row": 1,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        380,
+        0,
+        778,
+        456
+      ],
+      "sha256": "9dfdb3fe395a3d2dcc37e856f5f6387f51bc46c25ba314e6eaed866278186269"
+    },
+    {
+      "key_pose": 3,
+      "phase": "onset",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+      "panel_location": {
+        "row": 1,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        778,
+        0,
+        1159,
+        456
+      ],
+      "sha256": "74c6790ea478f39e69ee547c3cb2e4c7c08a8ca67cbfbab8a7dfb8d28009227f"
+    },
+    {
+      "key_pose": 4,
+      "phase": "build",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+      "panel_location": {
+        "row": 2,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        456,
+        380,
+        908
+      ],
+      "sha256": "6b1762ed2e654dd91591a4fb8e8af586e976d7437c367db5987c95c901ba37ac"
+    },
+    {
+      "key_pose": 5,
+      "phase": "peak",
+      "time_seconds": 0.75,
+      "visual_direction": "Brows soften centrally; eyes remain direct; relaxed open smile signals certainty without dominance.",
+      "panel_location": {
+        "row": 2,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        380,
+        456,
+        778,
+        908
+      ],
+      "sha256": "2c403bd89433f6e3ef2b128a90e1e9758893c6b2bfd1119e7845418b1ecc30f2"
+    },
+    {
+      "key_pose": 6,
+      "phase": "follow_through_or_hold",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+      "panel_location": {
+        "row": 2,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        778,
+        456,
+        1159,
+        908
+      ],
+      "sha256": "9e687f7f6bcb5dbb7c0d004a7046929abbb854347165f78c8d3af26a13ff5ce3"
+    },
+    {
+      "key_pose": 7,
+      "phase": "release",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+      "panel_location": {
+        "row": 3,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        908,
+        380,
+        1358
+      ],
+      "sha256": "d9fbdada19aa971b754ee3dd1530e72f4c24956b97c6630697b662fd2165d48c"
+    },
+    {
+      "key_pose": 8,
+      "phase": "settle",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression.",
+      "panel_location": {
+        "row": 3,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        380,
+        908,
+        778,
+        1358
+      ],
+      "sha256": "686b0a863aecb1d6f8ca085df70f603fbc8d26af68785848b10cb858e4766a56"
+    },
+    {
+      "key_pose": 9,
+      "phase": "neutral_return",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel.",
+      "panel_location": {
+        "row": 3,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-107_confident-reassurance/RYO_EXP-107_confident-reassurance_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        778,
+        908,
+        1159,
+        1358
+      ],
+      "sha256": "e374912bc4482c66d304af4b4dda104187dd6692c1036552b370457c2fe942c9"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "facial_control_mapping": {
+    "status": "semantic_intent_only_pending_actual_rig",
+    "numeric_weights": null,
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "intent": "Brows soften centrally; eyes remain direct; relaxed open smile signals certainty without dominance."
+  },
+  "overlays": {
+    "planned_optional_effects": [],
+    "status": "requires_mapping_to_available_2d_effect_layers",
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+  },
+  "body_gesture": {
+    "status": "paired_reusable_visual_references",
+    "reference_ids": [
+      "BOD-026"
+    ],
+    "references": [
+      {
+        "id": "BOD-026",
+        "path": "assets/body/RYO_BOD-026_reassuring-open-palm_sheet_v001.png",
+        "sha256": "aed9da1ccb323fc42d73154c5692bb7632c92f1250423c455249bc955671af29",
+        "intent": "She extends one open palm gently forward at waist height in reassurance, softens expression, then withdraws."
+      }
+    ],
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "issues": [],
+  "implementation_status": "not_implemented_in_2d_rig"
+}

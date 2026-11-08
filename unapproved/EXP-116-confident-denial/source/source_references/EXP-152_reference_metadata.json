@@ -1,0 +1,245 @@
+{
+  "id": "EXP-152",
+  "slug": "private-pride",
+  "family": "Embarrassment and shyness",
+  "distinctive_facial_intent": "Brows lift faintly; gaze drops with soft lids; a small smile is deliberately suppressed.",
+  "is_pilot": false,
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "review_status": "accepted_reference_art",
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1254,
+    "native_height": 1254,
+    "sha256": "46d16e1eabfe7ea709252b0e3c47707613df3a8f6a41483e740981866ead6408",
+    "actual_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_sheet_v002.png",
+    "peak_actual_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_peak_v002.png"
+  },
+  "key_pose_sequence": [
+    {
+      "key_pose": 1,
+      "phase": "neutral",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+      "panel_location": {
+        "row": 1,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp01_v002.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "sha256": "86e0f423103a92fd546fb2091b3941cd59ac8b98d985c896fbe644481c470778"
+    },
+    {
+      "key_pose": 2,
+      "phase": "anticipation",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+      "panel_location": {
+        "row": 1,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp02_v002.png",
+      "crop_bounds_xyxy": [
+        418,
+        0,
+        836,
+        418
+      ],
+      "sha256": "f057f4e40daaaed942700ccbe851b01cc1f4fba293d71a778b37204b8fe673c8"
+    },
+    {
+      "key_pose": 3,
+      "phase": "onset",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+      "panel_location": {
+        "row": 1,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp03_v002.png",
+      "crop_bounds_xyxy": [
+        836,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "c12a804f8b3e4d7ff251cf4db430c60977a2c558700a39d51c32f214e2d59dbd"
+    },
+    {
+      "key_pose": 4,
+      "phase": "build",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+      "panel_location": {
+        "row": 2,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp04_v002.png",
+      "crop_bounds_xyxy": [
+        0,
+        418,
+        418,
+        836
+      ],
+      "sha256": "c9b2543be4fdd617899b06be4900673f0414f77178be119781c695a447d30fc1"
+    },
+    {
+      "key_pose": 5,
+      "phase": "peak",
+      "time_seconds": 0.75,
+      "visual_direction": "Brows lift faintly; gaze drops with soft lids; a small smile is deliberately suppressed.",
+      "panel_location": {
+        "row": 2,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp05_v002.png",
+      "crop_bounds_xyxy": [
+        418,
+        418,
+        836,
+        836
+      ],
+      "sha256": "1dbb54470777127316ec6fe65f6a1ecd98037a113b7fa84f6d1a755ba116d4d2"
+    },
+    {
+      "key_pose": 6,
+      "phase": "follow_through_or_hold",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+      "panel_location": {
+        "row": 2,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp06_v002.png",
+      "crop_bounds_xyxy": [
+        836,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "b97d68b7f8b4416b14ed6f1c4589efb90365e22fc74c0a7514e5ad5633a60fe1"
+    },
+    {
+      "key_pose": 7,
+      "phase": "release",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+      "panel_location": {
+        "row": 3,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp07_v002.png",
+      "crop_bounds_xyxy": [
+        0,
+        836,
+        418,
+        1254
+      ],
+      "sha256": "c2c527e0f11e11111e08c1e770a99699c81323cda5d44e292460db05e6893ff4"
+    },
+    {
+      "key_pose": 8,
+      "phase": "settle",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression.",
+      "panel_location": {
+        "row": 3,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp08_v002.png",
+      "crop_bounds_xyxy": [
+        418,
+        836,
+        836,
+        1254
+      ],
+      "sha256": "d92824c7b0449e08055a76f68445f8615ed6a3f61652d7c579035c8a2e9f1f9d"
+    },
+    {
+      "key_pose": 9,
+      "phase": "neutral_return",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel.",
+      "panel_location": {
+        "row": 3,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp09_v002.png",
+      "crop_bounds_xyxy": [
+        836,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "0c430236a3f5a9a749880e72e8a01b0a51b503a9956b242a6bed19afd3b2a587"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "facial_control_mapping": {
+    "status": "semantic_intent_only_pending_actual_rig",
+    "numeric_weights": null,
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "intent": "Brows lift faintly; gaze drops with soft lids; a small smile is deliberately suppressed."
+  },
+  "overlays": {
+    "planned_optional_effects": [],
+    "status": "requires_mapping_to_available_2d_effect_layers",
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+  },
+  "body_gesture": {
+    "status": "paired_reusable_visual_references",
+    "reference_ids": [
+      "BOD-015",
+      "BOD-024"
+    ],
+    "references": [
+      {
+        "id": "BOD-015",
+        "path": "assets/body/RYO_BOD-015_shy-hands-behind-back_sheet_v001.png",
+        "sha256": "37eff40c66a6c78c89bd6ae8ef01ec6c11d783c477d387395e813b14e020c5cc",
+        "intent": "She moves hands behind her back, inclines head shyly without changing adult proportions, then releases to neutral."
+      },
+      {
+        "id": "BOD-024",
+        "path": "assets/body/RYO_BOD-024_worried-fidget_sheet_v001.png",
+        "sha256": "18c04ddd97b7b4d172070d375fc2cf139684a6c3af462dafc5706c078dc13236",
+        "intent": "She fidgets fingers together at waist, brows worried, then releases hands."
+      }
+    ],
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "issues": [],
+  "implementation_status": "not_implemented_in_2d_rig"
+}

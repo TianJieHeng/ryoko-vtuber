@@ -1,0 +1,22 @@
+{
+  "purpose": "Explicit shared smiling-mouth support and ordinary-lid correction F. Original mouth functions, tooth images/registration, native source PNGs and yawn timeline remain separately protected. Partial-lid rendering intentionally corrects the reported ordinary handoff defect.",
+  "files": {
+    "canonical_eye_alpha.gdshader": {
+      "historical_sha256": "c9966a5739cc207c28646cdbdaff0fc3e4c3921d376b0854bea64053faa443e6",
+      "prior_gaze_sha256": "4573c2622325642b7f32e35384b141c8de766c13b8b899f1e63ed01217350526",
+      "shared_candidate_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026"
+    },
+    "object_mouth_clip.gdshader": {
+      "historical_sha256": "0268137c90efcd366c2251b407af87c4995464aeeeb6d8d41df703193bd9db6d",
+      "prior_gaze_sha256": "0268137c90efcd366c2251b407af87c4995464aeeeb6d8d41df703193bd9db6d",
+      "shared_candidate_sha256": "51d8bab9ffeee8ed4b92b16371cafc47d5ccf9b73927b9c0ba7fb8ab8006ed1e"
+    },
+    "test_object_rig.gd": {
+      "historical_sha256": "4b1cb58d09d424e7b27aed4bb347ac362843d8b9554a4d57c8e3800ad0fa228e",
+      "prior_gaze_sha256": "1f23b292f4d2eaf768656a0a4ba7ee7269d21c1a9547dfe966a339ee04e23591",
+      "shared_candidate_sha256": "88992992f7ae94a681e3390b12ce018770311c3f4e59c5ac1ecf06671ebf23b3"
+    }
+  },
+  "validation": "SMILE_VALIDATION.md; actual render evidence is required in addition to these source guards.",
+  "ordinary_lid_source_commit": "6142a12f5a98ae4cfd326ebb8d1b93eb95d3021c"
+}
