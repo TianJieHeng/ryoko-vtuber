@@ -1,0 +1,405 @@
+{
+  "status": "Local implementation and review checks passed. User approval and publication remain separate gates.",
+  "base_commit": "4f3deaa2de3eedb691a9f0c795c7b8563663e472",
+  "capture_freeze_inventory_sha256": "1ff4e063e6482ca5448c3108f1d1e529dedebcc6fe1a48b59ac7f83520e83168",
+  "capture_source_files": 416,
+  "unchanged_runtime_art_harness": true,
+  "test_only_fix_after_capture": "tools/test_control_bridge.py expected EXP-107 in the five-entry capability list and enumeration. Python AST and exact registry consistency checked; socket transport remains unexecuted.",
+  "runtime_suites": [
+    {
+      "script": "test_object_rig.gd",
+      "exit": 0,
+      "results": [
+        "OBJECT_BASE_CHECKS_PASS checks=53704 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_yawn.gd",
+      "exit": 0,
+      "results": [
+        "YAWN_CHECKS_PASS checks=370567 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_teeth.gd",
+      "exit": 0,
+      "results": [
+        "TEETH_CHECKS_PASS checks=17017 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_expression_backbone.gd",
+      "exit": 0,
+      "results": [
+        "EXPRESSION_BACKBONE_PASS checks=182109 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_gaze_runtime.gd",
+      "exit": 0,
+      "results": [
+        "GAZE_RUNTIME_PASS checks=1757314 failures=0 fractional_samples=2002 endpoint_states=108"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_viewer_layout.gd",
+      "exit": 0,
+      "results": [
+        "VIEWER_LAYOUT_PASS enabled=true checks=29 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_smile_controls.gd",
+      "exit": 0,
+      "results": [
+        "SMILE_CONTROLS checks=237 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_laughter_runtime.gd",
+      "exit": 0,
+      "results": [
+        "LAUGHTER_RUNTIME checks=119936 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_spread_runtime.gd",
+      "exit": 0,
+      "results": [
+        "SPREAD_RUNTIME checks=528382 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_giggle_runtime.gd",
+      "exit": 0,
+      "results": [
+        "GIGGLE_RUNTIME checks=89691 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_corner_lift_runtime.gd",
+      "exit": 0,
+      "results": [
+        "CORNER_LIFT_RUNTIME checks=313303 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_closed_smile_contract.gd",
+      "exit": 0,
+      "results": [
+        "CLOSED_SMILE_CONTRACT checks=1041526 failures=0 (structural/runtime only; no visual likeness verdict)"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_blush_controls.gd",
+      "exit": 0,
+      "results": [
+        "BLUSH_CONTROLS checks=3641 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_oral_lift_contract.gd",
+      "exit": 0,
+      "results": [
+        "ORAL_LIFT_CONTRACT checks=18731 poses=1512 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_reassurance_runtime.gd",
+      "exit": 0,
+      "results": [
+        "REASSURANCE_RUNTIME checks=188665 failures=0"
+      ],
+      "errors": []
+    }
+  ],
+  "runtime_check_total": 4684852,
+  "python_suites": [
+    {
+      "test": "build_object_face.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_object_base.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_yawn.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_teeth.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_gaze_assets.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_gaze_coverage.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_lid_handoff.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_smile_support.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_spread_support.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_closed_smile_support.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_blush_source.py",
+      "exit": 0
+    }
+  ],
+  "actual_render_comparison": {
+    "independent_movie_runs": 2,
+    "frames_per_run_per_scale": 240,
+    "byte_hash_repeat": {
+      "full": true,
+      "native": true
+    },
+    "two_cycle_pixel_parity": {
+      "full": true,
+      "native": true
+    },
+    "neutral_before_between_after": {
+      "full": true,
+      "native": true
+    },
+    "prior_render_frames": 665,
+    "prior_pixel_failures": [],
+    "prior_control_state_failures": [],
+    "prior_cases_sha256": "85f8e9a44ea04b47f5714d8b3724c3481aeaabc888eb4815bd21c362db56a6f8",
+    "mouth_aperture": {
+      "poses": 810,
+      "maximum_integrated_source_px": 29.8000000417233,
+      "maximum_nonzero_rows": 31,
+      "physical_cap": 30.8,
+      "failures": []
+    },
+    "normal_speed_playback_performed": false,
+    "passed": true
+  },
+  "independent_runtime_parity": {
+    "parent_count": 2051,
+    "candidate_count": 2051,
+    "mismatches": [],
+    "pass": true,
+    "parent_sha256": "b1fb20780694049cba8cfc6be0ca0d822d810d0ec2abd1d70dfec19aea3ce501",
+    "candidate_sha256": "b1fb20780694049cba8cfc6be0ca0d822d810d0ec2abd1d70dfec19aea3ce501"
+  },
+  "independent_capture_tests_sha256": "3f547c6573b9d2eddbd761440c77f0c6ada4a134fb1a19f4cc5a2f06c5014bf6",
+  "artifacts": {
+    "EXP107_matched_reference.png": {
+      "filename": "EXP107_matched_reference.png",
+      "sha256": "d53a96f6e68648305ad0ed44bfc0a716e826bb85f85ae7231b2b2125986009ae",
+      "bytes": 993743
+    },
+    "ryoko_EXP-107_confident_reassurance.mp4": {
+      "filename": "ryoko_EXP-107_confident_reassurance.mp4",
+      "sha256": "0256a05a6f4b65688f84e0f8f52dded0350bf6581ef0e3a1d2d58d4f71cb7e66",
+      "bytes": 96446,
+      "video": {
+        "width": 568,
+        "height": 800,
+        "avg_frame_rate": "30/1",
+        "duration": "8.000000",
+        "nb_frames": "240"
+      }
+    },
+    "ryoko_EXP-107_face_detail.mp4": {
+      "filename": "ryoko_EXP-107_face_detail.mp4",
+      "sha256": "2787b12f194e1d5f58d527d38dfe1cabdff8828d849eb4f02d0fa268e3422305",
+      "bytes": 220681,
+      "video": {
+        "width": 772,
+        "height": 740,
+        "avg_frame_rate": "30/1",
+        "duration": "8.000000",
+        "nb_frames": "240"
+      }
+    }
+  },
+  "reference_board": {
+    "reference_sheet_sha256": "08e4f43e20144930411dd49087eaa76d70bde1fb0214b70b6d56bd5ed42797d0",
+    "crops": [
+      {
+        "panel": 1,
+        "reference_sha256": "2ae412bd2ae0cdb319c48ab4d01e117b502ec81d0e7f63dbb03dab3cff4c5ed9",
+        "reference_crop": [
+          105,
+          160,
+          300,
+          345
+        ],
+        "time": 0,
+        "native_keypose_sha256": "9781f9b8d2691b185076926445d7c51359c7c018874f444c7309855071a99167",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 4,
+        "reference_sha256": "6b1762ed2e654dd91591a4fb8e8af586e976d7437c367db5987c95c901ba37ac",
+        "reference_crop": [
+          105,
+          160,
+          300,
+          345
+        ],
+        "time": 0.6,
+        "native_keypose_sha256": "6bc6eddbd58b86ce2f3a450285e5c1ddc9cb480bc740d4647cdcac5f54f29f65",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 5,
+        "reference_sha256": "2c403bd89433f6e3ef2b128a90e1e9758893c6b2bfd1119e7845418b1ecc30f2",
+        "reference_crop": [
+          93,
+          160,
+          288,
+          345
+        ],
+        "time": 1.2,
+        "native_keypose_sha256": "b1c059130b74a11699c9a0ca753e1e309725ed6a4248184a2bbffb335930e846",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 6,
+        "reference_sha256": "9e687f7f6bcb5dbb7c0d004a7046929abbb854347165f78c8d3af26a13ff5ce3",
+        "reference_crop": [
+          84,
+          160,
+          279,
+          345
+        ],
+        "time": 1.56,
+        "native_keypose_sha256": "85cc664d4d68365d022dbf7e606151c9d3a33cd3652a46a625bf511da56de1e3",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 7,
+        "reference_sha256": "d9fbdada19aa971b754ee3dd1530e72f4c24956b97c6630697b662fd2165d48c",
+        "reference_crop": [
+          105,
+          160,
+          300,
+          345
+        ],
+        "time": 1.92,
+        "native_keypose_sha256": "efd620e72302340c306b6cec7b0b4f976cde3fbc94b6c1798ffec5f5b0922e66",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 9,
+        "reference_sha256": "e374912bc4482c66d304af4b4dda104187dd6692c1036552b370457c2fe942c9",
+        "reference_crop": [
+          84,
+          160,
+          279,
+          345
+        ],
+        "time": 3,
+        "native_keypose_sha256": "9781f9b8d2691b185076926445d7c51359c7c018874f444c7309855071a99167",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      }
+    ]
+  },
+  "frame_inspection": {
+    "decoded_full_frames": 240,
+    "decoded_detail_frames": 240,
+    "chronological_contact_pages_inspected": 6,
+    "actual_native_keyposes_inspected": 11,
+    "normal_speed_playback_performed": false
+  },
+  "loopback_integration": "Not rerun: this sandbox cannot bind a listening socket. In-process validator, API, bounds and ownership checks passed.",
+  "reference_limit": "Canonical face and white enamel remain unchanged. Rigid brow rotation approximates painted curvature. Static timing is interpreted; body/open-palm acting is excluded.",
+  "inherited_limit": "Faint fringe traces can occur with nonzero manual hair_sway; authored EXP-107 uses zero sway."
+}

@@ -1,0 +1,73 @@
+{
+  "expression": "EXP-050 Frustrated pout",
+  "status": "Completed independent actual-performance technical PASS; unapproved exact-source recovery backup",
+  "user_approved": false,
+  "approved_integration": false,
+  "approved_profile_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021"
+  ],
+  "unapproved_profile_ids": [
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050"
+  ],
+  "older_separate_unapproved_backup": "EXP-003 is preserved separately and is not part of this source",
+  "registered_profile_count": 17,
+  "source_files": 617,
+  "freeze_indexed_files": 616,
+  "source_inventory_sha256": "99f2c9a6dd65c790df24b7be58e8ccb2ceb2f114aa218330e2abde4f4f8a2eea",
+  "freeze_inventory_sha256": "3506e5074b851db0eefe0f3855008ab20963b8daca70f6d6e28bfc4e00e7cde0",
+  "source_freeze_sha256": "c2f4d0ff703f9caf418bf2a72ff117a294730a75f0be2ae3de4ba9c24577fd8a",
+  "capture_plan_sha256": "9b3bfb0991d6bfe87438eb4da006e1832ed3e2161a3a35bfc902b8473dfb1e6e",
+  "capture_binding_sha256": "a0d25e0b909a19f2a21c8714726858a8b431c001b7c0e2940cc37ec6efc0a031",
+  "profile_sha256": "e1b775d34244bf1a1f05fac351170062657b0b12d11acf2edf08bf8f3ec9e630",
+  "actual_capture_receipt_sha256": "032d4c9f8322e106c5dd366c0dafd484a66c67f5a91b399c544b14c6a9058bc9",
+  "source_is_exact_capture": true,
+  "delivery_overlay": false,
+  "runtime_png_files": 182,
+  "new_runtime_pngs": 0,
+  "normal_speed_playback_observed": false,
+  "independent_actual_performance_review": {
+    "decision": "PASS for bounded local EXP-050 actual performance; no user approval or final media approval",
+    "report_sha256": "da33f49188b6662e03a485bbe3a781d9f66babaa789e4894727590c712e977c7",
+    "freeze_sha256": "931ea302e26f79081b1cc2ba0261ec1908b1f3615088ff0c703aef07653c3871",
+    "all_actual_review_file_hashes_reverified": true
+  },
+  "technical_evidence": {
+    "runtime_checks": 1151389,
+    "preflight_checks": 359370,
+    "actual_renderer_harness_checks": 361534,
+    "prior_profile_state_material_parity_records": 2661,
+    "prior_profiles": 16,
+    "actual_checkpoints": 541,
+    "actual_images": 1082,
+    "repeated_natural_common_times_exact": 140,
+    "static_native_anchor_matches": 9,
+    "unique_actual_native_mouth_images_reviewed": 219,
+    "neutral_endings_exact": 16
+  },
+  "limits": [
+    "Source interpretation retains a smoother/rounder mouth arch, weaker localized brow knit and a less sharply concentrated peak than the painting.",
+    "The 4.13-second timing is newly authored from still panels, not recovered source animation.",
+    "No normal-speed playback observation, live AI/TTS, real socket test or final encoded-media approval is claimed.",
+    "All sixteen predecessor profiles, runtime, shaders and artwork bytes are preserved. Only the inherited registry is appended for EXP-050; new profile/tests/docs/evidence are added.",
+    "Historical metadata and pre-capture status remain byte-identical, not rewritten as current status. This outer summary records later technical acceptance.",
+    "Technical acceptance and snapshot inclusion do not grant approval of any unapproved profile or shared runtime extension.",
+    "General open-plus-width remains unsupported; inherited failures are not cleared by EXP-050 handover tests.",
+    "Raw capture dumps and final media are deliberately excluded. Concise gate records preserve provenance but are not a complete historical capture archive.",
+    "No CI, paid resource, hardware flashing or remote-machine execution."
+  ]
+}

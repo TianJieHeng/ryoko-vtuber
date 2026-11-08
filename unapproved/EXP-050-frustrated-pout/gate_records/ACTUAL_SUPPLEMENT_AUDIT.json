@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "frozen_source_sha256": "c2f4d0ff703f9caf418bf2a72ff117a294730a75f0be2ae3de4ba9c24577fd8a",
+  "source_files_rehashed": {
+    "delivery_source/ryoko_object_rig": 617,
+    "source/ryoko_object_rig": 617
+  },
+  "original_baseline_files_rehashed": 605,
+  "analysis_index_sha256": "415834d8ef6e64f6a5de58d9a9bc9139cacfed914b46a61ba80f5eba3c611dee",
+  "native_crop_cells_exact": 401,
+  "full_context_cells_exact": 14,
+  "all_29_contact_sheets_visually_inspected": true,
+  "all_219_unique_native_mouth_images_visually_inspected": true,
+  "exact_full_and_native_neutral_returns": [
+    "natural_cycle_1",
+    "natural_cycle_2",
+    "release_peak",
+    "repeat_release",
+    "retrigger_peak",
+    "release_interrupted_retrigger",
+    "incoming_open_laughter",
+    "outgoing_open_laughter",
+    "reverse_open_laughter_75ms",
+    "reverse_open_laughter_225ms",
+    "incoming_sealed_width_denial",
+    "outgoing_sealed_width_denial",
+    "reverse_sealed_width_denial_75ms",
+    "reverse_sealed_width_denial_225ms",
+    "reset_peak",
+    "final_reset"
+  ],
+  "manual_takeover_full_and_native_stable": true,
+  "restored_blink_full_and_native_exact_to_starting_blink": true,
+  "raw_peak_views_inspected": [
+    "capture/native/natural_cycle_1_067.png",
+    "capture/full/natural_cycle_1_067.png"
+  ],
+  "display_used": false,
+  "normal_speed_playback_observed": false
+}

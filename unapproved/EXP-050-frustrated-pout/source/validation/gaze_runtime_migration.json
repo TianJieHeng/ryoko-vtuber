@@ -1,0 +1,25 @@
+{
+  "purpose": "Explicit vetted separate-eye/gaze migrations only. Historical mouth baseline is preserved unchanged.",
+  "base_published_commit": "d8d9d20542f8b636890145709d0c1228f83fd7cb",
+  "files": {
+    "canonical_eye_alpha.gdshader": {
+      "historical_sha256": "c9966a5739cc207c28646cdbdaff0fc3e4c3921d376b0854bea64053faa443e6",
+      "gaze_candidate_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+      "prior_delivered_gaze_sha256": "4573c2622325642b7f32e35384b141c8de766c13b8b899f1e63ed01217350526",
+      "correction": "Ordinary near-closed spatial lash handoff; see LID_HANDOFF_CORRECTION.md. Original artwork, profiles and mouth function hashes are unchanged."
+    },
+    "object_rig.gd": {
+      "historical_sha256": "ab5995b71e3818bb9e8f7e9f49043350bc18af8dd8625d4950268d4deeb6cdd7",
+      "gaze_candidate_sha256": "c8f8a8f85596464325cfe207ad4dd4a5613d12b8051abb94aee0acdb8125fd56"
+    },
+    "test_object_rig.gd": {
+      "historical_sha256": "4b1cb58d09d424e7b27aed4bb347ac362843d8b9554a4d57c8e3800ad0fa228e",
+      "gaze_candidate_sha256": "1f23b292f4d2eaf768656a0a4ba7ee7269d21c1a9547dfe966a339ee04e23591"
+    }
+  },
+  "mouth_functions": {
+    "_write_mouth": "9cede282b21efbeb7c8e1e1b330dbb316244ae96ea7a1210690f86ab77fe2085",
+    "_build_oral_objects": "7b209b62b995bc5ffe7506b3ae6cafcbc5c7a6221935744059173e26703d9be7",
+    "set_mouth_open": "e9c75b7454c3bc0dd1e3d891e7aebcc82f96b626d7381ad74a6f9516767fdf25"
+  }
+}

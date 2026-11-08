@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "samples": 2661,
+  "all_prior_profiles": 16,
+  "registry_entries_and_statuses": "Preserved separately by source guard",
+  "compared": [
+    "actual controller state including width/bridge metadata",
+    "face snapshots",
+    "material uniforms",
+    "head/body transforms"
+  ],
+  "base_sha256": "1f0b0f0b8308de8045809268f427082a3ff741bc04e2cd24e58f8ddc85f81317",
+  "candidate_sha256": "1f0b0f0b8308de8045809268f427082a3ff741bc04e2cd24e58f8ddc85f81317"
+}

@@ -1,0 +1,127 @@
+{
+  "sheet_sha256": "46d16e1eabfe7ea709252b0e3c47707613df3a8f6a41483e740981866ead6408",
+  "version": "v002",
+  "slug": "private-pride",
+  "catalogue_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "panels": [
+    {
+      "key_pose": 1,
+      "time": 0,
+      "crop": [
+        0,
+        0,
+        418,
+        418
+      ],
+      "sha256": "86e0f423103a92fd546fb2091b3941cd59ac8b98d985c896fbe644481c470778",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 2,
+      "time": 0.15,
+      "crop": [
+        418,
+        0,
+        836,
+        418
+      ],
+      "sha256": "f057f4e40daaaed942700ccbe851b01cc1f4fba293d71a778b37204b8fe673c8",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 3,
+      "time": 0.3,
+      "crop": [
+        836,
+        0,
+        1254,
+        418
+      ],
+      "sha256": "c12a804f8b3e4d7ff251cf4db430c60977a2c558700a39d51c32f214e2d59dbd",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 4,
+      "time": 0.5,
+      "crop": [
+        0,
+        418,
+        418,
+        836
+      ],
+      "sha256": "c9b2543be4fdd617899b06be4900673f0414f77178be119781c695a447d30fc1",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 5,
+      "time": 0.75,
+      "crop": [
+        418,
+        418,
+        836,
+        836
+      ],
+      "sha256": "1dbb54470777127316ec6fe65f6a1ecd98037a113b7fa84f6d1a755ba116d4d2",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 6,
+      "time": 1.05,
+      "crop": [
+        836,
+        418,
+        1254,
+        836
+      ],
+      "sha256": "b97d68b7f8b4416b14ed6f1c4589efb90365e22fc74c0a7514e5ad5633a60fe1",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 7,
+      "time": 1.35,
+      "crop": [
+        0,
+        836,
+        418,
+        1254
+      ],
+      "sha256": "c2c527e0f11e11111e08c1e770a99699c81323cda5d44e292460db05e6893ff4",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 8,
+      "time": 1.65,
+      "crop": [
+        418,
+        836,
+        836,
+        1254
+      ],
+      "sha256": "d92824c7b0449e08055a76f68445f8615ed6a3f61652d7c579035c8a2e9f1f9d",
+      "pixel_exact": true
+    },
+    {
+      "key_pose": 9,
+      "time": 1.9,
+      "crop": [
+        836,
+        836,
+        1254,
+        1254
+      ],
+      "sha256": "0c430236a3f5a9a749880e72e8a01b0a51b503a9956b242a6bed19afd3b2a587",
+      "pixel_exact": true
+    }
+  ],
+  "peak_byte_equal_kp05": true
+}
