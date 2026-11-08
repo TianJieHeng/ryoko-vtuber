@@ -82,5 +82,14 @@
   },
   "source_backup_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/5bef3fb6e4a5ab7ecf8d587312cf02f7107197c8/unapproved/EXP-148-nervous-laugh",
   "current_validation": "APPROVED_NERVOUS_LAUGH_VALIDATION.md",
-  "historical_receipts": "Preserved with their original scope; user approval does not establish new timing evidence."
+  "historical_receipts": "Preserved with their original scope; user approval does not establish new timing evidence.",
+  "upper_iris_part_repair": {
+    "status": "user_approved_part_repair_integrated",
+    "record": "UPPER_IRIS_REPAIR.json",
+    "validation": "UPPER_IRIS_REPAIR.md",
+    "changed_pngs": 2,
+    "new_expression_count": 0,
+    "general_eye_opening_qualified": false
+  },
+  "earlier_fields_scope": "All pre-existing fields retain the preceding twenty-profile expression integration scope and evidence; this part repair changes two active iris textures as recorded separately."
 }

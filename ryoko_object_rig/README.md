@@ -1,3 +1,9 @@
+# Current update: approved upper-iris part repair
+
+The two reviewed upper-iris textures are integrated. Centered neutral is preserved; all twenty profiles, runtime code and original source art are unchanged. This adds no expression or eye-opening capability. See UPPER_IRIS_REPAIR.md and UPPER_IRIS_REPAIR.json for the exact scope, provenance and validation limits. APPROVED_SOURCE_MANIFEST.json and APPROVED_SOURCE_FILES.sha256 are the current inventories. Earlier statements about unchanged artwork below describe the preceding expression integration.
+
+## Previous shared-rig release
+
 # Approved shared rig: twenty performances
 
 Twenty user-approved performances share one rig. EXP-148 Nervous laugh adds the approved 3.6-second performance, with nervous-laugh and nervous_laugh aliases. All nineteen predecessor profiles, production runtime, scenes, shaders, 182 PNGs and both inherited iris import sidecars remain byte-exact. Only EXP-148 approval metadata changes from the reviewed acting profile; its duration, keyframes, controls and curves are unchanged.
