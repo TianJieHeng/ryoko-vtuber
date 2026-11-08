@@ -1,0 +1,479 @@
+{
+  "status": "Source and gate records preserved exactly; no new engine execution",
+  "original_reference_commit": "285d23ce80b6f84d2258788bc69daddb4bcb75f4",
+  "reference_objects": [
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp01_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp01_v002.png",
+      "git_blob_sha": "84c0fd886bad0e6dc574affa710db0b446f8a2e5",
+      "sha256": "1394ec1de2ed79974289a6d28c0e33e8e761d6a1c717645ad260f68b2876ecc3",
+      "size": 228402,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp01_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp02_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp02_v002.png",
+      "git_blob_sha": "060c9c69c47aa06ef76cd407a7a995cae9d117ae",
+      "sha256": "ef2947f8cff458c329f47b4403853d37efc0e9182c0b71761dff7a823f6622bf",
+      "size": 226514,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp02_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp03_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp03_v002.png",
+      "git_blob_sha": "5dcc01dec714b89ac756c41a3fc94c3d24e2ae65",
+      "sha256": "a22e69706287328b5ef52ad81f150b513d48f7af582eda30a37c49d82b53db7f",
+      "size": 240663,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp03_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp04_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp04_v002.png",
+      "git_blob_sha": "406ec2f1aff2c220147ab3e0e7efbd0e72ffbc5e",
+      "sha256": "0f24e3684d2fa701061c79585bcff560ad899c530deaee67ed02031dc3f3be1c",
+      "size": 228899,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp04_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp05_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp05_v002.png",
+      "git_blob_sha": "f5f76aaf911294ee3ab6afc190351935ca7f285f",
+      "sha256": "5242a7ba52247a4e34691815127b5d4b0602eb2be59dcec1e4910ec0572905ef",
+      "size": 228412,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp05_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp06_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp06_v002.png",
+      "git_blob_sha": "b35d692696bcf3bbcbca53392dc34f3c65586788",
+      "sha256": "57066df025288ea542773fc9e4fb02d375684035ab8884269e3295df5d93e1a8",
+      "size": 241928,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp06_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp07_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp07_v002.png",
+      "git_blob_sha": "a0cfd4720ba4ee31763b38c9dbadf9e3a36a8ec6",
+      "sha256": "c5d223612a2e9859502474f9242c4da20191c6f95c05278e7e89503c9599b1f2",
+      "size": 230312,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp07_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp08_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp08_v002.png",
+      "git_blob_sha": "9b8784fd77beb671a1ee7dc3b93b690c240d5db5",
+      "sha256": "f4f154c301d45886cc7d8c0bd4f6aeb21a301cd7ab83a8041497ed39468fbefe",
+      "size": 226098,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp08_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_kp09_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp09_v002.png",
+      "git_blob_sha": "c8430bbc64aacfd3dc43a2133c62899f923e05a1",
+      "sha256": "900f8da13723dd377fb17c715ebd5512af497458179d5fa9cab4667a06abeb3a",
+      "size": 242218,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_kp09_v002.png"
+    },
+    {
+      "path": "original_reference/RYO_EXP-114_daring-provocation_sheet_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_sheet_v002.png",
+      "git_blob_sha": "137a70a6f1e72c4e2fc53d67a58270ac77be1c23",
+      "sha256": "aa11b0dab7d99c4440351f17c4253d8650e8af24fb0d92dabce256637d0bbbde",
+      "size": 2244184,
+      "remote_path": "avatar_build_assets/reference_library/assets/expressions/EXP-114_daring-provocation/RYO_EXP-114_daring-provocation_sheet_v002.png"
+    }
+  ],
+  "copied_files": [
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp01_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp01_v002.png",
+      "sha256": "1394ec1de2ed79974289a6d28c0e33e8e761d6a1c717645ad260f68b2876ecc3"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp02_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp02_v002.png",
+      "sha256": "ef2947f8cff458c329f47b4403853d37efc0e9182c0b71761dff7a823f6622bf"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp03_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp03_v002.png",
+      "sha256": "a22e69706287328b5ef52ad81f150b513d48f7af582eda30a37c49d82b53db7f"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp04_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp04_v002.png",
+      "sha256": "0f24e3684d2fa701061c79585bcff560ad899c530deaee67ed02031dc3f3be1c"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp05_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp05_v002.png",
+      "sha256": "5242a7ba52247a4e34691815127b5d4b0602eb2be59dcec1e4910ec0572905ef"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp06_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp06_v002.png",
+      "sha256": "57066df025288ea542773fc9e4fb02d375684035ab8884269e3295df5d93e1a8"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp07_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp07_v002.png",
+      "sha256": "c5d223612a2e9859502474f9242c4da20191c6f95c05278e7e89503c9599b1f2"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp08_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp08_v002.png",
+      "sha256": "f4f154c301d45886cc7d8c0bd4f6aeb21a301cd7ab83a8041497ed39468fbefe"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_kp09_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_kp09_v002.png",
+      "sha256": "900f8da13723dd377fb17c715ebd5512af497458179d5fa9cab4667a06abeb3a"
+    },
+    {
+      "backup_path": "original_reference/RYO_EXP-114_daring-provocation_sheet_v002.png",
+      "source_path": "daring_provocation_fit_work/source_reference/RYO_EXP-114_daring-provocation_sheet_v002.png",
+      "sha256": "aa11b0dab7d99c4440351f17c4253d8650e8af24fb0d92dabce256637d0bbbde"
+    },
+    {
+      "backup_path": "capture_support/capture_plan.json",
+      "source_path": "daring_provocation_performance_work/capture_plan.json",
+      "sha256": "bf211f3e3b571ad362024f1761da1bda3b27571fd3e26e07df7cd82c10ea438a"
+    },
+    {
+      "backup_path": "capture_support/verify_inputs.py",
+      "source_path": "daring_provocation_performance_work/verify_inputs.py",
+      "sha256": "7713ca0f3d89273d053b3e95757244f59504b6514e6f4d3e688da7ac01fcea58"
+    },
+    {
+      "backup_path": "capture_support/verify_headless02_inputs.py",
+      "source_path": "daring_provocation_performance_work/verify_headless02_inputs.py",
+      "sha256": "c8cbebf1f357647e015ad24ab57b3077dd6144c5f4027619925fbb8791e8c3f6"
+    },
+    {
+      "backup_path": "capture_support/harness/prior18_parity.gd",
+      "source_path": "daring_provocation_performance_work/harness/prior18_parity.gd",
+      "sha256": "735ebb8492c3941f50e96b9f01dbb8d94196fe316c3c4c7f7eb17f9293829dba"
+    },
+    {
+      "backup_path": "capture_support/harness/test_approved18_in_candidate19.gd",
+      "source_path": "daring_provocation_performance_work/harness/test_approved18_in_candidate19.gd",
+      "sha256": "e7b96c904d3edbcb4dc5c2a7bed2eb53ef54c57a028486af187ce976efaefbf1"
+    },
+    {
+      "backup_path": "capture_support/harness/test_backbone_candidate19.gd",
+      "source_path": "daring_provocation_performance_work/harness/test_backbone_candidate19.gd",
+      "sha256": "f5724025740c93afd32b9aed37396295612d4333e45b65f21cb3bd8dcd3a3afa"
+    },
+    {
+      "backup_path": "capture_support/harness/test_brow_inner_lift_contract_candidate19.gd",
+      "source_path": "daring_provocation_performance_work/harness/test_brow_inner_lift_contract_candidate19.gd",
+      "sha256": "38b90f4d874964fea68a417a17d06f81c563e0369c9c5f3c88cccf1021236766"
+    },
+    {
+      "backup_path": "capture_support/harness/test_independent_corner_contract_candidate19.gd",
+      "source_path": "daring_provocation_performance_work/harness/test_independent_corner_contract_candidate19.gd",
+      "sha256": "d9bf8a9833dad61dee230d0c4332e25dd65691abf45f33f4cb3412861ef35888"
+    },
+    {
+      "backup_path": "capture_support/harness/test_sealed_width_contract_candidate19.gd",
+      "source_path": "daring_provocation_performance_work/harness/test_sealed_width_contract_candidate19.gd",
+      "sha256": "663971ba1d548e579fae2a989190b5c2034e3a358883269bd971a841435fd501"
+    },
+    {
+      "backup_path": "capture_support/harness/test_sealed_width_contract_candidate19_corrected.gd",
+      "source_path": "daring_provocation_performance_work/harness/test_sealed_width_contract_candidate19_corrected.gd",
+      "sha256": "9a05e9a9f193a1bc5f1119f4b6c948f1b5da5c6c62a911b2bf6368a628272cea"
+    },
+    {
+      "backup_path": "capture_support/harness/test_spread_runtime_candidate19.gd",
+      "source_path": "daring_provocation_performance_work/harness/test_spread_runtime_candidate19.gd",
+      "sha256": "0256c91a3d6d9e7c31acc99d04e5c9a54737fd64679cec2fe793ec7782788802"
+    },
+    {
+      "backup_path": "capture_support/plan/HEADLESS_JOBS.json",
+      "source_path": "daring_provocation_performance_work/plan/HEADLESS_JOBS.json",
+      "sha256": "4c32fc3f1f05dee43f3900b239c9c191202077a85e91af1032ab4d5d66621e2f"
+    },
+    {
+      "backup_path": "capture_support/plan/HEADLESS_02_JOBS.json",
+      "source_path": "daring_provocation_performance_work/plan/HEADLESS_02_JOBS.json",
+      "sha256": "d7a630ae23734a42d0764d593a9a50ec4b03a31ed90c5c286e7c61b0381b32ea"
+    },
+    {
+      "backup_path": "capture_support/plan/TIMING.json",
+      "source_path": "daring_provocation_performance_work/plan/TIMING.json",
+      "sha256": "dad723b834f79367c74e4c21012f7d81bd19b06d05b97a6727ebd7940b5b7280"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/trajectory_record_files.gd",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/trajectory_record_files.gd",
+      "sha256": "fc3e576f4ee5e2d86dcfd704e512a74bd7fd397267944e6beb61fb90b0dcae6a"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/record_files.py",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/record_files.py",
+      "sha256": "b00f546808e20518d7e0a673b4d5676f34d56dcf9b91861e1c40e02f9f325e53"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/verify_native_record_files.py",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/verify_native_record_files.py",
+      "sha256": "673b1acd112acfbf9b0330eb1272925d0c2c05819e8adc1ffdc975d66e29d819"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/verify_native_stream_inputs.py",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/verify_native_stream_inputs.py",
+      "sha256": "22cddeb51c611427f821931b927e24a8be8d2e498415ee3437c17c42759f536d"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/guard_native_stream.py",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/guard_native_stream.py",
+      "sha256": "bb7d4da67effaabc0dc9f8c312fd59f08a010cb5deed5c71a117ea02a9ac1809"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/run_native_stream.py",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/run_native_stream.py",
+      "sha256": "71006a564a9a0a253035d90a463e50dd3ef5e0a123658487592da4bc0a416fe2"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/EXP114_NATIVE_STREAM_ONCE.sh",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/EXP114_NATIVE_STREAM_ONCE.sh",
+      "sha256": "a14d4d7b2ea098c49b14d3622f5130a1bb742039afd6ec2069fb4d8054a8d5d7"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/test_record_files.py",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/test_record_files.py",
+      "sha256": "d10ccb3ae092493489f9cfcb8e17eac0a7cb405b4a6226bd76835b5653c23932"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/test_native_proof.py",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/test_native_proof.py",
+      "sha256": "c19f001261f778dc4fb3e7fca3fb35afe29a09c69dad424ea6b39d859831af3b"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/NATIVE_STREAM_INPUT_BINDING.json",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/NATIVE_STREAM_INPUT_BINDING.json",
+      "sha256": "dc4799849a4ca753204dd9f838418e28b810990b6828826a8308ad0e4567e05e"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/DEPENDENCY_GRAPH.json",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/DEPENDENCY_GRAPH.json",
+      "sha256": "042dc1450972d233954344183ffb21bdb59f91ccda343c0ba93a1fbf1dc8a980"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/STRUCTURAL_EQUIVALENCE.json",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/STRUCTURAL_EQUIVALENCE.json",
+      "sha256": "a361bb2a9d6762c18a08abaf83ad1f8c0ece0f5bc8a7e88649016c2a47a04dc2"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/OFFLINE_SCHEMA_TESTS.json",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/OFFLINE_SCHEMA_TESTS.json",
+      "sha256": "6421a4285793f60a216480c81040646bbccbe0c9eda1b5970120f8667941722c"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/OFFLINE_NATIVE_PROOF_TESTS.json",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/OFFLINE_NATIVE_PROOF_TESTS.json",
+      "sha256": "67d7efd21784e3522590443480a59b0037583b502dbe70fa9b90d92df4bd4150"
+    },
+    {
+      "backup_path": "capture_support/proposals/serialization_successor/REPORT.md",
+      "source_path": "daring_provocation_performance_work/proposals/serialization_successor/REPORT.md",
+      "sha256": "9fd49c94922fe3da8cd9681f584209d055db815fa30b27018a4098e7907971fa"
+    },
+    {
+      "backup_path": "gate_records/historical/evidence/PREPARED_PACKAGE.json",
+      "source_path": "daring_provocation_performance_work/evidence/PREPARED_PACKAGE.json",
+      "sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed"
+    },
+    {
+      "backup_path": "gate_records/historical/evidence/HEADLESS_02_INPUT_BINDING.json",
+      "source_path": "daring_provocation_performance_work/evidence/HEADLESS_02_INPUT_BINDING.json",
+      "sha256": "196cb7754de01e15045f428732853bb25c131a64b90fe5e2938a410f5af9394b"
+    },
+    {
+      "backup_path": "gate_records/historical/evidence/HEADLESS_01_FAILURE_DIAGNOSIS.json",
+      "source_path": "daring_provocation_performance_work/evidence/HEADLESS_01_FAILURE_DIAGNOSIS.json",
+      "sha256": "09447d863367459b68c0e3d3b087eb7727bf0681e21ff5b20651708ca6acabe3"
+    },
+    {
+      "backup_path": "gate_records/historical/evidence/HEADLESS_02_FAILURE_DIAGNOSIS.json",
+      "source_path": "daring_provocation_performance_work/evidence/HEADLESS_02_FAILURE_DIAGNOSIS.json",
+      "sha256": "72c0ff8fb7055dbbe05941a8dd3ab7afc5636a130b849c2d4705c4c3d93be5ac"
+    },
+    {
+      "backup_path": "gate_records/historical/headless_01/RUN_RESULT.json",
+      "source_path": "daring_provocation_performance_work/headless_01/RUN_RESULT.json",
+      "sha256": "a68faf661d0bc972c0d5944e7819c3d3d08d89648ec822450f2bee6da128348a"
+    },
+    {
+      "backup_path": "gate_records/historical/headless_01/RUN_ROWS.json",
+      "source_path": "daring_provocation_performance_work/headless_01/RUN_ROWS.json",
+      "sha256": "e0a44b3b2701ea4a96777c4df1f53c11fbdcad813bbc4757c522d8ca815e0884"
+    },
+    {
+      "backup_path": "gate_records/historical/headless_02/RUN_RESULT.json",
+      "source_path": "daring_provocation_performance_work/headless_02/RUN_RESULT.json",
+      "sha256": "8c9c6884addc9c752e5fe562ccf2b735b2b5fb1e69b74f16aeecd4eaf4e725b6"
+    },
+    {
+      "backup_path": "gate_records/historical/headless_02/RUN_ROWS.json",
+      "source_path": "daring_provocation_performance_work/headless_02/RUN_ROWS.json",
+      "sha256": "0745fbc02dd90daae974ed6bb5c8166bd30d89dbfef2a3d63ce7f3a070bfff68"
+    },
+    {
+      "backup_path": "gate_records/historical/independent/ACTUAL_FIT_REVIEW.json",
+      "source_path": "daring_provocation_independent_review/ACTUAL_FIT_REVIEW.json",
+      "sha256": "e5ef7d93c006e040a4d0121f50d8c4a0b8debe9104cd0f39fe7665ed27792dc7"
+    },
+    {
+      "backup_path": "gate_records/historical/independent/ACTUAL_FIT_REVIEW.md",
+      "source_path": "daring_provocation_independent_review/ACTUAL_FIT_REVIEW.md",
+      "sha256": "14998fe1df434b56c8b47872baac37fa61ea876ebf60707950f151e435aa5ebf"
+    },
+    {
+      "backup_path": "gate_records/historical/independent/PERFORMANCE_HEADLESS_01_REVIEW.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_HEADLESS_01_REVIEW.json",
+      "sha256": "3e6e4bbf112fb082952fa9ff0b2b53aa01a61aa310e9fa0b70f165d872816a43"
+    },
+    {
+      "backup_path": "gate_records/historical/independent/PERFORMANCE_PATH_CORRECTION_PROPOSAL_REVIEW.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_PATH_CORRECTION_PROPOSAL_REVIEW.json",
+      "sha256": "df1d3b310a3c9e1a0d718e742e3a562a54de12086c316a3b50fccb92d94afbb0"
+    },
+    {
+      "backup_path": "gate_records/historical/independent/PERFORMANCE_HEADLESS_02_FAILURE_REVIEW.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_HEADLESS_02_FAILURE_REVIEW.json",
+      "sha256": "c68b1c19be4dbfa8a4136153da7ba5fc2d93abdfa950f3bd214968f2faf915e4"
+    },
+    {
+      "backup_path": "gate_records/historical/independent/PERFORMANCE_HEADLESS_02_FAILURE_REVIEW.md",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_HEADLESS_02_FAILURE_REVIEW.md",
+      "sha256": "0cc3c44a74c79157978f902376ce95258960a935232ad01a92cf8ae881b86449"
+    },
+    {
+      "backup_path": "gate_records/historical/independent/PERFORMANCE_NATIVE_STREAM_PREPARED_REVIEW.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_NATIVE_STREAM_PREPARED_REVIEW.json",
+      "sha256": "0953c979e9226c7b187e114080b5de28c488e3a5df97798a517e6cb5e9d78a75"
+    },
+    {
+      "backup_path": "original_reference/CATALOGUE.json",
+      "source_path": "flirty_blushing_set_source_audit/source_reference/EXP-114.json",
+      "sha256": "be80cd3c7bdb740c1c7f36e66d8a9da6fca47ed6c4463e1ef9f2bb90510e8d5a"
+    },
+    {
+      "backup_path": "gate_records/actual/RUN_RESULT.json",
+      "source_path": "daring_provocation_performance_work/native_stream_01/RUN_RESULT.json",
+      "sha256": "127dda938bdb75270aa3969b24aa2ee8c6fb23d16b4f7aed33bb71ba8f43558a"
+    },
+    {
+      "backup_path": "gate_records/actual/completion_manifest.json",
+      "source_path": "daring_provocation_performance_work/native_stream_01/evidence.json",
+      "sha256": "06f450210e70e45ad6d1be7c66f5bef6df00b506990066b2f18ef04be7ec9bbc"
+    },
+    {
+      "backup_path": "gate_records/actual/NATIVE_STREAM_VERIFICATION.json",
+      "source_path": "daring_provocation_performance_work/evidence/NATIVE_STREAM_VERIFICATION.json",
+      "sha256": "7cba2e1213f267b4d0020b77f84970b699a1eeb1446a669d21b6fdaa399527fc"
+    },
+    {
+      "backup_path": "gate_records/actual/PERFORMANCE_ACTUAL_CAPTURE_REVIEW.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_ACTUAL_CAPTURE_REVIEW.json",
+      "sha256": "54fc255ceaa74a525cd1d4d2600cf2d97a2b4550123f2097f814a9c6fce57e13"
+    },
+    {
+      "backup_path": "gate_records/actual/PERFORMANCE_ACTUAL_CAPTURE_REVIEW.md",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_ACTUAL_CAPTURE_REVIEW.md",
+      "sha256": "e57d86e7a55497eb2b84769a8655ae6439ff9e58091e8d890a77b1c15fcabc31"
+    },
+    {
+      "backup_path": "gate_records/actual/PERFORMANCE_NATIVE_STREAM_ACTUAL_RECORDS.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_NATIVE_STREAM_ACTUAL_RECORDS.json",
+      "sha256": "4beefbf4c41622f00c192252d3202f00d3bea69044d34b64b68a953b2b02b9f1"
+    },
+    {
+      "backup_path": "recovery/check_source_recovery.py",
+      "source_path": "daring_provocation_backup_work/check_source_recovery.py",
+      "sha256": "f1557bdbe8189504cc0ffa732cb9fe36dbc87def215c2ca0a3d97a09721a9343"
+    },
+    {
+      "backup_path": "verify_backup.py",
+      "source_path": "daring_provocation_backup_work/verify_backup_template.py",
+      "sha256": "42656e6f41268c92111b3b2e20fdbbcbd1ec0d96ed6f79aaef84e54b0a6d3178"
+    },
+    {
+      "backup_path": "README.md",
+      "source_path": "daring_provocation_backup_work/README_PACKAGE_TEMPLATE.md",
+      "sha256": "0464bc9deb343340edf7c7b3db41a0a102cf8285f0259fe1658ba56d4597dedd"
+    },
+    {
+      "backup_path": "gate_records/normal/RUN_RESULT.json",
+      "source_path": "daring_provocation_performance_work/normal_01/RUN_RESULT.json",
+      "sha256": "316ed005c134260f61c101250820ac537f364ae4351edef90bf826b1727bf366"
+    },
+    {
+      "backup_path": "gate_records/normal/RUN_ROWS.json",
+      "source_path": "daring_provocation_performance_work/normal_01/RUN_ROWS.json",
+      "sha256": "5ad299a633647d85c87696253cd17b4ee52fb6907658f7e69b2fea964f1a8e44"
+    },
+    {
+      "backup_path": "gate_records/normal/PRE_RUN_IDENTITY.json",
+      "source_path": "daring_provocation_performance_work/normal_01/PRE_RUN_IDENTITY.json",
+      "sha256": "427ce78b618e64acb3c164b69d244d987d2753882932a39f98aa2182ff681f37"
+    },
+    {
+      "backup_path": "gate_records/normal/NORMAL_REALTIME_OBSERVATION.json",
+      "source_path": "daring_provocation_performance_work/evidence/NORMAL_REALTIME_OBSERVATION.json",
+      "sha256": "6da9282c559ea7151640834229dd2d6611b35dd149111b70871ddbb66a88888a"
+    },
+    {
+      "backup_path": "gate_records/final/PERFORMANCE_FINAL_SOURCE_CLEARANCE.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_FINAL_SOURCE_CLEARANCE.json",
+      "sha256": "ad4ee18995988007e9cde9494d6aa2500f9299b6e539e589090122b5e9363ff6"
+    },
+    {
+      "backup_path": "gate_records/final/PERFORMANCE_ACTUAL_IDENTITY_BINDING.json",
+      "source_path": "daring_provocation_independent_review/PERFORMANCE_ACTUAL_IDENTITY_BINDING.json",
+      "sha256": "d2264cdbb73fcc5c89a2f0a27256df3bc8eca61c3416a96ee6b8157c9ca2d5c6"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/EXP114_NORMAL_STREAM_ONCE.sh",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/EXP114_NORMAL_STREAM_ONCE.sh",
+      "sha256": "805bd9120a727b3a5eb0827464919c1031e5ac30cb266b454dbef602436bad18"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/NORMAL_STREAM_INPUT_BINDING.json",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/NORMAL_STREAM_INPUT_BINDING.json",
+      "sha256": "c5815c8ec1eae3b329b54d836d676037520a89bbba1bd982949d9f7096bf9c0e"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/REPORT.md",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/REPORT.md",
+      "sha256": "e58842fb5631cc3187bb0a873ccad22c1dca4477b94187b4e5b97ec513c9e2f1"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/ROUTING_ONLY.patch",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/ROUTING_ONLY.patch",
+      "sha256": "104fa53d7cbf1372f921147728dc59b29a96db44e357359c122afde10ad1bd1d"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/freeze_normal_stream.py",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/freeze_normal_stream.py",
+      "sha256": "f0c07ac3229e10570c9f3ab5ceabb91376c0bdeae9a0a600ce077910c4d1f0ce"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/guard_normal_stream.py",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/guard_normal_stream.py",
+      "sha256": "c9934c52d849d8d5a67f90bfd63652eb3c1b11939f25aeee45d9a71e7dbaaa78"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/run_normal_stream.py",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/run_normal_stream.py",
+      "sha256": "e7dc7899239b2b1bb2e3284e656084fab5818e5b7ea7c96cb9ab78cd786aefac"
+    },
+    {
+      "backup_path": "capture_support/proposals/normal_stream_successor/verify_normal_inputs.py",
+      "source_path": "daring_provocation_performance_work/proposals/normal_stream_successor/verify_normal_inputs.py",
+      "sha256": "8b4c38330571a1f9f3fabc70c305a6fd1bb30fb254b665bfe4100dc38ec45d87"
+    }
+  ],
+  "omitted": "701 individual large checkpoint records, actual images, raw texture buffers, imported caches, preview media and temporary environments. Hashes in preserved records do not replace omitted evidence. The 3,065,805-byte normal-stage state dump is also omitted; its exact identity and final independent pacing review are retained."
+}

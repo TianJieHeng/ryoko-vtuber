@@ -1,0 +1,58 @@
+--- preserved/run_stage.py
++++ proposals/normal_stream_successor/run_normal_stream.py
+@@ -1,14 +1,14 @@
+ """One leased frozen stage, no import/retry/refit. Native stages require supported CUA wrapper launch."""
+ from pathlib import Path
+ import datetime,json,os,subprocess,sys,time,traceback
+-from verify_inputs import W,sha,verify
+-assert len(sys.argv)>=3;stage=sys.argv[1];assert stage in ['headless','native','normal']
++from verify_normal_inputs import W,sha,verify,BINDING
++assert len(sys.argv)>=3;stage=sys.argv[1];assert stage=='normal'
+ flags=['--coordinator-godot-slot-granted']+([] if stage=='headless' else ['--coordinator-display-lease-granted','--independent-pre-render-review-approved'])
+ assert sys.argv[2:]==flags
+-binding=sha(W/'evidence/PREPARED_PACKAGE.json');guard_path=W/'evidence'/(stage.upper()+'_PRE_GUARD.json');guard=json.loads(guard_path.read_text())
++binding=sha(BINDING);guard_path=W/'evidence/NORMAL_STREAM_PRE_GUARD.json';guard=json.loads(guard_path.read_text())
+ assert guard['status']=='PASS' and guard['stage']==stage and guard['binding_sha256']==binding
+ assert 0<=(datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(guard['time_utc'])).total_seconds()<600
+-assert guard['review_sha256']==sha(W/'evidence'/(stage.upper()+'_REVIEW_APPROVAL.json')) and guard['lease_sha256']==sha(W/'evidence'/(stage.upper()+'_LEASE.json'))
++assert guard['review_sha256']==sha(W/'evidence'/('NORMAL_STREAM_REVIEW_APPROVAL.json')) and guard['lease_sha256']==sha(W/'evidence'/('NORMAL_STREAM_LEASE.json'))
+ def active():return [s.strip() for s in subprocess.check_output(['/bin/ps','-eo','pid=,comm='],text=True).splitlines() if len(s.split())>1 and s.split()[1].lower().startswith('godot')]
+ assert not active(),'Godot occupied'
+ pre=verify();out=W/(stage+'_01');assert not out.exists(),'Attempt exists; never retry';out.mkdir();(out/'PRE_RUN_IDENTITY.json').write_text(json.dumps(pre,indent=2)+'\n')
+@@ -65,5 +65,7 @@
+  result['lease_released']=not result['remaining_godot_processes']
+  try:result['post_identity']=verify()
+  except Exception as exc:result['post_identity_error']=repr(exc);result['status']='FAIL';code=1
++ if not result['lease_released']:code=1
++ result['status']='PASS' if code==0 else 'FAIL';result['returncode']=code
+  (out/'RUN_RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True)
+ raise SystemExit(code)
+--- preserved/guard_stage.py
++++ proposals/normal_stream_successor/guard_normal_stream.py
+@@ -1,20 +1,18 @@
+ """Run as a separate awaited call; this guard never launches an engine."""
+ import datetime,json,subprocess,sys
+ from pathlib import Path
+-from verify_inputs import W,sha,verify
+-assert sys.argv[1:] in [['headless'],['native'],['normal']]
+-stage=sys.argv[1];binding=sha(W/'evidence/PREPARED_PACKAGE.json');output=W/(stage+'_01');target=W/'evidence'/(stage.upper()+'_PRE_GUARD.json')
++from verify_normal_inputs import W,sha,verify,BINDING
++assert sys.argv[1:]==['normal']
++stage=sys.argv[1];binding=sha(BINDING);output=W/(stage+'_01');target=W/'evidence'/'NORMAL_STREAM_PRE_GUARD.json'
+ assert not output.exists() and not target.exists(),'Preserve every attempt and prior guard; no automatic retry'
+-review_path=W/'evidence'/(stage.upper()+'_REVIEW_APPROVAL.json');lease_path=W/'evidence'/(stage.upper()+'_LEASE.json')
++review_path=W/'evidence'/'NORMAL_STREAM_REVIEW_APPROVAL.json';lease_path=W/'evidence'/'NORMAL_STREAM_LEASE.json'
+ review=json.loads(review_path.read_text());lease=json.loads(lease_path.read_text())
+ assert review['approved'] is True and review['stage']==stage and review['binding_sha256']==binding
+ assert sha(Path(review['review_path']))==review['review_sha256']
+ assert lease['exclusive_godot_lease'] is True and lease['binding_sha256']==binding and lease['stage']==stage
+ assert lease['display_lease']==(stage!='headless')
+-if stage!='headless':
+- receipt=json.loads((W/'evidence/HEADLESS_VERIFICATION.json').read_text());assert receipt['status']=='PASS' and receipt['binding_sha256']==binding
+-if stage=='normal':
+- receipt=json.loads((W/'evidence/NATIVE_VERIFICATION.json').read_text());assert receipt['status']=='PASS'
++# Successful combined native-stream receipts replace the unavailable failed headless trajectory.
++# verify() binds and validates the new successful run and all its immutable artifacts.
+ identity=verify()
+ active=[s.strip() for s in subprocess.check_output(['/bin/ps','-eo','pid=,comm='],text=True).splitlines() if len(s.split())>1 and s.split()[1].lower().startswith('godot')]
+ assert not active,('engine occupied',active)

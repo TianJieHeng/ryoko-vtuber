@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "expression_id": "EXP-160",
+  "baseline_kind": "outer_anchor_v1_local_candidate",
+  "baseline_inventory_sha256": "d3d32cea21da2973c711779f201676c8344b409fba966b48ab22832381fae49f",
+  "published_baseline_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
+  "files": {
+    "PACKAGING.md": {
+      "baseline_sha256": "5c3a87e630658abd846014f323aa7709a1d6543ff20f871c62d901e65abb73e0",
+      "candidate_sha256": "4388aeeaffe292ba1b9b4da39aa91d566b236fc01add614118eab4ae9a3752da"
+    },
+    "README.md": {
+      "baseline_sha256": "697c7b9c38e7c97992c43e42c0fac6ca100d6f53b75c6ecac5db7388d8b33ef0",
+      "candidate_sha256": "fb984e0bbf53d8ffec9d9ea5b6233d7123ab628231a785ad79b3b9253e0e6671"
+    },
+    "RELEASE.json": {
+      "baseline_sha256": "a91663b8ada782f60508874da4f6f0b56faae08f54b3b054408293c3e50a8d82",
+      "candidate_sha256": "4d3b7453050ff6c1ae3372abfdadd067e6517a9e6e95a0ae5032c4bca19fdc1a"
+    },
+    "expressions/registry.json": {
+      "baseline_sha256": "0da33cfc7a2131d1767c191edddbe20b27276ff36d7f84ac562d21ffb725eaae",
+      "candidate_sha256": "d2ea5ad486a3c1950112dd85e996f442ac7d74d49a020e917cc9e4ecb1effc67"
+    },
+    "test_expression_backbone.gd": {
+      "baseline_sha256": "b51f77d67a1d4827e8e4ceb519ffc0e72cd308806cb388a9e8f383aa04af87d7",
+      "candidate_sha256": "80d9797f72dabfbd10e8edc35e30fa6f78d8c31aa43071b124cc5484a236e798"
+    },
+    "tests/test_blush_controls.gd": {
+      "baseline_sha256": "a2c62675496572b1d9df0109618c2d7d80cf5723440ef5487fd086bf11b5cbc5",
+      "candidate_sha256": "d36a3e9f9392afbdb92c5b9f87038e19647818a8eba0acf3aa7e1ee5dd7c32b3"
+    },
+    "tests/test_brow_inner_lift_contract.gd": {
+      "baseline_sha256": "778d35e17333718dbcb3fe4012b1ba613f6c9b3ec74990af674caa4c8b058aa7",
+      "candidate_sha256": "c94c404bb640f8ec0a1cf85641aab3343f16289a55d0f38c95f674cae4b04baa"
+    },
+    "tests/test_giggle_runtime.gd": {
+      "baseline_sha256": "6e85876bd3dadd33f2b8db3c87329a86d023c9d38726cdfffd1d5d06cee0a436",
+      "candidate_sha256": "821ca23583d1ec147a81fe696cd1053d4b9c6b4dee3fae51ee555b1b4d2c4d42"
+    },
+    "tests/test_oral_lift_contract.gd": {
+      "baseline_sha256": "ed50ac723cd590c1d4e662dc49d28e9ad666a903b7c9ca0bd79066711157344b",
+      "candidate_sha256": "1951d2a089f3f839544623bfa8811ced69d649a14bcacc821c492c9cd0f8b216"
+    },
+    "tests/test_purse_contract.gd": {
+      "baseline_sha256": "fdc168d93ea861098badc140c46df7f7c8e9cefdfddc9190a1af0fef9e69aa30",
+      "candidate_sha256": "8080f18a5766a3c78cd7eff9036ad51de8adb588876c2d83a3900a00cf0eb028"
+    },
+    "tests/test_purse_transport.gd": {
+      "baseline_sha256": "b68b8ca957c5d50948d34b1480c06f6abdae28beb7e89fb3f67888f54cb51363",
+      "candidate_sha256": "d703899c13c66ef17b68e42f3736ecb8b20fc01fa11ead993a9e9a4a0e1c0694"
+    },
+    "tests/test_reassurance_runtime.gd": {
+      "baseline_sha256": "898578ca5fc773e9d4262d113a712710ab1c18dbc522d6f2075bd12c6735e3e6",
+      "candidate_sha256": "d37176796523a8c97f2a36b60a9640a2da5983211adfc70d53537c700280e3c0"
+    },
+    "tests/test_relief_runtime.gd": {
+      "baseline_sha256": "5db63013d62d148455ce167a0c8c69ca1c3a181fd298c40efb9ede1f4bedcfd7",
+      "candidate_sha256": "88873ebcbc2c3ecb4d58ad940199a6c23874589bcadd96b1b4cbf575f419df12"
+    },
+    "tests/test_spread_runtime.gd": {
+      "baseline_sha256": "b84fe1c914da40edb771ce49f541d94b61a91828a6d8002a2e6edafe787ba70e",
+      "candidate_sha256": "145e98f23c565af38cc502ad48407bcdb4abeee77347f1fba3add3af77d28013"
+    },
+    "tools/brow_source_guard.py": {
+      "baseline_sha256": "2d0133db0e649aceee7ad460695986dcc5247019fe0d2cb56f1e416a52318e1d",
+      "candidate_sha256": "d64cbbff1ade8823cf56644ebaede493cca57599e37e811d451f040290eeb7b0"
+    },
+    "tools/verify_brow_inner_lift_scope.py": {
+      "baseline_sha256": "603afd66e5d8e07a48672cca19e82af0e4177939f947eff1f339697591a58b2f",
+      "candidate_sha256": "c3a17b78546801aee7b83a347bd5bf4aa7aaadef4d37ffed05e385cd865f930b"
+    },
+    "tools/verify_giggle_scope.py": {
+      "baseline_sha256": "ce638710dd59fd5aaadb752eddfc6b470e0e21ad873ce9ddc324219270036052",
+      "candidate_sha256": "8c29d8cfc1def8b8d525525af5d1623d7c8aa78f67d8f227dc11ea0a92390674"
+    },
+    "tools/verify_reassurance_scope.py": {
+      "baseline_sha256": "70e29d18e17f448c8f73db5e49468c393095fff53be872df3a19f8454834fad8",
+      "candidate_sha256": "a9b8fa09157cb6d2ec9187cbd7cd4fac84514b89c11ad474b3d55ae14e9c32c2"
+    },
+    "tools/verify_relief_scope.py": {
+      "baseline_sha256": "779bdbabac61af9d7a03eb2bab28d8942987199496e5038cf3f0b083004ccde4",
+      "candidate_sha256": "d250b16fe8197c02708783d6038b6e978d42aee4462e3cd27832fe999e764bef"
+    },
+    "tools/verify_welcome_scope.py": {
+      "baseline_sha256": "055bc90dc3724066f5576bd74f5a8a34fd29d431bc63f07e6a46124223d04d08",
+      "candidate_sha256": "653d144b8fc52c3cadcb686e469df9fb5754fc56a8acef7c885946c427bf9dc0"
+    }
+  },
+  "new_files": {
+    "SHY_LAUGHTER_STATUS.json": "1b6d1b73290d98eddea75f8cd36a04e475cd020f5d6ad2c7ac391897c1b3d350",
+    "SHY_LAUGHTER_VALIDATION.md": "da06b8eb236fc23e22c50d11156d95d2ae11adfcef1ce7b8bc9b68a2526d01e9",
+    "expressions/EXP-160.json": "f30c64314d59fa368781eb5e098a12fb6582f845b0d4fa43e40a4a4cd77838c2",
+    "source_references/shy_laughter_parent_inventory.json": "7d4b3e6b04d26f30f0cc79051dc922c5bdf411f00586e74bbb705f54986610f0",
+    "source_references/shy_laughter_predecessor_RELEASE.json": "a91663b8ada782f60508874da4f6f0b56faae08f54b3b054408293c3e50a8d82",
+    "source_references/shy_laughter_source_manifest.json": "58d0073bedb81e389402d673d25aa67ae8ccdb0006f33ea01f92f1b1c568374b",
+    "tests/test_shy_laughter_runtime.gd": "21e4ca039fe10be1541a91b3e8f6aa0102477be9134ec9a929ee7c340b7bcef2",
+    "tools/review_shy_trajectory.gd": "24a79404cdaaa08543b7843f6e569c5290b4f4170b080f61ff771caed6c0dad2",
+    "tools/shy_source_guard.py": "21e790e93ff2444b52b04222cc9d4757ffead1a3d4e1bb41128ee3d11f9bcd47",
+    "tools/verify_shy_scope.py": "2c4ca1ec8494104292aa45cd4bb3ca9368cbab35edb62d2cbd4d5863899b86c3"
+  },
+  "hash_exclusions": [
+    "SOURCE_FILES.sha256",
+    "validation/shy_laughter_runtime_migration.json"
+  ]
+}

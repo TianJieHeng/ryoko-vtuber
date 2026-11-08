@@ -1,0 +1,25 @@
+[
+  {
+    "name": "normal",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/candidate",
+      "--script",
+      "res://tools/review_daring_provocation_normal_playback.gd",
+      "--",
+      "--coordinator-godot-slot-granted",
+      "--coordinator-display-lease-granted",
+      "--independent-pre-render-review-approved",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/normal_01"
+    ],
+    "started_utc": "2026-11-08T12:44:37.735193+00:00",
+    "binding_sha256": "c5815c8ec1eae3b329b54d836d676037520a89bbba1bd982949d9f7096bf9c0e",
+    "guard_sha256": "602f3c7b2da2674225bf0a804d30f8948d879a362a40292dd6b8ab7559848c0e",
+    "returncode": 0,
+    "seconds": 19.315189599990845,
+    "log_sha256": "decd0bf8abc396525837f24fdaf8d40beb233969c4d357752060d46b5b543e16"
+  }
+]

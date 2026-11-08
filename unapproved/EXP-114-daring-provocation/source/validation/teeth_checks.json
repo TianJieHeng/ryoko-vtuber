@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "checks": 295,
+  "unchanged_pngs": 268,
+  "unchanged_runtime_and_art_files": 279,
+  "static_upper_teeth_xy": [
+    533,
+    626
+  ],
+  "effective_aperture_cap": 0.55,
+  "tooth_whitening": {
+    "upper_teeth": {
+      "opaque_rgb_median": [
+        250.0,
+        250.0,
+        250.0
+      ],
+      "p05": 218.3,
+      "max": 255,
+      "alpha_identical": true
+    },
+    "lower_teeth": {
+      "opaque_rgb_median": [
+        246.0,
+        246.0,
+        246.0
+      ],
+      "p05": 220.0,
+      "max": 255,
+      "alpha_identical": true
+    }
+  }
+}

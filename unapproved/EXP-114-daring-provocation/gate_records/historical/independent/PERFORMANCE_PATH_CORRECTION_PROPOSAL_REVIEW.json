@@ -1,0 +1,214 @@
+{
+  "status": "PROPOSAL_SCOPE_PASS_NOT_EXECUTION_APPROVAL",
+  "proposal_binding_sha256": "de7a384df82e809abfeb0bbed2993fb0b5370cabd7497a169258615f73026df9",
+  "corrected_fixture_sha256": "9a05e9a9f193a1bc5f1119f4b6c948f1b5da5c6c62a911b2bf6368a628272cea",
+  "correction_exactly_one_path_expression": true,
+  "all_assertions_and_helper_bytes_unchanged": true,
+  "passed_jobs_1_through_7_independently_accepted": true,
+  "passed_checks": 2085236,
+  "original_job8_status": "NOT_PASS",
+  "continuation_jobs": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "all_remaining_dependency_targets_exist": true,
+  "dependency_checks": [
+    {
+      "job": "candidate_test_sealed_width_contract",
+      "script_sha256": "9a05e9a9f193a1bc5f1119f4b6c948f1b5da5c6c62a911b2bf6368a628272cea",
+      "literal_dependencies": [
+        {
+          "literal": "res://control_bridge.gd",
+          "sha256": "8c33554b830821ad75a6c721e28cdccc8bb1bd13e1e63e8438159989581e493e"
+        },
+        {
+          "literal": "res://expression_viewer.tscn",
+          "sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef"
+        },
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        },
+        {
+          "literal": "res://tests/sealed_observed_rig.gd",
+          "sha256": "d14a57f9259a6009339331a65ff3e730d6126d5b85aa1380e86d0268ee9e2df2"
+        }
+      ]
+    },
+    {
+      "job": "approved_test_brow_inner_lift_contract",
+      "script_sha256": "11703b5a6f5467ed95399195e8c03dcd87f052705bbf3d67da5f8fdb946ff011",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        },
+        {
+          "literal": "res://control_bridge.gd",
+          "sha256": "8c33554b830821ad75a6c721e28cdccc8bb1bd13e1e63e8438159989581e493e"
+        }
+      ]
+    },
+    {
+      "job": "candidate_test_brow_inner_lift_contract",
+      "script_sha256": "38b90f4d874964fea68a417a17d06f81c563e0369c9c5f3c88cccf1021236766",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        },
+        {
+          "literal": "res://control_bridge.gd",
+          "sha256": "8c33554b830821ad75a6c721e28cdccc8bb1bd13e1e63e8438159989581e493e"
+        }
+      ]
+    },
+    {
+      "job": "approved_test_spread_runtime",
+      "script_sha256": "8370c3dbda606f86011e5aca845db3827694450cf84b6e4caa5cb0c9e54a8d58",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        }
+      ]
+    },
+    {
+      "job": "candidate_test_spread_runtime",
+      "script_sha256": "0256c91a3d6d9e7c31acc99d04e5c9a54737fd64679cec2fe793ec7782788802",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        }
+      ]
+    },
+    {
+      "job": "candidate_test_object_rig",
+      "script_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+      "literal_dependencies": [
+        {
+          "literal": "res://control_limits.gd",
+          "sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3"
+        },
+        {
+          "literal": "res://object_rig.tscn",
+          "sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b"
+        }
+      ]
+    },
+    {
+      "job": "candidate_test_teeth",
+      "script_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+      "literal_dependencies": [
+        {
+          "literal": "res://yawn_rig.tscn",
+          "sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545"
+        }
+      ]
+    },
+    {
+      "job": "candidate_test_yawn",
+      "script_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+      "literal_dependencies": [
+        {
+          "literal": "res://control_limits.gd",
+          "sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3"
+        },
+        {
+          "literal": "res://yawn_rig.tscn",
+          "sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545"
+        },
+        {
+          "literal": "res://yawn_stage.tscn",
+          "sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4"
+        }
+      ]
+    },
+    {
+      "job": "candidate_test_auto_blink_lifecycle",
+      "script_sha256": "19c182ca6dfe8b1cc6ba5008eb46e6cc3836a5fb6870bea2955eab8446eab5e8",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        },
+        {
+          "literal": "res://expression_viewer.tscn",
+          "sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef"
+        }
+      ]
+    },
+    {
+      "job": "candidate_test_smile_controls",
+      "script_sha256": "8cc04c9726c52f66ab49a0dbbb470db2a7e51e61fc92f5266b74d74168dfbd62",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        },
+        {
+          "literal": "res://control_bridge.gd",
+          "sha256": "8c33554b830821ad75a6c721e28cdccc8bb1bd13e1e63e8438159989581e493e"
+        }
+      ]
+    },
+    {
+      "job": "daring_runtime",
+      "script_sha256": "6e1cb8e0c66a3b4abd7ff3292fec4aeffd9057aa3c392405ac89ff6588d53919",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        }
+      ]
+    },
+    {
+      "job": "prior18_approved",
+      "script_sha256": "735ebb8492c3941f50e96b9f01dbb8d94196fe316c3c4c7f7eb17f9293829dba",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        }
+      ]
+    },
+    {
+      "job": "prior18_candidate",
+      "script_sha256": "735ebb8492c3941f50e96b9f01dbb8d94196fe316c3c4c7f7eb17f9293829dba",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        }
+      ]
+    },
+    {
+      "job": "trajectory",
+      "script_sha256": "599fc77a1fb4ab3083161d3179d193b6a6a4f373f245bc34282b83730b1e9269",
+      "literal_dependencies": [
+        {
+          "literal": "res://expression_rig.tscn",
+          "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+        }
+      ]
+    }
+  ],
+  "fresh_successor_runner_guard_still_requires_review": true,
+  "fresh_headless_lease_still_required": true,
+  "execution_approved": false,
+  "native_and_normal_approved": false,
+  "future_native_reference_requirement": "Explicitly bind headless_02/trajectory as successful evidence; do not use original hardcoded headless_01/trajectory or write into preserved failed attempt."
+}

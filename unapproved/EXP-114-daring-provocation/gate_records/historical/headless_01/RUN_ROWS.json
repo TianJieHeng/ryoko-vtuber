@@ -1,0 +1,171 @@
+[
+  {
+    "name": "approved_backbone",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/approved",
+      "--script",
+      "res://test_expression_backbone.gd",
+      "--",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/approved_backbone.json"
+    ],
+    "started_utc": "2026-11-08T11:36:15.030265+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "returncode": 0,
+    "seconds": 6.261092662811279,
+    "log_sha256": "9225a7037d0d81b3ef80f014185ae398249848a7d2f8585e8a7bb6dd02f27928"
+  },
+  {
+    "name": "approved_approved_integration",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/approved",
+      "--script",
+      "res://tests/test_approved_integration.gd",
+      "--",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/approved_approved_integration.json"
+    ],
+    "started_utc": "2026-11-08T11:36:23.419024+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "returncode": 0,
+    "seconds": 84.11074757575989,
+    "log_sha256": "c3108d1117a56cb383f653c4341eaa0b52e0b2de4a577e7a5cf97d93872838a9"
+  },
+  {
+    "name": "candidate_backbone",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/candidate",
+      "--script",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_backbone_candidate19.gd",
+      "--",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/candidate_backbone.json"
+    ],
+    "started_utc": "2026-11-08T11:37:49.768187+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "returncode": 0,
+    "seconds": 5.758085012435913,
+    "log_sha256": "9225a7037d0d81b3ef80f014185ae398249848a7d2f8585e8a7bb6dd02f27928"
+  },
+  {
+    "name": "candidate_approved18",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/candidate",
+      "--script",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_approved18_in_candidate19.gd",
+      "--",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/candidate_approved18.json"
+    ],
+    "started_utc": "2026-11-08T11:37:56.980067+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "returncode": 0,
+    "seconds": 82.11533188819885,
+    "log_sha256": "f27e47533e3c005a1b0adef9e2eba83ab49c6785823fd4ab35f4a842dca24ada"
+  },
+  {
+    "name": "approved_test_independent_corner_contract",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/approved",
+      "--script",
+      "res://tests/test_independent_corner_contract.gd",
+      "--",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/approved_test_independent_corner_contract.json"
+    ],
+    "started_utc": "2026-11-08T11:39:20.575079+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "returncode": 0,
+    "seconds": 4.255314350128174,
+    "log_sha256": "7a677617d4d205bee7556084ec6be0c0d8a002a0a9cae0bd11d568dcef3bae46"
+  },
+  {
+    "name": "candidate_test_independent_corner_contract",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/candidate",
+      "--script",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_independent_corner_contract_candidate19.gd",
+      "--",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/candidate_test_independent_corner_contract.json"
+    ],
+    "started_utc": "2026-11-08T11:39:26.190391+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "returncode": 0,
+    "seconds": 4.755855560302734,
+    "log_sha256": "47630b182a973d78516cbe633115f678b86f86e788f11a8efd74c4cc8e99c138"
+  },
+  {
+    "name": "approved_test_sealed_width_contract",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/approved",
+      "--script",
+      "res://tests/test_sealed_width_contract.gd",
+      "--",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/approved_test_sealed_width_contract.json"
+    ],
+    "started_utc": "2026-11-08T11:39:32.371463+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "returncode": 0,
+    "seconds": 106.37428522109985,
+    "log_sha256": "b19c22711ddffe9cd4786e1d52a034766c812b040e74841a84c128b5ae8e321b"
+  },
+  {
+    "name": "candidate_test_sealed_width_contract",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/candidate",
+      "--script",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_sealed_width_contract_candidate19.gd",
+      "--",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_01/candidate_test_sealed_width_contract.json"
+    ],
+    "started_utc": "2026-11-08T11:41:20.270332+00:00",
+    "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "831f27a882a867cba3e041e0042f5ce59291ee17157fc05c4411fea0a46bd832",
+    "stopped_on_error_or_timeout": true,
+    "returncode": -15,
+    "seconds": 0.2546408176422119,
+    "log_sha256": "cca63f93c4cbc3a5ea0cdf9249db779ccdf13b0dfddddb9d78a34d37a7f6d03f"
+  }
+]

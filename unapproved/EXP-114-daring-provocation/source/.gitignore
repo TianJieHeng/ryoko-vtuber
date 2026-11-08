@@ -1,0 +1,26 @@
+.godot/
+*.import
+__pycache__/
+*.pyc
+*.avi
+*.mp4
+
+# Generated locally; not required for playback.
+/rig_assets/canonical_brows/
+/rig_assets/canonical_eyes/
+/rig_assets/canonical_hair/
+/rig_assets/object_face/features_hidden_reference.png
+/rig_assets/object_face/hair_hidden_reference.png
+/rig_assets/object_face/neutral_metrics.json
+/rig_assets/object_face/neutral_registration_reference.png
+/validation/reference_vs_candidate.png
+/review/
+/validation/history_v3/
+*.log
+*.mov
+*.webm
+*.mkv
+
+# Canonical unmatted RGB must not be rewritten by Godot alpha-edge import.
+!/rig_assets/gaze_eyes/iris_screen_left.png.import
+!/rig_assets/gaze_eyes/iris_screen_right.png.import

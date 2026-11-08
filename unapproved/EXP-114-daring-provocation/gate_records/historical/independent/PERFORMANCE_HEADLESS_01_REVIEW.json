@@ -1,0 +1,152 @@
+{
+  "status": "EXTERNAL_FIXTURE_PATH_DEFECT_CONFIRMED_NO_RUNTIME_DEFECT_SHOWN",
+  "failed_job_number": 8,
+  "failed_job": "candidate_test_sealed_width_contract",
+  "failed_job_status": "NOT_PASS",
+  "failed_process_returncode": -15,
+  "checks_completed_by_failed_job": 0,
+  "failure_log_sha256": "cca63f93c4cbc3a5ea0cdf9249db779ccdf13b0dfddddb9d78a34d37a7f6d03f",
+  "run_receipt_sha256": "a68faf661d0bc972c0d5944e7819c3d3d08d89648ec822450f2bee6da128348a",
+  "source_and_cache_exact": true,
+  "passed_jobs": [
+    {
+      "job_number": 1,
+      "name": "approved_backbone",
+      "status": "PASS",
+      "returncode": 0,
+      "checks": 262261,
+      "log_sha256": "9225a7037d0d81b3ef80f014185ae398249848a7d2f8585e8a7bb6dd02f27928",
+      "json_receipt_sha256": null,
+      "receipt_type": "Console result and process receipt; test does not write JSON"
+    },
+    {
+      "job_number": 2,
+      "name": "approved_approved_integration",
+      "status": "PASS",
+      "returncode": 0,
+      "checks": 594873,
+      "log_sha256": "c3108d1117a56cb383f653c4341eaa0b52e0b2de4a577e7a5cf97d93872838a9",
+      "json_receipt_sha256": "653a19e9d40614ef093b14c63cf772e2b0a2b204058f58adb68f6237ca85d30b",
+      "receipt_type": "JSON and console"
+    },
+    {
+      "job_number": 3,
+      "name": "candidate_backbone",
+      "status": "PASS",
+      "returncode": 0,
+      "checks": 262261,
+      "log_sha256": "9225a7037d0d81b3ef80f014185ae398249848a7d2f8585e8a7bb6dd02f27928",
+      "json_receipt_sha256": null,
+      "receipt_type": "Console result and process receipt; test does not write JSON"
+    },
+    {
+      "job_number": 4,
+      "name": "candidate_approved18",
+      "status": "PASS",
+      "returncode": 0,
+      "checks": 594875,
+      "log_sha256": "f27e47533e3c005a1b0adef9e2eba83ab49c6785823fd4ab35f4a842dca24ada",
+      "json_receipt_sha256": "9f9ba56028415a688429bc99e0ae7af3bba5504d7b1706d6e7ea8293a4ab823d",
+      "receipt_type": "JSON and console"
+    },
+    {
+      "job_number": 5,
+      "name": "approved_test_independent_corner_contract",
+      "status": "PASS",
+      "returncode": 0,
+      "checks": 69395,
+      "log_sha256": "7a677617d4d205bee7556084ec6be0c0d8a002a0a9cae0bd11d568dcef3bae46",
+      "json_receipt_sha256": null,
+      "receipt_type": "Console result and process receipt; test does not write JSON"
+    },
+    {
+      "job_number": 6,
+      "name": "candidate_test_independent_corner_contract",
+      "status": "PASS",
+      "returncode": 0,
+      "checks": 69575,
+      "log_sha256": "47630b182a973d78516cbe633115f678b86f86e788f11a8efd74c4cc8e99c138",
+      "json_receipt_sha256": null,
+      "receipt_type": "Console result and process receipt; test does not write JSON"
+    },
+    {
+      "job_number": 7,
+      "name": "approved_test_sealed_width_contract",
+      "status": "PASS",
+      "returncode": 0,
+      "checks": 231996,
+      "log_sha256": "b19c22711ddffe9cd4786e1d52a034766c812b040e74841a84c128b5ae8e321b",
+      "json_receipt_sha256": "fd3600d317479e27cd87cc5e331190535cf4e7093da6f94e4684337845a379a8",
+      "receipt_type": "JSON and console"
+    }
+  ],
+  "passed_check_total": 2085236,
+  "unstarted_jobs": [
+    "approved_test_brow_inner_lift_contract",
+    "candidate_test_brow_inner_lift_contract",
+    "approved_test_spread_runtime",
+    "candidate_test_spread_runtime",
+    "candidate_test_object_rig",
+    "candidate_test_teeth",
+    "candidate_test_yawn",
+    "candidate_test_auto_blink_lifecycle",
+    "candidate_test_smile_controls",
+    "daring_runtime",
+    "prior18_approved",
+    "prior18_candidate",
+    "trajectory"
+  ],
+  "helper_path": "res://tests/sealed_observed_rig.gd",
+  "helper_sha256": "d14a57f9259a6009339331a65ff3e730d6126d5b85aa1380e86d0268ee9e2df2",
+  "original_fixture_sha256": "663971ba1d548e579fae2a989190b5c2034e3a358883269bd971a841435fd501",
+  "narrow_successor_expected_sha256": "9a05e9a9f193a1bc5f1119f4b6c948f1b5da5c6c62a911b2bf6368a628272cea",
+  "only_proposed_code_change": {
+    "line": 213,
+    "old_expression": "get_script().resource_path.get_base_dir()+\"/sealed_observed_rig.gd\"",
+    "new_expression": "\"res://tests/sealed_observed_rig.gd\""
+  },
+  "continuation_original_job_numbers": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "continuation_requires_new_frozen_inputs_review_and_fresh_headless_lease": true,
+  "continuation_or_rerun_executed": false,
+  "relative_load_audit": [
+    {
+      "path": "harness/test_sealed_width_contract_candidate19.gd",
+      "line": 213,
+      "text": "    rig.set_script(load(get_script().resource_path.get_base_dir()+\"/sealed_observed_rig.gd\"))"
+    }
+  ],
+  "failed_attempt_files": {
+    "headless_01/CURRENT_STARTED.json": "4b08fa40afb747c40196a8db226820aeb5c0bd1c8cf63f37e77c83772d6ad81d",
+    "headless_01/FAILURE.json": "d88884801456866de7d96c979b2115ff96fe66c80866e8c4ca879e30f2ba243f",
+    "headless_01/PRE_RUN_IDENTITY.json": "eb2a3e15d2841d5cfec03a5998fd034988c9eee807611c3dc120cab3db0190f6",
+    "headless_01/RUN_RESULT.json": "a68faf661d0bc972c0d5944e7819c3d3d08d89648ec822450f2bee6da128348a",
+    "headless_01/RUN_ROWS.json": "e0a44b3b2701ea4a96777c4df1f53c11fbdcad813bbc4757c522d8ca815e0884",
+    "headless_01/approved_approved_integration.json": "653a19e9d40614ef093b14c63cf772e2b0a2b204058f58adb68f6237ca85d30b",
+    "headless_01/approved_approved_integration.log": "c3108d1117a56cb383f653c4341eaa0b52e0b2de4a577e7a5cf97d93872838a9",
+    "headless_01/approved_backbone.log": "9225a7037d0d81b3ef80f014185ae398249848a7d2f8585e8a7bb6dd02f27928",
+    "headless_01/approved_test_independent_corner_contract.log": "7a677617d4d205bee7556084ec6be0c0d8a002a0a9cae0bd11d568dcef3bae46",
+    "headless_01/approved_test_sealed_width_contract.json": "fd3600d317479e27cd87cc5e331190535cf4e7093da6f94e4684337845a379a8",
+    "headless_01/approved_test_sealed_width_contract.log": "b19c22711ddffe9cd4786e1d52a034766c812b040e74841a84c128b5ae8e321b",
+    "headless_01/candidate_approved18.json": "9f9ba56028415a688429bc99e0ae7af3bba5504d7b1706d6e7ea8293a4ab823d",
+    "headless_01/candidate_approved18.log": "f27e47533e3c005a1b0adef9e2eba83ab49c6785823fd4ab35f4a842dca24ada",
+    "headless_01/candidate_backbone.log": "9225a7037d0d81b3ef80f014185ae398249848a7d2f8585e8a7bb6dd02f27928",
+    "headless_01/candidate_test_independent_corner_contract.log": "47630b182a973d78516cbe633115f678b86f86e788f11a8efd74c4cc8e99c138",
+    "headless_01/candidate_test_sealed_width_contract.log": "cca63f93c4cbc3a5ea0cdf9249db779ccdf13b0dfddddb9d78a34d37a7f6d03f"
+  },
+  "review_correction": "Prepared review missed this location-dependent external fixture load. Future relocated fixture review must resolve every relative load against the actual script location and bind its target."
+}

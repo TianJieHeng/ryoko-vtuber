@@ -1,0 +1,21 @@
+# Approved Quiet sadness publication scope
+
+EXP-021 is a data-only successor to approved main 2d46f72704ddf2a329b44a87cd24c66d5fe92568. It is user-approved and published with the containing commit. The reviewed motion remains unchanged. The eleven prior profiles and all runtime, shaders, scenes, textures and artwork are unchanged. The original captured implementation changed only registry and README against the baseline and added the profile, source evidence, focused test and capture harness. Later delivery and current publication metadata overlays are separately documented below.
+
+The exact original v001 sheet SHA-256 is 7be2c4ce51db48783193dc93e053cc8ce9bb7a2086ea4ac4580f5ec83a362ebb at original commit 7693d1b8718c3bb1c717bd586fb472a7efc42403. Original metadata and the static acceptance receipt are under source_references/. Static source fit accepted the existing-control heavier peak. The static acceptance receipt records technical review; the user subsequently approved the delivered complete performance.
+
+Newly authored timing has five keys: neutral at 0, peak at 1.40, same peak at 2.05, neutral at 3.50 and finish at 3.65 seconds. There is one continuous sink, a .65-second sad hold, and one continuous 1.45-second recovery. The nine source panels have sampled comparison times, not nine separate stop keys or recovered timing. The source map discloses every coordinate and weight. The unchanged shared player adds its established .30-second displayed-pose restart and .45-second release semantics.
+
+The selected peak uses blink .40/.40; brow heights -.20/-.20; inner lifts .82/.65; gaze_y1 and down_extra .30. Every mouth channel, smile-eye channel, legacy brow tilt, blush, hair and horizontal gaze is zero. The mouth remains its existing small sealed contour. The source has different eyebrow curvature and somewhat stronger lip downturn; recognizable source acting is preserved without replacing the canonical face/head/neck. No head warp, flat face crop, anatomy generation or opacity crossfade is introduced.
+
+Run the focused test with Godot 4.6.3: --headless --path . --script res://tests/test_quiet_sadness_runtime.gd -- --output=/absolute/results.json. Final source/capture identity and external review evidence are supplied alongside this clean source. Old exact-scope publication guards are inherited historical receipts and must not be rewritten to claim this successor is that older package. No socket, AI/TTS, normal-speed playback observation or CI is claimed. The containing commit and external main readback establish publication.
+
+## Historical delivery metadata overlay
+
+The baseline-change statements above describe the captured implementation. This delivery copy updates README, API status, RELEASE, the current candidate status, this scope note and checksums only. Original captured metadata is retained under historical_capture_metadata/. All profile, registry, runtime, art, scene, shader, focused test and capture-harness bytes remain identical to the captured freeze. Run the successor-specific package verifier instead of expanding any historical exact-scope guard.
+
+## Current publication overlay
+
+Current publication checks: python tools/verify_quiet_sadness_publication.py and sha256sum -c SOURCE_FILES.sha256. PUBLICATION_SOURCE_MANIFEST.json is the current manifest. CURRENT_SOURCE_MANIFEST.json, tools/verify_quiet_sadness_package.py, QUIET_SADNESS_CAPTURE_FREEZE.json, historical_capture_metadata/ and inherited exact-scope receipts remain byte-exact historical contracts for their original source trees; do not run them as current publication guards. The historical backbone fixture also remains unchanged and is not a twelve-profile smoke test. Use tests/test_quiet_sadness_runtime.gd for the actual twelve-profile registry. See QUIET_SADNESS_PUBLICATION_VALIDATION.md for scope, evidence and limits.
+
+Approval changes only profile status, current documentation/status and checksums. All non-status profile fields, registry, runtime, art, tests and capture inputs remain exact to the approved 581-file source. This Git publication performs no Library writes. Original review artifacts and the primary cumulative archive are outside its mutation scope.

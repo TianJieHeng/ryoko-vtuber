@@ -1,0 +1,45 @@
+{
+  "status": "PASS_RUNTIME_AND_ACTUAL_CAPTURE_WITH_DISCLOSED_AMBER",
+  "stage": "combined_native_trajectory_and_pixel_gate",
+  "records_review_sha256": "4beefbf4c41622f00c192252d3202f00d3bea69044d34b64b68a953b2b02b9f1",
+  "native_run_sha256": "127dda938bdb75270aa3969b24aa2ee8c6fb23d16b4f7aed33bb71ba8f43558a",
+  "completion_manifest_sha256": "06f450210e70e45ad6d1be7c66f5bef6df00b506990066b2f18ef04be7ec9bbc",
+  "native_binding_sha256": "dc4799849a4ca753204dd9f838418e28b810990b6828826a8308ad0e4567e05e",
+  "actual_engine_checks": 687526,
+  "checkpoints": 701,
+  "actual_camera_images": 1402,
+  "chapters": 26,
+  "all_static_anchors_exact": 14,
+  "all_loaded_buffers_exact": 71,
+  "accepted_separate_runtime_checks": 5380806,
+  "prior18_paired_exact_samples_each": 3230,
+  "visually_inspected_actual_scale_face_pairs": 701,
+  "visual_board_count": 45,
+  "visual_board_index_sha256": "d5683328d465ae3aeb22bac744369ea22071961d5eff7e6b19056dcb772a9885",
+  "visual_method": "Every recorded checkpoint reviewed in labelled, unscaled native face and actual .49 bust face crops. These are offline diagnostic crops of actual PNGs, not new renders. Full actual shallow-opening and frontal-grin captures were also viewed in both presentations.",
+  "full_actual_images_viewed": [
+    "native/natural_cycle_1_055.png",
+    "bust/natural_cycle_1_055.png",
+    "native/natural_cycle_1_102.png",
+    "bust/natural_cycle_1_102.png"
+  ],
+  "visual_findings": [
+    "Both natural cycles preserve the biased sealed smile, shallow tooth reveal, crooked facial peak, sustained frontal challenge, gradual reseal and canonical neutral return.",
+    "No new tooth-band disconnection, lip material inversion, corner wedge, open/width overlap, anatomy fade or root/head/body jump observed across the sampled performance and handovers.",
+    "Release, repeat release, retrigger, interrupted release, incoming/outgoing and 75ms/225ms reversals with laughter, sealed-width denial, frustrated pout and smug-cat width stay coherent in both actual presentations.",
+    "Manual takeover holds its requested pose. Reset restores neutral. Existing autoblink suspends/restores in its separate lifecycle chapter and is not inserted into the natural114 profile.",
+    "The frontal grin remains a restrained cocky forward challenge at actual bust scale, distinct from the approved sealed knowing smirk, wink and smug-cat smile."
+  ],
+  "residual_amber": [
+    "Source central-brow opposition and peak intensity are softened. Source KP5 head cant is intentionally omitted; this is the accepted fixed-head facial interpretation.",
+    "Inherited outer lash/hair crossings and ordinary eyelid closure artwork transitions remain visible, including canonical neutral; no retouch or hidden anatomy was introduced.",
+    "The unrelated maximum-open/spread/corner stress wedge remains unfixed and outside this bounded performance."
+  ],
+  "old_failed_trajectory_status": "NOT_PASS",
+  "headless_native_cross_run_parity_claimed": false,
+  "new_native_trajectory_completed_independently": true,
+  "normal_speed_playback_executed": false,
+  "continuous_normal_speed_visual_observation_established": false,
+  "full_performance_complete": false,
+  "next_gate": "One separately approved and leased normal-stage real-time run, with timing/frame-pacing and actual supported CUA observations reviewed honestly. No refit or capture retry is requested."
+}

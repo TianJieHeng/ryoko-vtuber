@@ -1,0 +1,271 @@
+{
+  "status": "STOPPED_SIGNAL9_DURING_FINAL_EVIDENCE_SERIALIZATION",
+  "time_utc": "2026-11-08T11:59:51.478082+00:00",
+  "binding_sha256": "196cb7754de01e15045f428732853bb25c131a64b90fe5e2938a410f5af9394b",
+  "run_receipt_sha256": "8c9c6884addc9c752e5fe562ccf2b735b2b5fb1e69b74f16aeecd4eaf4e725b6",
+  "failed_job": {
+    "original_job_number": 21,
+    "name": "trajectory",
+    "argv": [
+      "/usr/local/bin/godot",
+      "--headless",
+      "--audio-driver",
+      "Dummy",
+      "--path",
+      "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/runtime/candidate",
+      "--script",
+      "res://tools/review_daring_provocation_trajectory.gd",
+      "--",
+      "--validate-only",
+      "--coordinator-godot-slot-granted",
+      "--plan=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/capture_plan.json",
+      "--output=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/headless_02/trajectory"
+    ],
+    "started_utc": "2026-11-08T11:57:01.658081+00:00",
+    "binding_sha256": "196cb7754de01e15045f428732853bb25c131a64b90fe5e2938a410f5af9394b",
+    "original_package_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "guard_sha256": "015a77674135b48f0403882e114851f7b5c5cf5a246326cf1f2dde5938e806f2",
+    "returncode": -9,
+    "seconds": 118.491544008255,
+    "log_sha256": "8e9772cdf51bf954e5d34ffa89b124b545af92c0b2bc27a53a115ba5cc7a1754"
+  },
+  "passed_jobs": [
+    {
+      "name": "candidate_test_sealed_width_contract",
+      "original_job_number": 8,
+      "result_lines": [
+        "SEALED_CONTRACT checks=233876 failures=0 samples=5886 pairs=2738"
+      ],
+      "log_sha256": "47245cf777b257aaa05fe370a7cc1b63f7fa53eb1c19b0b20e4bca4c92995f9b"
+    },
+    {
+      "name": "approved_test_brow_inner_lift_contract",
+      "original_job_number": 9,
+      "result_lines": [
+        "BROW_INNER_LIFT_CONTRACT checks=95250 poses=6459 failures=0"
+      ],
+      "log_sha256": "bb3c73868f2c9eea3dcf4d8fb52355ba73c6c96535a79fd942feb144f6254f8c"
+    },
+    {
+      "name": "candidate_test_brow_inner_lift_contract",
+      "original_job_number": 10,
+      "result_lines": [
+        "BROW_INNER_LIFT_CONTRACT checks=96504 poses=6459 failures=0"
+      ],
+      "log_sha256": "023fa338424e8a884d8295fe3ce51ec5f0baa982c37bd0ac2493e462537a1728"
+    },
+    {
+      "name": "approved_test_spread_runtime",
+      "original_job_number": 11,
+      "result_lines": [
+        "SPREAD_RUNTIME checks=528382 failures=0"
+      ],
+      "log_sha256": "f1acf050d5a375e7104369ce2a84e1dc2adc22c2ec7bac60ed88b25ff4c179ca"
+    },
+    {
+      "name": "candidate_test_spread_runtime",
+      "original_job_number": 12,
+      "result_lines": [
+        "SPREAD_RUNTIME checks=528382 failures=0"
+      ],
+      "log_sha256": "f1acf050d5a375e7104369ce2a84e1dc2adc22c2ec7bac60ed88b25ff4c179ca"
+    },
+    {
+      "name": "candidate_test_object_rig",
+      "original_job_number": 13,
+      "result_lines": [
+        "OBJECT_BASE_CHECKS_PASS checks=53704 failures=0"
+      ],
+      "log_sha256": "aafb57658bfbfb2d3de7a9784d365046381d84ae10398a64e4e9118c74903dae"
+    },
+    {
+      "name": "candidate_test_teeth",
+      "original_job_number": 14,
+      "result_lines": [
+        "TEETH_CHECKS_PASS checks=17017 failures=0"
+      ],
+      "log_sha256": "cd66ed67f99466dc22544cd06f52850ba7b51cc61564b9c2360adbcdd7caec56"
+    },
+    {
+      "name": "candidate_test_yawn",
+      "original_job_number": 15,
+      "result_lines": [
+        "YAWN_CHECKS_PASS checks=370567 failures=0"
+      ],
+      "log_sha256": "acc040fbb0b1c71967f0bd0a42cb2defd5ad67d4398eccb3525f49b99fdfc184"
+    },
+    {
+      "name": "candidate_test_auto_blink_lifecycle",
+      "original_job_number": 16,
+      "result_lines": [
+        "AUTO_BLINK_LIFECYCLE_PASS checks=57716 failures=0"
+      ],
+      "log_sha256": "b58a5002b6475421b610b738342a700bc923fbeebf46750c7a7e75fc09705d3f"
+    },
+    {
+      "name": "candidate_test_smile_controls",
+      "original_job_number": 17,
+      "result_lines": [
+        "SMILE_CONTROLS checks=237 failures=0"
+      ],
+      "log_sha256": "6c9387eb625fbe4e46421f72dc335cdb7349c1bdb2e553ee7f7efa52eb106b18"
+    },
+    {
+      "name": "daring_runtime",
+      "original_job_number": 18,
+      "result_lines": [
+        "DARING_PROVOCATION_RUNTIME checks=1313935 failures=0"
+      ],
+      "log_sha256": "dd5b3385b93e74f670255c90bdf4c6f170966125df7022112fcb61721a0c9b3b"
+    },
+    {
+      "name": "prior18_approved",
+      "original_job_number": 19,
+      "result_lines": [
+        "INDEPENDENT_PARITY_PROBE samples=3230 failures=0"
+      ],
+      "log_sha256": "c4b61f88af092cee87303317ed31df7918a7c1c5d6ecc9f825a7ab9959492867"
+    },
+    {
+      "name": "prior18_candidate",
+      "original_job_number": 20,
+      "result_lines": [
+        "INDEPENDENT_PARITY_PROBE samples=3230 failures=0"
+      ],
+      "log_sha256": "c4b61f88af092cee87303317ed31df7918a7c1c5d6ecc9f825a7ab9959492867"
+    }
+  ],
+  "old18_offline_parity": {
+    "status": "PASS",
+    "samples": 3230,
+    "approved_record_sha256": "a4abc6496e5cafa5207156ab396342243ff9f5fabaa7a8b855098fb363e91ff9",
+    "candidate_record_sha256": "a4abc6496e5cafa5207156ab396342243ff9f5fabaa7a8b855098fb363e91ff9"
+  },
+  "trajectory_logged_checkpoints": 701,
+  "trajectory_log_assertion_errors": [],
+  "evidence_json_bytes": 0,
+  "trajectory_status": "NOT_PASS; no final serialized records or check count available",
+  "termination_classification": "Signal9 confirmed. Resource exhaustion is a hypothesis pending independent review; memory counters are current cumulative system evidence, not yet attribution proof. No timeout or runner error termination flag.",
+  "current_memory_evidence": {
+    "/sys/fs/cgroup/memory.events": {
+      "read_error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    "/sys/fs/cgroup/memory.max": {
+      "read_error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    "/sys/fs/cgroup/memory.current": {
+      "read_error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    "/sys/fs/cgroup/memory.peak": {
+      "read_error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    "/proc/pressure/memory": {
+      "read_error": "FileNotFoundError(2, 'No such file or directory')"
+    }
+  },
+  "prior_static_record_json_sizes": {
+    "actual_owners": 544373,
+    "direct_owners": 608651,
+    "face_state": 39362
+  },
+  "no_retry_or_correction_made": true,
+  "source_cache_post_identity": "PASS",
+  "lease_released": true,
+  "attempt_files": {
+    "headless_02/CURRENT_STARTED.json": "5e9acecc27016563a4afab14ea1b9dc054cb36c32d697ede769c1cd83f3ea799",
+    "headless_02/FAILURE.json": "d38764b796ef1ec0e6669c3c2e3e6a6e147ca55ee1b6dc7f1719c73ab9e6b1a6",
+    "headless_02/PRE_RUN_IDENTITY.json": "a5c79a66019b287c8d9dcaf06bc4696d4f67fde712d06468622520725f21cfcd",
+    "headless_02/RUN_RESULT.json": "8c9c6884addc9c752e5fe562ccf2b735b2b5fb1e69b74f16aeecd4eaf4e725b6",
+    "headless_02/RUN_ROWS.json": "0745fbc02dd90daae974ed6bb5c8166bd30d89dbfef2a3d63ce7f3a070bfff68",
+    "headless_02/approved_test_brow_inner_lift_contract.log": "bb3c73868f2c9eea3dcf4d8fb52355ba73c6c96535a79fd942feb144f6254f8c",
+    "headless_02/approved_test_spread_runtime.log": "f1acf050d5a375e7104369ce2a84e1dc2adc22c2ec7bac60ed88b25ff4c179ca",
+    "headless_02/candidate_test_auto_blink_lifecycle.log": "b58a5002b6475421b610b738342a700bc923fbeebf46750c7a7e75fc09705d3f",
+    "headless_02/candidate_test_brow_inner_lift_contract.log": "023fa338424e8a884d8295fe3ce51ec5f0baa982c37bd0ac2493e462537a1728",
+    "headless_02/candidate_test_object_rig.log": "aafb57658bfbfb2d3de7a9784d365046381d84ae10398a64e4e9118c74903dae",
+    "headless_02/candidate_test_sealed_width_contract.json": "f9b9ba9d53b4ed11ff5f9b8aadd202b68be2e7f41c6fce04a3a0673c9d4abe45",
+    "headless_02/candidate_test_sealed_width_contract.log": "47245cf777b257aaa05fe370a7cc1b63f7fa53eb1c19b0b20e4bca4c92995f9b",
+    "headless_02/candidate_test_smile_controls.log": "6c9387eb625fbe4e46421f72dc335cdb7349c1bdb2e553ee7f7efa52eb106b18",
+    "headless_02/candidate_test_spread_runtime.log": "f1acf050d5a375e7104369ce2a84e1dc2adc22c2ec7bac60ed88b25ff4c179ca",
+    "headless_02/candidate_test_teeth.log": "cd66ed67f99466dc22544cd06f52850ba7b51cc61564b9c2360adbcdd7caec56",
+    "headless_02/candidate_test_yawn.log": "acc040fbb0b1c71967f0bd0a42cb2defd5ad67d4398eccb3525f49b99fdfc184",
+    "headless_02/daring_runtime.json": "4d07acc8a910aca48291cc81e4092d1de1ef11b8b88dec1a7ebff6e7708178bc",
+    "headless_02/daring_runtime.log": "dd5b3385b93e74f670255c90bdf4c6f170966125df7022112fcb61721a0c9b3b",
+    "headless_02/prior18_approved.json": "a4abc6496e5cafa5207156ab396342243ff9f5fabaa7a8b855098fb363e91ff9",
+    "headless_02/prior18_approved.log": "c4b61f88af092cee87303317ed31df7918a7c1c5d6ecc9f825a7ab9959492867",
+    "headless_02/prior18_candidate.json": "a4abc6496e5cafa5207156ab396342243ff9f5fabaa7a8b855098fb363e91ff9",
+    "headless_02/prior18_candidate.log": "c4b61f88af092cee87303317ed31df7918a7c1c5d6ecc9f825a7ab9959492867",
+    "headless_02/trajectory/evidence.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "headless_02/trajectory/imported_data/rig_assets__blush_support__blush_screen_left.png.loaded.rgba": "3bd926ba1a9b67b6860b80464aabdb3c7eb61172ac878a0e133190232d18c169",
+    "headless_02/trajectory/imported_data/rig_assets__blush_support__blush_screen_right.png.loaded.rgba": "ffc08681dea771fb4e1c565eefb5bd7da71ffb556236ea38d0effdc9edbbd7d8",
+    "headless_02/trajectory/imported_data/rig_assets__gaze_eyes__aperture_screen_left.png.loaded.rgba": "7b7e5c8845bbf7472cff32d7f2e45f87bdf3160529852f7ac62df82929642728",
+    "headless_02/trajectory/imported_data/rig_assets__gaze_eyes__aperture_screen_right.png.loaded.rgba": "1b6142b7c7e47b4bbb48e1fa62230f07303369969614e2129c0c86bd13f3b73f",
+    "headless_02/trajectory/imported_data/rig_assets__gaze_eyes__hair_iris_crossing_screen_left.png.loaded.rgba": "35f38270fdedc0623497d57884c9cf718c5e1a4b046afe9fa5c1de764539ea80",
+    "headless_02/trajectory/imported_data/rig_assets__gaze_eyes__iris_screen_left.png.loaded.rgba": "1876bde6f2514d7863255adab2711eb3e8b3189b45adf579ab7f968d527146b8",
+    "headless_02/trajectory/imported_data/rig_assets__gaze_eyes__iris_screen_right.png.loaded.rgba": "f32d480ef4fe4de89fe6470006b5032ca5c3dbfdbea8991d1447d70ee4a2646f",
+    "headless_02/trajectory/imported_data/rig_assets__gaze_eyes__sclera_screen_left.png.loaded.rgba": "0b481fed612f3ae2a5c47a4d5d38459c860c7351c44973f25ab93f34ea8f8d9d",
+    "headless_02/trajectory/imported_data/rig_assets__gaze_eyes__sclera_screen_right.png.loaded.rgba": "e21a2c40c9c0ef8a4231685c60ac472627c114f685af4e2933d218e9616297db",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__brow_screen_left.png.loaded.rgba": "19a290529ff6acd20b23ec05860f1b3195aadbeb9eba34845425b279b2f0b5bc",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__brow_screen_right.png.loaded.rgba": "526c3e6e53ccf15fa5e4462d71986c2d0cf9e92b5883fd68de6b2b9ce6eeadf5",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__closed_lash_screen_left.png.loaded.rgba": "e7dac9598709db49d1aa864008898ee3aaeca9ef0c0022cf663574717eb12ec3",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__closed_lash_screen_right.png.loaded.rgba": "46c5d77132d624c47f8ec4f1ee62c6412a804e580917e428b7b6e1ab48a1ed17",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__fixed_neck_torso.png.loaded.rgba": "2c83b1dbc401c0d3791bb861f5baf5a9a42de997482180ab0505c9b12f5dc9db",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__gold_hairsticks.png.loaded.rgba": "7b5b5991c17a01d593fe6715fcb88886c0396ff02d6e23e19912cdac6963d56d",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__gold_hanging_ornament.png.loaded.rgba": "6c0ebfcd24a6ac057c62f7cdb1048eb0decbf3a416f6f8bf9a30c1d6268567ed",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_crown_bun_rear.png.loaded.rgba": "92e2e8252384c378f318ce82d704fa66235f8683e1749be318bf8628cd5d0863",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_crown_bun_rear_underlap.png.loaded.rgba": "a1460691b3948699ff337abb3126bf843b9bb2429b13a402c3dc198b7c52517a",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_front_fringe_underlap.png.loaded.rgba": "f3435ecfe50d896f608f17cfa4eda50c5900eea001f6ff9008758057ab531560",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_hidden_hair_underlay_screen_left.png.loaded.rgba": "e8975db9d75a843925f44fbf0272d4e6adae1609ac0240ec170ddf489806b235",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_hidden_hair_underlay_screen_right.png.loaded.rgba": "15bc7e24ce8f65691b3511202b0e30291d598909d74abe89863c90e39d333778",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_temple_left.png.loaded.rgba": "be34999084795ddf1b5e661d6c3ac4988fd64a55439863e7c395150ef5fe8751",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_temple_left_underlap.png.loaded.rgba": "41efe68f3a50c31e0c963273c5444ed3e35402b29614910a38c30e84334d3778",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_temple_right.png.loaded.rgba": "85474d8b3d10f5b3d819b27666d1eacfc7790ce8ded26574493bb6cb5c1d4288",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__hair_temple_right_underlap.png.loaded.rgba": "9a4126b38c65ed308fcdffc53241a409ecd98767ec428b671cd32c117bb7c3aa",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__lower_contour_screen_left.png.loaded.rgba": "d861975fdab137a50012465b4254dd3e7451acb8f6efdd28f3c590223b14f0d6",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__lower_contour_screen_right.png.loaded.rgba": "2d1236081b11989788ffc3d72ea03f3cc11dfb656780e5f3fca03000b3c7de99",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__lower_profile_screen_left.png.loaded.rgba": "2f2573ca156ae28332722e1c43b743ff0544c1834441698242884f0977420279",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__lower_profile_screen_right.png.loaded.rgba": "15c08dd0cdcf943567ec1f1cab77bc022d4d03e5bb7448d5d91c0f83cfd65148",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__neutral_lips.png.loaded.rgba": "688c28b4624698c30884cbf4341a62e544d49996963e3c6724a72506aa5152e3",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__profile_screen_left.png.loaded.rgba": "8689c8dfcafb26d2bff6083a18b4fb4dffffe85bf541caf331522ca62f43c08b",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__profile_screen_right.png.loaded.rgba": "cabb7633f826436ba44109dc2b9b9553465f8706ea1bd7f1db1f365bdc9cacf9",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__upper_lash_screen_left.png.loaded.rgba": "26b9cef07ca7749aadc8b1a35e104c8934fb98052439916eddbc877f5de14914",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__upper_lash_screen_right.png.loaded.rgba": "41b224b89b8406c49758330b4782ea46a3fc409507f697c9e91860be3973be49",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__upper_surround_screen_left.png.loaded.rgba": "74f56dad01a90000fa7134811020150b3ab30a6378ca6ab05e2238bcf62a7e77",
+    "headless_02/trajectory/imported_data/rig_assets__object_face__upper_surround_screen_right.png.loaded.rgba": "5fa7db3f15c822f3d3166605e96bd6045a47d13442a6c5e79eea3a242a69bedf",
+    "headless_02/trajectory/imported_data/rig_assets__pressed_lip_support__inner_upper_lip.png.loaded.rgba": "884616df9aa9e383306a7c880868465decf4c5a21900c770cefa535fbb035319",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__backing_detached_upper_lash_tip_original.png.loaded.rgba": "941a7b580b814029cb407d7d630efc2702e4a6c1bb7be53868093f96c2a932a9",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__backing_detached_upper_lash_tip_ownership.png.loaded.rgba": "9cb666f2ff36a6c5e807e92f7084cbb68a81e66a783c939b981cc3ff0c81edee",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__backing_detached_upper_lash_tip_skin.png.loaded.rgba": "29f09a0969c132457d7a8f40db82ee6243d0d453a4ee71d266f930edaff7f3ee",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__backing_orphan_crease_flecks_original.png.loaded.rgba": "2d04e7dac1bc0b2b7cf801fd2153ac28c0de6e08096e11b4e10cab3d1037f89a",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__backing_orphan_crease_flecks_ownership.png.loaded.rgba": "b541eee60e40c9449c94fd1147007a362f90b629668cd731eeff0d2911b9ff83",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__backing_orphan_crease_flecks_skin.png.loaded.rgba": "3693f4ea6bbaaaf5e2a018bea5317229fa60d4e86f32795a6fdc66ffaf5db336",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__fringe_reassigned_alpha.png.loaded.rgba": "e891d7f10d04e28e1b3a243709ff35492d13b49aafc52d327beb3cf0f1e66680",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__hair_front_fringe_eye_reassigned.png.loaded.rgba": "84a708f0b6dfa408d4ee370bddabf5495468b55e27f9245b1e42c3213ab340c2",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__hidden_fringe_continuation.png.loaded.rgba": "b49ce324bbb16dafc8c8e9651b3e003004875556c0a3ce9e2862a8c2ebca30cd",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__laugh_hidden_continuation_screen_left.png.loaded.rgba": "d45a33d6c503b11bd75d032dc1787625e64db378522fa549bb5b9f1004244871",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__laugh_hidden_continuation_screen_right.png.loaded.rgba": "783bd4fd270cf8586d1524bf6152718de704e4df664105fce347bd478cfe03f7",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__laugh_lash_screen_left.png.loaded.rgba": "98acec4dfbdcbe94efe4eee3715112d45cf4ea2ec7333ae465c06f6f0b08d153",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__laugh_lash_screen_right.png.loaded.rgba": "cf70986c93f04e6918765689cc9fc31b718267f2d86dc60f67b853180d294a6b",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__laugh_lower_contour_screen_left.png.loaded.rgba": "9125795c96b3be163d2f69e9948bdcb23f4a8af6dadfeb4b7852ec76b3427daf",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__laugh_lower_contour_screen_right.png.loaded.rgba": "c5298954dbf85d9c31a998125b7dd844d3bc01b5228b51eaba633ea403d87ddd",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__lip_continuations_atlas.png.loaded.rgba": "b14b9c3f1a72d128043abf8b5ae4555215aec43162f9aacdd3195f17db2300ae",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__neutral_fringe_eye_pigment.png.loaded.rgba": "9fa30af1a6b950cc03a42b0b0cb79a55058d5584ea4eabf6db735d5718636157",
+    "headless_02/trajectory/imported_data/rig_assets__smile_support__stationary_backing_eye_reassigned.png.loaded.rgba": "e2992cd1d6764af399a0ea9911c8ba35fa8482a09aad4cf553584e9f8f9f673d",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__cavity_left.png.loaded.rgba": "4bcbec1f158b10f2dfd838b802e5c3c89db4421f359fb71d94102bb954ef89a6",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__cavity_right.png.loaded.rgba": "a865faa4b1a05c016dbcc49cc10b707b218aeecddc3e96fa47ab9ad947e2489c",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__cavity_top.png.loaded.rgba": "a739e4d143747c1c53a889c35e065085259234765b1d25787ac09bfcdb753861",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__joint_edge_underlaps_atlas.png.loaded.rgba": "94454013e366dffbcc8ea8fce921306b67aa3ebc56bf8323fa79cbfff06cfbf6",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__teeth_left.png.loaded.rgba": "df8a92200fc3b60bc1e0ed01f884611d07e3376972ba6e672639bf129aac5254",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__teeth_right.png.loaded.rgba": "218832e2cb573de3330aabccab8315b85bf966f62c07c74067ee7409e717b915",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__tongue_surface.png.loaded.rgba": "730bf506da1ebd2bee275076dc7aeccd2c91b416828566d049dc35a9564cb12b",
+    "headless_02/trajectory/imported_data/rig_assets__spread_support__upper_enamel_roots.png.loaded.rgba": "03e2953a10aecd0d0fc6003be799de24e7b553f0d6997acb934829f1e9f29c4a",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__cavity.png.loaded.rgba": "a9c0a7956f81b110fba51d0a1b3c1413e1f669cf7c90237d7fa967ac94913ac5",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__lower_lip.png.loaded.rgba": "3a99cd564ef65a43ba42c57ad213fdd16f2618cb2e36aa6899f3f41575f4e1bb",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__lower_teeth.png.loaded.rgba": "0660f8cfd0be9c7380fdec328bfe92dbd30e0eeb9098b64877b76a46058932fc",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__neutral_seam.png.loaded.rgba": "94855fbac5bf4c4a8bf4e088b037ea9484292c297bc28b21d9da7152e4fd6daa",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__tongue.png.loaded.rgba": "651b3b41cc61e698d9ea6e82485d09f1eb37a371aca0c971f2b46d318621b1c3",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__underlip_shadow.png.loaded.rgba": "10661ce291d879b494a5620653402816ef0f8c508bd7e1fb608b45837de0468f",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__upper_lip.png.loaded.rgba": "3a99cd564ef65a43ba42c57ad213fdd16f2618cb2e36aa6899f3f41575f4e1bb",
+    "headless_02/trajectory/imported_data/rig_assets__yawn_mouth__upper_teeth.png.loaded.rgba": "387ca67b99924a5aab59477ee5a7c0b80d0287cef588df7b728a3261b3c504df",
+    "headless_02/trajectory.log": "8e9772cdf51bf954e5d34ffa89b124b545af92c0b2bc27a53a115ba5cc7a1754"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "status": "Prepared offline only; no execution authorized by this plan",
+  "jobs": [
+    {
+      "name": "approved_backbone",
+      "tree": "approved",
+      "script": "res://test_expression_backbone.gd",
+      "args": [
+        "--output={output}/approved_backbone.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "approved_approved_integration",
+      "tree": "approved",
+      "script": "res://tests/test_approved_integration.gd",
+      "args": [
+        "--output={output}/approved_approved_integration.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_backbone",
+      "tree": "candidate",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_backbone_candidate19.gd",
+      "args": [
+        "--output={output}/candidate_backbone.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_approved18",
+      "tree": "candidate",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_approved18_in_candidate19.gd",
+      "args": [
+        "--output={output}/candidate_approved18.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "approved_test_independent_corner_contract",
+      "tree": "approved",
+      "script": "res://tests/test_independent_corner_contract.gd",
+      "args": [
+        "--output={output}/approved_test_independent_corner_contract.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_independent_corner_contract",
+      "tree": "candidate",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_independent_corner_contract_candidate19.gd",
+      "args": [
+        "--output={output}/candidate_test_independent_corner_contract.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "approved_test_sealed_width_contract",
+      "tree": "approved",
+      "script": "res://tests/test_sealed_width_contract.gd",
+      "args": [
+        "{output}/approved_test_sealed_width_contract.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_sealed_width_contract",
+      "tree": "candidate",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_sealed_width_contract_candidate19.gd",
+      "args": [
+        "{output}/candidate_test_sealed_width_contract.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "approved_test_brow_inner_lift_contract",
+      "tree": "approved",
+      "script": "res://tests/test_brow_inner_lift_contract.gd",
+      "args": [
+        "--output={output}/approved_test_brow_inner_lift_contract.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_brow_inner_lift_contract",
+      "tree": "candidate",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_brow_inner_lift_contract_candidate19.gd",
+      "args": [
+        "--output={output}/candidate_test_brow_inner_lift_contract.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "approved_test_spread_runtime",
+      "tree": "approved",
+      "script": "res://tests/test_spread_runtime.gd",
+      "args": [
+        "--output={output}/approved_test_spread_runtime.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_spread_runtime",
+      "tree": "candidate",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/test_spread_runtime_candidate19.gd",
+      "args": [
+        "--output={output}/candidate_test_spread_runtime.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_object_rig",
+      "tree": "candidate",
+      "script": "res://test_object_rig.gd",
+      "args": [
+        "--output={output}/candidate_test_object_rig.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_teeth",
+      "tree": "candidate",
+      "script": "res://test_teeth.gd",
+      "args": [
+        "--output={output}/candidate_test_teeth.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_yawn",
+      "tree": "candidate",
+      "script": "res://test_yawn.gd",
+      "args": [
+        "--output={output}/candidate_test_yawn.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_auto_blink_lifecycle",
+      "tree": "candidate",
+      "script": "res://tests/test_auto_blink_lifecycle.gd",
+      "args": [
+        "--output={output}/candidate_test_auto_blink_lifecycle.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "candidate_test_smile_controls",
+      "tree": "candidate",
+      "script": "res://tests/test_smile_controls.gd",
+      "args": [
+        "--output={output}/candidate_test_smile_controls.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "daring_runtime",
+      "tree": "candidate",
+      "script": "res://tests/test_daring_provocation_runtime.gd",
+      "args": [
+        "--output={output}/daring_runtime.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "prior18_approved",
+      "tree": "approved",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/prior18_parity.gd",
+      "args": [
+        "{output}/prior18_approved.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "prior18_candidate",
+      "tree": "candidate",
+      "script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/harness/prior18_parity.gd",
+      "args": [
+        "{output}/prior18_candidate.json"
+      ],
+      "timeout_seconds": 900
+    },
+    {
+      "name": "trajectory",
+      "tree": "candidate",
+      "script": "res://tools/review_daring_provocation_trajectory.gd",
+      "args": [
+        "--validate-only",
+        "--coordinator-godot-slot-granted",
+        "--plan=/workspace/scratch/42f2baf55663/daring_provocation_performance_work/capture_plan.json",
+        "--output={output}/trajectory"
+      ],
+      "timeout_seconds": 900
+    }
+  ],
+  "stop_on_first_unexpected_failure": true,
+  "no_import": true,
+  "no_display": true,
+  "one_exclusive_coordinator_lease_required": true,
+  "independent_prepared_review_required": true,
+  "separately_successful_guard_required": true,
+  "postchecks": [
+    "Exact prior18 baseline/candidate complete record equality",
+    "Exact source/cache identity after each process",
+    "701 checkpoint trajectory, 14 exact manual-static anchors with six ownership strings explicitly validated and partitioned",
+    "Loaded71 texture buffers exact against previous actual static capture"
+  ]
+}

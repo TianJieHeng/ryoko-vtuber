@@ -1,0 +1,1429 @@
+{
+  "purpose": "Unapproved EXP114 full performance on exact approved18 baseline. Two natural30fps cycles with exact keys/hold interiors, dense activation and recovery, release/retrigger/reset/manual/auto-blink restoration, and explicit open/width/purse handover/reversals. Stepped actual renderer captures are not normal-speed observation.",
+  "fps": 30,
+  "duration": 3.8,
+  "source_anchor_times": [
+    0,
+    0.12,
+    0.48,
+    0.6,
+    0.82,
+    0.94,
+    1.2,
+    1.42,
+    1.7,
+    2.25,
+    2.82,
+    3.04,
+    3.55,
+    3.8
+  ],
+  "interval_midpoints": [
+    0.06,
+    0.3,
+    0.54,
+    0.71,
+    0.88,
+    1.07,
+    1.31,
+    1.56,
+    1.975,
+    2.535,
+    2.93,
+    3.295,
+    3.675
+  ],
+  "static_checkpoints": [
+    {
+      "time": 0,
+      "source_key": 1,
+      "label": "neutral_start"
+    },
+    {
+      "time": 0.54,
+      "source_key": 3,
+      "label": "kp3_sealed_biased_smile"
+    },
+    {
+      "time": 0.88,
+      "source_key": 4,
+      "label": "kp4_shallow_crooked_part"
+    },
+    {
+      "time": 1.31,
+      "source_key": 5,
+      "label": "kp5_facial_peak_fixed_head"
+    },
+    {
+      "time": 1.975,
+      "source_key": 6,
+      "label": "kp6_frontal_challenging_grin"
+    },
+    {
+      "time": 2.93,
+      "source_key": 7,
+      "label": "kp7_resealed_recovery"
+    },
+    {
+      "time": 3.8,
+      "source_key": 9,
+      "label": "neutral_return"
+    }
+  ],
+  "checkpoints": 701,
+  "images_per_checkpoint": 2,
+  "chapters": [
+    {
+      "name": "natural_cycle_1",
+      "reset": true,
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0.0,
+        1e-06,
+        0.033333333,
+        0.06,
+        0.066666667,
+        0.1,
+        0.119999,
+        0.119999999,
+        0.12,
+        0.120000001,
+        0.1200001,
+        0.120001,
+        0.12001,
+        0.1201,
+        0.121,
+        0.123,
+        0.13,
+        0.133333333,
+        0.149999,
+        0.15,
+        0.150001,
+        0.166666667,
+        0.2,
+        0.233333333,
+        0.266666667,
+        0.299999,
+        0.3,
+        0.300001,
+        0.333333333,
+        0.366666667,
+        0.4,
+        0.433333333,
+        0.466666667,
+        0.479999,
+        0.48,
+        0.480001,
+        0.5,
+        0.533333333,
+        0.54,
+        0.566666667,
+        0.599999,
+        0.6,
+        0.600001,
+        0.633333333,
+        0.666666667,
+        0.7,
+        0.71,
+        0.733333333,
+        0.766666667,
+        0.8,
+        0.819999,
+        0.82,
+        0.820001,
+        0.833333333,
+        0.866666667,
+        0.88,
+        0.9,
+        0.933333333,
+        0.939999,
+        0.94,
+        0.940001,
+        0.966666667,
+        1.0,
+        1.033333333,
+        1.066666667,
+        1.07,
+        1.1,
+        1.133333333,
+        1.166666667,
+        1.199999,
+        1.2,
+        1.200001,
+        1.233333333,
+        1.266666667,
+        1.3,
+        1.31,
+        1.333333333,
+        1.366666667,
+        1.4,
+        1.419999,
+        1.42,
+        1.420001,
+        1.433333333,
+        1.466666667,
+        1.5,
+        1.533333333,
+        1.56,
+        1.566666667,
+        1.6,
+        1.633333333,
+        1.666666667,
+        1.699999,
+        1.7,
+        1.700001,
+        1.733333333,
+        1.766666667,
+        1.8,
+        1.833333333,
+        1.866666667,
+        1.9,
+        1.933333333,
+        1.966666667,
+        1.975,
+        2.0,
+        2.033333333,
+        2.066666667,
+        2.1,
+        2.133333333,
+        2.166666667,
+        2.2,
+        2.233333333,
+        2.249999,
+        2.25,
+        2.250001,
+        2.266666667,
+        2.3,
+        2.333333333,
+        2.366666667,
+        2.4,
+        2.433333333,
+        2.466666667,
+        2.5,
+        2.533333333,
+        2.535,
+        2.566666667,
+        2.6,
+        2.633333333,
+        2.666666667,
+        2.7,
+        2.733333333,
+        2.766666667,
+        2.8,
+        2.819999,
+        2.82,
+        2.820001,
+        2.833333333,
+        2.866666667,
+        2.9,
+        2.93,
+        2.933333333,
+        2.966666667,
+        3.0,
+        3.033333333,
+        3.039999,
+        3.04,
+        3.040001,
+        3.066666667,
+        3.1,
+        3.133333333,
+        3.166666667,
+        3.2,
+        3.233333333,
+        3.266666667,
+        3.295,
+        3.3,
+        3.333333333,
+        3.366666667,
+        3.4,
+        3.433333333,
+        3.466666667,
+        3.5,
+        3.533333333,
+        3.549,
+        3.54999,
+        3.549999,
+        3.5499999,
+        3.55,
+        3.5500001,
+        3.550001,
+        3.566666667,
+        3.6,
+        3.633333333,
+        3.666666667,
+        3.675,
+        3.7,
+        3.733333333,
+        3.766666667,
+        3.799999,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "legacy",
+      "natural_daring": true,
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    },
+    {
+      "name": "natural_cycle_2",
+      "reset": false,
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0.0,
+        0.033333333,
+        0.06,
+        0.066666667,
+        0.1,
+        0.12,
+        0.133333333,
+        0.166666667,
+        0.2,
+        0.233333333,
+        0.266666667,
+        0.3,
+        0.333333333,
+        0.366666667,
+        0.4,
+        0.433333333,
+        0.466666667,
+        0.48,
+        0.5,
+        0.533333333,
+        0.54,
+        0.566666667,
+        0.6,
+        0.633333333,
+        0.666666667,
+        0.7,
+        0.71,
+        0.733333333,
+        0.766666667,
+        0.8,
+        0.82,
+        0.833333333,
+        0.866666667,
+        0.88,
+        0.9,
+        0.933333333,
+        0.94,
+        0.966666667,
+        1.0,
+        1.033333333,
+        1.066666667,
+        1.07,
+        1.1,
+        1.133333333,
+        1.166666667,
+        1.2,
+        1.233333333,
+        1.266666667,
+        1.3,
+        1.31,
+        1.333333333,
+        1.366666667,
+        1.4,
+        1.42,
+        1.433333333,
+        1.466666667,
+        1.5,
+        1.533333333,
+        1.56,
+        1.566666667,
+        1.6,
+        1.633333333,
+        1.666666667,
+        1.7,
+        1.733333333,
+        1.766666667,
+        1.8,
+        1.833333333,
+        1.866666667,
+        1.9,
+        1.933333333,
+        1.966666667,
+        1.975,
+        2.0,
+        2.033333333,
+        2.066666667,
+        2.1,
+        2.133333333,
+        2.166666667,
+        2.2,
+        2.233333333,
+        2.25,
+        2.266666667,
+        2.3,
+        2.333333333,
+        2.366666667,
+        2.4,
+        2.433333333,
+        2.466666667,
+        2.5,
+        2.533333333,
+        2.535,
+        2.566666667,
+        2.6,
+        2.633333333,
+        2.666666667,
+        2.7,
+        2.733333333,
+        2.766666667,
+        2.8,
+        2.82,
+        2.833333333,
+        2.866666667,
+        2.9,
+        2.93,
+        2.933333333,
+        2.966666667,
+        3.0,
+        3.033333333,
+        3.04,
+        3.066666667,
+        3.1,
+        3.133333333,
+        3.166666667,
+        3.2,
+        3.233333333,
+        3.266666667,
+        3.295,
+        3.3,
+        3.333333333,
+        3.366666667,
+        3.4,
+        3.433333333,
+        3.466666667,
+        3.5,
+        3.533333333,
+        3.55,
+        3.566666667,
+        3.6,
+        3.633333333,
+        3.666666667,
+        3.675,
+        3.7,
+        3.733333333,
+        3.766666667,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "legacy",
+      "natural_daring": true,
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    },
+    {
+      "name": "release_peak",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "release_performance": true
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.05,
+        0.15,
+        0.3,
+        0.449,
+        0.44999,
+        0.449999,
+        0.45,
+        0.450001,
+        0.6
+      ],
+      "mode": "release",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "repeat_release",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.975
+        },
+        {
+          "release_performance": true
+        },
+        {
+          "advance": 0.17
+        },
+        {
+          "release_performance": true
+        }
+      ],
+      "times": [
+        0,
+        0.1,
+        0.3,
+        0.449999,
+        0.45,
+        0.450001
+      ],
+      "mode": "release",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "retrigger_peak",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.54,
+        0.88,
+        1.31,
+        1.975,
+        2.93,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "release_interrupted_retrigger",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.975
+        },
+        {
+          "release_performance": true
+        },
+        {
+          "advance": 0.17
+        },
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        1.31,
+        2.93,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "incoming_open_laughter",
+      "setup": [
+        {
+          "perform_expression": "EXP-005"
+        },
+        {
+          "advance": 1.5
+        },
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.54,
+        0.88,
+        1.31,
+        1.975,
+        2.93,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "outgoing_open_laughter",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "perform_expression": "EXP-005"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.5,
+        5.4
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-005",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_open_laughter_75ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-005"
+        },
+        {
+          "advance": 1.5
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.075
+        },
+        {
+          "perform_expression": "EXP-005"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.5,
+        5.4
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-005",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_open_laughter_225ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-005"
+        },
+        {
+          "advance": 1.5
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.225
+        },
+        {
+          "perform_expression": "EXP-005"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.5,
+        5.4
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-005",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "incoming_sealed_width_denial",
+      "setup": [
+        {
+          "perform_expression": "EXP-116"
+        },
+        {
+          "advance": 1.08
+        },
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.54,
+        0.88,
+        1.31,
+        1.975,
+        2.93,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "staged",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "outgoing_sealed_width_denial",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "perform_expression": "EXP-116"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.08,
+        2.85
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-116",
+      "expected_bridge_mode": "staged",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_sealed_width_denial_75ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-116"
+        },
+        {
+          "advance": 1.08
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.075
+        },
+        {
+          "perform_expression": "EXP-116"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.08,
+        2.85
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-116",
+      "expected_bridge_mode": "bounded_direct",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_sealed_width_denial_225ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-116"
+        },
+        {
+          "advance": 1.08
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.225
+        },
+        {
+          "perform_expression": "EXP-116"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.08,
+        2.85
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-116",
+      "expected_bridge_mode": "bounded_direct",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "incoming_frustrated_pout",
+      "setup": [
+        {
+          "perform_expression": "EXP-050"
+        },
+        {
+          "advance": 1.57
+        },
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.54,
+        0.88,
+        1.31,
+        1.975,
+        2.93,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "outgoing_frustrated_pout",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "perform_expression": "EXP-050"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.57,
+        4.13
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-050",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_frustrated_pout_75ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-050"
+        },
+        {
+          "advance": 1.57
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.075
+        },
+        {
+          "perform_expression": "EXP-050"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.57,
+        4.13
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-050",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_frustrated_pout_225ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-050"
+        },
+        {
+          "advance": 1.57
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.225
+        },
+        {
+          "perform_expression": "EXP-050"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.57,
+        4.13
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-050",
+      "expected_bridge_mode": "legacy",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "incoming_smug_cat_width",
+      "setup": [
+        {
+          "perform_expression": "EXP-186"
+        },
+        {
+          "advance": 1.02
+        },
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.54,
+        0.88,
+        1.31,
+        1.975,
+        2.93,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "staged",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "outgoing_smug_cat_width",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "perform_expression": "EXP-186"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.02,
+        3.4
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-186",
+      "expected_bridge_mode": "staged",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_smug_cat_width_75ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-186"
+        },
+        {
+          "advance": 1.02
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.075
+        },
+        {
+          "perform_expression": "EXP-186"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.02,
+        3.4
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-186",
+      "expected_bridge_mode": "bounded_direct",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "reverse_incoming_smug_cat_width_225ms",
+      "setup": [
+        {
+          "perform_expression": "EXP-186"
+        },
+        {
+          "advance": 1.02
+        },
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 0.225
+        },
+        {
+          "perform_expression": "EXP-186"
+        }
+      ],
+      "times": [
+        0,
+        1e-06,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.149999,
+        0.15,
+        0.150001,
+        0.2,
+        0.225,
+        0.25,
+        0.299999,
+        0.3,
+        0.300001,
+        0.44,
+        0.66,
+        1.02,
+        3.4
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-186",
+      "expected_bridge_mode": "bounded_direct",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "manual_takeover",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "mouth_corner_lift_screen_right": 0.35
+        }
+      ],
+      "times": [
+        0,
+        0.25,
+        1.0
+      ],
+      "final_expect": {
+        "active_expression": "",
+        "auto_blink": false,
+        "auto_blink_pending_restore": false,
+        "controls": {
+          "mouth_corner_lift_screen_right": 0.35
+        }
+      }
+    },
+    {
+      "name": "reset_peak",
+      "setup": [
+        {
+          "perform_expression": "EXP-114"
+        },
+        {
+          "advance": 1.31
+        },
+        {
+          "reset": true
+        }
+      ],
+      "times": [
+        0,
+        0.3
+      ],
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    },
+    {
+      "name": "autoblink_suspend_restore",
+      "setup": [
+        {
+          "auto_blink": true
+        },
+        {
+          "advance": 4.03
+        },
+        {
+          "perform_expression": "EXP-114"
+        }
+      ],
+      "times": [
+        0,
+        0.075,
+        0.15,
+        0.225,
+        0.3,
+        0.54,
+        0.88,
+        1.31,
+        1.975,
+        2.93,
+        3.8,
+        7.83
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-114",
+      "expected_bridge_mode": "legacy",
+      "assertions": {
+        "0": {
+          "auto_blink": false,
+          "auto_blink_pending_restore": true,
+          "minimum_closure": 0.99
+        },
+        "10": {
+          "neutral": true,
+          "auto_blink": true,
+          "auto_blink_pending_restore": false,
+          "maximum_closure": 0.001
+        },
+        "11": {
+          "auto_blink": true,
+          "minimum_closure": 0.99
+        }
+      },
+      "final_expect": {
+        "auto_blink": true,
+        "minimum_closure": 0.99
+      }
+    },
+    {
+      "name": "final_reset",
+      "setup": [
+        {
+          "reset": true
+        }
+      ],
+      "times": [
+        0
+      ],
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    }
+  ],
+  "no_parameter_refinement": true,
+  "presentation": {
+    "native": [
+      1136,
+      1384
+    ],
+    "bust": [
+      568,
+      800
+    ],
+    "camera_only": true,
+    "head_body_transform_unchanged": true
+  },
+  "normal_speed_followup": {
+    "required_before_finished_preview": true,
+    "method": "Separately reviewed and leased supported native playback; real-time observation in both camera views, never described as observed from stepped stills.",
+    "cycles_per_view": 2,
+    "duration_per_cycle": 3.8
+  }
+}

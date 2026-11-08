@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Additive current immutable identity binding for prior accepted actual capture; does not alter the original review or grant new execution.",
+  "actual_review_sha256": "54fc255ceaa74a525cd1d4d2600cf2d97a2b4550123f2097f814a9c6fce57e13",
+  "capture_manifest_sha256": "06f450210e70e45ad6d1be7c66f5bef6df00b506990066b2f18ef04be7ec9bbc",
+  "source_inventory_sha256": "515010bd965ac86ccb261e2288ba90935451dc2ef5d262c2d50f48d453389d05",
+  "source_inventory_file": "daring_provocation_independent_review/PERFORMANCE_FULL660_SOURCE_INVENTORY.json",
+  "source_inventory_encoding": "SHA256 of compact JSON sorted path-to-SHA256 mapping; file bytes identical to encoding",
+  "source_inventory_file_count": 660,
+  "guard_source_inventory_sha256": "9c70d2db3d2599d4ae5dcddaf25a77b066c991954dce3aaa7ba31c2844d1aefb",
+  "guard_source_inventory_file_count": 658,
+  "source_guard_sha256": "0a360f6fb3051f2962b46d2bc4e220e9dcf7420e3dde6540e1b9c4bf1b457de5",
+  "source_guard_manifest_sha256": "789c7136d0765154a9e892c26442e3b6895718e6ea399a58730bb72384b168e4",
+  "source_profile_sha256": "96eed6ccf108e2e54590f953ae01b129a04af223245fecc1fc59c2af19f8c107",
+  "capture_plan_sha256": "bf211f3e3b571ad362024f1761da1bda3b27571fd3e26e07df7cd82c10ea438a",
+  "native_run_result_sha256": "127dda938bdb75270aa3969b24aa2ee8c6fb23d16b4f7aed33bb71ba8f43558a",
+  "native_verification_sha256": "7cba2e1213f267b4d0020b77f84970b699a1eeb1446a669d21b6fdaa399527fc",
+  "native_input_binding_sha256": "dc4799849a4ca753204dd9f838418e28b810990b6828826a8308ad0e4567e05e"
+}

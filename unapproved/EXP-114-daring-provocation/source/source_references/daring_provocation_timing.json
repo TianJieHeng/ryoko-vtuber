@@ -1,0 +1,130 @@
+{
+  "duration": 3.8,
+  "keys": [
+    [
+      0,
+      "neutral",
+      1
+    ],
+    [
+      0.12,
+      "quiet_composure",
+      1
+    ],
+    [
+      0.48,
+      "sealed_biased_anticipation",
+      3
+    ],
+    [
+      0.6,
+      "sealed_anticipation_hold",
+      3
+    ],
+    [
+      0.82,
+      "shallow_crooked_part",
+      4
+    ],
+    [
+      0.94,
+      "shallow_part_hold",
+      4
+    ],
+    [
+      1.2,
+      "toothy_facial_peak",
+      5
+    ],
+    [
+      1.42,
+      "toothy_peak_hold",
+      5
+    ],
+    [
+      1.7,
+      "frontal_sustained_challenge",
+      6
+    ],
+    [
+      2.25,
+      "challenging_grin_hold",
+      6
+    ],
+    [
+      2.82,
+      "resealed_release",
+      7
+    ],
+    [
+      3.04,
+      "resealed_release_hold",
+      7
+    ],
+    [
+      3.55,
+      "neutral_return",
+      9
+    ],
+    [
+      3.8,
+      "neutral_settled",
+      9
+    ]
+  ],
+  "authorship": "Newly authored timing from a static nine-panel source; not recovered animation.",
+  "rationale": "A 0.12-second composure precedes a biased sealed anticipation, a short shallow part, a toothy facial peak, then a longer frontal challenging grin. The grin reseals before a deliberate release to exact canonical neutral. Duplicate keys hold only accepted vectors; no invented blink, head cant, gaze or blush.",
+  "interpolation": "The unchanged shared smoothstep sampler and 0.30-second restart compose the initial build. No production motion change.",
+  "exact_static_checkpoints": [
+    {
+      "time": 0,
+      "source_key": 1,
+      "label": "neutral_start"
+    },
+    {
+      "time": 0.54,
+      "source_key": 3,
+      "label": "kp3_sealed_biased_smile"
+    },
+    {
+      "time": 0.88,
+      "source_key": 4,
+      "label": "kp4_shallow_crooked_part"
+    },
+    {
+      "time": 1.31,
+      "source_key": 5,
+      "label": "kp5_facial_peak_fixed_head"
+    },
+    {
+      "time": 1.975,
+      "source_key": 6,
+      "label": "kp6_frontal_challenging_grin"
+    },
+    {
+      "time": 2.93,
+      "source_key": 7,
+      "label": "kp7_resealed_recovery"
+    },
+    {
+      "time": 3.8,
+      "source_key": 9,
+      "label": "neutral_return"
+    }
+  ],
+  "hold_interior_checkpoints": [
+    0.06,
+    0.54,
+    0.88,
+    1.31,
+    1.975,
+    2.93,
+    3.675
+  ],
+  "limitations": [
+    "Restrained cocky forward challenge: central brow opposition and peak force are softer than painted source.",
+    "KP5 real head cant is omitted, not simulated with gaze or neck motion.",
+    "Inherited fuller lips, canonical lower-lid curves and material edge limits are retained.",
+    "No extrapolation to the inherited maximum-opening/spread/corner warm wedge."
+  ]
+}

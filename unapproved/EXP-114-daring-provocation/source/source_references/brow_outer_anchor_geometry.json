@@ -1,0 +1,203 @@
+{
+  "method": "Alpha >=128 and green pigment G>R+4, G>B+4, R<190. Weighted pixel-center centroid of outermost three pigment-bearing columns. Anchors refer to retained canonical layer, not hidden/full original brow anatomy. Right outer tail partly hair-occluded.",
+  "brows": {
+    "screen_left": {
+      "entry": {
+        "file": "brow_screen_left.png",
+        "xy": [
+          460,
+          442
+        ],
+        "size": [
+          80,
+          37
+        ],
+        "z": 40,
+        "pivot": [
+          500.0,
+          460.5
+        ],
+        "source": "artwork/bust_base.png",
+        "runtime_transforms": "rigid or alpha clip only",
+        "estimated_pixels": true
+      },
+      "png_sha256": "42e6e87755cae8c9d030841af7bd09a635fe4ee38b09d3f607a2d55d3287aba7",
+      "alpha_green_band_pixels": 20,
+      "band_pixel_xy": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "anchor_canonical": [
+        466.55,
+        452.35
+      ],
+      "anchor_local": [
+        6.55,
+        10.35
+      ],
+      "anchor_from_legacy_pivot": [
+        -33.45,
+        -8.15
+      ]
+    },
+    "screen_right": {
+      "entry": {
+        "file": "brow_screen_right.png",
+        "xy": [
+          601,
+          440
+        ],
+        "size": [
+          57,
+          34
+        ],
+        "z": 40,
+        "pivot": [
+          629.5,
+          457.0
+        ],
+        "source": "artwork/bust_base.png",
+        "runtime_transforms": "rigid or alpha clip only",
+        "estimated_pixels": true
+      },
+      "png_sha256": "0f3211513fe6ea6ada4d3309b0c7076c3f3082717d4afabd02aac5f86ae100db",
+      "alpha_green_band_pixels": 11,
+      "band_pixel_xy": [
+        [
+          44,
+          11
+        ],
+        [
+          44,
+          12
+        ],
+        [
+          45,
+          12
+        ],
+        [
+          44,
+          13
+        ],
+        [
+          45,
+          13
+        ],
+        [
+          46,
+          13
+        ],
+        [
+          44,
+          14
+        ],
+        [
+          45,
+          14
+        ],
+        [
+          46,
+          14
+        ],
+        [
+          44,
+          15
+        ],
+        [
+          45,
+          15
+        ]
+      ],
+      "anchor_canonical": [
+        646.227,
+        453.773
+      ],
+      "anchor_local": [
+        45.227,
+        13.773
+      ],
+      "anchor_from_legacy_pivot": [
+        16.727,
+        -3.227
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "accepted_plan_sha256": "c8a0a12cb2340cbea3692d8a148ddd4edb0df187a300fd3d479a8d90e6c0ddf7",
+  "profile_sha256": "bb5d72a568358aa655f5acb81889c80aa2ee9a4d6214cdf62421c5504f7da64d",
+  "key_pose_times": {
+    "1": [
+      0,
+      0.12
+    ],
+    "2": [
+      0.4436559139784946
+    ],
+    "3": [
+      0.82,
+      0.9
+    ],
+    "4": [
+      1.1,
+      1.26
+    ],
+    "5": [
+      1.84,
+      1.92
+    ],
+    "6": [
+      2.15,
+      2.29
+    ],
+    "7": [
+      2.71
+    ],
+    "8": [
+      3.01
+    ],
+    "9": [
+      3.31,
+      3.47
+    ]
+  },
+  "static_gate_sha256": "0602e0fb38f3755d9a8f866771247338825c6825716031a1d02cf6217e0c7e0a",
+  "timing_status": "newly_authored_not_recovered"
+}

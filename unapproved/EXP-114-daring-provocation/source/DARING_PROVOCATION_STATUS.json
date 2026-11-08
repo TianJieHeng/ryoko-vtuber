@@ -1,0 +1,43 @@
+{
+  "status": "Prepared offline; full performance unapproved and unexecuted",
+  "approved": false,
+  "approved_integration": false,
+  "registered_profile_count": 19,
+  "approved_profile_count": 18,
+  "approved_profile_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186"
+  ],
+  "pending_profile_ids": [
+    "EXP-114"
+  ],
+  "baseline_main": "285d23ce80b6f84d2258788bc69daddb4bcb75f4",
+  "baseline_project_tree": "28d7b124d9d46a3b87cd3e821669ae87b3d47719",
+  "baseline_source_inventory_sha256": "37d2ac563100386fdc40be0cc4f7595dfb40cff16fed57f1a7b25a6e7f8aa043",
+  "runtime_art_imports_and_eighteen_profiles_unchanged": true,
+  "static_fit_review_sha256": "e5ef7d93c006e040a4d0121f50d8c4a0b8debe9104cd0f39fe7665ed27792dc7",
+  "limitations": [
+    "Restrained cocky forward challenge: central brow opposition and peak force are softer than painted source.",
+    "KP5 real head cant is omitted, not simulated with gaze or neck motion.",
+    "Inherited fuller lips, canonical lower-lid curves and material edge limits are retained.",
+    "No extrapolation to the inherited maximum-opening/spread/corner warm wedge."
+  ],
+  "normal_speed_playback_observed": false,
+  "historical_metadata": "Inherited manifests, releases and guards describe the distinct approved predecessor; all remain byte-exact. The new guard validates this candidate without reclassifying it as approved."
+}

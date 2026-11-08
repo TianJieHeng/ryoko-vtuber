@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "identity": {
+    "status": "PASS",
+    "approved_source_files": 646,
+    "approved_profiles": 18,
+    "candidate_source_files": 660,
+    "pending_profiles": [
+      "EXP-114"
+    ],
+    "pngs": 182,
+    "generated_sidecars": 180,
+    "imported_resource_files": 364,
+    "cache_metadata": 3,
+    "profile_sha256": "96eed6ccf108e2e54590f953ae01b129a04af223245fecc1fc59c2af19f8c107",
+    "capture_plan_sha256": "bf211f3e3b571ad362024f1761da1bda3b27571fd3e26e07df7cd82c10ea438a",
+    "candidate_manifest_sha256": "789c7136d0765154a9e892c26442e3b6895718e6ea399a58730bb72384b168e4",
+    "prepared_package_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed"
+  },
+  "checkpoints": 701,
+  "chapters": 26,
+  "checks": 687526,
+  "actual_images": 1402,
+  "static_exact_anchors": [
+    {
+      "chapter": "natural_cycle_1",
+      "time": 0.0,
+      "source_key": 1.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_1",
+      "time": 0.54,
+      "source_key": 3.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_1",
+      "time": 0.88,
+      "source_key": 4.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_1",
+      "time": 1.31,
+      "source_key": 5.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_1",
+      "time": 1.975,
+      "source_key": 6.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_1",
+      "time": 2.93,
+      "source_key": 7.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_1",
+      "time": 3.8,
+      "source_key": 9.0,
+      "owner": "manual",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_2",
+      "time": 0.0,
+      "source_key": 1.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_2",
+      "time": 0.54,
+      "source_key": 3.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_2",
+      "time": 0.88,
+      "source_key": 4.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_2",
+      "time": 1.31,
+      "source_key": 5.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_2",
+      "time": 1.975,
+      "source_key": 6.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_2",
+      "time": 2.93,
+      "source_key": 7.0,
+      "owner": "EXP-114",
+      "exact_geometry_material_public_controls": true
+    },
+    {
+      "chapter": "natural_cycle_2",
+      "time": 3.8,
+      "source_key": 9.0,
+      "owner": "manual",
+      "exact_geometry_material_public_controls": true
+    }
+  ],
+  "all_owner_labels_explicitly_validated": true,
+  "all_other_geometry_material_controls_and_pixels_exact": true,
+  "actual_loaded_textures": 71,
+  "record_sha256": "06f450210e70e45ad6d1be7c66f5bef6df00b506990066b2f18ef04be7ec9bbc",
+  "normal_speed_playback_observed": false,
+  "headless_native_cross_run_comparison_performed": false,
+  "render_invariance_captures_verified": 1402,
+  "completion_manifest_and_all_record_hashes_verified": true,
+  "binding_sha256": "dc4799849a4ca753204dd9f838418e28b810990b6828826a8308ad0e4567e05e",
+  "accepted_runtime_checks": 5380806,
+  "accepted_prior18_parity_samples": 3230,
+  "independent_runtime_review_sha256": "c68b1c19be4dbfa8a4136153da7ba5fc2d93abdfa950f3bd214968f2faf915e4",
+  "old_failed_job21_not_pass": true
+}

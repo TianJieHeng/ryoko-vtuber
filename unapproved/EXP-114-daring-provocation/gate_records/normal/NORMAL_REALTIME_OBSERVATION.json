@@ -1,0 +1,93 @@
+{
+  "status": "PASS_EXECUTION_PENDING_INDEPENDENT_PACING_REVIEW",
+  "checks": 1946,
+  "failures": [],
+  "cycles": [
+    {
+      "view": "bust",
+      "cycle": 0,
+      "wall_seconds": 3.829655,
+      "samples": 321,
+      "delta_min_ms": 6.4910000000000005,
+      "delta_median_ms": 11.077,
+      "delta_p95_ms": 14.642000000000001,
+      "delta_max_ms": 119.921,
+      "frames_over_33_334_ms": 1,
+      "frames_over_50_ms": 1,
+      "final_active_expression": "",
+      "final_controls_all_zero": true,
+      "sum_deltas_seconds": 3.803016
+    },
+    {
+      "view": "bust",
+      "cycle": 1,
+      "wall_seconds": 3.828568,
+      "samples": 352,
+      "delta_min_ms": 5.623,
+      "delta_median_ms": 10.496,
+      "delta_p95_ms": 13.22,
+      "delta_max_ms": 17.553,
+      "frames_over_33_334_ms": 0,
+      "frames_over_50_ms": 0,
+      "final_active_expression": "",
+      "final_controls_all_zero": true,
+      "sum_deltas_seconds": 3.803773
+    },
+    {
+      "view": "native",
+      "cycle": 0,
+      "wall_seconds": 3.826019,
+      "samples": 170,
+      "delta_min_ms": 18.151,
+      "delta_median_ms": 21.708,
+      "delta_p95_ms": 28.374,
+      "delta_max_ms": 41.272999999999996,
+      "frames_over_33_334_ms": 4,
+      "frames_over_50_ms": 0,
+      "final_active_expression": "",
+      "final_controls_all_zero": true,
+      "sum_deltas_seconds": 3.803184
+    },
+    {
+      "view": "native",
+      "cycle": 1,
+      "wall_seconds": 3.83269,
+      "samples": 123,
+      "delta_min_ms": 17.663999999999998,
+      "delta_median_ms": 21.336000000000002,
+      "delta_p95_ms": 30.900000000000002,
+      "delta_max_ms": 512.158,
+      "frames_over_33_334_ms": 7,
+      "frames_over_50_ms": 5,
+      "final_active_expression": "",
+      "final_controls_all_zero": true,
+      "sum_deltas_seconds": 3.808416
+    }
+  ],
+  "normal_speed_continuous_visual_observation": false,
+  "supported_cua_observations": [
+    {
+      "request_time_utc": "2026-11-08T12:44:42.945Z",
+      "observation": "Actual .49 bust viewport showed canonical neutral face; still screenshot, not continuous video."
+    },
+    {
+      "request_time_utc": "2026-11-08T12:44:55.082Z",
+      "observation": "Actual native viewport showed the narrowed-eye crooked tooth-grin phase; still screenshot, not continuous video."
+    },
+    {
+      "request_time_utc": "2026-11-08T12:45:10.086Z",
+      "observation": "Supported window inventory no longer contained the Ryoko engine window."
+    }
+  ],
+  "observation_timestamp_note": "Tool-call timestamps identify screenshot request times, not exact renderer frame acquisition times. No file capture or continuous observation is inferred.",
+  "route": "one supported CUA Thunar Open With Other Application, custom /bin/sh, Use as default OFF, one Open click",
+  "launch_request_utc": "2026-11-08T12:44:31.770Z",
+  "engine_exit": 0,
+  "source_cache_post_identity": "PASS",
+  "engine_and_display_leases_released": true,
+  "receipt_sha256": {
+    "RUN_RESULT.json": "316ed005c134260f61c101250820ac537f364ae4351edef90bf826b1727bf366",
+    "evidence.json": "7d0eafc9ad5a44f2eeb19b253ed0577ab1d607360b6eb0f35a4d7ab5c3181b9a",
+    "RUN_ROWS.json": "5ad299a633647d85c87696253cd17b4ee52fb6907658f7e69b2fea964f1a8e44"
+  }
+}

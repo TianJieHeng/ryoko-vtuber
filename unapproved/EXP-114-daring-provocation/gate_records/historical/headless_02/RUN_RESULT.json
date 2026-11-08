@@ -1,0 +1,50 @@
+{
+  "binding_sha256": "196cb7754de01e15045f428732853bb25c131a64b90fe5e2938a410f5af9394b",
+  "original_package_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+  "finished_utc": "2026-11-08T11:59:01.682058+00:00",
+  "remaining_godot_processes": [],
+  "lease_released": true,
+  "post_identity": {
+    "status": "PASS",
+    "approved_source_files": 646,
+    "approved_profiles": 18,
+    "candidate_source_files": 660,
+    "pending_profiles": [
+      "EXP-114"
+    ],
+    "pngs": 182,
+    "generated_sidecars": 180,
+    "imported_resource_files": 364,
+    "cache_metadata": 3,
+    "profile_sha256": "96eed6ccf108e2e54590f953ae01b129a04af223245fecc1fc59c2af19f8c107",
+    "capture_plan_sha256": "bf211f3e3b571ad362024f1761da1bda3b27571fd3e26e07df7cd82c10ea438a",
+    "candidate_manifest_sha256": "789c7136d0765154a9e892c26442e3b6895718e6ea399a58730bb72384b168e4",
+    "prepared_package_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+    "continuation_stage": "headless_02",
+    "continuation_input_binding_sha256": "196cb7754de01e15045f428732853bb25c131a64b90fe5e2938a410f5af9394b",
+    "continuation_original_jobs": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "accepted_prior_jobs": 7,
+    "accepted_prior_checks": 2085236,
+    "failed_attempt_preserved": true,
+    "corrected_fixture_sha256": "9a05e9a9f193a1bc5f1119f4b6c948f1b5da5c6c62a911b2bf6368a628272cea",
+    "future_native_successful_trajectory": "headless_02/trajectory/evidence.json",
+    "future_native_verifier_sha256": "6ca5b5d3baa1c9ff0c730567d318a40221a79778c82fbe0b370ebe43a9082851"
+  },
+  "status": "FAIL",
+  "returncode": 1
+}

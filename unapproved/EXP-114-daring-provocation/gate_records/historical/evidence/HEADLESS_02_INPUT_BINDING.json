@@ -1,0 +1,58 @@
+{
+  "status": "HEADLESS_CONTINUATION_PREPARED_ONLY",
+  "original_package_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+  "proposal_binding_sha256": "de7a384df82e809abfeb0bbed2993fb0b5370cabd7497a169258615f73026df9",
+  "files": {
+    "harness/test_sealed_width_contract_candidate19_corrected.gd": "9a05e9a9f193a1bc5f1119f4b6c948f1b5da5c6c62a911b2bf6368a628272cea",
+    "plan/HEADLESS_02_JOBS.json": "d7a630ae23734a42d0764d593a9a50ec4b03a31ed90c5c286e7c61b0381b32ea",
+    "verify_records_headless02.py": "6ca5b5d3baa1c9ff0c730567d318a40221a79778c82fbe0b370ebe43a9082851",
+    "verify_headless02_inputs.py": "c8cbebf1f357647e015ad24ab57b3077dd6144c5f4027619925fbb8791e8c3f6",
+    "guard_headless02.py": "c48e3b65a477c625f2d29fe12d8c699fa803235f3755d47deead619a9b72bb51",
+    "run_headless02.py": "1702d784ebfba870438ab0176b6e226eae3cb9133ef20e9e8725746b7c7cbc98",
+    "freeze_headless02.py": "3be96ce9241fbbca925f21b09f6b0f6246beb425718832c90097659b55688603",
+    "REPORT_HEADLESS_02_PREPARED.md": "9dce20f52b15c0cc19b4a053d927f0f71dfc5c818e8cddb61d5a3b4db49adc73",
+    "proposals/NATIVE_VERIFIER_ROUTE_ONLY.patch": "c332cbcefb5bfc0b07deb9fb2d8f2be942af6ee04b06a9882666b49e81959fa2",
+    "proposals/headless_fixture_correction/PROPOSED_BINDING.json": "de7a384df82e809abfeb0bbed2993fb0b5370cabd7497a169258615f73026df9",
+    "proposals/headless_fixture_correction/REMAINING_DEPENDENCY_AUDIT.json": "e59bf3b2e492c4182d209f49ae3dfed0043b59a112b7427fa7189c358db50ddb",
+    "evidence/HEADLESS_02_OFFLINE_CHECKS.json": "ecd8b921ea34d7ec88a871c1f18edcaf1aadc3f96929b8fa28d4016b42116a45"
+  },
+  "external_review_files": {
+    "daring_provocation_independent_review/PERFORMANCE_HEADLESS_01_REVIEW.json": "3e6e4bbf112fb082952fa9ff0b2b53aa01a61aa310e9fa0b70f165d872816a43",
+    "daring_provocation_independent_review/PERFORMANCE_PATH_CORRECTION_PROPOSAL_REVIEW.json": "df1d3b310a3c9e1a0d718e742e3a562a54de12086c316a3b50fccb92d94afbb0"
+  },
+  "original_jobs": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "independently_accepted_prior_jobs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "independently_accepted_prior_checks": 2085236,
+  "output_directory": "headless_02",
+  "original_attempt_preserved": true,
+  "original_failed_job8_is_not_pass": true,
+  "future_native_successful_trajectory": "headless_02/trajectory/evidence.json",
+  "future_native_verifier_sha256": "6ca5b5d3baa1c9ff0c730567d318a40221a79778c82fbe0b370ebe43a9082851",
+  "no_source_pose_runtime_helper_assertion_or_cache_change": true,
+  "new_engine_invocations": 0,
+  "execution_authorized": false,
+  "graphical_authorized": false
+}

@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "status": "local EXP-006 source registration candidate; user approval pending",
+  "canvas": [
+    1136,
+    1384
+  ],
+  "coordinate_convention": "native canvas, top-left origin, x right, y down; screen sides are viewer sides",
+  "objects": {
+    "screen_left": {
+      "file": "blush_screen_left.png",
+      "xy": [
+        407,
+        519
+      ],
+      "size": [
+        148,
+        84
+      ],
+      "pivot": [
+        481.0,
+        561.0
+      ],
+      "local_pivot": [
+        74.0,
+        42.0
+      ],
+      "centered": false,
+      "z": 29,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "runtime_rotation": 0,
+      "runtime_transform_policy": "fixed position, rotation, texture and local unit scale; intensity only",
+      "anatomical_side": "character_right",
+      "source": "source_originals/RYO_FX_blush_character_R.png",
+      "source_sha256": "a818395e9cf1be5023edc62f2d79b24bb3ee19efe634e35639b2770d53536081",
+      "source_dimensions": [
+        1086,
+        724
+      ],
+      "source_alpha_nonzero_bbox": [
+        0,
+        0,
+        1086,
+        724
+      ],
+      "source_atlas_crop_xyxy": [
+        0,
+        0,
+        1086,
+        724
+      ],
+      "source_strokes": 3,
+      "no_mirror": true,
+      "source_crop_xyxy": [
+        114,
+        196,
+        789,
+        581
+      ],
+      "alpha_cleanup": {
+        "rule": "clear entire RGBA where source alpha < 4",
+        "discarded_nonzero_alpha_pixels": 81006,
+        "maximum_discarded_alpha": 3
+      },
+      "authoring_resample": {
+        "filter": "Pillow LANCZOS in premultiplied RGBa, then RGBA",
+        "input_crop_size": [
+          675,
+          385
+        ],
+        "output_size": [
+          148,
+          84
+        ],
+        "fixed_scale_xy": [
+          0.21925925925925926,
+          0.21818181818181817
+        ]
+      },
+      "mask": {
+        "file": "blush_screen_left_cheek_mask.png",
+        "sha256": "a7b4f27f28b6295492616b56e806802877f2031611443a56f4a959b7f510a84c",
+        "polygon_native_xy": [
+          [
+            433,
+            530
+          ],
+          [
+            519,
+            534
+          ],
+          [
+            536,
+            555
+          ],
+          [
+            531,
+            596
+          ],
+          [
+            453,
+            609
+          ],
+          [
+            428,
+            578
+          ]
+        ],
+        "inward_feather_pixels": 12,
+        "operation": "polygon intersect fixed foreground transmittance > 0.985; EDT/12 clamped; round to 8-bit",
+        "retained_support": "largest connected alpha component; discarded tiny mask-edge islands",
+        "removed_disconnected_island_pixels": 2,
+        "baked_into_texture_alpha": true,
+        "apply_again_at_runtime": false
+      },
+      "unmasked_registered_file": "blush_screen_left_registered_unmasked.png",
+      "unmasked_registered_file_required_for_runtime": false,
+      "unmasked_registered_file_role": "reproducible diagnostic only; may be omitted from shipment",
+      "sha256": "65673f7e22f2ae17e4ed273d33b9a6a3560f4a44a115d989f59cfad80ac8a656",
+      "alpha_max": 222,
+      "texture_support_local_xyxy": [
+        29,
+        12,
+        130,
+        84
+      ]
+    },
+    "screen_right": {
+      "file": "blush_screen_right.png",
+      "xy": [
+        577,
+        519
+      ],
+      "size": [
+        148,
+        84
+      ],
+      "pivot": [
+        651.0,
+        561.0
+      ],
+      "local_pivot": [
+        74.0,
+        42.0
+      ],
+      "centered": false,
+      "z": 29,
+      "runtime_scale": [
+        1,
+        1
+      ],
+      "runtime_rotation": 0,
+      "runtime_transform_policy": "fixed position, rotation, texture and local unit scale; intensity only",
+      "anatomical_side": "character_left",
+      "source": "source_originals/RYO_FX_blush_character_L.png",
+      "source_sha256": "12efc27caceed6475110b7e17bee91044dda15da21f9a453923abda25a64a824",
+      "source_dimensions": [
+        1086,
+        724
+      ],
+      "source_alpha_nonzero_bbox": [
+        0,
+        0,
+        1086,
+        724
+      ],
+      "source_atlas_crop_xyxy": [
+        1086,
+        0,
+        2172,
+        724
+      ],
+      "source_strokes": 3,
+      "no_mirror": true,
+      "source_crop_xyxy": [
+        301,
+        196,
+        982,
+        584
+      ],
+      "alpha_cleanup": {
+        "rule": "clear entire RGBA where source alpha < 4",
+        "discarded_nonzero_alpha_pixels": 79833,
+        "maximum_discarded_alpha": 3
+      },
+      "authoring_resample": {
+        "filter": "Pillow LANCZOS in premultiplied RGBa, then RGBA",
+        "input_crop_size": [
+          681,
+          388
+        ],
+        "output_size": [
+          148,
+          84
+        ],
+        "fixed_scale_xy": [
+          0.2173274596182085,
+          0.21649484536082475
+        ]
+      },
+      "mask": {
+        "file": "blush_screen_right_cheek_mask.png",
+        "sha256": "c5a25a04439396b13a27cb45680933bee8bba632fbc86fb6e51ad411b2aa8271",
+        "polygon_native_xy": [
+          [
+            598,
+            532
+          ],
+          [
+            694,
+            532
+          ],
+          [
+            710,
+            566
+          ],
+          [
+            687,
+            603
+          ],
+          [
+            600,
+            597
+          ],
+          [
+            585,
+            561
+          ]
+        ],
+        "inward_feather_pixels": 12,
+        "operation": "polygon intersect fixed foreground transmittance > 0.985; EDT/12 clamped; round to 8-bit",
+        "retained_support": "largest connected alpha component; discarded tiny mask-edge islands",
+        "removed_disconnected_island_pixels": 338,
+        "baked_into_texture_alpha": true,
+        "apply_again_at_runtime": false
+      },
+      "unmasked_registered_file": "blush_screen_right_registered_unmasked.png",
+      "unmasked_registered_file_required_for_runtime": false,
+      "unmasked_registered_file_role": "reproducible diagnostic only; may be omitted from shipment",
+      "sha256": "33d91f6d231e7fe274a6185ed66a0375061d3610812933098fdbd82eb6d12615",
+      "alpha_max": 225,
+      "texture_support_local_xyxy": [
+        8,
+        16,
+        121,
+        82
+      ]
+    }
+  },
+  "recommended_peak_intensity": 0.55,
+  "allowed_runtime_intensity_range": [
+    0,
+    1
+  ],
+  "runtime_integration": "Two separate effect sprites; z29 above stationary face z20, below eyes z31 and hair z60-80. No base-object texture or geometry changes.",
+  "source_originals_retained": {
+    "RYO_FX_blush_character_R.png": "a818395e9cf1be5023edc62f2d79b24bb3ee19efe634e35639b2770d53536081",
+    "RYO_FX_blush_character_L.png": "12efc27caceed6475110b7e17bee91044dda15da21f9a453923abda25a64a824"
+  },
+  "fixed_registration_inferred": true,
+  "provenance": {
+    "asset_manifest_status": "separated_part_requires_2d_registration; no authored anchors",
+    "source_atlas": "effects/sources/RYO_FX_blush_source_v001.png",
+    "source_atlas_sha256": "9cdfb66936a8f83f18c839ba1e1560f3f1a35462a8013325b3a835c2a62ecb21",
+    "reference_sheet_sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
+    "reference_panel_size": [
+      418,
+      418
+    ],
+    "registration_source": "visual fit against supplied exact EXP-006 sheet and immutable no-blush native keyposes",
+    "foreground_mask_inputs": [
+      {
+        "object": "hair_temple_left_underlap",
+        "file": "rig_assets/object_face/hair_temple_left_underlap.png",
+        "sha256": "2d311a71cc9c65bbe10ebbfa2b70e5b4d4cc668014cc929e86763395f4903f29",
+        "xy": [
+          291,
+          273
+        ],
+        "z": 60
+      },
+      {
+        "object": "hair_temple_right_underlap",
+        "file": "rig_assets/object_face/hair_temple_right_underlap.png",
+        "sha256": "7771f59562ac1ad5ec148b02206d8217c2b8242b03368788001583ef3ac4897e",
+        "xy": [
+          646,
+          364
+        ],
+        "z": 60
+      },
+      {
+        "object": "hair_front_fringe_underlap",
+        "file": "rig_assets/object_face/hair_front_fringe_underlap.png",
+        "sha256": "8919277a16fc3c184c4692b44ad3d8d1c30f526910aaf587adddf00059b6f423",
+        "xy": [
+          287,
+          150
+        ],
+        "z": 60
+      },
+      {
+        "object": "hair_temple_left",
+        "file": "rig_assets/object_face/hair_temple_left.png",
+        "sha256": "c22b273e545520520693a62c84b63121918e7e460f4ff70eda671f9424be2ac1",
+        "xy": [
+          250,
+          281
+        ],
+        "z": 70
+      },
+      {
+        "object": "hair_temple_right",
+        "file": "rig_assets/object_face/hair_temple_right.png",
+        "sha256": "e22a1a00a96f91c295fc00e4719fd363b22f3983263bf9f5e1b6bac069f92601",
+        "xy": [
+          647,
+          371
+        ],
+        "z": 70
+      },
+      {
+        "object": "hair_front_fringe",
+        "file": "rig_assets/smile_support/hair_front_fringe_eye_reassigned.png",
+        "sha256": "f54b05fb8b12ea37367ee3ccc48f1e4439ae379adf0ca259de9ee59e41e213ad",
+        "xy": [
+          41,
+          55
+        ],
+        "z": 70
+      }
+    ],
+    "authoring_foreground_alpha": {
+      "file": "authoring_foreground_alpha.png",
+      "sha256": "c73fa782c17f21e93206d32e2efda072d1ebf5071ab7fdc48f7393f811382a5e",
+      "role": "reproducible diagnostic; regenerated from exact listed foreground inputs",
+      "required_for_runtime_or_rebuild": false
+    }
+  },
+  "reference_observations": [
+    {
+      "keypose": "KP01",
+      "relative_intensity": 0.0,
+      "observation": "Neutral, no visible hatching."
+    },
+    {
+      "keypose": "KP02",
+      "relative_intensity": 0.0,
+      "observation": "Anticipation, no clearly visible hatching. Slight color difference alone is not evidence of a new FX requirement."
+    },
+    {
+      "keypose": "KP03",
+      "relative_intensity": 0.0,
+      "observation": "Onset, no clearly visible hatching; at most a very faint warm wash."
+    },
+    {
+      "keypose": "KP04",
+      "relative_intensity": 0.65,
+      "observation": "Clear lighter cheek hatching and warm wash."
+    },
+    {
+      "keypose": "KP05",
+      "relative_intensity": 1.0,
+      "observation": "Strongest clear hatching and cheek wash; use recommended peak scalar."
+    },
+    {
+      "keypose": "KP06",
+      "relative_intensity": 0.35,
+      "observation": "Leak is noticeably reduced; no clear individual hatch lines, faint warm wash remains."
+    },
+    {
+      "keypose": "KP07",
+      "relative_intensity": 0.0,
+      "observation": "Recovery has no clear hatching."
+    },
+    {
+      "keypose": "KP08",
+      "relative_intensity": 0.0,
+      "observation": "Release has no clear hatching."
+    },
+    {
+      "keypose": "KP09",
+      "relative_intensity": 0.0,
+      "observation": "Neutral return, no clear hatching."
+    }
+  ],
+  "limitations": [
+    "Original FX have three long diagonal strokes per cheek; exact reference has many finer hatch marks. This registration preserves original art rather than inventing matching hatching.",
+    "Original FX wash is pinker than the reference peach/orange wash. No recoloring was performed.",
+    "Positions and cheek masks are inferred authoring registration, not recovered rig anchors.",
+    "Foreground-hair images include skin-colored pixels. The fixed inward mask avoids their visible notch without modifying hair or painting through it.",
+    "Static mask assessed against zero hair sway, which EXP-006 uses. Runtime layering still occludes with moving foreground hair; other performances need their own visual review.",
+    "Static reference observations are not recovered animation timings."
+  ],
+  "builder": {
+    "file": "build_registered_blush.py",
+    "sha256": "80e899ea60d8a96a436010d11aa7a0c4f4bd1da09aa121d13ca1daf4cfac30ff",
+    "python": "3.12.14",
+    "pillow": "13.0.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

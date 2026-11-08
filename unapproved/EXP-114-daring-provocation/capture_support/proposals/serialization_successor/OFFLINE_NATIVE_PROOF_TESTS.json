@@ -1,0 +1,39 @@
+{
+  "status": "PASS_OFFLINE_ONLY",
+  "tests": [
+    {
+      "name": "Positive exact invariance fixture from real neutral data",
+      "status": "PASS",
+      "actual_new_capture": false
+    },
+    {
+      "name": "owners_flag",
+      "status": "PASS_EXPECTED_REJECTION"
+    },
+    {
+      "name": "controls_flag",
+      "status": "PASS_EXPECTED_REJECTION"
+    },
+    {
+      "name": "after_tree_hash",
+      "status": "PASS_EXPECTED_REJECTION"
+    },
+    {
+      "name": "instance_hash",
+      "status": "PASS_EXPECTED_REJECTION"
+    },
+    {
+      "name": "owner_count",
+      "status": "PASS_EXPECTED_REJECTION"
+    },
+    {
+      "name": "changed_control",
+      "status": "PASS_EXPECTED_REJECTION"
+    }
+  ],
+  "python_ast_all_proposals": true,
+  "minimal_wrapper_shell_syntax_only": true,
+  "original_source_and_failed_evidence_identity": "PASS",
+  "accepted_runtime_checks": 5380806,
+  "no_new_engine_or_capture": true
+}

@@ -1,0 +1,11 @@
+# Local Quiet sadness performance candidate
+
+EXP-021 is a data-only successor to approved main 2d46f72704ddf2a329b44a87cd24c66d5fe92568. It is registered locally for review only. The eleven prior profiles and all runtime, shaders, scenes, textures and artwork are unchanged. Registry and this README are the only altered baseline files; other additions are the new profile, source evidence, focused test and capture harness.
+
+The exact original v001 sheet SHA-256 is 7be2c4ce51db48783193dc93e053cc8ce9bb7a2086ea4ac4580f5ec83a362ebb at original commit 7693d1b8718c3bb1c717bd586fb472a7efc42403. Original metadata and the static acceptance receipt are under source_references/. Static source fit accepted the existing-control heavier peak. This is technical review, not user approval.
+
+Newly authored timing has five keys: neutral at 0, peak at 1.40, same peak at 2.05, neutral at 3.50 and finish at 3.65 seconds. There is one continuous sink, a .65-second sad hold, and one continuous 1.45-second recovery. The nine source panels have sampled comparison times, not nine separate stop keys or recovered timing. The source map discloses every coordinate and weight. The unchanged shared player adds its established .30-second displayed-pose restart and .45-second release semantics.
+
+The selected peak uses blink .40/.40; brow heights -.20/-.20; inner lifts .82/.65; gaze_y1 and down_extra .30. Every mouth channel, smile-eye channel, legacy brow tilt, blush, hair and horizontal gaze is zero. The mouth remains its existing small sealed contour. The source has different eyebrow curvature and somewhat stronger lip downturn; recognizable source acting is preserved without replacing the canonical face/head/neck. No head warp, flat face crop, anatomy generation or opacity crossfade is introduced.
+
+Run the focused test with Godot 4.6.3: --headless --path . --script res://tests/test_quiet_sadness_runtime.gd -- --output=/absolute/results.json. Final source/capture identity and external review evidence are supplied alongside this clean source. Old exact-scope publication guards are inherited historical receipts and must not be rewritten to claim this successor is that older package. No socket, AI/TTS, normal-speed playback observation, CI or publication is claimed by this source.

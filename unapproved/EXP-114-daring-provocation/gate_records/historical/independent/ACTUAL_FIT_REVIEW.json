@@ -1,0 +1,42 @@
+{
+  "status": "PASS_BOUNDED_STATIC_FACIAL_FIT_WITH_AMBER_LIMITS",
+  "combined_actual_visual_fit_pass": true,
+  "source_expression": "EXP-114 daring provocation",
+  "states": 7,
+  "actual_native_images": 7,
+  "actual_bust_images": 7,
+  "material_join_pass_at_frozen_states": true,
+  "expressive_intent_pass_at_actual_bust": true,
+  "distinct_from_102_181_186": true,
+  "source_KP5_head_cant_reproduced": false,
+  "source_KP6_frontality_decisive": true,
+  "amber_limits": [
+    "Source central brow opposition and peak force are softened; actual interpretation is a restrained cocky forward challenge, not exact peak intensity.",
+    "Real source KP5 head cant omitted, with no head/neck/gaze proxy.",
+    "Canonical fuller lips, lower-lid curvature, detailed enamel and lash/hair edge roughness remain.",
+    "Both eyes retain amber throughout. This is not full closure or a wink.",
+    "KP4 enamel is a very thin parting accent at actual bust scale.",
+    "Known maximum-open/spread/corner stress wedge remains unfixed; no extrapolation beyond these exact frozen states.",
+    "Raw/import RGB differences are inherited and explicit; alpha and headless/native buffers remain exact.",
+    "Source-pair layout clips16 far-right pixels from KP3/6/9 source detail crops; original panels independently inspected."
+  ],
+  "neutral_png_bytes_exact_both_views": true,
+  "direct_owner_and_source_cache_audit_pass": true,
+  "timeline_or_performance_approved": false,
+  "new_engine_run_authorized": false,
+  "publication_or_registry_change_authorized": false,
+  "automatic_refit_authorized": false,
+  "run_result_sha256": "913586c089d0ce28efe4a6519ffd82fb838aea8e47704223122463ee81aad0d2",
+  "emitted_evidence_sha256": "3f8568ed8f5725e0dcfd84c55e2bd27abc262f57dcd3a68a394b41a188fd7fa1",
+  "static_plan_sha256": "2bafce84efb7534c26e85a26a770fa9c53f99e7952a425f332cf515922f77ec8",
+  "artifact_binding_sha256": "8b055ac44fd4e7e9f5570644a4c79b3fdea332bd302111c10dc64249d2bcdd3d",
+  "report_sha256": "14998fe1df434b56c8b47872baac37fa61ea876ebf60707950f151e435aa5ebf",
+  "independent_records_sha256": "48f2b72eb5ba325f5c28c5d7515e410f116f561badfbb186c34ca0a7e4e96ef7",
+  "audit_script_sha256": "b10f9522c817e9859a86090485953f85c70f8c144244b00b855ca37ebba25aea",
+  "comparison_media": {
+    "knowing_smirk_delivery/rebuilt_media/EXP102_knowing_smirk_reference_comparison.png": "cef9be063557b773473df8462353716ed4509e7f05a65e615ca705592aa244d2",
+    "cheeky_wink_delivery/deliverables/EXP181_cheeky_wink_reference_comparison.png": "ec99658173305c4511ef2c2421d87500085cf1b883ef241de8eb434588d8cea3",
+    "smug_cat_smile_delivery/rebuilt_media/EXP186_smug_cat_smile_reference_comparison.png": "a89776678edff338771421f6a0706d65641b529d9debc99aeb0ea919a945339d"
+  },
+  "review_actions": "Read original and actual images, file hashes, direct state records, NumPy/Pillow diagnostics only. Writes solely to daring_provocation_independent_review. No Godot/display/source/art/runtime/profile/Git writes."
+}

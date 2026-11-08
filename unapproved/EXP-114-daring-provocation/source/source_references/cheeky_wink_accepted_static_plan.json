@@ -1,0 +1,69 @@
+{
+  "status": "final_integrated_static_gate_no_further_exploration",
+  "candidate_cases": [
+    {
+      "label": "neutral",
+      "source_key": 1,
+      "values": {}
+    },
+    {
+      "label": "kp3_wider_sealed",
+      "source_key": 3,
+      "values": {
+        "blink_L": 1,
+        "blink_R": 0.02,
+        "brow_screen_left": 0.08,
+        "brow_tilt_screen_left": -0.08,
+        "brow_tilt_screen_right": 0.12,
+        "mouth_smile": 0.38,
+        "mouth_spread": 0.95,
+        "mouth_corner_lift_screen_right": 0.58,
+        "eye_smile_L": 0.7
+      }
+    },
+    {
+      "label": "kp5_wider_enamel",
+      "source_key": 5,
+      "values": {
+        "blink_L": 1,
+        "blink_R": 0.06,
+        "brow_screen_left": 0.1,
+        "brow_tilt_screen_left": -0.1,
+        "brow_tilt_screen_right": 0.14,
+        "mouth_smile": 0.76,
+        "mouth_spread": 0.95,
+        "mouth_corner_lift_screen_right": 0.85,
+        "mouth_open": 0.16,
+        "eye_smile_L": 0.7
+      }
+    },
+    {
+      "label": "kp6_wider_hold",
+      "source_key": 6,
+      "values": {
+        "blink_L": 1,
+        "blink_R": 0.04,
+        "brow_screen_left": 0.08,
+        "brow_tilt_screen_left": -0.08,
+        "brow_tilt_screen_right": 0.12,
+        "mouth_smile": 0.53,
+        "mouth_spread": 0.95,
+        "mouth_corner_lift_screen_right": 0.75,
+        "eye_smile_L": 0.7
+      }
+    },
+    {
+      "label": "kp7_wider_recovery",
+      "source_key": 7,
+      "values": {
+        "blink_L": 0.08,
+        "blink_R": 0.04,
+        "brow_screen_left": 0.02,
+        "mouth_smile": 0.2,
+        "mouth_spread": 0.9,
+        "mouth_corner_lift_screen_right": 0.35
+      }
+    }
+  ],
+  "predecessor_cases": []
+}

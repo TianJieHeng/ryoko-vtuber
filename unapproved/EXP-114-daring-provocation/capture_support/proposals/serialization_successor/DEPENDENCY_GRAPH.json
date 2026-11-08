@@ -1,0 +1,31 @@
+{
+  "status": "PASS_OFFLINE",
+  "active_execution_files": [
+    "trajectory_record_files.gd",
+    "record_files.py",
+    "verify_native_record_files.py",
+    "verify_native_stream_inputs.py",
+    "guard_native_stream.py",
+    "run_native_stream.py",
+    "EXP114_NATIVE_STREAM_ONCE.sh"
+  ],
+  "engine_script": "/workspace/scratch/42f2baf55663/daring_provocation_performance_work/proposals/serialization_successor/trajectory_record_files.gd",
+  "runtime_tree": "runtime/candidate",
+  "source_and_profile_package_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+  "literal_engine_dependencies": [
+    {
+      "script": "trajectory_record_files.gd",
+      "literal": "res://expression_rig.tscn",
+      "sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533"
+    }
+  ],
+  "actual_import_graph": "Original182 PNG sidecars/compiled resources remain bound by original cache contract",
+  "inactive_earlier_drafts": [
+    "verify_record_files.py",
+    "prepare_verifier.py",
+    "VERIFIER_TRANSPORT_ONLY.patch"
+  ],
+  "future_reference_policy": "No unavailable headless/native cross-run equality claim; every native capture has exact before/after render-invariance proof; static comparisons stay exact",
+  "output": "native_stream_01",
+  "wrapper_route": "Supported Sky/CUA Thunar custom /bin/sh, default OFF, one Open click"
+}

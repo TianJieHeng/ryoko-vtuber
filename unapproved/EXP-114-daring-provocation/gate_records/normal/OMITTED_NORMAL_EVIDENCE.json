@@ -1,0 +1,12 @@
+{
+  "historical_source": "daring_provocation_performance_work/normal_01/evidence.json",
+  "sha256": "7d0eafc9ad5a44f2eeb19b253ed0577ab1d607360b6eb0f35a4d7ab5c3181b9a",
+  "size": 3065805,
+  "omitted": true,
+  "reason": "Large 966-state record dump omitted from source-only backup. Exact run receipts and independent detailed cycle/frame-gap review retained.",
+  "checks": 1946,
+  "cycles": 4,
+  "samples": 966,
+  "smooth_runtime_status": "HOLD",
+  "intermittent_not_continuous_observation": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_OFFLINE",
+  "all_original_assertion_lines_preserved": true,
+  "capture_row_construction_all_fields_unchanged": true,
+  "pose_sampling_transport_owner_material_camera_functions_exact": true,
+  "capture_image_original_assertion_retained_with_added_before_after_proof": true,
+  "new_functions": [
+    "write_record",
+    "validate_record_files"
+  ],
+  "only_retained_collection": "Small descriptors, not complete checkpoint records",
+  "original_harness_sha256": "599fc77a1fb4ab3083161d3179d193b6a6a4f373f245bc34282b83730b1e9269",
+  "proposed_harness_sha256": "fc3e576f4ee5e2d86dcfd704e512a74bd7fd397267944e6beb61fb90b0dcae6a"
+}

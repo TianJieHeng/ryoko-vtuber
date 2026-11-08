@@ -1,0 +1,25 @@
+{
+  "status": "FAIL",
+  "returncode": 1,
+  "binding_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed",
+  "finished_utc": "2026-11-08T11:41:21.289514+00:00",
+  "remaining_godot_processes": [],
+  "lease_released": true,
+  "post_identity": {
+    "status": "PASS",
+    "approved_source_files": 646,
+    "approved_profiles": 18,
+    "candidate_source_files": 660,
+    "pending_profiles": [
+      "EXP-114"
+    ],
+    "pngs": 182,
+    "generated_sidecars": 180,
+    "imported_resource_files": 364,
+    "cache_metadata": 3,
+    "profile_sha256": "96eed6ccf108e2e54590f953ae01b129a04af223245fecc1fc59c2af19f8c107",
+    "capture_plan_sha256": "bf211f3e3b571ad362024f1761da1bda3b27571fd3e26e07df7cd82c10ea438a",
+    "candidate_manifest_sha256": "789c7136d0765154a9e892c26442e3b6895718e6ea399a58730bb72384b168e4",
+    "prepared_package_sha256": "f87c137ecdbfdeb425f060f4944858086689a41f203456d8038582253e77deed"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "frozen_code_art_files": 310,
+  "aggregate_sha256": "6c90c6e48fbd770c22a3824e3d0a6fa011faa6b437709abf208e8c8f9199e5fc",
+  "mismatches": [],
+  "isolation": "Python audit denies all sibling workspace file reads outside isolated/; installed dependencies allowed."
+}

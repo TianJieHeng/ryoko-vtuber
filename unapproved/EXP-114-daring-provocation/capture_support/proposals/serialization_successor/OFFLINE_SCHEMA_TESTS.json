@@ -1,0 +1,142 @@
+{
+  "status": "PASS_OFFLINE_ONLY",
+  "scope": "Offline serialization equivalence and fail-closed negatives only; no Godot or visual-performance claim",
+  "real_record_source": "/workspace/scratch/42f2baf55663/daring_provocation_fit_work/native_capture_01/evidence.json",
+  "real_record_source_sha256": "3f8568ed8f5725e0dcfd84c55e2bd27abc262f57dcd3a68a394b41a188fd7fa1",
+  "tests": [
+    {
+      "name": "Seven complete actual native static records, all recursive fields and header round trip exactly",
+      "status": "PASS",
+      "real_records": 7,
+      "new_performance_evidence": false,
+      "original_row_content_sha256": [
+        "55d9cbe4324addff9d837794432ec925ffe4daa22f6d07a436ae709b46b91e7e",
+        "de2eaa80b2ae1555ec5a5d6e0d308bd9810ab407c1e6412a23c9d711928204b1",
+        "8ffc7b8a3ee7cd0b82f4de365f1136e434f39b8801353aea4b18c0217baf724c",
+        "d5ef29619c3f3043945117bd03ee20c578851285255991a4f29295b6c3e5c381",
+        "edd00b60a3344ccdd7a9b2708d5dbab8bff3b2cced372c6aac2956fea38a5569",
+        "eef2c6f563b7f20b14581751c19ab39c9403c6df79b1b0d8351befaf144b5f4f",
+        "e1ff2b7646ccf7968997ed2e57a54531d26e5b331c29420743327d27bee7af57"
+      ]
+    },
+    {
+      "name": "701 ordered synthetic transport records preserve exact real control values",
+      "status": "PASS",
+      "checkpoints": 701,
+      "not_actual_trajectory": true
+    },
+    {
+      "name": "missing_completion_manifest",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "truncated_manifest_zero_bytes",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "name": "truncated_manifest_partial_json",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "JSONDecodeError: Expecting ',' delimiter: line 1 column 17 (char 16)"
+    },
+    {
+      "name": "explicit_failure_manifest",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "incomplete_manifest",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "record_count_mismatch",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "boolean_count_rejected",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "short_record_index",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "missing_record_file",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: missing or extra record file"
+    },
+    {
+      "name": "truncated_record_file",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: ('record size/hash', 345)"
+    },
+    {
+      "name": "duplicate_index_entry",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "reordered_index",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "wrong_descriptor_hash",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: ('record size/hash', 0)"
+    },
+    {
+      "name": "wrong_descriptor_size",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: ('record size/hash', 0)"
+    },
+    {
+      "name": "path_escape",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "extra_record_file",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: missing or extra record file"
+    },
+    {
+      "name": "plan_hash_mismatch",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: "
+    },
+    {
+      "name": "self_consistent_hash_wrong_row_identity",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: (0, 'label', 'record identity')"
+    },
+    {
+      "name": "duplicate_record_json_key",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: ('duplicate JSON key', 'label')"
+    },
+    {
+      "name": "duplicate_manifest_key",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: ('duplicate JSON key', 'status')"
+    },
+    {
+      "name": "nonfinite_record_json",
+      "status": "PASS_EXPECTED_REJECTION",
+      "reason": "AssertionError: nonfinite JSON NaN"
+    },
+    {
+      "name": "Clean701 fixture remains unchanged after all negative tests",
+      "status": "PASS"
+    }
+  ],
+  "new_engine_invocations": 0,
+  "record_array_retention_in_reader": false,
+  "actual_performance_gate_passed": false,
+  "fixture_files_disposed": true
+}
