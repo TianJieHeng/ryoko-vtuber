@@ -1,0 +1,74 @@
+{
+  "status": "Ten user-approved performances, including revised EXP-177 meditative calm",
+  "user_approved": true,
+  "published": true,
+  "base_main": "70655752bc82ba01b3fe8f64923360da60c578c9",
+  "capability_parent_inventory_sha256": "7d5004d5a7ef4e3518b994752fb5d9afb7e0a458f5a1d084fa156677a4f06fb1",
+  "capability_freeze_receipt_sha256": "08069f54450594fee1ee57c790ee7aadc60bb9c49a6af54d489cb5d69d4ca995",
+  "authored_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177"
+  ],
+  "approved_predecessors": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160"
+  ],
+  "excluded": [
+    "EXP-003",
+    "head/body acting",
+    "FX",
+    "AI/TTS integration",
+    "real socket setup",
+    "EXP-161",
+    "EXP-153",
+    "EXP-164"
+  ],
+  "protected_capability_pngs": 182,
+  "performance_new_pngs": 0,
+  "performance_runtime_changes": false,
+  "mouth_limits": {
+    "physical_multiplier": 0.55,
+    "source_pixel_aperture_max": 30.8,
+    "fixed_upper_teeth_xy": [
+      533,
+      626
+    ]
+  },
+  "normal_speed_playback_observed": false,
+  "verification": "MEDITATIVE_PUBLICATION_VALIDATION.md",
+  "publication": "User approved the revised smoother-closing preview. The containing commit and external main readback establish publication; no CI, paid resources or remote execution.",
+  "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177"
+  ],
+  "approved_dependency": [
+    "hidden canonical iris cap completion / gaze_down_extra",
+    "rigid outer-anchor inner-brow lift, 26-degree additional bound"
+  ],
+  "shy_review_inventory_sha256": "9978d0cd18212e104355ca6e06ba9c6b969011c6041a755e74b414adb3700418",
+  "published_base_project_tree": "ca82147090e5a8cd9db749a12a3940fab1fa6e58",
+  "meditative_review_inventory_sha256": "b5a10081697aa3cfaa28484db1b035a94b9c954c54f44623b0d2da2acfca1ec8"
+}

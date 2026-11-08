@@ -1,0 +1,26 @@
+{
+  "status": "PASS_EXACT_CAPTURE_BINDING_AND_FINAL_SOURCE",
+  "binding_sha256": "2954278296f4d0441a63e8a4e8a9d00911eea5f7cf942b465254339adff584bc",
+  "source_freeze_sha256": "e202d44875c95e57a5d493b44d78078e910bcf74535d9b7d753cf1546d6740c4",
+  "plan_sha256": "2785d5e4d1c73c765801dc974d3cc54ee0dc6d7764791903d01b3e4252c50314",
+  "profile_sha256": "226f82f8e7e26599239b58cbd8d7d6c51240610fdd971e22c1baf9c0bd7b4d60",
+  "clean_source_files": 628,
+  "pngs": 182,
+  "registered_profiles": 18,
+  "approved_profiles": 12,
+  "binding_files_verified": 21,
+  "external_evidence_verified": 23,
+  "independent_preflight_bytes_match_builder": true,
+  "independent_preflight_sha256": "8ef5db769aa6feb4a8179a1ff5625f8e640013a52464443c6757345339675ed5",
+  "prior_parity_records_exact": 2936,
+  "prior_parity_sha256": "e6265e86817221559f650a1a92de407e2f0c6e137cef56ebcb377441d7ab7a9c",
+  "independent_base18_static_manual_matches_base16_and17": true,
+  "static_manual_sha256": "1585442183e7cc08609fcb2bb3dce497bd1c963e1b3da96558d2c4ba0952fa7f",
+  "launch_executables_exist_and_executable": [
+    "/bin/sh",
+    "/bin/mkdir",
+    "/usr/local/bin/godot",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python"
+  ],
+  "capture_attempt_absent": true
+}

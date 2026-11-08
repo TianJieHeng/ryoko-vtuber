@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "engine": "Godot 4.6.3, actual OpenGL viewport capture",
+  "control_step": 0.001,
+  "total_actual_frames": 4004,
+  "visual_review": "Tiny positive closure, mid-closure, contour handover and full closure reviewed at source and native stage scale; no zero-only pop or broad tan/foreground-hair interruption.",
+  "views": {
+    "source_1x": {
+      "actual_frames": 2002,
+      "transitions": 2000,
+      "max_consecutive_channel_delta": 45,
+      "max_pixels_over_100": 0,
+      "max_mean_absolute_rgb_delta": 0.12088235294117647,
+      "forward_reverse_mismatch_count": 0,
+      "neutral_reopen_exact": true
+    },
+    "stage_049": {
+      "actual_frames": 2002,
+      "transitions": 2000,
+      "max_consecutive_channel_delta": 45,
+      "max_pixels_over_100": 0,
+      "max_mean_absolute_rgb_delta": 0.1298669467787115,
+      "forward_reverse_mismatch_count": 0,
+      "neutral_reopen_exact": true
+    }
+  }
+}

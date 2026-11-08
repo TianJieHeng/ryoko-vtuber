@@ -1,0 +1,76 @@
+{
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": [
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp01_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp01_v001.png",
+      "git_blob_sha": "a48584a62363084aeff405cd89fd89947937cb41",
+      "sha256": "eddb87f2569116157e1827f7ca3c4d2e91088165d0765ca84c0f4506121089c8",
+      "size": 232850
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp02_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp02_v001.png",
+      "git_blob_sha": "4a7c4653675828436694d23a2ca8e99d4a230674",
+      "sha256": "5f4880a93cf9aa0c0f4fdb84eefabfb8c79f8b91f18d2d46fa0f2e3da5f4a0ce",
+      "size": 232935
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp03_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp03_v001.png",
+      "git_blob_sha": "fd706ab08478c996c05b4a37ae8289d0eca8949b",
+      "sha256": "006e1055890718fd4273781d5761c5b57176370270624012daa528cd58d159d6",
+      "size": 232453
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp04_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp04_v001.png",
+      "git_blob_sha": "0ca85388dd82d3a76d47795c6b98292ee9a170bd",
+      "sha256": "8254d8fc54860a633406083d734c2e8e58d1659433378f9c43e961de5dfa4c05",
+      "size": 231902
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp05_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp05_v001.png",
+      "git_blob_sha": "2e2a982a723ea4f8d2e81dc8fdb6146bc73c0e23",
+      "sha256": "7d82c3c330b8dfc8e7e1b6da29ff9649b00193b8a962d64563d3b54d59ab073f",
+      "size": 232809
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp06_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp06_v001.png",
+      "git_blob_sha": "edca5d6efa7543d6f40e74f2b880a93bcd04bbbf",
+      "sha256": "60cb640cd6d994019853ee9687dea5b32faf91bd6f405f6fa402db29d3b00142",
+      "size": 230338
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp07_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp07_v001.png",
+      "git_blob_sha": "9edf73d4e8803f037dda7e769136900bcab42796",
+      "sha256": "67347ee4409488519f696b4ac22b030aad5fa3c84459b38937c390824f7a4d6a",
+      "size": 227976
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp08_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp08_v001.png",
+      "git_blob_sha": "8526dcab7b891943ea6d4b8e60862e5673a6e2e7",
+      "sha256": "fdace209bae11cb0a0f9b9f5aa4026f8d60b9afb6611077fd7c2aba559f09e92",
+      "size": 227972
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_kp09_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_kp09_v001.png",
+      "git_blob_sha": "3bf7c00a0487f5b79d5bc49496c0cc7a7fad9278",
+      "sha256": "878f2b952eafa651dc940eb523c7cf74594001c0061ec7d154d1980ad0f1cc37",
+      "size": 228437
+    },
+    {
+      "name": "RYO_EXP-186_smug-cat-smile_sheet_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-186_smug-cat-smile/RYO_EXP-186_smug-cat-smile_sheet_v001.png",
+      "git_blob_sha": "ff5e2fb97c0170494719320bfe231d258e2b350b",
+      "sha256": "95a85f6bd6f16fc3ecd0d914b83dafef8464a91928239e9bd53bf0add180ccc8",
+      "size": 2238921
+    }
+  ]
+}

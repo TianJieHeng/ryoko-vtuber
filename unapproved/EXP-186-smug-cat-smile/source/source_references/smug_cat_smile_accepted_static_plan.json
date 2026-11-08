@@ -1,0 +1,110 @@
+{
+  "status": "immutable six-pose static hypothesis v1; unregistered, unapproved, not an animation",
+  "expression": "EXP-186 Smug cat smile",
+  "source_original_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "source_sheet_sha256": "95a85f6bd6f16fc3ecd0d914b83dafef8464a91928239e9bd53bf0add180ccc8",
+  "baseline_source_freeze_sha256": "dd52d78b1a6987140ea0728a41f35841746fc0e102c66c1941fd64677ddf919a",
+  "baseline_files": 605,
+  "baseline_profiles": 16,
+  "candidate_cases": [
+    {
+      "label": "neutral_start",
+      "source_key": 1,
+      "values": {}
+    },
+    {
+      "label": "kp3_onset",
+      "source_key": 3,
+      "values": {
+        "blink_R": 0.22,
+        "blink_L": 0.18,
+        "brow_screen_left": -0.06,
+        "brow_screen_right": 0.15,
+        "brow_tilt_screen_left": 0.08,
+        "brow_tilt_screen_right": -0.12,
+        "mouth_smile": 0.18,
+        "mouth_spread": 0.45,
+        "mouth_width_screen_left": 0.12,
+        "mouth_width_screen_right": 0.22,
+        "mouth_corner_lift_screen_left": 0.04,
+        "mouth_corner_lift_screen_right": 0.26
+      }
+    },
+    {
+      "label": "kp5_cat_smile_peak",
+      "source_key": 5,
+      "values": {
+        "blink_R": 0.36,
+        "blink_L": 0.33,
+        "brow_screen_left": -0.18,
+        "brow_screen_right": 0.5,
+        "brow_tilt_screen_left": 0.35,
+        "brow_tilt_screen_right": -0.4,
+        "mouth_smile": 0.4,
+        "mouth_spread": 0.45,
+        "mouth_width_screen_left": 0.8,
+        "mouth_width_screen_right": 1.0,
+        "mouth_corner_lift_screen_left": 0.22,
+        "mouth_corner_lift_screen_right": 0.9
+      }
+    },
+    {
+      "label": "kp6_eased_peak",
+      "source_key": 6,
+      "values": {
+        "blink_R": 0.31,
+        "blink_L": 0.3,
+        "brow_screen_left": -0.13,
+        "brow_screen_right": 0.4,
+        "brow_tilt_screen_left": 0.22,
+        "brow_tilt_screen_right": -0.32,
+        "mouth_smile": 0.34,
+        "mouth_spread": 0.45,
+        "mouth_width_screen_left": 0.68,
+        "mouth_width_screen_right": 0.85,
+        "mouth_corner_lift_screen_left": 0.16,
+        "mouth_corner_lift_screen_right": 0.76
+      }
+    },
+    {
+      "label": "kp7_recovery",
+      "source_key": 7,
+      "values": {
+        "blink_R": 0.18,
+        "blink_L": 0.12,
+        "brow_screen_left": -0.03,
+        "brow_screen_right": 0.09,
+        "brow_tilt_screen_left": 0.04,
+        "brow_tilt_screen_right": -0.06,
+        "mouth_smile": 0.15,
+        "mouth_spread": 0.3,
+        "mouth_width_screen_left": 0.18,
+        "mouth_width_screen_right": 0.26,
+        "mouth_corner_lift_screen_left": 0.03,
+        "mouth_corner_lift_screen_right": 0.13
+      }
+    },
+    {
+      "label": "neutral_return",
+      "source_key": 9,
+      "values": {}
+    }
+  ],
+  "required_zero_channels": [
+    "mouth_open",
+    "mouth_purse",
+    "mouth_lip_press",
+    "mouth_oral_lift",
+    "mouth_corner_lift",
+    "eye_smile_L",
+    "eye_smile_R",
+    "gaze_x",
+    "gaze_y",
+    "gaze_down_extra",
+    "blush_intensity",
+    "hair_sway",
+    "brow_inner_lift_screen_left",
+    "brow_inner_lift_screen_right"
+  ],
+  "rationale": "All nine exact panels inspected. KP5 and KP6 retain amber eye slits: ordinary bilateral closure is therefore used rather than fully closed smile-lash contours. Deep bilateral narrowing, asymmetric brow relaxation, broad sealed width and independently biased positive corners must work together as a smug cat smile; a heavier-blink EXP102 alone is insufficient. KP6 is an eased peak; KP7 reopens eyes while its smaller smile lingers. Source head/body inclination is deliberately excluded. Canonical lip fullness and absent painted crease are disclosed appearance differences, not automatic rejection, but a generic smile cannot pass. Eye narrowing, source mouth bias and recovery must remain readable without a wink or full closure. No general open-width operation, new pigment, texture replacement, whole-mouth transform or profile registration."
+}

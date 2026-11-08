@@ -1,0 +1,70 @@
+{
+  "status": "User-approved EXP-007 release",
+  "base_commit": "35a7ddc615e7501a9a814ca02d722ddb40f200c9",
+  "base_subtree": "ryoko_object_rig/",
+  "base_project_tree": "a2d6c440b73f0a241d73b7bb50c3028fa7ef385c",
+  "authored_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007"
+  ],
+  "approved_predecessors": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107"
+  ],
+  "protected_parent_pngs": 182,
+  "new_pngs": 0,
+  "new_controls": {
+    "mouth_purse": [
+      0,
+      1
+    ]
+  },
+  "excluded": [
+    "wide-eye support",
+    "EXP-003",
+    "tracking",
+    "body acting",
+    "external AI/TTS connection"
+  ],
+  "review_movie": {
+    "frames": 264,
+    "fps": 30,
+    "duration_seconds": 8.8,
+    "cycles": 2,
+    "normal_speed_playback_performed": false
+  },
+  "reference_sheet_sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+  "mouth_limits": {
+    "normalized": [
+      0,
+      1
+    ],
+    "physical_multiplier": 0.55,
+    "per_column_source_px_max": 30.8,
+    "fixed_central_upper_teeth_xy": [
+      533,
+      626
+    ]
+  },
+  "verification": "RELIEF_SCOPE_VALIDATION.md",
+  "publication": "EXP-007 is user-approved for publication. The containing repository commit and external verification receipt establish publication. No CI, paid resources, remote execution or external model/TTS integration.",
+  "release": "Scoped EXP-007 relieved smile and generic rigid purse on the shared rig",
+  "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007"
+  ],
+  "approved_review_inventory_sha256": "9b4fa2e3d12b42f37f260ea2e1e39d5b143edb2570de38b25b08c414c246d452",
+  "approved_review_source_manifest_sha256": "b779e9142f3df374b8942fab0db295f8039803e9d6b3e67ef3da50ad8c06124e",
+  "publication_overlay": "Live approval/status documentation and release metadata only, with regenerated source manifest and migration hashes. Runtime, artwork, profile values, tests and historical review receipts remain byte-identical to the approved freeze."
+}

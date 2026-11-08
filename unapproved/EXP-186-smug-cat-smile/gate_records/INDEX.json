@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "backup_name": "ACTUAL_PERFORMANCE_REVIEW.md",
+      "historical_source": "smug_cat_smile_performance_review/ACTUAL_PERFORMANCE_REVIEW.md",
+      "sha256": "e0e5d56e895e7adb210480378c3174cc210621888adb770834f8fcfdd0bc7ca3"
+    },
+    {
+      "backup_name": "ACTUAL_PERFORMANCE_VERDICT.json",
+      "historical_source": "smug_cat_smile_performance_review/evidence/ACTUAL_PERFORMANCE_VERDICT.json",
+      "sha256": "2f232de74d0be51f577add3e2e434400e9be0f2e1fcc8824bded3d25f9d1aaae"
+    },
+    {
+      "backup_name": "PRE_CAPTURE_REVIEW.md",
+      "historical_source": "smug_cat_smile_performance_review/PRE_CAPTURE_REVIEW.md",
+      "sha256": "ad8321bc88b8caf987e50bd7987ec0c50145b9daf5cf883708fe28364ef59207"
+    },
+    {
+      "backup_name": "PRE_CAPTURE_VERDICT.json",
+      "historical_source": "smug_cat_smile_performance_review/evidence/PRE_CAPTURE_VERDICT.json",
+      "sha256": "bdc34cc11808430674731572117bb5b1cfa509884988f4824307388944b42ede"
+    },
+    {
+      "backup_name": "FINAL_CAPTURE_BINDING_REVIEW.json",
+      "historical_source": "smug_cat_smile_performance_review/evidence/FINAL_CAPTURE_BINDING_REVIEW.json",
+      "sha256": "2532c2813c8d40a611fc61760b83c482d2982d9eb86af0ecbfc60eb8f655cfa1"
+    },
+    {
+      "backup_name": "ACTUAL_VISUAL_EDGES.json",
+      "historical_source": "smug_cat_smile_performance_review/evidence/ACTUAL_VISUAL_EDGES.json",
+      "sha256": "bb7f7db01cdb891f481ab645203281f40732cbd06630ed7d96d91ec5c3f2090f"
+    },
+    {
+      "backup_name": "PRIOR_PARITY.json",
+      "historical_source": "smug_cat_smile_performance_work/evidence/PRIOR_PARITY.json",
+      "sha256": "fb1477a4e1fc237ea647e931b2882a979d65cd9ec750cca408807b55441ffd8e"
+    },
+    {
+      "backup_name": "CAPTURE_INPUT_BINDING.json",
+      "historical_source": "smug_cat_smile_performance_work/evidence/CAPTURE_INPUT_BINDING.json",
+      "sha256": "2954278296f4d0441a63e8a4e8a9d00911eea5f7cf942b465254339adff584bc"
+    },
+    {
+      "backup_name": "BUILDER_ACTUAL_REPORT.md",
+      "historical_source": "smug_cat_smile_performance_work/REPORT_ACTUAL_CAPTURE.md",
+      "sha256": "1e415a3c859d2b7942a9afb7f1abd4ea5816821848b5562a1d0793156ec2e8a6"
+    },
+    {
+      "backup_name": "STATIC_INITIAL_REVIEW.md",
+      "historical_source": "smug_cat_smile_fit_review/STATIC_REVIEW.md",
+      "sha256": "074939c8850abe570856481fa6acc5985347e24aa0a5942a4f1249495b5713be"
+    },
+    {
+      "backup_name": "STATIC_REFINED_REVIEW.md",
+      "historical_source": "smug_cat_smile_fit_review/REFINED_STATIC_REVIEW.md",
+      "sha256": "14bb48e08b4a120a564a3d78a2aa8aaecf013a1c0f813d8e0ebaff10cc2b7308"
+    },
+    {
+      "backup_name": "STATIC_REFINED_VERDICT.json",
+      "historical_source": "smug_cat_smile_fit_review/evidence/REFINED_STATIC_VERDICT.json",
+      "sha256": "a587e90881224e238bc832e177a22426aa7de773d68f54ba9d8a5c5879487f15"
+    }
+  ],
+  "preserved_unchanged": true,
+  "scope": "Concise historical gate records. Raw captured images, analysis sheets, full image receipt dumps and working audit environments are omitted. Verdicts retain hashes of omitted evidence; BACKUP_MANIFEST.json is the complete inventory of this recovery package. Source and captured plan are exact; these records do not represent a new visual review."
+}

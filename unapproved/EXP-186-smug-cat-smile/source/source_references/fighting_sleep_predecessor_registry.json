@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "EXP-163",
+      "path": "res://yawn_performance.json",
+      "aliases": [
+        "yawn"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-005",
+      "path": "res://expressions/EXP-005.json",
+      "aliases": [
+        "hearty-laughter",
+        "laugh"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-001",
+      "path": "res://expressions/EXP-001.json",
+      "aliases": [
+        "bright_welcome"
+      ],
+      "trigger_phase": "recognition"
+    },
+    {
+      "id": "EXP-006",
+      "path": "res://expressions/EXP-006.json",
+      "aliases": [
+        "suppressed-giggle",
+        "giggle"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-107",
+      "path": "res://expressions/EXP-107.json",
+      "aliases": [
+        "confident-reassurance",
+        "reassure"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-007",
+      "path": "res://expressions/EXP-007.json",
+      "aliases": [
+        "relieved-smile",
+        "relief"
+      ],
+      "trigger_phase": "inward_tension"
+    },
+    {
+      "id": "EXP-002",
+      "path": "res://expressions/EXP-002.json",
+      "aliases": [
+        "affectionate-warmth",
+        "affection"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-152",
+      "path": "res://expressions/EXP-152.json",
+      "aliases": [
+        "private-pride",
+        "pride"
+      ],
+      "trigger_phase": "downward_preparation"
+    },
+    {
+      "id": "EXP-160",
+      "path": "res://expressions/EXP-160.json",
+      "aliases": [
+        "shy-laughter",
+        "shy_laughter"
+      ],
+      "trigger_phase": "tender_closed_onset"
+    },
+    {
+      "id": "EXP-177",
+      "path": "res://expressions/EXP-177.json",
+      "aliases": [
+        "meditative-calm",
+        "meditate"
+      ],
+      "trigger_phase": "settling"
+    }
+  ]
+}

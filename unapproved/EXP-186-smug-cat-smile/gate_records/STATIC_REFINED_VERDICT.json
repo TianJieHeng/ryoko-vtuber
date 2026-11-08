@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SCOPED_REFINED_SIX_ANCHOR_STATIC_ONLY",
+  "expression": "EXP-186 Smug cat smile",
+  "original_v1_verdict": "HOLD_KP5_KP6_OVER_CLOSURE_RETAINED",
+  "accepted_plan_sha256": "cd32eafbb34577154ccac87ef07217a9d86ab5e89b6aebf8f792acd68ee022f0",
+  "accepted_binding_sha256": "68bfea5d933b85b65a37862dc86af0cbece4d3beffd74baa16dfcc575761ba43",
+  "actual_capture_receipt_sha256": "b1ab7792f7b76a686139404d7aac185f56f08ece61380e2e0f389cfcad9adfff",
+  "source_baseline_freeze_sha256": "dd52d78b1a6987140ea0728a41f35841746fc0e102c66c1941fd64677ddf919a",
+  "preserved_source_files": 605,
+  "preserved_pngs": 182,
+  "preserved_profiles": 16,
+  "parameter_refinements_used": 1,
+  "further_refinements_allowed": 0,
+  "full_performance_accepted": false,
+  "user_approval": false,
+  "approved_integration": false,
+  "normal_speed_playback_observed": false,
+  "source_approximation": "Canonical ordinary lower-lid/lash curvature and fuller lips retained; no exact painted lower-lid rise, new material or head/body acting. Combined revised static cue passes.",
+  "later_common_source_requirement": "Include reviewed EXP-050 data-only seventeenth profile and verify continuity before full EXP-186 performance.",
+  "files": {
+    "REFINED_STATIC_REVIEW.md": "14bb48e08b4a120a564a3d78a2aa8aaecf013a1c0f813d8e0ebaff10cc2b7308",
+    "STATIC_REVIEW.md": "074939c8850abe570856481fa6acc5985347e24aa0a5942a4f1249495b5713be",
+    "evidence/REFINED_PRE_RENDER_READINESS.json": "3534bb01ffbecb192a0b7561bad11dadee6e2930b8ca1eb1a29dfda2b0d3958d",
+    "evidence/REFINED_CAPTURE_INTEGRITY.json": "ef026de9e5cfd02621465d40d3a61b0b0cb2a99bd5d0bf0a33dea2b8fe56e88a",
+    "evidence/REFINED_NATIVE_FACE_ATLAS.png": "0b643f196fb5511fc1ac555771645d66d8dadddb3dea5e08390b30357f45b890",
+    "evidence/REFINED_BUST_ATLAS.png": "64ee20dc1312a7ef123551eb532a829fd53da82798bee1e5be943a756b294340",
+    "evidence/REFINED_SOURCE_RENDER_EYE_READ.png": "d61d9aca7a34f5e9510387553f772cbc9bf1247e6ccc6719ecc14179d1815198"
+  }
+}
