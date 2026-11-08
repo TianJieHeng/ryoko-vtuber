@@ -1,5 +1,17 @@
 # Local external-process control, protocol 1
 
+Twenty user-approved performances share one rig. EXP-148 Nervous laugh adds the approved 3.6-second performance, with nervous-laugh and nervous_laugh aliases. All nineteen predecessor profiles, production runtime, scenes, shaders, 182 PNGs and both inherited iris import sidecars remain byte-exact. Only EXP-148 approval metadata changes from the reviewed acting profile; its duration, keyframes, controls and curves are unchanged.
+
+EXP-148 live engine pacing and continuous normal-speed playback remain UNVERIFIED. Review covered 109 decoded chronological frames at 30 fps and selected full/detail/reference views, not continuous normal-speed observation. Source KP5–6 opposing dental clench is unsupported and excluded; source nose blush and painted brow curvature are approximations. The inherited EXP-114 smooth real-time pacing HOLD and other documented rig limits remain unchanged.
+
+Current source checks: python -B tools/verify_approved_integration.py and sha256sum -c APPROVED_SOURCE_FILES.sha256. APPROVED_SOURCE_MANIFEST.json, APPROVED_INTEGRATION_STATUS.json and RELEASE.json describe this twenty-profile source. Prior manifests, test reports and expression-local candidate notes are historical evidence with their original scope. See APPROVED_NERVOUS_LAUGH_VALIDATION.md for the current approval and verification limits.
+
+EXP-097 remains rejected and excluded. EXP-187 remains parked and excluded. All other existing exclusions, source originals and unapproved backups are preserved. No new Godot run, CI, workflow changes, binary/media upload, archive, hardware flashing or remote-machine execution is part of this approval integration.
+
+## Historical documentation and continuing API details
+
+# Local external-process control, protocol 1
+
 Nineteen user-approved performances share one rig. EXP-114 Daring provocation adds the approved 3.8-second performance through the existing catalogue, with daring-provocation and daring_provocation aliases. All eighteen predecessor profiles, production motion code, scenes, shaders and 182 runtime PNGs remain byte-exact. The new profile and registry are identical to the tested 660-file candidate. This integration changes only current approval metadata and documentation, not the accepted performance.
 
 Smooth real-time playback remains unverified (HOLD). The four-cycle normal run passed execution, ownership and exact-neutral checks, but recorded six gaps over 50 ms, including a 119.921 ms bust gap and native opening/resealing gaps of 512.158 ms and 407.784 ms. Cause is unproved. Visual observation was intermittent, not continuous. User approval of the rendered preview does not clear this limitation. Static fit remains a restrained cocky challenge with softened central-brow opposition and the real KP5 head cant omitted.
