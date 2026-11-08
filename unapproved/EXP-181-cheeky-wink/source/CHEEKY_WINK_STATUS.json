@@ -1,0 +1,19 @@
+{
+  "id": "EXP-181",
+  "status": "local_complete_performance_independently_reviewed_user_approval_pending",
+  "approved_integration": false,
+  "main_base": "d5a4539cd7395783fcbf5756b03bb993be6692b8",
+  "approved_count": 12,
+  "local_registered_count": 13,
+  "artwork_changes": false,
+  "new_capability": "Independent default-zero positive corners within the remaining 12 px budget",
+  "static_fit_accepted": true,
+  "performance_review_pending": false,
+  "backup_is_not_approval": true,
+  "performance_complete": true,
+  "independent_review_report_sha256": "692bca293f9c083d2be2423168988aad6fa240fd0513dfcd94c71be9f78ba919",
+  "capture_manifest_sha256": "10fade6e4150d114f4541b3f547030414620d15868e47baa305073b93e52e0ee",
+  "captured_profile_sha256": "adb550e6530cb4e348daf872aeee39d72906bcdd530811b69ad0081635126851",
+  "delivery_profile_sha256": "d0284c1e5719ec154cd06e5b1d4eba495242b80bde9ae98c792f9fed21bddc32",
+  "profile_motion_unchanged": true
+}

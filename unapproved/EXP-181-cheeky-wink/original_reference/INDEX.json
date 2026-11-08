@@ -1,0 +1,95 @@
+{
+  "source_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": [
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp01_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp01_v001.png",
+      "sha": "d2eedad418fa1bdb98b2d1ecb615aa5fbfc1537f",
+      "sha256": "69dd1a555551ca45f8344ec8ffe88fa643723870c1714798a48d51e88eb65a1c",
+      "size": 219340,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp02_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp02_v001.png",
+      "sha": "17ef023e87bac768b5c6e80aca0089c1a62da44d",
+      "sha256": "041db77ec5820bb2ecd0b6cbedfa5bfe179722c3d702e5b8e2cd96dacfd0955b",
+      "size": 221736,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp03_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp03_v001.png",
+      "sha": "2e7f17f4060f0ea349e31e9903b4c0e94e4f159f",
+      "sha256": "39ffea515e45a99785d60d06f4d114e4bc9882d622e5bcf28fe8edcc6ebc0ca8",
+      "size": 220037,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp04_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp04_v001.png",
+      "sha": "311e8d4447c5b8865940b9134de10496fb32dcd4",
+      "sha256": "28bb349f2d187a2bb9cb0bfb037551ddad0fdb7c24eae4b15cc6a1f0604a39b9",
+      "size": 223433,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp05_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp05_v001.png",
+      "sha": "c5339afdfe9f05e9780ecc5a2b5fe55b760325ca",
+      "sha256": "ee8500ba50673a46b0b49bc6fbeb8cd7b816eff220279fe7bbdd9081cfc6ff22",
+      "size": 224963,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp06_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp06_v001.png",
+      "sha": "1819a6a075d8101edaa60df0de8341b0fa0f0fbe",
+      "sha256": "cfd0e9a35dee4c19fcea1f90ffab62d4dcb14052d7be0b3b92a9c577aa04da11",
+      "size": 222773,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp07_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp07_v001.png",
+      "sha": "da1fb9e36a085fd6693a411871fa425dc23ac6eb",
+      "sha256": "3da7d7de87ad5ce77730ceee2972f3eacc4ff38043372acdcf2d2e2b6bab00b3",
+      "size": 218981,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp08_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp08_v001.png",
+      "sha": "876924da9b3ddaab3b6cdd4273f405138fb90e61",
+      "sha256": "66ed2912803592aab05b1cd38db62e9be86e977d8efd731b4f1215527a68160c",
+      "size": 220526,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_kp09_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp09_v001.png",
+      "sha": "e58c9413758a24295783e8c750d10719a0739dc0",
+      "sha256": "076fb722279549a079789f5c8c60de0c0c02f5e02d27719c1b4c522f93710aac",
+      "size": 221904,
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "name": "RYO_EXP-181_cheeky-wink_sheet_v001.png",
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_sheet_v001.png",
+      "sha": "b35eabcc98b72e74f0dc0bf6c8db2c712f6dcf3b",
+      "sha256": "95b3185ffd017e0e700c2bd069296d74fdbc2bd788c668e9317b9bbfb8c6eefd",
+      "size": 2151350,
+      "mode": "100644",
+      "type": "blob"
+    }
+  ]
+}

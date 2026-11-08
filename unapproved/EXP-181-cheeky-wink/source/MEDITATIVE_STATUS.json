@@ -1,0 +1,64 @@
+{
+  "expression_id": "EXP-177",
+  "status": "User-approved revised EXP-177 meditative calm; published with the containing repository commit",
+  "user_approved": true,
+  "published": true,
+  "base_commit": "70655752bc82ba01b3fe8f64923360da60c578c9",
+  "base_inventory_sha256": "3f25dad6194837b63ed396447b21a923fc36e88abee11295eab4c224271cbfb5",
+  "profile_sha256": "4fb88990455fc4ba799e30ce2987b17151fe0ca00d31e562aa38680a7349f211",
+  "published_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177"
+  ],
+  "new_registry_id": "EXP-177",
+  "runtime_art_changes": false,
+  "new_controls": false,
+  "calibrated_reopening": {
+    "time": 2.85,
+    "blink_L": 0.64,
+    "blink_R": 0.64
+  },
+  "normal_speed_playback_observed": false,
+  "real_socket_tests": "intentionally unrun",
+  "closing_refinement": {
+    "v0_inventory_sha256": "27194683cd21c95c2bdbd6bc469c0d637872c8c40163af2014e44229e27bef6c",
+    "v0_profile_sha256": "581c3d34be7b99dc8dbf5df3d68b46e9014eed9fd60dae52d70ce38ea48afa6f",
+    "method": "Remove the two interior closing stops; use one existing1.2-second smoothstep segment. No runtime or art changes.",
+    "source_pose_times": [
+      0,
+      0.4866515881418201,
+      0.6400595242051585,
+      1.2,
+      1.75,
+      2.35,
+      2.85,
+      3.35,
+      3.9
+    ],
+    "hold_opening_unchanged_from_seconds": 1.2
+  },
+  "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177"
+  ],
+  "approved_review_inventory_sha256": "b5a10081697aa3cfaa28484db1b035a94b9c954c54f44623b0d2da2acfca1ec8",
+  "publication_validation": "MEDITATIVE_PUBLICATION_VALIDATION.md",
+  "reviewed_profile_sha256": "5787127ef22f05714b3219e20a3a329945ec09dec70f8a814da131778d512881",
+  "publication_profile_overlay": "Only status changes; all other fields, keys, times and values are exact to the approved review."
+}

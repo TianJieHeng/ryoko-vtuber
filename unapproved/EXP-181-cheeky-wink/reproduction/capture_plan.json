@@ -1,0 +1,586 @@
+{
+  "purpose": "Complete local unapproved EXP181 actual-player capture. Two30fps cycles, dense ordinary/smile-lash handover samples, exact source anchors, lifecycle and blink intent. Stepped renderer capture, no normal-speed playback observation claim.",
+  "fps": 30,
+  "duration": 3.1,
+  "source_anchor_times": [
+    0.0,
+    0.34,
+    0.68,
+    1.02,
+    1.24,
+    1.62,
+    2.08,
+    2.4,
+    2.95
+  ],
+  "dense_wink_handover_times": [
+    0.52,
+    0.53,
+    0.54,
+    0.55,
+    0.56,
+    0.57,
+    0.58,
+    0.59,
+    0.6,
+    1.73,
+    1.74,
+    1.75,
+    1.76,
+    1.77,
+    1.78,
+    1.79,
+    1.8,
+    1.81,
+    1.82
+  ],
+  "chapters": [
+    {
+      "name": "natural_cycle_1",
+      "reset": true,
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        }
+      ],
+      "times": [
+        0.0,
+        0.033333333,
+        0.066666667,
+        0.1,
+        0.133333333,
+        0.166666667,
+        0.2,
+        0.233333333,
+        0.266666667,
+        0.3,
+        0.333333333,
+        0.34,
+        0.366666667,
+        0.4,
+        0.433333333,
+        0.466666667,
+        0.5,
+        0.52,
+        0.53,
+        0.533333333,
+        0.54,
+        0.55,
+        0.56,
+        0.566666667,
+        0.57,
+        0.58,
+        0.59,
+        0.6,
+        0.633333333,
+        0.666666667,
+        0.68,
+        0.7,
+        0.733333333,
+        0.766666667,
+        0.8,
+        0.833333333,
+        0.866666667,
+        0.9,
+        0.933333333,
+        0.966666667,
+        1.0,
+        1.02,
+        1.033333333,
+        1.066666667,
+        1.1,
+        1.133333333,
+        1.166666667,
+        1.2,
+        1.233333333,
+        1.24,
+        1.266666667,
+        1.3,
+        1.333333333,
+        1.366666667,
+        1.4,
+        1.433333333,
+        1.466666667,
+        1.5,
+        1.533333333,
+        1.566666667,
+        1.6,
+        1.62,
+        1.633333333,
+        1.666666667,
+        1.7,
+        1.73,
+        1.733333333,
+        1.74,
+        1.75,
+        1.76,
+        1.766666667,
+        1.77,
+        1.78,
+        1.79,
+        1.8,
+        1.81,
+        1.82,
+        1.833333333,
+        1.866666667,
+        1.9,
+        1.933333333,
+        1.966666667,
+        2.0,
+        2.033333333,
+        2.066666667,
+        2.08,
+        2.1,
+        2.133333333,
+        2.166666667,
+        2.2,
+        2.233333333,
+        2.266666667,
+        2.3,
+        2.333333333,
+        2.366666667,
+        2.4,
+        2.433333333,
+        2.466666667,
+        2.5,
+        2.533333333,
+        2.566666667,
+        2.6,
+        2.633333333,
+        2.666666667,
+        2.7,
+        2.733333333,
+        2.766666667,
+        2.8,
+        2.833333333,
+        2.866666667,
+        2.9,
+        2.933333333,
+        2.95,
+        2.966666667,
+        3.0,
+        3.033333333,
+        3.066666667,
+        3.1,
+        3.133333333
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-181",
+      "natural_wink": true,
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    },
+    {
+      "name": "natural_cycle_2",
+      "reset": false,
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        }
+      ],
+      "times": [
+        0.0,
+        0.033333333,
+        0.066666667,
+        0.1,
+        0.133333333,
+        0.166666667,
+        0.2,
+        0.233333333,
+        0.266666667,
+        0.3,
+        0.333333333,
+        0.34,
+        0.366666667,
+        0.4,
+        0.433333333,
+        0.466666667,
+        0.5,
+        0.52,
+        0.53,
+        0.533333333,
+        0.54,
+        0.55,
+        0.56,
+        0.566666667,
+        0.57,
+        0.58,
+        0.59,
+        0.6,
+        0.633333333,
+        0.666666667,
+        0.68,
+        0.7,
+        0.733333333,
+        0.766666667,
+        0.8,
+        0.833333333,
+        0.866666667,
+        0.9,
+        0.933333333,
+        0.966666667,
+        1.0,
+        1.02,
+        1.033333333,
+        1.066666667,
+        1.1,
+        1.133333333,
+        1.166666667,
+        1.2,
+        1.233333333,
+        1.24,
+        1.266666667,
+        1.3,
+        1.333333333,
+        1.366666667,
+        1.4,
+        1.433333333,
+        1.466666667,
+        1.5,
+        1.533333333,
+        1.566666667,
+        1.6,
+        1.62,
+        1.633333333,
+        1.666666667,
+        1.7,
+        1.73,
+        1.733333333,
+        1.74,
+        1.75,
+        1.76,
+        1.766666667,
+        1.77,
+        1.78,
+        1.79,
+        1.8,
+        1.81,
+        1.82,
+        1.833333333,
+        1.866666667,
+        1.9,
+        1.933333333,
+        1.966666667,
+        2.0,
+        2.033333333,
+        2.066666667,
+        2.08,
+        2.1,
+        2.133333333,
+        2.166666667,
+        2.2,
+        2.233333333,
+        2.266666667,
+        2.3,
+        2.333333333,
+        2.366666667,
+        2.4,
+        2.433333333,
+        2.466666667,
+        2.5,
+        2.533333333,
+        2.566666667,
+        2.6,
+        2.633333333,
+        2.666666667,
+        2.7,
+        2.733333333,
+        2.766666667,
+        2.8,
+        2.833333333,
+        2.866666667,
+        2.9,
+        2.933333333,
+        2.95,
+        2.966666667,
+        3.0,
+        3.033333333,
+        3.066666667,
+        3.1,
+        3.133333333
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-181",
+      "natural_wink": true,
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    },
+    {
+      "name": "release_peak",
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        },
+        {
+          "advance": 1.24
+        },
+        {
+          "release_performance": true
+        }
+      ],
+      "times": [
+        0,
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.449999,
+        0.45,
+        0.6
+      ],
+      "mode": "release",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "repeat_release",
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        },
+        {
+          "advance": 1.24
+        },
+        {
+          "release_performance": true
+        },
+        {
+          "advance": 0.17
+        },
+        {
+          "release_performance": true
+        }
+      ],
+      "times": [
+        0,
+        0.1,
+        0.2,
+        0.45,
+        0.6
+      ],
+      "mode": "release",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "retrigger_peak",
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        },
+        {
+          "advance": 1.24
+        },
+        {
+          "perform_expression": "EXP-181"
+        }
+      ],
+      "times": [
+        0,
+        0.075,
+        0.15,
+        0.225,
+        0.3,
+        0.34,
+        0.68,
+        1.02,
+        1.24,
+        1.62,
+        2.08,
+        2.4,
+        2.95,
+        3.1,
+        3.2
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-181",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "incoming_laughter",
+      "setup": [
+        {
+          "perform_expression": "EXP-005"
+        },
+        {
+          "advance": 1.5
+        },
+        {
+          "perform_expression": "EXP-181"
+        }
+      ],
+      "times": [
+        0,
+        0.075,
+        0.15,
+        0.225,
+        0.3,
+        0.34,
+        0.68,
+        1.24,
+        1.62,
+        2.08,
+        3.1,
+        3.2
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-181",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "outgoing_quiet_sadness",
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        },
+        {
+          "advance": 1.24
+        },
+        {
+          "perform_expression": "EXP-021"
+        }
+      ],
+      "times": [
+        0,
+        0.075,
+        0.15,
+        0.225,
+        0.3,
+        1.4,
+        2.05,
+        3.5,
+        3.65,
+        3.8
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-021",
+      "final_expect": {
+        "neutral": true
+      }
+    },
+    {
+      "name": "manual_takeover",
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        },
+        {
+          "advance": 1.24
+        },
+        {
+          "mouth_corner_lift_screen_right": 0.3
+        }
+      ],
+      "times": [
+        0,
+        0.25,
+        1.0
+      ],
+      "final_expect": {
+        "active_expression": "",
+        "auto_blink": false,
+        "auto_blink_pending_restore": false,
+        "controls": {
+          "mouth_corner_lift_screen_right": 0.3
+        }
+      }
+    },
+    {
+      "name": "reset_peak",
+      "setup": [
+        {
+          "perform_expression": "EXP-181"
+        },
+        {
+          "advance": 1.24
+        },
+        {
+          "reset": true
+        }
+      ],
+      "times": [
+        0,
+        0.3
+      ],
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    },
+    {
+      "name": "autoblink_suspend_restore",
+      "setup": [
+        {
+          "auto_blink": true
+        },
+        {
+          "advance": 4.03
+        },
+        {
+          "perform_expression": "EXP-181"
+        }
+      ],
+      "times": [
+        0,
+        0.075,
+        0.15,
+        0.225,
+        0.3,
+        0.68,
+        1.24,
+        1.62,
+        2.08,
+        3.1,
+        7.13
+      ],
+      "mode": "play",
+      "expected_expression": "EXP-181",
+      "assertions": {
+        "0": {
+          "auto_blink": false,
+          "auto_blink_pending_restore": true,
+          "minimum_closure": 0.99
+        },
+        "9": {
+          "neutral": true,
+          "auto_blink": true,
+          "auto_blink_pending_restore": false,
+          "maximum_closure": 0.001
+        },
+        "10": {
+          "auto_blink": true,
+          "minimum_closure": 0.99
+        }
+      },
+      "final_expect": {
+        "auto_blink": true,
+        "minimum_closure": 0.99
+      }
+    },
+    {
+      "name": "final_reset",
+      "setup": [
+        {
+          "reset": true
+        }
+      ],
+      "times": [
+        0
+      ],
+      "final_expect": {
+        "neutral": true,
+        "auto_blink": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "status": "local_unapproved_documented_delivery_overlay",
+  "captured_source_manifest_sha256": "10fade6e4150d114f4541b3f547030414620d15868e47baa305073b93e52e0ee",
+  "runtime_artwork_controls_times_phases_registry_unchanged": true,
+  "profile_prose_only_spacing": true,
+  "packaging_verifier_change": true,
+  "overrides": {
+    "expressions/EXP-181.json": {
+      "captured_path": "source_references/captured_source/expressions/EXP-181.json",
+      "captured_sha256": "adb550e6530cb4e348daf872aeee39d72906bcdd530811b69ad0081635126851",
+      "delivery_sha256": "d0284c1e5719ec154cd06e5b1d4eba495242b80bde9ae98c792f9fed21bddc32"
+    },
+    "README.md": {
+      "captured_path": "source_references/captured_source/README.md",
+      "captured_sha256": "6150952234a8b468b8d33ae990243a8fd8368511390d811437dbe3eea8f66406",
+      "delivery_sha256": "4678093459abdf16634192fec1653e5bf900947d72bdc7ba78950108a0281e65"
+    },
+    "RELEASE.json": {
+      "captured_path": "source_references/captured_source/RELEASE.json",
+      "captured_sha256": "d8df4a8411337ffcdde43e789ec973058a093b39753fc5a46b0d1ea268a354d3",
+      "delivery_sha256": "bb134d0b22e0041bed7c26262dfe74830296eb48ff0d6a0354c9f593dd9ccec3"
+    },
+    "CHEEKY_WINK_STATUS.json": {
+      "captured_path": "source_references/captured_source/CHEEKY_WINK_STATUS.json",
+      "captured_sha256": "5d685b517d5cff0f96ac53d479fcf9dcca7ebc4341ed4a5742f195c3a9c93cf0",
+      "delivery_sha256": "31d2078a227571af3ee350f4952e572515d5b79d89ab8b085a8510d39b8de99f"
+    },
+    "INDEPENDENT_CORNERS_LOCAL.md": {
+      "captured_path": "source_references/captured_source/INDEPENDENT_CORNERS_LOCAL.md",
+      "captured_sha256": "21e93123819c0619c3f4a2f8df9c510fe5e5a6d91891b0b1ebe41676d0000eea",
+      "delivery_sha256": "8507ebfac093fe2719b1a3b523807821e2809858e9005eeb2f75bbf4905b76e8"
+    },
+    "CONTROL_API.md": {
+      "captured_path": "source_references/captured_source/CONTROL_API.md",
+      "captured_sha256": "da9b4b3f4f91aeba57704187d473f767b686bfcddb70e4c046e4d6501e98abfc",
+      "delivery_sha256": "193020b3c0ac24af911e2e49479e6257fc72cc8e0f7045dfb9060fdd8aa4d11f"
+    },
+    "LOCAL_CONTROL_BRIDGE.md": {
+      "captured_path": "source_references/captured_source/LOCAL_CONTROL_BRIDGE.md",
+      "captured_sha256": "b9caacb953eb3ea43dd15e15dea91bbe3067f9d4900e296f34bc61f377b93301",
+      "delivery_sha256": "ae3aea9dd4df29c2fe23c897b25e56823667ce61f51840a0aa689f945bc57dc0"
+    },
+    "tools/verify_cheeky_wink_scope.py": {
+      "captured_path": "source_references/captured_source/tools/verify_cheeky_wink_scope.py",
+      "captured_sha256": "f7378fdfb13f77da3592929d3137cccea2381f383512a7e33a9dc27f84fdeeac",
+      "delivery_sha256": "ae2b2667736a0a881755e43aae6a6a2edc5e87e8999c5a60a1a04489d2a5ae2d"
+    }
+  },
+  "added_files": {
+    "DELIVERY_SCOPE.md": "afa244dbd69f1dbd27e494dd0393738ddbc8281d67004652fbc6a686f0fbd9ac"
+  }
+}

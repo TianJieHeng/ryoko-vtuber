@@ -1,0 +1,13 @@
+{
+  "id": "EXP-181",
+  "status": "local_performance_candidate_not_user_approved",
+  "approved_integration": false,
+  "main_base": "d5a4539cd7395783fcbf5756b03bb993be6692b8",
+  "approved_count": 12,
+  "local_registered_count": 13,
+  "artwork_changes": false,
+  "new_capability": "independent default-zero positive corners within remaining12px budget",
+  "static_fit_accepted": true,
+  "performance_review_pending": true,
+  "backup_is_not_approval": true
+}

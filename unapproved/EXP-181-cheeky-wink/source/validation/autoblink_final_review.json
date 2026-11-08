@@ -1,0 +1,231 @@
+{
+  "status": "local correction, pending separate approval",
+  "parent_commit": "e4369727e7597894d6c2747d06e3cb7ff5b119ca",
+  "runtime_hashes": {
+    "expression_rig.gd": "551dd90b83171605be05302150c103d097b5789777d0f3a40b3805dd00355936",
+    "expression_viewer.gd": "c874c5e2679644e921ff2ccac8bca0be08b9cbef225e237c4e5ac02dd0ca1598",
+    "control_bridge.gd": "6a8ac4144aa02f4dad4eeb11d7225309740b959ef912f0c18ba94db4239fa257",
+    "object_rig.gd": "5d4ec206fd98d75ebcab9bac0628cdf94c670901a6fa822cfc3decec7c1793dc",
+    "object_face.gd": "67fa50fdfaa34d9d68bf7bab767bee4d2850c98165696debc2f2b7421303f1a8",
+    "expression_registry.gd": "29751dac6a3a557e520e87a5a762919e710adc0b2c5f96b66e854fbf7ca9c62a"
+  },
+  "runtime_suites": [
+    {
+      "suite": "test_expression_backbone.gd",
+      "checks": 192128,
+      "result": "pass",
+      "log_sha256": "cfd5e9ec317cab5f37bbb4318ef4f29b0e645dad05ead629752fba7c1b2d806f"
+    },
+    {
+      "suite": "test_object_rig.gd",
+      "checks": 53704,
+      "result": "pass",
+      "log_sha256": "aafb57658bfbfb2d3de7a9784d365046381d84ae10398a64e4e9118c74903dae"
+    },
+    {
+      "suite": "test_teeth.gd",
+      "checks": 17017,
+      "result": "pass",
+      "log_sha256": "cd66ed67f99466dc22544cd06f52850ba7b51cc61564b9c2360adbcdd7caec56"
+    },
+    {
+      "suite": "test_yawn.gd",
+      "checks": 370567,
+      "result": "pass",
+      "log_sha256": "acc040fbb0b1c71967f0bd0a42cb2defd5ad67d4398eccb3525f49b99fdfc184"
+    },
+    {
+      "suite": "tests_test_auto_blink_lifecycle.gd",
+      "checks": 24716,
+      "result": "pass",
+      "log_sha256": "ac8cabc9c2b6c79e4c8e111fdd070ded45ac2bff503711278eebb57b4d88fa32"
+    },
+    {
+      "suite": "tests_test_blush_controls.gd",
+      "checks": 4297,
+      "result": "pass",
+      "log_sha256": "78720f66a4a8a26e2acc143c0ae3828ea19b45ba778fb5615d79c52d4f097f87"
+    },
+    {
+      "suite": "tests_test_closed_smile_contract.gd",
+      "checks": 1041808,
+      "result": "pass",
+      "log_sha256": "b7cbf51efb3ea7b716e18ab67d049a8c57388b0801319222bc74afe0e5e06123"
+    },
+    {
+      "suite": "tests_test_corner_lift_runtime.gd",
+      "checks": 313408,
+      "result": "pass",
+      "log_sha256": "e1de5c0b7c220cf013f73c4ed2487244b261dade230e18f6d1edaa9f5f8acc2b"
+    },
+    {
+      "suite": "tests_test_gaze_runtime.gd",
+      "checks": 1757314,
+      "result": "pass",
+      "log_sha256": "5717ac473f1c247675c6d017e099dbe079efdae81ee19f68590ab8380290a8ef"
+    },
+    {
+      "suite": "tests_test_giggle_runtime.gd",
+      "checks": 92492,
+      "result": "pass",
+      "log_sha256": "cf8b6353aa31846bb21a4c9c2f2765cccb60b8e59a34e332190d1a83f70260a5"
+    },
+    {
+      "suite": "tests_test_laughter_runtime.gd",
+      "checks": 125337,
+      "result": "pass",
+      "log_sha256": "964838997eb82de2ac7dd35c163774afb56a9d3f85290e5768f049896f01e622"
+    },
+    {
+      "suite": "tests_test_oral_lift_contract.gd",
+      "checks": 19098,
+      "result": "pass",
+      "log_sha256": "257734233af300022659dbbbb7376d7b11bb0f6de10edeebe8b1f0c8d64a57ba"
+    },
+    {
+      "suite": "tests_test_purse_contract.gd",
+      "checks": 5629177,
+      "result": "pass",
+      "log_sha256": "81b93aa074bc71edb1218842e9e113531b5e08db479f9e102a7698d1a33c6169"
+    },
+    {
+      "suite": "tests_test_purse_transport.gd",
+      "checks": 9530,
+      "result": "pass",
+      "log_sha256": "a1ca8f9df20aba0ebde57c43504317b30b1c95c2410d2db57f39121b62efefaf"
+    },
+    {
+      "suite": "tests_test_reassurance_runtime.gd",
+      "checks": 191666,
+      "result": "pass",
+      "log_sha256": "4c511e103792fd4237653d5549dedcb08f65059c8b32674ed0424d8f341ddf2f"
+    },
+    {
+      "suite": "tests_test_relief_runtime.gd",
+      "checks": 615946,
+      "result": "pass",
+      "log_sha256": "697ff8862e9e8ca21c3ad5cd010b91653a016970b1e3e87907c8b3e23ad2c948"
+    },
+    {
+      "suite": "tests_test_smile_controls.gd",
+      "checks": 237,
+      "result": "pass",
+      "log_sha256": "6c9387eb625fbe4e46421f72dc335cdb7349c1bdb2e553ee7f7efa52eb106b18"
+    },
+    {
+      "suite": "tests_test_spread_runtime.gd",
+      "checks": 528382,
+      "result": "pass",
+      "log_sha256": "f1acf050d5a375e7104369ce2a84e1dc2adc22c2ec7bac60ed88b25ff4c179ca"
+    },
+    {
+      "suite": "tests_test_viewer_layout.gd",
+      "checks": 30,
+      "result": "pass",
+      "log_sha256": "6066ccac8e3df14e04f9f54dbf33577f8961286b5eace9bb2ff29e01e3f78e56"
+    }
+  ],
+  "all_runtime_checks": 10986854,
+  "source_validators": [
+    "verify_autoblink_scope",
+    "verify_relief_scope",
+    "verify_reassurance_scope",
+    "verify_giggle_scope",
+    "verify_welcome_scope",
+    "verify_closed_smile_support",
+    "verify_blush_source"
+  ],
+  "isolated_rebuild_checks": [
+    "build_object_face",
+    "verify_object_base",
+    "verify_yawn",
+    "verify_teeth",
+    "verify_gaze_assets",
+    "verify_gaze_coverage",
+    "verify_lid_handoff",
+    "verify_smile_support",
+    "verify_spread_support",
+    "verify_closed_smile_support",
+    "verify_blush_source"
+  ],
+  "real_render_checks": 13273,
+  "real_render_candidate_frames": 147,
+  "render_comparison": {
+    "disabled_frame_state_hashes_equal": 1416,
+    "disabled_two_cycle_runs": 12,
+    "state_comparison": "All get_state fields except additive auto_blink_pending_restore, plus full face.snapshot(), elapsed, restart, release and current pose. 30 Hz; two complete cycles per six profiles.",
+    "disabled_pixel_pairs": [
+      {
+        "label": "disabled_EXP-163_pose",
+        "changed_pixels": 0,
+        "decoded_sha256": "33002652bce1930ae048f962e40d1b8631886e676acfb9b2a596f388073a930c"
+      },
+      {
+        "label": "disabled_EXP-163_release",
+        "changed_pixels": 0,
+        "decoded_sha256": "794cc1a9d2421d01f1da8ce02a58b6d96484a3ffb8a49d2cf28241f795955a9e"
+      },
+      {
+        "label": "disabled_EXP-005_pose",
+        "changed_pixels": 0,
+        "decoded_sha256": "60907f3a2430e0c61b8fc37266846be1e98eaa145846210baa303a722e5b4cc5"
+      },
+      {
+        "label": "disabled_EXP-005_release",
+        "changed_pixels": 0,
+        "decoded_sha256": "794cc1a9d2421d01f1da8ce02a58b6d96484a3ffb8a49d2cf28241f795955a9e"
+      },
+      {
+        "label": "disabled_EXP-001_pose",
+        "changed_pixels": 0,
+        "decoded_sha256": "c9aaf08a2305d28ef52b83e3dadb7a63dc8381f4fcb9b2b13e9daaa71c461d97"
+      },
+      {
+        "label": "disabled_EXP-001_release",
+        "changed_pixels": 0,
+        "decoded_sha256": "794cc1a9d2421d01f1da8ce02a58b6d96484a3ffb8a49d2cf28241f795955a9e"
+      },
+      {
+        "label": "disabled_EXP-006_pose",
+        "changed_pixels": 0,
+        "decoded_sha256": "ad0019b6282eb52c3f5588d63df883204932626d08ea12afaf4f4d3a5d6aa263"
+      },
+      {
+        "label": "disabled_EXP-006_release",
+        "changed_pixels": 0,
+        "decoded_sha256": "794cc1a9d2421d01f1da8ce02a58b6d96484a3ffb8a49d2cf28241f795955a9e"
+      },
+      {
+        "label": "disabled_EXP-107_pose",
+        "changed_pixels": 0,
+        "decoded_sha256": "115031be9865f98d91e9e539d21a2698f009803b022d7fdb116cd495b65c47f0"
+      },
+      {
+        "label": "disabled_EXP-107_release",
+        "changed_pixels": 0,
+        "decoded_sha256": "794cc1a9d2421d01f1da8ce02a58b6d96484a3ffb8a49d2cf28241f795955a9e"
+      },
+      {
+        "label": "disabled_EXP-007_pose",
+        "changed_pixels": 0,
+        "decoded_sha256": "c3a634ba69c77406be1ec1d16edcb5e26e69128f2a935fa982b3fad865395669"
+      },
+      {
+        "label": "disabled_EXP-007_release",
+        "changed_pixels": 0,
+        "decoded_sha256": "794cc1a9d2421d01f1da8ce02a58b6d96484a3ffb8a49d2cf28241f795955a9e"
+      }
+    ],
+    "candidate_frames": 147,
+    "resumed_blink_pixel_pairs": 108,
+    "neutral_recovery_pixel_pairs": 12,
+    "cancellation_pixel_pairs": 3,
+    "all_assertions_passed": true,
+    "normal_speed_playback_performed": false
+  },
+  "normal_speed_playback_performed": false,
+  "ai_model_connected": false,
+  "tts_connected": false,
+  "socket_test_performed": false,
+  "current_cumulative_source_archive_replaced": false
+}

@@ -1,0 +1,5 @@
+# Captured-source delivery overlay
+
+The runtime, all shaders, all artwork, registry, keyframe coordinates, phases and durations are unchanged from the exact captured source. Profile edits insert ordinary spaces in prose only. Current README, release and status metadata now state the unapproved scope explicitly; captured originals remain available for audit. API notes receive only spacing and historical-scope labeling. The portable verification helper gains explicit support for these declared archived metadata overrides. No render golden, fixture or motion result is rewritten.
+
+CHEEKY_WINK_CAPTURE_FREEZE.json remains unchanged and identifies the exact source used by the capture. CHEEKY_WINK_DELIVERY_OVERLAY.json pins every delivery override and its archived captured counterpart. The source verifier checks captured receipts against the original captured profile, then independently requires all non-prose profile fields to equal the delivered profile. This is a packaging change, not a new render or performance.

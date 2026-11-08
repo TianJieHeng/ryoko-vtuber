@@ -1,0 +1,95 @@
+{
+  "source_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "assets": [
+    {
+      "id": "EXP-181",
+      "kind": "sheet",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_sheet_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_sheet_v001.png",
+      "sha256": "95b3185ffd017e0e700c2bd069296d74fdbc2bd788c668e9317b9bbfb8c6eefd",
+      "catalogue_sha256": "95b3185ffd017e0e700c2bd069296d74fdbc2bd788c668e9317b9bbfb8c6eefd"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp1",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp01_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp01_v001.png",
+      "sha256": "69dd1a555551ca45f8344ec8ffe88fa643723870c1714798a48d51e88eb65a1c",
+      "catalogue_match": true,
+      "catalogue_sha256": "69dd1a555551ca45f8344ec8ffe88fa643723870c1714798a48d51e88eb65a1c"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp2",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp02_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp02_v001.png",
+      "sha256": "041db77ec5820bb2ecd0b6cbedfa5bfe179722c3d702e5b8e2cd96dacfd0955b",
+      "catalogue_match": true,
+      "catalogue_sha256": "041db77ec5820bb2ecd0b6cbedfa5bfe179722c3d702e5b8e2cd96dacfd0955b"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp3",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp03_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp03_v001.png",
+      "sha256": "39ffea515e45a99785d60d06f4d114e4bc9882d622e5bcf28fe8edcc6ebc0ca8",
+      "catalogue_match": true,
+      "catalogue_sha256": "39ffea515e45a99785d60d06f4d114e4bc9882d622e5bcf28fe8edcc6ebc0ca8"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp4",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp04_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp04_v001.png",
+      "sha256": "28bb349f2d187a2bb9cb0bfb037551ddad0fdb7c24eae4b15cc6a1f0604a39b9",
+      "catalogue_match": true,
+      "catalogue_sha256": "28bb349f2d187a2bb9cb0bfb037551ddad0fdb7c24eae4b15cc6a1f0604a39b9"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp5",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp05_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp05_v001.png",
+      "sha256": "ee8500ba50673a46b0b49bc6fbeb8cd7b816eff220279fe7bbdd9081cfc6ff22",
+      "catalogue_match": true,
+      "catalogue_sha256": "ee8500ba50673a46b0b49bc6fbeb8cd7b816eff220279fe7bbdd9081cfc6ff22"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp6",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp06_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp06_v001.png",
+      "sha256": "cfd0e9a35dee4c19fcea1f90ffab62d4dcb14052d7be0b3b92a9c577aa04da11",
+      "catalogue_match": true,
+      "catalogue_sha256": "cfd0e9a35dee4c19fcea1f90ffab62d4dcb14052d7be0b3b92a9c577aa04da11"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp7",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp07_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp07_v001.png",
+      "sha256": "3da7d7de87ad5ce77730ceee2972f3eacc4ff38043372acdcf2d2e2b6bab00b3",
+      "catalogue_match": true,
+      "catalogue_sha256": "3da7d7de87ad5ce77730ceee2972f3eacc4ff38043372acdcf2d2e2b6bab00b3"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp8",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp08_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp08_v001.png",
+      "sha256": "66ed2912803592aab05b1cd38db62e9be86e977d8efd731b4f1215527a68160c",
+      "catalogue_match": true,
+      "catalogue_sha256": "66ed2912803592aab05b1cd38db62e9be86e977d8efd731b4f1215527a68160c"
+    },
+    {
+      "id": "EXP-181",
+      "kind": "kp9",
+      "original_path": "avatar_build_assets/reference_library/assets/expressions/EXP-181_cheeky-wink/RYO_EXP-181_cheeky-wink_kp09_v001.png",
+      "local_path": "source_reference/RYO_EXP-181_cheeky-wink_kp09_v001.png",
+      "sha256": "076fb722279549a079789f5c8c60de0c0c02f5e02d27719c1b4c522f93710aac",
+      "catalogue_match": true,
+      "catalogue_sha256": "076fb722279549a079789f5c8c60de0c0c02f5e02d27719c1b4c522f93710aac"
+    }
+  ]
+}

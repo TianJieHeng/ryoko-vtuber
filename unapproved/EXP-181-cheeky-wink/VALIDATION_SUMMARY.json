@@ -1,0 +1,52 @@
+{
+  "expression": "EXP-181 Cheeky wink",
+  "completed_source_review_clearance": true,
+  "user_approved": false,
+  "approved_integration": false,
+  "approved_profile_count": 12,
+  "isolated_local_profile_count": 13,
+  "source_inventory_sha256": "99b217244f8087de7d3dec0686e40f03563eb71f14d8fcfc1ce0b39995a83e45",
+  "source_files": 612,
+  "runtime_png_files": 182,
+  "runtime_png_changes": 0,
+  "delivery_manifest_sha256": "b593dd20ab9a7c39080dad32ca0b3da969568f2c7fc76cd4c7704dc514d174cd",
+  "delivery_overlay_sha256": "26bb0d2bef4182a86b8f9150ba35a7fef60c79d7795307b58b4e41ecb571250a",
+  "captured_freeze_sha256": "10fade6e4150d114f4541b3f547030414620d15868e47baa305073b93e52e0ee",
+  "captured_source_files": 601,
+  "captured_profile_sha256": "adb550e6530cb4e348daf872aeee39d72906bcdd530811b69ad0081635126851",
+  "delivery_profile_sha256": "d0284c1e5719ec154cd06e5b1d4eba495242b80bde9ae98c792f9fed21bddc32",
+  "actual_performance_gate_sha256": "692bca293f9c083d2be2423168988aad6fa240fd0513dfcd94c71be9f78ba919",
+  "completed_delivery_source_gate_sha256": "6929808adeb6e4442c0cb477d525490535cf85620e5e1ba8efa5da4cf7ca36e0",
+  "validation": {
+    "independent_numeric_lifecycle_checks": 436891,
+    "runtime_suite_checks": 635753,
+    "clean_delivery_source_guard_checks": 2057,
+    "actual_capture_guard_checks": 3285,
+    "actual_checkpoints": 305,
+    "actual_png_receipts": 610,
+    "natural_cycle_pixel_comparisons": 238,
+    "pixel_exact_static_anchors": 5,
+    "pixel_exact_neutral_captures": 32,
+    "cold_import": "PASS",
+    "adversarial_guard_tests": "PASS",
+    "visual_stepped_capture_review": "PASS"
+  },
+  "delivery_overlay": "Eight declared documentation, metadata, profile-prose and packaging-verifier overrides, with exact captured originals archived. All runtime, shaders, artwork, motion controls, times, phases, registry and tests are unchanged from the captured source.",
+  "limitations": [
+    "User approval is pending; preservation is not approved integration.",
+    "No observed normal-speed playback, live AI/TTS connection or real socket test is claimed.",
+    "Inherited skin wedge at simultaneous maximum mouth opening, spread and corner lift is not repaired; selected EXP-181 poses avoid it.",
+    "Historical release records and generic manifests refer to pinned predecessors, not this candidate.",
+    "Original test fixtures pinning prior registry counts remain historical; they were not rewritten to approve this candidate.",
+    "No CI, paid resources, hardware flashing or remote-machine execution was used."
+  ],
+  "excluded_from_git": [
+    "Preview movies",
+    "Diagnostic renders",
+    "Actual performance frame archive",
+    "Caches",
+    "Recovery ZIPs",
+    "Private chat or notes",
+    "Space URLs"
+  ]
+}
