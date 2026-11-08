@@ -1,0 +1,36 @@
+{
+  "status": "PASS_COMPLETED_SOURCE_ONLY_BACKUP_GATE",
+  "expression": "EXP-158",
+  "user_approved": false,
+  "approved_integration": false,
+  "complete_performance_source_fit_lifecycle_cleared": true,
+  "source_inventory_sha256": "a685fa17488791b02aa349803324398ef013c44f4706ca94123580a73ecaa234",
+  "source_manifest_sha256": "ff602528ee33ccdc4945d495b1490541cc900feaf58727739e327398bf306996",
+  "delivery_profile_sha256": "731787cf260e038b5afcb0d9ba71a6dedea5bc6da42423380d418e49e53e2939",
+  "capture_profile_sha256": "41f17734bf7f2754364a20a3c57cbbf9596c32f8f1609cbe8d56cbbdbc16539e",
+  "capture_receipt_sha256": "e3eb6d5cf8f72bf952594c973d589bc9a87b4042ed6771e3f753834caead8ec9",
+  "portable_guard_with10_originals": "PASS",
+  "all12_approved_profiles_runtime_and182_PNGs_exact": true,
+  "final_media_and_recovery_ZIP_cleared": false,
+  "normal_speed_playback_observed": false,
+  "evidence": {
+    "SOURCE_BASELINE_REVIEW.json": "c45e1d513073bed5f39cb7f2846bd2da4ee7ce1089315de44f9d6c3522e1abe7",
+    "STATIC_ACCEPTANCE.json": "2d711de4056bb9ffe5debd9de3c987560368ca67ef835e160bb53ba680ffc7b1",
+    "PERFORMANCE_SOURCE_AUDIT.json": "9a2a539dd9f496322728889dedc5d971356a981c5bfb11f3ad61942ce9509bb1",
+    "INDEPENDENT_RUNTIME_RESULTS.json": "410ad08fcc3f8412a20e066e20121e54ce9437dfbc173ccf2ae0714ee303aeaa",
+    "PREDECESSOR_PARITY_AUDIT.json": "dab7a0efccd48ad69ab23f03ac0bba871e2d54d7de9d5c4ab88b59b317fa261d",
+    "ADDITIONAL_RUNTIME_AUDIT.json": "d524622426d3275d86b105bdf31604bc7a4cda1235b79fbdac0366c625f718f1",
+    "FINAL_CAPTURE_AUDIT.json": "f6545d589feb3f764eeb24ddbf2418383a46cb025bbb038c871adc18d324ad1f",
+    "DELIVERY_OVERLAY_AUDIT.json": "56ce026ab5b4d96a1508a8fc85c908e22c3d9729455a203826641d401ff57f87"
+  },
+  "completed_source_review_clearance": true,
+  "completed_source_gate_sha256": "57246cc49f31b716a8f4602510ffb6a857ccd959d88d988bc9efbe4c302b0896",
+  "purpose": "Completed editable source backup only; unapproved and not integrated into approved application.",
+  "media_note": "Final encoded previews and separate recovery ZIP verification are independent of this source-only backup and were pending when this snapshot was prepared.",
+  "limitations": [
+    "No normal-speed playback observation claimed.",
+    "Historical fixtures remain preserved; inapplicable fixed-count assertions are disclosed in source scope.",
+    "Backup publication is not user approval."
+  ],
+  "exact_reproduction_plan_sha256": "09fc463425566a418eada94ab011c296a827492f656dd067261688b3727659a6"
+}

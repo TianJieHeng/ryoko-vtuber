@@ -1,0 +1,32 @@
+{
+  "title": "EXP-001 / BRIGHT WELCOME",
+  "expression": "EXP-001",
+  "fps": 30,
+  "total_frames": 300,
+  "chapters": [
+    {
+      "start": 0,
+      "text": "Complete performance / cycle 1 of 2"
+    },
+    {
+      "start": 162,
+      "text": "Complete performance / cycle 2 of 2"
+    }
+  ],
+  "commands": [
+    {
+      "tick": 24,
+      "name": "complete_cycle_1",
+      "command": {
+        "perform_expression": "EXP-001"
+      }
+    },
+    {
+      "tick": 162,
+      "name": "complete_cycle_2",
+      "command": {
+        "perform_expression": "EXP-001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EXP-158",
+  "status": "complete_local_review_candidate_not_user_approved",
+  "approved_integration": false,
+  "main_base": "d5a4539cd7395783fcbf5756b03bb993be6692b8",
+  "approved_count": 12,
+  "local_registered_count": 13,
+  "runtime_artwork_changes": false,
+  "static_fit_accepted": true,
+  "performance_review_pending": false,
+  "backup_is_not_approval": true,
+  "user_approval_pending": true,
+  "actual_player_capture_verified": true,
+  "capture_receipt_sha256": "e3eb6d5cf8f72bf952594c973d589bc9a87b4042ed6771e3f753834caead8ec9"
+}

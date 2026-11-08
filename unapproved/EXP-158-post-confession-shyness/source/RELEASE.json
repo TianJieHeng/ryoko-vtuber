@@ -1,0 +1,50 @@
+{
+  "status": "Complete local EXP-158 Post-confession shyness review candidate, not user-approved",
+  "user_approved": false,
+  "approved_integration": false,
+  "backup_is_not_approval": true,
+  "base_main": "d5a4539cd7395783fcbf5756b03bb993be6692b8",
+  "authored_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158"
+  ],
+  "authored_local_count": 13,
+  "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021"
+  ],
+  "approved_published_count": 12,
+  "pending_review": [
+    "EXP-158"
+  ],
+  "runtime_changes": false,
+  "new_pngs": 0,
+  "protected_parent_pngs": 182,
+  "normal_speed_playback_observed": false,
+  "socket_test_performed": false,
+  "verification": "Run python tools/verify_post_confession_shyness_package.py. POST_CONFESSION_SHYNESS_SOURCE_MANIFEST.json and POST_CONFESSION_SHYNESS_FILES.sha256 are the current package records. Generic and predecessor manifests/guards are preserved historical records.",
+  "historical_release": "post_confession_shyness_capture_metadata/RELEASE.json",
+  "capture_source_manifest_sha256": "3ed8524bc55a6d42dce87cfa8a4d76ea7968301847cc6425315791fa5c434071",
+  "capture_receipt_sha256": "e3eb6d5cf8f72bf952594c973d589bc9a87b4042ed6771e3f753834caead8ec9"
+}

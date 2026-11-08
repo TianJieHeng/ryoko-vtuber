@@ -1,0 +1,880 @@
+{
+  "classification": "ENTIRELY_INFERRED_HIDDEN_INNER_UPPER_LIP_UNDERLAP",
+  "source": "rig_assets/yawn_mouth/upper_lip.png",
+  "source_sha256": "f6e47353877a727ee41905d0b8ff11a7700d42a86d6c5416e06b2a567e774a00",
+  "seam": "rig_assets/yawn_mouth/neutral_seam.png",
+  "seam_sha256": "e8dfdcf62c6338fbc136d649e7d9a4a2b765bcda3c06c22a35f64afbf9718e06",
+  "origin": [
+    525,
+    620
+  ],
+  "size": [
+    80,
+    45
+  ],
+  "pigment_file": "inner_upper_lip.png",
+  "pigment_sha256": "81e2d55b9ead38bbb7c85e32316d57b74427b499c01aaf515447bd4affd4bd1d",
+  "inferred_mask": "inner_upper_lip_inferred_mask.png",
+  "inferred_mask_sha256": "b3512b3446b7f04c2c00540e06f064881c53343623976cdd4d96d8b7997df7d0",
+  "operation": "Column-wise fixed pigment copied from each existing lip inner-edge darkest covered pixel near the registered seam. Vertical continuation is inferred hidden inner-lip tissue, not observed artwork. Each child is rigidly carried by an existing upper-lip joint. Only spatial aperture/depth clipping reveals it. No teeth tint, scale or UV change.",
+  "control": {
+    "name": "mouth_lip_press",
+    "range": [
+      0,
+      1
+    ],
+    "maximum_depth_source_px": 4.0,
+    "default": 0.0,
+    "outer_lip_translation": 0,
+    "teeth_translation": 0
+  },
+  "source_samples": [
+    {
+      "column": 1,
+      "sample_xy": [
+        1,
+        15
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 2,
+      "sample_xy": [
+        2,
+        16
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 3,
+      "sample_xy": [
+        3,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 4,
+      "sample_xy": [
+        4,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 5,
+      "sample_xy": [
+        5,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 6,
+      "sample_xy": [
+        6,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 7,
+      "sample_xy": [
+        7,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 8,
+      "sample_xy": [
+        8,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 9,
+      "sample_xy": [
+        9,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 10,
+      "sample_xy": [
+        10,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 11,
+      "sample_xy": [
+        11,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 12,
+      "sample_xy": [
+        12,
+        14
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 13,
+      "sample_xy": [
+        13,
+        14
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 14,
+      "sample_xy": [
+        14,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 15,
+      "sample_xy": [
+        15,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 16,
+      "sample_xy": [
+        16,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 17,
+      "sample_xy": [
+        17,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 18,
+      "sample_xy": [
+        18,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 19,
+      "sample_xy": [
+        19,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 20,
+      "sample_xy": [
+        20,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 21,
+      "sample_xy": [
+        21,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 22,
+      "sample_xy": [
+        22,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 23,
+      "sample_xy": [
+        23,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 24,
+      "sample_xy": [
+        24,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 25,
+      "sample_xy": [
+        25,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 26,
+      "sample_xy": [
+        26,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 27,
+      "sample_xy": [
+        27,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 28,
+      "sample_xy": [
+        28,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 29,
+      "sample_xy": [
+        29,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 30,
+      "sample_xy": [
+        30,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 31,
+      "sample_xy": [
+        31,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 32,
+      "sample_xy": [
+        32,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 33,
+      "sample_xy": [
+        33,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 34,
+      "sample_xy": [
+        34,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 35,
+      "sample_xy": [
+        35,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 36,
+      "sample_xy": [
+        36,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 37,
+      "sample_xy": [
+        37,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 38,
+      "sample_xy": [
+        38,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 39,
+      "sample_xy": [
+        39,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 40,
+      "sample_xy": [
+        40,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 41,
+      "sample_xy": [
+        41,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 42,
+      "sample_xy": [
+        42,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 43,
+      "sample_xy": [
+        43,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 44,
+      "sample_xy": [
+        44,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 45,
+      "sample_xy": [
+        45,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 46,
+      "sample_xy": [
+        46,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 47,
+      "sample_xy": [
+        47,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 48,
+      "sample_xy": [
+        48,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 49,
+      "sample_xy": [
+        49,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 50,
+      "sample_xy": [
+        50,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 51,
+      "sample_xy": [
+        51,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 52,
+      "sample_xy": [
+        52,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 53,
+      "sample_xy": [
+        53,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 54,
+      "sample_xy": [
+        54,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 55,
+      "sample_xy": [
+        55,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 56,
+      "sample_xy": [
+        56,
+        12
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 57,
+      "sample_xy": [
+        57,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 58,
+      "sample_xy": [
+        58,
+        13
+      ],
+      "hidden_y_range": [
+        8,
+        26
+      ]
+    },
+    {
+      "column": 59,
+      "sample_xy": [
+        59,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 60,
+      "sample_xy": [
+        60,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 61,
+      "sample_xy": [
+        61,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 62,
+      "sample_xy": [
+        62,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 63,
+      "sample_xy": [
+        63,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 64,
+      "sample_xy": [
+        64,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 65,
+      "sample_xy": [
+        65,
+        13
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 66,
+      "sample_xy": [
+        66,
+        14
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 67,
+      "sample_xy": [
+        67,
+        14
+      ],
+      "hidden_y_range": [
+        9,
+        27
+      ]
+    },
+    {
+      "column": 68,
+      "sample_xy": [
+        68,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 69,
+      "sample_xy": [
+        69,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 70,
+      "sample_xy": [
+        70,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 71,
+      "sample_xy": [
+        71,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 72,
+      "sample_xy": [
+        72,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 73,
+      "sample_xy": [
+        73,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 74,
+      "sample_xy": [
+        74,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 75,
+      "sample_xy": [
+        75,
+        14
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 76,
+      "sample_xy": [
+        76,
+        16
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    },
+    {
+      "column": 77,
+      "sample_xy": [
+        77,
+        15
+      ],
+      "hidden_y_range": [
+        10,
+        28
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "reference": {
+    "dark_mouth_bbox": [
+      330,
+      428,
+      380,
+      453
+    ],
+    "dark_mouth_area": 832
+  },
+  "candidate": {
+    "dark_mouth_bbox": [
+      327,
+      427,
+      381,
+      451
+    ],
+    "dark_mouth_area": 825
+  }
+}

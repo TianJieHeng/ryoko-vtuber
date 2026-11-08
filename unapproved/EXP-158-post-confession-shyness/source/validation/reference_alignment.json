@@ -1,0 +1,9 @@
+{
+  "uniform_scale": 0.7913282581733603,
+  "translation": [
+    -92.62961460420475,
+    -73.57915220789232
+  ],
+  "robust_mse": 117.14037535798772,
+  "areas": "forehead nose jaw earrings and upper hair; eye and mouth excluded"
+}

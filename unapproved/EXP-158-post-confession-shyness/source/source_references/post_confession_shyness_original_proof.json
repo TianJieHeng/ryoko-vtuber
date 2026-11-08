@@ -1,0 +1,66 @@
+{
+  "source_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": [
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_sheet_v001.png",
+      "sha256": "29d42e32adfd8d1b45f71d7eac418b52099035e78a3d63bb6f7f3d25305b6a7c",
+      "filename": "RYO_EXP-158_post-confession-shyness_sheet_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_sheet_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp01_v001.png",
+      "sha256": "c74065b05afda8d1b8a89766a5d1051aafcf027a36484dc08c7bd2cb7c0b91d1",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp01_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp01_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp02_v001.png",
+      "sha256": "4d9b9be417f8ada627f9577364e09d4dfcc331ed6d24500c7db910da3e6b4b54",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp02_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp02_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp03_v001.png",
+      "sha256": "307606422c2ee38cf08ebceba7731331495b357ed3a06fed399b2cd238c24c62",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp03_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp03_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp04_v001.png",
+      "sha256": "748cd7e4626c89994d630a001bc96e961ec48d89aa4f6c4f79db41f54559b9ec",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp04_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp04_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp05_v001.png",
+      "sha256": "988cfa58669a1ee8f85b1988dcee870088fc430187398ced0bc05ee192a496ce",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp05_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp05_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp06_v001.png",
+      "sha256": "ee3d17af5e3945102ed5c049dcf691214ce60f9c185af76a1544cda3b6ba5079",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp06_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp06_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp07_v001.png",
+      "sha256": "4bfaac42a18e39b94625795c5da1db8d3258c244e19928c0b66c40f4a0cfcd35",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp07_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp07_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp08_v001.png",
+      "sha256": "c5b0b63a5b863577b5587a18ed97c9df31495a68401761d8ddbeea1dfc4a039d",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp08_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp08_v001.png"
+    },
+    {
+      "source_path": "avatar_build_assets/reference_library/assets/expressions/EXP-158_post-confession-shyness/RYO_EXP-158_post-confession-shyness_kp09_v001.png",
+      "sha256": "b464b830a97477572f3463b17741a0021a56914e74fd9936b5ac1dd8aa376cba",
+      "filename": "RYO_EXP-158_post-confession-shyness_kp09_v001.png",
+      "relative_reference_path": "../original_reference/RYO_EXP-158_post-confession-shyness_kp09_v001.png"
+    }
+  ],
+  "location_contract": "Paths are relative to the rig directory, not this JSON file. Exact originals can also be recovered by the pinned source_commit and source_path."
+}

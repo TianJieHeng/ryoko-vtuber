@@ -1,0 +1,30 @@
+{
+  "scope": "Approved EXP-001 and necessary lateral-mouth support only",
+  "baseline_archive_sha256": "4882931a321d9b82bf96a7b786872b8225b78a3ca045494b55ef9f8039e7db18",
+  "changed_baseline_paths": [
+    "CONTROL_API.md",
+    "LOCAL_CONTROL_BRIDGE.md",
+    "PACKAGING.md",
+    "README.md",
+    "RELEASE.json",
+    "SOURCE_FILES.sha256",
+    "SOURCE_PROVENANCE.json",
+    "control_bridge.gd",
+    "expression_registry.gd",
+    "expression_rig.gd",
+    "expression_viewer.gd",
+    "expressions/registry.json",
+    "object_face.gd",
+    "object_mouth_clip.gdshader",
+    "object_rig.gd",
+    "smile_lip_join.gdshader",
+    "smile_lip_segment.gdshader",
+    "test_expression_backbone.gd",
+    "test_object_rig.gd",
+    "tools/test_control_bridge.py",
+    "tools/verify_lid_handoff.py",
+    "tools/verify_smile_support.py",
+    "tools/verify_teeth.py"
+  ],
+  "no_baseline_paths_removed": true
+}

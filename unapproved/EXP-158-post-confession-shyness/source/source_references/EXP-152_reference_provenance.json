@@ -1,0 +1,75 @@
+{
+  "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": {
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp01_v002.png": {
+      "sha256": "86e0f423103a92fd546fb2091b3941cd59ac8b98d985c896fbe644481c470778",
+      "git_blob": "4ff183ec1c5c9418756f69abbe6bb9fd72a8a847",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp01_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp02_v002.png": {
+      "sha256": "f057f4e40daaaed942700ccbe851b01cc1f4fba293d71a778b37204b8fe673c8",
+      "git_blob": "b34736a4d9050183a2612f3dd5b3a7ea494d8000",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp02_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp03_v002.png": {
+      "sha256": "c12a804f8b3e4d7ff251cf4db430c60977a2c558700a39d51c32f214e2d59dbd",
+      "git_blob": "87899ef871a32c5946011b5c968cb9d444a8fa56",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp03_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp04_v002.png": {
+      "sha256": "c9b2543be4fdd617899b06be4900673f0414f77178be119781c695a447d30fc1",
+      "git_blob": "de22ce1a9735397cdce8d4e1a3bd312e9a172b8c",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp04_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp05_v002.png": {
+      "sha256": "1dbb54470777127316ec6fe65f6a1ecd98037a113b7fa84f6d1a755ba116d4d2",
+      "git_blob": "231704ade871452c3ef3579de501d9ed68dfbed9",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp05_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp06_v002.png": {
+      "sha256": "b97d68b7f8b4416b14ed6f1c4589efb90365e22fc74c0a7514e5ad5633a60fe1",
+      "git_blob": "90dd61007758d987e9048e2b1b2a191ba7abe59a",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp06_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp07_v002.png": {
+      "sha256": "c2c527e0f11e11111e08c1e770a99699c81323cda5d44e292460db05e6893ff4",
+      "git_blob": "a5eced19f32bc7e11a1876e0e54afc7b81cb84e4",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp07_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp08_v002.png": {
+      "sha256": "d92824c7b0449e08055a76f68445f8615ed6a3f61652d7c579035c8a2e9f1f9d",
+      "git_blob": "21ced086c42e0de91ad1e7c5aeffb59d418fbe54",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp08_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_kp09_v002.png": {
+      "sha256": "0c430236a3f5a9a749880e72e8a01b0a51b503a9956b242a6bed19afd3b2a587",
+      "git_blob": "fddebbd3b164ee4e6767688a03586e1d456955ec",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_kp09_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_peak_v002.png": {
+      "sha256": "1dbb54470777127316ec6fe65f6a1ecd98037a113b7fa84f6d1a755ba116d4d2",
+      "git_blob": "231704ade871452c3ef3579de501d9ed68dfbed9",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_peak_v002.png"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-152_private-pride/RYO_EXP-152_private-pride_sheet_v002.png": {
+      "sha256": "46d16e1eabfe7ea709252b0e3c47707613df3a8f6a41483e740981866ead6408",
+      "git_blob": "70359eb22c016efc2698550baf44506d39392acb",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/RYO_EXP-152_private-pride_sheet_v002.png"
+    },
+    "avatar_build_assets/reference_library/metadata/asset_index.json": {
+      "sha256": "2c71865930ba29f22265b9fde00ea8dadbd2bbee5a840b080b80c9780f2b8a0d",
+      "git_blob": "45ba1849177ed7b53982cebf5ce641bad0fe0c3f",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/asset_index.json"
+    },
+    "avatar_build_assets/reference_library/metadata/expressions.json": {
+      "sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+      "git_blob": "69465d017300a53723e78955353f35e94f8c3c14",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/expressions.json"
+    },
+    "avatar_build_assets/reference_library/metadata/frame_extraction.json": {
+      "sha256": "3cfeb44918ac912b470f67db4034b508e85ec6a9ee9fddb394d62589ed04d187",
+      "git_blob": "d6d4cdeec4b3149efbc3680061e48a01a78d41cc",
+      "local_path": "/workspace/scratch/42f2baf55663/pride_capability_work/reference/frame_extraction.json"
+    }
+  }
+}
