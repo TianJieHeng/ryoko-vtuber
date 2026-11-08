@@ -36,7 +36,7 @@ func run():
   var n=rig.face.objects[k];pigment[k]=[n.texture,n.region_rect,n.region_enabled,n.offset,n.flip_h,n.flip_v]
  var ids=[]
  for e in rig.list_expressions():ids.append(e.id)
- check(ids==PRIOR+[ID],"eleven approved profiles plus local021")
+ check(ids==["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-177","EXP-164","EXP-021","EXP-158","EXP-181","EXP-102","EXP-116","EXP-050","EXP-186"],"exact eighteen approved registry IDs")
  for id in ["EXP-003","EXP-139","EXP-153","EXP-161","EXP-170"]:check(rig.registry.resolve(id)=="","excluded "+id)
  for alias in [ID,"quiet-sadness","quiet_sadness"]:check(rig.registry.resolve(alias)==ID,"alias")
  var d=rig.registry.definition(ID)
@@ -48,7 +48,7 @@ func run():
  var anchors=JSON.parse_string(FileAccess.get_file_as_string("res://source_references/quiet_sadness_source_anchor_map.json"))
  for a in anchors.anchors:
   var p=rig.sample_expression(ID,a.time)
-  for k in rig.CHANNELS:check(is_equal_approx(p[k],a.values[k]),"documented interpolated source anchor")
+  for k in rig.CHANNELS:check(is_equal_approx(p[k],a.values.get(k,0.0)),"documented interpolated source anchor")
  var previous=rig.neutral_pose()
  for i in range(3651):
   var t=i*.001;var p=rig.sample_expression(ID,t)

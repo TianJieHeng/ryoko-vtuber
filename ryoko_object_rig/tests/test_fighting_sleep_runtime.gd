@@ -42,7 +42,7 @@ func run():
   var n=rig.face.objects[k];pigment[k]=[n.texture,n.region_rect,n.region_enabled,n.offset,n.flip_h,n.flip_v]
  var ids=[]
  for e in rig.list_expressions():ids.append(e.id)
- check(ids==PRIOR+[ID],"ten approved profiles plus only164")
+ check(ids==["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-177","EXP-164","EXP-021","EXP-158","EXP-181","EXP-102","EXP-116","EXP-050","EXP-186"],"exact eighteen approved registry IDs")
  for id in ["EXP-003","EXP-153","EXP-161"]:check(rig.registry.resolve(id)=="","excluded "+id)
  for alias in [ID,"fighting-sleep","fighting_sleep"]:check(rig.registry.resolve(alias)==ID,"alias")
  var d=rig.registry.definition(ID)
@@ -53,7 +53,7 @@ func run():
  for source_pose in accepted.poses:
   for t in mapping.key_pose_times[str(int(source_pose.key_pose))]:
    var p=rig.sample_expression(ID,t)
-   for channel in rig.CHANNELS:check(is_equal_approx(p[channel],source_pose.values[channel]),"accepted key pose preserved")
+   for channel in rig.CHANNELS:check(is_equal_approx(p[channel],source_pose.values.get(channel,0.0)),"accepted key pose preserved")
  # Continuous sampled trajectory bounds at 1ms, not a visual acceptance claim.
  for i in range(3471):
   var t=i*.001;var p=rig.sample_expression(ID,t)

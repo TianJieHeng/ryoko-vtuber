@@ -29,7 +29,10 @@ func run():
  for expression in rig.registry.list_expressions():
   for t in [0.0,.2,.7,1.0,1.36,1.54,2.04,expression.duration]:
    rig.reset();rig.play_expression(expression.id);rig.advance(t)
-   if expression.id not in ["EXP-006","EXP-160"]:check(rig.pose_now().blush_intensity==0,"prior profile defaults zero")
+   if expression.id not in ["EXP-006","EXP-160","EXP-158"]:check(rig.pose_now().blush_intensity==0,"prior profile defaults zero")
+   var expected_blush=rig.sample_expression(expression.id,t).blush_intensity
+   if t<.3:expected_blush*=smoothstep(0.0,.3,t)
+   check(is_equal_approx(rig.pose_now().blush_intensity,expected_blush),"every profile authored blush matches actual player")
    var before=core_state()
    for value in [0.0,.000001,.1,.35,.7,1.0,.7,.1,0.0]:
     check(rig.apply_controls({"blush_intensity":value}),"valid intensity")

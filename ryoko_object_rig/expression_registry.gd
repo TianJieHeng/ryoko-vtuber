@@ -1,13 +1,18 @@
 extends RefCounted
 ## Data-only catalogue. Validation is transactional; callers receive deep copies.
 const Limits=preload("res://control_limits.gd")
-const CHANNEL_BOUNDS={"blink_R":[0.0,1.0],"blink_L":[0.0,1.0],"brow_screen_left":[-1.0,1.0],"brow_screen_right":[-1.0,1.0],"brow_tilt_screen_left":[-1.0,1.0],"brow_tilt_screen_right":[-1.0,1.0],"brow_inner_lift_screen_left":[0.0,1.0],"brow_inner_lift_screen_right":[0.0,1.0],"gaze_x":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_y":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_down_extra":[0.0,1.0],"hair_sway":[-0.07,0.07],"mouth_open":[0.0,1.0],"eye_smile_R":[0.0,1.0],"eye_smile_L":[0.0,1.0],"mouth_smile":[0.0,1.0],"mouth_spread":[0.0,1.0],"mouth_corner_lift":[0.0,1.0],"mouth_lip_press":[0.0,1.0],"mouth_oral_lift":[0.0,1.0],"mouth_purse":[0.0,1.0],"blush_intensity":[0.0,1.0]}
+const CHANNEL_BOUNDS={"blink_R":[0.0,1.0],"blink_L":[0.0,1.0],"brow_screen_left":[-1.0,1.0],"brow_screen_right":[-1.0,1.0],"brow_tilt_screen_left":[-1.0,1.0],"brow_tilt_screen_right":[-1.0,1.0],"brow_inner_lift_screen_left":[0.0,1.0],"brow_inner_lift_screen_right":[0.0,1.0],"gaze_x":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_y":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_down_extra":[0.0,1.0],"hair_sway":[-0.07,0.07],"mouth_open":[0.0,1.0],"eye_smile_R":[0.0,1.0],"eye_smile_L":[0.0,1.0],"mouth_smile":[0.0,1.0],"mouth_spread":[0.0,1.0],"mouth_width_screen_left":[0.0,1.0],"mouth_width_screen_right":[0.0,1.0],"mouth_corner_lift":[0.0,1.0],"mouth_corner_lift_screen_left":[0.0,1.0],"mouth_corner_lift_screen_right":[0.0,1.0],"mouth_lip_press":[0.0,1.0],"mouth_oral_lift":[0.0,1.0],"mouth_purse":[0.0,1.0],"blush_intensity":[0.0,1.0]}
 const DEFINITION_KEYS=["id","title","duration","keyframes","status","intent","source_catalogue_sha256","timing_origin","scope","interpolation"]
 var last_error=""
 var _entries:Dictionary={}
 var _aliases:Dictionary={}
 static func number(value)->bool:
     return (value is int or value is float) and is_finite(float(value))
+# Public width is sealed-mouth only. Call after finite/bounds validation.
+static func sealed_mouth_valid(values:Dictionary)->bool:
+    return not (float(values.get("mouth_open",0.0))>0.0 and (float(values.get("mouth_width_screen_left",0.0))>0.0 or float(values.get("mouth_width_screen_right",0.0))>0.0))
+static func width_present(values:Dictionary)->bool:
+    return float(values.get("mouth_width_screen_left",0.0))>0.0 or float(values.get("mouth_width_screen_right",0.0))>0.0
 func fail(message:String)->bool:
     last_error=message;return false
 func load_file(path:String="res://expressions/registry.json")->bool:
@@ -69,6 +74,14 @@ func validate_definition(definition,expected_id:String)->bool:
             if not CHANNEL_BOUNDS.has(channel):return fail("Unknown channel: "+str(channel))
             var value=frame.values[channel];var bounds=CHANNEL_BOUNDS[channel]
             if not number(value) or value<bounds[0] or value>bounds[1]:return fail("Out-of-range or nonfinite channel: "+channel)
+    # Shared smoothstep between nonnegative endpoints must remain in one
+    # domain. A neutral trio key separates width and opening segments.
+    for frame in definition.keyframes:
+        if not sealed_mouth_valid(frame.values):return fail("Positive mouth width requires mouth_open == 0")
+    for index in range(definition.keyframes.size()-1):
+        var a=definition.keyframes[index].values;var b=definition.keyframes[index+1].values
+        if maxf(float(a.get("mouth_open",0.0)),float(b.get("mouth_open",0.0)))>0.0 and (width_present(a) or width_present(b)):
+            return fail("Opening and width segments require an explicit zero-trio key")
     var first=definition.keyframes[0];var final=definition.keyframes[-1]
     if first.time!=0 or final.time!=definition.duration:return fail("Timeline must span time 0 through duration")
     for frame in [first,final]:

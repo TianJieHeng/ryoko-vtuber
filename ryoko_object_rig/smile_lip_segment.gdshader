@@ -10,6 +10,17 @@ uniform float smile=0.0;
 uniform float spread=0.0;
 uniform float purse=0.0;
 uniform float corner_lift=0.0;
+uniform vec2 corner_lift_sides=vec2(0.0);
+uniform vec2 width_sides=vec2(0.0);
+// Return the old horizontal shape coordinate for the same source column.
+// Width changes placement only: aperture, vertical style and all inherited
+// bilateral/purse differences keep their old arithmetic. Pigment UV is fixed.
+float legacy_shape_x(float screen_x){
+ if(width_sides==vec2(0.0)){return screen_x;}
+ float side=screen_x<564.5 ? width_sides.x : width_sides.y;
+ float horizontal_spread=spread+(1.0-spread)*side;
+ return 564.5+(screen_x-564.5)*(35.5+20.0*spread-14.0*purse)/(35.5+20.0*horizontal_spread-14.0*purse);
+}
 uniform float offset_x=0.0;
 uniform float joint_center=40.0;
 uniform float offset_y=0.0;
@@ -30,6 +41,15 @@ uniform vec2 lower_peer_origin=vec2(0.0);
 uniform float lower_peer_angle=0.0;
 uniform vec2 lower_peer_offset=vec2(0.0);
 uniform sampler2D seam_texture : filter_linear, repeat_disable;
+// New side channels use only the unspent old 12px corner-lift budget.
+// The source radius follows rigid spread/purse coordinates. Pigment UV is untouched.
+float independent_corner_delta(float screen_x){
+ screen_x=legacy_shape_x(screen_x);
+ float side=screen_x<564.5 ? corner_lift_sides.x : corner_lift_sides.y;
+ if(side<=0.0){return 0.0;}
+ float r=clamp(abs((screen_x-564.5)/(35.5+20.0*spread-14.0*purse)),0.0,1.0);
+ return -12.0*(1.0-corner_lift)*side*r*r*r;
+}
 float lower_geometry_mask(float sx,float y,float own_angle,vec2 own_offset){
   float seam=texture(seam_texture,vec2(sx/80.0,.5)).r*63.75;
   // At smile=0 this is exactly the existing yawn lower-lip coverage.
@@ -42,17 +62,19 @@ float lower_geometry_mask(float sx,float y,float own_angle,vec2 own_offset){
   float boundary_curve=sqrt(max(0.0,1.0-pow(hx,4.0)));
   vec2 edge_point=vec2(sx-joint_center,seam+1.0-14.0);
   edge_point=mat2(vec2(cos(own_angle),sin(own_angle)),vec2(-sin(own_angle),cos(own_angle)))*edge_point+vec2(525.0+joint_center+own_offset.x,634.0+own_offset.y);
+  float mask_x=legacy_shape_x(edge_point.x);
   float current_width=mix(38.0-12.0*opening,35.5,smile)+20.0*spread;
   if(purse>0.0){current_width-=14.0*purse;}
-  float h=clamp(abs(edge_point.x-564.5)/current_width,0.0,1.0);
+  float h=clamp(abs(mask_x-564.5)/current_width,0.0,1.0);
   float current_curve=mix(sqrt(max(0.0,1.0-pow(h,4.0))),pow(max(0.0,1.0-h*h),.72),smile);
-  float current_seam=620.0+texture(seam_texture,vec2(clamp((spread==0.0 ? (edge_point.x-525.0) : (39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5)))/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5)-12.0*corner_lift*pow(clamp(abs((edge_point.x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
+  float current_seam=620.0+texture(seam_texture,vec2(clamp((spread==0.0 ? (mask_x-525.0) : (39.5+(mask_x-564.5)/(1.0+20.0*spread/35.5)))/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5)-12.0*corner_lift*pow(clamp(abs((mask_x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
   if(purse>0.0){
-   float r=clamp(abs((edge_point.x-564.5)/(35.5+20.0*spread-14.0*purse)),0.0,1.0);
-   float native_x=39.5+(edge_point.x-564.5)/(1.0+20.0*spread/35.5-14.0*purse/35.5);
+   float r=clamp(abs((mask_x-564.5)/(35.5+20.0*spread-14.0*purse)),0.0,1.0);
+   float native_x=39.5+(mask_x-564.5)/(1.0+20.0*spread/35.5-14.0*purse/35.5);
    current_seam=620.0+texture(seam_texture,vec2(clamp(native_x/80.0,0.0,1.0),.5)).r*63.75-4.0*spread-(4.0+5.0*spread)*smile*pow(h,1.5)-12.0*corner_lift*r*r*r+purse*(4.0+8.0*r*r);
    current_curve=mix(current_curve,sqrt(max(0.0,1.0-h*h)),purse);
   }
+  if(corner_lift_sides!=vec2(0.0)){current_seam+=independent_corner_delta(edge_point.x);}
   float contact_gap=edge_point.y-(current_seam+56.0*opening*current_curve);
   float ellipse_h=100.0-89.0*pow(o,1.6);
   float ellipse_w=50.0-30.0*pow(o,1.6);

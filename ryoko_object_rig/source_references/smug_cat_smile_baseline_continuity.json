@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "six_manual_state_face_material_records_exact": true,
+  "base16_probe_sha256": "1585442183e7cc08609fcb2bb3dce497bd1c963e1b3da96558d2c4ba0952fa7f",
+  "base17_probe_sha256": "1585442183e7cc08609fcb2bb3dce497bd1c963e1b3da96558d2c4ba0952fa7f",
+  "same_six_records": true,
+  "state_face_material_and_fixed_head_body": true,
+  "baseline_source_freeze_sha256": "c2f4d0ff703f9caf418bf2a72ff117a294730a75f0be2ae3de4ba9c24577fd8a",
+  "accepted_static_plan_sha256": "cd32eafbb34577154ccac87ef07217a9d86ab5e89b6aebf8f792acd68ee022f0",
+  "cold_import_performed": false,
+  "used_completed_derived_caches": true
+}

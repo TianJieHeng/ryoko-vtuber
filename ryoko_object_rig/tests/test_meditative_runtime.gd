@@ -25,7 +25,7 @@ func run():
  check(rig.rig_ready and rig.registry_ready,"ready")
  if not rig.rig_ready or not rig.registry_ready:quit(2);return
  check(rig.registry.resolve("meditate")==ID and rig.registry.resolve("meditative-calm")==ID,"aliases")
- check(rig.list_expressions().size()==11,"ten approved profiles plus scoped164")
+ check(rig.list_expressions().size()==18,"ten approved profiles plus scoped164")
  for id in ["EXP-003","EXP-161","EXP-153"]:check(rig.registry.resolve(id)=="","unapproved profile absent")
  var d=rig.registry.definition(ID)
  check(d.duration==3.9 and d.keyframes.size()==7,"seven timeline keys, nine source-comparison poses, same3.9seconds")

@@ -32,7 +32,7 @@ func verify(x,y,e):
     check(rig.face.oral_objects.upper_teeth.position==Vector2(533,626),"white upper enamel fixed")
 func run():
     rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false)
-    check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==11,"ten approved profiles plus scoped164")
+    check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==18,"ten approved profiles plus scoped164")
     check(rig.pose_now().gaze_down_extra==0,"new default zero")
     check(Limits.GAZE_DOWN_PIXELS==1 and Limits.GAZE_DOWN_EXTRA_PIXELS==5,"old mapping1 and selected extra5")
     for id in ["EXP-003","EXP-161","EXP-153"]:check(rig.registry.definition(id).is_empty(),"unapproved profile absent")

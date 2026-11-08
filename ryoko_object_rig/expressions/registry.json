@@ -106,6 +106,60 @@
         "quiet_sadness"
       ],
       "trigger_phase": "sad_peak"
+    },
+    {
+      "id": "EXP-158",
+      "path": "res://expressions/EXP-158.json",
+      "aliases": [
+        "post-confession-shyness",
+        "post_confession_shyness"
+      ],
+      "trigger_phase": "hopeful_downcast_peak"
+    },
+    {
+      "id": "EXP-181",
+      "path": "res://expressions/EXP-181.json",
+      "aliases": [
+        "cheeky-wink",
+        "cheeky_wink"
+      ],
+      "trigger_phase": "playful_preparation"
+    },
+    {
+      "id": "EXP-102",
+      "path": "res://expressions/EXP-102.json",
+      "aliases": [
+        "knowing-smirk",
+        "knowing_smirk"
+      ],
+      "trigger_phase": "knowing_preparation"
+    },
+    {
+      "id": "EXP-116",
+      "path": "res://expressions/EXP-116.json",
+      "aliases": [
+        "confident-denial",
+        "confident_denial"
+      ],
+      "trigger_phase": "firm_attention"
+    },
+    {
+      "id": "EXP-050",
+      "path": "res://expressions/EXP-050.json",
+      "aliases": [
+        "frustrated-pout",
+        "frustrated_pout"
+      ],
+      "trigger_phase": "gathering_pout"
+    },
+    {
+      "id": "EXP-186",
+      "path": "res://expressions/EXP-186.json",
+      "aliases": [
+        "smug-cat-smile",
+        "smug_cat_smile"
+      ],
+      "trigger_phase": "quiet_composure"
     }
   ]
 }

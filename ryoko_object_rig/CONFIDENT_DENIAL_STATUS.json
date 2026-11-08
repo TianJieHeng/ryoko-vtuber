@@ -1,0 +1,34 @@
+{
+  "status": "Local unapproved EXP-116 performance awaiting completed trajectory capture and independent review",
+  "approved": false,
+  "approved_integration": false,
+  "approved_profile_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021"
+  ],
+  "unapproved_profile_ids": [
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116"
+  ],
+  "registered_profile_count": 16,
+  "base_source_freeze_sha256": "9d06b0c4a1be6cddbdb8c849e2f85480ed46d165f69054dd619d22fa91c637c0",
+  "runtime_art_and_fifteen_profiles_unchanged": true,
+  "scoped_sealed_width_capability_independently_passed": true,
+  "static_source_fit_independently_passed": true,
+  "general_open_plus_width": "Unsupported; prior epsilon activation and matched open wedge failures remain HOLD. No domain broadening.",
+  "historical_metadata": "Inherited README, RELEASE, scope tests and manifests remain byte-exact predecessor provenance. This sidecar and CONFIDENT_DENIAL_LOCAL.md describe the cumulative local package.",
+  "user_approval": "Pending for all four new profiles and runtime extensions. No automatic approved integration.",
+  "normal_speed_playback_observed": false
+}

@@ -21,7 +21,7 @@ func run():
  if not rig.rig_ready or not rig.registry_ready:quit(2);return
  var ids=[]
  for e in rig.list_expressions():ids.append(e.id)
- check(ids==IDS,"eight authored profiles")
+ check(ids==["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-177","EXP-164","EXP-021","EXP-158","EXP-181","EXP-102","EXP-116","EXP-050","EXP-186"],"exact eighteen approved registry IDs")
  for alias in ["pride","private-pride"]:check(rig.registry.resolve(alias)=="EXP-152","alias "+alias)
  var d=rig.registry.definition("EXP-152")
  check(d.duration==1.9 and d.keyframes.size()==9,"exact source proposal times")

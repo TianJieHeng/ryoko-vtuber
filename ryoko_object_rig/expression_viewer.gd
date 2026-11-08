@@ -41,7 +41,7 @@ func _ready():
     add_button(buttons,"Reset [0]",func():apply_controls({"reset":true}))
     state_label=Label.new();panel.add_child(state_label)
     var note=Label.new();note.text="Manual controls take ownership immediately.\nOnly the registered performances are implemented.";panel.add_child(note)
-    for item in [["mouth_open","Mouth opening",0.0,1.0],["mouth_smile","Smile corners",0.0,1.0],["mouth_spread","Lateral smile spread",0.0,1.0],["mouth_corner_lift","Closed-smile curvature",0.0,1.0],["mouth_lip_press","Inner-lip pressure",0.0,1.0],["mouth_oral_lift","Lower oral-surface lift",0.0,1.0],["mouth_purse","Lip pursing",0.0,1.0],["blush_intensity","Separate cheek blush FX",0.0,1.0],["eye_smile_R","Screen-left smile eye",0.0,1.0],["eye_smile_L","Screen-right smile eye",0.0,1.0],["blink_R","Screen-left eyelid",0.0,1.0],["blink_L","Screen-right eyelid",0.0,1.0],["brow_screen_left","Screen-left brow",-1.0,1.0],["brow_screen_right","Screen-right brow",-1.0,1.0],["brow_tilt_screen_left","Screen-left brow tilt",-1.0,1.0],["brow_tilt_screen_right","Screen-right brow tilt",-1.0,1.0],["brow_inner_lift_screen_left","Screen-left inner brow lift",0.0,1.0],["brow_inner_lift_screen_right","Screen-right inner brow lift",0.0,1.0],["hair_sway","Hair sway",-0.07,0.07]]:
+    for item in [["mouth_open","Mouth opening",0.0,1.0],["mouth_smile","Smile corners",0.0,1.0],["mouth_spread","Lateral smile spread",0.0,1.0],["mouth_corner_lift","Closed-smile curvature",0.0,1.0],["mouth_width_screen_left","Left sealed-mouth width",0.0,1.0],["mouth_width_screen_right","Right sealed-mouth width",0.0,1.0],["mouth_corner_lift_screen_left","Left corner remaining lift",0.0,1.0],["mouth_corner_lift_screen_right","Right corner remaining lift",0.0,1.0],["mouth_lip_press","Inner-lip pressure",0.0,1.0],["mouth_oral_lift","Lower oral-surface lift",0.0,1.0],["mouth_purse","Lip pursing",0.0,1.0],["blush_intensity","Separate cheek blush FX",0.0,1.0],["eye_smile_R","Screen-left smile eye",0.0,1.0],["eye_smile_L","Screen-right smile eye",0.0,1.0],["blink_R","Screen-left eyelid",0.0,1.0],["blink_L","Screen-right eyelid",0.0,1.0],["brow_screen_left","Screen-left brow",-1.0,1.0],["brow_screen_right","Screen-right brow",-1.0,1.0],["brow_tilt_screen_left","Screen-left brow tilt",-1.0,1.0],["brow_tilt_screen_right","Screen-right brow tilt",-1.0,1.0],["brow_inner_lift_screen_left","Screen-left inner brow lift",0.0,1.0],["brow_inner_lift_screen_right","Screen-right inner brow lift",0.0,1.0],["hair_sway","Hair sway",-0.07,0.07]]:
         add_slider(panel,item)
     if Limits.GAZE_ENABLED:
         add_slider(panel,["gaze_x","Gaze horizontal",Limits.GAZE_MIN,Limits.GAZE_MAX])
@@ -92,6 +92,13 @@ func _process(_delta):
     var state=rig.get_state()
     state_label.text=(state.active_expression if state.active_expression!="" else "No active performance")+" / "+state.phase+" / %.2f s"%state.time
     for channel in sliders:sliders[channel].set_value_no_signal(state.displayed_controls[channel])
+    var opening=float(state.displayed_controls.mouth_open)
+    var has_width=float(state.displayed_controls.mouth_width_screen_left)>0.0 or float(state.displayed_controls.mouth_width_screen_right)>0.0
+    sliders.mouth_open.editable=not has_width
+    sliders.mouth_open.tooltip_text="Set both widths to zero before opening. Atomic API requests may change the full trio together." if has_width else "Opening is available when both independent widths are zero."
+    for key in ["mouth_width_screen_left","mouth_width_screen_right"]:
+        sliders[key].editable=opening==0.0
+        sliders[key].tooltip_text="Sealed-mouth only. Set opening to zero first; atomic API requests may change the full trio together."
     auto_blink_button.set_pressed_no_signal(state.auto_blink or state.auto_blink_pending_restore)
     auto_blink_status.text="Auto blink: paused; resumes after neutral recovery." if state.auto_blink_pending_restore else ("Auto blink: active." if state.auto_blink else "Auto blink: off.")
     error_label.text=state.last_error

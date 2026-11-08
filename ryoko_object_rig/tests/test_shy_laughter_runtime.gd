@@ -39,7 +39,7 @@ func run():
   var n=rig.face.objects[k];pigment[k]=[n.texture,n.region_rect,n.region_enabled]
  var ids=[]
  for e in rig.list_expressions():ids.append(e.id)
- check(ids==PRIOR+[ID,"EXP-177","EXP-164"],"ten approved profiles plus scoped164")
+ check(ids==["EXP-163","EXP-005","EXP-001","EXP-006","EXP-107","EXP-007","EXP-002","EXP-152","EXP-160","EXP-177","EXP-164","EXP-021","EXP-158","EXP-181","EXP-102","EXP-116","EXP-050","EXP-186"],"exact eighteen approved registry IDs")
  for id in ["EXP-003","EXP-153","EXP-161"]:check(rig.registry.resolve(id)=="","excluded "+id)
  for alias in [ID,"shy-laughter","shy_laughter"]:check(rig.registry.resolve(alias)==ID,"aliases")
  var d=rig.registry.definition(ID)

@@ -5,7 +5,7 @@ var registry=Registry.new()
 var registry_ready=false
 const RESTART_SECONDS=0.30
 const RELEASE_SECONDS=0.45
-const CHANNELS=["blink_R","blink_L","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","brow_inner_lift_screen_left","brow_inner_lift_screen_right","gaze_x","gaze_y","gaze_down_extra","hair_sway","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]
+const CHANNELS=["blink_R","blink_L","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","brow_inner_lift_screen_left","brow_inner_lift_screen_right","gaze_x","gaze_y","gaze_down_extra","hair_sway","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]
 var active_performance=""
 var performance_time=0.0
 var performance_phase="neutral"
@@ -15,11 +15,17 @@ var auto_blink_pending_restore=false
 var current_pose:Dictionary={}
 var restart_pose:Dictionary={}
 var release_pose:Dictionary={}
+const MOUTH_TRIO=["mouth_open","mouth_width_screen_left","mouth_width_screen_right"]
+# Trigger-fixed lookahead; no mode change when a later target key opens.
+var mouth_bridge_mode="none"
+var mouth_bridge_duration=0.0
 var manual_mouth_open=0.0
 var manual_eye_smile=Vector2.ZERO
 var manual_mouth_smile=0.0
 var manual_mouth_spread=0.0
 var manual_mouth_corner_lift=0.0
+var manual_mouth_corner_sides=Vector2.ZERO
+var manual_mouth_width_sides=Vector2.ZERO
 var manual_mouth_lip_press=0.0
 var manual_mouth_oral_lift=0.0
 var manual_mouth_purse=0.0
@@ -39,7 +45,7 @@ func neutral_pose()->Dictionary:
     for key in CHANNELS:p[key]=0.0
     return p
 func pose_now()->Dictionary:
-    return {"blink_R":manual_lids.x,"blink_L":manual_lids.y,"brow_screen_left":manual_brow.x,"brow_screen_right":manual_brow.y,"brow_tilt_screen_left":manual_brow_tilt.x,"brow_tilt_screen_right":manual_brow_tilt.y,"brow_inner_lift_screen_left":manual_brow_inner_lift.x,"brow_inner_lift_screen_right":manual_brow_inner_lift.y,"gaze_x":manual_gaze.x,"gaze_y":manual_gaze.y,"gaze_down_extra":float(manual_gaze_down_extra),"hair_sway":float(manual_hair),"mouth_open":float(manual_mouth_open),"eye_smile_R":manual_eye_smile.x,"eye_smile_L":manual_eye_smile.y,"mouth_smile":float(manual_mouth_smile),"mouth_spread":float(manual_mouth_spread),"mouth_corner_lift":float(manual_mouth_corner_lift),"mouth_lip_press":float(manual_mouth_lip_press),"mouth_oral_lift":float(manual_mouth_oral_lift),"mouth_purse":float(manual_mouth_purse),"blush_intensity":float(manual_blush_intensity)}
+    return {"blink_R":manual_lids.x,"blink_L":manual_lids.y,"brow_screen_left":manual_brow.x,"brow_screen_right":manual_brow.y,"brow_tilt_screen_left":manual_brow_tilt.x,"brow_tilt_screen_right":manual_brow_tilt.y,"brow_inner_lift_screen_left":manual_brow_inner_lift.x,"brow_inner_lift_screen_right":manual_brow_inner_lift.y,"gaze_x":manual_gaze.x,"gaze_y":manual_gaze.y,"gaze_down_extra":float(manual_gaze_down_extra),"hair_sway":float(manual_hair),"mouth_open":float(manual_mouth_open),"eye_smile_R":manual_eye_smile.x,"eye_smile_L":manual_eye_smile.y,"mouth_smile":float(manual_mouth_smile),"mouth_spread":float(manual_mouth_spread),"mouth_corner_lift":float(manual_mouth_corner_lift),"mouth_corner_lift_screen_left":manual_mouth_corner_sides.x,"mouth_corner_lift_screen_right":manual_mouth_corner_sides.y,"mouth_width_screen_left":manual_mouth_width_sides.x,"mouth_width_screen_right":manual_mouth_width_sides.y,"mouth_lip_press":float(manual_mouth_lip_press),"mouth_oral_lift":float(manual_mouth_oral_lift),"mouth_purse":float(manual_mouth_purse),"blush_intensity":float(manual_blush_intensity)}
 func sample_expression(id,time)->Dictionary:
     if not id is String or not number(time):
         last_error="Expression ID must be a string and sample time a finite number";return {}
@@ -60,6 +66,39 @@ func _sample(definition:Dictionary,time:float)->Dictionary:
             for key in CHANNELS:p[key]=lerpf(float(a.values.get(key,0)),float(b.values.get(key,0)),u)
             return p
     return p
+func _clear_mouth_bridge():
+    mouth_bridge_mode="none";mouth_bridge_duration=0.0
+func _prepare_mouth_bridge():
+    var source_width=Registry.width_present(restart_pose)
+    var target_width=false;var target_open=false
+    for frame in performance.keyframes:
+        target_width=target_width or Registry.width_present(frame.values)
+        target_open=target_open or float(frame.values.get("mouth_open",0.0))>0.0
+    mouth_bridge_mode="legacy"
+    if source_width or target_width:
+        mouth_bridge_mode="staged" if (source_width and target_open) or (float(restart_pose.get("mouth_open",0.0))>0.0 and target_width) else "bounded_direct"
+    mouth_bridge_duration=RESTART_SECONDS if mouth_bridge_mode=="legacy" else minf(RESTART_SECONDS,performance.duration)
+func _compose_mouth_bridge(p:Dictionary,target:Dictionary):
+    # p contains the literal old interpolation for all other channels.
+    if mouth_bridge_mode in ["none","legacy"]:return
+    if performance_time>=mouth_bridge_duration:
+        for key in MOUTH_TRIO:p[key]=target[key]
+        return
+    var u=clampf(performance_time/mouth_bridge_duration,0.0,1.0)
+    if mouth_bridge_mode=="bounded_direct":
+        var weight=smoothstep(0.0,1.0,u)
+        for key in MOUTH_TRIO:p[key]=lerpf(float(restart_pose.get(key,0.0)),float(target[key]),weight)
+    elif u<=0.5:
+        var weight=1.0-smoothstep(0.0,0.5,u)
+        for key in MOUTH_TRIO:p[key]=float(restart_pose.get(key,0.0))*weight
+    else:
+        var weight=smoothstep(0.5,1.0,u)
+        for key in MOUTH_TRIO:p[key]=float(target[key])*weight
+func mouth_transition_state()->Dictionary:
+    var stage="none"
+    if mouth_bridge_mode!="none":
+        stage="complete" if performance_time>=mouth_bridge_duration else ("source" if mouth_bridge_mode=="staged" and performance_time<=mouth_bridge_duration*.5 else ("target" if mouth_bridge_mode=="staged" else "direct"))
+    return {"mode":mouth_bridge_mode,"stage":stage,"duration":mouth_bridge_duration,"classification":"entire target timeline at trigger"}
 func phase_at(time:float)->String:
     var phase="neutral"
     for k in performance.get("keyframes",[]):
@@ -70,14 +109,20 @@ func _apply_performance_pose(p:Dictionary):
     manual_brow_tilt=Vector2(p.brow_tilt_screen_left,p.brow_tilt_screen_right);manual_gaze=Vector2(p.gaze_x,p.gaze_y);manual_gaze_down_extra=float(p.get("gaze_down_extra",0.0))
     manual_brow_inner_lift=Vector2(p.get("brow_inner_lift_screen_left",0),p.get("brow_inner_lift_screen_right",0))
     manual_eye_smile=Vector2(p.get("eye_smile_R",0),p.get("eye_smile_L",0));manual_mouth_smile=p.get("mouth_smile",0);manual_mouth_spread=p.get("mouth_spread",0);manual_mouth_corner_lift=p.get("mouth_corner_lift",0);manual_mouth_lip_press=p.get("mouth_lip_press",0);manual_mouth_oral_lift=p.get("mouth_oral_lift",0);manual_mouth_purse=p.get("mouth_purse",0);manual_blush_intensity=p.get("blush_intensity",0)
+    manual_mouth_width_sides=Vector2(p.get("mouth_width_screen_left",0),p.get("mouth_width_screen_right",0))
+    manual_mouth_corner_sides=Vector2(p.get("mouth_corner_lift_screen_left",0),p.get("mouth_corner_lift_screen_right",0))
     manual_hair=p.hair_sway;manual_mouth_open=p.mouth_open;mouth_shape="neutral";oral_mode="continuous"
     current_pose=p.duplicate();current_pose.mouth_purse=float(manual_mouth_purse)
+    current_pose.mouth_width_screen_left=manual_mouth_width_sides.x;current_pose.mouth_width_screen_right=manual_mouth_width_sides.y
+    current_pose.mouth_corner_lift_screen_left=manual_mouth_corner_sides.x;current_pose.mouth_corner_lift_screen_right=manual_mouth_corner_sides.y
     current_pose.brow_inner_lift_screen_left=manual_brow_inner_lift.x;current_pose.brow_inner_lift_screen_right=manual_brow_inner_lift.y;_write_pose()
 func _write_pose():
     if not face or not face.ready_for_controls:return
+    # Complete validated pose is committed synchronously. No yield or partial
+    # low-level domain guard may reject half of an atomic open/width switch.
     super._write_pose()
     if oral_mode=="continuous":face.set_mouth_open(manual_mouth_open)
-    face.set_smile_controls(manual_eye_smile,manual_mouth_smile,manual_mouth_spread,manual_mouth_corner_lift,manual_mouth_lip_press,manual_mouth_oral_lift,manual_mouth_purse)
+    face.set_smile_controls(manual_eye_smile,manual_mouth_smile,manual_mouth_spread,manual_mouth_corner_lift,manual_mouth_lip_press,manual_mouth_oral_lift,manual_mouth_purse,manual_mouth_corner_sides,manual_mouth_width_sides)
     face.set_blush_intensity(manual_blush_intensity)
     var owner=active_performance if active_performance!="" else ("release" if release_time>=0 else "manual")
     face.effect_owner=owner
@@ -103,7 +148,7 @@ func apply_controls(data)->bool:
         last_error="Canonical hair_sway supports only [-0.07,0.07]";return false
     # Validate the complete transaction before changing ownership or pose.
     var base=data.duplicate()
-    for key in ["perform_expression","release_performance","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]:base.erase(key)
+    for key in ["perform_expression","release_performance","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]:base.erase(key)
     for key in base:
         if key not in NUMBERS and key not in ["reset","auto_blink","mouth","viseme"]:last_error="Unsupported control: "+str(key);return false
     for key in NUMBERS:
@@ -113,7 +158,7 @@ func apply_controls(data)->bool:
         if base.has(key) and not base[key] is bool:last_error="Expected boolean: "+key;return false
     for key in ["mouth","viseme"]:
         if base.has(key) and (not base[key] is String or base[key].to_upper() not in ["A","E","I","O","U","REST","RELEASE","NEUTRAL"]):last_error="Invalid mouth shape";return false
-    for key in ["eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]:
+    for key in ["eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]:
         if data.has(key) and (not number(data[key]) or data[key]<0 or data[key]>1):last_error=key+" must be in [0,1]";return false
     if data.has("mouth_open") and (not number(data.mouth_open) or data.mouth_open<0 or data.mouth_open>1):last_error="mouth_open must be in [0,1]";return false
     if data.has("perform_expression") and (not data.perform_expression is String or registry.resolve(data.perform_expression)==""):last_error="Unknown or unsupported expression ID";return false
@@ -127,23 +172,37 @@ func apply_controls(data)->bool:
     if data.has("perform_expression"):
         restart_pose=displayed_pose();active_performance=registry.resolve(data.perform_expression)
         performance=registry.definition(active_performance);performance_time=0;release_time=-1;performance_phase=registry.trigger_phase(active_performance);_suspend_auto_blink()
-        release_pose.clear();last_error=""
+        release_pose.clear();_prepare_mouth_bridge();last_error=""
         _apply_performance_pose(restart_pose);return true
     if data.get("release_performance",false):
         release_pose=displayed_pose();active_performance="";release_time=0;performance_phase="interrupted_release";_suspend_auto_blink()
-        last_error="";_apply_performance_pose(release_pose);return true
+        _clear_mouth_bridge();last_error="";_apply_performance_pose(release_pose);return true
     if data.has("release_performance"):last_error="";return true
+    # Validate retained authored/manual fields as a complete prospective pose
+    # before taking ownership, cancelling blink intent or touching any setter.
+    var prospective=neutral_pose() if data.get("reset",false) else pose_now()
+    for key in ["mouth","viseme"]:
+        if data.has(key):prospective.mouth_open=0.0
+    for key in MOUTH_TRIO:
+        if data.has(key):prospective[key]=float(data[key])
+    if not Registry.sealed_mouth_valid(prospective):
+        last_error="Positive mouth width requires mouth_open == 0; set the complete trio atomically";return false
     if data.size()>0:
+        _clear_mouth_bridge()
         auto_blink_pending_restore=false
         active_performance="";release_time=-1;performance_phase="manual"
     if data.get("reset",false):
-        manual_mouth_open=0;manual_eye_smile=Vector2.ZERO;manual_mouth_smile=0.0;manual_mouth_spread=0.0;manual_mouth_corner_lift=0.0;manual_mouth_lip_press=0.0;manual_mouth_oral_lift=0.0;manual_mouth_purse=0.0;manual_blush_intensity=0.0;oral_mode="continuous";performance_time=0;performance_phase="neutral"
+        manual_mouth_open=0;manual_eye_smile=Vector2.ZERO;manual_mouth_smile=0.0;manual_mouth_spread=0.0;manual_mouth_corner_lift=0.0;manual_mouth_corner_sides=Vector2.ZERO;manual_mouth_width_sides=Vector2.ZERO;manual_mouth_lip_press=0.0;manual_mouth_oral_lift=0.0;manual_mouth_purse=0.0;manual_blush_intensity=0.0;oral_mode="continuous";performance_time=0;performance_phase="neutral"
         restart_pose.clear();release_pose.clear();performance.clear()
     if data.has("eye_smile_R"):manual_eye_smile.x=float(data.eye_smile_R)
     if data.has("eye_smile_L"):manual_eye_smile.y=float(data.eye_smile_L)
     if data.has("mouth_smile"):manual_mouth_smile=float(data.mouth_smile)
     if data.has("mouth_spread"):manual_mouth_spread=float(data.mouth_spread)
     if data.has("mouth_corner_lift"):manual_mouth_corner_lift=float(data.mouth_corner_lift)
+    if data.has("mouth_corner_lift_screen_left"):manual_mouth_corner_sides.x=float(data.mouth_corner_lift_screen_left)
+    if data.has("mouth_corner_lift_screen_right"):manual_mouth_corner_sides.y=float(data.mouth_corner_lift_screen_right)
+    if data.has("mouth_width_screen_left"):manual_mouth_width_sides.x=float(data.mouth_width_screen_left)
+    if data.has("mouth_width_screen_right"):manual_mouth_width_sides.y=float(data.mouth_width_screen_right)
     if data.has("mouth_lip_press"):manual_mouth_lip_press=float(data.mouth_lip_press)
     if data.has("mouth_oral_lift"):manual_mouth_oral_lift=float(data.mouth_oral_lift)
     if data.has("mouth_purse"):manual_mouth_purse=float(data.mouth_purse)
@@ -181,12 +240,16 @@ func advance(delta)->bool:
     if active_performance!="":
         performance_time=minf(performance.duration,performance_time+delta)
         var p=_sample(performance,performance_time)
+        var target_trio={}
+        if mouth_bridge_mode not in ["none","legacy"]:
+            for key in MOUTH_TRIO:target_trio[key]=p[key]
         # Retrigger from the displayed pose. These are control coordinates, never image opacity.
         if performance_time<RESTART_SECONDS:
             var u=smoothstep(0.0,RESTART_SECONDS,performance_time)
             for key in CHANNELS:p[key]=lerpf(restart_pose.get(key,0),p[key],u)
+        _compose_mouth_bridge(p,target_trio)
         performance_phase=phase_at(performance_time);_apply_performance_pose(p)
-        if performance_time>=performance.duration:active_performance="";performance_phase="neutral_return";_apply_performance_pose(neutral_pose());_restore_auto_blink()
+        if performance_time>=performance.duration:active_performance="";performance_phase="neutral_return";_clear_mouth_bridge();_apply_performance_pose(neutral_pose());_restore_auto_blink()
     elif release_time>=0:
         release_time+=delta;var u=smoothstep(0.0,RELEASE_SECONDS,release_time);var p=neutral_pose()
         for key in CHANNELS:p[key]=lerpf(release_pose[key],0,u)
@@ -209,4 +272,4 @@ func play_expression(id)->bool:return apply_controls({"perform_expression":id})
 func release()->bool:return apply_controls({"release_performance":true})
 func reset()->bool:return apply_controls({"reset":true})
 func get_state()->Dictionary:
-    return {"registry_ready":registry_ready,"active_expression":active_performance,"time":performance_time,"phase":performance_phase,"release_time":release_time,"controls":pose_now(),"displayed_controls":displayed_pose(),"owners":face.owners.duplicate(),"auto_blink":auto_blink,"auto_blink_pending_restore":auto_blink_pending_restore,"last_error":last_error}
+    return {"registry_ready":registry_ready,"active_expression":active_performance,"time":performance_time,"phase":performance_phase,"release_time":release_time,"controls":pose_now(),"displayed_controls":displayed_pose(),"owners":face.owners.duplicate(),"auto_blink":auto_blink,"auto_blink_pending_restore":auto_blink_pending_restore,"mouth_transition":mouth_transition_state(),"last_error":last_error}
