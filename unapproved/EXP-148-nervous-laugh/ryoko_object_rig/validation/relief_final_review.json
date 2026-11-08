@@ -1,0 +1,657 @@
+{
+  "status": "Capture/runtime verification passed; exact final source and delta receive a separate independent release receipt. User approval and publication remain pending.",
+  "scope": "EXP-007 relieved smile plus generic bounded rigid mouth_purse capability in the existing shared rig. No new artwork.",
+  "base_commit": "35a7ddc615e7501a9a814ca02d722ddb40f200c9",
+  "capture_source_inventory_sha256": "ef79bb60c8be1cd4b3d2963a19c17b178087344ee6716c59acd5be68e59b8e5f",
+  "protected_parent_files": 418,
+  "protected_parent_pngs": 182,
+  "unchanged_prior_profiles": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107"
+  ],
+  "reference": {
+    "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+    "sheet_sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+    "integer_crop_verification": "source_references/EXP-007_crop_verification.json",
+    "authored_duration_seconds": 3.2,
+    "catalogue_proposed_duration_seconds": 1.9,
+    "implemented_existing_animation": false
+  },
+  "runtime_suites": [
+    {
+      "script": "test_object_rig.gd",
+      "exit": 0,
+      "results": [
+        "OBJECT_BASE_CHECKS_PASS checks=53704 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_yawn.gd",
+      "exit": 0,
+      "results": [
+        "YAWN_CHECKS_PASS checks=370567 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_teeth.gd",
+      "exit": 0,
+      "results": [
+        "TEETH_CHECKS_PASS checks=17017 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_expression_backbone.gd",
+      "exit": 0,
+      "results": [
+        "EXPRESSION_BACKBONE_PASS checks=192128 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_gaze_runtime.gd",
+      "exit": 0,
+      "results": [
+        "GAZE_RUNTIME_PASS checks=1757314 failures=0 fractional_samples=2002 endpoint_states=108"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_viewer_layout.gd",
+      "exit": 0,
+      "results": [
+        "VIEWER_LAYOUT_PASS enabled=true checks=30 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_smile_controls.gd",
+      "exit": 0,
+      "results": [
+        "SMILE_CONTROLS checks=237 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_laughter_runtime.gd",
+      "exit": 0,
+      "results": [
+        "LAUGHTER_RUNTIME checks=125337 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_spread_runtime.gd",
+      "exit": 0,
+      "results": [
+        "SPREAD_RUNTIME checks=528382 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_giggle_runtime.gd",
+      "exit": 0,
+      "results": [
+        "GIGGLE_RUNTIME checks=92492 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_corner_lift_runtime.gd",
+      "exit": 0,
+      "results": [
+        "CORNER_LIFT_RUNTIME checks=313408 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_closed_smile_contract.gd",
+      "exit": 0,
+      "results": [
+        "CLOSED_SMILE_CONTRACT checks=1041808 failures=0 (structural/runtime only; no visual likeness verdict)"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_blush_controls.gd",
+      "exit": 0,
+      "results": [
+        "BLUSH_CONTROLS checks=4297 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_oral_lift_contract.gd",
+      "exit": 0,
+      "results": [
+        "ORAL_LIFT_CONTRACT checks=19098 poses=1512 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_reassurance_runtime.gd",
+      "exit": 0,
+      "results": [
+        "REASSURANCE_RUNTIME checks=191666 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_purse_transport.gd",
+      "exit": 0,
+      "results": [
+        "PURSE_TRANSPORT checks=9530 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_relief_runtime.gd",
+      "exit": 0,
+      "results": [
+        "RELIEF_RUNTIME checks=615946 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_purse_contract.gd",
+      "exit": 0,
+      "results": [
+        "PURSE_CONTRACT_GRID poses=1800 checks=3778221 failures=0",
+        "PURSE_CONTRACT checks=5629165 grid_poses=1800 geometry_poses=2680 failures=0"
+      ],
+      "errors": []
+    }
+  ],
+  "isolated_rebuild_checks": [
+    {
+      "test": "build_object_face.py",
+      "exit": 0,
+      "log": "logs/rebuild_build_object_face.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_object_base.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_object_base.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_yawn.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_yawn.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_teeth.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_teeth.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_gaze_assets.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_gaze_assets.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_gaze_coverage.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_gaze_coverage.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_lid_handoff.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_lid_handoff.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_smile_support.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_smile_support.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_spread_support.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_spread_support.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_closed_smile_support.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_closed_smile_support.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    },
+    {
+      "test": "verify_blush_source.py",
+      "exit": 0,
+      "log": "logs/rebuild_verify_blush_source.py.log",
+      "independent_receipt": "relief_independent_review/rebuild_test_results.json",
+      "independent_receipt_sha256": "3e7e5e6b80c7b8a326d2b03f157e4a6122d8415cf485993062bd6dcaa6029321"
+    }
+  ],
+  "capture_comparison": {
+    "capture_freeze_inventory_sha256": "ef79bb60c8be1cd4b3d2963a19c17b178087344ee6716c59acd5be68e59b8e5f",
+    "independent_movie_runs": 2,
+    "frames_per_run_per_scale": 264,
+    "byte_hash_repeat": {
+      "full": true,
+      "native": true
+    },
+    "two_cycle_pixel_parity": {
+      "full": true,
+      "native": true
+    },
+    "neutral_before_between_after": {
+      "full": true,
+      "native": true
+    },
+    "prior_render_frames": 769,
+    "prior_pixel_failures": [],
+    "prior_control_state_failures": [],
+    "prior_cases_sha256": "8af401308a328cbfc66a4c8e0fa4bb0bb84d8a12f6ade0b8ee2e9e6c9571fee2",
+    "mouth_aperture": {
+      "poses": 648,
+      "maximum_integrated_source_px": 29.8000000417233,
+      "maximum_nonzero_rows": 31,
+      "physical_cap": 30.8,
+      "failures": [],
+      "reused_unchanged_shader_sha256": "3f4cb7428de627cc84376b397bc1f13134b7fbe5bbc38c3b4cf2e6add9f75f4a",
+      "original_capture_inventory_sha256": "d5d11b48111a3dff75a3a1513391d47848ce8cc25575d74da7141fc953baf9ad"
+    },
+    "normal_speed_playback_performed": false,
+    "passed": true
+  },
+  "media": {
+    "media": [
+      {
+        "filename": "ryoko_EXP-007_face_detail.mp4",
+        "sha256": "d13430e24b95a96fe164eea6f4f32a86435f1bec3e965bee5f87c0a612fa6707",
+        "bytes": 331492,
+        "ffprobe": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "width": 772,
+              "height": 740,
+              "coded_width": 772,
+              "coded_height": 740,
+              "closed_captions": 0,
+              "film_grain": 0,
+              "has_b_frames": 2,
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "color_range": "tv",
+              "color_transfer": "iec61966-2-1",
+              "color_primaries": "bt709",
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "refs": 1,
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "time_base": "1/15360",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 135168,
+              "duration": "8.800000",
+              "bit_rate": "297740",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "264",
+              "extradata_size": 50,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "vendor_id": "[0][0][0][0]",
+                "encoder": "Lavc61.19.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "relief_scope_work/deliverables/ryoko_EXP-007_face_detail.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "8.800000",
+            "size": "331492",
+            "bit_rate": "301356",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf61.7.103"
+            }
+          }
+        },
+        "decoded_frames": 264
+      },
+      {
+        "filename": "ryoko_EXP-007_shared_relieved_smile.mp4",
+        "sha256": "043b2dbeb50e0ac97e087f6faa490ef2814665d4aa1f326911242133b65cfe34",
+        "bytes": 160911,
+        "ffprobe": {
+          "streams": [
+            {
+              "index": 0,
+              "codec_name": "h264",
+              "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "codec_tag": "0x31637661",
+              "width": 568,
+              "height": 800,
+              "coded_width": 568,
+              "coded_height": 800,
+              "closed_captions": 0,
+              "film_grain": 0,
+              "has_b_frames": 2,
+              "pix_fmt": "yuv420p",
+              "level": 31,
+              "color_range": "tv",
+              "color_transfer": "iec61966-2-1",
+              "color_primaries": "bt709",
+              "chroma_location": "left",
+              "field_order": "progressive",
+              "refs": 1,
+              "is_avc": "true",
+              "nal_length_size": "4",
+              "id": "0x1",
+              "r_frame_rate": "30/1",
+              "avg_frame_rate": "30/1",
+              "time_base": "1/15360",
+              "start_pts": 0,
+              "start_time": "0.000000",
+              "duration_ts": 135168,
+              "duration": "8.800000",
+              "bit_rate": "142622",
+              "bits_per_raw_sample": "8",
+              "nb_frames": "264",
+              "extradata_size": 50,
+              "disposition": {
+                "default": 1,
+                "dub": 0,
+                "original": 0,
+                "comment": 0,
+                "lyrics": 0,
+                "karaoke": 0,
+                "forced": 0,
+                "hearing_impaired": 0,
+                "visual_impaired": 0,
+                "clean_effects": 0,
+                "attached_pic": 0,
+                "timed_thumbnails": 0,
+                "non_diegetic": 0,
+                "captions": 0,
+                "descriptions": 0,
+                "metadata": 0,
+                "dependent": 0,
+                "still_image": 0,
+                "multilayer": 0
+              },
+              "tags": {
+                "language": "und",
+                "handler_name": "VideoHandler",
+                "vendor_id": "[0][0][0][0]",
+                "encoder": "Lavc61.19.101 libx264"
+              }
+            }
+          ],
+          "format": {
+            "filename": "relief_scope_work/deliverables/ryoko_EXP-007_shared_relieved_smile.mp4",
+            "nb_streams": 1,
+            "nb_programs": 0,
+            "nb_stream_groups": 0,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+            "format_long_name": "QuickTime / MOV",
+            "start_time": "0.000000",
+            "duration": "8.800000",
+            "size": "160911",
+            "bit_rate": "146282",
+            "probe_score": 100,
+            "tags": {
+              "major_brand": "isom",
+              "minor_version": "512",
+              "compatible_brands": "isomiso2avc1mp41",
+              "encoder": "Lavf61.7.103"
+            }
+          }
+        },
+        "decoded_frames": 264
+      }
+    ],
+    "normal_speed_playback_performed": false
+  },
+  "compact_board": {
+    "reference_sheet_sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+    "board_sha256": "cca66af7d6604f69c0a546aa6237abee833703bd9fe029c2970189b6a15db9f5",
+    "resampling": "LANCZOS; crop and display resampling only, no retouching",
+    "crops": [
+      {
+        "panel": 1,
+        "reference": "relief_scope_work/reference/RYO_EXP-007_relieved-smile_kp01_v001.png",
+        "reference_sha256": "b90a75ffe484c0b4b421bef3dc987b8c50774ad3076dcdb1185f1bf927ef1f07",
+        "reference_crop": [
+          95,
+          165,
+          290,
+          350
+        ],
+        "time": 0,
+        "native_keypose": "relief_scope_work/movie_v2/keyposes/native_0000.png",
+        "native_keypose_sha256": "9781f9b8d2691b185076926445d7c51359c7c018874f444c7309855071a99167",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ]
+      },
+      {
+        "panel": 2,
+        "reference": "relief_scope_work/reference/RYO_EXP-007_relieved-smile_kp02_v001.png",
+        "reference_sha256": "5fc947250fa7e8e6f730909f22548a87de0a0c31cc33bf46a367136859b79653",
+        "reference_crop": [
+          95,
+          165,
+          290,
+          350
+        ],
+        "time": 0.25,
+        "native_keypose": "relief_scope_work/movie_v2/keyposes/native_0025.png",
+        "native_keypose_sha256": "af8d5ba787810e3a4cf976f4eba2eeb7618fb85b4702e794320b89abf356760a",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ]
+      },
+      {
+        "panel": 4,
+        "reference": "relief_scope_work/reference/RYO_EXP-007_relieved-smile_kp04_v001.png",
+        "reference_sha256": "8f570e1045ed6d44089a6910a89df764939cb3e2f7be858cecb9bd31ec1403d1",
+        "reference_crop": [
+          95,
+          165,
+          290,
+          350
+        ],
+        "time": 0.9,
+        "native_keypose": "relief_scope_work/movie_v2/keyposes/native_0090.png",
+        "native_keypose_sha256": "39a20f5d022e002e52534684754384274bd230cbee442f7d0c1fb4f0afe4e719",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ]
+      },
+      {
+        "panel": 5,
+        "reference": "relief_scope_work/reference/RYO_EXP-007_relieved-smile_kp05_v001.png",
+        "reference_sha256": "0eb0345bbfba3806ad90458dd21dcf83b67a3c2ca8366825304572fc9ef5dadb",
+        "reference_crop": [
+          95,
+          165,
+          290,
+          350
+        ],
+        "time": 1.3,
+        "native_keypose": "relief_scope_work/movie_v2/keyposes/native_0130.png",
+        "native_keypose_sha256": "e354ac18a58f9cac00a9dc2000417282068c762b1c86daed6245d6411836816b",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ]
+      },
+      {
+        "panel": 6,
+        "reference": "relief_scope_work/reference/RYO_EXP-007_relieved-smile_kp06_v001.png",
+        "reference_sha256": "9dcf7368159766d1dead6099ddcb6a85e06690576ae8720d81306ccde3c64321",
+        "reference_crop": [
+          95,
+          165,
+          290,
+          350
+        ],
+        "time": 1.65,
+        "native_keypose": "relief_scope_work/movie_v2/keyposes/native_0165.png",
+        "native_keypose_sha256": "01b5817342f7dcff92d373b7c18f9181a2778706e3a07b28ca296f0a7dbbfdb2",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ]
+      },
+      {
+        "panel": 9,
+        "reference": "relief_scope_work/reference/RYO_EXP-007_relieved-smile_kp09_v001.png",
+        "reference_sha256": "255db13190c53764a1c1219c33ac1820ddde4d5b0eaf433f8fb84d024d30ec71",
+        "reference_crop": [
+          95,
+          165,
+          290,
+          350
+        ],
+        "time": 3.2,
+        "native_keypose": "relief_scope_work/movie_v2/keyposes/native_0320.png",
+        "native_keypose_sha256": "9781f9b8d2691b185076926445d7c51359c7c018874f444c7309855071a99167",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ]
+      }
+    ]
+  },
+  "visual_inspection": {
+    "all_264_decoded_full_and_detail_frames_inspected": true,
+    "semantic_v6_chronology_frames": 97,
+    "normal_speed_playback_performed": false,
+    "result": "Rounded parted exhale is distinct from the following broader smile; recovery is coherent. Canonical lips and rigid brow contours remain disclosed approximations."
+  },
+  "independent_capture_review_sha256": "7a27fd0b55c0b156dc39c3d74f4e89a814d1f5e92f5c8d7e11a4e130c93d90a5",
+  "boundary_correction": {
+    "formulation": "Oriented normal distance against zero-purse baseline; finite for horizontal and reversed edges.",
+    "independent_resolution": {
+      "result": "PASS for promoting oriented normal-distance formulation; final candidate revalidation required",
+      "rejected_formulation": "Signed horizontal division creates new 53\u2013106 channel jumps at the two orientation crossings.",
+      "selected_shader_sha256": "78f9cf2a844be387f5abf9b2c71ab6d875a2beee491ea93f91b0eca33f4e13a4",
+      "state_gate": {
+        "owners_per_pose": 262,
+        "poses": 164,
+        "result": "PASS",
+        "uniform_checks": 1494696,
+        "variant_snapshots": 492
+      },
+      "zero_purse_full_frame_variant_comparisons_exact": 8,
+      "distance_pose_count": 164,
+      "distance_max_changed_source_pixels_from_original": 63,
+      "distance_max_channel_difference_from_original": 93,
+      "dense_crossing_sample_step": 0.00025,
+      "distance_max_adjacent_channel_delta_smile_zero": 2,
+      "distance_max_adjacent_channel_delta_smile_half": 16,
+      "visual_review": "All 164 distance-mode mouth crops inspected in four chronological sheets. Rounded lower contour remains connected across both crossings. No sign-only jump. Finite raster changes remain; not a universal artifact-free or perfect-pixel-continuity claim.",
+      "renderer": "Godot 4.6.3 / Compatibility OpenGL / Mesa llvmpipe on existing supported desktop",
+      "immutable_capture_source_modified": false,
+      "normal_speed_playback_performed": false,
+      "evidence_sha256": {
+        "signed_corrected_evidence.json": "b110a868c1a6394d11b06d79cc82da41ac1c910bd679d23c3417e9200b8e7219",
+        "distance_evidence.json": "fc455fa9ecf6ccc0dd32f24dad147387a4851a6c382ce9942e7e34aa27ac6c11",
+        "boundary_temporal_audit.json": "6b7e7911509fee927abc91ef16ce31301f1250ad228a3a0d1c4a563a6a27fb6f",
+        "boundary_probe_audit.json": "4033f631ceb546e83f7972a7b29198d01e5b925f3d8e9d92d84d4b0feee4f20e"
+      }
+    },
+    "shader_sha256": "78f9cf2a844be387f5abf9b2c71ab6d875a2beee491ea93f91b0eca33f4e13a4"
+  },
+  "manual_blink": {
+    "automatic_preference_restoration": false,
+    "explicit_reenable_without_reset_after_completion_and_release": true,
+    "reenable_ready_when": "active_expression empty, release_time negative, controls neutral",
+    "early_reenable": "Manual takeover cancels unfinished recovery",
+    "elapsed_clock_restored": false
+  },
+  "limits": [
+    "No body, head, shoulder or hand acting; bust-up facial performance only.",
+    "No real socket transport test under current restrictions; callable/source tests only.",
+    "No external AI, TTS, tracking or phoneme adapter is connected.",
+    "No normal-speed audiovisual playback claim.",
+    "Inherited faint fringe traces under nonzero manual hair_sway remain; this performance uses zero sway.",
+    "Fixed-source rigid lip/brow approximations are not exact repainted reference curvature.",
+    "Finite raster edges can change for tiny manual movements; first-positive purse 1e-8/1e-6 differed by at most one channel level in the eight mixed-control probes."
+  ]
+}

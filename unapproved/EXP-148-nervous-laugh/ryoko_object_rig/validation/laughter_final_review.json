@@ -1,0 +1,184 @@
+{
+  "status": "local review candidate; user approval and publication pending",
+  "runtime_art_checkpoint": "d4a84324a30c0f0730c93dc49fc080b109f189aa",
+  "ordinary_lid_shader_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+  "godot_suites": {
+    "test_yawn": {
+      "checks": 305143,
+      "failures": 0
+    },
+    "test_laughter_runtime": {
+      "checks": 89876,
+      "failures": 0
+    },
+    "test_viewer_layout": {
+      "checks": 24,
+      "failures": 0
+    },
+    "test_smile_controls": {
+      "checks": 237,
+      "failures": 0
+    },
+    "test_gaze_runtime": {
+      "checks": 1459334,
+      "failures": 0
+    },
+    "test_expression_backbone": {
+      "checks": 132014,
+      "failures": 0
+    },
+    "test_teeth": {
+      "checks": 17017,
+      "failures": 0
+    },
+    "test_object_rig": {
+      "checks": 44210,
+      "failures": 0
+    }
+  },
+  "live_socket_checks": 367,
+  "python_suites": {
+    "base": {
+      "status": "pass",
+      "checks": 131
+    },
+    "yawn": {
+      "status": "pass",
+      "checks": 29
+    },
+    "teeth": {
+      "status": "pass",
+      "checks": 304
+    },
+    "gaze": {
+      "status": "pass",
+      "checks": 1215
+    },
+    "gaze_coverage": {
+      "status": "pass"
+    },
+    "smile": {
+      "status": "pass",
+      "checks": 259
+    },
+    "lid": {
+      "status": "pass",
+      "checks": 7946
+    }
+  },
+  "video": {
+    "status": "pass",
+    "render_frames": 720,
+    "duration_seconds": 24,
+    "fps": 30,
+    "size": [
+      1136,
+      1454
+    ],
+    "actual_render_checks": 2169,
+    "actual_render_failures": [],
+    "continuous_transaction_pairs": 9,
+    "repeat_pairs": 163,
+    "repeat_max_rgb_delta": 0,
+    "first_final_neutral_max_rgb_delta_below_header": 0,
+    "complete_cycle_motion_bbox": [
+      414,
+      510,
+      713,
+      748
+    ],
+    "complete_cycle_changed_pixels_outside_face_owner_envelope": 0,
+    "decoded_frames": 720,
+    "full_decode_errors": 0,
+    "psnr_vs_raw_db": 43.48627691488174,
+    "worst_mean_absolute_rgb_error": 1.2432241315845556,
+    "worst_encoding_frame": 249,
+    "normal_speed_playback_performed": false,
+    "visual_contact_sample_interval_frames": 3,
+    "visual_contact_sample_count": 240,
+    "main_movie": {
+      "filename": "ryoko_EXP-005_shared_hearty_laughter.mp4",
+      "sha256": "09a556c529f3dd9facdf9550fbf41af2b953b5092f206f4d12fac3d5af403fa7",
+      "bytes": 1211824
+    },
+    "face_detail_movie": {
+      "filename": "ryoko_EXP-005_face_detail.mp4",
+      "sha256": "b19aec45e88399663f546ae1f40f3b4b2323606819c2a2e957a259417e3b6e91",
+      "bytes": 1167252,
+      "derived_from": "same main capture; crop source viewport x375,y470,width386,height370 then2x scale"
+    }
+  },
+  "visual_inspection": {
+    "normal_speed_playback": false,
+    "method": "All720frames decoded and numerically checked.240decoded face samples, at every third frame, inspected in six contact sheets; actual full-bust peak and entry/recovery details also inspected.",
+    "finding": "Smiling crescent eyes and articulated smiling lip/corner shapes are visible; no detached fractional lower rim, naked iris handoff, drifting head/neck or structural trigger/release jump found in inspected frames. Fine native edge aliasing remains a disclosed limitation."
+  },
+  "ownership": {
+    "original_corrected_gaze_pngs_unchanged": 126,
+    "backing_eye_core_pixels": 42,
+    "fringe_reassigned_opaque_core_pixels": 10,
+    "fringe_retained_semtransparent_review_pixels": 5,
+    "lip_continuation_owners": 26,
+    "lip_atlases": 2,
+    "exported_continuation_nonzero_alpha_pixels": 3777,
+    "note": "Explicit inferred hidden joint artwork is material. Atlas regions are exact copies; GPU filtering may differ by1RGB in sparse pixels.",
+    "peak_inferred_lip_alpha_fraction": 0.11711033,
+    "peak_inferred_lip_alpha_area_source_px2": 167.692,
+    "peak_total_lip_alpha_area_source_px2": 1431.9149
+  },
+  "aperture": {
+    "normalized_max": 1.0,
+    "physical_max": 0.55,
+    "per_column_source_px_limit": 30.8,
+    "independent_actual_render_per_column_max_source_px": 30.75,
+    "peak_overall_cavity_bbox_height_source_px": 33.625,
+    "bbox_note": "Raised corners make whole bbox taller than per-column opening. Do not conflate these metrics.",
+    "upper_teeth_xy": [
+      533,
+      626
+    ]
+  },
+  "independent_final_review": {
+    "status": "PASS for completed local user-review candidate",
+    "runtime_art_data_unchanged_from_frozen_checkpoint": true,
+    "all_corrected_gaze_baseline_paths_retained": 255,
+    "movie_audit": {
+      "raw_frames": 720,
+      "repeat_pairs": 162,
+      "repeat_identical": 162,
+      "transaction_pairs_exact": 9,
+      "neutral_reset_exact": true,
+      "outside_expression_roi_changed_pixels": 0,
+      "both_mp4_full_decode_errors": 0,
+      "normal_speed_playback_performed": false
+    },
+    "visual_finding": "No structural mouth/eye defect observed in reviewed complete sequence. Material inference, sparse seam raster and source-texture roughness remain disclosed."
+  },
+  "independent_completed_gates": {
+    "mouth_sweep_captures": 804,
+    "forward_reverse_exact_pairs": 402,
+    "packed_vs_unpacked_states": 402,
+    "packed_exact_states": 329,
+    "packed_max_rgb_delta": 1,
+    "epsilon_max_rgb_delta": 1,
+    "ui_additional_interaction_checks": 23,
+    "full_yawn_same_shader_comparison": {
+      "frames": 267,
+      "exact_frames": 54,
+      "max_changed_pixels": 10,
+      "max_rgb_delta": 2,
+      "frames_with_max2rgb_one_pixel": 4,
+      "difference_region": "Corrected fringe only",
+      "neutral_final_exact": true,
+      "mouth_body_timeline_unchanged": true
+    },
+    "eye_grid": "Blink, gaze, asymmetric smile and handover inspected; no naked iris or doubled open-lid boundary found. Closed crescent source-texture roughness retained."
+  },
+  "clean_source_rebuild": {
+    "status": "PASS",
+    "separate_folder_without_sibling_dependencies": true,
+    "tracked_files_before_final_metadata": 318,
+    "tracked_source_and_configuration_changes_after_full_rebuild_fresh_import": 0,
+    "laughter_runtime_checks_after_fresh_import": 89876
+  }
+}

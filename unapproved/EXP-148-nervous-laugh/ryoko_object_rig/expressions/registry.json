@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "EXP-163",
+      "path": "res://yawn_performance.json",
+      "aliases": [
+        "yawn"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-005",
+      "path": "res://expressions/EXP-005.json",
+      "aliases": [
+        "hearty-laughter",
+        "laugh"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-001",
+      "path": "res://expressions/EXP-001.json",
+      "aliases": [
+        "bright_welcome"
+      ],
+      "trigger_phase": "recognition"
+    },
+    {
+      "id": "EXP-006",
+      "path": "res://expressions/EXP-006.json",
+      "aliases": [
+        "suppressed-giggle",
+        "giggle"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-107",
+      "path": "res://expressions/EXP-107.json",
+      "aliases": [
+        "confident-reassurance",
+        "reassure"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-007",
+      "path": "res://expressions/EXP-007.json",
+      "aliases": [
+        "relieved-smile",
+        "relief"
+      ],
+      "trigger_phase": "inward_tension"
+    },
+    {
+      "id": "EXP-002",
+      "path": "res://expressions/EXP-002.json",
+      "aliases": [
+        "affectionate-warmth",
+        "affection"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-152",
+      "path": "res://expressions/EXP-152.json",
+      "aliases": [
+        "private-pride",
+        "pride"
+      ],
+      "trigger_phase": "downward_preparation"
+    },
+    {
+      "id": "EXP-160",
+      "path": "res://expressions/EXP-160.json",
+      "aliases": [
+        "shy-laughter",
+        "shy_laughter"
+      ],
+      "trigger_phase": "tender_closed_onset"
+    },
+    {
+      "id": "EXP-177",
+      "path": "res://expressions/EXP-177.json",
+      "aliases": [
+        "meditative-calm",
+        "meditate"
+      ],
+      "trigger_phase": "settling"
+    },
+    {
+      "id": "EXP-164",
+      "path": "res://expressions/EXP-164.json",
+      "aliases": [
+        "fighting-sleep",
+        "fighting_sleep"
+      ],
+      "trigger_phase": "first_sink"
+    },
+    {
+      "id": "EXP-021",
+      "path": "res://expressions/EXP-021.json",
+      "aliases": [
+        "quiet-sadness",
+        "quiet_sadness"
+      ],
+      "trigger_phase": "sad_peak"
+    },
+    {
+      "id": "EXP-158",
+      "path": "res://expressions/EXP-158.json",
+      "aliases": [
+        "post-confession-shyness",
+        "post_confession_shyness"
+      ],
+      "trigger_phase": "hopeful_downcast_peak"
+    },
+    {
+      "id": "EXP-181",
+      "path": "res://expressions/EXP-181.json",
+      "aliases": [
+        "cheeky-wink",
+        "cheeky_wink"
+      ],
+      "trigger_phase": "playful_preparation"
+    },
+    {
+      "id": "EXP-102",
+      "path": "res://expressions/EXP-102.json",
+      "aliases": [
+        "knowing-smirk",
+        "knowing_smirk"
+      ],
+      "trigger_phase": "knowing_preparation"
+    },
+    {
+      "id": "EXP-116",
+      "path": "res://expressions/EXP-116.json",
+      "aliases": [
+        "confident-denial",
+        "confident_denial"
+      ],
+      "trigger_phase": "firm_attention"
+    },
+    {
+      "id": "EXP-050",
+      "path": "res://expressions/EXP-050.json",
+      "aliases": [
+        "frustrated-pout",
+        "frustrated_pout"
+      ],
+      "trigger_phase": "gathering_pout"
+    },
+    {
+      "id": "EXP-186",
+      "path": "res://expressions/EXP-186.json",
+      "aliases": [
+        "smug-cat-smile",
+        "smug_cat_smile"
+      ],
+      "trigger_phase": "quiet_composure"
+    },
+    {
+      "id": "EXP-114",
+      "path": "res://expressions/EXP-114.json",
+      "aliases": [
+        "daring-provocation",
+        "daring_provocation"
+      ],
+      "trigger_phase": "quiet_composure"
+    },
+    {
+      "id": "EXP-148",
+      "path": "res://expressions/EXP-148.json",
+      "aliases": [
+        "nervous-laugh",
+        "nervous_laugh"
+      ],
+      "trigger_phase": "hesitant_onset"
+    }
+  ]
+}

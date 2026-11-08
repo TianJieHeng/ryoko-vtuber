@@ -1,0 +1,37 @@
+{
+  "status": "Local unapproved EXP-050 performance candidate; complete actual trajectory review pending",
+  "approved": false,
+  "approved_integration": false,
+  "registered_profile_count": 17,
+  "approved_profile_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021"
+  ],
+  "unapproved_profile_ids": [
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050"
+  ],
+  "base_source_freeze_sha256": "dd52d78b1a6987140ea0728a41f35841746fc0e102c66c1941fd64677ddf919a",
+  "runtime_art_and_sixteen_profiles_unchanged": true,
+  "static_combined_gate": "Independently passed bounded exact six-state union. The earlier component-only whole-face HOLD is historical and superseded.",
+  "interpretation_limits": [
+    "Smoother lip arch than source flatter-center/pinched-end seam",
+    "Weaker localized brow knit/intensity on fixed canonical anatomy; inherited lip fullness is not a new defect"
+  ],
+  "normal_speed_playback_observed": false,
+  "user_approval": "Pending. No backup, technical pass or this status file is user approval.",
+  "historical_metadata": "Inherited status/README/RELEASE/manifests describe predecessor checkpoints and remain unchanged."
+}

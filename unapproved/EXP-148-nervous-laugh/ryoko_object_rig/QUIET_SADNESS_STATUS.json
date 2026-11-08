@@ -1,0 +1,16 @@
+{
+  "id": "EXP-021",
+  "status": "user_approved_published_with_containing_commit",
+  "published": true,
+  "main_base": "2d46f72704ddf2a329b44a87cd24c66d5fe92568",
+  "approved_count": 12,
+  "local_registered_count": 12,
+  "runtime_artwork_changes": false,
+  "static_fit_accepted": true,
+  "actual_player_capture_verified": true,
+  "independent_performance_review": "Final independent source, finite-frame, media and recovery review passed before delivery; the user then approved the delivered preview.",
+  "user_approval_pending": false,
+  "capture_receipt_sha256": "a5f59cff7d2974b125e11aceb95dfbc70d20789c3626ec116426cea874b60070",
+  "user_approved": true,
+  "publication_verification": "QUIET_SADNESS_PUBLICATION_VALIDATION.md and tools/verify_quiet_sadness_publication.py"
+}

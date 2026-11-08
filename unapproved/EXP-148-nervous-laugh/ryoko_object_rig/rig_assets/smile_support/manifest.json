@@ -1,0 +1,1479 @@
+{
+  "version": 1,
+  "status": "LOCAL_REVIEW_CANDIDATE",
+  "objects": {
+    "laugh_lash_screen_left": {
+      "file": "laugh_lash_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "z": 36,
+      "side": "screen_left",
+      "kind": "lash",
+      "inferred": false
+    },
+    "laugh_lower_contour_screen_left": {
+      "file": "laugh_lower_contour_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "z": 35,
+      "side": "screen_left",
+      "kind": "lower_contour",
+      "inferred": false
+    },
+    "laugh_hidden_continuation_screen_left": {
+      "file": "laugh_hidden_continuation_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "z": 35,
+      "side": "screen_left",
+      "kind": "hidden_continuation",
+      "inferred": true
+    },
+    "laugh_lash_screen_right": {
+      "file": "laugh_lash_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "z": 36,
+      "side": "screen_right",
+      "kind": "lash",
+      "inferred": false
+    },
+    "laugh_lower_contour_screen_right": {
+      "file": "laugh_lower_contour_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "z": 35,
+      "side": "screen_right",
+      "kind": "lower_contour",
+      "inferred": false
+    },
+    "laugh_hidden_continuation_screen_right": {
+      "file": "laugh_hidden_continuation_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "z": 35,
+      "side": "screen_right",
+      "kind": "hidden_continuation",
+      "inferred": true
+    }
+  },
+  "sources": {
+    "source_references/smile_preparation/laugh_lash_screen_left.png": "7af7e466b202dadb14fe84a48b2474d07cfbad01b67fa1cf436dc83f000ba207",
+    "source_references/smile_preparation/laugh_lower_contour_screen_left.png": "d040a041f046aab8a43d57248f998ec85d1451455b35c64fcaba1bb31495aec7",
+    "source_references/smile_preparation/laugh_hidden_continuation_screen_left.png": "8519cdb5ac21be8e9c3b8e7bf117b239024a0eb9ce77b12f6771b24811d5678b",
+    "source_references/smile_preparation/laugh_lash_screen_right.png": "838a6e9ae57b75a82694635eb3833687d2cb82de45183b3694d5c17adcdc8121",
+    "source_references/smile_preparation/laugh_lower_contour_screen_right.png": "4a35d14120213d8952fca9f898c79c38c73ae7dbb29a97ea275194bffb17fcce",
+    "source_references/smile_preparation/laugh_hidden_continuation_screen_right.png": "53ecfa1a529905a1e0a1dd49587a677b9fe4b588c9a59519ce40bd14552887ee"
+  },
+  "inference": [
+    "Lip joint sleeves contain inferred pigment across material absent from the rigid native strips. Their full alpha support is separately masked; runtime reveals only geometric endpoint gaps. Peak contribution must be measured, not described as negligible.",
+    "Laugh eye upper/lower ownership and mattes are inherited estimates. Hidden continuation is entirely inferred.",
+    "Rigid lip joint divisions, pivots and smile paths are inferred. Runtime UV and each joint scale remain unchanged."
+  ],
+  "eye_joints": {
+    "screen_left": {
+      "origin": [
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "old_centers": [
+        36.64506172839506,
+        36.64506172839506,
+        36.64506172839506,
+        36.64506172839506,
+        36.64506172839506,
+        36.64506172839506,
+        36.64506172839506,
+        36.64516719791104,
+        36.64591812030654,
+        36.64992511022501,
+        36.6663195562196,
+        36.71918760474848,
+        36.85288189701655,
+        37.115308119349514,
+        37.503379607155075,
+        37.894616124578334,
+        38.03898331665338,
+        37.668676662448775,
+        36.680221445512444,
+        35.251587418471395,
+        33.79268559979671,
+        32.75640603006594,
+        32.42957394978713,
+        32.82593877629807,
+        33.7382505469257,
+        34.89982724003254,
+        36.12270686187959,
+        37.31595204639298,
+        38.42122606539415,
+        39.376332608041515,
+        40.14420907348597,
+        40.74592944097259,
+        41.243662761192724,
+        41.69420780302188,
+        42.12229792668868,
+        42.526919331849996,
+        42.90059098629214,
+        43.24217888099504,
+        43.55903904103148,
+        43.86240268787415,
+        44.160126784482976,
+        44.45099704124159,
+        44.72484299345318,
+        44.96909646704415,
+        45.17644464830747,
+        45.34847486003615,
+        45.494836236112,
+        45.629595908685374,
+        45.76594485801772,
+        45.91161980468857,
+        46.06829721749962,
+        46.23398119779863,
+        46.40361398872327,
+        46.56741601944235,
+        46.712771399036235,
+        46.83223288738766,
+        46.929839797185394,
+        47.01676832589318,
+        47.09976329332088,
+        47.17520553292609,
+        47.23490147955722,
+        47.27598544773911,
+        47.30378170644515,
+        47.32564205907627,
+        47.343341313287276,
+        47.351432455678044,
+        47.34172928666857,
+        47.30895894194329,
+        47.25344765731792,
+        47.17972533970412,
+        47.09271848403708,
+        46.99542537364626,
+        46.88985444746892,
+        46.77803172173367,
+        46.66006541116734,
+        46.531875057756224,
+        46.386877833549114,
+        46.22155469642429,
+        46.04013735829221,
+        45.85352308986863,
+        45.672959185264205,
+        45.504339169405384,
+        45.34720010087561,
+        45.19641887164787,
+        45.04383346204156,
+        44.88107838529978,
+        44.704554023996735,
+        44.5180283912676,
+        44.32840032731879,
+        44.1385734211692,
+        43.94600490817378,
+        43.74846672642255,
+        43.54941018701549,
+        43.35658101215297,
+        43.17614723594645,
+        43.00939729220174,
+        42.85468007106651,
+        42.71059782911022,
+        42.57659494017641,
+        42.4521411287603,
+        42.33739269356557,
+        42.23523072597787,
+        42.15208864467148,
+        42.09583902721482,
+        42.07238484446535,
+        42.08409175888936,
+        42.130584426915874,
+        42.20987439535699,
+        42.31883776776796,
+        42.45369685793841,
+        42.61085840228403,
+        42.78785033084616,
+        42.983595250888044,
+        43.19661968146425,
+        43.42064124910919,
+        43.64058574436245,
+        43.83453568593672,
+        43.98308976638135,
+        44.079431832446865,
+        44.131354610046046,
+        44.154288216419054,
+        44.16248972675635,
+        44.164757395422555
+      ],
+      "new_centers": [
+        36.2471714684392,
+        36.31714724271756,
+        36.440316309731074,
+        36.59287878120901,
+        36.74970063035622,
+        36.88098750504103,
+        36.95257015977882,
+        36.94174283771665,
+        36.85422179293653,
+        36.71262896683649,
+        36.52279746967711,
+        36.270386242561074,
+        35.961970773899175,
+        35.64777513851582,
+        35.39107137838519,
+        35.23655547964212,
+        35.217022958663414,
+        35.35934892330998,
+        35.65486434788939,
+        36.031248856424405,
+        36.37535948935579,
+        36.58854537502745,
+        36.6173353388237,
+        36.44230131653294,
+        36.059205276956675,
+        35.48474502131929,
+        34.77944383892518,
+        34.052836997936595,
+        33.4277390164194,
+        32.98278815288844,
+        32.72015800680017,
+        32.58281603254704,
+        32.499886365800215,
+        32.421336702948054,
+        32.32466569193366,
+        32.20471286446687,
+        32.06396096058569,
+        31.908084162957913,
+        31.742181764098948,
+        31.566090489903544,
+        31.374050655876257,
+        31.161465985159737,
+        30.931631749959642,
+        30.692918667341672,
+        30.44923802379145,
+        30.196205590950225,
+        29.929913500077532,
+        29.662337935378112,
+        29.424477119117697,
+        29.239138397678687,
+        29.080944033905716,
+        28.878334652299607,
+        28.575746010829434,
+        28.191519514882778,
+        27.80482635660787,
+        27.493780835210675,
+        27.2930896706753,
+        27.192803778358396,
+        27.154194971734032,
+        27.127586411263017,
+        27.072507210580163,
+        26.975606410047124,
+        26.858255553339195,
+        26.767620644174833,
+        26.748572082908574,
+        26.81047091753217,
+        26.918827712028815,
+        27.023096250688596,
+        27.092980256491693,
+        27.130009463844907,
+        27.152854254486332,
+        27.177722932219837,
+        27.210192160736952,
+        27.249645741218494,
+        27.29729330196284,
+        27.358091810075948,
+        27.435660966783527,
+        27.528100897773037,
+        27.63041739820636,
+        27.740618822447885,
+        27.864123569640263,
+        28.014800551662468,
+        28.211354596810654,
+        28.466335272796705,
+        28.771127337144772,
+        29.089836200023313,
+        29.373854890766097,
+        29.59226711847925,
+        29.754734353400835,
+        29.90470701292817,
+        30.08657193258096,
+        30.31482375159929,
+        30.568730214013062,
+        30.811034751083415,
+        31.013412040387045,
+        31.172737313066364,
+        31.310425253021606,
+        31.45756949924266,
+        31.638305493537025,
+        31.862936472937292,
+        32.13067041619127,
+        32.4337899321743,
+        32.75975248590899,
+        33.09415507376351,
+        33.425522449906175,
+        33.747257693600986,
+        34.05355667380694,
+        34.33294672903315,
+        34.56734126071812,
+        34.74086343647012,
+        34.85174276709594,
+        34.91444012468395,
+        34.949261490212294,
+        34.97073985822618,
+        34.984888798135316,
+        34.99341623733737,
+        34.99765908464914,
+        34.99932921538503,
+        34.999847172163854,
+        34.999972499885146,
+        34.999996935131776,
+        35.0,
+        35.0
+      ],
+      "edges": [
+        0,
+        8,
+        16,
+        24,
+        32,
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104,
+        112,
+        120,
+        123
+      ]
+    },
+    "screen_right": {
+      "origin": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "old_centers": [
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.0,
+        39.000111463419486,
+        39.000877002798035,
+        39.00485755190806,
+        39.02106029327422,
+        39.07286713569326,
+        39.20399999456484,
+        39.469161151041895,
+        39.90351424670063,
+        40.491695187091906,
+        41.16734388027358,
+        41.84370910741101,
+        42.44724016899015,
+        42.93697680790208,
+        43.309923379051696,
+        43.592333184717134,
+        43.82125365331484,
+        44.028892051097415,
+        44.23564988381982,
+        44.447799432616776,
+        44.65812069251133,
+        44.85258358908108,
+        45.02080677119122,
+        45.16232599556285,
+        45.2847925538946,
+        45.39803554422233,
+        45.51007786034798,
+        45.626800238143154,
+        45.75227584881881,
+        45.887402286843866,
+        46.02872010697213,
+        46.16986231529103,
+        46.30450479993884,
+        46.4280900128913,
+        46.53716468057756,
+        46.62751259797973,
+        46.69387200121196,
+        46.73284531094954,
+        46.74676965481819,
+        46.74422903234444,
+        46.735464596261025,
+        46.72596775537348,
+        46.714001980646955,
+        46.69401511532038,
+        46.66193447308689,
+        46.617573320126,
+        46.56365878202295,
+        46.50377409510861,
+        46.440337324713695,
+        46.3721772922942,
+        46.292588601850326,
+        46.19087904293248,
+        46.05832643059838,
+        45.8947824757355,
+        45.71061532499998,
+        45.52136746323099,
+        45.33760409240708,
+        45.15830743339329,
+        44.975463413606946,
+        44.78585212527423,
+        44.59612885642355,
+        44.41388409180445,
+        44.23471278117631,
+        44.04064433491345,
+        43.81164218297866,
+        43.53829462181876,
+        43.22496843273793,
+        42.88305390897963,
+        42.52277405426105,
+        42.151535383433796,
+        41.77794115656968,
+        41.41443334475316,
+        41.07388992315336,
+        40.7623026730537,
+        40.473584284435354,
+        40.19025799387873,
+        39.8910033215442,
+        39.56406512315036,
+        39.21954825854709,
+        38.888364507793234,
+        38.60466349150495,
+        38.386799210827135,
+        38.23431429161651,
+        38.13769180056745,
+        38.083252013461895,
+        38.049297345205446,
+        38.006007726234294,
+        37.92550275265218,
+        37.79490575143446,
+        37.624376541106756,
+        37.44513340765029,
+        37.29406159970121,
+        37.192818315068024,
+        37.139286321975625,
+        37.11708080902211,
+        37.10987887066864,
+        37.10805780295618,
+        37.10770005296038,
+        37.10764430577223,
+        37.10764430577223,
+        37.10764430577223,
+        37.10764430577223
+      ],
+      "new_centers": [
+        39.15974562411747,
+        39.21723335010052,
+        39.24869590061896,
+        39.14097706805359,
+        38.830249766147034,
+        38.339949292278206,
+        37.74396883650002,
+        37.109619603992506,
+        36.48266640048797,
+        35.89780484701344,
+        35.371899290665276,
+        34.89105934473951,
+        34.42369874020181,
+        33.949505974609025,
+        33.47180044182771,
+        33.008029703980526,
+        32.57588735771424,
+        32.18566525611495,
+        31.83804315581105,
+        31.525040231637483,
+        31.23268590480856,
+        30.944356808927655,
+        30.644408775989262,
+        30.32220897099269,
+        29.976225705549425,
+        29.616999102927494,
+        29.26655041176,
+        28.952710914751474,
+        28.698774995572037,
+        28.512285474641118,
+        28.380689483328382,
+        28.27862701879036,
+        28.18127393988607,
+        28.07398703118092,
+        27.954821908685737,
+        27.83213238263964,
+        27.718598338024158,
+        27.622442335927083,
+        27.540371310374923,
+        27.458017076393517,
+        27.35848779409858,
+        27.23397146095919,
+        27.09546536078554,
+        26.976984516404396,
+        26.926986906680067,
+        26.98207044524444,
+        27.137747242614836,
+        27.345860305124468,
+        27.545800524620535,
+        27.69897190558156,
+        27.79593891452349,
+        27.840054342722,
+        27.830652790347617,
+        27.75799511418166,
+        27.60784407104374,
+        27.372180608942923,
+        27.064687006313314,
+        26.73560473581542,
+        26.475979130246515,
+        26.398528213537773,
+        26.587869309310758,
+        27.041600608671068,
+        27.65640898350619,
+        28.288145805230304,
+        28.83679310961309,
+        29.28058163914178,
+        29.646943309242992,
+        29.968201081040707,
+        30.260070585376532,
+        30.52218928372312,
+        30.744730821595784,
+        30.91351634057565,
+        31.01575336847451,
+        31.048325346382263,
+        31.025154757192137,
+        30.978077362718786,
+        30.94906042824671,
+        30.975690666867756,
+        31.078481502199637,
+        31.26293731897036,
+        31.536580095664597,
+        31.920710334033714,
+        32.43847463283266,
+        33.086976986720586,
+        33.81543961558295,
+        34.52425707873706,
+        35.09211338784202,
+        35.42758024251641,
+        35.51701689955647,
+        35.43022027213477,
+        35.27582920646067,
+        35.14213357056867,
+        35.066512982831284,
+        35.045716740402085,
+        35.06858121270811,
+        35.14217104306827,
+        35.28574822348092,
+        35.49100871748401,
+        35.69323843190338,
+        35.80908382308208,
+        35.82288440521438,
+        35.82067942679135,
+        35.917168950498606,
+        36.15912501424239,
+        36.513345817330574,
+        36.92086805846784,
+        37.33212111614705,
+        37.70938804588626,
+        38.03077562053522,
+        38.291582628610506,
+        38.48647073930366,
+        38.59497230003481
+      ],
+      "edges": [
+        0,
+        8,
+        16,
+        24,
+        32,
+        40,
+        48,
+        56,
+        64,
+        72,
+        80,
+        88,
+        96,
+        104,
+        112
+      ]
+    }
+  },
+  "lips": {
+    "texture": "../yawn_mouth/upper_lip.png",
+    "origin": [
+      525,
+      620
+    ],
+    "size": [
+      80,
+      45
+    ],
+    "segment_edges": [
+      0,
+      9,
+      14,
+      19,
+      24,
+      29,
+      34,
+      40,
+      46,
+      51,
+      56,
+      61,
+      66,
+      71,
+      80
+    ],
+    "corner_lift_pixels": 4.0,
+    "max_opening": 0.55,
+    "max_aperture_pixels": 30.8,
+    "note": "Inferred rigid-joint contour articulation of canonical native lip pigment; no painted expression replacement. Outer strips are independent corner owners."
+  },
+  "lip_continuations": [
+    {
+      "name": "lower_joint_continuation_9",
+      "file": "lip_continuations_atlas.png",
+      "edge": 9,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        8,
+        9
+      ],
+      "nontransparent_pixels": 84,
+      "inferred_support_pixels": 96,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        4,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "754950c27ff841cb6f8de0cccef3d688e77d640295730d5654523e72316fff97"
+    },
+    {
+      "name": "upper_joint_continuation_9",
+      "file": "lip_continuations_atlas.png",
+      "edge": 9,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        8,
+        9
+      ],
+      "nontransparent_pixels": 192,
+      "inferred_support_pixels": 192,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        24,
+        4,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "eabac39ff00441abd2b8451b8e1ba8fb7b35d4659449151e63bf64effce26c32"
+    },
+    {
+      "name": "lower_joint_continuation_14",
+      "file": "lip_continuations_atlas.png",
+      "edge": 14,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        13,
+        14
+      ],
+      "nontransparent_pixels": 126,
+      "inferred_support_pixels": 131,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        44,
+        4,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "a21875c1c7a40e9b1e13040f645ced05daf0d2bdadd13191fd5b6f478d5bf986"
+    },
+    {
+      "name": "upper_joint_continuation_14",
+      "file": "lip_continuations_atlas.png",
+      "edge": 14,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        13,
+        14
+      ],
+      "nontransparent_pixels": 120,
+      "inferred_support_pixels": 120,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        64,
+        4,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "ab0bdfacddacbe3836a8d6eba3dd09066327eb115bacd040875d13b5ef99e2d0"
+    },
+    {
+      "name": "lower_joint_continuation_19",
+      "file": "lip_continuations_atlas.png",
+      "edge": 19,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        18,
+        19
+      ],
+      "nontransparent_pixels": 168,
+      "inferred_support_pixels": 168,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        84,
+        4,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "a2a7311a543d716b148bba3c2937e21e0bbb7343a04e6364fad970efd758c819"
+    },
+    {
+      "name": "upper_joint_continuation_19",
+      "file": "lip_continuations_atlas.png",
+      "edge": 19,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        18,
+        19
+      ],
+      "nontransparent_pixels": 138,
+      "inferred_support_pixels": 143,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        104,
+        4,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "5fadfa1980774256487049bb9d5a3faee8cd1b1407240a3cf337a12047ad7c73"
+    },
+    {
+      "name": "lower_joint_continuation_24",
+      "file": "lip_continuations_atlas.png",
+      "edge": 24,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        23,
+        24
+      ],
+      "nontransparent_pixels": 192,
+      "inferred_support_pixels": 192,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        57,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "8b3ac58041661d8995e26cd2cc3ba53391405f15d155fb439e9f20e71a1a4d27"
+    },
+    {
+      "name": "upper_joint_continuation_24",
+      "file": "lip_continuations_atlas.png",
+      "edge": 24,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        23,
+        24
+      ],
+      "nontransparent_pixels": 150,
+      "inferred_support_pixels": 155,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        24,
+        57,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "d43244cb71b506cdb1b09a7102c23a9c4e4e66344b784dfa17ceb75b5680c593"
+    },
+    {
+      "name": "lower_joint_continuation_29",
+      "file": "lip_continuations_atlas.png",
+      "edge": 29,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        28,
+        29
+      ],
+      "nontransparent_pixels": 192,
+      "inferred_support_pixels": 192,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        44,
+        57,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "275165e3e4b288382404388615e73845bc4b559a5d77328ac7fe1a338c2c7d26"
+    },
+    {
+      "name": "upper_joint_continuation_29",
+      "file": "lip_continuations_atlas.png",
+      "edge": 29,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        28,
+        29
+      ],
+      "nontransparent_pixels": 156,
+      "inferred_support_pixels": 156,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        64,
+        57,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "6e31952da434a2cdf4e2b62436d2c3feecfefba041a80943b1d12d2fccc120d1"
+    },
+    {
+      "name": "lower_joint_continuation_34",
+      "file": "lip_continuations_atlas.png",
+      "edge": 34,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        33,
+        34
+      ],
+      "nontransparent_pixels": 180,
+      "inferred_support_pixels": 180,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        84,
+        57,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "cf35440dfaef995b54de59bce2360a210979a034ba9e8588b176e18394d8af0d"
+    },
+    {
+      "name": "upper_joint_continuation_34",
+      "file": "lip_continuations_atlas.png",
+      "edge": 34,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        33,
+        34
+      ],
+      "nontransparent_pixels": 144,
+      "inferred_support_pixels": 144,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        104,
+        57,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "280e2c00178a68328c6202424e28086ef124cd6ac2254313bf16b84c58efe077"
+    },
+    {
+      "name": "lower_joint_continuation_40",
+      "file": "lip_continuations_atlas.png",
+      "edge": 40,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        39,
+        40
+      ],
+      "nontransparent_pixels": 180,
+      "inferred_support_pixels": 180,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        110,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "4ff1ed75fe8c5c896848ad1a24b17be98e54971f3fb316fe3c64b4a4c05c4267"
+    },
+    {
+      "name": "upper_joint_continuation_40",
+      "file": "lip_continuations_atlas.png",
+      "edge": 40,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        39,
+        40
+      ],
+      "nontransparent_pixels": 168,
+      "inferred_support_pixels": 168,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        24,
+        110,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "0809b38a38580ccdeb5d1a0f46af348bd8924363122995929367d4b155051833"
+    },
+    {
+      "name": "lower_joint_continuation_46",
+      "file": "lip_continuations_atlas.png",
+      "edge": 46,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        45,
+        46
+      ],
+      "nontransparent_pixels": 192,
+      "inferred_support_pixels": 192,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        44,
+        110,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "7f8db64aee8fc4733ee72ec6926b52f3f3eb5a8e45448dd7e6c7d90e8fa88c3d"
+    },
+    {
+      "name": "upper_joint_continuation_46",
+      "file": "lip_continuations_atlas.png",
+      "edge": 46,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        45,
+        46
+      ],
+      "nontransparent_pixels": 156,
+      "inferred_support_pixels": 156,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        64,
+        110,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "ca0b6427abb6d6cfed605f550082256d1e89d76c04a063abd0e123585191f096"
+    },
+    {
+      "name": "lower_joint_continuation_51",
+      "file": "lip_continuations_atlas.png",
+      "edge": 51,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        50,
+        51
+      ],
+      "nontransparent_pixels": 192,
+      "inferred_support_pixels": 192,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        84,
+        110,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "99d43abae8dd371503c5a6d76eaa596b924e1336d721d49c266baadd2924c70f"
+    },
+    {
+      "name": "upper_joint_continuation_51",
+      "file": "lip_continuations_atlas.png",
+      "edge": 51,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        50,
+        51
+      ],
+      "nontransparent_pixels": 132,
+      "inferred_support_pixels": 132,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        104,
+        110,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "51237c57376416be94df8878811d3d041e0ff11d0f2659ff5315500d943353b9"
+    },
+    {
+      "name": "lower_joint_continuation_56",
+      "file": "lip_continuations_atlas.png",
+      "edge": 56,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        55,
+        56
+      ],
+      "nontransparent_pixels": 180,
+      "inferred_support_pixels": 180,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        163,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "69eb1fe00f0058e86a24b743f68cd1a6e75d737bd1a9ac793d03bba1bc0e10cc"
+    },
+    {
+      "name": "upper_joint_continuation_56",
+      "file": "lip_continuations_atlas.png",
+      "edge": 56,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        55,
+        56
+      ],
+      "nontransparent_pixels": 120,
+      "inferred_support_pixels": 120,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        24,
+        163,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "696dcb720880c00cf793b92dd562b3c049cfbef77557a0a06ab3bd03a06e71c0"
+    },
+    {
+      "name": "lower_joint_continuation_61",
+      "file": "lip_continuations_atlas.png",
+      "edge": 61,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        60,
+        61
+      ],
+      "nontransparent_pixels": 144,
+      "inferred_support_pixels": 144,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        44,
+        163,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "fe601c64efac0997b1eeded28cbf6341e1d35d7d0d3f0153e0c7e1b1073bcc6d"
+    },
+    {
+      "name": "upper_joint_continuation_61",
+      "file": "lip_continuations_atlas.png",
+      "edge": 61,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        60,
+        61
+      ],
+      "nontransparent_pixels": 114,
+      "inferred_support_pixels": 119,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        64,
+        163,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "d26db104fc6ddff54d39173c3ef84f0ba59e3c1069051d44759b147a99d33e03"
+    },
+    {
+      "name": "lower_joint_continuation_66",
+      "file": "lip_continuations_atlas.png",
+      "edge": 66,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        65,
+        66
+      ],
+      "nontransparent_pixels": 105,
+      "inferred_support_pixels": 107,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        84,
+        163,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "cfe3b13277491836c1639386c29c32a3041533ba471d3fb46eedfa145fac0df3"
+    },
+    {
+      "name": "upper_joint_continuation_66",
+      "file": "lip_continuations_atlas.png",
+      "edge": 66,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        65,
+        66
+      ],
+      "nontransparent_pixels": 96,
+      "inferred_support_pixels": 96,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        104,
+        163,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "038c9d95155511b508bb99cfa7d5430df025f424f9a3013902d764477f8e0357"
+    },
+    {
+      "name": "lower_joint_continuation_71",
+      "file": "lip_continuations_atlas.png",
+      "edge": 71,
+      "upper": false,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        70,
+        71
+      ],
+      "nontransparent_pixels": 0,
+      "inferred_support_pixels": 0,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        216,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "6c6368e72fd96eca4d9bb00c754eb89f6cb785058996eaa62301e7c947121f74"
+    },
+    {
+      "name": "upper_joint_continuation_71",
+      "file": "lip_continuations_atlas.png",
+      "edge": 71,
+      "upper": true,
+      "size": [
+        12,
+        45
+      ],
+      "pivot": [
+        6,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "source_columns": [
+        70,
+        71
+      ],
+      "nontransparent_pixels": 156,
+      "inferred_support_pixels": 156,
+      "inferred_mask": "lip_continuations_inferred_atlas.png",
+      "atlas_rect": [
+        24,
+        216,
+        12,
+        45
+      ],
+      "region_rgba_sha256": "320b35b6b389411362181ad94254065592cfb35da8df05413914d3cac7919ea5"
+    }
+  ],
+  "residue_objects": [
+    {
+      "name": "backing_detached_upper_lash_tip",
+      "box": [
+        680,
+        465,
+        695,
+        477
+      ],
+      "core_pixels": 25,
+      "inferred_skin_pixels": 45,
+      "z": 21,
+      "classification": "REASSIGNED_NEUTRAL_EYE_PIGMENT_WITH_INFERRED_SKIN_BEHIND",
+      "xy": [
+        680,
+        465
+      ],
+      "size": [
+        15,
+        12
+      ]
+    },
+    {
+      "name": "backing_orphan_crease_flecks",
+      "box": [
+        657,
+        468,
+        683,
+        477
+      ],
+      "core_pixels": 17,
+      "inferred_skin_pixels": 51,
+      "z": 21,
+      "classification": "REASSIGNED_NEUTRAL_EYE_PIGMENT_WITH_INFERRED_SKIN_BEHIND",
+      "xy": [
+        657,
+        468
+      ],
+      "size": [
+        26,
+        9
+      ]
+    }
+  ],
+  "residue_review": {
+    "backing_original_sha256": "177eecdb2eec66c843676662cba6f44e91419897bb20b76cf042af61b3018b62",
+    "reassigned_source_core_pixels": 42,
+    "inferred_skin_pixels": 96,
+    "fringe_pixels_removed": 0,
+    "fringe_decision": "Ten opaque mixed eye/hair cores split into explicit inferred green foreground, dark neutral eye pigment behind it, and hidden green continuation; all five semitransparent edge candidates remain original. Hair outline, pivot, and distal gaze-phase hair-tip ownership are retained.",
+    "neutral_reconstruction": "Separate residue shader uses fixed original/skin/ownership samples to preserve the original filtered composite. Rendered parity must be measured."
+  },
+  "fringe_reassignment": {
+    "xy": [
+      672,
+      475
+    ],
+    "size": [
+      12,
+      10
+    ],
+    "pivot": [
+      529,
+      218
+    ],
+    "core_pixels": 10,
+    "retained_edge_pixels": 5,
+    "inference": "All ten opaque mixture cores use inferred foreground hair coverage and hidden green continuation. Original foreground RGB is unchanged; source-over alpha factorization assigns the remaining neutral pigment behind it. Five semitransparent hair-edge candidates remain original. These are inferred layer ownerships, not recovered originals.",
+    "original_sha256": "7a725faff701de74ea5bef6078f39a79e9bef254c0357c114c4a921ee2f3938b"
+  }
+}

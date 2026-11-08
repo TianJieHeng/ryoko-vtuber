@@ -1,0 +1,62 @@
+{
+  "candidate": "Scoped EXP-006 suppressed giggle on the shared rig",
+  "status": "Local review candidate; separate user approval and publication pending",
+  "base_commit": "69e74ce5049a13ad5aa33014cacb1287f494787a",
+  "base_subtree": "ryoko_object_rig/",
+  "authored_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006"
+  ],
+  "protected_parent_pngs": 174,
+  "new_pressed_lip_pngs": 2,
+  "new_blush_pngs": {
+    "originals": 2,
+    "registered_runtime": 2,
+    "cheek_masks": 2
+  },
+  "new_controls": {
+    "mouth_corner_lift": [
+      0,
+      1
+    ],
+    "mouth_lip_press": [
+      0,
+      1
+    ],
+    "blush_intensity": [
+      0,
+      1
+    ]
+  },
+  "excluded": [
+    "wide-eye support",
+    "EXP-003",
+    "EXP-007",
+    "mouth_oral_lift"
+  ],
+  "review_movie": {
+    "frames": 240,
+    "fps": 30,
+    "duration_seconds": 8,
+    "cycles": 2,
+    "normal_speed_playback_performed": false
+  },
+  "reference_sheet_git_blob": "6d74152c9c12e6f6a1030336f2f90e2eddd62d55",
+  "reference_sheet_sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
+  "mouth_limits": {
+    "normalized": [
+      0,
+      1
+    ],
+    "physical_multiplier": 0.55,
+    "per_column_source_px_max": 30.8,
+    "fixed_central_upper_teeth_xy": [
+      533,
+      626
+    ]
+  },
+  "verification": "GIGGLE_SCOPE_VALIDATION.md",
+  "publication": "Not published. No CI, paid resources, remote execution or external model/TTS integration."
+}
