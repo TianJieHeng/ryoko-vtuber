@@ -1,0 +1,12 @@
+{
+  "purpose": "Current unapproved status and readable documentation prepared before capture; no post-capture profile or prose overlay",
+  "modified_inherited_metadata": [
+    "README.md",
+    "RELEASE.json",
+    "CONTROL_API.md",
+    "LOCAL_CONTROL_BRIDGE.md",
+    "INDEPENDENT_CORNERS_LOCAL.md"
+  ],
+  "archived_directory": "source_references/exp102_baseline_metadata",
+  "allowed_registry_change": "Append EXP-102 only"
+}

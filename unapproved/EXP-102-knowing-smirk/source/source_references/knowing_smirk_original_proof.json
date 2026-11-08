@@ -1,0 +1,59 @@
+{
+  "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "repo_read_only": "giggle_scope_work/reference_checkout",
+  "source_sheet_sha256": "bd508949519c18329e81852e36206ee181d57c0a40480763e8549d7931a550ad",
+  "assets": [
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_sheet_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_sheet_v001.png",
+      "sha256": "bd508949519c18329e81852e36206ee181d57c0a40480763e8549d7931a550ad"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp01_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp01_v001.png",
+      "sha256": "03ada5f667028bf989de4a3b7b61cf9d1a6a4f77d702a409d7c1a2e392c677f7"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp02_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp02_v001.png",
+      "sha256": "55e2d6e66fe1bb3d0d5587811a7bd558d5ba2d3ba69faed84ce6878650816bf3"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp03_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp03_v001.png",
+      "sha256": "9d71617dae1f49851fbb5e99d74bb846946c54f5775745ef824309255d1ae407"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp04_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp04_v001.png",
+      "sha256": "f5cbe13c764b0c35290f05acfc6c23ce926b47d005f5e2a441128d904d1ac53f"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp05_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp05_v001.png",
+      "sha256": "1fa68b0bfa658eb90b22dfb19a989dfd8f9406d79c42ac0ced1c1146261731c9"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp06_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp06_v001.png",
+      "sha256": "bb746d1929f3f76c1cf3c0fb0ac313d61c8dae224beeb2fb3534aface17da4b1"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp07_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp07_v001.png",
+      "sha256": "d55dc406c58114df55c7dfa1913b2d228ac3f19045ed0a53a21770279405c899"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp08_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp08_v001.png",
+      "sha256": "c749c3dd482708f4b1bed8b4ef8775905e43f24ffe6bf2746257f77eab0e5592"
+    },
+    {
+      "original_git_path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp09_v001.png",
+      "path": "knowing_smirk_expression_work/source_reference/RYO_EXP-102_knowing-smirk_kp09_v001.png",
+      "sha256": "e8de337dbb74e798e3993e5d8f9106a4130522d2c00396f9b1078c6a43c02e3e"
+    }
+  ],
+  "actual_all_nine_panels_viewed": true,
+  "source_timing": "proposed only; no EXP102 timeline implemented"
+}

@@ -1,0 +1,193 @@
+{
+  "id": "EXP-001",
+  "title": "Bright welcome",
+  "duration": 3.0,
+  "status": "internal lateral articulation candidate; continuous QA and reference likeness review pending",
+  "intent": "Brow arches softly; eyes stay open with direct contact; one upper-teeth smile welcomes someone arriving.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "timing_origin": "Newly authored nine-key 3.0-second performance. Original panels 3\u20134 develop a closed smile; panels 5\u20136 hold an open upper-teeth greeting with open eyes. Catalogue timing is an unimplemented 1.9-second proposal, not recovered animation.",
+  "scope": "Bounded continuous lateral articulation on the shared rig. Independent lip joints and inferred underlaps spread the grin; source-derived posterior enamel and lower oral surface are spatially uncovered. Existing front teeth retain their approved white style and anchor. No head, neck, chin or face-width motion; no gaze drift, body gesture, AI or TTS.",
+  "interpolation": "Existing cubic smoothstep timeline, 0.30-second retrigger and 0.45-second release. Unit-scale rigid owners, fixed UVs and source alpha.",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0,
+        "mouth_smile": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 0
+      }
+    },
+    {
+      "time": 0.3,
+      "phase": "recognition",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0,
+        "mouth_smile": 0.06,
+        "brow_screen_left": 0.16,
+        "brow_screen_right": 0.16,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 0.08
+      }
+    },
+    {
+      "time": 0.62,
+      "phase": "closed_smile",
+      "values": {
+        "blink_R": 0.02,
+        "blink_L": 0.02,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0,
+        "mouth_smile": 0.7,
+        "brow_screen_left": 0.24,
+        "brow_screen_right": 0.24,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 0.58
+      }
+    },
+    {
+      "time": 1.02,
+      "phase": "open_welcome",
+      "values": {
+        "blink_R": 0.04,
+        "blink_L": 0.04,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0.8,
+        "mouth_smile": 1,
+        "brow_screen_left": 0.26,
+        "brow_screen_right": 0.26,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 1
+      }
+    },
+    {
+      "time": 1.9,
+      "phase": "welcoming_hold",
+      "values": {
+        "blink_R": 0.04,
+        "blink_L": 0.04,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0.8,
+        "mouth_smile": 1,
+        "brow_screen_left": 0.26,
+        "brow_screen_right": 0.26,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 1
+      }
+    },
+    {
+      "time": 2.25,
+      "phase": "smile_release",
+      "values": {
+        "blink_R": 0.02,
+        "blink_L": 0.02,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0.2,
+        "mouth_smile": 0.78,
+        "brow_screen_left": 0.18,
+        "brow_screen_right": 0.18,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 0.75
+      }
+    },
+    {
+      "time": 2.5,
+      "phase": "closed_settle",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0,
+        "mouth_smile": 0.42,
+        "brow_screen_left": 0.1,
+        "brow_screen_right": 0.1,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 0.4
+      }
+    },
+    {
+      "time": 2.74,
+      "phase": "settle",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0,
+        "mouth_smile": 0.14,
+        "brow_screen_left": 0.04,
+        "brow_screen_right": 0.04,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 0.12
+      }
+    },
+    {
+      "time": 3.0,
+      "phase": "neutral_return",
+      "values": {
+        "blink_R": 0,
+        "blink_L": 0,
+        "eye_smile_R": 0,
+        "eye_smile_L": 0,
+        "mouth_open": 0,
+        "mouth_smile": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": 0,
+        "gaze_x": 0,
+        "gaze_y": 0,
+        "hair_sway": 0,
+        "mouth_spread": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "method": "Manual four-canthus eye line plus nose-tip sanity check; source-only rotation for geometric interpretation, no runtime head rotation or pixel-warp fitting. Canthi/lip endpoints uncertain by about 1\u20132 source pixels; baseline scale is approximate neutral inter-iris ratio 169.48/80. Values are diagnostics, not exact control requirements. Nose deviations reflect painted/head variation and are not synthesized in the rig.",
+  "landmarks": {
+    "1": {
+      "canthi": [
+        [
+          146,
+          196
+        ],
+        [
+          194,
+          202
+        ],
+        [
+          224,
+          201
+        ],
+        [
+          274,
+          192
+        ]
+      ],
+      "nose_tip": [
+        207,
+        240
+      ],
+      "mouth": [
+        [
+          194.5,
+          262
+        ],
+        [
+          225.5,
+          261.5
+        ]
+      ],
+      "eye_line_degrees": -1.8125526855155916,
+      "eye_midpoint_span": 79.03954706347956,
+      "levelled_mouth_span": 31.000304164598948,
+      "levelled_right_minus_left_y": 0.4807719858197164,
+      "mouth_span_relative_eye_span": 0.3922125735323542,
+      "levelled_nose_from_eye_midpoint": [
+        -3.8351054789895143,
+        42.14978607258908
+      ],
+      "relative_width_vs_source_neutral": 1.0,
+      "levelled_bias_change_source_px": 0.0,
+      "approx_bias_change_native_px": 0.0
+    },
+    "3": {
+      "canthi": [
+        [
+          132,
+          198
+        ],
+        [
+          179,
+          204
+        ],
+        [
+          211,
+          201
+        ],
+        [
+          264,
+          192
+        ]
+      ],
+      "nose_tip": [
+        194,
+        243
+      ],
+      "mouth": [
+        [
+          182,
+          264
+        ],
+        [
+          218.5,
+          260
+        ]
+      ],
+      "eye_line_degrees": -3.141129835636104,
+      "eye_midpoint_span": 82.12338278468563,
+      "levelled_mouth_span": 36.6643445252902,
+      "levelled_right_minus_left_y": -1.9939509850602026,
+      "mouth_span_relative_eye_span": 0.44645438707046736,
+      "levelled_nose_from_eye_midpoint": [
+        -4.920949263129493,
+        44.046529469978736
+      ],
+      "relative_width_vs_source_neutral": 1.1382969777067553,
+      "levelled_bias_change_source_px": -2.474722970879919,
+      "approx_bias_change_native_px": -5.242700613809109
+    },
+    "5": {
+      "canthi": [
+        [
+          130,
+          193
+        ],
+        [
+          180,
+          199
+        ],
+        [
+          209,
+          192
+        ],
+        [
+          261,
+          181
+        ]
+      ],
+      "nose_tip": [
+        192,
+        237
+      ],
+      "mouth": [
+        [
+          181,
+          257
+        ],
+        [
+          220,
+          249
+        ]
+      ],
+      "eye_line_degrees": -6.772159966113561,
+      "eye_midpoint_span": 80.56208785775105,
+      "levelled_mouth_span": 39.67126578997302,
+      "levelled_right_minus_left_y": -3.3452459732158104,
+      "mouth_span_relative_eye_span": 0.49243095412349297,
+      "levelled_nose_from_eye_midpoint": [
+        -8.37397612126425,
+        45.077034329251255
+      ],
+      "relative_width_vs_source_neutral": 1.2555205706144237,
+      "levelled_bias_change_source_px": -3.8260179590355268,
+      "approx_bias_change_native_px": -8.105419046216763
+    },
+    "6": {
+      "canthi": [
+        [
+          130,
+          191
+        ],
+        [
+          180,
+          197
+        ],
+        [
+          209,
+          190
+        ],
+        [
+          261,
+          181
+        ]
+      ],
+      "nose_tip": [
+        192,
+        234
+      ],
+      "mouth": [
+        [
+          181.5,
+          254
+        ],
+        [
+          219.5,
+          247.5
+        ]
+      ],
+      "eye_line_degrees": -6.064922445447955,
+      "eye_midpoint_span": 80.45029521387724,
+      "levelled_mouth_span": 38.47406640051814,
+      "levelled_right_minus_left_y": -2.4487169310724735,
+      "mouth_span_relative_eye_span": 0.47823399899571245,
+      "levelled_nose_from_eye_midpoint": [
+        -7.658455427193035,
+        43.68535865103659
+      ],
+      "relative_width_vs_source_neutral": 1.2193234772884256,
+      "levelled_bias_change_source_px": -2.92948891689219,
+      "approx_bias_change_native_px": -6.206122270436104
+    },
+    "7": {
+      "canthi": [
+        [
+          146,
+          193
+        ],
+        [
+          195,
+          199
+        ],
+        [
+          225,
+          196
+        ],
+        [
+          276,
+          187
+        ]
+      ],
+      "nose_tip": [
+        207,
+        235
+      ],
+      "mouth": [
+        [
+          195,
+          256
+        ],
+        [
+          228,
+          254
+        ]
+      ],
+      "eye_line_degrees": -3.2194948968528294,
+      "eye_midpoint_span": 80.12646254515421,
+      "levelled_mouth_span": 33.060238975446985,
+      "levelled_right_minus_left_y": -0.14352312125996258,
+      "mouth_span_relative_eye_span": 0.41260075542229663,
+      "levelled_nose_from_eye_midpoint": [
+        -5.811126377101737,
+        40.988331391133165
+      ],
+      "relative_width_vs_source_neutral": 1.0519824790580319,
+      "levelled_bias_change_source_px": -0.624295107079679,
+      "approx_bias_change_native_px": -1.3225691843482998
+    },
+    "9": {
+      "canthi": [
+        [
+          130,
+          192
+        ],
+        [
+          179,
+          198
+        ],
+        [
+          211,
+          196
+        ],
+        [
+          263,
+          189
+        ]
+      ],
+      "nose_tip": [
+        193,
+        237
+      ],
+      "mouth": [
+        [
+          180,
+          259
+        ],
+        [
+          211,
+          259
+        ]
+      ],
+      "eye_line_degrees": -1.7357045889283889,
+      "eye_midpoint_span": 82.53787009609589,
+      "levelled_mouth_span": 30.985776553506824,
+      "levelled_right_minus_left_y": 0.9389629258638431,
+      "mouth_span_relative_eye_span": 0.3754128440366973,
+      "levelled_nose_from_eye_midpoint": [
+        -4.058742969863063,
+        43.14686089977563
+      ],
+      "relative_width_vs_source_neutral": 0.9571667747814537,
+      "levelled_bias_change_source_px": 0.4581909400441267,
+      "approx_bias_change_native_px": 0.9706775064834824
+    }
+  },
+  "conclusion": "Peak raw 8px bias decreases after eye-line correction; bounded right-side .82 is a reasonable first hypothesis within unchanged 12px envelope. Width must increase relative to own neutral. No inward brow translation required or attempted.",
+  "independent_review_caveat": "Reviewer agrees qualitative roll correction and bounded .82 trial are supported. Some inner landmarks lie just outside painted tip and outer landmarks follow lash tips; practical ambiguity is 1\u20133 source pixels. Approximate 8.1px is not a calibrated fit score or proof of coverage."
+}

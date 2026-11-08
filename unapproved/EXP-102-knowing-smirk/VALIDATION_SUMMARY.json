@@ -1,0 +1,51 @@
+{
+  "expression": "EXP-102 Knowing smirk",
+  "completed_source_review_clearance": true,
+  "user_approved": false,
+  "approved_integration": false,
+  "approved_profile_count": 12,
+  "isolated_local_profile_count": 13,
+  "source_inventory_sha256": "48d28c944356b2dd684771413d8006822b1a52da86cfe0611015c707385990e8",
+  "source_files": 608,
+  "runtime_png_files": 182,
+  "runtime_png_changes": 0,
+  "source_is_exact_capture": true,
+  "delivery_overlay": false,
+  "capture_freeze_sha256": "f3309b2dee27e81ae494d2d88eb56892519a5ab7dd1b2cf66217d5141d4f6e34",
+  "profile_sha256": "ffd67f79651c5a2446422b6ae02e2a248ee3174d79049671b55bb629ed035229",
+  "capture_plan_sha256": "9f8418fbda95c5fc2a4950d5f733dc627fe2949db9e20130b1653b0d6e035280",
+  "actual_capture_receipt_sha256": "0005f8798c0a69396fc45c83f579ff8aa80ab7cf8eb03ec56ae9918bfc80c81c",
+  "completed_source_report_sha256": "300fbd7d1f371b4b1995c43eba453b2595107b21efab0a10ebd3a535f0beabf6",
+  "completed_source_gate_sha256": "2fdf1486b59dfb512e97667e63fb7d306bfcf5552dec347ddf7dbf9a99b4ea37",
+  "validation": {
+    "independent_runtime_checks": 561070,
+    "builder_runtime_checks": 759128,
+    "actual_graphical_harness_checks": 212385,
+    "source_and_actual_capture_guard_checks": 2648,
+    "actual_capture_checkpoints": 319,
+    "actual_pngs_independently_verified": 638,
+    "natural_cycle_points_each": 126,
+    "pixel_exact_static_anchors": 6,
+    "repeated_natural_cycles": "Exact full/native pixels and owner snapshots",
+    "lifecycle_recoveries": "Exact expected neutral or explicitly retained manual/blink states",
+    "sampled_visual_review": "PASS: sealed natural mouth; no enamel, skin wedge, detached lips, added gaze, blush or smile-eye crescents"
+  },
+  "limitations": [
+    "User approval is pending. Backup preservation is not approved integration.",
+    "No normal-speed playback observation, live AI/TTS connection or real socket test is claimed.",
+    "Final media and recovery ZIP audit are separate from this completed-source gate.",
+    "The inherited extreme mouth-opening/spread/corner skin wedge is not repaired; EXP-102 remains sealed and avoids it.",
+    "Historical release records, generic manifests and predecessor-count fixtures remain unchanged historical records.",
+    "The independent-corner capability is also unapproved relative to approved main. Its exact runtime/shader bytes are reused from the separately reviewed EXP-181 capability.",
+    "No CI, paid resources, hardware flashing or remote-machine execution was used."
+  ],
+  "excluded_from_git": [
+    "Movies",
+    "Diagnostic and preview images",
+    "Actual performance frame archive",
+    "Caches",
+    "Recovery ZIPs",
+    "Private chat and notes",
+    "Space URLs"
+  ]
+}

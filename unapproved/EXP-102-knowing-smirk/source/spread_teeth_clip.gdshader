@@ -1,0 +1,80 @@
+shader_type canvas_item;
+uniform vec2 origin;
+uniform vec2 rigid_offset=vec2(0.0);
+uniform float opening=0.0;
+uniform float smile=0.0;
+uniform float spread=0.0;
+uniform float purse=0.0;
+uniform float corner_lift=0.0;
+uniform vec2 corner_lift_sides=vec2(0.0);
+uniform bool lip=false;
+uniform bool left_side=false;
+uniform float angle=0.0;
+uniform vec2 anchor=vec2(0.0);
+uniform bool upper_lip=false;
+uniform bool underlip_shadow=false;
+uniform sampler2D seam_texture : filter_linear, repeat_disable;
+// New side channels use only the unspent old 12px corner-lift budget.
+// The source radius follows rigid spread/purse coordinates. Pigment UV is untouched.
+float independent_corner_delta(float screen_x){
+ float side=screen_x<564.5 ? corner_lift_sides.x : corner_lift_sides.y;
+ if(side<=0.0){return 0.0;}
+ float r=clamp(abs((screen_x-564.5)/(35.5+20.0*spread-14.0*purse)),0.0,1.0);
+ return -12.0*(1.0-corner_lift)*side*r*r*r;
+}
+void fragment(){
+ vec4 pixel=texture(TEXTURE,UV);
+ vec2 raw=origin+UV/TEXTURE_PIXEL_SIZE;
+ vec2 p=anchor+mat2(vec2(cos(angle),sin(angle)),vec2(-sin(angle),cos(angle)))*(raw-anchor)+rigid_offset;
+ float d=56.0*opening;
+ float seam=620.0+texture(seam_texture,vec2(clamp((39.5+(p.x-564.5)/(1.0+20.0*spread/35.5))/80.0,0.0,1.0),0.5)).r*63.75;
+ if(purse>0.0){seam=620.0+texture(seam_texture,vec2(clamp((39.5+(p.x-564.5)/(1.0+20.0*spread/35.5-14.0*purse/35.5))/80.0,0.0,1.0),0.5)).r*63.75;}
+ float fraction=clamp((p.y-633.0)/56.0,0.0,1.0);
+ float width=mix(38.0-12.0*opening,35.5,smile)+20.0*spread;
+ if(purse>0.0){width-=14.0*purse;}
+ float half_width=width;
+ float side=clamp((half_width-abs(p.x-564.5))/.7,0.0,1.0);
+ if(lip){
+   // Continuous, static seam coverage. Correct upper alpha for "over"
+   // so its composition with the lower coverage reproduces original alpha.
+   // Upper lip remains stationary: the alpha correction is not animated.
+   float local_seam=texture(seam_texture,vec2(UV.x,0.5)).r*63.75;
+   float sx=UV.x/TEXTURE_PIXEL_SIZE.x;
+   float lower_owner=smoothstep(local_seam+.45,local_seam+1.55,UV.y/TEXTURE_PIXEL_SIZE.y)*smoothstep(8.5,9.5,sx)*(1.0-smoothstep(69.5,70.5,sx));
+   if(!underlip_shadow){
+     float lower_alpha=pixel.a*lower_owner;
+     if(upper_lip){pixel.a=(pixel.a-lower_alpha)/max(1.0-lower_alpha,.000001);}
+     else{pixel.a=lower_alpha;}
+   }
+   if(!underlip_shadow){
+   float target=40.0-(upper_lip ? 14.0 : 26.0)*pow(opening,1.6);
+   float mask=clamp((target+2.0-abs(p.x-564.5))/.7,0.0,1.0);
+   // Upper lip silhouette stays exactly at its original native width.
+   if(!upper_lip){
+     float hx=clamp(abs(p.x-564.5)/width,0.0,1.0);
+     float boundary_curve=sqrt(max(0.0,1.0-pow(hx,4.0)));
+     float contact_gap=54.0*opening+1.0-56.0*opening*boundary_curve;
+     float ly=UV.y/TEXTURE_PIXEL_SIZE.y;
+     float ellipse_h=100.0-89.0*pow(opening,1.6);
+     float ellipse_w=50.0-30.0*pow(opening,1.6);
+     float ellipse=pow((p.x-564.5)/ellipse_w,2.0)+pow((ly-20.0)/ellipse_h,2.0);
+     pixel.a*=(1.0-smoothstep(.82,1.0,ellipse))*(1.0-smoothstep(1.0,6.0,contact_gap));
+   }
+   }
+ }else{
+   float horizontal=clamp(abs(p.x-564.5)/width,0.0,1.0);
+   float curve=sqrt(max(0.0,1.0-pow(horizontal,4.0)));
+   float smile_curve=pow(max(0.0,1.0-horizontal*horizontal),.72);
+   float lifted_seam=seam-4.0*spread-(4.0+5.0*spread)*smile*pow(horizontal,1.5)-12.0*corner_lift*pow(clamp(abs((p.x-564.5)/(35.5+20.0*spread)),0.0,1.0),3.0);
+   curve=mix(curve,smile_curve,smile);
+   if(purse>0.0){
+    float r=clamp(abs((p.x-564.5)/(35.5+20.0*spread-14.0*purse)),0.0,1.0);
+    lifted_seam+=purse*(4.0+8.0*r*r);
+    curve=mix(curve,sqrt(max(0.0,1.0-horizontal*horizontal)),purse);
+   }
+   if(corner_lift_sides!=vec2(0.0)){lifted_seam+=independent_corner_delta(p.x);}
+   float aperture=clamp(min(p.y-lifted_seam,lifted_seam+d*curve-p.y)/1.0,0.0,1.0);
+   pixel.a*=aperture*side;
+ }
+ COLOR=pixel;
+}

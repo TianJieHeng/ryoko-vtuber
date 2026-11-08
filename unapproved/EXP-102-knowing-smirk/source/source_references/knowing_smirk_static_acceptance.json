@@ -1,0 +1,9 @@
+{
+  "status": "PASS_STATIC_ONLY",
+  "report_sha256": "d6f0c60901092bd0ac2b501b162406a2f9ea0f0cfa94f638170fb304b76c273a",
+  "accepted_plan_sha256": "29faf659037938ca7bf28733d36b06d50ee1711dc77074154e547430bf5dda3c",
+  "accepted_capture_receipt_sha256": "c12c6b282ea4e62456487ff980a4d721340db0ed721fdebc54d18c7f1b3c9d83",
+  "timeline_accepted": false,
+  "normal_speed_observed": false,
+  "publication_accepted": false
+}

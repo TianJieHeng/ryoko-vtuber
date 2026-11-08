@@ -1,0 +1,245 @@
+{
+  "id": "EXP-102",
+  "slug": "knowing-smirk",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "One brow arches lightly; eyes narrow knowingly; a closed one-sided smile develops slowly.",
+  "is_pilot": false,
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "review_status": "accepted_reference_art",
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1159,
+    "native_height": 1358,
+    "sha256": "bd508949519c18329e81852e36206ee181d57c0a40480763e8549d7931a550ad",
+    "actual_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_sheet_v001.png",
+    "peak_actual_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_peak_v001.png"
+  },
+  "key_pose_sequence": [
+    {
+      "key_pose": 1,
+      "phase": "neutral",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+      "panel_location": {
+        "row": 1,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        382,
+        459
+      ],
+      "sha256": "03ada5f667028bf989de4a3b7b61cf9d1a6a4f77d702a409d7c1a2e392c677f7"
+    },
+    {
+      "key_pose": 2,
+      "phase": "anticipation",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+      "panel_location": {
+        "row": 1,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        382,
+        0,
+        748,
+        459
+      ],
+      "sha256": "55e2d6e66fe1bb3d0d5587811a7bd558d5ba2d3ba69faed84ce6878650816bf3"
+    },
+    {
+      "key_pose": 3,
+      "phase": "onset",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+      "panel_location": {
+        "row": 1,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        748,
+        0,
+        1159,
+        459
+      ],
+      "sha256": "9d71617dae1f49851fbb5e99d74bb846946c54f5775745ef824309255d1ae407"
+    },
+    {
+      "key_pose": 4,
+      "phase": "build",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+      "panel_location": {
+        "row": 2,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        459,
+        382,
+        909
+      ],
+      "sha256": "f5cbe13c764b0c35290f05acfc6c23ce926b47d005f5e2a441128d904d1ac53f"
+    },
+    {
+      "key_pose": 5,
+      "phase": "peak",
+      "time_seconds": 0.75,
+      "visual_direction": "One brow arches lightly; eyes narrow knowingly; a closed one-sided smile develops slowly.",
+      "panel_location": {
+        "row": 2,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        382,
+        459,
+        748,
+        909
+      ],
+      "sha256": "1fa68b0bfa658eb90b22dfb19a989dfd8f9406d79c42ac0ced1c1146261731c9"
+    },
+    {
+      "key_pose": 6,
+      "phase": "follow_through_or_hold",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+      "panel_location": {
+        "row": 2,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        748,
+        459,
+        1159,
+        909
+      ],
+      "sha256": "bb746d1929f3f76c1cf3c0fb0ac313d61c8dae224beeb2fb3534aface17da4b1"
+    },
+    {
+      "key_pose": 7,
+      "phase": "release",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+      "panel_location": {
+        "row": 3,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        909,
+        382,
+        1358
+      ],
+      "sha256": "d55dc406c58114df55c7dfa1913b2d228ac3f19045ed0a53a21770279405c899"
+    },
+    {
+      "key_pose": 8,
+      "phase": "settle",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression.",
+      "panel_location": {
+        "row": 3,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        382,
+        909,
+        748,
+        1358
+      ],
+      "sha256": "c749c3dd482708f4b1bed8b4ef8775905e43f24ffe6bf2746257f77eab0e5592"
+    },
+    {
+      "key_pose": 9,
+      "phase": "neutral_return",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel.",
+      "panel_location": {
+        "row": 3,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        748,
+        909,
+        1159,
+        1358
+      ],
+      "sha256": "e8de337dbb74e798e3993e5d8f9106a4130522d2c00396f9b1078c6a43c02e3e"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "facial_control_mapping": {
+    "status": "semantic_intent_only_pending_actual_rig",
+    "numeric_weights": null,
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "intent": "One brow arches lightly; eyes narrow knowingly; a closed one-sided smile develops slowly."
+  },
+  "overlays": {
+    "planned_optional_effects": [],
+    "status": "requires_mapping_to_available_2d_effect_layers",
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+  },
+  "body_gesture": {
+    "status": "paired_reusable_visual_references",
+    "reference_ids": [
+      "BOD-023",
+      "BOD-010"
+    ],
+    "references": [
+      {
+        "id": "BOD-023",
+        "path": "assets/body/RYO_BOD-023_proud-stance_sheet_v001.png",
+        "sha256": "90050c7c2cd308aa9ab434aa3785a7093e33d7e453fcbc946104fc98b9ae512e",
+        "intent": "She straightens posture and lifts chin in a proud confident stance, one hand rests at hip, then relaxes."
+      },
+      {
+        "id": "BOD-010",
+        "path": "assets/body/RYO_BOD-010_eyebrow-raised-weight-shift_sheet_v001.png",
+        "sha256": "11452fb28d1c58c26a84ea9afc7dc6bc8f79e7d43e376c5244828d45f902391f",
+        "intent": "She shifts weight to one hip while raising an eyebrow and looking knowingly at viewer, then returns to centered neutral."
+      }
+    ],
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "issues": [],
+  "implementation_status": "not_implemented_in_2d_rig"
+}

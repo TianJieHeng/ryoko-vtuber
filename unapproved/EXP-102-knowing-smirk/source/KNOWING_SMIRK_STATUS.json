@@ -1,0 +1,17 @@
+{
+  "status": "Local authored EXP-102 performance; user approval pending",
+  "id": "EXP-102",
+  "user_approved": false,
+  "approved_integration": false,
+  "backup_is_not_approval": true,
+  "approved_main_base": "d5a4539cd7395783fcbf5756b03bb993be6692b8",
+  "approved_count": 12,
+  "local_registered_count": 13,
+  "artwork_changes": false,
+  "runtime_changed_from_reviewed_corner_capability": false,
+  "new_capability_vs_approved_main": "Independent default-zero positive corners within the remaining 12 px bilateral budget",
+  "static_fit_accepted": true,
+  "performance_results": "Separate capture and independent review receipts accompany the unchanged frozen source. Their presence and verdict must be checked before calling the performance complete.",
+  "normal_speed_playback_observed": false,
+  "socket_test_performed": false
+}

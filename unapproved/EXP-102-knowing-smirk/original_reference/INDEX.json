@@ -1,0 +1,76 @@
+{
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": [
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp01_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp01_v001.png",
+      "sha": "756eecddbab3066dd97d6533b7c5e014a97f95da",
+      "sha256": "03ada5f667028bf989de4a3b7b61cf9d1a6a4f77d702a409d7c1a2e392c677f7",
+      "size": 238094
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp02_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp02_v001.png",
+      "sha": "049fb37082b5df5a105b25c146a8b41a33d54746",
+      "sha256": "55e2d6e66fe1bb3d0d5587811a7bd558d5ba2d3ba69faed84ce6878650816bf3",
+      "size": 232892
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp03_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp03_v001.png",
+      "sha": "e12abb83e01795a9dea4680966caa59bbf62e866",
+      "sha256": "9d71617dae1f49851fbb5e99d74bb846946c54f5775745ef824309255d1ae407",
+      "size": 249356
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp04_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp04_v001.png",
+      "sha": "6b579bb9ac3758e34e6605c39721adbf33d1ff30",
+      "sha256": "f5cbe13c764b0c35290f05acfc6c23ce926b47d005f5e2a441128d904d1ac53f",
+      "size": 235315
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp05_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp05_v001.png",
+      "sha": "e6c1d109a74878ca240cf2472f769df7a8baa973",
+      "sha256": "1fa68b0bfa658eb90b22dfb19a989dfd8f9406d79c42ac0ced1c1146261731c9",
+      "size": 230480
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp06_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp06_v001.png",
+      "sha": "ae001ef94faedfdab81c3ec2e1b578db2c0a41a2",
+      "sha256": "bb746d1929f3f76c1cf3c0fb0ac313d61c8dae224beeb2fb3534aface17da4b1",
+      "size": 245661
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp07_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp07_v001.png",
+      "sha": "f30c2b71815f6253f2e0c7e2be0599d6f4c12f34",
+      "sha256": "d55dc406c58114df55c7dfa1913b2d228ac3f19045ed0a53a21770279405c899",
+      "size": 234308
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp08_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp08_v001.png",
+      "sha": "fd48e49fe8b0abd42215656ba0d5a76750ca4e5b",
+      "sha256": "c749c3dd482708f4b1bed8b4ef8775905e43f24ffe6bf2746257f77eab0e5592",
+      "size": 229997
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_kp09_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_kp09_v001.png",
+      "sha": "48feaf3b4b5c5a130f57f1968fc637536c8d2021",
+      "sha256": "e8de337dbb74e798e3993e5d8f9106a4130522d2c00396f9b1078c6a43c02e3e",
+      "size": 245225
+    },
+    {
+      "name": "RYO_EXP-102_knowing-smirk_sheet_v001.png",
+      "path": "avatar_build_assets/reference_library/assets/expressions/EXP-102_knowing-smirk/RYO_EXP-102_knowing-smirk_sheet_v001.png",
+      "sha": "8fb0828d2838c89cee6d21a3b0782475e2a8f949",
+      "sha256": "bd508949519c18329e81852e36206ee181d57c0a40480763e8549d7931a550ad",
+      "size": 2297869
+    }
+  ]
+}
