@@ -1,0 +1,51 @@
+{
+  "decision": "PASS_SCOPED_SEALED_WIDTH_CAPABILITY",
+  "source_path": "sealed_mouth_width_work/delivery_source_v2/ryoko_object_rig",
+  "source_freeze_sha256": "9d06b0c4a1be6cddbdb8c849e2f85480ed46d165f69054dd619d22fa91c637c0",
+  "source_inventory_sha256": "8d490423b33c7003533e56ff95d89cb9e74e572c32b1f7260c7fdfa906982abb",
+  "common_baseline_inventory_sha256": "bda94e58f2c8f1225d74a51d0f3870eec5bd066bf403343aaf7651db640e4574",
+  "accepted_design_sha256": "016d85de25d109e086db0800d9fe4c3f3eab1a19eddd2b658137218218372ef8",
+  "graphical_plan_sha256": "b515f91335aad5f7ce847f7ce9b992b2b35b0936eba7a757d9af02f8e8780852",
+  "capture_binding_sha256": "ae8254eb2b16436f107e59e596fbf2b85e28d9da5f6088c68c82a71ab872bddd",
+  "domain": "Both widths finite in [0,1]. Either width strictly positive requires mouth_open exactly zero. Both widths zero retain the old unrestricted mouth domain. Existing other controls retain their original bounds.",
+  "independent_headless_results": {
+    "old_profile_and_mixed_records_exact": 812,
+    "old_handover_records_exact": 9000,
+    "domain_lifecycle_assertions": 171128,
+    "expected_formula_samples": 1260,
+    "ordered_real_and_detached_handovers": 722,
+    "observed_completed_writes": 12161,
+    "closed_geometry_checks": 120855,
+    "closed_geometry_poses": 576,
+    "headless_viewer_in_process_bridge_checks": 27
+  },
+  "independent_native_results": {
+    "all_png_and_rgba_receipts_verified": 266,
+    "exact_old_zero_pairs": 53,
+    "exact_prior_static_pairs": 6,
+    "epsilon_pairs": 48,
+    "maximum_epsilon_rgb_difference": 1,
+    "epsilon_pixels_above_one_rgb_step": 0,
+    "epsilon_alpha_changed_pixels": 0,
+    "unique_closed_visual_controls": 178,
+    "matrix_frames_with_no_changes_outside_mouth_roi": 168
+  },
+  "general_open_width_status": "HOLD_UNREPAIRED",
+  "general_open_width_blockers": [
+    "Finite epsilon activation of the fixed top cavity, including unchanged opposite half.",
+    "Widening of the inherited open/bilateral-corner warm-skin notch under the matched stress pose."
+  ],
+  "permissions": {
+    "timeline_authorized_by_this_review": false,
+    "additional_capture_authorized": false,
+    "publication_authorized": false,
+    "approved_runtime_integration_authorized": false,
+    "user_approval_inferred": false
+  },
+  "limitations": [
+    "EXP-185 independent lower aperture/center/enamel support remains unsolved.",
+    "Fifteen common profiles remain exact: twelve approved and three explicitly unapproved; no approval status changed.",
+    "Historical aggregate test failures remain classified failures, not a full aggregate test PASS.",
+    "Actual animation/timing and eventual handover artifact review require separate assignment."
+  ]
+}

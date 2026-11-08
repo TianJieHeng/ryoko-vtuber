@@ -1,0 +1,241 @@
+{
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "source_commit": "19598d66f559bd63cd8fc89309eaa29f6767e066",
+  "sources": {
+    "assembly_sources/head/RYO_HEAD_face_base_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_face_base_v001.png",
+      "sha256": "5da8a92ca10380442a9eaf569dc97f04fdbc398f8e5feadb6b993463f0e3c869",
+      "git_blob_sha": "ca743b03edba89c2f09f2c84ff55932143b3cd40",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_ear_R_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_ear_R_v001.png",
+      "sha256": "b16cd2904796ff1f6f70f84ad3621f165553e2e0ed6cf74445c982e5e336d436",
+      "git_blob_sha": "6a2dacc59f349dc7d25cd349537550c117190a36",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_ear_L_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_ear_L_v001.png",
+      "sha256": "3eb54faeb782e53d8a112a82eddbf54d23230fea1af618be39c734b38976d3d2",
+      "git_blob_sha": "ac47ed547e598f915c1c6a1ab0086e6a0f515b9f",
+      "source_unmodified": true
+    },
+    "assembly_sources/hair/short_tail.png": {
+      "source_path": "avatar_build_assets/hair/short_tail.png",
+      "sha256": "3d281b9384212561473fcd39c6ee886385652438e54f53dea3293a5fb2b07ecc",
+      "git_blob_sha": "8dde453339df63e10217976d6146a42979a0cf82",
+      "source_unmodified": true
+    },
+    "assembly_sources/hair/rear_scalp_nape.png": {
+      "source_path": "avatar_build_assets/hair/rear_scalp_nape.png",
+      "sha256": "ef6a2e95ba701d5dd243a80c3ecf28d553a8143c1442933161df4ea08387bd95",
+      "git_blob_sha": "e6da3ea770b4e85b7a28692617562fb70b77a392",
+      "source_unmodified": true
+    },
+    "assembly_sources/hair/bun.png": {
+      "source_path": "avatar_build_assets/hair/bun.png",
+      "sha256": "449fdb18208d1220c453c069cadb14c659362966fd8cc73bf33a3bec35c26a66",
+      "git_blob_sha": "3c458187cdfa73aa813b3b3adf1c5d999c902391",
+      "source_unmodified": true
+    },
+    "assembly_sources/hair/temple_lock_character_right.png": {
+      "source_path": "avatar_build_assets/hair/temple_lock_character_right.png",
+      "sha256": "c7017f48460b74effca0ebcaa1141bd8171c355947450928c2c9af96db23f171",
+      "git_blob_sha": "9caf246a8c4ebbf31d8d2786d35e393650ac73d0",
+      "source_unmodified": true
+    },
+    "assembly_sources/hair/temple_lock_character_left.png": {
+      "source_path": "avatar_build_assets/hair/temple_lock_character_left.png",
+      "sha256": "ced2c8e50075b08ecd388a251a64a85e4b862a431c06342b2072d7c7e7be1c9c",
+      "git_blob_sha": "58ea62fcf3aa323b052b2b4528a449976de81417",
+      "source_unmodified": true
+    },
+    "assembly_sources/hair/front_fringe.png": {
+      "source_path": "avatar_build_assets/hair/front_fringe.png",
+      "sha256": "04fe4a89c07e7f05193e3b0dcd2d463e418a175fa25ea19683c1b0a0a48e8c73",
+      "git_blob_sha": "86985f7868f4479e11bc587592df37e37f3a405f",
+      "source_unmodified": true
+    },
+    "artwork/bust_base.png": {
+      "source_path": "preserved canonical runtime source/artwork/bust_base.png",
+      "sha256": "30e37ee3c3dd6cfa959b31263e7f0f469bcd1b8c06fa5ccfaaf96d236fa63287",
+      "git_blob_sha": null,
+      "source_unmodified": true
+    },
+    "rig_assets/earring_screen_left.png": {
+      "source_path": "preserved canonical runtime source/rig_assets/earring_screen_left.png",
+      "sha256": "472abee9a87d685697efebd5dc8ea26543ba5583b4eef356c2869b066c2fa48f",
+      "git_blob_sha": null,
+      "source_unmodified": true
+    },
+    "rig_assets/earring_screen_right.png": {
+      "source_path": "preserved canonical runtime source/rig_assets/earring_screen_right.png",
+      "sha256": "83f906a03a808b7d017ecc9b032006346bfb664c53b12e142ae619ebc1710650",
+      "git_blob_sha": null,
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_sclera_R_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_sclera_R_v001.png",
+      "sha256": "c813a381d93b04612cde7646f5e7c7cc0fd852e4b9a095a63e2ba0bdf64cc064",
+      "git_blob_sha": "c89ad43dbf6f4b86463a3a891c1f43330d8dcd56",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_iris_pupil_R_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_iris_pupil_R_v001.png",
+      "sha256": "54a97fd1d7c9ea581a36cc565bce960baab72405a7c0c44aa9dc5080b133e3bc",
+      "git_blob_sha": "ebdf4935422de1dc98480e84830f2b7c3756f68f",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_lash_lid_R_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_lash_lid_R_v001.png",
+      "sha256": "f1abe31c9206181eba1c0f10f67633760de50be83a71ff3cae2d3a4d29d6bfa5",
+      "git_blob_sha": "aa95df4d0dcde83653eb7da66ea6c57b0e093595",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_brow_R_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_brow_R_v001.png",
+      "sha256": "3e45564735bab37b61bb9d77c40204d28b82f219e7c5787839120ad9ab88c029",
+      "git_blob_sha": "b0b6becb67b15e088f8e080bd519b674edae0acf",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_closed_lid_R_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_closed_lid_R_v001.png",
+      "sha256": "eee53b9cf25398e85273efb077cd3fbbc372cb0a735014477334730d037e1559",
+      "git_blob_sha": "ffd0c464a154a9d1ad9e349932baef2c001e760b",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_sclera_L_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_sclera_L_v001.png",
+      "sha256": "179955f3fb3d3f60fc7a4e89beeade5c52f1ff49903d874a1055cb087275428f",
+      "git_blob_sha": "2a7d4192da5b0872784fa9220571c03309ecf2d2",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_iris_pupil_L_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_iris_pupil_L_v001.png",
+      "sha256": "ad08ed6f92b552525a7319b468129dd5e53c46c9a26f6fc1b048cc401fde2a43",
+      "git_blob_sha": "6bc666f30c515699751f5030faf84d976db0db95",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_lash_lid_L_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_lash_lid_L_v001.png",
+      "sha256": "3552c0d3289069bfb41ade3d824806cf31e2a0a0001bae9c6103e28f9ce9b370",
+      "git_blob_sha": "f86a8b47cfd53e6d99a50815fa4dc6fdc84b539b",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_brow_L_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_brow_L_v001.png",
+      "sha256": "74aff161efb267065caa0e5937da5691dab52b153548e19437724d421ad5ff7c",
+      "git_blob_sha": "3d9d0862036ab0399cbc33d214e7f625caa776bd",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_closed_lid_L_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_closed_lid_L_v001.png",
+      "sha256": "23c716a57d5f884eed26f35d105df1e2807817dbef944b80efa2a1e28121ec7a",
+      "git_blob_sha": "11e928dd52a88ff2477d24e42fc0e95cf83a20fd",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_neutral_lips_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_neutral_lips_v001.png",
+      "sha256": "6cf4ba2aba81ca1d9e0d724f3aa890bce2d1387ac85bc8b98f628d79ca558c86",
+      "git_blob_sha": "e937b5a50829a8b8883717c728175a71f367d496",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_viseme_A_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_viseme_A_v001.png",
+      "sha256": "7fb4ffce7c918c1a6bfc6471ec520616c9f7c69276604449844a9f1d341871fe",
+      "git_blob_sha": "5d1cb20572d80e9a46c2489c7c5ad291c7575c69",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_viseme_E_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_viseme_E_v001.png",
+      "sha256": "5ae868155be257c6d9cb5b474d7ea4b55027fce48464560dd0678ddc3b787170",
+      "git_blob_sha": "9027f7edb9a15103b793fe91412b9cbb052989bd",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_viseme_I_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_viseme_I_v001.png",
+      "sha256": "a1e2f8c8aeab01ce5cdb38bbbf58b687f3cd150a87a2617c2dae7c076ca59a1f",
+      "git_blob_sha": "7da0e41f4926257f352736b4cd0eb98576e56316",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_viseme_O_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_viseme_O_v001.png",
+      "sha256": "f77ffa108892068d24e83bc1f433f8451cf2a31ff2ad03b20c47802170c02eab",
+      "git_blob_sha": "1ddc791c4936ab81a9d64cae4e9abe8d47b40335",
+      "source_unmodified": true
+    },
+    "assembly_sources/head/RYO_HEAD_viseme_U_v001.png": {
+      "source_path": "avatar_build_assets/head/layers/RYO_HEAD_viseme_U_v001.png",
+      "sha256": "539b1e74d2dc84cfaff43157d363a63a55b6bfad51924029efeafc689e816987",
+      "git_blob_sha": "211a2e1d9c26a08c2856137a6bde4b6bf394e710",
+      "source_unmodified": true
+    }
+  },
+  "registration": "New fixed bust registration; no pixel-identity claim with previous composite.",
+  "originals_preserved": true,
+  "hidden_face_reconstruction": {
+    "original_assembly_stage": false,
+    "current_shared_laughter_candidate": {
+      "whole_face_replacement": false,
+      "narrow_hidden_skin_continuation": true,
+      "inferred_skin_pixels": 96,
+      "reassigned_neutral_eye_core_pixels": 42,
+      "method": "Explicit harmonic continuation in two small stationary eye-backing regions, behind separately owned neutral pigment; no face repaint or transplanted skin/chin patch.",
+      "ownership_manifest": "rig_assets/smile_support/manifest.json"
+    }
+  },
+  "shared_laughter_candidate": {
+    "status": "local user-review candidate; not published",
+    "published_shared_main": "d8d9d20542f8b636890145709d0c1228f83fd7cb",
+    "combined_runtime_art_commit": "d4a84324a30c0f0730c93dc49fc080b109f189aa",
+    "base": "Corrected 255-file gaze source including ordinary-lid correction F; all baseline paths retained, with explicit shared-smile migrations.",
+    "ordinary_lid_correction": {
+      "source_commit": "6142a12f5a98ae4cfd326ebb8d1b93eb95d3021c",
+      "shader_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+      "scope": "Only canonical_eye_alpha.gdshader. Partial-lid ownership changes intentionally; 288 independent open/closed renders match V7."
+    },
+    "prepared_extraction_manifest_sha256": "cbbd54d83bc0eb0020c5cc945b77d90c70a54c53dc17408f72964225752eb993",
+    "source_guard": "validation/smile_source_guard.json",
+    "inference_and_owner_manifest": "rig_assets/smile_support/manifest.json",
+    "runtime_registry": [
+      "EXP-163",
+      "EXP-005"
+    ],
+    "reference_catalogue_ids": 93
+  },
+  "scoped_bright_welcome": {
+    "baseline_archive_sha256": "4882931a321d9b82bf96a7b786872b8225b78a3ca045494b55ef9f8039e7db18",
+    "selected_source_archive_sha256": "eb1ee48de0ec78ec2c298b21b4641b8ede6bd38b3dd681208b40847ef141a3a9",
+    "runtime_registry": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001"
+    ],
+    "original_pngs_unchanged": 157,
+    "selected_lateral_pngs_unchanged": 17,
+    "central_white_teeth_unchanged": true,
+    "lateral_source_and_inference_manifest": "rig_assets/spread_support/manifest.json",
+    "scope": "Only approved EXP-001 lateral support; baseline eye runtime and assets preserved exactly. No wide-eye or held profiles.",
+    "publication": "Scoped source and actual-render gates passed; publication requires a separately verified remote commit",
+    "independent_review": "validation/welcome_independent_review.json"
+  },
+  "scoped_suppressed_giggle": {
+    "base_commit": "69e74ce5049a13ad5aa33014cacb1287f494787a",
+    "new_inferred_hidden_lip": "rig_assets/pressed_lip_support/manifest.json",
+    "original_blush_fx_registration": "rig_assets/blush_support/manifest.json",
+    "new_controls": [
+      "mouth_corner_lift",
+      "mouth_lip_press",
+      "blush_intensity"
+    ],
+    "unchanged_parent_pngs": 174,
+    "unchanged_profiles": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001"
+    ],
+    "reference_blob": "6d74152c9c12e6f6a1030336f2f90e2eddd62d55",
+    "reference_path": "avatar_build_assets/reference_library/assets/expressions/EXP-006_suppressed-giggle/RYO_EXP-006_suppressed-giggle_sheet_v001.png",
+    "reference_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403"
+  }
+}

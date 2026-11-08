@@ -1,0 +1,50 @@
+{
+  "schema": "EXP097_SOURCE_RECOVERY_V1",
+  "expression": "EXP-097",
+  "status": "UNAPPROVED_SOURCE_PRESERVATION",
+  "source_files": 673,
+  "registered": 20,
+  "approved": 19,
+  "pending": [
+    "EXP-097"
+  ],
+  "user_approved": false,
+  "approved_integration": false,
+  "base_commit": "90223a6f8de1fb3ae9db0d7400c06593d7b18528",
+  "approved_project_tree": "cc0b76ccf3a7e3e1475b9adc08cdfa298d079517",
+  "approved_inventory_sha256": "cfb929b679556c3530bbc31cfed838930d779576ec09b8a4d840d0802bfd8ba6",
+  "source_tree": "938072165f3cf206228b6cd6c3c6e6a6785b4aaf",
+  "source_full_inventory_sha256": "ac9b2de61cd85bd5e705f9519a0beaa9adfab19290e6284a8344fb0cfc8972d3",
+  "payload_inventory_sha256": "6f3f976cbb179b99aa80cdc83151e7c85efe2a0ce23367b7bae868ed228a6b19",
+  "freeze_sha256": "b0c3295e4da79699a2b390ddcfb2fb02112c8b241ecef3ad1ac87ba427beae08",
+  "profile_sha256": "2717ea8ee1d42fbd8fb312efaa0f37466da5c0b42097f65737e04cb2d9afb342",
+  "executable_paths": [
+    "tools/capture_object_rig.sh"
+  ],
+  "recovery_files_sha256": {
+    "README.md": "9e4f12a1ba2370efd4286ac9c99e4b92be548d94891b99602fef97a78f78a9de",
+    "verify_recovery.py": "3ad7f9e2db25ab9b42e576d5bc44d27b7df42803618c543d9de7d369f9b7be09"
+  },
+  "authored_cycle_seconds": 3.3,
+  "accepted_natural_cycles": 2,
+  "accepted_natural_records": 324,
+  "natural_rendered_source_fit": "ACCEPTED_SCOPED_ONLY",
+  "normal_execution": "ACCEPTED_BY_ADDITIVE_EXACT_FIXTURE_INTERPRETATION",
+  "normal_realtime_pacing": "HOLD",
+  "observed_first_bust_gap_ms": 653.415,
+  "continuous_live_playback_observed": false,
+  "original_capture_status": "FAIL_PRESERVED",
+  "historical_static_pixel_gate": "FAIL_NOT_WAIVED",
+  "original_normal_verifier_status": "FAIL_PRESERVED_STALE_0_225S_BRIDGE_FIXTURE",
+  "accepted_runtime_bridge_seconds": 0.3,
+  "extended_transition_visual_audit": "INCOMPLETE",
+  "full815_accepted": false,
+  "media_accepted": false,
+  "media_status": "ENCODING_AND_ARTIFACT_REVIEW_PENDING_AT_SOURCE_CHECKPOINT",
+  "evidence_report_sha256": {
+    "source_fit_review": "a640286ed12ba2139496280e8e5a840f8c121cae17f82dac8cb17d016aa81a67",
+    "normal_interpretation": "753381d0249598b35c3689e79330efd4bbf2509b5d8c01f1e1c4ec3c259179b0",
+    "scope_clearance": "11c8467c8b189c5718c358da8aa2e383b87bffe80768c4ea20c5574137cf8e73"
+  },
+  "recovery_scope": "Exact source and approved predecessor reconstruction only. Omitted captures and reports cannot be replayed from this snapshot. No new execution, visual, media or user approval is implied."
+}

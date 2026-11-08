@@ -1,0 +1,936 @@
+{
+  "format_version": 1,
+  "status": "LOCAL_PARTS_PREPARATION_NOT_INTEGRATED_NOT_APPROVED",
+  "canonical_canvas": [
+    1136,
+    1384
+  ],
+  "baseline_commit": "d8d9d20542f8b636890145709d0c1228f83fd7cb",
+  "baseline_root": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig",
+  "sources": {
+    "sources/EXP-005_eye_R.png": {
+      "path": "/workspace/scratch/42f2baf55663/laugh-parts-preparation/sources/EXP-005_eye_R.png",
+      "sha256": "bd49cc24ed1948bb1e9c275ca3f91f2bcd526f5b03a01801aac868d4ee2d8aa5",
+      "size": [
+        156,
+        201
+      ]
+    },
+    "sources/EXP-005_eye_L.png": {
+      "path": "/workspace/scratch/42f2baf55663/laugh-parts-preparation/sources/EXP-005_eye_L.png",
+      "sha256": "11eb6b609bf55b53a0ab777c570840607a53c7c72fbe4e0c66411ef7a4f9fd41",
+      "size": [
+        145,
+        201
+      ]
+    },
+    "sources/EXP-005_rest_mouth.png": {
+      "path": "/workspace/scratch/42f2baf55663/laugh-parts-preparation/sources/EXP-005_rest_mouth.png",
+      "sha256": "766f1decac3fdf65aefc1e10abf65033e62446c6bfaa0ddfb6a1f9ded9ec524a",
+      "size": [
+        178,
+        130
+      ]
+    },
+    "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/cavity.png": {
+      "path": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/cavity.png",
+      "sha256": "06045d2e7a75bebb8e6034c95c4ec9f3547d3a84f92480ff37de03f2efbe7f10",
+      "size": [
+        80,
+        76
+      ]
+    },
+    "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/upper_teeth.png": {
+      "path": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/upper_teeth.png",
+      "sha256": "4661a8ad0a9c6d45a5a0ac185f9af5504a2956548acf3fa5952074744acd8967",
+      "size": [
+        64,
+        14
+      ]
+    },
+    "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/lower_teeth.png": {
+      "path": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/lower_teeth.png",
+      "sha256": "fd1bc4b215b3c8dfb53c0395524eed148ae8532ac4ef01d569486686d9ea0377",
+      "size": [
+        62,
+        16
+      ]
+    },
+    "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/tongue.png": {
+      "path": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/yawn_mouth/tongue.png",
+      "sha256": "92a9bc17669572908cdb61d732e94deacd2d9e221f3878605bcb7614ebfe54cf",
+      "size": [
+        57,
+        29
+      ]
+    }
+  },
+  "objects": {
+    "laugh_lash_screen_left": {
+      "file": "parts/source_native/laugh_lash_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "pivot": [
+        477,
+        497
+      ],
+      "z": 36,
+      "source": "sources/EXP-005_eye_R.png",
+      "classification": "SOURCE_DERIVED_VISIBLE_INK",
+      "notes": "Native source registration. Opaque pigment cores retain source RGB. Estimated skin matte at edges. Hair-crossing gaps remain unfilled. Upper/lower ownership split is inferred, not two original authored layers.",
+      "alpha_bbox_local": [
+        0,
+        15,
+        114,
+        39
+      ],
+      "sha256": "7af7e466b202dadb14fe84a48b2474d07cfbad01b67fa1cf436dc83f000ba207",
+      "source_origin": [
+        394,
+        350
+      ],
+      "source_crop": [
+        16,
+        119,
+        139,
+        179
+      ],
+      "source_core_mask": "masks/source_native/laugh_lash_screen_left_source_rgb_core.png",
+      "estimated_matte_mask": "masks/source_native/laugh_lash_screen_left_estimated_matte.png",
+      "source_support_mask": "masks/source_native/laugh_lash_screen_left_support.png",
+      "hidden_completion": false,
+      "runtime_transform": "Identity scale/UV; optional small rigid translation after future review; spatial reveal only, no emotion opacity blend."
+    },
+    "laugh_lower_contour_screen_left": {
+      "file": "parts/source_native/laugh_lower_contour_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "pivot": [
+        477,
+        497
+      ],
+      "z": 35,
+      "source": "sources/EXP-005_eye_R.png",
+      "classification": "SOURCE_DERIVED_VISIBLE_INK",
+      "notes": "Native source registration. Opaque pigment cores retain source RGB. Estimated skin matte at edges. Hair-crossing gaps remain unfilled. Upper/lower ownership split is inferred, not two original authored layers.",
+      "alpha_bbox_local": [
+        7,
+        30,
+        113,
+        47
+      ],
+      "sha256": "d040a041f046aab8a43d57248f998ec85d1451455b35c64fcaba1bb31495aec7",
+      "source_origin": [
+        394,
+        350
+      ],
+      "source_crop": [
+        16,
+        119,
+        139,
+        179
+      ],
+      "source_core_mask": "masks/source_native/laugh_lower_contour_screen_left_source_rgb_core.png",
+      "estimated_matte_mask": "masks/source_native/laugh_lower_contour_screen_left_estimated_matte.png",
+      "source_support_mask": "masks/source_native/laugh_lower_contour_screen_left_support.png",
+      "hidden_completion": false,
+      "runtime_transform": "Identity scale/UV; optional small rigid translation after future review; spatial reveal only, no emotion opacity blend."
+    },
+    "laugh_lid_crease_screen_left": {
+      "file": "parts/source_native/laugh_lid_crease_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "pivot": [
+        477,
+        497
+      ],
+      "z": 34,
+      "source": "sources/EXP-005_eye_R.png",
+      "classification": "OPTIONAL_SOURCE_DERIVED_ESTIMATED_MATTE",
+      "notes": "Optional cue only. Existing stationary neutral crease may overlap; review before enabling. No cheek/skin warp.",
+      "alpha_bbox_local": [
+        17,
+        10,
+        115,
+        29
+      ],
+      "sha256": "a01c44a06f6e563160bd4fbc00b3aa9ecff0504dfb02e55226c482d43bfaac4e",
+      "enabled_in_default_proof": false,
+      "source_crop": [
+        16,
+        119,
+        139,
+        179
+      ],
+      "estimated_matte_mask": "masks/source_native/laugh_lid_crease_screen_left_estimated_matte.png",
+      "hidden_completion": false
+    },
+    "laugh_hidden_continuation_screen_left": {
+      "file": "parts/source_native/laugh_hidden_continuation_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "pivot": [
+        477,
+        497
+      ],
+      "z": 34,
+      "source": "sources/EXP-005_eye_R.png",
+      "classification": "INFERRED_HAIR_OCCLUDED_STROKE_COMPLETION",
+      "notes": "Optional separate object. Missing lash stroke beneath historical green hair is row-interpolated from neighboring visible ink and constrained by an explicit narrow contour band. Every nontransparent pixel is inferred, never claimed original. Keep canonical hair in front.",
+      "alpha_bbox_local": [
+        51,
+        24,
+        58,
+        34
+      ],
+      "sha256": "8519cdb5ac21be8e9c3b8e7bf117b239024a0eb9ce77b12f6771b24811d5678b",
+      "hidden_completion": true,
+      "enabled_in_default_proof": true,
+      "inferred_region_mask": "masks/source_native/laugh_hidden_continuation_screen_left_inferred.png",
+      "runtime_ready": false
+    },
+    "laugh_lash_screen_right": {
+      "file": "parts/source_native/laugh_lash_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "pivot": [
+        648,
+        496
+      ],
+      "z": 36,
+      "source": "sources/EXP-005_eye_L.png",
+      "classification": "SOURCE_DERIVED_VISIBLE_INK",
+      "notes": "Native source registration. Opaque pigment cores retain source RGB. Estimated skin matte at edges. Hair-crossing gaps remain unfilled. Upper/lower ownership split is inferred, not two original authored layers.",
+      "alpha_bbox_local": [
+        0,
+        11,
+        111,
+        41
+      ],
+      "sha256": "838a6e9ae57b75a82694635eb3833687d2cb82de45183b3694d5c17adcdc8121",
+      "source_origin": [
+        590,
+        350
+      ],
+      "source_crop": [
+        17,
+        118,
+        129,
+        176
+      ],
+      "source_core_mask": "masks/source_native/laugh_lash_screen_right_source_rgb_core.png",
+      "estimated_matte_mask": "masks/source_native/laugh_lash_screen_right_estimated_matte.png",
+      "source_support_mask": "masks/source_native/laugh_lash_screen_right_support.png",
+      "hidden_completion": false,
+      "runtime_transform": "Identity scale/UV; optional small rigid translation after future review; spatial reveal only, no emotion opacity blend."
+    },
+    "laugh_lower_contour_screen_right": {
+      "file": "parts/source_native/laugh_lower_contour_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "pivot": [
+        648,
+        496
+      ],
+      "z": 35,
+      "source": "sources/EXP-005_eye_L.png",
+      "classification": "SOURCE_DERIVED_VISIBLE_INK",
+      "notes": "Native source registration. Opaque pigment cores retain source RGB. Estimated skin matte at edges. Hair-crossing gaps remain unfilled. Upper/lower ownership split is inferred, not two original authored layers.",
+      "alpha_bbox_local": [
+        1,
+        30,
+        105,
+        46
+      ],
+      "sha256": "4a35d14120213d8952fca9f898c79c38c73ae7dbb29a97ea275194bffb17fcce",
+      "source_origin": [
+        590,
+        350
+      ],
+      "source_crop": [
+        17,
+        118,
+        129,
+        176
+      ],
+      "source_core_mask": "masks/source_native/laugh_lower_contour_screen_right_source_rgb_core.png",
+      "estimated_matte_mask": "masks/source_native/laugh_lower_contour_screen_right_estimated_matte.png",
+      "source_support_mask": "masks/source_native/laugh_lower_contour_screen_right_support.png",
+      "hidden_completion": false,
+      "runtime_transform": "Identity scale/UV; optional small rigid translation after future review; spatial reveal only, no emotion opacity blend."
+    },
+    "laugh_lid_crease_screen_right": {
+      "file": "parts/source_native/laugh_lid_crease_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "pivot": [
+        648,
+        496
+      ],
+      "z": 34,
+      "source": "sources/EXP-005_eye_L.png",
+      "classification": "OPTIONAL_SOURCE_DERIVED_ESTIMATED_MATTE",
+      "notes": "Optional cue only. Existing stationary neutral crease may overlap; review before enabling. No cheek/skin warp.",
+      "alpha_bbox_local": [
+        3,
+        13,
+        75,
+        25
+      ],
+      "sha256": "e73e41abce3c31b3cd96d522ca869f4898c3c0196cf069f136864653fdb565e3",
+      "enabled_in_default_proof": false,
+      "source_crop": [
+        17,
+        118,
+        129,
+        176
+      ],
+      "estimated_matte_mask": "masks/source_native/laugh_lid_crease_screen_right_estimated_matte.png",
+      "hidden_completion": false
+    },
+    "laugh_hidden_continuation_screen_right": {
+      "file": "parts/source_native/laugh_hidden_continuation_screen_right.png",
+      "xy": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "pivot": [
+        648,
+        496
+      ],
+      "z": 34,
+      "source": "sources/EXP-005_eye_L.png",
+      "classification": "INFERRED_HAIR_OCCLUDED_STROKE_COMPLETION",
+      "notes": "Optional separate object. Missing lash stroke beneath historical green hair is row-interpolated from neighboring visible ink and constrained by an explicit narrow contour band. Every nontransparent pixel is inferred, never claimed original. Keep canonical hair in front.",
+      "alpha_bbox_local": [
+        5,
+        35,
+        112,
+        42
+      ],
+      "sha256": "53ecfa1a529905a1e0a1dd49587a677b9fe4b588c9a59519ce40bd14552887ee",
+      "hidden_completion": true,
+      "enabled_in_default_proof": true,
+      "inferred_region_mask": "masks/source_native/laugh_hidden_continuation_screen_right_inferred.png",
+      "runtime_ready": false
+    },
+    "smile_upper_lip_native": {
+      "file": "parts/source_native/smile_upper_lip_native.png",
+      "xy": [
+        477,
+        576
+      ],
+      "size": [
+        178,
+        130
+      ],
+      "pivot": [
+        567.5,
+        593.5
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "SOURCE_DERIVED_NATIVE_RIM",
+      "notes": "Source-native oral rim/corner pixels only; no cavity, tooth, tongue, skin rectangle or chin. This large historical rim is NOT compatible with the current aperture cap without a separate derived registration.",
+      "alpha_bbox_local": [
+        40,
+        14,
+        144,
+        28
+      ],
+      "sha256": "9984804992732131f0cdd73d96c0d6d904c6033a2c8d8236d5c69997960524e3",
+      "role": "upper",
+      "source_crop": [
+        0,
+        0,
+        178,
+        130
+      ],
+      "inferred_boundary_mask": "masks/source_native/smile_upper_lip_native_matte.png",
+      "source_rgb_unchanged_on_opaque_core": true,
+      "hidden_completion": false,
+      "runtime_ready": false
+    },
+    "smile_lower_lip_native": {
+      "file": "parts/source_native/smile_lower_lip_native.png",
+      "xy": [
+        477,
+        576
+      ],
+      "size": [
+        178,
+        130
+      ],
+      "pivot": [
+        567.5,
+        670
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "SOURCE_DERIVED_NATIVE_RIM",
+      "notes": "Source-native oral rim/corner pixels only; no cavity, tooth, tongue, skin rectangle or chin. This large historical rim is NOT compatible with the current aperture cap without a separate derived registration.",
+      "alpha_bbox_local": [
+        40,
+        49,
+        144,
+        99
+      ],
+      "sha256": "cd934a90b79fd1e07dc5f1d2d303e5fcfc692661b3afeb0ee31052212f88bb63",
+      "role": "lower",
+      "source_crop": [
+        0,
+        0,
+        178,
+        130
+      ],
+      "inferred_boundary_mask": "masks/source_native/smile_lower_lip_native_matte.png",
+      "source_rgb_unchanged_on_opaque_core": true,
+      "hidden_completion": false,
+      "runtime_ready": false
+    },
+    "smile_corner_screen_left_native": {
+      "file": "parts/source_native/smile_corner_screen_left_native.png",
+      "xy": [
+        477,
+        576
+      ],
+      "size": [
+        178,
+        130
+      ],
+      "pivot": [
+        507,
+        605
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "SOURCE_DERIVED_NATIVE_RIM",
+      "notes": "Source-native oral rim/corner pixels only; no cavity, tooth, tongue, skin rectangle or chin. This large historical rim is NOT compatible with the current aperture cap without a separate derived registration.",
+      "alpha_bbox_local": [
+        30,
+        23,
+        40,
+        62
+      ],
+      "sha256": "3ed2ce0e89a45b602998e664c3040df9f553d6a9813d454b24a4425403c34086",
+      "role": "corner",
+      "source_crop": [
+        0,
+        0,
+        178,
+        130
+      ],
+      "inferred_boundary_mask": "masks/source_native/smile_corner_screen_left_native_matte.png",
+      "source_rgb_unchanged_on_opaque_core": true,
+      "hidden_completion": false,
+      "runtime_ready": false
+    },
+    "smile_corner_screen_right_native": {
+      "file": "parts/source_native/smile_corner_screen_right_native.png",
+      "xy": [
+        477,
+        576
+      ],
+      "size": [
+        178,
+        130
+      ],
+      "pivot": [
+        630,
+        602
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "SOURCE_DERIVED_NATIVE_RIM",
+      "notes": "Source-native oral rim/corner pixels only; no cavity, tooth, tongue, skin rectangle or chin. This large historical rim is NOT compatible with the current aperture cap without a separate derived registration.",
+      "alpha_bbox_local": [
+        144,
+        20,
+        154,
+        54
+      ],
+      "sha256": "22650108201c164eb14c0d1cdfcd86ca8a6d67005caa62cf35b245f3bcd1b637",
+      "role": "corner",
+      "source_crop": [
+        0,
+        0,
+        178,
+        130
+      ],
+      "inferred_boundary_mask": "masks/source_native/smile_corner_screen_right_native_matte.png",
+      "source_rgb_unchanged_on_opaque_core": true,
+      "hidden_completion": false,
+      "runtime_ready": false
+    },
+    "smile_upper_lip": {
+      "file": "parts/canonical_candidate/smile_upper_lip.png",
+      "xy": [
+        522,
+        624
+      ],
+      "size": [
+        86,
+        52
+      ],
+      "pivot": [
+        564.5,
+        633
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "DERIVED_CANONICAL_CURVE_CANDIDATE",
+      "notes": "Offline per-part curve registration of extracted source pigment. Shape/matte are inferred, NOT original independently authored lip layers. No skin/chin pixels move; not approved for runtime. Peak static proof only; entry/exit and continuous motion still require rig design and review.",
+      "alpha_bbox_local": [
+        11,
+        4,
+        75,
+        11
+      ],
+      "sha256": "3026e3f8a30e29ba5e7ccd2f53e895bed9dc35bb66b4189876a12146534006d1",
+      "derived_geometry": true,
+      "runtime_ready": false,
+      "source_uv_x_range": [
+        30,
+        153
+      ],
+      "all_visible_pixels_derivative": true,
+      "inferred_region_mask": "masks/canonical_candidate/smile_upper_lip_derived.png"
+    },
+    "smile_lower_lip": {
+      "file": "parts/canonical_candidate/smile_lower_lip.png",
+      "xy": [
+        522,
+        624
+      ],
+      "size": [
+        86,
+        52
+      ],
+      "pivot": [
+        564.5,
+        663.8
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "DERIVED_CANONICAL_CURVE_CANDIDATE",
+      "notes": "Offline per-part curve registration of extracted source pigment. Shape/matte are inferred, NOT original independently authored lip layers. No skin/chin pixels move; not approved for runtime. Peak static proof only; entry/exit and continuous motion still require rig design and review.",
+      "alpha_bbox_local": [
+        11,
+        14,
+        75,
+        44
+      ],
+      "sha256": "84093bcf0b0e4624b4ee36db3930d62b78865a808f605820f92a20d86e184739",
+      "derived_geometry": true,
+      "runtime_ready": false,
+      "source_uv_x_range": [
+        30,
+        153
+      ],
+      "all_visible_pixels_derivative": true,
+      "inferred_region_mask": "masks/canonical_candidate/smile_lower_lip_derived.png"
+    },
+    "smile_corner_screen_left": {
+      "file": "parts/canonical_candidate/smile_corner_screen_left.png",
+      "xy": [
+        522,
+        624
+      ],
+      "size": [
+        86,
+        52
+      ],
+      "pivot": [
+        526.5,
+        630
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "DERIVED_CANONICAL_CURVE_CANDIDATE",
+      "notes": "Offline per-part curve registration of extracted source pigment. Shape/matte are inferred, NOT original independently authored lip layers. No skin/chin pixels move; not approved for runtime. Peak static proof only; entry/exit and continuous motion still require rig design and review.",
+      "alpha_bbox_local": [
+        5,
+        4,
+        11,
+        20
+      ],
+      "sha256": "bb49fdf2164b946b9ee6e6bb8db9aea747cbc2cabb0cd96d37c60c519bfd8c99",
+      "derived_geometry": true,
+      "runtime_ready": false,
+      "source_uv_x_range": [
+        30,
+        153
+      ],
+      "all_visible_pixels_derivative": true,
+      "inferred_region_mask": "masks/canonical_candidate/smile_corner_screen_left_derived.png"
+    },
+    "smile_corner_screen_right": {
+      "file": "parts/canonical_candidate/smile_corner_screen_right.png",
+      "xy": [
+        522,
+        624
+      ],
+      "size": [
+        86,
+        52
+      ],
+      "pivot": [
+        602.5,
+        630
+      ],
+      "z": 58,
+      "source": "sources/EXP-005_rest_mouth.png",
+      "classification": "DERIVED_CANONICAL_CURVE_CANDIDATE",
+      "notes": "Offline per-part curve registration of extracted source pigment. Shape/matte are inferred, NOT original independently authored lip layers. No skin/chin pixels move; not approved for runtime. Peak static proof only; entry/exit and continuous motion still require rig design and review.",
+      "alpha_bbox_local": [
+        75,
+        4,
+        81,
+        19
+      ],
+      "sha256": "1b6a0ec3c4d22d62ac06a3dd040b22897129e693e31313e932d1e85015ea4485",
+      "derived_geometry": true,
+      "runtime_ready": false,
+      "source_uv_x_range": [
+        30,
+        153
+      ],
+      "all_visible_pixels_derivative": true,
+      "inferred_region_mask": "masks/canonical_candidate/smile_corner_screen_right_derived.png"
+    }
+  },
+  "masks": {},
+  "limitations": [
+    "Preparation only. No runtime/controller/registry modification, upload, publication, user preview, or complete EXP-005 performance claim.",
+    "Visible eye parts retain original hair-occlusion gaps. Separate optional inferred stroke-continuation objects fill only those gaps; every added pixel is labeled in its mask. Canonical hair remains in front.",
+    "Upper/lower contour ownership and edge mattes are derived; original source patches were not clean independent parts.",
+    "Mouth source-native rim exceeds the approved opening cap. Canonical proposal is explicitly inferred per-part curve registration; not source-authored canonical lips.",
+    "Canonical mouth proposal proves peak aperture ownership only. It is not a continuous smile rig and must not be used as an emotion crossfade.",
+    "Optional crease parts are disabled by default because fixed backing may already own a crease.",
+    "Approved source teeth, their white pigment, and upper registration [533,626] are reused unchanged. A wide smile will need its reveal checked, not new teeth colored over the source.",
+    "No head, neck, torso, chin or cheek warping; no gaze, hair animation, body gesture, AI model or TTS."
+  ],
+  "mouth_source_geometry": {
+    "source_origin": [
+      477,
+      576
+    ],
+    "upper_rim_points_local": [
+      [
+        30,
+        29
+      ],
+      [
+        35,
+        28.5
+      ],
+      [
+        40,
+        26
+      ],
+      [
+        50,
+        22.5
+      ],
+      [
+        60,
+        20
+      ],
+      [
+        70,
+        18.5
+      ],
+      [
+        80,
+        18
+      ],
+      [
+        90,
+        17.5
+      ],
+      [
+        100,
+        17
+      ],
+      [
+        110,
+        17
+      ],
+      [
+        120,
+        18
+      ],
+      [
+        130,
+        20
+      ],
+      [
+        140,
+        22
+      ],
+      [
+        149,
+        25
+      ],
+      [
+        153,
+        26
+      ]
+    ],
+    "lower_rim_points_local": [
+      [
+        30,
+        29
+      ],
+      [
+        32,
+        39
+      ],
+      [
+        35,
+        49
+      ],
+      [
+        40,
+        59
+      ],
+      [
+        45,
+        66
+      ],
+      [
+        50,
+        71.5
+      ],
+      [
+        60,
+        81.5
+      ],
+      [
+        70,
+        89
+      ],
+      [
+        80,
+        92
+      ],
+      [
+        90,
+        94
+      ],
+      [
+        100,
+        93
+      ],
+      [
+        110,
+        89.5
+      ],
+      [
+        120,
+        83
+      ],
+      [
+        130,
+        73
+      ],
+      [
+        140,
+        58
+      ],
+      [
+        147,
+        43
+      ],
+      [
+        151,
+        30
+      ],
+      [
+        153,
+        26
+      ]
+    ],
+    "split_x_local": [
+      40,
+      143
+    ],
+    "source_mouth_span": 123,
+    "historical_center_opening": 76.5,
+    "not_current_aperture": true
+  },
+  "canonical_mouth_proposal": {
+    "status": "STATIC_DERIVED_PROPOSAL_NOT_RUNTIME_READY",
+    "crop": [
+      522,
+      624,
+      608,
+      676
+    ],
+    "center_x": 564.5,
+    "upper_center_y": 633.0,
+    "left_x": 526.5,
+    "right_x": 602.5,
+    "corners_raised_px": 3,
+    "upper_curve": "633 - 3*(1 - sin(pi*t)), t=(x-526.5)/76",
+    "aperture_bottom": "upper + 30.8*q*sin(pi*t)^0.85",
+    "maximum_vertical_opening_source_px": 30.8,
+    "normalized_control": [
+      0,
+      1
+    ],
+    "physical_aperture_cap": 0.55,
+    "peak_lower_lip_position_only": true,
+    "neutral_not_changed": true,
+    "prohibited": "Do not select/crossfade this peak rim as a complete expression; do not scale/warp any skin patch. Mouth entry/exit and corner-to-lower-lip continuity need future articulated geometry work.",
+    "landmarks": "parts/canonical_candidate/smile_contour_landmarks.json"
+  },
+  "reused_approved_oral_objects": {
+    "cavity": {
+      "file": "cavity.png",
+      "xy": [
+        525,
+        629
+      ],
+      "size": [
+        80,
+        76
+      ],
+      "z": 54,
+      "source": "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png",
+      "source_visible_crop": [
+        164,
+        104,
+        445,
+        212
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime.",
+      "local_copy": "sources/approved_cavity.png",
+      "sha256": "06045d2e7a75bebb8e6034c95c4ec9f3547d3a84f92480ff37de03f2efbe7f10",
+      "bytes_unchanged": true,
+      "registration_unchanged": true
+    },
+    "upper_teeth": {
+      "file": "upper_teeth.png",
+      "xy": [
+        533,
+        626
+      ],
+      "size": [
+        64,
+        14
+      ],
+      "z": 55,
+      "source": "assembly_sources/head/RYO_HEAD_upper_teeth_v001.png",
+      "source_visible_crop": [
+        57,
+        109,
+        487,
+        229
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime.",
+      "local_copy": "sources/approved_upper_teeth.png",
+      "sha256": "4661a8ad0a9c6d45a5a0ac185f9af5504a2956548acf3fa5952074744acd8967",
+      "bytes_unchanged": true,
+      "registration_unchanged": true
+    },
+    "lower_teeth": {
+      "file": "lower_teeth.png",
+      "xy": [
+        533,
+        685
+      ],
+      "size": [
+        62,
+        16
+      ],
+      "z": 55,
+      "source": "assembly_sources/head/RYO_HEAD_lower_teeth_v001.png",
+      "source_visible_crop": [
+        123,
+        93,
+        531,
+        214
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime.",
+      "local_copy": "sources/approved_lower_teeth.png",
+      "sha256": "fd1bc4b215b3c8dfb53c0395524eed148ae8532ac4ef01d569486686d9ea0377",
+      "bytes_unchanged": true,
+      "registration_unchanged": true
+    },
+    "tongue": {
+      "file": "tongue.png",
+      "xy": [
+        536,
+        671
+      ],
+      "size": [
+        57,
+        29
+      ],
+      "z": 56,
+      "source": "assembly_sources/head/RYO_HEAD_tongue_v001.png",
+      "source_visible_crop": [
+        83,
+        25,
+        467,
+        219
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime.",
+      "local_copy": "sources/approved_tongue.png",
+      "sha256": "92a9bc17669572908cdb61d732e94deacd2d9e221f3878605bcb7614ebfe54cf",
+      "bytes_unchanged": true,
+      "registration_unchanged": true
+    }
+  },
+  "eye_profiles": {
+    "screen_left": "parts/source_native/laugh_profile_screen_left.json",
+    "screen_right": "parts/source_native/laugh_profile_screen_right.json"
+  }
+}

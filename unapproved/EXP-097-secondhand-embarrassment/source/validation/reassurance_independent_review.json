@@ -1,0 +1,185 @@
+{
+  "review": "Independent EXP-107 confident-reassurance review",
+  "result": "PASS for the tested local expression candidate, subject to separate user approval and exact final-package reconstruction verification.",
+  "publication": "EXP-107 is unapproved and has not been published by this review.",
+  "tested_capture_source": {
+    "inventory_sha256": "1ff4e063e6482ca5448c3108f1d1e529dedebcc6fe1a48b59ac7f83520e83168",
+    "files": 416,
+    "pngs": 182,
+    "all_source_hashes_verified": true,
+    "source_unchanged_after_tests": true
+  },
+  "approved_parent": {
+    "commit": "4f3deaa2de3eedb691a9f0c795c7b8563663e472",
+    "project_tree": "1dc4895b0e0fbf5a7498cf853b267d19a44e8b3d",
+    "inventory_sha256": "0dce8fa9e31acc3d08afa305747596e048d864b0327f4c3a1b6cb7a08833fc55",
+    "files": 399,
+    "all_published_file_sha256_and_git_blob_ids_verified": true
+  },
+  "source_scope": {
+    "protected_parent_pngs": 182,
+    "new_pngs": 0,
+    "prior_profiles_unchanged": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001",
+      "EXP-006"
+    ],
+    "registry_exactly": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001",
+      "EXP-006",
+      "EXP-107"
+    ],
+    "only_new_control": "mouth_oral_lift",
+    "assessment": "One shared app, rig, registry and generic player. The new channel translates only the existing lower oral-surface owner inside the existing 40-source-pixel rise envelope. Fixed source pigment/UV, unit scales and opaque anatomical owners are retained. No new face artwork, texture stretching, mesh deformation, anatomy crossfade, wide-eye controls or held EXP-003/007 are introduced."
+  },
+  "reference": {
+    "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+    "sheet_sha256": "08e4f43e20144930411dd49087eaa76d70bde1fb0214b70b6d56bd5ed42797d0",
+    "sheet_git_blob": "beb8ee82e3edde215da08097552b7de88432e731",
+    "png_hashes_and_blob_ids_verified": 11,
+    "exact_lossless_panel_crops_verified": 9,
+    "all_nine_panels_visually_inspected": true,
+    "authored_duration_seconds": 3.0,
+    "reference_proposal_seconds": 1.9,
+    "assessment": "Readable neutral, closed smile, single relaxed open accent, closed follow-through, lingering smile and exact neutral recovery. Direct eyes and no authored FX. This is an interpretation of static reference art, not recovered animation or identical painted artwork. Canonical face, segmented white enamel and rigid brow curvature differ visibly from the reference."
+  },
+  "source_and_runtime_checks": {
+    "clean_source_guards": [
+      "verify_reassurance_scope.py",
+      "verify_giggle_scope.py",
+      "verify_welcome_scope.py",
+      "verify_closed_smile_support.py",
+      "verify_blush_source.py"
+    ],
+    "godot_runtime_suites": [
+      "test_object_rig",
+      "test_yawn",
+      "test_teeth",
+      "test_expression_backbone",
+      "test_gaze_runtime",
+      "test_viewer_layout",
+      "test_smile_controls",
+      "test_laughter_runtime",
+      "test_spread_runtime",
+      "test_giggle_runtime",
+      "test_corner_lift_runtime",
+      "test_closed_smile_contract",
+      "test_blush_controls",
+      "test_oral_lift_contract",
+      "test_reassurance_runtime"
+    ],
+    "all_passed": true,
+    "godot_version": "4.6.3.stable.official.7d41c59c4",
+    "independent_historical_rebuild_checks": 11,
+    "packaged_files_changed_by_rebuild": 0,
+    "coverage": "Atomic invalid-control and registry rejection; zero defaults; manual ownership; release, reset, retrigger, interrupted release and cross-expression handover; repeated 30/60Hz completion; fixed head/body/teeth registration; fixed textures/atlas regions/scales/opacity; bounded aperture and oral-rise controls."
+  },
+  "independent_prior_runtime_parity": {
+    "parent_count": 2051,
+    "candidate_count": 2051,
+    "mismatches": [],
+    "pass": true,
+    "parent_sha256": "b1fb20780694049cba8cfc6be0ca0d822d810d0ec2abd1d70dfec19aea3ce501",
+    "candidate_sha256": "b1fb20780694049cba8cfc6be0ca0d822d810d0ec2abd1d70dfec19aea3ce501"
+  },
+  "independent_actual_pixel_parity": {
+    "actual_render_cases": 665,
+    "case_plan_float_serialization_max_error": 5.551115123125783e-16,
+    "all_png_bytes_identical": true,
+    "states_identical_after_removing_zero_new_field": true,
+    "aperture_probe_poses": 810,
+    "maximum_integrated_column_source_px": 29.8000000417233,
+    "max_nonzero_AA_rows": 31,
+    "physical_cap_source_px": 30.8,
+    "failures": []
+  },
+  "movies": {
+    "process_repeatability": {
+      "first_and_second_process_evidence_equal": true,
+      "byte_identical_png_files": 502,
+      "render_checks_each": 64084,
+      "failures": []
+    },
+    "first_process_verified_frame_hashes": 480,
+    "two_active_cycles_each_frames": 90,
+    "both_cycles_pixel_identical": true,
+    "neutral_before_between_after_pixel_identical": true,
+    "visual_inspection": "All 90 first-cycle face frames inspected chronologically, covering partial opening/closing and recovery; second cycle is pixel-identical. Full-bust peak and final reference comparison board inspected. No unexpected registration jumps or detached mouth surfaces observed in these frames.",
+    "decode_verification": [
+      {
+        "file": "ryoko_EXP-107_confident_reassurance.mp4",
+        "sha256": "0256a05a6f4b65688f84e0f8f52dded0350bf6581ef0e3a1d2d58d4f71cb7e66",
+        "decoded_frames": 240,
+        "expected_source_frames": 240,
+        "dimensions": [
+          568,
+          800
+        ],
+        "maximum_frame_mean_absolute_RGB_error": 1.3408296654929577,
+        "mean_absolute_RGB_error": 1.3355546875,
+        "maximum_pixel_channel_error": 64,
+        "interpretation": "All decoded frames match the correct chronological render/crop within expected H.264 color-subsampling error; not pixel-identical or normal-speed playback."
+      },
+      {
+        "file": "ryoko_EXP-107_face_detail.mp4",
+        "sha256": "2787b12f194e1d5f58d527d38dfe1cabdff8828d849eb4f02d0fa268e3422305",
+        "decoded_frames": 240,
+        "expected_source_frames": 240,
+        "dimensions": [
+          772,
+          740
+        ],
+        "maximum_frame_mean_absolute_RGB_error": 1.7324061756056575,
+        "mean_absolute_RGB_error": 1.7022928555174346,
+        "maximum_pixel_channel_error": 45,
+        "interpretation": "All decoded frames match the correct chronological render/crop within expected H.264 color-subsampling error; not pixel-identical or normal-speed playback."
+      }
+    ],
+    "reference_board_sha256": "d53a96f6e68648305ad0ed44bfc0a716e826bb85f85ae7231b2b2125986009ae"
+  },
+  "independent_interruption_render": {
+    "frames": 147,
+    "all_frame_hashes_verified": true,
+    "c0_and_hold_pixel_pairs": 6,
+    "neutral_pixel_checks": 8,
+    "runtime_checks": 11,
+    "failures": [],
+    "harness_sha256": "879b612e07d22824d656af71488cc0d0b684aded740ef30f16a12781f1612391",
+    "evidence_sha256": "cc3ba7e4135ed237107f3953e915f451696eaa65be28b96a1afc39351867d3bd",
+    "renderer": "Godot Compatibility OpenGL 4.5 Mesa llvmpipe, existing supported desktop display",
+    "coverage": [
+      "Release from EXP-107 peak through neutral",
+      "Retrigger from peak through an entire new cycle",
+      "Manual takeover during partial opening, hold and reset",
+      "EXP-107 to EXP-006 handover interrupted back to EXP-107, then release"
+    ],
+    "visual_assessment": "All 147 frames inspected chronologically. No new registration jump or clipping discontinuity observed. Six immediate command/hold pairs are pixel-identical, and all eight neutral checkpoints exactly match the initial neutral."
+  },
+  "resolved_findings": [
+    {
+      "issue": "An initially captured parent inventory included a generated Python cache.",
+      "resolution": "Corrected to the authoritative 399-file published manifest and verified exact hashes."
+    },
+    {
+      "issue": "Inherited top-level documentation did not describe the five-profile candidate.",
+      "resolution": "Current scope documentation updated while preserving historical receipts."
+    },
+    {
+      "issue": "The socket integration fixture still expected four profiles.",
+      "resolution": "Expected metadata and enumeration corrected to the exact five-profile registry; independently parsed and compared via Python AST. No runtime, art, profile or render-harness change.",
+      "corrected_test_sha256": "742d2a7fce932efb10b7f288d0702f7a8fa1d05c21803890f62b707ddc2d5f3c",
+      "network_transport_executed": false
+    }
+  ],
+  "limits": [
+    "Normal-speed audiovisual playback was not performed; visual review used actual rendered chronological frames and decoded movies.",
+    "Loopback transport integration was not executed because listening sockets are restricted. Callable controller/capability behavior and corrected fixture structure were tested separately.",
+    "No actual AI/TTS connection, tracking, full-body/open-palm acting or hardware execution.",
+    "Existing faint fringe traces under nonzero manual hair sway are baseline limitations and are not fixed by this expression; authored EXP-107 uses zero sway.",
+    "Finite pose and frame testing does not claim every possible manual control combination is visually perfect.",
+    "Final inventory and durable delta reconstruction are separately verified after this report is packaged; no self-referential final inventory hash is embedded here."
+  ]
+}

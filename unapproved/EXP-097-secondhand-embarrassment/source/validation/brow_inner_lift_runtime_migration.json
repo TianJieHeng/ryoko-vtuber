@@ -1,0 +1,77 @@
+{
+  "files": {
+    "CONTROL_API.md": {
+      "baseline_sha256": "073e4ba9abde2f576a8885c5465da418bba2575ecbbfe68bb1fdd3b124313db0",
+      "candidate_sha256": "0bc619fdb0aed17911419da879b8bf387463c94947c93dd150b6381c14932700"
+    },
+    "LOCAL_CONTROL_BRIDGE.md": {
+      "baseline_sha256": "5d29bcd2730d8299137fafe68c3e285c687fc40f1f9f7f26c568339e6c73c232",
+      "candidate_sha256": "59235d82d7631ff1ecc7eaa03a8a6ee63c8c4e01e3b98b14af580ffb30c7f3a2"
+    },
+    "PACKAGING.md": {
+      "baseline_sha256": "d0f8a143d67515f971f67ae7e429fa81829fb6d1980c880dfc72bdee7eaef0b1",
+      "candidate_sha256": "5c3a87e630658abd846014f323aa7709a1d6543ff20f871c62d901e65abb73e0"
+    },
+    "README.md": {
+      "baseline_sha256": "0e1f1374f12c978f48bbec8e9c155a4bdc9ccd04a05b955dc619e2835d1b701e",
+      "candidate_sha256": "697c7b9c38e7c97992c43e42c0fac6ca100d6f53b75c6ecac5db7388d8b33ef0"
+    },
+    "RELEASE.json": {
+      "baseline_sha256": "8cf880737f32cc3796d4d7a064d8c6b4294c781394960ad2836a42e354d49c8d",
+      "candidate_sha256": "a91663b8ada782f60508874da4f6f0b56faae08f54b3b054408293c3e50a8d82"
+    },
+    "control_bridge.gd": {
+      "baseline_sha256": "6a8ac4144aa02f4dad4eeb11d7225309740b959ef912f0c18ba94db4239fa257",
+      "candidate_sha256": "b8f5e87fb8ec18eab4d9c99e0a496de3388d66d64439cdc8e115f213ecc78d5a"
+    },
+    "control_limits.gd": {
+      "baseline_sha256": "10e08a1d33ecd6f6b32adf648527bbc2680a80a0067a4bebbe8107d98ff52a75",
+      "candidate_sha256": "69e7b3787403f215c151f8c191930cde7c67b081a34cb296e8bc1395d12c5994"
+    },
+    "expression_registry.gd": {
+      "baseline_sha256": "29751dac6a3a557e520e87a5a762919e710adc0b2c5f96b66e854fbf7ca9c62a",
+      "candidate_sha256": "e51090ebe3eba4e4ce9bf786d6d4ff4f500c150455ed4a0ae357c1fdff4a0898"
+    },
+    "expression_rig.gd": {
+      "baseline_sha256": "551dd90b83171605be05302150c103d097b5789777d0f3a40b3805dd00355936",
+      "candidate_sha256": "d27f1973e286bfb0933b0f0d5c1315fb6447710659b3708e4fb2051fd5bc938c"
+    },
+    "expression_viewer.gd": {
+      "baseline_sha256": "c874c5e2679644e921ff2ccac8bca0be08b9cbef225e237c4e5ac02dd0ca1598",
+      "candidate_sha256": "b26a40c3cb532dba586b12f498646e160da8e0b380ae2b760e84991398f53c3a"
+    },
+    "object_face.gd": {
+      "baseline_sha256": "67fa50fdfaa34d9d68bf7bab767bee4d2850c98165696debc2f2b7421303f1a8",
+      "candidate_sha256": "d322fd2dd5dd208e58a384469cec44e04bc5de53c74fc3fa5742e578b8b4ea52"
+    },
+    "object_rig.gd": {
+      "baseline_sha256": "5d4ec206fd98d75ebcab9bac0628cdf94c670901a6fa822cfc3decec7c1793dc",
+      "candidate_sha256": "361b6dc8c1bf2fc86ffaea52016d657fcdfca3d89de221c44875565ea9571c23"
+    },
+    "tools/autoblink_source_guard.py": {
+      "baseline_sha256": "38284e3c2c3e21190e506b0b091dbde1bbb6d68fc6d0d10237bdec21d28c32ff",
+      "candidate_sha256": "8faa5f3e9df2e5224081b6ab952372346c746b7ce0527616f1f72bebd56fcb6b"
+    },
+    "tools/verify_autoblink_scope.py": {
+      "baseline_sha256": "bf37b3fe0678c3cee2d377f876bc31fc251ed4b240d75f7d0c8cd1a05ada16a8",
+      "candidate_sha256": "5169a91934699bdb742f8bc29a787edef2dea3240d878b6b9b36cc110b89ff37"
+    },
+    "tools/verify_relief_scope.py": {
+      "baseline_sha256": "4fb260ec50cdc31f92ca300dde515f7ac9ac47a6092f108eb3647bb6a686467b",
+      "candidate_sha256": "779bdbabac61af9d7a03eb2bab28d8942987199496e5038cf3f0b083004ccde4"
+    }
+  },
+  "new_files": {
+    "BROW_INNER_LIFT_STATUS.json": "bf6a9fce06dffdb191a7703f39aa302d419f96c8608c8f21fd6e12e385317a3a",
+    "BROW_INNER_LIFT_VALIDATION.md": "12a66271ea2af920340b3219f65f31c4b6b2b1e77619b5d90432b2dfe4ed53cc",
+    "source_references/brow_inner_lift_parent_inventory.json": "c51db70159bea2a0321f5f8ab58d2a0a698a2a8d88dd908dbd2ea57ab248144f",
+    "source_references/brow_inner_lift_predecessor_RELEASE.json": "8cf880737f32cc3796d4d7a064d8c6b4294c781394960ad2836a42e354d49c8d",
+    "source_references/brow_outer_anchor_geometry.json": "10aa1f17c8bdd6a5c61b2be660a44f7f3372da6e7879624f405c7d50b2b6691e",
+    "tests/test_brow_inner_lift_contract.gd": "778d35e17333718dbcb3fe4012b1ba613f6c9b3ec74990af674caa4c8b058aa7",
+    "tools/brow_source_guard.py": "2d0133db0e649aceee7ad460695986dcc5247019fe0d2cb56f1e416a52318e1d",
+    "tools/review_brow_extension.gd": "2267e3727ba4a054401c9c79f353fd03da83764e33b99f9890a6cc7289e69d60",
+    "tools/review_brow_parity.gd": "6ced2e503889203a7007f1f110f951dd46f984a71d9554c72f74d9b40b178d03",
+    "tools/test_outer_anchor_preflight.gd": "bdcb044c3f137b1217306f1384aee6335c554734daf3fb4f2ececd032a6b7618",
+    "tools/verify_brow_inner_lift_scope.py": "603afd66e5d8e07a48672cca19e82af0e4177939f947eff1f339697591a58b2f"
+  }
+}

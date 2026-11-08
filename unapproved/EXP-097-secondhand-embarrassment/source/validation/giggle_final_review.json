@@ -1,0 +1,367 @@
+{
+  "status": "Internal implementation checks passed; independent final review and user approval remain separate gates",
+  "base_commit": "69e74ce5049a13ad5aa33014cacb1287f494787a",
+  "runtime_art_inventory_sha256": "9eef8fc15352bda44e69e51581f00010a7e22fdab8e09cfa1dd2b4b8dc59f1d3",
+  "runtime_suites": [
+    {
+      "script": "test_object_rig.gd",
+      "exit": 0,
+      "results": [
+        "OBJECT_BASE_CHECKS_PASS checks=53704 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_yawn.gd",
+      "exit": 0,
+      "results": [
+        "YAWN_CHECKS_PASS checks=370567 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_teeth.gd",
+      "exit": 0,
+      "results": [
+        "TEETH_CHECKS_PASS checks=17017 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "test_expression_backbone.gd",
+      "exit": 0,
+      "results": [
+        "EXPRESSION_BACKBONE_PASS checks=172090 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_gaze_runtime.gd",
+      "exit": 0,
+      "results": [
+        "GAZE_RUNTIME_PASS checks=1757314 failures=0 fractional_samples=2002 endpoint_states=108"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_viewer_layout.gd",
+      "exit": 0,
+      "results": [
+        "VIEWER_LAYOUT_PASS enabled=true checks=28 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_smile_controls.gd",
+      "exit": 0,
+      "results": [
+        "SMILE_CONTROLS checks=237 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_laughter_runtime.gd",
+      "exit": 0,
+      "results": [
+        "LAUGHTER_RUNTIME checks=114535 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_spread_runtime.gd",
+      "exit": 0,
+      "results": [
+        "SPREAD_RUNTIME checks=528382 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_giggle_runtime.gd",
+      "exit": 0,
+      "results": [
+        "GIGGLE_RUNTIME checks=86890 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_corner_lift_runtime.gd",
+      "exit": 0,
+      "results": [
+        "CORNER_LIFT_RUNTIME checks=313208 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_closed_smile_contract.gd",
+      "exit": 0,
+      "results": [
+        "CLOSED_SMILE_CONTRACT checks=1041254 failures=0 (structural/runtime only; no visual likeness verdict)"
+      ],
+      "errors": []
+    },
+    {
+      "script": "tests/test_blush_controls.gd",
+      "exit": 0,
+      "results": [
+        "BLUSH_CONTROLS checks=2985 failures=0"
+      ],
+      "errors": []
+    }
+  ],
+  "python_suites": [
+    {
+      "test": "build_object_face.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_object_base.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_yawn.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_teeth.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_gaze_assets.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_gaze_coverage.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_lid_handoff.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_smile_support.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_spread_support.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_closed_smile_support.py",
+      "exit": 0
+    },
+    {
+      "test": "verify_blush_source.py",
+      "exit": 0
+    }
+  ],
+  "source_guards": {
+    "giggle": 983,
+    "welcome": 826,
+    "closed_smile": 269,
+    "blush": 26,
+    "all_passed": true
+  },
+  "capture_renderer": "Godot 4.6.3, supported desktop display, OpenGL 4.5 Mesa 25.0.7 llvmpipe",
+  "capture_source_parity": {
+    "all_runtime_art_files_exact_except_documentary_manifest": true,
+    "manifest_runtime_entries_equal": true,
+    "runtime_art_inventory_sha256": "9eef8fc15352bda44e69e51581f00010a7e22fdab8e09cfa1dd2b4b8dc59f1d3",
+    "files_checked": 245,
+    "only_manifest_changes": "dependency hash locks, optional diagnostic/provenance fields and shipping builder hash; runtime entries unchanged"
+  },
+  "actual_render_comparison": {
+    "welcome": {
+      "frames": 300,
+      "baseline_receipt_sha256": "9a86f3094d8baa97c3178358c6b556d741c254876b70dd27cd2f98d299f2937c",
+      "candidate_receipt_sha256": "737fe14d4d9bdf2d808ed771b9cec0509c3ed75f88cad7bca82f106291f0e5ba",
+      "pixel_mismatches": [],
+      "state_mismatches": [],
+      "original_owner_mismatches": []
+    },
+    "old_and_gaze": {
+      "frames": 410,
+      "baseline_receipt_sha256": "3d6e48abbd5bde3838a3b5cb4fad2d370d6671e34f762ca4d43ada1b5e5f2b19",
+      "candidate_receipt_sha256": "72ecbe2575cafb5dd2b6530ff0ce003b1be5723db9b885f459bbcb1effbb1511",
+      "pixel_mismatches": [],
+      "state_mismatches": [],
+      "original_owner_mismatches": []
+    },
+    "giggle_zero_effect": {
+      "frames": 240,
+      "full_mismatches": [],
+      "native_mismatches": [],
+      "state_mismatches": []
+    },
+    "cycles": {
+      "full": {
+        "pair_mismatches": [],
+        "neutral_end_equals_start": true
+      },
+      "native": {
+        "pair_mismatches": [],
+        "neutral_end_equals_start": true
+      }
+    },
+    "passed": true
+  },
+  "effect_confinement": {
+    "full": {
+      "outside_fixed_cheek_support": [],
+      "allowance": "one native pixel or two viewer pixels for antialias/coordinate rounding",
+      "compared_frames": 240
+    },
+    "native": {
+      "outside_fixed_cheek_support": [],
+      "allowance": "one native pixel or two viewer pixels for antialias/coordinate rounding",
+      "compared_frames": 240
+    }
+  },
+  "mouth_aperture": {
+    "probe": "production cavity shader opaque-white raster probe, not a character render",
+    "poses": 810,
+    "maximum_integrated_source_px": 29.8000000417233,
+    "maximum_nonzero_rows": 31,
+    "physical_cap": 30.8,
+    "failures": [],
+    "reused_from_same_task_no_blush_baseline": true,
+    "shader_probe_and_seam_inputs_byte_exact": true,
+    "evidence_sha256": "f81dedc5be89a79907c9c92a2cae493aca436aecc93a226175e782e1d4e386d5"
+  },
+  "artifacts": {
+    "EXP006_matched_reference.png": {
+      "filename": "EXP006_matched_reference.png",
+      "sha256": "c93801fd3da3cdbd58c217edb92a9e686bcf30c295334f6744b6aa0c961e3b76",
+      "bytes": 736311
+    },
+    "ryoko_EXP-006_face_detail.mp4": {
+      "filename": "ryoko_EXP-006_face_detail.mp4",
+      "sha256": "a5ab43a527606d84301fa9f458d5db555ef75cda9ef34984c26b5b2a0d1d6a3a",
+      "bytes": 340550,
+      "video": {
+        "width": 772,
+        "height": 740,
+        "avg_frame_rate": "30/1",
+        "duration": "8.000000",
+        "nb_frames": "240"
+      }
+    },
+    "ryoko_EXP-006_suppressed_giggle.mp4": {
+      "filename": "ryoko_EXP-006_suppressed_giggle.mp4",
+      "sha256": "be3ecda7a3f237bb074a67e4b02eafbfaacba6423bef6a9d19794befc175ee26",
+      "bytes": 123187,
+      "video": {
+        "width": 568,
+        "height": 800,
+        "avg_frame_rate": "30/1",
+        "duration": "8.000000",
+        "nb_frames": "240"
+      }
+    }
+  },
+  "reference_board": {
+    "reference_sheet_sha256": "59a58716099bdd126e7ab4a106fdfb5ae9b75471e4d4bdd0b978997428e1a848",
+    "crops": [
+      {
+        "panel": 1,
+        "source_bounds": [
+          120,
+          145,
+          315,
+          330
+        ],
+        "time": 0,
+        "actual_native_source": "native_0000.png",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 5,
+        "source_bounds": [
+          538,
+          563,
+          733,
+          748
+        ],
+        "time": 1,
+        "actual_native_source": "native_0100.png",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 6,
+        "source_bounds": [
+          956,
+          563,
+          1151,
+          748
+        ],
+        "time": 1.36,
+        "actual_native_source": "native_0136.png",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      },
+      {
+        "panel": 9,
+        "source_bounds": [
+          956,
+          981,
+          1151,
+          1166
+        ],
+        "time": 2.8,
+        "actual_native_source": "native_0280.png",
+        "actual_crop": [
+          371,
+          400,
+          757,
+          770
+        ],
+        "shipping_mouth_crop": [
+          239,
+          365,
+          329,
+          408
+        ]
+      }
+    ],
+    "normal_speed_playback_performed": false
+  },
+  "frame_inspection": {
+    "decoded_full_frames": 240,
+    "decoded_detail_frames": 240,
+    "chronological_contact_pages_inspected": 6,
+    "actual_native_keyposes_inspected": 13,
+    "normal_speed_playback_performed": false
+  },
+  "loopback_integration": "Not rerun: environment cannot bind a listening socket. In-process bounds and ownership tests passed."
+}

@@ -1,0 +1,100 @@
+{
+  "expression": "EXP-050 Frustrated pout",
+  "status": "One exact-value union diagnostic; not refinement, profile, timeline or acceptance",
+  "parent_component_plan_sha256": "1afb52299c8984bd2373e24cf54c9dfd21dc94915c72017384afc0fbf27b99a1",
+  "parent_component_report_sha256": "695b648884a6be4ff71393d527ce171764c36e1bc09e0b4d7bdc001a922d6ee2",
+  "baseline_freeze_sha256": "dd52d78b1a6987140ea0728a41f35841746fc0e102c66c1941fd64677ddf919a",
+  "source_sheet_sha256": "f28d5df05da97ca151428e8e97e28e728b1c82fcddda396080b6f370886cff6f",
+  "stages": [
+    "combined"
+  ],
+  "candidate_cases": [
+    {
+      "label": "neutral_start",
+      "source_key": 1,
+      "combined_values": {}
+    },
+    {
+      "label": "kp3_onset",
+      "source_key": 3,
+      "combined_values": {
+        "brow_tilt_screen_left": 0.45,
+        "brow_tilt_screen_right": 0.39,
+        "brow_screen_left": -0.19,
+        "brow_screen_right": -0.29,
+        "blink_R": 0.04,
+        "blink_L": 0.03,
+        "mouth_purse": 0.5
+      }
+    },
+    {
+      "label": "kp5_peak",
+      "source_key": 5,
+      "combined_values": {
+        "brow_tilt_screen_left": 0.55,
+        "brow_tilt_screen_right": -1.0,
+        "brow_screen_left": -1.0,
+        "brow_screen_right": -1.0,
+        "blink_R": 0.08,
+        "blink_L": 0.06,
+        "mouth_purse": 1.0
+      }
+    },
+    {
+      "label": "kp6_sustained",
+      "source_key": 6,
+      "combined_values": {
+        "brow_tilt_screen_left": 0.25,
+        "brow_tilt_screen_right": -0.72,
+        "brow_screen_left": -0.95,
+        "brow_screen_right": -0.91,
+        "blink_R": 0.07,
+        "blink_L": 0.05,
+        "mouth_purse": 0.95
+      }
+    },
+    {
+      "label": "kp7_release",
+      "source_key": 7,
+      "combined_values": {
+        "brow_tilt_screen_left": -0.34,
+        "brow_tilt_screen_right": 0.16,
+        "brow_screen_left": -0.49,
+        "brow_screen_right": -0.15,
+        "blink_R": 0.04,
+        "blink_L": 0.03,
+        "mouth_purse": 0.6
+      }
+    },
+    {
+      "label": "neutral_return",
+      "source_key": 9,
+      "combined_values": {}
+    }
+  ],
+  "required_zero_channels": [
+    "gaze_x",
+    "gaze_y",
+    "gaze_down_extra",
+    "hair_sway",
+    "blush_intensity",
+    "eye_smile_R",
+    "eye_smile_L",
+    "mouth_open",
+    "mouth_smile",
+    "mouth_spread",
+    "mouth_corner_lift",
+    "mouth_corner_lift_screen_left",
+    "mouth_corner_lift_screen_right",
+    "mouth_width_screen_left",
+    "mouth_width_screen_right",
+    "mouth_lip_press",
+    "mouth_oral_lift",
+    "brow_inner_lift_screen_left",
+    "brow_inner_lift_screen_right"
+  ],
+  "scope": "Exact disjoint union of the six already captured eye and mouth hypotheses. No changed, new or omitted nonzero values. Observe whole-face acting at native face and full-bust scales; do not infer failure solely from inherited canonical lip fullness or absent source paint. Keep measured seam and terminal residuals visible. The earlier component-only whole-face HOLD is superseded as inconclusive until this diagnostic is reviewed.",
+  "no_parameter_refinement": true,
+  "no_additional_poses": true,
+  "normal_speed_playback_claim": false
+}
