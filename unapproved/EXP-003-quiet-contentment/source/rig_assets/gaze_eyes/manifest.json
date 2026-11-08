@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "source": "artwork/bust_base.png",
+  "source_sha256": "30e37ee3c3dd6cfa959b31263e7f0f469bcd1b8c06fa5ccfaaf96d236fa63287",
+  "source_commit": "d8d9d20542f8b636890145709d0c1228f83fd7cb",
+  "original_pngs_unchanged": true,
+  "foreground_objects": {
+    "hair_iris_crossing_screen_left": {
+      "file": "../gaze_eyes/hair_iris_crossing_screen_left.png",
+      "xy": [
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "z": 71,
+      "pivot": [
+        529,
+        218
+      ],
+      "hair_angle": 0.6,
+      "source": "artwork/blink_R.png registered at (395,450)",
+      "source_sha256": "22b2cbeaf18af410984f8db5c0a0044081b570c133145ebd610ecdad75edb02d",
+      "matte_rgb_is_inferred": true,
+      "matte_color_estimate": [
+        104,
+        125,
+        108
+      ],
+      "estimated_pixels": true,
+      "ownership": "Distal front-fringe strand recut from registered closed-source contour, inferred alpha against skin. Independent foreground hair, never gaze or eyelid owned."
+    }
+  },
+  "eyes": {
+    "screen_left": {
+      "origin": [
+        410,
+        469
+      ],
+      "size": [
+        123,
+        60
+      ],
+      "iris_origin": [
+        398,
+        453
+      ],
+      "iris_size": [
+        147,
+        92
+      ],
+      "ellipse_estimate": [
+        476.6,
+        488.7,
+        24.0,
+        28.8,
+        0.1
+      ],
+      "iris_padding": [
+        12,
+        16
+      ],
+      "completion_band_pixels": 4,
+      "extra_completion_pixels": 51,
+      "extra_completion_method": "Bounded inward canonical color-slope extrapolation across the additionally required 3\u20134px hidden band; upward continuation cannot introduce a brighter highlight.",
+      "input_sha256": {
+        "iris_screen_left.png": "4a65c74e428df0bc391e95e761c854a10e868a279ec5a725b4598f0e6fc7d8de",
+        "sclera_screen_left.png": "d8ea3b48166d0a489ee1d050ba80e533868a2388d6c18f79b0f1565b72d063b0",
+        "profile_screen_left.png": "9241de240b9b67a4eea9cf12b4bead202a9e6b314628f76def82bab0c9da793a",
+        "lower_profile_screen_left.png": "83e849fcbbb30b8ff7b80ffdc0f39f5697268e2bcaa2d0c6f025a66c6de75205"
+      },
+      "observed_iris_mask": "observed_iris_screen_left.png",
+      "iris_under_hair_estimate_mask": "iris_under_hair_estimate_screen_left.png",
+      "hair_transfer_pixels": 84,
+      "visible_iris_pixels": 1096,
+      "matte_estimate_pixels": 276,
+      "hidden_iris_estimate_pixels": 1276,
+      "concealed_cap_estimate_pixels": 1177,
+      "visible_inferred_iris_pixels": 99,
+      "observed_iris_pixels": 997,
+      "hidden_sclera_estimate_pixels": 1145,
+      "comparison_scope": "Eye interior before foreground hair, against flattened source. Not whole rendered neutral; see GAZE_VALIDATION.md for actual GPU metrics.",
+      "interior_source_changed_pixels": 146,
+      "interior_source_max_channel_error": 165,
+      "estimated_files": [
+        "iris_hidden_estimate_screen_left.png",
+        "iris_matte_estimate_screen_left.png",
+        "sclera_hidden_estimate_screen_left.png",
+        "iris_extra_completion_screen_left.png",
+        "visible_matte_change_screen_left.png"
+      ]
+    },
+    "screen_right": {
+      "origin": [
+        607,
+        468
+      ],
+      "size": [
+        112,
+        58
+      ],
+      "iris_origin": [
+        595,
+        452
+      ],
+      "iris_size": [
+        136,
+        90
+      ],
+      "ellipse_estimate": [
+        646.6,
+        489.5,
+        23.0,
+        26.4,
+        -0.04
+      ],
+      "iris_padding": [
+        12,
+        16
+      ],
+      "completion_band_pixels": 4,
+      "extra_completion_pixels": 46,
+      "extra_completion_method": "Bounded inward canonical color-slope extrapolation across the additionally required 3\u20134px hidden band; upward continuation cannot introduce a brighter highlight.",
+      "input_sha256": {
+        "iris_screen_right.png": "3ca131285135e3e6e4756ca0ac30000e67d825fa6b7c1abb1f823ff81ce43ec8",
+        "sclera_screen_right.png": "2d86791566bfd3b020351441e8e24a25b36362a6e9bc56f32ec3761465e3aa32",
+        "profile_screen_right.png": "b4da2f2d5412ca056185993829b0ab4d6d7c005bb4b25e468fa7814b21f1d4f3",
+        "lower_profile_screen_right.png": "86c0de9b4d255f07d19c0f1d591dfc60db6e656e2586ff95b1a86b5635e83a7f"
+      },
+      "observed_iris_mask": "observed_iris_screen_right.png",
+      "iris_under_hair_estimate_mask": "iris_under_hair_estimate_screen_right.png",
+      "hair_transfer_pixels": 0,
+      "visible_iris_pixels": 1016,
+      "matte_estimate_pixels": 227,
+      "hidden_iris_estimate_pixels": 983,
+      "concealed_cap_estimate_pixels": 977,
+      "visible_inferred_iris_pixels": 6,
+      "observed_iris_pixels": 1010,
+      "hidden_sclera_estimate_pixels": 1047,
+      "comparison_scope": "Eye interior before foreground hair, against flattened source. Not whole rendered neutral; see GAZE_VALIDATION.md for actual GPU metrics.",
+      "interior_source_changed_pixels": 33,
+      "interior_source_max_channel_error": 12,
+      "estimated_files": [
+        "iris_hidden_estimate_screen_right.png",
+        "iris_matte_estimate_screen_right.png",
+        "sclera_hidden_estimate_screen_right.png",
+        "iris_extra_completion_screen_right.png",
+        "visible_matte_change_screen_right.png"
+      ]
+    }
+  },
+  "limits_provisional": false,
+  "review_status": "local candidate; user approval pending",
+  "calibrated_travel_source_pixels": {
+    "left": 4,
+    "right": 4,
+    "up": 2,
+    "down": 1
+  },
+  "derivation": "Visible canonical pixels with inferred subpixel iris matte. Hidden sclera is row interpolation of canonical exposed whites; hidden iris cap/boundary colors are local continuation of this same iris. No assembly-source eye donor, new highlight, UV warp or gaze-zero special case.",
+  "limitations": "Flattened hair/iris and lower-lid antialias crossings are not clean original layers. New exposed inferred pixels require visual approval. Full hidden eye art is not claimed recovered."
+}

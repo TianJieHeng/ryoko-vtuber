@@ -1,0 +1,253 @@
+{
+  "status": "UNAPPROVED_OWNERSHIP_REVIEW_CANDIDATES_NOT_ERASE_MASKS",
+  "coordinate_system": "1136x1384 native canonical source pixels; boxes half-open",
+  "features": {
+    "backing_detached_upper_lash_tip": {
+      "owner": "stationary_backing",
+      "owner_source_file": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/object_face/stationary_backing.png",
+      "owner_source_sha256": "177eecdb2eec66c843676662cba6f44e91419897bb20b76cf042af61b3018b62",
+      "owner_origin": [
+        0,
+        0
+      ],
+      "inspection_roi_global": [
+        680,
+        465,
+        694,
+        477
+      ],
+      "source_core_bbox_global": [
+        683,
+        467,
+        692,
+        474
+      ],
+      "source_core_pixels": 25,
+      "matte_review_pixels": 45,
+      "source_core_mask": "masks/integration_residue/backing_detached_upper_lash_tip_source_core_global.png",
+      "inferred_review_halo_mask": "masks/integration_residue/backing_detached_upper_lash_tip_matte_review_global.png",
+      "source_core_owner_local_mask": "masks/integration_residue/backing_detached_upper_lash_tip_source_core_owner_local.png",
+      "exact_core_row_runs_y_xstart_xend_exclusive": [
+        [
+          467,
+          690,
+          691
+        ],
+        [
+          468,
+          689,
+          690
+        ],
+        [
+          469,
+          688,
+          691
+        ],
+        [
+          470,
+          686,
+          691
+        ],
+        [
+          471,
+          685,
+          690
+        ],
+        [
+          471,
+          691,
+          692
+        ],
+        [
+          472,
+          684,
+          689
+        ],
+        [
+          473,
+          683,
+          687
+        ]
+      ],
+      "recommendation": "Reassign source dark pigment to the neutral upper-lash/upper-surround owner. Estimated stationary skin continuation is needed beneath it; preserve immutable source art and neutral composite."
+    },
+    "backing_orphan_crease_flecks": {
+      "owner": "stationary_backing",
+      "owner_source_file": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/object_face/stationary_backing.png",
+      "owner_source_sha256": "177eecdb2eec66c843676662cba6f44e91419897bb20b76cf042af61b3018b62",
+      "owner_origin": [
+        0,
+        0
+      ],
+      "inspection_roi_global": [
+        659,
+        468,
+        681,
+        477
+      ],
+      "source_core_bbox_global": [
+        659,
+        471,
+        681,
+        474
+      ],
+      "source_core_pixels": 17,
+      "matte_review_pixels": 51,
+      "source_core_mask": "masks/integration_residue/backing_orphan_crease_flecks_source_core_global.png",
+      "inferred_review_halo_mask": "masks/integration_residue/backing_orphan_crease_flecks_matte_review_global.png",
+      "source_core_owner_local_mask": "masks/integration_residue/backing_orphan_crease_flecks_source_core_owner_local.png",
+      "exact_core_row_runs_y_xstart_xend_exclusive": [
+        [
+          471,
+          671,
+          673
+        ],
+        [
+          471,
+          677,
+          681
+        ],
+        [
+          472,
+          659,
+          663
+        ],
+        [
+          472,
+          671,
+          673
+        ],
+        [
+          472,
+          674,
+          675
+        ],
+        [
+          472,
+          678,
+          679
+        ],
+        [
+          473,
+          663,
+          665
+        ],
+        [
+          473,
+          673,
+          674
+        ]
+      ],
+      "recommendation": "Review as original upper-crease/upper-surround ownership, not new laugh ink. Separate only feature pigment from stationary skin; retain desired crease as its own owner rather than erase a rectangular region."
+    },
+    "fringe_dark_eye_crossing": {
+      "owner": "hair_front_fringe",
+      "owner_source_file": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/object_face/hair_front_fringe.png",
+      "owner_source_sha256": "7a725faff701de74ea5bef6078f39a79e9bef254c0357c114c4a921ee2f3938b",
+      "owner_origin": [
+        41,
+        55
+      ],
+      "inspection_roi_global": [
+        673,
+        474,
+        685,
+        485
+      ],
+      "source_core_bbox_global": [
+        674,
+        477,
+        685,
+        485
+      ],
+      "source_core_pixels": 15,
+      "matte_review_pixels": 31,
+      "source_core_mask": "masks/integration_residue/fringe_dark_eye_crossing_source_core_global.png",
+      "inferred_review_halo_mask": "masks/integration_residue/fringe_dark_eye_crossing_matte_review_global.png",
+      "source_core_owner_local_mask": "masks/integration_residue/fringe_dark_eye_crossing_source_core_owner_local.png",
+      "exact_core_row_runs_y_xstart_xend_exclusive": [
+        [
+          477,
+          677,
+          679
+        ],
+        [
+          478,
+          677,
+          680
+        ],
+        [
+          479,
+          679,
+          680
+        ],
+        [
+          480,
+          679,
+          681
+        ],
+        [
+          480,
+          684,
+          685
+        ],
+        [
+          481,
+          674,
+          675
+        ],
+        [
+          481,
+          681,
+          682
+        ],
+        [
+          482,
+          675,
+          676
+        ],
+        [
+          483,
+          677,
+          678
+        ],
+        [
+          483,
+          681,
+          682
+        ],
+        [
+          484,
+          678,
+          679
+        ]
+      ],
+      "recommendation": "Mixed eye/hair crossing. Review source-ink versus true hair matte; reassign lash-colored contamination behind hair and reconstruct only hidden hair-edge colors where required. Never punch a hole through approved hair."
+    },
+    "fringe_underlap_dark_crossing": {
+      "owner": "hair_front_fringe_underlap",
+      "owner_source_file": "/workspace/scratch/42f2baf55663/ai-control-packaging/final-v2/repo/ryoko_object_rig/rig_assets/object_face/hair_front_fringe_underlap.png",
+      "owner_source_sha256": "8919277a16fc3c184c4692b44ad3d8d1c30f526910aaf587adddf00059b6f423",
+      "owner_origin": [
+        287,
+        150
+      ],
+      "inspection_roi_global": [
+        673,
+        474,
+        685,
+        485
+      ],
+      "source_core_bbox_global": null,
+      "source_core_pixels": 0,
+      "matte_review_pixels": 0,
+      "source_core_mask": "masks/integration_residue/fringe_underlap_dark_crossing_source_core_global.png",
+      "inferred_review_halo_mask": "masks/integration_residue/fringe_underlap_dark_crossing_matte_review_global.png",
+      "source_core_owner_local_mask": "masks/integration_residue/fringe_underlap_dark_crossing_source_core_owner_local.png",
+      "exact_core_row_runs_y_xstart_xend_exclusive": [],
+      "recommendation": "Same crossing in the underlap owner, if present. Keep hair occlusion coverage, verify both primary and underlap together; do not blindly duplicate cleanup."
+    }
+  },
+  "source_files_unchanged": true,
+  "interpretation": "Masks identify exact existing pixels in narrowly inspected residue locations. A 1px support halo is provided separately as an inferred matte-review boundary, not as permission to erase source art. Only the stated owners contribute; none are new laughter parts."
+}

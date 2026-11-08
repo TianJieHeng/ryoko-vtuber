@@ -1,0 +1,59 @@
+{
+  "candidate": "Scoped EXP-107 confident reassurance on the shared rig",
+  "status": "Local review candidate; user approval and publication pending",
+  "base_commit": "4f3deaa2de3eedb691a9f0c795c7b8563663e472",
+  "base_subtree": "ryoko_object_rig/",
+  "base_project_tree": "1dc4895b0e0fbf5a7498cf853b267d19a44e8b3d",
+  "authored_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107"
+  ],
+  "approved_predecessors": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006"
+  ],
+  "protected_parent_pngs": 182,
+  "new_pngs": 0,
+  "new_controls": {
+    "mouth_oral_lift": [
+      0,
+      1
+    ]
+  },
+  "excluded": [
+    "wide-eye support",
+    "EXP-003",
+    "EXP-007",
+    "tracking",
+    "body acting",
+    "external AI/TTS connection"
+  ],
+  "review_movie": {
+    "frames": 240,
+    "fps": 30,
+    "duration_seconds": 8,
+    "cycles": 2,
+    "normal_speed_playback_performed": false
+  },
+  "reference_sheet_git_blob": "beb8ee82e3edde215da08097552b7de88432e731",
+  "reference_sheet_sha256": "08e4f43e20144930411dd49087eaa76d70bde1fb0214b70b6d56bd5ed42797d0",
+  "mouth_limits": {
+    "normalized": [
+      0,
+      1
+    ],
+    "physical_multiplier": 0.55,
+    "per_column_source_px_max": 30.8,
+    "fixed_central_upper_teeth_xy": [
+      533,
+      626
+    ]
+  },
+  "verification": "REASSURANCE_SCOPE_VALIDATION.md",
+  "publication": "EXP-107 is not published. No CI, paid resources, remote execution or external model/TTS integration."
+}

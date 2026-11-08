@@ -1,0 +1,722 @@
+{
+  "version": 1,
+  "status": "INTERNAL_CANDIDATE_NOT_USER_APPROVED",
+  "control": {
+    "name": "mouth_spread",
+    "range": [
+      0,
+      1
+    ],
+    "effective": "mouth_spread * mouth_smile",
+    "half_width_increment_px": 20,
+    "additional_corner_lift_px": 5,
+    "vertical_aperture_cap": 0.55,
+    "maximum_per_column_aperture_px": 30.8,
+    "center_lift_px": 4
+  },
+  "sources": {
+    "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png": "39ef37231d3347fe5f729e3fc427f9f59cc1604a12988b6c3ba563cb7ce3971e",
+    "assembly_sources/head/RYO_HEAD_viseme_E_v001.png": "5ae868155be257c6d9cb5b474d7ea4b55027fce48464560dd0678ddc3b787170",
+    "assembly_sources/head/RYO_HEAD_tongue_v001.png": "8f731572395082142053234df3466f1e374de336a3510cfff9e9815bb85ff5a3",
+    "rig_assets/smile_support/lip_continuations_atlas.png": "00415709223907183cc1ddf7a9700e12d70e84e322544e4b2244e3f6e1591d0c"
+  },
+  "objects": {
+    "cavity_left": {
+      "file": "cavity_left.png",
+      "observed_mask": "cavity_left_observed_support.png",
+      "xy": [
+        501,
+        620
+      ],
+      "size": [
+        24,
+        76
+      ],
+      "source": "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png",
+      "source_crop_xyxy": [
+        230,
+        120,
+        254,
+        196
+      ],
+      "kind": "cavity_underlap",
+      "pigment": "SOURCE_DERIVED_OBSERVED_ANATOMICAL_PIGMENT",
+      "registration": "INFERRED_CANONICAL_REGISTRATION_AND_HIDDEN_UNDERLAP",
+      "notes": "Native source crop, no color invention or runtime resampling. Registration and newly exposed cavity continuation are inferred. Central established cavity remains unchanged.",
+      "sha256": "2054a824498fed4f77857eeafec86417f79d5e49e9759d4ef18aa068fb597842"
+    },
+    "cavity_right": {
+      "file": "cavity_right.png",
+      "observed_mask": "cavity_right_observed_support.png",
+      "xy": [
+        605,
+        620
+      ],
+      "size": [
+        24,
+        76
+      ],
+      "source": "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png",
+      "source_crop_xyxy": [
+        355,
+        120,
+        379,
+        196
+      ],
+      "kind": "cavity_underlap",
+      "pigment": "SOURCE_DERIVED_OBSERVED_ANATOMICAL_PIGMENT",
+      "registration": "INFERRED_CANONICAL_REGISTRATION_AND_HIDDEN_UNDERLAP",
+      "notes": "Native source crop, no color invention or runtime resampling. Registration and newly exposed cavity continuation are inferred. Central established cavity remains unchanged.",
+      "sha256": "ded411f328404e9f563b24fec105077329fed2fdba4a09c4f2430f313985ff9e"
+    },
+    "cavity_top": {
+      "file": "cavity_top.png",
+      "observed_mask": "cavity_top_observed_support.png",
+      "xy": [
+        525,
+        619
+      ],
+      "size": [
+        80,
+        10
+      ],
+      "source": "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png",
+      "source_crop_xyxy": [
+        265,
+        136,
+        345,
+        146
+      ],
+      "kind": "cavity_underlap",
+      "pigment": "SOURCE_DERIVED_OBSERVED_ANATOMICAL_PIGMENT",
+      "registration": "INFERRED_CANONICAL_REGISTRATION_AND_HIDDEN_UNDERLAP",
+      "notes": "Native source crop, no color invention or runtime resampling. Registration and newly exposed cavity continuation are inferred. Central established cavity remains unchanged.",
+      "sha256": "3f2b5bbb2dce5de0ce557347c5611bc7cea4a62fabfa5ee99dd5593074fa5b57"
+    },
+    "teeth_left": {
+      "file": "teeth_left.png",
+      "observed_mask": "teeth_left_observed_support.png",
+      "xy": [
+        532,
+        605
+      ],
+      "size": [
+        45,
+        28
+      ],
+      "source": "assembly_sources/head/RYO_HEAD_viseme_E_v001.png",
+      "source_crop_xyxy": [
+        260,
+        140,
+        484,
+        180
+      ],
+      "kind": "posterior_enamel",
+      "pigment": "SOURCE_DERIVED_OBSERVED_ANATOMICAL_PIGMENT",
+      "registration": "INFERRED_CANONICAL_REGISTRATION_AND_HIDDEN_UNDERLAP",
+      "notes": "Only observed E-source enamel. Static uniform0.5 registration and approved white transform. Left/right crop (0, 0, 37, 20). Entire independent wing starts above the closed upper aperture, then translates outward20px and downward9px with slight rigid rotation as spread increases. The aperture spatially uncovers its anatomical taper; there is no moving vertical enamel cut or UV/scale/color change. Front arch remains at533,626. Hidden anatomical correspondence and paths are inferred.",
+      "sha256": "20017f22a289fe604bc4c83e6b1e953eabb768772d26007daa4b73586f2e47c5"
+    },
+    "teeth_right": {
+      "file": "teeth_right.png",
+      "observed_mask": "teeth_right_observed_support.png",
+      "xy": [
+        553,
+        605
+      ],
+      "size": [
+        45,
+        28
+      ],
+      "source": "assembly_sources/head/RYO_HEAD_viseme_E_v001.png",
+      "source_crop_xyxy": [
+        260,
+        140,
+        484,
+        180
+      ],
+      "kind": "posterior_enamel",
+      "pigment": "SOURCE_DERIVED_OBSERVED_ANATOMICAL_PIGMENT",
+      "registration": "INFERRED_CANONICAL_REGISTRATION_AND_HIDDEN_UNDERLAP",
+      "notes": "Only observed E-source enamel. Static uniform0.5 registration and approved white transform. Left/right crop (75, 0, 112, 20). Entire independent wing starts above the closed upper aperture, then translates outward20px and downward9px with slight rigid rotation as spread increases. The aperture spatially uncovers its anatomical taper; there is no moving vertical enamel cut or UV/scale/color change. Front arch remains at533,626. Hidden anatomical correspondence and paths are inferred.",
+      "sha256": "ee43942f8ccbbf727125cc85102159bc938cff87546d103c2ca07e6262e537e9"
+    },
+    "upper_enamel_roots": {
+      "file": "upper_enamel_roots.png",
+      "observed_mask": "upper_enamel_roots_observed_support.png",
+      "xy": [
+        533,
+        629
+      ],
+      "size": [
+        64,
+        4
+      ],
+      "source": "assembly_sources/head/RYO_HEAD_viseme_E_v001.png",
+      "source_crop_xyxy": [
+        308,
+        154,
+        436,
+        162
+      ],
+      "kind": "enamel_root_underlap",
+      "pigment": "SOURCE_DERIVED_OBSERVED_ANATOMICAL_PIGMENT",
+      "registration": "INFERRED_CANONICAL_REGISTRATION_AND_HIDDEN_UNDERLAP",
+      "notes": "Actual observed E-source enamel, uniform0.5 registration, fixed at the approved front-arch attachment. Inferred static upper-root ownership ends before each original crown top. It is uncovered by upperlip-center lift and never translates, changes scale, or replaces the central arch. Baseline rendered invisibility must be verified.",
+      "sha256": "a2d5b7bc43522c9f7eb6160abf777eb82a4cb0865faf8f34dd7f0b24ca08943e"
+    },
+    "tongue_surface": {
+      "file": "tongue_surface.png",
+      "observed_mask": "tongue_surface_observed_support.png",
+      "xy": [
+        510,
+        667
+      ],
+      "size": [
+        108,
+        58
+      ],
+      "source": "assembly_sources/head/RYO_HEAD_tongue_v001.png",
+      "source_crop_xyxy": [
+        83,
+        25,
+        467,
+        219
+      ],
+      "kind": "lower_oral_surface",
+      "pigment": "SOURCE_DERIVED_OBSERVED_ANATOMICAL_PIGMENT",
+      "registration": "INFERRED_CANONICAL_REGISTRATION_AND_HIDDEN_UNDERLAP",
+      "notes": "Inferred lower oral/tongue top surface registration. Deep source owner rests fully behind aperture at spread0 and translates rigidly upward at spread>0; no whole-mouth patch. Existing tongue owner/texture/home remain unchanged and occluded below the bounded aperture.",
+      "sha256": "e9423f9023bd63e88990da71a16378d5ba1a9f1cfae17307f3565ff198a97566"
+    }
+  },
+  "inference": [
+    "Existing26 lip-joint sleeves are entirely inferred pigment; wider reveal increases their contribution. Their original full inferred-mask atlas remains authoritative. No claim of negligible contribution.",
+    "New enamel anatomical correspondence, cutout mattes, registration, tooth attachment rotations and reveal boundaries are inferred. Pigment is from actual assembly anatomy; no artificial colored geometry. Moving posterior enamel and tongue textures have4px transparent padding; retained source-derived RGBA remains unchanged inside it.",
+    "New cavity continuation and lower oral-surface placement are inferred unseen anatomy. Observed-support masks identify source-derived pigment, not a claim that its new placement was observed.",
+    "Current spread support does not implement inward/rounded lips, independent closed-smile corner lift, tongue articulation or phonemes.",
+    "26 new entirely inferred outer underlaps extend existing lip-joint cross-sections. Their full support is masked in a separate atlas. They appear only where rigid endpoint gaps extend beyond the original12px sleeve, not via opacity blending."
+  ],
+  "joint_extensions": [
+    {
+      "name": "lower_joint_continuation_9_outer_underlap",
+      "parent": "lower_joint_continuation_9",
+      "edge": 9,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        4,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_9_outer_underlap",
+      "parent": "upper_joint_continuation_9",
+      "edge": 9,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        32,
+        4,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_14_outer_underlap",
+      "parent": "lower_joint_continuation_14",
+      "edge": 14,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        60,
+        4,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_14_outer_underlap",
+      "parent": "upper_joint_continuation_14",
+      "edge": 14,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        88,
+        4,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_19_outer_underlap",
+      "parent": "lower_joint_continuation_19",
+      "edge": 19,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        116,
+        4,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_19_outer_underlap",
+      "parent": "upper_joint_continuation_19",
+      "edge": 19,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        144,
+        4,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_24_outer_underlap",
+      "parent": "lower_joint_continuation_24",
+      "edge": 24,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        57,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_24_outer_underlap",
+      "parent": "upper_joint_continuation_24",
+      "edge": 24,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        32,
+        57,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_29_outer_underlap",
+      "parent": "lower_joint_continuation_29",
+      "edge": 29,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        60,
+        57,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_29_outer_underlap",
+      "parent": "upper_joint_continuation_29",
+      "edge": 29,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        88,
+        57,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_34_outer_underlap",
+      "parent": "lower_joint_continuation_34",
+      "edge": 34,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        116,
+        57,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_34_outer_underlap",
+      "parent": "upper_joint_continuation_34",
+      "edge": 34,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        144,
+        57,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_40_outer_underlap",
+      "parent": "lower_joint_continuation_40",
+      "edge": 40,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        110,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_40_outer_underlap",
+      "parent": "upper_joint_continuation_40",
+      "edge": 40,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        32,
+        110,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_46_outer_underlap",
+      "parent": "lower_joint_continuation_46",
+      "edge": 46,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        60,
+        110,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_46_outer_underlap",
+      "parent": "upper_joint_continuation_46",
+      "edge": 46,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        88,
+        110,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_51_outer_underlap",
+      "parent": "lower_joint_continuation_51",
+      "edge": 51,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        116,
+        110,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_51_outer_underlap",
+      "parent": "upper_joint_continuation_51",
+      "edge": 51,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        144,
+        110,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_56_outer_underlap",
+      "parent": "lower_joint_continuation_56",
+      "edge": 56,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        163,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_56_outer_underlap",
+      "parent": "upper_joint_continuation_56",
+      "edge": 56,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        32,
+        163,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_61_outer_underlap",
+      "parent": "lower_joint_continuation_61",
+      "edge": 61,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        60,
+        163,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_61_outer_underlap",
+      "parent": "upper_joint_continuation_61",
+      "edge": 61,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        88,
+        163,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_66_outer_underlap",
+      "parent": "lower_joint_continuation_66",
+      "edge": 66,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        116,
+        163,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_66_outer_underlap",
+      "parent": "upper_joint_continuation_66",
+      "edge": 66,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        144,
+        163,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "lower_joint_continuation_71_outer_underlap",
+      "parent": "lower_joint_continuation_71",
+      "edge": 71,
+      "upper": false,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        4,
+        216,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    },
+    {
+      "name": "upper_joint_continuation_71_outer_underlap",
+      "parent": "upper_joint_continuation_71",
+      "edge": 71,
+      "upper": true,
+      "file": "joint_edge_underlaps_atlas.png",
+      "inferred_mask": "joint_edge_underlaps_inferred_atlas.png",
+      "atlas_rect": [
+        32,
+        216,
+        20,
+        45
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "classification": "ENTIRELY_INFERRED_HIDDEN_JOINT_PIGMENT",
+      "note": "Native old sleeve cross-section extended at its left/right edge. Fixed UV; only outside old sleeve support is spatially uncovered. Original owner remains unchanged."
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "id": "EXP-005",
+  "title": "Hearty laughter",
+  "duration": 5.4,
+  "status": "complete authored local performance; user review pending",
+  "intent": "Smiling crescent eyes and independently articulated smiling lips, breath-sized anticipation, three unequal laugh pulses, brow rebounds, gentle release and neutral return.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "timing_origin": "Fifteen historical approved EXP-005 beat times retained exactly; values translated to separate rigid owners and normalized mouth aperture. The old negative painted-mouth scale values are not copied.",
+  "scope": "Bust-up AI-controlled separate-object face. No face/chin/neck/body deformation, gaze/head bob/hand gesture or model/TTS connection. Historical crescent pigment, canonical native lips plus explicit inferred joint continuation, unchanged white teeth.",
+  "interpolation": "Existing generic cubic smoothstep timeline with0.30s retrigger and0.45s release; all shape/articulation uses fixed UV, unit local scale, rigid joints and spatial clipping.",
+  "keyframes": [
+    {
+      "time": 0.0,
+      "phase": "neutral",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.0,
+        "eye_smile_L": 0.0,
+        "mouth_open": 0.0,
+        "mouth_smile": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 0.3,
+      "phase": "anticipation",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.03,
+        "eye_smile_L": 0.03,
+        "mouth_open": 0.0,
+        "mouth_smile": 0.08,
+        "brow_screen_left": 0.1,
+        "brow_screen_right": 0.09200000000000001,
+        "brow_tilt_screen_left": -0.010000000000000002,
+        "brow_tilt_screen_right": 0.010000000000000002,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 0.44,
+      "phase": "expression_entry_start",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.18,
+        "eye_smile_L": 0.18,
+        "mouth_open": 0.035,
+        "mouth_smile": 0.24,
+        "brow_screen_left": 0.14,
+        "brow_screen_right": 0.12880000000000003,
+        "brow_tilt_screen_left": -0.014000000000000002,
+        "brow_tilt_screen_right": 0.014000000000000002,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 0.66,
+      "phase": "onset",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.96,
+        "eye_smile_L": 0.96,
+        "mouth_open": 0.235,
+        "mouth_smile": 1.0,
+        "brow_screen_left": 0.18,
+        "brow_screen_right": 0.1656,
+        "brow_tilt_screen_left": -0.018,
+        "brow_tilt_screen_right": 0.018,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 1.02,
+      "phase": "build",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.96,
+        "eye_smile_L": 0.96,
+        "mouth_open": 0.78,
+        "mouth_smile": 1.0,
+        "brow_screen_left": 0.22,
+        "brow_screen_right": 0.2024,
+        "brow_tilt_screen_left": -0.022000000000000002,
+        "brow_tilt_screen_right": 0.022000000000000002,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 1.3,
+      "phase": "peak",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.98,
+        "eye_smile_L": 0.98,
+        "mouth_open": 0.94,
+        "mouth_smile": 1.0,
+        "brow_screen_left": 0.25,
+        "brow_screen_right": 0.23,
+        "brow_tilt_screen_left": -0.025,
+        "brow_tilt_screen_right": 0.025,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 1.62,
+      "phase": "laugh_compress_1",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 1.0,
+        "eye_smile_L": 1.0,
+        "mouth_open": 0.62,
+        "mouth_smile": 0.98,
+        "brow_screen_left": 0.09,
+        "brow_screen_right": 0.0828,
+        "brow_tilt_screen_left": -0.009,
+        "brow_tilt_screen_right": 0.009,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 1.91,
+      "phase": "laugh_open_2",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.95,
+        "eye_smile_L": 0.95,
+        "mouth_open": 1.0,
+        "mouth_smile": 1.0,
+        "brow_screen_left": 0.35,
+        "brow_screen_right": 0.322,
+        "brow_tilt_screen_left": -0.034999999999999996,
+        "brow_tilt_screen_right": 0.034999999999999996,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 2.19,
+      "phase": "laugh_compress_2",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 1.0,
+        "eye_smile_L": 1.0,
+        "mouth_open": 0.66,
+        "mouth_smile": 0.98,
+        "brow_screen_left": 0.08,
+        "brow_screen_right": 0.0736,
+        "brow_tilt_screen_left": -0.008,
+        "brow_tilt_screen_right": 0.008,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 2.53,
+      "phase": "laugh_open_3",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.96,
+        "eye_smile_L": 0.96,
+        "mouth_open": 0.88,
+        "mouth_smile": 1.0,
+        "brow_screen_left": 0.22,
+        "brow_screen_right": 0.2024,
+        "brow_tilt_screen_left": -0.022000000000000002,
+        "brow_tilt_screen_right": 0.022000000000000002,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 2.92,
+      "phase": "laugh_tail",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.97,
+        "eye_smile_L": 0.97,
+        "mouth_open": 0.74,
+        "mouth_smile": 0.98,
+        "brow_screen_left": 0.14,
+        "brow_screen_right": 0.12880000000000003,
+        "brow_tilt_screen_left": -0.014000000000000002,
+        "brow_tilt_screen_right": 0.014000000000000002,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 3.48,
+      "phase": "release",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.95,
+        "eye_smile_L": 0.95,
+        "mouth_open": 0.6,
+        "mouth_smile": 0.94,
+        "brow_screen_left": 0.08,
+        "brow_screen_right": 0.0736,
+        "brow_tilt_screen_left": -0.008,
+        "brow_tilt_screen_right": 0.008,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 4.28,
+      "phase": "settle",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.86,
+        "eye_smile_L": 0.86,
+        "mouth_open": 0.18,
+        "mouth_smile": 0.75,
+        "brow_screen_left": 0.03,
+        "brow_screen_right": 0.0276,
+        "brow_tilt_screen_left": -0.003,
+        "brow_tilt_screen_right": 0.003,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 4.5,
+      "phase": "expression_exit_end",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.42,
+        "eye_smile_L": 0.42,
+        "mouth_open": 0.035,
+        "mouth_smile": 0.25,
+        "brow_screen_left": 0.01,
+        "brow_screen_right": 0.0092,
+        "brow_tilt_screen_left": -0.001,
+        "brow_tilt_screen_right": 0.001,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    },
+    {
+      "time": 5.4,
+      "phase": "neutral_return",
+      "values": {
+        "blink_R": 0.0,
+        "blink_L": 0.0,
+        "eye_smile_R": 0.0,
+        "eye_smile_L": 0.0,
+        "mouth_open": 0.0,
+        "mouth_smile": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0
+      }
+    }
+  ]
+}

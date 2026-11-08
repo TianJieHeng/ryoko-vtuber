@@ -1,0 +1,29 @@
+{
+  "purpose": "Exact intentional shared smile-controller additions. Original ordinary-lid shader and all 126 PNGs remain protected. Does not relax any spatial/filtering tests.",
+  "files": {
+    "control_bridge.gd": {
+      "ordinary_lid_baseline_sha256": "1c978345f5ca6dc3c7e2146cb11b298ac22738711ff4c8d4a9d8fae480f6f7bd",
+      "combined_smile_sha256": "b292a0b51f8f305be8da10539195e422cdf003758dd7a6e00f0cad738e441c53"
+    },
+    "expression_registry.gd": {
+      "ordinary_lid_baseline_sha256": "8bb4cebd1905d3b5f37f0388b9a696eb8264a1428518b89a586a71bdbfc7ab33",
+      "combined_smile_sha256": "fd360770fb91d58c10d11e6470f00562cbf7abd8602ba373b8ec4b3e51dedf7b"
+    },
+    "expression_rig.gd": {
+      "ordinary_lid_baseline_sha256": "374ab1ec22aca11d00925ac40860abbd43d03f3835fb3aac31db587f612a596a",
+      "combined_smile_sha256": "866b873b8a0428e6fede7bbb6c9f676786d2265bf1372b660f578822ec3fc56e"
+    },
+    "expression_viewer.gd": {
+      "ordinary_lid_baseline_sha256": "4160c08e06cbcbef0faae8d9a74b2255968f6082c9fe1e87002ac81b9f45aa63",
+      "combined_smile_sha256": "b90fd58006e37ad25deed1b264f608ae525f9b7742cd1e4f371c65db566707e4"
+    },
+    "object_face.gd": {
+      "ordinary_lid_baseline_sha256": "c69c82918b9e6012e55b6019b4d21bd0c0454e2978c03b0914a69b1cbbb43515",
+      "combined_smile_sha256": "84404bae0e56aec8df4ed804604063981fc586ab35607a150e49dc1fd4f6a69e"
+    },
+    "object_mouth_clip.gdshader": {
+      "ordinary_lid_baseline_sha256": "0268137c90efcd366c2251b407af87c4995464aeeeb6d8d41df703193bd9db6d",
+      "combined_smile_sha256": "51d8bab9ffeee8ed4b92b16371cafc47d5ccf9b73927b9c0ba7fb8ab8006ed1e"
+    }
+  }
+}

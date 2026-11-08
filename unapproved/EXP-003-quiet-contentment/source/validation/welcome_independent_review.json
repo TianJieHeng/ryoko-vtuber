@@ -1,0 +1,128 @@
+{
+  "status": "PASS_WITH_DISCLOSED_LIMITS",
+  "review_scope": "Only EXP-001 and required lateral-mouth support over exact approved EXP-005 predecessor; no remote publication asserted.",
+  "tested_source_inventory_sha256": "8023653337abb12c165cbd781f673594b7c3b05dab95ff9f985ccaaaa24a9d3c",
+  "tested_source_files": 356,
+  "runtime_art_files": 197,
+  "runtime_art_tree_sha256": "0fd51b64768c48584ae1aaf97fa0f243ecf3484958d9fa867d7a62a939950d7a",
+  "exact_archive_sha256": {
+    "v9": "4882931a321d9b82bf96a7b786872b8225b78a3ca045494b55ef9f8039e7db18",
+    "v14": "eb1ee48de0ec78ec2c298b21b4641b8ede6bd38b3dd681208b40847ef141a3a9"
+  },
+  "registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001"
+  ],
+  "source_scope": {
+    "original_pngs_exact": 157,
+    "new_lateral_pngs_exact_v14": 17,
+    "no_predecessor_paths_removed": true,
+    "wide_and_held_expression_runtime_excluded": true,
+    "independent_scope_checks": 1685,
+    "scope_failures": []
+  },
+  "fresh_nonrender_checks": {
+    "clean_import_passed": true,
+    "runtime_suites": 9,
+    "runtime_assertions": 2827625,
+    "runtime_failures": 0,
+    "python_source_suites": 8,
+    "source_rebuild_passed": true,
+    "packaged_hashes_unchanged_after_rebuild": true,
+    "shipped_scope_guard_checks": 831,
+    "independent_runtime_assertions": 624,
+    "old_profile_and_gaze_state_comparisons": 410,
+    "old_controls_and_existing_owner_snapshots_exact": true
+  },
+  "actual_renderer": "Godot 4.6.3.stable.official.7d41c59c4; OpenGL 4.5 Compatibility; Mesa 25.0.7 llvmpipe; legitimate existing local graphical desktop.",
+  "welcome_native_comparison": {
+    "frames_per_source": 300,
+    "resolution": [
+      1136,
+      1454
+    ],
+    "fps": 30,
+    "complete_cycles": 2,
+    "all_png_bytes_identical": true,
+    "all_pixels_identical": true,
+    "maximum_channel_delta": 0,
+    "changed_pixels_inside_or_outside_mouth": 0,
+    "candidate_capture_assertions": 1312,
+    "capture_failures": [],
+    "immediate_trigger_render_pairs_exact": 2,
+    "shared_controls_exact_v14": true,
+    "state_schema_difference": "Only removed zero-valued wide-eye control fields; no shared-state differences."
+  },
+  "approved_video_comparison": {
+    "approved_video_sha256": "c8f049b6e18773dcfeb9c669f9cd668e40f89b8e33fb22d76a52818dc82bae89",
+    "candidate_raw_frames": 300,
+    "size": [
+      568,
+      800
+    ],
+    "psnr_rgb_db": 41.69246551076368,
+    "worst_frame_mean_absolute_rgb_error": 1.3766285211267606,
+    "mean_frame_mean_absolute_rgb_error": 1.3560643070226917,
+    "matches_original_recorded_encoding_metrics": true,
+    "native_and_viewer_states_exact": true
+  },
+  "prior_approved_raster_regression": {
+    "EXP-163": {
+      "frames": 175,
+      "exact": 25,
+      "changed": 150,
+      "worst_changed_pixels": 93,
+      "worst_channel_delta": 153,
+      "outside_mouth_pixels_total": 0
+    },
+    "EXP-005": {
+      "frames": 163,
+      "exact": 9,
+      "changed": 154,
+      "worst_changed_pixels": 88,
+      "worst_channel_delta": 127,
+      "outside_mouth_pixels_total": 0
+    },
+    "gaze": {
+      "frames": 72,
+      "exact": 72,
+      "changed": 0,
+      "worst_changed_pixels": 0,
+      "worst_channel_delta": 0,
+      "outside_mouth_pixels_total": 0
+    }
+  },
+  "visual_inspection": "Native 300-frame sequence inspected chronologically on 5 contact pages, with pixel/PNG identity proving the same scoped sequence; candidate peak inspected directly. Approved reference comparison board and decoded approved video inspected. Yawn/laughter mouth and nine-direction gaze comparisons inspected. This is not normal-speed playback.",
+  "limits": [
+    "Fresh real loopback/socket suite unavailable under current local socket restriction; not claimed passed.",
+    "Normal-speed playback not performed.",
+    "Lateral shared lip-seam coverage intentionally changes old mouth-edge pixels; no blanket previous-expression raster parity claim.",
+    "Source-derived/inferred lateral enamel/tongue/cavity registration and 26 inferred lip-joint outer underlaps remain disclosed."
+  ],
+  "new_controls": {
+    "mouth_open_range": [
+      0,
+      1
+    ],
+    "physical_multiplier": 0.55,
+    "per_column_source_px_cap": 30.8,
+    "welcome_physical_peak": 0.44,
+    "central_upper_teeth_xy": [
+      533,
+      626
+    ],
+    "ai_model_connected": false,
+    "tts_connected": false
+  },
+  "evidence_sha256": {
+    "suite_results.json": "44664b0f16e0e3c3c43373b1ec859fe82ca7dc5fee53e4ad28078cf5c0b5ca0e",
+    "runtime_parity.json": "69083df75ee12fb35b0b3aae59be58f0c6ef4e7bef64e2bbb627f6d39284bfe6",
+    "rebuild_integrity.json": "9f618a5b8184acaa3d16886aefded97dcfbb3ca5e88e99035d82a1f3b6e768b4",
+    "welcome_render_parity.json": "9567200852598443b555eeb0ae6f2cd1d7c0f238277df3767bb888db13879560",
+    "welcome_state_parity.json": "ae91937c2147f4f39db7c183f74241a9173f34ce21f41427c38f4c4167714e8f",
+    "approved_video_comparison.json": "3fbbcbb82c0459232f4c668a7641831395c119ac44c410eff0bfb041fe4abbd5",
+    "old_render_regression.json": "7b8f7586413d420d8879bde1cc9adfba4a6fd9d24412ad5e837ed1e30cc67d67",
+    "render_source_freeze.json": "ec697b2b7772ae45cb0e03b0a2ad0db9fe702b0280631ad157d2687bd91e548e"
+  }
+}

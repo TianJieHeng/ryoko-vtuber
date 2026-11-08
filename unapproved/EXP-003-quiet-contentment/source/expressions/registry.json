@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "EXP-163",
+      "path": "res://yawn_performance.json",
+      "aliases": [
+        "yawn"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-005",
+      "path": "res://expressions/EXP-005.json",
+      "aliases": [
+        "hearty-laughter",
+        "laugh"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-001",
+      "path": "res://expressions/EXP-001.json",
+      "aliases": [
+        "bright_welcome"
+      ],
+      "trigger_phase": "recognition"
+    },
+    {
+      "id": "EXP-006",
+      "path": "res://expressions/EXP-006.json",
+      "aliases": [
+        "suppressed-giggle",
+        "giggle"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-107",
+      "path": "res://expressions/EXP-107.json",
+      "aliases": [
+        "confident-reassurance",
+        "reassure"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-007",
+      "path": "res://expressions/EXP-007.json",
+      "aliases": [
+        "relieved-smile",
+        "relief"
+      ],
+      "trigger_phase": "inward_tension"
+    },
+    {
+      "id": "EXP-003",
+      "path": "res://expressions/EXP-003.json",
+      "aliases": [
+        "quiet-contentment",
+        "contentment"
+      ],
+      "trigger_phase": "anticipation"
+    }
+  ]
+}

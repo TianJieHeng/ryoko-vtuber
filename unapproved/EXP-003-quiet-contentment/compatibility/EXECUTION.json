@@ -1,0 +1,78 @@
+{
+  "core": [
+    {
+      "label": "historical_import",
+      "exit": 0,
+      "summaries": [],
+      "errors": []
+    },
+    {
+      "label": "historical_probe",
+      "exit": 0,
+      "summaries": [
+        "CONTENTMENT_COMPATIBILITY_PROBE samples=640 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "label": "historical_runtime",
+      "exit": 0,
+      "summaries": [
+        "CONTENTMENT_RUNTIME checks=363734 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "label": "current_import",
+      "exit": 0,
+      "summaries": [],
+      "errors": []
+    },
+    {
+      "label": "current_probe",
+      "exit": 0,
+      "summaries": [
+        "CONTENTMENT_COMPATIBILITY_PROBE samples=640 failures=0"
+      ],
+      "errors": []
+    },
+    {
+      "label": "current_runtime",
+      "exit": 0,
+      "summaries": [
+        "CONTENTMENT_RUNTIME checks=409991 failures=0"
+      ],
+      "errors": []
+    }
+  ],
+  "expanded_blink": {
+    "label": "current_blink",
+    "exit": 0,
+    "summaries": [
+      "AUTO_BLINK_LIFECYCLE_PASS checks=114872 failures=0"
+    ],
+    "errors": []
+  },
+  "unadapted_historical_sealed_suite": {
+    "label": "current_sealed_width",
+    "exit": 1,
+    "summaries": [
+      "SEALED_CONTRACT checks=230168 failures=2 samples=5886 pairs=2450"
+    ],
+    "errors": [
+      "ERROR: common fifteen-profile baseline",
+      "ERROR: viewer only fifteen real profiles"
+    ]
+  },
+  "sealed_suite_count_only_adaptation": {
+    "label": "current_sealed_domain_count_adapted",
+    "exit": 0,
+    "summaries": [
+      "SEALED_CONTRACT checks=230168 failures=0 samples=5886 pairs=2450"
+    ],
+    "errors": [],
+    "harness_sha256": "fb1c008fc1223c3635fc56465255cc359d8efd41665236f2c75f677dbfbaadfe",
+    "adaptation": "Only two inherited expected catalogue counts change from 15 to 17, plus their labels; no production-source edits."
+  },
+  "note": "The inherited sealed suite expected fifteen real profiles. Its two catalogue-count assertions failed against the seventeen-profile assessment; an isolated harness changes only those two expectations to seventeen. Runtime and profile source are untouched."
+}

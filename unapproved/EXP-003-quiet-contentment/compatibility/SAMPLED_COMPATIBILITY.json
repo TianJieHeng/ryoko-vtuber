@@ -1,0 +1,976 @@
+{
+  "samples": 640,
+  "natural_samples": 131,
+  "natural_samples_with_shared_field_differences": 0,
+  "all_shared_fields_equal_samples": 640,
+  "shared_difference_count": 0,
+  "shared_differing_paths": {},
+  "shared_difference_examples": {},
+  "missing_fields": {},
+  "added_fields": {
+    "/face/gaze_down_extra": 640,
+    "/face/mouth_width_sides": 640,
+    "/face/mouth_corner_lift_sides": 640,
+    "/objects/inner_mouth_corner_upper_0/uniforms/corner_lift_sides": 640,
+    "/objects/inner_mouth_corner_upper_0/uniforms/width_sides": 640,
+    "/objects/inner_mouth_corner_upper_13/uniforms/corner_lift_sides": 640,
+    "/objects/inner_mouth_corner_upper_13/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_1/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_1/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_10/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_10/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_11/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_11/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_12/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_12/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_2/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_2/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_3/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_3/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_4/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_4/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_5/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_5/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_6/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_6/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_7/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_7/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_8/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_8/uniforms/width_sides": 640,
+    "/objects/inner_upper_lip_joint_9/uniforms/corner_lift_sides": 640,
+    "/objects/inner_upper_lip_joint_9/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_14/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_14/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_14_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_14_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_19/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_19/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_19_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_19_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_24/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_24/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_24_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_24_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_29/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_29/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_29_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_29_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_34/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_34/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_34_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_34_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_40/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_40/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_40_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_40_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_46/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_46/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_46_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_46_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_51/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_51/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_51_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_51_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_56/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_56/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_56_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_56_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_61/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_61/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_61_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_61_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_66/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_66/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_66_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_66_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_71/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_71/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_71_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_71_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_9/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_9/uniforms/width_sides": 640,
+    "/objects/lower_joint_continuation_9_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/lower_joint_continuation_9_outer_underlap/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_1/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_1/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_10/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_10/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_11/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_11/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_12/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_12/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_2/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_2/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_3/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_3/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_4/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_4/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_5/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_5/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_6/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_6/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_7/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_7/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_8/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_8/uniforms/width_sides": 640,
+    "/objects/lower_lip_joint_9/uniforms/corner_lift_sides": 640,
+    "/objects/lower_lip_joint_9/uniforms/width_sides": 640,
+    "/objects/mouth_corner_lower_0/uniforms/corner_lift_sides": 640,
+    "/objects/mouth_corner_lower_0/uniforms/width_sides": 640,
+    "/objects/mouth_corner_lower_13/uniforms/corner_lift_sides": 640,
+    "/objects/mouth_corner_lower_13/uniforms/width_sides": 640,
+    "/objects/mouth_corner_upper_0/uniforms/corner_lift_sides": 640,
+    "/objects/mouth_corner_upper_0/uniforms/width_sides": 640,
+    "/objects/mouth_corner_upper_13/uniforms/corner_lift_sides": 640,
+    "/objects/mouth_corner_upper_13/uniforms/width_sides": 640,
+    "/objects/oral_cavity/uniforms/corner_lift_sides": 640,
+    "/objects/oral_cavity/uniforms/width_sides": 640,
+    "/objects/oral_lower_lip/uniforms/corner_lift_sides": 640,
+    "/objects/oral_lower_lip/uniforms/width_sides": 640,
+    "/objects/oral_lower_teeth/uniforms/corner_lift_sides": 640,
+    "/objects/oral_lower_teeth/uniforms/width_sides": 640,
+    "/objects/oral_tongue/uniforms/corner_lift_sides": 640,
+    "/objects/oral_tongue/uniforms/width_sides": 640,
+    "/objects/oral_underlip_shadow/uniforms/corner_lift_sides": 640,
+    "/objects/oral_underlip_shadow/uniforms/width_sides": 640,
+    "/objects/oral_upper_lip/uniforms/corner_lift_sides": 640,
+    "/objects/oral_upper_lip/uniforms/width_sides": 640,
+    "/objects/oral_upper_teeth/uniforms/corner_lift_sides": 640,
+    "/objects/oral_upper_teeth/uniforms/width_sides": 640,
+    "/objects/spread_cavity_left/uniforms/corner_lift_sides": 640,
+    "/objects/spread_cavity_left/uniforms/width_sides": 640,
+    "/objects/spread_cavity_right/uniforms/corner_lift_sides": 640,
+    "/objects/spread_cavity_right/uniforms/width_sides": 640,
+    "/objects/spread_cavity_top/uniforms/corner_lift_sides": 640,
+    "/objects/spread_cavity_top/uniforms/width_sides": 640,
+    "/objects/spread_lower_oral_surface/uniforms/corner_lift_sides": 640,
+    "/objects/spread_lower_oral_surface/uniforms/width_sides": 640,
+    "/objects/spread_posterior_teeth_left/uniforms/corner_lift_sides": 640,
+    "/objects/spread_posterior_teeth_left/uniforms/width_sides": 640,
+    "/objects/spread_posterior_teeth_right/uniforms/corner_lift_sides": 640,
+    "/objects/spread_posterior_teeth_right/uniforms/width_sides": 640,
+    "/objects/spread_upper_enamel_roots/uniforms/corner_lift_sides": 640,
+    "/objects/spread_upper_enamel_roots/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_14/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_14/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_14_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_14_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_19/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_19/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_19_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_19_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_24/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_24/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_24_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_24_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_29/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_29/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_29_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_29_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_34/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_34/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_34_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_34_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_40/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_40/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_40_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_40_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_46/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_46/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_46_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_46_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_51/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_51/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_51_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_51_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_56/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_56/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_56_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_56_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_61/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_61/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_61_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_61_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_66/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_66/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_66_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_66_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_71/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_71/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_71_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_71_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_9/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_9/uniforms/width_sides": 640,
+    "/objects/upper_joint_continuation_9_outer_underlap/uniforms/corner_lift_sides": 640,
+    "/objects/upper_joint_continuation_9_outer_underlap/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_1/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_1/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_10/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_10/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_11/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_11/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_12/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_12/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_2/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_2/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_3/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_3/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_4/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_4/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_5/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_5/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_6/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_6/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_7/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_7/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_8/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_8/uniforms/width_sides": 640,
+    "/objects/upper_lip_joint_9/uniforms/corner_lift_sides": 640,
+    "/objects/upper_lip_joint_9/uniforms/width_sides": 640,
+    "/state/controls/gaze_down_extra": 640,
+    "/state/controls/mouth_width_screen_right": 640,
+    "/state/controls/brow_inner_lift_screen_left": 640,
+    "/state/controls/mouth_width_screen_left": 640,
+    "/state/controls/brow_inner_lift_screen_right": 640,
+    "/state/controls/mouth_corner_lift_screen_left": 640,
+    "/state/controls/mouth_corner_lift_screen_right": 640,
+    "/state/displayed_controls/gaze_down_extra": 640,
+    "/state/displayed_controls/mouth_width_screen_right": 640,
+    "/state/displayed_controls/brow_inner_lift_screen_left": 640,
+    "/state/displayed_controls/mouth_width_screen_left": 640,
+    "/state/displayed_controls/brow_inner_lift_screen_right": 640,
+    "/state/displayed_controls/mouth_corner_lift_screen_left": 640,
+    "/state/displayed_controls/mouth_corner_lift_screen_right": 640,
+    "/state/mouth_transition": 640
+  },
+  "added_field_values": {
+    "/face/gaze_down_extra": [
+      0.0
+    ],
+    "/face/mouth_width_sides": [
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "/face/mouth_corner_lift_sides": [
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "/objects/inner_mouth_corner_upper_0/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_mouth_corner_upper_0/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_mouth_corner_upper_13/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_mouth_corner_upper_13/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_1/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_1/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_10/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_10/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_11/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_11/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_12/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_12/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_2/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_2/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_3/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_3/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_4/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_4/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_5/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_5/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_6/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_6/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_7/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_7/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_8/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_8/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_9/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/inner_upper_lip_joint_9/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_14/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_14/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_14_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_14_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_19/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_19/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_19_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_19_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_24/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_24/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_24_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_24_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_29/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_29/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_29_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_29_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_34/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_34/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_34_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_34_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_40/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_40/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_40_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_40_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_46/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_46/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_46_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_46_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_51/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_51/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_51_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_51_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_56/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_56/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_56_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_56_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_61/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_61/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_61_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_61_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_66/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_66/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_66_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_66_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_71/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_71/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_71_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_71_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_9/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_9/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_9_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_joint_continuation_9_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_1/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_1/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_10/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_10/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_11/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_11/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_12/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_12/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_2/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_2/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_3/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_3/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_4/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_4/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_5/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_5/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_6/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_6/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_7/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_7/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_8/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_8/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_9/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/lower_lip_joint_9/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_lower_0/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_lower_0/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_lower_13/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_lower_13/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_upper_0/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_upper_0/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_upper_13/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/mouth_corner_upper_13/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_cavity/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_cavity/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_lower_lip/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_lower_lip/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_lower_teeth/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_lower_teeth/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_tongue/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_tongue/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_underlip_shadow/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_underlip_shadow/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_upper_lip/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_upper_lip/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_upper_teeth/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/oral_upper_teeth/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_cavity_left/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_cavity_left/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_cavity_right/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_cavity_right/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_cavity_top/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_cavity_top/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_lower_oral_surface/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_lower_oral_surface/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_posterior_teeth_left/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_posterior_teeth_left/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_posterior_teeth_right/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_posterior_teeth_right/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_upper_enamel_roots/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/spread_upper_enamel_roots/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_14/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_14/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_14_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_14_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_19/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_19/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_19_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_19_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_24/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_24/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_24_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_24_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_29/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_29/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_29_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_29_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_34/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_34/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_34_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_34_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_40/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_40/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_40_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_40_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_46/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_46/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_46_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_46_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_51/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_51/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_51_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_51_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_56/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_56/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_56_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_56_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_61/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_61/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_61_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_61_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_66/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_66/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_66_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_66_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_71/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_71/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_71_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_71_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_9/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_9/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_9_outer_underlap/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_joint_continuation_9_outer_underlap/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_1/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_1/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_10/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_10/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_11/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_11/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_12/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_12/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_2/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_2/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_3/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_3/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_4/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_4/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_5/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_5/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_6/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_6/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_7/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_7/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_8/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_8/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_9/uniforms/corner_lift_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/objects/upper_lip_joint_9/uniforms/width_sides": [
+      "(0.0, 0.0)"
+    ],
+    "/state/controls/gaze_down_extra": [
+      0.0
+    ],
+    "/state/controls/mouth_width_screen_right": [
+      0.0
+    ],
+    "/state/controls/brow_inner_lift_screen_left": [
+      0.0
+    ],
+    "/state/controls/mouth_width_screen_left": [
+      0.0
+    ],
+    "/state/controls/brow_inner_lift_screen_right": [
+      0.0
+    ],
+    "/state/controls/mouth_corner_lift_screen_left": [
+      0.0
+    ],
+    "/state/controls/mouth_corner_lift_screen_right": [
+      0.0
+    ],
+    "/state/displayed_controls/gaze_down_extra": [
+      0.0
+    ],
+    "/state/displayed_controls/mouth_width_screen_right": [
+      0.0
+    ],
+    "/state/displayed_controls/brow_inner_lift_screen_left": [
+      0.0
+    ],
+    "/state/displayed_controls/mouth_width_screen_left": [
+      0.0
+    ],
+    "/state/displayed_controls/brow_inner_lift_screen_right": [
+      0.0
+    ],
+    "/state/displayed_controls/mouth_corner_lift_screen_left": [
+      0.0
+    ],
+    "/state/displayed_controls/mouth_corner_lift_screen_right": [
+      0.0
+    ],
+    "/state/mouth_transition": [
+      {
+        "classification": "entire target timeline at trigger",
+        "duration": 0.0,
+        "mode": "none",
+        "stage": "none"
+      },
+      {
+        "classification": "entire target timeline at trigger",
+        "duration": 0.3,
+        "mode": "legacy",
+        "stage": "direct"
+      },
+      {
+        "classification": "entire target timeline at trigger",
+        "duration": 0.3,
+        "mode": "legacy",
+        "stage": "complete"
+      }
+    ]
+  },
+  "historical_samples_sha256": "0b3a29d42c592099ea02589c7faaeea467db9e61e0468b873f64441614a91526",
+  "current_samples_sha256": "525d58b2644c682d1eda74571abb8a7b335313cef935c2a385cde4bc728d1fb1",
+  "comparison": "Exact recursive comparison of every historical state, face, object transform, material uniform, texture/UV and head/body field. Current-only fields are reported separately, not silently normalized."
+}

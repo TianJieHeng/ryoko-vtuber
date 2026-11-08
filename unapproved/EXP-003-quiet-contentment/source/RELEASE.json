@@ -1,0 +1,55 @@
+{
+  "candidate": "Scoped EXP-003 quiet contentment on the shared rig",
+  "status": "Local review candidate; user approval and publication pending",
+  "base_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
+  "base_subtree": "ryoko_object_rig/",
+  "base_project_tree": "f22619f290309fb37ad47c459efec4c1a1b5cba2",
+  "authored_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-003"
+  ],
+  "approved_predecessors": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007"
+  ],
+  "protected_parent_pngs": 182,
+  "new_pngs": 0,
+  "new_controls": {},
+  "excluded": [
+    "new eye-family selector",
+    "tracking",
+    "body acting",
+    "external AI/TTS connection"
+  ],
+  "reference_sheet_sha256": "4636be0c5bf2df17302b9ea131aa498a74100a7d81062beb1c73d1f6d19e5007",
+  "timing": {
+    "duration_seconds": 1.9,
+    "key_count": 9,
+    "upward_closed_hold_seconds": 0.3,
+    "origin": "Authored implementation of the exact v002 proposed source timing; not a pre-existing animation."
+  },
+  "mouth_limits": {
+    "normalized": [
+      0,
+      1
+    ],
+    "physical_multiplier": 0.55,
+    "per_column_source_px_max": 30.8,
+    "fixed_central_upper_teeth_xy": [
+      533,
+      626
+    ]
+  },
+  "verification": "CONTENTMENT_SCOPE_VALIDATION.md",
+  "publication": "EXP-003 is not approved or published. No CI, paid resources, remote execution or external model/TTS integration.",
+  "inherited_auto_blink": "Published parent preserves enabled intent through playback/release and restores only at exact neutral; this delta makes no runtime lifecycle change."
+}

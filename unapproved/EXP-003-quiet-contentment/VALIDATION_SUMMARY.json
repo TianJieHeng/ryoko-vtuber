@@ -1,0 +1,139 @@
+{
+  "expression": "EXP-003 Quiet contentment",
+  "status": "Exact corrected historical candidate preserved; awaiting user review",
+  "user_approved": false,
+  "user_rejected": false,
+  "approved_integration": false,
+  "historical_base_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
+  "historical_source_inventory_sha256": "caf000a386cc7bda0bce4c8e0c32a4923ee057726b3e406185cb436779f3bf10",
+  "historical_files": 467,
+  "historical_png_files": 182,
+  "historical_registered_profiles": 7,
+  "historical_profile_sha256": "39161f10d0ee8973d146ff9072549b055548c012c0c330fb23602f00880ffd7a",
+  "reference_sheet_sha256": "4636be0c5bf2df17302b9ea131aa498a74100a7d81062beb1c73d1f6d19e5007",
+  "historical_technical_result": "PASS source/runtime/reference/finite-frame review",
+  "historical_checks_not_rerun_in_full": {
+    "runtime_suites": 20,
+    "clean_rebuild_checks": 12,
+    "predecessor_pixel_comparisons": 890,
+    "independent_review_sha256": "658088d6b8ec1f8e2c27ca4759ba81896762162f413043d4a20b88712662bbd2",
+    "independent_review_receipt_sha256": "82beb2f1de991f2530e26b4aa66e748338469b11d0da5506ed8c96c4d67057fd"
+  },
+  "fresh_preservation_checks": {
+    "exact_source_hashes": 467,
+    "original_reference_blobs": 10,
+    "original_scope_guard_checks": 1265,
+    "source_checksum": "PASS",
+    "historical_contentment_runtime_checks": 363734
+  },
+  "current_assessment_base": {
+    "repository_path": "unapproved/EXP-116-confident-denial/source",
+    "commit": "f3798a82b6b06780217f4b1b1c484445047003a6",
+    "source_inventory_sha256": "95fa422e615d63ec0226f6cf84097acc1d78837486478b0fb08dbb62f69c9783",
+    "freeze_sha256": "dd52d78b1a6987140ea0728a41f35841746fc0e102c66c1941fd64677ddf919a",
+    "base_profiles": 16,
+    "assessment_profiles": 17
+  },
+  "current_headless_compatibility": "PASS_WITH_LIMITED_SCOPE",
+  "current_visual_compatibility": "NOT_REPLAYED",
+  "current_assessment": {
+    "profile_and_registry_entry": "Exact historical bytes/data; no expression edits",
+    "contentment_runtime_checks": 409991,
+    "blink_lifecycle_checks": 114872,
+    "shared_samples": 640,
+    "natural_time_samples": 131,
+    "shared_field_differences": 0,
+    "historical_fields_missing": 0,
+    "new_controls_default_to_zero": true,
+    "new_shader_vectors_zero": true,
+    "current_only_transition_metadata": "Separately reported, not used to normalize historical values",
+    "expanded_sealed_domain_result": {
+      "label": "current_sealed_domain_count_adapted",
+      "exit": 0,
+      "summaries": [
+        "SEALED_CONTRACT checks=230168 failures=0 samples=5886 pairs=2450"
+      ],
+      "errors": [],
+      "harness_sha256": "fb1c008fc1223c3635fc56465255cc359d8efd41665236f2c75f677dbfbaadfe",
+      "adaptation": "Only two inherited expected catalogue counts change from 15 to 17, plus their labels; no production-source edits."
+    }
+  },
+  "current_source_differences": {
+    "historical_changed": [
+      "AUTO_BLINK_VALIDATION.md",
+      "CONTROL_API.md",
+      "LOCAL_CONTROL_BRIDGE.md",
+      "PACKAGING.md",
+      "README.md",
+      "RELEASE.json",
+      "SOURCE_FILES.sha256",
+      "expressions/registry.json",
+      "test_expression_backbone.gd",
+      "test_yawn.gd",
+      "tests/test_auto_blink_lifecycle.gd",
+      "tests/test_giggle_runtime.gd",
+      "tests/test_oral_lift_contract.gd",
+      "tests/test_purse_contract.gd",
+      "tests/test_purse_transport.gd",
+      "tests/test_reassurance_runtime.gd",
+      "tests/test_relief_runtime.gd",
+      "tests/test_spread_runtime.gd",
+      "tools/autoblink_source_guard.py",
+      "tools/test_control_bridge.py",
+      "tools/verify_autoblink_scope.py",
+      "tools/verify_giggle_scope.py",
+      "tools/verify_reassurance_scope.py",
+      "tools/verify_relief_scope.py",
+      "tools/verify_smile_support.py",
+      "tools/verify_welcome_scope.py"
+    ],
+    "historical_added": [
+      "CONTENTMENT_SCOPE_VALIDATION.md",
+      "expressions/EXP-003.json",
+      "source_references/EXP-003_reference_metadata.json",
+      "source_references/contentment_parent_inventory.json",
+      "source_references/relief_predecessor_RELEASE.json",
+      "tests/test_contentment_runtime.gd",
+      "tools/contentment_source_guard.py",
+      "tools/review_contentment_autoblink.gd",
+      "tools/review_contentment_capability.gd",
+      "tools/review_contentment_keyposes.gd",
+      "tools/review_contentment_kp4_probe.gd",
+      "tools/review_contentment_lifecycle.gd",
+      "tools/review_contentment_relief_parity.gd",
+      "tools/review_contentment_scope.gd",
+      "tools/verify_contentment_keypose_reuse.gd",
+      "tools/verify_contentment_scope.py",
+      "validation/contentment_runtime_migration.json"
+    ],
+    "pngs_differing_from_current": [
+      "rig_assets/gaze_eyes/completed_iris_screen_left.png",
+      "rig_assets/gaze_eyes/completed_iris_screen_right.png",
+      "rig_assets/gaze_eyes/iris_screen_left.png",
+      "rig_assets/gaze_eyes/iris_screen_right.png"
+    ],
+    "runtime_files_differing_from_current": [
+      "control_bridge.gd",
+      "control_limits.gd",
+      "expression_registry.gd",
+      "expression_rig.gd",
+      "expression_viewer.gd",
+      "object_face.gd",
+      "object_mouth_clip.gdshader",
+      "object_rig.gd",
+      "pressed_lip_clip.gdshader",
+      "smile_lip_join.gdshader",
+      "smile_lip_segment.gdshader",
+      "spread_teeth_clip.gdshader"
+    ]
+  },
+  "limits": [
+    "Historical source is exact, not rebased or integrated. The common-runtime assessment copy is not included as source.",
+    "Four current iris textures and several runtime/shader sources differ from the historical source. Matching sampled values and resource paths is not proof of rendered pixel equality.",
+    "No graphical replay or normal-speed playback observation was performed in this preservation pass. Current visual compatibility remains unestablished.",
+    "The known thin ordinary closure to denser upward lash articulation remains disclosed. No unconditional smoothness claim.",
+    "All prior historical tests and metadata remain unchanged, including their original status wording. New assessment status is outer metadata only.",
+    "No preview files were replaced, downloaded or resent. No raw capture media or cache is stored here.",
+    "No CI, paid resources, purchases, hardware flashing or remote-machine execution was used."
+  ]
+}
