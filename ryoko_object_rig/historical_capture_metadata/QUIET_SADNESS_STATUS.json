@@ -1,0 +1,11 @@
+{
+  "id": "EXP-021",
+  "status": "local_performance_candidate_not_user_approved",
+  "published": false,
+  "main_base": "2d46f72704ddf2a329b44a87cd24c66d5fe92568",
+  "approved_count": 11,
+  "local_registered_count": 12,
+  "runtime_artwork_changes": false,
+  "static_fit_accepted": true,
+  "performance_review_pending": true
+}

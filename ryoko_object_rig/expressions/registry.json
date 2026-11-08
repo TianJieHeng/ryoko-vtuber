@@ -97,6 +97,15 @@
         "fighting_sleep"
       ],
       "trigger_phase": "first_sink"
+    },
+    {
+      "id": "EXP-021",
+      "path": "res://expressions/EXP-021.json",
+      "aliases": [
+        "quiet-sadness",
+        "quiet_sadness"
+      ],
+      "trigger_phase": "sad_peak"
     }
   ]
 }

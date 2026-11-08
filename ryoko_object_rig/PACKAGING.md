@@ -1,5 +1,11 @@
 # Clean shared-expression review package
 
+Twelve user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177/164/021. EXP-021 Quiet sadness is the approved 3.65-second, five-key data-only performance, available through the existing API and quiet-sadness / quiet_sadness aliases. All eleven predecessor profiles, shared runtime, scenes, shaders and 182 PNGs remain byte-identical to main 2d46f72704ddf2a329b44a87cd24c66d5fe92568. Only EXP-021 profile status changes from its reviewed source; all other fields, times and control values are exact. EXP-003/139/170/153/161 and every other unregistered draft remain excluded.
+
+Current publication checks: python tools/verify_quiet_sadness_publication.py and sha256sum -c SOURCE_FILES.sha256. PUBLICATION_SOURCE_MANIFEST.json is the current manifest. CURRENT_SOURCE_MANIFEST.json, tools/verify_quiet_sadness_package.py, QUIET_SADNESS_CAPTURE_FREEZE.json, historical_capture_metadata/ and inherited exact-scope receipts remain byte-exact historical contracts for their original source trees; do not run them as current publication guards. The historical backbone fixture also remains unchanged and is not a twelve-profile smoke test. Use tests/test_quiet_sadness_runtime.gd for the actual twelve-profile registry. See QUIET_SADNESS_PUBLICATION_VALIDATION.md for scope, evidence and limits.
+
+## Historical EXP-164 publication documentation
+
 Eleven user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177/164. Fighting sleep adds the approved 3.47-second data-only performance. All ten predecessor profiles, shared runtime, shaders, scenes and 182 PNGs remain byte-identical to main 958eb944a37ce836fec5acf369f12b89f47b6656. Only the EXP-164 profile status text changes from its approved review; all other fields, times, phases and values remain exact. EXP-003/170/139, inner-cover experiments and all other unregistered drafts remain excluded. RELEASE.json and FIGHTING_SLEEP_PUBLICATION_VALIDATION.md record current status. Earlier explicitly marked checkpoints and frozen review receipts are historical provenance. No normal-speed playback observation, AI/TTS or real-socket validation is claimed.
 
 Historical EXP-177 publication checkpoint:

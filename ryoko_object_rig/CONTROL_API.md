@@ -1,5 +1,11 @@
 # Shared expression control API
 
+Twelve user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177/164/021. EXP-021 Quiet sadness is the approved 3.65-second, five-key data-only performance, available through the existing API and quiet-sadness / quiet_sadness aliases. All eleven predecessor profiles, shared runtime, scenes, shaders and 182 PNGs remain byte-identical to main 2d46f72704ddf2a329b44a87cd24c66d5fe92568. Only EXP-021 profile status changes from its reviewed source; all other fields, times and control values are exact. EXP-003/139/170/153/161 and every other unregistered draft remain excluded.
+
+Current publication checks: python tools/verify_quiet_sadness_publication.py and sha256sum -c SOURCE_FILES.sha256. PUBLICATION_SOURCE_MANIFEST.json is the current manifest. CURRENT_SOURCE_MANIFEST.json, tools/verify_quiet_sadness_package.py, QUIET_SADNESS_CAPTURE_FREEZE.json, historical_capture_metadata/ and inherited exact-scope receipts remain byte-exact historical contracts for their original source trees; do not run them as current publication guards. The historical backbone fixture also remains unchanged and is not a twelve-profile smoke test. Use tests/test_quiet_sadness_runtime.gd for the actual twelve-profile registry. See QUIET_SADNESS_PUBLICATION_VALIDATION.md for scope, evidence and limits.
+
+## Historical published baseline
+
 Eleven user-approved performances share one rig: EXP-163/005/001/006/107/007/002/152/160/177/164. Fighting sleep adds the approved 3.47-second data-only performance. All ten predecessor profiles, shared runtime, shaders, scenes and 182 PNGs remain byte-identical to main 958eb944a37ce836fec5acf369f12b89f47b6656. Only the EXP-164 profile status text changes from its approved review; all other fields, times, phases and values remain exact. EXP-003/170/139, inner-cover experiments and all other unregistered drafts remain excluded. RELEASE.json and FIGHTING_SLEEP_PUBLICATION_VALIDATION.md record current status. Earlier explicitly marked checkpoints and frozen review receipts are historical provenance. No normal-speed playback observation, AI/TTS or real-socket validation is claimed.
 
 Historical EXP-177 publication checkpoint:
@@ -12,7 +18,7 @@ Use `expression_rig.gd` through `expression_rig.tscn`, or call `expression_viewe
 
 ## Calls
 
-- `list_expressions()` returns detached `{id,title,duration,aliases}` entries. Currently EXP-163 / Yawn, EXP-005 / Hearty laughter, EXP-001 / Bright welcome, EXP-006 / Suppressed giggle, EXP-107 / Confident reassurance, EXP-007 / Relieved smile, EXP-002 / Affectionate warmth, EXP-152 / Private pride, EXP-160 / Shy laughter, EXP-177 / Meditative calm and EXP-164 / Fighting sleep are authored. All eleven and their published prerequisites are user-approved. Approval and publication status is recorded separately in `RELEASE.json`. Other historical catalogue IDs are references, not playable placeholders.
+- `list_expressions()` returns detached `{id,title,duration,aliases}` entries for the twelve IDs in `expressions/registry.json`. EXP-021 / Quiet sadness is a local review candidate. The eleven predecessors in `RELEASE.json` remain approved/published. This package does not mark EXP-021 approved.
 - `apply_controls(dictionary) -> bool` validates the entire transaction before changing controls, clock or ownership. Failure returns false and sets `last_error`; no partial pose/state mutation occurs.
 - `play_expression(id)`, `release()` and `reset()` wrap their corresponding control transactions.
 - `advance(delta) -> bool` advances deterministically. Delta must be finite and nonnegative. The engine calls it from `_process`; an external deterministic driver must disable automatic processing to avoid advancing twice.
