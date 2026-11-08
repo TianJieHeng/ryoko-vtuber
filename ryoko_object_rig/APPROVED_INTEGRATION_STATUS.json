@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "user_approved_integrated_with_containing_commit",
+  "status": "user_approved_integrated_with_containing_commit_realtime_pacing_hold",
   "approved_profile_ids": [
     "EXP-163",
     "EXP-005",
@@ -19,17 +19,13 @@
     "EXP-102",
     "EXP-116",
     "EXP-050",
-    "EXP-186"
+    "EXP-186",
+    "EXP-114"
   ],
   "newly_approved_profile_ids": [
-    "EXP-158",
-    "EXP-181",
-    "EXP-102",
-    "EXP-116",
-    "EXP-050",
-    "EXP-186"
+    "EXP-114"
   ],
-  "approved_profile_count": 18,
+  "approved_profile_count": 19,
   "old_profile_bytes_preserved": true,
   "accepted_profile_bytes_preserved": true,
   "accepted_runtime_bytes_preserved": true,
@@ -41,19 +37,44 @@
     "EXP-139",
     "EXP-170",
     "EXP-153",
-    "EXP-161"
+    "EXP-161",
+    "EXP-197"
   ],
   "excluded_private_work": [
     "dental registration",
     "gaze and eye-opening experiments"
   ],
   "EXP-003_status": "unapproved historical; not user-rejected; NOT_REPLAYED",
-  "accepted_source_git_tree": "2403db2beab08ccd3efad8bc0e07ffed98749663",
-  "accepted_source_inventory_sha256": "3c3e1a30b0ee90062de767bbda84de81d653e56742a5b7aa9ec7b599e13a6dc3",
-  "approved_parent_git_tree": "c0a58b2f9b962debf1a268e39bd6ecda2a7d4395",
-  "base_commit": "0366c252384d2c003e371133cfab68883e5b4a07",
-  "historical_receipts": "Preserved unchanged. Current approval supersedes their historical candidate wording without rewriting evidence.",
-  "known_limit": "Inherited full-open/full-spread/max-corner warm wedge is unchanged; general open-plus-width remains unsupported.",
+  "accepted_source_git_tree": "bd83f0e1d7cadea349a1d0cfbd8dd50cb1ba225c",
+  "accepted_source_inventory_sha256": "515010bd965ac86ccb261e2288ba90935451dc2ef5d262c2d50f48d453389d05",
+  "approved_parent_git_tree": "28d7b124d9d46a3b87cd3e821669ae87b3d47719",
+  "base_commit": "3e7f43ca9684bcafc9329ff5c14aa9ffcb57915b",
+  "historical_receipts": "Preserved byte-exact. User approved the rendered preview after the live-stutter limitation was disclosed. Current approval does not rewrite historical pending status or imply smooth real-time qualification.",
+  "known_limit": "Smooth real-time playback remains unverified (HOLD). The four-cycle normal run passed execution, ownership and exact-neutral checks, but recorded six gaps over 50 ms, including a 119.921 ms bust gap and native opening/resealing gaps of 512.158 ms and 407.784 ms. Cause is unproved. Visual observation was intermittent, not continuous. User approval of the rendered preview does not clear this limitation. Static fit remains a restrained cocky challenge with softened central-brow opposition and the real KP5 head cant omitted. Inherited full-open/full-spread/max-corner warm wedge is unchanged; general open-plus-width remains unsupported.",
   "normal_speed_playback_observed": false,
-  "ci_run": false
+  "ci_run": false,
+  "continuous_normal_speed_observation": false,
+  "normal_execution_checks_passed": 1946,
+  "normal_cycles": 4,
+  "normal_execution_ownership_neutral_pass": true,
+  "smooth_realtime_pacing_status": "HOLD",
+  "smooth_realtime_pacing_pass": false,
+  "normal_gaps_over_50ms": 6,
+  "normal_bust_max_gap_ms": 119.921,
+  "normal_native_opening_gap_ms": 512.158,
+  "normal_native_resealing_gap_ms": 407.784,
+  "normal_pacing_cause": "unproved",
+  "rendered_trajectory_records": 701,
+  "actual_rendered_views": 1402,
+  "rendered_trajectory_checks": 687526,
+  "accepted_runtime_jobs": 20,
+  "accepted_runtime_checks": 5380806,
+  "old18_exact_paired_records": 3230,
+  "failed_headless_job21_status": "NOT_PASS",
+  "accepted_profile_sha256": "96eed6ccf108e2e54590f953ae01b129a04af223245fecc1fc59c2af19f8c107",
+  "source_backup_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/3e7f43ca9684bcafc9329ff5c14aa9ffcb57915b/unapproved/EXP-114-daring-provocation",
+  "independent_clearance_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/3e7f43ca9684bcafc9329ff5c14aa9ffcb57915b/unapproved/EXP-114-daring-provocation/gate_records/final/PERFORMANCE_FINAL_SOURCE_CLEARANCE.json",
+  "independent_clearance_sha256": "ad4ee18995988007e9cde9494d6aa2500f9299b6e539e589090122b5e9363ff6",
+  "current_validation": "APPROVED_DARING_PROVOCATION_VALIDATION.md",
+  "new_engine_or_display_run": false
 }

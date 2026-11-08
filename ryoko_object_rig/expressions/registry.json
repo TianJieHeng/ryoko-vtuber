@@ -160,6 +160,15 @@
         "smug_cat_smile"
       ],
       "trigger_phase": "quiet_composure"
+    },
+    {
+      "id": "EXP-114",
+      "path": "res://expressions/EXP-114.json",
+      "aliases": [
+        "daring-provocation",
+        "daring_provocation"
+      ],
+      "trigger_phase": "quiet_composure"
     }
   ]
 }

@@ -1,5 +1,17 @@
 # Shared expression control API
 
+Nineteen user-approved performances share one rig. EXP-114 Daring provocation adds the approved 3.8-second performance through the existing catalogue, with daring-provocation and daring_provocation aliases. All eighteen predecessor profiles, production motion code, scenes, shaders and 182 runtime PNGs remain byte-exact. The new profile and registry are identical to the tested 660-file candidate. This integration changes only current approval metadata and documentation, not the accepted performance.
+
+Smooth real-time playback remains unverified (HOLD). The four-cycle normal run passed execution, ownership and exact-neutral checks, but recorded six gaps over 50 ms, including a 119.921 ms bust gap and native opening/resealing gaps of 512.158 ms and 407.784 ms. Cause is unproved. Visual observation was intermittent, not continuous. User approval of the rendered preview does not clear this limitation. Static fit remains a restrained cocky challenge with softened central-brow opposition and the real KP5 head cant omitted.
+
+Current checks: `python -B tools/verify_approved_integration.py` and `sha256sum -c APPROVED_SOURCE_FILES.sha256`. APPROVED_SOURCE_MANIFEST.json, APPROVED_INTEGRATION_STATUS.json and RELEASE.json describe the current nineteen-profile source. See APPROVED_DARING_PROVOCATION_VALIDATION.md for evidence and limitations. All other exact-source manifests, expression-local pending status strings, test reports and prior validation records are frozen historical evidence, not current aggregate guards. In particular, the original eighteen-profile suites and candidate-only guard retain their original scope. No new Godot run is claimed for this metadata-only approval overlay.
+
+EXP-003 remains unapproved historical work, not user-rejected, and is not registered or replayed. EXP-097, EXP-197 and private dental, gaze and eye-opening work are excluded. Existing sealed-width restrictions and the inherited full-open/full-spread/max-corner warm wedge remain unchanged. No CI, paid resources, hardware flashing, remote-machine execution, new binary media or runtime cache uploads are included.
+
+## Historical documentation and continuing API details
+
+# Shared expression control API
+
 Eighteen approved performances share one rig. This integration adds EXP-158 Post-confession shyness, EXP-181 Cheeky wink, EXP-102 Knowing smirk, EXP-116 Confident denial, EXP-050 Frustrated pout and EXP-186 Smug cat smile to the twelve already approved profiles. The accepted cumulative runtime, all eighteen profile files, scenes and all 182 runtime PNGs are byte-identical to the completed reviewed source. No new fitting, artwork or motion is introduced.
 
 Current checks: `python tools/verify_approved_integration.py` and `sha256sum -c APPROVED_SOURCE_FILES.sha256`. APPROVED_SOURCE_MANIFEST.json and APPROVED_INTEGRATION_STATUS.json describe the current 18-profile source. Original SOURCE_FILES.sha256, PUBLICATION_SOURCE_MANIFEST.json, CURRENT_SOURCE_MANIFEST.json, capture freezes, expression-local status files and original reports remain byte-exact historical contracts, not current aggregate guards. Their earlier approval or candidate wording describes the checkpoint when written; the current status file is authoritative. See APPROVED_INTEGRATION_VALIDATION.md for changes, test coverage and limits.
