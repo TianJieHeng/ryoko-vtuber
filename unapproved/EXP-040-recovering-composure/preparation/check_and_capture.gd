@@ -1,0 +1,40 @@
+extends SceneTree
+var rig
+var failures=[]
+var checks=0
+var w=get_script().resource_path.get_base_dir()
+var visual=false
+func _initialize():
+ visual="--capture" in OS.get_cmdline_user_args()
+ call_deferred("run")
+func check(ok,label):
+ checks+=1
+ if not ok:failures.append(label)
+func capture(label,detail):
+ root.size=Vector2i(568,800);root.canvas_transform=Transform2D.IDENTITY
+ if detail:
+  root.size=Vector2i(400,360)
+  var camera=Transform2D.IDENTITY.scaled(Vector2.ONE/.49);camera.origin=-Vector2(6,70)/.49-Vector2(380,380);root.canvas_transform=camera
+ await process_frame;await process_frame;await RenderingServer.frame_post_draw
+ root.get_texture().get_image().save_png(w+"/capture/"+label+".png")
+func run():
+ rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false);rig.auto_blink=false
+ check(rig.rig_ready and rig.registry_ready,"rig ready")
+ if not failures.is_empty():quit(1);return
+ rig.hud.hide();rig.hint.hide();rig.pose_status.hide();rig.reset()
+ var baseline=rig.face.snapshot();var head=rig.head.transform;var body=rig.body.transform
+ var plan=JSON.parse_string(FileAccess.get_file_as_string(w+"/plan.json"))
+ if visual:DirAccess.make_dir_recursive_absolute(w+"/capture")
+ for row in plan:
+  rig.reset()
+  check(rig.apply_controls(row.pose),row.name+" valid: "+rig.last_error)
+  check(rig.Registry.scoped_valid(rig.pose_now()),row.name+" scope")
+  check(rig.Registry.sealed_mouth_valid(rig.pose_now()),row.name+" mouth domain")
+  check(rig.head.transform==head and rig.body.transform==body,row.name+" fixed body")
+  if visual:
+   await capture(row.name+"_detail",true);await capture(row.name+"_bust",false)
+  rig.reset();check(rig.face.snapshot()==baseline,row.name+" reset")
+ check(rig.list_expressions().size()==22,"approved registry unchanged")
+ var result={"status":"PASS" if failures.is_empty() else "FAIL","checks":checks,"failures":failures,"visual_capture":visual,"scope":"Five isolated state and reset checks, not visual fit or complete performance"}
+ var f=FileAccess.open(w+("/capture/checks.json" if visual else "/state_checks.json"),FileAccess.WRITE);f.store_string(JSON.stringify(result,"  "));f.close()
+ print(JSON.stringify(result));quit(0 if failures.is_empty() else 1)

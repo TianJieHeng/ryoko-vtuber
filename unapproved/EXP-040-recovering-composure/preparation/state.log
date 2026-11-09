@@ -1,0 +1,4 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+OBJECT_BASE_READY independent_sprites=263 expression_timelines=0
+{"checks":27,"failures":[],"scope":"Five isolated state and reset checks, not visual fit or complete performance","status":"PASS","visual_capture":false}

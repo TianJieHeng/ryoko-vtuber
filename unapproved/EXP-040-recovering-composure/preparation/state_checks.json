@@ -1,0 +1,7 @@
+{
+  "checks": 27,
+  "failures": [],
+  "scope": "Five isolated state and reset checks, not visual fit or complete performance",
+  "status": "PASS",
+  "visual_capture": false
+}
