@@ -1,0 +1,21 @@
+{
+  "source_commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "sources": [
+    {
+      "local_source": "assembly_sources/head/RYO_HEAD_viseme_O_v001.png",
+      "original_repository_path": "avatar_build_assets/head/layers/RYO_HEAD_viseme_O_v001.png",
+      "git_blob": "1ddc791c4936ab81a9d64cae4e9abe8d47b40335",
+      "sha256": "f77ffa108892068d24e83bc1f433f8451cf2a31ff2ad03b20c47802170c02eab",
+      "role": "Inspected contour reference only; flattened composite is never displayed by mouth_purse."
+    },
+    {
+      "local_source": "assembly_sources/head/RYO_HEAD_viseme_U_v001.png",
+      "original_repository_path": "avatar_build_assets/head/layers/RYO_HEAD_viseme_U_v001.png",
+      "git_blob": "211a2e1d9c26a08c2856137a6bde4b6bf394e710",
+      "sha256": "539b1e74d2dc84cfaff43157d363a63a55b6bfad51924029efeafc689e816987",
+      "role": "Inspected contour reference only; flattened composite is never displayed by mouth_purse."
+    }
+  ],
+  "runtime_art": "Existing immutable canonical native lip pigment and existing source-derived oral owners only. No new PNG, generated art or composite mouth replacement.",
+  "registration": "Inferred rigid articulation and spatial clipping; source contour correspondence is approximate."
+}

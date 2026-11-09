@@ -1,0 +1,33 @@
+{
+  "approved_source_files_unchanged": 666,
+  "all_approved_source_files_preserved_on_disk": true,
+  "unchanged_original_png_files": 182,
+  "unchanged_original_expression_profiles": 20,
+  "new_or_changed_files": 16,
+  "new_profile_status": "UNAPPROVED",
+  "mouth_artwork_status": "USER_APPROVED",
+  "approval_scope": "Shape and color of separate mouth part only",
+  "main_integration": false,
+  "original_profile_paths": [
+    "yawn_performance.json",
+    "expressions/EXP-005.json",
+    "expressions/EXP-001.json",
+    "expressions/EXP-006.json",
+    "expressions/EXP-107.json",
+    "expressions/EXP-007.json",
+    "expressions/EXP-002.json",
+    "expressions/EXP-152.json",
+    "expressions/EXP-160.json",
+    "expressions/EXP-177.json",
+    "expressions/EXP-164.json",
+    "expressions/EXP-021.json",
+    "expressions/EXP-158.json",
+    "expressions/EXP-181.json",
+    "expressions/EXP-102.json",
+    "expressions/EXP-116.json",
+    "expressions/EXP-050.json",
+    "expressions/EXP-186.json",
+    "expressions/EXP-114.json",
+    "expressions/EXP-148.json"
+  ]
+}

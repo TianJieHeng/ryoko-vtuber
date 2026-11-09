@@ -1,0 +1,303 @@
+{
+  "version": 4,
+  "mechanism": "Original approved neutral lip-color silhouette, upper/lower alpha ownership with static alpha-over correction; rigid lower-lip translation. Source-assembly oral interiors behind alpha-only aperture. Identity UV, no scale, no replacement or opacity crossfade.",
+  "sources": {
+    "canonical_sources/approved_neutral.png": "880839d65cd90c582b48ca08f1b9a387acaa31762817644420f0316ed9e3a0db",
+    "rig_assets/object_face/neutral_lips.png": "5a9171068eea28afe545b184a4916d63eac12d80bbd9dc8d30fa7ffb89f16d1a",
+    "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png": "39ef37231d3347fe5f729e3fc427f9f59cc1604a12988b6c3ba563cb7ce3971e",
+    "assembly_sources/head/RYO_HEAD_upper_teeth_v001.png": "d8828150286cd64a52cf553715e80d9b33f9d4309d1de80ae86e494b69c05746",
+    "assembly_sources/head/RYO_HEAD_lower_teeth_v001.png": "fb3b00dcf74958063f3aa5466f770db4a34aa8dbd4209aae3030f86a04a0d9d6",
+    "assembly_sources/head/RYO_HEAD_tongue_v001.png": "8f731572395082142053234df3466f1e374de336a3510cfff9e9815bb85ff5a3"
+  },
+  "objects": {
+    "upper_lip": {
+      "file": "upper_lip.png",
+      "xy": [
+        525,
+        620
+      ],
+      "size": [
+        80,
+        45
+      ],
+      "z": 58,
+      "source": "canonical_sources/approved_neutral.png",
+      "source_visible_crop": [
+        525,
+        620,
+        605,
+        665
+      ],
+      "operation": "Original approved neutral lip colors inside traced alpha silhouette; static shader coverage divides upper and lower ownership."
+    },
+    "lower_lip": {
+      "file": "lower_lip.png",
+      "xy": [
+        525,
+        620
+      ],
+      "size": [
+        80,
+        45
+      ],
+      "z": 58,
+      "source": "canonical_sources/approved_neutral.png",
+      "source_visible_crop": [
+        525,
+        620,
+        605,
+        665
+      ],
+      "operation": "Original approved neutral lip colors inside traced alpha silhouette; static shader coverage divides upper and lower ownership."
+    },
+    "underlip_shadow": {
+      "file": "underlip_shadow.png",
+      "xy": [
+        525,
+        620
+      ],
+      "size": [
+        80,
+        45
+      ],
+      "z": 53,
+      "source": "canonical_sources/approved_neutral.png",
+      "source_visible_crop": [
+        525,
+        620,
+        605,
+        665
+      ],
+      "operation": "Original approved neutral lip colors inside traced alpha silhouette; static shader coverage divides upper and lower ownership."
+    },
+    "cavity": {
+      "file": "cavity.png",
+      "xy": [
+        525,
+        629
+      ],
+      "size": [
+        80,
+        76
+      ],
+      "z": 54,
+      "source": "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png",
+      "source_visible_crop": [
+        164,
+        104,
+        445,
+        212
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime."
+    },
+    "upper_teeth": {
+      "file": "upper_teeth.png",
+      "xy": [
+        533,
+        626
+      ],
+      "size": [
+        64,
+        14
+      ],
+      "z": 55,
+      "source": "assembly_sources/head/RYO_HEAD_upper_teeth_v001.png",
+      "source_visible_crop": [
+        57,
+        109,
+        487,
+        229
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime."
+    },
+    "lower_teeth": {
+      "file": "lower_teeth.png",
+      "xy": [
+        533,
+        685
+      ],
+      "size": [
+        62,
+        16
+      ],
+      "z": 55,
+      "source": "assembly_sources/head/RYO_HEAD_lower_teeth_v001.png",
+      "source_visible_crop": [
+        123,
+        93,
+        531,
+        214
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime."
+    },
+    "tongue": {
+      "file": "tongue.png",
+      "xy": [
+        536,
+        671
+      ],
+      "size": [
+        57,
+        29
+      ],
+      "z": 56,
+      "source": "assembly_sources/head/RYO_HEAD_tongue_v001.png",
+      "source_visible_crop": [
+        83,
+        25,
+        467,
+        219
+      ],
+      "operation": "Static canonical-mouth registration of immutable source-assembly interior; transparent edge guard where moving. Identity UV at runtime."
+    }
+  },
+  "estimates": {
+    "neutral_lips": "Source-authored visible lip colors recut with a tight alpha silhouette including the under-lip shadow. Boundary coverage is estimated; no surrounding rectangular skin patch travels.",
+    "oral_interiors": "Previously registered source-assembly cavity, teeth and tongue reused; they are not claimed visible in the canonical neutral."
+  },
+  "neutral_registration": {
+    "xy": [
+      525,
+      620
+    ],
+    "size": [
+      80,
+      45
+    ],
+    "center_x": 564.5,
+    "upper_y": 633.0,
+    "opening_height": 56.0,
+    "lower_lip_travel": 54.0,
+    "seam_owner_x": [
+      9.0,
+      70.0
+    ],
+    "lip_mask_polygon": [
+      [
+        527,
+        632
+      ],
+      [
+        532,
+        630
+      ],
+      [
+        543,
+        627
+      ],
+      [
+        550,
+        624
+      ],
+      [
+        558,
+        625
+      ],
+      [
+        563,
+        624
+      ],
+      [
+        570,
+        624
+      ],
+      [
+        580,
+        627
+      ],
+      [
+        591,
+        630
+      ],
+      [
+        601,
+        632
+      ],
+      [
+        603,
+        635
+      ],
+      [
+        600,
+        637
+      ],
+      [
+        591,
+        639
+      ],
+      [
+        583,
+        643
+      ],
+      [
+        576,
+        647
+      ],
+      [
+        564,
+        648
+      ],
+      [
+        552,
+        647
+      ],
+      [
+        543,
+        643
+      ],
+      [
+        536,
+        639
+      ],
+      [
+        529,
+        637
+      ],
+      [
+        527,
+        636
+      ]
+    ]
+  },
+  "upper_teeth_correction": {
+    "baseline_xy": [
+      533,
+      634
+    ],
+    "corrected_xy": [
+      533,
+      626
+    ],
+    "static_translation": [
+      0,
+      -8
+    ],
+    "texture_bytes_unchanged": false,
+    "reason": "Occlude the source arch top under the fixed upper lip; remove detached dark gap and side-first dental-outline reveal. Visible crown alpha and boundaries remain source-derived; tooth-only whitening is documented separately.",
+    "estimate": "Static registration is inferred because the canonical neutral does not expose teeth. No missing tooth pixels are generated."
+  },
+  "mouth_limit": {
+    "normalized_control_range": [
+      0.0,
+      1.0
+    ],
+    "effective_aperture_cap": 0.55,
+    "max_aperture_source_px": 30.8,
+    "max_lower_lip_translation_source_px": 29.7,
+    "reference_sha256": "27251922a6834aaf65a7d1da787bba89621ea63643f8eea68627a64570cf9a77",
+    "reference_scale_estimate": 0.792,
+    "reason": "Conservative dark-opening bound measured against user screenshot at matching facial scale. Existing shape is evaluated at the capped control, never compressed or scaled."
+  },
+  "tooth_whitening": {
+    "objects": [
+      "upper_teeth",
+      "lower_teeth"
+    ],
+    "operation": "Neutral RGB = round(clamp(135 + 0.5 * Rec709 source luminance, 0, 255)); alpha and source tooth boundaries retained. Static derivative only.",
+    "source_pixels_immutable": true,
+    "upper_tooth_attachment_xy": [
+      533,
+      626
+    ]
+  }
+}

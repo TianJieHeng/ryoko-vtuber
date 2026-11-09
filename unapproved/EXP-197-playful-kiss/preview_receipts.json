@@ -1,0 +1,52 @@
+{
+  "full": {
+    "status": "PASS",
+    "videos": {
+      "full": {
+        "width": 568,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "duration": "7.233333",
+        "nb_read_frames": "217",
+        "bytes": 109301,
+        "sha256": "2e6e873e81f33bc534fc8e87a74cb17b3ddf8f9b346e3f0159e3262c48c99dfe"
+      }
+    },
+    "frames": 217,
+    "profile_seconds": 7.2,
+    "video_seconds": 7.233333333333333,
+    "live_engine_pacing_measured": false,
+    "received_frames": 217,
+    "engine_returncode": 0,
+    "encoder_returncode": 0,
+    "candidate_source_unchanged": true,
+    "approved20_unchanged": true,
+    "remaining_engines": [],
+    "elapsed_seconds": 30.79762029647827
+  },
+  "detail": {
+    "status": "PASS",
+    "videos": {
+      "detail": {
+        "width": 400,
+        "height": 360,
+        "r_frame_rate": "30/1",
+        "duration": "7.233333",
+        "nb_read_frames": "217",
+        "bytes": 133868,
+        "sha256": "2ea993b9a6eaa3ac182524c9896f72c498b1e786c5b7c48601748b5cb4e56e70"
+      }
+    },
+    "frames": 217,
+    "profile_seconds": 7.2,
+    "video_seconds": 7.233333333333333,
+    "live_engine_pacing_measured": false,
+    "received_frames": 217,
+    "engine_returncode": 0,
+    "encoder_returncode": 0,
+    "candidate_source_unchanged": true,
+    "approved20_unchanged": true,
+    "remaining_engines": [],
+    "elapsed_seconds": 21.151915311813354
+  }
+}

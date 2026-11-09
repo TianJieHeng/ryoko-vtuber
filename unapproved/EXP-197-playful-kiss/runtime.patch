@@ -1,0 +1,353 @@
+--- approved/control_bridge.gd
++++ candidate/control_bridge.gd
+@@ -270,7 +270,7 @@
+     return {"name": "ryoko-shared-rig-control", "protocol": PROTOCOL,
+         "transport": "tcp-json-lines-loopback", "verbs": READ_VERBS + WRITE_VERBS,
+         "expressions": rig.list_expressions(), "bridge": status(),
+-        "controls": {"mouth_open": [0.0, 1.0], "mouth_smile": [0.0, 1.0], "mouth_spread": [0.0, 1.0], "mouth_width_screen_left": [0.0, 1.0], "mouth_width_screen_right": [0.0, 1.0], "mouth_corner_lift": [0.0, 1.0], "mouth_corner_lift_screen_left": [0.0, 1.0], "mouth_corner_lift_screen_right": [0.0, 1.0], "mouth_lip_press": [0.0, 1.0], "mouth_oral_lift": [0.0, 1.0], "mouth_purse": [0.0, 1.0], "blush_intensity": [0.0, 1.0], "eye_smile_R": [0.0, 1.0], "eye_smile_L": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
++        "controls": {"mouth_open": [0.0, 1.0], "mouth_smile": [0.0, 1.0], "mouth_spread": [0.0, 1.0], "mouth_width_screen_left": [0.0, 1.0], "mouth_width_screen_right": [0.0, 1.0], "mouth_corner_lift": [0.0, 1.0], "mouth_corner_lift_screen_left": [0.0, 1.0], "mouth_corner_lift_screen_right": [0.0, 1.0], "mouth_lip_press": [0.0, 1.0], "mouth_oral_lift": [0.0, 1.0], "mouth_purse": [0.0, 1.0], "mouth_kiss": [0.0, 1.0], "blush_intensity": [0.0, 1.0], "eye_smile_R": [0.0, 1.0], "eye_smile_L": [0.0, 1.0], "blink": [0.0, 1.0], "blink_L": [0.0, 1.0], "blink_R": [0.0, 1.0],
+             "brow_raise": [-1.0, 1.0], "brow_screen_left": [-1.0, 1.0], "brow_screen_right": [-1.0, 1.0],
+             "brow_tilt_screen_left": [-1.0, 1.0], "brow_tilt_screen_right": [-1.0, 1.0],
+             "brow_inner_lift_screen_left": [0.0, 1.0], "brow_inner_lift_screen_right": [0.0, 1.0],
+@@ -282,7 +282,7 @@
+             "requests_per_second": RATE_PER_SECOND, "burst_requests": RATE_BURST,
+             "json_depth": StrictJSON.MAX_DEPTH, "json_values": StrictJSON.MAX_TOKENS,
+             "clients": 1, "idle_timeout_ms": IDLE_TIMEOUT_MS, "partial_timeout_ms": PARTIAL_TIMEOUT_MS},
+-        "brow_inner_lift": Limits.brow_capabilities(), "auto_blink_policy": rig.auto_blink_policy(), "gaze": Limits.gaze_capabilities(), "physical_mouth_max": 0.55, "lateral_mouth": {"effective": "mouth_spread * mouth_smile", "maximum_half_width_increment_source_px": 20.0, "maximum_additional_corner_lift_source_px": 5.0, "maximum_center_lift_source_px": 4.0}, "closed_smile": {"control": "mouth_corner_lift", "maximum_additional_corner_lift_source_px": 12.0, "shape": "cubic source-radius lift", "independent_of_opening_and_spread": true, "lip_press_control": "mouth_lip_press", "maximum_inner_lip_depth_source_px": 4.0}, "independent_width": {"scope": "sealed_mouth_only", "constraint": "mouth_open == 0 or both independent widths == 0", "manual_validation": "complete prospective pose, including retained omitted fields", "profile_validation": "every interpolated segment; zero-trio separator required across domains", "handover": {"classification": "entire target timeline, fixed at trigger", "modes": ["legacy", "staged", "bounded_direct"], "width_trio_duration": "min(0.30, target duration)", "other_channels": "literal legacy 0.30-second restart", "state_field": "mouth_transition"}, "controls": ["mouth_width_screen_left", "mouth_width_screen_right"], "default": 0.0, "maximum_half_expansion_source_px": 20.0, "per_side_expansion": "20 * (s + (1 - s) * side), s = mouth_spread * mouth_smile", "legacy_style_unchanged": true, "zero_preserves_predecessor": true, "screen_coordinates": true}, "independent_corners": {"controls": ["mouth_corner_lift_screen_left", "mouth_corner_lift_screen_right"], "default": 0.0, "maximum_total_cubic_lift_source_px": 12.0, "per_side_effective_lift": "mouth_corner_lift + (1 - mouth_corner_lift) * side", "zero_preserves_predecessor": true, "screen_coordinates": true}, "blush_effect": {"control": "blush_intensity", "default": 0.0, "fixed_registered_source": true, "anatomy_unchanged": true, "foreground_hair_occludes": true}, "oral_surface": {"control": "mouth_oral_lift", "owner": "spread_lower_oral_surface", "maximum_total_rise_source_px": 40.0, "additional_rise_source_px": "40 * (1 - mouth_spread * mouth_smile) * mouth_oral_lift", "default": 0.0, "fixed_source_and_unit_scale": true}, "lip_purse": {"control": "mouth_purse", "default": 0.0, "scope": "bounded shared control"}, "ai_model_connected": false, "tts_connected": false}
++        "brow_inner_lift": Limits.brow_capabilities(), "auto_blink_policy": rig.auto_blink_policy(), "gaze": Limits.gaze_capabilities(), "physical_mouth_max": 0.55, "lateral_mouth": {"effective": "mouth_spread * mouth_smile", "maximum_half_width_increment_source_px": 20.0, "maximum_additional_corner_lift_source_px": 5.0, "maximum_center_lift_source_px": 4.0}, "closed_smile": {"control": "mouth_corner_lift", "maximum_additional_corner_lift_source_px": 12.0, "shape": "cubic source-radius lift", "independent_of_opening_and_spread": true, "lip_press_control": "mouth_lip_press", "maximum_inner_lip_depth_source_px": 4.0}, "independent_width": {"scope": "sealed_mouth_only", "constraint": "mouth_open == 0 or both independent widths == 0", "manual_validation": "complete prospective pose, including retained omitted fields", "profile_validation": "every interpolated segment; zero-trio separator required across domains", "handover": {"classification": "entire target timeline, fixed at trigger", "modes": ["legacy", "staged", "bounded_direct"], "width_trio_duration": "min(0.30, target duration)", "other_channels": "literal legacy 0.30-second restart", "state_field": "mouth_transition"}, "controls": ["mouth_width_screen_left", "mouth_width_screen_right"], "default": 0.0, "maximum_half_expansion_source_px": 20.0, "per_side_expansion": "20 * (s + (1 - s) * side), s = mouth_spread * mouth_smile", "legacy_style_unchanged": true, "zero_preserves_predecessor": true, "screen_coordinates": true}, "independent_corners": {"controls": ["mouth_corner_lift_screen_left", "mouth_corner_lift_screen_right"], "default": 0.0, "maximum_total_cubic_lift_source_px": 12.0, "per_side_effective_lift": "mouth_corner_lift + (1 - mouth_corner_lift) * side", "zero_preserves_predecessor": true, "screen_coordinates": true}, "blush_effect": {"control": "blush_intensity", "default": 0.0, "fixed_registered_source": true, "anatomy_unchanged": true, "foreground_hair_occludes": true}, "oral_surface": {"control": "mouth_oral_lift", "owner": "spread_lower_oral_surface", "maximum_total_rise_source_px": 40.0, "additional_rise_source_px": "40 * (1 - mouth_spread * mouth_smile) * mouth_oral_lift", "default": 0.0, "fixed_source_and_unit_scale": true}, "lip_purse": {"control": "mouth_purse", "default": 0.0, "scope": "bounded shared control"}, "kiss_part": {"control": "mouth_kiss", "default": 0.0, "static_approved_artwork": true, "constraint": "mouth_open == 0 when positive", "native_visibility_preserved": true, "independent_lip_articulation": false}, "ai_model_connected": false, "tts_connected": false}
+ 
+ func acknowledge(id: int, result: Variant):
+     enqueue({"protocol": PROTOCOL, "id": id, "session": session, "ok": true, "result": result})
+--- approved/expression_registry.gd
++++ candidate/expression_registry.gd
+@@ -1,7 +1,7 @@
+ extends RefCounted
+ ## Data-only catalogue. Validation is transactional; callers receive deep copies.
+ const Limits=preload("res://control_limits.gd")
+-const CHANNEL_BOUNDS={"blink_R":[0.0,1.0],"blink_L":[0.0,1.0],"brow_screen_left":[-1.0,1.0],"brow_screen_right":[-1.0,1.0],"brow_tilt_screen_left":[-1.0,1.0],"brow_tilt_screen_right":[-1.0,1.0],"brow_inner_lift_screen_left":[0.0,1.0],"brow_inner_lift_screen_right":[0.0,1.0],"gaze_x":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_y":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_down_extra":[0.0,1.0],"hair_sway":[-0.07,0.07],"mouth_open":[0.0,1.0],"eye_smile_R":[0.0,1.0],"eye_smile_L":[0.0,1.0],"mouth_smile":[0.0,1.0],"mouth_spread":[0.0,1.0],"mouth_width_screen_left":[0.0,1.0],"mouth_width_screen_right":[0.0,1.0],"mouth_corner_lift":[0.0,1.0],"mouth_corner_lift_screen_left":[0.0,1.0],"mouth_corner_lift_screen_right":[0.0,1.0],"mouth_lip_press":[0.0,1.0],"mouth_oral_lift":[0.0,1.0],"mouth_purse":[0.0,1.0],"blush_intensity":[0.0,1.0]}
++const CHANNEL_BOUNDS={"blink_R":[0.0,1.0],"blink_L":[0.0,1.0],"brow_screen_left":[-1.0,1.0],"brow_screen_right":[-1.0,1.0],"brow_tilt_screen_left":[-1.0,1.0],"brow_tilt_screen_right":[-1.0,1.0],"brow_inner_lift_screen_left":[0.0,1.0],"brow_inner_lift_screen_right":[0.0,1.0],"gaze_x":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_y":[Limits.GAZE_MIN,Limits.GAZE_MAX],"gaze_down_extra":[0.0,1.0],"hair_sway":[-0.07,0.07],"mouth_open":[0.0,1.0],"eye_smile_R":[0.0,1.0],"eye_smile_L":[0.0,1.0],"mouth_smile":[0.0,1.0],"mouth_spread":[0.0,1.0],"mouth_width_screen_left":[0.0,1.0],"mouth_width_screen_right":[0.0,1.0],"mouth_corner_lift":[0.0,1.0],"mouth_corner_lift_screen_left":[0.0,1.0],"mouth_corner_lift_screen_right":[0.0,1.0],"mouth_lip_press":[0.0,1.0],"mouth_oral_lift":[0.0,1.0],"mouth_purse":[0.0,1.0],"mouth_kiss":[0.0,1.0],"blush_intensity":[0.0,1.0]}
+ const DEFINITION_KEYS=["id","title","duration","keyframes","status","intent","source_catalogue_sha256","timing_origin","scope","interpolation"]
+ var last_error=""
+ var _entries:Dictionary={}
+@@ -10,9 +10,9 @@
+     return (value is int or value is float) and is_finite(float(value))
+ # Public width is sealed-mouth only. Call after finite/bounds validation.
+ static func sealed_mouth_valid(values:Dictionary)->bool:
+-    return not (float(values.get("mouth_open",0.0))>0.0 and (float(values.get("mouth_width_screen_left",0.0))>0.0 or float(values.get("mouth_width_screen_right",0.0))>0.0))
++    return not (float(values.get("mouth_open",0.0))>0.0 and (float(values.get("mouth_width_screen_left",0.0))>0.0 or float(values.get("mouth_width_screen_right",0.0))>0.0 or float(values.get("mouth_kiss",0.0))>0.0))
+ static func width_present(values:Dictionary)->bool:
+-    return float(values.get("mouth_width_screen_left",0.0))>0.0 or float(values.get("mouth_width_screen_right",0.0))>0.0
++    return float(values.get("mouth_width_screen_left",0.0))>0.0 or float(values.get("mouth_width_screen_right",0.0))>0.0 or float(values.get("mouth_kiss",0.0))>0.0
+ func fail(message:String)->bool:
+     last_error=message;return false
+ func load_file(path:String="res://expressions/registry.json")->bool:
+@@ -77,11 +77,11 @@
+     # Shared smoothstep between nonnegative endpoints must remain in one
+     # domain. A neutral trio key separates width and opening segments.
+     for frame in definition.keyframes:
+-        if not sealed_mouth_valid(frame.values):return fail("Positive mouth width requires mouth_open == 0")
++        if not sealed_mouth_valid(frame.values):return fail("Positive mouth width or kiss requires mouth_open == 0")
+     for index in range(definition.keyframes.size()-1):
+         var a=definition.keyframes[index].values;var b=definition.keyframes[index+1].values
+         if maxf(float(a.get("mouth_open",0.0)),float(b.get("mouth_open",0.0)))>0.0 and (width_present(a) or width_present(b)):
+-            return fail("Opening and width segments require an explicit zero-trio key")
++            return fail("Opening and sealed-mouth segments require an explicit zero-trio key")
+     var first=definition.keyframes[0];var final=definition.keyframes[-1]
+     if first.time!=0 or final.time!=definition.duration:return fail("Timeline must span time 0 through duration")
+     for frame in [first,final]:
+--- approved/expression_rig.gd
++++ candidate/expression_rig.gd
+@@ -5,7 +5,7 @@
+ var registry_ready=false
+ const RESTART_SECONDS=0.30
+ const RELEASE_SECONDS=0.45
+-const CHANNELS=["blink_R","blink_L","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","brow_inner_lift_screen_left","brow_inner_lift_screen_right","gaze_x","gaze_y","gaze_down_extra","hair_sway","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]
++const CHANNELS=["blink_R","blink_L","brow_screen_left","brow_screen_right","brow_tilt_screen_left","brow_tilt_screen_right","brow_inner_lift_screen_left","brow_inner_lift_screen_right","gaze_x","gaze_y","gaze_down_extra","hair_sway","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","mouth_kiss","blush_intensity"]
+ var active_performance=""
+ var performance_time=0.0
+ var performance_phase="neutral"
+@@ -15,7 +15,7 @@
+ var current_pose:Dictionary={}
+ var restart_pose:Dictionary={}
+ var release_pose:Dictionary={}
+-const MOUTH_TRIO=["mouth_open","mouth_width_screen_left","mouth_width_screen_right"]
++const MOUTH_TRIO=["mouth_open","mouth_width_screen_left","mouth_width_screen_right","mouth_kiss"]
+ # Trigger-fixed lookahead; no mode change when a later target key opens.
+ var mouth_bridge_mode="none"
+ var mouth_bridge_duration=0.0
+@@ -29,6 +29,7 @@
+ var manual_mouth_lip_press=0.0
+ var manual_mouth_oral_lift=0.0
+ var manual_mouth_purse=0.0
++var manual_mouth_kiss=0.0
+ var manual_blush_intensity=0.0
+ var oral_mode="continuous"
+ var performance:Dictionary={} 
+@@ -45,7 +46,7 @@
+     for key in CHANNELS:p[key]=0.0
+     return p
+ func pose_now()->Dictionary:
+-    return {"blink_R":manual_lids.x,"blink_L":manual_lids.y,"brow_screen_left":manual_brow.x,"brow_screen_right":manual_brow.y,"brow_tilt_screen_left":manual_brow_tilt.x,"brow_tilt_screen_right":manual_brow_tilt.y,"brow_inner_lift_screen_left":manual_brow_inner_lift.x,"brow_inner_lift_screen_right":manual_brow_inner_lift.y,"gaze_x":manual_gaze.x,"gaze_y":manual_gaze.y,"gaze_down_extra":float(manual_gaze_down_extra),"hair_sway":float(manual_hair),"mouth_open":float(manual_mouth_open),"eye_smile_R":manual_eye_smile.x,"eye_smile_L":manual_eye_smile.y,"mouth_smile":float(manual_mouth_smile),"mouth_spread":float(manual_mouth_spread),"mouth_corner_lift":float(manual_mouth_corner_lift),"mouth_corner_lift_screen_left":manual_mouth_corner_sides.x,"mouth_corner_lift_screen_right":manual_mouth_corner_sides.y,"mouth_width_screen_left":manual_mouth_width_sides.x,"mouth_width_screen_right":manual_mouth_width_sides.y,"mouth_lip_press":float(manual_mouth_lip_press),"mouth_oral_lift":float(manual_mouth_oral_lift),"mouth_purse":float(manual_mouth_purse),"blush_intensity":float(manual_blush_intensity)}
++    return {"blink_R":manual_lids.x,"blink_L":manual_lids.y,"brow_screen_left":manual_brow.x,"brow_screen_right":manual_brow.y,"brow_tilt_screen_left":manual_brow_tilt.x,"brow_tilt_screen_right":manual_brow_tilt.y,"brow_inner_lift_screen_left":manual_brow_inner_lift.x,"brow_inner_lift_screen_right":manual_brow_inner_lift.y,"gaze_x":manual_gaze.x,"gaze_y":manual_gaze.y,"gaze_down_extra":float(manual_gaze_down_extra),"hair_sway":float(manual_hair),"mouth_open":float(manual_mouth_open),"eye_smile_R":manual_eye_smile.x,"eye_smile_L":manual_eye_smile.y,"mouth_smile":float(manual_mouth_smile),"mouth_spread":float(manual_mouth_spread),"mouth_corner_lift":float(manual_mouth_corner_lift),"mouth_corner_lift_screen_left":manual_mouth_corner_sides.x,"mouth_corner_lift_screen_right":manual_mouth_corner_sides.y,"mouth_width_screen_left":manual_mouth_width_sides.x,"mouth_width_screen_right":manual_mouth_width_sides.y,"mouth_lip_press":float(manual_mouth_lip_press),"mouth_oral_lift":float(manual_mouth_oral_lift),"mouth_purse":float(manual_mouth_purse),"mouth_kiss":float(manual_mouth_kiss),"blush_intensity":float(manual_blush_intensity)}
+ func sample_expression(id,time)->Dictionary:
+     if not id is String or not number(time):
+         last_error="Expression ID must be a string and sample time a finite number";return {}
+@@ -108,11 +109,11 @@
+     manual_lids=Vector2(p.blink_R,p.blink_L);manual_brow=Vector2(p.brow_screen_left,p.brow_screen_right)
+     manual_brow_tilt=Vector2(p.brow_tilt_screen_left,p.brow_tilt_screen_right);manual_gaze=Vector2(p.gaze_x,p.gaze_y);manual_gaze_down_extra=float(p.get("gaze_down_extra",0.0))
+     manual_brow_inner_lift=Vector2(p.get("brow_inner_lift_screen_left",0),p.get("brow_inner_lift_screen_right",0))
+-    manual_eye_smile=Vector2(p.get("eye_smile_R",0),p.get("eye_smile_L",0));manual_mouth_smile=p.get("mouth_smile",0);manual_mouth_spread=p.get("mouth_spread",0);manual_mouth_corner_lift=p.get("mouth_corner_lift",0);manual_mouth_lip_press=p.get("mouth_lip_press",0);manual_mouth_oral_lift=p.get("mouth_oral_lift",0);manual_mouth_purse=p.get("mouth_purse",0);manual_blush_intensity=p.get("blush_intensity",0)
++    manual_eye_smile=Vector2(p.get("eye_smile_R",0),p.get("eye_smile_L",0));manual_mouth_smile=p.get("mouth_smile",0);manual_mouth_spread=p.get("mouth_spread",0);manual_mouth_corner_lift=p.get("mouth_corner_lift",0);manual_mouth_lip_press=p.get("mouth_lip_press",0);manual_mouth_oral_lift=p.get("mouth_oral_lift",0);manual_mouth_purse=p.get("mouth_purse",0);manual_mouth_kiss=p.get("mouth_kiss",0);manual_blush_intensity=p.get("blush_intensity",0)
+     manual_mouth_width_sides=Vector2(p.get("mouth_width_screen_left",0),p.get("mouth_width_screen_right",0))
+     manual_mouth_corner_sides=Vector2(p.get("mouth_corner_lift_screen_left",0),p.get("mouth_corner_lift_screen_right",0))
+     manual_hair=p.hair_sway;manual_mouth_open=p.mouth_open;mouth_shape="neutral";oral_mode="continuous"
+-    current_pose=p.duplicate();current_pose.mouth_purse=float(manual_mouth_purse)
++    current_pose=p.duplicate();current_pose.mouth_purse=float(manual_mouth_purse);current_pose.mouth_kiss=float(manual_mouth_kiss)
+     current_pose.mouth_width_screen_left=manual_mouth_width_sides.x;current_pose.mouth_width_screen_right=manual_mouth_width_sides.y
+     current_pose.mouth_corner_lift_screen_left=manual_mouth_corner_sides.x;current_pose.mouth_corner_lift_screen_right=manual_mouth_corner_sides.y
+     current_pose.brow_inner_lift_screen_left=manual_brow_inner_lift.x;current_pose.brow_inner_lift_screen_right=manual_brow_inner_lift.y;_write_pose()
+@@ -123,6 +124,7 @@
+     super._write_pose()
+     if oral_mode=="continuous":face.set_mouth_open(manual_mouth_open)
+     face.set_smile_controls(manual_eye_smile,manual_mouth_smile,manual_mouth_spread,manual_mouth_corner_lift,manual_mouth_lip_press,manual_mouth_oral_lift,manual_mouth_purse,manual_mouth_corner_sides,manual_mouth_width_sides)
++    face.set_kiss_weight(manual_mouth_kiss)
+     face.set_blush_intensity(manual_blush_intensity)
+     var owner=active_performance if active_performance!="" else ("release" if release_time>=0 else "manual")
+     face.effect_owner=owner
+@@ -148,7 +150,7 @@
+         last_error="Canonical hair_sway supports only [-0.07,0.07]";return false
+     # Validate the complete transaction before changing ownership or pose.
+     var base=data.duplicate()
+-    for key in ["perform_expression","release_performance","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]:base.erase(key)
++    for key in ["perform_expression","release_performance","mouth_open","eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","mouth_kiss","blush_intensity"]:base.erase(key)
+     for key in base:
+         if key not in NUMBERS and key not in ["reset","auto_blink","mouth","viseme"]:last_error="Unsupported control: "+str(key);return false
+     for key in NUMBERS:
+@@ -158,7 +160,7 @@
+         if base.has(key) and not base[key] is bool:last_error="Expected boolean: "+key;return false
+     for key in ["mouth","viseme"]:
+         if base.has(key) and (not base[key] is String or base[key].to_upper() not in ["A","E","I","O","U","REST","RELEASE","NEUTRAL"]):last_error="Invalid mouth shape";return false
+-    for key in ["eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","blush_intensity"]:
++    for key in ["eye_smile_R","eye_smile_L","mouth_smile","mouth_spread","mouth_corner_lift","mouth_corner_lift_screen_left","mouth_corner_lift_screen_right","mouth_width_screen_left","mouth_width_screen_right","mouth_lip_press","mouth_oral_lift","mouth_purse","mouth_kiss","blush_intensity"]:
+         if data.has(key) and (not number(data[key]) or data[key]<0 or data[key]>1):last_error=key+" must be in [0,1]";return false
+     if data.has("mouth_open") and (not number(data.mouth_open) or data.mouth_open<0 or data.mouth_open>1):last_error="mouth_open must be in [0,1]";return false
+     if data.has("perform_expression") and (not data.perform_expression is String or registry.resolve(data.perform_expression)==""):last_error="Unknown or unsupported expression ID";return false
+@@ -186,13 +188,13 @@
+     for key in MOUTH_TRIO:
+         if data.has(key):prospective[key]=float(data[key])
+     if not Registry.sealed_mouth_valid(prospective):
+-        last_error="Positive mouth width requires mouth_open == 0; set the complete trio atomically";return false
++        last_error="Positive mouth width or kiss requires mouth_open == 0; set the sealed-mouth fields atomically";return false
+     if data.size()>0:
+         _clear_mouth_bridge()
+         auto_blink_pending_restore=false
+         active_performance="";release_time=-1;performance_phase="manual"
+     if data.get("reset",false):
+-        manual_mouth_open=0;manual_eye_smile=Vector2.ZERO;manual_mouth_smile=0.0;manual_mouth_spread=0.0;manual_mouth_corner_lift=0.0;manual_mouth_corner_sides=Vector2.ZERO;manual_mouth_width_sides=Vector2.ZERO;manual_mouth_lip_press=0.0;manual_mouth_oral_lift=0.0;manual_mouth_purse=0.0;manual_blush_intensity=0.0;oral_mode="continuous";performance_time=0;performance_phase="neutral"
++        manual_mouth_open=0;manual_eye_smile=Vector2.ZERO;manual_mouth_smile=0.0;manual_mouth_spread=0.0;manual_mouth_corner_lift=0.0;manual_mouth_corner_sides=Vector2.ZERO;manual_mouth_width_sides=Vector2.ZERO;manual_mouth_lip_press=0.0;manual_mouth_oral_lift=0.0;manual_mouth_purse=0.0;manual_mouth_kiss=0.0;manual_blush_intensity=0.0;oral_mode="continuous";performance_time=0;performance_phase="neutral"
+         restart_pose.clear();release_pose.clear();performance.clear()
+     if data.has("eye_smile_R"):manual_eye_smile.x=float(data.eye_smile_R)
+     if data.has("eye_smile_L"):manual_eye_smile.y=float(data.eye_smile_L)
+@@ -206,6 +208,7 @@
+     if data.has("mouth_lip_press"):manual_mouth_lip_press=float(data.mouth_lip_press)
+     if data.has("mouth_oral_lift"):manual_mouth_oral_lift=float(data.mouth_oral_lift)
+     if data.has("mouth_purse"):manual_mouth_purse=float(data.mouth_purse)
++    if data.has("mouth_kiss"):manual_mouth_kiss=float(data.mouth_kiss)
+     if data.has("blush_intensity"):manual_blush_intensity=float(data.blush_intensity)
+     if data.has("mouth_open"):manual_mouth_open=float(data.mouth_open);oral_mode="continuous"
+     for key in ["mouth","viseme"]:
+--- approved/expression_viewer.gd
++++ candidate/expression_viewer.gd
+@@ -41,7 +41,7 @@
+     add_button(buttons,"Reset [0]",func():apply_controls({"reset":true}))
+     state_label=Label.new();panel.add_child(state_label)
+     var note=Label.new();note.text="Manual controls take ownership immediately.\nOnly the registered performances are implemented.";panel.add_child(note)
+-    for item in [["mouth_open","Mouth opening",0.0,1.0],["mouth_smile","Smile corners",0.0,1.0],["mouth_spread","Lateral smile spread",0.0,1.0],["mouth_corner_lift","Closed-smile curvature",0.0,1.0],["mouth_width_screen_left","Left sealed-mouth width",0.0,1.0],["mouth_width_screen_right","Right sealed-mouth width",0.0,1.0],["mouth_corner_lift_screen_left","Left corner remaining lift",0.0,1.0],["mouth_corner_lift_screen_right","Right corner remaining lift",0.0,1.0],["mouth_lip_press","Inner-lip pressure",0.0,1.0],["mouth_oral_lift","Lower oral-surface lift",0.0,1.0],["mouth_purse","Lip pursing",0.0,1.0],["blush_intensity","Separate cheek blush FX",0.0,1.0],["eye_smile_R","Screen-left smile eye",0.0,1.0],["eye_smile_L","Screen-right smile eye",0.0,1.0],["blink_R","Screen-left eyelid",0.0,1.0],["blink_L","Screen-right eyelid",0.0,1.0],["brow_screen_left","Screen-left brow",-1.0,1.0],["brow_screen_right","Screen-right brow",-1.0,1.0],["brow_tilt_screen_left","Screen-left brow tilt",-1.0,1.0],["brow_tilt_screen_right","Screen-right brow tilt",-1.0,1.0],["brow_inner_lift_screen_left","Screen-left inner brow lift",0.0,1.0],["brow_inner_lift_screen_right","Screen-right inner brow lift",0.0,1.0],["hair_sway","Hair sway",-0.07,0.07]]:
++    for item in [["mouth_open","Mouth opening",0.0,1.0],["mouth_smile","Smile corners",0.0,1.0],["mouth_spread","Lateral smile spread",0.0,1.0],["mouth_corner_lift","Closed-smile curvature",0.0,1.0],["mouth_width_screen_left","Left sealed-mouth width",0.0,1.0],["mouth_width_screen_right","Right sealed-mouth width",0.0,1.0],["mouth_corner_lift_screen_left","Left corner remaining lift",0.0,1.0],["mouth_corner_lift_screen_right","Right corner remaining lift",0.0,1.0],["mouth_lip_press","Inner-lip pressure",0.0,1.0],["mouth_oral_lift","Lower oral-surface lift",0.0,1.0],["mouth_purse","Lip pursing",0.0,1.0],["mouth_kiss","Approved kiss-mouth blend",0.0,1.0],["blush_intensity","Separate cheek blush FX",0.0,1.0],["eye_smile_R","Screen-left smile eye",0.0,1.0],["eye_smile_L","Screen-right smile eye",0.0,1.0],["blink_R","Screen-left eyelid",0.0,1.0],["blink_L","Screen-right eyelid",0.0,1.0],["brow_screen_left","Screen-left brow",-1.0,1.0],["brow_screen_right","Screen-right brow",-1.0,1.0],["brow_tilt_screen_left","Screen-left brow tilt",-1.0,1.0],["brow_tilt_screen_right","Screen-right brow tilt",-1.0,1.0],["brow_inner_lift_screen_left","Screen-left inner brow lift",0.0,1.0],["brow_inner_lift_screen_right","Screen-right inner brow lift",0.0,1.0],["hair_sway","Hair sway",-0.07,0.07]]:
+         add_slider(panel,item)
+     if Limits.GAZE_ENABLED:
+         add_slider(panel,["gaze_x","Gaze horizontal",Limits.GAZE_MIN,Limits.GAZE_MAX])
+--- approved/expressions/registry.json
++++ candidate/expressions/registry.json
+@@ -178,6 +178,14 @@
+         "nervous_laugh"
+       ],
+       "trigger_phase": "hesitant_onset"
++    },
++    {
++      "id": "EXP-197",
++      "path": "res://expressions/EXP-197.json",
++      "aliases": [
++        "playful_kiss"
++      ],
++      "trigger_phase": "anticipation"
+     }
+   ]
+ }
+--- approved/object_face.gd
++++ candidate/object_face.gd
+@@ -1,6 +1,7 @@
+ extends Node2D
+ ## Reusable base assembly. Independent rigid objects; no emotion playback.
+ const GazeLimits=preload("res://control_limits.gd")
++var current_iris_textures:Dictionary={}
+ var gaze_manifest:Dictionary
+ var manifest:Dictionary
+ var objects:Dictionary={}
+@@ -30,6 +31,10 @@
+ var mouth_lip_press=0.0
+ var mouth_oral_lift=0.0
+ var mouth_purse=0.0
++var mouth_kiss=0.0
++var kiss_sprite:Sprite2D
++var kiss_native_owners:Array=[]
++var kiss_native_opacity:Dictionary={}
+ var pressed_lip_owners:Array=[]
+ var blush_intensity=0.0
+ var effect_owner="manual"
+@@ -68,6 +73,7 @@
+         var e=manifest.objects[key]
+         if key.begins_with("closed_reference") or key.begins_with("viseme_"):continue
+         var node=Sprite2D.new();node.name=key;node.texture=load("res://rig_assets/object_face/"+e.file);node.centered=false
++        if key in ["iris_screen_left","iris_screen_right"]:node.texture=_load_current_iris(e.eye_side)
+         var pivot=Node2D.new();pivot.name=key+"_pivot";pivot.position=Vector2(e.pivot[0],e.pivot[1]);pivot.z_index=int(e.z)
+         node.position=Vector2(e.xy[0],e.xy[1])-pivot.position;pivot.add_child(node);add_child(pivot)
+         objects[key]=node;homes[key]={"xy":Vector2(e.xy[0],e.xy[1]),"pivot":pivot.position,"node":pivot}
+@@ -83,7 +89,7 @@
+                 material.set_shader_parameter("iris_padding",Vector2(ge.iris_padding[0],ge.iris_padding[1]))
+                 material.set_shader_parameter("sprite_origin",Vector2(-ge.iris_padding[0],-ge.iris_padding[1]) if int(e.eye_role)==7 else Vector2.ZERO)
+                 material.set_shader_parameter("aperture_texture",load("res://rig_assets/gaze_eyes/aperture_"+e.eye_side+".png"))
+-                material.set_shader_parameter("iris_texture",load("res://rig_assets/gaze_eyes/iris_"+e.eye_side+".png"))
++                material.set_shader_parameter("iris_texture",_load_current_iris(e.eye_side))
+             node.material=material
+     for side in ["screen_left","screen_right"]:
+         objects["iris_"+side].visibility_changed.connect(_update_iris_visibility.bind(side))
+@@ -93,6 +99,7 @@
+     _build_smile_objects()
+     _build_spread_objects()
+     if not _build_blush_objects():return
++    if not _build_kiss_part():return
+     ready_for_controls=true
+     set_pose(Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,"neutral",0.0)
+ func _update_iris_visibility(side:String):
+@@ -146,7 +153,7 @@
+     for key in objects:
+         var p=homes[key].node
+         transforms[key]={"position":[p.position.x,p.position.y],"rotation":p.rotation,"scale":[p.scale.x,p.scale.y],"opacity":objects[key].modulate.a,"visible":objects[key].visible}
+-    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"gaze_down_extra":gaze_down_extra,"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_width_sides":[mouth_width_sides.x,mouth_width_sides.y],"mouth_corner_lift":mouth_corner_lift,"mouth_corner_lift_sides":[mouth_corner_sides.x,mouth_corner_sides.y],"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"mouth_purse":mouth_purse,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
++    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"gaze_down_extra":gaze_down_extra,"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_width_sides":[mouth_width_sides.x,mouth_width_sides.y],"mouth_corner_lift":mouth_corner_lift,"mouth_corner_lift_sides":[mouth_corner_sides.x,mouth_corner_sides.y],"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"mouth_purse":mouth_purse,"mouth_kiss":mouth_kiss,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
+ 
+ func _build_oral_objects():
+     oral_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/yawn_mouth/manifest.json"))
+@@ -617,3 +624,36 @@
+         var node=effect_objects[key]
+         result[key]={"position":[node.position.x,node.position.y],"rotation":node.rotation,"scale":[node.scale.x,node.scale.y],"intensity":node.modulate.a,"visible":node.visible,"z_index":node.z_index,"owner":effect_owner}
+     return result
++
++# Approved static kiss artwork; zero is exact native-mouth behavior. The blend
++# owns only self-opacity, never native visibility, transforms, textures or UVs.
++func _build_kiss_part()->bool:
++    var path=ProjectSettings.globalize_path("res://rig_assets/kiss_support/kiss_lips.png")
++    var image=Image.load_from_file(path)
++    if image==null or image.is_empty():
++        asset_error="KISS_PART_MISSING";push_error(asset_error);return false
++    for key in objects:
++        if key=="neutral_lips" or key=="active_viseme" or "lip" in key or key.begins_with("oral_") or key.begins_with("spread_") or key.begins_with("mouth_corner"):
++            kiss_native_owners.append(key);kiss_native_opacity[key]=objects[key].self_modulate
++    kiss_sprite=Sprite2D.new();kiss_sprite.name="kiss_lips";kiss_sprite.centered=false
++    kiss_sprite.texture=ImageTexture.create_from_image(image);kiss_sprite.position=Vector2(543,618);kiss_sprite.z_index=58
++    kiss_sprite.visible=false;kiss_sprite.modulate.a=0.0;add_child(kiss_sprite)
++    objects.kiss_lips=kiss_sprite;homes.kiss_lips={"xy":kiss_sprite.position,"pivot":kiss_sprite.position,"node":kiss_sprite}
++    return true
++func set_kiss_weight(value:float):
++    mouth_kiss=clampf(value,0.0,1.0)
++    for key in kiss_native_owners:
++        var node=objects[key]
++        var pigment=kiss_native_opacity[key]
++        if mouth_kiss>0.0:pigment.a*=1.0-mouth_kiss
++        node.self_modulate=pigment
++        if node.material is ShaderMaterial:node.material.set_shader_parameter("native_part_weight",1.0-mouth_kiss)
++    kiss_sprite.modulate.a=mouth_kiss;kiss_sprite.visible=mouth_kiss>0.0
++
++# Use the exact approved repaired PNGs, even when an older .godot import cache
++# accompanies this review workspace. Both sprite and shader share the texture.
++func _load_current_iris(side:String)->Texture2D:
++    if not current_iris_textures.has(side):
++        var image=Image.load_from_file(ProjectSettings.globalize_path("res://rig_assets/gaze_eyes/iris_"+side+".png"))
++        current_iris_textures[side]=ImageTexture.create_from_image(image)
++    return current_iris_textures[side]
+--- approved/object_mouth_clip.gdshader
++++ candidate/object_mouth_clip.gdshader
+@@ -1,4 +1,6 @@
+ shader_type canvas_item;
++// Static-mouth replacement blend; one preserves the original geometry.
++uniform float native_part_weight = 1.0;
+ uniform vec2 origin;
+ uniform vec2 rigid_offset=vec2(0.0);
+ uniform float opening=0.0;
+@@ -100,4 +102,5 @@
+    pixel.a*=aperture*side;
+  }
+  COLOR=pixel;
++ COLOR.a *= native_part_weight;
+ }
+--- approved/pressed_lip_clip.gdshader
++++ candidate/pressed_lip_clip.gdshader
+@@ -1,4 +1,6 @@
+ shader_type canvas_item;
++// Static-mouth replacement blend; one preserves the original geometry.
++uniform float native_part_weight = 1.0;
+ render_mode unshaded;
+ // Inferred hidden inner-upper-lip tissue. Pigment uses fixed native UV.
+ // Its upper-lip parent alone translates/rotates; no UV or mesh deformation.
+@@ -62,4 +64,5 @@
+  pigment.a*=inside*tissue*side;
+  pigment.a=pigment.a*weight/max(1.0-pigment.a*(1.0-wr),.000001);
+  COLOR=pigment;
++ COLOR.a *= native_part_weight;
+ }
+--- approved/smile_lip_join.gdshader
++++ candidate/smile_lip_join.gdshader
+@@ -1,4 +1,6 @@
+ shader_type canvas_item;
++// Static-mouth replacement blend; one preserves the original geometry.
++uniform float native_part_weight = 1.0;
+ render_mode unshaded;
+ // Explicit inferred hidden joint material, fixed native cross-section and UV.
+ uniform vec2 left_top=vec2(0.0,-14.0);
+@@ -94,4 +96,5 @@
+   alpha=max(0.0,target_alpha-previous_alpha)/max(1.0-previous_alpha,.000001);
+  }
+  COLOR=vec4(p.rgb,alpha);
++ COLOR.a *= native_part_weight;
+ }
+--- approved/smile_lip_segment.gdshader
++++ candidate/smile_lip_segment.gdshader
+@@ -1,4 +1,6 @@
+ shader_type canvas_item;
++// Static-mouth replacement blend; one preserves the original geometry.
++uniform float native_part_weight = 1.0;
+ render_mode unshaded;
+ // Every owner uses fixed source UV. Only its Node2D pivot moves/rotates.
+ uniform float left_edge=0.0;
+@@ -131,4 +133,5 @@
+  // Static factorization across adjacent strips, never emotion opacity.
+  pixel.a=pixel.a*weight/max(1.0-pixel.a*(1.0-wr),.000001);
+  COLOR=pixel;
++ COLOR.a *= native_part_weight;
+ }
+--- approved/spread_teeth_clip.gdshader
++++ candidate/spread_teeth_clip.gdshader
+@@ -1,4 +1,6 @@
+ shader_type canvas_item;
++// Static-mouth replacement blend; one preserves the original geometry.
++uniform float native_part_weight = 1.0;
+ uniform vec2 origin;
+ uniform vec2 rigid_offset=vec2(0.0);
+ uniform float opening=0.0;
+@@ -89,4 +91,5 @@
+    pixel.a*=aperture*side;
+  }
+  COLOR=pixel;
++ COLOR.a *= native_part_weight;
+ }

@@ -1,0 +1,49 @@
+{
+  "scope": "Exact approved laughter runtime to lateral-only welcome candidate. Historical receipts unchanged. Not visual approval.",
+  "files": {
+    "control_bridge.gd": {
+      "baseline_sha256": "b292a0b51f8f305be8da10539195e422cdf003758dd7a6e00f0cad738e441c53",
+      "candidate_sha256": "b6703de96cb959c84febe0f9c29cc58aa67cb7d0ee7c6d7aab8fe48b2e2d12eb"
+    },
+    "expression_registry.gd": {
+      "baseline_sha256": "fd360770fb91d58c10d11e6470f00562cbf7abd8602ba373b8ec4b3e51dedf7b",
+      "candidate_sha256": "85d031e5546dd13a0e1349a742a9c0b0abff6c5315661eda873ae255a91e0d68"
+    },
+    "expression_rig.gd": {
+      "baseline_sha256": "866b873b8a0428e6fede7bbb6c9f676786d2265bf1372b660f578822ec3fc56e",
+      "candidate_sha256": "0417df4780956726f9d82c2d4a6d7d6c255c4cf5c57e71e2032e4a7864713fda"
+    },
+    "expression_viewer.gd": {
+      "baseline_sha256": "b90fd58006e37ad25deed1b264f608ae525f9b7742cd1e4f371c65db566707e4",
+      "candidate_sha256": "389fb69cc13a56d2e4ead240361422531fc2db090e0bdf6b366e60d590cf36da"
+    },
+    "object_face.gd": {
+      "baseline_sha256": "84404bae0e56aec8df4ed804604063981fc586ab35607a150e49dc1fd4f6a69e",
+      "candidate_sha256": "5aeeb7c2be31a009453250f2b74b1f74fed6a115533331f3c0276c39894a63ac"
+    },
+    "object_rig.gd": {
+      "baseline_sha256": "c8f8a8f85596464325cfe207ad4dd4a5613d12b8051abb94aee0acdb8125fd56",
+      "candidate_sha256": "5d4ec206fd98d75ebcab9bac0628cdf94c670901a6fa822cfc3decec7c1793dc"
+    },
+    "object_mouth_clip.gdshader": {
+      "baseline_sha256": "51d8bab9ffeee8ed4b92b16371cafc47d5ccf9b73927b9c0ba7fb8ab8006ed1e",
+      "candidate_sha256": "bca2f48d1feacfeed8ba72c8ff50b6a2e2f120989f8141b545f22f1b5d92ddd0"
+    },
+    "smile_lip_join.gdshader": {
+      "baseline_sha256": "b98dd0b8830165298b6dec7354a7b7752f6caa2a6bc42d10a11950f59d9420dc",
+      "candidate_sha256": "e3238064049d625c430368c5316ceb145e39699e0fb3f6d1f035998df77c668b"
+    },
+    "smile_lip_segment.gdshader": {
+      "baseline_sha256": "37f2e641ee6f6db6cf7e16c9ca9b7c75b0678b2d37628df67726fd4ef855cb77",
+      "candidate_sha256": "fd2c9dd16542aa87a24d626d6286d1f7a9778afab71965e1dfdba0e1b777cc93"
+    },
+    "test_object_rig.gd": {
+      "baseline_sha256": "88992992f7ae94a681e3390b12ce018770311c3f4e59c5ac1ecf06671ebf23b3",
+      "candidate_sha256": "b0bf921605e0c8758c9ad44aee4a2206d6cdf2dd349fe9161a453d99f3d13e17"
+    },
+    "test_expression_backbone.gd": {
+      "baseline_sha256": "2272e800bcc94f31da21aac8177aa75dc4008cf5a1763632b1b1b737e0fc7c50",
+      "candidate_sha256": "40f1651fee9d20f549976a07dd0e649adc77a4fe396bba47815f8366af019304"
+    }
+  }
+}

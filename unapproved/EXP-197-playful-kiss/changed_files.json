@@ -1,0 +1,66 @@
+{
+  "KISS_CANDIDATE.md": {
+    "new": true,
+    "sha256": "1d6445fd64d5458496f5745a20ffc0f3fe74ee6c272d143ae8f8e0dcdfc7f299"
+  },
+  "control_bridge.gd": {
+    "new": false,
+    "sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38"
+  },
+  "expression_registry.gd": {
+    "new": false,
+    "sha256": "8fe3ff2f3be182e33e3e27a995fb89517fe8d287db4883d378881022a62c8453"
+  },
+  "expression_rig.gd": {
+    "new": false,
+    "sha256": "90e3a952a08ab7eb8f9f44e1e10b9ee4c6bcdda5a6f76edadd8f5b5759d4cd94"
+  },
+  "expression_viewer.gd": {
+    "new": false,
+    "sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a"
+  },
+  "expressions/EXP-197.json": {
+    "new": true,
+    "sha256": "13077536a2e7510e549878463798709cb752ddb480ec1411967bfc9e2ce3ad67"
+  },
+  "expressions/registry.json": {
+    "new": false,
+    "sha256": "977c8e127bd5472354b5d1470368071bf95065f8041ea6867654deeecd759c84"
+  },
+  "object_face.gd": {
+    "new": false,
+    "sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300"
+  },
+  "object_mouth_clip.gdshader": {
+    "new": false,
+    "sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b"
+  },
+  "pressed_lip_clip.gdshader": {
+    "new": false,
+    "sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8"
+  },
+  "rig_assets/kiss_support/kiss_lips.png": {
+    "new": true,
+    "sha256": "3cadae701df5f639cd222975c0aa693fed4b1f6315c291d5ce934f78c317ffe0"
+  },
+  "rig_assets/kiss_support/provenance.json": {
+    "new": true,
+    "sha256": "ce3f6e51d1eeaf01940cafb0d73f2c2150a15ce8516baeb040de5d6e71e58915"
+  },
+  "smile_lip_join.gdshader": {
+    "new": false,
+    "sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb"
+  },
+  "smile_lip_segment.gdshader": {
+    "new": false,
+    "sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8"
+  },
+  "spread_teeth_clip.gdshader": {
+    "new": false,
+    "sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce"
+  },
+  "tests/test_kiss_runtime.gd": {
+    "new": true,
+    "sha256": "29ea6c9af71064e527c45cc176a473964778ca8a25e3c483402197ae165841bc"
+  }
+}
