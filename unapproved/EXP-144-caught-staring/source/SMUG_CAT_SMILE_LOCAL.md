@@ -1,0 +1,13 @@
+# EXP-186 Smug cat smile: local unapproved performance
+
+This data-only 3.40-second ten-key performance extends the exact completed EXP050 common source. All 17 previous profiles/statuses/tests/docs, runtime, shaders and 182 PNGs are unchanged. Only the registry appends EXP186. There are 18 local registered profiles and 12 user-approved profiles. A technical pass or unapproved backup is not approval or approved integration.
+
+All keys are exact independently passed static vectors from the single corrected EXP186 gate: neutral, onset, broad smug peak, eased watchful peak, eyes-reopening/lingering-smile recovery and neutral return. Duplicate keys add a quiet 0.10-second start, a 0.45-second peak hold, a 0.28-second eased hold and a 0.22-second neutral finish. The timings are newly authored, not recovered source animation. No control value or pose is refined during performance authoring.
+
+The closed broad screen-right-biased grin and bilateral narrowed but watching eyes must retain the original amused cat-smile family. The original painted lower contours rise/curve more than the ordinary-lid mechanism; exact lower-lid curvature is not reproduced. Fuller canonical lips, fine crease detail and source head/body inclination remain disclosed differences. No paint, sprite replacement, whole-mouth/head transform, UV change, widening or wink is used.
+
+Natural playback uses only ordinary lids, independent rigid brows, smile/spread, positive separate mouth corners and sealed side width. Mouth opening is exactly zero whenever width is positive. Existing generic transition staging handles handovers from/to open profiles without broadening that domain. Mouth purse, press, oral lift, bilateral corner addition, inner-brow lift, gaze, smiling-eye contours, blush and hair stay zero during natural playback. No AI/TTS or socket service is connected.
+
+The current scoped tests are tests/test_smug_cat_smile_runtime.gd, tools/verify_smug_cat_smile_scope.py and tools/review_smug_cat_smile_trajectory.gd. The first verifies exact anchors, dense natural sampling, ownership/lifecycle, prior-profile handovers, opening/width exclusion and anatomical invariants. The capture tool uses the same shared player for fixed actual renderer samples. Real-time normal-speed observation is not claimed. Historical inherited manifests and counts remain exact predecessor provenance and are not current 18-profile guards.
+
+Full actual-performance acceptance and user approval are distinct. Read SMUG_CAT_SMILE_STATUS.json and the associated frozen review receipts for the stage reached. No new capability is introduced.

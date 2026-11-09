@@ -1,0 +1,143 @@
+{
+  "base_commit": "35a7ddc615e7501a9a814ca02d722ddb40f200c9",
+  "files": {
+    "CONTROL_API.md": {
+      "baseline_sha256": "3c0c8b3d96404b1f5daba2b66bae511670ada7eb119d66dc52bb46318baec671",
+      "candidate_sha256": "1980d372dc65d854a6493fcb77613b1ee8da45737e1f98f8111f60c86cdbf163"
+    },
+    "LOCAL_CONTROL_BRIDGE.md": {
+      "baseline_sha256": "730902ba5eda6a904379998b4134bfd54144d8e1298ac8853d65c6ae351dea55",
+      "candidate_sha256": "06d191bc9b8455bb50dfe327e2c8b3461cec2c0afda0cd67789c28c583a63afe"
+    },
+    "PACKAGING.md": {
+      "baseline_sha256": "985059166baffb1775e1151ed45fb6bd4d523af5b0597001ccceef5e452ba52e",
+      "candidate_sha256": "d0f8a143d67515f971f67ae7e429fa81829fb6d1980c880dfc72bdee7eaef0b1"
+    },
+    "README.md": {
+      "baseline_sha256": "8fc693e0bcfb091793cf4912631b74e21beb240c91383ab5bb27423be958ff38",
+      "candidate_sha256": "7faf4021177083d51ddb7a03b94c72f89fb45e81db3cc606aac3f02de770fa7c"
+    },
+    "RELEASE.json": {
+      "baseline_sha256": "78c15d6783a2929f75362a3f06729cb527704ca4f4b5354d3b6a1775722c7aef",
+      "candidate_sha256": "8cf880737f32cc3796d4d7a064d8c6b4294c781394960ad2836a42e354d49c8d"
+    },
+    "control_bridge.gd": {
+      "baseline_sha256": "33705a9301c74c5b825c4dccee2156188c69310a190d73fc6cd6c9e0f9ad4d2d",
+      "candidate_sha256": "8ab5057f8226ccc1ca39a1761f63f1875c1fbaf6c2ed9a905aff7652f10129b7"
+    },
+    "expression_registry.gd": {
+      "baseline_sha256": "43a398490d9f7790d50d243df4dfdc819b4d97b7f0d6d61f3b5f2d541534e880",
+      "candidate_sha256": "29751dac6a3a557e520e87a5a762919e710adc0b2c5f96b66e854fbf7ca9c62a"
+    },
+    "expression_rig.gd": {
+      "baseline_sha256": "991fb3faed74b7cd47dacbdc0b64141ca034047ae196b655a30f1da77740123d",
+      "candidate_sha256": "a922cb5c1e0573c51b6be0702bac8a783413105253d6cdffea92d38381aa8a91"
+    },
+    "expression_viewer.gd": {
+      "baseline_sha256": "8fa1ebb22d5e6afdf2711eb52824031502d61b227ba78fe58e63116fc350d587",
+      "candidate_sha256": "26943ccfa9c3274f6c5c74386c30beaea98efb905a5bb95b824c3c8b1e0dc8fe"
+    },
+    "expressions/registry.json": {
+      "baseline_sha256": "8470325d687fe6e087ba976ef1d8816adfefb82ef926450488a989db76e5889b",
+      "candidate_sha256": "0da33cfc7a2131d1767c191edddbe20b27276ff36d7f84ac562d21ffb725eaae"
+    },
+    "object_face.gd": {
+      "baseline_sha256": "c6713067865f039c8588461293a56a87690107639dfea1503c61cc82632b74b8",
+      "candidate_sha256": "67fa50fdfaa34d9d68bf7bab767bee4d2850c98165696debc2f2b7421303f1a8"
+    },
+    "object_mouth_clip.gdshader": {
+      "baseline_sha256": "175126f351468d41ff793c5f38dc7f5a4fea71a0e5d9ee58a5eeead0eacbd6fd",
+      "candidate_sha256": "3f4cb7428de627cc84376b397bc1f13134b7fbe5bbc38c3b4cf2e6add9f75f4a"
+    },
+    "pressed_lip_clip.gdshader": {
+      "baseline_sha256": "b24f2709ee18887a4ad030f701479399fe4a9d9018aa457c6d2007246edab328",
+      "candidate_sha256": "e9639d2c0dd1b835d404dca7da6dbc70a91b5f120d314a0ce60f5a1229bb4850"
+    },
+    "smile_lip_join.gdshader": {
+      "baseline_sha256": "01d0f544fb4f2596fedff16ea9c02051905f0c7d85911699ad152276208ad771",
+      "candidate_sha256": "7c0a77fba14ba7645353b39cab818f0c8abb5001cdd95624010b5cd85fb6ee36"
+    },
+    "smile_lip_segment.gdshader": {
+      "baseline_sha256": "3c691fcb96a74fc9cf0beba7fb9986d2e55e1378d1264e7f6b17c2bc64248054",
+      "candidate_sha256": "78f9cf2a844be387f5abf9b2c71ab6d875a2beee491ea93f91b0eca33f4e13a4"
+    },
+    "spread_teeth_clip.gdshader": {
+      "baseline_sha256": "69dc03d7bec5994822d9d52d573318622396a1196794e418b393927247ee4bb4",
+      "candidate_sha256": "eaba69806c1ec1d526d3541fbe542fc77e20ca3e8ea8bdacaaaa44d50d57cd0a"
+    },
+    "test_expression_backbone.gd": {
+      "baseline_sha256": "96431f27284976d68f53d549b949a3ed733baf11c85d3159756039aeae6d2931",
+      "candidate_sha256": "b51f77d67a1d4827e8e4ceb519ffc0e72cd308806cb388a9e8f383aa04af87d7"
+    },
+    "test_yawn.gd": {
+      "baseline_sha256": "b4c1d30d25be950ec0ccc563a3f5d3493c020ec4be5e4e4e4e9fc80bfb3c3df9",
+      "candidate_sha256": "3fc43b930f5ed7f5d326fc772eef9b53de35ded8de9bbb7a44ba6d0ac0a90289"
+    },
+    "tests/test_giggle_runtime.gd": {
+      "baseline_sha256": "dd6855a825483eaa121b58f2b1d6cc481df6897e168450c22ce2f2683e60a3b2",
+      "candidate_sha256": "6e85876bd3dadd33f2b8db3c87329a86d023c9d38726cdfffd1d5d06cee0a436"
+    },
+    "tests/test_oral_lift_contract.gd": {
+      "baseline_sha256": "c8a3acec889746775b6fc4de2eb2e10b84394a11fb818340492544e3152291b5",
+      "candidate_sha256": "ed50ac723cd590c1d4e662dc49d28e9ad666a903b7c9ca0bd79066711157344b"
+    },
+    "tests/test_reassurance_runtime.gd": {
+      "baseline_sha256": "5b2f3d6a868389fb9642ad70ce1f35c7e46f8def29f897210705b3f764edad0c",
+      "candidate_sha256": "898578ca5fc773e9d4262d113a712710ab1c18dbc522d6f2075bd12c6735e3e6"
+    },
+    "tests/test_spread_runtime.gd": {
+      "baseline_sha256": "8eed9bb036a96250b1ed19fdc097c72f9eaaade84710dabc4bd9ecb54054d525",
+      "candidate_sha256": "b84fe1c914da40edb771ce49f541d94b61a91828a6d8002a2e6edafe787ba70e"
+    },
+    "tools/reassurance_source_guard.py": {
+      "baseline_sha256": "a14b88f7b68be3aea4a767e8bc3b4d3e09c8ea6eeafec0481cafd754c12588b0",
+      "candidate_sha256": "d7a6077805c9111b69bc1bd1cd28324eb6c395521eb9b3a773fe99c6b6a3976d"
+    },
+    "tools/test_control_bridge.py": {
+      "baseline_sha256": "742d2a7fce932efb10b7f288d0702f7a8fa1d05c21803890f62b707ddc2d5f3c",
+      "candidate_sha256": "08c1cfd40b9a528be833bc519ab03d26cf2084e6e95231fe9bda3e1323aaafca"
+    },
+    "tools/verify_giggle_scope.py": {
+      "baseline_sha256": "8ba1fa02e85bafbcab7d9eeec9ed3ee5b21cd5425f2084e6db32f512cffe6964",
+      "candidate_sha256": "ce638710dd59fd5aaadb752eddfc6b470e0e21ad873ce9ddc324219270036052"
+    },
+    "tools/verify_reassurance_scope.py": {
+      "baseline_sha256": "e27adb7039758de8c568a165bd8650292f11bd05c9d6519629280511d5238df4",
+      "candidate_sha256": "70e29d18e17f448c8f73db5e49468c393095fff53be872df3a19f8454834fad8"
+    },
+    "tools/verify_smile_support.py": {
+      "baseline_sha256": "646ce566f0194c8bfc8dab15c737a3b2b40a2efd8feca7cac70aa11e9270e914",
+      "candidate_sha256": "8a1d75cfdbfb37aa1f1d8cf7121e5bd3676c0dae2528be7c8d9cf9e8a9dc22a9"
+    },
+    "tools/verify_welcome_scope.py": {
+      "baseline_sha256": "04facbe59b3e68c2648160c3b16201c1506ad95899ed5dd9639ef4486bf085c3",
+      "candidate_sha256": "055bc90dc3724066f5576bd74f5a8a34fd29d431bc63f07e6a46124223d04d08"
+    }
+  },
+  "new_files": {
+    "RELIEF_SCOPE_VALIDATION.md": "e064bed79e21d9074c4d847c2950cc3d25855b62ba4ead15cc7e20304ae62d81",
+    "tests/test_relief_runtime.gd.uid": "8e11a2f917b362086e7699b3c92bb969c63678c9306cdc158e4f2a02173f259f",
+    "tests/test_purse_contract.gd": "dbcb1e28e839297f36cbd4278aaec16bb415caeebf42dffa76927ba8452ae776",
+    "tests/test_purse_transport.gd": "b68b8ca957c5d50948d34b1480c06f6abdae28beb7e89fb3f67888f54cb51363",
+    "tests/test_purse_transport.gd.uid": "cc5f3a762bcb690dc86b31f8b39f86a3d124cda52a19486b560962b991be333d",
+    "tests/test_relief_runtime.gd": "c8fcbf48e453077e57e036d27efaec5fe40000236de591309786527017570385",
+    "expressions/EXP-007.json": "ee13a8b4b819c5ecfd1e5f105565856ad10174a0a0ed69db4f0ddcb833821fdd",
+    "source_references/EXP-007_reference_provenance.json": "21f077efbff3a2b9f881c828b1045f781ae22ab4f8abc4916bfd31715362222e",
+    "source_references/purse_contour_provenance.json": "927e345456a16667d07b1aad088c5c5db9c4065db892285ac03541d7ebb7d966",
+    "source_references/relief_parent_inventory.json": "ad49e30ed083bf1075f28af06a9e4a61ef9fe6de5cf66469a035f7952fc8a1c7",
+    "source_references/reassurance_predecessor_RELEASE.json": "78c15d6783a2929f75362a3f06729cb527704ca4f4b5354d3b6a1775722c7aef",
+    "source_references/EXP-007_crop_verification.json": "f8b280ce951d32ac84b0389b4d098afcf04ca67236de15a4f556e8487a549d76",
+    "source_references/EXP-007_reference_metadata.json": "7cb2115efef2edf7fc385889347f219d261faa8c456930335f9c370bd0bca142",
+    "validation/relief_independent_review.json": "7a27fd0b55c0b156dc39c3d74f4e89a814d1f5e92f5c8d7e11a4e130c93d90a5",
+    "validation/relief_final_review.json": "bd47ee3336187bd3ce14029a429579892ac4f195af99b527c3fa647bd302e99b",
+    "tools/relief_source_guard.py": "9b1dacb06beb74ed83851363265a33b7a8d27c72033deab6f90b4588c4f3ac18",
+    "tools/verify_relief_scope.py": "52bcff4e789d729e9173377196a239187442307bd0cf7f566b4ae8dbf0dc4955",
+    "tools/review_purse_boundaries.gd": "adf20347e980b9eb86e25acd555bb51719b511706fa3de7f040971841a1827fd",
+    "tools/review_purse_boundaries.gd.uid": "8e834e4ea43022d33e85fe0dfbc3dd0e457d22f55d8bc9f3daabbf71fe51adca",
+    "tools/review_relief_scope.gd": "03453652119e9810981a655a75c35f6b24af46ff763cee80822a406ab024f663",
+    "tools/review_relief_keyposes.gd.uid": "4bc11eb8aa2410bf5fcba3ac5e43754d64b94043230e6256bd5a155739aa6b4d",
+    "tools/review_relief_keyposes.gd": "e02b337e10e352b0882a97d8bab216fd0fc757e4a9d92dd08ae419754e7c3527",
+    "tools/review_purse_aperture.gd": "eb61b5dbabb7290647dbe373efb0c7906cd7df8df9f07715b15c9ef9f5ca602d"
+  },
+  "scope": "EXP-007 relieved smile plus one generic bounded rigid mouth_purse control. All 182 parent PNGs and five profiles unchanged; no whole-mouth replacement or AI/TTS connection."
+}

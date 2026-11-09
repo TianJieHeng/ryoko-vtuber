@@ -1,0 +1,30 @@
+{
+  "scope": "continuous one-sided x0..12, y0, both lids >=.18; iris artwork footprint only, no extrapolation to onset or wider/unrestricted gaze",
+  "status": "PASS",
+  "eyes": {
+    "screen_left": {
+      "x_range": [
+        0,
+        12
+      ],
+      "y": 0,
+      "minimum_lid_closure": 0.18,
+      "reachable_hidden_texels": 89,
+      "uncovered_hidden_texels": 0,
+      "uncovered_examples": [],
+      "iris_sha256": "74f3ff38e8edd8c88f04bc446e316d8ecfd7da7bc618f1ff0f5c6da729d65b6d"
+    },
+    "screen_right": {
+      "x_range": [
+        0,
+        12
+      ],
+      "y": 0,
+      "minimum_lid_closure": 0.18,
+      "reachable_hidden_texels": 45,
+      "uncovered_hidden_texels": 0,
+      "uncovered_examples": [],
+      "iris_sha256": "4fe24f2f2f26aa846c4f906a71c044561ece963ea6c587bae109fbb148d8a390"
+    }
+  }
+}

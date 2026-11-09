@@ -1,0 +1,46 @@
+{
+  "artwork": "Canonical visible head, face, neck, hair, eye and brow pixels recut from original approved bust at native coordinates. Neutral lips recut from approved_neutral. Original source bytes remain unchanged. Bounded backing and hidden seam estimates are explicitly labeled.",
+  "base": {
+    "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+    "note": "Historical repository starting point. The clean package preserves existing tracked paths and supplies the corrected shared runtime and EXP-163 compatibility data; other repository projects are outside this overlay.",
+    "publication_manifest_sha256": "b6f4bfaab888f80b56a64947919d0d61507e02c69a996cae48283caf0b4e6fc2",
+    "repository": "TianJieHeng/ryoko-vtuber",
+    "subtree": "ryoko_object_rig/"
+  },
+  "base_source_manifest": "SOURCE_PROVENANCE.json",
+  "capability_gaps": [
+    "Nonzero gaze rejected pending verified hidden iris/sclera travel extensions.",
+    "Earrings remain static canonical backing; no new independent reconstruction claimed.",
+    "Manual hair_sway is limited to [-0.07,0.07] with atomic rejection outside that range; the exact yawn uses -0.045 to +0.07. Wider hidden hair surfaces are not reconstructed.",
+    "Unapproved discrete A/E/I/O/U and M shortcut are rejected in the yawn controller to prevent bypass of the reference maximum."
+  ],
+  "mechanism": {
+    "brows_hair": "Re-cut canonical source objects and bounded rigid transforms, no separate generic head or widened source registration.",
+    "cavity": "Central original cavity pixels, fixed registration; continuous aperture clipping only.",
+    "eyes": "Separate canonical upper lashes, lower contours, irises, sclerae and closed lashes. Upper lashes move rigidly with smooth spatial clipping; no zero-only branch, UV warp or whole-open-eye outline slide. Actual source/native visual and fine temporal checks passed.",
+    "lower_lip": "Original fuller neutral texture, rigid vertical translation up to 29.7 source pixels; normalized input maps to effective aperture0\u20130.55.",
+    "lower_teeth": "Immutable original source input, neutral-white derivative RGB with unchanged alpha/size; rigid up-to-2.75-source-pixel translation, occluded in capped yawn.",
+    "tongue": "Original source, rigid up-to-2.75-source-pixel translation; remains below the capped aperture.",
+    "underlip_shadow": "Static seventh oral source owner below cavity; no shadow patch dragged with lower lip.",
+    "upper_lip": "Original canonical neutral texture, stationary, with fixed cropped ownership and source-matched alpha edges.",
+    "upper_teeth": "Immutable original source input, fixed (533,626) registration; derivative neutral-white RGB with unchanged alpha/size and retained tooth divisions."
+  },
+  "mouth_limit_reference": {
+    "effective_cap": 0.55,
+    "sha256": "27251922a6834aaf65a7d1da787bba89621ea63643f8eea68627a64570cf9a77",
+    "source_to_screenshot_scale_estimate": 0.792
+  },
+  "oral_manifest": "rig_assets/yawn_mouth/manifest.json",
+  "original_intent": "source_references/EXP-163_intent.json",
+  "packaging": "See PACKAGING.md. Review movies and generated diagnostic intermediates are not repository files.",
+  "performance": "EXP-163 approved white-teeth, reference-bounded yawn v6; now hosted by the shared expression controller.",
+  "restrictions": "No push, CI, remote machine, paid resources or source-art replacement. No face deformation or animated feature scale.",
+  "schema_version": 2,
+  "sources": {
+    "assembly_sources/head/RYO_HEAD_lower_teeth_v001.png": "fb3b00dcf74958063f3aa5466f770db4a34aa8dbd4209aae3030f86a04a0d9d6",
+    "assembly_sources/head/RYO_HEAD_mouth_cavity_v001.png": "39ef37231d3347fe5f729e3fc427f9f59cc1604a12988b6c3ba563cb7ce3971e",
+    "assembly_sources/head/RYO_HEAD_tongue_v001.png": "8f731572395082142053234df3466f1e374de336a3510cfff9e9815bb85ff5a3",
+    "assembly_sources/head/RYO_HEAD_upper_teeth_v001.png": "d8828150286cd64a52cf553715e80d9b33f9d4309d1de80ae86e494b69c05746"
+  },
+  "validation": "See VALIDATION.md and validation/final_movie_review.json. User approval remains pending."
+}

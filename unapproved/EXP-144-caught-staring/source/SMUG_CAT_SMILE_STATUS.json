@@ -1,0 +1,38 @@
+{
+  "status": "Local unapproved EXP186 performance candidate; actual trajectory review pending",
+  "approved": false,
+  "approved_integration": false,
+  "registered_profile_count": 18,
+  "approved_profile_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021"
+  ],
+  "unapproved_profile_ids": [
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186"
+  ],
+  "base_source_freeze_sha256": "c2f4d0ff703f9caf418bf2a72ff117a294730a75f0be2ae3de4ba9c24577fd8a",
+  "runtime_art_and_seventeen_profiles_unchanged": true,
+  "static_gate": "Exact corrected six-anchor static PASS; original overclosed V1 HOLD is preserved history. One permitted refinement was exhausted before performance authoring.",
+  "interpretation_limits": [
+    "Original raised/curved lower eyelids are approximated by the canonical ordinary-lid mechanism; recognizable watching pupils are preserved.",
+    "Fuller canonical lips and fine painted crease differences remain. Source head/body inclination is excluded."
+  ],
+  "normal_speed_playback_observed": false,
+  "user_approval": "Pending. Twelve prior user-approved profiles remain twelve; local technical passes and backups are not approval.",
+  "historical_metadata": "Every inherited status/README/RELEASE/manifest remains byte-exact predecessor provenance."
+}

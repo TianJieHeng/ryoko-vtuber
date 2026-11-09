@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/usr/local/bin/godot",
+    "--rendering-method",
+    "gl_compatibility",
+    "--audio-driver",
+    "Dummy",
+    "--path",
+    "/workspace/scratch/42f2baf55663/interested_skepticism_work/candidate/ryoko_object_rig",
+    "--script",
+    "/workspace/scratch/42f2baf55663/caught_staring_mouth_work/capture_parting.gd",
+    "--",
+    "/workspace/scratch/42f2baf55663/caught_staring_mouth_work",
+    "/workspace/scratch/42f2baf55663/caught_staring_mouth_work/parting_01"
+  ],
+  "free_bytes": 112959488,
+  "available_memory": 2094112768,
+  "timeout_seconds": 120,
+  "LP_NUM_THREADS": "2",
+  "retry": "one whole warmed-cache attempt"
+}

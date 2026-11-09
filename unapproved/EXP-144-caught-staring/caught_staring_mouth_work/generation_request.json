@@ -1,0 +1,8 @@
+{
+  "prompt": "Use case: stylized-concept. Asset type: ONE separate transparent mouth part for a semi-realistic anime puppet, review proposal only. Image1 gives the shallow uneasy parted/downturned mouth in EXP-144, not a smile. Image2 gives the exact canonical lip pigment, restrained peach color and thin natural rendering style. Draw one isolated tiny open mouth, with a gentle inverted-arch upper contour, subtly lower side corners, a very shallow dark warm reddish-brown aperture and a restrained lightly shaded lower lip. The mouth must look caught off guard or embarrassed, not happy, kissing, shocked open, or crying. Aperture width about 70% of overall lip width and height about 8% of lip width, with no teeth or tongue visible. Natural matte pale peach-salmon lips, no lipstick, no thick black outline. Smooth antialiased alpha edges directly at lip pigment. NO surrounding skin, face patch, nose, chin, stray shadows, pale halo, labels, background, multiple variants or other anatomy. The mouth silhouette is roughly four times wider than tall. Center it on genuine transparency with generous margin. This is newly authored visible artwork for later native downsampling to around 70 by 20 pixels, not recovered hidden anatomy. Preserve the modest source shape and canonical style; do not copy pixelation from the enlarged reference.",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "/workspace/scratch/42f2baf55663/caught_staring_mouth_work/source_mouth_reference.png",
+    "/workspace/scratch/42f2baf55663/approved_upper_iris_repair_integration/candidate/ryoko_object_rig/rig_assets/object_face/neutral_lips.png"
+  ]
+}

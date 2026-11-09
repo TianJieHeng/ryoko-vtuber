@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/usr/local/bin/godot",
+    "--rendering-method",
+    "gl_compatibility",
+    "--audio-driver",
+    "Dummy",
+    "--path",
+    "/workspace/scratch/42f2baf55663/interested_skepticism_work/candidate/ryoko_object_rig",
+    "--script",
+    "/workspace/scratch/42f2baf55663/caught_staring_onset_work/capture_onset.gd",
+    "--",
+    "/workspace/scratch/42f2baf55663/caught_staring_onset_work",
+    "/workspace/scratch/42f2baf55663/caught_staring_onset_work/gate_01"
+  ],
+  "free_bytes": 108216320,
+  "available_memory": 2105548800,
+  "timeout_seconds": 120,
+  "LP_NUM_THREADS": "2",
+  "retry": "one whole warmed-cache attempt"
+}

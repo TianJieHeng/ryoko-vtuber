@@ -1,0 +1,334 @@
+{
+  "id": "EXP-144",
+  "name": "Caught staring",
+  "status": "UNAPPROVED_LOCAL_REVIEW",
+  "duration": 5.2,
+  "fps": 30,
+  "source": "original EXP-144 nine-pose sheet",
+  "controls": "Existing shared rig plus separate private upper-opening, horizontal-aversion and shallow-mouth parts. Not installed in approved registry.",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {
+        "opening_px": 0.0,
+        "aversion_px": 0.0,
+        "uneasy_weight": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_inner_lift_screen_left": 0.0,
+        "brow_inner_lift_screen_right": 0.0,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 0.3,
+      "phase": "neutral",
+      "values": {
+        "opening_px": 0.0,
+        "aversion_px": 0.0,
+        "uneasy_weight": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_inner_lift_screen_left": 0.0,
+        "brow_inner_lift_screen_right": 0.0,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 0.65,
+      "phase": "anticipation",
+      "values": {
+        "opening_px": 2,
+        "aversion_px": 0.0,
+        "uneasy_weight": 0.5,
+        "brow_screen_left": 0.35,
+        "brow_screen_right": 0.35,
+        "brow_inner_lift_screen_left": 0.1,
+        "brow_inner_lift_screen_right": 0.1,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 1,
+      "phase": "caught",
+      "values": {
+        "opening_px": 4,
+        "aversion_px": 0.0,
+        "uneasy_weight": 1,
+        "brow_screen_left": 0.65,
+        "brow_screen_right": 0.65,
+        "brow_inner_lift_screen_left": 0.2,
+        "brow_inner_lift_screen_right": 0.2,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 1.25,
+      "phase": "caught_hold",
+      "values": {
+        "opening_px": 4,
+        "aversion_px": 0.0,
+        "uneasy_weight": 1,
+        "brow_screen_left": 0.65,
+        "brow_screen_right": 0.65,
+        "brow_inner_lift_screen_left": 0.2,
+        "brow_inner_lift_screen_right": 0.2,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 1.45,
+      "phase": "prepare_aversion",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 0.0,
+        "uneasy_weight": 1,
+        "brow_screen_left": 0.35,
+        "brow_screen_right": 0.35,
+        "brow_inner_lift_screen_left": 0.2,
+        "brow_inner_lift_screen_right": 0.2,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 1.65,
+      "phase": "lower_lids",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 0.0,
+        "uneasy_weight": 1,
+        "brow_screen_left": 0.15,
+        "brow_screen_right": 0.15,
+        "brow_inner_lift_screen_left": 0.35,
+        "brow_inner_lift_screen_right": 0.35,
+        "blink_L": 0.18,
+        "blink_R": 0.18,
+        "blush_intensity": 0.4,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 1.95,
+      "phase": "avert",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 12,
+        "uneasy_weight": 1,
+        "brow_screen_left": 0.15,
+        "brow_screen_right": 0.15,
+        "brow_inner_lift_screen_left": 0.35,
+        "brow_inner_lift_screen_right": 0.35,
+        "blink_L": 0.18,
+        "blink_R": 0.18,
+        "blush_intensity": 0.8,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 2.3,
+      "phase": "embarrassed_press",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 12,
+        "uneasy_weight": 0,
+        "brow_screen_left": 0.15,
+        "brow_screen_right": 0.15,
+        "brow_inner_lift_screen_left": 0.35,
+        "brow_inner_lift_screen_right": 0.35,
+        "blink_L": 0.18,
+        "blink_R": 0.18,
+        "blush_intensity": 1,
+        "mouth_lip_press": 0.2,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 2.8,
+      "phase": "press_hold",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 12,
+        "uneasy_weight": 0,
+        "brow_screen_left": 0.15,
+        "brow_screen_right": 0.15,
+        "brow_inner_lift_screen_left": 0.35,
+        "brow_inner_lift_screen_right": 0.35,
+        "blink_L": 0.18,
+        "blink_R": 0.18,
+        "blush_intensity": 1,
+        "mouth_lip_press": 0.2,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 3.2,
+      "phase": "soften",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 8,
+        "uneasy_weight": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0,
+        "brow_inner_lift_screen_left": 0.3,
+        "brow_inner_lift_screen_right": 0.3,
+        "blink_L": 0.4,
+        "blink_R": 0.4,
+        "blush_intensity": 0.9,
+        "mouth_lip_press": 0.2,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 3.55,
+      "phase": "center_before_downcast",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 0,
+        "uneasy_weight": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0,
+        "brow_inner_lift_screen_left": 0.3,
+        "brow_inner_lift_screen_right": 0.3,
+        "blink_L": 0.48,
+        "blink_R": 0.48,
+        "blush_intensity": 0.9,
+        "mouth_lip_press": 0.2,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 3.85,
+      "phase": "downcast",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 0,
+        "uneasy_weight": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0,
+        "brow_inner_lift_screen_left": 0.3,
+        "brow_inner_lift_screen_right": 0.3,
+        "blink_L": 0.5,
+        "blink_R": 0.5,
+        "blush_intensity": 0.7,
+        "mouth_lip_press": 0.2,
+        "gaze_y": 0.6,
+        "gaze_down_extra": 0.35
+      }
+    },
+    {
+      "time": 4.1,
+      "phase": "downcast_hold",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 0,
+        "uneasy_weight": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0,
+        "brow_inner_lift_screen_left": 0.3,
+        "brow_inner_lift_screen_right": 0.3,
+        "blink_L": 0.5,
+        "blink_R": 0.5,
+        "blush_intensity": 0.7,
+        "mouth_lip_press": 0.2,
+        "gaze_y": 0.6,
+        "gaze_down_extra": 0.35
+      }
+    },
+    {
+      "time": 4.5,
+      "phase": "return_contact",
+      "values": {
+        "opening_px": 0,
+        "aversion_px": 0,
+        "uneasy_weight": 0,
+        "brow_screen_left": 0,
+        "brow_screen_right": 0,
+        "brow_inner_lift_screen_left": 0.2,
+        "brow_inner_lift_screen_right": 0.2,
+        "blink_L": 0.2,
+        "blink_R": 0.2,
+        "blush_intensity": 0.35,
+        "mouth_lip_press": 0.1,
+        "gaze_y": 0,
+        "gaze_down_extra": 0
+      }
+    },
+    {
+      "time": 4.9,
+      "phase": "settled",
+      "values": {
+        "opening_px": 0.0,
+        "aversion_px": 0.0,
+        "uneasy_weight": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_inner_lift_screen_left": 0.0,
+        "brow_inner_lift_screen_right": 0.0,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    },
+    {
+      "time": 5.2,
+      "phase": "neutral",
+      "values": {
+        "opening_px": 0.0,
+        "aversion_px": 0.0,
+        "uneasy_weight": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_inner_lift_screen_left": 0.0,
+        "brow_inner_lift_screen_right": 0.0,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_lip_press": 0.0,
+        "gaze_y": 0.0,
+        "gaze_down_extra": 0.0
+      }
+    }
+  ]
+}

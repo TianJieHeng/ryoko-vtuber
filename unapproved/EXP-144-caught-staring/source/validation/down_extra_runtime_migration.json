@@ -1,0 +1,124 @@
+{
+  "base_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
+  "scope": "Hidden canonical upper iris support and default-zero bounded downward extension; no new expression",
+  "files": {
+    "expression_viewer.gd": {
+      "baseline_sha256": "c874c5e2679644e921ff2ccac8bca0be08b9cbef225e237c4e5ac02dd0ca1598",
+      "candidate_sha256": "284e459b4e8e384b2e953732c4f02f6aa071b0d5258d3bd0aad280cc96205e95"
+    },
+    "CONTROL_API.md": {
+      "baseline_sha256": "073e4ba9abde2f576a8885c5465da418bba2575ecbbfe68bb1fdd3b124313db0",
+      "candidate_sha256": "db60cc7ecfbb7afc0e3e4da5099bfc4360472c6e30674e89aca25515690503c8"
+    },
+    "expression_rig.gd": {
+      "baseline_sha256": "551dd90b83171605be05302150c103d097b5789777d0f3a40b3805dd00355936",
+      "candidate_sha256": "3a9bf53129614a062ef9f20bdbb75373bca17853a78eee9fca891f6146ac20e0"
+    },
+    "object_rig.gd": {
+      "baseline_sha256": "5d4ec206fd98d75ebcab9bac0628cdf94c670901a6fa822cfc3decec7c1793dc",
+      "candidate_sha256": "c319458d869dcbde9d5dc96ef76f1a789cb18c699d3ffae78ccdf8729900aa5d"
+    },
+    "expression_registry.gd": {
+      "baseline_sha256": "29751dac6a3a557e520e87a5a762919e710adc0b2c5f96b66e854fbf7ca9c62a",
+      "candidate_sha256": "a6801a9bfb276728a5bd1c814493e852443c583648a7b19bf7133d15efa83959"
+    },
+    "object_face.gd": {
+      "baseline_sha256": "67fa50fdfaa34d9d68bf7bab767bee4d2850c98165696debc2f2b7421303f1a8",
+      "candidate_sha256": "16fa4b17588099d6346ab39ca9ef1ed9a3e4e271f7576127666b9a897450a09c"
+    },
+    "LOCAL_CONTROL_BRIDGE.md": {
+      "baseline_sha256": "5d29bcd2730d8299137fafe68c3e285c687fc40f1f9f7f26c568339e6c73c232",
+      "candidate_sha256": "f7d55a3c33e03cf319f9945c4563409ca4cc569d8db90cf0d57cfccf06cfb778"
+    },
+    "README.md": {
+      "baseline_sha256": "0e1f1374f12c978f48bbec8e9c155a4bdc9ccd04a05b955dc619e2835d1b701e",
+      "candidate_sha256": "f3edf21d11b269e5a5a419ee5e1c9a8497cdcbfd971fc1523660604aef3fe794"
+    },
+    "control_limits.gd": {
+      "baseline_sha256": "10e08a1d33ecd6f6b32adf648527bbc2680a80a0067a4bebbe8107d98ff52a75",
+      "candidate_sha256": "4121b57061132abf9fbf1ef7586102ce54245212d72543e917c72b0039a2fb3d"
+    },
+    "control_bridge.gd": {
+      "baseline_sha256": "6a8ac4144aa02f4dad4eeb11d7225309740b959ef912f0c18ba94db4239fa257",
+      "candidate_sha256": "df7eaf85cf0783825d9d5878ed36991868687f6a89c4b6c8ec431d140864860b"
+    },
+    "tools/verify_lid_handoff.py": {
+      "baseline_sha256": "973390de46435c60348cad9ca105c7ae51415bb9e2afe9b0b8a59f9755b5f90a",
+      "candidate_sha256": "3bd8c73afb3d96b5e4ded9e6ed39363d58ae5f54397f3a5c952c0cba7e807405"
+    },
+    "tools/verify_reassurance_scope.py": {
+      "baseline_sha256": "70e29d18e17f448c8f73db5e49468c393095fff53be872df3a19f8454834fad8",
+      "candidate_sha256": "cbcf06cec449192053a934dca569c910f94861d5774be77ed37970c14417a631"
+    },
+    "tools/autoblink_source_guard.py": {
+      "baseline_sha256": "38284e3c2c3e21190e506b0b091dbde1bbb6d68fc6d0d10237bdec21d28c32ff",
+      "candidate_sha256": "9fa43825a8195672156c1d6e8c6774109226ef663d0f0cdac8e65a7ebca79e99"
+    },
+    "tools/verify_closed_smile_support.py": {
+      "baseline_sha256": "3b35750933f82065a970a61176aa0daeddd2b36049069bb455a4164c2ef20362",
+      "candidate_sha256": "da17f4877e815e182f4d7fc512e1d6daf89e6015cfdd20cc3719e818368997c4"
+    },
+    "tools/verify_gaze_coverage.py": {
+      "baseline_sha256": "61e9d698d7fe67d4aa42f43829e831d020ed86a22d23d6368a7c6b509a430737",
+      "candidate_sha256": "590f73be3a39d15fb969ca06f0dad393a405cf68f5e2ad5a3dfde143a1567703"
+    },
+    "tools/verify_relief_scope.py": {
+      "baseline_sha256": "4fb260ec50cdc31f92ca300dde515f7ac9ac47a6092f108eb3647bb6a686467b",
+      "candidate_sha256": "3838ed3939b960c1fb3ed3d510b78aa27c0cb35c1f84e20e09d873b4a40d1ca5"
+    },
+    "tools/verify_autoblink_scope.py": {
+      "baseline_sha256": "bf37b3fe0678c3cee2d377f876bc31fc251ed4b240d75f7d0c8cd1a05ada16a8",
+      "candidate_sha256": "ace108320cf3dfbce444725df5d5ae49a853d5962f48c7d0fab91f96dd1a2025"
+    },
+    "tools/verify_smile_support.py": {
+      "baseline_sha256": "8a1d75cfdbfb37aa1f1d8cf7121e5bd3676c0dae2528be7c8d9cf9e8a9dc22a9",
+      "candidate_sha256": "5bb7175503fb69c1dab8bc44d40ee349ea3f86c734df3b27d3a41d81377c71f3"
+    },
+    "tools/build_gaze_eyes.py": {
+      "baseline_sha256": "16b0685ce65a1f2455f991ff2c339680f4a9218a14d5fd8cfbcbebd5cf10015f",
+      "candidate_sha256": "613c73615e1ea23e50c124482b1bf0f9571c89f92d31c1001a667788716fd37c"
+    },
+    "tools/verify_spread_support.py": {
+      "baseline_sha256": "6b6c6b72b24b0cdb2ffb7557552ea1047daa52c0b2717cdf96dd74e14f987d6c",
+      "candidate_sha256": "2160cdf649c8bf731668d12b5201787d06f35ccd044ed3355a658937f2828cee"
+    },
+    "tools/verify_giggle_scope.py": {
+      "baseline_sha256": "ce638710dd59fd5aaadb752eddfc6b470e0e21ad873ce9ddc324219270036052",
+      "candidate_sha256": "aeb505b94f2feec5c5e09de6cbe5ec2b7e4eb1b12a087b802899ced60d97c4df"
+    },
+    "rig_assets/gaze_eyes/completed_iris_screen_left.png": {
+      "baseline_sha256": "c634e778c9af51ae067cb1cb55dff4063723efbb89abaadbf0d0a4a4f6d793c7",
+      "candidate_sha256": "3ae4bd9d11100174f889750e42b9f5b0af0a39cc2f503ab9faef0e3ece38e4cf"
+    },
+    "rig_assets/gaze_eyes/completed_iris_screen_right.png": {
+      "baseline_sha256": "0b95ca6c54d6925556e427357293670f3bfeacce20221539c59066e6b86c583e",
+      "candidate_sha256": "52624d516fee792018ce0386295279ce76cf8ae1fc3487f5ca00a78377fe0aef"
+    },
+    "rig_assets/gaze_eyes/iris_screen_left.png": {
+      "baseline_sha256": "bcf4e08718f205fd6d7cfb25a887b79d2720b73d50d0b7d5251449917372fa89",
+      "candidate_sha256": "86f2b2481173577fa947cdaad842d9fc0ddc0cd29cfaee1eba3a56b53dde7e14"
+    },
+    "rig_assets/gaze_eyes/iris_screen_right.png": {
+      "baseline_sha256": "9fbee2a0b4afc0615d4fedeb179c69115c17915e40632187106e312482fcf49c",
+      "candidate_sha256": "e6bdd07fd8c3867a785aee205f233c583a572df00abccbdcaba266c40f5d0450"
+    },
+    "rig_assets/gaze_eyes/manifest.json": {
+      "baseline_sha256": "e5cb9f2961ee5a47350adee36b92c4da74a8602c287c0716f3afd6d487ecc17d",
+      "candidate_sha256": "62c15d8dbcc77619aa684b31bf10dea0da9d7151d2f11c73b8a4fdff2e7c81d2"
+    }
+  },
+  "new_files": {
+    "DOWN_GAZE_VALIDATION.md": "7ccab196b257ad6a22c90316484803b3d28ff884caa633e7638e444d058d613f",
+    "tests/test_down_extra_runtime.gd": "83ee1f598ec0476a14a3377807e86402b8b10f5243b4e96b18deb1412c6e4bd1",
+    "tests/test_down_extra_runtime.gd.uid": "6f980a48d3e6bb4b364c347340c87f849725ad1772932e8c183f51befc4676e4",
+    "source_references/hidden_iris_cap_patch.json": "a4fa66d298745ef254840638144dbbfc16c783d867c9cee675bdc59e24019dca",
+    "source_references/hidden_iris_generation_prompt.txt": "3c985a8ef797bf3c628e434b47ffc108f216e53ad8188c0c8c68aafa3393b24c",
+    "source_references/down_extra_parent_inventory.json": "dd8f952ee33a8311d9c966dd6f77c47a92572c0fd19e3efdd1d5a06e41790265",
+    "tools/verify_hidden_iris_support.py": "34809b75e70407968265c3c36e94730160bfa9a235809624115043d0fee5c8d0",
+    "tools/verify_down_extra_scope.py": "ee3474e16a5db5024f3b205643f414e88a611184e0aff9d10d6a01f109f12dca",
+    "tools/down_extra_source_guard.py": "83265bd768b68949be97eb47117c696b764bab5460afe14744b8646729eb9453",
+    "tools/complete_hidden_iris.py": "8909d796539b16082ead98ed14f17178f3834fb46b8d0fdb7666f976fe259228",
+    "tools/review_down_extra.gd": "9eed36346b3a22bc54a3630d5662b02662ddf99d7a5012bad221cc83f16553d5",
+    "tools/review_down_extra.gd.uid": "b4d085e5f095698f6007703fe305c7e8457e74987f1427fb3aa63134cb9c4343"
+  }
+}

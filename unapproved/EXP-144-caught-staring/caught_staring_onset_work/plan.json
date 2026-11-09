@@ -1,0 +1,50 @@
+{
+  "neutral": {
+    "x": 0,
+    "opening": 0,
+    "mouth": false,
+    "pose": {}
+  },
+  "KP3_old_eyes": {
+    "x": 0,
+    "opening": 0,
+    "mouth": true,
+    "pose": {
+      "brow_screen_left": 0.65,
+      "brow_screen_right": 0.65,
+      "brow_inner_lift_screen_left": 0.2,
+      "brow_inner_lift_screen_right": 0.2
+    }
+  },
+  "KP3_open4": {
+    "x": 0,
+    "opening": 4,
+    "mouth": true,
+    "pose": {
+      "brow_screen_left": 0.65,
+      "brow_screen_right": 0.65,
+      "brow_inner_lift_screen_left": 0.2,
+      "brow_inner_lift_screen_right": 0.2
+    }
+  },
+  "KP4_avert": {
+    "x": 12,
+    "opening": 0,
+    "mouth": true,
+    "pose": {
+      "blink_L": 0.18,
+      "blink_R": 0.18,
+      "brow_screen_left": 0.15,
+      "brow_screen_right": 0.15,
+      "brow_inner_lift_screen_left": 0.35,
+      "brow_inner_lift_screen_right": 0.35,
+      "blush_intensity": 0.8
+    }
+  },
+  "neutral_restored": {
+    "x": 0,
+    "opening": 0,
+    "mouth": false,
+    "pose": {}
+  }
+}

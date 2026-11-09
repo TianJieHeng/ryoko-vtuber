@@ -1,0 +1,9 @@
+{
+  "prompt": "Use case: precise-object-edit. Edit target image1 is the isolated transparent mouth proposal. Image2 is the actual uneasy parted-mouth source reference; image3 is canonical neutral lip pigment. Make exactly ONE targeted correction: change the near-sealed seam into a clearly visible but shallow open dark oral gap, preserving the thin matte peach-salmon lip style and uneasy/downturned relationship. The aperture center should be about ten percent of total mouth width, so that when the complete mouth is downsampled to56px wide the dark gap remains visibly open at about5px high, not a one-pixel seam. Aperture is a gentle shallow inverted arch: upper middle lifted, outer corners lower; lower central boundary roughly horizontal and corners close naturally. Keep the overall mouth compact and horizontal, NOT an O, kiss, smile or deep gasp. No teeth or tongue. Thin restrained upper lip and lower lip, no extra fullness, glossy lipstick, heavy dark outline or dark cavity outside the lips. Transparent alpha immediately borders lip pigment: no skin patch, no nose, no chin shadow, no halo, no background, labels or variants. Preserve natural canonical color. One centered isolated open-mouth part on genuine transparency. This is newly authored visible artwork for local review, not recovered hidden anatomy.",
+  "transparent_background": true,
+  "referenced_image_paths": [
+    "/workspace/scratch/42f2baf55663/caught_staring_mouth_work/raw_generated.png",
+    "/workspace/scratch/42f2baf55663/caught_staring_mouth_work/source_mouth_reference.png",
+    "/workspace/scratch/42f2baf55663/approved_upper_iris_repair_integration/candidate/ryoko_object_rig/rig_assets/object_face/neutral_lips.png"
+  ]
+}

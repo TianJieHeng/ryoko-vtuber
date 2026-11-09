@@ -1,0 +1,65 @@
+{
+  "status": "User-approved, published with containing merged repository commit",
+  "published_baseline_commit": "8c349e29fb1e742231918260d7db56026492a6c9",
+  "controls": {
+    "brow_inner_lift_screen_left": [
+      0,
+      1
+    ],
+    "brow_inner_lift_screen_right": [
+      0,
+      1
+    ]
+  },
+  "default": 0,
+  "additional_rotation_degrees": 26,
+  "new_artwork_files": 0,
+  "approved_registry_unchanged": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152"
+  ],
+  "new_expression_registered": true,
+  "normal_speed_playback_performed": false,
+  "socket_test_performed": false,
+  "ai_model_connected": false,
+  "tts_connected": false,
+  "validation": "BROW_INNER_LIFT_VALIDATION.md",
+  "historical_release_metadata": "Original historical metadata is preserved in immutable source references; RELEASE.json is current merged publication status.",
+  "mapping_revision": "outer_anchor_v1_local_candidate",
+  "outer_anchor_canonical": {
+    "screen_left": [
+      466.55,
+      452.35
+    ],
+    "screen_right": [
+      646.227,
+      453.773
+    ]
+  },
+  "anchor_reference": "after legacy center tilt and vertical translation",
+  "nonzero_v0_compatible": false,
+  "previous_unapproved_mapping": "14-degree additive center-pivot v0 retained separately",
+  "source_fit_only": "Approved EXP-160 peak uses32degrees total/raise0; immutable frozen source retains original review status.",
+  "previous_v0_inventory_sha256": "57653068ffe5ce5b5354545a33e48dd14bf0c029d10f488ca49db6ce75a7c1f9",
+  "user_approved": true,
+  "published": true,
+  "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160"
+  ],
+  "approval_required_before_publication": false,
+  "historical_review": "Original frozen source and receipts remain immutable; current publication is described in SHY_MERGED_PUBLICATION_VALIDATION.md"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "UNAPPROVED_VISIBLE_MOUTH_PART_PROPOSAL",
+  "generation_count": 1,
+  "raw_sha256": "e17a96f5ca156ceb520e879075575475f2d4f32079e71cfffb26054e74cb1324",
+  "crop": [
+    731,
+    283,
+    1441,
+    445
+  ],
+  "native_size": [
+    56,
+    16
+  ],
+  "registration": [
+    537,
+    628
+  ],
+  "alpha_processing": "Remove alpha<=8 only; RGB untouched",
+  "anatomy": "One visible static mouth composite, not independently layered/hidden anatomy or approved runtime replacement."
+}

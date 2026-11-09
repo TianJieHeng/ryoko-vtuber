@@ -1,0 +1,14 @@
+{
+  "neutral_changed_pixels": 0,
+  "gaze_4_to_12_changed_pixels": 1735,
+  "difference_bbox_half_open": [
+    76,
+    113,
+    301,
+    138
+  ],
+  "changed_pixels_outside_eye_boxes": 0,
+  "protected_before_record_type": "dict",
+  "protected666_exact": true,
+  "protected_file_count": 666
+}

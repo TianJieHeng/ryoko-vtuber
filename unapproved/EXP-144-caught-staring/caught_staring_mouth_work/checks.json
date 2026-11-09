@@ -1,0 +1,23 @@
+{
+  "KP3_uneasy": {
+    "changed_pixels": 1758,
+    "bbox_half_open": [
+      149,
+      243,
+      221,
+      283
+    ]
+  },
+  "KP4_aversion": {
+    "changed_pixels": 1758,
+    "bbox_half_open": [
+      149,
+      243,
+      221,
+      283
+    ]
+  },
+  "neutral_changed_pixels": 0,
+  "snapshot_restored": true,
+  "protected666_unchanged": true
+}

@@ -1,0 +1,22 @@
+{
+  "status": "UNAPPROVED_CLEAR_PARTING_CORRECTION",
+  "correction_generation_count": 1,
+  "prior_generation_count": 1,
+  "raw_sha256": "49f02fa2f7749582d9311dd93be8b5c1df9c514300612986820b51b146c7f7f2",
+  "crop": [
+    730,
+    282,
+    1443,
+    449
+  ],
+  "native_size": [
+    56,
+    18
+  ],
+  "registration": [
+    537,
+    628
+  ],
+  "alpha_processing": "Remove alpha<=8 only; RGB untouched",
+  "anatomy": "Static visible-mouth composite, not separate lip anatomy"
+}

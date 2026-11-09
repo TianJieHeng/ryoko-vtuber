@@ -1,0 +1,53 @@
+{
+  "commit": "7693d1b8718c3bb1c717bd586fb472a7efc42403",
+  "files": {
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp01_v001.png": {
+      "sha256": "b90a75ffe484c0b4b421bef3dc987b8c50774ad3076dcdb1185f1bf927ef1f07",
+      "git_blob": "08142f6abbfccd8abf9fdf85a234749277684958"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp02_v001.png": {
+      "sha256": "5fc947250fa7e8e6f730909f22548a87de0a0c31cc33bf46a367136859b79653",
+      "git_blob": "e9d13412635c45f723247553b07cdce0769c5583"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp03_v001.png": {
+      "sha256": "7413e817fdc68d874e6b74567401edc0dc7f22cfafa4b0da69813c2bba7d0205",
+      "git_blob": "dbe839a72498558a5a190aa798c6220f4f5fff66"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp04_v001.png": {
+      "sha256": "8f570e1045ed6d44089a6910a89df764939cb3e2f7be858cecb9bd31ec1403d1",
+      "git_blob": "fabe7784a507e298d0c251f2ecad6b5eb2cd467f"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp05_v001.png": {
+      "sha256": "0eb0345bbfba3806ad90458dd21dcf83b67a3c2ca8366825304572fc9ef5dadb",
+      "git_blob": "9204fed9df71cac191e8cf4fb70ba95a3942c3d5"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp06_v001.png": {
+      "sha256": "9dcf7368159766d1dead6099ddcb6a85e06690576ae8720d81306ccde3c64321",
+      "git_blob": "67a492e36141f81d283616894df918e33ea219e3"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp07_v001.png": {
+      "sha256": "71ad1a0819d69ec3d99369b5fcdfe10741a5b763cf078c676df7acf10d92112b",
+      "git_blob": "2136536fb674386e2a57ae272d93029f10c310c3"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp08_v001.png": {
+      "sha256": "9a5872550a46bd44f1ba8e326f57666ce8d04ad0680e107f2af822b3b3fd5e63",
+      "git_blob": "ef409cab64d18fdc1b89b2a03102ad1dbf0015f1"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_kp09_v001.png": {
+      "sha256": "255db13190c53764a1c1219c33ac1820ddde4d5b0eaf433f8fb84d024d30ec71",
+      "git_blob": "255db49922023ede1ce8a480ab7335b2ea236b67"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_peak_v001.png": {
+      "sha256": "0eb0345bbfba3806ad90458dd21dcf83b67a3c2ca8366825304572fc9ef5dadb",
+      "git_blob": "9204fed9df71cac191e8cf4fb70ba95a3942c3d5"
+    },
+    "avatar_build_assets/reference_library/assets/expressions/EXP-007_relieved-smile/RYO_EXP-007_relieved-smile_sheet_v001.png": {
+      "sha256": "906ddfe017b15ad415d3ffc44ec930cab6ebf8c377da970259a1125bfb9bf2ad",
+      "git_blob": "e200532008073df89335983d003d8fa10a7b7ab1"
+    },
+    "avatar_build_assets/reference_library/metadata/expressions.json": {
+      "sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+      "git_blob": "69465d017300a53723e78955353f35e94f8c3c14"
+    }
+  }
+}

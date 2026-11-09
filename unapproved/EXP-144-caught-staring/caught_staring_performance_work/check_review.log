@@ -1,0 +1,11 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+OBJECT_BASE_READY independent_sprites=263 expression_timelines=0
+ERROR: Condition "!actions.custom_samplers.has(function->arguments[j].tex_builtin)" is true. Continuing.
+   at: _dump_node_code (servers/rendering/shader_compiler.cpp:1294)
+   GDScript backtrace (most recent call first):
+       [0] material (/workspace/scratch/42f2baf55663/caught_staring_onset_work/upper_opening_part.gd:31)
+       [1] install_mesh (/workspace/scratch/42f2baf55663/caught_staring_onset_work/upper_opening_part.gd:62)
+       [2] install_opening (/workspace/scratch/42f2baf55663/caught_staring_onset_work/upper_opening_part.gd:73)
+       [3] apply (/workspace/scratch/42f2baf55663/caught_staring_performance_work/review_controller.gd:40)
+       [4] run (/workspace/scratch/42f2baf55663/caught_staring_performance_work/check_review.gd:7)

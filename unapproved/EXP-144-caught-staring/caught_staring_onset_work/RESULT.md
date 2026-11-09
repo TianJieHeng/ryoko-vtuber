@@ -1,0 +1,6 @@
+# EXP-144 combined onset gate
+One native static gate combined the corrected shallow-open mouth with the existing private0–4px upper-eye-opening candidate and raised brows. At4px, the onset reads alert and briefly caught off guard, contrasting with the12px sideways glance, lowered lids and blush. Independent visual review passed it as a restrained local EXP-144 fit. It remains subtler than the reference, especially at bust scale.
+
+The7frame gate completed in2.37seconds, exit0, with no engine remaining. Neutral/restored-neutral are pixel-identical; full original-owner state and head/body transforms restore. Cached base and protected approved source are unchanged. Opening4px versus otherwise identical ordinary eyes changes2788pixels confined to eye rectangle[47,90,312,137]. No runtime/shader error appeared; only the inherited V-Sync warning.
+
+The opening component retains its original restrictions: centered gaze, no ordinary closure, maximum4px. The source4px shader and geometry formulas were reused without expanding limits or repeating the failed donor-texel transport. No general lower-eye rounding or unrestricted opening/gaze combination is claimed. The later full local review cycle is documented in `../caught_staring_performance_work/REVIEW_REPORT.md`.

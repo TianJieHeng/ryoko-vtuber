@@ -1,0 +1,96 @@
+{
+  "status": "frozen_unregistered_static_hypotheses_not_animation",
+  "expression": "EXP-102 Knowing smirk",
+  "baseline_commit": "d5a4539cd7395783fcbf5756b03bb993be6692b8",
+  "capability_freeze_sha256": "0984f27835cfcf93de286fcd47e39c20a3b4833b850746424b07970e84ed24cf",
+  "source_sheet_sha256": "bd508949519c18329e81852e36206ee181d57c0a40480763e8549d7931a550ad",
+  "candidate_cases": [
+    {
+      "label": "neutral_start",
+      "source_key": 1,
+      "values": {}
+    },
+    {
+      "label": "kp3_onset",
+      "source_key": 3,
+      "values": {
+        "blink_R": 0.08,
+        "blink_L": 0.06,
+        "brow_screen_left": -0.02,
+        "brow_screen_right": 0.12,
+        "brow_tilt_screen_left": 0.05,
+        "brow_tilt_screen_right": -0.06,
+        "mouth_smile": 0.28,
+        "mouth_spread": 0.9,
+        "mouth_corner_lift_screen_right": 0.46
+      }
+    },
+    {
+      "label": "kp5_peak",
+      "source_key": 5,
+      "values": {
+        "blink_R": 0.15,
+        "blink_L": 0.11,
+        "brow_screen_left": -0.04,
+        "brow_screen_right": 0.24,
+        "brow_tilt_screen_left": 0.1,
+        "brow_tilt_screen_right": -0.1,
+        "mouth_smile": 0.43,
+        "mouth_spread": 0.95,
+        "mouth_corner_lift_screen_right": 0.82
+      }
+    },
+    {
+      "label": "kp6_hold",
+      "source_key": 6,
+      "values": {
+        "blink_R": 0.12,
+        "blink_L": 0.09,
+        "brow_screen_left": -0.03,
+        "brow_screen_right": 0.2,
+        "brow_tilt_screen_left": 0.08,
+        "brow_tilt_screen_right": -0.08,
+        "mouth_smile": 0.38,
+        "mouth_spread": 0.95,
+        "mouth_corner_lift_screen_right": 0.7
+      }
+    },
+    {
+      "label": "kp7_mouth_release",
+      "source_key": 7,
+      "values": {
+        "blink_R": 0.04,
+        "blink_L": 0.03,
+        "brow_screen_right": 0.1,
+        "brow_tilt_screen_left": 0.025,
+        "brow_tilt_screen_right": -0.035,
+        "mouth_smile": 0.055,
+        "mouth_spread": 0.45,
+        "mouth_corner_lift_screen_right": 0.08
+      }
+    },
+    {
+      "label": "neutral_return",
+      "source_key": 9,
+      "values": {}
+    }
+  ],
+  "required_zero_channels": [
+    "mouth_open",
+    "mouth_purse",
+    "mouth_lip_press",
+    "mouth_oral_lift",
+    "mouth_corner_lift",
+    "mouth_corner_lift_screen_left",
+    "eye_smile_L",
+    "eye_smile_R",
+    "gaze_x",
+    "gaze_y",
+    "gaze_down_extra",
+    "blush_intensity",
+    "hair_sway",
+    "brow_inner_lift_screen_left",
+    "brow_inner_lift_screen_right"
+  ],
+  "rationale": "Slowly formed unilateral sealed smile, slight ordinary lid narrowing and light screen-right brow attention. Spread checks source-relative widening instead of only corner lift. Static hypotheses only; no timeline until independent PASS."
+}

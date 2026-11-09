@@ -1,0 +1,14 @@
+{
+  "source": "Approved authored mouth part from playful_kiss_authored_part_proposal; approval applies to artwork only.",
+  "sha256": "3cadae701df5f639cd222975c0aa693fed4b1f6315c291d5ce934f78c317ffe0",
+  "native_size": [
+    44,
+    42
+  ],
+  "origin": [
+    543,
+    618
+  ],
+  "anatomy": "One fixed static mouth part, not independently articulating upper/lower lips.",
+  "status": "Artwork approved; EXP-197 performance pending review."
+}
