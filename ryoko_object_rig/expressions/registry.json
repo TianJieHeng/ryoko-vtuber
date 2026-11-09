@@ -178,6 +178,23 @@
         "nervous_laugh"
       ],
       "trigger_phase": "hesitant_onset"
+    },
+    {
+      "id": "EXP-197",
+      "path": "res://expressions/EXP-197.json",
+      "aliases": [
+        "playful_kiss"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-144",
+      "path": "res://expressions/EXP-144.json",
+      "aliases": [
+        "caught-staring",
+        "caught_staring"
+      ],
+      "trigger_phase": "anticipation"
     }
   ]
 }

@@ -1,0 +1,3 @@
+# EXP-197 review candidate
+
+The authored 44x42 kiss mouth was approved for shape and color. This 7.2-second animation is unapproved. It adds mouth_kiss in [0,1] to the shared rig, default zero. The fixed part at [543,618] blends with native-mouth self-opacity only; original visibility, textures, transforms and neutral are preserved. Positive kiss requires mouth_open=0. The existing sealed-mouth handover now includes kiss in its staged transition fields. The part does not articulate or support speech mixing. All twenty prior profiles remain unchanged. Production integration requires separate animation approval.

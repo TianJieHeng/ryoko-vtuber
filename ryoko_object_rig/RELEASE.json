@@ -1,8 +1,8 @@
 {
-  "status": "Twenty approved shared-rig performances; EXP-148 live pacing UNVERIFIED; inherited EXP-114 pacing HOLD",
+  "status": "22 approved shared-rig performances; native integration visual parity NOT RUN; live pacing UNVERIFIED",
   "user_approved": true,
   "published_with_containing_commit": true,
-  "base_main": "5bef3fb6e4a5ab7ecf8d587312cf02f7107197c8",
+  "base_main": "13d067ccd3d226ce3cace148a074669bb905e479",
   "authored_registry": [
     "EXP-163",
     "EXP-005",
@@ -23,10 +23,37 @@
     "EXP-050",
     "EXP-186",
     "EXP-114",
-    "EXP-148"
+    "EXP-148",
+    "EXP-197",
+    "EXP-144"
   ],
-  "authored_local_count": 20,
+  "authored_local_count": 22,
   "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186",
+    "EXP-114",
+    "EXP-148",
+    "EXP-197",
+    "EXP-144"
+  ],
+  "approved_published_count": 22,
+  "approved_predecessors": [
     "EXP-163",
     "EXP-005",
     "EXP-001",
@@ -48,39 +75,18 @@
     "EXP-114",
     "EXP-148"
   ],
-  "approved_published_count": 20,
-  "approved_predecessors": [
-    "EXP-163",
-    "EXP-005",
-    "EXP-001",
-    "EXP-006",
-    "EXP-107",
-    "EXP-007",
-    "EXP-002",
-    "EXP-152",
-    "EXP-160",
-    "EXP-177",
-    "EXP-164",
-    "EXP-021",
-    "EXP-158",
-    "EXP-181",
-    "EXP-102",
-    "EXP-116",
-    "EXP-050",
-    "EXP-186",
-    "EXP-114"
-  ],
   "newly_approved": [
-    "EXP-148"
+    "EXP-197",
+    "EXP-144"
   ],
   "pending_review": [],
-  "new_pngs": 0,
+  "new_pngs": 2,
   "protected_parent_pngs": 182,
-  "runtime_changes": "Twenty user-approved performances share one rig. EXP-148 Nervous laugh adds the approved 3.6-second performance, with nervous-laugh and nervous_laugh aliases. All nineteen predecessor profiles, production runtime, scenes, shaders, 182 PNGs and both inherited iris import sidecars remain byte-exact. Only EXP-148 approval metadata changes from the reviewed acting profile; its duration, keyframes, controls and curves are unchanged.",
+  "runtime_changes": "Approved playful kiss and caught staring integrated into one registry/player with bounded shared component ownership and safe interrupted handoffs.",
   "normal_speed_playback_observed": false,
   "socket_test_performed": false,
   "verification": "APPROVED_SOURCE_MANIFEST.json, APPROVED_SOURCE_FILES.sha256 and tools/verify_approved_integration.py",
-  "historical_release": "source_references/quiet_sadness_release_checkpoint.json",
+  "historical_release": "historical_capture_metadata/approved20_before_pair/RELEASE.json",
   "current_status": "APPROVED_INTEGRATION_STATUS.json",
   "excluded": [
     "EXP-003",
@@ -89,15 +95,16 @@
     "EXP-170",
     "EXP-153",
     "EXP-161",
-    "EXP-197",
     "EXP-187",
     "dental registration",
-    "gaze and eye-opening experiments"
+    "EXP-142",
+    "EXP-033",
+    "unrestricted gaze and eye-opening composition"
   ],
   "known_limit": "EXP-148 live engine pacing and continuous normal-speed playback remain UNVERIFIED. Review covered 109 decoded chronological frames at 30 fps and selected full/detail/reference views, not continuous normal-speed observation. Source KP5\u20136 opposing dental clench is unsupported and excluded; source nose blush and painted brow curvature are approximations. The inherited EXP-114 smooth real-time pacing HOLD and other documented rig limits remain unchanged.",
   "smooth_realtime_pacing_status": "UNVERIFIED",
-  "current_validation": "APPROVED_NERVOUS_LAUGH_VALIDATION.md",
-  "source_backup": "https://github.com/TianJieHeng/ryoko-vtuber/tree/5bef3fb6e4a5ab7ecf8d587312cf02f7107197c8/unapproved/EXP-148-nervous-laugh",
+  "current_validation": "APPROVED_PAIR_INTEGRATION.md",
+  "source_backup": "Historical review snapshots remain unchanged under unapproved/EXP-197-playful-kiss and unapproved/EXP-144-caught-staring.",
   "upper_iris_part_repair": {
     "status": "user_approved_part_repair_integrated",
     "record": "UPPER_IRIS_REPAIR.json",
@@ -106,5 +113,7 @@
     "new_expression_count": 0,
     "general_eye_opening_qualified": false
   },
-  "earlier_fields_scope": "All pre-existing fields retain the preceding twenty-profile expression integration scope and evidence; this part repair changes two active iris textures as recorded separately."
+  "earlier_fields_scope": "Inherited expression limitations and upper iris provenance retain their original scope.",
+  "native_visual_parity": "NOT RUN: native test environment unavailable",
+  "publication_authorization": "User explicitly requested immediate approved-rig publication despite unavailable native visual checks."
 }

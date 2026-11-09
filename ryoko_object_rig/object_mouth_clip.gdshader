@@ -1,4 +1,6 @@
 shader_type canvas_item;
+// Static-mouth replacement blend; one preserves the original geometry.
+uniform float native_part_weight = 1.0;
 uniform vec2 origin;
 uniform vec2 rigid_offset=vec2(0.0);
 uniform float opening=0.0;
@@ -100,4 +102,5 @@ void fragment(){
    pixel.a*=aperture*side;
  }
  COLOR=pixel;
+ COLOR.a *= native_part_weight;
 }

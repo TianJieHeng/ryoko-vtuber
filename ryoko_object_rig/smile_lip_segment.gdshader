@@ -1,4 +1,6 @@
 shader_type canvas_item;
+// Static-mouth replacement blend; one preserves the original geometry.
+uniform float native_part_weight = 1.0;
 render_mode unshaded;
 // Every owner uses fixed source UV. Only its Node2D pivot moves/rotates.
 uniform float left_edge=0.0;
@@ -131,4 +133,5 @@ void fragment(){
  // Static factorization across adjacent strips, never emotion opacity.
  pixel.a=pixel.a*weight/max(1.0-pixel.a*(1.0-wr),.000001);
  COLOR=pixel;
+ COLOR.a *= native_part_weight;
 }

@@ -1,4 +1,6 @@
 shader_type canvas_item;
+// Static-mouth replacement blend; one preserves the original geometry.
+uniform float native_part_weight = 1.0;
 render_mode unshaded;
 // Explicit inferred hidden joint material, fixed native cross-section and UV.
 uniform vec2 left_top=vec2(0.0,-14.0);
@@ -94,4 +96,5 @@ void fragment(){
   alpha=max(0.0,target_alpha-previous_alpha)/max(1.0-previous_alpha,.000001);
  }
  COLOR=vec4(p.rgb,alpha);
+ COLOR.a *= native_part_weight;
 }

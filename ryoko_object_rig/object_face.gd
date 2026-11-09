@@ -1,6 +1,7 @@
 extends Node2D
 ## Reusable base assembly. Independent rigid objects; no emotion playback.
 const GazeLimits=preload("res://control_limits.gd")
+var current_iris_textures:Dictionary={}
 var gaze_manifest:Dictionary
 var manifest:Dictionary
 var objects:Dictionary={}
@@ -30,6 +31,10 @@ var mouth_width_sides=Vector2.ZERO
 var mouth_lip_press=0.0
 var mouth_oral_lift=0.0
 var mouth_purse=0.0
+var mouth_kiss=0.0
+var kiss_sprite:Sprite2D
+var kiss_native_owners:Array=[]
+var kiss_native_opacity:Dictionary={}
 var pressed_lip_owners:Array=[]
 var blush_intensity=0.0
 var effect_owner="manual"
@@ -68,6 +73,7 @@ func _ready():
         var e=manifest.objects[key]
         if key.begins_with("closed_reference") or key.begins_with("viseme_"):continue
         var node=Sprite2D.new();node.name=key;node.texture=load("res://rig_assets/object_face/"+e.file);node.centered=false
+        if key in ["iris_screen_left","iris_screen_right"]:node.texture=_load_current_iris(e.eye_side)
         var pivot=Node2D.new();pivot.name=key+"_pivot";pivot.position=Vector2(e.pivot[0],e.pivot[1]);pivot.z_index=int(e.z)
         node.position=Vector2(e.xy[0],e.xy[1])-pivot.position;pivot.add_child(node);add_child(pivot)
         objects[key]=node;homes[key]={"xy":Vector2(e.xy[0],e.xy[1]),"pivot":pivot.position,"node":pivot}
@@ -83,7 +89,7 @@ func _ready():
                 material.set_shader_parameter("iris_padding",Vector2(ge.iris_padding[0],ge.iris_padding[1]))
                 material.set_shader_parameter("sprite_origin",Vector2(-ge.iris_padding[0],-ge.iris_padding[1]) if int(e.eye_role)==7 else Vector2.ZERO)
                 material.set_shader_parameter("aperture_texture",load("res://rig_assets/gaze_eyes/aperture_"+e.eye_side+".png"))
-                material.set_shader_parameter("iris_texture",load("res://rig_assets/gaze_eyes/iris_"+e.eye_side+".png"))
+                material.set_shader_parameter("iris_texture",_load_current_iris(e.eye_side))
             node.material=material
     for side in ["screen_left","screen_right"]:
         objects["iris_"+side].visibility_changed.connect(_update_iris_visibility.bind(side))
@@ -93,6 +99,7 @@ func _ready():
     _build_smile_objects()
     _build_spread_objects()
     if not _build_blush_objects():return
+    if not _build_kiss_part():return
     ready_for_controls=true
     set_pose(Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,Vector2.ZERO,"neutral",0.0)
 func _update_iris_visibility(side:String):
@@ -146,7 +153,7 @@ func snapshot()->Dictionary:
     for key in objects:
         var p=homes[key].node
         transforms[key]={"position":[p.position.x,p.position.y],"rotation":p.rotation,"scale":[p.scale.x,p.scale.y],"opacity":objects[key].modulate.a,"visible":objects[key].visible}
-    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"gaze_down_extra":gaze_down_extra,"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_width_sides":[mouth_width_sides.x,mouth_width_sides.y],"mouth_corner_lift":mouth_corner_lift,"mouth_corner_lift_sides":[mouth_corner_sides.x,mouth_corner_sides.y],"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"mouth_purse":mouth_purse,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
+    return {"owners":owners.duplicate(),"closure":[closure.x,closure.y],"gaze":[gaze.x,gaze.y],"gaze_down_extra":gaze_down_extra,"mouth_variant":mouth_variant,"mouth_opening":mouth_opening,"eye_smile":[smile_eyes.x,smile_eyes.y],"mouth_smile":smile_mouth,"effective_mouth_spread":mouth_spread,"mouth_width_sides":[mouth_width_sides.x,mouth_width_sides.y],"mouth_corner_lift":mouth_corner_lift,"mouth_corner_lift_sides":[mouth_corner_sides.x,mouth_corner_sides.y],"mouth_lip_press":mouth_lip_press,"mouth_oral_lift":mouth_oral_lift,"mouth_purse":mouth_purse,"mouth_kiss":mouth_kiss,"hair_sway":hair_sway,"objects":transforms,"blush_intensity":blush_intensity,"effects":_effect_snapshot()}
 
 func _build_oral_objects():
     oral_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://rig_assets/yawn_mouth/manifest.json"))
@@ -617,3 +624,36 @@ func _effect_snapshot()->Dictionary:
         var node=effect_objects[key]
         result[key]={"position":[node.position.x,node.position.y],"rotation":node.rotation,"scale":[node.scale.x,node.scale.y],"intensity":node.modulate.a,"visible":node.visible,"z_index":node.z_index,"owner":effect_owner}
     return result
+
+# Approved static kiss artwork; zero is exact native-mouth behavior. The blend
+# owns only self-opacity, never native visibility, transforms, textures or UVs.
+func _build_kiss_part()->bool:
+    var path=ProjectSettings.globalize_path("res://rig_assets/kiss_support/kiss_lips.png")
+    var image=Image.load_from_file(path)
+    if image==null or image.is_empty():
+        asset_error="KISS_PART_MISSING";push_error(asset_error);return false
+    for key in objects:
+        if key=="neutral_lips" or key=="active_viseme" or "lip" in key or key.begins_with("oral_") or key.begins_with("spread_") or key.begins_with("mouth_corner"):
+            kiss_native_owners.append(key);kiss_native_opacity[key]=objects[key].self_modulate
+    kiss_sprite=Sprite2D.new();kiss_sprite.name="kiss_lips";kiss_sprite.centered=false
+    kiss_sprite.texture=ImageTexture.create_from_image(image);kiss_sprite.position=Vector2(543,618);kiss_sprite.z_index=58
+    kiss_sprite.visible=false;kiss_sprite.modulate.a=0.0;add_child(kiss_sprite)
+    objects.kiss_lips=kiss_sprite;homes.kiss_lips={"xy":kiss_sprite.position,"pivot":kiss_sprite.position,"node":kiss_sprite}
+    return true
+func set_kiss_weight(value:float):
+    mouth_kiss=clampf(value,0.0,1.0)
+    for key in kiss_native_owners:
+        var node=objects[key]
+        var pigment=kiss_native_opacity[key]
+        if mouth_kiss>0.0:pigment.a*=1.0-mouth_kiss
+        node.self_modulate=pigment
+        if node.material is ShaderMaterial:node.material.set_shader_parameter("native_part_weight",1.0-mouth_kiss)
+    kiss_sprite.modulate.a=mouth_kiss;kiss_sprite.visible=mouth_kiss>0.0
+
+# Use the exact approved repaired PNGs, even when an older .godot import cache
+# accompanies this review workspace. Both sprite and shader share the texture.
+func _load_current_iris(side:String)->Texture2D:
+    if not current_iris_textures.has(side):
+        var image=Image.load_from_file(ProjectSettings.globalize_path("res://rig_assets/gaze_eyes/iris_"+side+".png"))
+        current_iris_textures[side]=ImageTexture.create_from_image(image)
+    return current_iris_textures[side]

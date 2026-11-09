@@ -1,3 +1,9 @@
+# Approved shared rig: 22 performances
+
+EXP-197 Playful kiss and EXP-144 Caught staring are approved and available in this shared registry/player. The user explicitly requested immediate publication despite unavailable native rendering. Focused state/transition/reset checks passed (5,154 checks); native visual parity is NOT RUN. All twenty prior profiles and 182 prior PNGs are preserved. See APPROVED_PAIR_INTEGRATION.md for scope and limits. Current source verification: python tools/verify_approved_integration.py and sha256sum -c APPROVED_SOURCE_FILES.sha256. Earlier release notes below retain their historical scope.
+
+## Historical published release
+
 # Current update: approved upper-iris part repair
 
 The two reviewed upper-iris textures are integrated. Centered neutral is preserved; all twenty profiles, runtime code and original source art are unchanged. This adds no expression or eye-opening capability. See UPPER_IRIS_REPAIR.md and UPPER_IRIS_REPAIR.json for the exact scope, provenance and validation limits. APPROVED_SOURCE_MANIFEST.json and APPROVED_SOURCE_FILES.sha256 are the current inventories. Earlier statements about unchanged artwork below describe the preceding expression integration.

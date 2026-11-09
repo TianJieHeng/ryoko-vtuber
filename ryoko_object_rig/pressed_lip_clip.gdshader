@@ -1,4 +1,6 @@
 shader_type canvas_item;
+// Static-mouth replacement blend; one preserves the original geometry.
+uniform float native_part_weight = 1.0;
 render_mode unshaded;
 // Inferred hidden inner-upper-lip tissue. Pigment uses fixed native UV.
 // Its upper-lip parent alone translates/rotates; no UV or mesh deformation.
@@ -62,4 +64,5 @@ void fragment(){
  pigment.a*=inside*tissue*side;
  pigment.a=pigment.a*weight/max(1.0-pigment.a*(1.0-wr),.000001);
  COLOR=pigment;
+ COLOR.a *= native_part_weight;
 }

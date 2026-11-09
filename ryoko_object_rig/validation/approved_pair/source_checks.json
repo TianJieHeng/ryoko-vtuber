@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "reviewed_197_tree_verified_files": 671,
+  "approved20_tree_verified_files": 666,
+  "old_profiles_exact": 20,
+  "old_pngs_exact": 182,
+  "144_keyframes_and_duration_exact": true,
+  "197_except_approval_status_exact": true,
+  "changed_from_approved20": [
+    "README.md",
+    "control_bridge.gd",
+    "expression_registry.gd",
+    "expression_rig.gd",
+    "expression_viewer.gd",
+    "expressions/registry.json",
+    "object_face.gd",
+    "object_mouth_clip.gdshader",
+    "pressed_lip_clip.gdshader",
+    "smile_lip_join.gdshader",
+    "smile_lip_segment.gdshader",
+    "spread_teeth_clip.gdshader"
+  ],
+  "added": [
+    "APPROVED_PAIR_INTEGRATION.md",
+    "KISS_CANDIDATE.md",
+    "expressions/EXP-144.json",
+    "expressions/EXP-197.json",
+    "parts/caught_staring/components.gd",
+    "parts/caught_staring/horizontal_aversion_part.gd",
+    "parts/caught_staring/transport.gdshader",
+    "parts/caught_staring/uneasy_clear_parting.png",
+    "parts/caught_staring/upper_opening_part.gd",
+    "rig_assets/kiss_support/kiss_lips.png",
+    "rig_assets/kiss_support/provenance.json",
+    "tests/test_approved_pair.gd",
+    "tests/test_kiss_runtime.gd"
+  ],
+  "source_file_count": 679,
+  "preserved_backups_tree": "3e88fc5003f5258cc06d6e66d5ae41ebb96e7084",
+  "new_component_sources": {
+    "parts/caught_staring/uneasy_clear_parting.png": "5ce9ab18220919d452273fe9e8bf929f2236b54b476feeaf7bfd4afc703c574e",
+    "parts/caught_staring/components.gd": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+    "parts/caught_staring/horizontal_aversion_part.gd": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+    "parts/caught_staring/transport.gdshader": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+    "parts/caught_staring/upper_opening_part.gd": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0"
+  }
+}
