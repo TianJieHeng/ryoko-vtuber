@@ -1,0 +1,19 @@
+--- native_review_audit/project.godot.frozen_original	2026-11-10 16:46:22.685985442 -0500
++++ native_review_audit/project.godot.editor_reordered	2026-11-10 17:01:19.771140201 -0500
+@@ -21,11 +21,12 @@
+ window/size/window_width_override=1136
+ window/size/window_height_override=800
+ 
++[editor]
++
++movie_writer/fps=30
++movie_writer/mjpeg_quality=0.85
++
+ [rendering]
+ 
+ renderer/rendering_method="gl_compatibility"
+ environment/defaults/default_clear_color=Color(0.12, 0.13, 0.14, 1)
+-
+-[editor]
+-movie_writer/fps=30
+-movie_writer/mjpeg_quality=0.85

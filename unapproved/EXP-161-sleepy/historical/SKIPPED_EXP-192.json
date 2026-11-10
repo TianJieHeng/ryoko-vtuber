@@ -1,0 +1,17 @@
+{
+  "id": "EXP-192",
+  "title": "Cheeks puffed",
+  "status": "SKIPPED_UNSUPPORTED_REQUIRED_ANATOMY",
+  "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-192_cheeks-puffed/RYO_EXP-192_cheeks-puffed_sheet_v001.png",
+  "source_sheet_sha256": "815f2c2b6099e925b8de8668bd7c2f08751725d9cf3479673308cdc049f6267e",
+  "catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "pixels_inspected": true,
+  "intent": "Brows lower playfully; eyes stay direct; sealed lips and expanded cheeks form an exaggerated protest.",
+  "observation": "Inspected nine-panel art shows the central puffed-cheek protest with sealed puckered lips and expanded cheek contours. Cheek expansion is essential to the named expression.",
+  "evidence": {
+    "registry_path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expression_registry.gd",
+    "sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+    "finding": "CHANNEL_BOUNDS contains no cheek inflation or jaw shape channel. Existing lip purse cannot inflate the cheeks."
+  },
+  "decision": "Do not prepare a pout substitute, alter artwork, add anatomy, or modify the runtime. EXP-161 is the next feasible candidate."
+}

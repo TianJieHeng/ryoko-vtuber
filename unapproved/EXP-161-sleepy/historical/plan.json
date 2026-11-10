@@ -1,0 +1,70 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "onset",
+    "pose": {
+      "brow_screen_left": -0.07,
+      "brow_screen_right": -0.07,
+      "blink_R": 0.14,
+      "blink_L": 0.14,
+      "mouth_open": 0
+    }
+  },
+  {
+    "name": "droop",
+    "pose": {
+      "brow_screen_left": -0.14,
+      "brow_screen_right": -0.14,
+      "blink_R": 0.32,
+      "blink_L": 0.32,
+      "mouth_open": 0.07
+    }
+  },
+  {
+    "name": "sleepy_peak",
+    "pose": {
+      "brow_screen_left": -0.22,
+      "brow_screen_right": -0.22,
+      "blink_R": 0.57,
+      "blink_L": 0.57,
+      "mouth_open": 0.16
+    }
+  },
+  {
+    "name": "recover",
+    "pose": {
+      "brow_screen_left": -0.15,
+      "brow_screen_right": -0.15,
+      "blink_R": 0.4,
+      "blink_L": 0.4,
+      "mouth_open": 0.11
+    }
+  },
+  {
+    "name": "release",
+    "pose": {
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "blink_R": 0.22,
+      "blink_L": 0.22,
+      "mouth_open": 0.04
+    }
+  },
+  {
+    "name": "settle",
+    "pose": {
+      "brow_screen_left": -0.025,
+      "brow_screen_right": -0.025,
+      "blink_R": 0.06,
+      "blink_L": 0.06,
+      "mouth_open": 0
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

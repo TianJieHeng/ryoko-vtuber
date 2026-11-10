@@ -1,0 +1,19 @@
+{
+  "native_comparator": {
+    "id": "EXP-174",
+    "path": "/workspace/scratch/42f2baf55663/sleepy_annoyance_work/capture/sleepy_annoyance_detail.png",
+    "sha256": "582af8a1bd08ae2afb57546a103836eac497b5abfa4132ba91d73ed672cb84a7",
+    "dimensions": [
+      400,
+      360
+    ],
+    "pixels_inspected": true
+  },
+  "reference_sheets_inspected": [
+    "EXP-161",
+    "EXP-164",
+    "EXP-174",
+    "EXP-177"
+  ],
+  "exp164_exp177_native_comparison": "Matching historical native PNGs/MP4s not available in this workspace; no new captures made and no native A/B claim for these two profiles."
+}

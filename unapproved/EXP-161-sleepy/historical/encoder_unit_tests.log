@@ -1,0 +1,25 @@
+test_changed_baseline_rejected (test_encode_preview.CaptureGuards.test_changed_baseline_rejected) ... ok
+test_changed_plan_rejected (test_encode_preview.CaptureGuards.test_changed_plan_rejected) ... ok
+test_changed_profile_rejected (test_encode_preview.CaptureGuards.test_changed_profile_rejected) ... ok
+test_complete_mock_receipts (test_encode_preview.CaptureGuards.test_complete_mock_receipts) ... ok
+test_existing_video_preserved (test_encode_preview.CaptureGuards.test_existing_video_preserved) ... ok
+test_extra_frame_rejected (test_encode_preview.CaptureGuards.test_extra_frame_rejected) ... ok
+test_failed_static_rejected (test_encode_preview.CaptureGuards.test_failed_static_rejected) ... ok
+test_headless_rejected (test_encode_preview.CaptureGuards.test_headless_rejected) ... ok
+test_missing_frame_rejected (test_encode_preview.CaptureGuards.test_missing_frame_rejected) ... ok
+test_missing_native_receipts (test_encode_preview.CaptureGuards.test_missing_native_receipts) ... ok
+test_missing_renderer_rejected (test_encode_preview.CaptureGuards.test_missing_renderer_rejected) ... ok
+test_nonvisual_static_rejected (test_encode_preview.CaptureGuards.test_nonvisual_static_rejected) ... ok
+test_static_dimensions_rejected (test_encode_preview.CaptureGuards.test_static_dimensions_rejected) ... ok
+test_wrong_fps_rejected (test_encode_preview.CaptureGuards.test_wrong_fps_rejected) ... ok
+test_wrong_pixel_mode_rejected (test_encode_preview.CaptureGuards.test_wrong_pixel_mode_rejected) ... ok
+test_wrong_pixels_rejected (test_encode_preview.CaptureGuards.test_wrong_pixels_rejected) ... ok
+test_wrong_profile_count_rejected (test_encode_preview.CaptureGuards.test_wrong_profile_count_rejected) ... ok
+test_wrong_record_count_rejected (test_encode_preview.CaptureGuards.test_wrong_record_count_rejected) ... ok
+test_wrong_size_rejected (test_encode_preview.CaptureGuards.test_wrong_size_rejected) ... ok
+test_wrong_time_rejected (test_encode_preview.CaptureGuards.test_wrong_time_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.103s
+
+OK

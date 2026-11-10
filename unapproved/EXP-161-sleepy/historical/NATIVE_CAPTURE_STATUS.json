@@ -1,0 +1,29 @@
+{
+  "approval": "UNAPPROVED",
+  "video": {
+    "path": "Sleepy_review_v1.mp4",
+    "width": 968,
+    "height": 800,
+    "fps": 30,
+    "frames": 121,
+    "duration_seconds": 4.033333
+  },
+  "normal_play_sampled": true,
+  "continuous_observation": false,
+  "ui_released": true,
+  "original_embed_mode_restored": true,
+  "frozen_input_count": 47,
+  "all_frozen_inputs_match": true,
+  "files_sha256": {
+    "Sleepy_review_v1.mp4": "9ee4cbb7cee2dd79549363c472dd0ff7f0234e40282951745e90f921aef38475",
+    "NATIVE_CAPTURE_REVIEW.md": "3afcca60e958a34d60c018073e090f9c96be44c7512feb43b60fdcd735abb584",
+    "capture/checks.json": "5551b0709e2aa9c5a16cf2a53295c07995aa40b093b418e33d031fc0821bd22b",
+    "motion_checks.json": "e2ab76b39fecb92b2459d6f4aeb6aa1c007100b3b128b3636aad616d850c83fc",
+    "native_review_evidence/review_checks.json": "cc8c2fc2ac633f9708a64fe5ef76924f5f35ae2591871d5dee54342b63291d70",
+    "independent_native_review_evidence/review_checks.json": "e35d44c39a48f7951a6148e7629a369adf18ad3e2dcf745e91f9984873424e07",
+    "native_review_audit/post_capture_unit_tests.log": "69ea67ec12a18842b4377d2e2b178e15c9e7f25a3f8a982dee9c3eebdc8693d8",
+    "native_review_audit/project.godot.editor_reordered": "06cc17dd619eca493bd80c8302348e91e14d924f72c161b50b0fe06ccf3a068f",
+    "native_review_audit/project.godot.frozen_original": "539521988aef23415cfba992334789a83b2fc03dac48c1c3982e259086011d6e",
+    "native_review_audit/editor_reorder.diff": "bbfb6214fce0435e676ea89ebb9a85abfcc060260a54bfc2427dfe506c4296dc"
+  }
+}

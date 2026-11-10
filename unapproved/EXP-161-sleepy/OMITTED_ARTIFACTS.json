@@ -1,0 +1,21 @@
+{
+  "policy": "Compact backup: no raw static/motion PNGs, contact sheets, caches, duplicated full baseline or redundant validator reruns. Per-frame raw RGBA/file hashes and decode results retained. Original checksum manifests may name intentionally omitted diagnostic images.",
+  "raw_static_pngs": 16,
+  "raw_motion_pngs": 242,
+  "native_image_hashes": "historical/independent_native_final/native_frame_hashes.json",
+  "deduplicated_originals": {
+    "launcher_motion_parse.log": "launcher_launcher_parse.log",
+    "launcher_static_parse.log": "launcher_launcher_parse.log",
+    "native_review_audit/author_native_validation.log": "independent_native_final.log",
+    "native_review_audit/independent_native_validation.log": "independent_native_final.log",
+    "native_review_audit/pre_native_freeze.log": "native_review_audit/post_native_freeze.log",
+    "native_review_audit/project.godot.frozen_original": "native_launcher/project.godot",
+    "native_review_audit/reordered_independent_failure.log": "native_review_audit/reordered_author_failure.log",
+    "native_review_evidence/decoded_frame_order.json": "independent_native_final/decoded_frame_order.json",
+    "native_review_evidence/native_frame_hashes.json": "independent_native_final/native_frame_hashes.json",
+    "verification.log": "preparation_verification.json"
+  },
+  "omitted_operator_independent_report": "independent_native_review_evidence/review_checks.json is byte-identical to retained independent_native_final/review_checks.json",
+  "historical_frozen_inputs": 47,
+  "reproducibility_limit": "Raw native captures are not recoverable from the lossy MP4. Full historical frame-to-MP4 audit cannot be rerun from this compact package alone. New capture would need separate authorized native execution and new provenance."
+}

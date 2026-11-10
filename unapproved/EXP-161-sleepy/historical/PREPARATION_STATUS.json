@@ -1,0 +1,28 @@
+{
+  "candidate": "EXP-161",
+  "title": "Sleepy",
+  "status": "HEADLESS_PREPARATION_COMPLETE_NATIVE_REVIEW_PENDING",
+  "approval": "UNAPPROVED",
+  "source_baseline": "approved36",
+  "pinned_source_files": 999,
+  "pinned_pngs": 184,
+  "runtime_artwork_parity": [
+    "approved39",
+    "approved40"
+  ],
+  "static_assertions": 1558,
+  "timeline_assertions": 11640,
+  "lifecycle_assertions": 36,
+  "lifecycle_points": 9,
+  "independent_geometry_assertions": 8422,
+  "source_panel_exact_crops": 9,
+  "compared_profiles": 42,
+  "encoder_unit_tests": 20,
+  "independent_audit_unit_tests": 11,
+  "native_launcher": "native_launcher/project.godot",
+  "native_capture": "NOT RUN",
+  "video": "NOT CREATED",
+  "normal_speed_observation": false,
+  "publication": "NOT ATTEMPTED",
+  "skipped_previous": "EXP-192 requires unsupported cheek inflation; no pout substitute."
+}

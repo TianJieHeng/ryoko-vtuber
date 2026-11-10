@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": 8422,
+  "failures": [],
+  "max_control_error": 2.8257016282395853e-08,
+  "independent_timeline_samples": 121,
+  "source_panels_exact_lossless_crops": {
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp01_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp02_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp03_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp04_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp05_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp06_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp07_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp08_v001.png": true,
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp09_v001.png": true
+  },
+  "native_capture": "PENDING; no renderer or UI invoked",
+  "approval": "UNAPPROVED"
+}

@@ -1,0 +1,740 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Registering global classes... (157 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   1% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   1% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   2% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   3% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   3% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   4% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   5% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   5% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   6% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   6% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   7% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   8% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   8% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   9% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  10% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  10% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  11% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  12% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  12% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  13% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  13% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  14% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  15% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  15% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  17% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  17% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  18% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  18% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  19% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  20% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  20% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  21% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  22% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  22% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  23% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  24% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  24% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  26% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  27% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  27% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  28% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  29% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  29% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  30% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  31% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  31% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  32% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  32% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  34% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  34% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  35% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  36% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  36% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  37% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  37% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  38% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  39% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  39% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  40% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  41% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  41% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  42% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  43% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  43% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  44% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  44% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  45% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  46% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  46% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  47% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  48% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  48% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  49% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  51% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  51% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  52% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  53% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  53% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  54% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  55% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  55% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  56% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  56% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  57% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  58% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  58% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  59% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  60% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  60% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  61% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  62% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  62% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  63% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  63% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  64% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  65% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  65% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  67% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  67% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  68% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  68% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  69% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  70% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  70% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  71% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  72% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  72% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  73% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  74% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  74% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  75% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  75% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  76% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  77% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  77% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  78% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  79% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  79% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  80% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  81% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  81% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  82% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  82% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  83% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  84% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  84% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  85% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  86% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  86% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  87% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  87% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  88% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  89% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  89% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  90% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  91% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  91% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  92% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  93% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  93% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  94% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  94% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  95% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  96% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  96% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  97% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  98% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  98% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Scanning actions... (184 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | blink_L.png[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | blink_R.png[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | bust_base.png[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | bun.png[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | front_fringe.png[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | rear_scalp_nape.png[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | short_tail.png[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | temple_lock_character_left.png[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | temple_lock_character_right.png[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_brow_L_v001.png[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_brow_R_v001.png[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_closed_lid_L_v001.png[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_closed_lid_R_v001.png[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_ear_L_v001.png[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_ear_R_v001.png[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_face_base_v001.png[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_iris_pupil_L_v001.png[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_iris_pupil_R_v001.png[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_lash_lid_L_v001.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_lash_lid_R_v001.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_lower_teeth_v001.png[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_mouth_cavity_v001.png[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_neutral_lips_v001.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_sclera_L_v001.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_sclera_R_v001.png[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_tongue_v001.png[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_upper_teeth_v001.png[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_viseme_A_v001.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_viseme_E_v001.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_viseme_I_v001.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_viseme_O_v001.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | RYO_HEAD_viseme_U_v001.png[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | restore_visible_hair.png[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | restore_visible_skin.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | approved_neutral.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | hair_lash_exclusion.png[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | mouth_neutral.png[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | uneasy_clear_parting.png[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | RYO_FX_blush_character_L.png[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | RYO_FX_blush_character_R.png[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | blush_screen_left.png[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | blush_screen_left_cheek_mask.png[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | blush_screen_right.png[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | blush_screen_right_cheek_mask.png[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | aperture_screen_left.png[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | aperture_screen_right.png[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | completed_iris_screen_left.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | completed_iris_screen_right.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | hair_iris_crossing_screen_left.png[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | iris_extra_completion_screen_left.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | iris_extra_completion_screen_right.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | iris_hidden_estimate_screen_left.png[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | iris_hidden_estimate_screen_right.png[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | iris_matte_estimate_screen_left.png[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | iris_matte_estimate_screen_right.png[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | iris_screen_left.png[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | iris_screen_right.png[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | iris_under_hair_estimate_screen_left.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | iris_under_hair_estimate_screen_right.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | observed_iris_screen_left.png[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | observed_iris_screen_right.png[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | sclera_hidden_estimate_screen_left.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | sclera_hidden_estimate_screen_right.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | sclera_screen_left.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | sclera_screen_right.png[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | visible_matte_change_screen_left.png[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | visible_matte_change_screen_right.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | kiss_lips.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | brow_screen_left.png[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | brow_screen_right.png[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | closed_lash_screen_left.png[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | closed_lash_screen_right.png[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | closed_reference_screen_left.png[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | closed_reference_screen_right.png[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | earring_screen_left.png[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | earring_screen_right.png[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | ear_screen_left.png[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | ear_screen_right.png[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | fixed_neck_torso.png[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | gold_hairsticks.png[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | gold_hanging_ornament.png[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | hairsticks.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | hair_bun.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | hair_crown_bun_rear.png[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | hair_crown_bun_rear_underlap.png[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | hair_front_fringe.png[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | hair_front_fringe_underlap.png[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | hair_hidden_hair_underlay_screen_left.png[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | hair_hidden_hair_underlay_screen_right.png[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | hair_rear_scalp.png[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | hair_short_tail.png[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | hair_temple_left.png[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | hair_temple_left_underlap.png[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | hair_temple_right.png[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | hair_temple_right_underlap.png[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | hair_temple_screen_left.png[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | hair_temple_screen_right.png[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | hanging_ornament.png[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | iris_screen_left.png[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | iris_screen_right.png[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | lash_screen_left.png[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | lash_screen_right.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | lower_contour_screen_left.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | lower_contour_screen_right.png[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | lower_profile_screen_left.png[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | lower_profile_screen_right.png[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | neutral_lips.png[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | profile_screen_left.png[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | profile_screen_right.png[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | sclera_screen_left.png[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | sclera_screen_right.png[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | stationary_backing.png[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | upper_lash_screen_left.png[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | upper_lash_screen_right.png[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | upper_surround_screen_left.png[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | upper_surround_screen_right.png[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | viseme_A.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | viseme_E.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | viseme_I.png[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | viseme_O.png[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | viseme_U.png[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | inner_upper_lip.png[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | inner_upper_lip_inferred_mask.png[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | backing_detached_upper_lash_tip_original.png[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | backing_detached_upper_lash_tip_ownership.png[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | backing_detached_upper_lash_tip_skin.png[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | backing_orphan_crease_flecks_original.png[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | backing_orphan_crease_flecks_ownership.png[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | backing_orphan_crease_flecks_skin.png[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | fringe_reassigned_alpha.png[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | hair_front_fringe_eye_reassigned.png[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | hidden_fringe_continuation.png[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | hidden_fringe_continuation_inferred_mask.png[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | laugh_hidden_continuation_screen_left.png[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | laugh_hidden_continuation_screen_right.png[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | laugh_lash_screen_left.png[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | laugh_lash_screen_right.png[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | laugh_lower_contour_screen_left.png[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | laugh_lower_contour_screen_right.png[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | lip_continuations_atlas.png[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | lip_continuations_inferred_atlas.png[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | neutral_fringe_eye_pigment.png[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | stationary_backing_eye_reassigned.png[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | cavity_left.png[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | cavity_left_observed_support.png[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | cavity_right.png[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | cavity_right_observed_support.png[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | cavity_top.png[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | cavity_top_observed_support.png[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | joint_edge_underlaps_atlas.png[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | joint_edge_underlaps_inferred_atlas.png[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | posterior_enamel_source_matte.png[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | teeth_left.png[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | teeth_left_observed_support.png[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | teeth_right.png[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | teeth_right_observed_support.png[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | tongue_surface.png[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | tongue_surface_observed_support.png[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | upper_enamel_roots.png[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | upper_enamel_roots_observed_support.png[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | cavity.png[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | lower_lip.png[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | lower_teeth.png[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | neutral_seam.png[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | tongue.png[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | underlip_shadow.png[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | upper_lip.png[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | upper_teeth.png[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | earring_screen_left.png[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | earring_screen_right.png[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | backing_detached_upper_lash_tip_matte_review_global.png[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | backing_detached_upper_lash_tip_source_core_global.png[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | backing_orphan_crease_flecks_matte_review_global.png[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | backing_orphan_crease_flecks_source_core_global.png[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | fringe_dark_eye_crossing_source_core_global.png[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | laugh_hidden_continuation_screen_left.png[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | laugh_hidden_continuation_screen_right.png[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | laugh_lash_screen_left.png[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | laugh_lash_screen_right.png[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | laugh_lower_contour_screen_left.png[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | laugh_lower_contour_screen_right.png[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | mouth_limit_reference.png[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | pre_whitening_lower_teeth.png[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | pre_whitening_upper_teeth.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (184 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   1% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   1% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   2% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   2% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   3% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   3% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   4% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   4% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   5% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   5% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   6% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   7% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   7% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   8% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   8% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   9% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   9% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  10% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  10% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  11% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  11% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  12% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  12% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  13% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  14% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  14% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  15% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  15% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  16% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  16% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  17% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  17% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  18% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  18% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  19% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  21% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  21% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  22% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  22% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  23% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  23% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  24% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  24% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  25% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  25% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  26% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  27% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  27% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  28% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  28% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  29% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  29% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  30% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  30% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  31% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  31% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  32% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  32% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  33% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  34% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  34% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  35% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  35% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  36% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  36% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  37% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  37% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  38% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  38% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  39% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  40% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  40% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  41% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  41% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  42% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  42% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  43% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  43% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  45% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  45% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  46% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  47% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  47% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  48% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  48% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  49% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  49% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  50% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  50% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  51% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  51% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  52% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  52% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  53% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  54% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  54% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  56% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  56% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  57% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  57% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  58% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  58% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  59% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  60% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  60% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  61% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  61% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  62% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  62% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  63% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  63% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  64% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  64% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  65% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  65% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  66% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  67% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  67% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  68% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  68% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  69% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  69% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  70% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  70% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  71% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  71% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  72% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  72% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  73% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  74% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  74% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  75% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  75% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  76% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  76% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  77% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  77% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  78% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  78% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  79% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  80% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  80% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  81% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  81% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  82% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  82% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  83% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  83% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  84% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  84% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  85% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  85% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  86% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  87% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  87% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  88% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  88% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  89% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  89% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  90% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  90% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  91% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  91% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  92% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  92% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  93% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  94% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  94% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  95% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  95% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  96% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  96% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  97% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  97% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  98% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  98% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing pre-reimport operations...[39m[0m
+[   0% ] [90m[1mreimport[22m | upper_surround_screen_right.png[39m[0m
+[   0% ] [90m[1mreimport[22m | viseme_A.png[39m[0m
+[   1% ] [90m[1mreimport[22m | viseme_E.png[39m[0m
+[   1% ] [90m[1mreimport[22m | viseme_I.png[39m[0m
+[   2% ] [90m[1mreimport[22m | viseme_O.png[39m[0m
+[   2% ] [90m[1mreimport[22m | viseme_U.png[39m[0m
+[   3% ] [90m[1mreimport[22m | inner_upper_lip.png[39m[0m
+[   3% ] [90m[1mreimport[22m | inner_upper_lip_inferred_mask.png[39m[0m
+[   4% ] [90m[1mreimport[22m | backing_detached_upper_lash_tip_original.png[39m[0m
+[   4% ] [90m[1mreimport[22m | backing_detached_upper_lash_tip_ownership.png[39m[0m
+[   5% ] [90m[1mreimport[22m | backing_detached_upper_lash_tip_skin.png[39m[0m
+[   5% ] [90m[1mreimport[22m | backing_orphan_crease_flecks_original.png[39m[0m
+[   6% ] [90m[1mreimport[22m | backing_orphan_crease_flecks_ownership.png[39m[0m
+[   7% ] [90m[1mreimport[22m | backing_orphan_crease_flecks_skin.png[39m[0m
+[   7% ] [90m[1mreimport[22m | fringe_reassigned_alpha.png[39m[0m
+[   8% ] [90m[1mreimport[22m | hair_front_fringe_eye_reassigned.png[39m[0m
+[   8% ] [90m[1mreimport[22m | hidden_fringe_continuation.png[39m[0m
+[   9% ] [90m[1mreimport[22m | hidden_fringe_continuation_inferred_mask.png[39m[0m
+[   9% ] [90m[1mreimport[22m | laugh_hidden_continuation_screen_left.png[39m[0m
+[  10% ] [90m[1mreimport[22m | laugh_hidden_continuation_screen_right.png[39m[0m
+[  10% ] [90m[1mreimport[22m | laugh_lash_screen_left.png[39m[0m
+[  11% ] [90m[1mreimport[22m | laugh_lash_screen_right.png[39m[0m
+[  11% ] [90m[1mreimport[22m | laugh_lower_contour_screen_left.png[39m[0m
+[  12% ] [90m[1mreimport[22m | hair_temple_left_underlap.png[39m[0m
+[  12% ] [90m[1mreimport[22m | hair_temple_right.png[39m[0m
+[  13% ] [90m[1mreimport[22m | hair_temple_right_underlap.png[39m[0m
+[  14% ] [90m[1mreimport[22m | hair_temple_screen_left.png[39m[0m
+[  14% ] [90m[1mreimport[22m | hair_temple_screen_right.png[39m[0m
+[  15% ] [90m[1mreimport[22m | hanging_ornament.png[39m[0m
+[  15% ] [90m[1mreimport[22m | iris_screen_left.png[39m[0m
+[  16% ] [90m[1mreimport[22m | iris_screen_right.png[39m[0m
+[  16% ] [90m[1mreimport[22m | lash_screen_left.png[39m[0m
+[  17% ] [90m[1mreimport[22m | lash_screen_right.png[39m[0m
+[  17% ] [90m[1mreimport[22m | lower_contour_screen_left.png[39m[0m
+[  18% ] [90m[1mreimport[22m | lower_contour_screen_right.png[39m[0m
+[  18% ] [90m[1mreimport[22m | lower_profile_screen_left.png[39m[0m
+[  19% ] [90m[1mreimport[22m | lower_profile_screen_right.png[39m[0m
+[  20% ] [90m[1mreimport[22m | neutral_lips.png[39m[0m
+[  20% ] [90m[1mreimport[22m | profile_screen_left.png[39m[0m
+[  21% ] [90m[1mreimport[22m | profile_screen_right.png[39m[0m
+[  21% ] [90m[1mreimport[22m | sclera_screen_left.png[39m[0m
+[  22% ] [90m[1mreimport[22m | sclera_screen_right.png[39m[0m
+[  22% ] [90m[1mreimport[22m | stationary_backing.png[39m[0m
+[  23% ] [90m[1mreimport[22m | upper_lash_screen_left.png[39m[0m
+[  23% ] [90m[1mreimport[22m | upper_lash_screen_right.png[39m[0m
+[  24% ] [90m[1mreimport[22m | upper_surround_screen_left.png[39m[0m
+[  24% ] [90m[1mreimport[22m | lower_lip.png[39m[0m
+[  25% ] [90m[1mreimport[22m | lower_teeth.png[39m[0m
+[  25% ] [90m[1mreimport[22m | neutral_seam.png[39m[0m
+[  26% ] [90m[1mreimport[22m | tongue.png[39m[0m
+[  27% ] [90m[1mreimport[22m | underlip_shadow.png[39m[0m
+[  27% ] [90m[1mreimport[22m | upper_lip.png[39m[0m
+[  28% ] [90m[1mreimport[22m | upper_teeth.png[39m[0m
+[  28% ] [90m[1mreimport[22m | earring_screen_left.png[39m[0m
+[  29% ] [90m[1mreimport[22m | earring_screen_right.png[39m[0m
+[  29% ] [90m[1mreimport[22m | backing_detached_upper_lash_tip_matte_review_global.png[39m[0m
+[  30% ] [90m[1mreimport[22m | backing_detached_upper_lash_tip_source_core_global.png[39m[0m
+[  30% ] [90m[1mreimport[22m | backing_orphan_crease_flecks_matte_review_global.png[39m[0m
+[  31% ] [90m[1mreimport[22m | backing_orphan_crease_flecks_source_core_global.png[39m[0m
+[  31% ] [90m[1mreimport[22m | fringe_dark_eye_crossing_source_core_global.png[39m[0m
+[  32% ] [90m[1mreimport[22m | laugh_hidden_continuation_screen_left.png[39m[0m
+[  32% ] [90m[1mreimport[22m | laugh_hidden_continuation_screen_right.png[39m[0m
+[  33% ] [90m[1mreimport[22m | laugh_lash_screen_left.png[39m[0m
+[  34% ] [90m[1mreimport[22m | laugh_lash_screen_right.png[39m[0m
+[  34% ] [90m[1mreimport[22m | laugh_lower_contour_screen_left.png[39m[0m
+[  35% ] [90m[1mreimport[22m | laugh_lower_contour_screen_right.png[39m[0m
+[  35% ] [90m[1mreimport[22m | mouth_limit_reference.png[39m[0m
+[  36% ] [90m[1mreimport[22m | pre_whitening_lower_teeth.png[39m[0m
+[  36% ] [90m[1mreimport[22m | pre_whitening_upper_teeth.png[39m[0m
+[  37% ] [90m[1mreimport[22m | laugh_lower_contour_screen_right.png[39m[0m
+[  37% ] [90m[1mreimport[22m | lip_continuations_atlas.png[39m[0m
+[  38% ] [90m[1mreimport[22m | lip_continuations_inferred_atlas.png[39m[0m
+[  38% ] [90m[1mreimport[22m | neutral_fringe_eye_pigment.png[39m[0m
+[  39% ] [90m[1mreimport[22m | stationary_backing_eye_reassigned.png[39m[0m
+[  40% ] [90m[1mreimport[22m | cavity_left.png[39m[0m
+[  40% ] [90m[1mreimport[22m | cavity_left_observed_support.png[39m[0m
+[  41% ] [90m[1mreimport[22m | cavity_right.png[39m[0m
+[  41% ] [90m[1mreimport[22m | cavity_right_observed_support.png[39m[0m
+[  42% ] [90m[1mreimport[22m | cavity_top.png[39m[0m
+[  42% ] [90m[1mreimport[22m | cavity_top_observed_support.png[39m[0m
+[  43% ] [90m[1mreimport[22m | joint_edge_underlaps_atlas.png[39m[0m
+[  43% ] [90m[1mreimport[22m | joint_edge_underlaps_inferred_atlas.png[39m[0m
+[  44% ] [90m[1mreimport[22m | posterior_enamel_source_matte.png[39m[0m
+[  44% ] [90m[1mreimport[22m | teeth_left.png[39m[0m
+[  45% ] [90m[1mreimport[22m | teeth_left_observed_support.png[39m[0m
+[  45% ] [90m[1mreimport[22m | teeth_right.png[39m[0m
+[  46% ] [90m[1mreimport[22m | teeth_right_observed_support.png[39m[0m
+[  47% ] [90m[1mreimport[22m | tongue_surface.png[39m[0m
+[  47% ] [90m[1mreimport[22m | tongue_surface_observed_support.png[39m[0m
+[  48% ] [90m[1mreimport[22m | upper_enamel_roots.png[39m[0m
+[  48% ] [90m[1mreimport[22m | upper_enamel_roots_observed_support.png[39m[0m
+[  49% ] [90m[1mreimport[22m | cavity.png[39m[0m
+[  49% ] [90m[1mreimport[22m | RYO_HEAD_sclera_L_v001.png[39m[0m
+[  50% ] [90m[1mreimport[22m | RYO_HEAD_sclera_R_v001.png[39m[0m
+[  50% ] [90m[1mreimport[22m | RYO_HEAD_tongue_v001.png[39m[0m
+[  51% ] [90m[1mreimport[22m | RYO_HEAD_upper_teeth_v001.png[39m[0m
+[  51% ] [90m[1mreimport[22m | RYO_HEAD_viseme_A_v001.png[39m[0m
+[  52% ] [90m[1mreimport[22m | RYO_HEAD_viseme_E_v001.png[39m[0m
+[  52% ] [90m[1mreimport[22m | RYO_HEAD_viseme_I_v001.png[39m[0m
+[  53% ] [90m[1mreimport[22m | RYO_HEAD_viseme_O_v001.png[39m[0m
+[  54% ] [90m[1mreimport[22m | RYO_HEAD_viseme_U_v001.png[39m[0m
+[  54% ] [90m[1mreimport[22m | restore_visible_hair.png[39m[0m
+[  55% ] [90m[1mreimport[22m | restore_visible_skin.png[39m[0m
+[  55% ] [90m[1mreimport[22m | approved_neutral.png[39m[0m
+[  56% ] [90m[1mreimport[22m | hair_lash_exclusion.png[39m[0m
+[  56% ] [90m[1mreimport[22m | mouth_neutral.png[39m[0m
+[  57% ] [90m[1mreimport[22m | uneasy_clear_parting.png[39m[0m
+[  57% ] [90m[1mreimport[22m | RYO_FX_blush_character_L.png[39m[0m
+[  58% ] [90m[1mreimport[22m | RYO_FX_blush_character_R.png[39m[0m
+[  58% ] [90m[1mreimport[22m | blush_screen_left.png[39m[0m
+[  59% ] [90m[1mreimport[22m | blush_screen_left_cheek_mask.png[39m[0m
+[  60% ] [90m[1mreimport[22m | blush_screen_right.png[39m[0m
+[  60% ] [90m[1mreimport[22m | blush_screen_right_cheek_mask.png[39m[0m
+[  61% ] [90m[1mreimport[22m | aperture_screen_left.png[39m[0m
+[  61% ] [90m[1mreimport[22m | aperture_screen_right.png[39m[0m
+[  62% ] [90m[1mreimport[22m | blink_L.png[39m[0m
+[  62% ] [90m[1mreimport[22m | blink_R.png[39m[0m
+[  63% ] [90m[1mreimport[22m | bust_base.png[39m[0m
+[  63% ] [90m[1mreimport[22m | bun.png[39m[0m
+[  64% ] [90m[1mreimport[22m | front_fringe.png[39m[0m
+[  64% ] [90m[1mreimport[22m | rear_scalp_nape.png[39m[0m
+[  65% ] [90m[1mreimport[22m | short_tail.png[39m[0m
+[  65% ] [90m[1mreimport[22m | temple_lock_character_left.png[39m[0m
+[  66% ] [90m[1mreimport[22m | temple_lock_character_right.png[39m[0m
+[  67% ] [90m[1mreimport[22m | RYO_HEAD_brow_L_v001.png[39m[0m
+[  67% ] [90m[1mreimport[22m | RYO_HEAD_brow_R_v001.png[39m[0m
+[  68% ] [90m[1mreimport[22m | RYO_HEAD_closed_lid_L_v001.png[39m[0m
+[  68% ] [90m[1mreimport[22m | RYO_HEAD_closed_lid_R_v001.png[39m[0m
+[  69% ] [90m[1mreimport[22m | RYO_HEAD_ear_L_v001.png[39m[0m
+[  69% ] [90m[1mreimport[22m | RYO_HEAD_ear_R_v001.png[39m[0m
+[  70% ] [90m[1mreimport[22m | RYO_HEAD_face_base_v001.png[39m[0m
+[  70% ] [90m[1mreimport[22m | RYO_HEAD_iris_pupil_L_v001.png[39m[0m
+[  71% ] [90m[1mreimport[22m | RYO_HEAD_iris_pupil_R_v001.png[39m[0m
+[  71% ] [90m[1mreimport[22m | RYO_HEAD_lash_lid_L_v001.png[39m[0m
+[  72% ] [90m[1mreimport[22m | RYO_HEAD_lash_lid_R_v001.png[39m[0m
+[  72% ] [90m[1mreimport[22m | RYO_HEAD_lower_teeth_v001.png[39m[0m
+[  73% ] [90m[1mreimport[22m | RYO_HEAD_mouth_cavity_v001.png[39m[0m
+[  74% ] [90m[1mreimport[22m | RYO_HEAD_neutral_lips_v001.png[39m[0m
+[  74% ] [90m[1mreimport[22m | brow_screen_right.png[39m[0m
+[  75% ] [90m[1mreimport[22m | closed_lash_screen_left.png[39m[0m
+[  75% ] [90m[1mreimport[22m | closed_lash_screen_right.png[39m[0m
+[  76% ] [90m[1mreimport[22m | closed_reference_screen_left.png[39m[0m
+[  76% ] [90m[1mreimport[22m | closed_reference_screen_right.png[39m[0m
+[  77% ] [90m[1mreimport[22m | earring_screen_left.png[39m[0m
+[  77% ] [90m[1mreimport[22m | earring_screen_right.png[39m[0m
+[  78% ] [90m[1mreimport[22m | ear_screen_left.png[39m[0m
+[  78% ] [90m[1mreimport[22m | ear_screen_right.png[39m[0m
+[  79% ] [90m[1mreimport[22m | fixed_neck_torso.png[39m[0m
+[  80% ] [90m[1mreimport[22m | gold_hairsticks.png[39m[0m
+[  80% ] [90m[1mreimport[22m | gold_hanging_ornament.png[39m[0m
+[  81% ] [90m[1mreimport[22m | hairsticks.png[39m[0m
+[  81% ] [90m[1mreimport[22m | hair_bun.png[39m[0m
+[  82% ] [90m[1mreimport[22m | hair_crown_bun_rear.png[39m[0m
+[  82% ] [90m[1mreimport[22m | hair_crown_bun_rear_underlap.png[39m[0m
+[  83% ] [90m[1mreimport[22m | hair_front_fringe.png[39m[0m
+[  83% ] [90m[1mreimport[22m | hair_front_fringe_underlap.png[39m[0m
+[  84% ] [90m[1mreimport[22m | hair_hidden_hair_underlay_screen_left.png[39m[0m
+[  84% ] [90m[1mreimport[22m | hair_hidden_hair_underlay_screen_right.png[39m[0m
+[  85% ] [90m[1mreimport[22m | hair_rear_scalp.png[39m[0m
+[  85% ] [90m[1mreimport[22m | hair_short_tail.png[39m[0m
+[  86% ] [90m[1mreimport[22m | hair_temple_left.png[39m[0m
+[  87% ] [90m[1mreimport[22m | completed_iris_screen_left.png[39m[0m
+[  87% ] [90m[1mreimport[22m | completed_iris_screen_right.png[39m[0m
+[  88% ] [90m[1mreimport[22m | hair_iris_crossing_screen_left.png[39m[0m
+[  88% ] [90m[1mreimport[22m | iris_extra_completion_screen_left.png[39m[0m
+[  89% ] [90m[1mreimport[22m | iris_extra_completion_screen_right.png[39m[0m
+[  89% ] [90m[1mreimport[22m | iris_hidden_estimate_screen_left.png[39m[0m
+[  90% ] [90m[1mreimport[22m | iris_hidden_estimate_screen_right.png[39m[0m
+[  90% ] [90m[1mreimport[22m | iris_matte_estimate_screen_left.png[39m[0m
+[  91% ] [90m[1mreimport[22m | iris_matte_estimate_screen_right.png[39m[0m
+[  91% ] [90m[1mreimport[22m | iris_screen_left.png[39m[0m
+[  92% ] [90m[1mreimport[22m | iris_screen_right.png[39m[0m
+[  92% ] [90m[1mreimport[22m | iris_under_hair_estimate_screen_left.png[39m[0m
+[  93% ] [90m[1mreimport[22m | iris_under_hair_estimate_screen_right.png[39m[0m
+[  94% ] [90m[1mreimport[22m | observed_iris_screen_left.png[39m[0m
+[  94% ] [90m[1mreimport[22m | observed_iris_screen_right.png[39m[0m
+[  95% ] [90m[1mreimport[22m | sclera_hidden_estimate_screen_left.png[39m[0m
+[  95% ] [90m[1mreimport[22m | sclera_hidden_estimate_screen_right.png[39m[0m
+[  96% ] [90m[1mreimport[22m | sclera_screen_left.png[39m[0m
+[  96% ] [90m[1mreimport[22m | sclera_screen_right.png[39m[0m
+[  97% ] [90m[1mreimport[22m | visible_matte_change_screen_left.png[39m[0m
+[  97% ] [90m[1mreimport[22m | visible_matte_change_screen_right.png[39m[0m
+[  98% ] [90m[1mreimport[22m | kiss_lips.png[39m[0m
+[  98% ] [90m[1mreimport[22m | brow_screen_left.png[39m[0m
+[  99% ] [90m[1mreimport[22m | Finalizing Asset Import...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (184 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing post-reimport operations...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

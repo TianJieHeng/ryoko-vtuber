@@ -1,0 +1,24 @@
+{
+  "sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_sheet_v001.png",
+  "sha256": "8284aa280149fd4a61cffd1d5f0fd35e0efbebce6310916d4b433cda1f30933a",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "pixels_inspected": true,
+  "observations": "Actual full nine-panel sheet viewed before authoring. Upper lids gradually droop together from panels 2-5 without fully closing. Lips begin parting in panel 3 and stay slightly open across panels 4-6. Brows remain low and relaxed, without the acute opposing tilt of annoyance. Panels 7-8 recover toward the neutral ninth panel. Static panels imply one sustained drowsy sink rather than repeated catch-and-reopen cycles.",
+  "left_right_convention": "Brow names use screen sides. Blink names use character sides: blink_R closes screen-left and blink_L closes screen-right. Both are equal throughout this candidate.",
+  "approximation": "Only existing rigid vertical brow movement, ordinary lash/iris closure and split-lip opening are used. Peak lowers both brows 2.2 source pixels, advances each upper lash 20.52 source pixels, and separates lip contours by 4.752 source pixels (2.32848 at bust scale). There is no anatomical jaw rotation, chin descent, cheek inflation, new relaxed lip shape, head nod, breathing or body gesture. Heavy-lid/open-lip perceptual fidelity and distinction remain pending native review.",
+  "panel_hashes": {
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp01_v001.png": "c975b66ed690f4b96501e28f986dd45685e53789b9d4505fa8d63bd351ecd232",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp02_v001.png": "414dde64dba1b1261b0da4c3e9ddb2195740c25f1632ca3efa273d9880543425",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp03_v001.png": "f5fb093b17644abb46806f90894b1067cfb289efc26effd2a428bad352c8d968",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp04_v001.png": "ca786923c9b6512adf0d994f2a289dd6277d5466ee67bbfcf5d66545d3015359",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp05_v001.png": "63b5dc3df159dde9fabcd051dae2396a038e6758f7c5df52d192b1f6774dfe3b",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp06_v001.png": "f46650fbb791b7b48fa8fbc0c90c273f7e2b474a7c83b6b64e43443e5e668829",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp07_v001.png": "019d2ad5b69230e540fdff4ac56a8c0f6282c663a408b00ebf88c155b38373dd",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp08_v001.png": "a6dba33ba18616bf58a356c29b2f89edd622722403180cb6b2a21f86d016c47f",
+    "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp09_v001.png": "d89793f694325d9c53d204ac209c5d3922f5d943c2756475ead6898d9d0a33d1"
+  },
+  "approval": "Accepted reference art does not approve this candidate or its animation."
+}

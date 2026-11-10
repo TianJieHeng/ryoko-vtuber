@@ -1,0 +1,16 @@
+test_actual_frozen_evidence_passes (test_independent_geometry.AuditMutations.test_actual_frozen_evidence_passes) ... ok
+test_brow_direction_rejected (test_independent_geometry.AuditMutations.test_brow_direction_rejected) ... ok
+test_frame_time_rejected (test_independent_geometry.AuditMutations.test_frame_time_rejected) ... ok
+test_gaze_drift_rejected (test_independent_geometry.AuditMutations.test_gaze_drift_rejected) ... ok
+test_lid_asymmetry_rejected (test_independent_geometry.AuditMutations.test_lid_asymmetry_rejected) ... ok
+test_lifecycle_evidence_change_rejected (test_independent_geometry.AuditMutations.test_lifecycle_evidence_change_rejected) ... ok
+test_neutral_endpoint_drift_rejected (test_independent_geometry.AuditMutations.test_neutral_endpoint_drift_rejected) ... ok
+test_peak_gap_mutation_rejected (test_independent_geometry.AuditMutations.test_peak_gap_mutation_rejected) ... ok
+test_sample_peak_analytic_values (test_independent_geometry.AuditMutations.test_sample_peak_analytic_values) ... ok
+test_smile_channel_rejected (test_independent_geometry.AuditMutations.test_smile_channel_rejected) ... ok
+test_unexpected_lip_corner_rejected (test_independent_geometry.AuditMutations.test_unexpected_lip_corner_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.055s
+
+OK

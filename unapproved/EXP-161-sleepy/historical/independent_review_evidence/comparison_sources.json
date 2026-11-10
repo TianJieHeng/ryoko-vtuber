@@ -1,0 +1,42 @@
+[
+  {
+    "id": "EXP-161",
+    "intent": "Brows rest low; heavy upper lids droop; lips part slightly with relaxed jaw.",
+    "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_sheet_v001.png",
+    "source_sha256": "8284aa280149fd4a61cffd1d5f0fd35e0efbebce6310916d4b433cda1f30933a",
+    "source_pixels_inspected": true,
+    "profile": "/workspace/scratch/42f2baf55663/sleepy_work/EXP-161.json",
+    "profile_sha256": "c260d3a88b6e3ed02877cf9f334de5e6e43f921f14c96f952b78193498b3486e",
+    "native_sleepy_comparison_pending": true
+  },
+  {
+    "id": "EXP-164",
+    "intent": "Brows lift intermittently; eyelids sink and reopen; lips press as the jaw relaxes.",
+    "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-164_fighting-sleep/RYO_EXP-164_fighting-sleep_sheet_v002.png",
+    "source_sha256": "8a8a30c1327b866d31af5b060fd884fdcd52060850a8d2bbd31a58b9093b70eb",
+    "source_pixels_inspected": true,
+    "profile": "/workspace/scratch/42f2baf55663/sleepy_work/rig/expressions/EXP-164.json",
+    "profile_sha256": "30b7adfd10aeb10b6edb7eefb968ae44d589c9a516cd161ff39c5833c466e110",
+    "native_sleepy_comparison_pending": true
+  },
+  {
+    "id": "EXP-174",
+    "intent": "Brows lower sharply despite heavy lids; eyes narrow; lower lip pushes forward.",
+    "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-174_sleepy-annoyance/RYO_EXP-174_sleepy-annoyance_sheet_v001.png",
+    "source_sha256": "cd149911dfd8c7309f25ed828772e739f6a79f859e824b69c98a0c87281cfcca",
+    "source_pixels_inspected": true,
+    "profile": "/workspace/scratch/42f2baf55663/sleepy_work/rig/expressions/EXP-174.json",
+    "profile_sha256": "3007a539a7e62126a7bc61c295774fc84959b30cba8894f79616c98004e71ff1",
+    "native_sleepy_comparison_pending": true
+  },
+  {
+    "id": "EXP-177",
+    "intent": "Brows settle level; eyes close evenly; lips remain softly sealed and neutral.",
+    "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-177_meditative-calm/RYO_EXP-177_meditative-calm_sheet_v001.png",
+    "source_sha256": "793f57f3bdfb9974dcd076d5e84af20c356e15d0c98db0b2985e3ab65eeb731b",
+    "source_pixels_inspected": true,
+    "profile": "/workspace/scratch/42f2baf55663/sleepy_work/rig/expressions/EXP-177.json",
+    "profile_sha256": "4fb88990455fc4ba799e30ce2987b17151fe0ca00d31e562aa38680a7349f211",
+    "native_sleepy_comparison_pending": true
+  }
+]
