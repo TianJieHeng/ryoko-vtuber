@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-11-10T21:00:13.761730+00:00",
+  "launch_method": "Supported CUA Godot 4.6.3 Project Manager import of isolated native_launcher directory, Editor Settings > Run > Window Placement > Game Embed Mode Disabled, Reload Current Project, Run Project; standalone window visibly observed.",
+  "original_game_embed_mode": "Use Per-Project Configuration",
+  "restored_game_embed_mode": "Use Per-Project Configuration",
+  "restoration_visually_verified": true,
+  "ui_released": true,
+  "cua_completion_summary_submitted": true,
+  "godot_version": "4.6.3.stable.official.7d41c59c4",
+  "display": "X11",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "harness_checks": 2546,
+  "native_checkpoints": 363,
+  "native_hash_matches": 726,
+  "independent_png_checks": 726,
+  "full_dimensions": [
+    568,
+    800
+  ],
+  "detail_dimensions": [
+    400,
+    360
+  ],
+  "normal_speed_observed": false,
+  "scope": "Full 121-frame EXP-129, EXP-041 and EXP-061 production trajectories at 30 fps, full/detail exact approved RGBA parity. Not prior36 full-trajectory parity, cross-transition rendering or live pacing.",
+  "console_note": "Godot debugger console reported output overflow while printing the complete large result JSON. The harness wrote intact RESULT.json before printing; independent verification reads that file and all726 saved PNGs. This is a console truncation note, not a claim that the console was error-free.",
+  "production_files_unchanged": 1396,
+  "pinned_native_source_files_unchanged": 1011,
+  "no_shell_native_launch": true,
+  "no_display_server_or_socket_workaround": true,
+  "no_remote_execution": true,
+  "no_ci": true,
+  "no_publication": true,
+  "receipt_sha256": {
+    "RESULT.json": "1932a707349828ef889fdded7febb0d91e6d9f4a94ed8060673ce25cfd743aa6",
+    "independent_png_verification.json": "872acc2968721e29c5ddf10d00e59b3f3045133c095e9d4e59fd9b77ff2ee879",
+    "source_preservation.json": "9513a3adf0bbd2ecc61f27140e0dbfee14d74a48081b650cf44e2c0205df2fd3",
+    "expected_checkpoints.json": "f3c8d5b5e2b692827f46a9024a636d89d9211d68fe084057e998a0ed72783d20",
+    "source_copy_receipt.json": "38de82d42ba815d4c75913b14746470754b7470a9d9f576c1782c523be757a63"
+  }
+}

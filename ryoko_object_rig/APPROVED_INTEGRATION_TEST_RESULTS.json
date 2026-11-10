@@ -1,158 +1,40 @@
 {
   "status": "PASS",
-  "approved_profile_count": 36,
-  "prior_profile_count": 27,
+  "approved_profile_count": 39,
+  "prior_profile_count": 36,
   "newly_approved_profile_ids": [
-    "EXP-139",
-    "EXP-174",
-    "EXP-067",
-    "EXP-093",
-    "EXP-003",
-    "EXP-043",
-    "EXP-064",
-    "EXP-004",
-    "EXP-042"
+    "EXP-129",
+    "EXP-041",
+    "EXP-061"
   ],
   "receipts": {
-    "bridge_lifecycle_checks.json": {
-      "checks": 519506,
-      "sha256": "61a6afe6d3eba425c0a3d276a3b4aced368c968624791fa6efb2b56d759427de"
+    "actual_object_checks.json": {
+      "checks": 111359,
+      "sha256": "c2a6a38d84be8becc401795e32b4cce4d90904f40cde3a02384de6f5055c84d6"
     },
-    "focused_object_checks.json": {
-      "checks": 20596,
-      "sha256": "ebe137c49da05063f177edcd53d6c10780b12edb8be2d04e9f241d03e061d83f"
+    "dense_checks.json": {
+      "checks": 1990743,
+      "sha256": "5e7297d4f8d83b4515e5c23b0a58cc91d61fde3943bf2a23cf0ac2295689fd09"
     },
-    "handoff_boundary_checks.json": {
-      "checks": 34550603,
-      "sha256": "45e86c011ebc7147e7a3ecbc75f0242b4634916b643c6d58b227457f1602abf8"
+    "native_parity/RESULT.json": {
+      "checks": 2546,
+      "sha256": "1932a707349828ef889fdded7febb0d91e6d9f4a94ed8060673ce25cfd743aa6"
     },
-    "opening_independent_audit.json": {
-      "checks": 5016,
-      "sha256": "ecc0f7a10c83e40c4416142d466f33be57f10f6e20c5823ce42cb76cabf8f674"
-    },
-    "regression_recovering_composure_runtime/motion_state_checks.json": {
-      "checks": 2758,
-      "sha256": "07781ba7d1c5e1a19de76ee23e8fc05a9a1802393768c0184190c61ccaac5f3e"
-    },
-    "native_parity/numeric_source_parity.json": {
-      "checks": 36194,
-      "sha256": "c8d07d5c04226b4947e5fd4923ca9a568e52d6c9c766c345667319d15ad63a56"
-    },
-    "regression_hiding_smile_runtime/motion_state_checks.json": {
-      "checks": 5184,
-      "sha256": "42e3afec5c3c75d5502f81b2043edac755c43b5cf090a3e5c7ae2c137a0f179f"
-    },
-    "regression_sudden_insight_runtime/motion_state_checks.json": {
-      "checks": 2368,
-      "sha256": "a77cfef8fbc1a6e6fd60ad521f571473a3449ab096eef86ca13c844a7b97157c"
-    },
-    "regression_queasy_runtime/motion_state_checks.json": {
-      "checks": 5185,
-      "sha256": "d95e203ef2fc9813873ebfaf29ffe5f870fdf301b5e634e93a58025f4e4b5e18"
+    "native_parity/independent_png_verification.json": {
+      "checks": 726,
+      "sha256": "872acc2968721e29c5ddf10d00e59b3f3045133c095e9d4e59fd9b77ff2ee879"
     }
   },
-  "execution_status": {
-    "all_worker_test_processes_stopped": true,
-    "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
-    "results": {
-      "dense_final": {
-        "status": "PASS",
-        "exit_code": 0,
-        "receipt": "handoff_boundary_checks.json",
-        "checks": 34550603,
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "bridge_lifecycle": {
-        "status": "PASS",
-        "exit_code": 0,
-        "receipt": "bridge_lifecycle_checks.json",
-        "checks": 519506,
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "focused_actual_object": {
-        "status": "PASS",
-        "exit_code": 0,
-        "receipt": "focused_object_checks.json",
-        "checks": 20596,
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "independent_audit": {
-        "status": "PASS",
-        "exit_code": 0,
-        "receipt": "opening_independent_audit.json",
-        "checks": 5016,
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "approved_pair": {
-        "status": "TIMEOUT",
-        "exit_code": 124,
-        "timeout_seconds": 120,
-        "note": "No completed assertion receipt; not a pass."
-      },
-      "recovering_composure_runtime": {
-        "status": "PASS",
-        "exit_code": 0,
-        "checks": 2758,
-        "receipt": "regression_recovering_composure_runtime/motion_state_checks.json",
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "sudden_insight_runtime": {
-        "status": "PASS",
-        "exit_code": 0,
-        "checks": 2368,
-        "receipt": "regression_sudden_insight_runtime/motion_state_checks.json",
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "stunned_silence_runtime": {
-        "status": "TIMEOUT",
-        "exit_code": 124,
-        "timeout_seconds": 120,
-        "note": "No completed assertion receipt; not a pass."
-      },
-      "queasy_runtime": {
-        "status": "PASS",
-        "exit_code": 0,
-        "checks": 5185,
-        "receipt": "regression_queasy_runtime/motion_state_checks.json",
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "hiding_smile_runtime": {
-        "status": "PASS",
-        "exit_code": 0,
-        "checks": 5184,
-        "receipt": "regression_hiding_smile_runtime/motion_state_checks.json",
-        "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
-      },
-      "exhaustive_actual_object": {
-        "status": "TIMEOUT",
-        "exit_code": 124,
-        "timeout_seconds": 300,
-        "note": "No completion JSON; superseded only for focused actual-object coverage by focused_actual_object, not a full-rate actual-object pass."
-      },
-      "archived_prior27_shader_smoke": {
-        "status": "PASS",
-        "exit_code": 0,
-        "receipt": "prior_shader_smoke.log",
-        "note": "Inherited shader compiler error reproduced, execution continues; not pixel/render correctness."
-      }
-    },
-    "limitations": [
-      "Control matrix stubs face setters.",
-      "Focused actual-object suite samples 180 poses, not exhaustive 30/60Hz full trajectories.",
-      "No pixel or native-app parity claim.",
-      "Initial actual-object and regression attempts were interrupted; final bounded attempts above are authoritative.",
-      "No profiles, constraints or artwork modified."
-    ]
-  },
-  "blocked_or_unrun": {
-    "native_parity/RESULT.json": "No DISPLAY or running X server. Xvfb absent. Installed local Xorg dummy server failed to establish local/Unix listening sockets, both with default sandbox and sandbox override. No remote execution or software installation attempted. Direct socket.socket(AF_UNIX) probe fails with errno 1 before binding. No transport workaround attempted."
-  },
-  "scope": "Completed numerical, source-identity and inventory checks only; rendering limitations remain explicit.",
-  "runtime_changed": true,
+  "runtime_changed": false,
   "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
   "artwork_changed": false,
   "ci_run": false,
+  "intermediate_integration_evidence": "Completed37 and38 state tests retain their exact receipts under validation/approved_mental_arithmetic and validation/approved_pair38. They do not substitute for current39 results.",
+  "prior36_native_recovery": "validation/approved_mental_arithmetic/prior36_native_parity/RESULT.json: 731 checks,180 exact comparisons,90 checkpoints across nine profiles. Supersedes historical inability to capture that bounded scope.",
   "whole_rig_full_trajectory_native_parity": "NOT RUN",
+  "rendered_cross_transition_review": "NOT RUN",
   "live_engine_pacing": "UNVERIFIED",
-  "normal_speed_observed": false
+  "normal_speed_observed": false,
+  "headless_diagnostic": "Inherited dummy-renderer custom_samplers diagnostic may appear in state-test logs; native parity uses supported desktop X11/OpenGL, not dummy pixels.",
+  "scope": "Current 39 numerical and actual-object state integration with full 121-frame native parity for each of three newly approved profiles. Prior36 byte preservation and exact standalone controls are separate from historical scoped native recovery."
 }

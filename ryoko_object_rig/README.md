@@ -1,3 +1,7 @@
+# Current approved release: 39 performances
+
+Mental Arithmetic, Controlled Anger and Broad Surprise are integrated with unchanged prior36 profiles, runtime and artwork. Full native frame parity passed for all three. See [current validation and limits](APPROVED_BATCH39_INTEGRATION.md). Earlier progress notes retain historical scope.
+
 # Current approved release: 36 performances
 
 Nine more user-approved previews are integrated with the prior 27 standalone performances and artwork preserved, plus a bounded eye-transition repair. See [current validation](APPROVED_BATCH36_INTEGRATION.md). Earlier progress notes below retain historical scope.

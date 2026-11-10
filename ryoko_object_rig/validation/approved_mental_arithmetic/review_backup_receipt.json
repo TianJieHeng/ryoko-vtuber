@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "branch": "review/exp129-mental-arithmetic-v1",
+  "commit": "560021b8a03a9ef1a632040f8577811db7ff0e91",
+  "commit_url": "https://github.com/TianJieHeng/ryoko-vtuber/commit/560021b8a03a9ef1a632040f8577811db7ff0e91",
+  "tree": "360a31b4f8492b259f452eea5d6521c2fec71bc0",
+  "base_and_unchanged_main": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "verified_added_files": 27,
+  "candidate_status": "UNAPPROVED",
+  "main_untouched": true,
+  "ci_run": false,
+  "remote_mp4_bytes_verified": true,
+  "entries": [
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/APPROVAL_STATUS.json",
+      "git_blob": "2cf83a5cca90876a7021b1954fa0f6a7262da612",
+      "sha256": "67f00068e24b00ff17d49bae781be993c6a390deee10e33d43832289633da724",
+      "bytes": 319
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/BASELINE_REFERENCE.json",
+      "git_blob": "832eb1db047b71ae49fddf5075d3bdb45d5a1936",
+      "sha256": "00fc062a6ac410343d4257a7e7a0aa447f6f2b7ee04962da7e28de9067481603",
+      "bytes": 1383
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/CAPTURE_FAILURE_HISTORY.json",
+      "git_blob": "4e3e7548d87bf88aeefba9ea9444e596877932e7",
+      "sha256": "b2312f7eb8770102a1ba7eece757c3223bd48b46e0ab92ec07a63779dacc3cae",
+      "bytes": 1394
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/EXP-129.json",
+      "git_blob": "249109488e15decf8645b2e5589dc1bc2979bd78",
+      "sha256": "fdd5161262f4e2149503a2c70b2224cc53d6cdd899beb7080c5d19b849644855",
+      "bytes": 3767
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/FILES.json",
+      "git_blob": "87e3ab65a3ed867ab8353edf42a091571a20f84a",
+      "sha256": "a49364bd04e53756c11e1c94df0c41de2668f5a64c6f8c1b1e48184e1c4fd382",
+      "bytes": 3512
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/INDEPENDENT_REVIEW.md",
+      "git_blob": "5ddad51700fa44beb8dd2e896d3f3c898f67e87a",
+      "sha256": "191d6e6e7d34fb37f51f552af42f3a6d440e2c46e4df4e24e7d6cef70bc85d44",
+      "bytes": 4631
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/Mental_arithmetic_review_v1.mp4",
+      "git_blob": "70026dcef2763b2b36295a2d4f5352f66edbd328",
+      "sha256": "7d952bd8a306cd72bb9fe374e50b3d852821c96d139b88c2fa80f55d96447a50",
+      "bytes": 180331
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/README.md",
+      "git_blob": "c077b0d7ecfde42e587e7fd9c32e4269d511bb5f",
+      "sha256": "698f88512f4b43e2f9c44daf1f984476e552b898a6b84d38a5d24490daa9076b",
+      "bytes": 2625
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/SOURCE_REFERENCE.json",
+      "git_blob": "347463f9b7e7ee7792c84614441d26ce1dbd4140",
+      "sha256": "b6ead6679496ffb70ab082ff24f3b92fb62d6847b240cc7949d27a5e1387de09",
+      "bytes": 613
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/capture/checks.json",
+      "git_blob": "4a1c60bad93217a58790568dac581b4e67acf6f8",
+      "sha256": "dab00bd5473f06ea2e61cafb49a4164b8a990b338b779c3ae4b8c63668f3c72d",
+      "bytes": 18227
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/check_and_capture.gd",
+      "git_blob": "ff5570268a261984c9ead80938b7a57c264c5180",
+      "sha256": "989db8bf3bc5449eb33ac50f5fadbb51b63ab552ac249c045356d83543293b68",
+      "bytes": 7621
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/encode_preview.py",
+      "git_blob": "2dd693b88a4116331b9475301303608a2863b8d2",
+      "sha256": "a4b52c756b283e1d634c247469e47c7195e87aedd240622002aaff3c3fb776c6",
+      "bytes": 2041
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/motion_checks.json",
+      "git_blob": "ba586674a38316335bbbf69c5d587bd103a88fe3",
+      "sha256": "fe3c00da3848e7be05df43c6c56b685e00d4287510eec80cba2d0e0940958ae1",
+      "bytes": 159712
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/motion_state_checks.json",
+      "git_blob": "ca86e1d3de08588472a6e37de282c386726af6c2",
+      "sha256": "f44efe2abafcab77698a077841d24c7d4856c6da5b1b585ce473cba3def4f6ec",
+      "bytes": 140568
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/plan.json",
+      "git_blob": "0a85691fe14795dbea8bd604afa5e1efa21ad083",
+      "sha256": "dcee78c3c4084b34414cc49d6da3e4d95ec59588c9906afc486b5ea25a0655bd",
+      "bytes": 1823
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/preparation_verification.json",
+      "git_blob": "f6e1f54aed91c01de12cc4cb8d2735c3a5846e1b",
+      "sha256": "b49c2efd8dc74d99786d82ec6f845ba1a6a01034aab4bc1bc13ca2f24a356a17",
+      "bytes": 627
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/prepare_baseline.py",
+      "git_blob": "c717fe1a43148d1e190880bf5fd9b0a58bd34a6d",
+      "sha256": "1d96923893f315a4e36c7e2eb4e1190406cc5f2ca0cfc9067cfc0b3b73bbb58a",
+      "bytes": 1657
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/prepare_native_launcher.py",
+      "git_blob": "c78e781b399b6243e6bcabe301c997ecd960b92d",
+      "sha256": "64cbdb41f529b043cde4b258021e4081bc24d6ae7422e8f9487e1edfcbab4445",
+      "bytes": 2266
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/render_motion.gd",
+      "git_blob": "a3ec3ff546bf280ca9dd0670a3c62e317360dd28",
+      "sha256": "b4ba928302ec9dcfdc1d313bff5da06f1d9c0b0030c32679afea9e96685be217",
+      "bytes": 6566
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/review_evidence/decoded_frame_order.json",
+      "git_blob": "a2917a9cb497df1c501282a2b8741677e50cc79a",
+      "sha256": "d235e4580183a772a9301ef0ad003b10593021d9f745987a5132a0620082e667",
+      "bytes": 21193
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/review_evidence/native_frame_hashes.json",
+      "git_blob": "4f8552fdc0f336fca49edff5de200f2505e2f2da",
+      "sha256": "6efa2a9f6a555c80a9bff9b30f9431a2eb74d7fb29c0ce71913253c71d213bf0",
+      "bytes": 61735
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/review_evidence/review_checks.json",
+      "git_blob": "01b3ee6031915ddc381640deba2299c4ad20baa1",
+      "sha256": "c9e41668f65a2489806a58030ca9bb7527149164492d96d9ac883b73576eb701",
+      "bytes": 14104
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/review_validation.py",
+      "git_blob": "5a849344fddab74feaa3f45086141d5a3b1e6243",
+      "sha256": "b5bb4a67f30380b4544f791d357363d592e365a3971f5fcdb1ab9712aad5327d",
+      "bytes": 11672
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/run_motion.sh",
+      "git_blob": "055969c02ed6df7cead9719bcfff66b701b14834",
+      "sha256": "2f728fafa46c82add51ed70555f41acfaa6b12787a74c34a64bba606a95d200a",
+      "bytes": 1014
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/state_checks.json",
+      "git_blob": "9fb965d959ecc757d0760e78796cd2474062525f",
+      "sha256": "eb44e55425d253e2ceb07e0592609975cdeba003da45747e9d7888698fdbe9c3",
+      "bytes": 18228
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/verify_preparation.py",
+      "git_blob": "0f0668eb1291ec9d25ab291aa5600f6686286269",
+      "sha256": "6f3f5e9b3dce1c4fd4d52c6213e954f3f58511560a041bf26cd58ac28f827e72",
+      "bytes": 1280
+    },
+    {
+      "path": "unapproved/EXP-129-mental-arithmetic/video_probe.json",
+      "git_blob": "0f5cd3f34420ee5e3eb5e4a92c5146f4b7acdbde",
+      "sha256": "0ef5125d2395f5a2db1c58ae91996e0c1ff7b18d6ede7358b788a56dea3a6ee5",
+      "bytes": 372
+    }
+  ]
+}

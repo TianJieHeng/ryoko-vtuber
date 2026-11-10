@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "baseline_manifest_files": 999,
+  "baseline_changes_before_release_metadata": [
+    "expressions/registry.json"
+  ],
+  "prior_profiles": 36,
+  "protected_pngs": 184,
+  "exact_new_profiles": [
+    "EXP-129",
+    "EXP-041",
+    "EXP-061"
+  ],
+  "intermediate_receipts_preserved": [
+    {
+      "scope": 37,
+      "file": "validation/approved_mental_arithmetic/motion_state_checks.json",
+      "sha256": "1c97d427ea2924eb0a6c7936d038132afa91d6d8e50854a696055023fcac3831"
+    },
+    {
+      "scope": 37,
+      "file": "validation/approved_mental_arithmetic/dense_checks.json",
+      "sha256": "86c8a99d5bfb5db7545911c1e5ef500b86bc44430c72c9a0aa28773c916037f6"
+    },
+    {
+      "scope": 38,
+      "file": "validation/approved_pair38/actual_object_checks.json",
+      "sha256": "c53bbdede0d04413674e9c50f641123aab1a9a54692234b9a93c218ccf10b1d0"
+    },
+    {
+      "scope": 38,
+      "file": "validation/approved_pair38/dense_checks.json",
+      "sha256": "320ed4a255092572783254c7977ba9c60332dc2669cc3ed60a98b7781f8d97a9"
+    }
+  ],
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+}

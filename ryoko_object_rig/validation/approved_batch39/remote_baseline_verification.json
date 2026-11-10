@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "base_main": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "remote_rig_tree": "e8714531bfcbca219dfaabea02cbcdc78be52baf",
+  "local_baseline": "approved36_integration_work/ryoko_object_rig",
+  "local_files": 1001,
+  "remote_files": 1001,
+  "differences": [],
+  "method": "Fetch GitHub Git tree recursively through the connected GitHub API; compute Git blob SHA-1 over every local baseline file including both manifest bookkeeping files; compare every path and blob SHA. Both inventories contained exactly 1001 files.",
+  "source_url": "https://api.github.com/repos/TianJieHeng/ryoko-vtuber/git/trees/e8714531bfcbca219dfaabea02cbcdc78be52baf?recursive=1"
+}

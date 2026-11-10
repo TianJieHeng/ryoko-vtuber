@@ -1,0 +1,285 @@
+{
+  "status": "PASS",
+  "branch": "review/exp041-controlled-anger-v1",
+  "branch_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/review/exp041-controlled-anger-v1",
+  "commit": "f517e2654222a81ac6f74c73f5726a660d71e52c",
+  "commit_url": "https://github.com/TianJieHeng/ryoko-vtuber/commit/f517e2654222a81ac6f74c73f5726a660d71e52c",
+  "tree": "ee6729dd8cae7a0a3f71fdc0777b830cf008b0e9",
+  "frozen_baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "verified_added_files": 36,
+  "verified_package_bytes": 699995,
+  "current_approval_status": "USER_APPROVED",
+  "review_time_status": "UNAPPROVED",
+  "reviewed_profile_and_mp4_unchanged": true,
+  "approval_note": "APPROVAL_STATUS.json records subsequent user approval without changing the reviewed profile or historical receipts.",
+  "main_written_by_this_task": false,
+  "production_registry_changed": false,
+  "only_ref_written": "refs/heads/review/exp041-controlled-anger-v1",
+  "branch_head_equals_commit": true,
+  "all_remote_added_blobs_read_back_and_byte_compared": true,
+  "remote_mp4_bytes_verified": true,
+  "source_artifacts_and_frozen_rigs_unchanged": true,
+  "ci_run": false,
+  "ui_used_by_this_task": false,
+  "remote_execution": false,
+  "portable_package_verification": "PACKAGE_VERIFICATION.json: pinned local bootstrap, 1070 static checks, 8921 motion checks, identical numerical records, three launcher parse checks, Python syntax.",
+  "limitations": [
+    "Isolated lip-first release is not visibly demonstrated; peak/easing static pixels match.",
+    "Playback transport advanced start-to-end; no continuous subjective normal-speed observation.",
+    "Backup only; main production integration is a separate task."
+  ],
+  "entries": [
+    {
+      "path": "unapproved/EXP-041-controlled-anger/APPROVAL_STATUS.json",
+      "sha256": "4b755a1d3042af75618a34a5cfe16d0a13837b397b3146a25e0df106f86a68b4",
+      "git_blob": "a689bdfbf69d6567e2a92dceaf6e1b9e0e38dd69",
+      "bytes": 893,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/BASELINE_REFERENCE.json",
+      "sha256": "a3a9c8a5c4ba4986bba2fa7113fbb50b252334f9fd83f73bd5fee71dbaf869a8",
+      "git_blob": "e3f16cbc0634afb04dc480513b59316f390697f6",
+      "bytes": 1381,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/Controlled_anger_review_v1.mp4",
+      "sha256": "cb080ef5a98cfb12d4fa885315ca39893d301954f8a37cef2432ca9d23d0a0db",
+      "git_blob": "9ba3ebf28df85f5ac90805555937341263efeaee",
+      "bytes": 179685,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/EXP-041.json",
+      "sha256": "04202c10a048724616a831566f7743c18159ce84c0415867b33c13c64ce75337",
+      "git_blob": "7dd400e1bb329842705d71f20c433f1ac3529b0c",
+      "bytes": 3722,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/FILES.json",
+      "sha256": "472688484128a34a5e185d647231cfbb1d099ccd9ab624e8973f70419169a1bf",
+      "git_blob": "7f8bd225d496a2e1eb09b33cfec9b15eb65f7e31",
+      "bytes": 3538,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/INDEPENDENT_NATIVE_REVIEW.md",
+      "sha256": "67c0fe41a127e76784b6cfc15431fdb5455ef38dca7a63a56cda35acc822f5fb",
+      "git_blob": "a6da231d3f73bc04598bcb4cc48de5fd6d9c5cb4",
+      "bytes": 4586,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/INDEPENDENT_SOURCE_REVIEW.md",
+      "sha256": "300a4a435c7abf3f61635a5c2b3507d6d79ddc3d041f1df56b2b9495a0c5c521",
+      "git_blob": "cc99cd3b1a1c7133e91777a3d46bede6debc8d7a",
+      "bytes": 4514,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/NATIVE_CAPTURE_REVIEW.json",
+      "sha256": "378cf84e41d4bfcfb57030a113b01eac563c4d835a874a6ef52e2edec06a42de",
+      "git_blob": "44dbce93cb11a5e124588b61fe54ea381aa7e2ca",
+      "bytes": 2158,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/OMITTED_ARTIFACTS.json",
+      "sha256": "3338c85b728a632d1c0e07af0c16e35f676d31e0c7baf1729a7101e3e1426ea3",
+      "git_blob": "861cf86a247b13941a097d5bb9954d5fa23bb07a",
+      "bytes": 858,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/PACKAGE_VERIFICATION.json",
+      "sha256": "db5e5a5c72c7de659ad3af0bb979fc6c827807a19d95591ccdcbe4cda81bf68a",
+      "git_blob": "1e28fe7e03b5c502e744fa809b3647cacd4c641f",
+      "bytes": 802,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/README.md",
+      "sha256": "9f0911a49e83951b3153a1e866c3bb22ee540426eaf4a0977545932f2ca8ff37",
+      "git_blob": "bbb1a1c27f2c6c3ba27a270cab4c45e0831b4fdc",
+      "bytes": 4245,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/SOURCE_PACKAGE_PROVENANCE.json",
+      "sha256": "208a511bee3181afe673f15628314855acf8177a03da1e20d7d38d7a96d2c1b2",
+      "git_blob": "80d6b4cf64098c08ee75b6e72283c61ae3ba1e05",
+      "bytes": 6412,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/SOURCE_REFERENCE.json",
+      "sha256": "7bcc77bf4c94d0da1c87dfe2231f44198aed743b2e452d0a94c8fb05e30a9947",
+      "git_blob": "be49080d3eafcf7f97174f2cfe0bd54e1da90ab3",
+      "bytes": 773,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/authoring/README.md",
+      "sha256": "bb69bca5dbefb33558bef13509a16c02aa1badd9d5094e99076e623a0ba341cb",
+      "git_blob": "c20b524f61025ff9aaba5a3429090d342a909218",
+      "bytes": 3562,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/authoring/build_scripts.py",
+      "sha256": "cc8f230a640f99ef8a76087b44b34dbc45f24bed01d1bdac4d809bd2e10efaec",
+      "git_blob": "e5dfc58d50dc73c6ccea8b474c7b324efe63ede3",
+      "bytes": 5354,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/authoring/prepare_candidate.py",
+      "sha256": "e9466db1d6fecab17b34e046ac9f49db4c8c403355b580e03434ffb6db5337f9",
+      "git_blob": "d71112b2a4d1134bb62214e1f8f44208c3a7c926",
+      "bytes": 4017,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/capture/checks.json",
+      "sha256": "6b1ac4d465b424bb67d527be5ef6ad8a1f64f463f55f27271fc6d634566336f9",
+      "git_blob": "e9f78b20d5054ceb3486aebf82820e829fe187fc",
+      "bytes": 15279,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/check_and_capture.gd",
+      "sha256": "05dd78b4aeb8cff09d39896fb297643cb14b89ad80c24748efd74ba8f1e83f65",
+      "git_blob": "3974536378c409d999b107129c774cab6194cb6c",
+      "bytes": 6985,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/encode_preview.py",
+      "sha256": "8e3eeb5345aab8b1233b8aab0bee28692bc14fa3dcc461fce2d3c460fbf834ab",
+      "git_blob": "bb5816505ad4b031a341608bc840fa6295ae8295",
+      "bytes": 2037,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/launcher_preparation_verification.json",
+      "sha256": "d7a3bd944079e1e87409856837115e4b4e29a6d16114089b31c11db1a4cada12",
+      "git_blob": "1e77eeeccd0dea9cc36df0884fc5fd8179fd7d28",
+      "bytes": 609,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/motion_checks.json",
+      "sha256": "0b3fde9c8c6b4200cc200150e414a1f66c7dfbfea4e080ff5ecdce4b42166500",
+      "git_blob": "8a24b849a2bc670c560426af6f3452d1c3b5cec3",
+      "bytes": 159443,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/motion_state_checks.json",
+      "sha256": "ede4ed5ca4814c00e099f7cd35612f4e946cd76a47b82b9051718482dfd42925",
+      "git_blob": "e718d417b87c25fcfcfc4da092ac65daf7502eea",
+      "bytes": 140299,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/plan.json",
+      "sha256": "5d4ec06fcb5351fb6c1d93bee4a6afba3777af76d4c8826be7b5d8a9a553ae9b",
+      "git_blob": "160cac5698dedcc5ea736789b9bf8d9f9f62ec72",
+      "bytes": 1735,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/preparation_verification.json",
+      "sha256": "6371d0f96dc53f45c06fd053a87e72710cf4125c6bb9fba6ed01e1fa247ed527",
+      "git_blob": "147ccc5e79cd8000b38cafc44bbde411dafe5413",
+      "bytes": 628,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/prepare_baseline.py",
+      "sha256": "6e4d9a0baf2d6241f310b21882f2d866edb034608a43cd90a372ef2240e23259",
+      "git_blob": "9a3c08617fd8fa729998dd47721d86c69a57c2e3",
+      "bytes": 2353,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/prepare_native_launcher.py",
+      "sha256": "a743cdf3e4b5748d6f258c2be0da400cea93782cf4cabb495f32f762f33fafc6",
+      "git_blob": "8401f0e0b9b466aeb1ed95df6649c744fd687568",
+      "bytes": 2352,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/render_motion.gd",
+      "sha256": "26a01bb7e42ef6a7d0409825734b0918d23b4dec41811cb5aa8a4fe5f91a6c2e",
+      "git_blob": "e1530bf4fe2605b350050741077380be955e0349",
+      "bytes": 6518,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/review_evidence/decoded_frame_order.json",
+      "sha256": "bd13b928a42303f1bf601dfa58390dfe51915207829bf4c23bca79077f62a6c3",
+      "git_blob": "39f1a82655fc1282426fb82204ef0b53a693edf8",
+      "bytes": 21984,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/review_evidence/independent_visual_findings.json",
+      "sha256": "873adca34439ab84f9aceac7fb7902da769daac6ee1c04d7a9bdc76b91aaa0f8",
+      "git_blob": "cbd747835e62a7f3d0ca553322d76b1b662c3b8c",
+      "bytes": 741,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/review_evidence/native_frame_hashes.json",
+      "sha256": "4ac91b0cea4f5e473bffde44644093c54ad32ea0173ab683b9aebda18fad3ea3",
+      "git_blob": "648c83b24c42c1d926dc85ee797cd75f1894b82d",
+      "bytes": 61735,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/review_evidence/review_checks.json",
+      "sha256": "ea54926fae2c2f3e1c4a917f0dc07fa224429ac611f791c7a46e406861e09bfc",
+      "git_blob": "b23b0fd07e5271090ea4b200223708b041d54028",
+      "bytes": 15956,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/review_validation.py",
+      "sha256": "556172e47a1b02d312d1a4e47156fb4bcadd6e4b7f83c5e7e6d99e6e18d5022f",
+      "git_blob": "7668983354d38659f425aee8036c4880016183a9",
+      "bytes": 17017,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/run_checks.sh",
+      "sha256": "58337a489ec132b7a5b19cc900cb3b81bf7fa58d6a6ea4952c0b672b511fb29f",
+      "git_blob": "034537fb9bac962afad531bee0d1c3f1ff3caf34",
+      "bytes": 892,
+      "mode": "100755"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/state_checks.json",
+      "sha256": "bb32e76c1c27a09ec34f4fdeee8bb9d1ed34f595b985111c23d31f2f3e5e13ed",
+      "git_blob": "34ae3b3595820ebe964ea9d57ad7f1433d4663c4",
+      "bytes": 15280,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/verify_preparation.py",
+      "sha256": "6f3f5e9b3dce1c4fd4d52c6213e954f3f58511560a041bf26cd58ac28f827e72",
+      "git_blob": "0f0668eb1291ec9d25ab291aa5600f6686286269",
+      "bytes": 1280,
+      "mode": "100644"
+    },
+    {
+      "path": "unapproved/EXP-041-controlled-anger/video_probe.json",
+      "sha256": "766f5e54217f7591534119a405c2dc437775d7c4bbf4a8a628c0b996ee5e53b7",
+      "git_blob": "39fd4a0c7b866c9ef45257ed7fe04db832ef8afc",
+      "bytes": 372,
+      "mode": "100644"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "attempt": "embedded_wrong_size",
+    "status": "REJECTED_WRONG_DIMENSIONS",
+    "included_in_final_video": false,
+    "raw_captures_in_package": false,
+    "first_capture_blocker.json": {
+      "status": "BLOCKED_INVALID_NATIVE_DIMENSIONS",
+      "native_receipt_status": "PASS",
+      "native_checks": 9099,
+      "records": 121,
+      "all_native_poses_match_headless": true,
+      "full_dimensions": [
+        1094,
+        771
+      ],
+      "detail_dimensions": [
+        1094,
+        771
+      ],
+      "expected_full": [
+        568,
+        800
+      ],
+      "expected_detail": [
+        400,
+        360
+      ],
+      "all_242_native_hashes_verified": true,
+      "encode_failed": true,
+      "movie_bytes": 0,
+      "normal_speed_observed": false,
+      "approval": "UNAPPROVED",
+      "baseline_changed_files": {
+        "mental_arithmetic_work/rig": [],
+        "baseline/ryoko_object_rig": []
+      }
+    }
+  },
+  {
+    "attempt": "disabled_before_reload_wrong_size",
+    "status": "REJECTED_WRONG_DIMENSIONS",
+    "included_in_final_video": false,
+    "raw_captures_in_package": false,
+    "STATUS.json": {
+      "status": "FAILED_DIMENSION_GUARD",
+      "reason": "Editor run still produced1136x800 before project reload; no motion receipt or valid preview.",
+      "next_action": "Standalone GUI Run after verified Disabled setting and project reload"
+    }
+  }
+]

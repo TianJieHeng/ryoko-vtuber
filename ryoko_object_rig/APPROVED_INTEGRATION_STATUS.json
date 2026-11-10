@@ -1,5 +1,5 @@
 {
-  "schema_version": 10,
+  "schema_version": 11,
   "status": "user_approved_integrated_with_containing_commit",
   "approved_profile_ids": [
     "EXP-163",
@@ -37,32 +37,29 @@
     "EXP-043",
     "EXP-064",
     "EXP-004",
-    "EXP-042"
+    "EXP-042",
+    "EXP-129",
+    "EXP-041",
+    "EXP-061"
   ],
-  "approved_profile_count": 36,
+  "approved_profile_count": 39,
   "newly_approved_profile_ids": [
-    "EXP-139",
-    "EXP-174",
-    "EXP-067",
-    "EXP-093",
-    "EXP-003",
-    "EXP-043",
-    "EXP-064",
-    "EXP-004",
-    "EXP-042"
+    "EXP-129",
+    "EXP-041",
+    "EXP-061"
   ],
   "old_profile_bytes_preserved": true,
   "old_pngs_preserved": 184,
   "new_runtime_pngs": 0,
   "focused_state_status": "PASS",
-  "native_visual_parity": "NOT RUN",
-  "native_reason": "Fresh native production capture BLOCKED by local display socket restriction. Original approved native evidence is retained; approved profiles and artwork unchanged; bounded incoming-opening handoff repair applied.",
+  "native_visual_parity": "PASS: three new profiles,363 checkpoints,726 exact full/detail RGBA comparisons",
+  "native_reason": "Executed through supported native Godot desktop UI using an isolated launcher and unchanged production runtime; independent PNG decode/hash verification passed.",
   "native_diagnostic": null,
   "headless_diagnostic": "Inherited dummy-renderer custom_samplers diagnostic retained in validation/approved_stunned logs.",
   "normal_speed_playback_observed": false,
   "live_engine_pacing_measured": false,
   "ci_run": false,
-  "publication_authorization": "The user approved all nine delivered previews by saying they all look good, after stating that saying good means approved.",
+  "publication_authorization": "The user approved Mental Arithmetic, Controlled Anger and Broad Surprise after stating that saying good means approved.",
   "historical_20_status": "historical_capture_metadata/approved20_before_pair/APPROVED_INTEGRATION_STATUS.json",
   "inherited_exp114_qualification": {
     "smooth_realtime_pacing_status": "HOLD"
@@ -92,7 +89,7 @@
   "exp090_native_review_checks": 3536,
   "exp090_preapproval_headless_checks": 3293,
   "exp090_integrated_native_parity_checks": 53,
-  "current_runtime_changes": true,
+  "current_runtime_changes": false,
   "all26_standalone_control_samples": 3327,
   "historical_26_status": "historical_capture_metadata/approved26_before_hiding_smile/APPROVED_INTEGRATION_STATUS.json",
   "exp153_native_review_checks": 3536,
@@ -100,5 +97,12 @@
   "exp153_integrated_native_parity_checks": 53,
   "all27_standalone_control_samples": 3457,
   "historical_27_status": "historical_capture_metadata/approved27_before_batch36/APPROVED_INTEGRATION_STATUS.json",
-  "current_validation": "APPROVED_BATCH36_INTEGRATION.md"
+  "current_validation": "APPROVED_BATCH39_INTEGRATION.md",
+  "historical_36_status": "historical_capture_metadata/approved36_before_mental_arithmetic/APPROVED_INTEGRATION_STATUS.json",
+  "prior36_scoped_native_recovery": "PASS: nine previously integrated profiles,90 checkpoints,180 exact native RGBA comparisons. Not all36 full trajectories.",
+  "new_expression_limits": {
+    "EXP-129": "Brow pinch is approximated by rigid lowering/opposing tilt; no horizontal convergence.",
+    "EXP-041": "Pressure easing from 0.65 to 0.38 is numerically authored but peak/easing captures are pixel-identical. Do not claim a visible lip-first release.",
+    "EXP-061": "Eye opening and jaw movement are more restrained than the reference; authored acting uses existing rig controls only."
+  }
 }

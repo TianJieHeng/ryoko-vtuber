@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_files_before": 1396,
+  "source_files_after": 1396,
+  "production_differences": [],
+  "copied_files": 1011,
+  "copied_source_differences": [],
+  "source_runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+}

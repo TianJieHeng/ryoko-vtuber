@@ -1,0 +1,12 @@
+{
+  "approved_preview_pose_samples": 121,
+  "checks": 651439,
+  "cross_boundary_samples": 16445,
+  "directed_cross_key_midpoint_cases": 1495,
+  "failures": [],
+  "interrupted_lifecycle_cases": 2990,
+  "prior36_standalone_samples_at_60hz": 8560,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "scope": "Unmodified production controller with rendering setters stubbed. Exact prior36 standalone controls versus archived registry at 60 Hz; all121 approved EXP-129 pose records; every source key/midpoint in both directions between EXP-129 and all36 plus self, 11 handoff checkpoints and mid-handoff release/restart. Not rendered visual evidence.",
+  "status": "PASS"
+}

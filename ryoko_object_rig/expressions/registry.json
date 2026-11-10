@@ -310,6 +310,30 @@
         "cold_glare"
       ],
       "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-129",
+      "path": "res://expressions/EXP-129.json",
+      "aliases": [
+        "mental_arithmetic"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-041",
+      "path": "res://expressions/EXP-041.json",
+      "aliases": [
+        "controlled_anger"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-061",
+      "path": "res://expressions/EXP-061.json",
+      "aliases": [
+        "broad_surprise"
+      ],
+      "trigger_phase": "neutral"
     }
   ]
 }

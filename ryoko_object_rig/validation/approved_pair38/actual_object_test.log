@@ -1,0 +1,59 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+OBJECT_BASE_READY independent_sprites=263 expression_timelines=0
+WARNING: Loaded resource as image file, this will not work on export: 'res://parts/caught_staring/uneasy_clear_parting.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2766)
+     GDScript backtrace (most recent call first):
+         [0] setup (res://parts/caught_staring/components.gd:13)
+         [1] _ready (res://expression_rig.gd:46)
+         [2] run (res://tests/test_approved_pair38_actual.gd:31)
+PAIR38_CROSS_DONE EXP-163
+PAIR38_CROSS_DONE EXP-005
+PAIR38_CROSS_DONE EXP-001
+PAIR38_CROSS_DONE EXP-006
+PAIR38_CROSS_DONE EXP-107
+PAIR38_CROSS_DONE EXP-007
+PAIR38_CROSS_DONE EXP-002
+PAIR38_CROSS_DONE EXP-152
+PAIR38_CROSS_DONE EXP-160
+PAIR38_CROSS_DONE EXP-177
+PAIR38_CROSS_DONE EXP-164
+PAIR38_CROSS_DONE EXP-021
+PAIR38_CROSS_DONE EXP-158
+PAIR38_CROSS_DONE EXP-181
+PAIR38_CROSS_DONE EXP-102
+PAIR38_CROSS_DONE EXP-116
+PAIR38_CROSS_DONE EXP-050
+PAIR38_CROSS_DONE EXP-186
+PAIR38_CROSS_DONE EXP-114
+PAIR38_CROSS_DONE EXP-148
+PAIR38_CROSS_DONE EXP-197
+PAIR38_CROSS_DONE EXP-144
+PAIR38_CROSS_DONE EXP-040
+PAIR38_CROSS_DONE EXP-125
+ERROR: Condition "!actions.custom_samplers.has(function->arguments[j].tex_builtin)" is true. Continuing.
+   at: _dump_node_code (servers/rendering/shader_compiler.cpp:1294)
+   GDScript backtrace (most recent call first):
+       [0] material (res://parts/caught_staring/upper_opening_part.gd:31)
+       [1] install_mesh (res://parts/caught_staring/upper_opening_part.gd:62)
+       [2] install_opening (res://parts/caught_staring/upper_opening_part.gd:73)
+       [3] apply (res://parts/caught_staring/components.gd:16)
+       [4] _write_pose (res://expression_rig.gd:139)
+       [5] _apply_performance_pose (res://expression_rig.gd:128)
+       [6] advance (res://expression_rig.gd:272)
+       [7] run (res://tests/test_approved_pair38_actual.gd:59)
+PAIR38_CROSS_DONE EXP-063
+PAIR38_CROSS_DONE EXP-090
+PAIR38_CROSS_DONE EXP-153
+PAIR38_CROSS_DONE EXP-139
+PAIR38_CROSS_DONE EXP-174
+PAIR38_CROSS_DONE EXP-067
+PAIR38_CROSS_DONE EXP-093
+PAIR38_CROSS_DONE EXP-003
+PAIR38_CROSS_DONE EXP-043
+PAIR38_CROSS_DONE EXP-064
+PAIR38_CROSS_DONE EXP-004
+PAIR38_CROSS_DONE EXP-042
+PAIR38_CROSS_DONE EXP-129
+PAIR38_CROSS_DONE EXP-041
+{"actual_object_cross_samples":1628,"actual_object_directed_cross_cases":148,"checks":73482,"failures":[],"lifecycle_key_cases":22,"new_profiles":["EXP-129","EXP-041"],"production_profile_count":38,"runtime_sha256":"9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8","scope":"Actual production scene and face setters; full242 chronological frame states versus approved records, aliases, keyframe restart/repeated release/reset, all148 directed pairs involving a new profile at11 handoff checkpoints, and exact face/control neutral completion. No rendering or live pacing claim.","status":"PASS","trajectory_samples":242,"visual_capture":false}

@@ -1,0 +1,31 @@
+{
+  "profiles": [
+    {
+      "id": "EXP-129",
+      "profile_sha256": "fdd5161262f4e2149503a2c70b2224cc53d6cdd899beb7080c5d19b849644855",
+      "video_path": "validation/approved_mental_arithmetic/approved_preview/Mental_arithmetic_review_v1.mp4",
+      "video_sha256": "7d952bd8a306cd72bb9fe374e50b3d852821c96d139b88c2fa80f55d96447a50",
+      "review_backup_commit": "560021b8a03a9ef1a632040f8577811db7ff0e91",
+      "review_backup_branch": "review/exp129-mental-arithmetic-v1",
+      "approval": "USER_APPROVED; historical candidate metadata retained byte-exact"
+    },
+    {
+      "id": "EXP-041",
+      "profile_sha256": "04202c10a048724616a831566f7743c18159ce84c0415867b33c13c64ce75337",
+      "video_path": "validation/approved_pair38/EXP-041/Controlled_anger_review_v1.mp4",
+      "video_sha256": "cb080ef5a98cfb12d4fa885315ca39893d301954f8a37cef2432ca9d23d0a0db",
+      "review_backup_commit": "f517e2654222a81ac6f74c73f5726a660d71e52c",
+      "review_backup_branch": "review/exp041-controlled-anger-v1",
+      "approval": "USER_APPROVED; historical candidate metadata retained byte-exact"
+    },
+    {
+      "id": "EXP-061",
+      "profile_sha256": "aa2200fc77caefb887d2e6115e062d5e2ca47c95cc56b56c5f536b926c57fbbf",
+      "video_path": "validation/approved_batch39/EXP-061/Broad_surprise_review_v1.mp4",
+      "video_sha256": "66fafc481ccc35fd19e6a5024cc94c7f95aa69a20a3a4f287868053f51584cf3",
+      "review_backup_commit": "4e8e32aced1626e3a94e5c7e94626e602097cb06",
+      "review_backup_branch": "review/exp061-broad-surprise-v1",
+      "approval": "USER_APPROVED; historical candidate metadata retained byte-exact"
+    }
+  ]
+}

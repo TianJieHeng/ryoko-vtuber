@@ -1,0 +1,117 @@
+{
+  "id": "EXP-061",
+  "title": "Broad surprise",
+  "duration": 4.0,
+  "status": "UNAPPROVED preparation v1; native visual review pending",
+  "intent": "Both brows rise high; eyes open fully; jaw drops into a broad rounded open mouth.",
+  "scope": "Partial reference fit: existing symmetric whole-brow vertical lift, bounded four-source-pixel upper-eye opening, split-lip opening, purse and lip pressure only. No jaw rotation/drop, lower-eye expansion, pupil change or new anatomy. Broad rounded aperture is approximated with less purse than Shocked Gasp; no smile/spread or delight conversion. Head/body stay fixed; no runtime/art changes.",
+  "timing_origin": "New four-second interpretation of inspected nine static reference panels, not recovered animation. Gradual whole-brow rise to held broad aperture 1.35-1.85, slowly eases to 2.35, then releases. Unlike EXP064 fast inner-brow intake and smaller residual gasp; unlike EXP004 round-to-spread smile.",
+  "interpolation": "Unchanged smoothstep, eight static anchors, eleven timeline keys, exact neutral bookends, in-memory registration only.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.5,
+      "phase": "notice",
+      "values": {
+        "brow_screen_left": 0.2,
+        "brow_screen_right": 0.2,
+        "opening_px": 0.8,
+        "mouth_open": 0.08,
+        "mouth_purse": 0.08,
+        "mouth_lip_press": 0.08
+      }
+    },
+    {
+      "time": 0.9,
+      "phase": "rise",
+      "values": {
+        "brow_screen_left": 0.55,
+        "brow_screen_right": 0.55,
+        "opening_px": 2,
+        "mouth_open": 0.4,
+        "mouth_purse": 0.18,
+        "mouth_lip_press": 0.2
+      }
+    },
+    {
+      "time": 1.35,
+      "phase": "broad_surprise",
+      "values": {
+        "brow_screen_left": 1,
+        "brow_screen_right": 1,
+        "opening_px": 4,
+        "mouth_open": 0.95,
+        "mouth_purse": 0.32,
+        "mouth_lip_press": 0.35
+      }
+    },
+    {
+      "time": 1.85,
+      "phase": "broad_surprise",
+      "values": {
+        "brow_screen_left": 1,
+        "brow_screen_right": 1,
+        "opening_px": 4,
+        "mouth_open": 0.95,
+        "mouth_purse": 0.32,
+        "mouth_lip_press": 0.35
+      }
+    },
+    {
+      "time": 2.35,
+      "phase": "held_surprise",
+      "values": {
+        "brow_screen_left": 0.9,
+        "brow_screen_right": 0.9,
+        "opening_px": 3.7,
+        "mouth_open": 0.85,
+        "mouth_purse": 0.28,
+        "mouth_lip_press": 0.3
+      }
+    },
+    {
+      "time": 2.85,
+      "phase": "release",
+      "values": {
+        "brow_screen_left": 0.35,
+        "brow_screen_right": 0.35,
+        "opening_px": 1.5,
+        "mouth_open": 0.28,
+        "mouth_purse": 0.1,
+        "mouth_lip_press": 0.1
+      }
+    },
+    {
+      "time": 3.25,
+      "phase": "soften",
+      "values": {
+        "brow_screen_left": 0.1,
+        "brow_screen_right": 0.1,
+        "opening_px": 0.4,
+        "mouth_open": 0.06,
+        "mouth_purse": 0.03,
+        "mouth_lip_press": 0.02
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

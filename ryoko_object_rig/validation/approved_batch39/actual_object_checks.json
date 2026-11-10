@@ -1,0 +1,18 @@
+{
+  "actual_object_cross_samples": 2475,
+  "actual_object_directed_cross_cases": 225,
+  "checks": 111359,
+  "failures": [],
+  "lifecycle_key_cases": 33,
+  "new_profiles": [
+    "EXP-129",
+    "EXP-041",
+    "EXP-061"
+  ],
+  "production_profile_count": 39,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "scope": "Actual production scene and face setters; full363 chronological frame states versus approved records, aliases, keyframe restart/repeated release/reset, all225 directed pairs involving a new profile at11 handoff checkpoints, and exact face/control neutral completion. No rendering or live pacing claim.",
+  "status": "PASS",
+  "trajectory_samples": 363,
+  "visual_capture": false
+}

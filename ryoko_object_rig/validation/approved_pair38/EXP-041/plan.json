@@ -1,0 +1,82 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "restrain",
+    "pose": {
+      "brow_screen_left": -0.18,
+      "brow_screen_right": -0.18,
+      "brow_tilt_screen_left": 0.18,
+      "brow_tilt_screen_right": -0.18,
+      "blink_L": 0.06,
+      "blink_R": 0.06,
+      "mouth_lip_press": 0.24
+    }
+  },
+  {
+    "name": "gather",
+    "pose": {
+      "brow_screen_left": -0.42,
+      "brow_screen_right": -0.42,
+      "brow_tilt_screen_left": 0.4,
+      "brow_tilt_screen_right": -0.4,
+      "blink_L": 0.16,
+      "blink_R": 0.16,
+      "mouth_lip_press": 0.42
+    }
+  },
+  {
+    "name": "controlled_anger",
+    "pose": {
+      "brow_screen_left": -0.7,
+      "brow_screen_right": -0.7,
+      "brow_tilt_screen_left": 0.65,
+      "brow_tilt_screen_right": -0.65,
+      "blink_L": 0.26,
+      "blink_R": 0.26,
+      "mouth_lip_press": 0.65
+    }
+  },
+  {
+    "name": "ease_pressure",
+    "pose": {
+      "brow_screen_left": -0.7,
+      "brow_screen_right": -0.7,
+      "brow_tilt_screen_left": 0.65,
+      "brow_tilt_screen_right": -0.65,
+      "blink_L": 0.26,
+      "blink_R": 0.26,
+      "mouth_lip_press": 0.38
+    }
+  },
+  {
+    "name": "soften",
+    "pose": {
+      "brow_screen_left": -0.3,
+      "brow_screen_right": -0.3,
+      "brow_tilt_screen_left": 0.28,
+      "brow_tilt_screen_right": -0.28,
+      "blink_L": 0.12,
+      "blink_R": 0.12,
+      "mouth_lip_press": 0.22
+    }
+  },
+  {
+    "name": "settle",
+    "pose": {
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "brow_tilt_screen_left": 0.08,
+      "brow_tilt_screen_right": -0.08,
+      "blink_L": 0.03,
+      "blink_R": 0.03,
+      "mouth_lip_press": 0.06
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

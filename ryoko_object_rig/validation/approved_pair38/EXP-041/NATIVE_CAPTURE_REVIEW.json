@@ -1,0 +1,60 @@
+{
+  "status": "PASS_WITH_OBSERVATION_LIMITS",
+  "date_utc": "2026-11-10",
+  "candidate": "EXP-041 Controlled anger",
+  "approval": "UNAPPROVED",
+  "native_capture": {
+    "workflow": "Existing supported desktop Godot UI; imported separate native launcher; Game Embed Mode Disabled; reloaded project; Run Project in visible standalone window.",
+    "display": "X11",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "static_checks": 1102,
+    "motion_checks": 9406,
+    "failures": 0,
+    "static_pngs": 16,
+    "motion_pngs": 242,
+    "full_dimensions": [
+      568,
+      800
+    ],
+    "detail_dimensions": [
+      400,
+      360
+    ]
+  },
+  "editor_preference_restored": "Use Per-Project Configuration; visually verified after capture.",
+  "encoded_video": {
+    "path": "Controlled_anger_review_v1.mp4",
+    "sha256": "cb080ef5a98cfb12d4fa885315ca39893d301954f8a37cef2432ca9d23d0a0db",
+    "bytes": 179685,
+    "codec": "h264",
+    "dimensions": [
+      968,
+      800
+    ],
+    "fps": 30,
+    "frames": 121,
+    "duration_seconds": 4.033333,
+    "full_decode_exit_code": 0
+  },
+  "review_script": {
+    "path": "review_validation.py",
+    "receipt": "review_evidence/review_checks.json",
+    "independent_checks_pass": true
+  },
+  "pixel_review": {
+    "inspected": [
+      "review_evidence/static_faces.png",
+      "review_evidence/encoded_keyframes.png"
+    ],
+    "observations": "Restrained stern expression with narrowing lids and moderate brow tension; source artwork, fixed gaze and body remain consistent. No visibly distinct lip-pressure easing claimed."
+  },
+  "playback": {
+    "app": "Kdenlive",
+    "file_loaded": "Controlled_anger_review_v1.mp4",
+    "normal_play_command_used": true,
+    "observed_cursor_advanced_start_to_end": true,
+    "continuous_subjective_pacing_observed": false,
+    "limits": "GUI playback was verified through before/after screenshots, not continuous video perception or performance telemetry. This is not user approval."
+  },
+  "scope": "No shell-native rendering, display server, AF_UNIX workaround, remote machine, Terminal execution, upload, publication, or production-registry change performed."
+}

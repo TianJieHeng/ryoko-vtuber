@@ -1,0 +1,10 @@
+{
+  "files_verified": 999,
+  "manifest_sha256": "ed3887e536817b7bcd049287e5bc8ad9e94342abb330be577047dad6cc67d64f",
+  "wrapper_changes": [
+    "launcher.gd",
+    "launcher.tscn",
+    "project.godot"
+  ],
+  "source": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig"
+}

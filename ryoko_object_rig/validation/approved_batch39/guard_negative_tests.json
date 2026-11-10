@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "cases": 7,
+  "failures": [],
+  "results": [
+    {
+      "name": "new approved profile byte corruption",
+      "expected_rejection_observed": true,
+      "exit_code": 1,
+      "diagnostic": "Traceback (most recent call last):\n  File \"/workspace/scratch/42f2baf55663/approved39_integration_work/ryoko_object_rig/tools/verify_approved_integration.py\", line 12, in <module>\n    for n,h in m['files'].items():assert sha(n)==h,'Changed source: '+n\n                                         ^^^^^^^^^\nAssertionError: Changed source: expressions/EXP-129.json\n"
+    },
+    {
+      "name": "protected PNG byte corruption",
+      "expected_rejection_observed": true,
+      "exit_code": 1,
+      "diagnostic": "Traceback (most recent call last):\n  File \"/workspace/scratch/42f2baf55663/approved39_integration_work/ryoko_object_rig/tools/verify_approved_integration.py\", line 12, in <module>\n    for n,h in m['files'].items():assert sha(n)==h,'Changed source: '+n\n                                         ^^^^^^^^^\nAssertionError: Changed source: artwork/blink_L.png\n"
+    },
+    {
+      "name": "unexpected source file",
+      "expected_rejection_observed": true,
+      "exit_code": 1,
+      "diagnostic": "Traceback (most recent call last):\n  File \"/workspace/scratch/42f2baf55663/approved39_integration_work/ryoko_object_rig/tools/verify_approved_integration.py\", line 11, in <module>\n    assert actual-excluded==set(m['files']),f'Inventory mismatch: added={actual-excluded-set(m[\"files\"])} missing={set(m[\"files\"])-actual}'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Inventory mismatch: added={'unexpected_guard_test.txt'} missing=set()\n"
+    },
+    {
+      "name": "missing registry file",
+      "expected_rejection_observed": true,
+      "exit_code": 1,
+      "diagnostic": "Traceback (most recent call last):\n  File \"/workspace/scratch/42f2baf55663/approved39_integration_work/ryoko_object_rig/tools/verify_approved_integration.py\", line 11, in <module>\n    assert actual-excluded==set(m['files']),f'Inventory mismatch: added={actual-excluded-set(m[\"files\"])} missing={set(m[\"files\"])-actual}'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Inventory mismatch: added=set() missing={'expressions/registry.json'}\n"
+    },
+    {
+      "name": "prior profile corruption with manifest repinned",
+      "expected_rejection_observed": true,
+      "exit_code": 1,
+      "diagnostic": "Traceback (most recent call last):\n  File \"/workspace/scratch/42f2baf55663/approved39_integration_work/ryoko_object_rig/tools/verify_approved_integration.py\", line 30, in <module>\n    for n,h in p['protected_files'].items():assert sha(n)==h,'Predecessor changed: '+n\n                                                   ^^^^^^^^^\nAssertionError: Predecessor changed: yawn_performance.json\n"
+    },
+    {
+      "name": "self-consistent forged parity fails approved-capture linkage",
+      "expected_rejection_observed": true,
+      "exit_code": 1,
+      "diagnostic": "Traceback (most recent call last):\n  File \"/workspace/scratch/42f2baf55663/approved39_integration_work/ryoko_object_rig/tools/verify_approved_integration.py\", line 50, in <module>\n    assert r['hashes']==r['expected_hashes']==a['hashes'] and len(r['hashes'])==2\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "source preservation difference rejected after repin",
+      "expected_rejection_observed": true,
+      "exit_code": 1,
+      "diagnostic": "Traceback (most recent call last):\n  File \"/workspace/scratch/42f2baf55663/approved39_integration_work/ryoko_object_rig/tools/verify_approved_integration.py\", line 59, in <module>\n    assert preservation['status']=='PASS' and preservation['production_differences']==[] and preservation['copied_source_differences']==[] and preservation['source_runtime_sha256']==runtime\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "scope": "Disposable-copy negative probes only. Each tamper rejected and pristine restored guard passed; semantic probes update checksums to test actual preservation and approved-capture linkage."
+}
