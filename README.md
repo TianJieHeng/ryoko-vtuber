@@ -1,5 +1,9 @@
 # Current approved release
 
+The shared rig now has 27 user-approved performances, including EXP-153 Hiding a Smile. See [current release and evidence limits](ryoko_object_rig/APPROVED_HIDING_SMILE_INTEGRATION.md). Earlier progress notes below retain historical scope.
+
+# Current approved release
+
 The shared rig now has 26 user-approved performances, including EXP-090 Queasy. See [current release and evidence limits](ryoko_object_rig/APPROVED_QUEASY_INTEGRATION.md). Earlier progress notes below retain historical scope.
 
 # Current approved release

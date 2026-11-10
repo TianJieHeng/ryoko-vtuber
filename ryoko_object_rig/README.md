@@ -1,3 +1,7 @@
+# Approved shared rig: 27 performances
+
+EXP-153 Hiding a Smile is approved and registered. See [current validation](APPROVED_HIDING_SMILE_INTEGRATION.md). Earlier release notes below retain historical scope.
+
 # Approved shared rig: 26 performances
 
 EXP-090 Queasy is approved and registered. See [current validation](APPROVED_QUEASY_INTEGRATION.md). Earlier release notes below retain historical scope.

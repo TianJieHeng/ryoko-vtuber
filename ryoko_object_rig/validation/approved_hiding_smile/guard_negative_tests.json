@@ -1,0 +1,6 @@
+{
+  "corrupt_source_rejected": true,
+  "missing_source_rejected": true,
+  "unexpected_source_rejected": true,
+  "restored_clean_pass": true
+}

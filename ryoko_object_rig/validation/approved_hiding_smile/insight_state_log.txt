@@ -1,0 +1,21 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+OBJECT_BASE_READY independent_sprites=263 expression_timelines=0
+WARNING: Loaded resource as image file, this will not work on export: 'res://parts/caught_staring/uneasy_clear_parting.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2766)
+     GDScript backtrace (most recent call first):
+         [0] setup (res://parts/caught_staring/components.gd:13)
+         [1] _ready (res://expression_rig.gd:44)
+         [2] run (res://tests/test_sudden_insight_runtime.gd:24)
+ERROR: Condition "!actions.custom_samplers.has(function->arguments[j].tex_builtin)" is true. Continuing.
+   at: _dump_node_code (servers/rendering/shader_compiler.cpp:1294)
+   GDScript backtrace (most recent call first):
+       [0] material (res://parts/caught_staring/upper_opening_part.gd:31)
+       [1] install_mesh (res://parts/caught_staring/upper_opening_part.gd:62)
+       [2] install_opening (res://parts/caught_staring/upper_opening_part.gd:73)
+       [3] apply (res://parts/caught_staring/components.gd:16)
+       [4] _write_pose (res://expression_rig.gd:136)
+       [5] _apply_performance_pose (res://expression_rig.gd:125)
+       [6] advance (res://expression_rig.gd:267)
+       [7] run (res://tests/test_sudden_insight_runtime.gd:34)
+MOTION_PASS checks=1918 failures=[]

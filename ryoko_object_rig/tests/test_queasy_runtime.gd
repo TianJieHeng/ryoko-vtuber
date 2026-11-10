@@ -23,7 +23,7 @@ func snap(path,detail):
  var ctx=HashingContext.new();ctx.start(HashingContext.HASH_SHA256);ctx.update(im.get_data());return ctx.finish().hex_encode()
 func run():
  rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false);rig.auto_blink=false
- check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==26,"approved26 registry")
+ check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==27,"approved27 registry")
  if not failures.is_empty():quit(1);return
  rig.hud.hide();rig.hint.hide();rig.pose_status.hide();rig.reset()
  var baseline=rig.face.snapshot();var head=rig.head.transform;var body=rig.body.transform
@@ -66,6 +66,6 @@ func run():
    for step in range(11):
     rig.advance(.03);check(rig.Registry.scoped_valid(rig.pose_now()),"handoff composition "+str(pair)+" step "+str(step));check(rig.Registry.sealed_mouth_valid(rig.pose_now()),"handoff mouth domain "+str(pair)+" step "+str(step))
    rig.reset();check(rig.face.snapshot()==baseline,"handoff reset neutral")
- var result={"checks":checks,"failures":failures,"status":"PASS" if failures.is_empty() else "FAIL","approved_profile_count":26,"frames":121,"fps":30,"duration":4.0,"visual_capture":visual,"renderer":RenderingServer.get_video_adapter_name(),"display":DisplayServer.get_name(),"records":records,"production_registry_tested":true,"normal_speed_observed":false,"approval":"USER_APPROVED"}
+ var result={"checks":checks,"failures":failures,"status":"PASS" if failures.is_empty() else "FAIL","approved_profile_count":27,"frames":121,"fps":30,"duration":4.0,"visual_capture":visual,"renderer":RenderingServer.get_video_adapter_name(),"display":DisplayServer.get_name(),"records":records,"production_registry_tested":true,"normal_speed_observed":false,"approval":"USER_APPROVED"}
  var f=FileAccess.open(w+("/motion_checks.json" if visual else "/motion_state_checks.json"),FileAccess.WRITE);f.store_string(JSON.stringify(result,"  "));f.close()
  print("MOTION_",result.status," checks=",checks," failures=",failures);quit(0 if failures.is_empty() else 1)

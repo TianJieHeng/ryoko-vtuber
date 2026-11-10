@@ -1,0 +1,68 @@
+{
+  "motion_checks": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved26",
+    "baseline_profile_count": 26,
+    "checks": 3536,
+    "display": "X11",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "motion_state_checks": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved26",
+    "baseline_profile_count": 26,
+    "checks": 3293,
+    "display": "headless",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "",
+    "status": "PASS",
+    "visual_capture": false
+  },
+  "state_checks": {
+    "baseline": "approved26",
+    "baseline_profile_count": 26,
+    "checks": 360,
+    "failures": [],
+    "production_registry_unchanged": true,
+    "scope": "Six isolated pose/scope/reset checks only. No approval, visual fit or complete performance claim.",
+    "status": "PASS",
+    "study_poses": 6,
+    "visual_capture": false
+  },
+  "approval": "Pending user review",
+  "baseline": "26-profile integration snapshot based on fixed approved25 runtime b8697a7be03f789d7e881e472acf05bb8e6fbc19; Queasy approved and integrating.",
+  "source_sheet_sha256": "e3d1d6c86522e8eaa82874a224b0d0d88a13b075ed37e4403de8ddd08875eb5c",
+  "profile_sha256": "8a6b61f41a7d6e619f7bcbee188008d5c454cb2295e2c22460829c40f1b87b76",
+  "video_sha256": "9642f1afbef44680cc81b2a32a8c49d00a7b6c87f6ba266f39a4f44bf0addfbd",
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "188875"
+    }
+  }
+}

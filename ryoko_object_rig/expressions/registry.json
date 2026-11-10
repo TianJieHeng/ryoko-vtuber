@@ -230,6 +230,14 @@
         "queasy"
       ],
       "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-153",
+      "path": "res://expressions/EXP-153.json",
+      "aliases": [
+        "hiding_a_smile"
+      ],
+      "trigger_phase": "neutral"
     }
   ]
 }

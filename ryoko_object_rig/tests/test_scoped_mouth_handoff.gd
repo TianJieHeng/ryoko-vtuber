@@ -11,7 +11,7 @@ class Current:
  func _suspend_auto_blink():pass
  func _restore_auto_blink():pass
 class Previous:
- extends "res://historical_capture_metadata/approved25_before_queasy/expression_rig.gd"
+ extends "res://historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd"
  # Exercise production control code; only rendering/face setters are stubbed.
  func _ready():
   registry_ready=registry.load_file();rig_ready=true;current_pose=neutral_pose()
@@ -48,7 +48,7 @@ func run():
  current=Current.new();previous=Previous.new();root.add_child(current);root.add_child(previous)
  check(current.registry_ready and previous.registry_ready,"registries ready")
  var entries=current.list_expressions()
- check(entries.size()==26,"26 registry entries")
+ check(entries.size()==27,"27 registry entries")
  # Exact old/new standalone control trajectory at every 30fps frame and each key.
  for entry in entries:
   var definition=current.registry.definition(entry.id);var sample_times=[]
@@ -94,6 +94,6 @@ func run():
     var before=current.pose_now();check(current.release(),label+" release");check(current.pose_now()==before,label+" release continuous")
     current.advance(.15);valid(current.pose_now(),label+" release .15")
     current.advance(.30000001);check(current.pose_now()==current.neutral_pose(),label+" release neutral")
- var out={"status":"PASS" if failures.is_empty() else "FAIL","checks":checks,"failures":failures,"standalone_exact_samples":comparisons,"source_target_cases":pair_cases,"transition_samples":transition_samples,"old_invalid_mouth_samples":previous_invalid,"changed_mouth_samples":changed_mouth_samples,"old_invalid_pairs":regression_pairs.keys(),"boundary_times":times,"scope":"Actual production advance/trigger/release code with rendering setters stubbed. All26 standalone old/new control equality; all26 pairs at every source key and segment midpoint; dense bridge boundaries, mouth domain, scope, bounds, non-mouth equality and release. Not visual/native parity."}
- var f=FileAccess.open("/tmp/ryoko_queasy_integration/handoff_boundary_checks.json",FileAccess.WRITE);f.store_string(JSON.stringify(out,"  "));f.close()
+ var out={"status":"PASS" if failures.is_empty() else "FAIL","checks":checks,"failures":failures,"standalone_exact_samples":comparisons,"source_target_cases":pair_cases,"transition_samples":transition_samples,"old_invalid_mouth_samples":previous_invalid,"changed_mouth_samples":changed_mouth_samples,"old_invalid_pairs":regression_pairs.keys(),"boundary_times":times,"scope":"Actual production advance/trigger/release code with rendering setters stubbed. All27 standalone old/new control equality; all27 pairs at every source key and segment midpoint; dense bridge boundaries, mouth domain, scope, bounds, non-mouth equality and release. Not visual/native parity."}
+ var f=FileAccess.open("/tmp/ryoko_hiding_smile_integration/handoff_boundary_checks.json",FileAccess.WRITE);f.store_string(JSON.stringify(out,"  "));f.close()
  print(JSON.stringify(out));quit(0 if failures.is_empty() else 1)

@@ -15,7 +15,7 @@ func run():
  check(rig.rig_ready and rig.registry_ready,"ready "+rig.last_error)
  if not failures.is_empty():quit(1);return
  rig.reset();var neutral=rig.face.snapshot();var head=rig.head.transform;var body=rig.body.transform
- check(rig.list_expressions().size()==26,"26 registry entries")
+ check(rig.list_expressions().size()==27,"27 registry entries")
  for id in ["EXP-144","EXP-197"]:
   rig.reset();check(rig.play_expression(id),"play "+id)
   var count=int(round(rig.performance.duration*30))

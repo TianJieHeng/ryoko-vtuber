@@ -1,0 +1,31 @@
+{
+  "boundary_times": [
+    0.0,
+    0.000000001,
+    0.03,
+    0.06,
+    0.09,
+    0.12,
+    0.149999999,
+    0.15,
+    0.150000001,
+    0.18,
+    0.21,
+    0.24,
+    0.27,
+    0.299999999,
+    0.3,
+    0.300000001,
+    0.33
+  ],
+  "changed_mouth_samples": 0,
+  "checks": 15419433,
+  "failures": [],
+  "old_invalid_mouth_samples": 0,
+  "old_invalid_pairs": [],
+  "scope": "Actual production advance/trigger/release code with rendering setters stubbed. All27 standalone old/new control equality; all27 pairs at every source key and segment midpoint; dense bridge boundaries, mouth domain, scope, bounds, non-mouth equality and release. Not visual/native parity.",
+  "source_target_cases": 14823,
+  "standalone_exact_samples": 3457,
+  "status": "PASS",
+  "transition_samples": 251991
+}

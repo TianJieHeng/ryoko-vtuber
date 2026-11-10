@@ -26,7 +26,7 @@ func run():
  if not failures.is_empty():quit(1);return
  rig.hud.hide();rig.hint.hide();rig.pose_status.hide();rig.reset()
  var baseline=rig.face.snapshot();var head=rig.head.transform;var body=rig.body.transform
- check(rig.list_expressions().size()==26,"26 registered profiles")
+ check(rig.list_expressions().size()==27,"27 registered profiles")
  check(rig.play_expression("EXP-040"),"play")
  if visual:
   DirAccess.make_dir_recursive_absolute(w+"/motion/full");DirAccess.make_dir_recursive_absolute(w+"/motion/detail")
