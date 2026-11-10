@@ -1,0 +1,29 @@
+{
+  "id": "EXP-045",
+  "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+  "approval_evidence": [
+    {
+      "speaker": "user",
+      "text": "if i say its good its approved"
+    },
+    {
+      "speaker": "assistant",
+      "text": "Here\u2019s Irritated Side-eye, with a narrowed sideways glance and uneven brows. The mouth stays restrained because the rig can\u2019t pull one corner downward."
+    },
+    {
+      "speaker": "user",
+      "text": "nice"
+    }
+  ],
+  "candidate_sha256": "53f59fc53968bc626e0f3ead5e9f66f03e24d06c1a900106e442cc04dc28180d",
+  "review_video": "Irritated_side_eye_review_v1.mp4",
+  "review_video_sha256": "e323bd40288f1907033a94ad7a24418ecd9ace7e8e39dd2da609e2d61357bae7",
+  "branch": "review/exp045-irritated-side-eye-v1",
+  "base_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "purpose": "Review backup only. Production integration is separate.",
+  "qualification": "The independent downturned mouth corner is unavailable and omitted. All mouth controls remain neutral and sealed; the sideways glance, lids and unequal brows approximate the reference. Operator sampled ordinary playback; continuous observation and formal perceptual A/B comparison are not claimed.",
+  "historical_status": "UNAPPROVED and pending labels are retained as historical review-time records, superseded only for current user approval by this note.",
+  "production_registry_changed": false,
+  "main_written": false,
+  "ci_run": false
+}

@@ -1,0 +1,6 @@
+{
+  "expected_sha256": "36aee2940f41d0dff851989e06f260a70805c295da9caba2583ac0663be43979",
+  "observed_sha256": "7873e47eaa50ac4dfbc4b693ea6125a893ae14373d6b2b3456c236135e170758",
+  "settings_semantically_equal": true,
+  "difference": "Existing [editor] section reordered ahead of [rendering] and whitespace normalized; no setting value changed. No restoration or refreeze attempted by independent reviewer."
+}

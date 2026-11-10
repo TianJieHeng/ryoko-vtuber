@@ -1,0 +1,272 @@
+{
+  "candidate": "EXP-045",
+  "approval": "UNAPPROVED",
+  "independent_freeze_pin": "7f9e1bd006a91ff30d66b6da8231b4cb86e4b0bdd72162d9bc794401e51cc5ae",
+  "normal_speed_observation": false,
+  "visual_fidelity_pass": false,
+  "checks": {
+    "pinned_38_author_inputs": true,
+    "all_source_hashes_and_crops": true,
+    "all_static_pose_and_geometry": true,
+    "timeline_and_continuous_lifecycle_support": true,
+    "independent_43_profile_numeric_distinctness": true
+  },
+  "failures": [],
+  "pending": [
+    "Missing native static receipt",
+    "Missing native motion receipt",
+    "Missing 8 native static full PNGs",
+    "Missing 121 native motion full PNGs",
+    "Missing 8 native static detail PNGs",
+    "Missing 121 native motion detail PNGs",
+    "Native review MP4 absent; full decode not run"
+  ],
+  "native_hashes": [],
+  "native_pixels": {},
+  "source": {
+    "baseline_files_each_root": 999,
+    "pngs_each_root": 184,
+    "runtime_parity": 993,
+    "exact_source_crops": 9
+  },
+  "timeline": {
+    "samples": 121,
+    "maximum_control_error": 2.6376485773305092e-08,
+    "supported_aversion_segments": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "lifecycle": {
+    "samples": 252,
+    "boundary_model_samples": 216,
+    "maximum_control_error": 4.03578225283141e-08,
+    "continuous_support_proof": "Frozen scoped_handoff retains both valid source lids until aversion is exactly zero, then blends ordinary controls. Restart target through .3 seconds has zero aversion and all conflicts zero."
+  },
+  "distinctness": {
+    "count": 43,
+    "comparisons": [
+      {
+        "id": "EXP-163",
+        "maximum": 12.000000000000002,
+        "rms": 1.3219702404698563
+      },
+      {
+        "id": "EXP-005",
+        "maximum": 12.000000000000002,
+        "rms": 1.3433137723325088
+      },
+      {
+        "id": "EXP-001",
+        "maximum": 12.000000000000002,
+        "rms": 1.3318602136557043
+      },
+      {
+        "id": "EXP-006",
+        "maximum": 12.000000000000002,
+        "rms": 1.3326296830487316
+      },
+      {
+        "id": "EXP-107",
+        "maximum": 12.000000000000002,
+        "rms": 1.3342848281780555
+      },
+      {
+        "id": "EXP-007",
+        "maximum": 12.000000000000002,
+        "rms": 1.3341140750189797
+      },
+      {
+        "id": "EXP-002",
+        "maximum": 12.000000000000002,
+        "rms": 1.3198938453256002
+      },
+      {
+        "id": "EXP-152",
+        "maximum": 12.000000000000002,
+        "rms": 1.3281678945214028
+      },
+      {
+        "id": "EXP-160",
+        "maximum": 12.000000000000002,
+        "rms": 1.3730583679929826
+      },
+      {
+        "id": "EXP-177",
+        "maximum": 12.000000000000002,
+        "rms": 1.3174921106373436
+      },
+      {
+        "id": "EXP-164",
+        "maximum": 12.000000000000002,
+        "rms": 1.3154573894203867
+      },
+      {
+        "id": "EXP-021",
+        "maximum": 12.000000000000002,
+        "rms": 1.323961688410141
+      },
+      {
+        "id": "EXP-158",
+        "maximum": 12.000000000000002,
+        "rms": 1.3325493001621251
+      },
+      {
+        "id": "EXP-181",
+        "maximum": 12.000000000000002,
+        "rms": 1.33145282412617
+      },
+      {
+        "id": "EXP-102",
+        "maximum": 12.000000000000002,
+        "rms": 1.3205513494634087
+      },
+      {
+        "id": "EXP-116",
+        "maximum": 12.000000000000002,
+        "rms": 1.3176489688914377
+      },
+      {
+        "id": "EXP-050",
+        "maximum": 12.000000000000002,
+        "rms": 1.3254963672948885
+      },
+      {
+        "id": "EXP-186",
+        "maximum": 12.000000000000002,
+        "rms": 1.3242288257056316
+      },
+      {
+        "id": "EXP-114",
+        "maximum": 12.000000000000002,
+        "rms": 1.3207549432279844
+      },
+      {
+        "id": "EXP-148",
+        "maximum": 12.000000000000002,
+        "rms": 1.32357559331667
+      },
+      {
+        "id": "EXP-197",
+        "maximum": 12.000000000000002,
+        "rms": 1.337552528219313
+      },
+      {
+        "id": "EXP-144",
+        "maximum": 8.502057613168724,
+        "rms": 0.6486889060481735
+      },
+      {
+        "id": "EXP-040",
+        "maximum": 12.000000000000002,
+        "rms": 1.315987036804219
+      },
+      {
+        "id": "EXP-125",
+        "maximum": 12.000000000000002,
+        "rms": 1.3312885715405485
+      },
+      {
+        "id": "EXP-063",
+        "maximum": 12.000000000000002,
+        "rms": 1.426816098564835
+      },
+      {
+        "id": "EXP-090",
+        "maximum": 12.000000000000002,
+        "rms": 1.3230135253822368
+      },
+      {
+        "id": "EXP-153",
+        "maximum": 12.000000000000002,
+        "rms": 1.318435341527711
+      },
+      {
+        "id": "EXP-139",
+        "maximum": 12.000000000000002,
+        "rms": 1.335282924032874
+      },
+      {
+        "id": "EXP-174",
+        "maximum": 12.000000000000002,
+        "rms": 1.3243961579862442
+      },
+      {
+        "id": "EXP-067",
+        "maximum": 12.000000000000002,
+        "rms": 1.375287028303805
+      },
+      {
+        "id": "EXP-093",
+        "maximum": 12.000000000000002,
+        "rms": 1.3178513245066121
+      },
+      {
+        "id": "EXP-003",
+        "maximum": 12.000000000000002,
+        "rms": 1.317393195114167
+      },
+      {
+        "id": "EXP-043",
+        "maximum": 12.000000000000002,
+        "rms": 1.3274014397549063
+      },
+      {
+        "id": "EXP-064",
+        "maximum": 12.000000000000002,
+        "rms": 1.4055832758096982
+      },
+      {
+        "id": "EXP-004",
+        "maximum": 12.000000000000002,
+        "rms": 1.3935698201680078
+      },
+      {
+        "id": "EXP-042",
+        "maximum": 12.000000000000002,
+        "rms": 1.315582689042996
+      },
+      {
+        "id": "EXP-129",
+        "maximum": 12.000000000000002,
+        "rms": 1.314789268320374
+      },
+      {
+        "id": "EXP-041",
+        "maximum": 12.000000000000002,
+        "rms": 1.3152789043942625
+      },
+      {
+        "id": "EXP-061",
+        "maximum": 12.000000000000002,
+        "rms": 1.4069559545887045
+      },
+      {
+        "id": "EXP-123",
+        "maximum": 12.000000000000002,
+        "rms": 1.3142376626612373
+      },
+      {
+        "id": "EXP-023",
+        "maximum": 12.000000000000002,
+        "rms": 1.3260414330554924
+      },
+      {
+        "id": "EXP-081",
+        "maximum": 12.000000000000002,
+        "rms": 1.3097953125298192
+      },
+      {
+        "id": "EXP-161",
+        "maximum": 12.000000000000002,
+        "rms": 1.3116385293793835
+      }
+    ],
+    "perceptual_distinctness": "NOT ESTABLISHED"
+  },
+  "status": "PENDING",
+  "native_evidence_complete": false
+}

@@ -1,0 +1,124 @@
+{
+  "id": "EXP-045",
+  "title": "Irritated Side-eye",
+  "duration": 4.0,
+  "status": "UNAPPROVED shared-rig preparation v1; independent source and native visual review pending",
+  "intent": "Near brow lowers while far brow lifts; gaze turns sideways; one mouth corner pulls down.",
+  "scope": "Existing positive screen-right aversion, unequal ordinary upper-lid closure and unequal opposed rigid brow translation/tilt. Mouth remains sealed and unmodified: independent downturned corner is unavailable and is not faked by an upward sneer or symmetric purse. No new anatomy, art, runtime, shader, production registry, head/body motion, ordinary gaze, opening, smile-eye, smile, blush, speech or effects.",
+  "timing_origin": "New four-second interpretation of the inspected static EXP-045 sheet, not recovered motion. Establish narrowed lids at .6 before the deliberate screen-right glance, build to an unequal-brow irritated hold at 1.6-2.4, then return gaze fully to center at 3.2 before releasing its supporting lids. Distinct from EXP-042 frontal cold glare, EXP-081 asymmetric mouth disgust and EXP-144 alert/embarrassed glance-away. Missing independent downturned mouth corner is disclosed rather than substituted.",
+  "interpolation": "Unchanged shared smoothstep; eight static anchors, eleven timeline keys, exact neutral bookends. Candidate and static probes are registered only in memory. Every aversion-active adjoining segment keeps both lid endpoints at least .18; ordinary gaze, eye-smile and opening remain zero.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.6,
+      "phase": "prepare_lids",
+      "values": {
+        "brow_screen_left": -0.2,
+        "brow_screen_right": 0.05,
+        "brow_tilt_screen_left": 0.15,
+        "brow_tilt_screen_right": -0.1,
+        "blink_R": 0.24,
+        "blink_L": 0.22,
+        "aversion_px": 0
+      }
+    },
+    {
+      "time": 1.0,
+      "phase": "glance",
+      "values": {
+        "brow_screen_left": -0.4,
+        "brow_screen_right": 0.12,
+        "brow_tilt_screen_left": 0.3,
+        "brow_tilt_screen_right": -0.2,
+        "blink_R": 0.3,
+        "blink_L": 0.28,
+        "aversion_px": 6
+      }
+    },
+    {
+      "time": 1.6,
+      "phase": "side_eye_peak",
+      "values": {
+        "brow_screen_left": -0.65,
+        "brow_screen_right": 0.22,
+        "brow_tilt_screen_left": 0.5,
+        "brow_tilt_screen_right": -0.28,
+        "blink_R": 0.38,
+        "blink_L": 0.3,
+        "aversion_px": 12
+      }
+    },
+    {
+      "time": 2.4,
+      "phase": "side_eye_peak",
+      "values": {
+        "brow_screen_left": -0.65,
+        "brow_screen_right": 0.22,
+        "brow_tilt_screen_left": 0.5,
+        "brow_tilt_screen_right": -0.28,
+        "blink_R": 0.38,
+        "blink_L": 0.3,
+        "aversion_px": 12
+      }
+    },
+    {
+      "time": 2.8,
+      "phase": "recover_gaze",
+      "values": {
+        "brow_screen_left": -0.45,
+        "brow_screen_right": 0.14,
+        "brow_tilt_screen_left": 0.35,
+        "brow_tilt_screen_right": -0.2,
+        "blink_R": 0.32,
+        "blink_L": 0.28,
+        "aversion_px": 5
+      }
+    },
+    {
+      "time": 3.2,
+      "phase": "center_gaze",
+      "values": {
+        "brow_screen_left": -0.22,
+        "brow_screen_right": 0.06,
+        "brow_tilt_screen_left": 0.18,
+        "brow_tilt_screen_right": -0.1,
+        "blink_R": 0.24,
+        "blink_L": 0.22,
+        "aversion_px": 0
+      }
+    },
+    {
+      "time": 3.5,
+      "phase": "settle",
+      "values": {
+        "brow_screen_left": -0.05,
+        "brow_screen_right": 0.015,
+        "brow_tilt_screen_left": 0.04,
+        "brow_tilt_screen_right": -0.02,
+        "blink_R": 0.06,
+        "blink_L": 0.05,
+        "aversion_px": 0
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_MACHINE_EVIDENCE_ONLY",
+  "approval": "UNAPPROVED",
+  "checks": {
+    "pinned_38_author_inputs": true,
+    "all_source_hashes_and_crops": true,
+    "all_static_pose_and_geometry": true,
+    "timeline_and_continuous_lifecycle_support": true,
+    "independent_43_profile_numeric_distinctness": true
+  },
+  "failures": [],
+  "pending": []
+}

@@ -1,0 +1,40 @@
+{
+  "policy": "Compact backup: no raw static/motion PNGs, contact sheets, caches, full baseline copy or duplicate logs. Original per-frame hashes, full decode/order receipts and source-reference hashes retained.",
+  "raw_static_pngs": 16,
+  "raw_motion_pngs": 242,
+  "native_image_hashes": "historical/review_evidence/native_frame_hashes.json",
+  "deduplicated_originals": {
+    "launcher_motion_parse.log": "launcher_launcher_parse.log",
+    "launcher_static_parse.log": "launcher_launcher_parse.log",
+    "review_evidence/project.godot.pre_editor_original": "native_launcher/project.godot"
+  },
+  "historical_frozen_inputs": 38,
+  "reproducibility_limit": "Raw native captures are not recoverable from the lossy MP4. Full historical frame-to-MP4 validation requires original raw captures and layout; a new native capture requires separate authorization and fresh provenance.",
+  "redundant_test_runs_omitted": {
+    "combined_unit_tests.log": {
+      "sha256": "58b392f228c082421fc7422f83f01b9f7ce507513d6f0a66d982f1d6871cc0a6",
+      "coverage_retained_in": "historical/independent_reviewer_aggregate_tests.log",
+      "note": "Earlier/subset or repeated passing unit-test run; not a byte-identical alias."
+    },
+    "independent_reviewer_tests.log": {
+      "sha256": "3edf489cae235fdda4fba8656e6f50abec8429dfbde0b49814559d186807dc2e",
+      "coverage_retained_in": "historical/independent_reviewer_aggregate_tests.log",
+      "note": "Earlier/subset or repeated passing unit-test run; not a byte-identical alias."
+    },
+    "encoder_unit_tests.log": {
+      "sha256": "5120eb8825f3bdaac94dae3a345538222833a684ece905233f57528b12485feb",
+      "coverage_retained_in": "historical/independent_reviewer_aggregate_tests.log",
+      "note": "Earlier/subset or repeated passing unit-test run; not a byte-identical alias."
+    },
+    "independent_geometry_unit_tests.log": {
+      "sha256": "b8dfcffff7c1ec8658998a5ce8183688dd5a3d678019cf6cf8d9251972d5c91c",
+      "coverage_retained_in": "historical/independent_reviewer_aggregate_tests.log",
+      "note": "Earlier/subset or repeated passing unit-test run; not a byte-identical alias."
+    },
+    "review_evidence/post_capture_tests.log": {
+      "sha256": "d414e14c0346339fcbd16098937bda276843c48d9df1a5a88dc6b3c81434e0dd",
+      "coverage_retained_in": "historical/independent_reviewer_aggregate_tests.log",
+      "note": "Earlier/subset or repeated passing unit-test run; not a byte-identical alias."
+    }
+  }
+}

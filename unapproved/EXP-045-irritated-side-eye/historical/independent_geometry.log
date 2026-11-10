@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": 9990,
+  "failures": [],
+  "max_control_error": 2.6376485773305092e-08,
+  "max_lifecycle_error": 4.03578225283141e-08,
+  "independent_timeline_samples": 121,
+  "independent_lifecycle_samples": 252,
+  "native_capture": "PENDING; no renderer or UI invoked",
+  "approval": "UNAPPROVED"
+}

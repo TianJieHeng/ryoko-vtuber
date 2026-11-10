@@ -1,0 +1,71 @@
+test_actual_native_rgba_hash_mismatch_rejected (test_independent_review_validation.EvidenceTests.test_actual_native_rgba_hash_mismatch_rejected) ... ok
+test_bad_native_dimensions_rejected (test_independent_review_validation.EvidenceTests.test_bad_native_dimensions_rejected) ... ok
+test_bad_native_mode_rejected (test_independent_review_validation.EvidenceTests.test_bad_native_mode_rejected) ... ok
+test_duplicate_json_key_rejected (test_independent_review_validation.EvidenceTests.test_duplicate_json_key_rejected) ... ok
+test_headless_cannot_be_native (test_independent_review_validation.EvidenceTests.test_headless_cannot_be_native) ... ok
+test_malformed_partial_native_image_rejected (test_independent_review_validation.EvidenceTests.test_malformed_partial_native_image_rejected) ... ok
+test_missing_native_hash_rejected (test_independent_review_validation.EvidenceTests.test_missing_native_hash_rejected) ... ok
+test_native_renderer_required (test_independent_review_validation.EvidenceTests.test_native_renderer_required) ... ok
+test_nonfinite_json_rejected (test_independent_review_validation.EvidenceTests.test_nonfinite_json_rejected) ... ok
+test_partial_missing_native_is_pending_not_pass (test_independent_review_validation.EvidenceTests.test_partial_missing_native_is_pending_not_pass) ... ok
+test_rebased_author_freeze_cannot_reset_review_trust (test_independent_review_validation.EvidenceTests.test_rebased_author_freeze_cannot_reset_review_trust) ... ok
+test_stale_profile_receipt_rejected (test_independent_review_validation.EvidenceTests.test_stale_profile_receipt_rejected) ... ok
+test_unexpected_native_png_rejected (test_independent_review_validation.EvidenceTests.test_unexpected_native_png_rejected) ... ok
+test_all_excluded_channels_rejected (test_independent_review_validation.NumericalTests.test_all_excluded_channels_rejected) ... ok
+test_brow_geometry_mutation_rejected (test_independent_review_validation.NumericalTests.test_brow_geometry_mutation_rejected) ... ok
+test_conflict_at_zero_aversion_exit_rejected (test_independent_review_validation.NumericalTests.test_conflict_at_zero_aversion_exit_rejected) ... ok
+test_direct_release_unsupported_lid_decay_rejected (test_independent_review_validation.NumericalTests.test_direct_release_unsupported_lid_decay_rejected) ... ok
+test_downturned_lip_geometry_rejected (test_independent_review_validation.NumericalTests.test_downturned_lip_geometry_rejected) ... ok
+test_entrance_zero_aversion_endpoint_still_needs_both_lids (test_independent_review_validation.NumericalTests.test_entrance_zero_aversion_endpoint_still_needs_both_lids) ... ok
+test_exit_zero_aversion_endpoint_still_needs_both_lids (test_independent_review_validation.NumericalTests.test_exit_zero_aversion_endpoint_still_needs_both_lids) ... ok
+test_frame_reorder_rejected (test_independent_review_validation.NumericalTests.test_frame_reorder_rejected) ... ok
+test_frozen_preparation_passes (test_independent_review_validation.NumericalTests.test_frozen_preparation_passes) ... ERROR
+test_lifecycle_missing_sample_rejected (test_independent_review_validation.NumericalTests.test_lifecycle_missing_sample_rejected) ... ok
+test_lifecycle_reorder_rejected (test_independent_review_validation.NumericalTests.test_lifecycle_reorder_rejected) ... ok
+test_lifecycle_safe_but_wrong_pose_rejected (test_independent_review_validation.NumericalTests.test_lifecycle_safe_but_wrong_pose_rejected) ... ok
+test_missing_or_extra_channel_rejected (test_independent_review_validation.NumericalTests.test_missing_or_extra_channel_rejected) ... ok
+test_mouth_width_mutation_rejected (test_independent_review_validation.NumericalTests.test_mouth_width_mutation_rejected) ... ok
+test_negative_aversion_rejected (test_independent_review_validation.NumericalTests.test_negative_aversion_rejected) ... ok
+test_nonfinite_pose_rejected (test_independent_review_validation.NumericalTests.test_nonfinite_pose_rejected) ... ok
+test_nonzero_neutral_rejected (test_independent_review_validation.NumericalTests.test_nonzero_neutral_rejected) ... ok
+test_one_supported_lid_not_enough (test_independent_review_validation.NumericalTests.test_one_supported_lid_not_enough) ... ok
+test_shader_shift_required_not_only_sprite (test_independent_review_validation.NumericalTests.test_shader_shift_required_not_only_sprite) ... ok
+test_sprite_shift_required_not_only_shader (test_independent_review_validation.NumericalTests.test_sprite_shift_required_not_only_shader) ... ok
+test_subframe_boundary_support (test_independent_review_validation.NumericalTests.test_subframe_boundary_support) ... ok
+test_timeline_pose_mutation_rejected (test_independent_review_validation.NumericalTests.test_timeline_pose_mutation_rejected) ... ok
+test_vertical_iris_motion_rejected (test_independent_review_validation.NumericalTests.test_vertical_iris_motion_rejected) ... ok
+test_wrong_lid_screen_mapping_rejected (test_independent_review_validation.NumericalTests.test_wrong_lid_screen_mapping_rejected) ... ok
+test_blank_expression_rejected (test_independent_review_validation.PixelTests.test_blank_expression_rejected) ... ok
+test_body_drift_rejected (test_independent_review_validation.PixelTests.test_body_drift_rejected) ... ok
+test_body_fixed_synthetic_fixture_passes (test_independent_review_validation.PixelTests.test_body_fixed_synthetic_fixture_passes) ... ok
+test_neutral_pixel_drift_rejected (test_independent_review_validation.PixelTests.test_neutral_pixel_drift_rejected) ... ok
+test_peak_pixel_drift_rejected (test_independent_review_validation.PixelTests.test_peak_pixel_drift_rejected) ... ok
+test_full_decode_extra_frame_rejected (test_independent_review_validation.VideoTests.test_full_decode_extra_frame_rejected) ... ok
+test_full_decode_missing_last_frame_rejected (test_independent_review_validation.VideoTests.test_full_decode_missing_last_frame_rejected) ... ok
+test_full_decode_nonzero_exit_rejected (test_independent_review_validation.VideoTests.test_full_decode_nonzero_exit_rejected) ... ok
+test_full_decode_truncated_frame_rejected (test_independent_review_validation.VideoTests.test_full_decode_truncated_frame_rejected) ... ok
+test_full_decode_visits_all_121_frames (test_independent_review_validation.VideoTests.test_full_decode_visits_all_121_frames) ... ok
+test_same_index_image_and_face_order (test_independent_review_validation.VideoTests.test_same_index_image_and_face_order) ... ok
+test_similar_but_reordered_face_rejected (test_independent_review_validation.VideoTests.test_similar_but_reordered_face_rejected) ... ok
+test_video_bad_duration_rejected (test_independent_review_validation.VideoTests.test_video_bad_duration_rejected) ... ok
+test_video_bad_frame_count_rejected (test_independent_review_validation.VideoTests.test_video_bad_frame_count_rejected) ... ok
+test_video_bad_layout_rejected (test_independent_review_validation.VideoTests.test_video_bad_layout_rejected) ... ok
+test_video_metadata_pass (test_independent_review_validation.VideoTests.test_video_metadata_pass) ... ok
+test_video_order_timestamp_rejected (test_independent_review_validation.VideoTests.test_video_order_timestamp_rejected) ... ok
+
+======================================================================
+ERROR: test_frozen_preparation_passes (test_independent_review_validation.NumericalTests.test_frozen_preparation_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/42f2baf55663/irritated_side_eye_work/test_independent_review_validation.py", line 27, in test_frozen_preparation_passes
+    v.pinned_checks(WORK)
+  File "/workspace/scratch/42f2baf55663/irritated_side_eye_work/independent_review_validation.py", line 210, in pinned_checks
+    require(sha(work/name) == digest, 'Author input changed: '+name)
+  File "/workspace/scratch/42f2baf55663/irritated_side_eye_work/independent_review_validation.py", line 53, in require
+    raise ValueError(label)
+ValueError: Author input changed: native_launcher/project.godot
+
+----------------------------------------------------------------------
+Ran 54 tests in 4.478s
+
+FAILED (errors=1)

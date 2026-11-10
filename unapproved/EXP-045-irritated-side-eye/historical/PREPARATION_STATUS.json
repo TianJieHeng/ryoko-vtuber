@@ -1,0 +1,32 @@
+{
+  "candidate": "EXP-045",
+  "title": "Irritated Side-eye",
+  "status": "HEADLESS_PREPARATION_COMPLETE_INDEPENDENT_AND_NATIVE_REVIEW_PENDING",
+  "approval": "UNAPPROVED",
+  "source_baseline": "approved36",
+  "pinned_source_files": 999,
+  "pinned_pngs": 184,
+  "runtime_artwork_parity": [
+    "approved41"
+  ],
+  "static_assertions": 1582,
+  "timeline_assertions": 12701,
+  "lifecycle_assertions": 36,
+  "lifecycle_points": 9,
+  "lifecycle_trajectory_samples": 252,
+  "independent_geometry_assertions": 9990,
+  "source_panel_exact_crops": 9,
+  "compared_profiles": 43,
+  "encoder_unit_tests": 20,
+  "independent_numerical_unit_tests": 19,
+  "native_launcher": "native_launcher/project.godot",
+  "native_capture": "NOT RUN",
+  "video": "NOT CREATED",
+  "normal_speed_observation": false,
+  "independent_reviewer_signoff": false,
+  "publication": "NOT ATTEMPTED",
+  "limitation": "Independent downturned mouth corner is unavailable. All mouth controls remain neutral; no upward sneer or symmetric purse substitute.",
+  "review_validator_unit_tests": 27,
+  "combined_unit_tests": 66,
+  "read_only_evidence_checks": 33
+}

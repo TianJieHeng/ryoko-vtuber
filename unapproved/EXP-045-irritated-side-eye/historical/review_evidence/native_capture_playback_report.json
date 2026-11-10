@@ -1,0 +1,94 @@
+{
+  "candidate": "EXP-045 Irritated Side-eye",
+  "status": "CAPTURED_AND_REVIEWED_UNAPPROVED",
+  "timestamp_utc": "2026-11-10T22:35:08.254073+00:00",
+  "native_capture": {
+    "route": "Existing Godot Project Manager and editor operated using supported CUA only. Exact native_launcher directory imported. Game Embed Mode set Disabled, editor reloaded, setting visually verified, then Run Project. A separate visible native X11 window rendered captures.",
+    "static_checks": 1614,
+    "motion_checks": 13186,
+    "static_pngs": 16,
+    "motion_pngs": 242,
+    "bust_size": [
+      568,
+      800
+    ],
+    "detail_size": [
+      400,
+      360
+    ],
+    "frames": 121,
+    "fps": 30,
+    "duration": 4.0,
+    "display": "X11",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "failed_capture_attempts": 0
+  },
+  "restoration": {
+    "editor_exit_verified": true,
+    "embed_mode": "Use Per-Project Configuration",
+    "embed_mode_visually_verified": true,
+    "original_project_sha256": "36aee2940f41d0dff851989e06f260a70805c295da9caba2583ac0663be43979",
+    "pre_editor_backup": "review_evidence/project.godot.pre_editor_original",
+    "editor_reorder_archive": "review_evidence/project.godot.editor_reorder",
+    "freeze_unchanged": true,
+    "review_input_freeze_sha256": "7f9e1bd006a91ff30d66b6da8231b4cb86e4b0bdd72162d9bc794401e51cc5ae"
+  },
+  "video": {
+    "file": "Irritated_side_eye_review_v1.mp4",
+    "sha256": "e323bd40288f1907033a94ad7a24418ecd9ace7e8e39dd2da609e2d61357bae7",
+    "bytes": 194868,
+    "width": 968,
+    "height": 800,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "fps": 30,
+    "frames": 121,
+    "duration_seconds": 4.033333,
+    "full_decode": "PASS",
+    "frame_order_validation": "PASS"
+  },
+  "validation": {
+    "author_readonly_validator": "PASS",
+    "combined_unit_tests": {
+      "passed": 120,
+      "failed": 0,
+      "scope": "66 author preparation/encoder/geometry/validation tests plus 54 actual reviewer tests"
+    },
+    "independent_reviewer": "PASS_MACHINE_EVIDENCE_ONLY; independent_review_evidence/independent_review_checks.json"
+  },
+  "visual_review": {
+    "source_sheet_viewed": true,
+    "native_detail_anchors_viewed": [
+      "neutral",
+      "prepare_lids",
+      "glance",
+      "side_eye_peak",
+      "recover_gaze",
+      "center_gaze",
+      "settle",
+      "neutral_return"
+    ],
+    "native_peak_bust_viewed": true,
+    "observations": "Both irises visibly shift toward screen-right with narrowed lids and unequal brows, then return to centered exact-neutral appearance. The mouth remains neutral/sealed, body and hair stay fixed. The pose reads as a restrained lateral look; the unsupported downturned mouth corner from the source is absent. Fine lash/hair boundary artifacts are visible in the frozen rig neutral and active detail images and were not retouched.",
+    "artistic_approval": false,
+    "source_fidelity_claim": "Supported approximation only; not full reference reproduction."
+  },
+  "normal_speed_playback": {
+    "application": "Kdenlive",
+    "loaded_exact_video": true,
+    "route": "Imported encoded MP4 into existing unsaved project bin, selected clip, enlarged clip monitor, reset with Home and used ordinary Space playback. No speed control changed.",
+    "observation": "Sampled screenshots during normal playback showed neutral entry, narrowed-lid preparation, rightward side-eye hold and neutral return. End of clip observed.",
+    "continuous_observation": false,
+    "screenshots": "Visible in CUA transcript; no screenshot-file artifacts claimed.",
+    "editor_final_state": "Kdenlive clip monitor showing the candidate; no project file saved."
+  },
+  "restrictions": {
+    "source_or_profile_changes": false,
+    "library_upload": false,
+    "publication": false,
+    "ci": false,
+    "remote_execution": false,
+    "shell_native_or_displayserver_launch": false,
+    "socket_workaround": false
+  }
+}

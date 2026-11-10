@@ -1,0 +1,19 @@
+{
+  "candidate": "EXP-045",
+  "reviewer_artifacts": {
+    "INDEPENDENT_SOURCE_REVIEW.md": "a94fcc0304a4da8572291212a25a68843bda248d8e836b501037be5e6fa3b226",
+    "independent_review_validation.py": "ec6b31ddbee951b9e8df457b01ea2b0886a65e870d1f41b1a7eb3148b25a879b",
+    "test_independent_review_validation.py": "45dab136095c472c17854268b103d180154d8110db2a177bbeac16f41c4e5f27",
+    "independent_reviewer_tests.log": "3edf489cae235fdda4fba8656e6f50abec8429dfbde0b49814559d186807dc2e",
+    "independent_reviewer_aggregate_tests.log": "2d95edb184222c9545d584435651e5e3d2ef0a736fdec68e7a130872aa574f93",
+    "independent_review_validation.log": "c1e07cc4701ad046446df8865a42eb4994ec522ca0e6cbaeb68b5bc93e646f03",
+    "independent_review_evidence/independent_review_checks.json": "74e27a36c04d46381319f00b0e7058bd9f444a3c1892f538dac3f02370ea4950",
+    "independent_review_evidence/independent_review_handoff.json": "e8a5e8aff5a1b2ce9cfee2a812acb0690721b7a6c5cb4ac8f23033edcdd59a9d",
+    "independent_review_evidence/freeze_change_observation.json": "9e61209c7e1f1fea6abaa258d00d16d96d31c5570a6fbc139a2411a4aa5f808b",
+    "independent_review_evidence/preparation_checks_before_native_editor.json": "ad0c15f7b91f4c23cd361babef035b015805158779786b721c785b3c846de6ab",
+    "independent_review_evidence/tests_during_editor_freeze_mismatch.log": "abc49bc1f030efac15689ece1164a67ac2596a8563e4b6fb6e6b50e2b034a14d",
+    "independent_review_evidence/partial_native_checks_during_editor.json": "2e737bf462f8fa15901b3c8b0a188c7786fa644ac05df294652215f46aa3d212"
+  },
+  "author_freeze_sha256": "7f9e1bd006a91ff30d66b6da8231b4cb86e4b0bdd72162d9bc794401e51cc5ae",
+  "approval": "UNAPPROVED"
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "prepare_lids",
+    "pose": {
+      "brow_screen_left": -0.2,
+      "brow_screen_right": 0.05,
+      "brow_tilt_screen_left": 0.15,
+      "brow_tilt_screen_right": -0.1,
+      "blink_R": 0.24,
+      "blink_L": 0.22,
+      "aversion_px": 0
+    }
+  },
+  {
+    "name": "glance",
+    "pose": {
+      "brow_screen_left": -0.4,
+      "brow_screen_right": 0.12,
+      "brow_tilt_screen_left": 0.3,
+      "brow_tilt_screen_right": -0.2,
+      "blink_R": 0.3,
+      "blink_L": 0.28,
+      "aversion_px": 6
+    }
+  },
+  {
+    "name": "side_eye_peak",
+    "pose": {
+      "brow_screen_left": -0.65,
+      "brow_screen_right": 0.22,
+      "brow_tilt_screen_left": 0.5,
+      "brow_tilt_screen_right": -0.28,
+      "blink_R": 0.38,
+      "blink_L": 0.3,
+      "aversion_px": 12
+    }
+  },
+  {
+    "name": "recover_gaze",
+    "pose": {
+      "brow_screen_left": -0.45,
+      "brow_screen_right": 0.14,
+      "brow_tilt_screen_left": 0.35,
+      "brow_tilt_screen_right": -0.2,
+      "blink_R": 0.32,
+      "blink_L": 0.28,
+      "aversion_px": 5
+    }
+  },
+  {
+    "name": "center_gaze",
+    "pose": {
+      "brow_screen_left": -0.22,
+      "brow_screen_right": 0.06,
+      "brow_tilt_screen_left": 0.18,
+      "brow_tilt_screen_right": -0.1,
+      "blink_R": 0.24,
+      "blink_L": 0.22,
+      "aversion_px": 0
+    }
+  },
+  {
+    "name": "settle",
+    "pose": {
+      "brow_screen_left": -0.05,
+      "brow_screen_right": 0.015,
+      "brow_tilt_screen_left": 0.04,
+      "brow_tilt_screen_right": -0.02,
+      "blink_R": 0.06,
+      "blink_L": 0.05,
+      "aversion_px": 0
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

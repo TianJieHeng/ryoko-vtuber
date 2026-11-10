@@ -1,0 +1,23 @@
+{
+  "candidate": "EXP-045",
+  "source_review": "PASS_WITH_DISCLOSED_MOUTH_LIMITATION",
+  "approval": "UNAPPROVED",
+  "independent_validator": "independent_review_validation.py",
+  "tests": "test_independent_review_validation.py",
+  "reviewer_tests": 54,
+  "reviewer_tests_passed": 54,
+  "aggregate_tests": 120,
+  "aggregate_tests_passed": 120,
+  "current_machine_gate": "PASS_MACHINE_EVIDENCE_ONLY",
+  "failures": [],
+  "pending": [],
+  "author_freeze_sha256": "7f9e1bd006a91ff30d66b6da8231b4cb86e4b0bdd72162d9bc794401e51cc5ae",
+  "author_inputs_changed": [],
+  "native_files_hashed": 260,
+  "video_sha256": "e323bd40288f1907033a94ad7a24418ecd9ace7e8e39dd2da609e2d61357bae7",
+  "decoded_video_frames": 121,
+  "static_visual_inspection": "All eight detail anchors and peak bust inspected. Source mouth-corner limitation remains.",
+  "normal_speed_observation": false,
+  "perceptual_distinctness_proven": false,
+  "next_step": "Parent/native reviewer may review normal-speed playback and present the disclosed unapproved candidate. Do not claim a downturned corner, full source fidelity or artistic approval."
+}
