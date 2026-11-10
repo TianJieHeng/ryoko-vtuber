@@ -1,0 +1,13 @@
+# EXP-129 Mental arithmetic: UNAPPROVED review backup
+
+This isolated candidate does not add a production registry entry. Main and the approved36 rig remain unchanged. The exact reviewed profile and MP4 are preserved. INDEPENDENT_REVIEW.md records technical review, source-fit limits and no continuous normal-speed observation. Its no-publication claim describes the independent review step; this package is a later authorized review backup, not approval or integration.
+
+## Reproduce locally
+
+Use a fresh copy of this package and a local checkout of TianJieHeng/ryoko-vtuber at commit 3ce98774282ad6c20dfbd7018d20838ff861b762. Run `python3 prepare_baseline.py /path/to/checkout`. It exports the pinned commit locally and verifies the 999-file manifest (184 PNGs). Full rig, generated launcher cache, duplicate PNG sequences and failed raw captures are deliberately omitted from this backup. BASELINE_REFERENCE.json gives compact provenance; the bootstrap reconstructs BASELINE_FREEZE.json from the pinned manifest. Reference artwork/catalogue are in that same baseline checkout.
+
+Requires Godot 4.6.3, Python with Pillow and NumPy, ffmpeg/ffprobe with libx264, and DejaVu Sans at the path used by the encoder. Before rerunning, move archived capture/motion receipt directories and the supplied MP4 into a separate evidence folder; never overwrite reviewed evidence. Run `godot --headless --path "$PWD/rig" --script "$PWD/check_and_capture.gd"`, `sh run_motion.sh --state`, then `python3 verify_preparation.py` for numerical checks.
+
+For permitted native GUI capture, run `python3 prepare_native_launcher.py`, open native_launcher/project.godot in the existing Godot desktop editor, and Run Project. Use standalone game window mode (Game Embed Mode Disabled), reload the project if needed, and restore the prior editor preference afterward. The launcher refuses existing capture/motion directories. No display-server creation or remote execution is required or authorized by these instructions. Strict guards require full/bust 568×800 and detail 400×360. Two rejected size attempts are summarized in CAPTURE_FAILURE_HISTORY.json.
+
+After native receipts pass, run `python3 encode_preview.py` and `python3 review_validation.py`. New rendering/encoding may differ across platforms; the supplied MP4 hash, not a regenerated encode, identifies the reviewed artifact. Review scripts regenerate omitted diagnostic contact sheets. Receipts retain original check results with private local path prefixes normalized. The review's contact-sheet references identify generated artifacts, not files bundled here. No CI or paid resources.
