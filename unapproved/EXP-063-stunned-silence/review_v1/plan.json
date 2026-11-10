@@ -1,0 +1,46 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "onset",
+    "pose": {
+      "opening_px": 1.2,
+      "brow_screen_left": 0.25,
+      "brow_screen_right": 0.25,
+      "mouth_open": 0.18,
+      "mouth_purse": 0.5,
+      "mouth_lip_press": 1.0,
+      "mouth_oral_lift": 0.6
+    }
+  },
+  {
+    "name": "stunned",
+    "pose": {
+      "opening_px": 4.0,
+      "brow_screen_left": 0.55,
+      "brow_screen_right": 0.55,
+      "mouth_open": 0.38,
+      "mouth_purse": 0.72,
+      "mouth_lip_press": 1.0,
+      "mouth_oral_lift": 0.6
+    }
+  },
+  {
+    "name": "soften",
+    "pose": {
+      "opening_px": 1.5,
+      "brow_screen_left": 0.26,
+      "brow_screen_right": 0.26,
+      "mouth_open": 0.16,
+      "mouth_purse": 0.4,
+      "mouth_lip_press": 0.6,
+      "mouth_oral_lift": 0.3
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]
