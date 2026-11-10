@@ -1,0 +1,37 @@
+{
+  "checks": 788,
+  "display": "X11",
+  "duration": 3.6,
+  "failures": [],
+  "fps": 30,
+  "frames": 109,
+  "normal_speed_observed": false,
+  "production_registry_unchanged": true,
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "status": "UNAPPROVED_REVIEW_READY",
+  "visual_capture": true,
+  "source_main": "1ab3a90d8737c4a06c42e2f4fb790e07dace417d",
+  "source_sheet_sha256": "ead8eab6687291e65c98067cebcc0886b932218a940955523882c862dd62fd66",
+  "headless_checks": 569,
+  "profile_sha256": "b7837d55187c0130024eded440c4a0007a0f95846cbff691ce99b587de7a40f3",
+  "artifact_sha256": "d4a93119cc72c3f49588ff5da2556e72d6316cea193d6d6d57ebd270ce1ad708",
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "109"
+      }
+    ],
+    "format": {
+      "duration": "3.633333",
+      "size": "181486"
+    }
+  },
+  "independent_review": "No new seam or anatomy defect in sampled frames; exact decoded neutral return and face-only pixel changes verified. Eye widening subtler and smile toothier/flatter than source. Interruption tests are state checks, not rendered interruption clips."
+}

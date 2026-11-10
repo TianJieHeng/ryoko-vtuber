@@ -1,0 +1,46 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "realization",
+    "pose": {
+      "opening_px": 2.3,
+      "brow_screen_left": 0.42,
+      "brow_screen_right": 0.42,
+      "mouth_open": 0.66,
+      "mouth_purse": 0.72,
+      "mouth_lip_press": 1.0,
+      "mouth_oral_lift": 0.7
+    }
+  },
+  {
+    "name": "pleased_open",
+    "pose": {
+      "opening_px": 0,
+      "brow_screen_left": 0.18,
+      "brow_screen_right": 0.18,
+      "mouth_open": 0.6,
+      "mouth_spread": 0.6,
+      "mouth_smile": 0.8
+    }
+  },
+  {
+    "name": "pleased_sealed",
+    "pose": {
+      "blink_L": 0.08,
+      "blink_R": 0.08,
+      "brow_screen_left": 0.08,
+      "brow_screen_right": 0.08,
+      "mouth_smile": 0.5,
+      "mouth_spread": 0.2,
+      "mouth_corner_lift_screen_left": 0.3,
+      "mouth_corner_lift_screen_right": 0.3
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]
