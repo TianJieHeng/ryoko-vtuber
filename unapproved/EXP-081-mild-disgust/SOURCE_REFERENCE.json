@@ -1,0 +1,24 @@
+{
+  "sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_sheet_v001.png",
+  "sha256": "833980ce5d88d6e4cbc53a396380b971ac09de745ddbe93ebc99028d8cf82592",
+  "dimensions": [
+    1213,
+    1296
+  ],
+  "pixels_inspected": true,
+  "observations": "Actual full nine-panel sheet viewed before authoring. Panels 2-4 gather uneven brow and eyelid tension; the screen-left eye narrows more. Panel 5 lifts the screen-right mouth side and parts the lips, while the opposing side remains comparatively low. Panel 6 closes the mouth but retains asymmetrical tension; panels 7-8 relax and panel 9 returns to neutral. The source head pose and subtle nose/upper-lip anatomy cannot be reconstructed by the frozen facial controls.",
+  "left_right_convention": "Brow and corner names use screen sides. Blink names use character sides: blink_R closes screen-left and blink_L closes screen-right. The catalogue itself leaves the side unspecified.",
+  "approximation": "The existing screen-right corner lift shifts both upper and lower lip contours together, not the upper lip independently. At peak the common screen-right endpoint is 2.4 source pixels above neutral, while the other endpoint is 1.44 pixels below; the central split-lip gap is 5.2164 source pixels. This is a partial acting approximation that may read as objection or a restrained smirk, pending native visual review. Nose wrinkle, independent upper-lip curl/lift, head tilt/recoil, cheek deformation and paired body gestures are unsupported or omitted, never claimed as simulated.",
+  "panel_hashes": {
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp01_v001.png": "6a977651d13b635195e7589b187ee353582dca1b394f48c4f1b0d3ac4ce56544",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp02_v001.png": "1331f6447b13d6bcddd1978998cf06da04cc858c81d5974d9bf248aa04bf79ef",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp03_v001.png": "6035f4c4e5418f97a50804bc23d666234b3bd43d05af62c74d1770a930f483b3",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp04_v001.png": "dbafa4a8b0ef7a0706a0c172f2a34c241c6fdc534cd9d611715787a5e5c43980",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp05_v001.png": "2f09529f0a00a758f7d954c38ac6f85cb30ee206e1dc5b4c6141194704ccdb3c",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp06_v001.png": "b13621771d2b79de8c99cd70221045385ddc3a3c4270de299df52b06c4c114dc",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp07_v001.png": "818dc072def27dd3471fb0967991a9707c22d118296545140c2f999cb15f5df5",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp08_v001.png": "44528ca5c3ba57fc461f7716ca52979118b8fc8c69f0c9b84bbf8e026bf0e41b",
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp09_v001.png": "1d8f8676e60cde9f057e1c8a3737599d08ee40434a7bb6983e1cc4bdb4c5d4f8"
+  },
+  "approval": "Accepted reference art does not approve this candidate or its animation."
+}

@@ -1,0 +1,19 @@
+--- project.before_native_import.godot
++++ project.editor_rewrite.godot
+@@ -21,11 +21,12 @@
+ window/size/window_width_override=1136
+ window/size/window_height_override=800
+ 
++[editor]
++
++movie_writer/fps=30
++movie_writer/mjpeg_quality=0.85
++
+ [rendering]
+ 
+ renderer/rendering_method="gl_compatibility"
+ environment/defaults/default_clear_color=Color(0.12, 0.13, 0.14, 1)
+-
+-[editor]
+-movie_writer/fps=30
+-movie_writer/mjpeg_quality=0.85

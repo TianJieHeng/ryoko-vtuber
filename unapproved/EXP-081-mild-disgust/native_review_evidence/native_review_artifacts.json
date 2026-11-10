@@ -1,0 +1,22 @@
+{
+  "candidate": "EXP-081",
+  "technical_status": "PASS",
+  "independent_checks": 79,
+  "reviewer_tests": 32,
+  "approval": "UNAPPROVED",
+  "visual_acceptance": "NOT ESTABLISHED: restrained smirk/skeptical objection remains a stronger reading than source upper-lip-only disgust",
+  "normal_speed_continuous_observation": false,
+  "preparation_freeze_sha256": "22509ab2bf568edc6291e261fc0310bdac3818bbc08f4db6656be9ee30748086",
+  "artifacts": {
+    "INDEPENDENT_NATIVE_REVIEW.md": "20439e35787a0bee70b09f955c65464642facf0509f45a218da6b7307dc4a0ca",
+    "INDEPENDENT_SOURCE_REVIEW.md": "0f32c09371c434ab7076b1bf1e9dd7726b8ca09f8296d07b8c31b679c8f6b000",
+    "review_validation.py": "1c376636c1459d492e20f4a3f1f72ccfae46078822bb275cae4505444d6e6b44",
+    "test_review_validation.py": "e3126e8b4c75fdc429e1399689c2bf69b20ff9c6a80cabee179ebedca61a3e61",
+    "review_validator_native.log": "c03b9e3eaada1b45544e220782aa1be7ddff4d11b1d0b72308a0ae592b623629",
+    "review_validator_native_unit_tests.log": "59a292b166410e72c4cbc05141387c9b6279b847cdea2044aeca78ae613d1f5e",
+    "native_review_evidence/review_checks.json": "4cdd67b956e8575af713039023f23c3a0310ab9a612733db1062330e77903cff",
+    "native_review_evidence/native_frame_hashes.json": "f7fa2619f5ccc1836a503cb3c588553163ca5626ebd7a6f75882de5c715af29b",
+    "native_review_evidence/decoded_frame_order.json": "96c68008cf582ef8c61e111fdb7af4a15e1b75ddda916cff75e1c3d5fa7d98a6",
+    "Mild_disgust_review_v1.mp4": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f"
+  }
+}

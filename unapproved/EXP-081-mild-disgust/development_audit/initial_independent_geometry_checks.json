@@ -1,0 +1,30 @@
+{
+  "status": "FAIL",
+  "checks": 8421,
+  "failures": [
+    "brow translation detectscreen_right",
+    "brow translation recoilscreen_left",
+    "lid closure side/travel recoilscreen_left",
+    "brow translation recoilscreen_right",
+    "brow translation disgust_peakscreen_right",
+    "lid closure side/travel disgust_peakscreen_right",
+    "brow translation suppressscreen_left",
+    "lid closure side/travel suppressscreen_left",
+    "lid closure side/travel releasescreen_right"
+  ],
+  "max_control_error": 1.450782705081366e-08,
+  "independent_timeline_samples": 121,
+  "source_panels_exact_lossless_crops": {
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp01_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp02_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp03_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp04_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp05_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp06_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp07_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp08_v001.png": true,
+    "assets/expressions/EXP-081_mild-disgust/RYO_EXP-081_mild-disgust_kp09_v001.png": true
+  },
+  "native_capture": "PENDING; no renderer or UI invoked",
+  "approval": "UNAPPROVED"
+}

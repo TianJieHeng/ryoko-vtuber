@@ -1,0 +1,153 @@
+{
+  "id": "EXP-023",
+  "title": "Open Sobbing",
+  "duration": 4.0,
+  "status": "UNAPPROVED shared-rig preparation v1; native visual review pending",
+  "intent": "Brows pull sharply inward and up; eyes squeeze and reopen; mouth opens unevenly in a sob.",
+  "scope": "Existing bilateral outer-anchored inner-brow lift with slightly lowered outer brows, ordinary lid squeeze/reopening, split-lip opening, purse and pressure only. The mouth remains spatially symmetric: side-width controls are sealed-mouth-only and no asymmetric jaw control exists. No tears, new anatomy, art, shader, runtime, gaze, smile, blush, hair, head or body changes.",
+  "timing_origin": "New four-second interpretation of the inspected nine-panel EXP-023 sheet, not recovered motion. Inner-brow distress gathers before the mouth opens. A full ordinary-lid squeeze accompanies the first open sob, followed by reopening and a smaller second catch using the catalogue optional build/peak/follow-through cycle idea. The mouth closes before the remaining brow tension releases. The second catch is authored timing, not an extra source panel. Unlike Quiet sadness, this has no downcast gaze or still closed-mouth hold; unlike Shocked gasp, eyes squeeze rather than widen.",
+  "interpolation": "Unchanged shared smoothstep; nine static anchors, twelve timeline keys, exact neutral bookends, in-memory registration only.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.55,
+      "phase": "gather",
+      "values": {
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.06,
+        "brow_inner_lift_screen_left": 0.3,
+        "brow_inner_lift_screen_right": 0.27,
+        "blink_R": 0.12,
+        "blink_L": 0.1,
+        "mouth_open": 0,
+        "mouth_purse": 0.08,
+        "mouth_lip_press": 0.05
+      }
+    },
+    {
+      "time": 0.95,
+      "phase": "onset",
+      "values": {
+        "brow_screen_left": -0.18,
+        "brow_screen_right": -0.15,
+        "brow_inner_lift_screen_left": 0.65,
+        "brow_inner_lift_screen_right": 0.6,
+        "blink_R": 0.46,
+        "blink_L": 0.42,
+        "mouth_open": 0.32,
+        "mouth_purse": 0.25,
+        "mouth_lip_press": 0.2
+      }
+    },
+    {
+      "time": 1.4,
+      "phase": "sob_peak",
+      "values": {
+        "brow_screen_left": -0.24,
+        "brow_screen_right": -0.2,
+        "brow_inner_lift_screen_left": 0.96,
+        "brow_inner_lift_screen_right": 0.88,
+        "blink_R": 1.0,
+        "blink_L": 1.0,
+        "mouth_open": 0.86,
+        "mouth_purse": 0.3,
+        "mouth_lip_press": 0.26
+      }
+    },
+    {
+      "time": 1.7,
+      "phase": "sob_peak",
+      "values": {
+        "brow_screen_left": -0.24,
+        "brow_screen_right": -0.2,
+        "brow_inner_lift_screen_left": 0.96,
+        "brow_inner_lift_screen_right": 0.88,
+        "blink_R": 1.0,
+        "blink_L": 1.0,
+        "mouth_open": 0.86,
+        "mouth_purse": 0.3,
+        "mouth_lip_press": 0.26
+      }
+    },
+    {
+      "time": 2.1,
+      "phase": "reopen",
+      "values": {
+        "brow_screen_left": -0.22,
+        "brow_screen_right": -0.18,
+        "brow_inner_lift_screen_left": 0.88,
+        "brow_inner_lift_screen_right": 0.82,
+        "blink_R": 0.28,
+        "blink_L": 0.24,
+        "mouth_open": 0.48,
+        "mouth_purse": 0.28,
+        "mouth_lip_press": 0.22
+      }
+    },
+    {
+      "time": 2.45,
+      "phase": "echo_sob",
+      "values": {
+        "brow_screen_left": -0.23,
+        "brow_screen_right": -0.19,
+        "brow_inner_lift_screen_left": 0.92,
+        "brow_inner_lift_screen_right": 0.85,
+        "blink_R": 0.86,
+        "blink_L": 0.82,
+        "mouth_open": 0.72,
+        "mouth_purse": 0.29,
+        "mouth_lip_press": 0.24
+      }
+    },
+    {
+      "time": 2.85,
+      "phase": "release",
+      "values": {
+        "brow_screen_left": -0.16,
+        "brow_screen_right": -0.13,
+        "brow_inner_lift_screen_left": 0.62,
+        "brow_inner_lift_screen_right": 0.58,
+        "blink_R": 0.3,
+        "blink_L": 0.26,
+        "mouth_open": 0.18,
+        "mouth_purse": 0.18,
+        "mouth_lip_press": 0.1
+      }
+    },
+    {
+      "time": 3.25,
+      "phase": "settle",
+      "values": {
+        "brow_screen_left": -0.06,
+        "brow_screen_right": -0.05,
+        "brow_inner_lift_screen_left": 0.22,
+        "brow_inner_lift_screen_right": 0.2,
+        "blink_R": 0.1,
+        "blink_L": 0.08,
+        "mouth_open": 0,
+        "mouth_purse": 0.04,
+        "mouth_lip_press": 0
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

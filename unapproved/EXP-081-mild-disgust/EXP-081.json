@@ -1,0 +1,138 @@
+{
+  "id": "EXP-081",
+  "title": "Mild disgust",
+  "duration": 4.0,
+  "status": "UNAPPROVED shared-rig preparation v1; native visual review pending",
+  "intent": "One brow lowers; eyes narrow; upper lip lifts slightly on one side.",
+  "scope": "Existing unequal brow lowering/tilt, unequal ordinary lid narrowing, small split-lip opening, mild purse and screen-right common corner lift only. This corner moves BOTH lip contours; it is not independent upper-lip lift, curl or nose wrinkling. No new anatomy, art, shader or runtime; no head/body movement, smile-eye, gaze, blush or speech.",
+  "timing_origin": "New four-second interpretation of the inspected EXP-081 nine-panel reference. Unequal brow/lid tension leads the brief parted common-corner lift at 1.4-1.75; lips seal by 2.15 while the asymmetric objection persists, then mouth bias releases before brow/lid recovery. The proposed catalogue timing is not recovered motion. Unlike Bitter taste, the tension is mild, asymmetric and not a prolonged bilateral open grimace; unlike Queasy, there is no inner-brow lift or lip pressure.",
+  "interpolation": "Unchanged shared smoothstep; eight static anchors, eleven timeline keys, exact neutral bookends. Candidate registered only in memory.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.6,
+      "phase": "detect",
+      "values": {
+        "brow_screen_left": -0.14,
+        "brow_screen_right": -0.03,
+        "brow_tilt_screen_left": 0.06,
+        "brow_tilt_screen_right": -0.02,
+        "blink_R": 0.08,
+        "blink_L": 0.04,
+        "mouth_open": 0,
+        "mouth_purse": 0,
+        "mouth_corner_lift_screen_right": 0
+      }
+    },
+    {
+      "time": 1.0,
+      "phase": "recoil",
+      "values": {
+        "brow_screen_left": -0.32,
+        "brow_screen_right": -0.08,
+        "brow_tilt_screen_left": 0.15,
+        "brow_tilt_screen_right": -0.06,
+        "blink_R": 0.22,
+        "blink_L": 0.11,
+        "mouth_open": 0,
+        "mouth_purse": 0.08,
+        "mouth_corner_lift_screen_right": 0.08
+      }
+    },
+    {
+      "time": 1.4,
+      "phase": "disgust_peak",
+      "values": {
+        "brow_screen_left": -0.44,
+        "brow_screen_right": -0.12,
+        "brow_tilt_screen_left": 0.22,
+        "brow_tilt_screen_right": -0.1,
+        "blink_R": 0.34,
+        "blink_L": 0.18,
+        "mouth_open": 0.18,
+        "mouth_purse": 0.12,
+        "mouth_corner_lift_screen_right": 0.32
+      }
+    },
+    {
+      "time": 1.75,
+      "phase": "disgust_peak",
+      "values": {
+        "brow_screen_left": -0.44,
+        "brow_screen_right": -0.12,
+        "brow_tilt_screen_left": 0.22,
+        "brow_tilt_screen_right": -0.1,
+        "blink_R": 0.34,
+        "blink_L": 0.18,
+        "mouth_open": 0.18,
+        "mouth_purse": 0.12,
+        "mouth_corner_lift_screen_right": 0.32
+      }
+    },
+    {
+      "time": 2.15,
+      "phase": "suppress",
+      "values": {
+        "brow_screen_left": -0.38,
+        "brow_screen_right": -0.1,
+        "brow_tilt_screen_left": 0.18,
+        "brow_tilt_screen_right": -0.08,
+        "blink_R": 0.28,
+        "blink_L": 0.14,
+        "mouth_open": 0,
+        "mouth_purse": 0.16,
+        "mouth_corner_lift_screen_right": 0.12
+      }
+    },
+    {
+      "time": 2.7,
+      "phase": "release",
+      "values": {
+        "brow_screen_left": -0.2,
+        "brow_screen_right": -0.06,
+        "brow_tilt_screen_left": 0.09,
+        "brow_tilt_screen_right": -0.04,
+        "blink_R": 0.14,
+        "blink_L": 0.07,
+        "mouth_open": 0,
+        "mouth_purse": 0.04,
+        "mouth_corner_lift_screen_right": 0
+      }
+    },
+    {
+      "time": 3.25,
+      "phase": "settle",
+      "values": {
+        "brow_screen_left": -0.05,
+        "brow_screen_right": -0.015,
+        "brow_tilt_screen_left": 0.02,
+        "brow_tilt_screen_right": -0.01,
+        "blink_R": 0.035,
+        "blink_L": 0.015,
+        "mouth_open": 0,
+        "mouth_purse": 0,
+        "mouth_corner_lift_screen_right": 0
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

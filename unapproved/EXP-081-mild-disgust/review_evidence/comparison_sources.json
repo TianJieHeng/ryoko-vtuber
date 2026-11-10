@@ -1,0 +1,22 @@
+[
+  {
+    "id": "EXP-093",
+    "intent": "Brows lower; eyes narrow slowly; upper lip rises while lower lip pulls down.",
+    "reference_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_sheet_v001.png",
+    "reference_sheet_sha256": "481f673c315379a3a9c80718f41932065a96498b66300c985f383d558735a863",
+    "sheet_pixels_inspected_by_reviewer": true,
+    "prior_native_detail_context": "/workspace/scratch/42f2baf55663/bitter_taste_work/capture/bitter_peak_detail.png",
+    "prior_native_detail_sha256": "bef939951fb40bb4dd224f0004e4ce18ecf212915b17cb553cc072c0ebc653c3",
+    "limit": "Viewed for context only; not a new complete native audit of this prior expression."
+  },
+  {
+    "id": "EXP-090",
+    "intent": "Inner brows rise; heavy eyelids narrow; lips press forward with cheeks held tense.",
+    "reference_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-090_queasy/RYO_EXP-090_queasy_sheet_v001.png",
+    "reference_sheet_sha256": "785b45abad9297a18294d4a3fbf93ab52d8577e05556fc2279cbd223a7d2c4ce",
+    "sheet_pixels_inspected_by_reviewer": true,
+    "prior_native_detail_context": "/workspace/scratch/42f2baf55663/queasy_work/capture/queasy_detail.png",
+    "prior_native_detail_sha256": "b52e59b53453edc8d1e23e67390274cd22671b6f681e80c1f75d33560b75fdb9",
+    "limit": "Viewed for context only; not a new complete native audit of this prior expression."
+  }
+]

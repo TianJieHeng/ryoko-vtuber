@@ -1,0 +1,36 @@
+test_changed_baseline_rejected (test_encode_preview.CaptureGuards.test_changed_baseline_rejected) ... ok
+test_changed_plan_rejected (test_encode_preview.CaptureGuards.test_changed_plan_rejected) ... ok
+test_changed_profile_rejected (test_encode_preview.CaptureGuards.test_changed_profile_rejected) ... ok
+test_complete_mock_receipts (test_encode_preview.CaptureGuards.test_complete_mock_receipts) ... ok
+test_existing_video_preserved (test_encode_preview.CaptureGuards.test_existing_video_preserved) ... ok
+test_extra_frame_rejected (test_encode_preview.CaptureGuards.test_extra_frame_rejected) ... ok
+test_failed_static_rejected (test_encode_preview.CaptureGuards.test_failed_static_rejected) ... ok
+test_headless_rejected (test_encode_preview.CaptureGuards.test_headless_rejected) ... ok
+test_missing_frame_rejected (test_encode_preview.CaptureGuards.test_missing_frame_rejected) ... ok
+test_missing_native_receipts (test_encode_preview.CaptureGuards.test_missing_native_receipts) ... ok
+test_missing_renderer_rejected (test_encode_preview.CaptureGuards.test_missing_renderer_rejected) ... ok
+test_nonvisual_static_rejected (test_encode_preview.CaptureGuards.test_nonvisual_static_rejected) ... ok
+test_static_dimensions_rejected (test_encode_preview.CaptureGuards.test_static_dimensions_rejected) ... ok
+test_wrong_fps_rejected (test_encode_preview.CaptureGuards.test_wrong_fps_rejected) ... ok
+test_wrong_pixel_mode_rejected (test_encode_preview.CaptureGuards.test_wrong_pixel_mode_rejected) ... ok
+test_wrong_pixels_rejected (test_encode_preview.CaptureGuards.test_wrong_pixels_rejected) ... ok
+test_wrong_profile_count_rejected (test_encode_preview.CaptureGuards.test_wrong_profile_count_rejected) ... ok
+test_wrong_record_count_rejected (test_encode_preview.CaptureGuards.test_wrong_record_count_rejected) ... ok
+test_wrong_size_rejected (test_encode_preview.CaptureGuards.test_wrong_size_rejected) ... ok
+test_wrong_time_rejected (test_encode_preview.CaptureGuards.test_wrong_time_rejected) ... ok
+test_actual_frozen_evidence_passes (test_independent_geometry.AuditMutations.test_actual_frozen_evidence_passes) ... ok
+test_brow_direction_rejected (test_independent_geometry.AuditMutations.test_brow_direction_rejected) ... ok
+test_frame_time_rejected (test_independent_geometry.AuditMutations.test_frame_time_rejected) ... ok
+test_gaze_drift_rejected (test_independent_geometry.AuditMutations.test_gaze_drift_rejected) ... ok
+test_lid_side_swap_rejected (test_independent_geometry.AuditMutations.test_lid_side_swap_rejected) ... ok
+test_lifecycle_evidence_change_rejected (test_independent_geometry.AuditMutations.test_lifecycle_evidence_change_rejected) ... ok
+test_neutral_endpoint_drift_rejected (test_independent_geometry.AuditMutations.test_neutral_endpoint_drift_rejected) ... ok
+test_peak_gap_mutation_rejected (test_independent_geometry.AuditMutations.test_peak_gap_mutation_rejected) ... ok
+test_sample_peak_analytic_values (test_independent_geometry.AuditMutations.test_sample_peak_analytic_values) ... ok
+test_smile_channel_rejected (test_independent_geometry.AuditMutations.test_smile_channel_rejected) ... ok
+test_upper_only_corner_fiction_rejected (test_independent_geometry.AuditMutations.test_upper_only_corner_fiction_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.159s
+
+OK

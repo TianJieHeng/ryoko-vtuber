@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "frozen_sha256": "9de6f885a00d424884a83ecc1ceb17c3bec57bde734edc3a67e2c4fa5b8f9821",
+  "editor_rewrite_sha256": "8430380e79b1ecacea50480510f3fbf22b0c94dbd56b2b508ac40faddc26e90a",
+  "restored_sha256": "9de6f885a00d424884a83ecc1ceb17c3bec57bde734edc3a67e2c4fa5b8f9821",
+  "settings_unchanged": true,
+  "only_section_order_and_spacing_changed": true,
+  "exact_frozen_bytes_restored": true,
+  "frozen_input_guard_before": "freeze_before_restore.log",
+  "frozen_input_guard_after": "freeze_after_restore.log",
+  "no_threshold_or_frozen_input_changed": true
+}

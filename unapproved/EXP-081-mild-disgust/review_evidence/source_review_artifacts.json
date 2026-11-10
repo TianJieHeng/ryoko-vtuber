@@ -1,0 +1,18 @@
+{
+  "status": "SOURCE_REVIEW_COMPLETE_NATIVE_PENDING",
+  "approval": "UNAPPROVED",
+  "preparation_freeze_sha256": "22509ab2bf568edc6291e261fc0310bdac3818bbc08f4db6656be9ee30748086",
+  "artifacts": {
+    "INDEPENDENT_SOURCE_REVIEW.md": "31a88c507da2f374ce41d79b9c68b9ef8896ac0579d72b2e06a962d80c58df24",
+    "review_validation.py": "1c376636c1459d492e20f4a3f1f72ccfae46078822bb275cae4505444d6e6b44",
+    "test_review_validation.py": "e3126e8b4c75fdc429e1399689c2bf69b20ff9c6a80cabee179ebedca61a3e61",
+    "review_validator_unit_tests.log": "60a87526d2b25816e3678106658eb732b8775bfe5f8d812ef67cc93ddbba56f6",
+    "review_combined_unit_tests.log": "6e13bc330118285c2acad639713b8be03335e847a9d8cfc832b6b1c9c14b01ea",
+    "review_validator_preparation.log": "efb6a8447af94dab610029ff0bfdcf224c9dce8c5eb60f5a09f7b642cca65cf2",
+    "review_evidence/review_checks.json": "2ca372a072319f3fde00ae7d9ed006af31f54f749e32e1728d5d38a2c7a2d3a4",
+    "review_evidence/partial_review.json": "2ca372a072319f3fde00ae7d9ed006af31f54f749e32e1728d5d38a2c7a2d3a4",
+    "review_evidence/comparison_sources.json": "74ea74334db4fbc7f2ae670b8880b95792bec1181b9d9b26ac7b79c75f2e2210"
+  },
+  "historical_source_report_path": "native_review_evidence/INDEPENDENT_SOURCE_REVIEW.pre_native.md",
+  "note": "Original source-report hash refers to the preserved pre-native report. The main source report now has a final-native update; native_review_artifacts.json records its current hash."
+}

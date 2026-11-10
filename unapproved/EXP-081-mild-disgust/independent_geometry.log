@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 8421,
+  "failures": [],
+  "max_control_error": 1.450782705081366e-08,
+  "independent_timeline_samples": 121,
+  "native_capture": "PENDING; no renderer or UI invoked",
+  "approval": "UNAPPROVED"
+}

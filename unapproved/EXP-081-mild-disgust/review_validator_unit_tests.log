@@ -1,0 +1,37 @@
+test_bad_freeze_is_fail_not_pending_only (test_review_validation.ReviewValidationTests.test_bad_freeze_is_fail_not_pending_only) ... ok
+test_body_guard_and_empty_bbox (test_review_validation.ReviewValidationTests.test_body_guard_and_empty_bbox) ... ok
+test_both_lips_share_corner_bias_not_upper_only (test_review_validation.ReviewValidationTests.test_both_lips_share_corner_bias_not_upper_only) ... ok
+test_eight_static_anchors_not_nine (test_review_validation.ReviewValidationTests.test_eight_static_anchors_not_nine) ... ok
+test_exact_peak_and_neutral_interpolation (test_review_validation.ReviewValidationTests.test_exact_peak_and_neutral_interpolation) ... ok
+test_existing_headless_state_math (test_review_validation.ReviewValidationTests.test_existing_headless_state_math) ... ok
+test_existing_static_geometry (test_review_validation.ReviewValidationTests.test_existing_static_geometry) ... ok
+test_failed_motion_receipt_not_hidden_by_missing_frames (test_review_validation.ReviewValidationTests.test_failed_motion_receipt_not_hidden_by_missing_frames) ... ok
+test_failed_receipt_is_not_hidden_by_missing_frames (test_review_validation.ReviewValidationTests.test_failed_receipt_is_not_hidden_by_missing_frames) ... ok
+test_forbidden_control_detected (test_review_validation.ReviewValidationTests.test_forbidden_control_detected) ... ok
+test_full_blink_is_not_mild_disgust (test_review_validation.ReviewValidationTests.test_full_blink_is_not_mild_disgust) ... ok
+test_incorrect_lip_contour_detected (test_review_validation.ReviewValidationTests.test_incorrect_lip_contour_detected) ... ok
+test_incorrect_motion_gap_detected (test_review_validation.ReviewValidationTests.test_incorrect_motion_gap_detected) ... ok
+test_incorrect_static_gap_detected (test_review_validation.ReviewValidationTests.test_incorrect_static_gap_detected) ... ok
+test_laugh_control_is_excluded (test_review_validation.ReviewValidationTests.test_laugh_control_is_excluded) ... ok
+test_lip_pressure_and_inner_lift_are_excluded (test_review_validation.ReviewValidationTests.test_lip_pressure_and_inner_lift_are_excluded) ... ok
+test_mild_narrowing_cannot_be_replaced_by_widening (test_review_validation.ReviewValidationTests.test_mild_narrowing_cannot_be_replaced_by_widening) ... ok
+test_missing_or_changed_pose_channels_rejected (test_review_validation.ReviewValidationTests.test_missing_or_changed_pose_channels_rejected) ... ok
+test_native_image_guards (test_review_validation.ReviewValidationTests.test_native_image_guards) ... ok
+test_no_native_inputs_is_pending_not_pass (test_review_validation.ReviewValidationTests.test_no_native_inputs_is_pending_not_pass) ... ok
+test_nonfinite_pose_rejected (test_review_validation.ReviewValidationTests.test_nonfinite_pose_rejected) ... ok
+test_only_grid_aligned_static_anchors_used (test_review_validation.ReviewValidationTests.test_only_grid_aligned_static_anchors_used) ... ok
+test_open_mouth_after_suppress_is_detected (test_review_validation.ReviewValidationTests.test_open_mouth_after_suppress_is_detected) ... ok
+test_out_of_order_record_rejected (test_review_validation.ReviewValidationTests.test_out_of_order_record_rejected) ... ok
+test_peak_lip_geometry_and_symmetric_aperture (test_review_validation.ReviewValidationTests.test_peak_lip_geometry_and_symmetric_aperture) ... ok
+test_symmetric_brow_replacement_detected (test_review_validation.ReviewValidationTests.test_symmetric_brow_replacement_detected) ... ok
+test_timing_releases_corner_before_brow (test_review_validation.ReviewValidationTests.test_timing_releases_corner_before_brow) ... ok
+test_wrong_blink_side_detected (test_review_validation.ReviewValidationTests.test_wrong_blink_side_detected) ... ok
+test_wrong_brow_geometry_detected (test_review_validation.ReviewValidationTests.test_wrong_brow_geometry_detected) ... ok
+test_wrong_common_corner_direction_detected (test_review_validation.ReviewValidationTests.test_wrong_common_corner_direction_detected) ... ok
+test_wrong_held_peak_or_neutral_detected (test_review_validation.ReviewValidationTests.test_wrong_held_peak_or_neutral_detected) ... ok
+test_wrong_mouth_geometry_detected (test_review_validation.ReviewValidationTests.test_wrong_mouth_geometry_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.580s
+
+OK

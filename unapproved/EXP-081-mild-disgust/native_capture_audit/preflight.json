@@ -1,0 +1,12 @@
+{
+  "candidate": "EXP-081",
+  "approval": "UNAPPROVED",
+  "state": "Prepared; waiting for parent to grant exclusive native UI slot.",
+  "preflight_freeze_sha256": "22509ab2bf568edc6291e261fc0310bdac3818bbc08f4db6656be9ee30748086",
+  "launcher_project_backup_sha256": "9de6f885a00d424884a83ecc1ceb17c3bec57bde734edc3a67e2c4fa5b8f9821",
+  "native_ui_touched": false,
+  "source_pixels_viewed": true,
+  "scope": "Existing Godot UI only. Strict receipt dimensions, existing encoder and independent review validator. No source/art/runtime modifications or publication.",
+  "source_fidelity_limit": "Both lip contours share common corner lift. No independent upper-lip curl or nose wrinkle; possible restrained-smirk ambiguity.",
+  "normal_speed_continuous_observation": false
+}

@@ -1,0 +1,79 @@
+{
+  "candidate": "EXP-081",
+  "approval": "UNAPPROVED",
+  "status": "Native capture and encoding verified; perceptual source fidelity not established.",
+  "native_capture": {
+    "route": "Godot desktop CUA Project Manager import, Editor Settings Game Embed Mode Disabled, Reload Current Project, F5 standalone native run",
+    "static_checks": 1558,
+    "motion_checks": 11815,
+    "static_png_count": 16,
+    "motion_png_count": 242,
+    "bust_dimensions": [
+      568,
+      800
+    ],
+    "detail_dimensions": [
+      400,
+      360
+    ],
+    "capture_failures": []
+  },
+  "video": {
+    "path": "/workspace/scratch/42f2baf55663/mild_disgust_work/Mild_disgust_review_v1.mp4",
+    "sha256": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f",
+    "dimensions": [
+      968,
+      800
+    ],
+    "fps": 30,
+    "frames": 121,
+    "duration_seconds": 4.033333,
+    "full_decode_pass": true
+  },
+  "independent_validation": {
+    "report": "native_capture_review/review_checks.json",
+    "checks_passed": 79,
+    "checks_total": 79,
+    "status": "PASS",
+    "failures": [],
+    "pending": []
+  },
+  "ui_playback": {
+    "app": "Kdenlive",
+    "clip": "Mild_disgust_review_v1.mp4",
+    "started_at": "00:00:00:00",
+    "observed_playing_time": "00:00:03:09",
+    "observed_play_control": "Pause",
+    "observed_end_time": "00:00:04:00",
+    "paused_peak_sample": "00:00:01:11",
+    "normal_speed": true,
+    "continuous_observation": false,
+    "statement": "Playback was initiated at normal speed and UI states/screenshots were sampled; no continuous human viewing claim."
+  },
+  "preservation": {
+    "original_game_embed_mode": "Use Per-Project Configuration",
+    "temporary_mode": "Disabled",
+    "project_reloaded_before_capture": true,
+    "original_mode_visibly_restored": true,
+    "capture_editor_and_game_closed_before_frozen_bytes_restore": true,
+    "expected_editor_rewrite": "Only [editor] section position/spacing changed; no setting values changed.",
+    "rewrite_archive": "native_capture_audit/project.editor_rewrite.godot",
+    "failed_freeze_guard_archive": "native_capture_audit/freeze_before_restore.log",
+    "restored_freeze_guard": "native_capture_audit/freeze_after_restore.log",
+    "frozen_launcher_project_sha256": "9de6f885a00d424884a83ecc1ceb17c3bec57bde734edc3a67e2c4fa5b8f9821",
+    "review_input_freeze_sha256": "22509ab2bf568edc6291e261fc0310bdac3818bbc08f4db6656be9ee30748086"
+  },
+  "perceptual_review": {
+    "source_sheet_viewed": true,
+    "native_peak_viewed": true,
+    "finding": "Peak reads as restrained smirk or skeptical objection rather than convincing mild disgust. The shared common corner moves both lip contours; the source upper-lip curl/nose detail is not reproduced.",
+    "qualified_result": "Technical evidence passes, but this candidate should not be described as faithful or approved.",
+    "observed_artifacts": "No gross separation, missing pixels or body drift was seen in the sampled native/encoded images; exact geometry and all-frame pixel checks are separate evidence."
+  },
+  "publication": {
+    "library_upload": false,
+    "remote_publish": false,
+    "production_integration": false
+  },
+  "ui_released": true
+}
