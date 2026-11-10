@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "Fresh approved24 focused tests; previous results archived unchanged.",
+  "checks": {
+    "integrated_state_checks.json": 1768,
+    "pair_state_checks.json": 5426,
+    "composure_state_checks.json": 2158,
+    "native_parity.json": 53
+  },
+  "headless_assertions": 9352,
+  "whole_rig_native_visual_parity": "NOT RUN",
+  "live_engine_pacing": "UNVERIFIED",
+  "normal_speed_observed": false,
+  "ci_run": false
+}

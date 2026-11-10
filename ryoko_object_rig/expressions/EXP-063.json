@@ -1,0 +1,85 @@
+{
+  "id": "EXP-063",
+  "title": "Stunned silence",
+  "duration": 4.0,
+  "status": "UNAPPROVED review candidate only",
+  "intent": "A quick silent realization, fixed widened eyes and slightly parted lips, a frozen hold, then slow recovery to neutral.",
+  "scope": "Existing approved24 bounded eye-opening and mouth controls only. No smile, gaze, auto-blink, blush or head/body acting. Painted source eye expansion and mouth contour are approximated; no new artwork or anatomy.",
+  "timing_origin": "New 4.0-second reading of the nine static source panels; catalogue 1.9-second schedule was a reference proposal, not recovered animation.",
+  "interpolation": "Existing shared smoothstep and displayed-pose restart/release. Fixed pose hold from 1.0 to 2.4 seconds.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.3,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.65,
+      "phase": "onset",
+      "values": {
+        "opening_px": 1.2,
+        "brow_screen_left": 0.25,
+        "brow_screen_right": 0.25,
+        "mouth_open": 0.18,
+        "mouth_purse": 0.5,
+        "mouth_lip_press": 1.0,
+        "mouth_oral_lift": 0.6
+      }
+    },
+    {
+      "time": 1.0,
+      "phase": "stunned",
+      "values": {
+        "opening_px": 4.0,
+        "brow_screen_left": 0.55,
+        "brow_screen_right": 0.55,
+        "mouth_open": 0.38,
+        "mouth_purse": 0.72,
+        "mouth_lip_press": 1.0,
+        "mouth_oral_lift": 0.6
+      }
+    },
+    {
+      "time": 2.4,
+      "phase": "stunned",
+      "values": {
+        "opening_px": 4.0,
+        "brow_screen_left": 0.55,
+        "brow_screen_right": 0.55,
+        "mouth_open": 0.38,
+        "mouth_purse": 0.72,
+        "mouth_lip_press": 1.0,
+        "mouth_oral_lift": 0.6
+      }
+    },
+    {
+      "time": 3.0,
+      "phase": "soften",
+      "values": {
+        "opening_px": 1.5,
+        "brow_screen_left": 0.26,
+        "brow_screen_right": 0.26,
+        "mouth_open": 0.16,
+        "mouth_purse": 0.4,
+        "mouth_lip_press": 0.6,
+        "mouth_oral_lift": 0.3
+      }
+    },
+    {
+      "time": 3.75,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

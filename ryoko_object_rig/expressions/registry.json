@@ -213,6 +213,15 @@
         "sudden_insight"
       ],
       "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-063",
+      "path": "res://expressions/EXP-063.json",
+      "aliases": [
+        "stunned-silence",
+        "stunned_silence"
+      ],
+      "trigger_phase": "neutral"
     }
   ]
 }

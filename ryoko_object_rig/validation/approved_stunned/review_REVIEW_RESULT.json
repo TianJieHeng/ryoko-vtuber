@@ -1,0 +1,58 @@
+{
+  "motion_checks": {
+    "checks": 872,
+    "display": "X11",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "motion_state_checks": {
+    "checks": 629,
+    "display": "headless",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "",
+    "status": "PASS",
+    "visual_capture": false
+  },
+  "state_checks": {
+    "checks": 34,
+    "failures": [],
+    "scope": "Five isolated state and reset checks, not visual fit or complete performance",
+    "status": "PASS",
+    "visual_capture": false
+  },
+  "production_base": "b5d2d30229d20829d21a85abb8df5e16938263f6",
+  "approval": "Pending user review",
+  "source_sheet_sha256": "4a256631c867855772cd169d2b13ac652adde74331ca8cea9a1d0fbbafa61823",
+  "profile_sha256": "8e61309448dc64964beac0a8491716623fceb6903ea2fd9e3cacc72a2d95730c",
+  "video_sha256": "1a105ee79d29b1c5b568b4dce4a594bd2acae28b47bfc9f2258a9fc6ae092ad4",
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "165588"
+    }
+  }
+}

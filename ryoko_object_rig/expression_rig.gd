@@ -259,9 +259,11 @@ func advance(delta)->bool:
         if performance_time<RESTART_SECONDS:
             var u=smoothstep(0.0,RESTART_SECONDS,performance_time)
             for key in CHANNELS:p[key]=lerpf(restart_pose.get(key,0),p[key],u)
-        _compose_mouth_bridge(p,target_trio)
         if has_scoped(restart_pose) and performance_time<RESTART_SECONDS:
             p=scoped_handoff(restart_pose,_sample(performance,performance_time),performance_time/RESTART_SECONDS)
+        # Scoped handoff blends ordinary channels too. Apply the mouth-domain
+        # bridge last so it cannot reintroduce opening with sealed width/kiss.
+        _compose_mouth_bridge(p,target_trio)
         performance_phase=phase_at(performance_time);_apply_performance_pose(p)
         if performance_time>=performance.duration:active_performance="";performance_phase="neutral_return";_clear_mouth_bridge();_apply_performance_pose(neutral_pose());_restore_auto_blink()
     elif release_time>=0:

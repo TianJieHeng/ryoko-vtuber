@@ -1,0 +1,21 @@
+# Approved Stunned silence integration
+
+EXP-063 is the 25th user-approved performance. The exact reviewed 4.0-second profile bytes are preserved, including historical UNAPPROVED metadata. RELEASE.json and APPROVED_INTEGRATION_STATUS.json are current approval authority. Aliases: stunned-silence and stunned_silence; neutral trigger phase. The user approved this exact subdued source approximation as-is.
+
+Base main: b5d2d30229d20829d21a85abb8df5e16938263f6. Reviewed backup: review/exp063-stunned-silence-v1 at 4888e86ef371994173712e761a8a7b04abdc548e, under unapproved/EXP-063-stunned-silence/review_v1. All backups and historical manifests remain intact. Reviewed MP4 SHA-256: 1a105ee79d29b1c5b568b4dce4a594bd2acae28b47bfc9f2258a9fc6ae092ad4.
+
+All 24 prior profiles, shaders, scenes and 184 PNGs remain byte-exact. The only runtime change is the mouth/scoped transition ordering repair below; standalone authored controls and representative prior24 pixels are preserved. Prior current manifests, status, tests and guard are archived under historical_capture_metadata/approved24_before_stunned.
+
+Fresh production-registry headless checks: EXP-063 1974, approved-pair 5562, recovering-composure 2208, sudden-insight 1818; zero failures. EXP-063 covers all 121 chronological samples, both aliases, fixed 1.0–2.4-second hold, restart/release, exact neutral reset, and continuous bidirectional handoffs with every registered profile. Focused native production parity passed 53 checks against ten approved-review checkpoints in bust/detail views, twenty exact RGBA pairs. Original native review passed 872 checks; original headless review passed 629.
+
+## Shared transition repair
+
+The initial full integration gate found four invalid EXP-063 to EXP-186 (Smug cat smile) handoff samples at 0.18, 0.21, 0.24 and 0.27 seconds. At 0.18, mouth_open was 0.34048 while sealed width was positive. The staged mouth-domain bridge was correct, but a later scoped_handoff replacement overwrote it. The repair moves the existing _compose_mouth_bridge call after scoped_handoff so the protected mouth fields are committed last. It changes transition behavior, not any approved profile or artwork. Original failure receipts and the targeted diagnostic are preserved under validation/approved_stunned/initial_handoff_failure.
+
+Expanded key/midpoint coverage also reproduced the same pre-existing transition bug from EXP-125 to EXP-186, which midpoint-only regression had missed. The repair covers both pairs.
+
+The control-only actual-runtime regression reports 13174374 assertions, comparing all25 standalone 30fps/keyframe trajectories with the archived previous runtime and exercising all25 source/target pairs at every source key and segment midpoint, including both sides of 0, 0.15 and 0.30-second boundaries, scope/mouth/bounds, non-mouth parity and release. It stubs rendering setters, so it is not visual evidence. Prior24 native peak comparison passed 122 checks: 24 representative maximum-control authored keys, both views, 48 exact RGBA pairs against the original runtime; its baseline capture passed 98 checks. These representative checks are not every prior frame or transition. Patched EXP-063 still matches all ten approved-review checkpoints.
+
+Whole-rig full-trajectory native parity NOT RUN. Continuous normal-speed observation and live pacing UNVERIFIED. Inherited EXP-114 pacing HOLD and EXP-148 limits remain unchanged. The source has much rounder, wider eyes and a more rounded mouth; the registered candidate retains the angular eye silhouette and flatter mouth, reading as mild silent surprise at full-bust scale. Tiny neutral lash/hair edge fragments remain inherited, not new regressions. The four-second timing is authored from static panels, not recovered source animation. No new anatomy, head/body acting, gaze, smile, spread or blush. Dummy-renderer custom_samplers diagnostic and existing runtime-image import/export warning are preserved in raw logs. The independent review is retained in validation/approved_stunned/review_REVIEW.md.
+
+No CI, paid resources, remote-machine execution or hardware flashing. Current source checks: python tools/verify_approved_integration.py and sha256sum -c APPROVED_SOURCE_FILES.sha256. The source guard checks inventory completeness, hashes, predecessor preservation, exact review identity and validation receipts.

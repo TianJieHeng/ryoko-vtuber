@@ -1,3 +1,7 @@
+# Approved shared rig: 25 performances
+
+EXP-063 Stunned silence is approved as-is and registered. See [current validation](APPROVED_STUNNED_INTEGRATION.md). Earlier release notes below retain historical scope.
+
 # Approved shared rig: 24 performances
 
 EXP-125 Sudden insight is approved and registered. See [current validation](APPROVED_INSIGHT_INTEGRATION.md). Earlier release notes below retain historical scope.

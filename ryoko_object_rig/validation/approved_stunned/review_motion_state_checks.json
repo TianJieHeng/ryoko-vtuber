@@ -1,0 +1,15 @@
+{
+  "checks": 629,
+  "display": "headless",
+  "duration": 4.0,
+  "failures": [],
+  "fps": 30,
+  "frames": 121,
+  "normal_speed_observed": false,
+  "production_registry_unchanged": true,
+  "renderer": "",
+  "status": "PASS",
+  "visual_capture": false,
+  "complete_receipt_sha256": "924e5700b0920218b4f5e2b23311af91bd90fd882329981658434334010d9a2b",
+  "complete_receipt_source": "review/exp063-stunned-silence-v1@4888e86ef371994173712e761a8a7b04abdc548e:unapproved/EXP-063-stunned-silence/review_v1/motion_state_checks.json"
+}

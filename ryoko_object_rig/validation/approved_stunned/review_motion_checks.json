@@ -1,0 +1,15 @@
+{
+  "checks": 872,
+  "display": "X11",
+  "duration": 4.0,
+  "failures": [],
+  "fps": 30,
+  "frames": 121,
+  "normal_speed_observed": false,
+  "production_registry_unchanged": true,
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "status": "PASS",
+  "visual_capture": true,
+  "complete_receipt_sha256": "0f18f980f667c2d5ffbbca323d66ec26294db157d98b1ce4609b87a975295bb9",
+  "complete_receipt_source": "review/exp063-stunned-silence-v1@4888e86ef371994173712e761a8a7b04abdc548e:unapproved/EXP-063-stunned-silence/review_v1/motion_checks.json"
+}

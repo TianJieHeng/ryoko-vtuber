@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "status": "user_approved_integrated_with_containing_commit",
   "approved_profile_ids": [
     "EXP-163",
@@ -25,25 +25,26 @@
     "EXP-197",
     "EXP-144",
     "EXP-040",
-    "EXP-125"
+    "EXP-125",
+    "EXP-063"
   ],
-  "approved_profile_count": 24,
+  "approved_profile_count": 25,
   "newly_approved_profile_ids": [
-    "EXP-125"
+    "EXP-063"
   ],
   "old_profile_bytes_preserved": true,
   "old_pngs_preserved": 184,
   "new_runtime_pngs": 0,
-  "focused_state_checks": 1768,
+  "focused_state_checks": 1974,
   "focused_state_status": "PASS",
   "native_visual_parity": "NOT RUN",
-  "native_reason": "Whole-rig parity not rerun; focused EXP-125 production parity passed.",
+  "native_reason": "Whole-rig full-trajectory parity not rerun; EXP-063 ten-checkpoint parity and all24 prior representative peak parity passed.",
   "native_diagnostic": null,
-  "headless_diagnostic": "Inherited dummy-renderer custom_samplers diagnostic retained in validation/approved_insight logs.",
+  "headless_diagnostic": "Inherited dummy-renderer custom_samplers diagnostic retained in validation/approved_stunned logs.",
   "normal_speed_playback_observed": false,
   "live_engine_pacing_measured": false,
   "ci_run": false,
-  "publication_authorization": "User approved Sudden insight preview and explicitly requested Git publication.",
+  "publication_authorization": "User approved the exact Stunned silence preview as-is, including the subdued source approximation; standing instruction authorizes Git publication.",
   "historical_20_status": "historical_capture_metadata/approved20_before_pair/APPROVED_INTEGRATION_STATUS.json",
   "inherited_exp114_qualification": {
     "smooth_realtime_pacing_status": "HOLD"
@@ -58,9 +59,16 @@
   "exp040_native_review_checks": 1333,
   "exp040_preapproval_headless_checks": 958,
   "exp040_integrated_native_parity": "PASS: 53 checks, 10 checkpoints, 20 exact RGBA pairs",
-  "focused_pair_regression_checks": 5426,
+  "focused_pair_regression_checks": 5562,
   "historical_23_status": "historical_capture_metadata/approved23_before_insight/APPROVED_INTEGRATION_STATUS.json",
   "exp125_native_review_checks": 788,
   "exp125_preapproval_headless_checks": 569,
-  "exp125_integrated_native_parity_checks": 53
+  "exp125_integrated_native_parity_checks": 53,
+  "historical_24_status": "historical_capture_metadata/approved24_before_stunned/APPROVED_INTEGRATION_STATUS.json",
+  "exp063_native_review_checks": 872,
+  "exp063_preapproval_headless_checks": 629,
+  "exp063_integrated_native_parity_checks": 53,
+  "shared_transition_repair": "Mouth-domain bridge applied after scoped handoff; original runtime archived. Prior24 profiles and artwork unchanged.",
+  "prior24_representative_native_parity_checks": 122,
+  "old_standalone_control_samples_preserved": 3197
 }

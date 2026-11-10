@@ -1,0 +1,13 @@
+{
+  "checks": 1818,
+  "display": "headless",
+  "duration": 3.6,
+  "failures": [],
+  "fps": 30,
+  "frames": 109,
+  "normal_speed_observed": false,
+  "production_registry_tested": true,
+  "renderer": "",
+  "status": "PASS",
+  "visual_capture": false
+}
