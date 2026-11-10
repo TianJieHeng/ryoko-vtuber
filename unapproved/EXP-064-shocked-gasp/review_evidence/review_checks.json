@@ -1,0 +1,614 @@
+{
+  "scope": "Independent static pixels, all native frame hashes, source preservation, and MP4 decode/order review. No live pacing, whole-runtime, lip-sync, approval or integration claim.",
+  "baseline": "approved27",
+  "baseline_commit": "816d77fafb6e016dc70f0802743d444e618f7b0f",
+  "baseline_file_count": 1124,
+  "baseline_png_count": 184,
+  "frozen_source_changes": {
+    "rig": [],
+    "baseline/ryoko_object_rig": []
+  },
+  "registry_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186",
+    "EXP-114",
+    "EXP-148",
+    "EXP-197",
+    "EXP-144",
+    "EXP-040",
+    "EXP-125",
+    "EXP-063",
+    "EXP-090",
+    "EXP-153"
+  ],
+  "candidate_in_production_registry": false,
+  "source_reference_hash_checks": {
+    "sheet": true,
+    "catalogue": true,
+    "panels": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "static": {
+    "bust": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      },
+      {
+        "pose": "anticipation",
+        "changed_pixels": 1373,
+        "difference_bbox_xyxy": [
+          215,
+          287,
+          345,
+          389
+        ],
+        "png_sha256": "a042ffbe188e82964e27d4fd8326785e0da601cab08ca78caa402ab72724cb51"
+      },
+      {
+        "pose": "intake",
+        "changed_pixels": 1813,
+        "difference_bbox_xyxy": [
+          215,
+          285,
+          345,
+          396
+        ],
+        "png_sha256": "4222c149cf79f632ca0248143a627b87c4e5145185d7d0029908dc476e895259"
+      },
+      {
+        "pose": "shocked_gasp",
+        "changed_pixels": 2031,
+        "difference_bbox_xyxy": [
+          215,
+          283,
+          345,
+          402
+        ],
+        "png_sha256": "10bc6088fbc538498660148b934fb37ad484fc47cf1ae3f1bdb60261d93f9b1f"
+      },
+      {
+        "pose": "residual_gasp",
+        "changed_pixels": 1830,
+        "difference_bbox_xyxy": [
+          215,
+          285,
+          345,
+          396
+        ],
+        "png_sha256": "3f1f405f099daf16d1c19c5c2d125944a4b8329918a886b387fbd60c66e77334"
+      },
+      {
+        "pose": "soften",
+        "changed_pixels": 1499,
+        "difference_bbox_xyxy": [
+          215,
+          286,
+          345,
+          390
+        ],
+        "png_sha256": "5e69ce5d8b9883c19ba085136993ee90c0b4af1ff3512d7d035022f17c0b76e5"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      }
+    ],
+    "detail": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      },
+      {
+        "pose": "anticipation",
+        "changed_pixels": 4734,
+        "difference_bbox_xyxy": [
+          50,
+          63,
+          310,
+          271
+        ],
+        "png_sha256": "3e25039640052037602a6332bdd366b5553f7b975ec6d571f312cd11f000d861"
+      },
+      {
+        "pose": "intake",
+        "changed_pixels": 7192,
+        "difference_bbox_xyxy": [
+          48,
+          59,
+          312,
+          285
+        ],
+        "png_sha256": "0f00d8cbebe730600f66636f6bc94957cef70be9796a84c49dc11f47a3742e62"
+      },
+      {
+        "pose": "shocked_gasp",
+        "changed_pixels": 8052,
+        "difference_bbox_xyxy": [
+          47,
+          54,
+          312,
+          297
+        ],
+        "png_sha256": "dfd54927e472c286bfad376093f196feadcad206859f245ca1054fb07bda7463"
+      },
+      {
+        "pose": "residual_gasp",
+        "changed_pixels": 7249,
+        "difference_bbox_xyxy": [
+          48,
+          59,
+          312,
+          285
+        ],
+        "png_sha256": "5d78680de0504fd291b2befb466a5f6e9594366cc56d4369801e56cb8ab92e03"
+      },
+      {
+        "pose": "soften",
+        "changed_pixels": 5659,
+        "difference_bbox_xyxy": [
+          48,
+          62,
+          311,
+          273
+        ],
+        "png_sha256": "483421778bf85b42797e36cf2b42bd2e320c93afbcf6b6191b2e03fdccebc37a"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      }
+    ]
+  },
+  "native_motion": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 7541,
+    "display": "X11",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "all_expected_121_frame_records": true,
+  "all_native_poses_match_headless": true,
+  "native_motion_all_242_rgba_hashes_match": true,
+  "motion_pixel_changes": {
+    "full": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1048,
+        1265,
+        1356,
+        1370,
+        1435,
+        1583,
+        1735,
+        1807,
+        1818,
+        1871,
+        1932,
+        1978,
+        2015,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2031,
+        2025,
+        2014,
+        2012,
+        1993,
+        1979,
+        1954,
+        1942,
+        1913,
+        1899,
+        1883,
+        1867,
+        1848,
+        1829,
+        1828,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1830,
+        1831,
+        1822,
+        1812,
+        1808,
+        1788,
+        1775,
+        1768,
+        1741,
+        1718,
+        1698,
+        1669,
+        1650,
+        1632,
+        1590,
+        1580,
+        1558,
+        1531,
+        1512,
+        1497,
+        1498,
+        1498,
+        1495,
+        1494,
+        1490,
+        1480,
+        1479,
+        1462,
+        1441,
+        1432,
+        1423,
+        1410,
+        1390,
+        1376,
+        1354,
+        1319,
+        1291,
+        1251,
+        1181,
+        1108,
+        1036,
+        940,
+        746,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        215,
+        283,
+        345,
+        402
+      ],
+      "neutral_bookends_identical": true,
+      "static_neutral_matches": true,
+      "all_pixels_outside_face_box_200_270_360_410_unchanged": true
+    },
+    "detail": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2881,
+        4077,
+        4559,
+        4727,
+        5203,
+        6084,
+        6799,
+        7155,
+        7220,
+        7393,
+        7628,
+        7856,
+        8005,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8052,
+        8050,
+        8033,
+        8008,
+        7966,
+        7897,
+        7836,
+        7771,
+        7698,
+        7621,
+        7522,
+        7443,
+        7368,
+        7319,
+        7277,
+        7253,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7249,
+        7243,
+        7228,
+        7204,
+        7177,
+        7123,
+        7072,
+        7009,
+        6907,
+        6819,
+        6723,
+        6590,
+        6489,
+        6379,
+        6254,
+        6148,
+        6036,
+        5933,
+        5846,
+        5766,
+        5706,
+        5663,
+        5654,
+        5639,
+        5626,
+        5598,
+        5535,
+        5472,
+        5415,
+        5332,
+        5256,
+        5160,
+        5066,
+        4969,
+        4825,
+        4681,
+        4529,
+        4355,
+        4109,
+        3848,
+        3371,
+        2789,
+        2046,
+        885,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        47,
+        54,
+        312,
+        297
+      ],
+      "neutral_bookends_identical": true,
+      "static_neutral_matches": true
+    }
+  },
+  "static_native_checks": {
+    "status": "PASS",
+    "checks": 496,
+    "failures": []
+  },
+  "static_vs_motion_exact": {
+    "neutral": {
+      "full": true,
+      "detail": true
+    },
+    "shocked_gasp": {
+      "full": true,
+      "detail": true
+    },
+    "neutral_return": {
+      "full": true,
+      "detail": true
+    }
+  },
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121",
+        "nb_read_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "173655"
+    }
+  },
+  "video_sha256": "dc12527791221935a345f3a94ddd6575b6929e2b44e293f9f37ff17eb6d4f80a",
+  "mp4_monotonic_30fps_pts": true,
+  "mp4_full_decode": {
+    "frames": 121,
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "mp4_source_panel_mae": {
+    "full": {
+      "mean": 1.2922044933166492,
+      "max": 1.296118691314554,
+      "frames": 121
+    },
+    "detail": {
+      "mean": 2.0369586585552493,
+      "max": 2.066363425925926,
+      "frames": 121
+    }
+  },
+  "mp4_order_checks": {
+    "method": "Every decoded RGB frame compared with same-index native full and detail panels; PTS inspected; nearest-frame face error exposes material reorder while acknowledging lossy compression and repeated/near-identical poses.",
+    "max_expected_face_mae": 2.237018585205078,
+    "max_expected_minus_best_face_mae": 0.0018219947814941406,
+    "selected": [
+      {
+        "frame": 0,
+        "expected_face_mae": 2.1483230590820312,
+        "best_face_mae": 2.1483230590820312,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 6,
+        "expected_face_mae": 2.1422982215881348,
+        "best_face_mae": 2.1422982215881348,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 10,
+        "expected_face_mae": 2.1825051307678223,
+        "best_face_mae": 2.1825051307678223,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 10
+      },
+      {
+        "frame": 14,
+        "expected_face_mae": 2.194451332092285,
+        "best_face_mae": 2.194451332092285,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 14
+      },
+      {
+        "frame": 27,
+        "expected_face_mae": 2.155010461807251,
+        "best_face_mae": 2.155010461807251,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 20
+      },
+      {
+        "frame": 60,
+        "expected_face_mae": 2.1363561153411865,
+        "best_face_mae": 2.1363561153411865,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 47
+      },
+      {
+        "frame": 89,
+        "expected_face_mae": 2.1539957523345947,
+        "best_face_mae": 2.1538095474243164,
+        "expected_minus_best": 0.0001862049102783203,
+        "best_matching_frame": 88
+      },
+      {
+        "frame": 111,
+        "expected_face_mae": 2.170724630355835,
+        "best_face_mae": 2.170724630355835,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 120,
+        "expected_face_mae": 2.1709110736846924,
+        "best_face_mae": 2.1709110736846924,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      }
+    ],
+    "all_frame_detail_file": "decoded_frame_order.json"
+  },
+  "independent_checks_pass": true,
+  "additional_rig_files_only_recorded_import_uid": true
+}

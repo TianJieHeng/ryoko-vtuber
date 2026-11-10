@@ -1,0 +1,12 @@
+{
+  "observer": "Parent rendering worker",
+  "method": "Sampled phases from default 1x ffplay playback at 1180x812 bust/detail viewing size.",
+  "observed": [
+    "Large open gasp and inner-brow rise.",
+    "Returned closed-mouth neutral.",
+    "Mouth action is clearly readable; eyes remain less round than source."
+  ],
+  "player_closed_verified": true,
+  "scope": "Sampled phases only, not continuous observation or live engine pacing.",
+  "approval": "pending"
+}

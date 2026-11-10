@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "approval": "pending",
+  "expression": "EXP-064",
+  "independent_checks_pass": true,
+  "native_static_checks": 496,
+  "native_motion_checks": 7541,
+  "native_frame_hashes_verified": 242,
+  "decoded_frames": 121,
+  "baseline_files_unchanged": 1124,
+  "baseline_pngs_unchanged": 184,
+  "registry_profiles": 27,
+  "mp4_sha256": "dc12527791221935a345f3a94ddd6575b6929e2b44e293f9f37ff17eb6d4f80a",
+  "native_logs": {
+    "capture.log": {
+      "errors": [],
+      "warnings": [
+        "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+        "WARNING: Loaded resource as image file, this will not work on export: 'res://parts/caught_staring/uneasy_clear_parting.png'. Instead, import the image file as an Image resource and load it normally as a resource."
+      ]
+    },
+    "motion_native.log": {
+      "errors": [],
+      "warnings": [
+        "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+        "WARNING: Loaded resource as image file, this will not work on export: 'res://parts/caught_staring/uneasy_clear_parting.png'. Instead, import the image file as an Image resource and load it normally as a resource."
+      ]
+    }
+  },
+  "visual_findings": [
+    "Open-gasp peak and residual opening are visible at bust size.",
+    "Whole-eye oval expansion, jaw motion and exact tall painted oral anatomy are unsupported.",
+    "Inherited lash/hair edge seams remain; no clear new mouth break."
+  ],
+  "scope": "Independent static/encoded pixels and numerical/frame evidence, not continuous playback observation or user approval."
+}

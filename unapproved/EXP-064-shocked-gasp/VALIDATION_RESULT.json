@@ -1,0 +1,36 @@
+{
+  "state_checks.json": {
+    "status": "PASS",
+    "checks": 482,
+    "failures": [],
+    "visual_capture": false,
+    "baseline": "approved27",
+    "baseline_profile_count": 27
+  },
+  "motion_state_checks.json": {
+    "status": "PASS",
+    "checks": 7298,
+    "failures": [],
+    "visual_capture": false,
+    "frames": 121,
+    "baseline": "approved27",
+    "baseline_profile_count": 27
+  },
+  "capture/checks.json": {
+    "status": "PASS",
+    "checks": 496,
+    "failures": [],
+    "visual_capture": true,
+    "baseline": "approved27",
+    "baseline_profile_count": 27
+  },
+  "motion_checks.json": {
+    "status": "PASS",
+    "checks": 7541,
+    "failures": [],
+    "visual_capture": true,
+    "frames": 121,
+    "baseline": "approved27",
+    "baseline_profile_count": 27
+  }
+}
