@@ -1,0 +1,138 @@
+{
+  "id": "EXP-123",
+  "title": "Puzzled",
+  "duration": 4.0,
+  "status": "UNAPPROVED shared-rig preparation v1; native visual review pending",
+  "intent": "One inner brow rises while the other lowers; eyes narrow unevenly; lips shift into a small sideways pout.",
+  "scope": "Existing outer-anchored screen-left inner-brow lift, opposing lowered screen-right brow, uneven ordinary lid closure, sealed purse and small screen-right sealed-width bias only. Width biases the outline but cannot translate the whole mouth or reproduce the painted oblique pout. No new anatomy, art, shader, runtime, gaze, smile, speech, head or body movement.",
+  "timing_origin": "New four-second interpretation of the inspected nine-panel EXP-123 sheet, not recovered motion. A questioning inner-brow cue precedes the uneven squint and side-biased pout; a held peak gives way to a small rechecking narrowing, then the lip bias releases before the brows. Sheet head tilt is omitted. Unlike EXP-129, there is no alternating brow lift or upward glance; unlike EXP-050, the inner lift and unilateral width remain intentionally asymmetric.",
+  "interpolation": "Unchanged shared smoothstep; eight static anchors, eleven timeline keys, exact neutral bookends, in-memory registration only.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.55,
+      "phase": "notice",
+      "values": {
+        "brow_screen_left": -0.04,
+        "brow_screen_right": -0.1,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": -0.06,
+        "brow_inner_lift_screen_left": 0.1,
+        "blink_L": 0.04,
+        "blink_R": 0.02,
+        "mouth_purse": 0,
+        "mouth_width_screen_right": 0
+      }
+    },
+    {
+      "time": 0.95,
+      "phase": "question",
+      "values": {
+        "brow_screen_left": -0.1,
+        "brow_screen_right": -0.24,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": -0.15,
+        "brow_inner_lift_screen_left": 0.22,
+        "blink_L": 0.14,
+        "blink_R": 0.06,
+        "mouth_purse": 0.24,
+        "mouth_width_screen_right": 0.06
+      }
+    },
+    {
+      "time": 1.4,
+      "phase": "puzzled",
+      "values": {
+        "brow_screen_left": -0.16,
+        "brow_screen_right": -0.34,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": -0.24,
+        "brow_inner_lift_screen_left": 0.3,
+        "blink_L": 0.28,
+        "blink_R": 0.11,
+        "mouth_purse": 0.58,
+        "mouth_width_screen_right": 0.2
+      }
+    },
+    {
+      "time": 1.9,
+      "phase": "puzzled",
+      "values": {
+        "brow_screen_left": -0.16,
+        "brow_screen_right": -0.34,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": -0.24,
+        "brow_inner_lift_screen_left": 0.3,
+        "blink_L": 0.28,
+        "blink_R": 0.11,
+        "mouth_purse": 0.58,
+        "mouth_width_screen_right": 0.2
+      }
+    },
+    {
+      "time": 2.3,
+      "phase": "reconsider",
+      "values": {
+        "brow_screen_left": -0.16,
+        "brow_screen_right": -0.4,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": -0.3,
+        "brow_inner_lift_screen_left": 0.26,
+        "blink_L": 0.32,
+        "blink_R": 0.15,
+        "mouth_purse": 0.52,
+        "mouth_width_screen_right": 0.16
+      }
+    },
+    {
+      "time": 2.85,
+      "phase": "release_pout",
+      "values": {
+        "brow_screen_left": -0.1,
+        "brow_screen_right": -0.22,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": -0.14,
+        "brow_inner_lift_screen_left": 0.18,
+        "blink_L": 0.14,
+        "blink_R": 0.06,
+        "mouth_purse": 0.08,
+        "mouth_width_screen_right": 0
+      }
+    },
+    {
+      "time": 3.25,
+      "phase": "settle",
+      "values": {
+        "brow_screen_left": -0.03,
+        "brow_screen_right": -0.06,
+        "brow_tilt_screen_left": 0,
+        "brow_tilt_screen_right": -0.04,
+        "brow_inner_lift_screen_left": 0.05,
+        "blink_L": 0.04,
+        "blink_R": 0.02,
+        "mouth_purse": 0,
+        "mouth_width_screen_right": 0
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

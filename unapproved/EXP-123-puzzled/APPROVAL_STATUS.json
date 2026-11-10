@@ -1,0 +1,14 @@
+{
+  "id": "EXP-123",
+  "status": "UNAPPROVED",
+  "user_approval": null,
+  "review_profile_sha256": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+  "review_video": "Puzzled_review_v1.mp4",
+  "review_video_sha256": "5df48deb24bc3a86084799084fd65a004bd7b4af4459ed1eea6d838225930db3",
+  "purpose": "Delivered preview backup only. Await user approval before production integration.",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "production_registry_changed": false,
+  "main_written_by_this_task": false,
+  "qualification": "Subtle sideways pout only; no whole-mouth translation or diagonal source contour. No head tilt. Intermittent playback samples do not establish continuous normal-speed observation.",
+  "ci_run": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "RESTORED_EXACT_FROZEN_BYTES",
+  "path": "native_launcher/project.godot",
+  "before_sha256": "e319ef9543ecb2a3e4c6ae63d96c22cab1b212e93532b3f9519ed0127b18ac14",
+  "after_sha256": "021475e8c28f882460ca070520dcdb7f2b1f5e3fe919aec354d9105ed99d5dfd",
+  "frozen_sha256": "021475e8c28f882460ca070520dcdb7f2b1f5e3fe919aec354d9105ed99d5dfd",
+  "changed_bytes_archive": "puzzled_work/review_evidence/launcher_import_audit/project_editor_saved_e319ef9543ec.godot",
+  "permitted_scope": "Parent-directed configuration-only restoration after capture worker confirmed Puzzled game/editor stopped and exited. No runtime, candidate, art, probe, or captured evidence changes.",
+  "review_input_freeze_unchanged_sha256": "d715fd00b418e2f4f60e886477e95844433f1c5312460fd090bfe4d63406d6ef"
+}

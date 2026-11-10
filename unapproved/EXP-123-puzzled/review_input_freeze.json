@@ -1,0 +1,20 @@
+{
+  "candidate": "EXP-123",
+  "status": "FROZEN FOR INDEPENDENT SOURCE REVIEW; native capture pending",
+  "files": {
+    "BASELINE_FREEZE.json": "0510c22f0634c2129c49626f3eab8070fb22bd457901a3817c161d6610c4d8f8",
+    "EXP-123.json": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+    "plan.json": "e0fe9f2a4892f0a6af429a13f10df639b6ca844f1668a2a9d82be33f61379adf",
+    "SOURCE_REFERENCE.json": "b2723291bb0ae03c4efe10f5f40c5d70f72aad25ac74a1310653575acd6810ce",
+    "SOURCE_CATALOGUE_ENTRY.json": "e364774d6b4d2710c253bffeb3ee74efbf8f03863d97fd942bb41c14c2ae0778",
+    "check_and_capture.gd": "09ab76a83ff73b098d35e4ce2d8b3aff915a12688595d11175ec597807e2e37e",
+    "render_motion.gd": "9e0586c76f0b08f9fc5bb7029593249579d5407c0f2eb227920d25bbe824c7fb",
+    "native_launcher/project.godot": "021475e8c28f882460ca070520dcdb7f2b1f5e3fe919aec354d9105ed99d5dfd",
+    "native_launcher/static.gd": "a9b4ae62c8454c8d6582fa9011b5505c401e023185fd35af2a4a34c1e1d48713",
+    "native_launcher/motion.gd": "d1f576e11abe3efc73e0eb33d32ad5f955ba8cd2c75bc00665b22d882dfdf343",
+    "native_launcher/launcher.gd": "d36af8b406da10c4e46040e8747a17b30caea9c2edde8d2881dee644a8bc30d7",
+    "native_launcher/launcher.tscn": "9c96cb9306511346b8ce702a891633d5fd343f681073ab3ea6d311a206002686"
+  },
+  "native_capture_executed": false,
+  "approval": "UNAPPROVED"
+}

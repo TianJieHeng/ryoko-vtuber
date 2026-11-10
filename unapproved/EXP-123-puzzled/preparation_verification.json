@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_files": 999,
+  "source_png_files": 184,
+  "approved_profiles": 36,
+  "production_and_copied_pinned_files_unchanged": true,
+  "reference_art_and_catalogue_unchanged": true,
+  "checks": {
+    "state_checks.json": 1494,
+    "motion_state_checks.json": 8902
+  },
+  "independent_timeline_samples": 121,
+  "max_smoothstep_error": 1.4879084964114497e-08,
+  "lifecycle_interruption_points": 9,
+  "lifecycle_assertions": 36,
+  "compared_profiles": 39,
+  "native_capture": "PENDING. Separate copied GUI launcher prepared; no native renderer, UI, display server or socket workaround was invoked.",
+  "candidate_approval": "UNAPPROVED",
+  "publication": "No registry changes or publication",
+  "extra_manifests": {
+    "APPROVED_SOURCE_MANIFEST.json": "ed3887e536817b7bcd049287e5bc8ad9e94342abb330be577047dad6cc67d64f"
+  }
+}

@@ -1,0 +1,825 @@
+{
+  "baseline": "approved36",
+  "baseline_profile_count": 36,
+  "checks": 1494,
+  "failures": [
+    "notice actual outer-anchor brow travel screen_left",
+    "notice actual rigid upper-lash travel screen_left",
+    "notice iris uses matching closure screen_left",
+    "notice actual rigid upper-lash travel screen_right",
+    "notice iris uses matching closure screen_right",
+    "question actual outer-anchor brow travel screen_left",
+    "question actual rigid upper-lash travel screen_left",
+    "question iris uses matching closure screen_left",
+    "question actual rigid upper-lash travel screen_right",
+    "question iris uses matching closure screen_right",
+    "puzzled actual rigid upper-lash travel screen_left",
+    "puzzled iris uses matching closure screen_left",
+    "puzzled actual rigid upper-lash travel screen_right",
+    "puzzled iris uses matching closure screen_right",
+    "reconsider actual outer-anchor brow travel screen_left",
+    "reconsider actual rigid upper-lash travel screen_left",
+    "reconsider iris uses matching closure screen_left",
+    "reconsider actual rigid upper-lash travel screen_right",
+    "reconsider iris uses matching closure screen_right",
+    "release_pout actual rigid upper-lash travel screen_left",
+    "release_pout iris uses matching closure screen_left",
+    "release_pout actual rigid upper-lash travel screen_right",
+    "release_pout iris uses matching closure screen_right",
+    "settle actual rigid upper-lash travel screen_left",
+    "settle iris uses matching closure screen_left",
+    "settle actual rigid upper-lash travel screen_right",
+    "settle iris uses matching closure screen_right"
+  ],
+  "production_registry_unchanged": true,
+  "records": [
+    {
+      "actual_mouth_side_delta_source_px": [
+        0.0,
+        0.0
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ],
+          "rotation_degrees": 0.0
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ],
+          "rotation_degrees": 0.0
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.0,
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_right": {
+          "closure": 0.0,
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 4.0
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 39.5
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 75.0
+        }
+      ],
+      "name": "neutral",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.0,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.0,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.0,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    },
+    {
+      "actual_mouth_side_delta_source_px": [
+        0.0,
+        0.0
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.1,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.33526611328125,
+            -1.12579345703125
+          ],
+          "rotation_degrees": -2.60000008658115
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            1.0
+          ],
+          "rotation_degrees": -0.479999974937403
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.0399999991059303,
+          "pivot_delta_source_px": [
+            0.0,
+            0.720001220703125
+          ]
+        },
+        "screen_right": {
+          "closure": 0.0199999995529652,
+          "pivot_delta_source_px": [
+            0.0,
+            1.44000244140625
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 4.0
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 39.5
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 75.0
+        }
+      ],
+      "name": "notice",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.0399999991059303,
+        "blink_R": 0.0199999995529652,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.100000001490116,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": -0.0399999991059303,
+        "brow_screen_right": -0.100000001490116,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": -0.0599999986588955,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.0,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.0,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    },
+    {
+      "actual_mouth_side_delta_source_px": [
+        3.36,
+        -2.16000002682209
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.22,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.645721435546875,
+            -2.37445068359375
+          ],
+          "rotation_degrees": -5.71999997703512
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            2.39999389648438
+          ],
+          "rotation_degrees": -1.19999999070436
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.140000000596046,
+          "pivot_delta_source_px": [
+            0.0,
+            2.16000366210938
+          ]
+        },
+        "screen_right": {
+          "closure": 0.0599999986588955,
+          "pivot_delta_source_px": [
+            0.0,
+            5.04000854492188
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 2.88,
+          "upper_y": 2.88,
+          "x": 4.0
+        },
+        {
+          "lower_y": 0.96,
+          "upper_y": 0.96,
+          "x": 39.5
+        },
+        {
+          "lower_y": 2.88,
+          "upper_y": 2.88,
+          "x": 75.0
+        }
+      ],
+      "name": "question",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.140000000596046,
+        "blink_R": 0.0599999986588955,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.219999998807907,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": -0.100000001490116,
+        "brow_screen_right": -0.239999994635582,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": -0.150000005960464,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.24,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.0599999986588955,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    },
+    {
+      "actual_mouth_side_delta_source_px": [
+        8.12,
+        -4.11999994039535
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.3,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.796600341796875,
+            -3.01507568359375
+          ],
+          "rotation_degrees": -7.80000004630005
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            3.39999389648438
+          ],
+          "rotation_degrees": -1.91999989974961
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.280000001192093,
+          "pivot_delta_source_px": [
+            0.0,
+            3.95999145507812
+          ]
+        },
+        "screen_right": {
+          "closure": 0.109999999403954,
+          "pivot_delta_source_px": [
+            0.0,
+            10.0799865722656
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 6.96,
+          "upper_y": 6.96,
+          "x": 4.0
+        },
+        {
+          "lower_y": 2.32,
+          "upper_y": 2.32,
+          "x": 39.5
+        },
+        {
+          "lower_y": 6.96,
+          "upper_y": 6.96,
+          "x": 75.0
+        }
+      ],
+      "name": "puzzled",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.280000001192093,
+        "blink_R": 0.109999999403954,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.300000011920929,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": -0.159999996423721,
+        "brow_screen_right": -0.340000003576279,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": -0.239999994635582,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.58,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.200000002980232,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    },
+    {
+      "actual_mouth_side_delta_source_px": [
+        7.28,
+        -4.08000007152557
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.26,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.726806640625,
+            -2.39407348632812
+          ],
+          "rotation_degrees": -6.75999958478076
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            4.0
+          ],
+          "rotation_degrees": -2.39999998140872
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.319999992847443,
+          "pivot_delta_source_px": [
+            0.0,
+            5.39999389648438
+          ]
+        },
+        "screen_right": {
+          "closure": 0.150000005960464,
+          "pivot_delta_source_px": [
+            0.0,
+            11.5199890136719
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 6.24,
+          "upper_y": 6.24,
+          "x": 4.0
+        },
+        {
+          "lower_y": 2.08,
+          "upper_y": 2.08,
+          "x": 39.5
+        },
+        {
+          "lower_y": 6.24,
+          "upper_y": 6.24,
+          "x": 75.0
+        }
+      ],
+      "name": "reconsider",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.319999992847443,
+        "blink_R": 0.150000005960464,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.259999990463257,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": -0.159999996423721,
+        "brow_screen_right": -0.400000005960464,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": -0.300000011920929,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.52,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.159999996423721,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    },
+    {
+      "actual_mouth_side_delta_source_px": [
+        1.12,
+        -1.12
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.18,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.553436279296875,
+            -1.75637817382812
+          ],
+          "rotation_degrees": -4.68000036928949
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            2.20001220703125
+          ],
+          "rotation_degrees": -1.12000001266841
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.140000000596046,
+          "pivot_delta_source_px": [
+            0.0,
+            2.16000366210938
+          ]
+        },
+        "screen_right": {
+          "closure": 0.0599999986588955,
+          "pivot_delta_source_px": [
+            0.0,
+            5.04000854492188
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 0.96,
+          "upper_y": 0.96,
+          "x": 4.0
+        },
+        {
+          "lower_y": 0.32,
+          "upper_y": 0.32,
+          "x": 39.5
+        },
+        {
+          "lower_y": 0.96,
+          "upper_y": 0.96,
+          "x": 75.0
+        }
+      ],
+      "name": "release_pout",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.140000000596046,
+        "blink_R": 0.0599999986588955,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.180000007152557,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": -0.100000001490116,
+        "brow_screen_right": -0.219999998807907,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": -0.140000000596046,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.08,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.0,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    },
+    {
+      "actual_mouth_side_delta_source_px": [
+        0.0,
+        0.0
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.05,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.176300048828125,
+            -0.46099853515625
+          ],
+          "rotation_degrees": -1.30000004329058
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            0.600006103515625
+          ],
+          "rotation_degrees": -0.319999992185077
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.0399999991059303,
+          "pivot_delta_source_px": [
+            0.0,
+            0.720001220703125
+          ]
+        },
+        "screen_right": {
+          "closure": 0.0199999995529652,
+          "pivot_delta_source_px": [
+            0.0,
+            1.44000244140625
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 4.0
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 39.5
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 75.0
+        }
+      ],
+      "name": "settle",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.0399999991059303,
+        "blink_R": 0.0199999995529652,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.0500000007450581,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": -0.0299999993294477,
+        "brow_screen_right": -0.0599999986588955,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": -0.0399999991059303,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.0,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.0,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    },
+    {
+      "actual_mouth_side_delta_source_px": [
+        0.0,
+        0.0
+      ],
+      "brow_geometry": {
+        "screen_left": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            466.549987792969,
+            452.350006103516
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ],
+          "rotation_degrees": 0.0
+        },
+        "screen_right": {
+          "inner_lift": 0.0,
+          "outer_anchor": [
+            646.226989746094,
+            453.773010253906
+          ],
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ],
+          "rotation_degrees": 0.0
+        }
+      },
+      "lash_geometry": {
+        "screen_left": {
+          "closure": 0.0,
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_right": {
+          "closure": 0.0,
+          "pivot_delta_source_px": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "lip_contour_offsets": [
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 4.0
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 39.5
+        },
+        {
+          "lower_y": 0.0,
+          "upper_y": 0.0,
+          "x": 75.0
+        }
+      ],
+      "name": "neutral_return",
+      "pose": {
+        "aversion_px": 0.0,
+        "blink_L": 0.0,
+        "blink_R": 0.0,
+        "blush_intensity": 0.0,
+        "brow_inner_lift_screen_left": 0.0,
+        "brow_inner_lift_screen_right": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "eye_smile_L": 0.0,
+        "eye_smile_R": 0.0,
+        "gaze_down_extra": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_corner_lift_screen_left": 0.0,
+        "mouth_corner_lift_screen_right": 0.0,
+        "mouth_kiss": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_open": 0.0,
+        "mouth_oral_lift": 0.0,
+        "mouth_purse": 0.0,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_width_screen_left": 0.0,
+        "mouth_width_screen_right": 0.0,
+        "opening_px": 0.0,
+        "uneasy_weight": 0.0
+      }
+    }
+  ],
+  "scope": "Eight Puzzled anchors with actual anchored-inner-brow, uneven upper-lash and asymmetric sealed-purse geometry checks. State and geometry do not establish native visual fidelity, normal-speed observation or approval.",
+  "status": "FAIL",
+  "study_poses": 8,
+  "visual_capture": false
+}

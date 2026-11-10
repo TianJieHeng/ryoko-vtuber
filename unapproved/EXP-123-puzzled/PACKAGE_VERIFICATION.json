@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Pinned local bootstrap; portable numerical/source and script-parse checks; unchanged historical native evidence read-only rerun. No rendering, encoding or UI.",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "baseline_files_verified": 999,
+  "baseline_pngs_verified": 184,
+  "registered_profiles": 36,
+  "candidate_excluded_from_registry": true,
+  "bootstrap_network_disabled": true,
+  "nine_reference_panels_verified": true,
+  "comparison_profiles": 39,
+  "numeric_checks": {
+    "state": 1494,
+    "motion": 8902
+  },
+  "all_numerical_records_match_original": true,
+  "native_launcher_parser_checks": [
+    "static",
+    "motion",
+    "launcher"
+  ],
+  "python_syntax": "PASS",
+  "historical_unit_tests": 29,
+  "portable_unit_tests": 29,
+  "portable_tests_adaptation": "Only isolated synthetic fixture construction: use relocated files/comparison snapshots and pin their new fixture hash. Unchanged assertions, negative frozen-identity guard still required. No changes to historical validator or inputs.",
+  "initial_portable_legacy_suite": "26/29 passed, three failed due historical freeze/sibling paths; original failure preserved, corrected fixture adapter passes all 29.",
+  "independent_native_decode_rerun_checks": 73,
+  "independent_native_decode_rerun": "PASS",
+  "reviewed_profile_and_mp4_bytes_unchanged": true,
+  "all_source_artifacts_unchanged": true,
+  "historical_validator_scope": "Exact historical input freeze; not a validator for newly relocated native capture.",
+  "ci_run": false,
+  "ui_used_by_this_task": false,
+  "remote_execution": false
+}

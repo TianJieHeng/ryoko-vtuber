@@ -1,0 +1,19 @@
+{
+  "status": "READY_FOR_INDEPENDENT_SOURCE_REVIEW",
+  "candidate": "EXP-123",
+  "approval": "UNAPPROVED",
+  "native_capture": "PENDING",
+  "normal_speed_review": "PENDING",
+  "static_assertions": 1494,
+  "motion_assertions": 8902,
+  "frame_samples": 121,
+  "lifecycle_interruption_points": 9,
+  "encoder_guard_tests": 13,
+  "encoder_pending_guard": "PASS: refused encoding without native receipts",
+  "frozen_inputs_unchanged": true,
+  "source_files_unchanged": 999,
+  "source_png_files_unchanged": 184,
+  "registry_profiles_unchanged": 36,
+  "launcher": "native_launcher/project.godot",
+  "notes": "No native UI/rendering, display servers, socket workarounds, production edits or publication."
+}

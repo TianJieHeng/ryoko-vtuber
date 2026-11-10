@@ -1,0 +1,1756 @@
+{
+  "candidate": "EXP-123",
+  "approval": "UNAPPROVED; isolated evidence review only",
+  "scope": "Source preservation, independent pose math, all native RGBA frames, dimensions, neutral/body pixels, complete MP4 decode and frame order. No renderer or UI is invoked.",
+  "normal_speed_continuous_observation": false,
+  "perceptual_source_fidelity_or_distinction_proven": false,
+  "checks": {
+    "all_999_pinned_source_files_unchanged_in_both_roots": true,
+    "approved_manifest_unchanged": true,
+    "approved36_registry_unchanged_candidate_absent": true,
+    "expected_review_input_freeze_identity": true,
+    "reviewed_candidate_and_capture_inputs_unchanged": false,
+    "launcher_only_expected_project_override": true,
+    "launcher_present_extra_manifests_match": true,
+    "source_sheet_hash": true,
+    "source_catalogue_hash": true,
+    "source_sheet_dimensions": true,
+    "exact_source_catalogue_entry": true,
+    "exact_nine_source_panels": true,
+    "source_panel_hashes": true,
+    "source_panels_are_exact_sheet_crops": true,
+    "candidate_id_duration_and_unapproved": true,
+    "ordered_eleven_timeline_keys": true,
+    "eight_unique_static_anchors": true,
+    "static_state_receipt_pass": true,
+    "motion_state_receipt_pass": true,
+    "static_record_order": true,
+    "independent_static_poses_and_geometry": true,
+    "headless_receipts_tied_to_frozen_inputs": true,
+    "headless_receipts_correct_baseline": true,
+    "headless_receipts_do_not_invent_native_pixels": true,
+    "headless_lifecycle_receipt": true,
+    "headless_pose_has_exact_shared_channels": true,
+    "candidate_uses_only_allowed_channels": true,
+    "eight_anchors_are_exact_key_values": true,
+    "independent_39_profile_nonduplication": true,
+    "headless_independent_timeline_and_intent": true,
+    "native_static_receipt_pass": true,
+    "native_static_receipt_tied_to_frozen_inputs": true,
+    "native_static_records_equal_headless": true,
+    "exact_16_native_static_filenames": true,
+    "static_body_unchanged_neutral": true,
+    "static_body_unchanged_notice": true,
+    "static_body_unchanged_question": true,
+    "static_body_unchanged_puzzled": true,
+    "static_body_unchanged_reconsider": true,
+    "static_body_unchanged_release_pout": true,
+    "static_body_unchanged_settle": true,
+    "static_body_unchanged_neutral_return": true,
+    "static_neutral_exact_full": true,
+    "static_neutral_exact_detail": true,
+    "native_motion_receipt_pass": true,
+    "native_motion_receipt_tied_to_frozen_inputs": true,
+    "native_lifecycle_receipt": true,
+    "native_independent_timeline_and_intent": true,
+    "all_native_poses_match_headless": true,
+    "exact_121_native_filenames_full": true,
+    "native_neutral_holds_exact_full": true,
+    "nontrivial_native_expression_full": true,
+    "sustained_peak_pixels_full": true,
+    "all_native_body_pixels_fixed": true,
+    "static_motion_exact_full_neutral": true,
+    "static_motion_exact_full_puzzled": true,
+    "static_motion_exact_full_reconsider": true,
+    "static_motion_exact_full_neutral_return": true,
+    "exact_121_native_filenames_detail": true,
+    "native_neutral_holds_exact_detail": true,
+    "nontrivial_native_expression_detail": true,
+    "sustained_peak_pixels_detail": true,
+    "static_motion_exact_detail_neutral": true,
+    "static_motion_exact_detail_puzzled": true,
+    "static_motion_exact_detail_reconsider": true,
+    "static_motion_exact_detail_neutral_return": true,
+    "all_242_native_rgba_hashes_match": true,
+    "video_encoding_and_duration": true,
+    "video_geometry_and_count": true,
+    "mp4_all_monotonic_30fps_pts": true,
+    "mp4_complete_clean_decode": true,
+    "mp4_no_material_frame_reorder": true,
+    "mp4_same_index_native_panel_similarity": true
+  },
+  "pending": [],
+  "failures": [
+    "reviewed_candidate_and_capture_inputs_unchanged"
+  ],
+  "video_path": "/workspace/scratch/42f2baf55663/puzzled_work/Puzzled_review_v1.mp4",
+  "baseline": "approved36",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "baseline_file_count": 999,
+  "baseline_png_count": 184,
+  "frozen_source_changes": {
+    "/workspace/scratch/42f2baf55663/puzzled_work/rig": [],
+    "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig": []
+  },
+  "extra_manifest_hash_checks": {
+    "/workspace/scratch/42f2baf55663/puzzled_work/rig": {
+      "APPROVED_SOURCE_MANIFEST.json": true
+    },
+    "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig": {
+      "APPROVED_SOURCE_MANIFEST.json": true
+    }
+  },
+  "registry_ids": {
+    "/workspace/scratch/42f2baf55663/puzzled_work/rig": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001",
+      "EXP-006",
+      "EXP-107",
+      "EXP-007",
+      "EXP-002",
+      "EXP-152",
+      "EXP-160",
+      "EXP-177",
+      "EXP-164",
+      "EXP-021",
+      "EXP-158",
+      "EXP-181",
+      "EXP-102",
+      "EXP-116",
+      "EXP-050",
+      "EXP-186",
+      "EXP-114",
+      "EXP-148",
+      "EXP-197",
+      "EXP-144",
+      "EXP-040",
+      "EXP-125",
+      "EXP-063",
+      "EXP-090",
+      "EXP-153",
+      "EXP-139",
+      "EXP-174",
+      "EXP-067",
+      "EXP-093",
+      "EXP-003",
+      "EXP-043",
+      "EXP-064",
+      "EXP-004",
+      "EXP-042"
+    ],
+    "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig": [
+      "EXP-163",
+      "EXP-005",
+      "EXP-001",
+      "EXP-006",
+      "EXP-107",
+      "EXP-007",
+      "EXP-002",
+      "EXP-152",
+      "EXP-160",
+      "EXP-177",
+      "EXP-164",
+      "EXP-021",
+      "EXP-158",
+      "EXP-181",
+      "EXP-102",
+      "EXP-116",
+      "EXP-050",
+      "EXP-186",
+      "EXP-114",
+      "EXP-148",
+      "EXP-197",
+      "EXP-144",
+      "EXP-040",
+      "EXP-125",
+      "EXP-063",
+      "EXP-090",
+      "EXP-153",
+      "EXP-139",
+      "EXP-174",
+      "EXP-067",
+      "EXP-093",
+      "EXP-003",
+      "EXP-043",
+      "EXP-064",
+      "EXP-004",
+      "EXP-042"
+    ]
+  },
+  "review_input_changes": [
+    "native_launcher/project.godot"
+  ],
+  "launcher_pinned_changes": [
+    "project.godot"
+  ],
+  "launcher_extra_manifests": {
+    "APPROVED_SOURCE_MANIFEST.json": "matching"
+  },
+  "source_panel_hash_checks": {
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp01_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp02_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp03_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp04_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp05_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp06_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp07_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp08_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp09_v001.png": true
+  },
+  "source_panel_lossless_crop_checks": {
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp01_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp02_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp03_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp04_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp05_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp06_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp07_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp08_v001.png": true,
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp09_v001.png": true
+  },
+  "independent_static_geometry": {
+    "assertions": {
+      "exact_eight_static_records": true,
+      "static_pose_values": true,
+      "anchored_brow_geometry": true,
+      "blink_sides_and_lash_travel": true,
+      "sealed_endpoint_width": true,
+      "sealed_purse_contour": true,
+      "horizontal_mapping_monotonic": true
+    },
+    "mouth_approximation": [
+      {
+        "pose": "neutral",
+        "endpoint_deltas_source_px": [
+          0.0,
+          0.0
+        ],
+        "endpoint_midpoint_bias_source_px": 0.0,
+        "endpoint_midpoint_bias_bust_px": 0.0,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 71.0,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      },
+      {
+        "pose": "notice",
+        "endpoint_deltas_source_px": [
+          0.0,
+          0.0
+        ],
+        "endpoint_midpoint_bias_source_px": 0.0,
+        "endpoint_midpoint_bias_bust_px": 0.0,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 71.0,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      },
+      {
+        "pose": "question",
+        "endpoint_deltas_source_px": [
+          3.36,
+          -2.1600000268220896
+        ],
+        "endpoint_midpoint_bias_source_px": 0.5999999865889551,
+        "endpoint_midpoint_bias_bust_px": 0.293999993428588,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 65.47999997317791,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      },
+      {
+        "pose": "puzzled",
+        "endpoint_deltas_source_px": [
+          8.12,
+          -4.11999994039536
+        ],
+        "endpoint_midpoint_bias_source_px": 2.0000000298023197,
+        "endpoint_midpoint_bias_bust_px": 0.9800000146031367,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 58.76000005960464,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      },
+      {
+        "pose": "reconsider",
+        "endpoint_deltas_source_px": [
+          7.28,
+          -4.08000007152558
+        ],
+        "endpoint_midpoint_bias_source_px": 1.59999996423721,
+        "endpoint_midpoint_bias_bust_px": 0.7839999824762329,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 59.639999928474424,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      },
+      {
+        "pose": "release_pout",
+        "endpoint_deltas_source_px": [
+          1.12,
+          -1.12
+        ],
+        "endpoint_midpoint_bias_source_px": 0.0,
+        "endpoint_midpoint_bias_bust_px": 0.0,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 68.75999999999999,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      },
+      {
+        "pose": "settle",
+        "endpoint_deltas_source_px": [
+          0.0,
+          0.0
+        ],
+        "endpoint_midpoint_bias_source_px": 0.0,
+        "endpoint_midpoint_bias_bust_px": 0.0,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 71.0,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      },
+      {
+        "pose": "neutral_return",
+        "endpoint_deltas_source_px": [
+          0.0,
+          0.0
+        ],
+        "endpoint_midpoint_bias_source_px": 0.0,
+        "endpoint_midpoint_bias_bust_px": 0.0,
+        "horizontal_center_motion_source_px": 0.0,
+        "mouth_width_source_px": 71.0,
+        "note": "Outline endpoint bias only; not whole-mouth translation or diagonal pout."
+      }
+    ]
+  },
+  "independent_profile_comparison": {
+    "compared_profiles": 39,
+    "candidate_active_controls": [
+      "blink_L",
+      "blink_R",
+      "brow_inner_lift_screen_left",
+      "brow_screen_left",
+      "brow_screen_right",
+      "brow_tilt_screen_right",
+      "mouth_purse",
+      "mouth_width_screen_right"
+    ],
+    "all_distinct": true,
+    "limitation": "Numeric control/timing differences do not prove perceptual distinction. The 36-profile baseline is intentionally separate from the current 39-profile integration.",
+    "comparisons": [
+      {
+        "id": "EXP-163",
+        "title": "Yawn",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/yawn_performance.json",
+        "sha256": "a6f1f2359add56774df81d5ef294fad7d8c2d1b2b94c900e29382faa6a63ec8b",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "hair_sway",
+          "mouth_open"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.21089191424585707
+      },
+      {
+        "id": "EXP-005",
+        "title": "Hearty laughter",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-005.json",
+        "sha256": "7a4c87b2bf3bb61a5045bb21d4e3e8bff06488258b571b84ab6cf8fcedb8d874",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "eye_smile_L",
+          "eye_smile_R",
+          "mouth_open",
+          "mouth_smile"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.29947179862217366
+      },
+      {
+        "id": "EXP-001",
+        "title": "Bright welcome",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-001.json",
+        "sha256": "7f0addb5a34a18ab1418e41349684a4a521c79f00da458a3368f265df88d43fe",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_open",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.24540130551603617
+      },
+      {
+        "id": "EXP-006",
+        "title": "Suppressed giggle",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-006.json",
+        "sha256": "38be9e1bb2ae8ca6212cc51ddc09a66f5200712bf66c827f292f5f3af42de430",
+        "active_controls": [
+          "blush_intensity",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "eye_smile_L",
+          "eye_smile_R",
+          "mouth_corner_lift",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0680153602137075,
+        "rms_all_channel_difference": 0.2696837376070479
+      },
+      {
+        "id": "EXP-107",
+        "title": "Confident reassurance",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-107.json",
+        "sha256": "9361028359fb8e99eb053045f78b2544c4ff8a35f6c9068cbac47691ad134544",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "eye_smile_L",
+          "eye_smile_R",
+          "mouth_corner_lift",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_oral_lift",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.25012802924708794
+      },
+      {
+        "id": "EXP-007",
+        "title": "Relieved smile",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-007.json",
+        "sha256": "ee13a8b4b819c5ecfd1e5f105565856ad10174a0a0ed69db4f0ddcb833821fdd",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_corner_lift",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_oral_lift",
+          "mouth_purse",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.24718042169298482
+      },
+      {
+        "id": "EXP-002",
+        "title": "Affectionate warmth",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-002.json",
+        "sha256": "fdb562bc3987bcc084f7bb7ea35bcaf8b31a2e45eb06081129121cc72e20b23a",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "eye_smile_L",
+          "eye_smile_R",
+          "mouth_corner_lift",
+          "mouth_smile"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.8985769855555555,
+        "rms_all_channel_difference": 0.16052071630806053
+      },
+      {
+        "id": "EXP-152",
+        "title": "Private pride",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-152.json",
+        "sha256": "c336efc782732c73da3991fffad881e0c884425916c64a676608dd224c71117d",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "gaze_down_extra",
+          "gaze_y",
+          "mouth_corner_lift",
+          "mouth_lip_press",
+          "mouth_smile"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.23087485026308452
+      },
+      {
+        "id": "EXP-160",
+        "title": "Shy laughter",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-160.json",
+        "sha256": "f30c64314d59fa368781eb5e098a12fb6582f845b0d4fa43e40a4a4cd77838c2",
+        "active_controls": [
+          "blush_intensity",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "eye_smile_L",
+          "eye_smile_R",
+          "mouth_corner_lift",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_oral_lift",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.3,
+        "rms_all_channel_difference": 0.38686205699028586
+      },
+      {
+        "id": "EXP-177",
+        "title": "Meditative calm",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-177.json",
+        "sha256": "4fb88990455fc4ba799e30ce2987b17151fe0ca00d31e562aa38680a7349f211",
+        "active_controls": [
+          "blink_L",
+          "blink_R"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.9090067301097394,
+        "rms_all_channel_difference": 0.18303101418965054
+      },
+      {
+        "id": "EXP-164",
+        "title": "Fighting sleep",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-164.json",
+        "sha256": "30b7adfd10aeb10b6edb7eefb968ae44d589c9a516cd161ff39c5833c466e110",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_purse"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.8,
+        "rms_all_channel_difference": 0.13549754322159852
+      },
+      {
+        "id": "EXP-021",
+        "title": "Quiet sadness",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-021.json",
+        "sha256": "4befbe289751e2929cd4cafe45c854644c985d7355096c34a4937e16e03625ce",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_screen_left",
+          "brow_screen_right",
+          "gaze_down_extra",
+          "gaze_y"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.18663929959911205
+      },
+      {
+        "id": "EXP-158",
+        "title": "Post-confession shyness",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-158.json",
+        "sha256": "731787cf260e038b5afcb0d9ba71a6dedea5bc6da42423380d418e49e53e2939",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "blush_intensity",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_screen_left",
+          "brow_screen_right",
+          "gaze_down_extra",
+          "gaze_y",
+          "mouth_corner_lift",
+          "mouth_smile"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.24101760806066985
+      },
+      {
+        "id": "EXP-181",
+        "title": "Cheeky wink",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-181.json",
+        "sha256": "d0284c1e5719ec154cd06e5b1d4eba495242b80bde9ae98c792f9fed21bddc32",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "eye_smile_L",
+          "mouth_corner_lift_screen_right",
+          "mouth_open",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.95,
+        "rms_all_channel_difference": 0.24792177862466167
+      },
+      {
+        "id": "EXP-102",
+        "title": "Knowing smirk",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-102.json",
+        "sha256": "ffd67f79651c5a2446422b6ae02e2a248ee3174d79049671b55bb629ed035229",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_corner_lift_screen_right",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.95,
+        "rms_all_channel_difference": 0.1877162476543614
+      },
+      {
+        "id": "EXP-116",
+        "title": "Confident denial",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-116.json",
+        "sha256": "bb7c020ff27be98e1b522b088d62d49406603e07457f192c9e213483f027303a",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_corner_lift_screen_right",
+          "mouth_smile",
+          "mouth_spread",
+          "mouth_width_screen_left",
+          "mouth_width_screen_right"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.152617978372355
+      },
+      {
+        "id": "EXP-050",
+        "title": "Frustrated pout",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-050.json",
+        "sha256": "e1b775d34244bf1a1f05fac351170062657b0b12d11acf2edf08bf8f3ec9e630",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_purse"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.84,
+        "rms_all_channel_difference": 0.18292368867503095
+      },
+      {
+        "id": "EXP-186",
+        "title": "Smug cat smile",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-186.json",
+        "sha256": "226f82f8e7e26599239b58cbd8d7d6c51240610fdd971e22c1baf9c0bd7b4d60",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_corner_lift_screen_left",
+          "mouth_corner_lift_screen_right",
+          "mouth_smile",
+          "mouth_spread",
+          "mouth_width_screen_left",
+          "mouth_width_screen_right"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.9,
+        "rms_all_channel_difference": 0.2293042554080148
+      },
+      {
+        "id": "EXP-114",
+        "title": "Daring provocation",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-114.json",
+        "sha256": "96eed6ccf108e2e54590f953ae01b129a04af223245fecc1fc59c2af19f8c107",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_corner_lift_screen_left",
+          "mouth_corner_lift_screen_right",
+          "mouth_open",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.9,
+        "rms_all_channel_difference": 0.2085119427747627
+      },
+      {
+        "id": "EXP-148",
+        "title": "Nervous laugh",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-148.json",
+        "sha256": "d803a850c3eda78f4f27586c0798432367fd66c9093c5cd7364bed0020ba47dd",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "blush_intensity",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "mouth_corner_lift_screen_left",
+          "mouth_corner_lift_screen_right",
+          "mouth_open",
+          "mouth_smile",
+          "mouth_spread"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.72,
+        "rms_all_channel_difference": 0.1879298466537579
+      },
+      {
+        "id": "EXP-197",
+        "title": "Playful kiss",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-197.json",
+        "sha256": "69abbe91beee42051e5ee1dad0ea05fc5f14f32d5d06e328e5076de1078f1294",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "blush_intensity",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "eye_smile_L",
+          "eye_smile_R",
+          "mouth_corner_lift_screen_left",
+          "mouth_corner_lift_screen_right",
+          "mouth_kiss",
+          "mouth_purse",
+          "mouth_smile"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.2485940804334147
+      },
+      {
+        "id": "EXP-144",
+        "title": "Caught staring",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-144.json",
+        "sha256": "af8597ef5b3decc34851e3492154c65b7311c2d220b3087cb351809984924678",
+        "active_controls": [
+          "aversion_px",
+          "blink_L",
+          "blink_R",
+          "blush_intensity",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_screen_left",
+          "brow_screen_right",
+          "gaze_down_extra",
+          "gaze_y",
+          "mouth_lip_press",
+          "opening_px",
+          "uneasy_weight"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 12.0,
+        "rms_all_channel_difference": 1.1367870685571488
+      },
+      {
+        "id": "EXP-040",
+        "title": "Recovering composure",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-040.json",
+        "sha256": "2c7f4d8a8ff91fd1497e52768b95829a69d26cf118d84d8a0c8ed799a06f82e0",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_corner_lift_screen_left",
+          "mouth_corner_lift_screen_right",
+          "mouth_purse",
+          "mouth_smile"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.65,
+        "rms_all_channel_difference": 0.10989822416926566
+      },
+      {
+        "id": "EXP-125",
+        "title": "Sudden insight",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-125.json",
+        "sha256": "b7837d55187c0130024eded440c4a0007a0f95846cbff691ce99b587de7a40f3",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_corner_lift_screen_left",
+          "mouth_corner_lift_screen_right",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_oral_lift",
+          "mouth_purse",
+          "mouth_smile",
+          "mouth_spread",
+          "opening_px"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 2.2967407407407405,
+        "rms_all_channel_difference": 0.23846391571299494
+      },
+      {
+        "id": "EXP-063",
+        "title": "Stunned silence",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-063.json",
+        "sha256": "8e61309448dc64964beac0a8491716623fceb6903ea2fd9e3cacc72a2d95730c",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_oral_lift",
+          "mouth_purse",
+          "opening_px"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 4.0,
+        "rms_all_channel_difference": 0.5584222194178243
+      },
+      {
+        "id": "EXP-090",
+        "title": "Queasy",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-090.json",
+        "sha256": "08813729222c8231500233ec6952459b6549e5fd534e87516fb1f99efa17676c",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_lip_press",
+          "mouth_purse"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.15815271079294618
+      },
+      {
+        "id": "EXP-153",
+        "title": "Hiding a smile",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-153.json",
+        "sha256": "8a6b61f41a7d6e619f7bcbee188008d5c454cb2295e2c22460829c40f1b87b76",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_corner_lift",
+          "mouth_lip_press"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.1622729179314633
+      },
+      {
+        "id": "EXP-139",
+        "title": "Focused determination",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-139.json",
+        "sha256": "2a8c23d5a37ae1ed9162e9bb066870ecb5518da206975a5c69cc4b4502fee29b",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_lip_press",
+          "mouth_width_screen_left",
+          "mouth_width_screen_right"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.2864208104304017
+      },
+      {
+        "id": "EXP-174",
+        "title": "Sleepy annoyance",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-174.json",
+        "sha256": "3007a539a7e62126a7bc61c295774fc84959b30cba8894f79616c98004e71ff1",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_purse"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.21481018616629008
+      },
+      {
+        "id": "EXP-067",
+        "title": "Creeping dread",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-067.json",
+        "sha256": "8a105de66ae0b57b06b7170ec22212459e6cc18f9de026b00d4d9e96c53e4370",
+        "active_controls": [
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_purse",
+          "opening_px"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 4.0,
+        "rms_all_channel_difference": 0.41064479577595053
+      },
+      {
+        "id": "EXP-093",
+        "title": "Bitter taste",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-093.json",
+        "sha256": "aafe7ee28eb6d046e48d1d125fda8440bd37c127aa3eac9dd5d736c634cde6f5",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_open",
+          "mouth_purse"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.84,
+        "rms_all_channel_difference": 0.17009166120597005
+      },
+      {
+        "id": "EXP-003",
+        "title": "Quiet contentment",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-003.json",
+        "sha256": "61822fa101313294b418a2b25bcef0c74619ce9e76b3e5d2a79155ba5e11ae71",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "eye_smile_L",
+          "eye_smile_R",
+          "mouth_corner_lift",
+          "mouth_smile"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.66,
+        "rms_all_channel_difference": 0.14148869475064807
+      },
+      {
+        "id": "EXP-043",
+        "title": "Silent fury",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-043.json",
+        "sha256": "8ebdec169e4a2fbd533ef9a4638c7e562f46ddaad0a1c8d0e12f80a77d70ec80",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_lip_press"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0,
+        "rms_all_channel_difference": 0.24481751350771222
+      },
+      {
+        "id": "EXP-064",
+        "title": "Shocked gasp",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-064.json",
+        "sha256": "82474f286b049a3243cc6f283e7ddbf00935f33b6451e3be34bc99397c1ca797",
+        "active_controls": [
+          "brow_inner_lift_screen_left",
+          "brow_inner_lift_screen_right",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_purse",
+          "opening_px"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 4.0,
+        "rms_all_channel_difference": 0.49419202778097504
+      },
+      {
+        "id": "EXP-004",
+        "title": "Delighted discovery",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-004.json",
+        "sha256": "f96e59e9a1ab77fe69fef2e0069b345a04b42622e83555d4db75e1d06a3020a7",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_oral_lift",
+          "mouth_purse",
+          "mouth_smile",
+          "mouth_spread",
+          "opening_px"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 4.0,
+        "rms_all_channel_difference": 0.47605356963595674
+      },
+      {
+        "id": "EXP-042",
+        "title": "Cold glare",
+        "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-042.json",
+        "sha256": "80bf98ef59e55fb61c99ff8d6de7d913680bb7d3782db8618a0fbca46f8e4555",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_purse"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.6760089925316264,
+        "rms_all_channel_difference": 0.12124434189335977
+      },
+      {
+        "id": "EXP-129",
+        "title": "Mental arithmetic",
+        "path": "/workspace/scratch/42f2baf55663/mental_arithmetic_work/EXP-129.json",
+        "sha256": "fdd5161262f4e2149503a2c70b2224cc53d6cdd899beb7080c5d19b849644855",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "gaze_y",
+          "mouth_purse"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 1.0406250000000001,
+        "rms_all_channel_difference": 0.14142960452697265
+      },
+      {
+        "id": "EXP-041",
+        "title": "Controlled anger",
+        "path": "/workspace/scratch/42f2baf55663/controlled_anger_work/EXP-041.json",
+        "sha256": "04202c10a048724616a831566f7743c18159ce84c0415867b33c13c64ce75337",
+        "active_controls": [
+          "blink_L",
+          "blink_R",
+          "brow_screen_left",
+          "brow_screen_right",
+          "brow_tilt_screen_left",
+          "brow_tilt_screen_right",
+          "mouth_lip_press"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 0.65,
+        "rms_all_channel_difference": 0.16197093246844718
+      },
+      {
+        "id": "EXP-061",
+        "title": "Broad surprise",
+        "path": "/workspace/scratch/42f2baf55663/broad_surprise_work/EXP-061.json",
+        "sha256": "aa2200fc77caefb887d2e6115e062d5e2ca47c95cc56b56c5f536b926c57fbbf",
+        "active_controls": [
+          "brow_screen_left",
+          "brow_screen_right",
+          "mouth_lip_press",
+          "mouth_open",
+          "mouth_purse",
+          "opening_px"
+        ],
+        "same_active_controls": false,
+        "maximum_control_difference": 4.0,
+        "rms_all_channel_difference": 0.5127939380314521
+      }
+    ]
+  },
+  "headless_independent_timeline": {
+    "max_smoothstep_control_error": 1.4879085241670253e-08,
+    "assertions": {
+      "independent_smoothstep_timeline": true,
+      "only_eight_nonzero_channels_act": true,
+      "acting_channels_within_shared_bounds": true,
+      "inner_brow_leads_pout": true,
+      "one_sided_inner_lift_at_peak": true,
+      "other_brow_lowers_and_tilts": true,
+      "screen_left_eye_more_narrowed": true,
+      "compact_purse_and_width_bias_peak": true,
+      "exact_peak_hold_42_through_57": true,
+      "rechecking_narrowing_as_pout_softens": true,
+      "width_releases_before_inner_brow": true,
+      "purse_releases_before_brow_settle": true,
+      "never_alternates_brow_side": true,
+      "fixed_gaze_sealed_unsmiling_no_hair_blush": true,
+      "neutral_hold_states": true,
+      "bounded_frame_steps": true
+    }
+  },
+  "missing_static_inputs": [],
+  "static_native_receipt": {
+    "baseline": "approved36",
+    "baseline_freeze_sha256": "0510c22f0634c2129c49626f3eab8070fb22bd457901a3817c161d6610c4d8f8",
+    "baseline_profile_count": 36,
+    "checks": 1526,
+    "failures": [],
+    "plan_sha256": "e0fe9f2a4892f0a6af429a13f10df639b6ca844f1668a2a9d82be33f61379adf",
+    "production_registry_unchanged": true,
+    "scope": "Eight Puzzled anchors with actual anchored-inner-brow, uneven upper-lash and asymmetric sealed-purse geometry checks. State and geometry do not establish native visual fidelity, normal-speed observation or approval.",
+    "status": "PASS",
+    "study_poses": 8,
+    "visual_capture": true
+  },
+  "static_pixel_changes": {
+    "full": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8",
+        "rgba_sha256": "ec4e697b0b9b91f63de8605d663b9c5c58652e3552e92dedd44c3f0ac63446ea"
+      },
+      {
+        "pose": "notice",
+        "changed_pixels": 1089,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          318
+        ],
+        "png_sha256": "e0d0bdcb4c0dbe9091e82c2c230176739611a8c2dfef0ff344d01e3964c3be35",
+        "rgba_sha256": "ae66e363cfca752226dcaa0078f1b06da961c8c11038530502d02e562e576281"
+      },
+      {
+        "pose": "question",
+        "changed_pixels": 1626,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "9e2360c7bd0fa087b5f9f09ebc8f3d1807aa3d41529df76eba07b11d3324d4ef",
+        "rgba_sha256": "fa3d79eb3406fd4aa7135772dd68961edfe88fee9de2a1de808744cd72e78f1b"
+      },
+      {
+        "pose": "puzzled",
+        "changed_pixels": 1841,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          389
+        ],
+        "png_sha256": "36f544adcd3bca102215ec6237869e7ac9bed8e69e7fb805b78f9da2a75454b7",
+        "rgba_sha256": "036eca534bbd2a064dd8a79be5bccd9073714f886a88f62ab2a266b4893b3992"
+      },
+      {
+        "pose": "reconsider",
+        "changed_pixels": 1886,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          389
+        ],
+        "png_sha256": "0c0644f3f6fe77f310e7a979b861d0fff5ca2cd97f53323d53c3c3b9a52a8b76",
+        "rgba_sha256": "a6b6e5d1f29ca5f1baebad1a42c2d2df5d7a0ec8300fea753a3e03f526d22dc7"
+      },
+      {
+        "pose": "release_pout",
+        "changed_pixels": 1571,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "edbe061adc9e51a24e9485f881376097163ac695987f33d122df3019b2383255",
+        "rgba_sha256": "4bb52f05f01de5ae8fac1fe205552a8046bfb870959b68089bcd03c0de8ee3a3"
+      },
+      {
+        "pose": "settle",
+        "changed_pixels": 1064,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          318
+        ],
+        "png_sha256": "deab2075369d80f57241d0dd201f5b68db956323e51775f3cefe46a689f8b39d",
+        "rgba_sha256": "d1d33b547d5791bc2f26e2dcd51f9ba9b61beaf30338a63ab78ae18b573ac251"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8",
+        "rgba_sha256": "ec4e697b0b9b91f63de8605d663b9c5c58652e3552e92dedd44c3f0ac63446ea"
+      }
+    ],
+    "detail": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b",
+        "rgba_sha256": "b463658f07871bea0292a8921f7b7dc62c449fafb33e87077ee9bc82e0680156"
+      },
+      {
+        "pose": "notice",
+        "changed_pixels": 4187,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          127
+        ],
+        "png_sha256": "209ff21628d11fa9d4795624385bd9e72c64e73a63d7ecedf311b078c68f936f",
+        "rgba_sha256": "b28120138f260fd12f09df988a2d70a37196546e5bc902a7b8cd7d6ff78036e7"
+      },
+      {
+        "pose": "question",
+        "changed_pixels": 6565,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          270
+        ],
+        "png_sha256": "1c8b1c063c25dc61f9c5e0e79c0dea037ed803fb9ceb877acdfdfec2042182f6",
+        "rgba_sha256": "77433d1a01a3c2c074f630ed55d956ca55e3a23b07fe29ce43eaa567f42679eb"
+      },
+      {
+        "pose": "puzzled",
+        "changed_pixels": 7385,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          272
+        ],
+        "png_sha256": "a279d0c919ec21cdbb31febd0335442fb6cb00d2d7dc5c3b339fd6851b1b2c39",
+        "rgba_sha256": "0973f6fbbe363c1f42100cb009a66d0cdc0c6542d16ac904db0000e78c933561"
+      },
+      {
+        "pose": "reconsider",
+        "changed_pixels": 7606,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          271
+        ],
+        "png_sha256": "bf12135296e3dcf37e2da67a40c80afcc94a00821b7003b900b86ba8ff421761",
+        "rgba_sha256": "2d7c4092e2ff888584797aa80aedb41f18ae194457cbc6374f5440228eec5f3d"
+      },
+      {
+        "pose": "release_pout",
+        "changed_pixels": 6347,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "b53268b774eacd464bae7e67b3079c1afe9e863b6d694ca188dd010f31bf066f",
+        "rgba_sha256": "dbe04366726625ab850989902bf047736a9a80baee099b83b334378d4626091a"
+      },
+      {
+        "pose": "settle",
+        "changed_pixels": 4051,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          127
+        ],
+        "png_sha256": "a63b910c4a91e2c216cda0a6916ea74d0cacbbc4bdb3549527948a3e2b424d23",
+        "rgba_sha256": "c7535577eccd35eefc3801068bd40c7176baebd013aaf8e29fae442cb61a1042"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b",
+        "rgba_sha256": "b463658f07871bea0292a8921f7b7dc62c449fafb33e87077ee9bc82e0680156"
+      }
+    ]
+  },
+  "missing_motion_inputs": [],
+  "native_motion_receipt": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved36",
+    "baseline_freeze_sha256": "0510c22f0634c2129c49626f3eab8070fb22bd457901a3817c161d6610c4d8f8",
+    "baseline_profile_count": 36,
+    "checks": 9387,
+    "display": "X11",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "lifecycle_assertions": 36,
+    "lifecycle_interruption_times": [
+      0.35,
+      0.55,
+      0.95,
+      1.4,
+      1.9,
+      2.3,
+      2.85,
+      3.25,
+      3.7
+    ],
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "profile_sha256": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "native_independent_timeline": {
+    "max_smoothstep_control_error": 1.4879085241670253e-08,
+    "assertions": {
+      "independent_smoothstep_timeline": true,
+      "only_eight_nonzero_channels_act": true,
+      "acting_channels_within_shared_bounds": true,
+      "inner_brow_leads_pout": true,
+      "one_sided_inner_lift_at_peak": true,
+      "other_brow_lowers_and_tilts": true,
+      "screen_left_eye_more_narrowed": true,
+      "compact_purse_and_width_bias_peak": true,
+      "exact_peak_hold_42_through_57": true,
+      "rechecking_narrowing_as_pout_softens": true,
+      "width_releases_before_inner_brow": true,
+      "purse_releases_before_brow_settle": true,
+      "never_alternates_brow_side": true,
+      "fixed_gaze_sealed_unsmiling_no_hair_blush": true,
+      "neutral_hold_states": true,
+      "bounded_frame_steps": true
+    }
+  },
+  "motion_pixel_changes": {
+    "full": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        492,
+        736,
+        868,
+        944,
+        1000,
+        1027,
+        1051,
+        1062,
+        1080,
+        1091,
+        1193,
+        1301,
+        1361,
+        1403,
+        1460,
+        1481,
+        1535,
+        1558,
+        1576,
+        1621,
+        1624,
+        1625,
+        1626,
+        1626,
+        1645,
+        1665,
+        1683,
+        1724,
+        1735,
+        1754,
+        1792,
+        1813,
+        1817,
+        1834,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1841,
+        1842,
+        1840,
+        1840,
+        1879,
+        1883,
+        1882,
+        1884,
+        1886,
+        1885,
+        1884,
+        1886,
+        1883,
+        1883,
+        1876,
+        1864,
+        1842,
+        1828,
+        1791,
+        1744,
+        1735,
+        1697,
+        1685,
+        1641,
+        1630,
+        1602,
+        1575,
+        1573,
+        1570,
+        1565,
+        1555,
+        1510,
+        1493,
+        1473,
+        1421,
+        1383,
+        1323,
+        1285,
+        1225,
+        1106,
+        1063,
+        1061,
+        1045,
+        1038,
+        1031,
+        1013,
+        988,
+        960,
+        906,
+        842,
+        742,
+        624,
+        355,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        209,
+        287,
+        356,
+        389
+      ],
+      "neutral_bookends_identical": true,
+      "all_pixels_outside_face_box_200_270_360_410_unchanged": true
+    },
+    "detail": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1398,
+        2660,
+        3257,
+        3492,
+        3719,
+        3843,
+        4041,
+        4098,
+        4147,
+        4187,
+        4330,
+        4873,
+        5217,
+        5602,
+        5790,
+        5958,
+        6095,
+        6162,
+        6308,
+        6368,
+        6469,
+        6563,
+        6570,
+        6597,
+        6611,
+        6631,
+        6755,
+        6796,
+        6970,
+        7029,
+        7144,
+        7268,
+        7294,
+        7302,
+        7308,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7385,
+        7388,
+        7455,
+        7458,
+        7454,
+        7453,
+        7464,
+        7459,
+        7586,
+        7609,
+        7608,
+        7607,
+        7606,
+        7606,
+        7593,
+        7504,
+        7410,
+        7384,
+        7273,
+        7233,
+        7048,
+        6932,
+        6864,
+        6642,
+        6613,
+        6478,
+        6395,
+        6377,
+        6359,
+        6343,
+        6238,
+        6123,
+        6068,
+        5863,
+        5767,
+        5631,
+        5391,
+        5141,
+        4726,
+        4423,
+        4097,
+        4050,
+        4031,
+        4005,
+        3966,
+        3913,
+        3736,
+        3676,
+        3558,
+        3319,
+        3088,
+        2689,
+        1986,
+        890,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        34,
+        64,
+        333,
+        272
+      ],
+      "neutral_bookends_identical": true
+    }
+  },
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121",
+        "nb_read_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "182736"
+    }
+  },
+  "video_sha256": "5df48deb24bc3a86084799084fd65a004bd7b4af4459ed1eea6d838225930db3",
+  "mp4_full_decode": {
+    "frames": 121,
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "mp4_source_panel_mae": {
+    "full": {
+      "mean": 1.291477363665464,
+      "max": 1.2932012910798123,
+      "frames": 121
+    },
+    "detail": {
+      "mean": 2.032666016222834,
+      "max": 2.052914351851852,
+      "frames": 121
+    }
+  },
+  "mp4_order_checks": {
+    "method": "All decoded frames compared with same-index full/detail native panels and all-frame nearest-face errors; identical and near-identical holds remain ambiguous under lossy encoding.",
+    "max_expected_face_mae": 2.1899585723876953,
+    "max_expected_minus_best_face_mae": 0.007411956787109375,
+    "selected": [
+      {
+        "frame": 0,
+        "expected_face_mae": 2.135590076446533,
+        "best_face_mae": 2.135590076446533,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 16,
+        "expected_face_mae": 2.1518425941467285,
+        "best_face_mae": 2.1518425941467285,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 16
+      },
+      {
+        "frame": 29,
+        "expected_face_mae": 2.1466872692108154,
+        "best_face_mae": 2.1466872692108154,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 29
+      },
+      {
+        "frame": 42,
+        "expected_face_mae": 2.120476245880127,
+        "best_face_mae": 2.120476245880127,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 42
+      },
+      {
+        "frame": 57,
+        "expected_face_mae": 2.117122173309326,
+        "best_face_mae": 2.117122173309326,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 42
+      },
+      {
+        "frame": 69,
+        "expected_face_mae": 2.1234161853790283,
+        "best_face_mae": 2.116583824157715,
+        "expected_minus_best": 0.0068323612213134766,
+        "best_matching_frame": 68
+      },
+      {
+        "frame": 86,
+        "expected_face_mae": 2.154886245727539,
+        "best_face_mae": 2.1548240184783936,
+        "expected_minus_best": 6.222724914550781e-05,
+        "best_matching_frame": 85
+      },
+      {
+        "frame": 98,
+        "expected_face_mae": 2.1515941619873047,
+        "best_face_mae": 2.150041341781616,
+        "expected_minus_best": 0.0015528202056884766,
+        "best_matching_frame": 97
+      },
+      {
+        "frame": 120,
+        "expected_face_mae": 2.1863768100738525,
+        "best_face_mae": 2.186107635498047,
+        "expected_minus_best": 0.00026917457580566406,
+        "best_matching_frame": 110
+      }
+    ],
+    "all_frame_detail_file": "decoded_frame_order.json"
+  },
+  "independent_checks_pass": false,
+  "status": "FAIL"
+}

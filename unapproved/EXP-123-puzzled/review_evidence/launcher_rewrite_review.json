@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_INPUT_MISMATCH",
+  "path": "native_launcher/project.godot",
+  "expected_sha256": "021475e8c28f882460ca070520dcdb7f2b1f5e3fe919aec354d9105ed99d5dfd",
+  "actual_sha256": "e319ef9543ecb2a3e4c6ae63d96c22cab1b212e93532b3f9519ed0127b18ac14",
+  "diff": "--- frozen_prepared_project\n+++ current_native_launcher_project\n@@ -21,11 +21,12 @@\n window/size/window_width_override=1136\n window/size/window_height_override=800\n \n+[editor]\n+\n+movie_writer/fps=30\n+movie_writer/mjpeg_quality=0.85\n+\n [rendering]\n \n renderer/rendering_method=\"gl_compatibility\"\n environment/defaults/default_clear_color=Color(0.12, 0.13, 0.14, 1)\n-\n-[editor]\n-movie_writer/fps=30\n-movie_writer/mjpeg_quality=0.85\n",
+  "finding": "Only existing editor section order and blank-line formatting changed. No project values changed. Not accepted silently; parent reconciliation pending.",
+  "reviewer_changed_input": false
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "notice",
+    "pose": {
+      "brow_screen_left": -0.04,
+      "brow_screen_right": -0.1,
+      "brow_tilt_screen_left": 0,
+      "brow_tilt_screen_right": -0.06,
+      "brow_inner_lift_screen_left": 0.1,
+      "blink_L": 0.04,
+      "blink_R": 0.02,
+      "mouth_purse": 0,
+      "mouth_width_screen_right": 0
+    }
+  },
+  {
+    "name": "question",
+    "pose": {
+      "brow_screen_left": -0.1,
+      "brow_screen_right": -0.24,
+      "brow_tilt_screen_left": 0,
+      "brow_tilt_screen_right": -0.15,
+      "brow_inner_lift_screen_left": 0.22,
+      "blink_L": 0.14,
+      "blink_R": 0.06,
+      "mouth_purse": 0.24,
+      "mouth_width_screen_right": 0.06
+    }
+  },
+  {
+    "name": "puzzled",
+    "pose": {
+      "brow_screen_left": -0.16,
+      "brow_screen_right": -0.34,
+      "brow_tilt_screen_left": 0,
+      "brow_tilt_screen_right": -0.24,
+      "brow_inner_lift_screen_left": 0.3,
+      "blink_L": 0.28,
+      "blink_R": 0.11,
+      "mouth_purse": 0.58,
+      "mouth_width_screen_right": 0.2
+    }
+  },
+  {
+    "name": "reconsider",
+    "pose": {
+      "brow_screen_left": -0.16,
+      "brow_screen_right": -0.4,
+      "brow_tilt_screen_left": 0,
+      "brow_tilt_screen_right": -0.3,
+      "brow_inner_lift_screen_left": 0.26,
+      "blink_L": 0.32,
+      "blink_R": 0.15,
+      "mouth_purse": 0.52,
+      "mouth_width_screen_right": 0.16
+    }
+  },
+  {
+    "name": "release_pout",
+    "pose": {
+      "brow_screen_left": -0.1,
+      "brow_screen_right": -0.22,
+      "brow_tilt_screen_left": 0,
+      "brow_tilt_screen_right": -0.14,
+      "brow_inner_lift_screen_left": 0.18,
+      "blink_L": 0.14,
+      "blink_R": 0.06,
+      "mouth_purse": 0.08,
+      "mouth_width_screen_right": 0
+    }
+  },
+  {
+    "name": "settle",
+    "pose": {
+      "brow_screen_left": -0.03,
+      "brow_screen_right": -0.06,
+      "brow_tilt_screen_left": 0,
+      "brow_tilt_screen_right": -0.04,
+      "brow_inner_lift_screen_left": 0.05,
+      "blink_L": 0.04,
+      "blink_R": 0.02,
+      "mouth_purse": 0,
+      "mouth_width_screen_right": 0
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]
