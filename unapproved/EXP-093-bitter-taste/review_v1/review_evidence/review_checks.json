@@ -1,0 +1,618 @@
+{
+  "scope": "Independent static pixels, all native frame hashes, source preservation, and MP4 decode/order review. No live pacing, whole-runtime, lip-sync, approval or integration claim.",
+  "baseline": "approved27",
+  "baseline_commit": "816d77fafb6e016dc70f0802743d444e618f7b0f",
+  "baseline_file_count": 1124,
+  "baseline_png_count": 184,
+  "frozen_source_changes": {
+    "bitter_taste_work/rig": [],
+    "hiding_smile_integration_work/ryoko_object_rig": []
+  },
+  "registry_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186",
+    "EXP-114",
+    "EXP-148",
+    "EXP-197",
+    "EXP-144",
+    "EXP-040",
+    "EXP-125",
+    "EXP-063",
+    "EXP-090",
+    "EXP-153"
+  ],
+  "candidate_in_production_registry": false,
+  "source_reference_hash_checks": {
+    "sheet": true,
+    "catalogue": true,
+    "panels": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "static": {
+    "bust": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      },
+      {
+        "pose": "tasting_onset",
+        "changed_pixels": 1568,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "ac40271b27c21d04a256023a68c1401d764be4db5cca8e5e7e0a0ab7a0538ef8"
+      },
+      {
+        "pose": "souring_build",
+        "changed_pixels": 2061,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          391
+        ],
+        "png_sha256": "3c172f05afd687b78632435f034a9c191324f2a0acb40d9f11f10fa9fd3c4e95"
+      },
+      {
+        "pose": "bitter_peak",
+        "changed_pixels": 2414,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          395
+        ],
+        "png_sha256": "322ed61de42f5a2201946b5d76d7497f70b5104df4ba1b62dcef28def2d34e33"
+      },
+      {
+        "pose": "aftertaste",
+        "changed_pixels": 2220,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          389
+        ],
+        "png_sha256": "d7f926ac51c2f285dedbc26f21d8ea3b0ba449ad41d7737e3447d0f874233c5c"
+      },
+      {
+        "pose": "soften",
+        "changed_pixels": 1767,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "e98f4f0edd952e3e7e8a5e6e92f5babbb264fe338a3d0445338afa4827c5ebf6"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      }
+    ],
+    "detail": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      },
+      {
+        "pose": "tasting_onset",
+        "changed_pixels": 6156,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "94345feaed254d2dd7d72ff77df71cc65849dab81de0915f0e1890b52587136a"
+      },
+      {
+        "pose": "souring_build",
+        "changed_pixels": 8235,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          276
+        ],
+        "png_sha256": "6ce8732ba0a5bcee001c301f0486b5fc00ff29183cb1ce718a074b784457d455"
+      },
+      {
+        "pose": "bitter_peak",
+        "changed_pixels": 9795,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          283
+        ],
+        "png_sha256": "bef939951fb40bb4dd224f0004e4ce18ecf212915b17cb553cc072c0ebc653c3"
+      },
+      {
+        "pose": "aftertaste",
+        "changed_pixels": 8970,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          271
+        ],
+        "png_sha256": "78d5653861bf818a1890764c36c1c8d603948698f542ee60e40a68f6c2827152"
+      },
+      {
+        "pose": "soften",
+        "changed_pixels": 7020,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "72876aa533eeb520a30dfd080e115a4819bacf83c67d9a03c028fd7c7c5c27ce"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      }
+    ]
+  },
+  "native_motion": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 7546,
+    "display": "X11",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "all_expected_121_frame_records": true,
+  "all_native_poses_match_headless": true,
+  "native_motion_all_242_rgba_hashes_match": true,
+  "motion_pixel_changes": {
+    "full": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        726,
+        1049,
+        1204,
+        1313,
+        1344,
+        1385,
+        1434,
+        1457,
+        1477,
+        1530,
+        1553,
+        1561,
+        1566,
+        1569,
+        1580,
+        1592,
+        1657,
+        1680,
+        1745,
+        1773,
+        1829,
+        1851,
+        1921,
+        1948,
+        1991,
+        2005,
+        2037,
+        2059,
+        2062,
+        2065,
+        2073,
+        2086,
+        2095,
+        2128,
+        2136,
+        2150,
+        2212,
+        2215,
+        2229,
+        2261,
+        2287,
+        2338,
+        2353,
+        2361,
+        2388,
+        2392,
+        2409,
+        2412,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2414,
+        2399,
+        2390,
+        2366,
+        2348,
+        2317,
+        2290,
+        2271,
+        2249,
+        2231,
+        2227,
+        2222,
+        2220,
+        2216,
+        2207,
+        2176,
+        2161,
+        2111,
+        2085,
+        2045,
+        1980,
+        1955,
+        1920,
+        1858,
+        1840,
+        1799,
+        1788,
+        1780,
+        1767,
+        1745,
+        1725,
+        1716,
+        1702,
+        1668,
+        1647,
+        1574,
+        1534,
+        1498,
+        1432,
+        1393,
+        1343,
+        1284,
+        1167,
+        959,
+        398,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        209,
+        287,
+        356,
+        395
+      ],
+      "neutral_bookends_identical": true,
+      "static_neutral_matches": true,
+      "all_pixels_outside_face_box_200_270_360_410_unchanged": true
+    },
+    "detail": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2004,
+        3671,
+        4511,
+        4914,
+        5171,
+        5564,
+        5685,
+        5749,
+        5982,
+        6052,
+        6117,
+        6141,
+        6154,
+        6162,
+        6342,
+        6432,
+        6522,
+        6779,
+        6884,
+        7159,
+        7268,
+        7519,
+        7618,
+        7842,
+        7939,
+        8145,
+        8194,
+        8228,
+        8235,
+        8241,
+        8259,
+        8412,
+        8473,
+        8507,
+        8548,
+        8740,
+        8795,
+        8976,
+        9015,
+        9088,
+        9267,
+        9332,
+        9503,
+        9536,
+        9591,
+        9612,
+        9756,
+        9779,
+        9793,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9795,
+        9790,
+        9756,
+        9692,
+        9608,
+        9511,
+        9400,
+        9309,
+        9204,
+        9125,
+        9057,
+        9003,
+        8973,
+        8967,
+        8949,
+        8796,
+        8749,
+        8573,
+        8517,
+        8332,
+        8122,
+        8071,
+        7853,
+        7639,
+        7556,
+        7321,
+        7263,
+        7061,
+        7026,
+        7020,
+        7014,
+        6999,
+        6809,
+        6764,
+        6698,
+        6492,
+        6223,
+        6143,
+        5923,
+        5785,
+        5453,
+        5261,
+        4785,
+        4216,
+        3176,
+        912,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        34,
+        64,
+        333,
+        283
+      ],
+      "neutral_bookends_identical": true,
+      "static_neutral_matches": true
+    }
+  },
+  "static_native_checks": {
+    "status": "PASS",
+    "checks": 6978,
+    "failures": []
+  },
+  "static_vs_motion_exact": {
+    "neutral": {
+      "full": true,
+      "detail": true
+    },
+    "bitter_peak": {
+      "full": true,
+      "detail": true
+    },
+    "soften": {
+      "full": true,
+      "detail": true
+    },
+    "neutral_return": {
+      "full": true,
+      "detail": true
+    }
+  },
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121",
+        "nb_read_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "206530"
+    }
+  },
+  "video_sha256": "9faf9c7ccf25914f7c7977da6471fee0b30fd91f87469cdf7ebb5776514ae1f6",
+  "mp4_monotonic_30fps_pts": true,
+  "mp4_full_decode": {
+    "frames": 121,
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "mp4_source_panel_mae": {
+    "full": {
+      "mean": 1.2919182623287937,
+      "max": 1.2954702171361503,
+      "frames": 121
+    },
+    "detail": {
+      "mean": 2.0454342477808387,
+      "max": 2.08025462962963,
+      "frames": 121
+    }
+  },
+  "mp4_order_checks": {
+    "method": "Every decoded RGB frame compared with same-index native full and detail panels; PTS inspected; nearest-frame face error exposes material reorder while acknowledging lossy compression and repeated/near-identical poses.",
+    "max_expected_face_mae": 2.272008180618286,
+    "max_expected_minus_best_face_mae": 0.005486488342285156,
+    "selected": [
+      {
+        "frame": 0,
+        "expected_face_mae": 2.1569771766662598,
+        "best_face_mae": 2.1569771766662598,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 6,
+        "expected_face_mae": 2.15625262260437,
+        "best_face_mae": 2.15625262260437,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 20,
+        "expected_face_mae": 2.1874120235443115,
+        "best_face_mae": 2.1874120235443115,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 20
+      },
+      {
+        "frame": 35,
+        "expected_face_mae": 2.1659834384918213,
+        "best_face_mae": 2.1659834384918213,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 35
+      },
+      {
+        "frame": 60,
+        "expected_face_mae": 2.1324429512023926,
+        "best_face_mae": 2.1324429512023926,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 56
+      },
+      {
+        "frame": 68,
+        "expected_face_mae": 2.1377017498016357,
+        "best_face_mae": 2.1342029571533203,
+        "expected_minus_best": 0.0034987926483154297,
+        "best_matching_frame": 56
+      },
+      {
+        "frame": 80,
+        "expected_face_mae": 2.129192590713501,
+        "best_face_mae": 2.129192590713501,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 80
+      },
+      {
+        "frame": 96,
+        "expected_face_mae": 2.1733334064483643,
+        "best_face_mae": 2.1733334064483643,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 96
+      },
+      {
+        "frame": 120,
+        "expected_face_mae": 2.234720468521118,
+        "best_face_mae": 2.234720468521118,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      }
+    ],
+    "all_frame_detail_file": "decoded_frame_order.json"
+  },
+  "independent_checks_pass": true,
+  "additional_rig_files_only_recorded_import_uid": true
+}

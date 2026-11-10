@@ -1,0 +1,75 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "tasting_onset",
+    "pose": {
+      "blink_L": 0.08,
+      "blink_R": 0.08,
+      "brow_screen_left": -0.25,
+      "brow_screen_right": -0.25,
+      "brow_tilt_screen_left": 0.18,
+      "brow_tilt_screen_right": -0.18,
+      "mouth_open": 0,
+      "mouth_purse": 0.15
+    }
+  },
+  {
+    "name": "souring_build",
+    "pose": {
+      "blink_L": 0.24,
+      "blink_R": 0.24,
+      "brow_screen_left": -0.7,
+      "brow_screen_right": -0.7,
+      "brow_tilt_screen_left": 0.5,
+      "brow_tilt_screen_right": -0.5,
+      "mouth_open": 0.22,
+      "mouth_purse": 0.3
+    }
+  },
+  {
+    "name": "bitter_peak",
+    "pose": {
+      "blink_L": 0.4,
+      "blink_R": 0.4,
+      "brow_screen_left": -1,
+      "brow_screen_right": -1,
+      "brow_tilt_screen_left": 0.7,
+      "brow_tilt_screen_right": -0.7,
+      "mouth_open": 0.45,
+      "mouth_purse": 0.35
+    }
+  },
+  {
+    "name": "aftertaste",
+    "pose": {
+      "blink_L": 0.4,
+      "blink_R": 0.4,
+      "brow_screen_left": -0.8,
+      "brow_screen_right": -0.8,
+      "brow_tilt_screen_left": 0.6,
+      "brow_tilt_screen_right": -0.6,
+      "mouth_open": 0,
+      "mouth_purse": 0.45
+    }
+  },
+  {
+    "name": "soften",
+    "pose": {
+      "blink_L": 0.18,
+      "blink_R": 0.18,
+      "brow_screen_left": -0.3,
+      "brow_screen_right": -0.3,
+      "brow_tilt_screen_left": 0.2,
+      "brow_tilt_screen_right": -0.2,
+      "mouth_open": 0,
+      "mouth_purse": 0.18
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

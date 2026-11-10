@@ -1,0 +1,117 @@
+{
+  "id": "EXP-093",
+  "title": "Bitter taste",
+  "duration": 4.0,
+  "status": "UNAPPROVED review v1; data-only candidate against approved27",
+  "intent": "Brows lower as the bitter taste registers; ordinary lids narrow slowly over 1.65 seconds while a downturned open grimace develops. A closed aftertaste follows before exact neutral return.",
+  "scope": "Existing symmetric ordinary lid closure, symmetric vertical brow lowering, opposing rigid brow tilt, continuous mouth opening and purse only. No independent upper-lip lift or curl is supported. The upper lip actually moves down with the common purse contour while the lower lip descends farther through existing opening. This is a partial approximation, not reproduction of the source upper-up/lower-down anatomy. No unilateral sneer or left-right lip asymmetry is authored. No new artwork, anatomy, shader, runtime, control or range. Smile, corner lift, lip pressure, oral lift, side width, kiss, uneasy part, gaze, blush, hair, head and body acting remain zero.",
+  "timing_origin": "New four-second interpretation of nine static EXP-093 panels; the catalogue 1.9-second timing is proposed and numeric rig weights are null. Neutral holds to 0.20, onset at 0.65, build at 1.15, peak at 1.85 through 2.25, closed aftertaste at 2.65, soften at 3.20 and exact neutral from 3.75 through 4.00. Lids narrow gradually across onset and build; no automatic or full blink is added.",
+  "interpolation": "Unchanged shared cubic smoothstep and displayed-pose restart/release. Seven static anchors, ten timeline keys, exact neutral bookends. Candidate loaded only into memory.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.65,
+      "phase": "tasting_onset",
+      "values": {
+        "blink_L": 0.08,
+        "blink_R": 0.08,
+        "brow_screen_left": -0.25,
+        "brow_screen_right": -0.25,
+        "brow_tilt_screen_left": 0.18,
+        "brow_tilt_screen_right": -0.18,
+        "mouth_open": 0,
+        "mouth_purse": 0.15
+      }
+    },
+    {
+      "time": 1.15,
+      "phase": "souring_build",
+      "values": {
+        "blink_L": 0.24,
+        "blink_R": 0.24,
+        "brow_screen_left": -0.7,
+        "brow_screen_right": -0.7,
+        "brow_tilt_screen_left": 0.5,
+        "brow_tilt_screen_right": -0.5,
+        "mouth_open": 0.22,
+        "mouth_purse": 0.3
+      }
+    },
+    {
+      "time": 1.85,
+      "phase": "bitter_peak",
+      "values": {
+        "blink_L": 0.4,
+        "blink_R": 0.4,
+        "brow_screen_left": -1,
+        "brow_screen_right": -1,
+        "brow_tilt_screen_left": 0.7,
+        "brow_tilt_screen_right": -0.7,
+        "mouth_open": 0.45,
+        "mouth_purse": 0.35
+      }
+    },
+    {
+      "time": 2.25,
+      "phase": "bitter_peak",
+      "values": {
+        "blink_L": 0.4,
+        "blink_R": 0.4,
+        "brow_screen_left": -1,
+        "brow_screen_right": -1,
+        "brow_tilt_screen_left": 0.7,
+        "brow_tilt_screen_right": -0.7,
+        "mouth_open": 0.45,
+        "mouth_purse": 0.35
+      }
+    },
+    {
+      "time": 2.65,
+      "phase": "aftertaste",
+      "values": {
+        "blink_L": 0.4,
+        "blink_R": 0.4,
+        "brow_screen_left": -0.8,
+        "brow_screen_right": -0.8,
+        "brow_tilt_screen_left": 0.6,
+        "brow_tilt_screen_right": -0.6,
+        "mouth_open": 0,
+        "mouth_purse": 0.45
+      }
+    },
+    {
+      "time": 3.2,
+      "phase": "soften",
+      "values": {
+        "blink_L": 0.18,
+        "blink_R": 0.18,
+        "brow_screen_left": -0.3,
+        "brow_screen_right": -0.3,
+        "brow_tilt_screen_left": 0.2,
+        "brow_tilt_screen_right": -0.2,
+        "mouth_open": 0,
+        "mouth_purse": 0.18
+      }
+    },
+    {
+      "time": 3.75,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

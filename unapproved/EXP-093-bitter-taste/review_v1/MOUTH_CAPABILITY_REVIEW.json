@@ -1,0 +1,68 @@
+{
+  "status": "Existing bounded mouth parts inspected before candidate selection",
+  "source_sha256": {
+    "object_face.gd": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+    "expression_rig.gd": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+    "expression_registry.gd": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+    "CONTROL_API.md": "64a701b25670d670a49cd5715ea94a4dc421852c0e607f940e5a406ffed52eb0",
+    "rig_assets/yawn_mouth/manifest.json": "4273ba7e2acc0b0c9adf03dd492de8b859a6ac2655a17f0ffb6a212dbc829293",
+    "rig_assets/yawn_mouth/upper_lip.png": "f6e47353877a727ee41905d0b8ff11a7700d42a86d6c5416e06b2a567e774a00",
+    "rig_assets/yawn_mouth/lower_lip.png": "f6e47353877a727ee41905d0b8ff11a7700d42a86d6c5416e06b2a567e774a00",
+    "rig_assets/yawn_mouth/upper_teeth.png": "4661a8ad0a9c6d45a5a0ac185f9af5504a2956548acf3fa5952074744acd8967",
+    "rig_assets/pressed_lip_support/inner_upper_lip.png": "81e2d55b9ead38bbb7c85e32316d57b74427b499c01aaf515447bd4affd4bd1d",
+    "rig_assets/kiss_support/kiss_lips.png": "3cadae701df5f639cd222975c0aa693fed4b1f6315c291d5ce934f78c317ffe0",
+    "parts/caught_staring/uneasy_clear_parting.png": "5ce9ab18220919d452273fe9e8bf929f2236b54b476feeaf7bfd4afc703c574e",
+    "parts/caught_staring/components.gd": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1"
+  },
+  "pixels_visually_inspected": [
+    "rig_assets/yawn_mouth/upper_lip.png",
+    "parts/caught_staring/uneasy_clear_parting.png"
+  ],
+  "findings": [
+    {
+      "part": "Continuous split lip and fixed upper enamel",
+      "evidence": "object_face.gd set_mouth_open and yawn_mouth manifest",
+      "capability": "Opening keeps upper lip fixed and moves lower lip down by 54 * 0.55 * mouth_open source pixels. Upper teeth stay fixed at (533, 626).",
+      "limitation": "No independent upper-lip raising, curling or local sneer anatomy."
+    },
+    {
+      "part": "Rigid segmented purse",
+      "evidence": "object_face.gd _smile_lip_offset_for_spread and _spread_x",
+      "capability": "Purse narrows both contours by up to 14 source pixels per side and lowers the contour by purse * (4 + 8 * radius squared). Combined opening adds a bounded lower-lip gap.",
+      "limitation": "Upper and lower common contour deformation is coupled. Purse moves upper lip downward, not upward."
+    },
+    {
+      "part": "Smile, spread and bilateral or independent corners",
+      "evidence": "object_face.gd _smile_lip_offset_for_spread and _corner_curve",
+      "capability": "These controls can raise parts of the existing mouth contour.",
+      "limitation": "They raise both contours together and introduce smile/corner lift, not isolated upper-lip disgust. Deliberately zero."
+    },
+    {
+      "part": "Inner-upper-lip pressure",
+      "evidence": "object_face.gd pressed_lip_owners and CONTROL_API.md",
+      "capability": "Reveals up to four pixels of inferred hidden upper-lip tissue.",
+      "limitation": "Does not raise or curl the upper outline. Deliberately zero."
+    },
+    {
+      "part": "Oral lift",
+      "evidence": "object_face.gd spread_tongue translation and CONTROL_API.md",
+      "capability": "Moves only the independent lower oral surface.",
+      "limitation": "Not a lip control. Deliberately zero."
+    },
+    {
+      "part": "Kiss and uneasy parting",
+      "evidence": "expression_registry.gd sealed_mouth_valid/scoped_valid and parts/caught_staring/components.gd",
+      "capability": "Existing separately authored sealed/parting mouth states.",
+      "limitation": "Neither supplies the specified upper-lip/lower-lip motion. Both are incompatible with positive continuous opening and remain zero."
+    },
+    {
+      "part": "Independent side width",
+      "evidence": "expression_registry.gd sealed_mouth_valid",
+      "capability": "Sealed-mouth horizontal expansion.",
+      "limitation": "Positive width is incompatible with positive opening. Both widths remain zero."
+    }
+  ],
+  "selected_approximation": "Use symmetric ordinary eye narrowing, rigid lowered/tilted brows, continuous lower-lip opening and a moderate purse for a downturned open grimace. Preserve a distinct sealed aftertaste pose. No independent upper-lip lift or curl is implemented; no left-right lip asymmetry is authored. Native mouth shape and tooth exposure require capture review.",
+  "independent_upper_lip_lift_supported": false,
+  "runtime_or_art_changed": false
+}

@@ -1,0 +1,22 @@
+{
+  "approval": "UNAPPROVED",
+  "checks": 286213,
+  "failures": [],
+  "handover_samples": 1350,
+  "lifecycle_probe_times": [
+    0.35,
+    0.65,
+    1.15,
+    1.85,
+    2.25,
+    2.65,
+    3.2,
+    3.7
+  ],
+  "prior_profiles_handover_both_directions": 27,
+  "runtime_sampler": "Unchanged expression_rig.gd",
+  "sample_count": 4001,
+  "sampling_interval_seconds": 0.001,
+  "status": "PASS",
+  "visual_capture": false
+}
