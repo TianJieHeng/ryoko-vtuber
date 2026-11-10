@@ -1,0 +1,107 @@
+[
+  {
+    "path": "BASELINE_FREEZE.json",
+    "bytes": 388,
+    "sha256": "a4a2701f44094cf0df32519bb72862bcf967b28fcd91ed6479d0188baf136b5d"
+  },
+  {
+    "path": "Creeping_dread_review_v1.mp4",
+    "bytes": 177291,
+    "sha256": "21a3ad3f8af3763660ee60a7a4afeeac43d0eddb1814d42a2ee522af811bd739"
+  },
+  {
+    "path": "EXP-067.json",
+    "bytes": 3698,
+    "sha256": "8a105de66ae0b57b06b7170ec22212459e6cc18f9de026b00d4d9e96c53e4370"
+  },
+  {
+    "path": "GEOMETRY_REVIEW.json",
+    "bytes": 2187,
+    "sha256": "3209ba9b67476ea06a6dd45b1e68ca189e6d6c350e7a97e2c7cd2903d0078683"
+  },
+  {
+    "path": "PLAYBACK_INSPECTION.md",
+    "bytes": 413,
+    "sha256": "4441d4aa7574dd6f2658c8ef5fb24cd68f94bb39b24f849f46b41f15ef25302f"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2223,
+    "sha256": "e32a6c63b35da44b5c3252970b6184f8e82d6532f6581601c68578cbd6f95367"
+  },
+  {
+    "path": "REVIEW.md",
+    "bytes": 6152,
+    "sha256": "bf40b9138eb6dfaba799707d5926c3f926b616fcf5a10822af1d7f0be846af57"
+  },
+  {
+    "path": "REVIEW_SUMMARY.json",
+    "bytes": 991,
+    "sha256": "5c99131bce27878695cd9ce6645422875ce03752e9b4cd7c19acd306c061689a"
+  },
+  {
+    "path": "SOURCE_REFERENCE.json",
+    "bytes": 10330,
+    "sha256": "fe64a4458d3d023ae957a0defb9771bf522c335ad98d419fe0c1a34f07fb9038"
+  },
+  {
+    "path": "VALIDATION_RESULT.json",
+    "bytes": 827,
+    "sha256": "37072ca17b92f10e19b0aa5a323738e6776deb946d3f347270f047ad1a7ca67a"
+  },
+  {
+    "path": "build_candidate.py",
+    "bytes": 2587,
+    "sha256": "382495d23e26b19d32c344227b22b0c3d5514749a1450aa7366ed0d5d23c0254"
+  },
+  {
+    "path": "candidate_checks.json",
+    "bytes": 237,
+    "sha256": "3020cf2406b443add3811239616aadb4c806c86226930960515cf9c084b0a8b0"
+  },
+  {
+    "path": "check_and_capture.gd",
+    "bytes": 5505,
+    "sha256": "08468abd04683452eb0592a0d39f23c0a45b14bc0ed510fbf25d9641156762d4"
+  },
+  {
+    "path": "encode_preview.py",
+    "bytes": 1827,
+    "sha256": "2d50ebcf202c8d739ce9052d1939f25fa8a4229d5a4719e55593ab379eb13a06"
+  },
+  {
+    "path": "plan.json",
+    "bytes": 980,
+    "sha256": "846272725062c2ef77822c72983a56cb9c635db5876d351df65e36e7cc3b470e"
+  },
+  {
+    "path": "render_motion.gd",
+    "bytes": 5201,
+    "sha256": "b1502ad33de234c53d78fc181240a5134244773513af040248258dd3ee8ec556"
+  },
+  {
+    "path": "run_gate.py",
+    "bytes": 1247,
+    "sha256": "e50922af9a7f302bf311001fd763ae9ca07b1d511517342719460b5c35ec5b5b"
+  },
+  {
+    "path": "run_motion.sh",
+    "bytes": 1014,
+    "sha256": "2f728fafa46c82add51ed70555f41acfaa6b12787a74c34a64bba606a95d200a"
+  },
+  {
+    "path": "state_checks.json",
+    "bytes": 3321,
+    "sha256": "75e8fc5c9b7bec83ba207bd570cda5b9fd825b2d9206060c2c354e4e81094b8e"
+  },
+  {
+    "path": "test_candidate.gd",
+    "bytes": 3725,
+    "sha256": "09c8fc9b37b2e1ce8d5c293c92a98378b87540e5e20381fc1f2fe3bb4a7d8c85"
+  },
+  {
+    "path": "video_probe.json",
+    "bytes": 372,
+    "sha256": "2325b736088180b9f880ad098dd0aba80e9f2a56ac7aaff53c14f3ce54df3d67"
+  }
+]

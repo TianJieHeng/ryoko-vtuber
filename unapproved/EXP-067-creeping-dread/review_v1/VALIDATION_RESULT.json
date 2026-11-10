@@ -1,0 +1,34 @@
+{
+  "motion_checks.json": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 9021,
+    "display": "X11",
+    "duration": 4.8,
+    "failures": [],
+    "fps": 30,
+    "frames": 145,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "motion_state_checks.json": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 8730,
+    "display": "headless",
+    "duration": 4.8,
+    "failures": [],
+    "fps": 30,
+    "frames": 145,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "",
+    "status": "PASS",
+    "visual_capture": false
+  }
+}

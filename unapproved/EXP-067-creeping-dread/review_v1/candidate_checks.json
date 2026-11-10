@@ -1,0 +1,10 @@
+{
+  "approval": "UNAPPROVED",
+  "checks": 178049,
+  "failures": [],
+  "runtime_sampler": "Unchanged expression_rig.gd _sample",
+  "sample_count": 4801,
+  "sampling_interval_seconds": 0.001,
+  "status": "PASS",
+  "visual_capture": false
+}

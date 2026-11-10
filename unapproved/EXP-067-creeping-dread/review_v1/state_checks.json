@@ -1,0 +1,125 @@
+{
+  "baseline": "approved27",
+  "baseline_profile_count": 27,
+  "checks": 482,
+  "failures": [],
+  "geometry": [
+    {
+      "brows": {
+        "screen_left": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 0.0
+        },
+        "screen_right": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 0.0
+        }
+      },
+      "central_lip_gap_bust_px": 0.0,
+      "central_lip_gap_native_px": 0.0,
+      "name": "neutral",
+      "upper_opening_native_px": 0.0
+    },
+    {
+      "brows": {
+        "screen_left": {
+          "anchor_error_native_px": 0.000030517578125,
+          "rotation_degrees": -3.6399999077702
+        },
+        "screen_right": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 3.11999989045397
+        }
+      },
+      "central_lip_gap_bust_px": 0.0,
+      "central_lip_gap_native_px": 0.0,
+      "name": "pressed",
+      "upper_opening_native_px": 0.0
+    },
+    {
+      "brows": {
+        "screen_left": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": -8.31999942328604
+        },
+        "screen_right": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 7.2799998155404
+        }
+      },
+      "central_lip_gap_bust_px": 1.14072,
+      "central_lip_gap_native_px": 2.328,
+      "name": "onset",
+      "upper_opening_native_px": 0.8
+    },
+    {
+      "brows": {
+        "screen_left": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": -12.9999997925755
+        },
+        "screen_right": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 11.6999996425632
+        }
+      },
+      "central_lip_gap_bust_px": 2.793,
+      "central_lip_gap_native_px": 5.7,
+      "name": "build",
+      "upper_opening_native_px": 2.2
+    },
+    {
+      "brows": {
+        "screen_left": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": -18.7200014771579
+        },
+        "screen_right": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 16.6399988465721
+        }
+      },
+      "central_lip_gap_bust_px": 4.76427,
+      "central_lip_gap_native_px": 9.723,
+      "name": "creeping_dread",
+      "upper_opening_native_px": 4.0
+    },
+    {
+      "brows": {
+        "screen_left": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": -6.23999978090794
+        },
+        "screen_right": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 5.4599998616553
+        }
+      },
+      "central_lip_gap_bust_px": 1.14072,
+      "central_lip_gap_native_px": 2.328,
+      "name": "soften",
+      "upper_opening_native_px": 1.2
+    },
+    {
+      "brows": {
+        "screen_left": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 0.0
+        },
+        "screen_right": {
+          "anchor_error_native_px": 0.0,
+          "rotation_degrees": 0.0
+        }
+      },
+      "central_lip_gap_bust_px": 0.0,
+      "central_lip_gap_native_px": 0.0,
+      "name": "neutral_return",
+      "upper_opening_native_px": 0.0
+    }
+  ],
+  "production_registry_unchanged": true,
+  "scope": "Seven isolated pose/scope/reset checks only. No approval, visual fit or complete performance claim.",
+  "status": "PASS",
+  "study_poses": 7,
+  "visual_capture": false
+}

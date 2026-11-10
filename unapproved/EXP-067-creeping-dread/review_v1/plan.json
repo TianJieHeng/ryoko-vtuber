@@ -1,0 +1,9 @@
+[
+  {"name": "neutral", "pose": {}},
+  {"name": "pressed", "pose": {"brow_inner_lift_screen_left": 0.14, "brow_inner_lift_screen_right": 0.12, "mouth_lip_press": 1.0}},
+  {"name": "onset", "pose": {"brow_inner_lift_screen_left": 0.32, "brow_inner_lift_screen_right": 0.28, "opening_px": 0.8, "mouth_open": 0.08, "mouth_lip_press": 0.8, "mouth_purse": 0.1}},
+  {"name": "build", "pose": {"brow_inner_lift_screen_left": 0.5, "brow_inner_lift_screen_right": 0.45, "opening_px": 2.2, "mouth_open": 0.2, "mouth_lip_press": 0.55, "mouth_purse": 0.2}},
+  {"name": "creeping_dread", "pose": {"brow_inner_lift_screen_left": 0.72, "brow_inner_lift_screen_right": 0.64, "opening_px": 4.0, "mouth_open": 0.34, "mouth_lip_press": 0.35, "mouth_purse": 0.25}},
+  {"name": "soften", "pose": {"brow_inner_lift_screen_left": 0.24, "brow_inner_lift_screen_right": 0.21, "opening_px": 1.2, "mouth_open": 0.08, "mouth_lip_press": 0.15, "mouth_purse": 0.1}},
+  {"name": "neutral_return", "pose": {}}
+]
