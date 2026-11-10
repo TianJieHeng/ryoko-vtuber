@@ -1,0 +1,15 @@
+{
+  "candidate_peak_and_easing_pixel_identical": {
+    "bust": true,
+    "detail": true
+  },
+  "neighbor_peak_native_receipt_matches": {
+    "042": true,
+    "043": true
+  },
+  "manual_pixel_review_scope": "All eight static details in contact sheet, four actual-size bust frames, nine decoded selected frames, actual candidate peak detail and approved neighbor peak details. Not continuous normal-speed playback.",
+  "reviewed_video_sha256": "cb080ef5a98cfb12d4fa885315ca39893d301954f8a37cef2432ca9d23d0a0db",
+  "reviewed_checks_sha256": "ea54926fae2c2f3e1c4a917f0dc07fa224429ac611f791c7a46e406861e09bfc",
+  "approval": "UNAPPROVED",
+  "visual_gate": "Qualified for user review, with no visible isolated lip-pressure release demonstrated"
+}

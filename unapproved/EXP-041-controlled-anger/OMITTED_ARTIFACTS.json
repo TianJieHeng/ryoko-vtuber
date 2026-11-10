@@ -1,0 +1,19 @@
+{
+  "reason": "Avoid duplicate baseline sources, raw PNG sequences, launcher imports and caches. Native frame hashes and exact reviewed MP4 are included.",
+  "diagnostic_images": {
+    "review_evidence/bust_progression.png": {
+      "sha256": "7a46f59c9fc36a509e93084c6b11b5a039c26e37188a5b38be59289374ad2bd6",
+      "bytes": 375491
+    },
+    "review_evidence/encoded_keyframes.png": {
+      "sha256": "53050a9689d703ca4695be3189faabea5c2504ca91418531820b436af2521846",
+      "bytes": 679766
+    },
+    "review_evidence/static_faces.png": {
+      "sha256": "0c80e6a868d2a84d452564aadd93c586be1fb74229392a695bbb2f0fe9b6c54b",
+      "bytes": 542306
+    }
+  },
+  "raw_motion_frames": "242 PNGs: reviewed PNG and RGBA hashes in review_evidence/native_frame_hashes.json",
+  "static_frames": "16 PNGs: reviewed PNG hashes in review_evidence/review_checks.json"
+}

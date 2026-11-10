@@ -1,0 +1,21 @@
+# EXP-041 Controlled Anger: reviewed candidate backup
+
+**Current status: user-approved, awaiting separate production integration.** The delivered candidate was approved with “good”, under the user's clarification that “if i say its good its approved”. See APPROVAL_STATUS.json. The exact reviewed profile, MP4 and historical receipts retain their original UNAPPROVED or pending text as provenance. This backup does not add a production registry entry or change main. Its parent is frozen approved36 commit 3ce98774282ad6c20dfbd7018d20838ff861b762, even if main later advances.
+
+The independent native/frame/decode review passes. At bust scale the performance reads as restrained sternness, with narrow fixed eyes and moderate brow angle. Rigid parts only approximate the source-painted inward brow tension. The peak and ease-pressure static captures are pixel-identical: the authored lip-first release exists in control state but is **not a demonstrated visible beat**. User approval does not remove this documented limitation.
+
+## Evidence
+
+The preserved 968×800 H.264 MP4 contains 121 frames at 30 fps (4.033333 seconds including the final sampled endpoint), SHA-256 cb080ef5a98cfb12d4fa885315ca39893d301954f8a37cef2432ca9d23d0a0db. Both independent reviews, numerical and native receipts, all native motion-frame hashes, decode-order checks and visual findings are included. NATIVE_CAPTURE_REVIEW.json also records Kdenlive playback advancing from start to end after normal Play. It does not establish continuous normal-speed subjective observation, live engine pacing, cross-expression transitions, speech/lip-sync, export or full-runtime behavior.
+
+Historical no-publication statements describe the earlier authoring/review stages; this later authorized backup is publication of review evidence, not production integration. SOURCE_PACKAGE_PROVENANCE.json identifies the unchanged source bytes. Original local paths in historical receipts are provenance, not portable dependencies. Full baseline sources, raw frame sets, import caches and contact sheets are omitted; omitted diagnostic image hashes are recorded separately. The review script can regenerate its contact sheets after a new native capture.
+
+## Reproduce locally
+
+Use a fresh copy of this package and an existing local Git checkout of TianJieHeng/ryoko-vtuber containing commit 3ce98774282ad6c20dfbd7018d20838ff861b762. Run `python3 prepare_baseline.py /path/to/checkout`. The bootstrap exports only the pinned rig and reference assets, never the checkout's mutable working tree. It verifies all 999 source files, 184 PNGs, the extra source manifest, the 36-profile registry and both reference hashes. No network or checkout changes are needed.
+
+Requires Godot 4.6.3, Python with Pillow and NumPy, ffmpeg/ffprobe with libx264, and DejaVu Sans at the encoder's stated path. Preserve the supplied package as immutable evidence. In a separate reproduction copy, move existing capture/motion receipt directories, numerical receipts, review_evidence and the MP4 to an evidence archive before rerunning. Run `python3 prepare_native_launcher.py`, then `sh run_checks.sh` to import and run headless numerical/parse checks with local HOME/XDG paths. These are not visual validation.
+
+For separately permitted native capture, open native_launcher/project.godot in the existing Godot desktop editor and Run Project with Game Embed Mode Disabled. Reload if required and restore the prior setting afterward. The launcher refuses to overwrite capture/motion directories. No display-server creation, shell-native rendering, remote execution or transport workaround is needed or authorized here. Strict image guards require full/bust 568×800 and detail 400×360. After native receipts pass, run `python3 encode_preview.py`, then `python3 review_validation.py`. Regenerated encodes can differ by platform; the supplied hash identifies the exact reviewed video.
+
+The authoring/ directory retains historical construction scripts and the original preparation README. Those scripts depend on the original sibling-work layout and are archival, not the portable reproduction entry point. Use prepare_baseline.py and the root-level probes instead. No CI, paid resources or hardware flashing.

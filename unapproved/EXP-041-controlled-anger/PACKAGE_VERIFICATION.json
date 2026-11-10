@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Portable package bootstrap and fresh local numerical/parse validation only. No new native rendering, encoding, or UI.",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "baseline_files_verified": 999,
+  "baseline_pngs_verified": 184,
+  "registered_profiles": 36,
+  "candidate_excluded_from_registry": true,
+  "bootstrap_network_disabled": true,
+  "candidate_and_mp4_bytes_unchanged": true,
+  "numeric_checks": {
+    "state_checks.json": 1070,
+    "motion_state_checks.json": 8921
+  },
+  "all_numerical_records_match_original": true,
+  "native_launcher_parser_checks": [
+    "launcher",
+    "static",
+    "motion"
+  ],
+  "python_syntax": "PASS",
+  "all_source_artifacts_unchanged": true,
+  "baseline_working_tree_unchanged": true,
+  "ci_run": false
+}

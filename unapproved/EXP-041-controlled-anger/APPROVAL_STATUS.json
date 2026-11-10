@@ -1,0 +1,19 @@
+{
+  "id": "EXP-041",
+  "status": "USER_APPROVED",
+  "purpose": "Exact reviewed candidate backup; production integration is separate",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "production_registry_changed": false,
+  "native_and_decode_checks": "PASS",
+  "visible_isolated_lip_first_release": "NOT DEMONSTRATED: peak and easing captures are pixel-identical",
+  "continuous_normal_speed_observation": false,
+  "ci_run": false,
+  "review_time_status": "UNAPPROVED",
+  "approval_evidence": {
+    "user_convention": "if i say its good its approved",
+    "assistant_delivery": "Here\u2019s Controlled Anger: a restrained stern look with narrowed eyes. The inward brow movement is approximated by the current rig.",
+    "user_response": "good"
+  },
+  "approval_does_not_remove_documented_limits": true,
+  "native_capture_and_playback_receipt": "NATIVE_CAPTURE_REVIEW.json"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "launcher": "native_launcher/project.godot",
+  "unique_project_name": "Ryoko EXP-041 Controlled Anger Review",
+  "source_files_matching_freeze_except_project": 998,
+  "source_pngs_matching_freeze": 184,
+  "intentional_source_difference": "Separate project.godot changes only application title and main scene to launcher.tscn",
+  "script_parse_pass": [
+    "launcher",
+    "static",
+    "motion"
+  ],
+  "cache_provenance": "No caches copied; headless editor import generated independent local caches",
+  "native_execution": "NOT RUN; parent owns GUI slot",
+  "approval": "UNAPPROVED"
+}

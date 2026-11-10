@@ -1,0 +1,124 @@
+{
+  "id": "EXP-041",
+  "title": "Controlled anger",
+  "duration": 4.0,
+  "status": "UNAPPROVED shared-rig preparation v1; native visual review pending",
+  "intent": "Brows draw inward and down by rigid approximation, eyes narrowly fixed, lips pressed straight and restrained.",
+  "scope": "Existing symmetric brow lowering and opposing rigid tilt, ordinary symmetric lid closure and sealed lip pressure only. No horizontal brow convergence is available; no new anatomy, artwork, runtime, gaze, head or body movement.",
+  "timing_origin": "New four-second interpretation of nine inspected static source panels, not recovered motion. Measured onset and held restrained peak, then lip pressure eases before the brow and lid release. Cold Glare has zero tilt and purse; Silent Fury has neutral lids and maximum tilt/press. This candidate instead combines moderate tilt and pressure with narrow fixed eyes.",
+  "interpolation": "Unchanged shared smoothstep; eight static anchors, eleven timeline keys, exact neutral bookends, in-memory registration only.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.6,
+      "phase": "restrain",
+      "values": {
+        "brow_screen_left": -0.18,
+        "brow_screen_right": -0.18,
+        "brow_tilt_screen_left": 0.18,
+        "brow_tilt_screen_right": -0.18,
+        "blink_L": 0.06,
+        "blink_R": 0.06,
+        "mouth_lip_press": 0.24
+      }
+    },
+    {
+      "time": 0.95,
+      "phase": "gather",
+      "values": {
+        "brow_screen_left": -0.42,
+        "brow_screen_right": -0.42,
+        "brow_tilt_screen_left": 0.4,
+        "brow_tilt_screen_right": -0.4,
+        "blink_L": 0.16,
+        "blink_R": 0.16,
+        "mouth_lip_press": 0.42
+      }
+    },
+    {
+      "time": 1.35,
+      "phase": "controlled_anger",
+      "values": {
+        "brow_screen_left": -0.7,
+        "brow_screen_right": -0.7,
+        "brow_tilt_screen_left": 0.65,
+        "brow_tilt_screen_right": -0.65,
+        "blink_L": 0.26,
+        "blink_R": 0.26,
+        "mouth_lip_press": 0.65
+      }
+    },
+    {
+      "time": 2.1,
+      "phase": "controlled_anger",
+      "values": {
+        "brow_screen_left": -0.7,
+        "brow_screen_right": -0.7,
+        "brow_tilt_screen_left": 0.65,
+        "brow_tilt_screen_right": -0.65,
+        "blink_L": 0.26,
+        "blink_R": 0.26,
+        "mouth_lip_press": 0.65
+      }
+    },
+    {
+      "time": 2.55,
+      "phase": "ease_pressure",
+      "values": {
+        "brow_screen_left": -0.7,
+        "brow_screen_right": -0.7,
+        "brow_tilt_screen_left": 0.65,
+        "brow_tilt_screen_right": -0.65,
+        "blink_L": 0.26,
+        "blink_R": 0.26,
+        "mouth_lip_press": 0.38
+      }
+    },
+    {
+      "time": 3,
+      "phase": "soften",
+      "values": {
+        "brow_screen_left": -0.3,
+        "brow_screen_right": -0.3,
+        "brow_tilt_screen_left": 0.28,
+        "brow_tilt_screen_right": -0.28,
+        "blink_L": 0.12,
+        "blink_R": 0.12,
+        "mouth_lip_press": 0.22
+      }
+    },
+    {
+      "time": 3.35,
+      "phase": "settle",
+      "values": {
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "brow_tilt_screen_left": 0.08,
+        "brow_tilt_screen_right": -0.08,
+        "blink_L": 0.03,
+        "blink_R": 0.03,
+        "mouth_lip_press": 0.06
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

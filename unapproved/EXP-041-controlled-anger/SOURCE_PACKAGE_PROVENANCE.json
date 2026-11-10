@@ -1,0 +1,147 @@
+{
+  "sources": {
+    "EXP-041.json": {
+      "source": "EXP-041.json",
+      "source_sha256": "04202c10a048724616a831566f7743c18159ce84c0415867b33c13c64ce75337",
+      "transformation": "none"
+    },
+    "plan.json": {
+      "source": "plan.json",
+      "source_sha256": "5d4ec06fcb5351fb6c1d93bee4a6afba3777af76d4c8826be7b5d8a9a553ae9b",
+      "transformation": "none"
+    },
+    "SOURCE_REFERENCE.json": {
+      "source": "SOURCE_REFERENCE.json",
+      "source_sha256": "7bcc77bf4c94d0da1c87dfe2231f44198aed743b2e452d0a94c8fb05e30a9947",
+      "transformation": "none"
+    },
+    "INDEPENDENT_SOURCE_REVIEW.md": {
+      "source": "INDEPENDENT_SOURCE_REVIEW.md",
+      "source_sha256": "300a4a435c7abf3f61635a5c2b3507d6d79ddc3d041f1df56b2b9495a0c5c521",
+      "transformation": "none"
+    },
+    "INDEPENDENT_NATIVE_REVIEW.md": {
+      "source": "INDEPENDENT_NATIVE_REVIEW.md",
+      "source_sha256": "67c0fe41a127e76784b6cfc15431fdb5455ef38dca7a63a56cda35acc822f5fb",
+      "transformation": "none"
+    },
+    "check_and_capture.gd": {
+      "source": "check_and_capture.gd",
+      "source_sha256": "05dd78b4aeb8cff09d39896fb297643cb14b89ad80c24748efd74ba8f1e83f65",
+      "transformation": "none"
+    },
+    "render_motion.gd": {
+      "source": "render_motion.gd",
+      "source_sha256": "26a01bb7e42ef6a7d0409825734b0918d23b4dec41811cb5aa8a4fe5f91a6c2e",
+      "transformation": "none"
+    },
+    "encode_preview.py": {
+      "source": "encode_preview.py",
+      "source_sha256": "8e3eeb5345aab8b1233b8aab0bee28692bc14fa3dcc461fce2d3c460fbf834ab",
+      "transformation": "none"
+    },
+    "prepare_native_launcher.py": {
+      "source": "prepare_native_launcher.py",
+      "source_sha256": "a743cdf3e4b5748d6f258c2be0da400cea93782cf4cabb495f32f762f33fafc6",
+      "transformation": "none"
+    },
+    "verify_preparation.py": {
+      "source": "verify_preparation.py",
+      "source_sha256": "6f3f5e9b3dce1c4fd4d52c6213e954f3f58511560a041bf26cd58ac28f827e72",
+      "transformation": "none"
+    },
+    "run_checks.sh": {
+      "source": "run_checks.sh",
+      "source_sha256": "58337a489ec132b7a5b19cc900cb3b81bf7fa58d6a6ea4952c0b672b511fb29f",
+      "transformation": "none"
+    },
+    "review_validation.py": {
+      "source": "review_validation.py",
+      "source_sha256": "556172e47a1b02d312d1a4e47156fb4bcadd6e4b7f83c5e7e6d99e6e18d5022f",
+      "transformation": "none"
+    },
+    "preparation_verification.json": {
+      "source": "preparation_verification.json",
+      "source_sha256": "6371d0f96dc53f45c06fd053a87e72710cf4125c6bb9fba6ed01e1fa247ed527",
+      "transformation": "none"
+    },
+    "launcher_preparation_verification.json": {
+      "source": "launcher_preparation_verification.json",
+      "source_sha256": "d7a3bd944079e1e87409856837115e4b4e29a6d16114089b31c11db1a4cada12",
+      "transformation": "none"
+    },
+    "state_checks.json": {
+      "source": "state_checks.json",
+      "source_sha256": "bb32e76c1c27a09ec34f4fdeee8bb9d1ed34f595b985111c23d31f2f3e5e13ed",
+      "transformation": "none"
+    },
+    "motion_state_checks.json": {
+      "source": "motion_state_checks.json",
+      "source_sha256": "ede4ed5ca4814c00e099f7cd35612f4e946cd76a47b82b9051718482dfd42925",
+      "transformation": "none"
+    },
+    "motion_checks.json": {
+      "source": "motion_checks.json",
+      "source_sha256": "0b3fde9c8c6b4200cc200150e414a1f66c7dfbfea4e080ff5ecdce4b42166500",
+      "transformation": "none"
+    },
+    "capture/checks.json": {
+      "source": "capture/checks.json",
+      "source_sha256": "6b1ac4d465b424bb67d527be5ef6ad8a1f64f463f55f27271fc6d634566336f9",
+      "transformation": "none"
+    },
+    "video_probe.json": {
+      "source": "video_probe.json",
+      "source_sha256": "766f5e54217f7591534119a405c2dc437775d7c4bbf4a8a628c0b996ee5e53b7",
+      "transformation": "none"
+    },
+    "Controlled_anger_review_v1.mp4": {
+      "source": "Controlled_anger_review_v1.mp4",
+      "source_sha256": "cb080ef5a98cfb12d4fa885315ca39893d301954f8a37cef2432ca9d23d0a0db",
+      "transformation": "none"
+    },
+    "review_evidence/native_frame_hashes.json": {
+      "source": "review_evidence/native_frame_hashes.json",
+      "source_sha256": "4ac91b0cea4f5e473bffde44644093c54ad32ea0173ab683b9aebda18fad3ea3",
+      "transformation": "none"
+    },
+    "review_evidence/decoded_frame_order.json": {
+      "source": "review_evidence/decoded_frame_order.json",
+      "source_sha256": "bd13b928a42303f1bf601dfa58390dfe51915207829bf4c23bca79077f62a6c3",
+      "transformation": "none"
+    },
+    "review_evidence/review_checks.json": {
+      "source": "review_evidence/review_checks.json",
+      "source_sha256": "ea54926fae2c2f3e1c4a917f0dc07fa224429ac611f791c7a46e406861e09bfc",
+      "transformation": "none"
+    },
+    "review_evidence/independent_visual_findings.json": {
+      "source": "review_evidence/independent_visual_findings.json",
+      "source_sha256": "873adca34439ab84f9aceac7fb7902da769daac6ee1c04d7a9bdc76b91aaa0f8",
+      "transformation": "none"
+    },
+    "authoring/prepare_candidate.py": {
+      "source": "prepare_candidate.py",
+      "source_sha256": "e9466db1d6fecab17b34e046ac9f49db4c8c403355b580e03434ffb6db5337f9",
+      "transformation": "archived unchanged; historical authoring context, not portable entry point"
+    },
+    "authoring/build_scripts.py": {
+      "source": "build_scripts.py",
+      "source_sha256": "cc8f230a640f99ef8a76087b44b34dbc45f24bed01d1bdac4d809bd2e10efaec",
+      "transformation": "archived unchanged; historical authoring context, not portable entry point"
+    },
+    "authoring/README.md": {
+      "source": "README.md",
+      "source_sha256": "bb69bca5dbefb33558bef13509a16c02aa1badd9d5094e99076e623a0ba341cb",
+      "transformation": "archived unchanged; historical authoring context, not portable entry point"
+    },
+    "NATIVE_CAPTURE_REVIEW.json": {
+      "source": "NATIVE_CAPTURE_REVIEW.json",
+      "source_sha256": "378cf84e41d4bfcfb57030a113b01eac563c4d835a874a6ef52e2edec06a42de",
+      "transformation": "none"
+    }
+  },
+  "original_baseline_freeze_sha256": "6efb424e40d7f6e9e823714a14b67ca159b08aea4519b913201def7862f209d8",
+  "manifest_reconstructed_from_pinned_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "historical_absolute_paths": "Original reference and receipts retain the authoring paths as evidence. prepare_baseline.py rewrites only the fresh reproduction copy to its own local paths."
+}
