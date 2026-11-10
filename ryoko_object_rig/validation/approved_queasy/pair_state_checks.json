@@ -1,0 +1,238 @@
+{
+  "checks": 5698,
+  "failures": [],
+  "registry": [
+    {
+      "aliases": [
+        "yawn"
+      ],
+      "duration": 5.8,
+      "id": "EXP-163",
+      "title": "Yawn"
+    },
+    {
+      "aliases": [
+        "hearty-laughter",
+        "laugh"
+      ],
+      "duration": 5.4,
+      "id": "EXP-005",
+      "title": "Hearty laughter"
+    },
+    {
+      "aliases": [
+        "bright_welcome"
+      ],
+      "duration": 3.0,
+      "id": "EXP-001",
+      "title": "Bright welcome"
+    },
+    {
+      "aliases": [
+        "suppressed-giggle",
+        "giggle"
+      ],
+      "duration": 2.8,
+      "id": "EXP-006",
+      "title": "Suppressed giggle"
+    },
+    {
+      "aliases": [
+        "confident-reassurance",
+        "reassure"
+      ],
+      "duration": 3.0,
+      "id": "EXP-107",
+      "title": "Confident reassurance"
+    },
+    {
+      "aliases": [
+        "relieved-smile",
+        "relief"
+      ],
+      "duration": 3.2,
+      "id": "EXP-007",
+      "title": "Relieved smile"
+    },
+    {
+      "aliases": [
+        "affectionate-warmth",
+        "affection"
+      ],
+      "duration": 1.9,
+      "id": "EXP-002",
+      "title": "Affectionate warmth"
+    },
+    {
+      "aliases": [
+        "private-pride",
+        "pride"
+      ],
+      "duration": 1.9,
+      "id": "EXP-152",
+      "title": "Private pride"
+    },
+    {
+      "aliases": [
+        "shy-laughter",
+        "shy_laughter"
+      ],
+      "duration": 3.4,
+      "id": "EXP-160",
+      "title": "Shy laughter"
+    },
+    {
+      "aliases": [
+        "meditative-calm",
+        "meditate"
+      ],
+      "duration": 3.9,
+      "id": "EXP-177",
+      "title": "Meditative calm"
+    },
+    {
+      "aliases": [
+        "fighting-sleep",
+        "fighting_sleep"
+      ],
+      "duration": 3.47,
+      "id": "EXP-164",
+      "title": "Fighting sleep"
+    },
+    {
+      "aliases": [
+        "quiet-sadness",
+        "quiet_sadness"
+      ],
+      "duration": 3.65,
+      "id": "EXP-021",
+      "title": "Quiet sadness"
+    },
+    {
+      "aliases": [
+        "post-confession-shyness",
+        "post_confession_shyness"
+      ],
+      "duration": 4.35,
+      "id": "EXP-158",
+      "title": "Post-confession shyness"
+    },
+    {
+      "aliases": [
+        "cheeky-wink",
+        "cheeky_wink"
+      ],
+      "duration": 3.1,
+      "id": "EXP-181",
+      "title": "Cheeky wink"
+    },
+    {
+      "aliases": [
+        "knowing-smirk",
+        "knowing_smirk"
+      ],
+      "duration": 3.8,
+      "id": "EXP-102",
+      "title": "Knowing smirk"
+    },
+    {
+      "aliases": [
+        "confident-denial",
+        "confident_denial"
+      ],
+      "duration": 2.85,
+      "id": "EXP-116",
+      "title": "Confident denial"
+    },
+    {
+      "aliases": [
+        "frustrated-pout",
+        "frustrated_pout"
+      ],
+      "duration": 4.13,
+      "id": "EXP-050",
+      "title": "Frustrated pout"
+    },
+    {
+      "aliases": [
+        "smug-cat-smile",
+        "smug_cat_smile"
+      ],
+      "duration": 3.4,
+      "id": "EXP-186",
+      "title": "Smug cat smile"
+    },
+    {
+      "aliases": [
+        "daring-provocation",
+        "daring_provocation"
+      ],
+      "duration": 3.8,
+      "id": "EXP-114",
+      "title": "Daring provocation"
+    },
+    {
+      "aliases": [
+        "nervous-laugh",
+        "nervous_laugh"
+      ],
+      "duration": 3.6,
+      "id": "EXP-148",
+      "title": "Nervous laugh"
+    },
+    {
+      "aliases": [
+        "playful_kiss"
+      ],
+      "duration": 7.2,
+      "id": "EXP-197",
+      "title": "Playful kiss"
+    },
+    {
+      "aliases": [
+        "caught-staring",
+        "caught_staring"
+      ],
+      "duration": 5.2,
+      "id": "EXP-144",
+      "title": "Caught staring"
+    },
+    {
+      "aliases": [
+        "recovering-composure",
+        "recovering_composure"
+      ],
+      "duration": 6.2,
+      "id": "EXP-040",
+      "title": "Recovering composure"
+    },
+    {
+      "aliases": [
+        "sudden-insight",
+        "sudden_insight"
+      ],
+      "duration": 3.6,
+      "id": "EXP-125",
+      "title": "Sudden insight"
+    },
+    {
+      "aliases": [
+        "stunned-silence",
+        "stunned_silence"
+      ],
+      "duration": 4.0,
+      "id": "EXP-063",
+      "title": "Stunned silence"
+    },
+    {
+      "aliases": [
+        "queasy"
+      ],
+      "duration": 4.0,
+      "id": "EXP-090",
+      "title": "Queasy"
+    }
+  ],
+  "scope": "Both full 30fps cycles, repeated/interrupted flows, bidirectional handoffs with all profiles, neutral state, manual ownership. Focused, not full legacy suite.",
+  "status": "PASS"
+}

@@ -222,6 +222,14 @@
         "stunned_silence"
       ],
       "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-090",
+      "path": "res://expressions/EXP-090.json",
+      "aliases": [
+        "queasy"
+      ],
+      "trigger_phase": "neutral"
     }
   ]
 }

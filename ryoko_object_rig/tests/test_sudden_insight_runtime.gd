@@ -22,7 +22,7 @@ func snap(path,detail):
  var ctx=HashingContext.new();ctx.start(HashingContext.HASH_SHA256);ctx.update(im.get_data());return ctx.finish().hex_encode()
 func run():
  rig=load("res://expression_rig.tscn").instantiate();root.add_child(rig);rig.set_process(false);rig.auto_blink=false
- check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==25,"approved25 registry")
+ check(rig.rig_ready and rig.registry_ready,"ready");check(rig.list_expressions().size()==26,"approved26 registry")
  if not failures.is_empty():quit(1);return
  rig.hud.hide();rig.hint.hide();rig.pose_status.hide();rig.reset()
  var baseline=rig.face.snapshot();var head=rig.head.transform;var body=rig.body.transform

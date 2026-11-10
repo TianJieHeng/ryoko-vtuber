@@ -1,0 +1,68 @@
+{
+  "motion_checks": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved25",
+    "baseline_profile_count": 25,
+    "checks": 3536,
+    "display": "X11",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "motion_state_checks": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved25",
+    "baseline_profile_count": 25,
+    "checks": 3293,
+    "display": "headless",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "",
+    "status": "PASS",
+    "visual_capture": false
+  },
+  "state_checks": {
+    "baseline": "approved25",
+    "baseline_profile_count": 25,
+    "checks": 360,
+    "failures": [],
+    "production_registry_unchanged": true,
+    "scope": "Six isolated pose/scope/reset checks only. No approval, visual fit or complete performance claim.",
+    "status": "PASS",
+    "study_poses": 6,
+    "visual_capture": false
+  },
+  "approval": "Pending user review",
+  "baseline_note": "25-profile integration snapshot before scoped handoff mouth-bridge fix; original approved24 runtime. EXP063 is approved but integration publication pending.",
+  "source_sheet_sha256": "785b45abad9297a18294d4a3fbf93ab52d8577e05556fc2279cbd223a7d2c4ce",
+  "profile_sha256": "08813729222c8231500233ec6952459b6549e5fd534e87516fb1f99efa17676c",
+  "video_sha256": "6597d8405fec550a0a9dec4b206e97608cc14a6686fd023a7a0ed928a8198e81",
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "198488"
+    }
+  }
+}

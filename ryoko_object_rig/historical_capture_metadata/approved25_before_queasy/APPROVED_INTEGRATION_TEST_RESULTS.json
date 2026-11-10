@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Fresh approved25 focused tests; previous results archived unchanged.",
+  "checks": {
+    "integrated_state_checks.json": 1974,
+    "pair_state_checks.json": 5562,
+    "composure_state_checks.json": 2208,
+    "insight_state_checks.json": 1818,
+    "handoff_boundary_checks.json": 13174374,
+    "native_parity.json": 53,
+    "prior_native_baseline.json": 98,
+    "prior_native_comparison.json": 122
+  },
+  "headless_assertions": 13185936,
+  "whole_rig_native_visual_parity": "NOT RUN",
+  "live_engine_pacing": "UNVERIFIED",
+  "normal_speed_observed": false,
+  "ci_run": false
+}
