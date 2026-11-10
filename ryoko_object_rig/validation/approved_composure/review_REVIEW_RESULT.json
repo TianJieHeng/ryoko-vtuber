@@ -1,0 +1,35 @@
+{
+  "checks": 1333,
+  "display": "X11",
+  "duration": 6.2,
+  "failures": [],
+  "fps": 30,
+  "frames": 187,
+  "normal_speed_observed": false,
+  "production_registry_unchanged": true,
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "status": "UNAPPROVED_REVIEW_READY",
+  "visual_capture": true,
+  "source_main": "cbe1feab48143cabbe8196912bb767f9c2276c33",
+  "artifact_sha256": "3cf21f57170a6cd07e0119265163d103917a9c364b90eb78a048dbc635e37286",
+  "independent_review": "No candidate-specific blocker. Keyframes match isolated poses; intermediate frames coherent; inherited neutral eye/hair seam artifacts remain.",
+  "headless_checks": 958,
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "187"
+      }
+    ],
+    "format": {
+      "duration": "6.233333",
+      "size": "210640"
+    }
+  }
+}

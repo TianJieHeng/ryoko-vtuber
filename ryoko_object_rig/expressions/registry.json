@@ -195,6 +195,15 @@
         "caught_staring"
       ],
       "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-040",
+      "path": "res://expressions/EXP-040.json",
+      "aliases": [
+        "recovering-composure",
+        "recovering_composure"
+      ],
+      "trigger_phase": "distressed"
     }
   ]
 }

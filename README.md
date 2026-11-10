@@ -1,3 +1,7 @@
+# Current approved release
+
+The shared rig now has 23 user-approved performances, including EXP-040 Recovering composure. See [current release and evidence limits](ryoko_object_rig/APPROVED_COMPOSURE_INTEGRATION.md). Earlier progress notes below retain their historical scope.
+
 # Ryoko — full-body 2D cutout VTuber
 
 **Build a layered 2D character from the supplied artwork, then rig that artwork.** This repository is not a volumetric 3D character project. Previous 3D build instructions and implementation files have been removed from the current branch.

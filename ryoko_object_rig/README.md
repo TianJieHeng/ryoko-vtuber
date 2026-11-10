@@ -1,3 +1,9 @@
+# Approved shared rig: 23 performances
+
+EXP-040 Recovering composure is approved and registered. The exact reviewed 6.2-second profile is preserved, including historical preapproval wording in its metadata. All 22 earlier profiles, runtime code, scenes, shaders and 184 PNGs are unchanged. Native candidate review passed 1,333 checks; full-rig native parity and live pacing remain unverified. See [APPROVED_COMPOSURE_INTEGRATION.md](APPROVED_COMPOSURE_INTEGRATION.md). Current guards: tools/verify_approved_integration.py and APPROVED_SOURCE_FILES.sha256.
+
+## Historical release notes
+
 # Approved shared rig: 22 performances
 
 EXP-197 Playful kiss and EXP-144 Caught staring are approved and available in this shared registry/player. The user explicitly requested immediate publication despite unavailable native rendering. Focused state/transition/reset checks passed (5,154 checks); native visual parity is NOT RUN. All twenty prior profiles and 182 prior PNGs are preserved. See APPROVED_PAIR_INTEGRATION.md for scope and limits. Current source verification: python tools/verify_approved_integration.py and sha256sum -c APPROVED_SOURCE_FILES.sha256. Earlier release notes below retain their historical scope.
