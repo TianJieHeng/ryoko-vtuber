@@ -1,0 +1,174 @@
+{
+  "scope": "Independent static pixels, all native frame hashes, source preservation, and MP4 decode/order review. No live pacing, whole-runtime, lip-sync, approval or integration claim.",
+  "baseline": "approved27",
+  "baseline_commit": "816d77fafb6e016dc70f0802743d444e618f7b0f",
+  "baseline_file_count": 1124,
+  "baseline_png_count": 184,
+  "frozen_source_changes": {
+    "rig": [],
+    "baseline/ryoko_object_rig": []
+  },
+  "registry_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186",
+    "EXP-114",
+    "EXP-148",
+    "EXP-197",
+    "EXP-144",
+    "EXP-040",
+    "EXP-125",
+    "EXP-063",
+    "EXP-090",
+    "EXP-153"
+  ],
+  "candidate_in_production_registry": false,
+  "source_reference_hash_checks": {
+    "sheet": true,
+    "catalogue": true,
+    "panels": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "static": {
+    "bust": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      },
+      {
+        "pose": "cool_onset",
+        "changed_pixels": 1496,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "845e55dfa79f63b3b613a4a8db79e62fd152aea257e1bab7cb98b83cd759945d"
+      },
+      {
+        "pose": "glare_build",
+        "changed_pixels": 1862,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "a9ae82652ec46e2166f4ff6fd41c92bfe57ae2318043cd90e1a1a55131e836d0"
+      },
+      {
+        "pose": "cold_glare",
+        "changed_pixels": 2075,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "a2329796501e662e806cc8632ea5346e559327088e7b3170a265701302762c93"
+      },
+      {
+        "pose": "soften",
+        "changed_pixels": 1558,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "d8a16d99ddfb1a0f33e75944faa74fa8cc2aea2663b49b99ba2c48c8572fe857"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      }
+    ],
+    "detail": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      },
+      {
+        "pose": "cool_onset",
+        "changed_pixels": 5740,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "2074f11c71d5544194e17c54d86a79c76e86e699eb6a5f55f3a927ec085cc4de"
+      },
+      {
+        "pose": "glare_build",
+        "changed_pixels": 7417,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "a90742bd94514badf64458f0d159ba1f4d07590fa9ebd9b0eb651df405d4fb8d"
+      },
+      {
+        "pose": "cold_glare",
+        "changed_pixels": 8356,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "494f7048f8526355e3719d7fb92b0580724c77702fe4a2945cbecebf86c6e770"
+      },
+      {
+        "pose": "soften",
+        "changed_pixels": 6169,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "e63bbacf4cced1b6c40bbc964ec86879a301c9cbc4251469f18787c54beec9ce"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      }
+    ]
+  }
+}

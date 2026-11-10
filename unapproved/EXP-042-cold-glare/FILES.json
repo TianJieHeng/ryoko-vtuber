@@ -1,0 +1,110 @@
+{
+  "approval": "user_approved",
+  "files": [
+    {
+      "path": "APPROVAL_STATUS.json",
+      "size": 400,
+      "sha256": "23dbbd769dbb14de60d8e6d3ca77139b1a2054ccab2297154075bb2bdf3a0384"
+    },
+    {
+      "path": "BASELINE_FREEZE.json",
+      "size": 378,
+      "sha256": "6420d77cad27bb657d69324c5c5174b4f61423e5ec14a76cc719fcbb0e444430"
+    },
+    {
+      "path": "Cold_glare_review_v1.mp4",
+      "size": 185303,
+      "sha256": "f4038ae93e6612b064a0c4da084611227dda3cf41e77b09d1c189597adee238d"
+    },
+    {
+      "path": "EXP-042.json",
+      "size": 2685,
+      "sha256": "80bf98ef59e55fb61c99ff8d6de7d913680bb7d3782db8618a0fbca46f8e4555"
+    },
+    {
+      "path": "README.md",
+      "size": 982,
+      "sha256": "980b62e679b3cc838e537d8cca7598c22606bc86d548d6f386025af4d5a6077e"
+    },
+    {
+      "path": "README.preparation.md",
+      "size": 2072,
+      "sha256": "f58e7d4911b0e9657ed2f5cfc6e40d6ae69983d324fa3d4595796ae5ebd962fb"
+    },
+    {
+      "path": "SOURCE_REFERENCE.json",
+      "size": 10753,
+      "sha256": "7d4e8380dafb52f9dced02311bae53b3079564f2d57ffc58f42f58502a5fc988"
+    },
+    {
+      "path": "check_and_capture.gd",
+      "size": 7076,
+      "sha256": "86310e8be491f7759a6b0649d825033aaa659d1a746f35274a9d6245d2eb9af3"
+    },
+    {
+      "path": "encode_preview.py",
+      "size": 1811,
+      "sha256": "3016da1788a0f279015056e3953679ee6923862837a4e3f3b8b127aa5d8893fb"
+    },
+    {
+      "path": "motion_checks.json",
+      "size": 156276,
+      "sha256": "83f8150421dc5e9b3895ee15292dd65670330ef6eb8c57db0c7f0edd67d688aa"
+    },
+    {
+      "path": "motion_state_checks.json",
+      "size": 137132,
+      "sha256": "ac6f3656408bcd3216b3394820a83199f136c3af99b43712d5d2aa98ffb94187"
+    },
+    {
+      "path": "plan.json",
+      "size": 871,
+      "sha256": "a60da0a35879ebfd702f0ed4e188bfa3b8439a4ef41f57fa806030ae97702cab"
+    },
+    {
+      "path": "render_motion.gd",
+      "size": 5241,
+      "sha256": "ccb6efc45c6fe0b6528b91eae03dc6ec936f34300c6393caa8abce0b87910277"
+    },
+    {
+      "path": "review_evidence/decoded_frame_order.json",
+      "size": 21182,
+      "sha256": "66425c74f10fdf7183c13fa037787ea7f3eb9d8355e86a65f2138c95e4bdb8d2"
+    },
+    {
+      "path": "review_evidence/native_frame_hashes.json",
+      "size": 61735,
+      "sha256": "4e2489b1384cd1a426eb4bb387dd12cbb0c5bb96a4de554ed55e41791cedd611"
+    },
+    {
+      "path": "review_evidence/partial_review.json",
+      "size": 4151,
+      "sha256": "cf7293e2e45eab08b0b26fa4dda1f3723f83e88b39982a2a0c9a4669dd986a63"
+    },
+    {
+      "path": "review_evidence/review_checks.json",
+      "size": 12092,
+      "sha256": "d64df7b1f52bf9675437f5ae1429a2c28328f2a0f9ae373dcd5cda93a3e12fb4"
+    },
+    {
+      "path": "run_gate.py",
+      "size": 1245,
+      "sha256": "4de21b5bc4dd3b7a535f5d9b92c5c23b2e4800f000c3c728844841bfb4b46421"
+    },
+    {
+      "path": "run_motion.sh",
+      "size": 1014,
+      "sha256": "2f728fafa46c82add51ed70555f41acfaa6b12787a74c34a64bba606a95d200a"
+    },
+    {
+      "path": "state_checks.json",
+      "size": 13430,
+      "sha256": "827b335913cb573ae7453fbd62790914820ac5eec3285024b4cec155446ee718"
+    },
+    {
+      "path": "video_probe.json",
+      "size": 372,
+      "sha256": "921cef76057915d18ca087b5b3df672364e2360c902b943d4b6ecc27d641b3df"
+    }
+  ]
+}

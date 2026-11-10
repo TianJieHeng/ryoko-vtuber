@@ -1,0 +1,87 @@
+{
+  "id": "EXP-042",
+  "title": "Cold glare",
+  "duration": 4.0,
+  "status": "UNAPPROVED review v1; data-only candidate against approved27",
+  "intent": "Both brows lower without added tilt while upper lids narrow into a still cold stare. A very small closed-contour purse suggests depressed corners without animated mouth acting during the hold.",
+  "scope": "Existing symmetric vertical brow lowering, ordinary lid closure and small sealed purse only. No independent corner depression or brow flattening is available; original brow shape stays rigid with zero added rotation, and purse also narrows and lowers the whole closed contour. No new artwork, anatomy, runtime, shader, gaze or head/body movement.",
+  "timing_origin": "New four-second interpretation: simultaneous measured onset .55, build .85, peak1.15-2.4, softened3.05, exact-neutral3.7-4.0. Compared with Sleepy Annoyance this has zero brow tilt, less lid closure, much less purse and no drowsy-first beat; compared with Silent Fury it narrows the lids and avoids inward brow rotation and lip compression.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.55,
+      "phase": "cool_onset",
+      "values": {
+        "brow_screen_left": -0.2,
+        "brow_screen_right": -0.2,
+        "blink_L": 0.08,
+        "blink_R": 0.08,
+        "mouth_purse": 0.04
+      }
+    },
+    {
+      "time": 0.85,
+      "phase": "glare_build",
+      "values": {
+        "brow_screen_left": -0.55,
+        "brow_screen_right": -0.55,
+        "blink_L": 0.22,
+        "blink_R": 0.22,
+        "mouth_purse": 0.12
+      }
+    },
+    {
+      "time": 1.15,
+      "phase": "cold_glare",
+      "values": {
+        "brow_screen_left": -0.8,
+        "brow_screen_right": -0.8,
+        "blink_L": 0.32,
+        "blink_R": 0.32,
+        "mouth_purse": 0.18
+      }
+    },
+    {
+      "time": 2.4,
+      "phase": "cold_glare",
+      "values": {
+        "brow_screen_left": -0.8,
+        "brow_screen_right": -0.8,
+        "blink_L": 0.32,
+        "blink_R": 0.32,
+        "mouth_purse": 0.18
+      }
+    },
+    {
+      "time": 3.05,
+      "phase": "soften",
+      "values": {
+        "brow_screen_left": -0.25,
+        "brow_screen_right": -0.25,
+        "blink_L": 0.1,
+        "blink_R": 0.1,
+        "mouth_purse": 0.06
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

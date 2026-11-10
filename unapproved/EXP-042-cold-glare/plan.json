@@ -1,0 +1,50 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "cool_onset",
+    "pose": {
+      "brow_screen_left": -0.2,
+      "brow_screen_right": -0.2,
+      "blink_L": 0.08,
+      "blink_R": 0.08,
+      "mouth_purse": 0.04
+    }
+  },
+  {
+    "name": "glare_build",
+    "pose": {
+      "brow_screen_left": -0.55,
+      "brow_screen_right": -0.55,
+      "blink_L": 0.22,
+      "blink_R": 0.22,
+      "mouth_purse": 0.12
+    }
+  },
+  {
+    "name": "cold_glare",
+    "pose": {
+      "brow_screen_left": -0.8,
+      "brow_screen_right": -0.8,
+      "blink_L": 0.32,
+      "blink_R": 0.32,
+      "mouth_purse": 0.18
+    }
+  },
+  {
+    "name": "soften",
+    "pose": {
+      "brow_screen_left": -0.25,
+      "brow_screen_right": -0.25,
+      "blink_L": 0.1,
+      "blink_R": 0.1,
+      "mouth_purse": 0.06
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

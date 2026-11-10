@@ -1,0 +1,10 @@
+{
+  "expression_id": "EXP-042",
+  "status": "user_approved",
+  "approval_evidence": [
+    "if i say its good its approved",
+    "they all look good"
+  ],
+  "scope": "Historical review package retained as capture evidence. User approval supersedes historical pending/unapproved wording. Production integration is tracked separately.",
+  "baseline_commit": "816d77fafb6e016dc70f0802743d444e618f7b0f"
+}
