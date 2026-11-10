@@ -1,0 +1,65 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "eyes_soften",
+    "pose": {
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "eye_smile_L": 0.12,
+      "eye_smile_R": 0.12,
+      "mouth_smile": 0.02,
+      "mouth_corner_lift": 0.02
+    }
+  },
+  {
+    "name": "settling",
+    "pose": {
+      "brow_screen_left": -0.2,
+      "brow_screen_right": -0.2,
+      "eye_smile_L": 0.3,
+      "eye_smile_R": 0.3,
+      "mouth_smile": 0.08,
+      "mouth_corner_lift": 0.08
+    }
+  },
+  {
+    "name": "quiet_contentment",
+    "pose": {
+      "brow_screen_left": -0.28,
+      "brow_screen_right": -0.28,
+      "eye_smile_L": 0.66,
+      "eye_smile_R": 0.66,
+      "mouth_smile": 0.14,
+      "mouth_corner_lift": 0.15
+    }
+  },
+  {
+    "name": "lingering_smile",
+    "pose": {
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "eye_smile_L": 0.1,
+      "eye_smile_R": 0.1,
+      "mouth_smile": 0.1,
+      "mouth_corner_lift": 0.1
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  },
+  {
+    "name": "half_relaxed_alternative",
+    "pose": {
+      "brow_screen_left": -0.28,
+      "brow_screen_right": -0.28,
+      "blink_L": 0.28,
+      "blink_R": 0.28,
+      "mouth_smile": 0.14,
+      "mouth_corner_lift": 0.15
+    }
+  }
+]

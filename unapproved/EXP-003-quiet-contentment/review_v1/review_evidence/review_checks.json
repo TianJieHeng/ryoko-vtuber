@@ -1,0 +1,658 @@
+{
+  "scope": "Independent static pixels, all native frame hashes, source preservation, and MP4 decode/order review. No live pacing, whole-runtime, lip-sync, approval or integration claim.",
+  "baseline": "approved27",
+  "baseline_commit": "816d77fafb6e016dc70f0802743d444e618f7b0f",
+  "baseline_file_count": 1124,
+  "baseline_png_count": 184,
+  "frozen_source_changes": {
+    "rig": [],
+    "approved_baseline/ryoko_object_rig": []
+  },
+  "registry_ids": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186",
+    "EXP-114",
+    "EXP-148",
+    "EXP-197",
+    "EXP-144",
+    "EXP-040",
+    "EXP-125",
+    "EXP-063",
+    "EXP-090",
+    "EXP-153"
+  ],
+  "candidate_in_production_registry": false,
+  "source_reference_hash_checks": {
+    "sheet": true,
+    "catalogue": true,
+    "panels": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "static": {
+    "bust": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      },
+      {
+        "pose": "eyes_soften",
+        "changed_pixels": 1619,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "a83f9f47256fb42bfeae8dfa571f0c7220ee60630c5da7a789a595bd96d316ec"
+      },
+      {
+        "pose": "settling",
+        "changed_pixels": 2154,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "9200b61fa64c95785f414c5e3519fbeacfb6236f20ef6c8de8041447d55ba570"
+      },
+      {
+        "pose": "quiet_contentment",
+        "changed_pixels": 2677,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "eb1a192eb3aa73799f55b91bb1c814ea7ca6f73463e30a1b1516de8402272afd"
+      },
+      {
+        "pose": "lingering_smile",
+        "changed_pixels": 1636,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "f4c8483000837b3bf1e5b90d35102b19fc1b92a7018600b88e2e96044d4160ee"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8"
+      },
+      {
+        "pose": "half_relaxed_alternative",
+        "changed_pixels": 1868,
+        "difference_bbox_xyxy": [
+          209,
+          287,
+          356,
+          388
+        ],
+        "png_sha256": "fff63d8004f77a01161586cec548a45cae0eb148db210fcd9c8fb65b5a8d46d9"
+      }
+    ],
+    "detail": [
+      {
+        "pose": "neutral",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      },
+      {
+        "pose": "eyes_soften",
+        "changed_pixels": 6171,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          268
+        ],
+        "png_sha256": "5567afb80ad72475332652e42415e36595f066ff377ef92ce0940ee514eb1a9b"
+      },
+      {
+        "pose": "settling",
+        "changed_pixels": 8444,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          268
+        ],
+        "png_sha256": "7a8996ba1dbce766ad0b94f78d6e9fed9ed2c98c0492e597baae6ad1a21f0aca"
+      },
+      {
+        "pose": "quiet_contentment",
+        "changed_pixels": 10614,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "69bb7df11e2c979003a43781b3c1e06b1cc127843c66f4001151d188512609b5"
+      },
+      {
+        "pose": "lingering_smile",
+        "changed_pixels": 6405,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          268
+        ],
+        "png_sha256": "67f683bda501cf2d39dca1c4f9e25e035a6fadfade15a27d25cd03a8b262de33"
+      },
+      {
+        "pose": "neutral_return",
+        "changed_pixels": 0,
+        "difference_bbox_xyxy": null,
+        "png_sha256": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b"
+      },
+      {
+        "pose": "half_relaxed_alternative",
+        "changed_pixels": 7390,
+        "difference_bbox_xyxy": [
+          34,
+          64,
+          333,
+          269
+        ],
+        "png_sha256": "e3278b268eaacfab7342855c0e8d7c325fabefe4f4123b45e8994e8148f5bef7"
+      }
+    ]
+  },
+  "native_motion": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 8943,
+    "display": "X11",
+    "duration": 4.6,
+    "failures": [],
+    "fps": 30,
+    "frames": 139,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "all_expected_139_frame_records": true,
+  "all_native_poses_match_headless": true,
+  "native_motion_all_278_rgba_hashes_match": true,
+  "motion_pixel_changes": {
+    "full": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        396,
+        794,
+        1006,
+        1128,
+        1188,
+        1273,
+        1333,
+        1410,
+        1455,
+        1516,
+        1547,
+        1569,
+        1608,
+        1619,
+        1625,
+        1641,
+        1686,
+        1744,
+        1831,
+        1865,
+        1925,
+        2000,
+        2023,
+        2071,
+        2105,
+        2156,
+        2154,
+        2155,
+        2174,
+        2228,
+        2369,
+        2504,
+        2575,
+        2598,
+        2607,
+        2609,
+        2611,
+        2633,
+        2648,
+        2658,
+        2671,
+        2676,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2676,
+        2673,
+        2666,
+        2655,
+        2648,
+        2645,
+        2636,
+        2624,
+        2617,
+        2607,
+        2590,
+        2507,
+        2355,
+        2194,
+        2131,
+        2057,
+        1973,
+        1904,
+        1842,
+        1770,
+        1731,
+        1674,
+        1638,
+        1636,
+        1633,
+        1631,
+        1623,
+        1585,
+        1555,
+        1538,
+        1504,
+        1489,
+        1433,
+        1399,
+        1355,
+        1323,
+        1256,
+        1198,
+        1123,
+        1045,
+        882,
+        666,
+        269,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        209,
+        287,
+        356,
+        388
+      ],
+      "neutral_bookends_identical": true,
+      "static_neutral_matches": true,
+      "all_pixels_outside_face_box_200_270_360_410_unchanged": true
+    },
+    "detail": {
+      "changed_pixels_each_frame": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1088,
+        2729,
+        3559,
+        4179,
+        4538,
+        4851,
+        5154,
+        5397,
+        5518,
+        5736,
+        5939,
+        6129,
+        6150,
+        6171,
+        6192,
+        6377,
+        6569,
+        6833,
+        7065,
+        7375,
+        7569,
+        7753,
+        8017,
+        8157,
+        8300,
+        8421,
+        8440,
+        8444,
+        8591,
+        8772,
+        9382,
+        9947,
+        10229,
+        10280,
+        10303,
+        10354,
+        10385,
+        10441,
+        10499,
+        10556,
+        10594,
+        10613,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10614,
+        10609,
+        10598,
+        10576,
+        10562,
+        10537,
+        10503,
+        10468,
+        10430,
+        10380,
+        10321,
+        10247,
+        9965,
+        9233,
+        8704,
+        8345,
+        8080,
+        7796,
+        7498,
+        7153,
+        6946,
+        6625,
+        6433,
+        6410,
+        6405,
+        6398,
+        6224,
+        6200,
+        6147,
+        6071,
+        5909,
+        5849,
+        5657,
+        5533,
+        5318,
+        5049,
+        4950,
+        4630,
+        4446,
+        4047,
+        3630,
+        3041,
+        2037,
+        756,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "union_difference_bbox_xyxy": [
+        34,
+        64,
+        333,
+        269
+      ],
+      "neutral_bookends_identical": true,
+      "static_neutral_matches": true
+    }
+  },
+  "static_native_checks": {
+    "status": "PASS",
+    "checks": 4193,
+    "failures": []
+  },
+  "static_vs_motion_exact": {
+    "neutral": {
+      "full": true,
+      "detail": true
+    },
+    "eyes_soften": {
+      "full": true,
+      "detail": true
+    },
+    "quiet_contentment": {
+      "full": true,
+      "detail": true
+    },
+    "lingering_smile": {
+      "full": true,
+      "detail": true
+    },
+    "neutral_return": {
+      "full": true,
+      "detail": true
+    }
+  },
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "139",
+        "nb_read_frames": "139"
+      }
+    ],
+    "format": {
+      "duration": "4.633333",
+      "size": "213730"
+    }
+  },
+  "video_sha256": "b6ee41008ff0d45a9eae2fc056f9de0bbc98444107b7bc7da817ac1efc456432",
+  "mp4_monotonic_30fps_pts": true,
+  "mp4_full_decode": {
+    "frames": 139,
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "mp4_source_panel_mae": {
+    "full": {
+      "mean": 1.2893419208295336,
+      "max": 1.293830692488263,
+      "frames": 139
+    },
+    "detail": {
+      "mean": 2.0284093058886223,
+      "max": 2.069011574074074,
+      "frames": 139
+    }
+  },
+  "mp4_order_checks": {
+    "method": "Every decoded RGB frame compared with same-index native full and detail panels; PTS inspected; nearest-frame face error exposes material reorder while acknowledging lossy compression and repeated/near-identical poses.",
+    "max_expected_face_mae": 2.2212629318237305,
+    "max_expected_minus_best_face_mae": 0.0072879791259765625,
+    "selected": [
+      {
+        "frame": 0,
+        "expected_face_mae": 2.151345729827881,
+        "best_face_mae": 2.151345729827881,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 8,
+        "expected_face_mae": 2.159482479095459,
+        "best_face_mae": 2.1521944999694824,
+        "expected_minus_best": 0.0072879791259765625,
+        "best_matching_frame": 0
+      },
+      {
+        "frame": 21,
+        "expected_face_mae": 2.1854450702667236,
+        "best_face_mae": 2.1854450702667236,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 21
+      },
+      {
+        "frame": 34,
+        "expected_face_mae": 2.1173291206359863,
+        "best_face_mae": 2.1173291206359863,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 34
+      },
+      {
+        "frame": 60,
+        "expected_face_mae": 2.059648036956787,
+        "best_face_mae": 2.059648036956787,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 50
+      },
+      {
+        "frame": 84,
+        "expected_face_mae": 2.058281660079956,
+        "best_face_mae": 2.058281660079956,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 50
+      },
+      {
+        "frame": 108,
+        "expected_face_mae": 2.1715734004974365,
+        "best_face_mae": 2.1715734004974365,
+        "expected_minus_best": 0.0,
+        "best_matching_frame": 108
+      },
+      {
+        "frame": 128,
+        "expected_face_mae": 2.1925466060638428,
+        "best_face_mae": 2.1919667720794678,
+        "expected_minus_best": 0.000579833984375,
+        "best_matching_frame": 127
+      },
+      {
+        "frame": 138,
+        "expected_face_mae": 2.1917598247528076,
+        "best_face_mae": 2.1911802291870117,
+        "expected_minus_best": 0.0005795955657958984,
+        "best_matching_frame": 127
+      }
+    ],
+    "all_frame_detail_file": "decoded_frame_order.json"
+  },
+  "independent_checks_pass": true,
+  "additional_rig_files_only_recorded_import_uid": true
+}

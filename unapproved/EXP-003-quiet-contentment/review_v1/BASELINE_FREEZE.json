@@ -1,0 +1,7 @@
+{
+  "baseline": "approved27",
+  "baseline_profile_count": 27,
+  "catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "source_commit": "816d77fafb6e016dc70f0802743d444e618f7b0f",
+  "scope": "Portable rendering metadata; original workspace full freeze is not included."
+}

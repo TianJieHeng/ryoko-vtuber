@@ -1,0 +1,11 @@
+{
+  "source": "Parent renderer report",
+  "method": "Sampled displayed phases from ffplay default 1x playback at 1180x812 bust and detail layout.",
+  "observed": [
+    "Closed-eye held peak and half-open transition.",
+    "Clearly visible settling/reopening with a quiet tiny mouth rather than an enlarged smile."
+  ],
+  "scope": "Sampled phases, not continuous observation or live engine pacing certification.",
+  "player_closed_verified_by_parent": true,
+  "approval": "pending"
+}

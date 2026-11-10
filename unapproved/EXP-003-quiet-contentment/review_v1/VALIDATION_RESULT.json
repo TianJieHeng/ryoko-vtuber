@@ -1,0 +1,56 @@
+{
+  "state_checks.json": {
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 4179,
+    "failures": [],
+    "production_registry_unchanged": true,
+    "scope": "Actual node, shader and lip-curve geometry only. Ordinary upper-lash travel is a closure/handoff measure, not proof that a lash is visible. Native visual fidelity, perception and approval remain unverified.",
+    "status": "PASS",
+    "study_poses": 7,
+    "visual_capture": false
+  },
+  "motion_state_checks.json": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 8664,
+    "display": "headless",
+    "duration": 4.6,
+    "failures": [],
+    "fps": 30,
+    "frames": 139,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "",
+    "status": "PASS",
+    "visual_capture": false
+  },
+  "capture/checks.json": {
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 4193,
+    "failures": [],
+    "production_registry_unchanged": true,
+    "scope": "Actual node, shader and lip-curve geometry only. Ordinary upper-lash travel is a closure/handoff measure, not proof that a lash is visible. Native visual fidelity, perception and approval remain unverified.",
+    "status": "PASS",
+    "study_poses": 7,
+    "visual_capture": true
+  },
+  "motion_checks.json": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 8943,
+    "display": "X11",
+    "duration": 4.6,
+    "failures": [],
+    "fps": 30,
+    "frames": 139,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  }
+}

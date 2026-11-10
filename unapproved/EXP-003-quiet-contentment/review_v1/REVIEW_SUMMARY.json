@@ -1,0 +1,34 @@
+{
+  "status": "PASS for review delivery",
+  "approval": "pending",
+  "independent_checks_pass": true,
+  "baseline_files_verified": 1124,
+  "baseline_pngs_verified": 184,
+  "native_hashes_verified": 278,
+  "video_sha256": "b6ee41008ff0d45a9eae2fc056f9de0bbc98444107b7bc7da817ac1efc456432",
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "139",
+        "nb_read_frames": "139"
+      }
+    ],
+    "format": {
+      "duration": "4.633333",
+      "size": "213730"
+    }
+  },
+  "limitations": [
+    "Existing closed-eye contour is not exact source anatomy.",
+    "Inherited lash/hair edge seams visible in detail.",
+    "Independent review inspected static and decoded phases, not continuous playback."
+  ],
+  "evidence": "review_evidence/review_checks.json"
+}
