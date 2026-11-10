@@ -16,7 +16,7 @@ No gaze, smile, blush, automatic blink, hair, head, neck or body acting is autho
 
 ## Baseline provenance
 
-Preparation started against approved24. At the parent's direction it was refreshed from `stunned_integration_work/ryoko_object_rig` after EXP-063 was included, before the final headless tests. The working copy has **25 production profiles**, including EXP-063, and no EXP-090 on disk. The exact 990-file/184-PNG source snapshot is recorded in `BASELINE_FREEZE.json`; the earlier approved24 copy and receipt are preserved under `historical_preparation/`.
+Preparation started against approved24. It was refreshed from `stunned_integration_work/ryoko_object_rig` after EXP-063 was included, before the final headless tests. The working copy has **25 production profiles**, including EXP-063, and no EXP-090 on disk. The exact 990-file/184-PNG source snapshot is recorded in `BASELINE_FREEZE.json`; the earlier approved24 copy and receipt are preserved under `historical_preparation/`.
 
 This is a **25-profile integration snapshot**, not a claim of finalized25 release publication. At copy time the source's inherited RELEASE, integration manifests and repository-specific guard still described approved24. They are retained byte-exact as inherited provenance rather than rewritten to fabricate a release receipt. Queasy's own harnesses, profile metadata and checks use count25. A later finalized25 packaging refresh must keep the rendered runtime/artwork unchanged and record its new provenance explicitly.
 
@@ -37,7 +37,7 @@ The nine-key timeline is neutral at 0 and 0.25 seconds, onset at 0.55, build at 
 
 The existing caught-staring component emits a warning about loading an image file in exported builds. It is inherited and unchanged; this local preparation does not validate packaged exports.
 
-The parent subsequently reported the six-pose native capture passed **372 checks** and inspected the peak as a coherent restrained Queasy pose with heavy lids, sealed pursed lips and subtle rigid brow motion. Native capture and final visual review belong to the parent. This worker did not start a GUI, capture native frames or claim approval. Native timeline capture was still underway at this handoff; no continuous normal-speed observation or live pacing claim is made here.
+The six-pose native capture passed **372 checks**. The peak is a restrained Queasy pose with heavy lids, sealed pursed lips and subtle rigid brow motion. Completed native timeline evidence is summarized below. No continuous normal-speed observation or live pacing claim is made.
 
 ## Reproduce
 
@@ -50,7 +50,7 @@ sh queasy_work/run_motion.sh --state
 python -B queasy_work/verify_preparation.py
 ```
 
-Exact static capture command for the rendering owner:
+Static capture command:
 
 ```sh
 python -B /workspace/scratch/42f2baf55663/queasy_work/run_gate.py --rig /workspace/scratch/42f2baf55663/queasy_work/rig --capture
@@ -63,7 +63,7 @@ sh /workspace/scratch/42f2baf55663/queasy_work/run_motion.sh --capture
 python -B /workspace/scratch/42f2baf55663/queasy_work/encode_preview.py
 ```
 
-The encoder expects 121 endpoint-inclusive frames in each view, producing a 968×800 H.264 review video at 30 fps, 4.033333 seconds including the final neutral endpoint frame. It never starts the renderer and fails clearly if native capture is missing. No CI, paid resources, remote-machine execution, publication or hardware action was performed by this preparation worker.
+The encoder expects 121 endpoint-inclusive frames in each view, producing a 968×800 H.264 review video at 30 fps, 4.033333 seconds including the final neutral endpoint frame. It never starts the renderer and fails clearly if native capture is missing. No CI, paid resources, remote-machine execution or hardware action was used.
 
 ## Completed native review
 

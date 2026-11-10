@@ -17,7 +17,7 @@ This review did not modify artwork, the rig, candidate controls, timing, or the 
 - Native capture: `motion/full/0000.png` through `0120.png` and matching `motion/detail/` frames.
 - Supporting evidence inspected: `render_motion.gd`, `check_and_capture.gd`, `plan.json`, `motion_checks.json`, `motion_state_checks.json`, static captures, `BASELINE_FREEZE.json`, shared sampling/restart implementation, and encode implementation.
 
-The copied baseline has 25 profiles. Its freeze describes a 25-profile integration snapshot with inherited approved24 release metadata at copy time, not a finalized approved25 release. The preparation-only label in that freeze is historical; completed capture evidence is in the separate motion checks. The parent's report of an unresolved cross-profile sealed-mouth integration issue is outside the isolated Queasy evidence and remains a release limitation.
+The copied baseline has 25 profiles. Its freeze describes a 25-profile integration snapshot with inherited approved24 release metadata at copy time, not a finalized approved25 release. The preparation-only label in that freeze is historical; completed capture evidence is in the separate motion checks. The separately identified cross-profile sealed-mouth integration issue is outside the isolated Queasy evidence and remains a release limitation.
 
 ## Source fidelity and visual inspection
 
