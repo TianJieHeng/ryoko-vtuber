@@ -1,0 +1,50 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "tension_onset",
+    "pose": {
+      "brow_screen_left": -0.2,
+      "brow_screen_right": -0.2,
+      "brow_tilt_screen_left": 0.3,
+      "brow_tilt_screen_right": -0.3,
+      "mouth_lip_press": 0.3
+    }
+  },
+  {
+    "name": "fury_build",
+    "pose": {
+      "brow_screen_left": -0.6,
+      "brow_screen_right": -0.6,
+      "brow_tilt_screen_left": 0.75,
+      "brow_tilt_screen_right": -0.75,
+      "mouth_lip_press": 0.75
+    }
+  },
+  {
+    "name": "silent_fury",
+    "pose": {
+      "brow_screen_left": -0.95,
+      "brow_screen_right": -0.95,
+      "brow_tilt_screen_left": 1.0,
+      "brow_tilt_screen_right": -1.0,
+      "mouth_lip_press": 1.0
+    }
+  },
+  {
+    "name": "soften",
+    "pose": {
+      "brow_screen_left": -0.3,
+      "brow_screen_right": -0.3,
+      "brow_tilt_screen_left": 0.35,
+      "brow_tilt_screen_right": -0.35,
+      "mouth_lip_press": 0.4
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]
