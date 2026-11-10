@@ -1,0 +1,15 @@
+{
+  "checks": 788,
+  "display": "X11",
+  "duration": 3.6,
+  "failures": [],
+  "fps": 30,
+  "frames": 109,
+  "normal_speed_observed": false,
+  "production_registry_unchanged": true,
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "status": "PASS",
+  "visual_capture": true,
+  "complete_receipt_sha256": "cc8c05c01c13453452d9f9c1e26e146d139b53015210a102f89b6600c8cd7f4f",
+  "complete_receipt_source": "review/exp125-sudden-insight-v1@348263579c349204ebdc7eceba5672716757c086:unapproved/EXP-125-sudden-insight/review_v1/motion_checks.json"
+}

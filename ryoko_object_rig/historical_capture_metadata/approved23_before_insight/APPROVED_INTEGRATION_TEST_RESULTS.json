@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Fresh approved23 focused tests only; earlier aggregate receipt archived unchanged.",
+  "headless_suites": [
+    {
+      "script": "tests/test_recovering_composure_runtime.gd",
+      "checks": 2108
+    },
+    {
+      "script": "tests/test_approved_pair.gd",
+      "checks": 5290
+    }
+  ],
+  "headless_assertions": 7398,
+  "native_exp040_parity_checks": 53,
+  "native_exp040_checkpoints": 10,
+  "native_exp040_exact_image_pairs": 20,
+  "whole_rig_native_visual_parity": "NOT RUN",
+  "live_engine_pacing": "UNVERIFIED",
+  "normal_speed_observed": false,
+  "ci_run": false,
+  "diagnostic": "Inherited dummy renderer custom_samplers warning retained in logs."
+}

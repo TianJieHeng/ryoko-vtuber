@@ -1,0 +1,80 @@
+{
+  "checks": 53,
+  "display": "X11",
+  "failures": [],
+  "records": [
+    {
+      "frame": 0,
+      "hashes": [
+        "ec4e697b0b9b91f63de8605d663b9c5c58652e3552e92dedd44c3f0ac63446ea",
+        "b463658f07871bea0292a8921f7b7dc62c449fafb33e87077ee9bc82e0680156"
+      ]
+    },
+    {
+      "frame": 15,
+      "hashes": [
+        "6323001e84e85b0d1336858e76f61787d0f0bbf24d0d94188a2f4b3e2e521af9",
+        "b535c5c7dbfa1471366d01eac12a381c85febb08bb8c7e32612906e53e97fe8c"
+      ]
+    },
+    {
+      "frame": 28,
+      "hashes": [
+        "7d39a9777be4ad8ef5694e6c5fba1822d4e1e5843adec001d665466ee9960304",
+        "e684a370ddccf6c0f58ba0ed665fcda487b6897a5805f585f354d88ec0fedf4f"
+      ]
+    },
+    {
+      "frame": 29,
+      "hashes": [
+        "ee84cfb674c48102aec7006b0bebb509ff60725ac13fa1e9c53ef18ca3830acb",
+        "3ed0e8101139a88a177bcb608a2abc5a82e46aecd0ed5ed46529cae36550eef8"
+      ]
+    },
+    {
+      "frame": 37,
+      "hashes": [
+        "4e6bfafbe6e6da7b783965470b6d5018fca215761a0cff8e97d7417ae872310c",
+        "66dafeab31f72574bec806f96c9314625de33528c0b027cd7d886c6131b319d3"
+      ]
+    },
+    {
+      "frame": 49,
+      "hashes": [
+        "70d9675578bcfc0cb149779ebef4cad2f9b19467e961d3901f18b5d2e87768d8",
+        "9c2e5babe8d40b8817f783b40e97169dc5ec1d9cc27314af97b5dff866cf92b8"
+      ]
+    },
+    {
+      "frame": 57,
+      "hashes": [
+        "909e3009cf3eedde1796b1d84088d3dc9216853fa5f74356c0fc92e76057cf36",
+        "8ff9a9b508b14383ef6ed6ab4fb65f8dfec9c975ab214051e4d809b430f10c43"
+      ]
+    },
+    {
+      "frame": 70,
+      "hashes": [
+        "b42a3b6b611733ca333741a4bb7a73754242e0d7c8cf03f0e4d0c2ce8fec786b",
+        "b2bcd26abb99cb2acc8b21785cbb75d638278191361cb4f85761e45dad4c89eb"
+      ]
+    },
+    {
+      "frame": 90,
+      "hashes": [
+        "f20800d527ea26d50ea03f443f64a0e07719a38b64e90175aa11eea3acd808e3",
+        "b83a05c5c506be7f52df58e033ddebe28c0ff0fc68ff7cf23785be3bc13478ff"
+      ]
+    },
+    {
+      "frame": 108,
+      "hashes": [
+        "ec4e697b0b9b91f63de8605d663b9c5c58652e3552e92dedd44c3f0ac63446ea",
+        "b463658f07871bea0292a8921f7b7dc62c449fafb33e87077ee9bc82e0680156"
+      ]
+    }
+  ],
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "scope": "Ten production EXP-125 checkpoints, both views, exact approved review RGBA parity. Not prior23 native parity or live pacing.",
+  "status": "PASS"
+}

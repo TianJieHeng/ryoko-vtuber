@@ -1,5 +1,9 @@
 # Current approved release
 
+The shared rig now has 24 user-approved performances, including EXP-125 Sudden insight. See [current release and evidence limits](ryoko_object_rig/APPROVED_INSIGHT_INTEGRATION.md). Earlier progress notes below retain historical scope.
+
+# Current approved release
+
 The shared rig now has 23 user-approved performances, including EXP-040 Recovering composure. See [current release and evidence limits](ryoko_object_rig/APPROVED_COMPOSURE_INTEGRATION.md). Earlier progress notes below retain their historical scope.
 
 # Ryoko — full-body 2D cutout VTuber

@@ -204,6 +204,15 @@
         "recovering_composure"
       ],
       "trigger_phase": "distressed"
+    },
+    {
+      "id": "EXP-125",
+      "path": "res://expressions/EXP-125.json",
+      "aliases": [
+        "sudden-insight",
+        "sudden_insight"
+      ],
+      "trigger_phase": "neutral"
     }
   ]
 }

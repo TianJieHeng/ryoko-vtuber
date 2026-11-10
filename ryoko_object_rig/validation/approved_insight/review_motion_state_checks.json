@@ -1,0 +1,15 @@
+{
+  "checks": 569,
+  "display": "headless",
+  "duration": 3.6,
+  "failures": [],
+  "fps": 30,
+  "frames": 109,
+  "normal_speed_observed": false,
+  "production_registry_unchanged": true,
+  "renderer": "",
+  "status": "PASS",
+  "visual_capture": false,
+  "complete_receipt_sha256": "440f9c06f36ed46a3962d1b41cc226ee44f3345b193d0db62c040a21e70ba1be",
+  "complete_receipt_source": "review/exp125-sudden-insight-v1@348263579c349204ebdc7eceba5672716757c086:unapproved/EXP-125-sudden-insight/review_v1/motion_state_checks.json"
+}

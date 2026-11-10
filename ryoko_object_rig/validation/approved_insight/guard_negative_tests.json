@@ -1,0 +1,6 @@
+{
+  "corrupt_profile_rejected": true,
+  "missing_profile_rejected": true,
+  "new_source_rejected": true,
+  "clean_pass": true
+}

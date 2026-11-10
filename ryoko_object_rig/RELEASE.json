@@ -1,8 +1,8 @@
 {
-  "status": "23 approved shared-rig performances; EXP-040 native review passed; whole-rig native parity NOT RUN; live pacing UNVERIFIED",
+  "status": "24 approved shared-rig performances; EXP-125 focused native parity passed; whole-rig native parity NOT RUN; live pacing UNVERIFIED",
   "user_approved": true,
   "published_with_containing_commit": true,
-  "base_main": "cbe1feab48143cabbe8196912bb767f9c2276c33",
+  "base_main": "1ab3a90d8737c4a06c42e2f4fb790e07dace417d",
   "authored_registry": [
     "EXP-163",
     "EXP-005",
@@ -26,10 +26,38 @@
     "EXP-148",
     "EXP-197",
     "EXP-144",
-    "EXP-040"
+    "EXP-040",
+    "EXP-125"
   ],
-  "authored_local_count": 23,
+  "authored_local_count": 24,
   "approved_registry": [
+    "EXP-163",
+    "EXP-005",
+    "EXP-001",
+    "EXP-006",
+    "EXP-107",
+    "EXP-007",
+    "EXP-002",
+    "EXP-152",
+    "EXP-160",
+    "EXP-177",
+    "EXP-164",
+    "EXP-021",
+    "EXP-158",
+    "EXP-181",
+    "EXP-102",
+    "EXP-116",
+    "EXP-050",
+    "EXP-186",
+    "EXP-114",
+    "EXP-148",
+    "EXP-197",
+    "EXP-144",
+    "EXP-040",
+    "EXP-125"
+  ],
+  "approved_published_count": 24,
+  "approved_predecessors": [
     "EXP-163",
     "EXP-005",
     "EXP-001",
@@ -54,42 +82,17 @@
     "EXP-144",
     "EXP-040"
   ],
-  "approved_published_count": 23,
-  "approved_predecessors": [
-    "EXP-163",
-    "EXP-005",
-    "EXP-001",
-    "EXP-006",
-    "EXP-107",
-    "EXP-007",
-    "EXP-002",
-    "EXP-152",
-    "EXP-160",
-    "EXP-177",
-    "EXP-164",
-    "EXP-021",
-    "EXP-158",
-    "EXP-181",
-    "EXP-102",
-    "EXP-116",
-    "EXP-050",
-    "EXP-186",
-    "EXP-114",
-    "EXP-148",
-    "EXP-197",
-    "EXP-144"
-  ],
   "newly_approved": [
-    "EXP-040"
+    "EXP-125"
   ],
   "pending_review": [],
   "new_pngs": 0,
   "protected_parent_pngs": 184,
-  "runtime_changes": "Data-only EXP-040 Recovering composure registration; prior 22 profiles, shared runtime and artwork unchanged.",
+  "runtime_changes": "Data-only EXP-125 Sudden insight registration; prior 23 profiles, shared runtime and artwork unchanged.",
   "normal_speed_playback_observed": false,
   "socket_test_performed": false,
   "verification": "APPROVED_SOURCE_MANIFEST.json, APPROVED_SOURCE_FILES.sha256 and tools/verify_approved_integration.py",
-  "historical_release": "historical_capture_metadata/approved22_before_composure/RELEASE.json",
+  "historical_release": "historical_capture_metadata/approved23_before_insight/RELEASE.json",
   "current_status": "APPROVED_INTEGRATION_STATUS.json",
   "excluded": [
     "EXP-003",
@@ -106,8 +109,8 @@
   ],
   "known_limit": "EXP-148 live engine pacing and continuous normal-speed playback remain UNVERIFIED. Review covered 109 decoded chronological frames at 30 fps and selected full/detail/reference views, not continuous normal-speed observation. Source KP5\u20136 opposing dental clench is unsupported and excluded; source nose blush and painted brow curvature are approximations. The inherited EXP-114 smooth real-time pacing HOLD and other documented rig limits remain unchanged.",
   "smooth_realtime_pacing_status": "UNVERIFIED",
-  "current_validation": "APPROVED_COMPOSURE_INTEGRATION.md",
-  "source_backup": "Review branch review/exp040-recovering-composure-v1 at d2048d5067f6efbe7eb92dd75529b14da5cad98a and all earlier unapproved backups retained.",
+  "current_validation": "APPROVED_INSIGHT_INTEGRATION.md",
+  "source_backup": "Review branch review/exp125-sudden-insight-v1 at 348263579c349204ebdc7eceba5672716757c086; all earlier backups retained.",
   "upper_iris_part_repair": {
     "status": "user_approved_part_repair_integrated",
     "record": "UPPER_IRIS_REPAIR.json",
@@ -117,6 +120,6 @@
     "general_eye_opening_qualified": false
   },
   "earlier_fields_scope": "Inherited expression limitations and upper iris provenance retain their original scope.",
-  "native_visual_parity": "Whole-rig parity NOT RUN. EXP-040 native llvmpipe review passed 1333 checks, including exact endpoint pixels.",
-  "publication_authorization": "User approved Recovering Composure preview and explicitly requested Git publication."
+  "native_visual_parity": "Whole-rig parity NOT RUN. Focused EXP-125 native integration parity passed.",
+  "publication_authorization": "User approved Sudden insight preview and explicitly requested Git publication."
 }

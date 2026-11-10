@@ -1,3 +1,7 @@
+# Approved shared rig: 24 performances
+
+EXP-125 Sudden insight is approved and registered. See [current validation](APPROVED_INSIGHT_INTEGRATION.md). Earlier release notes below retain historical scope.
+
 # Approved shared rig: 23 performances
 
 EXP-040 Recovering composure is approved and registered. The exact reviewed 6.2-second profile is preserved, including historical preapproval wording in its metadata. All 22 earlier profiles, runtime code, scenes, shaders and 184 PNGs are unchanged. Native candidate review passed 1,333 checks; full-rig native parity and live pacing remain unverified. See [APPROVED_COMPOSURE_INTEGRATION.md](APPROVED_COMPOSURE_INTEGRATION.md). Current guards: tools/verify_approved_integration.py and APPROVED_SOURCE_FILES.sha256.
