@@ -1,0 +1,8 @@
+{
+  "editor_change": "Godot reordered editor/rendering sections and normalized whitespace only; values unchanged.",
+  "original_frozen_sha256": "649e4bd8b6fcc9e70a2626d9563e8a0cee7f423de1b3309115478982c3b64b69",
+  "restored_sha256": "649e4bd8b6fcc9e70a2626d9563e8a0cee7f423de1b3309115478982c3b64b69",
+  "editor_saved_copy": "review_evidence/project_godot_editor_reordered.txt",
+  "prior_validation": "review_evidence/review_checks_before_config_restore.json",
+  "candidate_approval": "UNAPPROVED"
+}

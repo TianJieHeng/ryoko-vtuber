@@ -1,0 +1,12 @@
+{
+  "static_count": 16,
+  "static_dimensions_valid": true,
+  "neutral_return_rgba_exact": true,
+  "peak_change_bbox_xyxy": [
+    215,
+    282,
+    345,
+    402
+  ],
+  "candidate_approval": "UNAPPROVED"
+}

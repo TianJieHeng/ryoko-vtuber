@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "unchanged_pinned_launcher_files": 998,
+  "only_pinned_launcher_override": "project.godot: unique project name and GUI main scene",
+  "scripts_parse": [
+    "static.gd",
+    "motion.gd",
+    "launcher.gd"
+  ],
+  "native_rendered": false,
+  "capture_outputs_exist": false,
+  "candidate_approval": "UNAPPROVED"
+}

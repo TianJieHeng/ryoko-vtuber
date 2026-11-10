@@ -1,0 +1,19 @@
+{
+  "reason": "Compact backup avoids duplicate baseline sources, import caches and raw capture frames. Exact approved MP4, native frame hashes, decoded ordering and static frame hashes are included.",
+  "diagnostic_images": {
+    "review_evidence/bust_progression.png": {
+      "sha256": "c6e9f62944975d85305ce8a323df2851d4d29126b856380b38a8c6b4bc6736ec",
+      "bytes": 378328
+    },
+    "review_evidence/encoded_keyframes.png": {
+      "sha256": "eb79a3ea4468008accca8c441fbb5d004ae09b15c9b8f86ba05037e0c3a085f7",
+      "bytes": 675747
+    },
+    "review_evidence/static_faces.png": {
+      "sha256": "1604f97bffc433e3b856edf988f9b7393464d51078a9500986c81d0aefab55e6",
+      "bytes": 553752
+    }
+  },
+  "raw_motion_frames": "242 PNGs; exact PNG and RGBA hashes in review_evidence/native_frame_hashes.json",
+  "static_frames": "16 PNGs; exact hashes in review_evidence/review_checks.json"
+}

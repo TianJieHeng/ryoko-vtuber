@@ -1,0 +1,12 @@
+test_body_guard_and_empty_bbox (__main__.ReviewValidationTests.test_body_guard_and_empty_bbox) ... ok
+test_exact_peak_and_neutral_interpolation (__main__.ReviewValidationTests.test_exact_peak_and_neutral_interpolation) ... ok
+test_existing_headless_state_math (__main__.ReviewValidationTests.test_existing_headless_state_math) ... ok
+test_forbidden_control_detected (__main__.ReviewValidationTests.test_forbidden_control_detected) ... ok
+test_native_image_guards (__main__.ReviewValidationTests.test_native_image_guards) ... ok
+test_nonfinite_pose_rejected (__main__.ReviewValidationTests.test_nonfinite_pose_rejected) ... ok
+test_out_of_order_record_rejected (__main__.ReviewValidationTests.test_out_of_order_record_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.030s
+
+OK

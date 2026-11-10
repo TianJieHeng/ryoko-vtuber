@@ -1,0 +1,26 @@
+{
+  "candidate": "EXP-061",
+  "date": "2026-11-10",
+  "status": "SUPPORTED_UI_PLAYBACK_COMPLETED_WITH_SAMPLED_OBSERVATION",
+  "player": "Kdenlive Clip Monitor",
+  "video": "Broad_surprise_review_v1.mp4",
+  "video_sha256": "66fafc481ccc35fd19e6a5024cc94c7f95aa69a20a3a4f287868053f51584cf3",
+  "normal_play_invoked": true,
+  "playback_runs": 2,
+  "observed": [
+    "Correct Broad_surprise_review_v1.mp4 selected in Clip Monitor; 968x800 30.00fps project, clip duration 00:00:04:01.",
+    "Home reset the playhead to the start, then Space invoked normal playback without a speed alteration.",
+    "First run reached the endpoint; a second run visibly progressed through early frames in consecutive screenshots and subsequently reached the final neutral endpoint."
+  ],
+  "continuous_full_motion_observation": false,
+  "normal_speed_pacing_fully_reviewed": false,
+  "limits": [
+    "Screenshot sampling does not establish continuous full-motion observation or smooth playback of every interval.",
+    "No live-engine real-time expression playback, interruption playback, lip-sync or body gesture validation was performed."
+  ],
+  "godot_game_embed_mode_original": "Use Per-Project Configuration",
+  "godot_game_embed_mode_during_capture": "Disabled, followed by project reload",
+  "godot_game_embed_mode_restored_and_visually_verified": true,
+  "ui_slot_released": true,
+  "approval": "UNAPPROVED"
+}

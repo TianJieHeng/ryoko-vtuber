@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "Fresh pinned bootstrap, numerical and parse checks; read-only native evidence rerun. No new rendering, encoding or UI.",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "baseline_files_verified": 999,
+  "baseline_pngs_verified": 184,
+  "registered_profiles": 36,
+  "candidate_excluded_from_registry": true,
+  "bootstrap_network_disabled": true,
+  "candidate_and_mp4_bytes_unchanged": true,
+  "numeric_checks": {
+    "state_checks.json": 838,
+    "motion_state_checks.json": 9023
+  },
+  "all_numerical_records_match_original": true,
+  "native_launcher_parser_checks": [
+    "launcher",
+    "static",
+    "motion"
+  ],
+  "python_syntax": "PASS",
+  "validator_helper_tests": 7,
+  "independent_native_decode_rerun": "PASS",
+  "new_reproduction_freeze_preserves_historical_freeze": true,
+  "all_source_artifacts_unchanged": true,
+  "baseline_working_tree_unchanged": true,
+  "headless_diagnostics": "Shared custom-sampler shader diagnostic/image-loader warning remain; numerical PASS is not fresh native rendering or export validation.",
+  "ci_run": false,
+  "ui_used_by_this_task": false,
+  "remote_execution": false
+}

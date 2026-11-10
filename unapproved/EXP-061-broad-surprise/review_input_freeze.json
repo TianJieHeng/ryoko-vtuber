@@ -1,0 +1,18 @@
+{
+  "scope": "Pins candidate/preparation inputs independently reviewed before native capture; not an approval or runtime change.",
+  "sha256": {
+    "BASELINE_FREEZE.json": "b8f5af5d6dd9b619afd386335890e830c5765d2c74abd5b3dc9bc2ed2ff651a5",
+    "EXP-061.json": "aa2200fc77caefb887d2e6115e062d5e2ca47c95cc56b56c5f536b926c57fbbf",
+    "SOURCE_REFERENCE.json": "3127607dbcac265747611bce169a45ca9187c26c5874cf74bb1fdbf19b948338",
+    "plan.json": "3ac8d80b119bf785673014d85d0d0e538ad8104fcf1b929b5ec8fda1ac17c0e5",
+    "check_and_capture.gd": "8defe836d39581fa68a7f14c55f538a735bf13cca735cd0b82c3edb555ae431a",
+    "render_motion.gd": "b9cacaa0dfa1bbab35179ae0e2575543e1f21feeab25770c43fe00d064c19f44",
+    "state_checks.json": "0c1862fd390d2614064109c4d397ef06b14306dee6b08eff7bd78fd566a53a6f",
+    "motion_state_checks.json": "55a7facf2b81b0183605cfb8dcc834e9d48cfed85290073e1a0c45cd34f7b6ac",
+    "native_launcher/project.godot": "649e4bd8b6fcc9e70a2626d9563e8a0cee7f423de1b3309115478982c3b64b69",
+    "native_launcher/static.gd": "d5429a02ae07621c8a0835acce83cb53bc4fecffb1f2cda499b94b79ca5a4c26",
+    "native_launcher/motion.gd": "c23947b728284fe304a3a3c3fb62d50b977cc4113589a40a5a8d07d0ab71175e",
+    "native_launcher/launcher.gd": "3d98b9c204f8d34be70c0f4abc2bcc140140842724cc349caa7ebc31b087f59a",
+    "native_launcher/launcher.tscn": "cfb35b31dcdbd76e8f07677bb820c5787d9ad6592241090f447b42af584ac0f6"
+  }
+}

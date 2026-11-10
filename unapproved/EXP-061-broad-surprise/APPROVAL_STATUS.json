@@ -1,0 +1,18 @@
+{
+  "id": "EXP-061",
+  "status": "USER_APPROVED",
+  "user_approval": "looks good",
+  "approval_interpretation": "if i say its good its approved",
+  "delivered_preview_description": "Here\u2019s Broad Surprise, with raised brows and a wider open mouth. The eyes and jaw movement are more restrained than the reference.",
+  "approved_profile_sha256": "aa2200fc77caefb887d2e6115e062d5e2ca47c95cc56b56c5f536b926c57fbbf",
+  "approved_video": "Broad_surprise_review_v1.mp4",
+  "approved_video_sha256": "66fafc481ccc35fd19e6a5024cc94c7f95aa69a20a3a4f287868053f51584cf3",
+  "review_time_status": "UNAPPROVED",
+  "historical_status_preserved": true,
+  "purpose": "Approved preview backup only. Production integration is a separate task.",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "production_registry_changed": false,
+  "main_written_by_this_task": false,
+  "qualification": "Partial eye/jaw source fidelity; upper teeth and mouth contour can read mildly speaking or cheerful. Sampled normal playback does not establish continuous observation or complete pacing review.",
+  "ci_run": false
+}
