@@ -1,0 +1,103 @@
+{
+  "id": "EXP-153",
+  "title": "Hiding a smile",
+  "duration": 4.0,
+  "status": "UNAPPROVED review candidate only; preparation against approved26",
+  "intent": "Brows soften slightly; eyes narrow while remaining open; lips press tightly while their corners continue lifting, then release to exact neutral. Source eye crinkle is only partly represented.",
+  "scope": "Existing ordinary lids, small rigid outer-anchor inner-brow lifts and vertical brow offsets, sealed bilateral corner lift and lip pressure only. Partial source fidelity: open-eye lower-lid crinkle and painted brow/lip contours cannot be reproduced by these controls. Closed crescent smile-eye owners are not substituted for the source open eyes. No new artwork, anatomy, runtime, gaze, blush, mouth opening, automatic blink, or head/body acting.",
+  "timing_origin": "New 4.0-second interpretation of nine static EXP-153 source panels. The catalogue 1.9-second schedule is proposed reference timing, not recovered animation. Lip pressure leads the last corner lift, followed by a 0.65-second held peak and gradual release.",
+  "interpolation": "Unchanged shared cubic smoothstep, displayed-pose restart and release. Six static study poses and nine timeline keys; exact neutral bookends. No player or rendering changes.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0.0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.55,
+      "phase": "onset",
+      "values": {
+        "blink_L": 0.08,
+        "blink_R": 0.08,
+        "brow_screen_left": 0.02,
+        "brow_screen_right": 0.02,
+        "brow_inner_lift_screen_left": 0.03,
+        "brow_inner_lift_screen_right": 0.03,
+        "mouth_corner_lift": 0.08,
+        "mouth_lip_press": 0.35
+      }
+    },
+    {
+      "time": 0.95,
+      "phase": "build",
+      "values": {
+        "blink_L": 0.24,
+        "blink_R": 0.24,
+        "brow_screen_left": 0.04,
+        "brow_screen_right": 0.04,
+        "brow_inner_lift_screen_left": 0.08,
+        "brow_inner_lift_screen_right": 0.08,
+        "mouth_corner_lift": 0.22,
+        "mouth_lip_press": 0.85
+      }
+    },
+    {
+      "time": 1.4,
+      "phase": "hiding_smile",
+      "values": {
+        "blink_L": 0.38,
+        "blink_R": 0.38,
+        "brow_screen_left": 0.04,
+        "brow_screen_right": 0.04,
+        "brow_inner_lift_screen_left": 0.1,
+        "brow_inner_lift_screen_right": 0.1,
+        "mouth_corner_lift": 0.5,
+        "mouth_lip_press": 1.0
+      }
+    },
+    {
+      "time": 2.05,
+      "phase": "hiding_smile",
+      "values": {
+        "blink_L": 0.38,
+        "blink_R": 0.38,
+        "brow_screen_left": 0.04,
+        "brow_screen_right": 0.04,
+        "brow_inner_lift_screen_left": 0.1,
+        "brow_inner_lift_screen_right": 0.1,
+        "mouth_corner_lift": 0.5,
+        "mouth_lip_press": 1.0
+      }
+    },
+    {
+      "time": 2.7,
+      "phase": "soften",
+      "values": {
+        "blink_L": 0.16,
+        "blink_R": 0.16,
+        "brow_screen_left": 0.02,
+        "brow_screen_right": 0.02,
+        "brow_inner_lift_screen_left": 0.04,
+        "brow_inner_lift_screen_right": 0.04,
+        "mouth_corner_lift": 0.2,
+        "mouth_lip_press": 0.5
+      }
+    },
+    {
+      "time": 3.75,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

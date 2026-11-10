@@ -1,0 +1,156 @@
+{
+  "identity": {
+    "EXP-153.json": "8a6b61f41a7d6e619f7bcbee188008d5c454cb2295e2c22460829c40f1b87b76",
+    "Hiding_a_smile_review_v1.mp4": "9642f1afbef44680cc81b2a32a8c49d00a7b6c87f6ba266f39a4f44bf0addfbd",
+    "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-153_hiding-a-smile/RYO_EXP-153_hiding-a-smile_sheet_v001.png": "e3d1d6c86522e8eaa82874a224b0d0d88a13b075ed37e4403de8ddd08875eb5c"
+  },
+  "views": {
+    "full": {
+      "frame_count": 121,
+      "dimensions": [
+        568,
+        800
+      ],
+      "hashes_match_native_record": true,
+      "unique_images": 88,
+      "neutral_spans": [
+        [
+          0,
+          6
+        ],
+        [
+          113,
+          120
+        ]
+      ],
+      "peak_spans": [
+        [
+          42,
+          61
+        ]
+      ],
+      "first_last_pixel_identical": true,
+      "difference_union_half_open": [
+        209,
+        287,
+        356,
+        388
+      ],
+      "peak_changed_pixels": 1982,
+      "all_pixels_y420_and_below_unchanged": true,
+      "static_neutral_matches_frame0": true,
+      "static_peak_matches_frame42": true,
+      "static_return_matches_frame120": true
+    },
+    "detail": {
+      "frame_count": 121,
+      "dimensions": [
+        400,
+        360
+      ],
+      "hashes_match_native_record": true,
+      "unique_images": 88,
+      "neutral_spans": [
+        [
+          0,
+          6
+        ],
+        [
+          113,
+          120
+        ]
+      ],
+      "peak_spans": [
+        [
+          42,
+          61
+        ]
+      ],
+      "first_last_pixel_identical": true,
+      "difference_union_half_open": [
+        34,
+        62,
+        333,
+        268
+      ],
+      "peak_changed_pixels": 7786,
+      "all_pixels_y420_and_below_unchanged": null,
+      "static_neutral_matches_frame0": true,
+      "static_peak_matches_frame42": true,
+      "static_return_matches_frame120": true
+    }
+  },
+  "state": {
+    "sampled_control_count": 30,
+    "samples": 121,
+    "max_abs_interpolation_error": 1.4033272544011766e-08,
+    "active_channels": [
+      "blink_L",
+      "blink_R",
+      "brow_inner_lift_screen_left",
+      "brow_inner_lift_screen_right",
+      "brow_screen_left",
+      "brow_screen_right",
+      "mouth_corner_lift",
+      "mouth_lip_press"
+    ],
+    "mouth_open_scoped_opening_spread_and_ordinary_smile_all_zero": true,
+    "native_report_checks": 3536,
+    "native_report_status": "PASS",
+    "headless_report_checks": 3293,
+    "normal_speed_observed": false
+  },
+  "preservation": {
+    "frozen_files": 1059,
+    "frozen_pngs": 184,
+    "missing": [],
+    "changed": [],
+    "extra_outside_cache": [],
+    "registry_count": 26,
+    "registry_ids_match_freeze": true,
+    "candidate_absent_registry": true,
+    "candidate_files_in_rig": [],
+    "inherited_release_authored_local_count": 25
+  },
+  "video": {
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 968,
+          "height": 800,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "duration": "4.033333",
+          "nb_frames": "121",
+          "nb_read_frames": "121"
+        }
+      ],
+      "format": {
+        "duration": "4.033333",
+        "size": "188875"
+      }
+    },
+    "strict_full_decode_returncode": 0,
+    "strict_full_decode_stderr": "",
+    "decoded_rgb_frames": 121,
+    "presentation_timestamps_match_30fps_indices": true,
+    "same_index_mean_absolute_rgb_errors": {
+      "full": {
+        "average": 1.291507452081636,
+        "maximum": 1.2940595657276994,
+        "minimum": 1.2890661678403756
+      },
+      "detail": {
+        "average": 2.0375867194674013,
+        "maximum": 2.062615740740741,
+        "minimum": 2.0152453703703705
+      }
+    },
+    "facial_activity_correlation_native_vs_video": 0.9993759504070134,
+    "order_limit": "Lossy compression and repeated holds do not uniquely identify every adjacent frame. All same-index image comparisons, ordered timestamps, and the facial activity curve agree with the supplied chronological native sequence."
+  }
+}
