@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "all_retained_originals_match": 83,
+  "unique_original_files": 76,
+  "current_original_python_tests": 105,
+  "portable_geometry_and_encoder_tests": 37,
+  "bootstrap": {
+    "status": "PASS",
+    "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+    "baseline_files": 999,
+    "baseline_pngs": 184,
+    "reference_files": 11,
+    "historical_frozen_files": 47,
+    "native_renderer_run": false,
+    "historical_inputs_modified": false,
+    "reproduction_only_path_changes": true
+  },
+  "portable_static_checks": 1582,
+  "portable_motion_checks": 12646,
+  "portable_independent_geometry_checks": 8544,
+  "author_and_independent_contracts_unchanged": true,
+  "native_execution_for_this_backup": false,
+  "git_bootstrap_route": "Implemented offline git cat-file extraction from fixed commit; bootstrap test used exact local source directories, not Git extraction.",
+  "scope": "Headless portability and backup integrity checks only. Native review results are retained historical evidence."
+}

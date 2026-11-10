@@ -1,0 +1,19 @@
+{
+  "candidate": "EXP-104",
+  "review_stage": "INDEPENDENT_SOURCE_AND_NUMERIC_REVIEW_COMPLETE_NATIVE_AND_VIDEO_PENDING",
+  "author_contract_sha256": "40f54ee01529ef96d18404cd2f3ebb1e2bf3004662cf2c45055434fb063aef7a",
+  "approval": "UNAPPROVED",
+  "native_capture_observed": false,
+  "normal_speed_continuous_observation": false,
+  "reviewer_owned_files": {
+    "INDEPENDENT_SOURCE_REVIEW.md": "ab225f46b05e7d17f22a84185f33308f7c11194cfabae3c08f2554b5f226b4fa",
+    "independent_review_validation.py": "a5723ee1d88dcd6d71f43e8154a4a075679de30fdd516893d26713088f799c63",
+    "test_independent_review_validation.py": "03563db0aa335b99e62b5ed365534fa25ece91846dace69c1c99252a550ecda5",
+    "independent_review_unit_tests.log": "e5a7b111f7d1e1a9b966f0817c3715ceff11197d52841b17241c6ee0074f8e04",
+    "independent_review_all_tests.log": "f513700332f5756ed18ba6ec3ef93cdc6de21ae33106d7bed3550c8b357ccfe2",
+    "independent_author_freeze_verification.log": "305a2e3e70b55ed49c551dfc93769ac26e18e56102d97bc3c7f6a2f67b6d0ec8",
+    "independent_review_run.log": "efb6a8447af94dab610029ff0bfdcf224c9dce8c5eb60f5a09f7b642cca65cf2",
+    "independent_source_review_checkpoint.json": "d2931f021ca80ee177cdf1977b7cf6322a168f17e629deb51cfb673a2e04453e"
+  },
+  "scope": "Reviewer-only files. No author-owned freeze, inputs, runtime, artwork, launcher or profile was edited. Current output under independent_review_evidence is rerunnable; independent_source_review_checkpoint.json preserves this initial pending checkpoint."
+}

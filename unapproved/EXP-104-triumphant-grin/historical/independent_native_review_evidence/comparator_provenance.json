@@ -1,0 +1,101 @@
+{
+  "comparison_boundary": "Historical prior24 native parity images, not newly captured current-baseline comparison movies. Exact profile identity to approved36 and receipt pixel hashes verified. Whole-sequence perceptual discrimination is not established.",
+  "comparators": [
+    {
+      "id": "EXP-114",
+      "time": 1.2,
+      "historical_capture_scope": "All prior24 profiles one maximum-control key each, full and detail native RGBA. Not all-frame or interactive parity.",
+      "profile_matches_frozen_approved36": true,
+      "files": {
+        "full": {
+          "path": "/workspace/scratch/42f2baf55663/stunned_silence_work/runtime_parity/baseline/EXP-114_full.png",
+          "sha256": "8f9d5a8324941b0a38a8e385db2ceff53eabae0f3f3c9a7633c25cd7c7b67023",
+          "rgba_sha256": "afc67c20a47ad0a5dd320eef1558573ba7ad3b6f21ebc0fef72f7367173ae1cf",
+          "receipt_hash_match": true,
+          "size": [
+            568,
+            800
+          ],
+          "mode": "RGBA",
+          "matches_historical_patched_pixels": true
+        },
+        "detail": {
+          "path": "/workspace/scratch/42f2baf55663/stunned_silence_work/runtime_parity/baseline/EXP-114_detail.png",
+          "sha256": "638a3855fc4569c193079d774ef14649dfb22024fb24a891d35f6b64132f605a",
+          "rgba_sha256": "86fbaa9f76a375dba85aa06f98e8ef72f7409250fd562d77afa5fbbda17ca676",
+          "receipt_hash_match": true,
+          "size": [
+            400,
+            360
+          ],
+          "mode": "RGBA",
+          "matches_historical_patched_pixels": true
+        }
+      }
+    },
+    {
+      "id": "EXP-152",
+      "time": 0.75,
+      "historical_capture_scope": "All prior24 profiles one maximum-control key each, full and detail native RGBA. Not all-frame or interactive parity.",
+      "profile_matches_frozen_approved36": true,
+      "files": {
+        "full": {
+          "path": "/workspace/scratch/42f2baf55663/stunned_silence_work/runtime_parity/baseline/EXP-152_full.png",
+          "sha256": "a67d3665f3bc1c1649fab7c806898dd3fa46dcc09650628b4798bf7ac3bc6c7c",
+          "rgba_sha256": "0f3756ce89d4408343e5e7d1d9ed5e18dd3d00649f302a64bd7d5474cbc7ce2d",
+          "receipt_hash_match": true,
+          "size": [
+            568,
+            800
+          ],
+          "mode": "RGBA",
+          "matches_historical_patched_pixels": true
+        },
+        "detail": {
+          "path": "/workspace/scratch/42f2baf55663/stunned_silence_work/runtime_parity/baseline/EXP-152_detail.png",
+          "sha256": "06d182ce67f2fe4ffb88588cc0fd3841cb701595bce45412fe92bf75ad04bb4d",
+          "rgba_sha256": "7e485b92b3d906cacec9c02b9ef96f135e2f8764a18c23d28026a991085031ab",
+          "receipt_hash_match": true,
+          "size": [
+            400,
+            360
+          ],
+          "mode": "RGBA",
+          "matches_historical_patched_pixels": true
+        }
+      }
+    },
+    {
+      "id": "EXP-001",
+      "time": 1.02,
+      "historical_capture_scope": "All prior24 profiles one maximum-control key each, full and detail native RGBA. Not all-frame or interactive parity.",
+      "profile_matches_frozen_approved36": true,
+      "files": {
+        "full": {
+          "path": "/workspace/scratch/42f2baf55663/stunned_silence_work/runtime_parity/baseline/EXP-001_full.png",
+          "sha256": "745aef6c3bdac9b7e16a626ebfaa635ed816da6ca825d5acaac4fb7ce1ac2c86",
+          "rgba_sha256": "da5f588057f2425f9c0e2dacb00410cea734f3749bec8d68dbc03751be4edb24",
+          "receipt_hash_match": true,
+          "size": [
+            568,
+            800
+          ],
+          "mode": "RGBA",
+          "matches_historical_patched_pixels": true
+        },
+        "detail": {
+          "path": "/workspace/scratch/42f2baf55663/stunned_silence_work/runtime_parity/baseline/EXP-001_detail.png",
+          "sha256": "ad9612f88a72220a60ed3926537779fa266824d27d63785c26ea393de63313af",
+          "rgba_sha256": "5dac5729cf63cab3c8865a42f26a73cba2544cf1c7498b3c38f703afe74f840c",
+          "receipt_hash_match": true,
+          "size": [
+            400,
+            360
+          ],
+          "mode": "RGBA",
+          "matches_historical_patched_pixels": true
+        }
+      }
+    }
+  ]
+}

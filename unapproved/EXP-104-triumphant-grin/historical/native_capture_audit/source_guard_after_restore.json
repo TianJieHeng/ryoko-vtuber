@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "baseline_files": 999,
+  "baseline_png_files": 184,
+  "common_runtime_files": 993,
+  "baseline_profiles": 36,
+  "artwork_changes": false,
+  "runtime_changes": false
+}

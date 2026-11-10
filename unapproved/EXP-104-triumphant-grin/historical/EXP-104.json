@@ -1,0 +1,138 @@
+{
+  "id": "EXP-104",
+  "title": "Triumphant Grin",
+  "duration": 4.0,
+  "status": "UNAPPROVED shared-rig preparation v1; native visual review pending",
+  "intent": "Brows lower with energetic certainty; eyes focus brightly; a wide teeth-showing grin spreads.",
+  "scope": "Existing bilateral equal low brow heights, mirrored inward brow tilts, equal ordinary partial lids, centered legacy smile/spread and modest opening only. Smile and spread use existing tooth and mouth support; no independent dental control, exact opposing tooth rows, clench, cheek anatomy or jaw rotation. No new art, shader, runtime, gaze, smile-eye, corner bias, head/body gesture, hair, speech or effects.",
+  "timing_origin": "New four-second interpretation of the inspected EXP-104 nine-panel static reference, not recovered motion. Focused symmetric brows precede a centered grin, a 1.6-2.0-second shallow tooth-bearing hold, then a somewhat more open grin at 2.4 seconds. Recovery reseals the lips before exact neutral. EXP-114 has unequal lids, opposed brow heights and a crooked grin; EXP-152 has downcast sealed private pride; EXP-001 raises its brows with a much larger welcoming opening.",
+  "interpolation": "Unchanged shared smoothstep; eight static anchors, eleven timeline keys, 121 endpoint-inclusive samples and exact neutral bookends. Candidate is registered only in memory. Zero-velocity anchor joins are deliberate; this does not claim recovered continuous source motion.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.6,
+      "phase": "onset",
+      "values": {
+        "brow_screen_left": -0.1,
+        "brow_screen_right": -0.1,
+        "brow_tilt_screen_left": 0.14,
+        "brow_tilt_screen_right": -0.14,
+        "blink_R": 0.04,
+        "blink_L": 0.04,
+        "mouth_smile": 0.18,
+        "mouth_spread": 0.28,
+        "mouth_open": 0
+      }
+    },
+    {
+      "time": 1.0,
+      "phase": "grin_build",
+      "values": {
+        "brow_screen_left": -0.22,
+        "brow_screen_right": -0.22,
+        "brow_tilt_screen_left": 0.3,
+        "brow_tilt_screen_right": -0.3,
+        "blink_R": 0.09,
+        "blink_L": 0.09,
+        "mouth_smile": 0.46,
+        "mouth_spread": 0.6,
+        "mouth_open": 0.06
+      }
+    },
+    {
+      "time": 1.6,
+      "phase": "tooth_grin",
+      "values": {
+        "brow_screen_left": -0.32,
+        "brow_screen_right": -0.32,
+        "brow_tilt_screen_left": 0.42,
+        "brow_tilt_screen_right": -0.42,
+        "blink_R": 0.12,
+        "blink_L": 0.12,
+        "mouth_smile": 0.84,
+        "mouth_spread": 0.86,
+        "mouth_open": 0.3
+      }
+    },
+    {
+      "time": 2.0,
+      "phase": "tooth_grin",
+      "values": {
+        "brow_screen_left": -0.32,
+        "brow_screen_right": -0.32,
+        "brow_tilt_screen_left": 0.42,
+        "brow_tilt_screen_right": -0.42,
+        "blink_R": 0.12,
+        "blink_L": 0.12,
+        "mouth_smile": 0.84,
+        "mouth_spread": 0.86,
+        "mouth_open": 0.3
+      }
+    },
+    {
+      "time": 2.4,
+      "phase": "open_grin",
+      "values": {
+        "brow_screen_left": -0.3,
+        "brow_screen_right": -0.3,
+        "brow_tilt_screen_left": 0.4,
+        "brow_tilt_screen_right": -0.4,
+        "blink_R": 0.1,
+        "blink_L": 0.1,
+        "mouth_smile": 0.88,
+        "mouth_spread": 0.9,
+        "mouth_open": 0.46
+      }
+    },
+    {
+      "time": 2.8,
+      "phase": "recover",
+      "values": {
+        "brow_screen_left": -0.22,
+        "brow_screen_right": -0.22,
+        "brow_tilt_screen_left": 0.3,
+        "brow_tilt_screen_right": -0.3,
+        "blink_R": 0.08,
+        "blink_L": 0.08,
+        "mouth_smile": 0.55,
+        "mouth_spread": 0.62,
+        "mouth_open": 0.15
+      }
+    },
+    {
+      "time": 3.2,
+      "phase": "settle",
+      "values": {
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "brow_tilt_screen_left": 0.12,
+        "brow_tilt_screen_right": -0.12,
+        "blink_R": 0.03,
+        "blink_L": 0.03,
+        "mouth_smile": 0.22,
+        "mouth_spread": 0.3,
+        "mouth_open": 0
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

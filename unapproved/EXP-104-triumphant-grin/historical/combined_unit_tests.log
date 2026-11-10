@@ -1,0 +1,52 @@
+test_changed_baseline_rejected (test_encode_preview.CaptureGuards.test_changed_baseline_rejected) ... ok
+test_changed_plan_rejected (test_encode_preview.CaptureGuards.test_changed_plan_rejected) ... ok
+test_changed_profile_rejected (test_encode_preview.CaptureGuards.test_changed_profile_rejected) ... ok
+test_complete_mock_receipts (test_encode_preview.CaptureGuards.test_complete_mock_receipts) ... ok
+test_existing_video_preserved (test_encode_preview.CaptureGuards.test_existing_video_preserved) ... ok
+test_extra_frame_rejected (test_encode_preview.CaptureGuards.test_extra_frame_rejected) ... ok
+test_failed_static_rejected (test_encode_preview.CaptureGuards.test_failed_static_rejected) ... ok
+test_headless_rejected (test_encode_preview.CaptureGuards.test_headless_rejected) ... ok
+test_missing_frame_rejected (test_encode_preview.CaptureGuards.test_missing_frame_rejected) ... ok
+test_missing_native_receipts (test_encode_preview.CaptureGuards.test_missing_native_receipts) ... ok
+test_missing_renderer_rejected (test_encode_preview.CaptureGuards.test_missing_renderer_rejected) ... ok
+test_nonvisual_static_rejected (test_encode_preview.CaptureGuards.test_nonvisual_static_rejected) ... ok
+test_static_dimensions_rejected (test_encode_preview.CaptureGuards.test_static_dimensions_rejected) ... ok
+test_wrong_fps_rejected (test_encode_preview.CaptureGuards.test_wrong_fps_rejected) ... ok
+test_wrong_pixel_mode_rejected (test_encode_preview.CaptureGuards.test_wrong_pixel_mode_rejected) ... ok
+test_wrong_pixels_rejected (test_encode_preview.CaptureGuards.test_wrong_pixels_rejected) ... ok
+test_wrong_profile_count_rejected (test_encode_preview.CaptureGuards.test_wrong_profile_count_rejected) ... ok
+test_wrong_record_count_rejected (test_encode_preview.CaptureGuards.test_wrong_record_count_rejected) ... ok
+test_wrong_size_rejected (test_encode_preview.CaptureGuards.test_wrong_size_rejected) ... ok
+test_wrong_time_rejected (test_encode_preview.CaptureGuards.test_wrong_time_rejected) ... ok
+test_actual_frozen_evidence_passes (test_independent_geometry.AuditMutations.test_actual_frozen_evidence_passes) ... ok
+test_brow_direction_rejected (test_independent_geometry.AuditMutations.test_brow_direction_rejected) ... ok
+test_crooked_corner_bias_rejected (test_independent_geometry.AuditMutations.test_crooked_corner_bias_rejected) ... ok
+test_false_public_spread_geometry_rejected (test_independent_geometry.AuditMutations.test_false_public_spread_geometry_rejected) ... ok
+test_frame_time_rejected (test_independent_geometry.AuditMutations.test_frame_time_rejected) ... ok
+test_gaze_drift_rejected (test_independent_geometry.AuditMutations.test_gaze_drift_rejected) ... ok
+test_lid_asymmetry_rejected (test_independent_geometry.AuditMutations.test_lid_asymmetry_rejected) ... ok
+test_lifecycle_evidence_change_rejected (test_independent_geometry.AuditMutations.test_lifecycle_evidence_change_rejected) ... ok
+test_neutral_endpoint_drift_rejected (test_independent_geometry.AuditMutations.test_neutral_endpoint_drift_rejected) ... ok
+test_open_phase_larger_than_tooth_phase (test_independent_geometry.AuditMutations.test_open_phase_larger_than_tooth_phase) ... ok
+test_opposed_brow_height_rejected (test_independent_geometry.AuditMutations.test_opposed_brow_height_rejected) ... ok
+test_peak_gap_mutation_rejected (test_independent_geometry.AuditMutations.test_peak_gap_mutation_rejected) ... ok
+test_sample_peak_analytic_values (test_independent_geometry.AuditMutations.test_sample_peak_analytic_values) ... ok
+test_second_open_phase_gap_rejected (test_independent_geometry.AuditMutations.test_second_open_phase_gap_rejected) ... ok
+test_smile_mismatch_rejected (test_independent_geometry.AuditMutations.test_smile_mismatch_rejected) ... ok
+test_unexpected_lip_corner_rejected (test_independent_geometry.AuditMutations.test_unexpected_lip_corner_rejected) ... ok
+test_wrong_inward_tilt_rejected (test_independent_geometry.AuditMutations.test_wrong_inward_tilt_rejected) ... ok
+test_absolute_path (test_source_guards.SourceGuards.test_absolute_path) ... ok
+test_actual_preparation_sources (test_source_guards.SourceGuards.test_actual_preparation_sources) ... ok
+test_matching_source (test_source_guards.SourceGuards.test_matching_source) ... ok
+test_missing_source (test_source_guards.SourceGuards.test_missing_source) ... ok
+test_mutated_source (test_source_guards.SourceGuards.test_mutated_source) ... ok
+test_nonproduction_unique_launcher (test_source_guards.SourceGuards.test_nonproduction_unique_launcher) ... ok
+test_overwrite_refusal_present (test_source_guards.SourceGuards.test_overwrite_refusal_present) ... ok
+test_parent_escape (test_source_guards.SourceGuards.test_parent_escape) ... ok
+test_wrapper_preserves_dimension_gate (test_source_guards.SourceGuards.test_wrapper_preserves_dimension_gate) ... ok
+test_wrong_digest (test_source_guards.SourceGuards.test_wrong_digest) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.462s
+
+OK

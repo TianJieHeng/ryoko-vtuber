@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "author_validator": "encode_preview.validate_capture",
+  "native_frames": 121,
+  "motion_checks": 13131,
+  "video_sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+  "full_decode": "PASS in unchanged encoder",
+  "approval": "UNAPPROVED"
+}

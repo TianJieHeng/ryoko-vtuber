@@ -1,0 +1,27 @@
+{
+  "candidate": "EXP-104",
+  "status": "TECHNICAL_NATIVE_AND_VIDEO_PASS_REVIEW_CANDIDATE_UNAPPROVED",
+  "author_contract_sha256": "40f54ee01529ef96d18404cd2f3ebb1e2bf3004662cf2c45055434fb063aef7a",
+  "video_sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+  "native_receipts_sha256": {
+    "capture/checks.json": "9b037a57053863662fa04e740921c93cd2c59d9003823660f37f87e13e903d12",
+    "motion_checks.json": "51572798341c59332fcd2e207180e3d8a4a484954482b3f11158860895788ec9"
+  },
+  "reviewer_owned_files_sha256": {
+    "INDEPENDENT_NATIVE_REVIEW.md": "6cc4eddd9e7365f1f2f1e03c3b380119200f25b6717bfa44bb0bfe8cd6f37c2b",
+    "INDEPENDENT_NATIVE_REVIEW.json": "eb929ca89692bb9a52d9ddbe75bee2628310d2b1ee5e8cab144dc691f56d3497",
+    "independent_native_review_run.log": "c03b9e3eaada1b45544e220782aa1be7ddff4d11b1d0b72308a0ae592b623629",
+    "independent_native_review_unit_tests.log": "877b70a8163b6e06c762f4053ca12211c6bbdd3a3db510dab428b300e96dd7d0",
+    "independent_native_author_freeze_verification.log": "305a2e3e70b55ed49c551dfc93769ac26e18e56102d97bc3c7f6a2f67b6d0ec8",
+    "independent_native_review_evidence/bust_progression.png": "9b99db1d9a8e5759230b29925a809efac6e24e37d80923beee6c50255b6874eb",
+    "independent_native_review_evidence/comparator_provenance.json": "711079ab52f9c1930e966677cbd668215268a4b4d421ddf0f2ecff38416990f8",
+    "independent_native_review_evidence/decoded_frame_order.json": "4fb7ec1e50eb3579a1b065261c7b275b56558eefc5c116f058c7f4ec678987a8",
+    "independent_native_review_evidence/encoded_keyframes.png": "50a996659b682a0bf6a9534514b92d2529108f9e9f479414534490c232f0796f",
+    "independent_native_review_evidence/native_comparator_faces.png": "f25c8b8916999c0df749ac82833f5ca161da2cbb5844d48c8f014a21867830d2",
+    "independent_native_review_evidence/native_frame_hashes.json": "1fc0b39bb13797b69185c8db1e8d90581d657106ccf1ebafd7f42206d21a8792",
+    "independent_native_review_evidence/review_checks.json": "a028fe1f7c0bda99bc8580515b0d2f8a052734e8f2f87760904956c7ca702d38",
+    "independent_native_review_evidence/static_faces.png": "977a290d70ff845dc2f5335d566e06ad535f9c5bd0d267eb388500c60511528b"
+  },
+  "validator_sha256": "a5723ee1d88dcd6d71f43e8154a4a075679de30fdd516893d26713088f799c63",
+  "source_review_freeze_preserved_sha256": "635ab3ed3de35b33de88e85959c7e0c0b8921847f5d0b06035b239a0261ca442"
+}

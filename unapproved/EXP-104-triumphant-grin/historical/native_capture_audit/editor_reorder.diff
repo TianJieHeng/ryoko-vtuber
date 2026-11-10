@@ -1,0 +1,19 @@
+--- triumphant_grin_work/native_capture_audit/project.before_native_import.godot	2026-11-10 17:33:18.379226722 -0500
++++ triumphant_grin_work/native_capture_audit/project.editor_rewrite.godot	2026-11-10 17:41:36.982045160 -0500
+@@ -21,11 +21,12 @@
+ window/size/window_width_override=1136
+ window/size/window_height_override=800
+ 
++[editor]
++
++movie_writer/fps=30
++movie_writer/mjpeg_quality=0.85
++
+ [rendering]
+ 
+ renderer/rendering_method="gl_compatibility"
+ environment/defaults/default_clear_color=Color(0.12, 0.13, 0.14, 1)
+-
+-[editor]
+-movie_writer/fps=30
+-movie_writer/mjpeg_quality=0.85

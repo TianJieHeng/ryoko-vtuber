@@ -1,0 +1,55 @@
+{
+  "candidate": "EXP-104",
+  "title": "Triumphant Grin",
+  "approval": "UNAPPROVED",
+  "status": "HEADLESS_PREPARATION_PASS_NATIVE_REVIEW_PENDING",
+  "baseline": "approved36",
+  "baseline_files": 999,
+  "baseline_png_files": 184,
+  "baseline_profiles": 36,
+  "extra_source_manifest_count": 1,
+  "common_runtime_artwork_parity": {
+    "approved40": 993,
+    "approved41": 993
+  },
+  "static_anchors": 8,
+  "keyframes": 11,
+  "duration_seconds": 4,
+  "endpoint_inclusive_frames": 121,
+  "fps": 30,
+  "static_assertions": 1582,
+  "motion_assertions": 12646,
+  "separate_python_assertions": 8544,
+  "unit_tests": 47,
+  "lifecycle_assertions": 36,
+  "lifecycle_interruption_points": 9,
+  "compared_profiles": 43,
+  "maximum_smoothstep_error": 1.4790781821538701e-08,
+  "native_launcher": "native_launcher/project.godot",
+  "native_full_dimensions": [
+    568,
+    800
+  ],
+  "native_detail_dimensions": [
+    400,
+    360
+  ],
+  "profile_sha256": "c25530c816fb25c52387d430ba2174287a960c740ce85e11745a35f4f34617fd",
+  "source_sheet_sha256": "f94654b74f3d08894027c9ab094c4d867c99282931c14d7e4038756f244c1678",
+  "native_capture": false,
+  "video_exists": false,
+  "normal_speed_observed": false,
+  "independent_visual_review": false,
+  "user_approved": false,
+  "production_registry_changed": false,
+  "runtime_changed": false,
+  "artwork_changed": false,
+  "shaders_changed": false,
+  "published": false,
+  "limitations": [
+    "Exact opposing tooth rows/clench anatomy are unavailable; existing tooth support is coupled to smile/spread/opening, not independently controlled.",
+    "Native rendered tooth exposure, mouth seams, focused-eye appearance and perceptual distinction are not established by headless checks.",
+    "Reference art acceptance does not approve the candidate or its timing."
+  ],
+  "next_step": "Independent source review, then separately authorized native UI capture and visual review; no shell renderer/display workaround. No production integration before approval."
+}

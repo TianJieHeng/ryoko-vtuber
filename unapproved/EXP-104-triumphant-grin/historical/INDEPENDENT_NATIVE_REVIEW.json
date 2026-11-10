@@ -1,0 +1,13 @@
+{
+  "candidate": "EXP-104",
+  "technical_status": "PASS",
+  "technical_checks": 94,
+  "failures": [],
+  "pending": [],
+  "user_approval": "UNAPPROVED",
+  "normal_speed_continuous_observation": false,
+  "visual_inspection": "Actual source sheet, eight native detail anchors, full-bust progression, decoded MP4 keyframes, and historical native EXP-114/152/001 anchors inspected.",
+  "visual_conclusion": "Reviewable restrained centered tooth-bearing grin. Narrower and less intense than source panels 5/6; closer to EXP-114 than the other comparators. No exact dental clench claim.",
+  "video_sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+  "author_contract_sha256": "40f54ee01529ef96d18404cd2f3ebb1e2bf3004662cf2c45055434fb063aef7a"
+}

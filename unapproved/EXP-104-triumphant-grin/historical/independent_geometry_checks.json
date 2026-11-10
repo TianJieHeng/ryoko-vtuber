@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": 8544,
+  "failures": [],
+  "max_control_error": 1.479078176602755e-08,
+  "independent_timeline_samples": 121,
+  "source_panels_exact_lossless_crops": {
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp01_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp02_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp03_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp04_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp05_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp06_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp07_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp08_v001.png": true,
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp09_v001.png": true
+  },
+  "native_capture": "PENDING; no renderer or UI invoked",
+  "approval": "UNAPPROVED"
+}

@@ -1,0 +1,15 @@
+{
+  "candidate": "EXP-104",
+  "approval": "UNAPPROVED; isolated evidence review only",
+  "scope": "Source preservation, independent pose math, all native RGBA frames, dimensions, neutral/body pixels, complete MP4 decode and frame order. No renderer or UI is invoked.",
+  "normal_speed_continuous_observation": false,
+  "perceptual_source_fidelity_or_distinction_proven": false,
+  "checks": {},
+  "pending": [],
+  "failures": [
+    "ValueError: Pinned author input missing or changed: native_launcher/project.godot"
+  ],
+  "video_path": "/workspace/scratch/42f2baf55663/triumphant_grin_work/TriumphantGrin_review_v1.mp4",
+  "independent_checks_pass": false,
+  "status": "FAIL"
+}

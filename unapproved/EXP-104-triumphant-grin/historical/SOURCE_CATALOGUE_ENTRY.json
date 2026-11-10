@@ -1,0 +1,245 @@
+{
+  "id": "EXP-104",
+  "slug": "triumphant-grin",
+  "family": "Confidence and smugness",
+  "distinctive_facial_intent": "Brows lower with energetic certainty; eyes focus brightly; a wide teeth-showing grin spreads.",
+  "is_pilot": false,
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "review_status": "accepted_reference_art",
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1159,
+    "native_height": 1358,
+    "sha256": "f94654b74f3d08894027c9ab094c4d867c99282931c14d7e4038756f244c1678",
+    "actual_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_sheet_v001.png",
+    "peak_actual_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_peak_v001.png"
+  },
+  "key_pose_sequence": [
+    {
+      "key_pose": 1,
+      "phase": "neutral",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+      "panel_location": {
+        "row": 1,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        368,
+        457
+      ],
+      "sha256": "4e2607b7b569d2c15a5afd8915ec3f4be45edc12b5c5420a272f8aec529cec41"
+    },
+    {
+      "key_pose": 2,
+      "phase": "anticipation",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+      "panel_location": {
+        "row": 1,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        368,
+        0,
+        734,
+        457
+      ],
+      "sha256": "372f5fa37273663661e7fe645ee6b753d9168d3af9479fabffa5d73a0a4079ab"
+    },
+    {
+      "key_pose": 3,
+      "phase": "onset",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+      "panel_location": {
+        "row": 1,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        734,
+        0,
+        1159,
+        457
+      ],
+      "sha256": "80afcbc1b780aa17564124df446a779530eeaa394ea3c4a60d3e45e2c420a6e7"
+    },
+    {
+      "key_pose": 4,
+      "phase": "build",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+      "panel_location": {
+        "row": 2,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        457,
+        368,
+        908
+      ],
+      "sha256": "714a880ece4835d00694b4aa009a023d1ea0ae24dd00d1e30c265c10302e228d"
+    },
+    {
+      "key_pose": 5,
+      "phase": "peak",
+      "time_seconds": 0.75,
+      "visual_direction": "Brows lower with energetic certainty; eyes focus brightly; a wide teeth-showing grin spreads.",
+      "panel_location": {
+        "row": 2,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        368,
+        457,
+        734,
+        908
+      ],
+      "sha256": "4ade42b2ae07ff78a23f99e58780637a7b10c3863d1a5998d16f7b3bca6d0322"
+    },
+    {
+      "key_pose": 6,
+      "phase": "follow_through_or_hold",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+      "panel_location": {
+        "row": 2,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        734,
+        457,
+        1159,
+        908
+      ],
+      "sha256": "ddfe0d6363013b066cdf95cf57b7d72a7f5ad87cd4e10412d584130a3a60c6ad"
+    },
+    {
+      "key_pose": 7,
+      "phase": "release",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+      "panel_location": {
+        "row": 3,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        908,
+        368,
+        1358
+      ],
+      "sha256": "350225aeadd18bcc1dd66d1f81c40473fa134781b7cdee2791bc6fb2ca23daa7"
+    },
+    {
+      "key_pose": 8,
+      "phase": "settle",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression.",
+      "panel_location": {
+        "row": 3,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        368,
+        908,
+        734,
+        1358
+      ],
+      "sha256": "5e09acffb59022635bac548c8fd62f5f78eb0fa2a7c689a7e996bbf738090bcd"
+    },
+    {
+      "key_pose": 9,
+      "phase": "neutral_return",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel.",
+      "panel_location": {
+        "row": 3,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        734,
+        908,
+        1159,
+        1358
+      ],
+      "sha256": "de2c49c02760432f16302732b1297891da5d64e75cf92b98831c9c71bc36c35e"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "facial_control_mapping": {
+    "status": "semantic_intent_only_pending_actual_rig",
+    "numeric_weights": null,
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "intent": "Brows lower with energetic certainty; eyes focus brightly; a wide teeth-showing grin spreads."
+  },
+  "overlays": {
+    "planned_optional_effects": [],
+    "status": "requires_mapping_to_available_2d_effect_layers",
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+  },
+  "body_gesture": {
+    "status": "paired_reusable_visual_references",
+    "reference_ids": [
+      "BOD-028",
+      "BOD-035"
+    ],
+    "references": [
+      {
+        "id": "BOD-028",
+        "path": "assets/body/RYO_BOD-028_small-victory-fist_sheet_v001.png",
+        "sha256": "9e7c4843c58c09965d2227100d61103e17f3726aa8de002d0d9d8febc74a8c6d",
+        "intent": "She curls right hand into a small victory fist near shoulder, smiles with satisfaction, then relaxes."
+      },
+      {
+        "id": "BOD-035",
+        "path": "assets/body/RYO_BOD-035_excited-bounce_sheet_v001.png",
+        "sha256": "7b18830512ab044bfe07f27bc1dfd9da962597214c1774695c6b63b4116addf2",
+        "intent": "She bends knees a little then gives a tiny excited rise on toes without a jump, hands near chest, then settles safely in heels."
+      }
+    ],
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "issues": [],
+  "implementation_status": "not_implemented_in_2d_rig"
+}

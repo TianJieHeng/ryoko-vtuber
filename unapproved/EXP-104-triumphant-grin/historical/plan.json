@@ -1,0 +1,94 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "onset",
+    "pose": {
+      "brow_screen_left": -0.1,
+      "brow_screen_right": -0.1,
+      "brow_tilt_screen_left": 0.14,
+      "brow_tilt_screen_right": -0.14,
+      "blink_R": 0.04,
+      "blink_L": 0.04,
+      "mouth_smile": 0.18,
+      "mouth_spread": 0.28,
+      "mouth_open": 0
+    }
+  },
+  {
+    "name": "grin_build",
+    "pose": {
+      "brow_screen_left": -0.22,
+      "brow_screen_right": -0.22,
+      "brow_tilt_screen_left": 0.3,
+      "brow_tilt_screen_right": -0.3,
+      "blink_R": 0.09,
+      "blink_L": 0.09,
+      "mouth_smile": 0.46,
+      "mouth_spread": 0.6,
+      "mouth_open": 0.06
+    }
+  },
+  {
+    "name": "tooth_grin",
+    "pose": {
+      "brow_screen_left": -0.32,
+      "brow_screen_right": -0.32,
+      "brow_tilt_screen_left": 0.42,
+      "brow_tilt_screen_right": -0.42,
+      "blink_R": 0.12,
+      "blink_L": 0.12,
+      "mouth_smile": 0.84,
+      "mouth_spread": 0.86,
+      "mouth_open": 0.3
+    }
+  },
+  {
+    "name": "open_grin",
+    "pose": {
+      "brow_screen_left": -0.3,
+      "brow_screen_right": -0.3,
+      "brow_tilt_screen_left": 0.4,
+      "brow_tilt_screen_right": -0.4,
+      "blink_R": 0.1,
+      "blink_L": 0.1,
+      "mouth_smile": 0.88,
+      "mouth_spread": 0.9,
+      "mouth_open": 0.46
+    }
+  },
+  {
+    "name": "recover",
+    "pose": {
+      "brow_screen_left": -0.22,
+      "brow_screen_right": -0.22,
+      "brow_tilt_screen_left": 0.3,
+      "brow_tilt_screen_right": -0.3,
+      "blink_R": 0.08,
+      "blink_L": 0.08,
+      "mouth_smile": 0.55,
+      "mouth_spread": 0.62,
+      "mouth_open": 0.15
+    }
+  },
+  {
+    "name": "settle",
+    "pose": {
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "brow_tilt_screen_left": 0.12,
+      "brow_tilt_screen_right": -0.12,
+      "blink_R": 0.03,
+      "blink_L": 0.03,
+      "mouth_smile": 0.22,
+      "mouth_spread": 0.3,
+      "mouth_open": 0
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

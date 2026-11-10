@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "independent_checks_pass": false,
+  "failures": [
+    "ValueError: Pinned author input missing or changed: native_launcher/project.godot"
+  ],
+  "pending": [],
+  "approval": "UNAPPROVED; isolated evidence review only"
+}
