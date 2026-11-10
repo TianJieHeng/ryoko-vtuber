@@ -1,0 +1,58 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "drowsy_onset",
+    "pose": {
+      "blink_L": 0.25,
+      "blink_R": 0.25,
+      "brow_screen_left": -0.12,
+      "brow_screen_right": -0.12,
+      "brow_tilt_screen_left": 0.12,
+      "brow_tilt_screen_right": -0.12,
+      "mouth_purse": 0.16
+    }
+  },
+  {
+    "name": "annoyed_build",
+    "pose": {
+      "blink_L": 0.36,
+      "blink_R": 0.36,
+      "brow_screen_left": -0.75,
+      "brow_screen_right": -0.75,
+      "brow_tilt_screen_left": 0.85,
+      "brow_tilt_screen_right": -0.85,
+      "mouth_purse": 0.55
+    }
+  },
+  {
+    "name": "sleepy_annoyance",
+    "pose": {
+      "blink_L": 0.4,
+      "blink_R": 0.4,
+      "brow_screen_left": -1,
+      "brow_screen_right": -1,
+      "brow_tilt_screen_left": 1,
+      "brow_tilt_screen_right": -1,
+      "mouth_purse": 0.75
+    }
+  },
+  {
+    "name": "soften",
+    "pose": {
+      "blink_L": 0.22,
+      "blink_R": 0.22,
+      "brow_screen_left": -0.35,
+      "brow_screen_right": -0.35,
+      "brow_tilt_screen_left": 0.35,
+      "brow_tilt_screen_right": -0.35,
+      "mouth_purse": 0.25
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]
