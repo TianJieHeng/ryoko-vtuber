@@ -1,0 +1,120 @@
+{
+  "approval": "user_approved",
+  "files": [
+    {
+      "path": "APPROVAL_STATUS.json",
+      "size": 400,
+      "sha256": "611a09b9d6e53082081a90130aa5b3fe96b0b1ed82ed39d3f9b70b9550bc542a"
+    },
+    {
+      "path": "BASELINE_FREEZE.json",
+      "size": 313,
+      "sha256": "4d000937c0a8030d2a1953e0672de915622567659891d0e968c6a90b07c413ff"
+    },
+    {
+      "path": "Delighted_discovery_review_v1.mp4",
+      "size": 180478,
+      "sha256": "e5df0976ea3ace03c688851b731a773ef460ae65e014b09a87747d5d6c9743be"
+    },
+    {
+      "path": "EXP-004.json",
+      "size": 3580,
+      "sha256": "f96e59e9a1ab77fe69fef2e0069b345a04b42622e83555d4db75e1d06a3020a7"
+    },
+    {
+      "path": "MOTION_RESULT.json",
+      "size": 367,
+      "sha256": "e3e347d60d581cf5b39ad417fc64b2e17a7817fa72cdfadb680c9e85274b6e1d"
+    },
+    {
+      "path": "PLAYBACK_REVIEW.json",
+      "size": 356,
+      "sha256": "8f64c995a38780a79e3397b9a89fb4af4bd697249d0c2e99f0c9873c285b38c1"
+    },
+    {
+      "path": "README.md",
+      "size": 2593,
+      "sha256": "58476c71f17869aa4e303637150de8186c5ee180ffcaae284cf400927d2d60ee"
+    },
+    {
+      "path": "README.preparation.md",
+      "size": 2099,
+      "sha256": "a06e264b9f770b5ceef2d045d51e3bd0ce322f005b7ae11842d4dc4c943c147b"
+    },
+    {
+      "path": "REVIEW.md",
+      "size": 2253,
+      "sha256": "392548643e0911461c3844eaad02da9e210d432d3f90f9927ae7ca64eb6f0991"
+    },
+    {
+      "path": "REVIEW_SUMMARY.json",
+      "size": 1297,
+      "sha256": "b3cd0cb28a09405898ee87c488b30f2b7b6e5b3b5c02a01b15b89debf1f0a091"
+    },
+    {
+      "path": "SOURCE_REFERENCE.json",
+      "size": 10910,
+      "sha256": "f0b13a44bf8ef5c4e8e46257ab3e50dd226754c2be63872e594dbdae1fb20199"
+    },
+    {
+      "path": "STATE_RESULT.json",
+      "size": 3244,
+      "sha256": "d90659d309fcfd7f0dac2e47527dd4f2a1733e08f044c9d72f1be8789855022f"
+    },
+    {
+      "path": "STATIC_RESULT.json",
+      "size": 3243,
+      "sha256": "ac74af253cdf6404601afa6534531ac597ceeba2a4ed49e58f3f178d7c51ffbf"
+    },
+    {
+      "path": "check_and_capture.gd",
+      "size": 5544,
+      "sha256": "b9c013436127c2e0c1fbe8f1c265406ddd1436283f9147a0e8a02da6a6796c77"
+    },
+    {
+      "path": "decoded_frame_order.json",
+      "size": 21269,
+      "sha256": "ed70718c2ebfc1e2aadc11f90776fe8375b7427baf593a70f2d8017d2eeac290"
+    },
+    {
+      "path": "encode_preview.py",
+      "size": 1847,
+      "sha256": "f4abb9bf1ba3c374fd6cc486e3ca06985fc3069a5f40785d63ec1de26ca918a6"
+    },
+    {
+      "path": "native_frame_hashes.json",
+      "size": 61735,
+      "sha256": "1dad9977d5ef7fb37a8f7b24193b33d9f043c66e04e5087b571f72fba6e648d7"
+    },
+    {
+      "path": "plan.json",
+      "size": 1382,
+      "sha256": "de2c0943379a16eb34e651eb9c9a94702494893ab889ba0e2e90c46b45d44e7b"
+    },
+    {
+      "path": "render_motion.gd",
+      "size": 5242,
+      "sha256": "60e76272b098f249d0cd7a75a9f14c7e327dd20c7a4d03029826ecdf1576aa2b"
+    },
+    {
+      "path": "review_checks.json",
+      "size": 12926,
+      "sha256": "3f22ccc76caedab202966530d8d95f01d1b3f043addcd52fe35de4ed58182b8d"
+    },
+    {
+      "path": "run_gate.py",
+      "size": 1247,
+      "sha256": "e50922af9a7f302bf311001fd763ae9ca07b1d511517342719460b5c35ec5b5b"
+    },
+    {
+      "path": "run_motion.sh",
+      "size": 1014,
+      "sha256": "2f728fafa46c82add51ed70555f41acfaa6b12787a74c34a64bba606a95d200a"
+    },
+    {
+      "path": "video_probe.json",
+      "size": 372,
+      "sha256": "bf00331705c01f5d2a3210e69738017c6334d22b6008636bcdf2b440b449550c"
+    }
+  ]
+}

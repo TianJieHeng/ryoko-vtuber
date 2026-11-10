@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "approval": "pending",
+  "baseline": "approved27",
+  "baseline_files_verified": 1124,
+  "baseline_pngs_verified": 184,
+  "native_static_checks": 489,
+  "native_motion_checks": 7178,
+  "native_frame_hashes_verified": 242,
+  "decoded_frames": 121,
+  "video_sha256": "e5df0976ea3ace03c688851b731a773ef460ae65e014b09a87747d5d6c9743be",
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121",
+        "nb_read_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "180478"
+    }
+  },
+  "candidate_freeze_changes": [],
+  "native_log_errors": {
+    "capture.log": [],
+    "motion_native.log": []
+  },
+  "limitations": [
+    "Toothier smile and less rounded eyes than painted source.",
+    "Inherited lash/hair edge seams.",
+    "Similar round-to-smile vocabulary to Sudden Insight; difference is broader, brighter held smile, not open versus closed eyes."
+  ],
+  "evidence": "review_evidence/review_checks.json",
+  "scope": "Independent file, pixel and decode checks; parent sampled playback documented separately. No approval or integration."
+}
