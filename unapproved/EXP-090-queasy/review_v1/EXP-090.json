@@ -1,0 +1,103 @@
+{
+  "id": "EXP-090",
+  "title": "Queasy",
+  "duration": 4.0,
+  "status": "UNAPPROVED review candidate only; preparation against approved25",
+  "intent": "Inner brows rise, heavy lids narrow, lips press forward, then gradually release to exact neutral. Cheek tension is source intent only, not implemented deformation.",
+  "scope": "Existing approved25 ordinary lids, rigid outer-anchor inner-brow controls and sealed mouth purse/pressure only. Painted brow curvature and forward lip contour are approximations. No cheek deformation exists in this preparation. No new artwork, anatomy, runtime changes, gaze, blush, smile, auto-blink or head/body acting.",
+  "timing_origin": "New 4.0-second interpretation of nine static source panels. The catalogue 1.9-second schedule is proposed reference timing, not recovered animation. A 0.7-second queasy hold is followed by gradual recovery.",
+  "interpolation": "Existing shared cubic smoothstep, displayed-pose restart and release. Exact neutral bookends; no player or rendering changes.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0.0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.25,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.55,
+      "phase": "onset",
+      "values": {
+        "blink_L": 0.14,
+        "blink_R": 0.14,
+        "brow_screen_left": -0.02,
+        "brow_screen_right": -0.02,
+        "brow_inner_lift_screen_left": 0.2,
+        "brow_inner_lift_screen_right": 0.18,
+        "mouth_purse": 0.18,
+        "mouth_lip_press": 0.35
+      }
+    },
+    {
+      "time": 0.95,
+      "phase": "build",
+      "values": {
+        "blink_L": 0.3,
+        "blink_R": 0.3,
+        "brow_screen_left": -0.05,
+        "brow_screen_right": -0.05,
+        "brow_inner_lift_screen_left": 0.45,
+        "brow_inner_lift_screen_right": 0.4,
+        "mouth_purse": 0.4,
+        "mouth_lip_press": 0.7
+      }
+    },
+    {
+      "time": 1.3,
+      "phase": "queasy",
+      "values": {
+        "blink_L": 0.44,
+        "blink_R": 0.44,
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "brow_inner_lift_screen_left": 0.68,
+        "brow_inner_lift_screen_right": 0.6,
+        "mouth_purse": 0.72,
+        "mouth_lip_press": 1.0
+      }
+    },
+    {
+      "time": 2.0,
+      "phase": "queasy",
+      "values": {
+        "blink_L": 0.44,
+        "blink_R": 0.44,
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "brow_inner_lift_screen_left": 0.68,
+        "brow_inner_lift_screen_right": 0.6,
+        "mouth_purse": 0.72,
+        "mouth_lip_press": 1.0
+      }
+    },
+    {
+      "time": 2.65,
+      "phase": "soften",
+      "values": {
+        "blink_L": 0.24,
+        "blink_R": 0.24,
+        "brow_screen_left": -0.04,
+        "brow_screen_right": -0.04,
+        "brow_inner_lift_screen_left": 0.4,
+        "brow_inner_lift_screen_right": 0.35,
+        "mouth_purse": 0.32,
+        "mouth_lip_press": 0.55
+      }
+    },
+    {
+      "time": 3.75,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {"name": "neutral", "pose": {}},
+  {
+    "name": "onset",
+    "pose": {
+      "blink_L": 0.14, "blink_R": 0.14,
+      "brow_screen_left": -0.02, "brow_screen_right": -0.02,
+      "brow_inner_lift_screen_left": 0.20, "brow_inner_lift_screen_right": 0.18,
+      "mouth_purse": 0.18, "mouth_lip_press": 0.35
+    }
+  },
+  {
+    "name": "build",
+    "pose": {
+      "blink_L": 0.30, "blink_R": 0.30,
+      "brow_screen_left": -0.05, "brow_screen_right": -0.05,
+      "brow_inner_lift_screen_left": 0.45, "brow_inner_lift_screen_right": 0.40,
+      "mouth_purse": 0.40, "mouth_lip_press": 0.70
+    }
+  },
+  {
+    "name": "queasy",
+    "pose": {
+      "blink_L": 0.44, "blink_R": 0.44,
+      "brow_screen_left": -0.08, "brow_screen_right": -0.08,
+      "brow_inner_lift_screen_left": 0.68, "brow_inner_lift_screen_right": 0.60,
+      "mouth_purse": 0.72, "mouth_lip_press": 1.0
+    }
+  },
+  {
+    "name": "soften",
+    "pose": {
+      "blink_L": 0.24, "blink_R": 0.24,
+      "brow_screen_left": -0.04, "brow_screen_right": -0.04,
+      "brow_inner_lift_screen_left": 0.40, "brow_inner_lift_screen_right": 0.35,
+      "mouth_purse": 0.32, "mouth_lip_press": 0.55
+    }
+  },
+  {"name": "neutral_return", "pose": {}}
+]
