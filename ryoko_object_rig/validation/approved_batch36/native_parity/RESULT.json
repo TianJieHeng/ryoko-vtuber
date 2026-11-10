@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "profiles": 9,
+  "planned_checkpoints": 90,
+  "planned_image_comparisons": 180,
+  "captured_checkpoints": 0,
+  "image_comparisons_run": 0,
+  "pixel_matches": null,
+  "normal_speed_observed": false,
+  "reason": "No DISPLAY or running X server. Xvfb absent. Installed local Xorg dummy server failed to establish local/Unix listening sockets, both with default sandbox and sandbox override. No remote execution or software installation attempted. Direct socket.socket(AF_UNIX) probe fails with errno 1 before binding. No transport workaround attempted.",
+  "harness_parse_check": "PASS; Godot --headless --check-only exit 0; no render attempted",
+  "scope": "Prepared 10 meaningful checkpoints per expression, full and detail view, against source motion_checks RGBA SHA-256. Native rendering, parity and live pacing are unverified.",
+  "current_runtime_expression_rig_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "numeric_validation": "PASS after bounded transition repair; see numeric_source_parity.json. Not native rendering."
+}

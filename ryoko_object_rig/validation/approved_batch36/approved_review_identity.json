@@ -1,0 +1,68 @@
+{
+  "approval": "The user approved all nine delivered previews by saying they all look good, after stating that saying good means approved.",
+  "profiles": [
+    {
+      "id": "EXP-139",
+      "alias": "focused_determination",
+      "profile_sha256": "2a8c23d5a37ae1ed9162e9bb066870ecb5518da206975a5c69cc4b4502fee29b",
+      "video_name": "Focused_determination_review_v2.mp4",
+      "video_sha256": "101456109207dcc9389f9c6053bc664fbad5369dab28232c39375889991bc955"
+    },
+    {
+      "id": "EXP-174",
+      "alias": "sleepy_annoyance",
+      "profile_sha256": "3007a539a7e62126a7bc61c295774fc84959b30cba8894f79616c98004e71ff1",
+      "video_name": "Sleepy_annoyance_review_v1.mp4",
+      "video_sha256": "b9a27864a8d8fb0085d063f0978522249d0275d8b84c0df2bf613954a48151a6"
+    },
+    {
+      "id": "EXP-067",
+      "alias": "creeping_dread",
+      "profile_sha256": "8a105de66ae0b57b06b7170ec22212459e6cc18f9de026b00d4d9e96c53e4370",
+      "video_name": "Creeping_dread_review_v1.mp4",
+      "video_sha256": "21a3ad3f8af3763660ee60a7a4afeeac43d0eddb1814d42a2ee522af811bd739"
+    },
+    {
+      "id": "EXP-093",
+      "alias": "bitter_taste",
+      "profile_sha256": "aafe7ee28eb6d046e48d1d125fda8440bd37c127aa3eac9dd5d736c634cde6f5",
+      "video_name": "Bitter_taste_review_v1.mp4",
+      "video_sha256": "9faf9c7ccf25914f7c7977da6471fee0b30fd91f87469cdf7ebb5776514ae1f6"
+    },
+    {
+      "id": "EXP-003",
+      "alias": "quiet_contentment",
+      "profile_sha256": "61822fa101313294b418a2b25bcef0c74619ce9e76b3e5d2a79155ba5e11ae71",
+      "video_name": "Quiet_contentment_review_v1.mp4",
+      "video_sha256": "b6ee41008ff0d45a9eae2fc056f9de0bbc98444107b7bc7da817ac1efc456432"
+    },
+    {
+      "id": "EXP-043",
+      "alias": "silent_fury",
+      "profile_sha256": "8ebdec169e4a2fbd533ef9a4638c7e562f46ddaad0a1c8d0e12f80a77d70ec80",
+      "video_name": "Silent_fury_review_v1.mp4",
+      "video_sha256": "bb2a464ff515f5122c29d50008e289bae1178715d59bd5c8c0d948ab29310ba0"
+    },
+    {
+      "id": "EXP-064",
+      "alias": "shocked_gasp",
+      "profile_sha256": "82474f286b049a3243cc6f283e7ddbf00935f33b6451e3be34bc99397c1ca797",
+      "video_name": "Shocked_gasp_review_v1.mp4",
+      "video_sha256": "dc12527791221935a345f3a94ddd6575b6929e2b44e293f9f37ff17eb6d4f80a"
+    },
+    {
+      "id": "EXP-004",
+      "alias": "delighted_discovery",
+      "profile_sha256": "f96e59e9a1ab77fe69fef2e0069b345a04b42622e83555d4db75e1d06a3020a7",
+      "video_name": "Delighted_discovery_review_v1.mp4",
+      "video_sha256": "e5df0976ea3ace03c688851b731a773ef460ae65e014b09a87747d5d6c9743be"
+    },
+    {
+      "id": "EXP-042",
+      "alias": "cold_glare",
+      "profile_sha256": "80bf98ef59e55fb61c99ff8d6de7d913680bb7d3782db8618a0fbca46f8e4555",
+      "video_name": "Cold_glare_review_v1.mp4",
+      "video_sha256": "f4038ae93e6612b064a0c4da084611227dda3cf41e77b09d1c189597adee238d"
+    }
+  ]
+}

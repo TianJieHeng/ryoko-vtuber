@@ -1,0 +1,8 @@
+{
+  "cases": 19604,
+  "checks": 519506,
+  "failures": [],
+  "scope": "Production control code with face setters stubbed. All36 source keys into two early-opening targets; restart/release at both sides of all three stage boundaries, C0, scoped/mouth domains and lifecycle flag clearing.",
+  "status": "PASS",
+  "runtime_sha256_at_start": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+}

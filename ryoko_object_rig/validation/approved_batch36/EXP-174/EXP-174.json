@@ -1,0 +1,98 @@
+{
+  "id": "EXP-174",
+  "title": "Sleepy annoyance",
+  "duration": 4.0,
+  "status": "UNAPPROVED review v1; data-only candidate against approved27",
+  "intent": "Heavy lids arrive first, then brows lower sharply into a held sleepy annoyance with narrow open eyes and a sealed compact pout. All controls release to exact neutral.",
+  "scope": "Existing ordinary lid closure, symmetric vertical brow lowering, opposing rigid brow tilt, and sealed mouth purse only. Peak uses ten source pixels of brow lowering, opposing eight-degree tilts, 14.4 source pixels of upper-lash travel and 10.5 source pixels of inward mouth travel on each side. Partial source fidelity: no lower-lip projection, independent lower-lip push, depth, or new lip shape is supported. Purse narrows and articulates the existing whole closed contour; it does not project the lower lip. No inward horizontal brow convergence or local knit. No new artwork, anatomy, shader, control, runtime, automatic blink, gaze, lip pressure, smile, opening, width, blush, hair, or head/body acting.",
+  "timing_origin": "New four-second interpretation of the nine static EXP-174 panels, not recovered animation. The catalogue timing is explicitly proposed, with no numeric rig weights. Neutral holds through 0.20 seconds. Heavy lids arrive at 0.52, sharp brow lowering develops at 0.82, peak arrives at 1.12 and holds through 2.20, then releases through a 2.95-second softened pose to exact neutral at 3.70 through 4.0. No automatic or full blink is added.",
+  "interpolation": "Unchanged shared cubic smoothstep, displayed-pose restart and release. Six static anchors and nine timeline keys. Exact neutral bookends; candidate loads only into memory.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0.0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.52,
+      "phase": "drowsy_onset",
+      "values": {
+        "blink_L": 0.25,
+        "blink_R": 0.25,
+        "brow_screen_left": -0.12,
+        "brow_screen_right": -0.12,
+        "brow_tilt_screen_left": 0.12,
+        "brow_tilt_screen_right": -0.12,
+        "mouth_purse": 0.16
+      }
+    },
+    {
+      "time": 0.82,
+      "phase": "annoyed_build",
+      "values": {
+        "blink_L": 0.36,
+        "blink_R": 0.36,
+        "brow_screen_left": -0.75,
+        "brow_screen_right": -0.75,
+        "brow_tilt_screen_left": 0.85,
+        "brow_tilt_screen_right": -0.85,
+        "mouth_purse": 0.55
+      }
+    },
+    {
+      "time": 1.12,
+      "phase": "sleepy_annoyance",
+      "values": {
+        "blink_L": 0.4,
+        "blink_R": 0.4,
+        "brow_screen_left": -1,
+        "brow_screen_right": -1,
+        "brow_tilt_screen_left": 1,
+        "brow_tilt_screen_right": -1,
+        "mouth_purse": 0.75
+      }
+    },
+    {
+      "time": 2.2,
+      "phase": "sleepy_annoyance",
+      "values": {
+        "blink_L": 0.4,
+        "blink_R": 0.4,
+        "brow_screen_left": -1,
+        "brow_screen_right": -1,
+        "brow_tilt_screen_left": 1,
+        "brow_tilt_screen_right": -1,
+        "mouth_purse": 0.75
+      }
+    },
+    {
+      "time": 2.95,
+      "phase": "soften",
+      "values": {
+        "blink_L": 0.22,
+        "blink_R": 0.22,
+        "brow_screen_left": -0.35,
+        "brow_screen_right": -0.35,
+        "brow_tilt_screen_left": 0.35,
+        "brow_tilt_screen_right": -0.35,
+        "mouth_purse": 0.25
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

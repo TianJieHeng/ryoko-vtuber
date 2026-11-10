@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "Fresh approved27 production, lifecycle, prior-profile, all-directed-pair boundary and focused native parity checks. Previous receipts archived unchanged.",
+  "checks": {
+    "composure_state_checks.json": 2308,
+    "handoff_boundary_checks.json": 15419433,
+    "insight_state_checks.json": 1918,
+    "integrated_state_checks.json": 4716,
+    "pair_state_checks.json": 5834,
+    "queasy_state_checks.json": 4717,
+    "stunned_state_checks.json": 2078,
+    "native_parity.json": 53
+  },
+  "headless_assertions": 15441004,
+  "whole_rig_native_visual_parity": "NOT RUN",
+  "live_engine_pacing": "UNVERIFIED",
+  "normal_speed_observed": false,
+  "ci_run": false
+}

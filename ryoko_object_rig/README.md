@@ -1,3 +1,7 @@
+# Current approved release: 36 performances
+
+Nine more user-approved previews are integrated with the prior 27 standalone performances and artwork preserved, plus a bounded eye-transition repair. See [current validation](APPROVED_BATCH36_INTEGRATION.md). Earlier progress notes below retain historical scope.
+
 # Approved shared rig: 27 performances
 
 EXP-153 Hiding a Smile is approved and registered. See [current validation](APPROVED_HIDING_SMILE_INTEGRATION.md). Earlier release notes below retain historical scope.

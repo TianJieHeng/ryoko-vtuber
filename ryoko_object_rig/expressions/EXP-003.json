@@ -1,0 +1,93 @@
+{
+  "id": "EXP-003",
+  "title": "Quiet contentment",
+  "duration": 4.6,
+  "status": "UNAPPROVED review v1; isolated data-only preparation against approved27",
+  "intent": "Low level brows and soft eyes settle into a gentle held closed-eye smile, then reopen with a lingering small smile before exact neutral.",
+  "scope": "Existing symmetric vertical brow lowering, symmetric smile-eye closure and sealed symmetric mouth smile/corner lift only. Peak brow pivots lower 2.8 source pixels without rotation; the existing smile-eye control closes the canonical aperture and uses 0.32 of its existing curved closed-eye shape. Peak mouth corners lift 2.36 source pixels with no widening, opening or purse. No new anatomy, artwork, shader, runtime, range, head/body motion, gaze, blush, hair or automatic blink. Low and level means no additional tilt; existing source brow shape remains. The v002 sheet peak closes its eyes despite catalogue wording eyes half relax. The existing smiling eye geometry is an approximation, not the exact sheet contour; a separate static half-relaxed alternative is not used by this timeline.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "interpolation": "Unchanged shared cubic smoothstep, displayed-pose restart and release. Exact neutral bookends. Six timeline anchors and nine keys; one additional static half-relaxed alternative. Candidate loads only into memory.",
+  "timing_origin": "New 4.6-second interpretation, not recovered animation. Source proposes 1.9 seconds and has no numeric rig weights. Neutral holds through 0.25 seconds; lids soften by 0.70, settle by 1.15 and reach a gentle closed-eye pose at 1.65. The exact quiet peak holds through 2.80. Eyes reopen with a lingering smile by 3.60 and reach exact neutral at 4.25 through 4.60. Readability comes from the continuous eye-settling transition and clear hold, not a larger smile or extra head/body motion.",
+  "keyframes": [
+    {
+      "time": 0.0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.25,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.7,
+      "phase": "eyes_soften",
+      "values": {
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "eye_smile_L": 0.12,
+        "eye_smile_R": 0.12,
+        "mouth_smile": 0.02,
+        "mouth_corner_lift": 0.02
+      }
+    },
+    {
+      "time": 1.15,
+      "phase": "settling",
+      "values": {
+        "brow_screen_left": -0.2,
+        "brow_screen_right": -0.2,
+        "eye_smile_L": 0.3,
+        "eye_smile_R": 0.3,
+        "mouth_smile": 0.08,
+        "mouth_corner_lift": 0.08
+      }
+    },
+    {
+      "time": 1.65,
+      "phase": "quiet_contentment",
+      "values": {
+        "brow_screen_left": -0.28,
+        "brow_screen_right": -0.28,
+        "eye_smile_L": 0.66,
+        "eye_smile_R": 0.66,
+        "mouth_smile": 0.14,
+        "mouth_corner_lift": 0.15
+      }
+    },
+    {
+      "time": 2.8,
+      "phase": "quiet_contentment",
+      "values": {
+        "brow_screen_left": -0.28,
+        "brow_screen_right": -0.28,
+        "eye_smile_L": 0.66,
+        "eye_smile_R": 0.66,
+        "mouth_smile": 0.14,
+        "mouth_corner_lift": 0.15
+      }
+    },
+    {
+      "time": 3.6,
+      "phase": "lingering_smile",
+      "values": {
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "eye_smile_L": 0.1,
+        "eye_smile_R": 0.1,
+        "mouth_smile": 0.1,
+        "mouth_corner_lift": 0.1
+      }
+    },
+    {
+      "time": 4.25,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.6,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+[
+  {
+    "id": "064",
+    "branch": "review/exp064-shocked-gasp-v1",
+    "entries": [
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/APPROVAL_STATUS.json",
+        "sha": "9d70444d3dc23f07a19fff5ebfe2d5f472c99804",
+        "bytes": 400,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/BASELINE_FREEZE.json",
+        "sha": "c7a94c42f0eb2528db40f4c39b24d59058e10288",
+        "bytes": 378,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/EXP-064.json",
+        "sha": "2c7509524e1a399f00c31eb5d7dc89e6b6499066",
+        "bytes": 3538,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/FILES.json",
+        "sha": "3ed329b00535595d59b5fba10b029d8268b28492",
+        "bytes": 3595,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/PLAYBACK_REVIEW.json",
+        "sha": "be049b59a7b92e5e5b351bfc26ea9d383dda1252",
+        "bytes": 467,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/README.md",
+        "sha": "c9ae6ba4cd2ff44e271cd466c48f816fde478633",
+        "bytes": 2384,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/README.preparation.md",
+        "sha": "7c6e5ee40817d8fd9ac6e75645068fe1f523ca71",
+        "bytes": 2071,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/REVIEW.md",
+        "sha": "87a39dabed7aa29351601be4b2c9bbb560b2cfd5",
+        "bytes": 3105,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/REVIEW_SUMMARY.json",
+        "sha": "a8b18df06a10f453e56f78c6ae2703782ecbc967",
+        "bytes": 1666,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/SOURCE_REFERENCE.json",
+        "sha": "f5f53063d73ea9e9b7733ef89228d30ebc28a9ee",
+        "bytes": 10534,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/Shocked_gasp_review_v1.mp4",
+        "sha": "efdfc7adf27b5d02af80528d4d5f6157fc207c1f",
+        "bytes": 173655,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/VALIDATION_RESULT.json",
+        "sha": "e832ed93a4bdacff2d84a9bb6e4eaae66f819500",
+        "bytes": 783,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/build_candidate.py",
+        "sha": "227fb047a94c75da2bd5a79d8ec9b08db4532e95",
+        "bytes": 2325,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/check_and_capture.gd",
+        "sha": "b81a4e1926a42bf7e064a442807ebf8b9cfe2ecb",
+        "bytes": 5505,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/encode_preview.py",
+        "sha": "fda9cf6bb33f62f7603e242b901e5c06ca7784b2",
+        "bytes": 1819,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/plan.json",
+        "sha": "81421d074660c58787fa8d2f29041573fffec8af",
+        "bytes": 1342,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/preparation_verification.json",
+        "sha": "7265a3532bce413c9fb3d9f156339319b97e08b4",
+        "bytes": 783,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/render_motion.gd",
+        "sha": "072e8568695cf54927127f9bbf7fc6697739d7d7",
+        "bytes": 5209,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/review_evidence/decoded_frame_order.json",
+        "sha": "b2fd734407d065acbd199fed1147a8de2bbbd1b9",
+        "bytes": 21056,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/review_evidence/native_frame_hashes.json",
+        "sha": "f01327ad81a10e16b79f69fbb489e49292f54082",
+        "bytes": 61735,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/review_evidence/review_checks.json",
+        "sha": "57d8a08cf3a435eb3e2c640b9dc9ee737183e74c",
+        "bytes": 12661,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/run_gate.py",
+        "sha": "64b6973b2171bd10532d8c3ad3a92841cba69175",
+        "bytes": 1247,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/run_motion.sh",
+        "sha": "055969c02ed6df7cead9719bcfff66b701b14834",
+        "bytes": 1014,
+        "mode": "100755",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-064-shocked-gasp/video_probe.json",
+        "sha": "6eb89b86b270304992e494527bb639e3b2b15dda",
+        "bytes": 372,
+        "mode": "100644",
+        "type": "blob"
+      }
+    ],
+    "commit": "a817d52dbac4581595b30b5bed0a6e4e01b1b2f0",
+    "tree": "31d5f7d1a383e8b8c17a2d5fbef29e5b29cae62f",
+    "verified_additions": 24
+  },
+  {
+    "id": "004",
+    "branch": "review/exp004-delighted-discovery-v1",
+    "entries": [
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/APPROVAL_STATUS.json",
+        "sha": "f13bf1f1b323879004908da2a7ba93e7f9049591",
+        "bytes": 400,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/BASELINE_FREEZE.json",
+        "sha": "4dd1bf0e9d70e169d83632de842b5a174fe3dc43",
+        "bytes": 313,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/Delighted_discovery_review_v1.mp4",
+        "sha": "63d41ef00d6619cbd749c1f75dc96dabc8625520",
+        "bytes": 180478,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/EXP-004.json",
+        "sha": "b3a0d683847973f60b490eaf96574256754be37f",
+        "bytes": 3580,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/FILES.json",
+        "sha": "024e796bf149df1d1fd3bc95562928b79b2cbab1",
+        "bytes": 3539,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/MOTION_RESULT.json",
+        "sha": "dc07cb7c61940531de53dac4226068fcfc8bc620",
+        "bytes": 367,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/PLAYBACK_REVIEW.json",
+        "sha": "8149e9a4bda6452816135d587fa47bafa85b7650",
+        "bytes": 356,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/README.md",
+        "sha": "4b1b1179e1686443b4daaa878347280c8daaeb1b",
+        "bytes": 2593,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/README.preparation.md",
+        "sha": "54565c2cf9659a89f3437f5022e391fa4fefdaaf",
+        "bytes": 2099,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/REVIEW.md",
+        "sha": "3846c624a99a860c45ead785541bc49da20ffd6a",
+        "bytes": 2253,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/REVIEW_SUMMARY.json",
+        "sha": "9d7d6994c3b7a110c10a210b67194c628a1fe4e4",
+        "bytes": 1297,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/SOURCE_REFERENCE.json",
+        "sha": "243e59abe6ec81c09128014224c748cf1397ffe6",
+        "bytes": 10910,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/STATE_RESULT.json",
+        "sha": "03b2117e28425b9a683fca53c81e04e36ca3932d",
+        "bytes": 3244,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/STATIC_RESULT.json",
+        "sha": "7c314b64de1192c94bdee7e4e57db6a694beedbe",
+        "bytes": 3243,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/check_and_capture.gd",
+        "sha": "947afa78d5725bec7b7578d4bfafd0e59fe87825",
+        "bytes": 5544,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/decoded_frame_order.json",
+        "sha": "e180e073462c408375f9508843a46275f0df29ff",
+        "bytes": 21269,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/encode_preview.py",
+        "sha": "2eea03163d10b9ffc2bec381b49531c67d9609ea",
+        "bytes": 1847,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/native_frame_hashes.json",
+        "sha": "135ac58f80c8061fa4cdc4363c65d431f8b698d1",
+        "bytes": 61735,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/plan.json",
+        "sha": "558b9a32ff9c84943f1c7a38a69c0b9fad855337",
+        "bytes": 1382,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/render_motion.gd",
+        "sha": "f20c2aa8b901ad00b5a1dc47c6f0d357b525874f",
+        "bytes": 5242,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/review_checks.json",
+        "sha": "bc4838d0f1ff51fb261313189241d596df7ecad5",
+        "bytes": 12926,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/run_gate.py",
+        "sha": "64b6973b2171bd10532d8c3ad3a92841cba69175",
+        "bytes": 1247,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/run_motion.sh",
+        "sha": "055969c02ed6df7cead9719bcfff66b701b14834",
+        "bytes": 1014,
+        "mode": "100755",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-004-delighted-discovery/video_probe.json",
+        "sha": "8eb0cbd660fb60f10e6887811fcf184f6eebae4c",
+        "bytes": 372,
+        "mode": "100644",
+        "type": "blob"
+      }
+    ],
+    "commit": "a8656206849612aba33370b7acda9e16ac499802",
+    "tree": "110f93e9ee194f34b44844d21800f0f82b8a034b",
+    "verified_additions": 24
+  },
+  {
+    "id": "042",
+    "branch": "review/exp042-cold-glare-v1",
+    "entries": [
+      {
+        "path": "unapproved/EXP-042-cold-glare/APPROVAL_STATUS.json",
+        "sha": "7898a5ad5b054053419a134f9fd9ce380899a565",
+        "bytes": 400,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/BASELINE_FREEZE.json",
+        "sha": "c7a94c42f0eb2528db40f4c39b24d59058e10288",
+        "bytes": 378,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/Cold_glare_review_v1.mp4",
+        "sha": "96d904d97ccba1b17d301862a3ea72cbe00d7006",
+        "bytes": 185303,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/EXP-042.json",
+        "sha": "6f1baf2138d20467ca78dabf49b103b5bfcb8d04",
+        "bytes": 2685,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/FILES.json",
+        "sha": "939be7717466b8c7d07578dcc08dfdc56a3d56f6",
+        "bytes": 3308,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/README.md",
+        "sha": "922518fcf6f49f3ddc9014d7c95eea671ee47c73",
+        "bytes": 982,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/README.preparation.md",
+        "sha": "be0c0c1391536821513dc72de053649aa2bad850",
+        "bytes": 2072,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/SOURCE_REFERENCE.json",
+        "sha": "2a94acdc8b416be511734bad25396541d5d1a24e",
+        "bytes": 10753,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/check_and_capture.gd",
+        "sha": "31a8194c3029cdb9e9dd24475e02bcbb3062fe3d",
+        "bytes": 7076,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/encode_preview.py",
+        "sha": "dbb6ebda4cd0dd7dadec95b9daf06d944125f039",
+        "bytes": 1811,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/motion_checks.json",
+        "sha": "961695913f1d109824031c4420c232fc292665cf",
+        "bytes": 156276,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/motion_state_checks.json",
+        "sha": "c0b41283d53642085054ac52c753cc6dbe400d47",
+        "bytes": 137132,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/plan.json",
+        "sha": "522c930007eaa7bca2076701369337caf9f34a3d",
+        "bytes": 871,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/render_motion.gd",
+        "sha": "068d69aba8a9c91de0f3db196f4199189b902ca4",
+        "bytes": 5241,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/review_evidence/decoded_frame_order.json",
+        "sha": "f434700ec87a96fe9192d678736528db62292514",
+        "bytes": 21182,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/review_evidence/native_frame_hashes.json",
+        "sha": "5813b123c365e7fd9f2e7cb0abae6ec97186a339",
+        "bytes": 61735,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/review_evidence/partial_review.json",
+        "sha": "4136b271522d750759fb89ddd18cc2d8acf27cc7",
+        "bytes": 4151,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/review_evidence/review_checks.json",
+        "sha": "ceb86dbab837d9ed097049db215c6ef909f3587a",
+        "bytes": 12092,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/run_gate.py",
+        "sha": "be7f013b374630fbc4e5dccbcaf405f9d5eec2a2",
+        "bytes": 1245,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/run_motion.sh",
+        "sha": "055969c02ed6df7cead9719bcfff66b701b14834",
+        "bytes": 1014,
+        "mode": "100755",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/state_checks.json",
+        "sha": "1010bdd68ec68afb8c959f27624315c5c7c18925",
+        "bytes": 13430,
+        "mode": "100644",
+        "type": "blob"
+      },
+      {
+        "path": "unapproved/EXP-042-cold-glare/video_probe.json",
+        "sha": "452453a969521976b002e0d05620d4ebc0e5bcfd",
+        "bytes": 372,
+        "mode": "100644",
+        "type": "blob"
+      }
+    ],
+    "commit": "2a18574ae85baa2db3459215e510cfe1b16c61c0",
+    "tree": "6f6001764072b2b99e8828234425d7e329b50ad1",
+    "verified_additions": 22
+  }
+]

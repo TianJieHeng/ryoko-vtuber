@@ -1,0 +1,21 @@
+{
+  "status": "PASS_WITH_VISUAL_LIMITATIONS",
+  "approval": "pending",
+  "expression": "EXP-043",
+  "native_static_checks": 828,
+  "native_motion_checks": 7784,
+  "independent_checks_pass": true,
+  "native_frame_hashes_verified": 242,
+  "decoded_frames": 121,
+  "baseline_files_unchanged": 1124,
+  "baseline_pngs_unchanged": 184,
+  "registry_count": 27,
+  "motion_scope": "Only brow and sealed-mouth region changes; exact neutral return and fixed body.",
+  "visual_assessment": "Restrained stern stare with visible brow lowering, not the stronger knitted fury in the painted reference. Similar visual vocabulary to Focused Determination v2, without its onset blink.",
+  "limitations": [
+    "No local brow knitting, horizontal convergence or jaw tightening.",
+    "Inherited lash/hair seams visible in detail.",
+    "No continuous normal-speed observation performed by independent reviewer; parent playback findings separate."
+  ],
+  "evidence": "review_evidence/review_checks.json"
+}

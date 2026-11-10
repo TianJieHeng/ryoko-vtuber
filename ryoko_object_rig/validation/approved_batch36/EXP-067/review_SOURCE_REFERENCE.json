@@ -1,0 +1,252 @@
+{
+  "source_catalogue": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/metadata/expressions.json",
+  "catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_sheet_v001.png",
+  "source_sheet_sha256": "44da7ca5921fb19d2ac33e45e08c677b26eb563be8a4b9a451b2d3dd98321944",
+  "source_pixels_inspected": true,
+  "entry": {
+    "id": "EXP-067",
+    "slug": "creeping-dread",
+    "family": "Surprise and fear",
+    "distinctive_facial_intent": "Inner brows slowly rise; eyes widen under tense lids; lips separate gradually from a pressed line.",
+    "is_pilot": false,
+    "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "source_master_version": "v001",
+    "status": "reference_sheet_published",
+    "review_status": "accepted_reference_art",
+    "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+    "asset_production": {
+      "sheet_status": "published_accepted_reference_art",
+      "peak_status": "published_lossless_copy_of_panel_5",
+      "native_width": 1159,
+      "native_height": 1358,
+      "sha256": "44da7ca5921fb19d2ac33e45e08c677b26eb563be8a4b9a451b2d3dd98321944",
+      "actual_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_sheet_v001.png",
+      "peak_actual_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_peak_v001.png"
+    },
+    "key_pose_sequence": [
+      {
+        "key_pose": 1,
+        "phase": "neutral",
+        "time_seconds": 0,
+        "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+        "panel_location": {
+          "row": 1,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp01_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          0,
+          394,
+          435
+        ],
+        "sha256": "c674d345363b9951ac5c3c1f15baf0cb90ede511e87ba8a0916b732e4b720081"
+      },
+      {
+        "key_pose": 2,
+        "phase": "anticipation",
+        "time_seconds": 0.15,
+        "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+        "panel_location": {
+          "row": 1,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp02_v001.png",
+        "crop_bounds_xyxy": [
+          394,
+          0,
+          764,
+          435
+        ],
+        "sha256": "30840c4e54d2076453052a503ea636b3e7da4276a9deeb9b9d272857f212e6be"
+      },
+      {
+        "key_pose": 3,
+        "phase": "onset",
+        "time_seconds": 0.3,
+        "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+        "panel_location": {
+          "row": 1,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp03_v001.png",
+        "crop_bounds_xyxy": [
+          764,
+          0,
+          1159,
+          435
+        ],
+        "sha256": "2b70f58560ac314b61400cae6bf257d89cc48dce4db5cc5d7f8b47c5ecfe4497"
+      },
+      {
+        "key_pose": 4,
+        "phase": "build",
+        "time_seconds": 0.5,
+        "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+        "panel_location": {
+          "row": 2,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp04_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          435,
+          394,
+          882
+        ],
+        "sha256": "6573fd6b23362bbbd915d02ba4c3366030bd865e51956ac435f06a0fe8c4320f"
+      },
+      {
+        "key_pose": 5,
+        "phase": "peak",
+        "time_seconds": 0.75,
+        "visual_direction": "Inner brows slowly rise; eyes widen under tense lids; lips separate gradually from a pressed line.",
+        "panel_location": {
+          "row": 2,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp05_v001.png",
+        "crop_bounds_xyxy": [
+          394,
+          435,
+          764,
+          882
+        ],
+        "sha256": "2aa007f27267f6a592189cbda658f5146f76294efbe9b22bd3463def4ef9ba30"
+      },
+      {
+        "key_pose": 6,
+        "phase": "follow_through_or_hold",
+        "time_seconds": 1.05,
+        "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+        "panel_location": {
+          "row": 2,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp06_v001.png",
+        "crop_bounds_xyxy": [
+          764,
+          435,
+          1159,
+          882
+        ],
+        "sha256": "097fe97e1ca61e91b4732039834de94e36a21cc820191089eb137f1745a40bd5"
+      },
+      {
+        "key_pose": 7,
+        "phase": "release",
+        "time_seconds": 1.35,
+        "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+        "panel_location": {
+          "row": 3,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp07_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          882,
+          394,
+          1358
+        ],
+        "sha256": "5ce0ccb014e3ec5cf0f9aedad4b17c4b8343b59da810d9388a4146d285877683"
+      },
+      {
+        "key_pose": 8,
+        "phase": "settle",
+        "time_seconds": 1.65,
+        "visual_direction": "Near-neutral face with only residual expression.",
+        "panel_location": {
+          "row": 3,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp08_v001.png",
+        "crop_bounds_xyxy": [
+          394,
+          882,
+          764,
+          1358
+        ],
+        "sha256": "78294800529787c0ea699bf322c4b11d0b82739d000e4f58b8dadfda5c35eaeb"
+      },
+      {
+        "key_pose": 9,
+        "phase": "neutral_return",
+        "time_seconds": 1.9,
+        "visual_direction": "Match the approved neutral baseline and first panel.",
+        "panel_location": {
+          "row": 3,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-067_creeping-dread/RYO_EXP-067_creeping-dread_kp09_v001.png",
+        "crop_bounds_xyxy": [
+          764,
+          882,
+          1159,
+          1358
+        ],
+        "sha256": "7e22590c3868bc579c14b339625d55d9a1ede861bfcb8fc1d8209679b03351d5"
+      }
+    ],
+    "timing": {
+      "duration_seconds": 1.9,
+      "timing_status": "proposed_reference_timing_not_implemented_animation",
+      "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+      "peak_hold_seconds": 0.3,
+      "loop_mode": "one_shot",
+      "loop_interval_seconds": null,
+      "loop_note": "No repeated cycle; complete release and neutral return.",
+      "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+    },
+    "facial_control_mapping": {
+      "status": "semantic_intent_only_pending_actual_rig",
+      "numeric_weights": null,
+      "left_right_convention": "Character left and right, not viewer left and right.",
+      "intent": "Inner brows slowly rise; eyes widen under tense lids; lips separate gradually from a pressed line."
+    },
+    "overlays": {
+      "planned_optional_effects": [],
+      "status": "requires_mapping_to_available_2d_effect_layers",
+      "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+    },
+    "body_gesture": {
+      "status": "paired_reusable_visual_references",
+      "reference_ids": [
+        "BOD-020",
+        "BOD-036"
+      ],
+      "references": [
+        {
+          "id": "BOD-020",
+          "path": "assets/body/RYO_BOD-020_surprised-backstep_sheet_v001.png",
+          "sha256": "20a33cf675c61cfd3b8d5ec804ee3dce536643f051197c48c1a751c25f9ff5a0",
+          "intent": "She reacts with raised brows and small backward step, hands lift slightly in surprise, then steps back to original stance."
+        },
+        {
+          "id": "BOD-036",
+          "path": "assets/body/RYO_BOD-036_startled-hands-up_sheet_v001.png",
+          "sha256": "7fff042e0eac66a9d68a90f3136c2902ccaa21214b9c98f23a8b1f80edbd1a16",
+          "intent": "She raises both open hands beside shoulders in startled reaction, eyes wide, then lowers them."
+        }
+      ],
+      "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+      "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+    },
+    "procedural_interactions": {
+      "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+      "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+      "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+    },
+    "issues": [],
+    "implementation_status": "not_implemented_in_2d_rig"
+  }
+}

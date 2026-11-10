@@ -20,6 +20,8 @@ var restart_pose:Dictionary={}
 var release_pose:Dictionary={}
 const MOUTH_TRIO=["mouth_open","mouth_width_screen_left","mouth_width_screen_right","mouth_kiss"]
 # Trigger-fixed lookahead; no mode change when a later target key opens.
+const OPENING_CONFLICTS=["blink_L","blink_R","gaze_x","gaze_y","gaze_down_extra","eye_smile_L","eye_smile_R","aversion_px"]
+var opening_bridge_active=false
 var mouth_bridge_mode="none"
 var mouth_bridge_duration=0.0
 var manual_mouth_open=0.0
@@ -72,6 +74,7 @@ func _sample(definition:Dictionary,time:float)->Dictionary:
             return p
     return p
 func _clear_mouth_bridge():
+    opening_bridge_active=false
     mouth_bridge_mode="none";mouth_bridge_duration=0.0
 func _prepare_mouth_bridge():
     var source_width=Registry.width_present(restart_pose)
@@ -182,7 +185,7 @@ func apply_controls(data)->bool:
     if data.has("perform_expression"):
         restart_pose=displayed_pose();active_performance=registry.resolve(data.perform_expression)
         performance=registry.definition(active_performance);performance_time=0;release_time=-1;performance_phase=registry.trigger_phase(active_performance);_suspend_auto_blink()
-        release_pose.clear();_prepare_mouth_bridge();last_error=""
+        release_pose.clear();_prepare_mouth_bridge();_prepare_opening_bridge();last_error=""
         _apply_performance_pose(restart_pose);return true
     if data.get("release_performance",false):
         release_pose=displayed_pose();active_performance="";release_time=0;performance_phase="interrupted_release";_suspend_auto_blink()
@@ -263,6 +266,8 @@ func advance(delta)->bool:
             p=scoped_handoff(restart_pose,_sample(performance,performance_time),performance_time/RESTART_SECONDS)
         # Scoped handoff blends ordinary channels too. Apply the mouth-domain
         # bridge last so it cannot reintroduce opening with sealed width/kiss.
+        if opening_bridge_active and performance_time<RESTART_SECONDS:
+            _compose_opening_bridge(p,_sample(performance,performance_time),performance_time/RESTART_SECONDS)
         _compose_mouth_bridge(p,target_trio)
         performance_phase=phase_at(performance_time);_apply_performance_pose(p)
         if performance_time>=performance.duration:active_performance="";performance_phase="neutral_return";_clear_mouth_bridge();_apply_performance_pose(neutral_pose());_restore_auto_blink()
@@ -307,3 +312,27 @@ func scoped_handoff(source:Dictionary,target:Dictionary,u:float)->Dictionary:
         for key in CHANNELS:p[key]=lerpf(float(source.get(key,0)),float(target.get(key,0)),w)
         for key in SCOPED_CHANNELS:p[key]=float(target.get(key,0))*w
     return p
+
+func _prepare_opening_bridge():
+    opening_bridge_active=false
+    var conflict=false
+    for key in OPENING_CONFLICTS:
+        conflict=conflict or float(restart_pose.get(key,0))!=0
+    if not conflict:return
+    if float(_sample(performance,RESTART_SECONDS).opening_px)>0:
+        opening_bridge_active=true;return
+    for key in performance.keyframes:
+        if float(key.time)>0 and float(key.time)<RESTART_SECONDS and float(key.values.get("opening_px",0))>0:
+            opening_bridge_active=true;return
+func _compose_opening_bridge(p:Dictionary,target:Dictionary,u:float):
+    # Clear source aversion before its supporting lids, then clear ordinary
+    # eye controls before widening. Trigger-fixed and inactive from neutral.
+    p.opening_px=0.0
+    p.aversion_px=float(restart_pose.get("aversion_px",0))*(1.0-smoothstep(0.0,1.0/3.0,u))
+    for key in OPENING_CONFLICTS:
+        if key=="aversion_px":continue
+        p[key]=float(restart_pose.get(key,0))*(1.0-smoothstep(1.0/3.0,2.0/3.0,u))
+    if u>=2.0/3.0:
+        var w=smoothstep(2.0/3.0,1.0,u)
+        p.opening_px=float(target.opening_px)*w
+        for key in OPENING_CONFLICTS:p[key]=float(target.get(key,0))*w

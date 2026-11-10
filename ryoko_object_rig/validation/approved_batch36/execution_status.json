@@ -1,0 +1,93 @@
+{
+  "all_worker_test_processes_stopped": true,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "results": {
+    "dense_final": {
+      "status": "PASS",
+      "exit_code": 0,
+      "receipt": "handoff_boundary_checks.json",
+      "checks": 34550603,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "bridge_lifecycle": {
+      "status": "PASS",
+      "exit_code": 0,
+      "receipt": "bridge_lifecycle_checks.json",
+      "checks": 519506,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "focused_actual_object": {
+      "status": "PASS",
+      "exit_code": 0,
+      "receipt": "focused_object_checks.json",
+      "checks": 20596,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "independent_audit": {
+      "status": "PASS",
+      "exit_code": 0,
+      "receipt": "opening_independent_audit.json",
+      "checks": 5016,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "approved_pair": {
+      "status": "TIMEOUT",
+      "exit_code": 124,
+      "timeout_seconds": 120,
+      "note": "No completed assertion receipt; not a pass."
+    },
+    "recovering_composure_runtime": {
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": 2758,
+      "receipt": "regression_recovering_composure_runtime/motion_state_checks.json",
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "sudden_insight_runtime": {
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": 2368,
+      "receipt": "regression_sudden_insight_runtime/motion_state_checks.json",
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "stunned_silence_runtime": {
+      "status": "TIMEOUT",
+      "exit_code": 124,
+      "timeout_seconds": 120,
+      "note": "No completed assertion receipt; not a pass."
+    },
+    "queasy_runtime": {
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": 5185,
+      "receipt": "regression_queasy_runtime/motion_state_checks.json",
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "hiding_smile_runtime": {
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": 5184,
+      "receipt": "regression_hiding_smile_runtime/motion_state_checks.json",
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+    },
+    "exhaustive_actual_object": {
+      "status": "TIMEOUT",
+      "exit_code": 124,
+      "timeout_seconds": 300,
+      "note": "No completion JSON; superseded only for focused actual-object coverage by focused_actual_object, not a full-rate actual-object pass."
+    },
+    "archived_prior27_shader_smoke": {
+      "status": "PASS",
+      "exit_code": 0,
+      "receipt": "prior_shader_smoke.log",
+      "note": "Inherited shader compiler error reproduced, execution continues; not pixel/render correctness."
+    }
+  },
+  "limitations": [
+    "Control matrix stubs face setters.",
+    "Focused actual-object suite samples 180 poses, not exhaustive 30/60Hz full trajectories.",
+    "No pixel or native-app parity claim.",
+    "Initial actual-object and regression attempts were interrupted; final bounded attempts above are authoritative.",
+    "No profiles, constraints or artwork modified."
+  ]
+}

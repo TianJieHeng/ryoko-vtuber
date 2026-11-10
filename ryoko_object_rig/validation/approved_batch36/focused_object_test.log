@@ -1,0 +1,58 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+OBJECT_BASE_READY independent_sprites=263 expression_timelines=0
+WARNING: Loaded resource as image file, this will not work on export: 'res://parts/caught_staring/uneasy_clear_parting.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2766)
+     GDScript backtrace (most recent call first):
+         [0] setup (res://parts/caught_staring/components.gd:13)
+         [1] _ready (res://expression_rig.gd:46)
+         [2] run (res://tests/test_batch36_focused_object.gd:35)
+FOCUSED_TRAJECTORY_DONE EXP-163
+FOCUSED_TRAJECTORY_DONE EXP-005
+FOCUSED_TRAJECTORY_DONE EXP-001
+FOCUSED_TRAJECTORY_DONE EXP-006
+FOCUSED_TRAJECTORY_DONE EXP-107
+FOCUSED_TRAJECTORY_DONE EXP-007
+FOCUSED_TRAJECTORY_DONE EXP-002
+FOCUSED_TRAJECTORY_DONE EXP-152
+FOCUSED_TRAJECTORY_DONE EXP-160
+FOCUSED_TRAJECTORY_DONE EXP-177
+FOCUSED_TRAJECTORY_DONE EXP-164
+FOCUSED_TRAJECTORY_DONE EXP-021
+FOCUSED_TRAJECTORY_DONE EXP-158
+FOCUSED_TRAJECTORY_DONE EXP-181
+FOCUSED_TRAJECTORY_DONE EXP-102
+FOCUSED_TRAJECTORY_DONE EXP-116
+FOCUSED_TRAJECTORY_DONE EXP-050
+FOCUSED_TRAJECTORY_DONE EXP-186
+FOCUSED_TRAJECTORY_DONE EXP-114
+FOCUSED_TRAJECTORY_DONE EXP-148
+FOCUSED_TRAJECTORY_DONE EXP-197
+ERROR: Condition "!actions.custom_samplers.has(function->arguments[j].tex_builtin)" is true. Continuing.
+   at: _dump_node_code (servers/rendering/shader_compiler.cpp:1294)
+   GDScript backtrace (most recent call first):
+       [0] material (res://parts/caught_staring/upper_opening_part.gd:31)
+       [1] install_mesh (res://parts/caught_staring/upper_opening_part.gd:62)
+       [2] install_opening (res://parts/caught_staring/upper_opening_part.gd:73)
+       [3] apply (res://parts/caught_staring/components.gd:16)
+       [4] _write_pose (res://expression_rig.gd:139)
+       [5] _apply_performance_pose (res://expression_rig.gd:128)
+       [6] advance (res://expression_rig.gd:272)
+       [7] run (res://tests/test_batch36_focused_object.gd:56)
+FOCUSED_TRAJECTORY_DONE EXP-144
+FOCUSED_TRAJECTORY_DONE EXP-040
+FOCUSED_TRAJECTORY_DONE EXP-125
+FOCUSED_TRAJECTORY_DONE EXP-063
+FOCUSED_TRAJECTORY_DONE EXP-090
+FOCUSED_TRAJECTORY_DONE EXP-153
+FOCUSED_TRAJECTORY_DONE EXP-139
+FOCUSED_TRAJECTORY_DONE EXP-174
+FOCUSED_TRAJECTORY_DONE EXP-067
+FOCUSED_TRAJECTORY_DONE EXP-093
+FOCUSED_TRAJECTORY_DONE EXP-003
+FOCUSED_TRAJECTORY_DONE EXP-043
+FOCUSED_TRAJECTORY_DONE EXP-064
+FOCUSED_TRAJECTORY_DONE EXP-004
+FOCUSED_TRAJECTORY_DONE EXP-042
+{"actual_rig_cross_samples":66,"actual_rig_directed_cross_cases":6,"alias_cases":58,"checks":20596,"failure_count":0,"failures":[],"lifecycle_cases":36,"profile_count":36,"scope":"Instantiated production scene with real face setters; fixed head/body, bounded/domain-safe controls, five trajectory samples per expression, all aliases, restarts, repeated releases, reset and exact face snapshot neutral; six representative directed cross-domain pairs at midpoint. Headless state checks, not rendered visual or native-app parity.","status":"PASS","trajectory_sample_fractions":[0.0,0.25,0.5,0.85,1.0],"trajectory_samples":180}
+exit=0

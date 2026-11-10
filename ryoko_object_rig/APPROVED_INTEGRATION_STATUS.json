@@ -1,5 +1,5 @@
 {
-  "schema_version": 9,
+  "schema_version": 10,
   "status": "user_approved_integrated_with_containing_commit",
   "approved_profile_ids": [
     "EXP-163",
@@ -28,25 +28,41 @@
     "EXP-125",
     "EXP-063",
     "EXP-090",
-    "EXP-153"
+    "EXP-153",
+    "EXP-139",
+    "EXP-174",
+    "EXP-067",
+    "EXP-093",
+    "EXP-003",
+    "EXP-043",
+    "EXP-064",
+    "EXP-004",
+    "EXP-042"
   ],
-  "approved_profile_count": 27,
+  "approved_profile_count": 36,
   "newly_approved_profile_ids": [
-    "EXP-153"
+    "EXP-139",
+    "EXP-174",
+    "EXP-067",
+    "EXP-093",
+    "EXP-003",
+    "EXP-043",
+    "EXP-064",
+    "EXP-004",
+    "EXP-042"
   ],
   "old_profile_bytes_preserved": true,
   "old_pngs_preserved": 184,
   "new_runtime_pngs": 0,
-  "focused_state_checks": 4716,
   "focused_state_status": "PASS",
   "native_visual_parity": "NOT RUN",
-  "native_reason": "Whole-rig full-trajectory parity not rerun; EXP-153 ten-checkpoint parity passed against the approved review. Fixed approved26 runtime is unchanged.",
+  "native_reason": "Fresh native production capture BLOCKED by local display socket restriction. Original approved native evidence is retained; approved profiles and artwork unchanged; bounded incoming-opening handoff repair applied.",
   "native_diagnostic": null,
   "headless_diagnostic": "Inherited dummy-renderer custom_samplers diagnostic retained in validation/approved_stunned logs.",
   "normal_speed_playback_observed": false,
   "live_engine_pacing_measured": false,
   "ci_run": false,
-  "publication_authorization": "User said hiding a smile is good and clarified that saying it is good approves it. Standing instruction authorizes expression integration and Git publication.",
+  "publication_authorization": "The user approved all nine delivered previews by saying they all look good, after stating that saying good means approved.",
   "historical_20_status": "historical_capture_metadata/approved20_before_pair/APPROVED_INTEGRATION_STATUS.json",
   "inherited_exp114_qualification": {
     "smooth_realtime_pacing_status": "HOLD"
@@ -61,7 +77,6 @@
   "exp040_native_review_checks": 1333,
   "exp040_preapproval_headless_checks": 958,
   "exp040_integrated_native_parity": "PASS: 53 checks, 10 checkpoints, 20 exact RGBA pairs",
-  "focused_pair_regression_checks": 5834,
   "historical_23_status": "historical_capture_metadata/approved23_before_insight/APPROVED_INTEGRATION_STATUS.json",
   "exp125_native_review_checks": 788,
   "exp125_preapproval_headless_checks": 569,
@@ -77,11 +92,13 @@
   "exp090_native_review_checks": 3536,
   "exp090_preapproval_headless_checks": 3293,
   "exp090_integrated_native_parity_checks": 53,
-  "current_runtime_changes": false,
+  "current_runtime_changes": true,
   "all26_standalone_control_samples": 3327,
   "historical_26_status": "historical_capture_metadata/approved26_before_hiding_smile/APPROVED_INTEGRATION_STATUS.json",
   "exp153_native_review_checks": 3536,
   "exp153_preapproval_headless_checks": 3293,
   "exp153_integrated_native_parity_checks": 53,
-  "all27_standalone_control_samples": 3457
+  "all27_standalone_control_samples": 3457,
+  "historical_27_status": "historical_capture_metadata/approved27_before_batch36/APPROVED_INTEGRATION_STATUS.json",
+  "current_validation": "APPROVED_BATCH36_INTEGRATION.md"
 }

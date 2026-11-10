@@ -1,0 +1,14 @@
+{
+  "channel_comparisons": 33930,
+  "checks": 36194,
+  "display": "headless",
+  "failures": [],
+  "frames": 1131,
+  "maximum_absolute_error": 4.88498130835069e-15,
+  "scope": "Headless production numeric pose matching against every 30fps original native-record pose. Not fresh native pixel rendering or live pacing.",
+  "status": "PASS",
+  "tolerance": 1e-09,
+  "validated_runtime_expression_rig_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "validated_registry_sha256": "aa552ace3413d190e4409e7104ce7fd1c11b0257b09defb08687b40a6b637146",
+  "runtime_revision": "after bounded transition repair"
+}

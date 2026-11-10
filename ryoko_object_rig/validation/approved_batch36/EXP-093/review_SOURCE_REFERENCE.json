@@ -1,0 +1,253 @@
+{
+  "source_catalogue": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/metadata/expressions.json",
+  "catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_sheet_v001.png",
+  "source_sheet_sha256": "481f673c315379a3a9c80718f41932065a96498b66300c985f383d558735a863",
+  "source_sheet_visually_inspected": true,
+  "visual_observation": "Across the middle row, brows lower inward and the eyes progressively narrow while amber irises remain visible. The peak central panel has parted, downturned lips and exposed white teeth; adjacent panels have a closed downturned mouth. The upper lip curl/rise and unequal upper-versus-lower lip movement are painted anatomical relationships, not supplied rig weights. The final panel relaxes toward neutral.",
+  "entry": {
+    "id": "EXP-093",
+    "slug": "bitter-taste",
+    "family": "Disgust and discomfort",
+    "distinctive_facial_intent": "Brows lower; eyes narrow slowly; upper lip rises while lower lip pulls down.",
+    "is_pilot": false,
+    "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "source_master_version": "v001",
+    "status": "reference_sheet_published",
+    "review_status": "accepted_reference_art",
+    "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+    "asset_production": {
+      "sheet_status": "published_accepted_reference_art",
+      "peak_status": "published_lossless_copy_of_panel_5",
+      "native_width": 1159,
+      "native_height": 1358,
+      "sha256": "481f673c315379a3a9c80718f41932065a96498b66300c985f383d558735a863",
+      "actual_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_sheet_v001.png",
+      "peak_actual_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_peak_v001.png"
+    },
+    "key_pose_sequence": [
+      {
+        "key_pose": 1,
+        "phase": "neutral",
+        "time_seconds": 0,
+        "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+        "panel_location": {
+          "row": 1,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp01_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          0,
+          377,
+          454
+        ],
+        "sha256": "3a60f114d16cfd8881acf67c6d5c8a3a761941e8e78026fac4f10c9b86a55def"
+      },
+      {
+        "key_pose": 2,
+        "phase": "anticipation",
+        "time_seconds": 0.15,
+        "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+        "panel_location": {
+          "row": 1,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp02_v001.png",
+        "crop_bounds_xyxy": [
+          377,
+          0,
+          752,
+          454
+        ],
+        "sha256": "b37279fe0f11a00fd8d64a329765d05992162e884452834a60921201be1c587f"
+      },
+      {
+        "key_pose": 3,
+        "phase": "onset",
+        "time_seconds": 0.3,
+        "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+        "panel_location": {
+          "row": 1,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp03_v001.png",
+        "crop_bounds_xyxy": [
+          752,
+          0,
+          1159,
+          454
+        ],
+        "sha256": "2e3922f58f4249cb38730e6ed38f6b93d66429201e08bacc3447d8d28cdb7825"
+      },
+      {
+        "key_pose": 4,
+        "phase": "build",
+        "time_seconds": 0.5,
+        "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+        "panel_location": {
+          "row": 2,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp04_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          454,
+          377,
+          906
+        ],
+        "sha256": "f4edf879dd6b2dc23834bd7eedc5cfafdcb725cbd8d34c196369e21bd0ad78e6"
+      },
+      {
+        "key_pose": 5,
+        "phase": "peak",
+        "time_seconds": 0.75,
+        "visual_direction": "Brows lower; eyes narrow slowly; upper lip rises while lower lip pulls down.",
+        "panel_location": {
+          "row": 2,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp05_v001.png",
+        "crop_bounds_xyxy": [
+          377,
+          454,
+          752,
+          906
+        ],
+        "sha256": "0ca5625345f9c2013844b22afa8e605a0db7ed4962ae6dd88d9575d270f4f59d"
+      },
+      {
+        "key_pose": 6,
+        "phase": "follow_through_or_hold",
+        "time_seconds": 1.05,
+        "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+        "panel_location": {
+          "row": 2,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp06_v001.png",
+        "crop_bounds_xyxy": [
+          752,
+          454,
+          1159,
+          906
+        ],
+        "sha256": "74860ee5ed4be3fce64a0a9ab155661c3da7ac1b41ccd3404202c2da34781052"
+      },
+      {
+        "key_pose": 7,
+        "phase": "release",
+        "time_seconds": 1.35,
+        "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+        "panel_location": {
+          "row": 3,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp07_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          906,
+          377,
+          1358
+        ],
+        "sha256": "226a6bc6bc81287b0e5f3d10abb64dbc27b14ad06f9c3cc9197d939b49395c2f"
+      },
+      {
+        "key_pose": 8,
+        "phase": "settle",
+        "time_seconds": 1.65,
+        "visual_direction": "Near-neutral face with only residual expression.",
+        "panel_location": {
+          "row": 3,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp08_v001.png",
+        "crop_bounds_xyxy": [
+          377,
+          906,
+          752,
+          1358
+        ],
+        "sha256": "c6cc95f527bf9170ef9b80ebdfa53558370433ed5332529f88fdfedcca057361"
+      },
+      {
+        "key_pose": 9,
+        "phase": "neutral_return",
+        "time_seconds": 1.9,
+        "visual_direction": "Match the approved neutral baseline and first panel.",
+        "panel_location": {
+          "row": 3,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-093_bitter-taste/RYO_EXP-093_bitter-taste_kp09_v001.png",
+        "crop_bounds_xyxy": [
+          752,
+          906,
+          1159,
+          1358
+        ],
+        "sha256": "e48559924965e722fad618146aaf04225896b3e4b8b5f9563678fd325eabcc8b"
+      }
+    ],
+    "timing": {
+      "duration_seconds": 1.9,
+      "timing_status": "proposed_reference_timing_not_implemented_animation",
+      "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+      "peak_hold_seconds": 0.3,
+      "loop_mode": "one_shot",
+      "loop_interval_seconds": null,
+      "loop_note": "No repeated cycle; complete release and neutral return.",
+      "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+    },
+    "facial_control_mapping": {
+      "status": "semantic_intent_only_pending_actual_rig",
+      "numeric_weights": null,
+      "left_right_convention": "Character left and right, not viewer left and right.",
+      "intent": "Brows lower; eyes narrow slowly; upper lip rises while lower lip pulls down."
+    },
+    "overlays": {
+      "planned_optional_effects": [],
+      "status": "requires_mapping_to_available_2d_effect_layers",
+      "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+    },
+    "body_gesture": {
+      "status": "paired_reusable_visual_references",
+      "reference_ids": [
+        "BOD-008",
+        "BOD-027"
+      ],
+      "references": [
+        {
+          "id": "BOD-008",
+          "path": "assets/body/RYO_BOD-008_stop-palm_sheet_v001.png",
+          "sha256": "d8074c1f8558625ee42222599906a42abfb4ca3fbd3cd8cf6b2799d1d001c23c",
+          "intent": "She raises a hand palm outward to politely but firmly signal stop, holds it, then lowers it."
+        },
+        {
+          "id": "BOD-027",
+          "path": "assets/body/RYO_BOD-027_dismissive-wave_sheet_v001.png",
+          "sha256": "ef8a1461aaa815992fd55edd9dee0513f7612bbf51ce9542653d807ae236b7df",
+          "intent": "She gives a small outward dismissive wave at shoulder level with a skeptical look, then lowers hand."
+        }
+      ],
+      "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+      "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+    },
+    "procedural_interactions": {
+      "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+      "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+      "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+    },
+    "issues": [],
+    "implementation_status": "not_implemented_in_2d_rig"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "motion_checks": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 7542,
+    "display": "X11",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "status": "PASS",
+    "visual_capture": true
+  },
+  "motion_state_checks": {
+    "approval": "UNAPPROVED",
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 7299,
+    "display": "headless",
+    "duration": 4.0,
+    "failures": [],
+    "fps": 30,
+    "frames": 121,
+    "normal_speed_observed": false,
+    "production_registry_unchanged": true,
+    "renderer": "",
+    "status": "PASS",
+    "visual_capture": false
+  },
+  "state_checks": {
+    "baseline": "approved27",
+    "baseline_profile_count": 27,
+    "checks": 672,
+    "failures": [],
+    "production_registry_unchanged": true,
+    "scope": "Six Sleepy Annoyance anchors with actual brow, upper-lash and sealed-purse geometry checks. State and geometry do not establish native visual fidelity, normal-speed observation or approval.",
+    "status": "PASS",
+    "study_poses": 6,
+    "visual_capture": false
+  },
+  "approval": "Pending user review",
+  "baseline_main": "816d77fafb6e016dc70f0802743d444e618f7b0f",
+  "profile_sha256": "3007a539a7e62126a7bc61c295774fc84959b30cba8894f79616c98004e71ff1",
+  "video_sha256": "b9a27864a8d8fb0085d063f0978522249d0275d8b84c0df2bf613954a48151a6",
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "nb_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "196718"
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "source_catalogue": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/metadata/expressions.json",
+  "catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "source_sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_sheet_v001.png",
+  "source_sheet_sha256": "f0bd86d9899f785dba56c1ad4c619c16d91bf1e9fccc89e0db98d881084ef807",
+  "source_sheet_visually_inspected": true,
+  "visual_observation": "Middle peak panel has sharply raised inner brows, widened eyes and tall rounded open mouth with visible dark interior and tongue. Before/after peak panels show a smaller intake mouth. Final panel returns to neutral. Existing controls approximate rather than reproduce all painted anatomy.",
+  "entry": {
+    "id": "EXP-064",
+    "slug": "shocked-gasp",
+    "family": "Surprise and fear",
+    "distinctive_facial_intent": "Inner brows lift high; eyes widen sharply; mouth opens tall with a visible intake shape.",
+    "is_pilot": false,
+    "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+    "source_master_version": "v001",
+    "status": "reference_sheet_published",
+    "review_status": "accepted_reference_art",
+    "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+    "asset_production": {
+      "sheet_status": "published_accepted_reference_art",
+      "peak_status": "published_lossless_copy_of_panel_5",
+      "native_width": 1159,
+      "native_height": 1358,
+      "sha256": "f0bd86d9899f785dba56c1ad4c619c16d91bf1e9fccc89e0db98d881084ef807",
+      "actual_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_sheet_v001.png",
+      "peak_actual_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_peak_v001.png"
+    },
+    "key_pose_sequence": [
+      {
+        "key_pose": 1,
+        "phase": "neutral",
+        "time_seconds": 0,
+        "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+        "panel_location": {
+          "row": 1,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp01_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          0,
+          382,
+          448
+        ],
+        "sha256": "5ad9d12b56cd1ffef55dc30cdf6d48b52b4b262f468117731262b077b91b7d54"
+      },
+      {
+        "key_pose": 2,
+        "phase": "anticipation",
+        "time_seconds": 0.15,
+        "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+        "panel_location": {
+          "row": 1,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp02_v001.png",
+        "crop_bounds_xyxy": [
+          382,
+          0,
+          776,
+          448
+        ],
+        "sha256": "68476d71b71533a0c4b335714f04fbec84cddbbe14d20e2f02727ea6b3bf9011"
+      },
+      {
+        "key_pose": 3,
+        "phase": "onset",
+        "time_seconds": 0.3,
+        "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+        "panel_location": {
+          "row": 1,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp03_v001.png",
+        "crop_bounds_xyxy": [
+          776,
+          0,
+          1159,
+          448
+        ],
+        "sha256": "b322ae6317985a0d4385395efbdafc307c53ef90483de9e202c7190d4b10bb71"
+      },
+      {
+        "key_pose": 4,
+        "phase": "build",
+        "time_seconds": 0.5,
+        "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+        "panel_location": {
+          "row": 2,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp04_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          448,
+          382,
+          898
+        ],
+        "sha256": "d2852e779f83b213547776e073c1c75551f9301dac738ebe9720758f4a63befd"
+      },
+      {
+        "key_pose": 5,
+        "phase": "peak",
+        "time_seconds": 0.75,
+        "visual_direction": "Inner brows lift high; eyes widen sharply; mouth opens tall with a visible intake shape.",
+        "panel_location": {
+          "row": 2,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp05_v001.png",
+        "crop_bounds_xyxy": [
+          382,
+          448,
+          776,
+          898
+        ],
+        "sha256": "c845d256b9171123a6d16d938cd07941ae57d0a2df06c02a943d065e94c26666"
+      },
+      {
+        "key_pose": 6,
+        "phase": "follow_through_or_hold",
+        "time_seconds": 1.05,
+        "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+        "panel_location": {
+          "row": 2,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp06_v001.png",
+        "crop_bounds_xyxy": [
+          776,
+          448,
+          1159,
+          898
+        ],
+        "sha256": "c0f07f6c922943f6b0c6ea458563ac1435037c362fbe7d2c2016096243da2255"
+      },
+      {
+        "key_pose": 7,
+        "phase": "release",
+        "time_seconds": 1.35,
+        "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+        "panel_location": {
+          "row": 3,
+          "column": 1
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp07_v001.png",
+        "crop_bounds_xyxy": [
+          0,
+          898,
+          382,
+          1358
+        ],
+        "sha256": "37a5d275afa0d5b7f158cf3f37dee51ad76fb4b2b994e67603ac3f009d013d27"
+      },
+      {
+        "key_pose": 8,
+        "phase": "settle",
+        "time_seconds": 1.65,
+        "visual_direction": "Near-neutral face with only residual expression.",
+        "panel_location": {
+          "row": 3,
+          "column": 2
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp08_v001.png",
+        "crop_bounds_xyxy": [
+          382,
+          898,
+          776,
+          1358
+        ],
+        "sha256": "fc1aaf60038764687ca07360c5e5e56cc9b191ddbbaac11f67248db0cdb9aa45"
+      },
+      {
+        "key_pose": 9,
+        "phase": "neutral_return",
+        "time_seconds": 1.9,
+        "visual_direction": "Match the approved neutral baseline and first panel.",
+        "panel_location": {
+          "row": 3,
+          "column": 3
+        },
+        "separate_panel_status": "published_lossless_integer_crop",
+        "actual_panel_path": "assets/expressions/EXP-064_shocked-gasp/RYO_EXP-064_shocked-gasp_kp09_v001.png",
+        "crop_bounds_xyxy": [
+          776,
+          898,
+          1159,
+          1358
+        ],
+        "sha256": "21c71c5ac8ac87701dce55a5c0aa2edeab84e4084feab0e452560ac70e924d5e"
+      }
+    ],
+    "timing": {
+      "duration_seconds": 1.9,
+      "timing_status": "proposed_reference_timing_not_implemented_animation",
+      "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+      "peak_hold_seconds": 0.3,
+      "loop_mode": "one_shot",
+      "loop_interval_seconds": null,
+      "loop_note": "No repeated cycle; complete release and neutral return.",
+      "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+    },
+    "facial_control_mapping": {
+      "status": "semantic_intent_only_pending_actual_rig",
+      "numeric_weights": null,
+      "left_right_convention": "Character left and right, not viewer left and right.",
+      "intent": "Inner brows lift high; eyes widen sharply; mouth opens tall with a visible intake shape."
+    },
+    "overlays": {
+      "planned_optional_effects": [],
+      "status": "requires_mapping_to_available_2d_effect_layers",
+      "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+    },
+    "body_gesture": {
+      "status": "paired_reusable_visual_references",
+      "reference_ids": [
+        "BOD-036",
+        "BOD-020"
+      ],
+      "references": [
+        {
+          "id": "BOD-036",
+          "path": "assets/body/RYO_BOD-036_startled-hands-up_sheet_v001.png",
+          "sha256": "7fff042e0eac66a9d68a90f3136c2902ccaa21214b9c98f23a8b1f80edbd1a16",
+          "intent": "She raises both open hands beside shoulders in startled reaction, eyes wide, then lowers them."
+        },
+        {
+          "id": "BOD-020",
+          "path": "assets/body/RYO_BOD-020_surprised-backstep_sheet_v001.png",
+          "sha256": "20a33cf675c61cfd3b8d5ec804ee3dce536643f051197c48c1a751c25f9ff5a0",
+          "intent": "She reacts with raised brows and small backward step, hands lift slightly in surprise, then steps back to original stance."
+        }
+      ],
+      "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+      "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+    },
+    "procedural_interactions": {
+      "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+      "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+      "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+    },
+    "issues": [],
+    "implementation_status": "not_implemented_in_2d_rig"
+  }
+}

@@ -1,3 +1,7 @@
+# Current approved release: 36 performances
+
+Nine more user-approved previews are integrated with the prior 27 standalone performances and artwork preserved, plus a bounded eye-transition repair. See [current validation](ryoko_object_rig/APPROVED_BATCH36_INTEGRATION.md). Earlier progress notes below retain historical scope.
+
 # Current approved release
 
 The shared rig now has 27 user-approved performances, including EXP-153 Hiding a Smile. See [current release and evidence limits](ryoko_object_rig/APPROVED_HIDING_SMILE_INTEGRATION.md). Earlier progress notes below retain historical scope.

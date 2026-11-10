@@ -1,0 +1,134 @@
+{
+  "id": "EXP-139",
+  "title": "Focused determination",
+  "duration": 4.0,
+  "status": "UNAPPROVED review v2; selected static C, new refocusing-blink interpretation; approved27",
+  "intent": "A short refocusing blink marks a clear arrival into firm lowered brows and a sealed purposeful mouth line. Both eyes reopen fully before the selected focus pose and stay fully open throughout its hold and recovery.",
+  "scope": "Existing symmetric brow lowering and opposing rigid tilt, sealed independent width and lip pressure, plus ordinary blink controls during onset only. Exact selected C peak: ten source pixels of brow lowering, opposing eight-degree tilts, five source pixels of outward mouth travel per side, lip pressure one. No glare or squint at the peak; no smile, purse, corner lift, opening, gaze, head/body motion, new artwork, anatomy or runtime. Horizontal brow convergence and lip compression remain approximations.",
+  "timing_origin": "Newly authored four-second interpretation, not recovered source animation. The source permits normal blinking and requires open eyes at the focused peak. The deliberate refocusing blink is new timing: neutral through 0.24 s; ordinary lids close from 0.36 to 0.48, hold fully closed through 0.54, and reopen completely at 0.70. Exact selected C arrives at 0.78 and holds through 2.40; release reaches neutral at 3.65, held to 4.0.",
+  "interpolation": "Unchanged shared cubic smoothstep between eleven keys; no runtime easing change. Crisp 0.54-second gathering interval from the initial neutral hold to the selected open-eyed C peak, then a 1.62-second exact peak hold. Displayed-pose restart and release retain the shared player behavior.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0.0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.24,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.36,
+      "phase": "gather",
+      "values": {
+        "brow_screen_left": -0.2,
+        "brow_screen_right": -0.2,
+        "brow_tilt_screen_left": 0.25,
+        "brow_tilt_screen_right": -0.25,
+        "mouth_width_screen_left": 0.05,
+        "mouth_width_screen_right": 0.05,
+        "mouth_lip_press": 0.2,
+        "blink_L": 0,
+        "blink_R": 0
+      }
+    },
+    {
+      "time": 0.48,
+      "phase": "blink_closed",
+      "values": {
+        "brow_screen_left": -0.75,
+        "brow_screen_right": -0.75,
+        "brow_tilt_screen_left": 0.85,
+        "brow_tilt_screen_right": -0.85,
+        "mouth_width_screen_left": 0.2,
+        "mouth_width_screen_right": 0.2,
+        "mouth_lip_press": 0.85,
+        "blink_L": 1.0,
+        "blink_R": 1.0
+      }
+    },
+    {
+      "time": 0.54,
+      "phase": "blink_closed",
+      "values": {
+        "brow_screen_left": -0.75,
+        "brow_screen_right": -0.75,
+        "brow_tilt_screen_left": 0.85,
+        "brow_tilt_screen_right": -0.85,
+        "mouth_width_screen_left": 0.2,
+        "mouth_width_screen_right": 0.2,
+        "mouth_lip_press": 0.85,
+        "blink_L": 1.0,
+        "blink_R": 1.0
+      }
+    },
+    {
+      "time": 0.7,
+      "phase": "reopened",
+      "values": {
+        "brow_screen_left": -0.95,
+        "brow_screen_right": -0.95,
+        "brow_tilt_screen_left": 1.0,
+        "brow_tilt_screen_right": -1.0,
+        "mouth_width_screen_left": 0.25,
+        "mouth_width_screen_right": 0.25,
+        "mouth_lip_press": 1.0,
+        "blink_L": 0,
+        "blink_R": 0
+      }
+    },
+    {
+      "time": 0.78,
+      "phase": "selected_focus",
+      "values": {
+        "brow_screen_left": -1.0,
+        "brow_screen_right": -1.0,
+        "brow_tilt_screen_left": 1.0,
+        "brow_tilt_screen_right": -1.0,
+        "mouth_lip_press": 1.0,
+        "mouth_width_screen_left": 0.25,
+        "mouth_width_screen_right": 0.25
+      }
+    },
+    {
+      "time": 2.4,
+      "phase": "selected_focus",
+      "values": {
+        "brow_screen_left": -1.0,
+        "brow_screen_right": -1.0,
+        "brow_tilt_screen_left": 1.0,
+        "brow_tilt_screen_right": -1.0,
+        "mouth_lip_press": 1.0,
+        "mouth_width_screen_left": 0.25,
+        "mouth_width_screen_right": 0.25
+      }
+    },
+    {
+      "time": 3.0,
+      "phase": "soften",
+      "values": {
+        "brow_screen_left": -0.35,
+        "brow_screen_right": -0.35,
+        "brow_tilt_screen_left": 0.4,
+        "brow_tilt_screen_right": -0.4,
+        "mouth_width_screen_left": 0.08,
+        "mouth_width_screen_right": 0.08,
+        "mouth_lip_press": 0.35,
+        "blink_L": 0,
+        "blink_R": 0
+      }
+    },
+    {
+      "time": 3.65,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

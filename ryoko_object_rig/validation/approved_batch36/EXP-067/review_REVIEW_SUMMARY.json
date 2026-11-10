@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "readiness": "Ready for unapproved-preview delivery only",
+  "visual_caveat": "Mild apprehension rather than strongly wide-eyed source dread; bright upper-tooth strip has slight nervous-smile ambiguity.",
+  "checks": {
+    "all_1124_frozen_files_unchanged": true,
+    "all_290_native_rgba_hashes_match": true,
+    "all_145_native_pose_records_match_headless": true,
+    "static_vs_motion_selected_exact": true,
+    "native_neutral_bookends_identical": true,
+    "all_body_and_outside_face_pixels_preserved": true,
+    "registry_preserved_and_candidate_absent": true,
+    "full_mp4_decode": true,
+    "mp4_pts_order": true,
+    "all_frame_source_comparison": true,
+    "native_static_and_motion_pass": true
+  },
+  "normal_speed_observed": false,
+  "approval": "UNAPPROVED",
+  "integrated": false,
+  "mp4_sha256": "21a3ad3f8af3763660ee60a7a4afeeac43d0eddb1814d42a2ee522af811bd739",
+  "review": "REVIEW.md",
+  "complete_evidence": "review_evidence/review_checks.json"
+}

@@ -1,0 +1,2189 @@
+[
+  {
+    "id": "EXP-139",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "2a8c23d5a37ae1ed9162e9bb066870ecb5518da206975a5c69cc4b4502fee29b"
+  },
+  {
+    "id": "EXP-174",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "3007a539a7e62126a7bc61c295774fc84959b30cba8894f79616c98004e71ff1"
+  },
+  {
+    "id": "EXP-067",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "8a105de66ae0b57b06b7170ec22212459e6cc18f9de026b00d4d9e96c53e4370"
+  },
+  {
+    "id": "EXP-093",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "aafe7ee28eb6d046e48d1d125fda8440bd37c127aa3eac9dd5d736c634cde6f5"
+  },
+  {
+    "id": "EXP-003",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "61822fa101313294b418a2b25bcef0c74619ce9e76b3e5d2a79155ba5e11ae71"
+  },
+  {
+    "id": "EXP-043",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "8ebdec169e4a2fbd533ef9a4638c7e562f46ddaad0a1c8d0e12f80a77d70ec80"
+  },
+  {
+    "id": "EXP-064",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "82474f286b049a3243cc6f283e7ddbf00935f33b6451e3be34bc99397c1ca797"
+  },
+  {
+    "id": "EXP-004",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "f96e59e9a1ab77fe69fef2e0069b345a04b42622e83555d4db75e1d06a3020a7"
+  },
+  {
+    "id": "EXP-042",
+    "runtime_file_count": 39,
+    "runtime_byte_identity": true,
+    "files": [
+      {
+        "path": "test_expression_backbone.gd",
+        "source_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "production_sha256": "b69f1e060f160f217a9be5f02ef35b3982dd8d7b73974d0014bdc7017464d4cf",
+        "exact": true
+      },
+      {
+        "path": "object_rig.tscn",
+        "source_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "production_sha256": "578a4c68f3b0c499c325de25b3a3b306af19f403146fa4af9b240bb3c1b7056b",
+        "exact": true
+      },
+      {
+        "path": "spread_teeth_clip.gdshader",
+        "source_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "production_sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_join.gdshader",
+        "source_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "production_sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+        "exact": true
+      },
+      {
+        "path": "test_object_rig.gd",
+        "source_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "production_sha256": "de3b27f4b10012073577e88ae4807b63d3a107ef60fd96215e21604c022b6f94",
+        "exact": true
+      },
+      {
+        "path": "pressed_lip_clip.gdshader",
+        "source_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "production_sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.gd",
+        "source_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "production_sha256": "ccb365a45448c45ad6bcc0fbc43eb52259b3fefcbfbb5dfbe5622accf1ca6b0f",
+        "exact": true
+      },
+      {
+        "path": "object_mouth_clip.gdshader",
+        "source_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "production_sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+        "exact": true
+      },
+      {
+        "path": "canonical_eye_alpha.gdshader",
+        "source_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "production_sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.gd",
+        "source_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "production_sha256": "e884f74b0ee8c6f77cd2c61ef27f5bf7889249ea763712c8e32fb2f8c1c8b334",
+        "exact": true
+      },
+      {
+        "path": "review_yawn.gd",
+        "source_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "production_sha256": "83db9e38d7c0fc852ae61ee5585f07c82d73bcc680311baaaff8cc3fe923dc0e",
+        "exact": true
+      },
+      {
+        "path": "test_yawn.gd",
+        "source_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "production_sha256": "2795b4a21aba6821ac2da981c39f3253ed8c1fedf0ce53f0c972721b15b97d44",
+        "exact": true
+      },
+      {
+        "path": "control_bridge.gd",
+        "source_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "production_sha256": "5d267c268e5a1e8307d6ca7d788f790082afd8bdfd76ca381b06a24cfe1ede38",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.tscn",
+        "source_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "production_sha256": "68e9ac876c80c546e880d59f00e2482cd778fdbfe1c68a2490bef1ded8526eef",
+        "exact": true
+      },
+      {
+        "path": "smile_eye_segment.gdshader",
+        "source_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "production_sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+        "exact": true
+      },
+      {
+        "path": "yawn_rig.tscn",
+        "source_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "production_sha256": "6dbc5944e68dedbedef304055ef77cdfaf99f658af5e5986485a278d63750545",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "expression_viewer.gd",
+        "source_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "production_sha256": "72b24d9c996a84253b95b288db1f06a44555e1049cf7fec5a69a39293643bd5a",
+        "exact": true
+      },
+      {
+        "path": "strict_control_json.gd",
+        "source_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "production_sha256": "fc802b1d807166b9bef254708e69b88317d3fb4a940402dafc532737c289d34b",
+        "exact": true
+      },
+      {
+        "path": "test_teeth.gd",
+        "source_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "production_sha256": "83cde1df8dd7923e73447990585921a12bc0ea8b239f551bdc771a2600c2e08e",
+        "exact": true
+      },
+      {
+        "path": "review_object_rig.gd",
+        "source_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "production_sha256": "91f96cdfe13ea00982961338e6a5e1e9d1dc4a8019cbb45058ccee4d43782bcc",
+        "exact": true
+      },
+      {
+        "path": "control_limits.gd",
+        "source_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "production_sha256": "4fae283be13a66a433b067f2c1c95665b376dcdd2e89714f226ddcda959519b3",
+        "exact": true
+      },
+      {
+        "path": "object_rig.gd",
+        "source_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "production_sha256": "b2df83f32728f3f865406a518584e5e92f18d17c9c9bde232d8acc5bf779ca7a",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_pigment_clip.gdshader",
+        "source_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "production_sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+        "exact": true
+      },
+      {
+        "path": "yawn_stage.tscn",
+        "source_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "production_sha256": "2884c477d87a0750cda2d704c6d18db7f71e3b76d46b1bbb9d37d8257620a6a4",
+        "exact": true
+      },
+      {
+        "path": "neutral_eye_residue.gdshader",
+        "source_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "production_sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+        "exact": true
+      },
+      {
+        "path": "smile_lip_segment.gdshader",
+        "source_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "production_sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+        "exact": true
+      },
+      {
+        "path": "expression_rig.tscn",
+        "source_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "production_sha256": "d6791340626c3cf485c029f3d85c76573f6c3a981423ae53e73a899cc32ad533",
+        "exact": true
+      },
+      {
+        "path": "object_eye_clip.gdshader",
+        "source_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "production_sha256": "535a7ceea81a5bb43aa099062afcfc3324ac66849e0a7f4fc219280cd9e2aab8",
+        "exact": true
+      },
+      {
+        "path": "expression_registry.gd",
+        "source_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "production_sha256": "679fcaeada5283fcdffc8c8bdd731bd2b0ccb35b2ed5ced6f9e5ee3076faeb11",
+        "exact": true
+      },
+      {
+        "path": "object_face.gd",
+        "source_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "production_sha256": "9d0c643019a3d7beac374437b967ed73fc55506f3fda54d8aea1beb24d7b5300",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved25_before_queasy/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd",
+        "source_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "production_sha256": "0414ff42556d5ce7877547a3f8e21c3c0c1c7057685f14fed8679bf288326103",
+        "exact": true
+      },
+      {
+        "path": "historical_capture_metadata/approved24_before_stunned/expression_rig.gd",
+        "source_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "production_sha256": "b3b8d6e4795797cd4a1f507f141faf63759ca8f0d5f5f8399aa52f8a227dc6d3",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/upper_opening_part.gd",
+        "source_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "production_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/components.gd",
+        "source_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "production_sha256": "25d1b7bb0313ad8efd6809f01210a8b771c7594b4b25f46ef65284c07dcd59e1",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/transport.gdshader",
+        "source_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "production_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+        "exact": true
+      },
+      {
+        "path": "parts/caught_staring/horizontal_aversion_part.gd",
+        "source_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "production_sha256": "2a73a6eab2cb08445a14448eb51af66389ccea7157634106cfcfb9b3ba44dedb",
+        "exact": true
+      },
+      {
+        "path": "project.godot",
+        "source_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "production_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+        "exact": true
+      }
+    ],
+    "profile_byte_identity": true,
+    "profile_sha256": "80bf98ef59e55fb61c99ff8d6de7d913680bb7d3782db8618a0fbca46f8e4555"
+  }
+]

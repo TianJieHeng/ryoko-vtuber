@@ -1,0 +1,6 @@
+{
+  "checks": 5016,
+  "failures": [],
+  "scope": "Independent instantiated-scene edge audit: manual blink/gaze/smile, aversion and auto-blink sources; both early-opening targets; exact stage boundaries and neighboring times; interrupted release, retrigger, manual takeover, reset and rejected atomic transaction.",
+  "status": "PASS"
+}

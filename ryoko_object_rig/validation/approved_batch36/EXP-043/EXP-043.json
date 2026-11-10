@@ -1,0 +1,87 @@
+{
+  "id": "EXP-043",
+  "title": "Silent fury",
+  "duration": 4.0,
+  "status": "UNAPPROVED review v1; data-only candidate against approved27",
+  "intent": "Controlled inward brow anger with eyes held open and lips pressed thin; deliberate held peak, then coordinated exact-neutral return.",
+  "scope": "Existing symmetric brow lowering, opposing rigid brow tilt and mouth_lip_press only. No local brow knitting, horizontal brow convergence, jaw tightening or jaw muscle deformation is supported. Eyes retain neutral opening and gaze beneath angled brows. No head/body acting, new artwork, shader, runtime or controls. Partial interpretation, not exact source reconstruction.",
+  "timing_origin": "New four-second interpretation of nine static reference panels. Proposed catalogue timing is not recovered animation. Neutral 0-.2, tension .52, build .82, peak 1.12-2.2, softening 2.95, neutral 3.7-4.0.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.52,
+      "phase": "tension_onset",
+      "values": {
+        "brow_screen_left": -0.2,
+        "brow_screen_right": -0.2,
+        "brow_tilt_screen_left": 0.3,
+        "brow_tilt_screen_right": -0.3,
+        "mouth_lip_press": 0.3
+      }
+    },
+    {
+      "time": 0.82,
+      "phase": "fury_build",
+      "values": {
+        "brow_screen_left": -0.6,
+        "brow_screen_right": -0.6,
+        "brow_tilt_screen_left": 0.75,
+        "brow_tilt_screen_right": -0.75,
+        "mouth_lip_press": 0.75
+      }
+    },
+    {
+      "time": 1.12,
+      "phase": "silent_fury",
+      "values": {
+        "brow_screen_left": -0.95,
+        "brow_screen_right": -0.95,
+        "brow_tilt_screen_left": 1.0,
+        "brow_tilt_screen_right": -1.0,
+        "mouth_lip_press": 1.0
+      }
+    },
+    {
+      "time": 2.2,
+      "phase": "silent_fury",
+      "values": {
+        "brow_screen_left": -0.95,
+        "brow_screen_right": -0.95,
+        "brow_tilt_screen_left": 1.0,
+        "brow_tilt_screen_right": -1.0,
+        "mouth_lip_press": 1.0
+      }
+    },
+    {
+      "time": 2.95,
+      "phase": "soften",
+      "values": {
+        "brow_screen_left": -0.3,
+        "brow_screen_right": -0.3,
+        "brow_tilt_screen_left": 0.35,
+        "brow_tilt_screen_right": -0.35,
+        "mouth_lip_press": 0.4
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

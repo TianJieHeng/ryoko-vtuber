@@ -1,0 +1,16 @@
+[ 14636.755] _XSERVTransSocketOpenCOTSServer: Unable to open socket for local
+[ 14636.755] _XSERVTransOpen: transport open failed for local/678417849708:96
+[ 14636.755] _XSERVTransMakeAllCOTSServerListeners: failed to open listener for local
+[ 14636.755] _XSERVTransSocketOpenCOTSServer: Unable to open socket for unix
+[ 14636.755] _XSERVTransOpen: transport open failed for unix/678417849708:96
+[ 14636.755] _XSERVTransMakeAllCOTSServerListeners: failed to open listener for unix
+[ 14636.755] (EE) 
+Fatal server error:
+[ 14636.755] (EE) Cannot establish any listening sockets - Make sure an X server isn't already running(EE) 
+[ 14636.755] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[ 14636.755] (EE) Please also check the log file at "/tmp/ryoko_native36/Xorg.log" for additional information.
+[ 14636.755] (EE) 
+[ 14636.755] (EE) Server terminated with error (1). Closing log file.

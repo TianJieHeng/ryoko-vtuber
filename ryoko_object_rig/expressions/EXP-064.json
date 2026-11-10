@@ -1,0 +1,116 @@
+{
+  "id": "EXP-064",
+  "title": "Shocked gasp",
+  "duration": 4.0,
+  "status": "UNAPPROVED review v1; data-only candidate against approved27",
+  "intent": "Rapid symmetric inner-brow rise and bounded eye widening lead a tall opening intake, which falls into a smaller residual gasp before exact-neutral release.",
+  "scope": "Existing inner-brow rotation about fixed outer anchors, bounded four-source-pixel upper-eye opening, split-lip mouth opening, purse and lip pressure only. Peak central lip gap is 25.68 source pixels (12.58 at bust scale). No jaw rotation or breathing simulation; no new artwork, shader, runtime or controls. Painted whole-eye expansion and tall oval oral anatomy are only approximated by current layered parts.",
+  "timing_origin": "New four-second interpretation, not recovered animation. Fast intake .34-.66, peak .66-1.06, smaller residual gasp 1.55-2.25, softening 2.95, neutral 3.7-4.0. Distinct from frozen Stunned Silence and gradual Creeping Dread through taller mouth opening and fast-onset/settled-gasp timing.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.34,
+      "phase": "anticipation",
+      "values": {
+        "brow_inner_lift_screen_left": 0.15,
+        "brow_inner_lift_screen_right": 0.15,
+        "opening_px": 0.3,
+        "mouth_open": 0.05,
+        "mouth_purse": 0.12,
+        "mouth_lip_press": 0.1
+      }
+    },
+    {
+      "time": 0.48,
+      "phase": "intake",
+      "values": {
+        "brow_inner_lift_screen_left": 0.65,
+        "brow_inner_lift_screen_right": 0.65,
+        "opening_px": 3.0,
+        "mouth_open": 0.5,
+        "mouth_purse": 0.55,
+        "mouth_lip_press": 0.5
+      }
+    },
+    {
+      "time": 0.66,
+      "phase": "shocked_gasp",
+      "values": {
+        "brow_inner_lift_screen_left": 1.0,
+        "brow_inner_lift_screen_right": 1.0,
+        "opening_px": 4.0,
+        "mouth_open": 0.9,
+        "mouth_purse": 0.7,
+        "mouth_lip_press": 0.6
+      }
+    },
+    {
+      "time": 1.06,
+      "phase": "shocked_gasp",
+      "values": {
+        "brow_inner_lift_screen_left": 1.0,
+        "brow_inner_lift_screen_right": 1.0,
+        "opening_px": 4.0,
+        "mouth_open": 0.9,
+        "mouth_purse": 0.7,
+        "mouth_lip_press": 0.6
+      }
+    },
+    {
+      "time": 1.55,
+      "phase": "residual_gasp",
+      "values": {
+        "brow_inner_lift_screen_left": 0.75,
+        "brow_inner_lift_screen_right": 0.75,
+        "opening_px": 3.0,
+        "mouth_open": 0.5,
+        "mouth_purse": 0.6,
+        "mouth_lip_press": 0.4
+      }
+    },
+    {
+      "time": 2.25,
+      "phase": "residual_gasp",
+      "values": {
+        "brow_inner_lift_screen_left": 0.75,
+        "brow_inner_lift_screen_right": 0.75,
+        "opening_px": 3.0,
+        "mouth_open": 0.5,
+        "mouth_purse": 0.6,
+        "mouth_lip_press": 0.4
+      }
+    },
+    {
+      "time": 2.95,
+      "phase": "soften",
+      "values": {
+        "brow_inner_lift_screen_left": 0.28,
+        "brow_inner_lift_screen_right": 0.28,
+        "opening_px": 1.0,
+        "mouth_open": 0.12,
+        "mouth_purse": 0.25,
+        "mouth_lip_press": 0.15
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.0,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

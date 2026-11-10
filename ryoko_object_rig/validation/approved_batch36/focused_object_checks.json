@@ -1,0 +1,21 @@
+{
+  "actual_rig_cross_samples": 66,
+  "actual_rig_directed_cross_cases": 6,
+  "alias_cases": 58,
+  "checks": 20596,
+  "failure_count": 0,
+  "failures": [],
+  "lifecycle_cases": 36,
+  "profile_count": 36,
+  "scope": "Instantiated production scene with real face setters; fixed head/body, bounded/domain-safe controls, five trajectory samples per expression, all aliases, restarts, repeated releases, reset and exact face snapshot neutral; six representative directed cross-domain pairs at midpoint. Headless state checks, not rendered visual or native-app parity.",
+  "status": "PASS",
+  "trajectory_sample_fractions": [
+    0.0,
+    0.25,
+    0.5,
+    0.85,
+    1.0
+  ],
+  "trajectory_samples": 180,
+  "runtime_sha256_at_start": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8"
+}

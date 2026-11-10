@@ -1,52 +1,44 @@
-"""Current approved27 source guard; prior receipts retain historical scope."""
+"""Current approved36 inventory, predecessor and exact-review guard."""
 from pathlib import Path
-import hashlib,json,subprocess
+import hashlib,json
 R=Path(__file__).resolve().parents[1]
-def read(p):return json.loads((R/p).read_text())
-def sha(p):return hashlib.sha256((R/p).read_bytes()).hexdigest()
-m=read('APPROVED_SOURCE_MANIFEST.json')
-assert m['approved_profiles']==27
-exclude={'APPROVED_SOURCE_MANIFEST.json','APPROVED_SOURCE_FILES.sha256'}
-tracked=subprocess.check_output(['git','ls-files','-z','--cached','--others','--exclude-standard','--','ryoko_object_rig'],cwd=R.parent).decode().split('\0')
-actual={str(Path(p).relative_to('ryoko_object_rig')) for p in tracked if p}
-# Godot creates .uid sidecars when importing old scripts. Existing pinned sidecars remain checked.
-actual={p for p in actual if not p.endswith('.uid') or p in m['files']}
-assert actual-exclude==set(m['files']),f'Inventory mismatch: added={actual-exclude-set(m["files"])} missing={set(m["files"])-actual}'
-for name,h in m['files'].items():assert sha(name)==h,name
-assert (R/'APPROVED_SOURCE_FILES.sha256').read_text()==''.join(f'{h}  {p}\n' for p,h in sorted(m['files'].items()))
-entries=read('expressions/registry.json')['entries'];ids=[e['id'] for e in entries]
-assert len(ids)==len(set(ids))==27 and ids[-1]=='EXP-153'
-assert not {'EXP-142','EXP-033','EXP-097','EXP-187'}&set(ids)
-for entry in entries:
- d=read(entry['path'][6:]);assert d['id']==entry['id']
+def read(n):return json.loads((R/n).read_text())
+def sha(n):return hashlib.sha256((R/n).read_bytes()).hexdigest()
+m=read('APPROVED_SOURCE_MANIFEST.json');assert m['approved_profiles']==36
+excluded={'APPROVED_SOURCE_MANIFEST.json','APPROVED_SOURCE_FILES.sha256'}
+actual={str(p.relative_to(R)) for p in R.rglob('*') if p.is_file() and not {'.godot','__pycache__','test_home','test_xdg'}&set(p.parts) and not p.name.endswith('.pyc')}
+actual={p for p in actual if not p.endswith(('.uid','.import')) or p in m['files']}
+assert actual-excluded==set(m['files']),f'Inventory mismatch: added={actual-excluded-set(m["files"])} missing={set(m["files"])-actual}'
+for n,h in m['files'].items():assert sha(n)==h,'Changed source: '+n
+assert (R/'APPROVED_SOURCE_FILES.sha256').read_text()==''.join(f'{h}  {n}\n' for n,h in sorted(m['files'].items()))
+ids=[e['id'] for e in read('expressions/registry.json')['entries']]
+old=read('historical_capture_metadata/approved27_before_batch36/expressions/registry.json')['entries']
+assert len(ids)==len(set(ids))==36 and ids[:27]==[e['id'] for e in old]
+assert read('expressions/registry.json')['entries'][:27]==old
+assert ids[27:]==['EXP-139','EXP-174','EXP-067','EXP-093','EXP-003','EXP-043','EXP-064','EXP-004','EXP-042']
+for e in read('expressions/registry.json')['entries']:
+ d=read(e['path'][6:]);assert d['id']==e['id']
  assert d['keyframes'][0]['time']==0 and d['keyframes'][-1]['time']==d['duration']
- assert all(v==0 for f in [d['keyframes'][0],d['keyframes'][-1]] for v in f['values'].values())
-s=read('APPROVED_INTEGRATION_STATUS.json');assert s['approved_profile_ids']==ids and s['native_visual_parity']=='NOT RUN'
-assert not s['normal_speed_playback_observed'] and not s['live_engine_pacing_measured'] and not s['current_runtime_changes']
-p=read('validation/approved_hiding_smile/predecessor_preservation.json')
-for name,h in p['protected_files'].items():assert sha(name)==h,'Predecessor mutation: '+name
-assert p['profile_count']==26 and p['png_count']==184 and not p['runtime_changed']
-assert sha('expression_rig.gd')==sha('historical_capture_metadata/approved26_before_hiding_smile/expression_rig.gd')
-assert sha('expression_rig.gd')==read('historical_capture_metadata/approved26_before_hiding_smile/APPROVED_SOURCE_MANIFEST.json')['files']['expression_rig.gd']
-assert read('historical_capture_metadata/approved26_before_hiding_smile/RELEASE.json')['approved_registry']==ids[:-1]
-assert read('historical_capture_metadata/approved26_before_hiding_smile/PUBLICATION_RECEIPT.json')['commit']==m['base_main']=='2663835145ca90bb1125803a05363f257034de9f'
-b=read('validation/approved_hiding_smile/handoff_boundary_checks.json')
-assert b['standalone_exact_samples']>3327 and b['source_target_cases']>13832 and b['transition_samples']==b['source_target_cases']*len(b['boundary_times'])
-assert b['old_invalid_pairs']==[] and b['old_invalid_mouth_samples']==0 and b['changed_mouth_samples']==0
-for name,expected in read('APPROVED_INTEGRATION_TEST_RESULTS.json')['checks'].items():
- c=read('validation/approved_hiding_smile/'+name);assert c['status']=='PASS' and c['checks']==expected and c['failures']==[]
-native=read('validation/approved_hiding_smile/native_parity.json')
-review_motion=read('validation/approved_hiding_smile/review_motion_checks.json')
-assert native['checks']==53 and [x['frame'] for x in native['records']]==[0,7,16,28,42,61,81,103,113,120]
-for record in native['records']:assert record['hashes']==review_motion['records'][record['frame']]['hashes']
-for name,expected in [('review_motion_checks.json',3536),('review_motion_state_checks.json',3293)]:
- c=read('validation/approved_hiding_smile/'+name);assert c['status']=='PASS' and c['checks']==expected and not c['failures']
-r=read('RELEASE.json');assert r['approved_registry']==ids and r['approved_published_count']==27
-assert sha('expressions/EXP-153.json')==m['approved_review_profile_sha256']=='8a6b61f41a7d6e619f7bcbee188008d5c454cb2295e2c22460829c40f1b87b76'
-review=read('validation/approved_hiding_smile/review_REVIEW_RESULT.json')
-assert review['profile_sha256']==m['approved_review_profile_sha256']
-assert review['video_sha256']==m['approved_review_video_sha256']=='9642f1afbef44680cc81b2a32a8c49d00a7b6c87f6ba266f39a4f44bf0addfbd'
-assert m['approved_review_commit']=='8892bc6e7a7734e3f4d12592b09bf44765058234'
-assert entries[-1]['aliases']==['hiding_a_smile'] and entries[-1]['trigger_phase']=='neutral'
-assert read('validation/approved_hiding_smile/guard_negative_tests.json')=={key:True for key in ['corrupt_source_rejected','missing_source_rejected','unexpected_source_rejected','restored_clean_pass']}
-print('APPROVED_INTEGRATION_GUARD PASS profiles=27 old_profiles=26 old_pngs=184 whole_rig_native_parity=NOT_RUN live_pacing=UNVERIFIED')
+ assert all(v==0 for k in [d['keyframes'][0],d['keyframes'][-1]] for v in k['values'].values())
+p=read('validation/approved_batch36/predecessor_preservation.json')
+assert p['profile_count']==27 and p['png_count']==184 and p['runtime_changed'] is True
+for n,h in p['protected_files'].items():assert sha(n)==h,'Predecessor changed: '+n
+for n in p['modified_archived_files']:
+ if n.startswith('tests/'):
+  assert sha('historical_capture_metadata/approved27_before_batch36/'+n)==read('historical_capture_metadata/approved27_before_batch36/APPROVED_SOURCE_MANIFEST.json')['files'][n]
+assert sha('expression_rig.gd')!=sha('historical_capture_metadata/approved27_before_batch36/expression_rig.gd')
+for item in read('validation/approved_batch36/approved_review_identity.json')['profiles']:
+ assert sha('expressions/'+item['id']+'.json')==item['profile_sha256']
+ assert sha('validation/approved_batch36/'+item['id']+'/'+item['video_name'])==item['video_sha256']
+result=read('APPROVED_INTEGRATION_TEST_RESULTS.json');assert result['status']=='PASS' and result['runtime_changed'] and not result['ci_run']
+assert result['runtime_sha256']==sha('expression_rig.gd')
+for filename in ['handoff_boundary_checks.json','bridge_lifecycle_checks.json','focused_object_checks.json']:
+ assert read('validation/approved_batch36/'+filename)['runtime_sha256_at_start']==result['runtime_sha256']
+assert read('validation/approved_batch36/native_parity/numeric_source_parity.json')['validated_runtime_expression_rig_sha256']==result['runtime_sha256']
+for n,e in result['receipts'].items():
+ path='validation/approved_batch36/'+n;c=read(path)
+ assert c['status']=='PASS' and c['failures']==[] and c['checks']==e['checks'] and sha(path)==e['sha256']
+s=read('APPROVED_INTEGRATION_STATUS.json');assert s['approved_profile_ids']==ids and s['current_runtime_changes'] and not s['normal_speed_playback_observed'] and not s['live_engine_pacing_measured']
+r=read('RELEASE.json');assert r['approved_registry']==ids and r['approved_published_count']==36 and r['newly_approved']==ids[27:]
+assert 'BLOCKED' in r['native_visual_parity']
+print('APPROVED36_GUARD PASS prior_profiles=27 PNGs=184 new_profiles=9 runtime_changed=bounded_opening_handoff fresh_native_parity=BLOCKED live_pacing=UNVERIFIED')

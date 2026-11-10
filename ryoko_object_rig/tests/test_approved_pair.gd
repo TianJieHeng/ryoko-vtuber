@@ -15,7 +15,7 @@ func run():
  check(rig.rig_ready and rig.registry_ready,"ready "+rig.last_error)
  if not failures.is_empty():quit(1);return
  rig.reset();var neutral=rig.face.snapshot();var head=rig.head.transform;var body=rig.body.transform
- check(rig.list_expressions().size()==27,"27 registry entries")
+ check(rig.list_expressions().size()==36,"36 registry entries")
  for id in ["EXP-144","EXP-197"]:
   rig.reset();check(rig.play_expression(id),"play "+id)
   var count=int(round(rig.performance.duration*30))
@@ -48,5 +48,5 @@ func run():
  check(not rig.has_scoped(rig.pose_now()),"manual clears components")
  rig.reset();check(rig.face.snapshot()==neutral,"final neutral")
  var out={"status":"PASS" if failures.is_empty() else "FAIL","checks":checks,"failures":failures,"registry":rig.list_expressions(),"scope":"Both full 30fps cycles, repeated/interrupted flows, bidirectional handoffs with all profiles, neutral state, manual ownership. Focused, not full legacy suite."}
- var f=FileAccess.open("/tmp/ryoko_pair_integration/state_checks.json",FileAccess.WRITE);f.store_string(JSON.stringify(out,"  "));f.close()
+ var f=FileAccess.open("res://validation/approved_batch36/regression_approved_pair/state_checks.json",FileAccess.WRITE);f.store_string(JSON.stringify(out,"  "));f.close()
  print("APPROVED_PAIR ",out.status," checks=",checks);quit(0 if failures.is_empty() else 1)
