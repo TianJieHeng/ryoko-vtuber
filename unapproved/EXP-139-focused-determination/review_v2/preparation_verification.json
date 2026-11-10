@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_baseline_exact_no_extra_files": true,
+    "actual_approved27_registry_unchanged": true,
+    "new_candidate_never_written_in_rig": true,
+    "static_only_no_final_profile_or_motion": true,
+    "six_studies_three_stronger_alternatives": true,
+    "v1_comparison_pose_exact": true,
+    "neutral_bookends": true,
+    "only_existing_selected_controls": true,
+    "materially_stronger_brow_lowering": true,
+    "stronger_opposing_brow_tilts_in_bounds": true,
+    "eyes_open_and_no_smile_pout_or_opening": true,
+    "bounded_symmetric_sealed_width_study": true,
+    "headless_static_geometry_scope_reset_pass": true,
+    "reference_sheet_unchanged": true,
+    "python_syntax": true
+  },
+  "source_files": 1112,
+  "source_png_files": 184,
+  "missing": [],
+  "extra": [],
+  "changed": [],
+  "scope": "Static alternatives only. No native visual fit, selected pose, final motion, approval or production integration implied."
+}

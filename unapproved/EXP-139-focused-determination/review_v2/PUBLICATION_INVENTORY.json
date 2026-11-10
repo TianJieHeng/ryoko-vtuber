@@ -1,0 +1,229 @@
+{
+  "status": "VERIFIED_REVIEW_BACKUP_UNAPPROVED",
+  "recorded_at_utc": "2026-11-10T19:01:50.167257+00:00",
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "branch": "review/exp139-focused-determination-v2",
+  "base_commit": "816d77fafb6e016dc70f0802743d444e618f7b0f",
+  "prefix": "unapproved/EXP-139-focused-determination/review_v2/",
+  "files": {
+    "BASELINE_FREEZE.json": {
+      "bytes": 138350,
+      "sha256": "62b7fe48ffe85ab3f80f0ca99af1fdf621306484047c0464e507a4e8520fb99b",
+      "git_blob_sha1": "b7115bd5b6b2be93007074c2f8acd1e86f233eab"
+    },
+    "MOTION_PREPARATION.md": {
+      "bytes": 5729,
+      "sha256": "6a80e017312bd1ac88d801002a6056d77c459ede719d76b459008bbe69630032",
+      "git_blob_sha1": "c2c31cc7809e7fd4cf71c14bc9932e0fac091273"
+    },
+    "PUBLICATION.md": {
+      "bytes": 6027,
+      "sha256": "9b17a3667d4583d0a6b16553f7a100c02b3cc077e8d6c575eb0c162bc574f7ab",
+      "git_blob_sha1": "5f1fdcb52b88e8b2239883f10d3947719d186ddd"
+    },
+    "README.md": {
+      "bytes": 6701,
+      "sha256": "c9b1aa91eff8a4446d634daff787c877fe14a5b3acc438ab5d7f1bd36589cbd5",
+      "git_blob_sha1": "e6bbbb6dfdd001453e35a4b71bd2a8c3751c36a7"
+    },
+    "REVIEW.md": {
+      "bytes": 9246,
+      "sha256": "5f30807a78d3fbef38838763b1f0b4625e65891d9dfe025559c302a00f207f9b",
+      "git_blob_sha1": "907bc157d14315261a28ef1a28090d4f95bc7aed"
+    },
+    "REVIEW_RESULT.json": {
+      "bytes": 1761,
+      "sha256": "525f4c84545e7f0dffe22a6d277d99af8d555edbcad3d799fcda1d5eacfa0261",
+      "git_blob_sha1": "e710ce660e02ea0390952a75ff0e858d2155c6ac"
+    },
+    "SOURCE_REFERENCE.json": {
+      "bytes": 10552,
+      "sha256": "230fad2cfcd66a2056c34a11357ca686c4847457ff56def8cd57e19cc3a86372",
+      "git_blob_sha1": "6a02e792f9abeca656dfe833299f11188b14a24d"
+    },
+    "STATIC_ALTERNATIVES_FREEZE.json": {
+      "bytes": 2908,
+      "sha256": "63195e730e93b991369d92b0182ee877c24d51abc34500ec06230f2ca86ef874",
+      "git_blob_sha1": "984758ad2aea38a76758f0b8d6e34cbc60fcbf2d"
+    },
+    "capture/checks.json": {
+      "bytes": 9444,
+      "sha256": "62e0858d8444606b3dfec8d25ba00c18ae780dfd83462def7601b3601e5f31ae",
+      "git_blob_sha1": "c69d52e2b4306cc81260b5eb26a00511ad364ae4"
+    },
+    "check_and_capture.gd": {
+      "bytes": 6043,
+      "sha256": "a7f619221962e928e2323b59616128978f5b5e1d202606bd974abc8fe88c37be",
+      "git_blob_sha1": "7c006ec01cf292306f3fda2b86bbd0ee64f2a254"
+    },
+    "motion_study/EXP-139.json": {
+      "bytes": 4819,
+      "sha256": "2a8c23d5a37ae1ed9162e9bb066870ecb5518da206975a5c69cc4b4502fee29b",
+      "git_blob_sha1": "067af7bb65af2f825f6e352918426f552fc6b551"
+    },
+    "motion_study/Focused_determination_review_v2.mp4": {
+      "bytes": 163085,
+      "sha256": "101456109207dcc9389f9c6053bc664fbad5369dab28232c39375889991bc955",
+      "git_blob_sha1": "c207dc58b77e5c7a64f5c936168d7112635b2079"
+    },
+    "motion_study/build_candidate.py": {
+      "bytes": 3962,
+      "sha256": "d95b831eeb83f621a668dbd19d678abe8cd0bbf7e94300e4e07990d1f7c6e88d",
+      "git_blob_sha1": "db040fdaa4c9d67f931a76b8270cc5b74ee6e6f9"
+    },
+    "motion_study/encode_preview.py": {
+      "bytes": 1865,
+      "sha256": "bba9b8af36cbd57b1939fe75d60a38d8d6d9db86c7dd1cae9da0cc59e52067ed",
+      "git_blob_sha1": "eeee49786fff6d3c6093df28c7d970c6e6ba27f2"
+    },
+    "motion_study/motion_checks.json": {
+      "bytes": 154722,
+      "sha256": "ef7eb2e19ee5ea884d658eed509cfe62939541d7f9d02a17199a60f998cc8f15",
+      "git_blob_sha1": "92ea1cfcdb6b46bd2419e8472fdc139cd3edc9b2"
+    },
+    "motion_study/motion_state_checks.json": {
+      "bytes": 135578,
+      "sha256": "92386d9fa4dec67092896529bd51e14d0ae0d806e457f10cdf9437b2578d6d61",
+      "git_blob_sha1": "2e865276acabca11795992f0ab7493fbdb3e4605"
+    },
+    "motion_study/poses.json": {
+      "bytes": 1478,
+      "sha256": "d1526d264e2be53870af4e6683cbfc1fe5234acc86557d842debd7540f0669bb",
+      "git_blob_sha1": "1a78824063226dfb8d016c491ab9592a82c0f72e"
+    },
+    "motion_study/preparation_verification.json": {
+      "bytes": 1256,
+      "sha256": "34d88670ff3607329eb4bab849754e2140df3224d27f7bfbf05c9775054f9b18",
+      "git_blob_sha1": "294d3b12b52e76fc01285480d18b8eeadf41c3d5"
+    },
+    "motion_study/render_motion.gd": {
+      "bytes": 6122,
+      "sha256": "ea15d6aedd98bee368efeb857bd868b66c9c51c883b51863b7f677394698cbdc",
+      "git_blob_sha1": "d17464f409d7fa8a81fc8134c349bd26d9d9d477"
+    },
+    "motion_study/run_motion.sh": {
+      "bytes": 1020,
+      "sha256": "92bad569146973940dfc381d0dcc293593c1d158832ade22fa1fe55da8e9da66",
+      "git_blob_sha1": "75cc95df6a1dd30c5df2224d6bb6c3cc2686cc74"
+    },
+    "motion_study/verify_preparation.py": {
+      "bytes": 4915,
+      "sha256": "7b4929a69641ae3011b938aee0bb105af40faf0d98da16e878c7d0351e1bf1de",
+      "git_blob_sha1": "f72822ff1ea6347df49c8392c366fe1d793d86b5"
+    },
+    "motion_study/video_probe.json": {
+      "bytes": 372,
+      "sha256": "d3e5a0bc65f95a1ca02c58861fc12d84b7c29b4e3286fe99076c666a469226ca",
+      "git_blob_sha1": "c36bbd03cbd894ce5e5bcc25e64e369c25ba8be9"
+    },
+    "onset_study/capture/checks.json": {
+      "bytes": 9485,
+      "sha256": "b5faa28c1ab4e14f4506cc91b17a498ce7efd8b72b1fd127cd2732091710e749",
+      "git_blob_sha1": "5a6e78c6f0f508ff2aad75ff39c61e805b89bd3e"
+    },
+    "onset_study/check_and_capture.gd": {
+      "bytes": 6255,
+      "sha256": "a58d8bfe01757c11f8d05bd6e039da33a73cdb2446e942e74f698c6b1b5af111",
+      "git_blob_sha1": "5fda0a1164ebe3267b8181ddcb946157976f5a56"
+    },
+    "onset_study/plan.json": {
+      "bytes": 1463,
+      "sha256": "f4e771fd4bd93cd7f94a4a3c77d0b3113d97f01c83671f9d4d5bbd237125ad66",
+      "git_blob_sha1": "0978191e80cf88f35df10341c633530be494cf78"
+    },
+    "onset_study/run_gate.py": {
+      "bytes": 1245,
+      "sha256": "4de21b5bc4dd3b7a535f5d9b92c5c23b2e4800f000c3c728844841bfb4b46421",
+      "git_blob_sha1": "be7f013b374630fbc4e5dccbcaf405f9d5eec2a2"
+    },
+    "onset_study/state_checks.json": {
+      "bytes": 9486,
+      "sha256": "58dd7bfca57aa1d1e51c57431bb27dd9837e3eba5a2981da72e074a04e801c10",
+      "git_blob_sha1": "04c42cc421a00948beed16596a00aebee68f4ac5"
+    },
+    "plan.json": {
+      "bytes": 1252,
+      "sha256": "df54981e7049eb73fb9c8057ef3f447b8c46bb308f3405f9855e9231b7d56367",
+      "git_blob_sha1": "77e3464f00cac0568e05c9d31d4d87e387a91098"
+    },
+    "preparation_verification.json": {
+      "bytes": 964,
+      "sha256": "45ba7528e4458c8b6306a4a6f8fe2bebc251302ee857bd882b12787b42f8433c",
+      "git_blob_sha1": "9cf6c9f6ac3e221536eafceda2c69316d1f69270"
+    },
+    "review/compact_review_metrics.json": {
+      "bytes": 5812,
+      "sha256": "96043c987698d0e0106bb4e3b1089c800a80bbc9cd39b77b63628d0960012ebe",
+      "git_blob_sha1": "8ce182686d5d444f15b17cfeaac1fa66ed33d982"
+    },
+    "review/delivered_video.framemd5": {
+      "bytes": 9894,
+      "sha256": "1e89ac9a780436dc76145efa26580c75b74918f827e5d8d2ed2d022870fd0993",
+      "git_blob_sha1": "51e4698546a857b92ce757d6a5be37acbd4ff87f"
+    },
+    "review/expected_chronological_sequence.framemd5": {
+      "bytes": 9894,
+      "sha256": "1e89ac9a780436dc76145efa26580c75b74918f827e5d8d2ed2d022870fd0993",
+      "git_blob_sha1": "51e4698546a857b92ce757d6a5be37acbd4ff87f"
+    },
+    "review/verify_review.py": {
+      "bytes": 13669,
+      "sha256": "fabbaa28fb5cbef84c3d61b2b6a189801ed814b0302da68bc7355477f63a624e",
+      "git_blob_sha1": "1d6a9695e87b3e597bc77b14a382b1c373324959"
+    },
+    "run_gate.py": {
+      "bytes": 1245,
+      "sha256": "4de21b5bc4dd3b7a535f5d9b92c5c23b2e4800f000c3c728844841bfb4b46421",
+      "git_blob_sha1": "be7f013b374630fbc4e5dccbcaf405f9d5eec2a2"
+    },
+    "state_checks.json": {
+      "bytes": 9445,
+      "sha256": "c4a8b9612b51cdb8f255a9eab407280d2c7a94afe5c7cb33265727cd8122a004",
+      "git_blob_sha1": "703f66981c8675ea85d056226cb197aee3114c87"
+    },
+    "verify_preparation.py": {
+      "bytes": 3760,
+      "sha256": "f818f5b9e5d4833d32e5b3cef3d422d8545340b1b7472d1f560a30cfd704881f",
+      "git_blob_sha1": "1d2fa741e9bbdbf8c56211e5bf99ae6365d80844"
+    }
+  },
+  "inventory_self_excluded": true,
+  "frozen_rig": {
+    "files": 1112,
+    "png_files": 184,
+    "mismatches": []
+  },
+  "frozen_v1": {
+    "files": 2490,
+    "mismatches": []
+  },
+  "frozen_static": {
+    "files": 28,
+    "unchanged": 27,
+    "differences": [
+      {
+        "path": "README.md",
+        "frozen_sha256": "8ed34368c6621d473c3a5cec100e0d39e8f1fb8aeac14a0b62a0b856d66bb628",
+        "publication_sha256": "c9b1aa91eff8a4446d634daff787c877fe14a5b3acc438ab5d7f1bd36589cbd5"
+      }
+    ],
+    "reason": "README completion-status correction after the recorded independent review; no capture, candidate or rig changes."
+  },
+  "checks": {
+    "python_source_syntax": "PASS",
+    "shell_syntax": "PASS",
+    "historical_reviews": "See archived receipts and REVIEW.md; not silently rerun against the amended README.",
+    "clean_checkout_reproduction": "DOCUMENTED_NOT_EXECUTED"
+  },
+  "approval": "Pending user approval; no integration or main update.",
+  "omitted_historical_inventory": "V1_PROVENANCE.json is retained locally; only its verified preservation count is included in this compact backup.",
+  "optional_evidence_retained_locally": [
+    "BASELINE_REPRODUCTION.json",
+    "review/full_bust_v1_v2_comparison.png",
+    "review/native_motion_detail_contact_sheet.png",
+    "review/decoded_motion_detail_contact_sheet.png",
+    "review/independent_review_metrics.json",
+    "review/initial_review_diagnostics.json"
+  ],
+  "publication_scope": "Code, compact validation and delivered MP4 only. No runtime copy, native frame sequence or broad v1 file inventory."
+}

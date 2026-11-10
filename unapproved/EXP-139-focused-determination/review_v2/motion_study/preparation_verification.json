@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_rig_and_artwork_exact": true,
+    "all_original_static_files_and_captures_preserved": true,
+    "production_registry_unchanged_27_and_no_exp139": true,
+    "four_second_unapproved_candidate": true,
+    "eleven_ordered_keys_with_neutral_bookends": true,
+    "only_existing_selected_channels": true,
+    "exact_selected_c_peak_and_1620ms_hold": true,
+    "one_symmetric_authored_onset_blink": true,
+    "eyes_open_by_070_and_through_hold_release": true,
+    "authored_blink_disclosed_not_recovered": true,
+    "onset_static_exact_c_reference": true,
+    "onset_static_headless_pass": true,
+    "motion_headless_dense_and_chronological_pass": true,
+    "exact_chronological_neutral_endpoints": true,
+    "source_sheet_unchanged": true,
+    "python_and_shell_syntax": true
+  },
+  "baseline": "approved27",
+  "source_files": 1112,
+  "source_png_files": 184,
+  "original_static_files_preserved": 28,
+  "static_checks": 580,
+  "motion_checks": 63705,
+  "dense_timeline_samples": 4001,
+  "chronological_frames": 121,
+  "approval": "UNAPPROVED",
+  "scope": "Preparation integrity and state evidence. Native blink fit, native motion, video playback, normal-speed perception and user approval remain separate gates."
+}

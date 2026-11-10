@@ -1,0 +1,56 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "v1_peak_reference",
+    "pose": {
+      "brow_screen_left": -0.25,
+      "brow_screen_right": -0.25,
+      "brow_tilt_screen_left": 0.6,
+      "brow_tilt_screen_right": -0.6,
+      "mouth_lip_press": 1.0
+    }
+  },
+  {
+    "name": "a_lowered_focus",
+    "pose": {
+      "brow_screen_left": -0.65,
+      "brow_screen_right": -0.65,
+      "brow_tilt_screen_left": 0.8,
+      "brow_tilt_screen_right": -0.8,
+      "mouth_lip_press": 1.0,
+      "mouth_width_screen_left": 0,
+      "mouth_width_screen_right": 0
+    }
+  },
+  {
+    "name": "b_firm_line",
+    "pose": {
+      "brow_screen_left": -0.85,
+      "brow_screen_right": -0.85,
+      "brow_tilt_screen_left": 1.0,
+      "brow_tilt_screen_right": -1.0,
+      "mouth_lip_press": 1.0,
+      "mouth_width_screen_left": 0.12,
+      "mouth_width_screen_right": 0.12
+    }
+  },
+  {
+    "name": "c_strongest_open",
+    "pose": {
+      "brow_screen_left": -1.0,
+      "brow_screen_right": -1.0,
+      "brow_tilt_screen_left": 1.0,
+      "brow_tilt_screen_right": -1.0,
+      "mouth_lip_press": 1.0,
+      "mouth_width_screen_left": 0.25,
+      "mouth_width_screen_right": 0.25
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

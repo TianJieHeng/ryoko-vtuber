@@ -1,0 +1,28 @@
+{
+  "status": "PASS_SCOPED_REVIEW",
+  "approval": "UNAPPROVED",
+  "ready_for_user_expression_feedback": true,
+  "normal_speed_observed_by_this_reviewer": false,
+  "core_finding": "V2 has visibly firmer brows and a wider sealed mouth than v1 at full-bust scale, but the peak remains restrained. The authored blink is the most conspicuous added motion cue.",
+  "caveat": "Existing hard hair/lid edges remain visible during partial blink. No new mouth opening/tear or persistent reopened-eye seam change was observed in sampled native and decoded frames. This is not a whole-runtime or pacing approval.",
+  "independent_checks": 42,
+  "failed_checks": [],
+  "video": "101456109207dcc9389f9c6053bc664fbad5369dab28232c39375889991bc955",
+  "review_path": "REVIEW.md",
+  "evidence_path": "review/compact_review_metrics.json",
+  "files": {
+    "REVIEW.md": "5f30807a78d3fbef38838763b1f0b4625e65891d9dfe025559c302a00f207f9b",
+    "review/verify_review.py": "fabbaa28fb5cbef84c3d61b2b6a189801ed814b0302da68bc7355477f63a624e",
+    "review/compact_review_metrics.json": "96043c987698d0e0106bb4e3b1089c800a80bbc9cd39b77b63628d0960012ebe"
+  },
+  "publication_documentation_amendment": {
+    "historical_static_freeze_files": 28,
+    "unchanged_static_freeze_files": 27,
+    "changed_static_freeze_files": [
+      "README.md"
+    ],
+    "reason": "README completion-status correction after native review. Original freeze and review receipts are retained. No static capture, candidate data, runtime or artwork changed.",
+    "final_inventory": "PUBLICATION_INVENTORY.json"
+  },
+  "playback_observation": "Played at normal speed in the supported desktop media player and inspected sampled displayed phases. This is not continuous viewing or live engine pacing certification."
+}

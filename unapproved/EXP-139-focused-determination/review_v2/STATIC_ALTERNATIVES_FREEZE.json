@@ -1,0 +1,33 @@
+{
+  "scope": "Static comparison work preserved before the newly authored refocusing blink and motion study.",
+  "files": {
+    "BASELINE_FREEZE.json": "62b7fe48ffe85ab3f80f0ca99af1fdf621306484047c0464e507a4e8520fb99b",
+    "PREPARATION_HANDOFF.json": "35040cbae076806fb70df5fa0757656d2f36419e805b2cdaa23e897fad3c0c9f",
+    "README.md": "8ed34368c6621d473c3a5cec100e0d39e8f1fb8aeac14a0b62a0b856d66bb628",
+    "SOURCE_REFERENCE.json": "230fad2cfcd66a2056c34a11357ca686c4847457ff56def8cd57e19cc3a86372",
+    "V1_PROVENANCE.json": "57b78f4b02308f76c357587a87148caf129212bc1095770df0626a6b479b4e85",
+    "capture/a_lowered_focus_bust.png": "96368862bf498599782dc6092fb7a8c5139da566c8836781f194ea60be347efb",
+    "capture/a_lowered_focus_detail.png": "91efc8af0a5c61a9708b3af950f07b66d4564401fa946c160f8208094b00015a",
+    "capture/b_firm_line_bust.png": "b9a12323d2eabeac6aeebc98fd82bce3bf9884c11fed423d8b223fbcf293aade",
+    "capture/b_firm_line_detail.png": "7126d32d97b211a8634e538aadfbb209fecbbf5b54c807c459071bf98610fe61",
+    "capture/c_strongest_open_bust.png": "95e03af7979dddb7fcadcfc9a8ca80d880d77a2dd806294ae21b5e249dd18025",
+    "capture/c_strongest_open_detail.png": "c90b62ad8c5471e22ad89ac32ceaa697022c6c39a6f61bc4e79145941330a94d",
+    "capture/checks.json": "62e0858d8444606b3dfec8d25ba00c18ae780dfd83462def7601b3601e5f31ae",
+    "capture/neutral_bust.png": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8",
+    "capture/neutral_detail.png": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b",
+    "capture/neutral_return_bust.png": "2a3490f6377793d938715905cbd714bc4c884db663eb35d7f0038ab7d01b7ea8",
+    "capture/neutral_return_detail.png": "dbbc8078dc1c3879c28a39bc9825eeb9309ffb92b9ff53870bc815e0472d721b",
+    "capture/v1_peak_reference_bust.png": "847d8da7a61ca1bd7250ad1f5247381bbbb76eac0708721b82d5bbbf76d637ff",
+    "capture/v1_peak_reference_detail.png": "0a30148a18a6fa99da552619578e6afd41dfc7378b02a785b496a4cfa7e33dd5",
+    "capture.log": "b1f1c0cb0a378e9e59e0992125578b66f37e07f72a63f25f5531351c4208a4d7",
+    "check_and_capture.gd": "a7f619221962e928e2323b59616128978f5b5e1d202606bd974abc8fe88c37be",
+    "import.log": "af3cc3ddbf8cf71edf7dc3c7f7402e31c82d6c38334e2135d707c74fa18506aa",
+    "plan.json": "df54981e7049eb73fb9c8057ef3f447b8c46bb308f3405f9855e9231b7d56367",
+    "preparation_verification.json": "45ba7528e4458c8b6306a4a6f8fe2bebc251302ee857bd882b12787b42f8433c",
+    "preparation_verification.log": "45ba7528e4458c8b6306a4a6f8fe2bebc251302ee857bd882b12787b42f8433c",
+    "run_gate.py": "4de21b5bc4dd3b7a535f5d9b92c5c23b2e4800f000c3c728844841bfb4b46421",
+    "state.log": "0e6ce244567bce6a2c7d15564525ece3075277f70df95910cc01008d5d1e9e4d",
+    "state_checks.json": "c4a8b9612b51cdb8f255a9eab407280d2c7a94afe5c7cb33265727cd8122a004",
+    "verify_preparation.py": "f818f5b9e5d4833d32e5b3cef3d422d8545340b1b7472d1f560a30cfd704881f"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "checks": {
+    "native_capture_success": true,
+    "headless_state_success": true,
+    "native_headless_pose_and_time_identity": true,
+    "chronological_native_samples": true,
+    "only_nine_declared_acting_channels": true,
+    "eyes_fully_open_from_070_through_recovery": true,
+    "blink_symmetric_and_reaches_full_closure": true,
+    "native_matches_independent_timeline_and_existing_restart_blend": true,
+    "1112_frozen_rig_files_unchanged": true,
+    "v1_frozen_evidence_preserved": true,
+    "static_alternatives_preserved": true,
+    "source_sheet_exact": true,
+    "source_catalogue_exact": true,
+    "registry_27_no_candidate": true,
+    "full_exact_complete_numbered_set": true,
+    "full_all_121_native_hashes_exact": true,
+    "full_exact_native_neutral_bookends": true,
+    "full_static_neutral_and_return_equal_native": true,
+    "full_selected_peak_equals_static_C": true,
+    "full_reopened_matches_onset_static": true,
+    "full_closed_matches_onset_static": true,
+    "full_peak_held_exact_frames24_through72": true,
+    "full_v1_reference_equals_v1_original": true,
+    "detail_exact_complete_numbered_set": true,
+    "detail_all_121_native_hashes_exact": true,
+    "detail_exact_native_neutral_bookends": true,
+    "detail_static_neutral_and_return_equal_native": true,
+    "detail_selected_peak_equals_static_C": true,
+    "detail_reopened_matches_onset_static": true,
+    "detail_closed_matches_onset_static": true,
+    "detail_peak_held_exact_frames24_through72": true,
+    "detail_v1_reference_equals_v1_original": true,
+    "full_body_below_y400_unchanged": true,
+    "detail_below_y280_unchanged": true,
+    "open_peak_eye_core_matches_neutral": true,
+    "post_blink_eye_core_matches_neutral": true,
+    "left_hair_lid_seam_unchanged_when_reopened": true,
+    "right_hair_lid_seam_unchanged_when_reopened": true,
+    "mp4_format_and_frame_count": true,
+    "mp4_pts_exact_30hz_chronology": true,
+    "full_mp4_decode_clean": true,
+    "all_121_decoded_frames_and_pts_match_numeric_reconstruction": true
+  },
+  "approval": "UNAPPROVED",
+  "normal_speed_observed_by_this_reviewer": false,
+  "maximum_control_reconstruction_error": 2.9679674495852737e-08,
+  "static_comparison": {
+    "full": {
+      "neutral_to_v1": {
+        "changed_pixels": 478,
+        "bbox_exclusive": [
+          233,
+          287,
+          325,
+          385
+        ],
+        "rgb_absolute_sum": 25978
+      },
+      "neutral_to_v2": {
+        "changed_pixels": 1015,
+        "bbox_exclusive": [
+          233,
+          287,
+          325,
+          388
+        ],
+        "rgb_absolute_sum": 80012
+      },
+      "v1_to_v2": {
+        "changed_pixels": 953,
+        "bbox_exclusive": [
+          234,
+          287,
+          325,
+          388
+        ],
+        "rgb_absolute_sum": 69792
+      }
+    },
+    "detail": {
+      "neutral_to_v1": {
+        "changed_pixels": 1930,
+        "bbox_exclusive": [
+          84,
+          63,
+          270,
+          267
+        ],
+        "rgb_absolute_sum": 113735
+      },
+      "neutral_to_v2": {
+        "changed_pixels": 4082,
+        "bbox_exclusive": [
+          84,
+          64,
+          270,
+          268
+        ],
+        "rgb_absolute_sum": 338258
+      },
+      "v1_to_v2": {
+        "changed_pixels": 3911,
+        "bbox_exclusive": [
+          85,
+          63,
+          270,
+          268
+        ],
+        "rgb_absolute_sum": 291535
+      },
+      "v1_region_pixels": {
+        "brows": 1895,
+        "mouth": 35
+      },
+      "v2_region_pixels": {
+        "brows": 2649,
+        "mouth": 1433
+      }
+    }
+  },
+  "corrected_initial_diagnostics": {
+    "timeline": "The first reconstruction omitted the shared 0.30s initial/retrigger smoothstep. Only frame 8 differed, at most 0.001082. This was an independent test-model omission, not a runtime failure. The corrected model includes that unchanged runtime behavior, with the same 1e-6 threshold.",
+    "eye_roi": "The original y110:170 eye ROI included 25 pixels of the stronger brow tip at x144:154 y110:112. Visual inspection confirms these are brow pixels. Eye core is y113:170. Original results preserved in initial_review_diagnostics.json."
+  },
+  "visually_inspected_motion_frames": [
+    0,
+    10,
+    12,
+    15,
+    18,
+    21,
+    24,
+    48,
+    72,
+    78,
+    90,
+    100,
+    109,
+    110,
+    120
+  ],
+  "evidence_counts": {
+    "native_static": 600,
+    "native_onset": 592,
+    "native_motion": 63948,
+    "headless_motion": 63705,
+    "rig_files": 1112,
+    "rig_pngs": 184,
+    "v1_files": 2490,
+    "static_files": 28
+  },
+  "failed_checks": [],
+  "status": "PASS",
+  "video": {
+    "sha256": "101456109207dcc9389f9c6053bc664fbad5369dab28232c39375889991bc955",
+    "codec": "h264",
+    "size": [
+      968,
+      800
+    ],
+    "frame_rate": "30/1",
+    "reported_frames": "121",
+    "duration": "4.033333",
+    "bytes": 163085,
+    "rgb_mean_absolute_errors": {
+      "full": {
+        "mean": 1.2921628860629344,
+        "max": 1.2997058392018779
+      },
+      "detail": {
+        "mean": 2.035402146464646,
+        "max": 2.107787037037037
+      }
+    },
+    "chronological_reconstruction": {
+      "decoded_frames": 121,
+      "exact_yuv_hashes_and_times": true,
+      "expected_mp4_sha256": "101456109207dcc9389f9c6053bc664fbad5369dab28232c39375889991bc955",
+      "limit": "Verifies delivered captured sequence, not continuous normal-speed viewing or live runtime pacing."
+    }
+  },
+  "source_receipt_sha256": "ce233f4d1a4cf17d038c2f56c9ee3febc83b756dcabc61a6568329371f015bf7",
+  "scope": "Compact summary of the original 42-check image/sequence review. Full diagnostics and contact sheets retained locally. Static preservation checks predate the README completion correction; final inventory explicitly records that one documentation difference."
+}
