@@ -1,0 +1,46 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "distressed",
+    "pose": {
+      "blink_L": 0.32,
+      "blink_R": 0.32,
+      "brow_screen_left": -0.15,
+      "brow_screen_right": -0.12,
+      "brow_inner_lift_screen_left": 0.72,
+      "brow_inner_lift_screen_right": 0.65,
+      "mouth_purse": 0.35
+    }
+  },
+  {
+    "name": "collecting",
+    "pose": {
+      "blink_L": 0.2,
+      "blink_R": 0.2,
+      "brow_screen_left": -0.06,
+      "brow_screen_right": -0.06,
+      "brow_inner_lift_screen_left": 0.4,
+      "brow_inner_lift_screen_right": 0.35,
+      "mouth_purse": 0.15
+    }
+  },
+  {
+    "name": "brave_smile",
+    "pose": {
+      "blink_L": 0.06,
+      "blink_R": 0.06,
+      "brow_inner_lift_screen_left": 0.18,
+      "brow_inner_lift_screen_right": 0.12,
+      "mouth_smile": 0.22,
+      "mouth_corner_lift_screen_left": 0.22,
+      "mouth_corner_lift_screen_right": 0.22
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]
