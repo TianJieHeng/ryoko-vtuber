@@ -1,0 +1,48 @@
+{
+  "status": "unapproved wiring checkpoint",
+  "base_main": "c976b11ea42d6de984242444212259cafa84e17c",
+  "approved_existing_files_changed": false,
+  "joints": 17,
+  "body_layers": 17,
+  "approved_facial_profiles": 47,
+  "checks": {
+    "actual_godot_headless": "PASS: 963 focused checks",
+    "workbench_headless_load": "PASS",
+    "native_render_capture": "BLOCKED: local X server could not create listening sockets",
+    "continuous_normal_speed_observation": "NOT RUN",
+    "CI": "NOT RUN",
+    "mp4_full_decode": "PASS: FFmpeg full decode"
+  },
+  "movie": {
+    "path": "review/ryoko_full_body_wiring_v1.mp4",
+    "kind": "CPU layer composite from actual Godot 4.6.3 joint matrices",
+    "neutral_head": "source-derived neutral diagnostic, not live facial shader output",
+    "sha256": "18c87d751ca4e4d705038b798dcf3ff00c29922d4468900825fded5f5c324426",
+    "fps": 30,
+    "frames": 511,
+    "duration_seconds": 17.033333333333335,
+    "size": [
+      1280,
+      960
+    ]
+  },
+  "approval": "User review required before any approved/main integration",
+  "revision": 3,
+  "head_proportion_correction": {
+    "initial_preview": "rejected by user: head not proportional",
+    "old_scale": 0.285,
+    "corrected_scale": 0.32,
+    "corrected_origin": [
+      329,
+      4
+    ],
+    "source_comparison": "assets/proportion_source_measurements.json",
+    "approval": "pending user review"
+  },
+  "arm_ownership_correction": {
+    "defect": "Torso-owned ghost sleeves and incomplete separate forearm cuts",
+    "repair": "Remove ghost sleeves on both sides; complete source sleeve cuts; elbow pivots at actual painted creases; tapered underlap and pale armpit edge cleanup",
+    "provenance": "assets/arm_ownership_provenance.json",
+    "approval": "pending user review"
+  }
+}

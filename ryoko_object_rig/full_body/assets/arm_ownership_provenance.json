@@ -1,0 +1,21 @@
+{
+  "defect": "Both retained torso_garment sleeve silhouettes were chest-owned and remained visible beside independently moving forearms. Incomplete forearm masks exposed dangling duplicate sleeve fragments.",
+  "offending_input": "ryoko_2d_update/artwork/registered/torso_garment.png",
+  "replacement_source": "avatar_build_assets/reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+  "repair": [
+    "Derived torso garment clipped to source torso/arm gap on both sides independently; preserves shoulder overlap.",
+    "Complete sleeve pixels re-cut from canonical source; upper/lower sleeve are exclusive owners below shoulder.",
+    "40 canvas-pixel overlap y515..555; upper sleeve fades over y530..555.",
+    "Elbow pivots at actual painted elbow crease: anatomical R [374,535], anatomical L [650,535].",
+    "White exterior source matte removed before cuff y710; actual cuff and existing hands preserved.",
+    "Final armpit cleanup: smoothed cut boundary, tapered 6px source-pixel shoulder overlap to zero at y480, and removed pale neutral boundary fringe only at y430..480. Frame300 CPU endpoint inspected with actual engine transforms; horizontal notch removed."
+  ],
+  "unchanged": [
+    "Head binding [329,4] scale .320",
+    "Approved originals",
+    "Neckline and jewelry ownership",
+    "Runtime code"
+  ],
+  "proof": "assets/arm_ownership_comparison.png",
+  "proof_note": "CPU source-layer static comparison: original, prior defect, corrected neutral. Not a Godot rendered test."
+}
