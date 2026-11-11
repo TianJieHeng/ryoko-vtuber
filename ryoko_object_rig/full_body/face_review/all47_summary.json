@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "expressions": 47,
+  "frames": 2854,
+  "fps": 15,
+  "all_faces_changed": true,
+  "all_final_faces_exact_neutral": true,
+  "all_final_canvases_exact_neutral": true,
+  "all_final_poses_zero": true,
+  "changed_face_pixels_range": [
+    259,
+    4522
+  ],
+  "native_godot_capture": false,
+  "video_sha256": "a382c24f102a1a33600af95390560fb886d33effbe562e5cbf39a3e3150cb7fc",
+  "video_bytes": 4934405,
+  "reproduction": "README.md",
+  "per_profile_evidence": "all47_face_pixel_evidence.csv",
+  "native_gpu_parity_verified": false
+}

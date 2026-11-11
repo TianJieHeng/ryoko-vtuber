@@ -1,6 +1,6 @@
 {
   "base_main": "17e736d176cb595eb5cc5f32bf54f5a267c62f5c",
-  "status": "INTEGRATION_REVIEW_IN_PROGRESS",
+  "status": "ALL_47_INTEGRATED_AND_RECONSTRUCTED",
   "changed_existing_files": [
     "ryoko_object_rig/full_body/full_body_rig.gd",
     "ryoko_object_rig/full_body/full_body_viewer.gd",
@@ -61,6 +61,10 @@
   "registered_profile_count": 47,
   "artwork_and_body_registration_changed": false,
   "default_scene": "res://full_body/full_body_viewer.tscn",
-  "current_checks": "511 focused viewer/runtime checks PASS; first expression reconstructed visually; remaining47 visual pass ongoing",
-  "native_capture": false
+  "current_checks": "511 focused viewer/runtime checks PASS; all47 show face-pixel changes and exact neutral face/canvas returns in the complete reconstructed movie; default full-body launch PASS",
+  "native_capture": false,
+  "first_preview": "accepted by user after delivery",
+  "full_run_movie": "all47_full_body_live_faces_15fps.mp4",
+  "full_run_library_file_id": "libfile_654a330bf3e081919b5b4c739aa0e937",
+  "live_pacing": "UNVERIFIED"
 }

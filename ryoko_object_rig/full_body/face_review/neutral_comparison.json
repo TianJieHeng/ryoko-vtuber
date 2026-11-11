@@ -1,0 +1,16 @@
+{
+  "reference": "ryoko_object_rig/validation/approved_batch39/EXP-061/Broad_surprise_review_v1.mp4 @0, crop(568,220,968,580)",
+  "camera": "native head-source pixels [380:780,380:740] reproduced from attached head global transform",
+  "rgb_mae": 18.738215277777776,
+  "rgb_p95": 193.0,
+  "exact_native_gpu_parity": false,
+  "caveat": "Comparison to lossy prior native video, not current native engine rendering.",
+  "face_only_box_in_detail": [
+    70,
+    80,
+    330,
+    280
+  ],
+  "face_only_rgb_mae": 3.965525641025641,
+  "face_only_rgb_p95": 6.0
+}

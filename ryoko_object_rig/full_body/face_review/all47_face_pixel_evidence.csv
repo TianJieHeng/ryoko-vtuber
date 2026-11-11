@@ -1,0 +1,48 @@
+id,title,authored_duration,frames,peak_time,max_changed_face_pixels,max_face_mae,final_face_equal_neutral,final_canvas_equal_neutral,final_pose_all_zero,final_phase
+EXP-163,Yawn,5.8,88,1.66666666666667,4522,8.792661179698216,True,True,True,released
+EXP-005,Hearty laughter,5.4,82,1.93333333333333,1233,6.802537722908093,True,True,True,neutral_return
+EXP-001,Bright welcome,3.0,46,1.06666666666667,821,2.0372656607224506,True,True,True,neutral_return
+EXP-006,Suppressed giggle,2.8,43,1.0,1258,3.2296982167352537,True,True,True,neutral_return
+EXP-107,Confident reassurance,3.0,46,1.2,722,1.8585048010973937,True,True,True,neutral_return
+EXP-007,Relieved smile,3.2,49,1.26666666666667,739,1.8560356652949246,True,True,True,neutral_return
+EXP-002,Affectionate warmth,1.9,30,0.8,984,5.800411522633745,True,True,True,neutral_return
+EXP-152,Private pride,1.9,30,0.8,819,4.604892546867855,True,True,True,neutral_return
+EXP-160,Shy laughter,3.4,52,1.33333333333333,1946,6.438728852309099,True,True,True,neutral_return
+EXP-177,Meditative calm,3.9,60,0.933333333333333,763,5.27350251486054,True,True,True,neutral_return
+EXP-164,Fighting sleep,3.47,54,0.866666666666667,861,5.489551897576589,True,True,True,neutral_return
+EXP-021,Quiet sadness,3.65,56,1.33333333333333,833,4.66970736168267,True,True,True,neutral_return
+EXP-158,Post-confession shyness,4.35,67,1.93333333333333,1675,5.98758573388203,True,True,True,neutral_return
+EXP-181,Cheeky wink,3.1,48,1.26666666666667,822,3.9356881572930957,True,True,True,neutral_return
+EXP-102,Knowing smirk,3.8,58,1.73333333333333,628,2.004983996342021,True,True,True,neutral_return
+EXP-116,Confident denial,2.85,44,1.2,682,2.2352766346593507,True,True,True,neutral_return
+EXP-050,Frustrated pout,4.13,63,2.06666666666667,675,1.8951531778692272,True,True,True,neutral_return
+EXP-186,Smug cat smile,3.4,52,1.0,812,4.063100137174211,True,True,True,neutral_return
+EXP-114,Daring provocation,3.8,58,1.73333333333333,799,3.3686785550983083,True,True,True,neutral_return
+EXP-148,Nervous laugh,3.6,55,1.13333333333333,1514,4.829881115683585,True,True,True,neutral_return
+EXP-197,Playful kiss,7.2,109,2.93333333333333,1693,6.569090077732053,True,True,True,neutral
+EXP-144,Caught staring,5.2,79,2.13333333333333,1575,4.205372656607224,True,True,True,neutral_return
+EXP-040,Recovering composure,6.2,94,2.0,803,4.110745313214449,True,True,True,neutral_return
+EXP-125,Sudden insight,3.6,55,2.06666666666667,603,1.2479881115683584,True,True,True,neutral_return
+EXP-063,Stunned silence,4.0,61,1.0,594,1.7671239140374944,True,True,True,neutral_return
+EXP-090,Queasy,4.0,61,1.33333333333333,874,4.915089163237312,True,True,True,neutral_return
+EXP-153,Hiding a smile,4.0,61,1.4,733,4.0753772290809325,True,True,True,neutral_return
+EXP-139,Focused determination,4.0,61,0.533333333333333,1067,5.920804755372656,True,True,True,neutral_return
+EXP-174,Sleepy annoyance,4.0,61,1.13333333333333,904,4.84453589391861,True,True,True,neutral_return
+EXP-067,Creeping dread,4.8,73,2.53333333333333,618,1.7806355738454505,True,True,True,neutral_return
+EXP-093,Bitter taste,4.0,61,1.86666666666667,969,5.4114769090077735,True,True,True,neutral_return
+EXP-003,Quiet contentment,4.6,70,1.66666666666667,995,6.395336076817558,True,True,True,neutral_return
+EXP-043,Silent fury,4.0,61,1.13333333333333,259,0.6692958390489254,True,True,True,neutral_return
+EXP-064,Shocked gasp,4.0,61,0.666666666666667,693,2.5858710562414267,True,True,True,neutral_return
+EXP-004,Delighted discovery,4.0,61,1.86666666666667,719,2.27119341563786,True,True,True,neutral_return
+EXP-042,Cold glare,4.0,61,1.2,811,4.182761774119799,True,True,True,neutral_return
+EXP-129,Mental arithmetic,4.0,61,1.06666666666667,800,2.1687014174668495,True,True,True,neutral_return
+EXP-041,Controlled anger,4.0,61,1.4,662,3.4562871513488798,True,True,True,neutral_return
+EXP-061,Broad surprise,4.0,61,1.4,720,2.9917466849565617,True,True,True,neutral_return
+EXP-123,Puzzled,4.0,61,2.26666666666667,723,3.220301783264746,True,True,True,neutral_return
+EXP-081,Mild disgust,4.0,61,1.4,754,3.3985825331504342,True,True,True,neutral_return
+EXP-161,Sleepy,4.0,61,1.6,868,5.216575217192501,True,True,True,neutral_return
+EXP-045,Irritated Side-eye,4.0,61,1.6,820,4.5369455875628715,True,True,True,neutral_return
+EXP-104,Triumphant Grin,4.0,61,2.33333333333333,762,2.402880658436214,True,True,True,neutral_return
+EXP-096,Headache tension,4.0,61,1.53333333333333,1038,5.798239597622314,True,True,True,neutral_return
+EXP-046,Exasperated sigh,4.8,73,2.06666666666667,999,5.331778692272519,True,True,True,neutral_return
+EXP-091,Overly Sweet Taste,4.0,61,1.66666666666667,1733,5.671422039323274,True,True,True,neutral_return

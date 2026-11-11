@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "launch": "godot --headless --path ryoko_object_rig --quit-after 2",
+  "main_scene": "res://full_body/full_body_viewer.tscn",
+  "network_listener": "off by default; no control-port supplied",
+  "native_pixels": "NOT RUN",
+  "remaining_warning": "Existing raw PNG load warning for uneasy_clear_parting; export remains unverified"
+}
