@@ -1,0 +1,133 @@
+{
+  "approval_status": "All six exact delivered versions approved in conversation",
+  "historical_status_policy": "Original pending/unapproved labels are preserved byte-exact and superseded only for current approval by this record.",
+  "profiles": [
+    {
+      "id": "EXP-123",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+      "review_video_sha256": "5df48deb24bc3a86084799084fd65a004bd7b4af4459ed1eea6d838225930db3",
+      "approval_evidence": [
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Here\u2019s Puzzled, with an uneven brow and a small pout. The sideways mouth movement is subtle with the current rig."
+        },
+        {
+          "speaker": "user",
+          "text": "yah thats good"
+        }
+      ],
+      "historical_labels_preserved": true
+    },
+    {
+      "id": "EXP-081",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "4a6783b9232217ed468f626dc36e5c4c43dc0a5a284108a210ef1975496e1dd9",
+      "review_video_sha256": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f",
+      "approval_evidence": [
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Mild Disgust is ready for review, though this version reads more like a skeptical smirk. The rig can\u2019t lift just the upper lip."
+        },
+        {
+          "speaker": "user",
+          "text": "good"
+        }
+      ],
+      "historical_labels_preserved": true
+    },
+    {
+      "id": "EXP-161",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "c260d3a88b6e3ed02877cf9f334de5e6e43f921f14c96f952b78193498b3486e",
+      "review_video_sha256": "9ee4cbb7cee2dd79549363c472dd0ff7f0234e40282951745e90f921aef38475",
+      "approval_evidence": [
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Here\u2019s Sleepy, with a slow, heavy-lidded droop and slightly parted lips. The mouth is narrower and toothier than the reference."
+        },
+        {
+          "speaker": "user",
+          "text": "good"
+        }
+      ],
+      "historical_labels_preserved": true
+    },
+    {
+      "id": "EXP-045",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "53f59fc53968bc626e0f3ead5e9f66f03e24d06c1a900106e442cc04dc28180d",
+      "review_video_sha256": "e323bd40288f1907033a94ad7a24418ecd9ace7e8e39dd2da609e2d61357bae7",
+      "approval_evidence": [
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Here\u2019s Irritated Side-eye, with a narrowed sideways glance and uneven brows. The mouth stays restrained because the rig can\u2019t pull one corner downward."
+        },
+        {
+          "speaker": "user",
+          "text": "nice"
+        }
+      ],
+      "historical_labels_preserved": true
+    },
+    {
+      "id": "EXP-104",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "c25530c816fb25c52387d430ba2174287a960c740ce85e11745a35f4f34617fd",
+      "review_video_sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+      "approval_evidence": [
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Here\u2019s Triumphant Grin, with focused brows and a centered toothy smile. It\u2019s more restrained than the reference, and the rig can\u2019t reproduce the exact clenched-teeth shape."
+        },
+        {
+          "speaker": "user",
+          "text": "i like that one its good"
+        }
+      ],
+      "historical_labels_preserved": true
+    },
+    {
+      "id": "EXP-096",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "21ba5c4393ed672a5496ed28577068bd4b56e3b8ff5d7ac4f9674df03badf1fe",
+      "review_video_sha256": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+      "approval_evidence": [
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Here\u2019s Headache Tension, with tense brows and a sustained eye closure that eases before reopening. It reads as a restrained tense pause because the rig can\u2019t create the central brow furrows."
+        },
+        {
+          "speaker": "user",
+          "text": "good"
+        }
+      ],
+      "historical_labels_preserved": true
+    }
+  ],
+  "main_integration_request": "Hey I approved you to push the e3 approved expressions right? get them off review branches and get them on main lets fucking go"
+}

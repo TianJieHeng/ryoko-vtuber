@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": 27453131,
+  "failures": [],
+  "validated_profiles": 45,
+  "registered_aliases": 67,
+  "prior39_samples_at_60hz": 9369,
+  "approved_review_pose_samples": 726,
+  "all45_samples_at_240hz": 42864,
+  "directed_pairs": 504,
+  "cross_key_midpoint_cases": 10356,
+  "cross_boundary_samples": 745632,
+  "interrupted_lifecycle_cases": 51780,
+  "maximum_review_pose_error": 2.9140048929399143e-08,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "scope": "Pure-Python mathematical model of byte-unchanged GDScript. Compared all 39 old profiles and all 726 historical approved pose records; densely sampled all45 and all directed transitions involving the six additions. No engine, scene, rendering setter, actual auto-blink display, or native pixel execution.",
+  "godot_executed": false,
+  "native_rendering_executed": false,
+  "historical_tests_rerun": false,
+  "ci_run": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "EXP-081",
+  "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+  "approval_evidence": [
+    {
+      "speaker": "user",
+      "text": "if i say its good its approved"
+    },
+    {
+      "speaker": "assistant",
+      "text": "Mild Disgust is ready for review, though this version reads more like a skeptical smirk. The rig can\u2019t lift just the upper lip."
+    },
+    {
+      "speaker": "user",
+      "text": "good"
+    }
+  ],
+  "review_profile_sha256": "4a6783b9232217ed468f626dc36e5c4c43dc0a5a284108a210ef1975496e1dd9",
+  "review_video": "Mild_disgust_review_v1.mp4",
+  "review_video_sha256": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f",
+  "purpose": "Exact reviewed version backup on review/exp081-mild-disgust-v1. Production integration is a separate task.",
+  "historical_receipts": "All original UNAPPROVED and pending statements are retained without rewriting. They record review-time status, not current user approval.",
+  "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "production_registry_changed": false,
+  "main_written_by_this_task": false,
+  "qualification": "Reads as restrained smirk or skeptical objection. Independent upper-lip curl/lift and nose detail are unsupported. User approved after that limitation was disclosed. No continuous playback observation or source-faithfulness claim.",
+  "ci_run": false
+}

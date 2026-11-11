@@ -1,0 +1,432 @@
+{
+  "sources": {
+    "historical_inputs/BASELINE_FREEZE.json": {
+      "source": "mild_disgust_work/BASELINE_FREEZE.json",
+      "sha256": "dba27c71d60accd5f4fba35d3306cac8313d8887eba4cc7c52b255b6e4f4cdf3",
+      "transformation": "none"
+    },
+    "DISTINCTNESS_CHECK.json": {
+      "source": "mild_disgust_work/DISTINCTNESS_CHECK.json",
+      "sha256": "950817355b21ea28743ebc88d1dcb42d05a21da6c3270d4206046e09e6513b77",
+      "transformation": "none"
+    },
+    "EXP-081.json": {
+      "source": "mild_disgust_work/EXP-081.json",
+      "sha256": "4a6783b9232217ed468f626dc36e5c4c43dc0a5a284108a210ef1975496e1dd9",
+      "transformation": "none"
+    },
+    "INDEPENDENT_NATIVE_REVIEW.md": {
+      "source": "mild_disgust_work/INDEPENDENT_NATIVE_REVIEW.md",
+      "sha256": "20439e35787a0bee70b09f955c65464642facf0509f45a218da6b7307dc4a0ca",
+      "transformation": "none"
+    },
+    "INDEPENDENT_SOURCE_REVIEW.md": {
+      "source": "mild_disgust_work/INDEPENDENT_SOURCE_REVIEW.md",
+      "sha256": "0f32c09371c434ab7076b1bf1e9dd7726b8ca09f8296d07b8c31b679c8f6b000",
+      "transformation": "none"
+    },
+    "Mild_disgust_review_v1.mp4": {
+      "source": "mild_disgust_work/Mild_disgust_review_v1.mp4",
+      "sha256": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f",
+      "transformation": "none"
+    },
+    "PREPARATION_STATUS.json": {
+      "source": "mild_disgust_work/PREPARATION_STATUS.json",
+      "sha256": "406ff1251dab01b826841d0322bf697f9735f2d2ed62b96870480c988a49dca9",
+      "transformation": "none"
+    },
+    "historical_inputs/README.md": {
+      "source": "mild_disgust_work/README.md",
+      "sha256": "66a63717776080ed00b191aa356a7a6448108b6e613ffccf7893c13c39dacdd9",
+      "transformation": "none"
+    },
+    "REVIEW_FREEZE.sha256": {
+      "source": "mild_disgust_work/REVIEW_FREEZE.sha256",
+      "sha256": "df7c684810ec56765fd7494cdfb32ddb80b98a4de87515a6d952e87528f01c98",
+      "transformation": "none"
+    },
+    "SOURCE_CATALOGUE_ENTRY.json": {
+      "source": "mild_disgust_work/SOURCE_CATALOGUE_ENTRY.json",
+      "sha256": "4762269ea727de3ae77d62038bcd02793bd55c8b63c1bf608bac1ff21e14853c",
+      "transformation": "none"
+    },
+    "SOURCE_REFERENCE.json": {
+      "source": "mild_disgust_work/SOURCE_REFERENCE.json",
+      "sha256": "d3a33d92e686cd2222544526b1fea4810b0bfd36cdc508c4579b86c2f404228a",
+      "transformation": "none"
+    },
+    "check_and_capture.gd": {
+      "source": "mild_disgust_work/check_and_capture.gd",
+      "sha256": "7120e40be00c28ecf277091c2a7f68661eb6d79e244ec582b2b32aff4372edd1",
+      "transformation": "none"
+    },
+    "combined_unit_tests.log": {
+      "source": "mild_disgust_work/combined_unit_tests.log",
+      "sha256": "b41e3a75667407e118f71568a034ff5e7a975729dda9f9a96b66bfd7b4cc6cf8",
+      "transformation": "none"
+    },
+    "encode.log": {
+      "source": "mild_disgust_work/encode.log",
+      "sha256": "56003e733b3bbf102eb54798fd24a0b1ea53e181ebf15209f4b199889295329a",
+      "transformation": "none"
+    },
+    "encode_preview.py": {
+      "source": "mild_disgust_work/encode_preview.py",
+      "sha256": "0e003ef2feb4fb3ae38eccd7cf6968a22769aecdd227870cae4907c536033355",
+      "transformation": "none"
+    },
+    "encoder_preflight.log": {
+      "source": "mild_disgust_work/encoder_preflight.log",
+      "sha256": "99ff9b7b7b665f72c95ca39224ac4e228ee5ba460cf53bf2a03175d8cfcac3a7",
+      "transformation": "none"
+    },
+    "encoder_unit_tests.log": {
+      "source": "mild_disgust_work/encoder_unit_tests.log",
+      "sha256": "8dcbd5f591ea264b6af547923447691c3cc4a73ce2c637f240208d482010226c",
+      "transformation": "none"
+    },
+    "import.log": {
+      "source": "mild_disgust_work/import.log",
+      "sha256": "f3f46e3338fb376d772cf4b693d03801c736a41a0d138935453f2d2aae97456e",
+      "transformation": "none"
+    },
+    "independent_geometry.log": {
+      "source": "mild_disgust_work/independent_geometry.log",
+      "sha256": "1d9d4e0d9edf26ea102b4c2b3386d34390f38b6d0646cc49330a872ea51755f9",
+      "transformation": "none"
+    },
+    "independent_geometry.py": {
+      "source": "mild_disgust_work/independent_geometry.py",
+      "sha256": "fa1b2ba9e687b660c74ab52d554c2195b60270abc55978127ec51154e3a18715",
+      "transformation": "none"
+    },
+    "independent_geometry_checks.json": {
+      "source": "mild_disgust_work/independent_geometry_checks.json",
+      "sha256": "5639172e6e1e15c0c60fd5e582f0ce4afd71083580ca9e6e3eb76cebf5725b61",
+      "transformation": "none"
+    },
+    "independent_geometry_unit_tests.log": {
+      "source": "mild_disgust_work/independent_geometry_unit_tests.log",
+      "sha256": "1b7803293974bbebc2feab5e825ac03378fa9bda52210916c8951ddc9d9219a5",
+      "transformation": "none"
+    },
+    "launcher_import.log": {
+      "source": "mild_disgust_work/launcher_import.log",
+      "sha256": "629d2b75df9072d69a713bb358afec057912419e32e905889e2ea07cf7ec3b8a",
+      "transformation": "none"
+    },
+    "launcher_launcher_parse.log": {
+      "source": "mild_disgust_work/launcher_launcher_parse.log",
+      "sha256": "a9912b85473f126d3f4f63ec824170c828df3473a292f866dde86cafda5b66da",
+      "transformation": "none"
+    },
+    "launcher_motion_parse.log": {
+      "source": "mild_disgust_work/launcher_motion_parse.log",
+      "sha256": "a9912b85473f126d3f4f63ec824170c828df3473a292f866dde86cafda5b66da",
+      "transformation": "none"
+    },
+    "launcher_preparation_verification.json": {
+      "source": "mild_disgust_work/launcher_preparation_verification.json",
+      "sha256": "acfcdbf65ae1002277c3c02400297488748c0d2cb2d8ccc58249b7f683e335bd",
+      "transformation": "none"
+    },
+    "launcher_static_parse.log": {
+      "source": "mild_disgust_work/launcher_static_parse.log",
+      "sha256": "a9912b85473f126d3f4f63ec824170c828df3473a292f866dde86cafda5b66da",
+      "transformation": "none"
+    },
+    "motion_checks.json": {
+      "source": "mild_disgust_work/motion_checks.json",
+      "sha256": "32e744bd6c487223dda332df494eda4eb31c8895cc86abcf0eb426f0ce005a8a",
+      "transformation": "none"
+    },
+    "motion_state.log": {
+      "source": "mild_disgust_work/motion_state.log",
+      "sha256": "402ea897643c89ec8de1ab5c5913b7c540908e53246ea108afb12c756b60d8d9",
+      "transformation": "none"
+    },
+    "motion_state_checks.json": {
+      "source": "mild_disgust_work/motion_state_checks.json",
+      "sha256": "3ba813305fc73e3b1838062a92ea2cc66ce058bb51d52016b1c1b9e8b515d934",
+      "transformation": "none"
+    },
+    "plan.json": {
+      "source": "mild_disgust_work/plan.json",
+      "sha256": "3c9ef962920c93d7986a2ab2c018ef125efda59479fc5d773698c9d7223e41b9",
+      "transformation": "none"
+    },
+    "preparation_verification.json": {
+      "source": "mild_disgust_work/preparation_verification.json",
+      "sha256": "48b226fe81b6dee87ad7073365df841b98aad1678c121a1b3a14be513794c49e",
+      "transformation": "none"
+    },
+    "prepare_candidate.py": {
+      "source": "mild_disgust_work/prepare_candidate.py",
+      "sha256": "944a5e3de66a0cc948b418e996bb125ecb3c71f96836a5560a436f6f73888f08",
+      "transformation": "none"
+    },
+    "prepare_native_launcher.py": {
+      "source": "mild_disgust_work/prepare_native_launcher.py",
+      "sha256": "bd61985fd94f08287633dee3f9172071b7a471dbba751b7d6ccb417a126e47c3",
+      "transformation": "none"
+    },
+    "render_motion.gd": {
+      "source": "mild_disgust_work/render_motion.gd",
+      "sha256": "10434c81043ea756e75fa192b47ecdb5004655beb4799071707661e646d94bc2",
+      "transformation": "none"
+    },
+    "review_combined_unit_tests.log": {
+      "source": "mild_disgust_work/review_combined_unit_tests.log",
+      "sha256": "6e13bc330118285c2acad639713b8be03335e847a9d8cfc832b6b1c9c14b01ea",
+      "transformation": "none"
+    },
+    "review_input_freeze.json": {
+      "source": "mild_disgust_work/review_input_freeze.json",
+      "sha256": "22509ab2bf568edc6291e261fc0310bdac3818bbc08f4db6656be9ee30748086",
+      "transformation": "none"
+    },
+    "review_validation.py": {
+      "source": "mild_disgust_work/review_validation.py",
+      "sha256": "1c376636c1459d492e20f4a3f1f72ccfae46078822bb275cae4505444d6e6b44",
+      "transformation": "none"
+    },
+    "review_validator_native.log": {
+      "source": "mild_disgust_work/review_validator_native.log",
+      "sha256": "c03b9e3eaada1b45544e220782aa1be7ddff4d11b1d0b72308a0ae592b623629",
+      "transformation": "none"
+    },
+    "review_validator_native_unit_tests.log": {
+      "source": "mild_disgust_work/review_validator_native_unit_tests.log",
+      "sha256": "59a292b166410e72c4cbc05141387c9b6279b847cdea2044aeca78ae613d1f5e",
+      "transformation": "none"
+    },
+    "review_validator_preparation.log": {
+      "source": "mild_disgust_work/review_validator_preparation.log",
+      "sha256": "efb6a8447af94dab610029ff0bfdcf224c9dce8c5eb60f5a09f7b642cca65cf2",
+      "transformation": "none"
+    },
+    "review_validator_unit_tests.log": {
+      "source": "mild_disgust_work/review_validator_unit_tests.log",
+      "sha256": "60a87526d2b25816e3678106658eb732b8775bfe5f8d812ef67cc93ddbba56f6",
+      "transformation": "none"
+    },
+    "run_motion.sh": {
+      "source": "mild_disgust_work/run_motion.sh",
+      "sha256": "1702fba94de95b8003b0747fbc4c83c30f1b77ea55f903873290c6b784967f93",
+      "transformation": "none"
+    },
+    "state.log": {
+      "source": "mild_disgust_work/state.log",
+      "sha256": "78251852213c69e2e481e4e5fd691e438eb0db0a4f4354affea8fcbd4ed08f69",
+      "transformation": "none"
+    },
+    "state_checks.json": {
+      "source": "mild_disgust_work/state_checks.json",
+      "sha256": "ee085f6574e8eb32a6c53619ace479754ae4bbf168c367337276cf124095653c",
+      "transformation": "none"
+    },
+    "test_encode_preview.py": {
+      "source": "mild_disgust_work/test_encode_preview.py",
+      "sha256": "a1842e87146674b3873a4d55d4016a333547619474ac580c719b0e9407cd6494",
+      "transformation": "none"
+    },
+    "test_independent_geometry.py": {
+      "source": "mild_disgust_work/test_independent_geometry.py",
+      "sha256": "3076fc9db2d401a26ca58b9a6de97972e5b35dfe1c79209b1a9645a31b7e3ae8",
+      "transformation": "none"
+    },
+    "test_review_validation.py": {
+      "source": "mild_disgust_work/test_review_validation.py",
+      "sha256": "e3126e8b4c75fdc429e1399689c2bf69b20ff9c6a80cabee179ebedca61a3e61",
+      "transformation": "none"
+    },
+    "verification.log": {
+      "source": "mild_disgust_work/verification.log",
+      "sha256": "48b226fe81b6dee87ad7073365df841b98aad1678c121a1b3a14be513794c49e",
+      "transformation": "none"
+    },
+    "verify_input_freeze.py": {
+      "source": "mild_disgust_work/verify_input_freeze.py",
+      "sha256": "161b1fbbfa248b997a9f85e322b66ea66a6572ce81dd306bad88d7bce0179fc4",
+      "transformation": "none"
+    },
+    "verify_preparation.py": {
+      "source": "mild_disgust_work/verify_preparation.py",
+      "sha256": "8d93269acb754443f35737a58f515fe639f7713d1994dba03d18a232de78c70a",
+      "transformation": "none"
+    },
+    "video_probe.json": {
+      "source": "mild_disgust_work/video_probe.json",
+      "sha256": "400056e5602eababe66e32ce66dc22058b8509e6cd4398f1c1889e9ee465498d",
+      "transformation": "none"
+    },
+    "development_audit/README.md": {
+      "source": "mild_disgust_work/development_audit/README.md",
+      "sha256": "4389e33acc0bc6db53e29d92194901dd949a29e075e6e9a727c51392ec4bc786",
+      "transformation": "none"
+    },
+    "development_audit/construct_probe_scaffold.py": {
+      "source": "mild_disgust_work/development_audit/construct_probe_scaffold.py",
+      "sha256": "2350f906668e0dfffbd9d5250bee00689e0c68607d71796e245f196383460a34",
+      "transformation": "none"
+    },
+    "development_audit/initial_independent_geometry.py": {
+      "source": "mild_disgust_work/development_audit/initial_independent_geometry.py",
+      "sha256": "ced828a8c6f6d85805b8991c6edc1710e9f7538f1ccb6d39862f0845b4cfe98b",
+      "transformation": "none"
+    },
+    "development_audit/initial_independent_geometry_checks.json": {
+      "source": "mild_disgust_work/development_audit/initial_independent_geometry_checks.json",
+      "sha256": "3494efdea3b2b5e729a931d031861772273429def5497ff92acf342192e8f69f",
+      "transformation": "none"
+    },
+    "review_evidence/comparison_sources.json": {
+      "source": "mild_disgust_work/review_evidence/comparison_sources.json",
+      "sha256": "74ea74334db4fbc7f2ae670b8880b95792bec1181b9d9b26ac7b79c75f2e2210",
+      "transformation": "none"
+    },
+    "review_evidence/partial_review.json": {
+      "source": "mild_disgust_work/review_evidence/partial_review.json",
+      "sha256": "2ca372a072319f3fde00ae7d9ed006af31f54f749e32e1728d5d38a2c7a2d3a4",
+      "transformation": "none"
+    },
+    "review_evidence/review_checks.json": {
+      "source": "mild_disgust_work/review_evidence/review_checks.json",
+      "sha256": "2ca372a072319f3fde00ae7d9ed006af31f54f749e32e1728d5d38a2c7a2d3a4",
+      "transformation": "none"
+    },
+    "review_evidence/source_review_artifacts.json": {
+      "source": "mild_disgust_work/review_evidence/source_review_artifacts.json",
+      "sha256": "03e30d9c5a1604f5683ed35b723ac58425b2d38142f8e57d4d4b92778f56f166",
+      "transformation": "none"
+    },
+    "native_capture_audit/CAPTURE_PLAYBACK_REPORT.json": {
+      "source": "mild_disgust_work/native_capture_audit/CAPTURE_PLAYBACK_REPORT.json",
+      "sha256": "7f3de4c260538c4d4787eedadcb93e235b1841c1db959ed53cbb6c8b198ddec8",
+      "transformation": "none"
+    },
+    "native_capture_audit/freeze_after_restore.log": {
+      "source": "mild_disgust_work/native_capture_audit/freeze_after_restore.log",
+      "sha256": "84e20017e0f425f6a239444f370a84843daa9ba050a45781136c75ace62c005c",
+      "transformation": "none"
+    },
+    "native_capture_audit/freeze_before_restore.log": {
+      "source": "mild_disgust_work/native_capture_audit/freeze_before_restore.log",
+      "sha256": "a358742545805060103934bb3dc0ccd220074a7d769569179b9069e68b31dc43",
+      "transformation": "none"
+    },
+    "native_capture_audit/preflight.json": {
+      "source": "mild_disgust_work/native_capture_audit/preflight.json",
+      "sha256": "df0bec2e364180d41211c9e348f7ce0e7448cffc698e716c2d56f50b48facfda",
+      "transformation": "none"
+    },
+    "native_capture_audit/project.before_native_import.godot": {
+      "source": "mild_disgust_work/native_capture_audit/project.before_native_import.godot",
+      "sha256": "9de6f885a00d424884a83ecc1ceb17c3bec57bde734edc3a67e2c4fa5b8f9821",
+      "transformation": "none"
+    },
+    "native_capture_audit/project.editor_rewrite.godot": {
+      "source": "mild_disgust_work/native_capture_audit/project.editor_rewrite.godot",
+      "sha256": "8430380e79b1ecacea50480510f3fbf22b0c94dbd56b2b508ac40faddc26e90a",
+      "transformation": "none"
+    },
+    "native_capture_review/decoded_frame_order.json": {
+      "source": "mild_disgust_work/native_capture_review/decoded_frame_order.json",
+      "sha256": "96c68008cf582ef8c61e111fdb7af4a15e1b75ddda916cff75e1c3d5fa7d98a6",
+      "transformation": "none"
+    },
+    "native_capture_review/native_frame_hashes.json": {
+      "source": "mild_disgust_work/native_capture_review/native_frame_hashes.json",
+      "sha256": "f7fa2619f5ccc1836a503cb3c588553163ca5626ebd7a6f75882de5c715af29b",
+      "transformation": "none"
+    },
+    "native_capture_review/review_checks.json": {
+      "source": "mild_disgust_work/native_capture_review/review_checks.json",
+      "sha256": "4cdd67b956e8575af713039023f23c3a0310ab9a612733db1062330e77903cff",
+      "transformation": "none"
+    },
+    "native_review_evidence/INDEPENDENT_SOURCE_REVIEW.pre_native.md": {
+      "source": "mild_disgust_work/native_review_evidence/INDEPENDENT_SOURCE_REVIEW.pre_native.md",
+      "sha256": "31a88c507da2f374ce41d79b9c68b9ef8896ac0579d72b2e06a962d80c58df24",
+      "transformation": "none"
+    },
+    "native_review_evidence/decoded_frame_order.json": {
+      "source": "mild_disgust_work/native_review_evidence/decoded_frame_order.json",
+      "sha256": "96c68008cf582ef8c61e111fdb7af4a15e1b75ddda916cff75e1c3d5fa7d98a6",
+      "transformation": "none"
+    },
+    "native_review_evidence/native_frame_hashes.json": {
+      "source": "mild_disgust_work/native_review_evidence/native_frame_hashes.json",
+      "sha256": "f7fa2619f5ccc1836a503cb3c588553163ca5626ebd7a6f75882de5c715af29b",
+      "transformation": "none"
+    },
+    "native_review_evidence/native_review_artifacts.json": {
+      "source": "mild_disgust_work/native_review_evidence/native_review_artifacts.json",
+      "sha256": "75aeb9f4f9e58dde269309058763439c11817d72b2125ed91c643b6ed2661ecb",
+      "transformation": "none"
+    },
+    "native_review_evidence/review_checks.json": {
+      "source": "mild_disgust_work/native_review_evidence/review_checks.json",
+      "sha256": "4cdd67b956e8575af713039023f23c3a0310ab9a612733db1062330e77903cff",
+      "transformation": "none"
+    },
+    "capture/checks.json": {
+      "source": "mild_disgust_work/capture/checks.json",
+      "sha256": "47c890e114021947d31dca1b7e5bac690cccf09b9468881fd433258ac5966725",
+      "transformation": "none"
+    },
+    "historical_inputs/native_launcher/project.godot": {
+      "source": "mild_disgust_work/native_launcher/project.godot",
+      "sha256": "9de6f885a00d424884a83ecc1ceb17c3bec57bde734edc3a67e2c4fa5b8f9821",
+      "transformation": "none"
+    },
+    "historical_inputs/native_launcher/static.gd": {
+      "source": "mild_disgust_work/native_launcher/static.gd",
+      "sha256": "3f4e245810492f0ddfaf3327895cb4ff558db2e3c85d193c19c7f4569eab4349",
+      "transformation": "none"
+    },
+    "historical_inputs/native_launcher/motion.gd": {
+      "source": "mild_disgust_work/native_launcher/motion.gd",
+      "sha256": "467abd7c79c64e8f3131458320a0f36390483cecdef813734f76d9ea7f2a52a4",
+      "transformation": "none"
+    },
+    "historical_inputs/native_launcher/launcher.gd": {
+      "source": "mild_disgust_work/native_launcher/launcher.gd",
+      "sha256": "6b0c68244c80330cad7ba7a0cda87aa8b5d34b976d3da9bdfbae88424d74dee8",
+      "transformation": "none"
+    },
+    "historical_inputs/native_launcher/launcher.tscn": {
+      "source": "mild_disgust_work/native_launcher/launcher.tscn",
+      "sha256": "e080b3591e237419c5ee809fc6fbf32cc686f4dd9032cfde639aede97c47d8d1",
+      "transformation": "none"
+    },
+    "comparison_profiles/EXP-129.json": {
+      "source": "mental_arithmetic_work/EXP-129.json",
+      "sha256": "fdd5161262f4e2149503a2c70b2224cc53d6cdd899beb7080c5d19b849644855",
+      "transformation": "none"
+    },
+    "comparison_profiles/EXP-041.json": {
+      "source": "controlled_anger_work/EXP-041.json",
+      "sha256": "04202c10a048724616a831566f7743c18159ce84c0415867b33c13c64ce75337",
+      "transformation": "none"
+    },
+    "comparison_profiles/EXP-061.json": {
+      "source": "broad_surprise_work/EXP-061.json",
+      "sha256": "aa2200fc77caefb887d2e6115e062d5e2ca47c95cc56b56c5f536b926c57fbbf",
+      "transformation": "none"
+    },
+    "comparison_profiles/EXP-123.json": {
+      "source": "puzzled_work/EXP-123.json",
+      "sha256": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+      "transformation": "none"
+    },
+    "comparison_profiles/EXP-023.json": {
+      "source": "open_sobbing_work/EXP-023.json",
+      "sha256": "646a42cb38c2b82792f880105e1048cba2dc0a78cf54366317dcf49df61721a8",
+      "transformation": "none"
+    }
+  },
+  "historical_input_freeze_sha256": "22509ab2bf568edc6291e261fc0310bdac3818bbc08f4db6656be9ee30748086",
+  "historical_baseline_freeze_sha256": "dba27c71d60accd5f4fba35d3306cac8313d8887eba4cc7c52b255b6e4f4cdf3",
+  "status": "Exact source copies, including historical unapproved statements. Paths in receipts are historical; all reproduction must use a separate copy."
+}

@@ -1,0 +1,245 @@
+{
+  "id": "EXP-161",
+  "slug": "sleepy",
+  "family": "Tiredness and relaxation",
+  "distinctive_facial_intent": "Brows rest low; heavy upper lids droop; lips part slightly with relaxed jaw.",
+  "is_pilot": false,
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "review_status": "accepted_reference_art",
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1254,
+    "native_height": 1254,
+    "sha256": "8284aa280149fd4a61cffd1d5f0fd35e0efbebce6310916d4b433cda1f30933a",
+    "actual_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_sheet_v001.png",
+    "peak_actual_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_peak_v001.png"
+  },
+  "key_pose_sequence": [
+    {
+      "key_pose": 1,
+      "phase": "neutral",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+      "panel_location": {
+        "row": 1,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        418,
+        424
+      ],
+      "sha256": "c975b66ed690f4b96501e28f986dd45685e53789b9d4505fa8d63bd351ecd232"
+    },
+    {
+      "key_pose": 2,
+      "phase": "anticipation",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+      "panel_location": {
+        "row": 1,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        418,
+        0,
+        836,
+        424
+      ],
+      "sha256": "414dde64dba1b1261b0da4c3e9ddb2195740c25f1632ca3efa273d9880543425"
+    },
+    {
+      "key_pose": 3,
+      "phase": "onset",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+      "panel_location": {
+        "row": 1,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        836,
+        0,
+        1254,
+        424
+      ],
+      "sha256": "f5fb093b17644abb46806f90894b1067cfb289efc26effd2a428bad352c8d968"
+    },
+    {
+      "key_pose": 4,
+      "phase": "build",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+      "panel_location": {
+        "row": 2,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        424,
+        418,
+        841
+      ],
+      "sha256": "ca786923c9b6512adf0d994f2a289dd6277d5466ee67bbfcf5d66545d3015359"
+    },
+    {
+      "key_pose": 5,
+      "phase": "peak",
+      "time_seconds": 0.75,
+      "visual_direction": "Brows rest low; heavy upper lids droop; lips part slightly with relaxed jaw.",
+      "panel_location": {
+        "row": 2,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        418,
+        424,
+        836,
+        841
+      ],
+      "sha256": "63b5dc3df159dde9fabcd051dae2396a038e6758f7c5df52d192b1f6774dfe3b"
+    },
+    {
+      "key_pose": 6,
+      "phase": "follow_through_or_hold",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+      "panel_location": {
+        "row": 2,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        836,
+        424,
+        1254,
+        841
+      ],
+      "sha256": "f46650fbb791b7b48fa8fbc0c90c273f7e2b474a7c83b6b64e43443e5e668829"
+    },
+    {
+      "key_pose": 7,
+      "phase": "release",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+      "panel_location": {
+        "row": 3,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        841,
+        418,
+        1254
+      ],
+      "sha256": "019d2ad5b69230e540fdff4ac56a8c0f6282c663a408b00ebf88c155b38373dd"
+    },
+    {
+      "key_pose": 8,
+      "phase": "settle",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression.",
+      "panel_location": {
+        "row": 3,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        418,
+        841,
+        836,
+        1254
+      ],
+      "sha256": "a6dba33ba18616bf58a356c29b2f89edd622722403180cb6b2a21f86d016c47f"
+    },
+    {
+      "key_pose": 9,
+      "phase": "neutral_return",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel.",
+      "panel_location": {
+        "row": 3,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-161_sleepy/RYO_EXP-161_sleepy_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        836,
+        841,
+        1254,
+        1254
+      ],
+      "sha256": "d89793f694325d9c53d204ac209c5d3922f5d943c2756475ead6898d9d0a33d1"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "facial_control_mapping": {
+    "status": "semantic_intent_only_pending_actual_rig",
+    "numeric_weights": null,
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "intent": "Brows rest low; heavy upper lids droop; lips part slightly with relaxed jaw."
+  },
+  "overlays": {
+    "planned_optional_effects": [],
+    "status": "requires_mapping_to_available_2d_effect_layers",
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+  },
+  "body_gesture": {
+    "status": "paired_reusable_visual_references",
+    "reference_ids": [
+      "BOD-019",
+      "BOD-038"
+    ],
+    "references": [
+      {
+        "id": "BOD-019",
+        "path": "assets/body/RYO_BOD-019_sleepy-lean_sheet_v001.png",
+        "sha256": "fc863b2bacf6048df6727546abf1e220200c114d0c93f46d365dde104b22f5b8",
+        "intent": "She droops shoulders and tilts head drowsily with eyes half closed, weight balanced, then straightens."
+      },
+      {
+        "id": "BOD-038",
+        "path": "assets/body/RYO_BOD-038_relaxed-weight-shift_sheet_v001.png",
+        "sha256": "d43feeb65dc191f0d2cc4c09daef48115c8bef6f1aa77a5d5faf6548d78a1814",
+        "intent": "She shifts weight smoothly onto one hip with relaxed shoulders and soft face, then centers again."
+      }
+    ],
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "issues": [],
+  "implementation_status": "not_implemented_in_2d_rig"
+}

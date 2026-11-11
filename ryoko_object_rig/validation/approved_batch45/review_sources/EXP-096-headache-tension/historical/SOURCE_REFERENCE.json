@@ -1,0 +1,35 @@
+{
+  "sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_sheet_v001.png",
+  "sha256": "bafbe369788ad7274cf22c30fc2401a875ef2d8cc22ef8cc842251c740d61753",
+  "dimensions": [
+    1159,
+    1358
+  ],
+  "pixels_inspected": true,
+  "observations": "Actual full nine-panel sheet viewed before authoring. KP2 develops central brow tension; KP3-4 progressively narrow ordinary lids while brows incline downward toward the center and the lips press. KP5-6 have fully closed eyes and a small pressed/downturned line. KP7 softens brow and mouth tension with eyes still closed; KP8 reopens toward neutral, and KP9 returns neutral. The source does not show smiling eyes, a smile, an open mouth or sideways gaze.",
+  "left_right_convention": "Brow names use screen sides. blink_R closes screen-left and blink_L closes screen-right. Positive screen-left and negative screen-right tilt oppose inward. All gaze and aversion channels remain zero.",
+  "approximation": "Existing rigid brows translate down 5.5 source pixels and rotate +5.2/-5.2 degrees at peak. They cannot converge horizontally, deform or add true central furrows. blink_L=blink_R=1 uses ordinary lids with 36 source-pixel lash travel. Lip pressure .65 reuses existing pressed-lip owners. Tiny purse .05 shortens total contour width by 1.4 source pixels (.686 bust pixels); its center shifts down .2 and endpoints down .6 source pixels. This is a small symmetric purse contour approximation, not a genuine independent downturned corner. Mouth aperture stays zero. Reference fidelity and perceptual distinctness need native review.",
+  "panel_to_anchor": {
+    "1": "neutral",
+    "2": "tension_onset",
+    "3": "heavy_build",
+    "4": "close_build",
+    "5": "headache_peak",
+    "6": "headache_peak",
+    "7": "soften_closed",
+    "8": "reopen",
+    "9": "neutral_return"
+  },
+  "panel_hashes": {
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp01_v001.png": "18cf8d15b72711be347d9f4af65b03299dbf509b4798ea3fd64b572a6fe725a7",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp02_v001.png": "e4dd20f603356faa78ae6c20260ce68fae3a1bc423813f67555dd9ea9393d9dd",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp03_v001.png": "8bdaed0362705c525f50dc24190a0fdc466caaee1e5a773889cc8f4322bc91a9",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp04_v001.png": "de7c9d601e30a29ac55167400a89916f8d8ac88c77f8b1173c02baa14037a05e",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp05_v001.png": "7e4e57357c5da82d96d06b60680e5d0237565bcd1e20f536e7b2f4cf69868cf6",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp06_v001.png": "2103e006321a49de0febffa68011ae5f9f82cc7b12147708824d8ce6ca925ba3",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp07_v001.png": "677cbb9581c7456b7ff83ed116e7c86fde7cd9a0cc0ca318f629b86002a61e85",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp08_v001.png": "165e13e774e174a54c5c5895d770c9216c00e1677a62f026158a3e5b0be796ea",
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp09_v001.png": "b0828893f6a33620995720d4cf04807980a8cdd0743a7ead475f614502c6b81e"
+  },
+  "approval": "Accepted reference art does not approve this candidate or animation."
+}

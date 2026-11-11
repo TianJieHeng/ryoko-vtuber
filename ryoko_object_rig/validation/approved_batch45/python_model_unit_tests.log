@@ -1,0 +1,33 @@
+test_blink_restore (__main__.ModelUnit.test_blink_restore) ... ok
+test_definitions_copied (__main__.ModelUnit.test_definitions_copied) ... ok
+test_invalid_delta_transaction (__main__.ModelUnit.test_invalid_delta_transaction) ... ok
+test_manual_cancels_intent (__main__.ModelUnit.test_manual_cancels_intent) ... ok
+test_mouth_kiss_open (__main__.ModelUnit.test_mouth_kiss_open) ... ok
+test_mouth_legacy (__main__.ModelUnit.test_mouth_legacy) ... ok
+test_mouth_open_to_width_staged (__main__.ModelUnit.test_mouth_open_to_width_staged) ... ok
+test_mouth_width_direct (__main__.ModelUnit.test_mouth_width_direct) ... ok
+test_mouth_width_open (__main__.ModelUnit.test_mouth_width_open) ... ok
+test_mouth_width_sealed (__main__.ModelUnit.test_mouth_width_sealed) ... ok
+test_mouth_width_staged (__main__.ModelUnit.test_mouth_width_staged) ... ok
+test_opening_bridge (__main__.ModelUnit.test_opening_bridge) ... ok
+test_release_continuity (__main__.ModelUnit.test_release_continuity) ... ok
+test_repeated_release_continuity (__main__.ModelUnit.test_repeated_release_continuity) ... ok
+test_reset_disables_blink (__main__.ModelUnit.test_reset_disables_blink) ... ok
+test_sample_after (__main__.ModelUnit.test_sample_after) ... ok
+test_sample_end (__main__.ModelUnit.test_sample_end) ... ok
+test_sample_independent_polynomial (__main__.ModelUnit.test_sample_independent_polynomial) ... ok
+test_sample_negative (__main__.ModelUnit.test_sample_negative) ... ok
+test_sample_omissions_zero (__main__.ModelUnit.test_sample_omissions_zero) ... ok
+test_sample_peak (__main__.ModelUnit.test_sample_peak) ... ok
+test_sample_zero (__main__.ModelUnit.test_sample_zero) ... ok
+test_scoped_aversion_exact_lids (__main__.ModelUnit.test_scoped_aversion_exact_lids) ... ok
+test_scoped_aversion_low_lids (__main__.ModelUnit.test_scoped_aversion_low_lids) ... ok
+test_scoped_handoff_source_stage (__main__.ModelUnit.test_scoped_handoff_source_stage) ... ok
+test_scoped_opening_reject (__main__.ModelUnit.test_scoped_opening_reject) ... ok
+test_scoped_uneasy_open (__main__.ModelUnit.test_scoped_uneasy_open) ... ok
+test_unknown_id_transaction (__main__.ModelUnit.test_unknown_id_transaction) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.015s
+
+OK

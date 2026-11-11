@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "approved_profile_count": 39,
+  "prior_profile_count": 36,
+  "newly_approved_profile_ids": [
+    "EXP-129",
+    "EXP-041",
+    "EXP-061"
+  ],
+  "receipts": {
+    "actual_object_checks.json": {
+      "checks": 111359,
+      "sha256": "c2a6a38d84be8becc401795e32b4cce4d90904f40cde3a02384de6f5055c84d6"
+    },
+    "dense_checks.json": {
+      "checks": 1990743,
+      "sha256": "5e7297d4f8d83b4515e5c23b0a58cc91d61fde3943bf2a23cf0ac2295689fd09"
+    },
+    "native_parity/RESULT.json": {
+      "checks": 2546,
+      "sha256": "1932a707349828ef889fdded7febb0d91e6d9f4a94ed8060673ce25cfd743aa6"
+    },
+    "native_parity/independent_png_verification.json": {
+      "checks": 726,
+      "sha256": "872acc2968721e29c5ddf10d00e59b3f3045133c095e9d4e59fd9b77ff2ee879"
+    }
+  },
+  "runtime_changed": false,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "artwork_changed": false,
+  "ci_run": false,
+  "intermediate_integration_evidence": "Completed37 and38 state tests retain their exact receipts under validation/approved_mental_arithmetic and validation/approved_pair38. They do not substitute for current39 results.",
+  "prior36_native_recovery": "validation/approved_mental_arithmetic/prior36_native_parity/RESULT.json: 731 checks,180 exact comparisons,90 checkpoints across nine profiles. Supersedes historical inability to capture that bounded scope.",
+  "whole_rig_full_trajectory_native_parity": "NOT RUN",
+  "rendered_cross_transition_review": "NOT RUN",
+  "live_engine_pacing": "UNVERIFIED",
+  "normal_speed_observed": false,
+  "headless_diagnostic": "Inherited dummy-renderer custom_samplers diagnostic may appear in state-test logs; native parity uses supported desktop X11/OpenGL, not dummy pixels.",
+  "scope": "Current 39 numerical and actual-object state integration with full 121-frame native parity for each of three newly approved profiles. Prior36 byte preservation and exact standalone controls are separate from historical scoped native recovery."
+}

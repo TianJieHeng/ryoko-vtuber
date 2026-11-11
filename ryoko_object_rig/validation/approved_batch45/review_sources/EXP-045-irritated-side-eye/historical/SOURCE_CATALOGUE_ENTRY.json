@@ -1,0 +1,245 @@
+{
+  "id": "EXP-045",
+  "slug": "irritated-side-eye",
+  "family": "Anger and frustration",
+  "distinctive_facial_intent": "Near brow lowers while far brow lifts; gaze turns sideways; one mouth corner pulls down.",
+  "is_pilot": false,
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "review_status": "accepted_reference_art",
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1159,
+    "native_height": 1358,
+    "sha256": "5e3287f39ac6102934cfa2001150036345103d398760f738b6f1055c45b7f3ad",
+    "actual_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_sheet_v001.png",
+    "peak_actual_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_peak_v001.png"
+  },
+  "key_pose_sequence": [
+    {
+      "key_pose": 1,
+      "phase": "neutral",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+      "panel_location": {
+        "row": 1,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        389,
+        450
+      ],
+      "sha256": "b2e26e7eb509e0b3880734a2369d9d161f01040cdefa5f93569851102df5f201"
+    },
+    {
+      "key_pose": 2,
+      "phase": "anticipation",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+      "panel_location": {
+        "row": 1,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        389,
+        0,
+        770,
+        450
+      ],
+      "sha256": "4245f4eb8dbaa580230144dbe54c7a2c3a72021b85104ded88b9c26344782dc7"
+    },
+    {
+      "key_pose": 3,
+      "phase": "onset",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+      "panel_location": {
+        "row": 1,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        770,
+        0,
+        1159,
+        450
+      ],
+      "sha256": "5214415d48864af32c05405d3d5878a782e8eff5013a29bd2e181bde59c3d7f2"
+    },
+    {
+      "key_pose": 4,
+      "phase": "build",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+      "panel_location": {
+        "row": 2,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        450,
+        389,
+        904
+      ],
+      "sha256": "78b333032cf96880a9d84fbc08e60d70e043ee8f70caeb63434b15318f1204ec"
+    },
+    {
+      "key_pose": 5,
+      "phase": "peak",
+      "time_seconds": 0.75,
+      "visual_direction": "Near brow lowers while far brow lifts; gaze turns sideways; one mouth corner pulls down.",
+      "panel_location": {
+        "row": 2,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        389,
+        450,
+        770,
+        904
+      ],
+      "sha256": "f2be17abd6b7216263e839cb610cd3bb82d85ae2f2f1ec22de550cdb47e184f3"
+    },
+    {
+      "key_pose": 6,
+      "phase": "follow_through_or_hold",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+      "panel_location": {
+        "row": 2,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        770,
+        450,
+        1159,
+        904
+      ],
+      "sha256": "2b400efb2902c4a47120545477170e326489296b57266fc70594d41f1bd21839"
+    },
+    {
+      "key_pose": 7,
+      "phase": "release",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+      "panel_location": {
+        "row": 3,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        904,
+        389,
+        1358
+      ],
+      "sha256": "6f01030f3e00a740b458cd60043c4c598db53ec0ccdd8c2d9a3a5e6e6437e11a"
+    },
+    {
+      "key_pose": 8,
+      "phase": "settle",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression.",
+      "panel_location": {
+        "row": 3,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        389,
+        904,
+        770,
+        1358
+      ],
+      "sha256": "a86e04742ce0719054a7760dba82bd7803a0c3d4e027ea5ac710cefa9d688758"
+    },
+    {
+      "key_pose": 9,
+      "phase": "neutral_return",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel.",
+      "panel_location": {
+        "row": 3,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        770,
+        904,
+        1159,
+        1358
+      ],
+      "sha256": "b4ac47112a5ac649582d357fd2e53445ce88711426ae6fad7e3bb19704d88de5"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "facial_control_mapping": {
+    "status": "semantic_intent_only_pending_actual_rig",
+    "numeric_weights": null,
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "intent": "Near brow lowers while far brow lifts; gaze turns sideways; one mouth corner pulls down."
+  },
+  "overlays": {
+    "planned_optional_effects": [],
+    "status": "requires_mapping_to_available_2d_effect_layers",
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+  },
+  "body_gesture": {
+    "status": "paired_reusable_visual_references",
+    "reference_ids": [
+      "BOD-001",
+      "BOD-003"
+    ],
+    "references": [
+      {
+        "id": "BOD-001",
+        "path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.png",
+        "sha256": "fb2bf3a04ff32adb7dce5d57fecffac86bbb9438ec83818dc59cfb8d2bc06507",
+        "intent": "She gradually folds both arms across her torso, holds a stern upright scolding stance with narrowed brows, then unfolds and settles."
+      },
+      {
+        "id": "BOD-003",
+        "path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.png",
+        "sha256": "dee1a387260a22252cccd775dbe4cf09a58099c140c1605ed55e30310fb65179",
+        "intent": "She places both hands on hips, elbows out, gives a firm scolding look, then releases hands down."
+      }
+    ],
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "issues": [],
+  "implementation_status": "not_implemented_in_2d_rig"
+}

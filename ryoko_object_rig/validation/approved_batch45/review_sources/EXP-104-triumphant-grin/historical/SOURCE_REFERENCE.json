@@ -1,0 +1,24 @@
+{
+  "sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_sheet_v001.png",
+  "sha256": "f94654b74f3d08894027c9ab094c4d867c99282931c14d7e4038756f244c1678",
+  "dimensions": [
+    1159,
+    1358
+  ],
+  "pixels_inspected": true,
+  "observations": "Actual full nine-panel sheet viewed before authoring. Brows descend and angle inward on both sides while eyes remain forward and visibly open. The smile broadens through panels 2-4 into a centered tooth-showing grin in panel 5, then a somewhat more open grin in panel 6. Panels 7-8 release the smile and brow tension before panel 9 returns to neutral. The expression is bilateral, not a crooked unilateral smirk.",
+  "left_right_convention": "Brow names use screen sides. Positive left and negative right tilt lower their inner ends symmetrically. Blink names use character sides: blink_R closes screen-left and blink_L closes screen-right. Both lid values are equal throughout.",
+  "approximation": "Uses existing upper tooth arch and spread support passively coupled to smile/spread/opening. There is no independent dental or clench control, no claim of exact opposing tooth-row anatomy, and no source-art alteration. The rendered mouth is a shallow open grin rather than a true sealed clench. Effective horizontal spread equals public mouth_spread multiplied by mouth_smile. Tooth-grin controls yield 8.91 source pixels of central aperture and 28.896 source pixels of added width; the later open grin yields 13.662 pixels of aperture and 31.68 pixels of added width. Native visible tooth exposure, lip seams, focused-eye appearance and perceptual distinction remain pending visual review.",
+  "panel_hashes": {
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp01_v001.png": "4e2607b7b569d2c15a5afd8915ec3f4be45edc12b5c5420a272f8aec529cec41",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp02_v001.png": "372f5fa37273663661e7fe645ee6b753d9168d3af9479fabffa5d73a0a4079ab",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp03_v001.png": "80afcbc1b780aa17564124df446a779530eeaa394ea3c4a60d3e45e2c420a6e7",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp04_v001.png": "714a880ece4835d00694b4aa009a023d1ea0ae24dd00d1e30c265c10302e228d",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp05_v001.png": "4ade42b2ae07ff78a23f99e58780637a7b10c3863d1a5998d16f7b3bca6d0322",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp06_v001.png": "ddfe0d6363013b066cdf95cf57b7d72a7f5ad87cd4e10412d584130a3a60c6ad",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp07_v001.png": "350225aeadd18bcc1dd66d1f81c40473fa134781b7cdee2791bc6fb2ca23daa7",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp08_v001.png": "5e09acffb59022635bac548c8fd62f5f78eb0fa2a7c689a7e996bbf738090bcd",
+    "assets/expressions/EXP-104_triumphant-grin/RYO_EXP-104_triumphant-grin_kp09_v001.png": "de2c49c02760432f16302732b1297891da5d64e75cf92b98831c9c71bc36c35e"
+  },
+  "approval": "Accepted reference art does not approve this candidate or its animation."
+}

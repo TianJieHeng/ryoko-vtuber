@@ -334,6 +334,54 @@
         "broad_surprise"
       ],
       "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-123",
+      "path": "res://expressions/EXP-123.json",
+      "aliases": [
+        "puzzled"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-081",
+      "path": "res://expressions/EXP-081.json",
+      "aliases": [
+        "mild_disgust"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-161",
+      "path": "res://expressions/EXP-161.json",
+      "aliases": [
+        "sleepy"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-045",
+      "path": "res://expressions/EXP-045.json",
+      "aliases": [
+        "irritated_side_eye"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-104",
+      "path": "res://expressions/EXP-104.json",
+      "aliases": [
+        "triumphant_grin"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-096",
+      "path": "res://expressions/EXP-096.json",
+      "aliases": [
+        "headache_tension"
+      ],
+      "trigger_phase": "anticipation"
     }
   ]
 }

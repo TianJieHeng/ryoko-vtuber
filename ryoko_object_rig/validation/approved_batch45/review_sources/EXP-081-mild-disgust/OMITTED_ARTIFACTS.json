@@ -1,0 +1,36 @@
+{
+  "reason": "Compact portable backup omits duplicate baseline source, caches, raw PNG sequences and diagnostic PNG contact sheets. Exact MP4 and complete PNG/RGBA hashes retained. Reference source is exported from the pinned commit.",
+  "raw_static_pngs": 16,
+  "raw_motion_pngs": 242,
+  "hash_evidence": [
+    "native_capture_review/review_checks.json",
+    "native_capture_review/native_frame_hashes.json",
+    "native_review_evidence/native_frame_hashes.json"
+  ],
+  "omitted_diagnostic_images": {
+    "native_capture_review/bust_progression.png": {
+      "sha256": "24aacb298cef94b00a78a7f58730ece82a108b8a7505a40068552e1a000a8ac6",
+      "bytes": 377539
+    },
+    "native_capture_review/encoded_keyframes.png": {
+      "sha256": "ceb009f8fc2ac16a1103a49a1cc3c3e5d8f08542b6be3428699515ee99702169",
+      "bytes": 701418
+    },
+    "native_capture_review/static_faces.png": {
+      "sha256": "d38629cae0992d39744b3ff620ae61cb50e57ccdb660b98553c3c835af368317",
+      "bytes": 758585
+    },
+    "native_review_evidence/bust_progression.png": {
+      "sha256": "24aacb298cef94b00a78a7f58730ece82a108b8a7505a40068552e1a000a8ac6",
+      "bytes": 377539
+    },
+    "native_review_evidence/encoded_keyframes.png": {
+      "sha256": "ceb009f8fc2ac16a1103a49a1cc3c3e5d8f08542b6be3428699515ee99702169",
+      "bytes": 701418
+    },
+    "native_review_evidence/static_faces.png": {
+      "sha256": "d38629cae0992d39744b3ff620ae61cb50e57ccdb660b98553c3c835af368317",
+      "bytes": 758585
+    }
+  }
+}

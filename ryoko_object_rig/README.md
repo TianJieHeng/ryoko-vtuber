@@ -1,3 +1,9 @@
+# Current approved release: 45 performances
+
+Puzzled, Mild Disgust, Sleepy, Irritated Side-eye, Triumphant Grin and Headache Tension are selectively integrated from their exact approved previews. Prior39 runtime, profiles and all 184 PNGs remain byte-exact. Current source/Python-model/media checks pass; current Godot/native integration checks were NOT RUN. See [current validation and limits](APPROVED_BATCH45_INTEGRATION.md). Original review labels and earlier notes below are historical, not current approval or validation status.
+
+## Historical release notes
+
 # Current approved release: 39 performances
 
 Mental Arithmetic, Controlled Anger and Broad Surprise are integrated with unchanged prior36 profiles, runtime and artwork. Full native frame parity passed for all three. See [current validation and limits](APPROVED_BATCH39_INTEGRATION.md). Earlier progress notes retain historical scope.

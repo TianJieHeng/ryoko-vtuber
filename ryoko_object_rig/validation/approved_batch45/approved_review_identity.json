@@ -1,0 +1,706 @@
+{
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "base_main": "419450d2302d471aa009557289ad509ffb413349",
+  "profiles": [
+    {
+      "id": "EXP-123",
+      "alias": "puzzled",
+      "review_commit": "21cf405c00545b8e420428d74bc841bf4882b670",
+      "review_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/21cf405c00545b8e420428d74bc841bf4882b670/unapproved/EXP-123-puzzled",
+      "profile_path": "expressions/EXP-123.json",
+      "profile_sha256": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+      "video_path": "validation/approved_batch45/review_sources/EXP-123-puzzled/Puzzled_review_v1.mp4",
+      "video_sha256": "5df48deb24bc3a86084799084fd65a004bd7b4af4459ed1eea6d838225930db3",
+      "motion_path": "validation/approved_batch45/review_sources/EXP-123-puzzled/motion_checks.json",
+      "qualification": "Subtle sideways pout only; no whole-mouth translation or diagonal source contour. No head tilt. Intermittent playback samples do not establish continuous normal-speed observation.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/APPROVAL_STATUS.json",
+          "source_path": "unapproved/EXP-123-puzzled/APPROVAL_STATUS.json",
+          "git_blob": "712cb539d0f94ffd45a5d8fcde2845a763e6e00b",
+          "sha256": "dd4ed66f4de43d54af50ec47202b97a341fce116b879f84c66e72abd0f186115",
+          "bytes": 766
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/BASELINE_REFERENCE.json",
+          "source_path": "unapproved/EXP-123-puzzled/BASELINE_REFERENCE.json",
+          "git_blob": "888ef5b0a4c376f969472a760e683e81acd97415",
+          "sha256": "4fa0853eecdec2cec8bf86fdd8f15befb2a2c9fa13371af400b263a43c7b72f5",
+          "bytes": 1363
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/EXP-123.json",
+          "source_path": "unapproved/EXP-123-puzzled/EXP-123.json",
+          "git_blob": "d0a6a366bc2317e8ab85ecbbe708343c9c920b5f",
+          "sha256": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+          "bytes": 4467
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/INDEPENDENT_NATIVE_REVIEW.md",
+          "source_path": "unapproved/EXP-123-puzzled/INDEPENDENT_NATIVE_REVIEW.md",
+          "git_blob": "f6760a722db9543110566c041c5297d4ed6a44ee",
+          "sha256": "8c427585a4ba88fd3ad43c698bbcd426376b0c776aa7b2b32a7e214bdbfc83fb",
+          "bytes": 7451
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/INDEPENDENT_SOURCE_REVIEW.md",
+          "source_path": "unapproved/EXP-123-puzzled/INDEPENDENT_SOURCE_REVIEW.md",
+          "git_blob": "bfe11aa592d4cc7745b4dfea5ace3e9a53761c82",
+          "sha256": "3d88ebf8785e3cbe1c84b15bdad1cc653d43a72d52f44c5188b6192839a8e16a",
+          "bytes": 16156
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/NATIVE_CAPTURE_REVIEW.md",
+          "source_path": "unapproved/EXP-123-puzzled/NATIVE_CAPTURE_REVIEW.md",
+          "git_blob": "d0ed5425b31ee54f7f5f1598b2bb969c936dcc54",
+          "sha256": "bf2f3d4873cd19f49fccce8e0f8ba8ec2a2882fd1142f43198e996e597463445",
+          "bytes": 4046
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/OMITTED_ARTIFACTS.json",
+          "source_path": "unapproved/EXP-123-puzzled/OMITTED_ARTIFACTS.json",
+          "git_blob": "a35fdb0ba9459d6e8fcfda2713ffe233cfd3f461",
+          "sha256": "96ec94292b6a5ab51da996bffbc3a3ff8927f4877af888a770efba29e0490f28",
+          "bytes": 1413
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/PACKAGE_VERIFICATION.json",
+          "source_path": "unapproved/EXP-123-puzzled/PACKAGE_VERIFICATION.json",
+          "git_blob": "d7209d5b21cd430532dd6b9f57dbe25aec25f854",
+          "sha256": "035d3e895aa6e059a25d84c167e67c452fdcfe93750176bcd66346778865cc9e",
+          "bytes": 1620
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/Puzzled_review_v1.mp4",
+          "source_path": "unapproved/EXP-123-puzzled/Puzzled_review_v1.mp4",
+          "git_blob": "7d3c27ed1d4e5c71f4a1481b549d0e8953dcec6e",
+          "sha256": "5df48deb24bc3a86084799084fd65a004bd7b4af4459ed1eea6d838225930db3",
+          "bytes": 182736
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/README.md",
+          "source_path": "unapproved/EXP-123-puzzled/README.md",
+          "git_blob": "1168bef403298a130efb9457a47d1e00769a5f39",
+          "sha256": "f0508ba0d2dab8bf645fcc7906fecc8d11802a6e05512e7f55483e3a4a2e1e76",
+          "bytes": 6213
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/SOURCE_CATALOGUE_ENTRY.json",
+          "source_path": "unapproved/EXP-123-puzzled/SOURCE_CATALOGUE_ENTRY.json",
+          "git_blob": "d7b7102e15168b989c72a4376f5ee1c716ae11d2",
+          "sha256": "e364774d6b4d2710c253bffeb3ee74efbf8f03863d97fd942bb41c14c2ae0778",
+          "bytes": 9236
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/SOURCE_PACKAGE_PROVENANCE.json",
+          "source_path": "unapproved/EXP-123-puzzled/SOURCE_PACKAGE_PROVENANCE.json",
+          "git_blob": "41a63e15b70d1938036bf9cfd57c0058498d89d4",
+          "sha256": "30795a2ae2b9e613a69455b51b29231900979ceec3abadc7a8b22f5d803f36c8",
+          "bytes": 13008
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/SOURCE_REFERENCE.json",
+          "source_path": "unapproved/EXP-123-puzzled/SOURCE_REFERENCE.json",
+          "git_blob": "434855b3936487e3b115e7dff54f14a6da353489",
+          "sha256": "b2723291bb0ae03c4efe10f5f40c5d70f72aad25ac74a1310653575acd6810ce",
+          "bytes": 2665
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/motion_checks.json",
+          "source_path": "unapproved/EXP-123-puzzled/motion_checks.json",
+          "git_blob": "f82ae646db161b14e28ecb4a7f09832f292d5135",
+          "sha256": "71e31d6927432de0ca1232d9c76a659440787b4a9126d269347cb2358b2ee6d7",
+          "bytes": 160635
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-123-puzzled/review_input_freeze.json",
+          "source_path": "unapproved/EXP-123-puzzled/review_input_freeze.json",
+          "git_blob": "b5b9db54c764df2b115598aebe672b50e72bf260",
+          "sha256": "d715fd00b418e2f4f60e886477e95844433f1c5312460fd090bfe4d63406d6ef",
+          "bytes": 1358
+        }
+      ]
+    },
+    {
+      "id": "EXP-081",
+      "alias": "mild_disgust",
+      "review_commit": "4949bfce015e0a078fe9210c6b8e037b533c1221",
+      "review_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/4949bfce015e0a078fe9210c6b8e037b533c1221/unapproved/EXP-081-mild-disgust",
+      "profile_path": "expressions/EXP-081.json",
+      "profile_sha256": "4a6783b9232217ed468f626dc36e5c4c43dc0a5a284108a210ef1975496e1dd9",
+      "video_path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/Mild_disgust_review_v1.mp4",
+      "video_sha256": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f",
+      "motion_path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/motion_checks.json",
+      "qualification": "Reads as restrained smirk or skeptical objection. Independent upper-lip curl/lift and nose detail are unsupported. User approved after that limitation was disclosed. No continuous playback observation or source-faithfulness claim.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/APPROVAL_STATUS.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/APPROVAL_STATUS.json",
+          "git_blob": "a6d55dc5a08843889bc7d99212092d3149bc62f6",
+          "sha256": "aa3af19d9a5597f789edcdbeb3ca7d191448ec248ad4f591bbd3c956b85cf1f2",
+          "bytes": 1377
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/BASELINE_REFERENCE.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/BASELINE_REFERENCE.json",
+          "git_blob": "107861c9ee323626d31fbd3162d7bf913a4b794d",
+          "sha256": "7b67ee160f52a6f1a7bff627578ba74a0b8310c0af1258ea2950b69179b4c193",
+          "bytes": 1829
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/EXP-081.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/EXP-081.json",
+          "git_blob": "50a5e3fc8fa871a49987bf80c0f6dfd51a3f3b59",
+          "sha256": "4a6783b9232217ed468f626dc36e5c4c43dc0a5a284108a210ef1975496e1dd9",
+          "bytes": 4387
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/INDEPENDENT_NATIVE_REVIEW.md",
+          "source_path": "unapproved/EXP-081-mild-disgust/INDEPENDENT_NATIVE_REVIEW.md",
+          "git_blob": "7799c62ce81123e00ecf0824cae9dc071dceeb94",
+          "sha256": "20439e35787a0bee70b09f955c65464642facf0509f45a218da6b7307dc4a0ca",
+          "bytes": 9582
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/INDEPENDENT_SOURCE_REVIEW.md",
+          "source_path": "unapproved/EXP-081-mild-disgust/INDEPENDENT_SOURCE_REVIEW.md",
+          "git_blob": "22e9cc14ce748f3443c59902763c1d6440bb53cd",
+          "sha256": "0f32c09371c434ab7076b1bf1e9dd7726b8ca09f8296d07b8c31b679c8f6b000",
+          "bytes": 13227
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/Mild_disgust_review_v1.mp4",
+          "source_path": "unapproved/EXP-081-mild-disgust/Mild_disgust_review_v1.mp4",
+          "git_blob": "f764c18c695a66b8ecbb9fafdbcc93cd47d755c4",
+          "sha256": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f",
+          "bytes": 188969
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/OMITTED_ARTIFACTS.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/OMITTED_ARTIFACTS.json",
+          "git_blob": "7dbae0a4d4242e145d3616ea8d12d53e45531615",
+          "sha256": "0f52243862bf7a8fb936d584c65c61b5e444429ed8d5dfdc51be8be6b2ec1e6c",
+          "bytes": 1495
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/PACKAGE_VERIFICATION.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/PACKAGE_VERIFICATION.json",
+          "git_blob": "18b2f61fd551f2b55d9aa78a89c3127a6bf72bc3",
+          "sha256": "39788316b381434978155a27d4e9a3689aa6444438ae53b8ed2051351fddfd06",
+          "bytes": 1916
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/README.md",
+          "source_path": "unapproved/EXP-081-mild-disgust/README.md",
+          "git_blob": "60b8e4f84caefd727374685519f2aa53775de363",
+          "sha256": "8dcbcc1c281ade0a575e255168d7b2671c0ec786b3f440c9c1ea1eae37918a73",
+          "bytes": 5687
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/SOURCE_CATALOGUE_ENTRY.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/SOURCE_CATALOGUE_ENTRY.json",
+          "git_blob": "38ed1cbcac892c93bf0d7e9a9cc17caaec6e924c",
+          "sha256": "4762269ea727de3ae77d62038bcd02793bd55c8b63c1bf608bac1ff21e14853c",
+          "bytes": 9208
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/SOURCE_PACKAGE_PROVENANCE.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/SOURCE_PACKAGE_PROVENANCE.json",
+          "git_blob": "a301356ab2ad1e300d2cecfafc83933bd4ddc6c7",
+          "sha256": "f195aa8c373736b5f842c43f7af6db1d7e850af04f89fedd90a5503d5be69c43",
+          "bytes": 19794
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/SOURCE_REFERENCE.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/SOURCE_REFERENCE.json",
+          "git_blob": "0503f598eaac2c8a6686afa28fef3530474fa955",
+          "sha256": "d3a33d92e686cd2222544526b1fea4810b0bfd36cdc508c4579b86c2f404228a",
+          "bytes": 3147
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/historical_inputs/BASELINE_FREEZE.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/historical_inputs/BASELINE_FREEZE.json",
+          "git_blob": "1e6a1e2b982ed3b7e753d7ee3be788366ff6007d",
+          "sha256": "dba27c71d60accd5f4fba35d3306cac8313d8887eba4cc7c52b255b6e4f4cdf3",
+          "bytes": 247517
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/motion_checks.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/motion_checks.json",
+          "git_blob": "00f36f66e164e68d66aa995e2fd272cc1a8a3f08",
+          "sha256": "32e744bd6c487223dda332df494eda4eb31c8895cc86abcf0eb426f0ce005a8a",
+          "bytes": 166158
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-081-mild-disgust/review_input_freeze.json",
+          "source_path": "unapproved/EXP-081-mild-disgust/review_input_freeze.json",
+          "git_blob": "ae8ba0db0be8d3c8c7ca8412ee646cf52d5bc0a2",
+          "sha256": "22509ab2bf568edc6291e261fc0310bdac3818bbc08f4db6656be9ee30748086",
+          "bytes": 5067
+        }
+      ]
+    },
+    {
+      "id": "EXP-161",
+      "alias": "sleepy",
+      "review_commit": "b9b42fa411bf6180168b2cee704f9c02167ca45d",
+      "review_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/b9b42fa411bf6180168b2cee704f9c02167ca45d/unapproved/EXP-161-sleepy",
+      "profile_path": "expressions/EXP-161.json",
+      "profile_sha256": "c260d3a88b6e3ed02877cf9f334de5e6e43f921f14c96f952b78193498b3486e",
+      "video_path": "validation/approved_batch45/review_sources/EXP-161-sleepy/Sleepy_review_v1.mp4",
+      "video_sha256": "9ee4cbb7cee2dd79549363c472dd0ff7f0234e40282951745e90f921aef38475",
+      "motion_path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/motion_checks.json",
+      "qualification": "Heavy partial lids with a small tooth-visible horizontal opening approximate Sleepy; no anatomical jaw movement. Operator sampled normal playback; no continuous observation claimed.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/APPROVAL_STATUS.json",
+          "source_path": "unapproved/EXP-161-sleepy/APPROVAL_STATUS.json",
+          "git_blob": "69fd41a1f9b74fb79742e576267f1ddb5f191b28",
+          "sha256": "3a1e84ac9612fee8bc5ea38fb2d61a1e2898c3264bae5025a667c4a68792ff2c",
+          "bytes": 1282
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/OMITTED_ARTIFACTS.json",
+          "source_path": "unapproved/EXP-161-sleepy/OMITTED_ARTIFACTS.json",
+          "git_blob": "b8e8e931ef39a67bbbd5d32abe3afb943b39ace7",
+          "sha256": "5704cb071a0c522278ea8c126b7ee1ec97f573b830f7022584af87bb34de0ed5",
+          "bytes": 1793
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/PACKAGE_VALIDATION.json",
+          "source_path": "unapproved/EXP-161-sleepy/PACKAGE_VALIDATION.json",
+          "git_blob": "be9722a27e9cff16434eb2de113e481c0944f6d9",
+          "sha256": "27de2ca395ddbfcb9355146b99954d62dda1f618c2a6bd52ff490315177cb4bc",
+          "bytes": 1311
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/README.md",
+          "source_path": "unapproved/EXP-161-sleepy/README.md",
+          "git_blob": "b0ed11cdbaae4e9c49e03f8b0fd00eae20083c5b",
+          "sha256": "ceb869d96f074114d97458754fbb73591892ad25929d83dc3715b40fdf50607d",
+          "bytes": 3966
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/SOURCE_MAP.json",
+          "source_path": "unapproved/EXP-161-sleepy/SOURCE_MAP.json",
+          "git_blob": "9d74e6174b4cc1e3b287eaf7c31cdddcbf50180a",
+          "sha256": "6bb1e142e88f797c83a8dd499c101bd5cb636a4937bec28cfca63c7c9da6c4fc",
+          "bytes": 19576
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/Sleepy_review_v1.mp4",
+          "source_path": "unapproved/EXP-161-sleepy/Sleepy_review_v1.mp4",
+          "git_blob": "00ba89dc39ec16183c9c728d6b94fb720315c2de",
+          "sha256": "9ee4cbb7cee2dd79549363c472dd0ff7f0234e40282951745e90f921aef38475",
+          "bytes": 203037
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/BASELINE_FREEZE.json",
+          "source_path": "unapproved/EXP-161-sleepy/historical/BASELINE_FREEZE.json",
+          "git_blob": "a97702e49077d3f878047469eaa43b87e3f41076",
+          "sha256": "eeeb7f412b743f3a9dc26b1ffdf1ccddc8499868db2921a81feb7a9f60074229",
+          "bytes": 371410
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/EXP-161.json",
+          "source_path": "unapproved/EXP-161-sleepy/historical/EXP-161.json",
+          "git_blob": "b2f1f26e17d8b6f42ea3fad8a281881fe47df019",
+          "sha256": "c260d3a88b6e3ed02877cf9f334de5e6e43f921f14c96f952b78193498b3486e",
+          "bytes": 3580
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/INDEPENDENT_NATIVE_REVIEW.md",
+          "source_path": "unapproved/EXP-161-sleepy/historical/INDEPENDENT_NATIVE_REVIEW.md",
+          "git_blob": "693e5e24bf375321b1f16509bac9fd33a14157f2",
+          "sha256": "b45106a10043e8b72f7b07037e969ab70c711da585163032f0e41f7cd602d219",
+          "bytes": 8313
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "source_path": "unapproved/EXP-161-sleepy/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "git_blob": "fb98d0df5a5ebc5e1348971200645af9fbd92f96",
+          "sha256": "de4fdb3d46e7ea2414f7d0fa1c3814c7828fc1be05af68741094d20894751652",
+          "bytes": 12464
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/NATIVE_CAPTURE_REVIEW.md",
+          "source_path": "unapproved/EXP-161-sleepy/historical/NATIVE_CAPTURE_REVIEW.md",
+          "git_blob": "9a4ada3338926e8d5e05934300b9490c1b70370b",
+          "sha256": "3afcca60e958a34d60c018073e090f9c96be44c7512feb43b60fdcd735abb584",
+          "bytes": 5833
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "source_path": "unapproved/EXP-161-sleepy/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "git_blob": "da758520d32feda079352accf530fac31e8943f5",
+          "sha256": "1efeaa48bdd848452e4f7f7814014bd09ccaf190e32acb4ef782cb99e919edf9",
+          "bytes": 9113
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/SOURCE_REFERENCE.json",
+          "source_path": "unapproved/EXP-161-sleepy/historical/SOURCE_REFERENCE.json",
+          "git_blob": "441a00405f71ac032fcd0a6227301751168b0c1c",
+          "sha256": "222dd35c777ff94e2ac66fe9cc932e62ae0e879dee36c41c02792ceb1675d3dd",
+          "bytes": 2858
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/motion_checks.json",
+          "source_path": "unapproved/EXP-161-sleepy/historical/motion_checks.json",
+          "git_blob": "315e2ba2fc14209c3237aa815f924b83f1937502",
+          "sha256": "e2ab76b39fecb92b2459d6f4aeb6aa1c007100b3b128b3636aad616d850c83fc",
+          "bytes": 161758
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-161-sleepy/historical/review_input_freeze.json",
+          "source_path": "unapproved/EXP-161-sleepy/historical/review_input_freeze.json",
+          "git_blob": "19772b2d604ac8fa4c46362de278ffc9b9676b19",
+          "sha256": "4e223d817db9d3c57a5afccf105e147b27130571292c8215c5aab94cc0442490",
+          "bytes": 5171
+        }
+      ]
+    },
+    {
+      "id": "EXP-045",
+      "alias": "irritated_side_eye",
+      "review_commit": "d61feabd293a28222331129e511cf3da51bdf67c",
+      "review_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/d61feabd293a28222331129e511cf3da51bdf67c/unapproved/EXP-045-irritated-side-eye",
+      "profile_path": "expressions/EXP-045.json",
+      "profile_sha256": "53f59fc53968bc626e0f3ead5e9f66f03e24d06c1a900106e442cc04dc28180d",
+      "video_path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/Irritated_side_eye_review_v1.mp4",
+      "video_sha256": "e323bd40288f1907033a94ad7a24418ecd9ace7e8e39dd2da609e2d61357bae7",
+      "motion_path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/motion_checks.json",
+      "qualification": "The independent downturned mouth corner is unavailable and omitted. All mouth controls remain neutral and sealed; the sideways glance, lids and unequal brows approximate the reference. Operator sampled ordinary playback; continuous observation and formal perceptual A/B comparison are not claimed.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/APPROVAL_STATUS.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/APPROVAL_STATUS.json",
+          "git_blob": "0f4ddfd835a99d289a407117df61032d50839a97",
+          "sha256": "244ffb69c8094c3d359a77de1fe78fb368ddc6aa64634a7c5b7791f6d919177f",
+          "bytes": 1451
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/Irritated_side_eye_review_v1.mp4",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/Irritated_side_eye_review_v1.mp4",
+          "git_blob": "81dfc5a7fb1b9db52d324778a3242828ca0a4834",
+          "sha256": "e323bd40288f1907033a94ad7a24418ecd9ace7e8e39dd2da609e2d61357bae7",
+          "bytes": 194868
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/OMITTED_ARTIFACTS.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/OMITTED_ARTIFACTS.json",
+          "git_blob": "710caf95f92af3100397cebbced0c2437e9d9dc3",
+          "sha256": "ea407b7fed0a6381f1e5b3eeaedc08dfc71ffab89d25b724227268b45c378b65",
+          "bytes": 2467
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/PACKAGE_VALIDATION.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/PACKAGE_VALIDATION.json",
+          "git_blob": "4b86f7c351ac0db82ec174295d257d49c192edc5",
+          "sha256": "58144eaaaeced8fd1904b9c71a5b3374388c19ef4b94f9d872e1f2ca4af80a40",
+          "bytes": 1269
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/README.md",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/README.md",
+          "git_blob": "a08e277d9d3cff545ebc3c79d386f7de4fc69215",
+          "sha256": "80e0bede00389804d4d269433053a0a261d6a5fac761546be3d124440c186a6f",
+          "bytes": 4881
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/SOURCE_MAP.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/SOURCE_MAP.json",
+          "git_blob": "382175d15b85ba75d8c16d687230a82ca8f8edad",
+          "sha256": "3265bcae1e090aa4ae72898d3fffd2161fb08bdb9b1d45c3809fdd9663234ca5",
+          "bytes": 15198
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/BASELINE_FREEZE.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/historical/BASELINE_FREEZE.json",
+          "git_blob": "bd419379239e630b415fe3f1733747b6a461772c",
+          "sha256": "e0074730d1b9c007c26c564829b310e6931c3e1b9336409399d047dd428b19f3",
+          "bytes": 247529
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/EXP-045.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/historical/EXP-045.json",
+          "git_blob": "e51b3e6ca8d02c9df5fd1b15929e55c9dc464893",
+          "sha256": "53f59fc53968bc626e0f3ead5e9f66f03e24d06c1a900106e442cc04dc28180d",
+          "bytes": 4145
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "git_blob": "eb8a8d29391d7fab5a8dfb008c021896b55658a7",
+          "sha256": "a94fcc0304a4da8572291212a25a68843bda248d8e836b501037be5e6fa3b226",
+          "bytes": 11799
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "git_blob": "70a375bac004cb99db61d617da0b6bc0639b9c34",
+          "sha256": "22caecfaff357dfbae45cf2cbef0f9ffa7842b0ec3f31568ce0fb5f1e84dbd8a",
+          "bytes": 9451
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/SOURCE_REFERENCE.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/historical/SOURCE_REFERENCE.json",
+          "git_blob": "97928c0dc17cbb95797bfbfe33ec45d231f74388",
+          "sha256": "4c7025cbc885a3d99a5d83458f65cc4d5b8529c4bba99f7d6109c240c3ec95a1",
+          "bytes": 3270
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/motion_checks.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/historical/motion_checks.json",
+          "git_blob": "895f96691df85e716322251b5e9d079d13efcbb3",
+          "sha256": "c6d0c474f237572085ec45b72c370e3286bbeef450bfde67bb9d8d445dcf7471",
+          "bytes": 511200
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-045-irritated-side-eye/historical/review_input_freeze.json",
+          "source_path": "unapproved/EXP-045-irritated-side-eye/historical/review_input_freeze.json",
+          "git_blob": "d5ef25113f23938fbf724cc394db007fb49e326f",
+          "sha256": "7f9e1bd006a91ff30d66b6da8231b4cb86e4b0bdd72162d9bc794401e51cc5ae",
+          "bytes": 4021
+        }
+      ]
+    },
+    {
+      "id": "EXP-104",
+      "alias": "triumphant_grin",
+      "review_commit": "da2695dd923e87204adb3156ebb39236c841e5e1",
+      "review_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/da2695dd923e87204adb3156ebb39236c841e5e1/unapproved/EXP-104-triumphant-grin",
+      "profile_path": "expressions/EXP-104.json",
+      "profile_sha256": "c25530c816fb25c52387d430ba2174287a960c740ce85e11745a35f4f34617fd",
+      "video_path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/TriumphantGrin_review_v1.mp4",
+      "video_sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+      "motion_path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/motion_checks.json",
+      "qualification": "Native grin is softer, narrower and less intense than source. Existing upper tooth arch; exact opposing-teeth clench unsupported. Operator normal Play reached the neutral endpoint, but only that endpoint was observed. No continuous playback observation claimed.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/APPROVAL_STATUS.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/APPROVAL_STATUS.json",
+          "git_blob": "e8f5ca4caad5f3370be7521cf25b5fbbf4e7b396",
+          "sha256": "36f46e2a80b1daa90442001b182875441e15014df0dc8c3ea73b5adcb3148a11",
+          "bytes": 1454
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/OMITTED_ARTIFACTS.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/OMITTED_ARTIFACTS.json",
+          "git_blob": "1fdad989930a5ddacff0897694429ba011a1d316",
+          "sha256": "312baaed6a5c0e184857109eed6bd0c4211f0c046b81ba3125d20924334c91ad",
+          "bytes": 1325
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/PACKAGE_VALIDATION.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/PACKAGE_VALIDATION.json",
+          "git_blob": "3fdce254f1d4c0f9b5ec9ca7c38aff886d9fdb15",
+          "sha256": "21ac6e5f41aedd7c6cc6dc65943b8c2aa912ad4180257d9a7be93ebd159fbdef",
+          "bytes": 1025
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/README.md",
+          "source_path": "unapproved/EXP-104-triumphant-grin/README.md",
+          "git_blob": "c09f98996842ab3ae7d0c49d5d3a567598fb20c0",
+          "sha256": "0d2eafcb954e3f57d7c1266e9e24f300958d11293c35bad81dbf486ee002da37",
+          "bytes": 5007
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/SOURCE_MAP.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/SOURCE_MAP.json",
+          "git_blob": "a12ff5aae0011b9101e189a432ebc54d0e8ade2e",
+          "sha256": "2c5c4e53828fab6ec753605778c53f054c38127ed24d4d5a161b08cf0fd98d0e",
+          "bytes": 19032
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/TriumphantGrin_review_v1.mp4",
+          "source_path": "unapproved/EXP-104-triumphant-grin/TriumphantGrin_review_v1.mp4",
+          "git_blob": "d641fe5240c16ec14e76909694d004bf4117c776",
+          "sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+          "bytes": 187963
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/BASELINE_FREEZE.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/BASELINE_FREEZE.json",
+          "git_blob": "61f5779b6ff1d199ef5fee5049a22abb0e3d831c",
+          "sha256": "46ac1b1a33656ec72a4638357f22753a454d74b9415b828e967e9ea32062c872",
+          "bytes": 371428
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/EXP-104.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/EXP-104.json",
+          "git_blob": "f34b120d69ac1349bb7bcbdf0b61d77d69e8d8f0",
+          "sha256": "c25530c816fb25c52387d430ba2174287a960c740ce85e11745a35f4f34617fd",
+          "bytes": 4487
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/INDEPENDENT_NATIVE_REVIEW.md",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/INDEPENDENT_NATIVE_REVIEW.md",
+          "git_blob": "7542a2128fad6cb26d9d58f75c8a52fc07917655",
+          "sha256": "6cc4eddd9e7365f1f2f1e03c3b380119200f25b6717bfa44bb0bfe8cd6f37c2b",
+          "bytes": 8218
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "git_blob": "ede8cfcda3ced1aa6c315e4390a9cc97d4a66df9",
+          "sha256": "ab225f46b05e7d17f22a84185f33308f7c11194cfabae3c08f2554b5f226b4fa",
+          "bytes": 10758
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/NATIVE_CAPTURE_REVIEW.md",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/NATIVE_CAPTURE_REVIEW.md",
+          "git_blob": "7e56dd7586f94577c3fd7195ee1691a21fc1f2c6",
+          "sha256": "8efe6471fb5548cb7528605e6f277b37e635751ce1d0c7ee99666f9cc0f81c05",
+          "bytes": 5616
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "git_blob": "cec8d69570adf2b4d13eaaddf69b5f9be0d1b737",
+          "sha256": "fdfd4235e0f080c4d806d4f027565a4f9b0701ecd3d4719158dec3085edac354",
+          "bytes": 9400
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/SOURCE_REFERENCE.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/SOURCE_REFERENCE.json",
+          "git_blob": "8754ee747b3703b5ee3566e39fb80ca14a9cf43f",
+          "sha256": "3d38131679ec5072fcf2564e916aae8dcf4faa1ecb0d09d59c8f71fcf5893439",
+          "bytes": 3315
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/motion_checks.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/motion_checks.json",
+          "git_blob": "54db225033505f050b5d33a2ffacd0e0f020b04c",
+          "sha256": "51572798341c59332fcd2e207180e3d8a4a484954482b3f11158860895788ec9",
+          "bytes": 166777
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-104-triumphant-grin/historical/review_input_freeze.json",
+          "source_path": "unapproved/EXP-104-triumphant-grin/historical/review_input_freeze.json",
+          "git_blob": "8ebcf0adad4e6a67efb8e2fda121abbeea38969a",
+          "sha256": "40f54ee01529ef96d18404cd2f3ebb1e2bf3004662cf2c45055434fb063aef7a",
+          "bytes": 5229
+        }
+      ]
+    },
+    {
+      "id": "EXP-096",
+      "alias": "headache_tension",
+      "review_commit": "85a8bcd62a428087eb5702cb8cdee9d7594a072e",
+      "review_url": "https://github.com/TianJieHeng/ryoko-vtuber/tree/85a8bcd62a428087eb5702cb8cdee9d7594a072e/unapproved/EXP-096-headache-tension",
+      "profile_path": "expressions/EXP-096.json",
+      "profile_sha256": "21ba5c4393ed672a5496ed28577068bd4b56e3b8ff5d7ac4f9674df03badf1fe",
+      "video_path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/Headache_tension_review_v1.mp4",
+      "video_sha256": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+      "motion_path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/motion_checks.json",
+      "qualification": "Restrained tense closure with still-closed softening. No true central furrows, horizontal brow convergence or independent downturned mouth corners. Not unmistakable headache/pain. Operator sampled ordinary-speed playback; continuous observation is not claimed. Meditative Calm comparator is verified historical single-anchor evidence, not a new all-frame or playback comparison.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/APPROVAL_STATUS.json",
+          "source_path": "unapproved/EXP-096-headache-tension/APPROVAL_STATUS.json",
+          "git_blob": "876372b342be3d4e1ee6898659f6cb10c053ffa5",
+          "sha256": "9d0476bfb4d5eca1d06e1cbb67234a76875ee2ed3fdde3c1d8976e98ae80dbb6",
+          "bytes": 1581
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/Headache_tension_review_v1.mp4",
+          "source_path": "unapproved/EXP-096-headache-tension/Headache_tension_review_v1.mp4",
+          "git_blob": "ed883c2dbddc9311ba2da0e7092dfbe8970747b8",
+          "sha256": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+          "bytes": 197614
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/OMITTED_ARTIFACTS.json",
+          "source_path": "unapproved/EXP-096-headache-tension/OMITTED_ARTIFACTS.json",
+          "git_blob": "0e1ac5b75bccd44e7cf16993998a841abe5e5a95",
+          "sha256": "774d8da7dfc17eebc5254f4de0c469d2bb0048d20717ba1c8afbbb0d18406ed3",
+          "bytes": 2330
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/PACKAGE_VALIDATION.json",
+          "source_path": "unapproved/EXP-096-headache-tension/PACKAGE_VALIDATION.json",
+          "git_blob": "ee5cabf03cff45f884d0e876cf102e854d36b7cd",
+          "sha256": "fb15f802d8c4754f15486aeb6c4b7cb05010e58b3b5cadccca3f1c5ab0d47c14",
+          "bytes": 1038
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/README.md",
+          "source_path": "unapproved/EXP-096-headache-tension/README.md",
+          "git_blob": "8dcf96839b522dc16c634bdb1d529a942da1a2d7",
+          "sha256": "4615294da9d603a7db722d2a7836aa190f625c27ab4991071463cf87820467de",
+          "bytes": 6240
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/SOURCE_MAP.json",
+          "source_path": "unapproved/EXP-096-headache-tension/SOURCE_MAP.json",
+          "git_blob": "946dc0178ec310eb324624ad313f7096be6420b0",
+          "sha256": "30c5e96ba82941878da2504732a8f4db74064c1880b7fb0474d74465abf3362a",
+          "bytes": 20199
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/BASELINE_FREEZE.json",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/BASELINE_FREEZE.json",
+          "git_blob": "da731b6c57474e0a0792ab1fc65ece6a4fcd5b8a",
+          "sha256": "656c27331ce43c84916666a72c7255359d6628a0d6d66e761f0c7276736eab20",
+          "bytes": 247525
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/EXP-096.json",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/EXP-096.json",
+          "git_blob": "66722260220d0739b1d7fef8dbd954c001abd3f0",
+          "sha256": "21ba5c4393ed672a5496ed28577068bd4b56e3b8ff5d7ac4f9674df03badf1fe",
+          "bytes": 4172
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/INDEPENDENT_NATIVE_REVIEW.md",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/INDEPENDENT_NATIVE_REVIEW.md",
+          "git_blob": "07ef4de4f6c8774fc758bb8ec8708f64a72cf84f",
+          "sha256": "ea094295ac76ebd1754a86a96215e67597ac57e1a4b7d3ce3c3f5e44b99310c7",
+          "bytes": 9440
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/INDEPENDENT_SOURCE_REVIEW.md",
+          "git_blob": "7add48d6a1fba57e33a0b0c998025c4c3f05569b",
+          "sha256": "c0f7f502df7599470a2c0d20e58855386987e2778643f884e2494b9bc3331d08",
+          "bytes": 12686
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/NATIVE_CAPTURE_REVIEW.md",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/NATIVE_CAPTURE_REVIEW.md",
+          "git_blob": "ae23b85180a14dbab86345eebf04075372849da8",
+          "sha256": "bc377a4787c7d8df11ecf21a41255ecc76a4f77103adb1d8f078d8c09d9bfa9e",
+          "bytes": 5610
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/SOURCE_CATALOGUE_ENTRY.json",
+          "git_blob": "b0c38c106cd7a8d8d42dc584e4d352c6ad503b22",
+          "sha256": "c726891a5ea924bb9dbeff43574fbf254a38cf1ae6f0539f842cd15373f961c2",
+          "bytes": 9354
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/SOURCE_REFERENCE.json",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/SOURCE_REFERENCE.json",
+          "git_blob": "0e8a3db9f317ba266679b077955435d84a15e688",
+          "sha256": "9ed9317ca2ccb909b3dce7794ec2791dcec4d2fcf54b586d127cba60dfe8fe26",
+          "bytes": 3520
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/motion_checks.json",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/motion_checks.json",
+          "git_blob": "6f33231b1c22cf471bd8452e02b7f8cde7384627",
+          "sha256": "c2b4c7839cea4385623b2509434fa978b081755728d8e34cd7017feadc31c0a8",
+          "bytes": 728770
+        },
+        {
+          "path": "validation/approved_batch45/review_sources/EXP-096-headache-tension/historical/review_input_freeze.json",
+          "source_path": "unapproved/EXP-096-headache-tension/historical/review_input_freeze.json",
+          "git_blob": "d55e2cb39d7df12a2f025d2b1e6dbb5cc3850cf5",
+          "sha256": "6f076e4127e9c07d4083c6a26560ce32dfcb25a9d9c7981ad0401d291a509520",
+          "bytes": 4021
+        }
+      ]
+    }
+  ]
+}

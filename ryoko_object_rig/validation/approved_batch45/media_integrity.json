@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "baseline_pngs_decoded": 184,
+  "historical_approved_mp4s_decoded": 6,
+  "historical_video_frames_decoded": 726,
+  "records": [
+    {
+      "id": "EXP-123",
+      "video_sha256": "5df48deb24bc3a86084799084fd65a004bd7b4af4459ed1eea6d838225930db3",
+      "full_decode": "PASS",
+      "probe": {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "121"
+      }
+    },
+    {
+      "id": "EXP-081",
+      "video_sha256": "71bf7075205155776165e147b06ae5ada1c1158f2a0401dcc8be94d39babbc6f",
+      "full_decode": "PASS",
+      "probe": {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "121"
+      }
+    },
+    {
+      "id": "EXP-161",
+      "video_sha256": "9ee4cbb7cee2dd79549363c472dd0ff7f0234e40282951745e90f921aef38475",
+      "full_decode": "PASS",
+      "probe": {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "121"
+      }
+    },
+    {
+      "id": "EXP-045",
+      "video_sha256": "e323bd40288f1907033a94ad7a24418ecd9ace7e8e39dd2da609e2d61357bae7",
+      "full_decode": "PASS",
+      "probe": {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "121"
+      }
+    },
+    {
+      "id": "EXP-104",
+      "video_sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+      "full_decode": "PASS",
+      "probe": {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "121"
+      }
+    },
+    {
+      "id": "EXP-096",
+      "video_sha256": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+      "full_decode": "PASS",
+      "probe": {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "121"
+      }
+    }
+  ],
+  "new_images_rendered": 0,
+  "scope": "Current lossless decode integrity of unchanged PNGs and exact historical approved videos. Not a new render, perceptual review, or RGBA parity rerun."
+}

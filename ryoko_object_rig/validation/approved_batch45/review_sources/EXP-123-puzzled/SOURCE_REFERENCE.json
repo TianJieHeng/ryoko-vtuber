@@ -1,0 +1,24 @@
+{
+  "sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_sheet_v001.png",
+  "sha256": "c5e0d6af76652cc5f3ee4b60a642faf79d515f5d6fb7299fe0f67aeac0dd1d05",
+  "dimensions": [
+    1159,
+    1358
+  ],
+  "pixels_inspected": true,
+  "observations": "All nine sheet panels inspected before authoring. Viewer-left inner brow curves upward while the other brow lowers; viewer-left eye is narrower around the middle panels. The compact sealed mouth becomes oblique and biased sideways, strongest around panels 4-6. Panel 5 includes a head tilt, excluded from the facial-only scope. Bottom row unwinds to neutral.",
+  "left_right_convention": "Brow and width controls use screen/viewer sides. Blink controls use character sides: blink_R narrows screen-left and blink_L narrows screen-right. The catalogue specifies no side for this expression.",
+  "approximation": "Existing rigid outer-anchor lift approximates the local inner-brow curve without reshaping. Unilateral positive width plus symmetric purse yields a 2-source-pixel endpoint-midpoint bias at peak, not whole-mouth translation or a literal diagonal pout. Central mouth position remains fixed.",
+  "panel_hashes": {
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp01_v001.png": "f8ce822587acec889c96308d1407f730587d79df158fa651dc8373adaad3caed",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp02_v001.png": "1ecb4a0e1a365c9d13afe2cae6e62f59e23f593a0c2600cbeeb7088f394b93d8",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp03_v001.png": "59bc9067f81e7e911f1411d3c2603fcbb5719444fd526a7b5107257dafbab398",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp04_v001.png": "1ededa3d9b9d1de393d5e0cc34d4833b8bdb5cd2a6a096861e98a69e1d5694e0",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp05_v001.png": "d6b1df1068dd56397d19244e91d4689bae7db90c83c074fce76b8c78f4f63869",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp06_v001.png": "b4e6f1019760ff9532665ba4f8bf83b43b5a7cb96952787a9eee8521e85e2d2c",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp07_v001.png": "227e6e2ee95e957161752682031997eafcc49de9871e33f3b267adb3a1db5123",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp08_v001.png": "7b3eb725d452a985427c46e6576b1ce240365af02ecf26c01d19f62dca249381",
+    "assets/expressions/EXP-123_puzzled/RYO_EXP-123_puzzled_kp09_v001.png": "67043ac4700fc99adb38e92edd38d8de68008daae3c5322b86de25af44f143a2"
+  },
+  "approval": "Accepted reference art is not approval of this candidate or its animation."
+}

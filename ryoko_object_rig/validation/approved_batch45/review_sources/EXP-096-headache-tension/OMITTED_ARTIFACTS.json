@@ -1,0 +1,24 @@
+{
+  "policy": "Compact backup: omit all raw static/motion PNGs, contact sheets, caches, full baseline copies and redundant test logs. Native hash, decode/order and source-reference receipts retained.",
+  "raw_static_pngs": 16,
+  "raw_motion_pngs": 242,
+  "deduplicated_originals": {
+    "independent_review_evidence/review_checks.json": "independent_review_evidence/partial_review.json",
+    "launcher_motion_parse.log": "launcher_launcher_parse.log",
+    "launcher_static_parse.log": "launcher_launcher_parse.log",
+    "native_session_evidence/author_final.log": "independent_native_review.log",
+    "native_session_evidence/author_final/decoded_frame_order.json": "independent_native_review_evidence/decoded_frame_order.json",
+    "native_session_evidence/author_final/native_frame_hashes.json": "independent_native_review_evidence/native_frame_hashes.json",
+    "native_session_evidence/editor_rewrite_author_validation/native_frame_hashes.json": "independent_native_review_evidence/native_frame_hashes.json",
+    "native_session_evidence/editor_rewrite_author_validation/review_checks.json": "native_session_evidence/editor_rewrite_author_validation/partial_review.json",
+    "native_session_evidence/independent_final.log": "independent_native_review.log",
+    "native_session_evidence/independent_final/decoded_frame_order.json": "independent_native_review_evidence/decoded_frame_order.json",
+    "native_session_evidence/independent_final/native_frame_hashes.json": "independent_native_review_evidence/native_frame_hashes.json",
+    "native_session_evidence/independent_final/review_checks.json": "independent_native_review_evidence/review_checks.json",
+    "native_session_evidence/project.godot.original": "native_launcher/project.godot",
+    "review_evidence/review_checks.json": "review_evidence/partial_review.json"
+  },
+  "historical_frozen_inputs": 38,
+  "redundant_test_runs_omitted": "Earlier and repeated passing test runs are omitted; the historical editor-mismatch failures and restored 146-test pass remain in native_session_evidence.",
+  "reproducibility_limit": "Raw native captures and comparator PNGs cannot be reconstructed from a lossy MP4. Complete historical frame-to-video validation requires original captures and layout. A new native capture requires separate authorization and fresh provenance."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "EXP-161",
+  "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+  "approval_evidence": [
+    {
+      "speaker": "user",
+      "text": "if i say its good its approved"
+    },
+    {
+      "speaker": "assistant",
+      "text": "Here\u2019s Sleepy, with a slow, heavy-lidded droop and slightly parted lips. The mouth is narrower and toothier than the reference."
+    },
+    {
+      "speaker": "user",
+      "text": "good"
+    }
+  ],
+  "candidate_sha256": "c260d3a88b6e3ed02877cf9f334de5e6e43f921f14c96f952b78193498b3486e",
+  "review_video": "Sleepy_review_v1.mp4",
+  "review_video_sha256": "9ee4cbb7cee2dd79549363c472dd0ff7f0234e40282951745e90f921aef38475",
+  "branch": "review/exp161-sleepy-v1",
+  "base_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "purpose": "Review backup only. Production integration is separate.",
+  "qualification": "Heavy partial lids with a small tooth-visible horizontal opening approximate Sleepy; no anatomical jaw movement. Operator sampled normal playback; no continuous observation claimed.",
+  "historical_status": "UNAPPROVED and pending labels are retained as historical review-time records, superseded only for current user approval by this note.",
+  "production_registry_changed": false,
+  "main_written": false,
+  "ci_run": false
+}

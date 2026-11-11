@@ -1,0 +1,29 @@
+{
+  "id": "EXP-104",
+  "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+  "approval_evidence": [
+    {
+      "speaker": "user",
+      "text": "if i say its good its approved"
+    },
+    {
+      "speaker": "assistant",
+      "text": "Here\u2019s Triumphant Grin, with focused brows and a centered toothy smile. It\u2019s more restrained than the reference, and the rig can\u2019t reproduce the exact clenched-teeth shape."
+    },
+    {
+      "speaker": "user",
+      "text": "i like that one its good"
+    }
+  ],
+  "candidate_sha256": "c25530c816fb25c52387d430ba2174287a960c740ce85e11745a35f4f34617fd",
+  "review_video": "TriumphantGrin_review_v1.mp4",
+  "review_video_sha256": "caa4914959146c87fa371a17e829ca3c5d85b4db4a273b341f62781a8b33d17b",
+  "branch": "review/exp104-triumphant-grin-v1",
+  "base_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "purpose": "Review backup only. Production integration is separate.",
+  "qualification": "Native grin is softer, narrower and less intense than source. Existing upper tooth arch; exact opposing-teeth clench unsupported. Operator normal Play reached the neutral endpoint, but only that endpoint was observed. No continuous playback observation claimed.",
+  "historical_status": "UNAPPROVED and pending labels are retained as historical review-time records, superseded only for current user approval by this note.",
+  "production_registry_changed": false,
+  "main_written": false,
+  "ci_run": false
+}

@@ -1,0 +1,17 @@
+{
+  "policy": "Compact backup: no raw static/motion PNGs, contact sheets, caches, duplicated full baseline or redundant validator reruns. Per-frame raw RGBA/file hashes and decode results retained. Original checksum manifests may name intentionally omitted diagnostic images.",
+  "raw_static_pngs": 16,
+  "raw_motion_pngs": 242,
+  "native_image_hashes": "historical/independent_native_review_evidence/native_frame_hashes.json",
+  "deduplicated_originals": {
+    "launcher_motion_parse.log": "launcher_launcher_parse.log",
+    "launcher_static_parse.log": "launcher_launcher_parse.log",
+    "native_capture_audit/freeze_after_restore.log": "independent_native_author_freeze_verification.log",
+    "native_capture_audit/independent_native_validation.log": "independent_native_review_run.log",
+    "native_launcher/project.godot": "native_capture_audit/project.before_native_import.godot",
+    "source_guard_checks.json": "native_capture_audit/source_guard_after_restore.json",
+    "verification.log": "preparation_verification.json"
+  },
+  "historical_frozen_inputs": 47,
+  "reproducibility_limit": "Raw native captures are not recoverable from the lossy MP4. Full historical frame-to-MP4 audit cannot be rerun from this compact package alone. New capture would need separate authorized native execution and new provenance."
+}

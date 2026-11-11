@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "profiles": [
+    {
+      "id": "EXP-123",
+      "basis": "Review BASELINE_REFERENCE.json pins exact archived approved36 source manifest; full review freeze omitted in compact backup",
+      "baseline_files": 999,
+      "compared_to_main39": true,
+      "differences": [
+        "APPROVED_INTEGRATION_STATUS.json",
+        "APPROVED_INTEGRATION_TEST_RESULTS.json",
+        "README.md",
+        "RELEASE.json",
+        "expressions/registry.json",
+        "tools/verify_approved_integration.py"
+      ],
+      "runtime_scenes_shaders_artwork_changed": false,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+      "png_count": 184,
+      "required_runtime_delta": null
+    },
+    {
+      "id": "EXP-081",
+      "basis": "Exact archived review BASELINE_FREEZE.json",
+      "baseline_files": 999,
+      "compared_to_main39": true,
+      "differences": [
+        "APPROVED_INTEGRATION_STATUS.json",
+        "APPROVED_INTEGRATION_TEST_RESULTS.json",
+        "README.md",
+        "RELEASE.json",
+        "expressions/registry.json",
+        "tools/verify_approved_integration.py"
+      ],
+      "runtime_scenes_shaders_artwork_changed": false,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+      "png_count": 184,
+      "required_runtime_delta": null
+    },
+    {
+      "id": "EXP-161",
+      "basis": "Exact archived review BASELINE_FREEZE.json",
+      "baseline_files": 999,
+      "compared_to_main39": true,
+      "differences": [
+        "APPROVED_INTEGRATION_STATUS.json",
+        "APPROVED_INTEGRATION_TEST_RESULTS.json",
+        "README.md",
+        "RELEASE.json",
+        "expressions/registry.json",
+        "tools/verify_approved_integration.py"
+      ],
+      "runtime_scenes_shaders_artwork_changed": false,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+      "png_count": 184,
+      "required_runtime_delta": null
+    },
+    {
+      "id": "EXP-045",
+      "basis": "Exact archived review BASELINE_FREEZE.json",
+      "baseline_files": 999,
+      "compared_to_main39": true,
+      "differences": [
+        "APPROVED_INTEGRATION_STATUS.json",
+        "APPROVED_INTEGRATION_TEST_RESULTS.json",
+        "README.md",
+        "RELEASE.json",
+        "expressions/registry.json",
+        "tools/verify_approved_integration.py"
+      ],
+      "runtime_scenes_shaders_artwork_changed": false,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+      "png_count": 184,
+      "required_runtime_delta": null
+    },
+    {
+      "id": "EXP-104",
+      "basis": "Exact archived review BASELINE_FREEZE.json",
+      "baseline_files": 999,
+      "compared_to_main39": true,
+      "differences": [
+        "APPROVED_INTEGRATION_STATUS.json",
+        "APPROVED_INTEGRATION_TEST_RESULTS.json",
+        "README.md",
+        "RELEASE.json",
+        "expressions/registry.json",
+        "tools/verify_approved_integration.py"
+      ],
+      "runtime_scenes_shaders_artwork_changed": false,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+      "png_count": 184,
+      "required_runtime_delta": null
+    },
+    {
+      "id": "EXP-096",
+      "basis": "Exact archived review BASELINE_FREEZE.json",
+      "baseline_files": 999,
+      "compared_to_main39": true,
+      "differences": [
+        "APPROVED_INTEGRATION_STATUS.json",
+        "APPROVED_INTEGRATION_TEST_RESULTS.json",
+        "README.md",
+        "RELEASE.json",
+        "expressions/registry.json",
+        "tools/verify_approved_integration.py"
+      ],
+      "runtime_scenes_shaders_artwork_changed": false,
+      "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+      "png_count": 184,
+      "required_runtime_delta": null
+    }
+  ],
+  "scope": "Source-hash comparison only. No native rendering or historical engine checks rerun."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "all_retained_originals_match": 85,
+  "unique_original_files": 75,
+  "current_original_python_tests": 107,
+  "portable_geometry_and_encoder_tests": 31,
+  "bootstrap": {
+    "status": "PASS",
+    "baseline_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+    "baseline_files": 999,
+    "baseline_pngs": 184,
+    "reference_files": 11,
+    "historical_frozen_files": 47,
+    "native_renderer_run": false,
+    "historical_inputs_modified": false,
+    "reproduction_only_path_changes": true
+  },
+  "portable_static_checks": 1558,
+  "portable_motion_checks": 11640,
+  "portable_independent_geometry_checks": 8422,
+  "both_historical_validator_contracts_unchanged": true,
+  "native_execution_for_this_backup": false,
+  "initial_portable_setup_fixes": "Fresh Godot projects require headless import before numerical probes. Initial replay copy omitted SOURCE_CATALOGUE_ENTRY.json; bootstrap now includes it. Final replay created from a fresh output and passed. Historical source was unchanged.",
+  "git_bootstrap_route": "Implemented offline git cat-file extraction from fixed commit; final bootstrap test used exact local source directories, not Git extraction.",
+  "scope": "Headless portability and backup integrity checks only. Native review results are retained historical evidence."
+}

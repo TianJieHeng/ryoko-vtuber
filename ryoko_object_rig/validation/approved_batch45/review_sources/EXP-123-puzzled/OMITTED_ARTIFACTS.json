@@ -1,0 +1,31 @@
+{
+  "reason": "Compact backup excludes duplicate pinned baseline files, import caches and PNG sequences. Exact MP4 and complete capture hashes/receipts are included. Reference artwork is recoverable at the pinned commit.",
+  "diagnostic_images": {
+    "review_evidence/bust_progression.png": {
+      "sha256": "c074d0bd8480e70bb1ebfd7298086b379f1652663850ac96a93e170797c35d10",
+      "bytes": 377557
+    },
+    "review_evidence/encoded_keyframes.png": {
+      "sha256": "6794384549779dff0d38dbdca8cebbe6628007a16aecd12e32b89e1f73637863",
+      "bytes": 700973
+    },
+    "review_evidence/static_faces.png": {
+      "sha256": "c4ca7ea8960124e02d932712ef107d208a37113dd0d16bf44641baf2076f40e7",
+      "bytes": 548357
+    },
+    "capture_operator_review/bust_progression.png": {
+      "sha256": "c074d0bd8480e70bb1ebfd7298086b379f1652663850ac96a93e170797c35d10",
+      "bytes": 377557
+    },
+    "capture_operator_review/encoded_keyframes.png": {
+      "sha256": "6794384549779dff0d38dbdca8cebbe6628007a16aecd12e32b89e1f73637863",
+      "bytes": 700973
+    },
+    "capture_operator_review/static_faces.png": {
+      "sha256": "c4ca7ea8960124e02d932712ef107d208a37113dd0d16bf44641baf2076f40e7",
+      "bytes": 548357
+    }
+  },
+  "raw_motion_frames": "242 PNGs, exact PNG and RGBA hashes in review_evidence/native_frame_hashes.json",
+  "static_frames": "16 PNGs, exact hashes in review_evidence/review_checks.json"
+}

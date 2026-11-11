@@ -1,0 +1,110 @@
+{
+  "id": "EXP-161",
+  "title": "Sleepy",
+  "duration": 4.0,
+  "status": "UNAPPROVED shared-rig preparation v1; native visual review pending",
+  "intent": "Brows rest low; heavy upper lids droop; lips part slightly with relaxed jaw.",
+  "scope": "Existing bilateral vertical brow lowering, bilateral ordinary partial lid closure and slight split-lip opening only. Jaw relaxation is suggested solely by lip separation; there is no jaw rotation, cheek deformation, chin or skull change. Brows have no tilt or inner lift. No new anatomy, art, shader, runtime, head/body movement, gaze, smile, purse, lip pressure, blush, or speech.",
+  "timing_origin": "New four-second interpretation of the inspected EXP-161 nine-panel static reference, not recovered motion. Gentle lid and low-brow onset precedes lip parting, followed by one gradual sink into an uninterrupted 1.6-2.4-second heavy-lid hold with slightly open lips. The recovery has no second sag, effortful snap-open or brow overshoot. Unlike EXP-164 Fighting sleep there are no repeated fighting-sleep rebounds or sealed downturn. Unlike EXP-174 Sleepy annoyance there is no sharp brow knit/tilt or pout. Unlike EXP-177 Meditative calm, eyes remain partially open and lips part slightly.",
+  "interpolation": "Unchanged shared smoothstep; eight static anchors, eleven timeline keys and exact neutral bookends. Candidate registered only in memory. Smoothstep joins at onset/droop/recovery anchors have zero velocity; no uninterrupted constant-speed descent is claimed.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.2,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.6,
+      "phase": "onset",
+      "values": {
+        "brow_screen_left": -0.07,
+        "brow_screen_right": -0.07,
+        "blink_R": 0.14,
+        "blink_L": 0.14,
+        "mouth_open": 0
+      }
+    },
+    {
+      "time": 1.0,
+      "phase": "droop",
+      "values": {
+        "brow_screen_left": -0.14,
+        "brow_screen_right": -0.14,
+        "blink_R": 0.32,
+        "blink_L": 0.32,
+        "mouth_open": 0.07
+      }
+    },
+    {
+      "time": 1.6,
+      "phase": "sleepy_peak",
+      "values": {
+        "brow_screen_left": -0.22,
+        "brow_screen_right": -0.22,
+        "blink_R": 0.57,
+        "blink_L": 0.57,
+        "mouth_open": 0.16
+      }
+    },
+    {
+      "time": 2.4,
+      "phase": "sleepy_peak",
+      "values": {
+        "brow_screen_left": -0.22,
+        "brow_screen_right": -0.22,
+        "blink_R": 0.57,
+        "blink_L": 0.57,
+        "mouth_open": 0.16
+      }
+    },
+    {
+      "time": 2.8,
+      "phase": "recover",
+      "values": {
+        "brow_screen_left": -0.15,
+        "brow_screen_right": -0.15,
+        "blink_R": 0.4,
+        "blink_L": 0.4,
+        "mouth_open": 0.11
+      }
+    },
+    {
+      "time": 3.2,
+      "phase": "release",
+      "values": {
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "blink_R": 0.22,
+        "blink_L": 0.22,
+        "mouth_open": 0.04
+      }
+    },
+    {
+      "time": 3.5,
+      "phase": "settle",
+      "values": {
+        "brow_screen_left": -0.025,
+        "brow_screen_right": -0.025,
+        "blink_R": 0.06,
+        "blink_L": 0.06,
+        "mouth_open": 0
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}

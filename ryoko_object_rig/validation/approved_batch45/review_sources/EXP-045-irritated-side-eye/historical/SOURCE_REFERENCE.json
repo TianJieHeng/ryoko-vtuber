@@ -1,0 +1,24 @@
+{
+  "sheet": "/workspace/scratch/42f2baf55663/insight_integration_work/avatar_build_assets/reference_library/assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_sheet_v001.png",
+  "sha256": "5e3287f39ac6102934cfa2001150036345103d398760f738b6f1055c45b7f3ad",
+  "dimensions": [
+    1159,
+    1358
+  ],
+  "pixels_inspected": true,
+  "observations": "Actual full nine-panel sheet viewed before authoring. Panels 2-5 narrow the upper lids and deliberately shift both irises toward screen-right. The screen-left brow is lower with inward downward inclination while the screen-right brow is relatively raised with an opposing tilt. A sealed restrained mouth develops a downturned corner, then gaze and facial tension recover across panels 7-9. Sheet does not show the initial wide-eyed startle, blushing or downcast embarrassment of Caught staring.",
+  "left_right_convention": "Brow names use screen sides. blink_R closes screen-left and blink_L closes screen-right. Positive aversion_px moves both original iris sprites and iris/sclera shader offsets toward screen-right in source pixels.",
+  "approximation": "The independent downturned mouth corner cannot be represented by the frozen controls. All mouth channels stay exactly neutral and sealed; no upward sneer, symmetric purse or fake corner depression is introduced. Peak uses 12 source pixels of rightward aversion (5.88 bust pixels), .38/.30 lid closure (13.68/10.8 source-pixel lash travel), -0.65/+0.22 brow translation (6.5 pixels down/2.2 up) and +.50/-.28 tilt (+4/-2.24 degrees). Rigid brows cannot reproduce every drawn contour. Native fidelity and distinctness remain pending.",
+  "panel_hashes": {
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp01_v001.png": "b2e26e7eb509e0b3880734a2369d9d161f01040cdefa5f93569851102df5f201",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp02_v001.png": "4245f4eb8dbaa580230144dbe54c7a2c3a72021b85104ded88b9c26344782dc7",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp03_v001.png": "5214415d48864af32c05405d3d5878a782e8eff5013a29bd2e181bde59c3d7f2",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp04_v001.png": "78b333032cf96880a9d84fbc08e60d70e043ee8f70caeb63434b15318f1204ec",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp05_v001.png": "f2be17abd6b7216263e839cb610cd3bb82d85ae2f2f1ec22de550cdb47e184f3",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp06_v001.png": "2b400efb2902c4a47120545477170e326489296b57266fc70594d41f1bd21839",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp07_v001.png": "6f01030f3e00a740b458cd60043c4c598db53ec0ccdd8c2d9a3a5e6e6437e11a",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp08_v001.png": "a86e04742ce0719054a7760dba82bd7803a0c3d4e027ea5ac710cefa9d688758",
+    "assets/expressions/EXP-045_irritated-side-eye/RYO_EXP-045_irritated-side-eye_kp09_v001.png": "b4ac47112a5ac649582d357fd2e53445ce88711426ae6fad7e3bb19704d88de5"
+  },
+  "approval": "Accepted reference art does not approve this candidate or animation."
+}
