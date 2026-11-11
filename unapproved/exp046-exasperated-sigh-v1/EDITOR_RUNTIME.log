@@ -1,0 +1,5 @@
+READY resource_root=/workspace/scratch/42f2baf55663/ryoko_native_editor_attempts_20261111/EXP-046-editor-attempt-02/rig/ candidate_root=/workspace/scratch/42f2baf55663/ryoko_native_editor_attempts_20261111/EXP-046-editor-attempt-02
+RUN display=X11 renderer=llvmpipe (LLVM 19.1.7, 256 bits)
+INPUTS_VERIFIED
+CAPTURE_DIRECTORIES_CREATED
+FINISHED PASS checks=68805 failures=[]

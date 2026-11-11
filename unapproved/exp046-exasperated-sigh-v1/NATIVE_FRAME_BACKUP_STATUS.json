@@ -1,0 +1,7 @@
+{
+  "status": "PENDING_NOT_INCLUDED_IN_THIS_INITIAL_REMOTE_CHECKPOINT",
+  "pngs": 310,
+  "archive_bytes": 25828792,
+  "local_roundtrip": "PASS; see RESTORATION_CHECK.json",
+  "remote_frame_archive_complete": false
+}

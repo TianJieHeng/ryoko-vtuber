@@ -1,0 +1,21 @@
+{
+  "status": "EXACT_NATIVE_PREVIEW_BACKUP",
+  "candidate": "EXP-046",
+  "attempt": "EXP-046-editor-attempt-02",
+  "main_base": "17d2efdc7028fb3ec55cc604c19835ca2b7065f4",
+  "source_preparation_commit": "d6ce369f7b23b7364a301f7796fe9b26944db654",
+  "profile_sha256": "1de491628e031953c765a47287d3ac230abb73e6adbdab15a3f8c11d1b41161e",
+  "mp4_sha256": "ecceb235ec358e99302e78d8b065d0c2f6edf8cb4fdbe7e86a3a1abab0bd0e29",
+  "mp4_bytes": 229933,
+  "manifest_uncompressed_sha256": "fca1f7cdc540314cffefceb55e3be9acef5dee035b75aa273fa72b34058dfd74",
+  "reconstructed_files": 1788,
+  "reconstructed_bytes": 139491435,
+  "pinned_files": 1159,
+  "captured_pngs": 310,
+  "native_frame_archive_bytes": 25828792,
+  "excluded_regenerable_metadata_files": 390,
+  "additional_source_files": 310,
+  "native_work_during_backup": false,
+  "ci": false,
+  "production_integration": false
+}

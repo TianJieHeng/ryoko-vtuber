@@ -1,0 +1,41 @@
+{
+  "reference_sheet": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1159,
+    "native_height": 1358,
+    "sha256": "7aed5d539ffe01c569b81056481ecaa6fd42e96bd53bb15ddbb4d5bfb4621239",
+    "actual_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_sheet_v001.png",
+    "peak_actual_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_peak_v001.png"
+  },
+  "pixels_inspected": true,
+  "inspection_method": "Viewed recovered 1159x1358 original sheet before authoring, not just catalogue prose.",
+  "observations": "KP2 lifts the brow centers and parts the lips; KP3-4 look upward with increasingly heavy ordinary lids. KP5 has a larger unsmiling exhale and about half-closed eyes; KP6 tapers it; KP7 remains tired with a smaller opening; KP8 reseals and settles; KP9 is neutral. No smiling-eye substitution.",
+  "panel_to_anchor": {
+    "1": "neutral",
+    "2": "weary_onset",
+    "3": "upward_glance",
+    "4": "glance_crest",
+    "5": "exhale_peak",
+    "6": "exhale_tail",
+    "7": "tired_release",
+    "8": "reseal",
+    "9": "neutral_return"
+  },
+  "intermediate_anchor": "exhale_onset is an authored interpolation waypoint, not a tenth recovered source pose.",
+  "control_mapping": {
+    "brows": "Existing rigid outer-anchor rotation: -26*inner_lift degrees screen-left, +26*inner_lift screen-right; whole-brow y=-10*brow. No local hook deformation.",
+    "lids": "blink_R controls screen-left, blink_L screen-right; ordinary lash y=36*blink, max 18 source pixels. No full closure or smiling lids.",
+    "gaze": "gaze_y in [-1,0] gives [-2,0] source-pixel vertical offset. At 0.49 bust scale this is <=0.98 display pixels: a subtle glance, explicitly not a full eye roll.",
+    "mouth": "Existing split-lip aperture with MAX_MOUTH_APERTURE=0.55 and symmetric purse. At peak central gap=0.50*0.55*54-1.5*0.26=14.46 source pixels. No smile, spread, width, independent corners or lip press."
+  },
+  "limitations": [
+    "The source calls for an eye roll; current approved assets permit only a subtle upward glance. This partial fit must be made explicit at review.",
+    "Rigid whole brow strips cannot reproduce the painted inner hooks or localized furrows.",
+    "Purse is existing contour articulation, not independent downturned mouth anatomy.",
+    "No body/shoulder breath acting, actual airflow, new jaw action, lip sync or sound.",
+    "Native eye coverage, lip seams, appearance, perceptual distinctness and real-time pacing remain NOT RUN.",
+    "A numerically different trajectory does not establish visual success or user approval."
+  ],
+  "approval": "Unapproved. Accepted reference art is not animation approval."
+}
