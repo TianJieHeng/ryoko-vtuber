@@ -1,0 +1,1563 @@
+{
+  "version": 5,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "status": "Unapproved separate-part registration and skeletal wiring review",
+  "side_convention": "Anatomical L is screen-right; anatomical R is screen-left.",
+  "source_policy": "Body garment/anatomy owners are individually cut from avatar_build_assets/body/layers and accessories/layers. Jacket fronts exclude inner construction facings; collar tabs and fastener are separate owners. No combined fullbody or bust raster is instantiated.",
+  "jacket_fit": {
+    "method": "Exterior panel isolated at existing painted lapel fold seam; documented contour landmark registration. Source RGB and alpha resampled, no generated art.",
+    "provenance": "jacket_review/registration_candidate.json"
+  },
+  "elbow_fit": {
+    "provenance": "elbow_review/registration_candidate.json",
+    "method": "Register real painted sleeve folds at a single elbow; exclude open construction tube; fit continuous neutral upper and lower arm."
+  },
+  "joints": [
+    {
+      "id": "pelvis",
+      "parent": "",
+      "position": [
+        512,
+        650
+      ],
+      "control": "pelvis_tilt",
+      "range_degrees": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": "spine",
+      "parent": "pelvis",
+      "position": [
+        512,
+        540
+      ],
+      "control": "spine_tilt",
+      "range_degrees": [
+        -1.5,
+        1.5
+      ]
+    },
+    {
+      "id": "chest",
+      "parent": "spine",
+      "position": [
+        512,
+        360
+      ],
+      "control": "chest_tilt",
+      "range_degrees": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": "neck",
+      "parent": "chest",
+      "position": [
+        512,
+        246
+      ],
+      "control": "",
+      "range_degrees": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "position": [
+        510,
+        234
+      ],
+      "control": "head_tilt",
+      "range_degrees": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "shoulder_R",
+      "parent": "chest",
+      "position": [
+        372,
+        302
+      ],
+      "control": "shoulder_R",
+      "range_degrees": [
+        -2,
+        2
+      ]
+    },
+    {
+      "id": "elbow_R",
+      "parent": "shoulder_R",
+      "position": [
+        354,
+        532
+      ],
+      "control": "elbow_R",
+      "range_degrees": [
+        -2,
+        2
+      ]
+    },
+    {
+      "id": "wrist_R",
+      "parent": "elbow_R",
+      "position": [
+        325,
+        725
+      ],
+      "control": "wrist_R",
+      "range_degrees": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "hip_R",
+      "parent": "pelvis",
+      "position": [
+        440,
+        690
+      ],
+      "control": "hip_R",
+      "range_degrees": [
+        -0.7,
+        0.7
+      ]
+    },
+    {
+      "id": "knee_R",
+      "parent": "hip_R",
+      "position": [
+        434,
+        1010
+      ],
+      "control": "knee_R",
+      "range_degrees": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": "ankle_R",
+      "parent": "knee_R",
+      "position": [
+        436.14167357083676,
+        1334
+      ],
+      "control": "ankle_R",
+      "range_degrees": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": "shoulder_L",
+      "parent": "chest",
+      "position": [
+        652,
+        302
+      ],
+      "control": "shoulder_L",
+      "range_degrees": [
+        -2,
+        2
+      ]
+    },
+    {
+      "id": "elbow_L",
+      "parent": "shoulder_L",
+      "position": [
+        670,
+        532
+      ],
+      "control": "elbow_L",
+      "range_degrees": [
+        -2,
+        2
+      ]
+    },
+    {
+      "id": "wrist_L",
+      "parent": "elbow_L",
+      "position": [
+        699,
+        725
+      ],
+      "control": "wrist_L",
+      "range_degrees": [
+        -3,
+        3
+      ]
+    },
+    {
+      "id": "hip_L",
+      "parent": "pelvis",
+      "position": [
+        584,
+        690
+      ],
+      "control": "hip_L",
+      "range_degrees": [
+        -0.7,
+        0.7
+      ]
+    },
+    {
+      "id": "knee_L",
+      "parent": "hip_L",
+      "position": [
+        590,
+        1010
+      ],
+      "control": "knee_L",
+      "range_degrees": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": "ankle_L",
+      "parent": "knee_L",
+      "position": [
+        603.3374689826303,
+        1334
+      ],
+      "control": "ankle_L",
+      "range_degrees": [
+        -1,
+        1
+      ]
+    }
+  ],
+  "frame_pivot": [
+    512,
+    650
+  ],
+  "layers": [
+    {
+      "id": "thigh_R",
+      "file": "res://full_body/pieces_v2/lower/thigh_R.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_R.png",
+      "rawsource_sha256": "f0a69b326f850b2b36f39bcd080ec71532a40048077a4ca2f3c0f957b9eb8e89",
+      "raw_crop_xyxy": [
+        13,
+        167,
+        234,
+        1374
+      ],
+      "scale": [
+        0.5468102734051367,
+        0.5468102734051367
+      ],
+      "position": [
+        379,
+        685.0
+      ],
+      "parent": "hip_R",
+      "pivot": [
+        440,
+        690
+      ],
+      "z": -330,
+      "alpha_bounds": [
+        0,
+        0,
+        221,
+        620
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[0,620) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shin_R",
+      "file": "res://full_body/pieces_v2/lower/shin_R.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_R.png",
+      "rawsource_sha256": "f0a69b326f850b2b36f39bcd080ec71532a40048077a4ca2f3c0f957b9eb8e89",
+      "raw_crop_xyxy": [
+        13,
+        167,
+        234,
+        1374
+      ],
+      "scale": [
+        0.5468102734051367,
+        0.5468102734051367
+      ],
+      "position": [
+        379,
+        995.5882352941176
+      ],
+      "parent": "knee_R",
+      "pivot": [
+        434,
+        1010
+      ],
+      "z": -331,
+      "alpha_bounds": [
+        22,
+        0,
+        187,
+        639
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[568,1207) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shoe_R",
+      "file": "res://full_body/pieces_v2/lower/shoe_R.png",
+      "rawsource": "avatar_build_assets/body/layers/pump_front_character_R.png",
+      "rawsource_sha256": "886857dab95a021e65fcbbd5f25699a30e7e38a92f6ba5359c4f1d6eba3c4325",
+      "raw_crop_xyxy": [
+        240,
+        25,
+        496,
+        625
+      ],
+      "scale": [
+        0.23333333333333334,
+        0.23333333333333334
+      ],
+      "position": [
+        406.2750069041701,
+        1320
+      ],
+      "parent": "ankle_R",
+      "pivot": [
+        436.14167357083676,
+        1334
+      ],
+      "z": -340,
+      "alpha_bounds": [
+        0,
+        0,
+        256,
+        600
+      ],
+      "derivation": "alpha<32 removed; crop to remaining foreground",
+      "boundary_overlap": "Trouser hem overlaps real shoe opening by 25px; no added ankle artwork"
+    },
+    {
+      "id": "thigh_L",
+      "file": "res://full_body/pieces_v2/lower/thigh_L.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_L.png",
+      "rawsource_sha256": "fe7b88f37c2f912ca4e1c56fc212d9db325078f5083c14c4270952cc5ed95b67",
+      "raw_crop_xyxy": [
+        34,
+        165,
+        256,
+        1374
+      ],
+      "scale": [
+        0.5459057071960298,
+        0.5459057071960298
+      ],
+      "position": [
+        525,
+        685.0
+      ],
+      "parent": "hip_L",
+      "pivot": [
+        584,
+        690
+      ],
+      "z": -330,
+      "alpha_bounds": [
+        0,
+        0,
+        222,
+        621
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[0,621) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shin_L",
+      "file": "res://full_body/pieces_v2/lower/shin_L.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_L.png",
+      "rawsource_sha256": "fe7b88f37c2f912ca4e1c56fc212d9db325078f5083c14c4270952cc5ed95b67",
+      "raw_crop_xyxy": [
+        34,
+        165,
+        256,
+        1374
+      ],
+      "scale": [
+        0.5459057071960298,
+        0.5459057071960298
+      ],
+      "position": [
+        525,
+        995.6203473945409
+      ],
+      "parent": "knee_L",
+      "pivot": [
+        590,
+        1010
+      ],
+      "z": -331,
+      "alpha_bounds": [
+        38,
+        0,
+        210,
+        640
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[569,1209) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shoe_L",
+      "file": "res://full_body/pieces_v2/lower/shoe_L.png",
+      "rawsource": "avatar_build_assets/body/layers/pump_front_character_L.png",
+      "rawsource_sha256": "44ab8cf6f73378c7d40ac24a05705290983cc5c3d447ebfd4495596f565b3cdf",
+      "raw_crop_xyxy": [
+        167,
+        25,
+        423,
+        625
+      ],
+      "scale": [
+        0.23333333333333334,
+        0.23333333333333334
+      ],
+      "position": [
+        573.4708023159636,
+        1320
+      ],
+      "parent": "ankle_L",
+      "pivot": [
+        603.3374689826303,
+        1334
+      ],
+      "z": -340,
+      "alpha_bounds": [
+        0,
+        0,
+        256,
+        600
+      ],
+      "derivation": "alpha<32 removed; crop to remaining foreground",
+      "boundary_overlap": "Trouser hem overlaps real shoe opening by 25px; no added ankle artwork"
+    },
+    {
+      "id": "pelvis",
+      "file": "res://full_body/pieces_v2/lower/pelvis.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_pelvis_front.png",
+      "rawsource_sha256": "d1b2d648a7cdafd72d24e96b8e24aa567b3123680bc07f24a93509bdda1b8082",
+      "raw_crop_xyxy": [
+        25,
+        193,
+        437,
+        582
+      ],
+      "scale": [
+        0.65,
+        0.65
+      ],
+      "position": [
+        378.1,
+        580
+      ],
+      "parent": "pelvis",
+      "pivot": [
+        512,
+        650
+      ],
+      "z": -320,
+      "alpha_bounds": [
+        0,
+        0,
+        412,
+        323
+      ],
+      "derivation": "Alpha<32 removed; uniform scale; construction lower hem alpha feather only, no paint",
+      "boundary_overlap": "Leg tops start685; pelvis overlaps through790, hem fades745..790"
+    },
+    {
+      "id": "belt",
+      "source": "avatar_build_assets/accessories/layers/RYO_ACC_belt_gold_buckle.png",
+      "source_sha256": "ca8ba149ae4b069bf091e10e042ef380f7e6e693cb9dc9c6dcc11cdd1f64f6e4",
+      "file": "res://full_body/jacket_review/belt_candidate.png",
+      "crop": [
+        58,
+        311,
+        2114,
+        455
+      ],
+      "position": [
+        368.8664883268483,
+        604.8487354085603
+      ],
+      "scale": [
+        0.12889105058365757,
+        0.12889105058365757
+      ],
+      "rotation_degrees": 0,
+      "parent": "pelvis",
+      "z": -319,
+      "gold_buckle_center_crop": [
+        1110.5,
+        71.0
+      ],
+      "mask": "Only surplus strap outside the existing registered pelvis alpha removed; centered buckle unchanged.",
+      "size": [
+        2056,
+        144
+      ],
+      "alpha_bounds": [
+        265,
+        0,
+        1957,
+        144
+      ]
+    },
+    {
+      "id": "blouse",
+      "source": "avatar_build_assets/body/layers/blouse_front.png",
+      "source_sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba",
+      "file": "res://full_body/jacket_review/blouse_body_candidate.png",
+      "crop": [
+        60,
+        200,
+        631,
+        1155
+      ],
+      "position": [
+        403.51,
+        245
+      ],
+      "scale": [
+        0.38,
+        0.38
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -190,
+      "derivation": "Alpha <=10 cleanup; original crop; collar tabs cut into two front owners; untucked lower side excess alpha-masked inside registered jacket exterior at y>=480.",
+      "size": [
+        571,
+        955
+      ],
+      "alpha_bounds": [
+        18,
+        0,
+        556,
+        955
+      ]
+    },
+    {
+      "id": "blazer_R",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_R.png",
+      "sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345",
+      "file": "res://full_body/jacket_review/blazer_R_candidate.png",
+      "position": [
+        371,
+        266
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "parent": "chest",
+      "z": -180,
+      "fold_seam_source_yx": [
+        [
+          20,
+          345
+        ],
+        [
+          60,
+          340
+        ],
+        [
+          120,
+          343
+        ],
+        [
+          175,
+          344
+        ],
+        [
+          235,
+          349
+        ],
+        [
+          285,
+          357
+        ],
+        [
+          345,
+          371
+        ],
+        [
+          409,
+          392
+        ],
+        [
+          465,
+          419
+        ],
+        [
+          541,
+          451
+        ],
+        [
+          584,
+          446
+        ],
+        [
+          650,
+          430
+        ],
+        [
+          722,
+          406
+        ],
+        [
+          798,
+          381
+        ],
+        [
+          863,
+          365
+        ]
+      ],
+      "excluded_part": "full_body/jacket_review/blazer_R_facing_not_instantiated.png",
+      "size": [
+        144,
+        423
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        144,
+        423
+      ],
+      "rotation_degrees": 0,
+      "source_sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345"
+    },
+    {
+      "id": "blazer_L",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_L.png",
+      "sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2",
+      "file": "res://full_body/jacket_review/blazer_L_candidate.png",
+      "position": [
+        512,
+        266
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "parent": "chest",
+      "z": -179,
+      "fold_seam_source_yx": [
+        [
+          20,
+          245
+        ],
+        [
+          60,
+          249
+        ],
+        [
+          120,
+          244
+        ],
+        [
+          175,
+          242
+        ],
+        [
+          235,
+          233
+        ],
+        [
+          285,
+          221
+        ],
+        [
+          345,
+          204
+        ],
+        [
+          409,
+          180
+        ],
+        [
+          465,
+          150
+        ],
+        [
+          541,
+          117
+        ],
+        [
+          584,
+          122
+        ],
+        [
+          650,
+          139
+        ],
+        [
+          722,
+          163
+        ],
+        [
+          798,
+          188
+        ],
+        [
+          863,
+          209
+        ]
+      ],
+      "excluded_part": "full_body/jacket_review/blazer_L_facing_not_instantiated.png",
+      "size": [
+        142,
+        423
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        142,
+        423
+      ],
+      "rotation_degrees": 0,
+      "source_sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2"
+    },
+    {
+      "id": "upper_arm_R",
+      "file": "res://full_body/elbow_review/upper_arm_R_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_upper_character_R.png",
+      "source_sha256": "ec9f3168059bebfe4fddbd8d363abbfbbd19c8d7452c9ad7863b2d23f21d28c4",
+      "position": [
+        322,
+        287
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "shoulder_R",
+      "z": -185,
+      "size": [
+        103,
+        266
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        103,
+        266
+      ],
+      "alpha_cleanup": "Discard alpha <=10 outliers.",
+      "source_cut": "full_body/elbow_review/upper_R_source_cut.png",
+      "source_cut_seam_R_xy": [
+        [
+          70,
+          806
+        ],
+        [
+          110,
+          810
+        ],
+        [
+          165,
+          820
+        ],
+        [
+          215,
+          833
+        ],
+        [
+          260,
+          846
+        ],
+        [
+          310,
+          850
+        ],
+        [
+          350,
+          850
+        ]
+      ],
+      "source_cut_mirror": null,
+      "source_y": [
+        76.0,
+        400.0,
+        700.0,
+        780.0,
+        850.0
+      ],
+      "target_y": [
+        286.7,
+        386.0,
+        500.0,
+        530.0,
+        553.0
+      ],
+      "source_x_scale": 0.3,
+      "lower_shift_R": [
+        0.0,
+        -4.0,
+        -20.0,
+        -26.0,
+        -29.0
+      ],
+      "width_ratio": [
+        1.0,
+        1.0,
+        0.97,
+        0.96,
+        0.95
+      ],
+      "method": "Source alpha cut at last painted fold, excluding artificial open tube; rowwise register original RGB/alpha from shoulder to real elbow."
+    },
+    {
+      "id": "forearm_R",
+      "file": "res://full_body/elbow_review/forearm_R_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_forearm_character_R.png",
+      "source_sha256": "e08ddd2274f421cc7b7fde6e477c741b37bae7e5f685eb2dd9c495d82787ac59",
+      "position": [
+        299,
+        506
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "elbow_R",
+      "z": -186,
+      "size": [
+        87,
+        220
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        87,
+        220
+      ],
+      "cuff_opening_cut": {
+        "center_x": 190,
+        "edge_center_y": 899,
+        "edge_formula": "center_y+17*((x-center_x)/77)^2",
+        "method": "Discard gray inner ellipse and lower construction rim at painted opening. Wrist enters behind white cuff."
+      },
+      "source_cut_top": "Rounded overlap tab: y=330+70*min(abs(x-center)/110,1)^2; 8px source feather.",
+      "source_landmarks_xy": [
+        [
+          185.0,
+          400.0
+        ],
+        [
+          188.0,
+          925.0
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          354.0,
+          532.0
+        ],
+        [
+          325.0,
+          725.0
+        ]
+      ],
+      "source_affine_abcdxy": [
+        0.29646090122745855,
+        0.045944902256975645,
+        -0.05693215753082358,
+        0.36735650532043634,
+        321.9275962852496,
+        376.55759095428493
+      ],
+      "source_scale": [
+        0.3,
+        0.3717419435069956
+      ],
+      "source_rotation_degrees": 8.809499161547842,
+      "method": "Register painted elbow fold y400 and original cuff-end landmark y925 to elbow and wrist; source opening is cut at its painted inner rim. Retain top construction overlap below upper sleeve owner; forearm drawn behind upper sleeve."
+    },
+    {
+      "id": "hand_R",
+      "file": "res://full_body/elbow_review/hand_R_candidate.png",
+      "source": "avatar_build_assets/body/layers/hand_dorsal_character_R.png",
+      "source_sha256": "9811b72b49cc2704721bc059055085d23da364295f45fed8c392c8a0a9d4a410",
+      "position": [
+        284,
+        711
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "wrist_R",
+      "z": -187,
+      "size": [
+        56,
+        115
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        56,
+        115
+      ],
+      "source_crop": [
+        277,
+        35,
+        544,
+        583
+      ],
+      "source_affine_on_cropped_abcdxy": [
+        0.206809610128403,
+        0.0364661179482937,
+        -0.0364661179482937,
+        0.206809610128403,
+        297.790588378906,
+        707.865112304688
+      ],
+      "source_scale": [
+        0.21,
+        0.21
+      ],
+      "source_rotation_degrees": 10.0,
+      "method": "Original cleaned raw hand translated upward 10px from its measured neutral bind into the opened cuff; unchanged proportions, fingers and neutral angle."
+    },
+    {
+      "id": "upper_arm_L",
+      "file": "res://full_body/elbow_review/upper_arm_L_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_upper_character_L.png",
+      "source_sha256": "ea22d96e2f90c392cb2aa840bd16b0d69c5a4ad08d116adc84d99e061af59c16",
+      "position": [
+        600,
+        287
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "shoulder_L",
+      "z": -185,
+      "size": [
+        101,
+        266
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        101,
+        266
+      ],
+      "alpha_cleanup": "Discard alpha <=10 outliers.",
+      "source_cut": "full_body/elbow_review/upper_L_source_cut.png",
+      "source_cut_seam_R_xy": [
+        [
+          70,
+          806
+        ],
+        [
+          110,
+          810
+        ],
+        [
+          165,
+          820
+        ],
+        [
+          215,
+          833
+        ],
+        [
+          260,
+          846
+        ],
+        [
+          310,
+          850
+        ],
+        [
+          350,
+          850
+        ]
+      ],
+      "source_cut_mirror": "x_L=413-x_R",
+      "source_y": [
+        76.0,
+        400.0,
+        700.0,
+        780.0,
+        850.0
+      ],
+      "target_y": [
+        286.7,
+        386.0,
+        500.0,
+        530.0,
+        553.0
+      ],
+      "source_x_scale": 0.3,
+      "lower_shift_R": [
+        0.0,
+        -4.0,
+        -20.0,
+        -26.0,
+        -29.0
+      ],
+      "width_ratio": [
+        1.0,
+        1.0,
+        0.97,
+        0.96,
+        0.95
+      ],
+      "method": "Source alpha cut at last painted fold, excluding artificial open tube; rowwise register original RGB/alpha from shoulder to real elbow."
+    },
+    {
+      "id": "forearm_L",
+      "file": "res://full_body/elbow_review/forearm_L_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_forearm_character_L.png",
+      "source_sha256": "079ceff58875abfe0f615dd4f8f238900b2b93038449e0b4b39f937b755baec7",
+      "position": [
+        638,
+        506
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "elbow_L",
+      "z": -186,
+      "size": [
+        88,
+        219
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        88,
+        219
+      ],
+      "cuff_opening_cut": {
+        "center_x": 198,
+        "edge_center_y": 901,
+        "edge_formula": "center_y+17*((x-center_x)/77)^2",
+        "method": "Discard gray inner ellipse and lower construction rim at painted opening. Wrist enters behind white cuff."
+      },
+      "source_cut_top": "Rounded overlap tab: y=330+70*min(abs(x-center)/110,1)^2; 8px source feather.",
+      "source_landmarks_xy": [
+        [
+          179.0,
+          400.0
+        ],
+        [
+          200.0,
+          925.0
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          670.0,
+          532.0
+        ],
+        [
+          699.0,
+          725.0
+        ]
+      ],
+      "source_affine_abcdxy": [
+        0.2979539757541191,
+        -0.03497754039828735,
+        0.0433199362079305,
+        0.36901814923497905,
+        599.3382638568405,
+        390.6537200373018
+      ],
+      "source_scale": [
+        0.3,
+        0.37155216502917654
+      ],
+      "source_rotation_degrees": -6.695446235281569,
+      "method": "Register painted elbow fold y400 and original cuff-end landmark y925 to elbow and wrist; source opening is cut at its painted inner rim. Retain top construction overlap below upper sleeve owner; forearm drawn behind upper sleeve."
+    },
+    {
+      "id": "hand_L",
+      "file": "res://full_body/elbow_review/hand_L_candidate.png",
+      "source": "avatar_build_assets/body/layers/hand_dorsal_character_L.png",
+      "source_sha256": "d4330b068973277608f77651bb21ecedf27701fbc24dbe665850ba77ab26bb00",
+      "position": [
+        684,
+        711
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "wrist_L",
+      "z": -187,
+      "size": [
+        56,
+        115
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        56,
+        115
+      ],
+      "source_crop": [
+        83,
+        35,
+        350,
+        583
+      ],
+      "source_affine_on_cropped_abcdxy": [
+        0.206809610128403,
+        -0.0364661179482937,
+        0.0364661179482937,
+        0.206809610128403,
+        670.991271972656,
+        717.601623535156
+      ],
+      "source_scale": [
+        0.21,
+        0.21
+      ],
+      "source_rotation_degrees": -10.0,
+      "method": "Original cleaned raw hand translated upward 10px from its measured neutral bind into the opened cuff; unchanged proportions, fingers and neutral angle."
+    },
+    {
+      "id": "necklace_chain",
+      "file": "res://full_body/pieces_v2/upper/assets/necklace_chain.png",
+      "source": "avatar_build_assets/accessories/layers/RYO_ACC_necklace_chain.png",
+      "source_sha256": "734584f460bd4d915ec626da9941e2d3dd94e9d3ae70d6ed5f274ad14fce9cd6",
+      "crop": [
+        48,
+        41,
+        1111,
+        840
+      ],
+      "size": [
+        1063,
+        799
+      ],
+      "scale": [
+        0.065,
+        0.065
+      ],
+      "position": [
+        477.4525,
+        268.0
+      ],
+      "pivot": [
+        34.5475,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        512,
+        268
+      ],
+      "parent": "chest",
+      "z": -170,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB.",
+      "alpha_bounds": [
+        0,
+        0,
+        1063,
+        799
+      ]
+    },
+    {
+      "id": "necklace_pendant",
+      "file": "res://full_body/pieces_v2/upper/assets/necklace_pendant.png",
+      "source": "avatar_build_assets/accessories/layers/RYO_ACC_green_pendant.png",
+      "source_sha256": "8d30cfd8d12158bcea991a3db2753f2e9272b8840612c60d2db5a780db40377d",
+      "crop": [
+        107,
+        328,
+        377,
+        738
+      ],
+      "size": [
+        270,
+        410
+      ],
+      "scale": [
+        0.04,
+        0.04
+      ],
+      "position": [
+        506.6,
+        318.0
+      ],
+      "pivot": [
+        5.4,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        512,
+        318
+      ],
+      "parent": "chest",
+      "z": -169,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB.",
+      "alpha_bounds": [
+        0,
+        0,
+        270,
+        410
+      ]
+    },
+    {
+      "id": "neck_skin",
+      "file": "res://full_body/pieces_v2/upper/assets/neck_skin.png",
+      "source": "ryoko_object_rig/full_body/pieces_v2/upper/sources/neck_skin_completed_source.png",
+      "source_sha256": "48002eefdb5925694caec665c6e9d9b827543345bdd0e018c361bf6e7875e405",
+      "crop": [
+        451,
+        684,
+        671,
+        1189
+      ],
+      "size": [
+        220,
+        505
+      ],
+      "scale": [
+        0.34,
+        0.34
+      ],
+      "position": [
+        472.6,
+        221.76
+      ],
+      "pivot": [
+        37.400000000000006,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        510,
+        221.76
+      ],
+      "parent": "neck",
+      "z": -189,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB.",
+      "hidden_area_completion": {
+        "source_rows": [
+          684,
+          720
+        ],
+        "method": "Extend original top skin/shadow scanline y720 upward 36 source pixels within x484..648; no original visible pixels replaced.",
+        "canvas_extension_px": 12.24,
+        "original_visible_top_y": 234,
+        "status": "New unapproved completion; verify live head tilt endpoints."
+      },
+      "ownership_note": "Skin overlays the rear collar band from the blouse, without importing collar pixels; front opening remains separate blouse artwork.",
+      "provenance": "sources/provenance.json: new compatible edited skin, not original approved artwork.",
+      "alpha_bounds": [
+        0,
+        0,
+        220,
+        505
+      ]
+    },
+    {
+      "id": "blouse_collar_R",
+      "source": "avatar_build_assets/body/layers/blouse_front.png",
+      "file": "res://full_body/jacket_review/blouse_collar_R_candidate.png",
+      "source_polygon_xy": [
+        [
+          267,
+          204
+        ],
+        [
+          277,
+          372
+        ],
+        [
+          141,
+          391
+        ],
+        [
+          238,
+          319
+        ]
+      ],
+      "source_landmarks_xy": [
+        [
+          267,
+          204
+        ],
+        [
+          141,
+          390
+        ],
+        [
+          277,
+          374
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          482.16999999999996,
+          246.52
+        ],
+        [
+          434.28999999999996,
+          317.2
+        ],
+        [
+          485.97,
+          311.12
+        ]
+      ],
+      "canvas_affine_abcdxy": [
+        0.38,
+        0,
+        0,
+        0.38,
+        434.28999999999996,
+        249.18
+      ],
+      "crop": [
+        60,
+        200,
+        631,
+        1155
+      ],
+      "source_crop_within_cleaned_blouse": [
+        81,
+        11,
+        216,
+        192
+      ],
+      "position": [
+        434,
+        249
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -178,
+      "ownership": "Pixels removed from rear blouse; not an overlapping duplicate.",
+      "size": [
+        52,
+        69
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        52,
+        69
+      ],
+      "source_sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba"
+    },
+    {
+      "id": "blouse_collar_L",
+      "source": "avatar_build_assets/body/layers/blouse_front.png",
+      "file": "res://full_body/jacket_review/blouse_collar_L_candidate.png",
+      "source_polygon_xy": [
+        [
+          425,
+          204
+        ],
+        [
+          419,
+          374
+        ],
+        [
+          557,
+          392
+        ],
+        [
+          458,
+          319
+        ]
+      ],
+      "source_landmarks_xy": [
+        [
+          425,
+          204
+        ],
+        [
+          557,
+          392
+        ],
+        [
+          419,
+          374
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          542.21,
+          246.52
+        ],
+        [
+          592.37,
+          317.96000000000004
+        ],
+        [
+          539.93,
+          311.12
+        ]
+      ],
+      "canvas_affine_abcdxy": [
+        0.38,
+        0,
+        0,
+        0.38,
+        540.69,
+        248.42
+      ],
+      "crop": [
+        60,
+        200,
+        631,
+        1155
+      ],
+      "source_crop_within_cleaned_blouse": [
+        361,
+        9,
+        498,
+        193
+      ],
+      "position": [
+        541,
+        248
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -178,
+      "ownership": "Pixels removed from rear blouse; not an overlapping duplicate.",
+      "size": [
+        52,
+        70
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        52,
+        70
+      ],
+      "source_sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba"
+    },
+    {
+      "id": "blazer_button",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_R.png",
+      "file": "res://full_body/jacket_review/blazer_button_candidate.png",
+      "crop": [
+        431,
+        527,
+        470,
+        566
+      ],
+      "source_circle_xy_radius": [
+        450,
+        546,
+        19
+      ],
+      "position": [
+        499,
+        507
+      ],
+      "scale": [
+        0.48,
+        0.48
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -177,
+      "ownership": "Full original button cut from source panel; same pixels removed from visible exterior panel.",
+      "size": [
+        39,
+        39
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        39,
+        39
+      ],
+      "source_sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345"
+    }
+  ],
+  "head_binding": {
+    "parent": "head",
+    "position": [
+      329,
+      4
+    ],
+    "scale": 0.32,
+    "source_size": [
+      1136,
+      1384
+    ],
+    "remove_legacy": [
+      "FixedNeckTorso"
+    ],
+    "keep_objects": [
+      "existing live head and all approved face controls"
+    ],
+    "extra_parts": [
+      {
+        "id": "earring_tip_R",
+        "file": "res://full_body/pieces_v2/head_audit/earring_tip_R.png",
+        "z": 20
+      },
+      {
+        "id": "earring_tip_L",
+        "file": "res://full_body/pieces_v2/head_audit/earring_tip_L.png",
+        "z": 20
+      }
+    ]
+  },
+  "limitations": [
+    "Neck skin uses a new jewelry-removed compatible edit plus original lower skin, explicitly masked to exclude clothing. Requires user visual approval.",
+    "Inspect neck-to-head and lower chest joins in the integrated assembly before claiming completion.",
+    "Head is not in this fragment; preserve existing approved live head.",
+    "Front/back and alternate hand/shoe views are not stacked.",
+    "Construction pelvis/leg shading differs; neutral assembly is for registration review, not approved final artwork.",
+    "No hidden anatomy generated; only cropped source overlap.",
+    "Knee and ankle pivots need integration against upper-body registration.",
+    "Jacket exterior panels, front collar tabs and fastener are individually owned. Landmark fit and silhouette remain subject to user review.",
+    "No action choreography. Body controls are manual, small calibration ranges.",
+    "Native renderer capture unavailable in current environment; CPU neutral composites do not verify shader output.",
+    "Head retains original expression objects; earrings remain baked in head backing except separated final tips."
+  ]
+}

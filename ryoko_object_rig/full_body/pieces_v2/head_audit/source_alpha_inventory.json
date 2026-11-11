@@ -1,0 +1,530 @@
+[
+  {
+    "name": "stationary_backing",
+    "source": "rig_assets/smile_support/stationary_backing_eye_reassigned.png",
+    "alpha_bbox": [
+      377,
+      337,
+      746,
+      720
+    ]
+  },
+  {
+    "name": "hair_temple_left",
+    "source": "rig_assets/object_face/hair_temple_left.png",
+    "alpha_bbox": [
+      0,
+      0,
+      226,
+      509
+    ]
+  },
+  {
+    "name": "hair_temple_right",
+    "source": "rig_assets/object_face/hair_temple_right.png",
+    "alpha_bbox": [
+      0,
+      0,
+      199,
+      434
+    ]
+  },
+  {
+    "name": "hair_crown_bun_rear",
+    "source": "rig_assets/object_face/hair_crown_bun_rear.png",
+    "alpha_bbox": [
+      0,
+      0,
+      595,
+      292
+    ]
+  },
+  {
+    "name": "hair_front_fringe",
+    "source": "rig_assets/object_face/hair_front_fringe.png",
+    "alpha_bbox": [
+      0,
+      0,
+      1071,
+      750
+    ]
+  },
+  {
+    "name": "FixedNeckTorso (REMOVE)",
+    "source": "rig_assets/object_face/fixed_neck_torso.png",
+    "alpha_bbox": [
+      45,
+      720,
+      1135,
+      1384
+    ]
+  },
+  {
+    "name": "earring_left (NOT LIVE)",
+    "source": "rig_assets/object_face/earring_screen_left.png",
+    "alpha_bbox": [
+      397,
+      600,
+      422,
+      736
+    ]
+  },
+  {
+    "name": "earring_right (NOT LIVE)",
+    "source": "rig_assets/object_face/earring_screen_right.png",
+    "alpha_bbox": [
+      704,
+      598,
+      731,
+      735
+    ]
+  },
+  {
+    "live_manifest_object": "stationary_backing",
+    "source": "rig_assets/smile_support/stationary_backing_eye_reassigned.png",
+    "alpha_bbox_local": [
+      377,
+      337,
+      746,
+      720
+    ],
+    "alpha_bbox_head": [
+      377,
+      337,
+      746,
+      720
+    ]
+  },
+  {
+    "live_manifest_object": "upper_lash_screen_left",
+    "source": "rig_assets/object_face/upper_lash_screen_left.png",
+    "alpha_bbox_local": [
+      0,
+      5,
+      107,
+      34
+    ],
+    "alpha_bbox_head": [
+      410,
+      474,
+      517,
+      503
+    ]
+  },
+  {
+    "live_manifest_object": "upper_surround_screen_left",
+    "source": "rig_assets/object_face/upper_surround_screen_left.png",
+    "alpha_bbox_local": [
+      11,
+      6,
+      123,
+      42
+    ],
+    "alpha_bbox_head": [
+      421,
+      475,
+      533,
+      511
+    ]
+  },
+  {
+    "live_manifest_object": "lower_contour_screen_left",
+    "source": "rig_assets/object_face/lower_contour_screen_left.png",
+    "alpha_bbox_local": [
+      12,
+      25,
+      123,
+      58
+    ],
+    "alpha_bbox_head": [
+      422,
+      494,
+      533,
+      527
+    ]
+  },
+  {
+    "live_manifest_object": "iris_screen_left",
+    "source": "rig_assets/object_face/iris_screen_left.png",
+    "alpha_bbox_local": [
+      43,
+      19,
+      91,
+      49
+    ],
+    "alpha_bbox_head": [
+      453,
+      488,
+      501,
+      518
+    ]
+  },
+  {
+    "live_manifest_object": "sclera_screen_left",
+    "source": "rig_assets/object_face/sclera_screen_left.png",
+    "alpha_bbox_local": [
+      16,
+      19,
+      109,
+      48
+    ],
+    "alpha_bbox_head": [
+      426,
+      488,
+      519,
+      517
+    ]
+  },
+  {
+    "live_manifest_object": "closed_lash_screen_left",
+    "source": "rig_assets/object_face/closed_lash_screen_left.png",
+    "alpha_bbox_local": [
+      14,
+      30,
+      118,
+      54
+    ],
+    "alpha_bbox_head": [
+      424,
+      499,
+      528,
+      523
+    ]
+  },
+  {
+    "live_manifest_object": "hair_hidden_hair_underlay_screen_left",
+    "source": "rig_assets/object_face/hair_hidden_hair_underlay_screen_left.png",
+    "alpha_bbox_local": [
+      4,
+      0,
+      25,
+      36
+    ],
+    "alpha_bbox_head": [
+      414,
+      469,
+      435,
+      505
+    ]
+  },
+  {
+    "live_manifest_object": "upper_lash_screen_right",
+    "source": "rig_assets/object_face/upper_lash_screen_right.png",
+    "alpha_bbox_local": [
+      0,
+      5,
+      111,
+      30
+    ],
+    "alpha_bbox_head": [
+      607,
+      473,
+      718,
+      498
+    ]
+  },
+  {
+    "live_manifest_object": "upper_surround_screen_right",
+    "source": "rig_assets/object_face/upper_surround_screen_right.png",
+    "alpha_bbox_local": [
+      7,
+      6,
+      88,
+      25
+    ],
+    "alpha_bbox_head": [
+      614,
+      474,
+      695,
+      493
+    ]
+  },
+  {
+    "live_manifest_object": "lower_contour_screen_right",
+    "source": "rig_assets/object_face/lower_contour_screen_right.png",
+    "alpha_bbox_local": [
+      17,
+      22,
+      104,
+      57
+    ],
+    "alpha_bbox_head": [
+      624,
+      490,
+      711,
+      525
+    ]
+  },
+  {
+    "live_manifest_object": "iris_screen_right",
+    "source": "rig_assets/object_face/iris_screen_right.png",
+    "alpha_bbox_local": [
+      18,
+      20,
+      66,
+      48
+    ],
+    "alpha_bbox_head": [
+      625,
+      488,
+      673,
+      516
+    ]
+  },
+  {
+    "live_manifest_object": "sclera_screen_right",
+    "source": "rig_assets/object_face/sclera_screen_right.png",
+    "alpha_bbox_local": [
+      10,
+      21,
+      91,
+      46
+    ],
+    "alpha_bbox_head": [
+      617,
+      489,
+      698,
+      514
+    ]
+  },
+  {
+    "live_manifest_object": "closed_lash_screen_right",
+    "source": "rig_assets/object_face/closed_lash_screen_right.png",
+    "alpha_bbox_local": [
+      18,
+      31,
+      101,
+      53
+    ],
+    "alpha_bbox_head": [
+      625,
+      499,
+      708,
+      521
+    ]
+  },
+  {
+    "live_manifest_object": "hair_hidden_hair_underlay_screen_right",
+    "source": "rig_assets/object_face/hair_hidden_hair_underlay_screen_right.png",
+    "alpha_bbox_local": [
+      99,
+      10,
+      106,
+      17
+    ],
+    "alpha_bbox_head": [
+      706,
+      478,
+      713,
+      485
+    ]
+  },
+  {
+    "live_manifest_object": "brow_screen_left",
+    "source": "rig_assets/object_face/brow_screen_left.png",
+    "alpha_bbox_local": [
+      4,
+      2,
+      77,
+      36
+    ],
+    "alpha_bbox_head": [
+      464,
+      444,
+      537,
+      478
+    ]
+  },
+  {
+    "live_manifest_object": "brow_screen_right",
+    "source": "rig_assets/object_face/brow_screen_right.png",
+    "alpha_bbox_local": [
+      12,
+      4,
+      49,
+      28
+    ],
+    "alpha_bbox_head": [
+      613,
+      444,
+      650,
+      468
+    ]
+  },
+  {
+    "live_manifest_object": "hair_temple_left_underlap",
+    "source": "rig_assets/object_face/hair_temple_left_underlap.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      190,
+      438
+    ],
+    "alpha_bbox_head": [
+      291,
+      273,
+      481,
+      711
+    ]
+  },
+  {
+    "live_manifest_object": "hair_temple_right_underlap",
+    "source": "rig_assets/object_face/hair_temple_right_underlap.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      159,
+      352
+    ],
+    "alpha_bbox_head": [
+      646,
+      364,
+      805,
+      716
+    ]
+  },
+  {
+    "live_manifest_object": "hair_crown_bun_rear_underlap",
+    "source": "rig_assets/object_face/hair_crown_bun_rear_underlap.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      424,
+      143
+    ],
+    "alpha_bbox_head": [
+      344,
+      158,
+      768,
+      301
+    ]
+  },
+  {
+    "live_manifest_object": "hair_front_fringe_underlap",
+    "source": "rig_assets/object_face/hair_front_fringe_underlap.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      521,
+      582
+    ],
+    "alpha_bbox_head": [
+      287,
+      150,
+      808,
+      732
+    ]
+  },
+  {
+    "live_manifest_object": "hair_temple_left",
+    "source": "rig_assets/object_face/hair_temple_left.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      226,
+      509
+    ],
+    "alpha_bbox_head": [
+      250,
+      281,
+      476,
+      790
+    ]
+  },
+  {
+    "live_manifest_object": "hair_temple_right",
+    "source": "rig_assets/object_face/hair_temple_right.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      199,
+      434
+    ],
+    "alpha_bbox_head": [
+      647,
+      371,
+      846,
+      805
+    ]
+  },
+  {
+    "live_manifest_object": "hair_crown_bun_rear",
+    "source": "rig_assets/object_face/hair_crown_bun_rear.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      595,
+      292
+    ],
+    "alpha_bbox_head": [
+      245,
+      2,
+      840,
+      294
+    ]
+  },
+  {
+    "live_manifest_object": "hair_front_fringe",
+    "source": "rig_assets/smile_support/hair_front_fringe_eye_reassigned.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      1071,
+      750
+    ],
+    "alpha_bbox_head": [
+      41,
+      55,
+      1112,
+      805
+    ]
+  },
+  {
+    "live_manifest_object": "gold_hairsticks",
+    "source": "rig_assets/object_face/gold_hairsticks.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      161,
+      218
+    ],
+    "alpha_bbox_head": [
+      647,
+      90,
+      808,
+      308
+    ]
+  },
+  {
+    "live_manifest_object": "gold_hanging_ornament",
+    "source": "rig_assets/object_face/gold_hanging_ornament.png",
+    "alpha_bbox_local": [
+      0,
+      0,
+      25,
+      135
+    ],
+    "alpha_bbox_head": [
+      778,
+      184,
+      803,
+      319
+    ]
+  },
+  {
+    "live_manifest_object": "neutral_lips",
+    "source": "rig_assets/object_face/neutral_lips.png",
+    "alpha_bbox_local": [
+      0,
+      1,
+      80,
+      45
+    ],
+    "alpha_bbox_head": [
+      525,
+      621,
+      605,
+      665
+    ]
+  }
+]

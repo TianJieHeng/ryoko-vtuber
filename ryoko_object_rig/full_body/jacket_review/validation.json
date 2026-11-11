@@ -1,0 +1,26 @@
+{
+  "owners": 7,
+  "owner_ids": [
+    "blazer_R",
+    "blazer_L",
+    "blouse_collar_R",
+    "blouse_collar_L",
+    "blouse",
+    "blazer_button",
+    "belt"
+  ],
+  "unique_owner_ids": true,
+  "collar_masks_disjoint": true,
+  "gold_buckle_alpha_unchanged": true,
+  "unchanged_head_transform": [
+    0.319999992847443,
+    0.0,
+    0.0,
+    0.319999992847443,
+    329.0,
+    4.0
+  ],
+  "reference_used_as_texture": false,
+  "runtime_files_written": false,
+  "native_render_verified": false
+}

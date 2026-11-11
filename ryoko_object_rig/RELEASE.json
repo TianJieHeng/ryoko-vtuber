@@ -194,5 +194,20 @@
     "EXP-091": "Source fit NOT PASSED: peak reads pleased/bashful more than unmistakably overloaded by sweetness. Raised-inner-brow strain and pinched-mouth tension remain weaker than the source. Jagged lash/hair edges and small bust-scale mouth changes remain. No continuous normal-speed playback or native comparator review against Kiss, Shy Laughter, Queasy and Headache. User approval is distinct from these retained review qualifications."
   },
   "publication_semantics": "Counts describe this containing release commit once published. Local source preparation does not itself assert a successful remote push. Publication-only metadata and matching integrity expectations were updated after the completed checks; no test replay was run for that metadata update.",
-  "approved_local_count": 47
+  "approved_local_count": 47,
+  "full_body": {
+    "status": "USER_APPROVED_FULL_BODY_AND_SMALL_BOUNCE",
+    "record": "full_body/APPROVAL.json",
+    "validation": "full_body/APPROVAL.md",
+    "scene": "res://full_body/full_body_viewer.tscn",
+    "body_layers": 23,
+    "joints": 17,
+    "review_commit": "a2dccc9e9179306a14d52c4df5bd3b32239089ae",
+    "base_main": "c976b11ea42d6de984242444212259cafa84e17c",
+    "new_expression_count": 0,
+    "existing_face_runtime_and_artwork_unchanged": true,
+    "default_entry_point_changed": false,
+    "native_visual_parity": "UNVERIFIED",
+    "live_pacing": "UNVERIFIED"
+  }
 }

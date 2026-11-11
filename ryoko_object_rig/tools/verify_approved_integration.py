@@ -1,4 +1,4 @@
-"""Current single-expression approved47 integrity guard, not engine validation."""
+"""Approved47 expression and approved full-body source-integrity guard, not engine validation."""
 from pathlib import Path
 import hashlib,json,sys
 R=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path(__file__).resolve().parents[1]
@@ -23,7 +23,7 @@ for n,h in p['protected_files'].items():assert sha(n)==h,'Predecessor changed: '
 for n,h in p['modified_archived_files'].items():
  assert sha(H+n)==h,'Archived predecessor changed: '+n
  if n in base['files']:assert h==base['files'][n]
-assert len([n for n in actual if n.endswith('.png')])==184
+assert len([n for n in actual if n.endswith('.png') and not n.startswith('full_body/')])==184
 entries=read('expressions/registry.json')['entries'];old=read(H+'expressions/registry.json')['entries'];ids=[e['id'] for e in entries]
 assert len(ids)==len(set(ids))==47 and entries[:46]==old and ids[46:]==['EXP-091']
 assert entries[-1]=={'id':'EXP-091','path':'res://expressions/EXP-091.json','aliases':['overly_sweet_taste'],'trigger_phase':'taste_intake'}
@@ -56,3 +56,16 @@ assert result['remote_backup']=='NOT VERIFIED' and status['remote_backup']=='NOT
 assert result['publication']=='AUTHORIZED_FOR_SINGLE_EXPRESSION_MAIN_UPDATE' and status['remote_publication'].startswith('Effective when containing commit is published;')
 negative=read(V+'guard_negative_results.json');assert negative['status']=='PASS' and negative['tamper_cases']==12 and negative['all_rejected'] and negative['restored_copy_passes']==12
 print('APPROVED47_GUARD PASS prior_profiles=46 PNGs=184 new_profiles=1 model_checks=6613546 current_engine=NOT_RUN current_native=NOT_RUN')
+
+# The additive full-body module does not alter any reviewed runtime or artwork.
+body=read('full_body/APPROVAL.json')
+assert body['status']=='USER_APPROVED_FULL_BODY_AND_SMALL_BOUNCE'
+assert {'speaker':'user','text':'nice'} in body['approval_evidence']
+assert release['full_body']['record']=='full_body/APPROVAL.json'
+for n,h in body['reviewed_files_unchanged'].items():assert sha('full_body/'+n)==h,'Reviewed full-body source changed: '+n
+for n,h in body['predecessor_metadata_archived'].items():assert sha('full_body/approval/predecessor_metadata/'+n)==h,'Archived predecessor metadata changed: '+n
+for key in ['neutral_preview','bounce_preview']:
+ assert sha('full_body/'+body[key]['path'])==body[key]['sha256']
+assert read('full_body/registration.json')['version']==5
+assert read('full_body/review/bounce_checks.json')['status']=='PASS'
+print('APPROVED_FULL_BODY_GUARD PASS reviewed source identity retained; native rendering/pacing UNVERIFIED')

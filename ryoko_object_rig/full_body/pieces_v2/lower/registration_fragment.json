@@ -1,0 +1,291 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "side_convention": "L anatomical / screen-right; R anatomical / screen-left",
+  "layers": [
+    {
+      "id": "thigh_R",
+      "file": "res://full_body/pieces_v2/lower/thigh_R.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_R.png",
+      "rawsource_sha256": "f0a69b326f850b2b36f39bcd080ec71532a40048077a4ca2f3c0f957b9eb8e89",
+      "raw_crop_xyxy": [
+        13,
+        167,
+        234,
+        1374
+      ],
+      "scale": [
+        0.5468102734051367,
+        0.5468102734051367
+      ],
+      "position": [
+        379,
+        685.0
+      ],
+      "parent": "hip_R",
+      "pivot": [
+        440,
+        690
+      ],
+      "z": -30,
+      "alpha_bounds": [
+        0,
+        0,
+        221,
+        620
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[0,620) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shin_R",
+      "file": "res://full_body/pieces_v2/lower/shin_R.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_R.png",
+      "rawsource_sha256": "f0a69b326f850b2b36f39bcd080ec71532a40048077a4ca2f3c0f957b9eb8e89",
+      "raw_crop_xyxy": [
+        13,
+        167,
+        234,
+        1374
+      ],
+      "scale": [
+        0.5468102734051367,
+        0.5468102734051367
+      ],
+      "position": [
+        379,
+        995.5882352941176
+      ],
+      "parent": "knee_R",
+      "pivot": [
+        434,
+        1010
+      ],
+      "z": -31,
+      "alpha_bounds": [
+        22,
+        0,
+        187,
+        639
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[568,1207) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shoe_R",
+      "file": "res://full_body/pieces_v2/lower/shoe_R.png",
+      "rawsource": "avatar_build_assets/body/layers/pump_front_character_R.png",
+      "rawsource_sha256": "886857dab95a021e65fcbbd5f25699a30e7e38a92f6ba5359c4f1d6eba3c4325",
+      "raw_crop_xyxy": [
+        240,
+        25,
+        496,
+        625
+      ],
+      "scale": [
+        0.23333333333333334,
+        0.23333333333333334
+      ],
+      "position": [
+        406.2750069041701,
+        1320
+      ],
+      "parent": "ankle_R",
+      "pivot": [
+        436.14167357083676,
+        1334
+      ],
+      "z": -40,
+      "alpha_bounds": [
+        0,
+        0,
+        256,
+        600
+      ],
+      "derivation": "alpha<32 removed; crop to remaining foreground",
+      "boundary_overlap": "Trouser hem overlaps real shoe opening by 25px; no added ankle artwork"
+    },
+    {
+      "id": "thigh_L",
+      "file": "res://full_body/pieces_v2/lower/thigh_L.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_L.png",
+      "rawsource_sha256": "fe7b88f37c2f912ca4e1c56fc212d9db325078f5083c14c4270952cc5ed95b67",
+      "raw_crop_xyxy": [
+        34,
+        165,
+        256,
+        1374
+      ],
+      "scale": [
+        0.5459057071960298,
+        0.5459057071960298
+      ],
+      "position": [
+        525,
+        685.0
+      ],
+      "parent": "hip_L",
+      "pivot": [
+        584,
+        690
+      ],
+      "z": -30,
+      "alpha_bounds": [
+        0,
+        0,
+        222,
+        621
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[0,621) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shin_L",
+      "file": "res://full_body/pieces_v2/lower/shin_L.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_leg_front_character_L.png",
+      "rawsource_sha256": "fe7b88f37c2f912ca4e1c56fc212d9db325078f5083c14c4270952cc5ed95b67",
+      "raw_crop_xyxy": [
+        34,
+        165,
+        256,
+        1374
+      ],
+      "scale": [
+        0.5459057071960298,
+        0.5459057071960298
+      ],
+      "position": [
+        525,
+        995.6203473945409
+      ],
+      "parent": "knee_L",
+      "pivot": [
+        590,
+        1010
+      ],
+      "z": -31,
+      "alpha_bounds": [
+        38,
+        0,
+        210,
+        640
+      ],
+      "derivation": "Alpha fringe cleanup; source cropped local y[569,1209) from foreground crop; no anisotropic resize",
+      "boundary_overlap": "28 canvas px shared real source pixels at knee, bounded tiny motion"
+    },
+    {
+      "id": "shoe_L",
+      "file": "res://full_body/pieces_v2/lower/shoe_L.png",
+      "rawsource": "avatar_build_assets/body/layers/pump_front_character_L.png",
+      "rawsource_sha256": "44ab8cf6f73378c7d40ac24a05705290983cc5c3d447ebfd4495596f565b3cdf",
+      "raw_crop_xyxy": [
+        167,
+        25,
+        423,
+        625
+      ],
+      "scale": [
+        0.23333333333333334,
+        0.23333333333333334
+      ],
+      "position": [
+        573.4708023159636,
+        1320
+      ],
+      "parent": "ankle_L",
+      "pivot": [
+        603.3374689826303,
+        1334
+      ],
+      "z": -40,
+      "alpha_bounds": [
+        0,
+        0,
+        256,
+        600
+      ],
+      "derivation": "alpha<32 removed; crop to remaining foreground",
+      "boundary_overlap": "Trouser hem overlaps real shoe opening by 25px; no added ankle artwork"
+    },
+    {
+      "id": "pelvis",
+      "file": "res://full_body/pieces_v2/lower/pelvis.png",
+      "rawsource": "avatar_build_assets/body/layers/trousers_pelvis_front.png",
+      "rawsource_sha256": "d1b2d648a7cdafd72d24e96b8e24aa567b3123680bc07f24a93509bdda1b8082",
+      "raw_crop_xyxy": [
+        25,
+        193,
+        437,
+        582
+      ],
+      "scale": [
+        0.65,
+        0.65
+      ],
+      "position": [
+        378.1,
+        580
+      ],
+      "parent": "pelvis",
+      "pivot": [
+        512,
+        650
+      ],
+      "z": -20,
+      "alpha_bounds": [
+        0,
+        0,
+        412,
+        323
+      ],
+      "derivation": "Alpha<32 removed; uniform scale; construction lower hem alpha feather only, no paint",
+      "boundary_overlap": "Leg tops start685; pelvis overlaps through790, hem fades745..790"
+    },
+    {
+      "id": "belt",
+      "file": "res://full_body/pieces_v2/lower/belt.png",
+      "rawsource": "avatar_build_assets/accessories/layers/RYO_ACC_belt_gold_buckle.png",
+      "rawsource_sha256": "ca8ba149ae4b069bf091e10e042ef380f7e6e693cb9dc9c6dcc11cdd1f64f6e4",
+      "raw_crop_xyxy": [
+        58,
+        311,
+        2114,
+        455
+      ],
+      "scale": [
+        0.12889105058365757,
+        0.12889105058365757
+      ],
+      "position": [
+        368.8664883268483,
+        604.8487354085603
+      ],
+      "parent": "pelvis",
+      "pivot": [
+        512,
+        614
+      ],
+      "z": -19,
+      "alpha_bounds": [
+        0,
+        0,
+        2056,
+        144
+      ],
+      "gold_buckle_center_crop": [
+        1110.5,
+        71.0
+      ],
+      "derivation": "Alpha<32 removed; foreground crop; uniform scale to265px; actual gold buckle centered at [512,614]",
+      "boundary_overlap": "Pelvis-mounted accessory; blouse/blazer integration may occlude belt sides, not buckle."
+    }
+  ],
+  "source_policy": "Only five raw individual body/layers PNGs plus individual raw gold-buckle belt; no canonical fullbody artwork or old registered artwork.",
+  "limitations": [
+    "Construction pelvis/leg shading differs; neutral assembly is for registration review, not approved final artwork.",
+    "No hidden anatomy generated; only cropped source overlap.",
+    "Knee and ankle pivots need integration against upper-body registration."
+  ]
+}

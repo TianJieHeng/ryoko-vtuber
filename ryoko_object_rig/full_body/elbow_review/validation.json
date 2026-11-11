@@ -1,0 +1,45 @@
+{
+  "owner_count": 6,
+  "owner_ids": [
+    "upper_arm_R",
+    "forearm_R",
+    "upper_arm_L",
+    "forearm_L",
+    "hand_R",
+    "hand_L"
+  ],
+  "source_raw_sha256_verified": true,
+  "repeated_build_candidate_png_hashes_identical": true,
+  "reference_pixels_used": false,
+  "native_render_verified": false,
+  "motion_verified": false,
+  "landmark_mappings": [
+    {
+      "id": "forearm_R",
+      "scale": [
+        0.3,
+        0.3717419435069956
+      ],
+      "angle": 8.809499161547842,
+      "error_px": 0.0
+    },
+    {
+      "id": "forearm_L",
+      "scale": [
+        0.3,
+        0.37155216502917654
+      ],
+      "angle": -6.695446235281569,
+      "error_px": 0.0
+    }
+  ],
+  "candidate_png_sha256": {
+    "upper_arm_L_candidate.png": "90a0889e04b8767dc09a1be150a73e67a0d0c6537649a6b640c1f92f4513a07e",
+    "upper_arm_R_candidate.png": "ec2256dc6d2194cb37e9bbd0fe70704cb3d80a217e0c2ebc8fa21adad1a3f33f",
+    "hand_R_candidate.png": "4a4f5c5b799bb740e0cf87e92eb474004b20b4f09b8e47f04849382a1c199d2e",
+    "hand_L_candidate.png": "fce946980857769f167b9fb0d0193aca9dd41ec14eb3c6e39f487c9d775d3fc9",
+    "forearm_R_candidate.png": "38b0a7a04a2afba93f766d3b08cb367bf233a9a23befcbd56f7eceb0d327b4a2",
+    "integrated_candidate.png": "48185f2732b31ab5a6e7a2f56627f62076537594391f2b1694547bfcc3daf7cb",
+    "forearm_L_candidate.png": "a23aa9cef4c8341d734fd1d182ce749979bbd0cb4954bbac9bddc3e847f29242"
+  }
+}

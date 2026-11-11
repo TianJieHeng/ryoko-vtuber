@@ -1,3 +1,9 @@
+# Approved full-body rig and small bounce
+
+The final individual-part full-body pose and small-bounce spring motion are approved and integrated alongside the existing 47 facial performances. The reviewed runtime, artwork and MP4s are unchanged. Native rendering and live pacing remain unverified. See [approval, launch instructions and limits](ryoko_object_rig/full_body/APPROVAL.md). Existing facial profiles and the default project entry point are preserved.
+
+## Prior expression release notes
+
 # Current approved release: 47 performances
 
 Overly Sweet Taste is integrated as one exact approved expression, with prior46 profiles, production runtime and 184 PNGs byte-exact. Source/Python-model/media checks pass; current engine/native integration checks were NOT RUN. Source-fit concerns remain. The user directed this single-expression publication without waiting for backup, which remains unverified. Counts become effective with the containing release commit. See [validation, qualifications and publication scope](ryoko_object_rig/APPROVED_OVERLY_SWEET_TASTE_INTEGRATION.md). Earlier release notes below are historical.

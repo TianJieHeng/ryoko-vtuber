@@ -1,0 +1,88 @@
+{
+  "status": "user-approved neutral full-body assembly and small-bounce spring motion",
+  "revision": 8,
+  "supersedes": "Rejected combined-body/bust-overlay approach",
+  "base_main": "c976b11ea42d6de984242444212259cafa84e17c",
+  "approved_existing_files_changed": true,
+  "joints": 17,
+  "body_layers": 23,
+  "approved_facial_profiles": 47,
+  "checks": {
+    "workbench_headless_load": "PASS",
+    "native_render_capture": "BLOCKED: X display could not create listening sockets",
+    "continuous_native_playback": "NOT RUN",
+    "CI": "NOT RUN",
+    "mp4_full_decode": "PASS",
+    "CPU_visual_review": "Inspected full-body/bust and six resting/extreme frames of actual sampled mesh geometry. No detached collars or new duplicated layers observed. Native pixels and live pacing remain unverified.",
+    "prior_neutral_wiring_baseline": {
+      "checks": 951,
+      "failures": [],
+      "scope": "Actual Godot headless node transforms, control rejection, reset and existing facial player. Does not establish rendered seam quality or native pixel parity.",
+      "status": "PASS"
+    },
+    "current_bounce_physics": {
+      "checks": 104,
+      "failures": [],
+      "peak_chest_spring_px": 6.60611773293839,
+      "peak_pendant_px": 3.53663143909809,
+      "peak_root_px": 20.0,
+      "scope": "Focused actual Godot 4.6.3 ownership, fixed-step spring response, live frame input, resets, caller-rate parity and mesh topology. Not native visual validation or a full regression suite.",
+      "status": "PASS"
+    }
+  },
+  "movie": {
+    "path": "review/ryoko_full_body_wiring_v1.mp4",
+    "kind": "CPU cutout composite from actual Godot4.6.3 node transforms",
+    "neutral_head": "source-derived neutral diagnostic, not animated native shader output",
+    "sha256": "2fda556744d263b8969f5d9f97389df1f7d27e28256d2ea871985ee1cd501146",
+    "fps": 30,
+    "frames": 121,
+    "duration_seconds": 4.033333,
+    "size": [
+      1280,
+      960
+    ],
+    "sequence": "Four-second neutral hold, no gesture or automatic movement"
+  },
+  "approval": "Final neutral pose and delivered bounce accepted. Effective with containing main commit; native rendering and live pacing remain unverified.",
+  "new_artwork": "Compatible jewelry-free neck/chest skin, explicit source edit and hidden-area completion provenance in pieces_v2/upper/sources.",
+  "jacket_correction": {
+    "defect": "Inner construction facings were shown as outer lapels, front shirt collar obscured, hem too short.",
+    "correction": "Cut exterior along painted fold seams; register reference landmarks; add exclusive front collar-tab and button owners; hem689; tuck blouse and clip belt to pelvis.",
+    "provenance": "jacket_review/registration_candidate.json",
+    "approval": "neutral appearance accepted"
+  },
+  "elbow_correction": {
+    "cause": "Upper and forearm painted folds were separated near canvas y498 and y598; construction tube ends remained visible.",
+    "correction": "Upper fold at y530, forearm fold at y532. Elbow binds: R [354,532], L [670,532]. Source overlap is hidden behind the upper sleeves; cuff interiors are opened and original hands have a 10px underlap.",
+    "provenance": "elbow_review/registration_candidate.json",
+    "approval": "neutral appearance accepted"
+  },
+  "bounce_movie": {
+    "path": "review/ryoko_small_bounce_jiggle_v1.mp4",
+    "kind": "CPU rasterization of actual Godot spring states, transforms and deformed mesh triangles",
+    "sha256": "46b7d731f2bedca71f528cfefa33d595df15826722a98da709ed07869a86155b",
+    "fps": 30,
+    "frames": 241,
+    "duration_seconds": 8.033333,
+    "size": [
+      1280,
+      960
+    ],
+    "sequence": "Two small vertical bounce pulses, damped clothed-chest and pendant response, then exact neutral settling",
+    "native_capture": false,
+    "face": "neutral source diagnostic; no native facial shader capture"
+  },
+  "physics": {
+    "integrator_hz": 120,
+    "simulation": "acceleration-driven damped springs, active in the actual Godot runtime",
+    "mesh_owners": 5,
+    "mesh_vertices": 970,
+    "mesh_triangles": 1662,
+    "manual_input": "frame_y also excites springs; reset clears state",
+    "native_visual_validation": "not run"
+  },
+  "approval_record": "../APPROVAL.json",
+  "publication_scope": "One additive full-body module; existing expression runtime, profiles, artwork and default entry point unchanged.",
+  "existing_file_changes": "Publication metadata, documentation and source-integrity guard only; all preexisting expression runtime, profiles, artwork and project settings are byte-exact."
+}

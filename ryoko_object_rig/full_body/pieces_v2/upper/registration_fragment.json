@@ -1,0 +1,496 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "status": "registration study with new compatible edited skin; not user-approved or motion-certified",
+  "layers": [
+    {
+      "id": "blouse",
+      "file": "full_body/pieces_v2/upper/assets/blouse.png",
+      "source": "avatar_build_assets/body/layers/blouse_front.png",
+      "source_sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba",
+      "crop": [
+        60,
+        200,
+        631,
+        1155
+      ],
+      "size": [
+        571,
+        955
+      ],
+      "scale": [
+        0.38,
+        0.38
+      ],
+      "position": [
+        403.51,
+        245.0
+      ],
+      "pivot": [
+        108.49,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        512,
+        245
+      ],
+      "parent": "chest",
+      "z": 10,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "blazer_R",
+      "file": "full_body/pieces_v2/upper/assets/blazer_R.png",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_R.png",
+      "source_sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345",
+      "crop": [
+        109,
+        24,
+        480,
+        863
+      ],
+      "size": [
+        349,
+        839
+      ],
+      "scale": [
+        0.477,
+        0.477
+      ],
+      "position": [
+        346.52700000000004,
+        250.0
+      ],
+      "pivot": [
+        166.47299999999998,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        513,
+        250
+      ],
+      "parent": "chest",
+      "z": 20,
+      "rotation_degrees": 0,
+      "deformation": {
+        "method": "rowwise horizontal panel fit",
+        "base_width_ratio": 0.94,
+        "collar_width_ratio": 0.75,
+        "fade_to_full_width_at_height_fraction": 0.6,
+        "anchored_outer_edge": "left"
+      },
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "blazer_L",
+      "file": "full_body/pieces_v2/upper/assets/blazer_L.png",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_L.png",
+      "source_sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2",
+      "crop": [
+        105,
+        24,
+        456,
+        863
+      ],
+      "size": [
+        330,
+        839
+      ],
+      "scale": [
+        0.477,
+        0.477
+      ],
+      "position": [
+        513.0,
+        250.0
+      ],
+      "pivot": [
+        0.0,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        513,
+        250
+      ],
+      "parent": "chest",
+      "z": 21,
+      "rotation_degrees": 0,
+      "deformation": {
+        "method": "rowwise horizontal panel fit",
+        "base_width_ratio": 0.94,
+        "collar_width_ratio": 0.75,
+        "fade_to_full_width_at_height_fraction": 0.6,
+        "anchored_outer_edge": "right"
+      },
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "upper_arm_R",
+      "file": "full_body/pieces_v2/upper/assets/upper_arm_R.png",
+      "source": "avatar_build_assets/body/layers/sleeve_upper_character_R.png",
+      "source_sha256": "ec9f3168059bebfe4fddbd8d363abbfbbd19c8d7452c9ad7863b2d23f21d28c4",
+      "crop": [
+        79,
+        76,
+        340,
+        926
+      ],
+      "size": [
+        261,
+        850
+      ],
+      "scale": [
+        0.3,
+        0.3
+      ],
+      "position": [
+        346.944,
+        286.7
+      ],
+      "pivot": [
+        25.056,
+        15.299999999999999
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        372,
+        302
+      ],
+      "parent": "shoulder_R",
+      "z": 15,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "forearm_R",
+      "file": "full_body/pieces_v2/upper/assets/forearm_R.png",
+      "source": "avatar_build_assets/body/layers/sleeve_forearm_character_R.png",
+      "source_sha256": "e08ddd2274f421cc7b7fde6e477c741b37bae7e5f685eb2dd9c495d82787ac59",
+      "crop": [
+        79,
+        83,
+        304,
+        936
+      ],
+      "size": [
+        225,
+        853
+      ],
+      "scale": [
+        0.24,
+        0.24
+      ],
+      "position": [
+        347.0,
+        523.8584
+      ],
+      "pivot": [
+        27.0,
+        6.1415999999999995
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        374,
+        530
+      ],
+      "parent": "elbow_R",
+      "z": 16,
+      "rotation_degrees": 14,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "hand_R",
+      "file": "full_body/pieces_v2/upper/assets/hand_R.png",
+      "source": "avatar_build_assets/body/layers/hand_dorsal_character_R.png",
+      "source_sha256": "9811b72b49cc2704721bc059055085d23da364295f45fed8c392c8a0a9d4a410",
+      "crop": [
+        277,
+        35,
+        544,
+        583
+      ],
+      "size": [
+        267,
+        548
+      ],
+      "scale": [
+        0.21,
+        0.21
+      ],
+      "position": [
+        296.965,
+        722.6984
+      ],
+      "pivot": [
+        28.035,
+        2.3016
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        325,
+        725
+      ],
+      "parent": "wrist_R",
+      "z": 14,
+      "rotation_degrees": 10,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "upper_arm_L",
+      "file": "full_body/pieces_v2/upper/assets/upper_arm_L.png",
+      "source": "avatar_build_assets/body/layers/sleeve_upper_character_L.png",
+      "source_sha256": "ea22d96e2f90c392cb2aa840bd16b0d69c5a4ad08d116adc84d99e061af59c16",
+      "crop": [
+        73,
+        76,
+        334,
+        926
+      ],
+      "size": [
+        261,
+        850
+      ],
+      "scale": [
+        0.3,
+        0.3
+      ],
+      "position": [
+        598.756,
+        286.7
+      ],
+      "pivot": [
+        53.244,
+        15.299999999999999
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        652,
+        302
+      ],
+      "parent": "shoulder_L",
+      "z": 15,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "forearm_L",
+      "file": "full_body/pieces_v2/upper/assets/forearm_L.png",
+      "source": "avatar_build_assets/body/layers/sleeve_forearm_character_L.png",
+      "source_sha256": "079ceff58875abfe0f615dd4f8f238900b2b93038449e0b4b39f937b755baec7",
+      "crop": [
+        64,
+        81,
+        299,
+        937
+      ],
+      "size": [
+        235,
+        856
+      ],
+      "scale": [
+        0.24,
+        0.24
+      ],
+      "position": [
+        621.8,
+        523.8368
+      ],
+      "pivot": [
+        28.2,
+        6.1632
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        650,
+        530
+      ],
+      "parent": "elbow_L",
+      "z": 16,
+      "rotation_degrees": -14,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "hand_L",
+      "file": "full_body/pieces_v2/upper/assets/hand_L.png",
+      "source": "avatar_build_assets/body/layers/hand_dorsal_character_L.png",
+      "source_sha256": "d4330b068973277608f77651bb21ecedf27701fbc24dbe665850ba77ab26bb00",
+      "crop": [
+        83,
+        35,
+        350,
+        583
+      ],
+      "size": [
+        267,
+        548
+      ],
+      "scale": [
+        0.21,
+        0.21
+      ],
+      "position": [
+        670.965,
+        722.6984
+      ],
+      "pivot": [
+        28.035,
+        2.3016
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        699,
+        725
+      ],
+      "parent": "wrist_L",
+      "z": 14,
+      "rotation_degrees": -10,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "necklace_chain",
+      "file": "full_body/pieces_v2/upper/assets/necklace_chain.png",
+      "source": "avatar_build_assets/accessories/layers/RYO_ACC_necklace_chain.png",
+      "source_sha256": "734584f460bd4d915ec626da9941e2d3dd94e9d3ae70d6ed5f274ad14fce9cd6",
+      "crop": [
+        48,
+        41,
+        1111,
+        840
+      ],
+      "size": [
+        1063,
+        799
+      ],
+      "scale": [
+        0.065,
+        0.065
+      ],
+      "position": [
+        477.4525,
+        268.0
+      ],
+      "pivot": [
+        34.5475,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        512,
+        268
+      ],
+      "parent": "chest",
+      "z": 30,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "necklace_pendant",
+      "file": "full_body/pieces_v2/upper/assets/necklace_pendant.png",
+      "source": "avatar_build_assets/accessories/layers/RYO_ACC_green_pendant.png",
+      "source_sha256": "8d30cfd8d12158bcea991a3db2753f2e9272b8840612c60d2db5a780db40377d",
+      "crop": [
+        107,
+        328,
+        377,
+        738
+      ],
+      "size": [
+        270,
+        410
+      ],
+      "scale": [
+        0.04,
+        0.04
+      ],
+      "position": [
+        506.6,
+        318.0
+      ],
+      "pivot": [
+        5.4,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        512,
+        318
+      ],
+      "parent": "chest",
+      "z": 31,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB."
+    },
+    {
+      "id": "neck_skin",
+      "file": "full_body/pieces_v2/upper/assets/neck_skin.png",
+      "source": "ryoko_object_rig/full_body/pieces_v2/upper/sources/neck_skin_completed_source.png",
+      "source_sha256": "48002eefdb5925694caec665c6e9d9b827543345bdd0e018c361bf6e7875e405",
+      "crop": [
+        451,
+        684,
+        671,
+        1189
+      ],
+      "size": [
+        220,
+        505
+      ],
+      "scale": [
+        0.34,
+        0.34
+      ],
+      "position": [
+        472.6,
+        221.76
+      ],
+      "pivot": [
+        37.400000000000006,
+        0.0
+      ],
+      "pivot_space": "scaled cropped pixels",
+      "target_pivot": [
+        510,
+        221.76
+      ],
+      "parent": "neck",
+      "z": 11,
+      "rotation_degrees": 0,
+      "deformation": null,
+      "alpha_cleanup": "Discard alpha <=10 outliers; preserve other alpha and RGB.",
+      "hidden_area_completion": {
+        "source_rows": [
+          684,
+          720
+        ],
+        "method": "Extend original top skin/shadow scanline y720 upward 36 source pixels within x484..648; no original visible pixels replaced.",
+        "canvas_extension_px": 12.24,
+        "original_visible_top_y": 234,
+        "status": "New unapproved completion; verify live head tilt endpoints."
+      },
+      "ownership_note": "Skin overlays the rear collar band from the blouse, without importing collar pixels; front opening remains separate blouse artwork.",
+      "provenance": "sources/provenance.json: new compatible edited skin, not original approved artwork."
+    }
+  ],
+  "limitations": [
+    "Neck skin uses a new jewelry-removed compatible edit plus original lower skin, explicitly masked to exclude clothing. Requires user visual approval.",
+    "Inspect neck-to-head and lower chest joins in the integrated assembly before claiming completion.",
+    "Independent pieces are registered approximately. Blazer panels use a documented rowwise fitting deformation rather than rotated shoulder flare; fitting still needs integrated review. Elbow/wrist overlaps need bounded motion verification.",
+    "Head is not in this fragment; preserve existing approved live head.",
+    "Front/back and alternate hand/shoe views are not stacked."
+  ]
+}

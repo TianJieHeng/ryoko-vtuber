@@ -1,0 +1,83 @@
+{
+  "source": "rig_assets/object_face/fixed_neck_torso.png",
+  "source_sha256": "4450e64a4bedc47529abac61beca256e1e853ca036fd4faab324966d0689d243",
+  "purpose": "Only earring tips removed when FixedNeckTorso is detached. No neck, skin, collar or clothing.",
+  "binding": "Add Sprite2D children under existing live RigidHead, centered=false, position=(0,0), scale=(1,1), z_index=20, relative z=true. Existing head binding scale .32 is inherited; do not apply .32 twice. Tips are disjoint from backing alpha and lie below hair z60\u201380.",
+  "layers": [
+    {
+      "id": "earring_tip_L",
+      "file": "full_body/pieces_v2/head_audit/earring_tip_L.png",
+      "anatomical_side": "L",
+      "screen_side": "right",
+      "mask_bounds_xyxy_exclusive": [
+        704,
+        720,
+        731,
+        736
+      ],
+      "alpha_bounds_xyxy_exclusive": [
+        710,
+        720,
+        726,
+        734
+      ],
+      "nonzero_alpha_pixels": 186,
+      "source_pixel_rgba_exact": true,
+      "canvas": [
+        1136,
+        1384
+      ],
+      "position_under_existing_head": [
+        0,
+        0
+      ],
+      "scale_under_existing_head": [
+        1,
+        1
+      ],
+      "z_under_existing_head": 20,
+      "sha256": "d15adf814a36f183d92bc6f5afbfc4537445fb8813d5c92a12487939b717165f"
+    },
+    {
+      "id": "earring_tip_R",
+      "file": "full_body/pieces_v2/head_audit/earring_tip_R.png",
+      "anatomical_side": "R",
+      "screen_side": "left",
+      "mask_bounds_xyxy_exclusive": [
+        397,
+        720,
+        422,
+        736
+      ],
+      "alpha_bounds_xyxy_exclusive": [
+        401,
+        720,
+        418,
+        736
+      ],
+      "nonzero_alpha_pixels": 235,
+      "source_pixel_rgba_exact": true,
+      "canvas": [
+        1136,
+        1384
+      ],
+      "position_under_existing_head": [
+        0,
+        0
+      ],
+      "scale_under_existing_head": [
+        1,
+        1
+      ],
+      "z_under_existing_head": 20,
+      "sha256": "7946d464c1682998ef0c739f2c9ad7f70957e2dfb73b94407a77f70794740d3b"
+    }
+  ],
+  "neutral_proof": {
+    "file": "full_body/pieces_v2/head_audit/neutral_head_complete.png",
+    "sha256": "022d98db9f49a46ce5c9fd216d7f77c58b144a67efb4c528ff4339f1d4c5380a",
+    "source": "full_body/pieces_v2/head_audit/neutral_head_reference.png",
+    "source_sha256": "b1d31d651aa74a08583b9ffb06fb6dccc2a8c36b99aa8206b009948ad3ab3e93",
+    "scope": "CPU neutral source composition; not native facial rendering. Tips composited below neutral head."
+  }
+}

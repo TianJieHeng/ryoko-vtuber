@@ -1,0 +1,20 @@
+{
+  "status": "NEW compatible artwork; not user-approved original",
+  "edited_source": "jewelry_removed_reference_edit.png",
+  "original_source": "ryoko_object_rig/rig_assets/object_face/fixed_neck_torso.png",
+  "edited_source_original_crop": [
+    360,
+    690,
+    760,
+    1060
+  ],
+  "edit": "New compatible image edit removes baked necklace. Original skin below y1060 retained. Runtime asset uses only explicit exposed-skin polygon, never collar/blouse pixels.",
+  "hidden_area_completion": {
+    "derivative": "neck_skin_completed_source.png",
+    "source": "neck_skin_working_source.png",
+    "method": "Repeat existing y720 skin/shadow scanline upward into y684:720, x484:649. Visible pixels y>=720 unchanged. Same standalone skin asset, no extra sprite.",
+    "source_extension_px": 36,
+    "canvas_extension_px": 12.24,
+    "approval_status": "New unapproved compatible hidden-area completion"
+  }
+}
