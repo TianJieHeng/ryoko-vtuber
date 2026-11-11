@@ -28,7 +28,7 @@ def place(canvas,source,values):
 
 movie=OUT/'ryoko_full_body_wiring_v1.mp4'
 cmd=['ffmpeg','-hide_banner','-loglevel','warning','-y','-f','rawvideo','-pix_fmt','rgb24','-s','1280x960','-r',str(samples['fps']),'-i','-','-an','-c:v','libx264','-preset','medium','-crf','19','-pix_fmt','yuv420p','-movflags','+faststart',str(movie)]
-parser=argparse.ArgumentParser();parser.add_argument('--still-frame',type=int);args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--still-frame',type=int);parser.add_argument('--detail',choices=['arms','bust'],default='arms');args=parser.parse_args()
 process=None if args.still_frame is not None else subprocess.Popen(cmd,stdin=subprocess.PIPE)
 for i,frame in enumerate(samples['frames']):
  if args.still_frame is not None and i!=args.still_frame:continue
@@ -37,11 +37,12 @@ for i,frame in enumerate(samples['frames']):
  place(canvas,head,frame['head'])
  result=Image.new('RGB',(1280,960),(25,31,37));result.paste(canvas.convert('RGB').resize((568,852),Image.Resampling.LANCZOS),(24,76))
  # The bust is a crop from the very same composited full-body frame.
- result.paste(canvas.convert('RGB').crop((290,35,740,665)).resize((594,832),Image.Resampling.LANCZOS),(654,96))
+ detail_box=(290,220,740,850) if args.detail=='arms' else (290,35,740,665)
+ result.paste(canvas.convert('RGB').crop(detail_box).resize((594,832),Image.Resampling.LANCZOS),(654,96))
  d=ImageDraw.Draw(result)
  d.text((24,14),'Ryoko / individual part assembly / UNAPPROVED',font=font,fill=(242,241,233))
  d.text((24,43),frame['phase'],font=small,fill=(132,224,203))
- d.text((654,76),'Same frame / bust detail',font=small,fill=(242,241,233))
+ d.text((654,76),'Same frame / sleeve and elbow detail' if args.detail=='arms' else 'Same frame / bust detail',font=small,fill=(242,241,233))
  d.text((24,935),'CPU layer composite from Godot joint transforms. Neutral head source, not native-rendered facial controls.',font=small,fill=(216,218,220))
  if process is None:
   result.save(OUT/f'endpoint_review_{i:04}.jpg',quality=95);print(OUT/f'endpoint_review_{i:04}.jpg');break

@@ -1,0 +1,463 @@
+{
+  "status": "Unapproved local static sleeve fit, not integrated",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "reference": "avatar_build_assets/reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+  "reference_use": "Visual landmarks only. No reference pixels are used in candidate artwork.",
+  "layers": [
+    {
+      "id": "upper_arm_R",
+      "file": "full_body/elbow_review/upper_arm_R_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_upper_character_R.png",
+      "source_sha256": "ec9f3168059bebfe4fddbd8d363abbfbbd19c8d7452c9ad7863b2d23f21d28c4",
+      "position": [
+        322,
+        287
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "shoulder_R",
+      "z": -185,
+      "size": [
+        103,
+        266
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        103,
+        266
+      ],
+      "alpha_cleanup": "Discard alpha <=10 outliers.",
+      "source_cut": "full_body/elbow_review/upper_R_source_cut.png",
+      "source_cut_seam_R_xy": [
+        [
+          70,
+          806
+        ],
+        [
+          110,
+          810
+        ],
+        [
+          165,
+          820
+        ],
+        [
+          215,
+          833
+        ],
+        [
+          260,
+          846
+        ],
+        [
+          310,
+          850
+        ],
+        [
+          350,
+          850
+        ]
+      ],
+      "source_cut_mirror": null,
+      "source_y": [
+        76.0,
+        400.0,
+        700.0,
+        780.0,
+        850.0
+      ],
+      "target_y": [
+        286.7,
+        386.0,
+        500.0,
+        530.0,
+        553.0
+      ],
+      "source_x_scale": 0.3,
+      "lower_shift_R": [
+        0.0,
+        -4.0,
+        -20.0,
+        -26.0,
+        -29.0
+      ],
+      "width_ratio": [
+        1.0,
+        1.0,
+        0.97,
+        0.96,
+        0.95
+      ],
+      "method": "Source alpha cut at last painted fold, excluding artificial open tube; rowwise register original RGB/alpha from shoulder to real elbow."
+    },
+    {
+      "id": "forearm_R",
+      "file": "full_body/elbow_review/forearm_R_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_forearm_character_R.png",
+      "source_sha256": "e08ddd2274f421cc7b7fde6e477c741b37bae7e5f685eb2dd9c495d82787ac59",
+      "position": [
+        299,
+        506
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "elbow_R",
+      "z": -186,
+      "size": [
+        87,
+        220
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        87,
+        220
+      ],
+      "cuff_opening_cut": {
+        "center_x": 190,
+        "edge_center_y": 899,
+        "edge_formula": "center_y+17*((x-center_x)/77)^2",
+        "method": "Discard gray inner ellipse and lower construction rim at painted opening. Wrist enters behind white cuff."
+      },
+      "source_cut_top": "Rounded overlap tab: y=330+70*min(abs(x-center)/110,1)^2; 8px source feather.",
+      "source_landmarks_xy": [
+        [
+          185.0,
+          400.0
+        ],
+        [
+          188.0,
+          925.0
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          354.0,
+          532.0
+        ],
+        [
+          325.0,
+          725.0
+        ]
+      ],
+      "source_affine_abcdxy": [
+        0.29646090122745855,
+        0.045944902256975645,
+        -0.05693215753082358,
+        0.36735650532043634,
+        321.9275962852496,
+        376.55759095428493
+      ],
+      "source_scale": [
+        0.3,
+        0.3717419435069956
+      ],
+      "source_rotation_degrees": 8.809499161547842,
+      "method": "Register painted elbow fold y400 and original cuff-end landmark y925 to elbow and wrist; source opening is cut at its painted inner rim. Retain top construction overlap below upper sleeve owner; forearm drawn behind upper sleeve."
+    },
+    {
+      "id": "upper_arm_L",
+      "file": "full_body/elbow_review/upper_arm_L_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_upper_character_L.png",
+      "source_sha256": "ea22d96e2f90c392cb2aa840bd16b0d69c5a4ad08d116adc84d99e061af59c16",
+      "position": [
+        600,
+        287
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "shoulder_L",
+      "z": -185,
+      "size": [
+        101,
+        266
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        101,
+        266
+      ],
+      "alpha_cleanup": "Discard alpha <=10 outliers.",
+      "source_cut": "full_body/elbow_review/upper_L_source_cut.png",
+      "source_cut_seam_R_xy": [
+        [
+          70,
+          806
+        ],
+        [
+          110,
+          810
+        ],
+        [
+          165,
+          820
+        ],
+        [
+          215,
+          833
+        ],
+        [
+          260,
+          846
+        ],
+        [
+          310,
+          850
+        ],
+        [
+          350,
+          850
+        ]
+      ],
+      "source_cut_mirror": "x_L=413-x_R",
+      "source_y": [
+        76.0,
+        400.0,
+        700.0,
+        780.0,
+        850.0
+      ],
+      "target_y": [
+        286.7,
+        386.0,
+        500.0,
+        530.0,
+        553.0
+      ],
+      "source_x_scale": 0.3,
+      "lower_shift_R": [
+        0.0,
+        -4.0,
+        -20.0,
+        -26.0,
+        -29.0
+      ],
+      "width_ratio": [
+        1.0,
+        1.0,
+        0.97,
+        0.96,
+        0.95
+      ],
+      "method": "Source alpha cut at last painted fold, excluding artificial open tube; rowwise register original RGB/alpha from shoulder to real elbow."
+    },
+    {
+      "id": "forearm_L",
+      "file": "full_body/elbow_review/forearm_L_candidate.png",
+      "source": "avatar_build_assets/body/layers/sleeve_forearm_character_L.png",
+      "source_sha256": "079ceff58875abfe0f615dd4f8f238900b2b93038449e0b4b39f937b755baec7",
+      "position": [
+        638,
+        506
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "elbow_L",
+      "z": -186,
+      "size": [
+        88,
+        219
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        88,
+        219
+      ],
+      "cuff_opening_cut": {
+        "center_x": 198,
+        "edge_center_y": 901,
+        "edge_formula": "center_y+17*((x-center_x)/77)^2",
+        "method": "Discard gray inner ellipse and lower construction rim at painted opening. Wrist enters behind white cuff."
+      },
+      "source_cut_top": "Rounded overlap tab: y=330+70*min(abs(x-center)/110,1)^2; 8px source feather.",
+      "source_landmarks_xy": [
+        [
+          179.0,
+          400.0
+        ],
+        [
+          200.0,
+          925.0
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          670.0,
+          532.0
+        ],
+        [
+          699.0,
+          725.0
+        ]
+      ],
+      "source_affine_abcdxy": [
+        0.2979539757541191,
+        -0.03497754039828735,
+        0.0433199362079305,
+        0.36901814923497905,
+        599.3382638568405,
+        390.6537200373018
+      ],
+      "source_scale": [
+        0.3,
+        0.37155216502917654
+      ],
+      "source_rotation_degrees": -6.695446235281569,
+      "method": "Register painted elbow fold y400 and original cuff-end landmark y925 to elbow and wrist; source opening is cut at its painted inner rim. Retain top construction overlap below upper sleeve owner; forearm drawn behind upper sleeve."
+    },
+    {
+      "id": "hand_R",
+      "file": "full_body/elbow_review/hand_R_candidate.png",
+      "source": "avatar_build_assets/body/layers/hand_dorsal_character_R.png",
+      "source_sha256": "9811b72b49cc2704721bc059055085d23da364295f45fed8c392c8a0a9d4a410",
+      "position": [
+        284,
+        711
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "wrist_R",
+      "z": -187,
+      "size": [
+        56,
+        115
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        56,
+        115
+      ],
+      "source_crop": [
+        277,
+        35,
+        544,
+        583
+      ],
+      "source_affine_on_cropped_abcdxy": [
+        0.206809610128403,
+        0.0364661179482937,
+        -0.0364661179482937,
+        0.206809610128403,
+        297.790588378906,
+        707.865112304688
+      ],
+      "source_scale": [
+        0.21,
+        0.21
+      ],
+      "source_rotation_degrees": 10.0,
+      "method": "Original cleaned raw hand translated upward 10px from its measured neutral bind into the opened cuff; unchanged proportions, fingers and neutral angle."
+    },
+    {
+      "id": "hand_L",
+      "file": "full_body/elbow_review/hand_L_candidate.png",
+      "source": "avatar_build_assets/body/layers/hand_dorsal_character_L.png",
+      "source_sha256": "d4330b068973277608f77651bb21ecedf27701fbc24dbe665850ba77ab26bb00",
+      "position": [
+        684,
+        711
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "wrist_L",
+      "z": -187,
+      "size": [
+        56,
+        115
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        56,
+        115
+      ],
+      "source_crop": [
+        83,
+        35,
+        350,
+        583
+      ],
+      "source_affine_on_cropped_abcdxy": [
+        0.206809610128403,
+        -0.0364661179482937,
+        0.0364661179482937,
+        0.206809610128403,
+        670.991271972656,
+        717.601623535156
+      ],
+      "source_scale": [
+        0.21,
+        0.21
+      ],
+      "source_rotation_degrees": -10.0,
+      "method": "Original cleaned raw hand translated upward 10px from its measured neutral bind into the opened cuff; unchanged proportions, fingers and neutral angle."
+    }
+  ],
+  "joint_replacements": [
+    {
+      "id": "elbow_R",
+      "position": [
+        354,
+        532
+      ]
+    },
+    {
+      "id": "elbow_L",
+      "position": [
+        670,
+        532
+      ]
+    }
+  ],
+  "unchanged_wrist_bind_points": [
+    [
+      325,
+      725
+    ],
+    [
+      699,
+      725
+    ]
+  ],
+  "unchanged_shoulder_bind_points": [
+    [
+      372,
+      302
+    ],
+    [
+      652,
+      302
+    ]
+  ],
+  "notes": [
+    "Four independent sleeve owners and two independently re-registered original hand owners retained. No composite body/bust texture is instantiated.",
+    "Head, neck, jacket, blouse, jewelry and lower body are unchanged. Hands retain proportions and angle with an absolute 10px underlap translation from their original neutral bind.",
+    "Upper open-tube cap excluded along fold. Forearm top now overlaps beneath upper sleeve; the painted fold is located at the elbow rather than below it.",
+    "Static CPU proof only. No native render, motion, or user approval is claimed."
+  ]
+}

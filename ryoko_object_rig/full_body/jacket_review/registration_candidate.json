@@ -1,0 +1,568 @@
+{
+  "status": "Local jacket fit study, not integrated or approved",
+  "layers": [
+    {
+      "id": "blazer_R",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_R.png",
+      "sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345",
+      "file": "full_body/jacket_review/blazer_R_candidate.png",
+      "position": [
+        371,
+        266
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "parent": "chest",
+      "z": -180,
+      "fold_seam_source_yx": [
+        [
+          20,
+          345
+        ],
+        [
+          60,
+          340
+        ],
+        [
+          120,
+          343
+        ],
+        [
+          175,
+          344
+        ],
+        [
+          235,
+          349
+        ],
+        [
+          285,
+          357
+        ],
+        [
+          345,
+          371
+        ],
+        [
+          409,
+          392
+        ],
+        [
+          465,
+          419
+        ],
+        [
+          541,
+          451
+        ],
+        [
+          584,
+          446
+        ],
+        [
+          650,
+          430
+        ],
+        [
+          722,
+          406
+        ],
+        [
+          798,
+          381
+        ],
+        [
+          863,
+          365
+        ]
+      ],
+      "excluded_part": "full_body/jacket_review/blazer_R_facing_not_instantiated.png",
+      "size": [
+        144,
+        423
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        144,
+        423
+      ],
+      "rotation_degrees": 0,
+      "source_sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345"
+    },
+    {
+      "id": "blazer_L",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_L.png",
+      "sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2",
+      "file": "full_body/jacket_review/blazer_L_candidate.png",
+      "position": [
+        512,
+        266
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "parent": "chest",
+      "z": -179,
+      "fold_seam_source_yx": [
+        [
+          20,
+          245
+        ],
+        [
+          60,
+          249
+        ],
+        [
+          120,
+          244
+        ],
+        [
+          175,
+          242
+        ],
+        [
+          235,
+          233
+        ],
+        [
+          285,
+          221
+        ],
+        [
+          345,
+          204
+        ],
+        [
+          409,
+          180
+        ],
+        [
+          465,
+          150
+        ],
+        [
+          541,
+          117
+        ],
+        [
+          584,
+          122
+        ],
+        [
+          650,
+          139
+        ],
+        [
+          722,
+          163
+        ],
+        [
+          798,
+          188
+        ],
+        [
+          863,
+          209
+        ]
+      ],
+      "excluded_part": "full_body/jacket_review/blazer_L_facing_not_instantiated.png",
+      "size": [
+        142,
+        423
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        142,
+        423
+      ],
+      "rotation_degrees": 0,
+      "source_sha256": "676f1a99fc73e93d0ae837afff0a92e5a454632d27ced48738c27bf5a5199ff2"
+    },
+    {
+      "id": "blouse_collar_R",
+      "source": "avatar_build_assets/body/layers/blouse_front.png",
+      "file": "full_body/jacket_review/blouse_collar_R_candidate.png",
+      "source_polygon_xy": [
+        [
+          267,
+          204
+        ],
+        [
+          277,
+          372
+        ],
+        [
+          141,
+          391
+        ],
+        [
+          238,
+          319
+        ]
+      ],
+      "source_landmarks_xy": [
+        [
+          267,
+          204
+        ],
+        [
+          141,
+          390
+        ],
+        [
+          277,
+          374
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          482.16999999999996,
+          246.52
+        ],
+        [
+          434.28999999999996,
+          317.2
+        ],
+        [
+          485.97,
+          311.12
+        ]
+      ],
+      "canvas_affine_abcdxy": [
+        0.38,
+        0,
+        0,
+        0.38,
+        434.28999999999996,
+        249.18
+      ],
+      "crop": [
+        60,
+        200,
+        631,
+        1155
+      ],
+      "source_crop_within_cleaned_blouse": [
+        81,
+        11,
+        216,
+        192
+      ],
+      "position": [
+        434,
+        249
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -178,
+      "ownership": "Pixels removed from rear blouse; not an overlapping duplicate.",
+      "size": [
+        52,
+        69
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        52,
+        69
+      ],
+      "source_sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba"
+    },
+    {
+      "id": "blouse_collar_L",
+      "source": "avatar_build_assets/body/layers/blouse_front.png",
+      "file": "full_body/jacket_review/blouse_collar_L_candidate.png",
+      "source_polygon_xy": [
+        [
+          425,
+          204
+        ],
+        [
+          419,
+          374
+        ],
+        [
+          557,
+          392
+        ],
+        [
+          458,
+          319
+        ]
+      ],
+      "source_landmarks_xy": [
+        [
+          425,
+          204
+        ],
+        [
+          557,
+          392
+        ],
+        [
+          419,
+          374
+        ]
+      ],
+      "target_landmarks_xy": [
+        [
+          542.21,
+          246.52
+        ],
+        [
+          592.37,
+          317.96000000000004
+        ],
+        [
+          539.93,
+          311.12
+        ]
+      ],
+      "canvas_affine_abcdxy": [
+        0.38,
+        0,
+        0,
+        0.38,
+        540.69,
+        248.42
+      ],
+      "crop": [
+        60,
+        200,
+        631,
+        1155
+      ],
+      "source_crop_within_cleaned_blouse": [
+        361,
+        9,
+        498,
+        193
+      ],
+      "position": [
+        541,
+        248
+      ],
+      "scale": [
+        1,
+        1
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -178,
+      "ownership": "Pixels removed from rear blouse; not an overlapping duplicate.",
+      "size": [
+        52,
+        70
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        52,
+        70
+      ],
+      "source_sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba"
+    },
+    {
+      "id": "blouse",
+      "source": "avatar_build_assets/body/layers/blouse_front.png",
+      "source_sha256": "19b49a9bf91ef32d4d7b8c735a077ff20951b22937b0c7541752e9ee02b273ba",
+      "file": "full_body/jacket_review/blouse_body_candidate.png",
+      "crop": [
+        60,
+        200,
+        631,
+        1155
+      ],
+      "position": [
+        403.51,
+        245
+      ],
+      "scale": [
+        0.38,
+        0.38
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -190,
+      "derivation": "Alpha <=10 cleanup; original crop; collar tabs cut into two front owners; untucked lower side excess alpha-masked inside registered jacket exterior at y>=480.",
+      "size": [
+        571,
+        955
+      ],
+      "alpha_bounds": [
+        18,
+        0,
+        556,
+        955
+      ]
+    },
+    {
+      "id": "blazer_button",
+      "source": "avatar_build_assets/body/layers/blazer_front_character_R.png",
+      "file": "full_body/jacket_review/blazer_button_candidate.png",
+      "crop": [
+        431,
+        527,
+        470,
+        566
+      ],
+      "source_circle_xy_radius": [
+        450,
+        546,
+        19
+      ],
+      "position": [
+        499,
+        507
+      ],
+      "scale": [
+        0.48,
+        0.48
+      ],
+      "rotation_degrees": 0,
+      "parent": "chest",
+      "z": -177,
+      "ownership": "Full original button cut from source panel; same pixels removed from visible exterior panel.",
+      "size": [
+        39,
+        39
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        39,
+        39
+      ],
+      "source_sha256": "9a2ffc405ed800017a57f6acbffd8a017a0689d9c111c9e5d9f42cde17f43345"
+    },
+    {
+      "id": "belt",
+      "source": "avatar_build_assets/accessories/layers/RYO_ACC_belt_gold_buckle.png",
+      "source_sha256": "ca8ba149ae4b069bf091e10e042ef380f7e6e693cb9dc9c6dcc11cdd1f64f6e4",
+      "file": "full_body/jacket_review/belt_candidate.png",
+      "crop": [
+        58,
+        311,
+        2114,
+        455
+      ],
+      "position": [
+        368.8664883268483,
+        604.8487354085603
+      ],
+      "scale": [
+        0.12889105058365757,
+        0.12889105058365757
+      ],
+      "rotation_degrees": 0,
+      "parent": "pelvis",
+      "z": -319,
+      "gold_buckle_center_crop": [
+        1110.5,
+        71.0
+      ],
+      "mask": "Only surplus strap outside the existing registered pelvis alpha removed; centered buckle unchanged.",
+      "size": [
+        2056,
+        144
+      ],
+      "alpha_bounds": [
+        265,
+        0,
+        1957,
+        144
+      ]
+    }
+  ],
+  "reference": "avatar_build_assets/reference_library/assets/modeling/RYO_MOD_fullbody_front_v001.png",
+  "reference_use": "Landmark/silhouette inspection only; no reference pixels used.",
+  "method": "Exterior panel isolated at existing painted lapel fold seam; documented contour landmark registration. Source RGB and alpha resampled, no generated art.",
+  "destination_y": [
+    265.0,
+    273.0,
+    281.0,
+    289.0,
+    320.0,
+    360.0,
+    400.0,
+    440.0,
+    480.0,
+    516.0,
+    540.0,
+    570.0,
+    600.0,
+    630.0,
+    660.0,
+    674.0,
+    689.0
+  ],
+  "outer_R_x": [
+    462.0,
+    442.0,
+    415.0,
+    371.0,
+    376.0,
+    387.0,
+    393.0,
+    408.0,
+    419.0,
+    431.0,
+    426.0,
+    415.0,
+    398.0,
+    386.0,
+    372.0,
+    408.0,
+    463.0
+  ],
+  "inner_R_x": [
+    462.0,
+    462.0,
+    461.0,
+    460.0,
+    458.0,
+    456.0,
+    460.0,
+    475.0,
+    497.0,
+    517.0,
+    510.0,
+    501.0,
+    491.0,
+    482.0,
+    472.0,
+    467.0,
+    463.0
+  ],
+  "source_y": [
+    24.0,
+    116.0,
+    200.0,
+    300.0,
+    400.0,
+    546.0,
+    650.0,
+    770.0,
+    861.0
+  ],
+  "destination_source_y": [
+    265.0,
+    289.0,
+    332.0,
+    382.0,
+    437.0,
+    516.0,
+    590.0,
+    660.0,
+    689.0
+  ]
+}

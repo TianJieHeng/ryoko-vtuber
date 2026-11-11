@@ -4,9 +4,9 @@ This replaces the rejected combined-body/bust approach. It is a review branch, n
 
 ## Actual ownership
 
-The runtime uses individual cutouts from `avatar_build_assets/body/layers` and `accessories/layers`: blouse, blazer front L/R, upper and lower sleeves, hands, pelvis, thighs/shins, front shoes, belt, necklace chain and pendant. Front/back and alternative view drawings are not stacked. The source PNGs have independent scale/framing and faint alpha outliers; the build records cleanup, source hashes, crop, bind transform, parent, pivot and draw order.
+The runtime uses individual cutouts from `avatar_build_assets/body/layers` and `accessories/layers`: blouse, blazer front L/R, upper and lower sleeves, hands, pelvis, thighs/shins, front shoes, belt, necklace chain and pendant. Front/back and alternative view drawings are not stacked. The final sleeve fit is in `elbow_review`: painted elbow folds are registered to one anatomical joint, not to the forearm image’s construction top. The upper sleeve’s open tube end is excluded, forearm overlap sits behind it, and the original hands sit inside the opened cuffs. The source PNGs have independent scale/framing and faint alpha outliers; the build records cleanup, source hashes, crop, bind transform, parent, pivot and draw order.
 
-`pieces_v2/upper` and `pieces_v2/lower` contain reproducible cutout/registration scripts and isolated assets. The blazer panels have a documented horizontal fit. Trouser legs have overlapping knee splits; the pelvis construction hem is feathered into matching leg artwork. This is an editable cutout rig, not a mesh or 3D character.
+`pieces_v2/upper` and `pieces_v2/lower` contain reproducible cutout/registration scripts and isolated assets. The final jacket override is built by `jacket_review/build_candidate.py`: it cuts exterior panels along their painted lapel seams, excludes the inner-facing strips, and registers collar/shoulder/bust/button/hem landmarks. The blouse body and two collar tabs have complementary ownership masks; the gold fastener is its own part. Shirt side excess is tucked behind the fitted jacket, and surplus belt strap is clipped to the pelvis. The prior narrow-opening panel fit is superseded. Trouser legs have overlapping knee splits; the pelvis construction hem is feathered into matching leg artwork. This is an editable cutout rig, not a mesh or 3D character.
 
 The asset pack explicitly lacks standalone neck/chest skin. `pieces_v2/upper/sources` retains a new unapproved compatible edit that removes baked necklace artwork. Its runtime derivative is masked to skin only, with a documented hidden upper extension. No collar, blouse or jacket is retained in that part. The raw chain and pendant are separate owners.
 
@@ -30,7 +30,7 @@ Seventeen unit-scale Bone2D owners form pelvis/spine/chest/neck/head and paired 
 
 `review/headless_checks.json` records focused actual Godot checks for bind ownership, joint endpoints, atomic validation, resets, independent face/body controls and all 47 facial profiles. These numerical checks do not prove visual quality.
 
-`review/ryoko_full_body_wiring_v1.mp4` is a **CPU cutout composite driven by actual Godot transforms**. The diagnostic head is neutral source artwork, not animated native facial shader output. The close-up is a crop of the same assembled frame. The review sequence is neutral, isolated head attachment, right elbow, left elbow, then neutral. No coupled limb demo or leaning sequence remains.
+`review/ryoko_full_body_wiring_v1.mp4` is a **CPU cutout composite driven by actual Godot transforms**. The diagnostic head is neutral source artwork, not animated native facial shader output. The close-up is a crop of the same assembled frame. The current review clip is a four-second neutral hold with full-body and sleeve detail, without gestures or movement. The optional sampler flag `--joint-checks` enables isolated head/elbow diagnostics for development; it is not used in this neutral review clip. No coupled limb demo or leaning sequence remains.
 
 Native capture could not start because the local X display could not create its listening sockets. Native pixels, interactive appearance and real-time pacing are unverified. This is not a completed tracking/export rig. Current frontal art and tiny overlap ranges do not support large rotations, head yaw/pitch or new actions. Source shading and silhouette differ from the original combined illustration and require review. No user approval is assumed.
 
@@ -40,6 +40,8 @@ Native capture could not start because the local X display could not create its 
 python ryoko_object_rig/full_body/pieces_v2/upper/assemble_upper.py
 python ryoko_object_rig/full_body/pieces_v2/lower/assemble_lower.py
 python ryoko_object_rig/full_body/pieces_v2/head_audit/extract_earring_tips.py
+python ryoko_object_rig/full_body/jacket_review/build_candidate.py
+python ryoko_object_rig/full_body/elbow_review/build_candidate.py
 python ryoko_object_rig/full_body/tools/assemble_from_parts.py
 godot --headless --path ryoko_object_rig --editor --import --quit
 godot --headless --path ryoko_object_rig --script res://full_body/tests/test_wiring.gd

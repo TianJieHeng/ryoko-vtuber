@@ -13,12 +13,12 @@ func run():
     if not rig.ready_for_controls:print(rig.last_error);quit(1);return
     check(rig.list_expressions().size() == 47,"all 47 approved profiles retained")
     check(rig.joints.size() == 17,"17 named anatomical joints")
-    check(rig.layer_nodes.size() == 20,"20 individually cut body/accessory owners")
+    check(rig.layer_nodes.size() == 23,"23 individually cut body/accessory owners")
     for spec in rig.registration.layers:
-        check(spec.file.begins_with("res://full_body/pieces_v2/"),spec.id+" uses separated-part build")
+        check((spec.file.begins_with("res://full_body/pieces_v2/") or spec.file.begins_with("res://full_body/jacket_review/") or spec.file.begins_with("res://full_body/elbow_review/")),spec.id+" uses separated-part build")
     check(rig.expression_rig.head.get_node_or_null("earring_tip_L") != null,"exact earring L tip retained")
     check(rig.expression_rig.head.get_node_or_null("earring_tip_R") != null,"exact earring R tip retained")
-    check(rig.registration.version == 3,"individual raw-part registration")
+    check(rig.registration.version == 5,"individual raw-part registration")
     check(not rig.body_controls.has("frame_roll"),"no whole-frame lean control")
     check(rig.expression_rig.body == null,"legacy bust owner removed entirely")
     check(rig.expression_rig.get_node_or_null("FixedNeckTorso") == null,"no torso sprite in face controller")
