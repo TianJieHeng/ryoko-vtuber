@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": 6675775,
+  "failures": [],
+  "validated_profiles": 46,
+  "registered_aliases": 68,
+  "prior45_samples_at_60hz": 10815,
+  "approved_review_pose_samples": 145,
+  "all46_samples_at_240hz": 44017,
+  "directed_pairs": 91,
+  "cross_key_midpoint_cases": 1965,
+  "cross_boundary_samples": 141480,
+  "interrupted_lifecycle_cases": 9825,
+  "maximum_review_pose_error": 2.8698533327542464e-08,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "scope": "Pure-Python mathematical model of byte-unchanged GDScript. Compared all 45 old profiles and all 145 historical EXP-046 native pose records; densely sampled all46 and all directed transitions involving the single EXP-046 addition. No engine, scene, rendering setter, actual auto-blink display, or native pixel execution.",
+  "godot_executed": false,
+  "native_rendering_executed": false,
+  "historical_tests_rerun": false,
+  "ci_run": false
+}

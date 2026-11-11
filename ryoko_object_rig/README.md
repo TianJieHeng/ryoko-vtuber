@@ -1,3 +1,9 @@
+# Current approved release: 46 performances
+
+Exasperated Sigh is integrated as one exact approved expression. All prior45 profiles, production runtime and 184 PNGs remain byte-exact. Current source/Python-model/media checks pass; current engine/native integration checks were NOT RUN. The bounded-glance and visual qualifications remain. See [current validation and limits](APPROVED_EXASPERATED_SIGH_INTEGRATION.md). Original review labels and earlier release notes below are historical.
+
+## Historical release notes
+
 # Current approved release: 45 performances
 
 Puzzled, Mild Disgust, Sleepy, Irritated Side-eye, Triumphant Grin and Headache Tension are selectively integrated from their exact approved previews. Prior39 runtime, profiles and all 184 PNGs remain byte-exact. Current source/Python-model/media checks pass; current Godot/native integration checks were NOT RUN. See [current validation and limits](APPROVED_BATCH45_INTEGRATION.md). Original review labels and earlier notes below are historical, not current approval or validation status.

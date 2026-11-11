@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "profile_sha256": "1de491628e031953c765a47287d3ac230abb73e6adbdab15a3f8c11d1b41161e",
+  "video_sha256": "ecceb235ec358e99302e78d8b065d0c2f6edf8cb4fdbe7e86a3a1abab0bd0e29",
+  "baseline_pngs_decoded": 184,
+  "historical_native_rgba_images_verified": 310,
+  "historical_native_motion_frames_per_view": 145,
+  "historical_static_anchor_pairs": 10,
+  "historical_video_frames_decoded": 145,
+  "neutral_hold_frames_per_endpoint": 10,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "145"
+      }
+    ],
+    "format": {
+      "duration": "4.833333",
+      "size": "229933"
+    }
+  },
+  "new_images_rendered": 0,
+  "current_engine_executed": false,
+  "current_visual_review": false,
+  "normal_speed_playback_observed": false,
+  "scope": "Existing historical capture identity/RGBA verification and media decode only. No fresh integrated engine/native run, perceptual review, or playback observation."
+}

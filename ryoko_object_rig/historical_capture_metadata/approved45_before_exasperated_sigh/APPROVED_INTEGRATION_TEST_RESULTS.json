@@ -1,0 +1,33 @@
+{
+  "status": "PASS_WITH_ENGINE_CHECKS_NOT_RUN",
+  "runtime_changed": false,
+  "artwork_changed": false,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "ci_run": false,
+  "current_python_model": {
+    "path": "validation/approved_batch45/python_model_checks.json",
+    "sha256": "832242994a28ae235f04d86a1b3ed9f7085d1bb4c9d579605fdf69ac91689fa1",
+    "checks": 27453131
+  },
+  "current_python_unit_tests": {
+    "path": "validation/approved_batch45/python_model_unit_tests.log",
+    "tests": 28,
+    "status": "PASS"
+  },
+  "current_media_integrity": {
+    "path": "validation/approved_batch45/media_integrity.json",
+    "sha256": "e37786ba599819fb178eaefa877b46f32ce6df63be6337f59d8eb04f27c47618",
+    "status": "PASS"
+  },
+  "current_godot_state_checks": "NOT RUN",
+  "current_native_visual_parity": "NOT RUN",
+  "historical_evidence_rerun": false,
+  "normal_speed_playback_observed": false,
+  "live_engine_pacing_measured": false,
+  "limitation": "The numerical model does not execute GDScript, instantiate scenes or exercise rendering setters. Historical reviews/receipts retain their original qualifications. Engine test scripts are prepared but unexecuted.",
+  "current_source_guard_negative_tests": {
+    "path": "validation/approved_batch45/guard_negative_results.json",
+    "tamper_cases": 12,
+    "status": "PASS"
+  }
+}

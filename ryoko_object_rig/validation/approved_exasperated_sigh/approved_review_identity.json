@@ -1,0 +1,79 @@
+{
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "base_main": "17d2efdc7028fb3ec55cc604c19835ca2b7065f4",
+  "profiles": [
+    {
+      "id": "EXP-046",
+      "alias": "exasperated_sigh",
+      "profile_path": "expressions/EXP-046.json",
+      "profile_sha256": "1de491628e031953c765a47287d3ac230abb73e6adbdab15a3f8c11d1b41161e",
+      "video_path": "validation/approved_exasperated_sigh/review_sources/Exasperated_sigh_rebuild_v1_UNAPPROVED.mp4",
+      "video_sha256": "ecceb235ec358e99302e78d8b065d0c2f6edf8cb4fdbe7e86a3a1abab0bd0e29",
+      "motion_path": "validation/approved_exasperated_sigh/review_sources/native_capture/checks.json",
+      "qualification": "Subdued bounded upward glance, not a full eye roll; relatively flat brows do not reproduce raised inner hooks. Small tooth-visible opening can read as sleepy speech or a faint grin rather than an unmistakably unsmiling weary exhale. Detail-scale lash/hair and lip-edge artifacts remain. No continuous normal-speed playback or perceptual comparator-distinctness claim; no head/body movement.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/EXP-046.json",
+          "sha256": "1de491628e031953c765a47287d3ac230abb73e6adbdab15a3f8c11d1b41161e",
+          "bytes": 4753
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/Exasperated_sigh_rebuild_v1_UNAPPROVED.mp4",
+          "sha256": "ecceb235ec358e99302e78d8b065d0c2f6edf8cb4fdbe7e86a3a1abab0bd0e29",
+          "bytes": 229933
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/native_capture/checks.json",
+          "sha256": "27b88304f55382b5b2a103c6f0a657f46b20e9485b6ee2b874f95c36efcc68f0",
+          "bytes": 206294
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/ENCODE_RESULT.json",
+          "sha256": "bb287760d10f0a597c209a14648337a222df837df9faca7c70fd1365685f1c53",
+          "bytes": 738
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/BASELINE_FREEZE.json",
+          "sha256": "ede289b7e1871869fcaea429a3b3e13215b8584a677e380411d6090cb9459593",
+          "bytes": 142177
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/CANDIDATE_FREEZE.json",
+          "sha256": "a0c127d1b979dd500ffed870224b83445e6dee6b8887c7d05bc0a71b1a42a969",
+          "bytes": 174922
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/EXPECTED_TRAJECTORY.json",
+          "sha256": "75e10630f842bf143f3bf81d4850d4378f58f95ba6a605296d9f02e5cea761b0",
+          "bytes": 271075
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/SOURCE_MAP.json",
+          "sha256": "7c486bb55e79e3bb2777f840563949dbb7cba93934c279a4deda14174145e64e",
+          "bytes": 2779
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/SOURCE_CATALOGUE_ENTRY.json",
+          "sha256": "ec719d901109fa5281ce086cfece626c4fc441c10c794657f4254b46453a3f2f",
+          "bytes": 9435
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/README.md",
+          "sha256": "8792cfef7f42d42a8b1373f9309d0f127da37e0e4033112336925892d14c8429",
+          "bytes": 7531
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/EDITOR_ATTEMPT.md",
+          "sha256": "5fbba6194b25f8707c4376e9483f2973bd9b2138ccf8a841a1e3cc9deffab410",
+          "bytes": 2272
+        },
+        {
+          "path": "validation/approved_exasperated_sigh/review_sources/EXP-046-static-review.md",
+          "sha256": "a2c92a84b2d101a3360f6bd4f41f601dca3e0629aa7bd4615865bd240b58c47a",
+          "bytes": 4123
+        }
+      ],
+      "review_backup_verification": "NOT ASSERTED BY THIS PREPARATION; publication requires parent verification of exact-version backup."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "approval_status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+  "historical_status_policy": "Exact original UNAPPROVED/pre-render status wording is retained as historical evidence. Subsequent approval is recorded here and does not change review qualifications.",
+  "profiles": [
+    {
+      "id": "EXP-046",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "1de491628e031953c765a47287d3ac230abb73e6adbdab15a3f8c11d1b41161e",
+      "review_video_sha256": "ecceb235ec358e99302e78d8b065d0c2f6edf8cb4fdbe7e86a3a1abab0bd0e29",
+      "approval_evidence": [
+        {
+          "speaker": "assistant",
+          "text": "First up: Exasperated Sigh. It\u2019s ready for your review..."
+        },
+        {
+          "speaker": "user",
+          "text": "good."
+        },
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "user",
+          "text": "We pus one at a fucking time."
+        },
+        {
+          "speaker": "user",
+          "text": "thank you. now continue with the expressions"
+        }
+      ]
+    }
+  ]
+}

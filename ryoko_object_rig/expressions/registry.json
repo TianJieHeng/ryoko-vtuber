@@ -382,6 +382,14 @@
         "headache_tension"
       ],
       "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-046",
+      "path": "res://expressions/EXP-046.json",
+      "aliases": [
+        "exasperated_sigh"
+      ],
+      "trigger_phase": "weary_onset"
     }
   ]
 }

@@ -1,0 +1,153 @@
+{
+  "id": "EXP-046",
+  "title": "Exasperated sigh",
+  "duration": 4.8,
+  "status": "UNAPPROVED new reconstruction v1; not a restored frozen implementation; native execution and review NOT RUN",
+  "intent": "Weary inner brows, a bounded upward glance, then a prolonged unsmiling exhale and exact neutral return.",
+  "scope": "Unchanged approved39 rigid outer-anchor inner-brow lift, small whole-brow lowering, ordinary bilateral lids, existing upward gaze (2 source pixels maximum), unsmiling mouth opening and symmetric purse only. Full source eye roll, brow deformation, jaw/shoulder motion, independent downturned corners and breathing anatomy are not implemented. No new art, runtime, shader, production registry entry or effect.",
+  "timing_origin": "New 4.8-second interpretation after viewing the actual nine-panel sheet. Static source order retained; catalogue 1.9-second proposal is not recovered motion. Upward glance crests at 1.5s before half-closed unsmiling exhale at 2.25s. Mouth reseals by 3.7s; exact neutral from 4.5s. Old local-only implementation and captures remain lost.",
+  "interpolation": "Unchanged shared cubic smoothstep, 0.30s same-expression retrigger and 0.45s release. Python numerical models are not native execution evidence. Candidate loading is prepared for memory only.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "keyframes": [
+    {
+      "time": 0,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.3,
+      "phase": "neutral",
+      "values": {}
+    },
+    {
+      "time": 0.7,
+      "phase": "weary_onset",
+      "values": {
+        "brow_inner_lift_screen_left": 0.24,
+        "brow_inner_lift_screen_right": 0.24,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "blink_L": 0.06,
+        "blink_R": 0.06,
+        "gaze_y": 0,
+        "mouth_open": 0.06,
+        "mouth_purse": 0.08
+      }
+    },
+    {
+      "time": 1.15,
+      "phase": "upward_glance",
+      "values": {
+        "brow_inner_lift_screen_left": 0.4,
+        "brow_inner_lift_screen_right": 0.4,
+        "brow_screen_left": -0.04,
+        "brow_screen_right": -0.04,
+        "blink_L": 0.13,
+        "blink_R": 0.13,
+        "gaze_y": -0.7,
+        "mouth_open": 0.1,
+        "mouth_purse": 0.12
+      }
+    },
+    {
+      "time": 1.5,
+      "phase": "glance_crest",
+      "values": {
+        "brow_inner_lift_screen_left": 0.46,
+        "brow_inner_lift_screen_right": 0.46,
+        "brow_screen_left": -0.05,
+        "brow_screen_right": -0.05,
+        "blink_L": 0.18,
+        "blink_R": 0.18,
+        "gaze_y": -1.0,
+        "mouth_open": 0.16,
+        "mouth_purse": 0.16
+      }
+    },
+    {
+      "time": 1.85,
+      "phase": "exhale_onset",
+      "values": {
+        "brow_inner_lift_screen_left": 0.5,
+        "brow_inner_lift_screen_right": 0.5,
+        "brow_screen_left": -0.06,
+        "brow_screen_right": -0.06,
+        "blink_L": 0.35,
+        "blink_R": 0.35,
+        "gaze_y": -0.4,
+        "mouth_open": 0.34,
+        "mouth_purse": 0.2
+      }
+    },
+    {
+      "time": 2.25,
+      "phase": "exhale_peak",
+      "values": {
+        "brow_inner_lift_screen_left": 0.52,
+        "brow_inner_lift_screen_right": 0.52,
+        "brow_screen_left": -0.07,
+        "brow_screen_right": -0.07,
+        "blink_L": 0.5,
+        "blink_R": 0.5,
+        "gaze_y": 0,
+        "mouth_open": 0.5,
+        "mouth_purse": 0.26
+      }
+    },
+    {
+      "time": 2.7,
+      "phase": "exhale_tail",
+      "values": {
+        "brow_inner_lift_screen_left": 0.44,
+        "brow_inner_lift_screen_right": 0.44,
+        "brow_screen_left": -0.06,
+        "brow_screen_right": -0.06,
+        "blink_L": 0.38,
+        "blink_R": 0.38,
+        "gaze_y": 0,
+        "mouth_open": 0.28,
+        "mouth_purse": 0.2
+      }
+    },
+    {
+      "time": 3.15,
+      "phase": "tired_release",
+      "values": {
+        "brow_inner_lift_screen_left": 0.25,
+        "brow_inner_lift_screen_right": 0.25,
+        "brow_screen_left": -0.03,
+        "brow_screen_right": -0.03,
+        "blink_L": 0.24,
+        "blink_R": 0.24,
+        "gaze_y": 0,
+        "mouth_open": 0.12,
+        "mouth_purse": 0.12
+      }
+    },
+    {
+      "time": 3.7,
+      "phase": "reseal",
+      "values": {
+        "brow_inner_lift_screen_left": 0.08,
+        "brow_inner_lift_screen_right": 0.08,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "blink_L": 0.05,
+        "blink_R": 0.05,
+        "gaze_y": 0,
+        "mouth_open": 0,
+        "mouth_purse": 0
+      }
+    },
+    {
+      "time": 4.5,
+      "phase": "neutral_return",
+      "values": {}
+    },
+    {
+      "time": 4.8,
+      "phase": "neutral_return",
+      "values": {}
+    }
+  ]
+}
