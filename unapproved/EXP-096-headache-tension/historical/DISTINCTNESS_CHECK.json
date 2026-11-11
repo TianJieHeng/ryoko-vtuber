@@ -1,0 +1,908 @@
+{
+  "status": "PASS",
+  "compared_profiles": 45,
+  "candidate_active_controls": [
+    "blink_L",
+    "blink_R",
+    "brow_screen_left",
+    "brow_screen_right",
+    "brow_tilt_screen_left",
+    "brow_tilt_screen_right",
+    "mouth_lip_press",
+    "mouth_purse"
+  ],
+  "unique_active_control_set": true,
+  "interpretation": "Fully closed ordinary bilateral lids under opposed lowered rigid brows and a sealed pressure/tiny purse mouth. Brow and mouth soften while eyes stay fully closed, then reopen. Compare open-eyed Silent Fury, partly open Sleepy Annoyance and relaxed Meditative Calm. No genuine furrows, horizontal brow convergence or independent downturned corners.",
+  "limitations": "Normalized-time numeric and control-set differences are not proof of perceptual distinction. Native motion comparison is pending.",
+  "comparisons": [
+    {
+      "id": "EXP-163",
+      "title": "Yawn",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/yawn_performance.json",
+      "sha256": "a6f1f2359add56774df81d5ef294fad7d8c2d1b2b94c900e29382faa6a63ec8b",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "hair_sway",
+        "mouth_open"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.19873705167005484
+    },
+    {
+      "id": "EXP-005",
+      "title": "Hearty laughter",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-005.json",
+      "sha256": "7a4c87b2bf3bb61a5045bb21d4e3e8bff06488258b571b84ab6cf8fcedb8d874",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "eye_smile_L",
+        "eye_smile_R",
+        "mouth_open",
+        "mouth_smile"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.36570349211394504
+    },
+    {
+      "id": "EXP-001",
+      "title": "Bright welcome",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-001.json",
+      "sha256": "7f0addb5a34a18ab1418e41349684a4a521c79f00da458a3368f265df88d43fe",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_open",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.32129793508104876
+    },
+    {
+      "id": "EXP-006",
+      "title": "Suppressed giggle",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-006.json",
+      "sha256": "38be9e1bb2ae8ca6212cc51ddc09a66f5200712bf66c827f292f5f3af42de430",
+      "active_controls": [
+        "blush_intensity",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "eye_smile_L",
+        "eye_smile_R",
+        "mouth_corner_lift",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.233573388203018,
+      "rms_control_difference": 0.3145473169213794
+    },
+    {
+      "id": "EXP-107",
+      "title": "Confident reassurance",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-107.json",
+      "sha256": "9361028359fb8e99eb053045f78b2544c4ff8a35f6c9068cbac47691ad134544",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "eye_smile_L",
+        "eye_smile_R",
+        "mouth_corner_lift",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_oral_lift",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.30813877913288923
+    },
+    {
+      "id": "EXP-007",
+      "title": "Relieved smile",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-007.json",
+      "sha256": "ee13a8b4b819c5ecfd1e5f105565856ad10174a0a0ed69db4f0ddcb833821fdd",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_corner_lift",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_oral_lift",
+        "mouth_purse",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.9989253860274268,
+      "rms_control_difference": 0.30191295501231097
+    },
+    {
+      "id": "EXP-002",
+      "title": "Affectionate warmth",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-002.json",
+      "sha256": "fdb562bc3987bcc084f7bb7ea35bcaf8b31a2e45eb06081129121cc72e20b23a",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "eye_smile_L",
+        "eye_smile_R",
+        "mouth_corner_lift",
+        "mouth_smile"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.2665065200416032
+    },
+    {
+      "id": "EXP-152",
+      "title": "Private pride",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-152.json",
+      "sha256": "c336efc782732c73da3991fffad881e0c884425916c64a676608dd224c71117d",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "gaze_down_extra",
+        "gaze_y",
+        "mouth_corner_lift",
+        "mouth_lip_press",
+        "mouth_smile"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.26791536158615853
+    },
+    {
+      "id": "EXP-160",
+      "title": "Shy laughter",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-160.json",
+      "sha256": "f30c64314d59fa368781eb5e098a12fb6582f845b0d4fa43e40a4a4cd77838c2",
+      "active_controls": [
+        "blush_intensity",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "eye_smile_L",
+        "eye_smile_R",
+        "mouth_corner_lift",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_oral_lift",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.65,
+      "rms_control_difference": 0.45301060180740865
+    },
+    {
+      "id": "EXP-177",
+      "title": "Meditative calm",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-177.json",
+      "sha256": "4fb88990455fc4ba799e30ce2987b17151fe0ca00d31e562aa38680a7349f211",
+      "active_controls": [
+        "blink_L",
+        "blink_R"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.65,
+      "rms_control_difference": 0.16391121759506738
+    },
+    {
+      "id": "EXP-164",
+      "title": "Fighting sleep",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-164.json",
+      "sha256": "30b7adfd10aeb10b6edb7eefb968ae44d589c9a516cd161ff39c5833c466e110",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.2137041042826171
+    },
+    {
+      "id": "EXP-021",
+      "title": "Quiet sadness",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-021.json",
+      "sha256": "4befbe289751e2929cd4cafe45c854644c985d7355096c34a4937e16e03625ce",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "gaze_down_extra",
+        "gaze_y"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.2492545625929274
+    },
+    {
+      "id": "EXP-158",
+      "title": "Post-confession shyness",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-158.json",
+      "sha256": "731787cf260e038b5afcb0d9ba71a6dedea5bc6da42423380d418e49e53e2939",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "blush_intensity",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "gaze_down_extra",
+        "gaze_y",
+        "mouth_corner_lift",
+        "mouth_smile"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.2881994683851321
+    },
+    {
+      "id": "EXP-181",
+      "title": "Cheeky wink",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-181.json",
+      "sha256": "d0284c1e5719ec154cd06e5b1d4eba495242b80bde9ae98c792f9fed21bddc32",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "eye_smile_L",
+        "mouth_corner_lift_screen_right",
+        "mouth_open",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.96771240234375,
+      "rms_control_difference": 0.29307934702488186
+    },
+    {
+      "id": "EXP-102",
+      "title": "Knowing smirk",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-102.json",
+      "sha256": "ffd67f79651c5a2446422b6ae02e2a248ee3174d79049671b55bb629ed035229",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_corner_lift_screen_right",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.966355,
+      "rms_control_difference": 0.264606307980108
+    },
+    {
+      "id": "EXP-116",
+      "title": "Confident denial",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-116.json",
+      "sha256": "bb7c020ff27be98e1b522b088d62d49406603e07457f192c9e213483f027303a",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_corner_lift_screen_right",
+        "mouth_smile",
+        "mouth_spread",
+        "mouth_width_screen_left",
+        "mouth_width_screen_right"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.23017016123917933
+    },
+    {
+      "id": "EXP-050",
+      "title": "Frustrated pout",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-050.json",
+      "sha256": "e1b775d34244bf1a1f05fac351170062657b0b12d11acf2edf08bf8f3ec9e630",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.9577026094938793,
+      "rms_control_difference": 0.2369401811495516
+    },
+    {
+      "id": "EXP-186",
+      "title": "Smug cat smile",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-186.json",
+      "sha256": "226f82f8e7e26599239b58cbd8d7d6c51240610fdd971e22c1baf9c0bd7b4d60",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_corner_lift_screen_left",
+        "mouth_corner_lift_screen_right",
+        "mouth_smile",
+        "mouth_spread",
+        "mouth_width_screen_left",
+        "mouth_width_screen_right"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.05,
+      "rms_control_difference": 0.2729669440222748
+    },
+    {
+      "id": "EXP-114",
+      "title": "Daring provocation",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-114.json",
+      "sha256": "96eed6ccf108e2e54590f953ae01b129a04af223245fecc1fc59c2af19f8c107",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_corner_lift_screen_left",
+        "mouth_corner_lift_screen_right",
+        "mouth_open",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.9,
+      "rms_control_difference": 0.25422945185457757
+    },
+    {
+      "id": "EXP-148",
+      "title": "Nervous laugh",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-148.json",
+      "sha256": "d803a850c3eda78f4f27586c0798432367fd66c9093c5cd7364bed0020ba47dd",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "blush_intensity",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "mouth_corner_lift_screen_left",
+        "mouth_corner_lift_screen_right",
+        "mouth_open",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.86373184,
+      "rms_control_difference": 0.2632864648603816
+    },
+    {
+      "id": "EXP-197",
+      "title": "Playful kiss",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-197.json",
+      "sha256": "69abbe91beee42051e5ee1dad0ea05fc5f14f32d5d06e328e5076de1078f1294",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "blush_intensity",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "eye_smile_L",
+        "eye_smile_R",
+        "mouth_corner_lift_screen_left",
+        "mouth_corner_lift_screen_right",
+        "mouth_kiss",
+        "mouth_purse",
+        "mouth_smile"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.31217201976083386
+    },
+    {
+      "id": "EXP-144",
+      "title": "Caught staring",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-144.json",
+      "sha256": "af8597ef5b3decc34851e3492154c65b7311c2d220b3087cb351809984924678",
+      "active_controls": [
+        "aversion_px",
+        "blink_L",
+        "blink_R",
+        "blush_intensity",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "gaze_down_extra",
+        "gaze_y",
+        "mouth_lip_press",
+        "opening_px",
+        "uneasy_weight"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 12.0,
+      "rms_control_difference": 1.1500403062212572
+    },
+    {
+      "id": "EXP-040",
+      "title": "Recovering composure",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-040.json",
+      "sha256": "2c7f4d8a8ff91fd1497e52768b95829a69d26cf118d84d8a0c8ed799a06f82e0",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_corner_lift_screen_left",
+        "mouth_corner_lift_screen_right",
+        "mouth_purse",
+        "mouth_smile"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.94,
+      "rms_control_difference": 0.2242049877088292
+    },
+    {
+      "id": "EXP-125",
+      "title": "Sudden insight",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-125.json",
+      "sha256": "b7837d55187c0130024eded440c4a0007a0f95846cbff691ce99b587de7a40f3",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_corner_lift_screen_left",
+        "mouth_corner_lift_screen_right",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_oral_lift",
+        "mouth_purse",
+        "mouth_smile",
+        "mouth_spread",
+        "opening_px"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 2.2967407407407405,
+      "rms_control_difference": 0.3113777520581791
+    },
+    {
+      "id": "EXP-063",
+      "title": "Stunned silence",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-063.json",
+      "sha256": "8e61309448dc64964beac0a8491716623fceb6903ea2fd9e3cacc72a2d95730c",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_oral_lift",
+        "mouth_purse",
+        "opening_px"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 4.0,
+      "rms_control_difference": 0.5940386184857426
+    },
+    {
+      "id": "EXP-090",
+      "title": "Queasy",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-090.json",
+      "sha256": "08813729222c8231500233ec6952459b6549e5fd534e87516fb1f99efa17676c",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_lip_press",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.7721712997746055,
+      "rms_control_difference": 0.214301174566027
+    },
+    {
+      "id": "EXP-153",
+      "title": "Hiding a smile",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-153.json",
+      "sha256": "8a6b61f41a7d6e619f7bcbee188008d5c454cb2295e2c22460829c40f1b87b76",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_corner_lift",
+        "mouth_lip_press"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.8440773134650685,
+      "rms_control_difference": 0.19607281979878818
+    },
+    {
+      "id": "EXP-139",
+      "title": "Focused determination",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-139.json",
+      "sha256": "2a8c23d5a37ae1ed9162e9bb066870ecb5518da206975a5c69cc4b4502fee29b",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_lip_press",
+        "mouth_width_screen_left",
+        "mouth_width_screen_right"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.249726574489672
+    },
+    {
+      "id": "EXP-174",
+      "title": "Sleepy annoyance",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-174.json",
+      "sha256": "3007a539a7e62126a7bc61c295774fc84959b30cba8894f79616c98004e71ff1",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.76128,
+      "rms_control_difference": 0.1935878562936213
+    },
+    {
+      "id": "EXP-067",
+      "title": "Creeping dread",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-067.json",
+      "sha256": "8a105de66ae0b57b06b7170ec22212459e6cc18f9de026b00d4d9e96c53e4370",
+      "active_controls": [
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_purse",
+        "opening_px"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 4.0,
+      "rms_control_difference": 0.4563449207176525
+    },
+    {
+      "id": "EXP-093",
+      "title": "Bitter taste",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-093.json",
+      "sha256": "aafe7ee28eb6d046e48d1d125fda8440bd37c127aa3eac9dd5d736c634cde6f5",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_open",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.65,
+      "rms_control_difference": 0.16339976070756881
+    },
+    {
+      "id": "EXP-003",
+      "title": "Quiet contentment",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-003.json",
+      "sha256": "61822fa101313294b418a2b25bcef0c74619ce9e76b3e5d2a79155ba5e11ae71",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "eye_smile_L",
+        "eye_smile_R",
+        "mouth_corner_lift",
+        "mouth_smile"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.2396027848971207
+    },
+    {
+      "id": "EXP-043",
+      "title": "Silent fury",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-043.json",
+      "sha256": "8ebdec169e4a2fbd533ef9a4638c7e562f46ddaad0a1c8d0e12f80a77d70ec80",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_lip_press"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.0,
+      "rms_control_difference": 0.21038350679333015
+    },
+    {
+      "id": "EXP-064",
+      "title": "Shocked gasp",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-064.json",
+      "sha256": "82474f286b049a3243cc6f283e7ddbf00935f33b6451e3be34bc99397c1ca797",
+      "active_controls": [
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_purse",
+        "opening_px"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 4.0,
+      "rms_control_difference": 0.5418622722262453
+    },
+    {
+      "id": "EXP-004",
+      "title": "Delighted discovery",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-004.json",
+      "sha256": "f96e59e9a1ab77fe69fef2e0069b345a04b42622e83555d4db75e1d06a3020a7",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_oral_lift",
+        "mouth_purse",
+        "mouth_smile",
+        "mouth_spread",
+        "opening_px"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 4.0,
+      "rms_control_difference": 0.5242092239347378
+    },
+    {
+      "id": "EXP-042",
+      "title": "Cold glare",
+      "path": "/workspace/scratch/42f2baf55663/approved36_integration_work/ryoko_object_rig/expressions/EXP-042.json",
+      "sha256": "80bf98ef59e55fb61c99ff8d6de7d913680bb7d3782db8618a0fbca46f8e4555",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.8274010013654983,
+      "rms_control_difference": 0.1810918475812439
+    },
+    {
+      "id": "EXP-129",
+      "title": "Mental arithmetic",
+      "path": "/workspace/scratch/42f2baf55663/mental_arithmetic_work/EXP-129.json",
+      "sha256": "fdd5161262f4e2149503a2c70b2224cc53d6cdd899beb7080c5d19b849644855",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "gaze_y",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 1.2000000000000002,
+      "rms_control_difference": 0.22367782136590014
+    },
+    {
+      "id": "EXP-041",
+      "title": "Controlled anger",
+      "path": "/workspace/scratch/42f2baf55663/controlled_anger_work/EXP-041.json",
+      "sha256": "04202c10a048724616a831566f7743c18159ce84c0415867b33c13c64ce75337",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_lip_press"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.8216186556927297,
+      "rms_control_difference": 0.13596522027228286
+    },
+    {
+      "id": "EXP-061",
+      "title": "Broad surprise",
+      "path": "/workspace/scratch/42f2baf55663/broad_surprise_work/EXP-061.json",
+      "sha256": "aa2200fc77caefb887d2e6115e062d5e2ca47c95cc56b56c5f536b926c57fbbf",
+      "active_controls": [
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_purse",
+        "opening_px"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 4.0,
+      "rms_control_difference": 0.5618208401338946
+    },
+    {
+      "id": "EXP-123",
+      "title": "Puzzled",
+      "path": "/workspace/scratch/42f2baf55663/puzzled_work/EXP-123.json",
+      "sha256": "a0ebc834b361cee3352b9687de768895c4c6182cc90c343ebff0851c6037661e",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_inner_lift_screen_left",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_right",
+        "mouth_purse",
+        "mouth_width_screen_right"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.9379038317054846,
+      "rms_control_difference": 0.19343119801928074
+    },
+    {
+      "id": "EXP-023",
+      "title": "Open Sobbing",
+      "path": "/workspace/scratch/42f2baf55663/open_sobbing_work/EXP-023.json",
+      "sha256": "646a42cb38c2b82792f880105e1048cba2dc0a78cf54366317dcf49df61721a8",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_inner_lift_screen_left",
+        "brow_inner_lift_screen_right",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_lip_press",
+        "mouth_open",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.96,
+      "rms_control_difference": 0.229956264689371
+    },
+    {
+      "id": "EXP-081",
+      "title": "Mild disgust",
+      "path": "/workspace/scratch/42f2baf55663/mild_disgust_work/EXP-081.json",
+      "sha256": "4a6783b9232217ed468f626dc36e5c4c43dc0a5a284108a210ef1975496e1dd9",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_corner_lift_screen_right",
+        "mouth_open",
+        "mouth_purse"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.934793388429752,
+      "rms_control_difference": 0.1810324628195574
+    },
+    {
+      "id": "EXP-161",
+      "title": "Sleepy",
+      "path": "/workspace/scratch/42f2baf55663/sleepy_work/EXP-161.json",
+      "sha256": "c260d3a88b6e3ed02877cf9f334de5e6e43f921f14c96f952b78193498b3486e",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "mouth_open"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.65,
+      "rms_control_difference": 0.15475924306026956
+    },
+    {
+      "id": "EXP-045",
+      "title": "Irritated Side-eye",
+      "path": "/workspace/scratch/42f2baf55663/irritated_side_eye_work/EXP-045.json",
+      "sha256": "53f59fc53968bc626e0f3ead5e9f66f03e24d06c1a900106e442cc04dc28180d",
+      "active_controls": [
+        "aversion_px",
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 12.0,
+      "rms_control_difference": 1.3173412945768292
+    },
+    {
+      "id": "EXP-104",
+      "title": "Triumphant Grin",
+      "path": "/workspace/scratch/42f2baf55663/triumphant_grin_work/EXP-104.json",
+      "sha256": "c25530c816fb25c52387d430ba2174287a960c740ce85e11745a35f4f34617fd",
+      "active_controls": [
+        "blink_L",
+        "blink_R",
+        "brow_screen_left",
+        "brow_screen_right",
+        "brow_tilt_screen_left",
+        "brow_tilt_screen_right",
+        "mouth_open",
+        "mouth_smile",
+        "mouth_spread"
+      ],
+      "same_active_control_set": false,
+      "max_control_difference_at_normalized_time": 0.92,
+      "rms_control_difference": 0.22837492163534942
+    }
+  ]
+}

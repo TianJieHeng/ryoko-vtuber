@@ -1,0 +1,175 @@
+{
+  "profile_identity": {
+    "insight_integration_work/ryoko_object_rig": {
+      "sha256": "4fb88990455fc4ba799e30ce2987b17151fe0ca00d31e562aa38680a7349f211",
+      "matches_current_approved177": true,
+      "closed_arrival_values": {
+        "blink_R": 1,
+        "blink_L": 1,
+        "eye_smile_R": 0.0,
+        "eye_smile_L": 0.0,
+        "mouth_open": 0.0,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_oral_lift": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_purse": 0.0
+      }
+    },
+    "stunned_integration_work/ryoko_object_rig": {
+      "sha256": "4fb88990455fc4ba799e30ce2987b17151fe0ca00d31e562aa38680a7349f211",
+      "matches_current_approved177": true,
+      "closed_arrival_values": {
+        "blink_R": 1,
+        "blink_L": 1,
+        "eye_smile_R": 0.0,
+        "eye_smile_L": 0.0,
+        "mouth_open": 0.0,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_oral_lift": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_purse": 0.0
+      }
+    },
+    "headache_tension_work/rig": {
+      "sha256": "4fb88990455fc4ba799e30ce2987b17151fe0ca00d31e562aa38680a7349f211",
+      "matches_current_approved177": true,
+      "closed_arrival_values": {
+        "blink_R": 1,
+        "blink_L": 1,
+        "eye_smile_R": 0.0,
+        "eye_smile_L": 0.0,
+        "mouth_open": 0.0,
+        "mouth_smile": 0.0,
+        "mouth_spread": 0.0,
+        "mouth_corner_lift": 0.0,
+        "mouth_lip_press": 0.0,
+        "mouth_oral_lift": 0.0,
+        "brow_screen_left": 0.0,
+        "brow_screen_right": 0.0,
+        "brow_tilt_screen_left": 0.0,
+        "brow_tilt_screen_right": 0.0,
+        "gaze_x": 0.0,
+        "gaze_y": 0.0,
+        "hair_sway": 0.0,
+        "blush_intensity": 0.0,
+        "mouth_purse": 0.0
+      }
+    }
+  },
+  "receipts": {
+    "baseline": {
+      "status": "PASS",
+      "checks": 98,
+      "failures": [],
+      "sample": {
+        "hashes": [
+          "65cd61efeb0bb9142f76b14f6c040931ad445270713bf26dddc0551eafc45d78",
+          "9592fb97eb4d0005e27f212b245f7b3d38cd98d879595e123c8c5d3e3e0b83df"
+        ],
+        "id": "EXP-177",
+        "time": 1.2
+      },
+      "pixels": {
+        "full": {
+          "path": "stunned_silence_work/runtime_parity/baseline/EXP-177_full.png",
+          "dimensions": [
+            568,
+            800
+          ],
+          "mode": "RGBA",
+          "png_sha256": "5b54bf5889556532e6560cbcee2330b2127e1eba49fd6d95e4c574710b28b883",
+          "rgba_sha256": "65cd61efeb0bb9142f76b14f6c040931ad445270713bf26dddc0551eafc45d78",
+          "receipt_hash_match": true
+        },
+        "detail": {
+          "path": "stunned_silence_work/runtime_parity/baseline/EXP-177_detail.png",
+          "dimensions": [
+            400,
+            360
+          ],
+          "mode": "RGBA",
+          "png_sha256": "161db33a9b7fc15b17cb32ba9cf23ede2295a2531942ac52ae74853808fe929b",
+          "rgba_sha256": "9592fb97eb4d0005e27f212b245f7b3d38cd98d879595e123c8c5d3e3e0b83df",
+          "receipt_hash_match": true
+        }
+      }
+    },
+    "patched": {
+      "status": "PASS",
+      "checks": 122,
+      "failures": [],
+      "sample": {
+        "hashes": [
+          "65cd61efeb0bb9142f76b14f6c040931ad445270713bf26dddc0551eafc45d78",
+          "9592fb97eb4d0005e27f212b245f7b3d38cd98d879595e123c8c5d3e3e0b83df"
+        ],
+        "id": "EXP-177",
+        "time": 1.2
+      },
+      "pixels": {
+        "full": {
+          "path": "stunned_silence_work/runtime_parity/patched/EXP-177_full.png",
+          "dimensions": [
+            568,
+            800
+          ],
+          "mode": "RGBA",
+          "png_sha256": "5b54bf5889556532e6560cbcee2330b2127e1eba49fd6d95e4c574710b28b883",
+          "rgba_sha256": "65cd61efeb0bb9142f76b14f6c040931ad445270713bf26dddc0551eafc45d78",
+          "receipt_hash_match": true
+        },
+        "detail": {
+          "path": "stunned_silence_work/runtime_parity/patched/EXP-177_detail.png",
+          "dimensions": [
+            400,
+            360
+          ],
+          "mode": "RGBA",
+          "png_sha256": "161db33a9b7fc15b17cb32ba9cf23ede2295a2531942ac52ae74853808fe929b",
+          "rgba_sha256": "9592fb97eb4d0005e27f212b245f7b3d38cd98d879595e123c8c5d3e3e0b83df",
+          "receipt_hash_match": true
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "full": {
+      "baseline_patched_pixel_equal": true,
+      "peak_vs_calm_changed_pixels": 829,
+      "soften_vs_calm_changed_pixels": 438
+    },
+    "detail": {
+      "baseline_patched_pixel_equal": true,
+      "peak_vs_calm_changed_pixels": 3372,
+      "soften_vs_calm_changed_pixels": 1782
+    }
+  },
+  "harness_files": {
+    "stunned_silence_work/runtime_parity/check.gd": "cb7b328cf94adbf3a5798131e97a004dc13187c8e435c4d04f72b004fa1f8302",
+    "stunned_silence_work/runtime_parity/run.sh": "a911ceb2fd8023123f50a1f59cc3031b3aa06f5cc390e4df6132dd938e4ca6b1",
+    "stunned_silence_work/runtime_parity/samples.json": "94e0bf01867baae68d5be47d01546015a9d411058520f4c1cafebbf53866f804",
+    "stunned_silence_work/runtime_parity/baseline.json": "1384b3be7025f432d64e34e6c1bb791480c8682f7943f2e1de344861379924c2",
+    "stunned_silence_work/runtime_parity/patched.json": "f39348a3ddbe0012980381e0f8ee5d95832bfc7a498a9de08b722f43d20951c2"
+  },
+  "interpretation": "Existing native parity capture, EXP-177 sampled at 1.2 seconds after reset/play. Its current inspected source profile has matching approved177 hash and blink_L=blink_R=1 with all other values zero. Historical single-anchor evidence, not a new current all-frame EXP177 render."
+}

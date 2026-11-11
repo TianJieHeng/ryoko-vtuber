@@ -1,0 +1,35 @@
+{
+  "candidate": "EXP-096",
+  "status": "NATIVE_TECHNICAL_PASS_VISUAL_FIDELITY_LIMITATIONS",
+  "approval": "UNAPPROVED",
+  "author_freeze_sha256": "6f076e4127e9c07d4083c6a26560ce32dfcb25a9d9c7981ad0401d291a509520",
+  "reference_pixels_inspected": true,
+  "comparison_source_pixels_inspected": [
+    "EXP-043",
+    "EXP-174",
+    "EXP-177"
+  ],
+  "native_comparison_pixels_inspected": [
+    "EXP-043",
+    "EXP-174",
+    "EXP-177"
+  ],
+  "native_technical_checks": 96,
+  "native_technical_checks_passed": 96,
+  "reviewer_tests": 72,
+  "reviewer_tests_passed": true,
+  "validator_exit_code": 0,
+  "video_sha256": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+  "complete_decoded_frames": 121,
+  "failures": [],
+  "pending_technical_inputs": [],
+  "normal_speed_continuous_observation": false,
+  "visual_read": "Restrained tense closure with a visible still-closed relaxation; not unmistakable headache/pain. Missing central furrows, true brow convergence and independent downturned corners remain material limitations.",
+  "native_capture_attempted_by_reviewer": false,
+  "renderer_or_ui_invoked_by_reviewer": false,
+  "source_or_frozen_author_files_modified": false,
+  "production_or_publication_attempted_by_reviewer": false,
+  "latest_report": "INDEPENDENT_NATIVE_REVIEW.md",
+  "historical_source_report": "INDEPENDENT_SOURCE_REVIEW.md",
+  "normal_speed_visual_decision": "Separate; not established by computational decode or sampled pixel inspection."
+}

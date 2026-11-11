@@ -1,0 +1,29 @@
+{
+  "id": "EXP-096",
+  "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+  "approval_evidence": [
+    {
+      "speaker": "user",
+      "text": "if i say its good its approved"
+    },
+    {
+      "speaker": "assistant",
+      "text": "Here\u2019s Headache Tension, with tense brows and a sustained eye closure that eases before reopening. It reads as a restrained tense pause because the rig can\u2019t create the central brow furrows."
+    },
+    {
+      "speaker": "user",
+      "text": "good"
+    }
+  ],
+  "candidate_sha256": "21ba5c4393ed672a5496ed28577068bd4b56e3b8ff5d7ac4f9674df03badf1fe",
+  "review_video": "Headache_tension_review_v1.mp4",
+  "review_video_sha256": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+  "branch": "review/exp096-headache-tension-v1",
+  "base_commit": "3ce98774282ad6c20dfbd7018d20838ff861b762",
+  "purpose": "Review backup only. Production integration is separate.",
+  "qualification": "Restrained tense closure with still-closed softening. No true central furrows, horizontal brow convergence or independent downturned mouth corners. Not unmistakable headache/pain. Operator sampled ordinary-speed playback; continuous observation is not claimed. Meditative Calm comparator is verified historical single-anchor evidence, not a new all-frame or playback comparison.",
+  "historical_status": "UNAPPROVED and pending labels remain exact historical review-time records; this separate record supersedes only their current user-approval status.",
+  "production_registry_changed": false,
+  "main_written": false,
+  "ci_run": false
+}

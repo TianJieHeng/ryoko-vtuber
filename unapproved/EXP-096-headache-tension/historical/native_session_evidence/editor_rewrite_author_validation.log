@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "independent_checks_pass": false,
+  "failures": [
+    "reviewed_candidate_and_capture_inputs_unchanged"
+  ],
+  "pending": [
+    "Review MP4 absent; decode/order checks not run."
+  ],
+  "approval": "UNAPPROVED; isolated evidence review only"
+}

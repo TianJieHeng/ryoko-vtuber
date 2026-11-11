@@ -1,0 +1,19 @@
+{
+  "status": "UNAPPROVED_NATIVE_REVIEW_COMPLETE",
+  "sha256": {
+    "Headache_tension_review_v1.mp4": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+    "native_launcher/project.godot": "5d4c5da35d7fc6f44013b20ee8107e13ac78bd5b999a42c45d5c9ebcd27dc7a6",
+    "review_input_freeze.json": "6f076e4127e9c07d4083c6a26560ce32dfcb25a9d9c7981ad0401d291a509520",
+    "independent_review_validation.py": "220e8f833a17a458b350e438fbb7e45349d65d046c3a24cfe425516c4216a80b",
+    "test_independent_review_validation.py": "21b86fb8fb64e22da68eff495f5cb8610677ad81f9683c22ba1a80bed98700dc",
+    "capture/checks.json": "06eaac558164218918eb4268f0fbdac5d85e37fb99fe59cedfb78c2f293abf4f",
+    "motion_checks.json": "c2b4c7839cea4385623b2509434fa978b081755728d8e34cd7017feadc31c0a8",
+    "NATIVE_CAPTURE_REVIEW.md": "bc377a4787c7d8df11ecf21a41255ecc76a4f77103adb1d8f078d8c09d9bfa9e"
+  },
+  "author_checks": 84,
+  "reviewer_checks": 96,
+  "unit_tests": 146,
+  "normal_speed_observation": "sampled Play and Loop Zone only",
+  "continuous_observation": false,
+  "publication": "not attempted"
+}

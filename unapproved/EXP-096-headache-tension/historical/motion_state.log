@@ -1,0 +1,10 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+OBJECT_BASE_READY independent_sprites=263 expression_timelines=0
+WARNING: Loaded resource as image file, this will not work on export: 'res://parts/caught_staring/uneasy_clear_parting.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+     at: load_from_file (core/io/image.cpp:2766)
+     GDScript backtrace (most recent call first):
+         [0] setup (res://parts/caught_staring/components.gd:13)
+         [1] _ready (res://expression_rig.gd:46)
+         [2] run (/workspace/scratch/42f2baf55663/headache_tension_work/render_motion.gd:30)
+MOTION_PASS checks=16260 failures=[]

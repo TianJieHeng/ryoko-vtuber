@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": 10338,
+  "failures": [],
+  "max_control_error": 2.9140048929399143e-08,
+  "max_lifecycle_error": 4.471181080933917e-08,
+  "independent_timeline_samples": 121,
+  "independent_lifecycle_samples": 252,
+  "source_panels_exact_lossless_crops": {
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp01_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp02_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp03_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp04_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp05_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp06_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp07_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp08_v001.png": true,
+    "assets/expressions/EXP-096_headache-tension/RYO_EXP-096_headache-tension_kp09_v001.png": true
+  },
+  "native_capture": "PENDING; no renderer or UI invoked",
+  "approval": "UNAPPROVED"
+}

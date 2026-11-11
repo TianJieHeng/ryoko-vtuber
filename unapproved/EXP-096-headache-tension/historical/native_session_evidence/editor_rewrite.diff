@@ -1,0 +1,19 @@
+--- headache_tension_work/native_session_evidence/project.godot.original	2026-11-10 18:13:19.680424995 -0500
++++ headache_tension_work/native_launcher/project.godot	2026-11-10 18:21:43.213401942 -0500
+@@ -21,11 +21,12 @@
+ window/size/window_width_override=1136
+ window/size/window_height_override=800
+ 
++[editor]
++
++movie_writer/fps=30
++movie_writer/mjpeg_quality=0.85
++
+ [rendering]
+ 
+ renderer/rendering_method="gl_compatibility"
+ environment/defaults/default_clear_color=Color(0.12, 0.13, 0.14, 1)
+-
+-[editor]
+-movie_writer/fps=30
+-movie_writer/mjpeg_quality=0.85

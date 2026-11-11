@@ -1,0 +1,31 @@
+{
+  "files": {
+    "stunned_silence_work/runtime_parity/check.gd": {
+      "stored_path": "comparator_support/check.gd",
+      "sha256": "cb7b328cf94adbf3a5798131e97a004dc13187c8e435c4d04f72b004fa1f8302",
+      "bytes": 2439
+    },
+    "stunned_silence_work/runtime_parity/run.sh": {
+      "stored_path": "comparator_support/run.sh",
+      "sha256": "a911ceb2fd8023123f50a1f59cc3031b3aa06f5cc390e4df6132dd938e4ca6b1",
+      "bytes": 853
+    },
+    "stunned_silence_work/runtime_parity/samples.json": {
+      "stored_path": "comparator_support/samples.json",
+      "sha256": "94e0bf01867baae68d5be47d01546015a9d411058520f4c1cafebbf53866f804",
+      "bytes": 1122
+    },
+    "stunned_silence_work/runtime_parity/baseline.json": {
+      "stored_path": "comparator_support/baseline.json",
+      "sha256": "1384b3be7025f432d64e34e6c1bb791480c8682f7943f2e1de344861379924c2",
+      "bytes": 5789
+    },
+    "stunned_silence_work/runtime_parity/patched.json": {
+      "stored_path": "comparator_support/patched.json",
+      "sha256": "f39348a3ddbe0012980381e0f8ee5d95832bfc7a498a9de08b722f43d20951c2",
+      "bytes": 5790
+    }
+  },
+  "qualification": "Existing native parity capture, EXP-177 sampled at 1.2 seconds after reset/play. Its current inspected source profile has matching approved177 hash and blink_L=blink_R=1 with all other values zero. Historical single-anchor evidence, not a new current all-frame EXP177 render.",
+  "images": "Historical comparator PNGs omitted; exact PNG/RGBA identities and verification retained in historical/independent_native_review_evidence/meditative_comparator_verification.json. The old capture receipt did not record a capture-time profile hash."
+}

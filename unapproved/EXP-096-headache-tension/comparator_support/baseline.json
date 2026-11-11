@@ -1,0 +1,200 @@
+{
+  "checks": 98,
+  "failures": [],
+  "records": [
+    {
+      "hashes": [
+        "90e2c36233fa2c53652865bf5ee56252ae9e696665ea99c1fb169b97791af631",
+        "e9131ea621ca1fa06cf4d4e1b8bc9d63dfc346e332bcef06e6afe74b74d9118f"
+      ],
+      "id": "EXP-163",
+      "time": 2.7
+    },
+    {
+      "hashes": [
+        "f02f9b16a647bbbf0c6fe80b80b178f83ed0e6d06735dc3f9d5f3ea52c5c7c33",
+        "d41e816287f2dbb3cff274c32fc4993d5980b5e07c59c159a347ed51c27034c3"
+      ],
+      "id": "EXP-005",
+      "time": 1.91
+    },
+    {
+      "hashes": [
+        "da5f588057f2425f9c0e2dacb00410cea734f3749bec8d68dbc03751be4edb24",
+        "5dac5729cf63cab3c8865a42f26a73cba2544cf1c7498b3c38f703afe74f840c"
+      ],
+      "id": "EXP-001",
+      "time": 1.02
+    },
+    {
+      "hashes": [
+        "b86609cb7d3755adc07e7d439da29756890f42afede1e6a99b28cdecb04c6c52",
+        "228311219b0c682d1dcd8f68f9496f2abc3e6f1e495115bb3d184eb2f3e89453"
+      ],
+      "id": "EXP-006",
+      "time": 1.0
+    },
+    {
+      "hashes": [
+        "979b9bf1113f628421785d097cc3165e759da37e3e390efe98aafdf1d145d74b",
+        "7041d4ff32e7852020f0ed58ab642737372c69db7a21a46163d6df4b80730c19"
+      ],
+      "id": "EXP-107",
+      "time": 1.2
+    },
+    {
+      "hashes": [
+        "db4c2f2666924e7aa320b83c3b13b5331f2c5ec15687504e3694365ced86bc5c",
+        "1dac7fdb61bba40fd11a0b2155bb94deb3a7580c649a8431c11e55958eb2459f"
+      ],
+      "id": "EXP-007",
+      "time": 1.3
+    },
+    {
+      "hashes": [
+        "c81897b89942601a669bc1cd7c418031262e424076b11c0f82e43a73e5b68904",
+        "0611c180ee2a9f8d534a0e2acb519958dac4f5854b4cfdb2ee447142cf615480"
+      ],
+      "id": "EXP-002",
+      "time": 0.75
+    },
+    {
+      "hashes": [
+        "0f3756ce89d4408343e5e7d1d9ed5e18dd3d00649f302a64bd7d5474cbc7ce2d",
+        "7e485b92b3d906cacec9c02b9ef96f135e2f8764a18c23d28026a991085031ab"
+      ],
+      "id": "EXP-152",
+      "time": 0.75
+    },
+    {
+      "hashes": [
+        "78bc05fa811aa093edb13748f0dbc9dda770e7d416319f0e744ea6a8837c9fd0",
+        "f855dabb8ff06a36acd2da4c34aa2fa5f04a27909c7ca84b013c8a56852f1a0d"
+      ],
+      "id": "EXP-160",
+      "time": 1.35
+    },
+    {
+      "hashes": [
+        "65cd61efeb0bb9142f76b14f6c040931ad445270713bf26dddc0551eafc45d78",
+        "9592fb97eb4d0005e27f212b245f7b3d38cd98d879595e123c8c5d3e3e0b83df"
+      ],
+      "id": "EXP-177",
+      "time": 1.2
+    },
+    {
+      "hashes": [
+        "911e0cdcb1c1b2680ea9b575b6420a74a75cc5f75e20fbf977ee3431a692f36d",
+        "9396237593d7d97422de4de0d57949a262cba0a7c6519e9cbe32b3d2dc3d3273"
+      ],
+      "id": "EXP-164",
+      "time": 0.82
+    },
+    {
+      "hashes": [
+        "e2702c4b7c857f9d32e3890b6008a490f07c45e339e904326f206150d4a1b30c",
+        "76c4a9deb5c8978ebe85d0f93becabf1733910e512f0e7088718c8ad5da3cdcf"
+      ],
+      "id": "EXP-021",
+      "time": 1.4
+    },
+    {
+      "hashes": [
+        "56dd54dd5e1e1e847933d4d4512cd6b99e2ef6b0103e55275bb7ee4e3f912f82",
+        "0762107dc79f9834feaa7903d9c7f55e74c779019816e5da379d56da77882e6c"
+      ],
+      "id": "EXP-158",
+      "time": 2.0
+    },
+    {
+      "hashes": [
+        "125a5b7135d59f495b403fcca1c8167bea4a5fe26b1229cabdcffae58e476a06",
+        "290855b5d74a60d0d5e2997c80ac38d3eae7c5f444469e27d6a74218790f09c6"
+      ],
+      "id": "EXP-181",
+      "time": 1.24
+    },
+    {
+      "hashes": [
+        "df75a529bf551b7b9381ad74116fef9ccad10f6c6e1a206d12d7ca65b782382f",
+        "6aa879e445d8cf71df81a624ef19f8220b42f618b9fd4c3a1839ab734bc11629"
+      ],
+      "id": "EXP-102",
+      "time": 1.65
+    },
+    {
+      "hashes": [
+        "4ec88645637aa8137aa0024b9c75da5b252fd54601e10da32532237ace82d9a3",
+        "8dd69891df5228edf3c2925ebf4f56ff756e1e1a1444d70f9fbf9c91eb7b07d4"
+      ],
+      "id": "EXP-116",
+      "time": 1.08
+    },
+    {
+      "hashes": [
+        "6bebec9c148e5a0adbac6b169a7afc542abec393ec941b01cd04b52c11e81bc2",
+        "fc86a53c0a38f784934f3a3d67719c88288ebea3e0bb3a7a94bdd4e89f51079f"
+      ],
+      "id": "EXP-050",
+      "time": 1.57
+    },
+    {
+      "hashes": [
+        "4f6d0263391db6cc17b6e2ef5a781367df6802c209187744bd3e52098c5bd7ae",
+        "590dfbe4e70545ecf90c10973b14c49a11d819e0c2bdf5d73b5703fc0571a9a9"
+      ],
+      "id": "EXP-186",
+      "time": 1.02
+    },
+    {
+      "hashes": [
+        "afc67c20a47ad0a5dd320eef1558573ba7ad3b6f21ebc0fef72f7367173ae1cf",
+        "86fbaa9f76a375dba85aa06f98e8ef72f7409250fd562d77afa5fbbda17ca676"
+      ],
+      "id": "EXP-114",
+      "time": 1.2
+    },
+    {
+      "hashes": [
+        "878b969d24a3b7a8b178c61043fe2f9b0a32adc5fe0e6c2d23b8b6dc8cbe36ca",
+        "2d62760c71173806222575d8d63fa4d0d46fe55f54d02d0734394327d5dab1c7"
+      ],
+      "id": "EXP-148",
+      "time": 1.15
+    },
+    {
+      "hashes": [
+        "ded006e3e33bbd21cfbe9d70048ce63e3340b9529bf675723979450a4e8bf147",
+        "c4a4effa276eb609b284c2dd4a8c1c912782efa47f6b9582f91b351d8fb8f9ab"
+      ],
+      "id": "EXP-197",
+      "time": 2.95
+    },
+    {
+      "hashes": [
+        "994b9c7417cbd180c5f563293794ff07aee0fa0284701cc782264865cc295189",
+        "fcb299b8b9a01f6eefd797599c14793cd4cdcec5dcecc090ade175c2a6507f36"
+      ],
+      "id": "EXP-144",
+      "time": 1.95
+    },
+    {
+      "hashes": [
+        "d36d03e5da1ae2d05a045912f7df8955b0ec153b310a8593e7d18693c41f02aa",
+        "1ed7391088288c1bfbcbb59cf62e12cc15da573dd354cc1b439bfdf6f656dd18"
+      ],
+      "id": "EXP-040",
+      "time": 1.4
+    },
+    {
+      "hashes": [
+        "5e94eb56339bdce1c260b44ee5e4cce9b8174b1ee2c94b03d640e8ee8217da9c",
+        "ca27e0c1bec652527e165ce48b630ce3be851d9b940131c36819794ff898f469"
+      ],
+      "id": "EXP-125",
+      "time": 0.95
+    }
+  ],
+  "scope": "All prior24 profiles one maximum-control key each, full and detail native RGBA. Not all-frame or interactive parity.",
+  "status": "PASS"
+}

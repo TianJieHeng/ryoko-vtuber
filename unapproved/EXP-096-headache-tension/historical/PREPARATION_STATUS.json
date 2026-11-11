@@ -1,0 +1,31 @@
+{
+  "candidate": "EXP-096",
+  "title": "Headache tension",
+  "status": "HEADLESS_PREPARATION_COMPLETE_NATIVE_REVIEW_PENDING",
+  "approval": "UNAPPROVED",
+  "source_baseline": "approved36",
+  "pinned_source_files": 999,
+  "pinned_pngs": 184,
+  "runtime_artwork_parity": [
+    "approved41"
+  ],
+  "static_assertions": 1806,
+  "timeline_assertions": 16260,
+  "lifecycle_assertions": 36,
+  "lifecycle_points": 9,
+  "lifecycle_samples": 252,
+  "independent_numerical_source_checks": 10338,
+  "source_panel_exact_crops": 9,
+  "compared_profiles": 45,
+  "encoder_unit_tests": 20,
+  "numerical_mutation_unit_tests": 26,
+  "evidence_validator_unit_tests": 28,
+  "native_launcher": "native_launcher/project.godot",
+  "native_capture": "NOT RUN",
+  "video": "NOT CREATED",
+  "normal_speed_observation": false,
+  "independent_source_review": "PENDING; separate reviewer owns any later report",
+  "publication": "NOT ATTEMPTED",
+  "source_approximation": "No real furrows, horizontal brow convergence or independent downturned corners. Rigid opposed brows and tiny symmetric purse approximate existing source intent.",
+  "scope": "Headless local author preparation only; all other candidate/backlog/production files untouched."
+}
