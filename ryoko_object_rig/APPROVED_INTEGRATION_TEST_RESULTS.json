@@ -5,18 +5,18 @@
   "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
   "ci_run": false,
   "current_python_model": {
-    "path": "validation/approved_exasperated_sigh/python_model_checks.json",
-    "sha256": "098602453785eef643e9a14fca4f8531c940212b0e3497de7b2d9c1249109fc8",
-    "checks": 6675775
+    "path": "validation/approved_overly_sweet_taste/python_model_checks.json",
+    "sha256": "92c749d54c811783ea5ad541f688fbad849793835fb7d12357512f6c8b0260f8",
+    "checks": 6613546
   },
   "current_python_unit_tests": {
-    "path": "validation/approved_exasperated_sigh/python_model_unit_tests.log",
+    "path": "validation/approved_overly_sweet_taste/python_model_unit_tests.log",
     "tests": 28,
     "status": "PASS"
   },
   "current_media_integrity": {
-    "path": "validation/approved_exasperated_sigh/media_integrity.json",
-    "sha256": "569fdfedce7c3287831a53079c8d0a02b0df8c9dd58b045b42968ec890d568f5",
+    "path": "validation/approved_overly_sweet_taste/media_integrity.json",
+    "sha256": "95dbc7d3d26b3de8f598974070031ff4df2da37845a976965f8e4a3cc5f88608",
     "status": "PASS"
   },
   "current_godot_state_checks": "NOT RUN",
@@ -25,9 +25,12 @@
   "normal_speed_playback_observed": false,
   "live_engine_pacing_measured": false,
   "limitation": "Pure-Python model and existing-media verification, not GDScript engine execution, rendering, or visual playback. Historical native candidate checks remain original evidence only.",
+  "remote_backup": "NOT VERIFIED",
+  "publication": "AUTHORIZED_FOR_SINGLE_EXPRESSION_MAIN_UPDATE",
   "current_source_guard_negative_tests": {
-    "path": "validation/approved_exasperated_sigh/guard_negative_results.json",
+    "path": "validation/approved_overly_sweet_taste/guard_negative_results.json",
     "tamper_cases": 12,
     "status": "PASS"
-  }
+  },
+  "publication_metadata_update": "Publication-only metadata and matching guard expectations changed after the completed checks. Model/media/unit/source-tamper receipts are unchanged; source/guard tests were not replayed after this metadata update, as instructed."
 }

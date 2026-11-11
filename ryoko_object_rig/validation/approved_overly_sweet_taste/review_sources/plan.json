@@ -1,0 +1,175 @@
+[
+  {
+    "name": "neutral",
+    "pose": {},
+    "source_panel": 1,
+    "time": 0
+  },
+  {
+    "name": "taste_intake",
+    "pose": {
+      "blink_L": 0,
+      "blink_R": 0,
+      "blush_intensity": 0,
+      "brow_inner_lift_screen_left": 0.06,
+      "brow_inner_lift_screen_right": 0.06,
+      "brow_screen_left": 0.06,
+      "brow_screen_right": 0.06,
+      "brow_tilt_screen_left": -0.1,
+      "brow_tilt_screen_right": 0.1,
+      "eye_smile_L": 0,
+      "eye_smile_R": 0,
+      "mouth_corner_lift": 0,
+      "mouth_lip_press": 0,
+      "mouth_open": 0.07,
+      "mouth_purse": 0.06,
+      "mouth_smile": 0
+    },
+    "source_panel": 2,
+    "time": 0.55
+  },
+  {
+    "name": "sweet_recognition",
+    "pose": {
+      "blink_L": 0.12,
+      "blink_R": 0.12,
+      "blush_intensity": 0.4,
+      "brow_inner_lift_screen_left": 0.16,
+      "brow_inner_lift_screen_right": 0.16,
+      "brow_screen_left": -0.05,
+      "brow_screen_right": -0.05,
+      "brow_tilt_screen_left": 0.15,
+      "brow_tilt_screen_right": -0.15,
+      "eye_smile_L": 0.1,
+      "eye_smile_R": 0.1,
+      "mouth_corner_lift": 0.2,
+      "mouth_lip_press": 0.4,
+      "mouth_open": 0,
+      "mouth_purse": 0.35,
+      "mouth_smile": 0.04
+    },
+    "source_panel": 3,
+    "time": 0.9
+  },
+  {
+    "name": "squeeze_build",
+    "pose": {
+      "blink_L": 0.32,
+      "blink_R": 0.32,
+      "blush_intensity": 0.75,
+      "brow_inner_lift_screen_left": 0.25,
+      "brow_inner_lift_screen_right": 0.25,
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "brow_tilt_screen_left": 0.25,
+      "brow_tilt_screen_right": -0.25,
+      "eye_smile_L": 0.3,
+      "eye_smile_R": 0.3,
+      "mouth_corner_lift": 0.42,
+      "mouth_lip_press": 0.65,
+      "mouth_open": 0,
+      "mouth_purse": 0.65,
+      "mouth_smile": 0.1
+    },
+    "source_panel": 4,
+    "time": 1.25
+  },
+  {
+    "name": "sweet_overload",
+    "pose": {
+      "blink_L": 0,
+      "blink_R": 0,
+      "blush_intensity": 0.92,
+      "brow_inner_lift_screen_left": 0.4,
+      "brow_inner_lift_screen_right": 0.4,
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "brow_tilt_screen_left": 0.3,
+      "brow_tilt_screen_right": -0.3,
+      "eye_smile_L": 1.0,
+      "eye_smile_R": 1.0,
+      "mouth_corner_lift": 0.55,
+      "mouth_lip_press": 0.7,
+      "mouth_open": 0,
+      "mouth_purse": 0.78,
+      "mouth_smile": 0.12
+    },
+    "source_panel": 5,
+    "time": 1.65
+  },
+  {
+    "name": "overload_hold",
+    "pose": {
+      "blink_L": 0,
+      "blink_R": 0,
+      "blush_intensity": 0.92,
+      "brow_inner_lift_screen_left": 0.4,
+      "brow_inner_lift_screen_right": 0.4,
+      "brow_screen_left": -0.08,
+      "brow_screen_right": -0.08,
+      "brow_tilt_screen_left": 0.3,
+      "brow_tilt_screen_right": -0.3,
+      "eye_smile_L": 1.0,
+      "eye_smile_R": 1.0,
+      "mouth_corner_lift": 0.55,
+      "mouth_lip_press": 0.7,
+      "mouth_open": 0,
+      "mouth_purse": 0.78,
+      "mouth_smile": 0.12
+    },
+    "source_panel": 6,
+    "time": 2.25
+  },
+  {
+    "name": "reopen_residual",
+    "pose": {
+      "blink_L": 0.18,
+      "blink_R": 0.18,
+      "blush_intensity": 0.45,
+      "brow_inner_lift_screen_left": 0.18,
+      "brow_inner_lift_screen_right": 0.18,
+      "brow_screen_left": -0.04,
+      "brow_screen_right": -0.04,
+      "brow_tilt_screen_left": 0.15,
+      "brow_tilt_screen_right": -0.15,
+      "eye_smile_L": 0.17,
+      "eye_smile_R": 0.17,
+      "mouth_corner_lift": 0.24,
+      "mouth_lip_press": 0.4,
+      "mouth_open": 0,
+      "mouth_purse": 0.4,
+      "mouth_smile": 0.03
+    },
+    "source_panel": 7,
+    "time": 2.75
+  },
+  {
+    "name": "settle",
+    "pose": {
+      "blink_L": 0.03,
+      "blink_R": 0.03,
+      "blush_intensity": 0.08,
+      "brow_inner_lift_screen_left": 0.03,
+      "brow_inner_lift_screen_right": 0.03,
+      "brow_screen_left": -0.01,
+      "brow_screen_right": -0.01,
+      "brow_tilt_screen_left": 0.02,
+      "brow_tilt_screen_right": -0.02,
+      "eye_smile_L": 0,
+      "eye_smile_R": 0,
+      "mouth_corner_lift": 0.04,
+      "mouth_lip_press": 0.1,
+      "mouth_open": 0,
+      "mouth_purse": 0.1,
+      "mouth_smile": 0
+    },
+    "source_panel": 8,
+    "time": 3.3
+  },
+  {
+    "name": "neutral_return",
+    "pose": {},
+    "source_panel": 9,
+    "time": 3.75
+  }
+]

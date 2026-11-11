@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "profile_sha256": "67cae056cbc90fe0de20820131d750a97ada4ccc0340575ee43ec18963bbda6a",
+  "video_sha256": "035ed33369ba957d2e2c1275cee377b0f9a21d3b6b2c529ea88592dbddfb4d19",
+  "baseline_pngs_decoded": 184,
+  "historical_native_rgba_images_verified": 260,
+  "historical_frozen_inputs_verified": 1175,
+  "historical_native_motion_frames_per_view": 121,
+  "historical_static_anchor_pairs": 9,
+  "historical_video_frames_decoded": 121,
+  "neutral_hold_frames_initial": 7,
+  "neutral_hold_frames_final": 8,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 968,
+        "height": 800,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "121"
+      }
+    ],
+    "format": {
+      "duration": "4.033333",
+      "size": "225487"
+    }
+  },
+  "new_images_rendered": 0,
+  "current_engine_executed": false,
+  "current_visual_review": false,
+  "normal_speed_playback_observed": false,
+  "raw_capture_archive_in_patch": false,
+  "scope": "Current integrity/decode checks of historical candidate media. Raw images verified only at the explicitly supplied local path; this does not establish remote backup, fresh integrated native parity, source fit, playback or pacing."
+}

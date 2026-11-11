@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "EXP-163",
+      "path": "res://yawn_performance.json",
+      "aliases": [
+        "yawn"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-005",
+      "path": "res://expressions/EXP-005.json",
+      "aliases": [
+        "hearty-laughter",
+        "laugh"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-001",
+      "path": "res://expressions/EXP-001.json",
+      "aliases": [
+        "bright_welcome"
+      ],
+      "trigger_phase": "recognition"
+    },
+    {
+      "id": "EXP-006",
+      "path": "res://expressions/EXP-006.json",
+      "aliases": [
+        "suppressed-giggle",
+        "giggle"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-107",
+      "path": "res://expressions/EXP-107.json",
+      "aliases": [
+        "confident-reassurance",
+        "reassure"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-007",
+      "path": "res://expressions/EXP-007.json",
+      "aliases": [
+        "relieved-smile",
+        "relief"
+      ],
+      "trigger_phase": "inward_tension"
+    },
+    {
+      "id": "EXP-002",
+      "path": "res://expressions/EXP-002.json",
+      "aliases": [
+        "affectionate-warmth",
+        "affection"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-152",
+      "path": "res://expressions/EXP-152.json",
+      "aliases": [
+        "private-pride",
+        "pride"
+      ],
+      "trigger_phase": "downward_preparation"
+    },
+    {
+      "id": "EXP-160",
+      "path": "res://expressions/EXP-160.json",
+      "aliases": [
+        "shy-laughter",
+        "shy_laughter"
+      ],
+      "trigger_phase": "tender_closed_onset"
+    },
+    {
+      "id": "EXP-177",
+      "path": "res://expressions/EXP-177.json",
+      "aliases": [
+        "meditative-calm",
+        "meditate"
+      ],
+      "trigger_phase": "settling"
+    },
+    {
+      "id": "EXP-164",
+      "path": "res://expressions/EXP-164.json",
+      "aliases": [
+        "fighting-sleep",
+        "fighting_sleep"
+      ],
+      "trigger_phase": "first_sink"
+    },
+    {
+      "id": "EXP-021",
+      "path": "res://expressions/EXP-021.json",
+      "aliases": [
+        "quiet-sadness",
+        "quiet_sadness"
+      ],
+      "trigger_phase": "sad_peak"
+    },
+    {
+      "id": "EXP-158",
+      "path": "res://expressions/EXP-158.json",
+      "aliases": [
+        "post-confession-shyness",
+        "post_confession_shyness"
+      ],
+      "trigger_phase": "hopeful_downcast_peak"
+    },
+    {
+      "id": "EXP-181",
+      "path": "res://expressions/EXP-181.json",
+      "aliases": [
+        "cheeky-wink",
+        "cheeky_wink"
+      ],
+      "trigger_phase": "playful_preparation"
+    },
+    {
+      "id": "EXP-102",
+      "path": "res://expressions/EXP-102.json",
+      "aliases": [
+        "knowing-smirk",
+        "knowing_smirk"
+      ],
+      "trigger_phase": "knowing_preparation"
+    },
+    {
+      "id": "EXP-116",
+      "path": "res://expressions/EXP-116.json",
+      "aliases": [
+        "confident-denial",
+        "confident_denial"
+      ],
+      "trigger_phase": "firm_attention"
+    },
+    {
+      "id": "EXP-050",
+      "path": "res://expressions/EXP-050.json",
+      "aliases": [
+        "frustrated-pout",
+        "frustrated_pout"
+      ],
+      "trigger_phase": "gathering_pout"
+    },
+    {
+      "id": "EXP-186",
+      "path": "res://expressions/EXP-186.json",
+      "aliases": [
+        "smug-cat-smile",
+        "smug_cat_smile"
+      ],
+      "trigger_phase": "quiet_composure"
+    },
+    {
+      "id": "EXP-114",
+      "path": "res://expressions/EXP-114.json",
+      "aliases": [
+        "daring-provocation",
+        "daring_provocation"
+      ],
+      "trigger_phase": "quiet_composure"
+    },
+    {
+      "id": "EXP-148",
+      "path": "res://expressions/EXP-148.json",
+      "aliases": [
+        "nervous-laugh",
+        "nervous_laugh"
+      ],
+      "trigger_phase": "hesitant_onset"
+    },
+    {
+      "id": "EXP-197",
+      "path": "res://expressions/EXP-197.json",
+      "aliases": [
+        "playful_kiss"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-144",
+      "path": "res://expressions/EXP-144.json",
+      "aliases": [
+        "caught-staring",
+        "caught_staring"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-040",
+      "path": "res://expressions/EXP-040.json",
+      "aliases": [
+        "recovering-composure",
+        "recovering_composure"
+      ],
+      "trigger_phase": "distressed"
+    },
+    {
+      "id": "EXP-125",
+      "path": "res://expressions/EXP-125.json",
+      "aliases": [
+        "sudden-insight",
+        "sudden_insight"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-063",
+      "path": "res://expressions/EXP-063.json",
+      "aliases": [
+        "stunned-silence",
+        "stunned_silence"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-090",
+      "path": "res://expressions/EXP-090.json",
+      "aliases": [
+        "queasy"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-153",
+      "path": "res://expressions/EXP-153.json",
+      "aliases": [
+        "hiding_a_smile"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-139",
+      "path": "res://expressions/EXP-139.json",
+      "aliases": [
+        "focused_determination"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-174",
+      "path": "res://expressions/EXP-174.json",
+      "aliases": [
+        "sleepy_annoyance"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-067",
+      "path": "res://expressions/EXP-067.json",
+      "aliases": [
+        "creeping_dread"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-093",
+      "path": "res://expressions/EXP-093.json",
+      "aliases": [
+        "bitter_taste"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-003",
+      "path": "res://expressions/EXP-003.json",
+      "aliases": [
+        "quiet_contentment"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-043",
+      "path": "res://expressions/EXP-043.json",
+      "aliases": [
+        "silent_fury"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-064",
+      "path": "res://expressions/EXP-064.json",
+      "aliases": [
+        "shocked_gasp"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-004",
+      "path": "res://expressions/EXP-004.json",
+      "aliases": [
+        "delighted_discovery"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-042",
+      "path": "res://expressions/EXP-042.json",
+      "aliases": [
+        "cold_glare"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-129",
+      "path": "res://expressions/EXP-129.json",
+      "aliases": [
+        "mental_arithmetic"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-041",
+      "path": "res://expressions/EXP-041.json",
+      "aliases": [
+        "controlled_anger"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-061",
+      "path": "res://expressions/EXP-061.json",
+      "aliases": [
+        "broad_surprise"
+      ],
+      "trigger_phase": "neutral"
+    },
+    {
+      "id": "EXP-123",
+      "path": "res://expressions/EXP-123.json",
+      "aliases": [
+        "puzzled"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-081",
+      "path": "res://expressions/EXP-081.json",
+      "aliases": [
+        "mild_disgust"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-161",
+      "path": "res://expressions/EXP-161.json",
+      "aliases": [
+        "sleepy"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-045",
+      "path": "res://expressions/EXP-045.json",
+      "aliases": [
+        "irritated_side_eye"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-104",
+      "path": "res://expressions/EXP-104.json",
+      "aliases": [
+        "triumphant_grin"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-096",
+      "path": "res://expressions/EXP-096.json",
+      "aliases": [
+        "headache_tension"
+      ],
+      "trigger_phase": "anticipation"
+    },
+    {
+      "id": "EXP-046",
+      "path": "res://expressions/EXP-046.json",
+      "aliases": [
+        "exasperated_sigh"
+      ],
+      "trigger_phase": "weary_onset"
+    }
+  ]
+}

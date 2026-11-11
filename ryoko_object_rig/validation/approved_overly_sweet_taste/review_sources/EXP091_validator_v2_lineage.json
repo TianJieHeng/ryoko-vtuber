@@ -1,0 +1,8 @@
+{
+  "original_path": "/workspace/scratch/42f2baf55663/ryoko_native_editor_attempts_20261111/EXP-091-editor-attempt-02/encode_preflight.py",
+  "original_sha256": "0b2573c3ec6ce9632e98282e41eda7400d480e5eeb667046c59bb9de62d513b6",
+  "supplemental_sha256": "4d5db940c703e347d858310fd72644f30baeb00bc69f28d73e3720cbed502738",
+  "observed_max_serialization_delta_seconds": 3.552713678800501e-15,
+  "tolerance_seconds": 1e-12,
+  "rationale": "Absolute tolerance is under one ten-billionth of a 30 Hz frame interval; preserves exact frame identity and rejects nonfinite and nonnumeric times. All other checks unchanged. Import path only locates original frozen numeric_model."
+}

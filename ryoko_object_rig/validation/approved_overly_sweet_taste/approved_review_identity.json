@@ -1,0 +1,94 @@
+{
+  "repository": "TianJieHeng/ryoko-vtuber",
+  "base_main": "4a2d632e54b23ae8c3477940b5d4aed325232028",
+  "profiles": [
+    {
+      "id": "EXP-091",
+      "alias": "overly_sweet_taste",
+      "profile_path": "expressions/EXP-091.json",
+      "profile_sha256": "67cae056cbc90fe0de20820131d750a97ada4ccc0340575ee43ec18963bbda6a",
+      "video_path": "validation/approved_overly_sweet_taste/review_sources/Overly_sweet_taste_reconstruction_20261111_r1_review.mp4",
+      "video_sha256": "035ed33369ba957d2e2c1275cee377b0f9a21d3b6b2c529ea88592dbddfb4d19",
+      "motion_path": "validation/approved_overly_sweet_taste/review_sources/capture/evidence.json",
+      "qualification": "Source fit NOT PASSED: peak reads pleased/bashful more than unmistakably overloaded by sweetness. Raised-inner-brow strain and pinched-mouth tension remain weaker than the source. Jagged lash/hair edges and small bust-scale mouth changes remain. No continuous normal-speed playback or native comparator review against Kiss, Shy Laughter, Queasy and Headache. User approval is distinct from these retained review qualifications.",
+      "preserved_review_files": [
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP-091.json",
+          "sha256": "67cae056cbc90fe0de20820131d750a97ada4ccc0340575ee43ec18963bbda6a",
+          "bytes": 5758
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/Overly_sweet_taste_reconstruction_20261111_r1_review.mp4",
+          "sha256": "035ed33369ba957d2e2c1275cee377b0f9a21d3b6b2c529ea88592dbddfb4d19",
+          "bytes": 225487
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/capture/evidence.json",
+          "sha256": "c58252a84db1d263a6a907539733ac0e10b2afc1db3c673e1f6ee028bbecf614",
+          "bytes": 565775
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/BASELINE_FREEZE.json",
+          "sha256": "df34e63ad0c3e519eae7d3f26a57a2e1c043fcefde0f925d04b4ca1940d6275c",
+          "bytes": 140552
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/INPUT_FREEZE.json",
+          "sha256": "1d52b5ff96925b08b990df250b601164359930e405db035fb6223fff671683f3",
+          "bytes": 149739
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/plan.json",
+          "sha256": "a8f10fc8aed500878bacf3efbd1ea40e9d9314547f96e9a3a56c6e48e05de826",
+          "bytes": 4308
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/SOURCE_MAP.json",
+          "sha256": "a9e2bf62577e99afdc7f77093cd8d26dabd057fe9bc0ac763ad997a2b6ac5281",
+          "bytes": 4240
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/SOURCE_CATALOGUE_ENTRY.json",
+          "sha256": "34ed778a5886093accd76f08f80815435e92b9e6084f6e31da02c299b057035e",
+          "bytes": 9424
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP-091-review.md",
+          "sha256": "e7a0c396d3cb68569c2fbce58593a90abe7ead591480f512a3f665055a93e611",
+          "bytes": 1597
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP091-preview-QA.md",
+          "sha256": "f4ceb5a1fe193494450d901196a5f3f4224716f9838d5baeec006400eef21af2",
+          "bytes": 4523
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP091-preview-result.json",
+          "sha256": "4753bf7eb819d1923cb38ca812bcdad6c11ab972d2abf6bc466d16a1d04919e6",
+          "bytes": 630
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP091_preflight_v2.json",
+          "sha256": "a33d5e358b5f6d47007ec77d2d9c281479354c6fdd2bdccb047dd66db0721115",
+          "bytes": 876
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP091_validator_v2_lineage.json",
+          "sha256": "bb3c36674b34d44976e06cc3ee66d133f244ccb000e1bef11209c51fa800b858",
+          "bytes": 672
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP091_validator_v2.diff",
+          "sha256": "a0931fad9d6aa4a3bd18d8f032dc8534000485a349c511c20d72bd7bf7312c1e",
+          "bytes": 1449
+        },
+        {
+          "path": "validation/approved_overly_sweet_taste/review_sources/EXP091_validator_v2_tests.log",
+          "sha256": "74428140a9ba347f215194be91559d540c30528c45626ce53364cc8f2d6f6c17",
+          "bytes": 1240
+        }
+      ],
+      "review_backup_verification": "NOT VERIFIED. The user subsequently directed single-expression main publication without waiting for backup. Raw native PNGs are not included in this patch; no complete remote capture archive is claimed."
+    }
+  ]
+}

@@ -7,10 +7,10 @@ if out is None or out.exists() or out.is_relative_to(R):raise SystemExit('Provid
 out.mkdir(parents=True)
 def call(r):return subprocess.run([sys.executable,'-B',str(r/'tools/verify_approved_integration.py'),str(r)],capture_output=True,text=True)
 base=call(R);assert base.returncode==0,base.stderr
-identity=json.loads((R/'validation/approved_exasperated_sigh/approved_review_identity.json').read_text())['profiles']
-probes=[('prior_profile','yawn_performance.json','append'),('new_profile','expressions/EXP-046.json','append'),('registry','expressions/registry.json','append'),('runtime','expression_rig.gd','append'),('png',str(next(R.rglob('*.png')).relative_to(R)),'append'),('approved_video',identity[0]['video_path'],'append'),('review_receipt',identity[0]['motion_path'],'append'),('approval','validation/approved_exasperated_sigh/current_user_approvals.json','append'),('predecessor_manifest','historical_capture_metadata/approved45_before_exasperated_sigh/APPROVED_SOURCE_MANIFEST.json','append'),('missing_profile','expressions/EXP-046.json','delete'),('unexpected_file','unregistered_extra.txt','append'),('python_receipt','validation/approved_exasperated_sigh/python_model_checks.json','append')]
+identity=json.loads((R/'validation/approved_overly_sweet_taste/approved_review_identity.json').read_text())['profiles']
+probes=[('prior_profile','yawn_performance.json','append'),('new_profile','expressions/EXP-091.json','append'),('registry','expressions/registry.json','append'),('runtime','expression_rig.gd','append'),('png',str(next(R.rglob('*.png')).relative_to(R)),'append'),('approved_video',identity[0]['video_path'],'append'),('review_receipt',identity[0]['motion_path'],'append'),('approval','validation/approved_overly_sweet_taste/current_user_approvals.json','append'),('predecessor_manifest','historical_capture_metadata/approved46_before_overly_sweet_taste/APPROVED_SOURCE_MANIFEST.json','append'),('missing_profile','expressions/EXP-091.json','delete'),('unexpected_file','unregistered_extra.txt','append'),('python_receipt','validation/approved_overly_sweet_taste/python_model_checks.json','append')]
 records=[]
-with tempfile.TemporaryDirectory(prefix='approved46_guard_',dir=out) as tmp:
+with tempfile.TemporaryDirectory(prefix='approved47_guard_',dir=out) as tmp:
  root=Path(tmp)/'rig';shutil.copytree(R,root,ignore=shutil.ignore_patterns('.godot','__pycache__','*.pyc'))
  for name,path,action in probes:
   p=root/path;original=p.read_bytes() if p.exists() else None

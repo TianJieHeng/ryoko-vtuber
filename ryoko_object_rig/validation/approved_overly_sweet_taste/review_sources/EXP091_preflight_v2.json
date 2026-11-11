@@ -1,0 +1,32 @@
+{
+  "status": "PREPARED_ONLY_NOT_EXECUTED",
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-nostdin",
+    "-n",
+    "-framerate",
+    "30",
+    "-i",
+    "/workspace/scratch/42f2baf55663/ryoko_native_editor_attempts_20261111/EXP-091-editor-attempt-02/capture/full/%04d.png",
+    "-framerate",
+    "30",
+    "-i",
+    "/workspace/scratch/42f2baf55663/ryoko_native_editor_attempts_20261111/EXP-091-editor-attempt-02/capture/detail/%04d.png",
+    "-filter_complex",
+    "[1:v]pad=400:800:0:220:color=0x202224[d];[0:v][d]hstack=inputs=2[v]",
+    "-map",
+    "[v]",
+    "-frames:v",
+    "121",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "16",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "/workspace/scratch/42f2baf55663/ryoko_native_editor_attempts_20261111/EXP-091-editor-attempt-02/Overly_sweet_taste_reconstruction_20261111_r1_review.mp4"
+  ]
+}

@@ -1,3 +1,9 @@
+# Current approved release: 47 performances
+
+Overly Sweet Taste is integrated as one exact approved expression, with prior46 profiles, production runtime and 184 PNGs byte-exact. Source/Python-model/media checks pass; current engine/native integration checks were NOT RUN. Source-fit concerns remain. The user directed this single-expression publication without waiting for backup, which remains unverified. Counts become effective with the containing release commit. See [validation, qualifications and publication scope](ryoko_object_rig/APPROVED_OVERLY_SWEET_TASTE_INTEGRATION.md). Earlier release notes below are historical.
+
+## Historical release notes
+
 # Current approved release: 46 performances
 
 Exasperated Sigh is integrated as one exact approved expression. All prior45 profiles, production runtime and 184 PNGs remain byte-exact. Current source/Python-model/media checks pass; current engine/native integration checks were NOT RUN. The bounded-glance and visual qualifications remain. See [current validation and limits](ryoko_object_rig/APPROVED_EXASPERATED_SIGH_INTEGRATION.md). Original review labels and earlier release notes below are historical.

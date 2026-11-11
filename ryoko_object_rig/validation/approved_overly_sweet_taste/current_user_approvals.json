@@ -1,0 +1,30 @@
+{
+  "approval_status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+  "historical_status_policy": "Exact original UNAPPROVED/pre-render status wording is retained as historical evidence. Subsequent approval is recorded here and does not change review qualifications.",
+  "profiles": [
+    {
+      "id": "EXP-091",
+      "status": "USER_APPROVED_EXACT_REVIEW_VERSION",
+      "profile_sha256": "67cae056cbc90fe0de20820131d750a97ada4ccc0340575ee43ec18963bbda6a",
+      "review_video_sha256": "035ed33369ba957d2e2c1275cee377b0f9a21d3b6b2c529ea88592dbddfb4d19",
+      "approval_evidence": [
+        {
+          "speaker": "assistant",
+          "text": "Next up: Overly Sweet Taste..."
+        },
+        {
+          "speaker": "user",
+          "text": "Nice"
+        },
+        {
+          "speaker": "user",
+          "text": "if i say its good its approved"
+        },
+        {
+          "speaker": "user",
+          "text": "We pus one at a fucking time."
+        }
+      ]
+    }
+  ]
+}

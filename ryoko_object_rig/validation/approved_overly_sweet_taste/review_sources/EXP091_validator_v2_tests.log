@@ -1,0 +1,18 @@
+test_actual_metadata_passes (__main__.SerializationGateTests.test_actual_metadata_passes) ... ok
+test_duplicate_frame (__main__.SerializationGateTests.test_duplicate_frame) ... ok
+test_failed_runtime (__main__.SerializationGateTests.test_failed_runtime) ... ok
+test_gross_time_corruption (__main__.SerializationGateTests.test_gross_time_corruption) ... ok
+test_malformed_frame (__main__.SerializationGateTests.test_malformed_frame) ... ok
+test_malformed_times (__main__.SerializationGateTests.test_malformed_times) ... ok
+test_missing_frame (__main__.SerializationGateTests.test_missing_frame) ... ok
+test_native_pose_corruption (__main__.SerializationGateTests.test_native_pose_corruption) ... ok
+test_over_tolerance (__main__.SerializationGateTests.test_over_tolerance) ... ok
+test_reordered_frames (__main__.SerializationGateTests.test_reordered_frames) ... ok
+test_stale_frame_hash (__main__.SerializationGateTests.test_stale_frame_hash) ... ok
+test_stale_freeze_identity (__main__.SerializationGateTests.test_stale_freeze_identity) ... ok
+test_stale_profile_identity (__main__.SerializationGateTests.test_stale_profile_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.278s
+
+OK

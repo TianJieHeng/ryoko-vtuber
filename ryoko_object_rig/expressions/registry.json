@@ -390,6 +390,14 @@
         "exasperated_sigh"
       ],
       "trigger_phase": "weary_onset"
+    },
+    {
+      "id": "EXP-091",
+      "path": "res://expressions/EXP-091.json",
+      "aliases": [
+        "overly_sweet_taste"
+      ],
+      "trigger_phase": "taste_intake"
     }
   ]
 }

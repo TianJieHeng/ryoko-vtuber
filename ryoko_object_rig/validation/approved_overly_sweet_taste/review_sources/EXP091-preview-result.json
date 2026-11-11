@@ -1,0 +1,17 @@
+{
+  "status": "TECHNICAL_PASS_VISUAL_UNAPPROVED",
+  "mp4": "/workspace/scratch/42f2baf55663/ryoko_native_editor_attempts_20261111/EXP-091-editor-attempt-02/Overly_sweet_taste_reconstruction_20261111_r1_review.mp4",
+  "sha256": "035ed33369ba957d2e2c1275cee377b0f9a21d3b6b2c529ea88592dbddfb4d19",
+  "width": 968,
+  "height": 800,
+  "fps": 30,
+  "frames": 121,
+  "duration": 4.033333333333333,
+  "freeze_files_verified_after_encode": 1175,
+  "supplemental_preflight": "PASS",
+  "mutation_tests": 13,
+  "full_decode": "PASS",
+  "normal_speed_playback": "NOT_PERFORMED",
+  "source_fit": "CONCERNS_NOT_PASS",
+  "user_approval": false
+}

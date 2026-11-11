@@ -1,0 +1,187 @@
+{
+  "duration": 4.0,
+  "id": "EXP-091",
+  "intent": "Brows lift then tighten; eyes squint gently; mouth puckers around a restrained smile-grimace.",
+  "interpolation": "Unchanged cubic smoothstep with .30-second restart and .45-second release. Eleven timeline keys, nine panel anchors. New in-memory preview only; production registry unchanged.",
+  "keyframes": [
+    {
+      "phase": "neutral",
+      "time": 0,
+      "values": {}
+    },
+    {
+      "phase": "neutral",
+      "time": 0.2,
+      "values": {}
+    },
+    {
+      "phase": "taste_intake",
+      "time": 0.55,
+      "values": {
+        "blink_L": 0,
+        "blink_R": 0,
+        "blush_intensity": 0,
+        "brow_inner_lift_screen_left": 0.06,
+        "brow_inner_lift_screen_right": 0.06,
+        "brow_screen_left": 0.06,
+        "brow_screen_right": 0.06,
+        "brow_tilt_screen_left": -0.1,
+        "brow_tilt_screen_right": 0.1,
+        "eye_smile_L": 0,
+        "eye_smile_R": 0,
+        "mouth_corner_lift": 0,
+        "mouth_lip_press": 0,
+        "mouth_open": 0.07,
+        "mouth_purse": 0.06,
+        "mouth_smile": 0
+      }
+    },
+    {
+      "phase": "sweet_recognition",
+      "time": 0.9,
+      "values": {
+        "blink_L": 0.12,
+        "blink_R": 0.12,
+        "blush_intensity": 0.4,
+        "brow_inner_lift_screen_left": 0.16,
+        "brow_inner_lift_screen_right": 0.16,
+        "brow_screen_left": -0.05,
+        "brow_screen_right": -0.05,
+        "brow_tilt_screen_left": 0.15,
+        "brow_tilt_screen_right": -0.15,
+        "eye_smile_L": 0.1,
+        "eye_smile_R": 0.1,
+        "mouth_corner_lift": 0.2,
+        "mouth_lip_press": 0.4,
+        "mouth_open": 0,
+        "mouth_purse": 0.35,
+        "mouth_smile": 0.04
+      }
+    },
+    {
+      "phase": "squeeze_build",
+      "time": 1.25,
+      "values": {
+        "blink_L": 0.32,
+        "blink_R": 0.32,
+        "blush_intensity": 0.75,
+        "brow_inner_lift_screen_left": 0.25,
+        "brow_inner_lift_screen_right": 0.25,
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "brow_tilt_screen_left": 0.25,
+        "brow_tilt_screen_right": -0.25,
+        "eye_smile_L": 0.3,
+        "eye_smile_R": 0.3,
+        "mouth_corner_lift": 0.42,
+        "mouth_lip_press": 0.65,
+        "mouth_open": 0,
+        "mouth_purse": 0.65,
+        "mouth_smile": 0.1
+      }
+    },
+    {
+      "phase": "sweet_overload",
+      "time": 1.65,
+      "values": {
+        "blink_L": 0,
+        "blink_R": 0,
+        "blush_intensity": 0.92,
+        "brow_inner_lift_screen_left": 0.4,
+        "brow_inner_lift_screen_right": 0.4,
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "brow_tilt_screen_left": 0.3,
+        "brow_tilt_screen_right": -0.3,
+        "eye_smile_L": 1.0,
+        "eye_smile_R": 1.0,
+        "mouth_corner_lift": 0.55,
+        "mouth_lip_press": 0.7,
+        "mouth_open": 0,
+        "mouth_purse": 0.78,
+        "mouth_smile": 0.12
+      }
+    },
+    {
+      "phase": "overload_hold",
+      "time": 2.25,
+      "values": {
+        "blink_L": 0,
+        "blink_R": 0,
+        "blush_intensity": 0.92,
+        "brow_inner_lift_screen_left": 0.4,
+        "brow_inner_lift_screen_right": 0.4,
+        "brow_screen_left": -0.08,
+        "brow_screen_right": -0.08,
+        "brow_tilt_screen_left": 0.3,
+        "brow_tilt_screen_right": -0.3,
+        "eye_smile_L": 1.0,
+        "eye_smile_R": 1.0,
+        "mouth_corner_lift": 0.55,
+        "mouth_lip_press": 0.7,
+        "mouth_open": 0,
+        "mouth_purse": 0.78,
+        "mouth_smile": 0.12
+      }
+    },
+    {
+      "phase": "reopen_residual",
+      "time": 2.75,
+      "values": {
+        "blink_L": 0.18,
+        "blink_R": 0.18,
+        "blush_intensity": 0.45,
+        "brow_inner_lift_screen_left": 0.18,
+        "brow_inner_lift_screen_right": 0.18,
+        "brow_screen_left": -0.04,
+        "brow_screen_right": -0.04,
+        "brow_tilt_screen_left": 0.15,
+        "brow_tilt_screen_right": -0.15,
+        "eye_smile_L": 0.17,
+        "eye_smile_R": 0.17,
+        "mouth_corner_lift": 0.24,
+        "mouth_lip_press": 0.4,
+        "mouth_open": 0,
+        "mouth_purse": 0.4,
+        "mouth_smile": 0.03
+      }
+    },
+    {
+      "phase": "settle",
+      "time": 3.3,
+      "values": {
+        "blink_L": 0.03,
+        "blink_R": 0.03,
+        "blush_intensity": 0.08,
+        "brow_inner_lift_screen_left": 0.03,
+        "brow_inner_lift_screen_right": 0.03,
+        "brow_screen_left": -0.01,
+        "brow_screen_right": -0.01,
+        "brow_tilt_screen_left": 0.02,
+        "brow_tilt_screen_right": -0.02,
+        "eye_smile_L": 0,
+        "eye_smile_R": 0,
+        "mouth_corner_lift": 0.04,
+        "mouth_lip_press": 0.1,
+        "mouth_open": 0,
+        "mouth_purse": 0.1,
+        "mouth_smile": 0
+      }
+    },
+    {
+      "phase": "neutral_return",
+      "time": 3.75,
+      "values": {}
+    },
+    {
+      "phase": "neutral_return",
+      "time": 4.0,
+      "values": {}
+    }
+  ],
+  "scope": "Unmodified approved39 shared rig. Existing smile-eye, independent blush FX, rigid brows and sealed purse/pressure/corner controls. Brief .07 mouth opening at KP2 closes before the sweet overload. No cheek compression, new pucker anatomy, kiss part, independent width, gaze, speech, body or hair acting.",
+  "source_catalogue_sha256": "ded1b313c36b66daf46f3426288ef4670b04703497323314754bba18e872b2bf",
+  "status": "UNAPPROVED new reconstruction 20261111 r1; static numeric checks only; native review pending",
+  "timing_origin": "New four-second reconstruction from the visually inspected recovered EXP-091 nine-panel sheet. Not restored old v2 and not recovered animation. Catalogue 1.9-second proposal remains reference-only.",
+  "title": "Overly Sweet Taste"
+}

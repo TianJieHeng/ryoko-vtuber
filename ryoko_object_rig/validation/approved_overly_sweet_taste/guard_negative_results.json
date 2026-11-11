@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "tamper_cases": 12,
+  "all_rejected": true,
+  "clean_source_passed": true,
+  "restored_copy_passes": 12,
+  "records": [
+    {
+      "probe": "prior_profile",
+      "path": "yawn_performance.json",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "new_profile",
+      "path": "expressions/EXP-091.json",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "registry",
+      "path": "expressions/registry.json",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "runtime",
+      "path": "expression_rig.gd",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "png",
+      "path": "rig_assets/earring_screen_right.png",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "approved_video",
+      "path": "validation/approved_overly_sweet_taste/review_sources/Overly_sweet_taste_reconstruction_20261111_r1_review.mp4",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "review_receipt",
+      "path": "validation/approved_overly_sweet_taste/review_sources/capture/evidence.json",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "approval",
+      "path": "validation/approved_overly_sweet_taste/current_user_approvals.json",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "predecessor_manifest",
+      "path": "historical_capture_metadata/approved46_before_overly_sweet_taste/APPROVED_SOURCE_MANIFEST.json",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "missing_profile",
+      "path": "expressions/EXP-091.json",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "unexpected_file",
+      "path": "unregistered_extra.txt",
+      "guard_exit": 1,
+      "rejected": true
+    },
+    {
+      "probe": "python_receipt",
+      "path": "validation/approved_overly_sweet_taste/python_model_checks.json",
+      "guard_exit": 1,
+      "rejected": true
+    }
+  ],
+  "scope": "Disposable-copy source/identity guard probes. No engine execution."
+}

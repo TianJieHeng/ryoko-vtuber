@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "checks": 6613546,
+  "failures": [],
+  "validated_profiles": 47,
+  "registered_aliases": 69,
+  "prior46_samples_at_60hz": 11104,
+  "approved_review_pose_samples": 121,
+  "approved_review_static_pose_samples": 9,
+  "approved_review_lifecycle_pose_samples": 270,
+  "all47_samples_at_240hz": 44978,
+  "directed_pairs": 93,
+  "cross_key_midpoint_cases": 1917,
+  "cross_boundary_samples": 138024,
+  "interrupted_lifecycle_cases": 9585,
+  "maximum_review_pose_error": 2.9792785793958387e-08,
+  "runtime_sha256": "9f964e8eb2765e3bccc087992a6001768a546fef2f670f7587c1045416268bf8",
+  "scope": "Pure-Python mathematical model of byte-unchanged GDScript. Compared all 46 old profiles and all 121 historical EXP-091 native timeline poses plus 270 lifecycle and nine static poses; densely sampled all47 and all directed transitions involving the single EXP-091 addition. No engine, scene, rendering setter, actual auto-blink display, or native pixel execution.",
+  "godot_executed": false,
+  "native_rendering_executed": false,
+  "historical_tests_rerun": false,
+  "ci_run": false
+}
