@@ -1,48 +1,39 @@
 {
-  "status": "unapproved wiring checkpoint",
+  "status": "unapproved separate-part assembly and wiring",
+  "revision": 4,
+  "supersedes": "Rejected combined-body/bust-overlay approach",
   "base_main": "c976b11ea42d6de984242444212259cafa84e17c",
   "approved_existing_files_changed": false,
   "joints": 17,
-  "body_layers": 17,
+  "body_layers": 20,
   "approved_facial_profiles": 47,
   "checks": {
-    "actual_godot_headless": "PASS: 963 focused checks",
+    "actual_godot_headless": {
+      "checks": 948,
+      "failures": [],
+      "scope": "Actual Godot headless node transforms, control rejection, reset and existing facial player. Does not establish rendered seam quality or native pixel parity.",
+      "status": "PASS"
+    },
     "workbench_headless_load": "PASS",
-    "native_render_capture": "BLOCKED: local X server could not create listening sockets",
-    "continuous_normal_speed_observation": "NOT RUN",
+    "native_render_capture": "BLOCKED: X display could not create listening sockets",
+    "continuous_native_playback": "NOT RUN",
     "CI": "NOT RUN",
-    "mp4_full_decode": "PASS: FFmpeg full decode"
+    "mp4_full_decode": "PASS",
+    "CPU_visual_review": "Neutral and isolated head \u00b13deg/elbows \u00b12deg inspected. Jaw gap closed after neck hidden-area completion; no duplicate torso/collar seen. Does not certify all joint combinations."
   },
   "movie": {
     "path": "review/ryoko_full_body_wiring_v1.mp4",
-    "kind": "CPU layer composite from actual Godot 4.6.3 joint matrices",
-    "neutral_head": "source-derived neutral diagnostic, not live facial shader output",
-    "sha256": "18c87d751ca4e4d705038b798dcf3ff00c29922d4468900825fded5f5c324426",
+    "kind": "CPU cutout composite from actual Godot4.6.3 node transforms",
+    "neutral_head": "source-derived neutral diagnostic, not animated native shader output",
+    "sha256": "c3fb88c19e2361e16a48c72d913da960b3bb14110437ecf11d8cae73a8e9c638",
     "fps": 30,
-    "frames": 511,
-    "duration_seconds": 17.033333333333335,
+    "frames": 451,
+    "duration_seconds": 15.033333,
     "size": [
       1280,
       960
     ]
   },
-  "approval": "User review required before any approved/main integration",
-  "revision": 3,
-  "head_proportion_correction": {
-    "initial_preview": "rejected by user: head not proportional",
-    "old_scale": 0.285,
-    "corrected_scale": 0.32,
-    "corrected_origin": [
-      329,
-      4
-    ],
-    "source_comparison": "assets/proportion_source_measurements.json",
-    "approval": "pending user review"
-  },
-  "arm_ownership_correction": {
-    "defect": "Torso-owned ghost sleeves and incomplete separate forearm cuts",
-    "repair": "Remove ghost sleeves on both sides; complete source sleeve cuts; elbow pivots at actual painted creases; tapered underlap and pale armpit edge cleanup",
-    "provenance": "assets/arm_ownership_provenance.json",
-    "approval": "pending user review"
-  }
+  "approval": "User review required; no merge/main integration authorized",
+  "new_artwork": "Compatible jewelry-free neck/chest skin, explicit source edit and hidden-area completion provenance in pieces_v2/upper/sources."
 }

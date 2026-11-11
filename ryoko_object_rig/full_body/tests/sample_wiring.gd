@@ -1,6 +1,6 @@
 extends SceneTree
 const FPS=30
-const SECONDS=17
+const SECONDS=15
 var rig
 func _initialize():call_deferred("run")
 func matrix(node:Node2D)->Array:
@@ -14,22 +14,16 @@ func run():
         var t=float(i)/FPS
         var pose={"reset":true}
         var phase="Neutral assembly"
-        if t>=1 and t<5:
-            phase="Head attachment / +/- 3 degrees"
-            pose.head_tilt=sin((t-1)/4*TAU)
-        elif t>=5 and t<9:
-            phase="Chest and spine / small joint sweep"
-            var v=sin((t-5)/4*TAU)
-            pose.spine_tilt=v;pose.chest_tilt=v*.5
-        elif t>=9 and t<13:
-            phase="Arms and legs / bounded overlap check"
-            var v=sin((t-9)/4*TAU)
-            for key in ["shoulder_L","elbow_L","wrist_L","hip_L","knee_L","ankle_L"]:pose[key]=v
-            for key in ["shoulder_R","elbow_R","wrist_R","hip_R","knee_R","ankle_R"]:pose[key]=-v
-        elif t>=13 and t<16:
-            phase="Frame positioning / rigid whole-rig movement"
-            var v=sin((t-13)/3*TAU)
-            pose.frame_x=v;pose.frame_y=v*.5;pose.frame_roll=v*.5
+        # One owner at a time, always returning to neutral. No lean or actions.
+        if t>=2 and t<6:
+            phase="Head attachment only / +/- 3 degrees"
+            pose.head_tilt=sin((t-2)/4*TAU)
+        elif t>=6 and t<10:
+            phase="Right elbow attachment only / +/- 2 degrees"
+            pose.elbow_R=sin((t-6)/4*TAU)
+        elif t>=10 and t<14:
+            phase="Left elbow attachment only / +/- 2 degrees"
+            pose.elbow_L=sin((t-10)/4*TAU)
         if not rig.apply_body_controls(pose):push_error(rig.last_error);quit(1);return
         var layer_transforms={}
         for id in rig.layer_nodes:layer_transforms[id]=matrix(rig.layer_nodes[id])

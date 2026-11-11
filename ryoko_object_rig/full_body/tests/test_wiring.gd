@@ -13,8 +13,15 @@ func run():
     if not rig.ready_for_controls:print(rig.last_error);quit(1);return
     check(rig.list_expressions().size() == 47,"all 47 approved profiles retained")
     check(rig.joints.size() == 17,"17 named anatomical joints")
-    check(rig.layer_nodes.size() == 17,"17 registered body layers")
-    check(not rig.expression_rig.body.visible,"legacy bust duplicate hidden")
+    check(rig.layer_nodes.size() == 20,"20 individually cut body/accessory owners")
+    for spec in rig.registration.layers:
+        check(spec.file.begins_with("res://full_body/pieces_v2/"),spec.id+" uses separated-part build")
+    check(rig.expression_rig.head.get_node_or_null("earring_tip_L") != null,"exact earring L tip retained")
+    check(rig.expression_rig.head.get_node_or_null("earring_tip_R") != null,"exact earring R tip retained")
+    check(rig.registration.version == 3,"individual raw-part registration")
+    check(not rig.body_controls.has("frame_roll"),"no whole-frame lean control")
+    check(rig.expression_rig.body == null,"legacy bust owner removed entirely")
+    check(rig.expression_rig.get_node_or_null("FixedNeckTorso") == null,"no torso sprite in face controller")
     check(rig.expression_rig.head.get_parent() == rig.joints.head,"existing head attached to head bone")
     check(rig.expression_rig.face.objects.stationary_backing.visible,"approved face skin retained")
     var neutral = rig.get_body_state()

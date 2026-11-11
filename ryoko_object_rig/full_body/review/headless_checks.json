@@ -1,5 +1,5 @@
 {
-  "checks": 963,
+  "checks": 948,
   "failures": [],
   "scope": "Actual Godot headless node transforms, control rejection, reset and existing facial player. Does not establish rendered seam quality or native pixel parity.",
   "status": "PASS"

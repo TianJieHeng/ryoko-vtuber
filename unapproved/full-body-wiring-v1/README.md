@@ -1,10 +1,10 @@
-# Full-body wiring v1 — awaiting user review
+# Individual-part full-body wiring, unapproved
 
-This branch adds a manual full-body rigging workbench, not another expression or action animation. It preserves the approved main project and its 47 facial performances. Do not merge or mark this candidate approved without the user's review.
+The earlier combined-body/bust-overlay approach on this branch was rejected. This revision replaces it with independently cut and registered raw parts from `avatar_build_assets`, attached to the skeletal hierarchy. The original bust node is removed entirely. Main and the approved facial app remain unchanged.
 
-- [Implementation and exact limits](../../ryoko_object_rig/full_body/README.md)
-- [Layer, pivot and parent manifest](../../ryoko_object_rig/full_body/registration.json)
+- [Implementation, source ownership and limits](../../ryoko_object_rig/full_body/README.md)
+- [Every layer, bind transform, pivot and parent](../../ryoko_object_rig/full_body/registration.json)
 - [Actual Godot headless checks](../../ryoko_object_rig/full_body/review/headless_checks.json)
 - [Labeled CPU assembly MP4](../../ryoko_object_rig/full_body/review/ryoko_full_body_wiring_v1.mp4)
 
-The MP4 is a CPU cutout composite driven by actual Godot transforms. It is not a native Godot render, and its neutral face is not animated facial shader output. Native pixel/seam review is still outstanding. Main and the approved default app are unchanged.
+The clip is not a native Godot render and does not show animated facial shader output. It checks only neutral assembly and isolated head/elbow attachments. The missing clean neck skin is new unapproved compatible artwork with provenance. Native visual review and user approval remain outstanding. Do not merge this branch into main without approval.

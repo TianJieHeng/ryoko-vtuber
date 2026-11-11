@@ -2,7 +2,7 @@ extends Node2D
 ## Additive full-body cutout assembly. The approved face player remains unchanged.
 ## Bone2D nodes are rigid image owners, not a mesh-deformation or action system.
 const REGISTRATION_PATH = "res://full_body/registration.json"
-const FRAME_LIMITS = {"frame_x":18.0, "frame_y":10.0, "frame_roll":2.0}
+const FRAME_LIMITS = {"frame_x":18.0, "frame_y":10.0}
 var registration:Dictionary = {}
 var expression_rig
 var frame:Node2D
@@ -31,7 +31,9 @@ func _ready():
     if not expression_rig.rig_ready or not expression_rig.registry_ready:
         _fail(expression_rig.last_error);return
     # No face texture, channel, timeline or shader is replaced.
-    expression_rig.body.hide()
+    # Remove the legacy bust owner entirely; no hidden/overlaid torso survives.
+    expression_rig.body.free()
+    expression_rig.body = null
     frame = Node2D.new();frame.name = "FrameTransform";add_child(frame)
     skeleton = Skeleton2D.new();skeleton.name = "CutoutSkeleton";frame.add_child(skeleton)
     for spec in registration.joints:
@@ -63,6 +65,7 @@ func _ready():
         var sprite = Sprite2D.new();sprite.name = spec.id;sprite.texture = texture
         sprite.centered = false;sprite.position = _v(spec.position) - joint_homes[spec.parent]
         sprite.scale = _v(spec.get("scale", [1,1]))
+        sprite.rotation_degrees = float(spec.get("rotation_degrees", 0))
         sprite.z_index = int(spec.z);sprite.z_as_relative = false
         joints[spec.parent].add_child(sprite);layer_nodes[spec.id] = sprite
     var binding:Dictionary = registration.head_binding
@@ -74,6 +77,10 @@ func _ready():
     expression_rig.head.rotation = 0
     expression_rig.head.z_index = int(binding.get("z", 0))
     expression_rig.head.z_as_relative = false
+    for spec in binding.get("extra_parts", []):
+        var tip = Sprite2D.new();tip.name = spec.id;tip.texture = load(spec.file)
+        tip.centered = false;tip.z_index = int(spec.get("z", 0))
+        expression_rig.head.add_child(tip)
     bone_overlay = Node2D.new();bone_overlay.name = "BoneOverlay";bone_overlay.z_index = 4000
     add_child(bone_overlay);bone_overlay.draw.connect(_draw_bones)
     ready_for_controls = true
@@ -101,7 +108,7 @@ func apply_body_controls(data)->bool:
 
 func _write_body_pose():
     frame.position = frame_pivot + Vector2(body_controls.frame_x * FRAME_LIMITS.frame_x, body_controls.frame_y * FRAME_LIMITS.frame_y)
-    frame.rotation = deg_to_rad(body_controls.frame_roll * FRAME_LIMITS.frame_roll)
+    frame.rotation = 0.0 # No whole-character lean control.
     skeleton.position = -frame_pivot
     for control in body_control_joints:
         var spec:Dictionary = body_control_joints[control]

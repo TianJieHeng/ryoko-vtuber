@@ -12,7 +12,7 @@ BASE=ROOT/'full_body'; OUT=BASE/'review'
 manifest=json.loads((BASE/'registration.json').read_text())
 samples=json.loads((OUT/'transform_samples.json').read_text())
 assets={e['id']:Image.open(ROOT/e['file'][6:]).convert('RGBA') for e in manifest['layers']}
-head=Image.open(BASE/'assets/neutral_head.png').convert('RGBA')
+head=Image.open(BASE/'pieces_v2/head_audit/neutral_head_complete.png').convert('RGBA')
 font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',21)
 small=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',15)
 
@@ -39,14 +39,14 @@ for i,frame in enumerate(samples['frames']):
  # The bust is a crop from the very same composited full-body frame.
  result.paste(canvas.convert('RGB').crop((290,35,740,665)).resize((594,832),Image.Resampling.LANCZOS),(654,96))
  d=ImageDraw.Draw(result)
- d.text((24,14),'Ryoko / full-body wiring v1 / ARM JOIN CORRECTED',font=font,fill=(242,241,233))
+ d.text((24,14),'Ryoko / individual part assembly / UNAPPROVED',font=font,fill=(242,241,233))
  d.text((24,43),frame['phase'],font=small,fill=(132,224,203))
  d.text((654,76),'Same frame / bust detail',font=small,fill=(242,241,233))
  d.text((24,935),'CPU layer composite from Godot joint transforms. Neutral head source, not native-rendered facial controls.',font=small,fill=(216,218,220))
  if process is None:
   result.save(OUT/f'endpoint_review_{i:04}.jpg',quality=95);print(OUT/f'endpoint_review_{i:04}.jpg');break
  process.stdin.write(result.tobytes())
- if i in (0,60,120,180,240,300,360,420,480,510):
+ if i in (0,60,90,150,180,210,270,300,330,390,420,450):
   result.save(OUT/f'preview_frame_{i:04}.jpg',quality=92)
  if i%60==0:print(f'{i}/{len(samples["frames"])}',flush=True)
 if process is not None:
