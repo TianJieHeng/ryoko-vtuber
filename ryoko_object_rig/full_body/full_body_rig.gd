@@ -1,6 +1,6 @@
 extends Node2D
 ## Additive full-body cutout assembly. The approved face player remains unchanged.
-## Bone2D nodes are rigid image owners, not a mesh-deformation or action system.
+## Bone2D owners preserve their bind transforms; central cloth uses shared spring meshes.
 const REGISTRATION_PATH = "res://full_body/registration.json"
 const FRAME_LIMITS = {"frame_x":18.0, "frame_y":10.0}
 var registration:Dictionary = {}
@@ -17,6 +17,7 @@ var last_error = ""
 var show_bones = false
 var frame_pivot = Vector2.ZERO
 var bone_overlay:Node2D
+var secondary_motion = preload("res://full_body/secondary_motion.gd").new()
 
 func _ready():
     var decoded = JSON.parse_string(FileAccess.get_file_as_string(REGISTRATION_PATH))
@@ -62,12 +63,17 @@ func _ready():
         var texture = load(spec.file)
         if not texture is Texture2D:
             _fail("Layer texture unavailable: " + str(spec.file));return
-        var sprite = Sprite2D.new();sprite.name = spec.id;sprite.texture = texture
-        sprite.centered = false;sprite.position = _v(spec.position) - joint_homes[spec.parent]
-        sprite.scale = _v(spec.get("scale", [1,1]))
-        sprite.rotation_degrees = float(spec.get("rotation_degrees", 0))
-        sprite.z_index = int(spec.z);sprite.z_as_relative = false
-        joints[spec.parent].add_child(sprite);layer_nodes[spec.id] = sprite
+        var bind = Transform2D(deg_to_rad(float(spec.get("rotation_degrees", 0))), _v(spec.get("scale", [1,1])), 0.0, _v(spec.position) - joint_homes[spec.parent])
+        var layer:Node2D
+        if secondary_motion.is_mesh_layer(spec.id):
+            layer = secondary_motion.create_mesh(spec.id, texture, bind, joint_homes[spec.parent])
+        else:
+            var sprite = Sprite2D.new();sprite.texture = texture;sprite.centered = false
+            layer = sprite
+        layer.name = spec.id;layer.transform = bind
+        layer.z_index = int(spec.z);layer.z_as_relative = false
+        joints[spec.parent].add_child(layer);layer_nodes[spec.id] = layer
+    secondary_motion.bind_pendant(layer_nodes.necklace_pendant)
     var binding:Dictionary = registration.head_binding
     if not joints.has(binding.parent):_fail("Head attachment is missing");return
     # Reparent the existing live head, with all independent native owners intact.
@@ -104,10 +110,11 @@ func apply_body_controls(data)->bool:
         for key in body_controls:body_controls[key] = 0.0
     for key in data:
         if key != "reset":body_controls[key] = float(data[key])
+    if data.get("reset", false):secondary_motion.reset(body_controls.frame_y * FRAME_LIMITS.frame_y)
     _write_body_pose();last_error = "";return true
 
 func _write_body_pose():
-    frame.position = frame_pivot + Vector2(body_controls.frame_x * FRAME_LIMITS.frame_x, body_controls.frame_y * FRAME_LIMITS.frame_y)
+    frame.position = frame_pivot + Vector2(body_controls.frame_x * FRAME_LIMITS.frame_x, body_controls.frame_y * FRAME_LIMITS.frame_y + secondary_motion.root_y)
     frame.rotation = 0.0 # No whole-character lean control.
     skeleton.position = -frame_pivot
     for control in body_control_joints:
@@ -116,6 +123,22 @@ func _write_body_pose():
         var limits:Array = spec.range_degrees
         joints[spec.id].rotation = deg_to_rad(value * (float(limits[1]) if value >= 0 else -float(limits[0])))
     if bone_overlay != null:bone_overlay.queue_redraw()
+
+func _physics_process(delta:float):
+    if ready_for_controls:advance_secondary_motion(delta)
+
+func advance_secondary_motion(delta:float)->bool:
+    if not ready_for_controls:return false
+    var ok:bool = secondary_motion.advance(delta, body_controls.frame_y * FRAME_LIMITS.frame_y)
+    if ok:_write_body_pose()
+    return ok
+
+func play_bounce_demo()->bool:
+    if not ready_for_controls:return false
+    secondary_motion.start_demo(body_controls.frame_y * FRAME_LIMITS.frame_y)
+    _write_body_pose()
+    return true
+
 
 func apply_controls(data)->bool:
     # Face commands use the approved controller's validator and ownership exactly.
@@ -133,7 +156,7 @@ func get_body_state()->Dictionary:
     for id in joints:
         var point:Vector2 = to_local(joints[id].global_position)
         transforms[id] = {"position":[point.x,point.y], "rotation_degrees":rad_to_deg(joints[id].rotation)}
-    return {"ready":ready_for_controls,"controls":body_controls.duplicate(true),"joints":transforms,"last_error":last_error,"approval":"unapproved wiring review"}
+    return {"ready":ready_for_controls,"controls":body_controls.duplicate(true),"joints":transforms,"last_error":last_error,"secondary_motion":secondary_motion.snapshot(),"approval":"unapproved wiring review"}
 func get_state()->Dictionary:
     var state:Dictionary = expression_rig.get_state() if expression_rig != null else {}
     state["body"] = get_body_state();return state

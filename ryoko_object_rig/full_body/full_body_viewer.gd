@@ -1,5 +1,5 @@
 extends Node2D
-## Manual wiring workbench. No action choreography and no automatic body motion.
+## Manual wiring workbench with an opt-in small bounce physics demonstration.
 var rig
 var status:Label
 var body_sliders = {}
@@ -12,7 +12,7 @@ func _ready():
     var ui = CanvasLayer.new();ui.name = "WorkbenchControls";ui.layer = 10;add_child(ui)
     var backdrop = ColorRect.new();backdrop.position = Vector2(878,0);backdrop.size = Vector2(562,1000);backdrop.color = Color(.09,.11,.13,1);ui.add_child(backdrop)
     var title = Label.new();title.position = Vector2(26,18);title.text = "Ryoko / full-body wiring review";title.add_theme_font_size_override("font_size",27);ui.add_child(title)
-    var note = Label.new();note.position = Vector2(26,57);note.text = "Unapproved · manual joints · existing live face · no action animations";ui.add_child(note)
+    var note = Label.new();note.position = Vector2(26,57);note.text = "Full-body review · manual joints · live face · opt-in bounce physics";ui.add_child(note)
     var scroll = ScrollContainer.new();scroll.position = Vector2(890,24);scroll.size = Vector2(525,940);ui.add_child(scroll)
     var panel = VBoxContainer.new();panel.custom_minimum_size.x = 495;panel.add_theme_constant_override("separation",9);scroll.add_child(panel)
     var views = HBoxContainer.new();panel.add_child(views)
@@ -21,6 +21,7 @@ func _ready():
     var buttons = HBoxContainer.new();panel.add_child(buttons)
     _button(buttons,"Reset all",func():rig.reset())
     _button(buttons,"Reset body",func():rig.apply_body_controls({"reset":true}))
+    _button(buttons,"Small bounce",func():rig.play_bounce_demo())
     var overlay = CheckBox.new();overlay.text = "Show skeletal attachment points";panel.add_child(overlay)
     overlay.toggled.connect(func(on):rig.set_bone_overlay(on))
     status = Label.new();status.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART;panel.add_child(status)
@@ -60,6 +61,6 @@ func _process(_delta):
     var state:Dictionary = rig.expression_rig.get_state()
     for key in body_sliders:body_sliders[key].set_value_no_signal(body.controls[key])
     for key in face_sliders:face_sliders[key].set_value_no_signal(state.displayed_controls[key])
-    status.text = "%d joints · %d body layers · %d approved facial profiles\n%s" % [rig.joints.size(),rig.layer_nodes.size(),rig.list_expressions().size(),rig.last_error]
+    status.text = "%d joints · %d body layers · %d approved facial profiles\n%s\n%s" % [rig.joints.size(),rig.layer_nodes.size(),rig.list_expressions().size(),body.secondary_motion.phase,rig.last_error]
 func _unhandled_key_input(event):
     if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_0:rig.reset()

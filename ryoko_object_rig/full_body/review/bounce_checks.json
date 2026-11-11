@@ -1,0 +1,9 @@
+{
+  "checks": 104,
+  "failures": [],
+  "peak_chest_spring_px": 6.60611773293839,
+  "peak_pendant_px": 3.53663143909809,
+  "peak_root_px": 20.0,
+  "scope": "Focused actual Godot 4.6.3 ownership, fixed-step spring response, live frame input, resets, caller-rate parity and mesh topology. Not native visual validation or a full regression suite.",
+  "status": "PASS"
+}
