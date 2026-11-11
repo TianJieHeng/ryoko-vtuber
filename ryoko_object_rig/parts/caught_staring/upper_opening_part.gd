@@ -22,13 +22,14 @@ func lift(p:Vector2,bounds:Vector2,upper:Image,lower:Image)->float:
     var t=interp(upper,p.x)
     var b=maxf(t+1.0,interp(lower,p.x)-2.0)
     return amplitude(p.x,bounds)*clampf((b-p.y)/(b-t),0.0,1.0)
-func material(side:String,kind:int,bounds:Vector2):
+func material(side:String,kind:int,bounds:Vector2,source_texture:Texture2D):
     var ge=rig.face.gaze_manifest.eyes[side]
     var m=ShaderMaterial.new()
     if shared_opening_shader==null:
         shared_opening_shader=Shader.new()
         shared_opening_shader.code=FileAccess.get_file_as_string(work+"/transport.gdshader")
     m.shader=shared_opening_shader
+    m.set_shader_parameter("source_texture",source_texture)
     for key in ["profile_texture","shape_upper"]:m.set_shader_parameter(key,load("res://rig_assets/object_face/profile_"+side+".png"))
     for key in ["lower_profile_texture","shape_lower"]:m.set_shader_parameter(key,load("res://rig_assets/object_face/lower_profile_"+side+".png"))
     for key in ["aperture","iris","sclera"]:m.set_shader_parameter(key+"_texture",load("res://rig_assets/gaze_eyes/"+key+"_"+side+".png"))
@@ -59,7 +60,7 @@ func install_mesh(source,side:String,kind:int,bounds:Vector2):
     var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
     var node=MeshInstance2D.new();node.name="private_transport_"+source.name
     node.mesh=mesh;node.texture=source.texture;node.position=source.position
-    node.texture_filter=source.texture_filter;node.material=material(side,kind,bounds)
+    node.texture_filter=source.texture_filter;node.material=material(side,kind,bounds,source.texture)
     source.get_parent().add_child(node);source.visible=false
     meshes.append(node);originals.append(source)
     geometry.append({"part":source.name,"vertices":vertices.size(),"triangles":indices.size()/3,"maximum_lift":peak,"bounds":[bounds.x,bounds.y]})
@@ -73,7 +74,7 @@ func install_opening(value:float):
         install_mesh(rig.face.objects["sclera_"+side],side,0,bounds)
         install_mesh(rig.face.objects["upper_lash_"+side],side,1,bounds)
         var iris=rig.face.objects["iris_"+side]
-        old_iris_materials[side]=iris.material;iris.material=material(side,2,bounds)
+        old_iris_materials[side]=iris.material;iris.material=material(side,2,bounds,iris.texture)
 func restore():
     for node in meshes:node.visible=false
     for node in originals:node.visible=true

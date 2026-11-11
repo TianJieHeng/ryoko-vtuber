@@ -1,0 +1,7 @@
+{
+  "checks": 511,
+  "failures": [],
+  "profiles": 47,
+  "scope": "Headless Godot viewer controls and original facial playback on approved full-body assembly. Does not establish rendered pixel parity.",
+  "status": "PASS"
+}
