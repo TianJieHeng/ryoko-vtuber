@@ -1,0 +1,40 @@
+test_auto_blink_restoration_model (test_candidate.CandidateTests.test_auto_blink_restoration_model) ... ok
+test_boolean_value (test_candidate.CandidateTests.test_boolean_value) ... ok
+test_brow_opposition (test_candidate.CandidateTests.test_brow_opposition) ... ok
+test_dense_bounds_and_scope (test_candidate.CandidateTests.test_dense_bounds_and_scope) ... ok
+test_duplicate_time (test_candidate.CandidateTests.test_duplicate_time) ... ok
+test_encoder_never_overwrites (test_candidate.CandidateTests.test_encoder_never_overwrites) ... ok
+test_exact_endpoints_and_holds (test_candidate.CandidateTests.test_exact_endpoints_and_holds) ... ok
+test_frozen_numeric_receipts (test_candidate.CandidateTests.test_frozen_numeric_receipts) ... ok
+test_headless_capture_receipt_rejected (test_candidate.CandidateTests.test_headless_capture_receipt_rejected) ... ok
+test_initial_restart_envelope (test_candidate.CandidateTests.test_initial_restart_envelope) ... ok
+test_invalid_transactions_are_atomic (test_candidate.CandidateTests.test_invalid_transactions_are_atomic) ... ok
+test_kiss_excluded (test_candidate.CandidateTests.test_kiss_excluded) ... ok
+test_lid_asymmetry (test_candidate.CandidateTests.test_lid_asymmetry) ... ok
+test_manual_takeover_cancels_restore (test_candidate.CandidateTests.test_manual_takeover_cancels_restore) ... ok
+test_maximum_frame_step (test_candidate.CandidateTests.test_maximum_frame_step) ... ok
+test_mismatched_captured_profile_rejected (test_candidate.CandidateTests.test_mismatched_captured_profile_rejected) ... ok
+test_missing_endpoint (test_candidate.CandidateTests.test_missing_endpoint) ... ok
+test_missing_gate_and_capture_fail_closed (test_candidate.CandidateTests.test_missing_gate_and_capture_fail_closed) ... ok
+test_missing_sweet_comparator_rejected (test_candidate.CandidateTests.test_missing_sweet_comparator_rejected) ... ok
+test_native_gate_blocks_before_external_process (test_candidate.CandidateTests.test_native_gate_blocks_before_external_process) ... ok
+test_nonfinite_duration (test_candidate.CandidateTests.test_nonfinite_duration) ... ok
+test_nonfinite_value (test_candidate.CandidateTests.test_nonfinite_value) ... ok
+test_nonneutral_endpoint (test_candidate.CandidateTests.test_nonneutral_endpoint) ... ok
+test_open_mouth_excluded (test_candidate.CandidateTests.test_open_mouth_excluded) ... ok
+test_peak_matches_headache_except_purse (test_candidate.CandidateTests.test_peak_matches_headache_except_purse) ... ok
+test_purse_bounds (test_candidate.CandidateTests.test_purse_bounds) ... ok
+test_release_continuity_and_exact_neutral (test_candidate.CandidateTests.test_release_continuity_and_exact_neutral) ... ok
+test_reset_exact_neutral (test_candidate.CandidateTests.test_reset_exact_neutral) ... ok
+test_retrigger_continuity (test_candidate.CandidateTests.test_retrigger_continuity) ... ok
+test_schema (test_candidate.CandidateTests.test_schema) ... ok
+test_smile_eye_excluded (test_candidate.CandidateTests.test_smile_eye_excluded) ... ok
+test_trajectory_matches_numeric_playback (test_candidate.CandidateTests.test_trajectory_matches_numeric_playback) ... ok
+test_unknown_field (test_candidate.CandidateTests.test_unknown_field) ... ok
+test_unknown_id (test_candidate.CandidateTests.test_unknown_id) ... ok
+test_wrong_capture_freeze_rejected (test_candidate.CandidateTests.test_wrong_capture_freeze_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 1.272s
+
+OK

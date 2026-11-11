@@ -1,0 +1,40 @@
+{
+  "all_validators_read_only": true,
+  "identical_output_bytes": true,
+  "note": "Each seed independently verifies the unchanged complete source inventory before and after recomputing receipts and running 35 tests. No receipt is rewritten. These are static/numeric checks, not native checks.",
+  "seeds": [
+    {
+      "seed": "0",
+      "sha256": "eb3e81ea7df2b53687b87ce4de90e3580debae1d8342cfc3e32cc32f8cdc3155",
+      "status": "PASS"
+    },
+    {
+      "seed": "1",
+      "sha256": "eb3e81ea7df2b53687b87ce4de90e3580debae1d8342cfc3e32cc32f8cdc3155",
+      "status": "PASS"
+    },
+    {
+      "seed": "2",
+      "sha256": "eb3e81ea7df2b53687b87ce4de90e3580debae1d8342cfc3e32cc32f8cdc3155",
+      "status": "PASS"
+    },
+    {
+      "seed": "42",
+      "sha256": "eb3e81ea7df2b53687b87ce4de90e3580debae1d8342cfc3e32cc32f8cdc3155",
+      "status": "PASS"
+    },
+    {
+      "seed": "8675309",
+      "sha256": "eb3e81ea7df2b53687b87ce4de90e3580debae1d8342cfc3e32cc32f8cdc3155",
+      "status": "PASS"
+    },
+    {
+      "seed": "random",
+      "sha256": "eb3e81ea7df2b53687b87ce4de90e3580debae1d8342cfc3e32cc32f8cdc3155",
+      "status": "PASS"
+    }
+  ],
+  "source_freeze_sha256": "043e11855d84e949d7b6aaf9b1c64b939818716fd8e878780458857f93cd9f41",
+  "source_preserved": true,
+  "status": "PASS"
+}

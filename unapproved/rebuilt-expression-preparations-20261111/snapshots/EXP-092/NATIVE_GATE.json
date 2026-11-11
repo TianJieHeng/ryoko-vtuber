@@ -1,0 +1,6 @@
+{
+  "allowed": false,
+  "authorization_is_external": "This file is not permission. A later authorized task must resolve the actual access restriction before any launch.",
+  "scope": "Preparation only. No Godot/headless/render/UI/ffmpeg execution in this task.",
+  "status": "BLOCKED: prior Godot launch denied; no new execution authorization established"
+}

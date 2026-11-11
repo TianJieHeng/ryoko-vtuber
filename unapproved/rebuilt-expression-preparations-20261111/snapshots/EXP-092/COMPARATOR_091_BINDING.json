@@ -1,0 +1,8 @@
+{
+  "author_freeze_sha256": "3a1b7d38435c34fda95098af3c4d989538886e42e5fe7d7362ec48ac44a72e64",
+  "id": "EXP-091",
+  "native_comparison": "NOT RUN",
+  "profile_sha256": "67cae056cbc90fe0de20820131d750a97ada4ccc0340575ee43ec18963bbda6a",
+  "source": "../ryoko_exp091_reconstruction_20261111/EXP-091.json",
+  "status": "UNAPPROVED fresh reconstructed comparator, not production integration"
+}

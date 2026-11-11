@@ -1,0 +1,334 @@
+{
+  "approval": "UNAPPROVED",
+  "baseline_files_verified": 1124,
+  "baseline_profiles": 39,
+  "checks": 5884,
+  "dense_segment_samples": 130,
+  "frozen_inputs_verified": 1153,
+  "lifecycle_samples": 270,
+  "lifecycle_sha256": "751863bd50dd86a0cffb1ea795808fe7b1d32f171827ed62f15801350cce38f9",
+  "maximum_30hz_step": 0.08729745370370334,
+  "maximum_independent_control_error": 4.440892098500626e-16,
+  "mp4": "PENDING",
+  "native_capture": "PENDING_BLOCKED",
+  "native_runtime": "NOT RUN",
+  "normal_speed_review": "PENDING",
+  "numerical_comparisons": {
+    "EXP-001": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.30938828046515443,
+      "samples": 121
+    },
+    "EXP-002": {
+      "channels": 30,
+      "max_abs": 0.9900190892918381,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.20874237273405866,
+      "samples": 121
+    },
+    "EXP-003": {
+      "channels": 30,
+      "max_abs": 0.92,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.18988095073785277,
+      "samples": 121
+    },
+    "EXP-004": {
+      "channels": 30,
+      "max_abs": 4.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.5022454702294551,
+      "samples": 121
+    },
+    "EXP-005": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2917608507968918,
+      "samples": 121
+    },
+    "EXP-006": {
+      "channels": 30,
+      "max_abs": 0.9100938881268099,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2544947677280943,
+      "samples": 121
+    },
+    "EXP-007": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2728870118688518,
+      "samples": 121
+    },
+    "EXP-021": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.27005800744799263,
+      "samples": 121
+    },
+    "EXP-040": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2219754748913126,
+      "samples": 121
+    },
+    "EXP-041": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.24435297970912434,
+      "samples": 121
+    },
+    "EXP-042": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2561483454761754,
+      "samples": 121
+    },
+    "EXP-043": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.28950228214808116,
+      "samples": 121
+    },
+    "EXP-050": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2725467343650461,
+      "samples": 121
+    },
+    "EXP-061": {
+      "channels": 30,
+      "max_abs": 4.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.535265808997074,
+      "samples": 121
+    },
+    "EXP-063": {
+      "channels": 30,
+      "max_abs": 4.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.5659658854901746,
+      "samples": 121
+    },
+    "EXP-064": {
+      "channels": 30,
+      "max_abs": 4.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.5128993403857355,
+      "samples": 121
+    },
+    "EXP-067": {
+      "channels": 30,
+      "max_abs": 4.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.4373119468181571,
+      "samples": 121
+    },
+    "EXP-090": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2006635507582815,
+      "samples": 121
+    },
+    "EXP-093": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2729242853631915,
+      "samples": 121
+    },
+    "EXP-096": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.27089362895465,
+      "samples": 121
+    },
+    "EXP-102": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2722148240856442,
+      "samples": 121
+    },
+    "EXP-107": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2718960945020639,
+      "samples": 121
+    },
+    "EXP-114": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.28280717338715233,
+      "samples": 121
+    },
+    "EXP-116": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.267511546581272,
+      "samples": 121
+    },
+    "EXP-125": {
+      "channels": 30,
+      "max_abs": 2.2967407407407405,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2959040554089575,
+      "samples": 121
+    },
+    "EXP-129": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.239102257481029,
+      "samples": 121
+    },
+    "EXP-139": {
+      "channels": 30,
+      "max_abs": 1.0183666087962964,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.3294350494833065,
+      "samples": 121
+    },
+    "EXP-144": {
+      "channels": 30,
+      "max_abs": 12.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 1.1424815306276852,
+      "samples": 121
+    },
+    "EXP-148": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.23228653060854793,
+      "samples": 121
+    },
+    "EXP-152": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.28912950128960674,
+      "samples": 121
+    },
+    "EXP-153": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.20819817338610724,
+      "samples": 121
+    },
+    "EXP-158": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.25551799775251616,
+      "samples": 121
+    },
+    "EXP-160": {
+      "channels": 30,
+      "max_abs": 1.3,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.32611798498012806,
+      "samples": 121
+    },
+    "EXP-163": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.3001266403035727,
+      "samples": 121
+    },
+    "EXP-164": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.23527539454419844,
+      "samples": 121
+    },
+    "EXP-174": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.2952273344607854,
+      "samples": 121
+    },
+    "EXP-177": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.28249359079125164,
+      "samples": 121
+    },
+    "EXP-181": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.30001473620620417,
+      "samples": 121
+    },
+    "EXP-186": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.30518892050048846,
+      "samples": 121
+    },
+    "EXP-197": {
+      "channels": 30,
+      "max_abs": 1.0,
+      "perceptual_distinctness": "PENDING",
+      "rms": 0.27092513460856793,
+      "samples": 121
+    }
+  },
+  "peak_analytic_prediction": {
+    "brow_angle_degrees": {
+      "screen_left": -8.0,
+      "screen_right": 8.0
+    },
+    "brow_vertical_source_px": 0.8,
+    "eye_curved_shape": 1,
+    "eye_effective_closure": 1,
+    "lip_samples": [
+      {
+        "gap": 0,
+        "lower_y": 2.2799999999999994,
+        "upper_y": 2.2799999999999994,
+        "x": 4.0
+      },
+      {
+        "gap": 0,
+        "lower_y": 3.12,
+        "upper_y": 3.12,
+        "x": 39.5
+      },
+      {
+        "gap": 0,
+        "lower_y": 2.2799999999999994,
+        "upper_y": 2.2799999999999994,
+        "x": 75.0
+      }
+    ],
+    "mouth_width_source_px": 49.16
+  },
+  "reconstruction": "NEW 20261111 r1; not restored old v2",
+  "remote_publication": "NOT_ATTEMPTED",
+  "source_fidelity": "PENDING_NATIVE_REVIEW",
+  "status": "PASS_STATIC_NUMERIC_ONLY",
+  "timeline_samples": 121,
+  "trajectory_sha256": "1e8af08c8b0b56a8bcd65985b62c80f7dc57be89fdbb2abe496950750c50f071"
+}

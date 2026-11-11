@@ -1,0 +1,25 @@
+test_metadata_rejects_frame_time_pose_hash_errors (test_candidate.EncoderGuardTests.test_metadata_rejects_frame_time_pose_hash_errors) ... ok
+test_metadata_rejects_invalid_or_stale_receipts (test_candidate.EncoderGuardTests.test_metadata_rejects_invalid_or_stale_receipts) ... ok
+test_missing_capture_never_invokes_subprocess (test_candidate.EncoderGuardTests.test_missing_capture_never_invokes_subprocess) ... ok
+test_boundary_neutral_and_exact_anchors (test_candidate.NumericalTests.test_boundary_neutral_and_exact_anchors) ... ok
+test_control_distinctness_is_not_visual_distinctness (test_candidate.NumericalTests.test_control_distinctness_is_not_visual_distinctness) ... ok
+test_exclusion_and_trajectory_bounds (test_candidate.NumericalTests.test_exclusion_and_trajectory_bounds) ... ok
+test_frame_series_deterministic (test_candidate.NumericalTests.test_frame_series_deterministic) ... ok
+test_glance_precedes_exhale_without_smile (test_candidate.NumericalTests.test_glance_precedes_exhale_without_smile) ... ok
+test_invalid_delta_transactional (test_candidate.NumericalTests.test_invalid_delta_transactional) ... ok
+test_lifecycle_continuity_and_eventual_neutral (test_candidate.NumericalTests.test_lifecycle_continuity_and_eventual_neutral) ... ok
+test_profile_schema_and_bounds (test_candidate.NumericalTests.test_profile_schema_and_bounds) ... ok
+test_reject_bad_profiles (test_candidate.NumericalTests.test_reject_bad_profiles) ... ok
+test_release_formula_and_reset_after_release_retrigger (test_candidate.NumericalTests.test_release_formula_and_reset_after_release_retrigger) ... ok
+test_smoothstep_known_values_and_midpoint (test_candidate.NumericalTests.test_smoothstep_known_values_and_midpoint) ... ok
+test_source_geometry_contract (test_candidate.NumericalTests.test_source_geometry_contract) ... ok
+test_approved39_and_096_preserved (test_candidate.PreservationTests.test_approved39_and_096_preserved) ... ok
+test_frozen_input_identity (test_candidate.PreservationTests.test_frozen_input_identity) ... ok
+test_native_preparation_is_guarded_not_verified (test_candidate.PreservationTests.test_native_preparation_is_guarded_not_verified) ... ok
+test_no_native_claim_or_capture (test_candidate.PreservationTests.test_no_native_claim_or_capture) ... ok
+test_pinned_sampler_formulas_static_only (test_candidate.PreservationTests.test_pinned_sampler_formulas_static_only) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.813s
+
+OK

@@ -1,0 +1,39 @@
+test_approved39_registry_excludes_091 (test_candidate.CandidateTests.test_approved39_registry_excludes_091) ... ok
+test_author_reproduces_map (test_candidate.CandidateTests.test_author_reproduces_map) ... ok
+test_author_reproduces_plan (test_candidate.CandidateTests.test_author_reproduces_plan) ... ok
+test_author_reproduces_profile (test_candidate.CandidateTests.test_author_reproduces_profile) ... ok
+test_bad_timeline_rejected (test_candidate.CandidateTests.test_bad_timeline_rejected) ... ok
+test_bounds_rejected (test_candidate.CandidateTests.test_bounds_rejected) ... ok
+test_compare_four_critical_profiles (test_candidate.CandidateTests.test_compare_four_critical_profiles) ... ok
+test_completed_play_returns_neutral (test_candidate.CandidateTests.test_completed_play_returns_neutral) ... ok
+test_cubic_join_velocity (test_candidate.CandidateTests.test_cubic_join_velocity) ... ok
+test_curve_and_brow_not_generic_warm_smile (test_candidate.CandidateTests.test_curve_and_brow_not_generic_warm_smile) ... ok
+test_definition (test_candidate.CandidateTests.test_definition) ... ok
+test_dense_independent_sampler (test_candidate.CandidateTests.test_dense_independent_sampler) ... ok
+test_distance_stable_under_key_order (test_candidate.CandidateTests.test_distance_stable_under_key_order) ... ok
+test_encoder_missing_evidence_refused (test_candidate.CandidateTests.test_encoder_missing_evidence_refused) ... ok
+test_encoder_never_executes_program (test_candidate.CandidateTests.test_encoder_never_executes_program) ... ok
+test_exact_peak (test_candidate.CandidateTests.test_exact_peak) ... ok
+test_freeze_read_only (test_candidate.CandidateTests.test_freeze_read_only) ... ok
+test_intake_precedes_sealed_peak (test_candidate.CandidateTests.test_intake_precedes_sealed_peak) ... ok
+test_invalid_delta_is_atomic (test_candidate.CandidateTests.test_invalid_delta_is_atomic) ... ok
+test_invalid_manual_is_atomic (test_candidate.CandidateTests.test_invalid_manual_is_atomic) ... ok
+test_lifecycle_continuity_and_release (test_candidate.CandidateTests.test_lifecycle_continuity_and_release) ... ok
+test_manual_takeover (test_candidate.CandidateTests.test_manual_takeover) ... ok
+test_native_guard_disabled (test_candidate.CandidateTests.test_native_guard_disabled) ... ok
+test_native_metadata_guards (test_candidate.CandidateTests.test_native_metadata_guards) ... ok
+test_no_native_receipts_or_mp4 (test_candidate.CandidateTests.test_no_native_receipts_or_mp4) ... ok
+test_non_neutral_end_rejected (test_candidate.CandidateTests.test_non_neutral_end_rejected) ... ok
+test_png_non_png_rejected (test_candidate.CandidateTests.test_png_non_png_rejected) ... ok
+test_reference_not_native_frame (test_candidate.CandidateTests.test_reference_not_native_frame) ... ok
+test_reset_during_release (test_candidate.CandidateTests.test_reset_during_release) ... ok
+test_runtime_equations_static_contract (test_candidate.CandidateTests.test_runtime_equations_static_contract) ... ok
+test_same_profile_zero_distance (test_candidate.CandidateTests.test_same_profile_zero_distance) ... ok
+test_stale_freeze_rejected (test_candidate.CandidateTests.test_stale_freeze_rejected) ... ok
+test_unsupported_parts_rejected (test_candidate.CandidateTests.test_unsupported_parts_rejected) ... ok
+test_validator_fails_on_frozen_input_change (test_candidate.CandidateTests.test_validator_fails_on_frozen_input_change) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 1.528s
+
+OK

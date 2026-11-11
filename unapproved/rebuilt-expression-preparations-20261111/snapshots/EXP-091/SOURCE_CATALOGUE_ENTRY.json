@@ -1,0 +1,245 @@
+{
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "actual_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_sheet_v001.png",
+    "native_height": 1358,
+    "native_width": 1159,
+    "peak_actual_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_peak_v001.png",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "sha256": "8c362b8ccad51b393d72d552499b872514d5365158c0e3428fb91b9cfdb261e9",
+    "sheet_status": "published_accepted_reference_art"
+  },
+  "body_gesture": {
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig.",
+    "reference_ids": [
+      "BOD-008",
+      "BOD-027"
+    ],
+    "references": [
+      {
+        "id": "BOD-008",
+        "intent": "She raises a hand palm outward to politely but firmly signal stop, holds it, then lowers it.",
+        "path": "assets/body/RYO_BOD-008_stop-palm_sheet_v001.png",
+        "sha256": "d8074c1f8558625ee42222599906a42abfb4ca3fbd3cd8cf6b2799d1d001c23c"
+      },
+      {
+        "id": "BOD-027",
+        "intent": "She gives a small outward dismissive wave at shoulder level with a skeptical look, then lowers hand.",
+        "path": "assets/body/RYO_BOD-027_dismissive-wave_sheet_v001.png",
+        "sha256": "ef8a1461aaa815992fd55edd9dee0513f7612bbf51ce9542653d807ae236b7df"
+      }
+    ],
+    "status": "paired_reusable_visual_references"
+  },
+  "distinctive_facial_intent": "Brows lift then tighten; eyes squint gently; mouth puckers around a restrained smile-grimace.",
+  "facial_control_mapping": {
+    "intent": "Brows lift then tighten; eyes squint gently; mouth puckers around a restrained smile-grimace.",
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "numeric_weights": null,
+    "status": "semantic_intent_only_pending_actual_rig"
+  },
+  "family": "Disgust and discomfort",
+  "id": "EXP-091",
+  "implementation_status": "not_implemented_in_2d_rig",
+  "is_pilot": false,
+  "issues": [],
+  "key_pose_sequence": [
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        363,
+        453
+      ],
+      "key_pose": 1,
+      "panel_location": {
+        "column": 1,
+        "row": 1
+      },
+      "phase": "neutral",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "aae36ee3abfc8b2c31b672a08ae62e7a48843b029d8103a22556e064275fdfba",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        363,
+        0,
+        740,
+        453
+      ],
+      "key_pose": 2,
+      "panel_location": {
+        "column": 2,
+        "row": 1
+      },
+      "phase": "anticipation",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "7649957129737a5e9f7f0ccbe7b11d9130399b30f1a221e4e538ba93d1347e86",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        740,
+        0,
+        1159,
+        453
+      ],
+      "key_pose": 3,
+      "panel_location": {
+        "column": 3,
+        "row": 1
+      },
+      "phase": "onset",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "00c0746ac9b380a145cfe06bc1234aeda79880ebfe2220111dae615d2327fca5",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        453,
+        363,
+        902
+      ],
+      "key_pose": 4,
+      "panel_location": {
+        "column": 1,
+        "row": 2
+      },
+      "phase": "build",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "e66a98e0386d8482d0e52d70342ad664dff7d8af4eb90349741858aa2916b855",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        363,
+        453,
+        740,
+        902
+      ],
+      "key_pose": 5,
+      "panel_location": {
+        "column": 2,
+        "row": 2
+      },
+      "phase": "peak",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "5b46bd2643d18f7999f15e36835ac6367a77b4210ae51b58e2bf91cd7b28eb2b",
+      "time_seconds": 0.75,
+      "visual_direction": "Brows lift then tighten; eyes squint gently; mouth puckers around a restrained smile-grimace."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        740,
+        453,
+        1159,
+        902
+      ],
+      "key_pose": 6,
+      "panel_location": {
+        "column": 3,
+        "row": 2
+      },
+      "phase": "follow_through_or_hold",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "8d9c0d6b50d8d00c62b2bfe3c757ce989330a4b9259d06f076858d533eb2b500",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        902,
+        363,
+        1358
+      ],
+      "key_pose": 7,
+      "panel_location": {
+        "column": 1,
+        "row": 3
+      },
+      "phase": "release",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "de096a921240d0ef99565274334536cd0ec27af2cec0c1bfcbf1753f59113eb9",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        363,
+        902,
+        740,
+        1358
+      ],
+      "key_pose": 8,
+      "panel_location": {
+        "column": 2,
+        "row": 3
+      },
+      "phase": "settle",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "70a2aa435a42cfefdd3abfffb885071889281dd677bc61740bf76cfc3c9991ab",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-091_overly-sweet-taste/RYO_EXP-091_overly-sweet-taste_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        740,
+        902,
+        1159,
+        1358
+      ],
+      "key_pose": 9,
+      "panel_location": {
+        "column": 3,
+        "row": 3
+      },
+      "phase": "neutral_return",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "72386d28b6f8171d0ca0d4d87cf10c7f31e897960c7807e42080daa32126c34d",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel."
+    }
+  ],
+  "overlays": {
+    "planned_optional_effects": [],
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures.",
+    "status": "requires_mapping_to_available_2d_effect_layers"
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "review_status": "accepted_reference_art",
+  "slug": "overly-sweet-taste",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "timing": {
+    "duration_seconds": 1.9,
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test.",
+    "loop_interval_seconds": null,
+    "loop_mode": "one_shot",
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "peak_hold_seconds": 0.3,
+    "timing_status": "proposed_reference_timing_not_implemented_animation"
+  }
+}

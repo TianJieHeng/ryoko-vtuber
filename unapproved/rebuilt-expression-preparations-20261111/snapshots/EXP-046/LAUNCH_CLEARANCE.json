@@ -1,0 +1,6 @@
+{
+  "state": "DENIED_PENDING_RESOLUTION",
+  "cleared": false,
+  "reason": "Parent reports outstanding project-launch denial. Do not launch Godot by CLI, editor, renderer, UI, headless, alternate environment or fallback route. This file is a guard, not authorization.",
+  "native_execution_performed": false
+}

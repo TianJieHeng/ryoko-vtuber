@@ -1,0 +1,84 @@
+{
+  "approval": "UNAPPROVED",
+  "artifacts": [
+    "README.md",
+    "EXP-091.json",
+    "plan.json",
+    "SOURCE_MAP.json",
+    "SOURCE_CATALOGUE_ENTRY.json",
+    "BASELINE_FREEZE.json",
+    "INPUT_FREEZE.json",
+    "INPUT_FREEZE.sha256",
+    "numeric_model.py",
+    "test_candidate.py",
+    "native_capture.gd",
+    "encode_preflight.py",
+    "STATIC_VALIDATION.json",
+    "TEST_RESULTS.log",
+    "MULTISEED_CHECK.json"
+  ],
+  "baseline_files_preserved": 1124,
+  "baseline_profile_count": 39,
+  "blocker": {
+    "action": "Native Godot launch/render/capture",
+    "reason": "Prior native launch denied twice; current task permits only static/Python preparation. No retry, headless alternative or workaround attempted.",
+    "state": "DENIED_BEFORE_THIS_RECONSTRUCTION; NOT_ATTEMPTED_HERE",
+    "target": "/workspace/scratch/42f2baf55663/ryoko_exp091_reconstruction_20261111/native_capture.gd"
+  },
+  "candidate": "EXP-091 Overly Sweet Taste",
+  "comparator_rms_numeric_only": {
+    "EXP-090": 0.2006635507582815,
+    "EXP-096": 0.27089362895465,
+    "EXP-160": 0.32611798498012806,
+    "EXP-197": 0.27092513460856793
+  },
+  "dense_segment_samples": 130,
+  "fidelity_gate": "PENDING: generic bashful smile fails even if numeric distances pass; judge tiny sealed smile-pucker, strained brows and curved closed eyes against recovered sheet.",
+  "freeze_sha256": "3a1b7d38435c34fda95098af3c4d989538886e42e5fe7d7362ec48ac44a72e64",
+  "frozen_input_hashes_preserved": 1153,
+  "hashseed_checks": 6,
+  "hashseed_reports_byte_identical": true,
+  "headache_comparator_sha256": "21ba5c4393ed672a5496ed28577068bd4b56e3b8ff5d7ac4f9674df03badf1fe",
+  "lifecycle_samples": 270,
+  "maximum_30hz_control_step": 0.08729745370370334,
+  "maximum_independent_control_error": 4.440892098500626e-16,
+  "native_preparation": {
+    "behavior": "Validates actual native evidence then emits command only; never executes encoder",
+    "capture_source": "native_capture.gd",
+    "current_preflight_exit": 2,
+    "enabled": false,
+    "encoder": "encode_preflight.py",
+    "parsed": false,
+    "reason": "Fresh native captures absent",
+    "run": false
+  },
+  "original_recovery_sha256_check": {
+    "command": "sha256sum --quiet -c RECOVERED_FILES.sha256",
+    "files": 1242,
+    "status": "PASS"
+  },
+  "pending": [
+    "Native parse and runtime checks",
+    "Native capture",
+    "Independent source and perceptual comparisons",
+    "MP4 encode and decode validation",
+    "Normal-speed visual review",
+    "User approval",
+    "Publication"
+  ],
+  "profile": "EXP-091.json",
+  "profile_sha256": "67cae056cbc90fe0de20820131d750a97ada4ccc0340575ee43ec18963bbda6a",
+  "publication": {
+    "reason": "Parent scoped this worker to local static preparation only",
+    "state": "NOT_ATTEMPTED"
+  },
+  "reconstruction": "NEW 20261111 r1, not recovered old v2",
+  "root": "/workspace/scratch/42f2baf55663/ryoko_exp091_reconstruction_20261111",
+  "source_mapping": "SOURCE_MAP.json",
+  "source_pixels_inspected": true,
+  "static_checks": 5884,
+  "status": "COMPLETE_STATIC_PREPARATION_ONLY",
+  "test_status": "PASS",
+  "tests": 34,
+  "timeline_samples": 121
+}

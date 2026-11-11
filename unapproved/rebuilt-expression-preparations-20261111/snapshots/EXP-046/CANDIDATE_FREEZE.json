@@ -1,0 +1,21 @@
+{
+  "identity": "NEW EXP046 rebuild 2026-11-11 v1",
+  "old_candidate_restored": false,
+  "approval": "UNAPPROVED",
+  "native_execution": "NOT RUN",
+  "files_sha256": {
+    "prepare_candidate.py": "2fdbc0efdac473729bc1e7252f9b4694a4ea01bd53c2731b297439861432117e",
+    "trajectory_model.py": "95fb6122d64a0cbb0b00dc561684dc39b3de39083be346d3f996118e1e8121fb",
+    "test_candidate.py": "9dac5bf713ca5429f20d666b230d69980e2901f85acec6d743de9b446d6ec128",
+    "freeze_candidate.py": "e40343429d5bcf97a2617b42a4d82dd34cd80fdfad2ccab19f798b080fe47a44",
+    "native_capture.gd": "e3cbea82a31538aa7398348355e501bc88d0a3fcb0f7d9c13b9ec94286053d4e",
+    "encode_preview.py": "efe0911463c4df8db3e142adc89a1f6da2e6fa5b8a6ccafb28551ccbfeba7700",
+    "README.md": "8792cfef7f42d42a8b1373f9309d0f127da37e0e4033112336925892d14c8429",
+    "EXP-046.json": "1de491628e031953c765a47287d3ac230abb73e6adbdab15a3f8c11d1b41161e",
+    "plan.json": "1cc365852c3c1dd431679784363de3f01481db5b547674ce277ed95040ac8fed",
+    "SOURCE_MAP.json": "7c486bb55e79e3bb2777f840563949dbb7cba93934c279a4deda14174145e64e",
+    "SOURCE_CATALOGUE_ENTRY.json": "ec719d901109fa5281ce086cfece626c4fc441c10c794657f4254b46453a3f2f",
+    "BASELINE_FREEZE.json": "a71c25b005cd3014d35ec8d2a659fdb0fb4273374ba2da5975b2db68519ef519",
+    "EXPECTED_TRAJECTORY.json": "75e10630f842bf143f3bf81d4850d4378f58f95ba6a605296d9f02e5cea761b0"
+  }
+}

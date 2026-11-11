@@ -1,0 +1,63 @@
+{
+  "status": "PASS_SOURCE_PREPARATION_ONLY",
+  "approval": "UNAPPROVED",
+  "identity": "NEW EXP046 rebuild 2026-11-11 v1",
+  "old_local_candidate_restored": false,
+  "profile_sha256": "1de491628e031953c765a47287d3ac230abb73e6adbdab15a3f8c11d1b41161e",
+  "candidate_freeze_sha256": "9b9e9a25643b0f1c771a6f03b6669fafd48e2c53b32671b9928e20b702590dce",
+  "source_reference_visually_inspected": true,
+  "copied_baseline_files": 1124,
+  "copied_baseline_png_files": 184,
+  "approved_profiles_preserved": 39,
+  "approved096_profile_preserved": true,
+  "python_unit_tests": {
+    "status": "PASS",
+    "tests_run": 20,
+    "failures": 0,
+    "errors": 0,
+    "log": "python_tests.log",
+    "scope": "Numerical model, source preservation and guarded encoder validation only"
+  },
+  "python_ast_parse": {
+    "status": "PASS",
+    "files": 5
+  },
+  "trajectory": {
+    "scope": "PURE_PYTHON_NUMERICAL_EXPECTATIONS",
+    "frames": 145,
+    "fps": 30,
+    "authored_duration_seconds": 4.8,
+    "dense_samples_tested": 4801,
+    "lifecycle_interruption_points": 10,
+    "lifecycle_flows_recorded": 30,
+    "max_ordinary_lid_closure": 0.5,
+    "max_upward_source_pixels": 2,
+    "peak_central_lip_gap_source_pixels": 14.46
+  },
+  "encoder_preflight": {
+    "status": "EXPECTED_REFUSAL",
+    "exit_code": 1,
+    "reason": "Native capture NOT RUN. No MP4 may be encoded from numerical data or reference panels.",
+    "log": "encoder_preflight.log"
+  },
+  "native_gdscript_parse": "NOT_RUN",
+  "godot_execution": "NOT_RUN",
+  "native_state_checks": "NOT_RUN",
+  "native_capture": "NOT_RUN",
+  "native_geometry_verification": "NOT_RUN",
+  "perceptual_distinctness": "NOT_REVIEWED",
+  "visual_reference_fit": "NOT_REVIEWED",
+  "normal_speed_playback": "NOT_RUN",
+  "ffmpeg_encoding": "NOT_RUN",
+  "approval_mp4": null,
+  "publication": "NOT_DONE",
+  "ci": "NOT_RUN",
+  "remote_execution": "NOT_RUN",
+  "blocker": {
+    "action": "Launch the candidate Godot project for native parsing/state tests and rendered capture",
+    "target": "/workspace/scratch/42f2baf55663/ryoko_expression_recovery_20261111/candidates/EXP-046-exasperated-sigh-rebuild-v1/rig",
+    "state": "DENIED_PENDING_RESOLUTION",
+    "reason": "Parent reports outstanding project-launch denial; no retry or alternate execution route attempted."
+  },
+  "next_step": "Parent resolves exact launch restriction, then coordinates separate native and independent visual review, real MP4 encoding and authorized unapproved backup. Current candidate is not completed animation."
+}

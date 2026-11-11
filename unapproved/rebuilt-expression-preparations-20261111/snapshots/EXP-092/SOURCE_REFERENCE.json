@@ -1,0 +1,43 @@
+{
+  "actual_pixels_inspected": true,
+  "approval": "Accepted reference artwork does not approve this new candidate.",
+  "approximations": [
+    "Rigid brows cannot pinch horizontally, curve or form furrows.",
+    "Existing mouth_purse narrows and lowers a sealed contour; it does not reproduce real protrusion, cheek hollowing or nose wrinkles.",
+    "No kiss artwork, new texture, shader change, smile-eye or painted expression swap is used."
+  ],
+  "headache_comparison": "Same peak brow/lid/press controls as the exact approved EXP-096; purse .90 versus .05 gives 23.8 source-pixel formula contraction relative to EXP-096. This is not a visual result or evidence of perceptual distinctness.",
+  "inspection_scope": "Recovered EXP-092 and EXP-091 full nine-panel source sheets; no rendered candidate inspected.",
+  "observations": "Sour KP2-4 progressively lowers/opposes brows and narrows ordinary lids. KP5 has tightly closed eyes and a small strongly puckered sealed lip contour. KP6 remains closed but the purse eases. KP7 reopens with mild brow/lip tension; KP8 settles and KP9 is neutral. Source cheek/nose crease marks are not implemented. Sweet shows blush, a slight early mouth parting and a much broader pressed peak, so sour must not substitute that acting.",
+  "panel_to_anchor": {
+    "1": "neutral",
+    "2": "taste_tension",
+    "3": "sour_build",
+    "4": "tighten",
+    "5": "sour_peak",
+    "6": "ease_closed",
+    "7": "reopen_tense",
+    "8": "settle",
+    "9": "neutral_return"
+  },
+  "peak_numeric_geometry": {
+    "aperture_source_px": 0.0,
+    "brow_down_source_px": 5.5,
+    "brow_rotations_degrees": [
+      5.2,
+      -5.2
+    ],
+    "central_contour_drop_source_px": 3.6,
+    "contour_width_source_px": 45.8,
+    "endpoint_contour_drop_source_px": 10.8,
+    "lip_press": 0.65,
+    "ordinary_lash_travel_source_px": 36.0,
+    "purse": 0.9
+  },
+  "screen_convention": "blink_R closes screen-left; blink_L closes screen-right. Screen-left positive and screen-right negative brow tilt oppose inward.",
+  "sheet": "references/RYO_EXP-092_sour-taste_sheet_v001.png",
+  "sheet_dimensions": [
+    1159,
+    1358
+  ]
+}

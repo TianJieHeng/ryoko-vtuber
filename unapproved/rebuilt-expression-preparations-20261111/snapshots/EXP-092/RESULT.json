@@ -1,0 +1,23 @@
+{
+  "baseline_files": 1124,
+  "baseline_pngs": 184,
+  "baseline_profile_count": 39,
+  "dense_samples": 961,
+  "duration_seconds": 4,
+  "final_read_only_freeze_validation": "Run validate_candidate.py. Repeated seeded verification logs are outside the source freeze in ../sour_taste_rebuild_20261111_audit/.",
+  "fps": 30,
+  "identity": "Fresh EXP-092 recovery reconstruction, not restored prior freeze",
+  "mp4": "NOT GENERATED",
+  "native_GDScript_parse": "NOT RUN",
+  "native_gate": "BLOCKED: prior launch denial remains unresolved; no retry made",
+  "native_runtime_and_lifecycle": "NOT RUN",
+  "native_visual_comparison_096_and_091": "NOT RUN",
+  "numeric_lifecycle_samples": 800,
+  "numeric_lifecycle_scenarios": 50,
+  "pure_python_tests_passed": 35,
+  "push": "NOT ATTEMPTED",
+  "source_pixels_inspected": true,
+  "source_visual_review_independent": "PENDING",
+  "status": "UNAPPROVED_STATIC_NUMERIC_PREPARATION",
+  "trajectory_frames": 121
+}

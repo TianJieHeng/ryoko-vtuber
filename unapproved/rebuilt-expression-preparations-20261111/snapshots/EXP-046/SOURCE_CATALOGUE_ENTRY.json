@@ -1,0 +1,245 @@
+{
+  "id": "EXP-046",
+  "slug": "exasperated-sigh",
+  "family": "Anger and frustration",
+  "distinctive_facial_intent": "Brows rise centrally then fall; eyes roll upward and half close; lips part in a long weary exhale.",
+  "is_pilot": false,
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "review_status": "accepted_reference_art",
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "sheet_status": "published_accepted_reference_art",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "native_width": 1159,
+    "native_height": 1358,
+    "sha256": "7aed5d539ffe01c569b81056481ecaa6fd42e96bd53bb15ddbb4d5bfb4621239",
+    "actual_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_sheet_v001.png",
+    "peak_actual_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_peak_v001.png"
+  },
+  "key_pose_sequence": [
+    {
+      "key_pose": 1,
+      "phase": "neutral",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line.",
+      "panel_location": {
+        "row": 1,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        394,
+        452
+      ],
+      "sha256": "5ace633eea7acedef20e92797b1e07b86e1b9ae50b35fe5e6ef0b839588d4e29"
+    },
+    {
+      "key_pose": 2,
+      "phase": "anticipation",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity.",
+      "panel_location": {
+        "row": 1,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        394,
+        0,
+        764,
+        452
+      ],
+      "sha256": "254cfdfb53ae1cb269cbf0bed153e9017632677bfb9a51de7a6b7efce8a9a6b1"
+    },
+    {
+      "key_pose": 3,
+      "phase": "onset",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes.",
+      "panel_location": {
+        "row": 1,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        764,
+        0,
+        1159,
+        452
+      ],
+      "sha256": "b64d30939d9a85638c132fa63dc9379b72b809447948d5152f5c637601a347ea"
+    },
+    {
+      "key_pose": 4,
+      "phase": "build",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak.",
+      "panel_location": {
+        "row": 2,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        452,
+        394,
+        905
+      ],
+      "sha256": "2e1d90627a1e8b58d70c709062aba5c37b7bd096a6ed2d0d7f38d2b92f9016e7"
+    },
+    {
+      "key_pose": 5,
+      "phase": "peak",
+      "time_seconds": 0.75,
+      "visual_direction": "Brows rise centrally then fall; eyes roll upward and half close; lips part in a long weary exhale.",
+      "panel_location": {
+        "row": 2,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        394,
+        452,
+        764,
+        905
+      ],
+      "sha256": "985c6e382df942fe3dd197ee5f1452d9fb313f5b9800dafecaeb02f912813e37"
+    },
+    {
+      "key_pose": 6,
+      "phase": "follow_through_or_hold",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression.",
+      "panel_location": {
+        "row": 2,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        764,
+        452,
+        1159,
+        905
+      ],
+      "sha256": "3929cbf2535e6f2e90b2227f16bf2ca4a80ed3637a6882dc5f6af16fefdcd337"
+    },
+    {
+      "key_pose": 7,
+      "phase": "release",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition.",
+      "panel_location": {
+        "row": 3,
+        "column": 1
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        905,
+        394,
+        1358
+      ],
+      "sha256": "b1f657f488b13fc6c01d60bec335e33f9a3fc3d5d728c6b2a5b5557ebebb78b4"
+    },
+    {
+      "key_pose": 8,
+      "phase": "settle",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression.",
+      "panel_location": {
+        "row": 3,
+        "column": 2
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        394,
+        905,
+        764,
+        1358
+      ],
+      "sha256": "c49d7ee0c1e6497a808fad8ca0f137412a6778fe258173b95af51239f08de501"
+    },
+    {
+      "key_pose": 9,
+      "phase": "neutral_return",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel.",
+      "panel_location": {
+        "row": 3,
+        "column": 3
+      },
+      "separate_panel_status": "published_lossless_integer_crop",
+      "actual_panel_path": "assets/expressions/EXP-046_exasperated-sigh/RYO_EXP-046_exasperated-sigh_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        764,
+        905,
+        1159,
+        1358
+      ],
+      "sha256": "870653427a88538fe52a492e2d2c2d52c5399d7ffbc4efc5a74bca89cc71dbc3"
+    }
+  ],
+  "timing": {
+    "duration_seconds": 1.9,
+    "timing_status": "proposed_reference_timing_not_implemented_animation",
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "peak_hold_seconds": 0.3,
+    "loop_mode": "one_shot",
+    "loop_interval_seconds": null,
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test."
+  },
+  "facial_control_mapping": {
+    "status": "semantic_intent_only_pending_actual_rig",
+    "numeric_weights": null,
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "intent": "Brows rise centrally then fall; eyes roll upward and half close; lips part in a long weary exhale."
+  },
+  "overlays": {
+    "planned_optional_effects": [],
+    "status": "requires_mapping_to_available_2d_effect_layers",
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures."
+  },
+  "body_gesture": {
+    "status": "paired_reusable_visual_references",
+    "reference_ids": [
+      "BOD-001",
+      "BOD-003"
+    ],
+    "references": [
+      {
+        "id": "BOD-001",
+        "path": "assets/body/RYO_BOD-001_arms-crossed-stern_sheet_v001.png",
+        "sha256": "fb2bf3a04ff32adb7dce5d57fecffac86bbb9438ec83818dc59cfb8d2bc06507",
+        "intent": "She gradually folds both arms across her torso, holds a stern upright scolding stance with narrowed brows, then unfolds and settles."
+      },
+      {
+        "id": "BOD-003",
+        "path": "assets/body/RYO_BOD-003_hands-on-hips_sheet_v001.png",
+        "sha256": "dee1a387260a22252cccd775dbe4cf09a58099c140c1605ed55e30310fb65179",
+        "intent": "She places both hands on hips, elbows out, gives a firm scolding look, then releases hands down."
+      }
+    ],
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig."
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "issues": [],
+  "implementation_status": "not_implemented_in_2d_rig"
+}

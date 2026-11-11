@@ -1,0 +1,35 @@
+{
+  "status": "SOURCE_ONLY_UNAPPROVED_BACKUP",
+  "main_commit": "419450d2302d471aa009557289ad509ffb413349",
+  "headache_review_commit": "85a8bcd62a428087eb5702cb8cdee9d7594a072e",
+  "source_tests_passed": {
+    "EXP-046": 20,
+    "EXP-091": 34,
+    "EXP-092": 35
+  },
+  "native_parse": "NOT RUN",
+  "native_render_capture": "NOT RUN; prior launch denied",
+  "mp4": "NOT GENERATED OR UPLOADED",
+  "source_fit": "PENDING",
+  "perceptual_distinctness": "PENDING",
+  "user_approval": "PENDING",
+  "old_freezes_restored": false,
+  "reconstruction_files": 4745,
+  "reconstruction_bytes": 184947435,
+  "manifest_uncompressed_sha256": "e2778b5258855ef4f0ee2c369bcc87cb0c67f679c08cd84042e232dae1956751",
+  "counts": {
+    "EXP-046:stored": 26,
+    "EXP-046:deduplicated": 1,
+    "EXP-046:pinned": 1134,
+    "EXP-091:stored": 20,
+    "EXP-091:pinned": 1143,
+    "EXP-092:stored": 23,
+    "EXP-092:deduplicated": 1,
+    "EXP-092:pinned": 1136,
+    "EXP-092-audit:stored": 5,
+    "EXP-092-audit:deduplicated": 5,
+    "recovery-provenance:stored": 8,
+    "recovery-provenance:deduplicated": 1
+  },
+  "note": "Immutable candidate preparation reports retain their original pre-publication status. This separate package records source-backup scope only; it does not supersede any native or approval gate. Existing historical source dependencies are pinned, not newly uploaded."
+}

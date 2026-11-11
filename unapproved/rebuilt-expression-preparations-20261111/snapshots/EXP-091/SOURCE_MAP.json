@@ -1,0 +1,60 @@
+{
+  "approval": "UNAPPROVED; source art acceptance is not candidate approval",
+  "caveats": [
+    "Pure Python numbers do not establish rendered anatomy, source fidelity, perceptual distinctness or smoothness.",
+    "A generic bashful smile is a source-fit failure even if numerical distances pass.",
+    "No cheek compression, 3D lip protrusion, new pucker anatomy, source-specific brow curve, or reference hatch-density reconstruction.",
+    "Existing purse raises a risk of a broad or merely rounded mouth; native detail must judge its scale and sealed contour."
+  ],
+  "dimensions": [
+    1159,
+    1358
+  ],
+  "input_files": {
+    "RYO_EXP-091_overly-sweet-taste_kp01_v001.png": "aae36ee3abfc8b2c31b672a08ae62e7a48843b029d8103a22556e064275fdfba",
+    "RYO_EXP-091_overly-sweet-taste_kp02_v001.png": "7649957129737a5e9f7f0ccbe7b11d9130399b30f1a221e4e538ba93d1347e86",
+    "RYO_EXP-091_overly-sweet-taste_kp03_v001.png": "00c0746ac9b380a145cfe06bc1234aeda79880ebfe2220111dae615d2327fca5",
+    "RYO_EXP-091_overly-sweet-taste_kp04_v001.png": "e66a98e0386d8482d0e52d70342ad664dff7d8af4eb90349741858aa2916b855",
+    "RYO_EXP-091_overly-sweet-taste_kp05_v001.png": "5b46bd2643d18f7999f15e36835ac6367a77b4210ae51b58e2bf91cd7b28eb2b",
+    "RYO_EXP-091_overly-sweet-taste_kp06_v001.png": "8d9c0d6b50d8d00c62b2bfe3c757ce989330a4b9259d06f076858d533eb2b500",
+    "RYO_EXP-091_overly-sweet-taste_kp07_v001.png": "de096a921240d0ef99565274334536cd0ec27af2cec0c1bfcbf1753f59113eb9",
+    "RYO_EXP-091_overly-sweet-taste_kp08_v001.png": "70a2aa435a42cfefdd3abfffb885071889281dd677bc61740bf76cfc3c9991ab",
+    "RYO_EXP-091_overly-sweet-taste_kp09_v001.png": "72386d28b6f8171d0ca0d4d87cf10c7f31e897960c7807e42080daa32126c34d",
+    "RYO_EXP-091_overly-sweet-taste_peak_v001.png": "5b46bd2643d18f7999f15e36835ac6367a77b4210ae51b58e2bf91cd7b28eb2b",
+    "RYO_EXP-091_overly-sweet-taste_sheet_v001.png": "8c362b8ccad51b393d72d552499b872514d5365158c0e3428fb91b9cfdb261e9"
+  },
+  "mapping": {
+    "blush": "Existing separate cheek-only blush layer .92; no new cheek geometry or custom hatch texture.",
+    "brow_strain": "Inner lift .40 plus opposed legacy tilt .30/- .30 and vertical -.08; existing rigid owners only, no central wrinkles or contour deformation.",
+    "curved_closed_eyes": "eye_smile_L/R 1.0 closes effective lids and shapes the existing smile-eye joints; ordinary blink is zero at peak.",
+    "intake": "Brief .07 opening at .55 seconds; completely closed at .90 seconds and through the remainder.",
+    "small_sealed_smile_pucker": "Purse .78, pressure .70, shared corner .55, smile .12. Zero opening at peak. Endpoints narrow by 10.92 source pixels each. Lips are 49.16 source pixels wide across the sampled 71-pixel span, so tiny source shape remains an approximation."
+  },
+  "observations": [
+    "KP1 neutral. KP2 slightly parts the mouth with little eye change.",
+    "KP3-4 add cheek blush, upper-face strain, narrowed eyes and a small sealed pucker.",
+    "KP5-6 have fully closed curved lashes, strong blush, raised inner-brow strain and a tiny sealed smile-pucker.",
+    "KP7 eyes reopen while brow strain and small pressed mouth remain. KP8 fades near neutral; KP9 neutral."
+  ],
+  "panel_to_anchor": {
+    "1": "neutral",
+    "2": "taste_intake",
+    "3": "sweet_recognition",
+    "4": "squeeze_build",
+    "5": "sweet_overload",
+    "6": "overload_hold",
+    "7": "reopen_residual",
+    "8": "settle",
+    "9": "neutral_return"
+  },
+  "pending_comparator_gates": {
+    "EXP-090": "Do not read as queasy: curved fully closed smile-eyes and blush distinguish; not merely heavy ordinary lids with purse.",
+    "EXP-096": "Do not read as headache: curved smile-eye geometry and blush; not ordinary closed lids with severe lowered opposed brows.",
+    "EXP-160": "Do not read as shy laugh: no open laugh/pulses, no broad warm smile, preserve strained sweet-overload grimace.",
+    "EXP-197": "Do not read as kiss: no kiss part, no prolonged forward kiss and no asymmetric reopening."
+  },
+  "pixels_inspected": true,
+  "reconstruction": "NEW 20261111 r1; not restored old v2",
+  "sheet_filename": "RYO_EXP-091_overly-sweet-taste_sheet_v001.png",
+  "sheet_sha256": "8c362b8ccad51b393d72d552499b872514d5365158c0e3428fb91b9cfdb261e9"
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "weary_onset",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.24,
+      "brow_inner_lift_screen_right": 0.24,
+      "brow_screen_left": 0.0,
+      "brow_screen_right": 0.0,
+      "blink_L": 0.06,
+      "blink_R": 0.06,
+      "gaze_y": 0,
+      "mouth_open": 0.06,
+      "mouth_purse": 0.08
+    }
+  },
+  {
+    "name": "upward_glance",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.4,
+      "brow_inner_lift_screen_right": 0.4,
+      "brow_screen_left": -0.04,
+      "brow_screen_right": -0.04,
+      "blink_L": 0.13,
+      "blink_R": 0.13,
+      "gaze_y": -0.7,
+      "mouth_open": 0.1,
+      "mouth_purse": 0.12
+    }
+  },
+  {
+    "name": "glance_crest",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.46,
+      "brow_inner_lift_screen_right": 0.46,
+      "brow_screen_left": -0.05,
+      "brow_screen_right": -0.05,
+      "blink_L": 0.18,
+      "blink_R": 0.18,
+      "gaze_y": -1.0,
+      "mouth_open": 0.16,
+      "mouth_purse": 0.16
+    }
+  },
+  {
+    "name": "exhale_onset",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.5,
+      "brow_inner_lift_screen_right": 0.5,
+      "brow_screen_left": -0.06,
+      "brow_screen_right": -0.06,
+      "blink_L": 0.35,
+      "blink_R": 0.35,
+      "gaze_y": -0.4,
+      "mouth_open": 0.34,
+      "mouth_purse": 0.2
+    }
+  },
+  {
+    "name": "exhale_peak",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.52,
+      "brow_inner_lift_screen_right": 0.52,
+      "brow_screen_left": -0.07,
+      "brow_screen_right": -0.07,
+      "blink_L": 0.5,
+      "blink_R": 0.5,
+      "gaze_y": 0,
+      "mouth_open": 0.5,
+      "mouth_purse": 0.26
+    }
+  },
+  {
+    "name": "exhale_tail",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.44,
+      "brow_inner_lift_screen_right": 0.44,
+      "brow_screen_left": -0.06,
+      "brow_screen_right": -0.06,
+      "blink_L": 0.38,
+      "blink_R": 0.38,
+      "gaze_y": 0,
+      "mouth_open": 0.28,
+      "mouth_purse": 0.2
+    }
+  },
+  {
+    "name": "tired_release",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.25,
+      "brow_inner_lift_screen_right": 0.25,
+      "brow_screen_left": -0.03,
+      "brow_screen_right": -0.03,
+      "blink_L": 0.24,
+      "blink_R": 0.24,
+      "gaze_y": 0,
+      "mouth_open": 0.12,
+      "mouth_purse": 0.12
+    }
+  },
+  {
+    "name": "reseal",
+    "pose": {
+      "brow_inner_lift_screen_left": 0.08,
+      "brow_inner_lift_screen_right": 0.08,
+      "brow_screen_left": 0.0,
+      "brow_screen_right": 0.0,
+      "blink_L": 0.05,
+      "blink_R": 0.05,
+      "gaze_y": 0,
+      "mouth_open": 0,
+      "mouth_purse": 0
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "name": "neutral",
+    "pose": {}
+  },
+  {
+    "name": "taste_tension",
+    "pose": {
+      "blink_L": 0.1,
+      "blink_R": 0.1,
+      "brow_screen_left": -0.12,
+      "brow_screen_right": -0.12,
+      "brow_tilt_screen_left": 0.18,
+      "brow_tilt_screen_right": -0.18,
+      "mouth_lip_press": 0.12,
+      "mouth_purse": 0.04
+    }
+  },
+  {
+    "name": "sour_build",
+    "pose": {
+      "blink_L": 0.28,
+      "blink_R": 0.28,
+      "brow_screen_left": -0.3,
+      "brow_screen_right": -0.3,
+      "brow_tilt_screen_left": 0.38,
+      "brow_tilt_screen_right": -0.38,
+      "mouth_lip_press": 0.3,
+      "mouth_purse": 0.18
+    }
+  },
+  {
+    "name": "tighten",
+    "pose": {
+      "blink_L": 0.55,
+      "blink_R": 0.55,
+      "brow_screen_left": -0.45,
+      "brow_screen_right": -0.45,
+      "brow_tilt_screen_left": 0.55,
+      "brow_tilt_screen_right": -0.55,
+      "mouth_lip_press": 0.5,
+      "mouth_purse": 0.4
+    }
+  },
+  {
+    "name": "sour_peak",
+    "pose": {
+      "blink_L": 1.0,
+      "blink_R": 1.0,
+      "brow_screen_left": -0.55,
+      "brow_screen_right": -0.55,
+      "brow_tilt_screen_left": 0.65,
+      "brow_tilt_screen_right": -0.65,
+      "mouth_lip_press": 0.65,
+      "mouth_purse": 0.9
+    }
+  },
+  {
+    "name": "ease_closed",
+    "pose": {
+      "blink_L": 1.0,
+      "blink_R": 1.0,
+      "brow_screen_left": -0.35,
+      "brow_screen_right": -0.35,
+      "brow_tilt_screen_left": 0.4,
+      "brow_tilt_screen_right": -0.4,
+      "mouth_lip_press": 0.45,
+      "mouth_purse": 0.55
+    }
+  },
+  {
+    "name": "reopen_tense",
+    "pose": {
+      "blink_L": 0.35,
+      "blink_R": 0.35,
+      "brow_screen_left": -0.14,
+      "brow_screen_right": -0.14,
+      "brow_tilt_screen_left": 0.18,
+      "brow_tilt_screen_right": -0.18,
+      "mouth_lip_press": 0.18,
+      "mouth_purse": 0.18
+    }
+  },
+  {
+    "name": "settle",
+    "pose": {
+      "blink_L": 0.1,
+      "blink_R": 0.1,
+      "brow_screen_left": -0.04,
+      "brow_screen_right": -0.04,
+      "brow_tilt_screen_left": 0.035,
+      "brow_tilt_screen_right": -0.035,
+      "mouth_lip_press": 0.04,
+      "mouth_purse": 0.05
+    }
+  },
+  {
+    "name": "neutral_return",
+    "pose": {}
+  }
+]

@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "validation_scope": "File integrity and readable PNG structure only, not render or visual approval.",
+  "targets": [
+    {
+      "id": "EXP-046",
+      "status": "PASS",
+      "sheet_sha256": "7aed5d539ffe01c569b81056481ecaa6fd42e96bd53bb15ddbb4d5bfb4621239",
+      "sheet_bytes": 2215926,
+      "sheet_dimensions": [
+        1159,
+        1358
+      ],
+      "panels": [
+        {
+          "key_pose": 1,
+          "sha256": "5ace633eea7acedef20e92797b1e07b86e1b9ae50b35fe5e6ef0b839588d4e29",
+          "bytes": 232345
+        },
+        {
+          "key_pose": 2,
+          "sha256": "254cfdfb53ae1cb269cbf0bed153e9017632677bfb9a51de7a6b7efce8a9a6b1",
+          "bytes": 223634
+        },
+        {
+          "key_pose": 3,
+          "sha256": "b64d30939d9a85638c132fa63dc9379b72b809447948d5152f5c637601a347ea",
+          "bytes": 232252
+        },
+        {
+          "key_pose": 4,
+          "sha256": "2e1d90627a1e8b58d70c709062aba5c37b7bd096a6ed2d0d7f38d2b92f9016e7",
+          "bytes": 231024
+        },
+        {
+          "key_pose": 5,
+          "sha256": "985c6e382df942fe3dd197ee5f1452d9fb313f5b9800dafecaeb02f912813e37",
+          "bytes": 222859
+        },
+        {
+          "key_pose": 6,
+          "sha256": "3929cbf2535e6f2e90b2227f16bf2ca4a80ed3637a6882dc5f6af16fefdcd337",
+          "bytes": 231322
+        },
+        {
+          "key_pose": 7,
+          "sha256": "b1f657f488b13fc6c01d60bec335e33f9a3fc3d5d728c6b2a5b5557ebebb78b4",
+          "bytes": 232561
+        },
+        {
+          "key_pose": 8,
+          "sha256": "c49d7ee0c1e6497a808fad8ca0f137412a6778fe258173b95af51239f08de501",
+          "bytes": 222102
+        },
+        {
+          "key_pose": 9,
+          "sha256": "870653427a88538fe52a492e2d2c2d52c5399d7ffbc4efc5a74bca89cc71dbc3",
+          "bytes": 231921
+        }
+      ],
+      "peak_identical_to_panel_5": true,
+      "pixels_visually_reviewed": false
+    },
+    {
+      "id": "EXP-091",
+      "status": "PASS",
+      "sheet_sha256": "8c362b8ccad51b393d72d552499b872514d5365158c0e3428fb91b9cfdb261e9",
+      "sheet_bytes": 2252802,
+      "sheet_dimensions": [
+        1159,
+        1358
+      ],
+      "panels": [
+        {
+          "key_pose": 1,
+          "sha256": "aae36ee3abfc8b2c31b672a08ae62e7a48843b029d8103a22556e064275fdfba",
+          "bytes": 222267
+        },
+        {
+          "key_pose": 2,
+          "sha256": "7649957129737a5e9f7f0ccbe7b11d9130399b30f1a221e4e538ba93d1347e86",
+          "bytes": 228154
+        },
+        {
+          "key_pose": 3,
+          "sha256": "00c0746ac9b380a145cfe06bc1234aeda79880ebfe2220111dae615d2327fca5",
+          "bytes": 243934
+        },
+        {
+          "key_pose": 4,
+          "sha256": "e66a98e0386d8482d0e52d70342ad664dff7d8af4eb90349741858aa2916b855",
+          "bytes": 223718
+        },
+        {
+          "key_pose": 5,
+          "sha256": "5b46bd2643d18f7999f15e36835ac6367a77b4210ae51b58e2bf91cd7b28eb2b",
+          "bytes": 232294
+        },
+        {
+          "key_pose": 6,
+          "sha256": "8d9c0d6b50d8d00c62b2bfe3c757ce989330a4b9259d06f076858d533eb2b500",
+          "bytes": 245037
+        },
+        {
+          "key_pose": 7,
+          "sha256": "de096a921240d0ef99565274334536cd0ec27af2cec0c1bfcbf1753f59113eb9",
+          "bytes": 226265
+        },
+        {
+          "key_pose": 8,
+          "sha256": "70a2aa435a42cfefdd3abfffb885071889281dd677bc61740bf76cfc3c9991ab",
+          "bytes": 229737
+        },
+        {
+          "key_pose": 9,
+          "sha256": "72386d28b6f8171d0ca0d4d87cf10c7f31e897960c7807e42080daa32126c34d",
+          "bytes": 245899
+        }
+      ],
+      "peak_identical_to_panel_5": true,
+      "pixels_visually_reviewed": false
+    },
+    {
+      "id": "EXP-092",
+      "status": "PASS",
+      "sheet_sha256": "86046730c036258a3e25bcb31a4bc9227ede62a5c668fd3d7fba6ca5e9acf155",
+      "sheet_bytes": 2257871,
+      "sheet_dimensions": [
+        1159,
+        1358
+      ],
+      "panels": [
+        {
+          "key_pose": 1,
+          "sha256": "c185ea73048b6763a26af860f2f7fdc7ad82f40b10c6dd175dd9261323b6846a",
+          "bytes": 230145
+        },
+        {
+          "key_pose": 2,
+          "sha256": "6709c95de3b28be4b3823d8e1714e25477f4068827f4ce87dd71e163d9c97e33",
+          "bytes": 230803
+        },
+        {
+          "key_pose": 3,
+          "sha256": "b002d0299520c53678a3419c9e3528d0adf44530c50ed24710f691e8453dbe43",
+          "bytes": 240765
+        },
+        {
+          "key_pose": 4,
+          "sha256": "f24e945e094d351695311b72b9a327d01212554b940171a0a454fe1cf82b8796",
+          "bytes": 230733
+        },
+        {
+          "key_pose": 5,
+          "sha256": "5b41910b12c436a1edc3fca572f6ffe13456764452f5d34245bfb8eb9a7b933c",
+          "bytes": 230503
+        },
+        {
+          "key_pose": 6,
+          "sha256": "b8ec07adaf6dd4fabeb562b2a0d6d7735f7517ae0145692a18d91e164ca54500",
+          "bytes": 239224
+        },
+        {
+          "key_pose": 7,
+          "sha256": "759e1ba9a5f66a8c4b3b545a0d41d9daf59dabda45e801abe5b639b72b2f345a",
+          "bytes": 231800
+        },
+        {
+          "key_pose": 8,
+          "sha256": "6934ce4d92d00e01501e057c1f483b591327eb10084b28cb9fdad1bfc54c3f02",
+          "bytes": 230354
+        },
+        {
+          "key_pose": 9,
+          "sha256": "c51146abb6756ff4bba7037cc41ae66e77f68745730435c541e9ff52d286124b",
+          "bytes": 239514
+        }
+      ],
+      "peak_identical_to_panel_5": true,
+      "pixels_visually_reviewed": false
+    }
+  ],
+  "headache_backup_exact_approved_profile_and_video": true,
+  "headache_video_sha256": "2b410146ed28ec4d6240e3e47c6b6f27d9c33b1a8087c101941da9a6a2d58716",
+  "headache_profile_sha256": "21ba5c4393ed672a5496ed28577068bd4b56e3b8ff5d7ac4f9674df03badf1fe",
+  "historical_validation_rerun": false
+}

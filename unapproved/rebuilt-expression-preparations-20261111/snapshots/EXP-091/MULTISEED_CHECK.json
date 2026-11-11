@@ -1,0 +1,49 @@
+{
+  "all_output_bytes_identical": true,
+  "encoder_preflight": {
+    "reason": "PENDING_BLOCKED: fresh native captures absent. No encode is permitted.",
+    "status": "PENDING_BLOCKED"
+  },
+  "encoder_preflight_exit": 2,
+  "freeze_and_stamp_preserved": true,
+  "freeze_sha256": "3a1b7d38435c34fda95098af3c4d989538886e42e5fe7d7362ec48ac44a72e64",
+  "headless_launched": false,
+  "input_hashes_preserved": true,
+  "inputs_hashed_before_after": 1153,
+  "mp4_encoded": false,
+  "native_launched": false,
+  "seeds": [
+    {
+      "exit_code": 0,
+      "output_sha256": "ed413f1de34e2af0b2fec8be401ceb596902fc7c394e819685a563b7074f4a15",
+      "pythonhashseed": "0"
+    },
+    {
+      "exit_code": 0,
+      "output_sha256": "ed413f1de34e2af0b2fec8be401ceb596902fc7c394e819685a563b7074f4a15",
+      "pythonhashseed": "1"
+    },
+    {
+      "exit_code": 0,
+      "output_sha256": "ed413f1de34e2af0b2fec8be401ceb596902fc7c394e819685a563b7074f4a15",
+      "pythonhashseed": "7"
+    },
+    {
+      "exit_code": 0,
+      "output_sha256": "ed413f1de34e2af0b2fec8be401ceb596902fc7c394e819685a563b7074f4a15",
+      "pythonhashseed": "42"
+    },
+    {
+      "exit_code": 0,
+      "output_sha256": "ed413f1de34e2af0b2fec8be401ceb596902fc7c394e819685a563b7074f4a15",
+      "pythonhashseed": "123456"
+    },
+    {
+      "exit_code": 0,
+      "output_sha256": "ed413f1de34e2af0b2fec8be401ceb596902fc7c394e819685a563b7074f4a15",
+      "pythonhashseed": "random"
+    }
+  ],
+  "status": "PASS",
+  "validator_writes": false
+}

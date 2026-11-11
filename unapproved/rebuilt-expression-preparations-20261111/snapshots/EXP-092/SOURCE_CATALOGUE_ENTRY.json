@@ -1,0 +1,245 @@
+{
+  "art_scope": "Facial close-up performance reference paired with separately authored reusable full-body gesture references.",
+  "asset_production": {
+    "actual_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_sheet_v001.png",
+    "native_height": 1358,
+    "native_width": 1159,
+    "peak_actual_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_peak_v001.png",
+    "peak_status": "published_lossless_copy_of_panel_5",
+    "sha256": "86046730c036258a3e25bcb31a4bc9227ede62a5c668fd3d7fba6ca5e9acf155",
+    "sheet_status": "published_accepted_reference_art"
+  },
+  "body_gesture": {
+    "description": "Suggested reusable full-body accompaniment selected by expression intent. These are separate visual references, not a bespoke combined face/body animation or validated rig. Animator must resolve staging, timing and anatomy on the actual model.",
+    "head_motion": "Facial sheet and body performance remain separate; combine deliberately in the rig.",
+    "reference_ids": [
+      "BOD-008",
+      "BOD-027"
+    ],
+    "references": [
+      {
+        "id": "BOD-008",
+        "intent": "She raises a hand palm outward to politely but firmly signal stop, holds it, then lowers it.",
+        "path": "assets/body/RYO_BOD-008_stop-palm_sheet_v001.png",
+        "sha256": "d8074c1f8558625ee42222599906a42abfb4ca3fbd3cd8cf6b2799d1d001c23c"
+      },
+      {
+        "id": "BOD-027",
+        "intent": "She gives a small outward dismissive wave at shoulder level with a skeptical look, then lowers hand.",
+        "path": "assets/body/RYO_BOD-027_dismissive-wave_sheet_v001.png",
+        "sha256": "ef8a1461aaa815992fd55edd9dee0513f7612bbf51ce9542653d807ae236b7df"
+      }
+    ],
+    "status": "paired_reusable_visual_references"
+  },
+  "distinctive_facial_intent": "Brows draw sharply together; eyes squeeze closed; lips purse tightly and cheeks pull inward.",
+  "facial_control_mapping": {
+    "intent": "Brows draw sharply together; eyes squeeze closed; lips purse tightly and cheeks pull inward.",
+    "left_right_convention": "Character left and right, not viewer left and right.",
+    "numeric_weights": null,
+    "status": "semantic_intent_only_pending_actual_rig"
+  },
+  "family": "Disgust and discomfort",
+  "id": "EXP-092",
+  "implementation_status": "not_implemented_in_2d_rig",
+  "is_pilot": false,
+  "issues": [],
+  "key_pose_sequence": [
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp01_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        0,
+        379,
+        458
+      ],
+      "key_pose": 1,
+      "panel_location": {
+        "column": 1,
+        "row": 1
+      },
+      "phase": "neutral",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "c185ea73048b6763a26af860f2f7fdc7ad82f40b10c6dd175dd9261323b6846a",
+      "time_seconds": 0,
+      "visual_direction": "Approved neutral face; fixed camera, scale and eye line."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp02_v001.png",
+      "crop_bounds_xyxy": [
+        379,
+        0,
+        754,
+        458
+      ],
+      "key_pose": 2,
+      "panel_location": {
+        "column": 2,
+        "row": 1
+      },
+      "phase": "anticipation",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "6709c95de3b28be4b3823d8e1714e25477f4068827f4ce87dd71e163d9c97e33",
+      "time_seconds": 0.15,
+      "visual_direction": "Small preparatory change toward the authored intent; do not alter identity."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp03_v001.png",
+      "crop_bounds_xyxy": [
+        754,
+        0,
+        1159,
+        458
+      ],
+      "key_pose": 3,
+      "panel_location": {
+        "column": 3,
+        "row": 1
+      },
+      "phase": "onset",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "b002d0299520c53678a3419c9e3528d0adf44530c50ed24710f691e8453dbe43",
+      "time_seconds": 0.3,
+      "visual_direction": "First clearly readable brow, eyelid and mouth changes."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp04_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        458,
+        379,
+        906
+      ],
+      "key_pose": 4,
+      "panel_location": {
+        "column": 1,
+        "row": 2
+      },
+      "phase": "build",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "f24e945e094d351695311b72b9a327d01212554b940171a0a454fe1cf82b8796",
+      "time_seconds": 0.5,
+      "visual_direction": "Develop the specified facial relationships without jumping to peak."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp05_v001.png",
+      "crop_bounds_xyxy": [
+        379,
+        458,
+        754,
+        906
+      ],
+      "key_pose": 5,
+      "panel_location": {
+        "column": 2,
+        "row": 2
+      },
+      "phase": "peak",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "5b41910b12c436a1edc3fca572f6ffe13456764452f5d34245bfb8eb9a7b933c",
+      "time_seconds": 0.75,
+      "visual_direction": "Brows draw sharply together; eyes squeeze closed; lips purse tightly and cheeks pull inward."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp06_v001.png",
+      "crop_bounds_xyxy": [
+        754,
+        458,
+        1159,
+        906
+      ],
+      "key_pose": 6,
+      "panel_location": {
+        "column": 3,
+        "row": 2
+      },
+      "phase": "follow_through_or_hold",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "b8ec07adaf6dd4fabeb562b2a0d6d7735f7517ae0145692a18d91e164ca54500",
+      "time_seconds": 1.05,
+      "visual_direction": "Sustain the recognizable peak with a small coherent follow-through; no new expression."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp07_v001.png",
+      "crop_bounds_xyxy": [
+        0,
+        906,
+        379,
+        1358
+      ],
+      "key_pose": 7,
+      "panel_location": {
+        "column": 1,
+        "row": 3
+      },
+      "phase": "release",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "759e1ba9a5f66a8c4b3b545a0d41d9daf59dabda45e801abe5b639b72b2f345a",
+      "time_seconds": 1.35,
+      "visual_direction": "Release mouth, eyelid and brow tension in a readable coordinated transition."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp08_v001.png",
+      "crop_bounds_xyxy": [
+        379,
+        906,
+        754,
+        1358
+      ],
+      "key_pose": 8,
+      "panel_location": {
+        "column": 2,
+        "row": 3
+      },
+      "phase": "settle",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "6934ce4d92d00e01501e057c1f483b591327eb10084b28cb9fdad1bfc54c3f02",
+      "time_seconds": 1.65,
+      "visual_direction": "Near-neutral face with only residual expression."
+    },
+    {
+      "actual_panel_path": "assets/expressions/EXP-092_sour-taste/RYO_EXP-092_sour-taste_kp09_v001.png",
+      "crop_bounds_xyxy": [
+        754,
+        906,
+        1159,
+        1358
+      ],
+      "key_pose": 9,
+      "panel_location": {
+        "column": 3,
+        "row": 3
+      },
+      "phase": "neutral_return",
+      "separate_panel_status": "published_lossless_integer_crop",
+      "sha256": "c51146abb6756ff4bba7037cc41ae66e77f68745730435c541e9ff52d286124b",
+      "time_seconds": 1.9,
+      "visual_direction": "Match the approved neutral baseline and first panel."
+    }
+  ],
+  "overlays": {
+    "planned_optional_effects": [],
+    "rule": "Keep effects separate from base facial anatomy; do not bake sheet graphics, captions or chibi cutaways into avatar textures.",
+    "status": "requires_mapping_to_available_2d_effect_layers"
+  },
+  "procedural_interactions": {
+    "blink": "Preserve normal blinking unless the authored pose explicitly closes an eye; resolve conflicts on actual rig.",
+    "gaze": "Use fixed reference gaze except intentional side-eye, upward/downward gaze or specified eye movement.",
+    "lip_sync": "Do not assume compatibility at extreme mouth poses; blend or override behavior remains to be tested."
+  },
+  "review_status": "accepted_reference_art",
+  "slug": "sour-taste",
+  "source_master": "assets/modeling/RYO_MOD_neutral-bust_front_v001.png",
+  "source_master_version": "v001",
+  "status": "reference_sheet_published",
+  "timing": {
+    "duration_seconds": 1.9,
+    "easing_intent": "Ease into and out of expression; preserve sharper onset only where the intent calls for a startle or outburst.",
+    "exit_behavior": "Release current control state smoothly toward approved neutral; interruption blend is a later rig test.",
+    "loop_interval_seconds": null,
+    "loop_mode": "one_shot",
+    "loop_note": "No repeated cycle; complete release and neutral return.",
+    "peak_hold_seconds": 0.3,
+    "timing_status": "proposed_reference_timing_not_implemented_animation"
+  }
+}

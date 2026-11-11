@@ -1,0 +1,16 @@
+{
+  "candidate": "EXP-091",
+  "reconstruction": "NEW 20261111 r1; not restored old v2",
+  "approval": "UNAPPROVED",
+  "preparation": "Static source and numerical model only",
+  "native_runtime": "NOT RUN",
+  "native_parse": "NOT RUN",
+  "native_capture": "PENDING_BLOCKED",
+  "native_launch_blocker": "Prior native launch was denied twice. No retry, alternate display, headless state check or workaround attempted in this reconstruction.",
+  "source_fidelity": "PENDING_NATIVE_REVIEW",
+  "perceptual_distinctness": "PENDING against EXP-197/160/090/096",
+  "normal_speed_review": "PENDING",
+  "mp4": "PENDING",
+  "remote_publication": "NOT_ATTEMPTED",
+  "production_integration": "NOT_ATTEMPTED"
+}
