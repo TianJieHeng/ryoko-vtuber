@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Ryoko shared expression rig"
-run/main_scene="res://expression_viewer.tscn"
+run/main_scene="res://full_body/full_body_viewer.tscn"
 config/features=PackedStringArray("4.6")
 
 [display]

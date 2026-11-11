@@ -13,6 +13,8 @@ var layer_nodes:Dictionary = {}
 var body_controls:Dictionary = {}
 var body_control_joints:Dictionary = {}
 var ready_for_controls = false
+var registry_ready:bool:
+    get:return ready_for_controls and expression_rig != null and expression_rig.registry_ready
 var last_error = ""
 var show_bones = false
 var frame_pivot = Vector2.ZERO
@@ -151,6 +153,7 @@ func apply_controls(data)->bool:
 func reset()->bool:return apply_controls({"reset":true})
 func play_expression(id)->bool:return apply_controls({"perform_expression":id})
 func list_expressions()->Array:return expression_rig.list_expressions() if expression_rig != null else []
+func auto_blink_policy()->Dictionary:return expression_rig.auto_blink_policy() if expression_rig != null else {}
 func get_body_state()->Dictionary:
     var transforms = {}
     for id in joints:

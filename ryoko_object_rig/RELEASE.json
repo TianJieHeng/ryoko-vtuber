@@ -186,7 +186,7 @@
     "new_expression_count": 0,
     "general_eye_opening_qualified": false
   },
-  "earlier_fields_scope": "Inherited expression limitations and upper iris provenance retain their original scope.",
+  "earlier_fields_scope": "Fields inherited from prior expression publications retain their historical scope; current full-body integration is described in full_body.expressions_integration.",
   "native_visual_parity": "Current47 integration: NOT RUN. The exact historical candidate MP4 and native pose/pixel receipts are preserved and integrity-checked. Integrated native parity, rendered cross-transitions and live pacing remain UNVERIFIED.",
   "publication_authorization": "The user approved Overly Sweet Taste, required one expression at a time, and explicitly directed this single-expression main publication without further validation or waiting for a backup. Current expression approval evidence is validation/approved_overly_sweet_taste/current_user_approvals.json.",
   "new_expression_limits": {
@@ -205,9 +205,25 @@
     "review_commit": "a2dccc9e9179306a14d52c4df5bd3b32239089ae",
     "base_main": "c976b11ea42d6de984242444212259cafa84e17c",
     "new_expression_count": 0,
-    "existing_face_runtime_and_artwork_unchanged": true,
-    "default_entry_point_changed": false,
+    "existing_face_runtime_and_artwork_unchanged": false,
+    "default_entry_point_changed": true,
     "native_visual_parity": "UNVERIFIED",
-    "live_pacing": "UNVERIFIED"
+    "live_pacing": "UNVERIFIED",
+    "existing_face_change_scope": "Expression motion runtime and artwork are unchanged. Two opening-shader implementation files now explicitly bind their original source texture for Godot compilation.",
+    "expressions_integration": {
+      "status": "USER_APPROVED_ALL47_EXPRESSIONS_ON_FULL_BODY",
+      "record": "full_body/face_review/APPROVAL.json",
+      "validation": "full_body/face_review/APPROVAL.md",
+      "review_commit": "840b29a8b58602db9d56a6ac8c80b009b1cf2e01",
+      "base_main": "17e736d176cb595eb5cc5f32bf54f5a267c62f5c",
+      "approved_expression_count": 47,
+      "new_expression_count": 0,
+      "expression_profiles_and_motion_unchanged": true,
+      "artwork_and_body_physics_unchanged": true,
+      "focused_godot_checks": 511,
+      "native_godot_capture": false,
+      "live_pacing": "UNVERIFIED",
+      "tracking_and_export": "UNVERIFIED"
+    }
   }
 }

@@ -1,0 +1,97 @@
+{
+  "status": "USER_APPROVED_ALL47_EXPRESSIONS_ON_FULL_BODY",
+  "base_main": "17e736d176cb595eb5cc5f32bf54f5a267c62f5c",
+  "review_branch": "review/full-body-expressions-v1",
+  "review_commit": "840b29a8b58602db9d56a6ac8c80b009b1cf2e01",
+  "review_tree": "8322076e9c1372c9a94e40f3c211fc173ee2c87c",
+  "approval_evidence": [
+    {
+      "speaker": "user",
+      "text": "if i say its good its approved"
+    },
+    {
+      "speaker": "user",
+      "text": "good",
+      "context": "Response to the delivered complete all47 full-body expression MP4."
+    }
+  ],
+  "approved_video": {
+    "path": "all47_full_body_live_faces_15fps.mp4",
+    "sha256": "a382c24f102a1a33600af95390560fb886d33effbe562e5cbf39a3e3150cb7fc",
+    "library_file_id": "libfile_654a330bf3e081919b5b4c739aa0e937",
+    "library_version": 0,
+    "duration_seconds": 190.2667,
+    "fps": 15,
+    "native_godot_capture": false
+  },
+  "approved_existing_changes": {
+    "full_body/full_body_rig.gd": {
+      "before_sha256": "09d44b2e0ff4d623823d6068898122cced5983cc3bb824c959e8f336f968da53",
+      "after_sha256": "258bb2a46ba116a94eaa9c83c0b0dd6c7c62c758acc83f07c88a41acc60b9cde"
+    },
+    "full_body/full_body_viewer.gd": {
+      "before_sha256": "33b10f65ce061a288ce8943e254046117f4de5f1be7a3e03a922fc4f9d7003c7",
+      "after_sha256": "453961cb4d5a10cad113bec75733ca6fb7146ca25ff4050a8cca469b41c799e0"
+    },
+    "parts/caught_staring/transport.gdshader": {
+      "before_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+      "after_sha256": "cddc5c3c1d10b9784c63cd9c4e0206b1724fd6206102bb5251f23b738a634682"
+    },
+    "parts/caught_staring/upper_opening_part.gd": {
+      "before_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+      "after_sha256": "335e83ee805e67879f7bed67a75d73236c1d31f7eee58819d49e0a026960c122"
+    },
+    "project.godot": {
+      "before_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+      "after_sha256": "3d9f70df3bc3b414ecd6b6af91769defb2f1686f46eb721204d56d1b0bb9c116"
+    }
+  },
+  "predecessor_metadata_archived": {
+    "APPROVED_SOURCE_MANIFEST.json": "4434b63317bc956bc10073b9652b5a5847e4b825816fa578cd0418d4017d1839",
+    "APPROVED_SOURCE_FILES.sha256": "70fce50dcb954282bf5ff1d595a6a13ee478231f88db4972cbbcbcf30bb120f5",
+    "README.md": "53ccf9b0c791ab5823186e595092a06be8a7406e0b4188417e2587c82ef9f7c2",
+    "RELEASE.json": "da239ca8d8fe1860269caeb72a715d6da9925595b423f45423eb1fb2e0d621bc",
+    "tools/verify_approved_integration.py": "fe005ad59f5bf275d4df75443b1f40843a7082a61caed4e6796a32a9c8a2d2c5",
+    "full_body/full_body_rig.gd": "09d44b2e0ff4d623823d6068898122cced5983cc3bb824c959e8f336f968da53",
+    "full_body/full_body_viewer.gd": "33b10f65ce061a288ce8943e254046117f4de5f1be7a3e03a922fc4f9d7003c7",
+    "parts/caught_staring/transport.gdshader": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+    "parts/caught_staring/upper_opening_part.gd": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+    "project.godot": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+    "repository_README.md": "1f74bae510e5bee06a6a2820aa21655238f34870e8cc3d4d447d541b26584c62"
+  },
+  "scope": [
+    "All47 existing approved expressions available on the same full-body model.",
+    "Full-body viewer is the default project scene; original bust viewer remains available explicitly.",
+    "Original27 face channels, auto-blink and original expression playback are exposed alongside existing body and bounce controls.",
+    "Opt-in original control bridge targets the same integrated model; no listener without explicit --control-port.",
+    "Godot shader compatibility repair binds the original owner texture as an explicit sampler, without changing expression math."
+  ],
+  "unchanged": [
+    "All47 expression profiles and registry",
+    "Original expression_rig.gd and object_face.gd",
+    "All original artwork",
+    "Full-body registration and accepted neutral pose",
+    "Existing spring physics and body motion"
+  ],
+  "validation": {
+    "focused_godot_viewer_checks": 511,
+    "status": "PASS",
+    "all47_faces_changed": true,
+    "all47_exact_neutral_returns": true,
+    "default_headless_scene_launch": "PASS",
+    "bridge_network_socket_tested": false,
+    "native_godot_capture": false,
+    "native_visual_parity": "UNVERIFIED",
+    "live_30_60_fps_pacing": "UNVERIFIED",
+    "tracking_and_export": "UNVERIFIED",
+    "ci_run": false
+  },
+  "preview_method": "Actual Godot scene state and meshes sampled from the integrated model; original shader bodies executed through installed Mesa EGL offscreen reconstruction. Not native Godot screen capture.",
+  "known_limits": [
+    "No current native Godot screen capture or full native parity result.",
+    "Real-time tracking, export and live30/60fps pacing remain unverified.",
+    "Existing Image.load_from_file export warning for uneasy_clear_parting.png remains.",
+    "Inherited expression-specific source-fit and pacing qualifications remain unchanged."
+  ],
+  "publication_semantics": "This approval record covers only the reviewed integration and evidence. Publication is effective when the containing commit is on main; the exact reviewed candidate is retained on the review branch."
+}

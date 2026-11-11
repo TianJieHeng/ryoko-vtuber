@@ -4,6 +4,14 @@ import hashlib,json,sys
 R=Path(sys.argv[1]).resolve() if len(sys.argv)>1 else Path(__file__).resolve().parents[1]
 def read(n):return json.loads((R/n).read_text())
 def sha(n):return hashlib.sha256((R/n).read_bytes()).hexdigest()
+face_approval=read('full_body/face_review/APPROVAL.json')
+approved_edits=face_approval['approved_existing_changes']
+def check_protected(name, expected):
+ if name in approved_edits:
+  edit=approved_edits[name]
+  assert edit['before_sha256']==expected,'Unexpected approval predecessor: '+name
+  expected=edit['after_sha256']
+ assert sha(name)==expected,'Protected source changed: '+name
 BASE_MANIFEST_SHA256='f17df8990d20f8e11918f535ae3f838ad132b25a18442f41115fc16bf44a2ebd'
 PROFILE_SHA256='67cae056cbc90fe0de20820131d750a97ada4ccc0340575ee43ec18963bbda6a'
 VIDEO_SHA256='035ed33369ba957d2e2c1275cee377b0f9a21d3b6b2c529ea88592dbddfb4d19'
@@ -19,7 +27,7 @@ assert sha(H+'APPROVED_SOURCE_MANIFEST.json')==BASE_MANIFEST_SHA256
 base=read(H+'APPROVED_SOURCE_MANIFEST.json');p=read(V+'predecessor_preservation.json')
 assert p['prior_profile_count']==46 and p['png_count']==184 and not p['runtime_changed'] and not p['artwork_changed']
 assert p['protected_files']=={n:h for n,h in base['files'].items() if n not in p['modified_archived_files']}
-for n,h in p['protected_files'].items():assert sha(n)==h,'Predecessor changed: '+n
+for n,h in p['protected_files'].items():check_protected(n,h)
 for n,h in p['modified_archived_files'].items():
  assert sha(H+n)==h,'Archived predecessor changed: '+n
  if n in base['files']:assert h==base['files'][n]
@@ -39,7 +47,7 @@ r=read(i['motion_path']);assert r['status']=='PASS' and r['failures']==[] and r[
 a=read(V+'current_user_approvals.json')['profiles'];assert len(a)==1 and a[0]['id']=='EXP-091' and a[0]['status']=='USER_APPROVED_EXACT_REVIEW_VERSION' and a[0]['profile_sha256']==PROFILE_SHA256 and a[0]['review_video_sha256']==VIDEO_SHA256
 assert {'speaker':'user','text':'Nice'} in a[0]['approval_evidence']
 c=read(V+'review_runtime_compatibility.json');assert c['status']=='PASS' and c['required_runtime_delta'] is None and not c['native_engine_rerun']
-for n,h in c['production_runtime_and_artwork_sha256'].items():assert sha(n)==h
+for n,h in c['production_runtime_and_artwork_sha256'].items():check_protected(n,h)
 result=read('APPROVED_INTEGRATION_TEST_RESULTS.json');assert result['status']=='PASS_WITH_ENGINE_CHECKS_NOT_RUN' and not result['runtime_changed'] and not result['artwork_changed'] and not result['ci_run']
 assert result['runtime_sha256']==sha('expression_rig.gd')==base['files']['expression_rig.gd']
 model=read(V+'python_model_checks.json');assert model['status']=='PASS' and model['failures']==[] and model['checks']==6613546
@@ -57,15 +65,29 @@ assert result['publication']=='AUTHORIZED_FOR_SINGLE_EXPRESSION_MAIN_UPDATE' and
 negative=read(V+'guard_negative_results.json');assert negative['status']=='PASS' and negative['tamper_cases']==12 and negative['all_rejected'] and negative['restored_copy_passes']==12
 print('APPROVED47_GUARD PASS prior_profiles=46 PNGs=184 new_profiles=1 model_checks=6613546 current_engine=NOT_RUN current_native=NOT_RUN')
 
-# The additive full-body module does not alter any reviewed runtime or artwork.
+# The original body approval remains historical; exact later integrated-face edits are separately approved.
 body=read('full_body/APPROVAL.json')
 assert body['status']=='USER_APPROVED_FULL_BODY_AND_SMALL_BOUNCE'
 assert {'speaker':'user','text':'nice'} in body['approval_evidence']
 assert release['full_body']['record']=='full_body/APPROVAL.json'
-for n,h in body['reviewed_files_unchanged'].items():assert sha('full_body/'+n)==h,'Reviewed full-body source changed: '+n
+for n,h in body['reviewed_files_unchanged'].items():check_protected('full_body/'+n,h)
 for n,h in body['predecessor_metadata_archived'].items():assert sha('full_body/approval/predecessor_metadata/'+n)==h,'Archived predecessor metadata changed: '+n
 for key in ['neutral_preview','bounce_preview']:
  assert sha('full_body/'+body[key]['path'])==body[key]['sha256']
 assert read('full_body/registration.json')['version']==5
 assert read('full_body/review/bounce_checks.json')['status']=='PASS'
 print('APPROVED_FULL_BODY_GUARD PASS reviewed source identity retained; native rendering/pacing UNVERIFIED')
+
+assert face_approval['status']=='USER_APPROVED_ALL47_EXPRESSIONS_ON_FULL_BODY'
+assert {'speaker':'user','text':'good','context':'Response to the delivered complete all47 full-body expression MP4.'} in face_approval['approval_evidence']
+assert set(approved_edits)=={'project.godot','full_body/full_body_rig.gd','full_body/full_body_viewer.gd','parts/caught_staring/transport.gdshader','parts/caught_staring/upper_opening_part.gd'}
+for n,edit in approved_edits.items():
+ assert sha(n)==edit['after_sha256']
+ assert sha('full_body/face_review/approval/predecessor_metadata/'+n)==edit['before_sha256']
+for n,h in face_approval['predecessor_metadata_archived'].items():assert sha('full_body/face_review/approval/predecessor_metadata/'+n)==h
+video=face_approval['approved_video']
+assert sha('full_body/face_review/'+video['path'])==video['sha256']
+assert not video['native_godot_capture']
+import subprocess
+subprocess.run([sys.executable,str(R/'full_body/face_review/verify_integration.py')],check=True)
+print('APPROVED_FULL_BODY_EXPRESSIONS_GUARD PASS exact reviewed implementation and MP4 retained; all47 original profiles preserved')

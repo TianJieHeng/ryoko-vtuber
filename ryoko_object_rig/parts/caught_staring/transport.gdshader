@@ -2,6 +2,8 @@ shader_type canvas_item;
 render_mode unshaded;
 // PRIVATE c=0, centered gaze only. Full APPROVED gaze derivative, including its
 // documented inferred white backing. No source PNG or import setting changed.
+// Explicit alias of the owner texture avoids passing Godot built-in TEXTURE as a function argument.
+uniform sampler2D source_texture : filter_linear, repeat_disable;
 uniform sampler2D profile_texture : filter_nearest, repeat_disable;
 uniform sampler2D lower_profile_texture : filter_nearest, repeat_disable;
 uniform sampler2D shape_upper : filter_linear, repeat_disable;
@@ -61,7 +63,7 @@ void fragment() {
  } else {
   vec2 p=UV*eye_size-vec2(0.5);
   bool moving=amplitude(p.x)>0.000001 && p.y<anchors(p.x).y;
-  if(moving) {source=safe_sample(TEXTURE,p,eye_size);}
+  if(moving) {source=safe_sample(source_texture,p,eye_size);}
   if(kind==1) {
    vec4 prof=texture(profile_texture,UV)*255.0;
    float lower=texture(lower_profile_texture,UV).r*255.0;

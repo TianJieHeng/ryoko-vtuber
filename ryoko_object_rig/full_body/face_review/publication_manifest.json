@@ -1,0 +1,71 @@
+{
+  "base_main": "17e736d176cb595eb5cc5f32bf54f5a267c62f5c",
+  "baseline_manifest_sha256": "4434b63317bc956bc10073b9652b5a5847e4b825816fa578cd0418d4017d1839",
+  "status": "USER_APPROVED_ALL47_EXPRESSIONS_ON_FULL_BODY",
+  "intended_existing_edits": {
+    "full_body/full_body_rig.gd": {
+      "before_sha256": "09d44b2e0ff4d623823d6068898122cced5983cc3bb824c959e8f336f968da53",
+      "after_sha256": "258bb2a46ba116a94eaa9c83c0b0dd6c7c62c758acc83f07c88a41acc60b9cde"
+    },
+    "full_body/full_body_viewer.gd": {
+      "before_sha256": "33b10f65ce061a288ce8943e254046117f4de5f1be7a3e03a922fc4f9d7003c7",
+      "after_sha256": "453961cb4d5a10cad113bec75733ca6fb7146ca25ff4050a8cca469b41c799e0"
+    },
+    "parts/caught_staring/transport.gdshader": {
+      "before_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+      "after_sha256": "cddc5c3c1d10b9784c63cd9c4e0206b1724fd6206102bb5251f23b738a634682"
+    },
+    "parts/caught_staring/upper_opening_part.gd": {
+      "before_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+      "after_sha256": "335e83ee805e67879f7bed67a75d73236c1d31f7eee58819d49e0a026960c122"
+    },
+    "project.godot": {
+      "before_sha256": "b318f844710d0b374965cba57f5ba2b6c7a140bcab4c559dbf24b6dfd1bc4faf",
+      "after_sha256": "3d9f70df3bc3b414ecd6b6af91769defb2f1686f46eb721204d56d1b0bb9c116"
+    }
+  },
+  "candidate_files": {
+    "full_body/face_review/.gitignore": "c483487a6c8597f9a8cfe20c7d993ddb6ad938508bf3d90045f727b35cffbb71",
+    "full_body/face_review/README.md": "e4c7f8b4aae3450f0bb38c8f062cbb92cfa35ffb22ef7e7bc5c8aef0062bd335",
+    "full_body/face_review/render_live_faces.py": "f6683357c4f31bc03dc64609c2029275ca7d01b4f78634f918b4d6ac192d66bd",
+    "full_body/face_review/sample_live_faces.gd": "8a712a8ac18f7b927b362fdc91557facdd7587865f90b907c796a562a7697d76",
+    "full_body/face_review/all47_full_body_live_faces_15fps.mp4": "a382c24f102a1a33600af95390560fb886d33effbe562e5cbf39a3e3150cb7fc",
+    "full_body/face_review/all47_full_body_live_faces_15fps.json": "d6909e29347ed43c72ec6627f2f5220361939a990f557401db7b06f7f3e4ee06",
+    "full_body/face_review/all47_summary.json": "0d6bf0dab88995b662b73373b8e0f0de51e832e6ee445c6777cfa56560b35443",
+    "full_body/face_review/all47_face_pixel_evidence.csv": "81bf709cc712afe8b7126cc06536ebc6ec9448f4e14a12028649b7b41c5012c1",
+    "full_body/face_review/all47_face_contact_sheet.jpg": "2e79f94bfc81b5d2da4c83624e227f6922da7a48b30b8cb2d5db67fac64379f3",
+    "full_body/face_review/capture_source_manifest.json": "eca7fc7439ef8eaa208d073c5435825fb57513d0f15f168c627420967ea9f55c",
+    "full_body/face_review/neutral_comparison.json": "54214b152d46a3a70f3a909abb9ba434b790e19eee86842bd70a02639007e2f7",
+    "full_body/face_review/broad_surprise_peak_comparison.json": "98aa391fb76e072af9aafa296dbf0f97145356bb2d1d55e876fe5f153905ea0c",
+    "full_body/face_review/native_neutral_comparison.png": "68bd55e158cf12fdc739bcfea8370db7709d5d49a5df957ff796406106028df0",
+    "full_body/face_review/native_broad_surprise_peak_comparison.png": "2e3acccb9c11d420bb98886b58c665824529e04bf927d319a8f5e26102f9f0b6",
+    "full_body/face_review/default_launch.json": "f152ce4945762f69a857f09aee73645f627912c47a27076cf90d76a11cbe7b49",
+    "full_body/face_review/integration_checkpoint.json": "3986dd10ae1f9a2246cd2233f1a64b8ed77873fc734582983e9b9e81e7ef7786",
+    "full_body/face_review/live_affection_full_body.mp4": "fce70570f5200a4d08fc06f4c702458ffd596c7a21a64125e5161856ecea16c4",
+    "full_body/face_review/live_affection_full_body.json": "1c678b2946cd3895955b10acf08f2f39a9473a1de58a0ba0c078af1ddf75aeb6",
+    "full_body/face_review/shader_compatibility.json": "80ae419b30199820658fe93d39dc72fa560bfca8e0160b6fb1ce5aa74090dd61",
+    "full_body/face_review/viewer_controls.json": "05c40183ae8f93fa2afe3ce693371495586450b5e868c6b1b6e8d2fd820bfe33",
+    "full_body/face_review/verify_integration.py": "bafe4232bff92ec8c0ff9d84c63ced0ee97b27e6dee5bc1dd0640f42a5991b74",
+    "tests/test_full_body_expressions.gd": "53a742942ea6ac6c1c9362b2f893026f42ccbe7dccf899caee996454b32e4144",
+    "full_body/face_review/APPROVAL.json": "97d1c7665f7f8a675177334f89ffa5c0dcd368487cc79a322c475d67c4280963",
+    "full_body/face_review/APPROVAL.md": "71b495c050ae3d0b3846d14144d1f81a1ad508c6bfaa5b5677c72caf52f3dea0"
+  },
+  "raw_samples": "Regenerable local intermediate draw data omitted; exact sampler/renderer and compact evidence retained.",
+  "native_capture": false,
+  "review_commit": "840b29a8b58602db9d56a6ac8c80b009b1cf2e01",
+  "baseline_manifest_path": "full_body/face_review/approval/predecessor_metadata/APPROVED_SOURCE_MANIFEST.json",
+  "publication_metadata_edits": {
+    "README.md": {
+      "before_sha256": "53ccf9b0c791ab5823186e595092a06be8a7406e0b4188417e2587c82ef9f7c2",
+      "after_sha256": "c506568c83c4f0093b1ed6ea00c020cc4436128ff911541557393dc5d9fd4830"
+    },
+    "RELEASE.json": {
+      "before_sha256": "da239ca8d8fe1860269caeb72a715d6da9925595b423f45423eb1fb2e0d621bc",
+      "after_sha256": "335c661c63f1f3bf852f0bfcaf52db44cdd382d26db8306800da92fa04bc189f"
+    },
+    "tools/verify_approved_integration.py": {
+      "before_sha256": "fe005ad59f5bf275d4df75443b1f40843a7082a61caed4e6796a32a9c8a2d2c5",
+      "after_sha256": "2b1682d902b1f8ecd168c4d807c8bdf741835a5a015ba0826e32b7f95f9c00f2"
+    }
+  }
+}

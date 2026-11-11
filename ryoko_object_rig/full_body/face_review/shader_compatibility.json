@@ -1,0 +1,26 @@
+{
+  "issue": "Godot 4.6.3 shader compiler rejected passing built-in TEXTURE through a sampler2D helper parameter in the approved eye-opening shader.",
+  "fix": "Bind the identical owner Texture2D to an explicit source_texture sampler, retaining the same alpha-weighted interpolation and geometry.",
+  "runtime_check": "Seven existing opening_px profiles exercised in actual headless Godot without the former shader compiler error. Bound source_texture identity checked against each owner texture. Not native pixel validation.",
+  "profiles": [
+    "EXP-144",
+    "EXP-125",
+    "EXP-063",
+    "EXP-067",
+    "EXP-064",
+    "EXP-004",
+    "EXP-061"
+  ],
+  "files": [
+    {
+      "path": "parts/caught_staring/transport.gdshader",
+      "before_sha256": "58fb5013d5ab9c4f7540a38f02ca18359dda8ec3fa45a6b769d35d6195ac0092",
+      "after_sha256": "cddc5c3c1d10b9784c63cd9c4e0206b1724fd6206102bb5251f23b738a634682"
+    },
+    {
+      "path": "parts/caught_staring/upper_opening_part.gd",
+      "before_sha256": "0aea7e8f1eac93cba5c09e14dab3a6438d2745bfe6fbb9f156ef680e7fc4d9d0",
+      "after_sha256": "335e83ee805e67879f7bed67a75d73236c1d31f7eee58819d49e0a026960c122"
+    }
+  ]
+}

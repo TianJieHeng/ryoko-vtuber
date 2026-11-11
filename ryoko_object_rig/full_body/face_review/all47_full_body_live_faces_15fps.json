@@ -1,0 +1,954 @@
+{
+  "render_source": "Actual Godot 4.6.3 full_body_rig scene: original expression controller, global transforms, draw geometry, colors, shader parameters and texture pixels. This is draw-state evidence, not native rendered pixel evidence.",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "native_godot_capture": false,
+  "shader_gpu_parity_verified": false,
+  "frames": 2854,
+  "fps": 15,
+  "expressions": [
+    "EXP-001",
+    "EXP-002",
+    "EXP-003",
+    "EXP-004",
+    "EXP-005",
+    "EXP-006",
+    "EXP-007",
+    "EXP-021",
+    "EXP-040",
+    "EXP-041",
+    "EXP-042",
+    "EXP-043",
+    "EXP-045",
+    "EXP-046",
+    "EXP-050",
+    "EXP-061",
+    "EXP-063",
+    "EXP-064",
+    "EXP-067",
+    "EXP-081",
+    "EXP-090",
+    "EXP-091",
+    "EXP-093",
+    "EXP-096",
+    "EXP-102",
+    "EXP-104",
+    "EXP-107",
+    "EXP-114",
+    "EXP-116",
+    "EXP-123",
+    "EXP-125",
+    "EXP-129",
+    "EXP-139",
+    "EXP-144",
+    "EXP-148",
+    "EXP-152",
+    "EXP-153",
+    "EXP-158",
+    "EXP-160",
+    "EXP-161",
+    "EXP-163",
+    "EXP-164",
+    "EXP-174",
+    "EXP-177",
+    "EXP-181",
+    "EXP-186",
+    "EXP-197"
+  ],
+  "face_pixel_checks": [
+    {
+      "id": "EXP-163",
+      "title": "Yawn",
+      "authored_duration": 5.8,
+      "frames": 88,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 4522,
+      "max_face_mae": 8.792661179698216,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "released",
+      "peak_time": 1.66666666666667
+    },
+    {
+      "id": "EXP-005",
+      "title": "Hearty laughter",
+      "authored_duration": 5.4,
+      "frames": 82,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1233,
+      "max_face_mae": 6.802537722908093,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.93333333333333
+    },
+    {
+      "id": "EXP-001",
+      "title": "Bright welcome",
+      "authored_duration": 3.0,
+      "frames": 46,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 821,
+      "max_face_mae": 2.0372656607224506,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.06666666666667
+    },
+    {
+      "id": "EXP-006",
+      "title": "Suppressed giggle",
+      "authored_duration": 2.8,
+      "frames": 43,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1258,
+      "max_face_mae": 3.2296982167352537,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.0
+    },
+    {
+      "id": "EXP-107",
+      "title": "Confident reassurance",
+      "authored_duration": 3.0,
+      "frames": 46,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 722,
+      "max_face_mae": 1.8585048010973937,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.2
+    },
+    {
+      "id": "EXP-007",
+      "title": "Relieved smile",
+      "authored_duration": 3.2,
+      "frames": 49,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 739,
+      "max_face_mae": 1.8560356652949246,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.26666666666667
+    },
+    {
+      "id": "EXP-002",
+      "title": "Affectionate warmth",
+      "authored_duration": 1.9,
+      "frames": 30,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 984,
+      "max_face_mae": 5.800411522633745,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 0.8
+    },
+    {
+      "id": "EXP-152",
+      "title": "Private pride",
+      "authored_duration": 1.9,
+      "frames": 30,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 819,
+      "max_face_mae": 4.604892546867855,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 0.8
+    },
+    {
+      "id": "EXP-160",
+      "title": "Shy laughter",
+      "authored_duration": 3.4,
+      "frames": 52,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1946,
+      "max_face_mae": 6.438728852309099,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.33333333333333
+    },
+    {
+      "id": "EXP-177",
+      "title": "Meditative calm",
+      "authored_duration": 3.9,
+      "frames": 60,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 763,
+      "max_face_mae": 5.27350251486054,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 0.933333333333333
+    },
+    {
+      "id": "EXP-164",
+      "title": "Fighting sleep",
+      "authored_duration": 3.47,
+      "frames": 54,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 861,
+      "max_face_mae": 5.489551897576589,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 0.866666666666667
+    },
+    {
+      "id": "EXP-021",
+      "title": "Quiet sadness",
+      "authored_duration": 3.65,
+      "frames": 56,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 833,
+      "max_face_mae": 4.66970736168267,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.33333333333333
+    },
+    {
+      "id": "EXP-158",
+      "title": "Post-confession shyness",
+      "authored_duration": 4.35,
+      "frames": 67,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1675,
+      "max_face_mae": 5.98758573388203,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.93333333333333
+    },
+    {
+      "id": "EXP-181",
+      "title": "Cheeky wink",
+      "authored_duration": 3.1,
+      "frames": 48,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 822,
+      "max_face_mae": 3.9356881572930957,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.26666666666667
+    },
+    {
+      "id": "EXP-102",
+      "title": "Knowing smirk",
+      "authored_duration": 3.8,
+      "frames": 58,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 628,
+      "max_face_mae": 2.004983996342021,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.73333333333333
+    },
+    {
+      "id": "EXP-116",
+      "title": "Confident denial",
+      "authored_duration": 2.85,
+      "frames": 44,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 682,
+      "max_face_mae": 2.2352766346593507,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.2
+    },
+    {
+      "id": "EXP-050",
+      "title": "Frustrated pout",
+      "authored_duration": 4.13,
+      "frames": 63,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 675,
+      "max_face_mae": 1.8951531778692272,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.06666666666667
+    },
+    {
+      "id": "EXP-186",
+      "title": "Smug cat smile",
+      "authored_duration": 3.4,
+      "frames": 52,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 812,
+      "max_face_mae": 4.063100137174211,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.0
+    },
+    {
+      "id": "EXP-114",
+      "title": "Daring provocation",
+      "authored_duration": 3.8,
+      "frames": 58,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 799,
+      "max_face_mae": 3.3686785550983083,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.73333333333333
+    },
+    {
+      "id": "EXP-148",
+      "title": "Nervous laugh",
+      "authored_duration": 3.6,
+      "frames": 55,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1514,
+      "max_face_mae": 4.829881115683585,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.13333333333333
+    },
+    {
+      "id": "EXP-197",
+      "title": "Playful kiss",
+      "authored_duration": 7.2,
+      "frames": 109,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1693,
+      "max_face_mae": 6.569090077732053,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral",
+      "peak_time": 2.93333333333333
+    },
+    {
+      "id": "EXP-144",
+      "title": "Caught staring",
+      "authored_duration": 5.2,
+      "frames": 79,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1575,
+      "max_face_mae": 4.205372656607224,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.13333333333333
+    },
+    {
+      "id": "EXP-040",
+      "title": "Recovering composure",
+      "authored_duration": 6.2,
+      "frames": 94,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 803,
+      "max_face_mae": 4.110745313214449,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.0
+    },
+    {
+      "id": "EXP-125",
+      "title": "Sudden insight",
+      "authored_duration": 3.6,
+      "frames": 55,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 603,
+      "max_face_mae": 1.2479881115683584,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.06666666666667
+    },
+    {
+      "id": "EXP-063",
+      "title": "Stunned silence",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 594,
+      "max_face_mae": 1.7671239140374944,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.0
+    },
+    {
+      "id": "EXP-090",
+      "title": "Queasy",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 874,
+      "max_face_mae": 4.915089163237312,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.33333333333333
+    },
+    {
+      "id": "EXP-153",
+      "title": "Hiding a smile",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 733,
+      "max_face_mae": 4.0753772290809325,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.4
+    },
+    {
+      "id": "EXP-139",
+      "title": "Focused determination",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1067,
+      "max_face_mae": 5.920804755372656,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 0.533333333333333
+    },
+    {
+      "id": "EXP-174",
+      "title": "Sleepy annoyance",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 904,
+      "max_face_mae": 4.84453589391861,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.13333333333333
+    },
+    {
+      "id": "EXP-067",
+      "title": "Creeping dread",
+      "authored_duration": 4.8,
+      "frames": 73,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 618,
+      "max_face_mae": 1.7806355738454505,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.53333333333333
+    },
+    {
+      "id": "EXP-093",
+      "title": "Bitter taste",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 969,
+      "max_face_mae": 5.4114769090077735,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.86666666666667
+    },
+    {
+      "id": "EXP-003",
+      "title": "Quiet contentment",
+      "authored_duration": 4.6,
+      "frames": 70,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 995,
+      "max_face_mae": 6.395336076817558,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.66666666666667
+    },
+    {
+      "id": "EXP-043",
+      "title": "Silent fury",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 259,
+      "max_face_mae": 0.6692958390489254,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.13333333333333
+    },
+    {
+      "id": "EXP-064",
+      "title": "Shocked gasp",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 693,
+      "max_face_mae": 2.5858710562414267,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 0.666666666666667
+    },
+    {
+      "id": "EXP-004",
+      "title": "Delighted discovery",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 719,
+      "max_face_mae": 2.27119341563786,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.86666666666667
+    },
+    {
+      "id": "EXP-042",
+      "title": "Cold glare",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 811,
+      "max_face_mae": 4.182761774119799,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.2
+    },
+    {
+      "id": "EXP-129",
+      "title": "Mental arithmetic",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 800,
+      "max_face_mae": 2.1687014174668495,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.06666666666667
+    },
+    {
+      "id": "EXP-041",
+      "title": "Controlled anger",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 662,
+      "max_face_mae": 3.4562871513488798,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.4
+    },
+    {
+      "id": "EXP-061",
+      "title": "Broad surprise",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 720,
+      "max_face_mae": 2.9917466849565617,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.4
+    },
+    {
+      "id": "EXP-123",
+      "title": "Puzzled",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 723,
+      "max_face_mae": 3.220301783264746,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.26666666666667
+    },
+    {
+      "id": "EXP-081",
+      "title": "Mild disgust",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 754,
+      "max_face_mae": 3.3985825331504342,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.4
+    },
+    {
+      "id": "EXP-161",
+      "title": "Sleepy",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 868,
+      "max_face_mae": 5.216575217192501,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.6
+    },
+    {
+      "id": "EXP-045",
+      "title": "Irritated Side-eye",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 820,
+      "max_face_mae": 4.5369455875628715,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.6
+    },
+    {
+      "id": "EXP-104",
+      "title": "Triumphant Grin",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 762,
+      "max_face_mae": 2.402880658436214,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.33333333333333
+    },
+    {
+      "id": "EXP-096",
+      "title": "Headache tension",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1038,
+      "max_face_mae": 5.798239597622314,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.53333333333333
+    },
+    {
+      "id": "EXP-046",
+      "title": "Exasperated sigh",
+      "authored_duration": 4.8,
+      "frames": 73,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 999,
+      "max_face_mae": 5.331778692272519,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 2.06666666666667
+    },
+    {
+      "id": "EXP-091",
+      "title": "Overly Sweet Taste",
+      "authored_duration": 4.0,
+      "frames": 61,
+      "face_roi": [
+        445,
+        128,
+        580,
+        236
+      ],
+      "max_changed_face_pixels": 1733,
+      "max_face_mae": 5.671422039323274,
+      "final_face_equal_neutral": true,
+      "final_canvas_equal_neutral": true,
+      "final_pose_all_zero": true,
+      "final_phase": "neutral_return",
+      "peak_time": 1.66666666666667
+    }
+  ],
+  "all_faces_changed": true,
+  "all_returned_to_exact_neutral": true
+}

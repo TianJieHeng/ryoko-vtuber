@@ -1,3 +1,9 @@
+# Approved full-body model with all47 expressions
+
+All47 approved expressions now play on the same full-body model. Opening the Godot project launches the integrated viewer with expression selection, manual face controls, auto-blink, body controls and the approved small bounce. Original expression motions, artwork and body physics are preserved. [Launch instructions, approval and validation limits](ryoko_object_rig/full_body/face_review/APPROVAL.md).
+
+## Historical release notes
+
 # Approved full-body rig and small bounce
 
 The final individual-part full-body pose and small-bounce spring motion are approved and integrated alongside the existing 47 facial performances. The reviewed runtime, artwork and MP4s are unchanged. Native rendering and live pacing remain unverified. See [approval, launch instructions and limits](ryoko_object_rig/full_body/APPROVAL.md). Existing facial profiles and the default project entry point are preserved.

@@ -1,0 +1,11 @@
+{
+  "render_source": "Actual Godot 4.6.3 full_body_rig scene: original expression controller, global transforms, draw geometry, colors, shader parameters and texture pixels. This is draw-state evidence, not native rendered pixel evidence.",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "native_godot_capture": false,
+  "shader_gpu_parity_verified": false,
+  "frames": 30,
+  "fps": 15,
+  "expressions": [
+    "EXP-002"
+  ]
+}

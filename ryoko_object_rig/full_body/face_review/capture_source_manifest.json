@@ -1,0 +1,79 @@
+{
+  "sample_engine": "Godot 4.6.3",
+  "profiles": 47,
+  "frames": 2854,
+  "fps": 15,
+  "authored_total_seconds": 186.85,
+  "sample_duration_seconds": 190.26666666666668,
+  "duration_note": "Each expression retains its original timeline and a sampled neutral endpoint. Per-clip endpoint/rounding overhead at 15 fps adds 3.4167 seconds across all 47 clips. No trajectory speed scaling.",
+  "shader_sources": [
+    {
+      "source": "ryoko_object_rig/parts/caught_staring/transport.gdshader",
+      "captured": "shader_09.glsl",
+      "sha256": "cddc5c3c1d10b9784c63cd9c4e0206b1724fd6206102bb5251f23b738a634682",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/spread_teeth_clip.gdshader",
+      "captured": "shader_07.glsl",
+      "sha256": "70d882b246d120e6baae089473150ff831c7386305580dba347f72f5805a01ce",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/pressed_lip_clip.gdshader",
+      "captured": "shader_08.glsl",
+      "sha256": "ab5836ef545b978d4f53fb4212f3e60ddb8d346ab720ebeb47f0782d22fa68f8",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/smile_lip_join.gdshader",
+      "captured": "shader_05.glsl",
+      "sha256": "1d8bcf6db1ffddb5acb62aa2f6aff16c81bab4c1d91e2b5f5223010d77367dfb",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/smile_lip_segment.gdshader",
+      "captured": "shader_04.glsl",
+      "sha256": "dd9d765508e8d331c2adc29d5d20c24981e55929fffc46fbe82fcd0cf2bdd3f8",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/smile_eye_segment.gdshader",
+      "captured": "shader_06.glsl",
+      "sha256": "9eb648d42e8b2adc8ba2db1d6f62670e2b9ee44f61c00f04019df8ced028ddc3",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/neutral_eye_pigment_clip.gdshader",
+      "captured": "shader_03.glsl",
+      "sha256": "6d8ec1bdfbc655ca05f6e8293fa9c4f5c05fb6996b031f20c8c33cabde18cf57",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/neutral_eye_residue.gdshader",
+      "captured": "shader_02.glsl",
+      "sha256": "33ba8c3cf9df12f4f0c7fd0c2fd69d8b3994be92a315fc559a1df725093f0842",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/object_mouth_clip.gdshader",
+      "captured": "shader_01.glsl",
+      "sha256": "e30d472f20eb86a817e6f32654f5e9d0082bd1d59251d7c888b5950b48e3660b",
+      "byte_equal_original": true
+    },
+    {
+      "source": "ryoko_object_rig/canonical_eye_alpha.gdshader",
+      "captured": "shader_00.glsl",
+      "sha256": "fae2f82caa7b672ae43773507efa1c625dfff4159357784207c7bfe91875a026",
+      "byte_equal_original": true
+    }
+  ],
+  "sample_scene_sha256": "42134fa5c3b18bf15cd933c84f92b637095fb4034b26f4035e75aabb14e74d0f",
+  "current_checkout_commit": "8162f508c30b3b8d27d90c7e0daa15280717537a",
+  "raw_data_stays_local": true,
+  "harness_files": {
+    "sample_live_faces.gd": "8a712a8ac18f7b927b362fdc91557facdd7587865f90b907c796a562a7697d76",
+    "render_live_faces.py": "f6683357c4f31bc03dc64609c2029275ca7d01b4f78634f918b4d6ac192d66bd",
+    "summarize_review.py": "37e7182097cd750d604aa9903d130ca6fc5c4fb565a63f239fc0d986fc9c91d2"
+  }
+}
